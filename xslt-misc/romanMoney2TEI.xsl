@@ -4,6 +4,16 @@
    version="2.0" xmlns="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="#all"
    xpath-default-namespace="http://www.tei-c.org/ns/1.0">
    <xsl:output encoding="UTF-8" indent="yes"/>
+
+<!--
+
+This XSLT takes a string of roman numeral money with pounds/shillings/pence (li, s, d) and turns it into a form 
+of TEI markup with li/s/d converted to basic pence value for comparison purposes.
+
+-->
+
+
+
    <xsl:template match="/" name="main">
       <!-- example input -->
       <xsl:variable name="amounts">
