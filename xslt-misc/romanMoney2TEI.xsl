@@ -10,6 +10,107 @@
 This XSLT takes a string of roman numeral money with pounds/shillings/pence (li, s, d) and turns it into a form 
 of TEI markup with li/s/d converted to basic pence value for comparison purposes.
 
+Run as: saxon -it:main -xs:romanMoney2TEI.xsl
+
+This takes the values in the variable below in the main template and converts them to the 
+XML pasted in this comment below.  The point isn't to do that, of course, but to demonstrate 
+the jc:OldMoneyToTEI() function which could be used in your own stylesheets.
+
+The output should be:
+
+=====
+<list xmlns="http://www.tei-c.org/ns/1.0">
+   <num type="totalMoney" value="1952.5">
+      <num type="pounds" value="1680">vij<hi rend="superscript">li</hi>
+      </num> 
+      <num type="shillings" value="264">xxij<hi rend="superscript">s</hi>
+      </num> 
+      <num type="pence" value="8">viij<hi rend="superscript">d</hi>
+      </num> 
+      <num type="halfpence" value="0.5">
+         <hi rend="superscript">ob</hi>
+      </num>
+   </num>
+   <num type="totalMoney" value="1688.5">
+      <num type="pounds" value="1680">vij<hi rend="superscript">li</hi>
+      </num> 
+      <num type="pence" value="8">viij<hi rend="superscript">d</hi>
+      </num> 
+      <num type="halfpence" value="0.5">
+         <hi rend="superscript">ob</hi>
+      </num>
+   </num>
+   <num type="totalMoney" value="1688">
+      <num type="pounds" value="1680">vij<hi rend="superscript">li</hi>
+      </num> 
+      <num type="pence" value="8">viij<hi rend="superscript">d</hi>
+      </num>
+   </num>
+   <num type="totalMoney" value="1944.5">
+      <num type="pounds" value="1680">vij<hi rend="superscript">li</hi>
+      </num> 
+      <num type="shillings" value="264">xxij<hi rend="superscript">s</hi>
+      </num> 
+      <num type="halfpence" value="0.5">
+         <hi rend="superscript">ob</hi>
+      </num>
+   </num>
+   <num type="totalMoney" value="1944">
+      <num type="pounds" value="1680">vij<hi rend="superscript">li</hi>
+      </num> 
+      <num type="shillings" value="264">xxij<hi rend="superscript">s</hi>
+      </num>
+   </num>
+   <num type="totalMoney" value="1952">
+      <num type="pounds" value="1680">vij<hi rend="superscript">li</hi>
+      </num> 
+      <num type="shillings" value="264">xxij<hi rend="superscript">s</hi>
+      </num> 
+      <num type="pence" value="8">viij<hi rend="superscript">d</hi>
+      </num>
+   </num>
+   <num type="totalMoney" value="272.5">
+      <num type="shillings" value="264">xxij<hi rend="superscript">s</hi>
+      </num> 
+      <num type="pence" value="8">viij<hi rend="superscript">d</hi>
+      </num> 
+      <num type="halfpence" value="0.5">
+         <hi rend="superscript">ob</hi>
+      </num>
+   </num>
+   <num type="totalMoney" value="0.5">
+      <num type="halfpence" value="0.5">
+         <hi rend="superscript">ob</hi>
+      </num>
+   </num>
+   <num type="totalMoney" value="272">
+      <num type="shillings" value="264">xxij<hi rend="superscript">s</hi>
+      </num> 
+      <num type="pence" value="8">viij<hi rend="superscript">d</hi>
+      </num>
+   </num>
+   <num type="totalMoney" value="264">
+      <num type="shillings" value="264">xxij<hi rend="superscript">s</hi>
+      </num>
+   </num>
+   <num type="totalMoney" value="8">
+      <num type="pence" value="8">viij<hi rend="superscript">d</hi>
+      </num>
+   </num>
+   <num type="totalMoney" value="640">
+      <num type="shillings" value="636">liij<hi rend="superscript">s</hi>
+      </num> 
+      <num type="pence" value="4">iiij<hi rend="superscript">d</hi>
+      </num>
+   </num>
+   <num type="totalMoney" value="12720">
+      <num type="pounds" value="12720">liij<hi rend="superscript">li</hi>
+      </num>
+   </num>
+</list>
+=====
+
+
 -->
 
 
@@ -30,13 +131,14 @@ of TEI markup with li/s/d converted to basic pence value for comparison purposes
             <item>xxijs</item>
             <item>viijd</item>
             <item>liijs iiijd</item>
-            <!--  -->
+            <!-- ... -->
             <item>liijli</item>
          </list>
       </xsl:variable>
       <!-- sample output -->
       <list>
          <xsl:for-each select="$amounts/list/item/text()">
+            <!-- calling jc:OldMoneyToTEI() function -->
             <xsl:copy-of select="jc:OldMoneyToTEI(.)"/>
          </xsl:for-each>
       </list>
