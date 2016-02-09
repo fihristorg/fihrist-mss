@@ -1,260 +1,251 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" xml:lang="en">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title>Sample Transcription and Encoding Guidelines for the Stationers' Register Online</title>
-                <author xml:id="jc">James Cummings</author>
-                <author xml:id="pw">Pip Willcox</author>
-            </titleStmt>
-           <editionStmt>
-                <edition>Version 0.5</edition>
-            </editionStmt>
-            <publicationStmt>
-              <authority>James Cummings</authority>
-                <availability status="free">
-                    <p>This TEI ODD file is available under a Creative Commons Attribution license.</p>
-                </availability>
-            </publicationStmt>
-            <sourceDesc>
-                <p>ODD initially created on <date when="2011-08-11">11 August 2011</date> in Oxford by <persName>James
-                        Cummings</persName>; Guideline prose mostly written by <name ref="#pw">Pip Willcox</name>
-                </p>
-            </sourceDesc>
-        </fileDesc>
-        <revisionDesc>
-            <change when="2011-09-29" who="#jc">Added in Prose written by <name ref="#pw">Pip</name> tweaking some of
-                it</change>
-            <change when="2011-09-12" who="#jc">Updated</change>
-            <change when="2011-08-11" who="#jc">Initial creation</change>
-        </revisionDesc>
-    </teiHeader>
-    <text>
-        <body>
-            <head>Sample Transcription and Encoding Guidelines for the Stationers' Register Online</head>
-            <p>These sample transcription and encoding Guidelines for the Stationers' Register Online project are
-                derived from a TEI P5 ODD XML file acting as documentation and meta-schema. The examples and notes in the
-                appendices may refer to elements which are not included or have been renamed in this version. The prose
-                and examples in the main encoding Guidelnes should be considered more accurate and normative.</p>
-            <div>
-                <head>Inclusions</head>
-                <p>The following sample pages should be transcribed. Please note that they are edge cases, and
-                    deliberately chosen to test our schema: the majority of the transcription will involve less
-                    problematic encoding.</p>
-                <p><bibl><author>Arber, Edward</author>, <title rend="italic">A Transcript of the Registers of the
-                            Company of Stationers 1554-1640 AD</title>, <biblScope>5 vols</biblScope>, (<pubPlace>London
-                            &amp; Birmingham</pubPlace>, <date>1875</date>).</bibl></p>
-                <p><label rend="bold">Volume One:</label>
-                    <list>
-                        <item>image 106, folio 14v, page 60</item>
-                        <item>image 132, folio 27v, page 86</item>
-                        <item>image 159, folio 41r, page 113</item>
-                        <item>image 267, folio 95r, page 221</item>
-                        <item>image 394, folio 158v, page 348</item>
-                        <item>image 513, folio 218r, page 467</item>
-                    </list></p>
-                <p><label rend="bold">Volume Two:</label>
-                    <list>
-                        <item>image 301, folio 130r, page 293</item>
-                    </list></p>
-            </div>
-            <div>
-                <head>Metadata</head>
-                <p>Each file should include a <gi>header</gi>
-                    <hi rend="italic">TEI header</hi>, which will include information on the source and creation of that
-                    file. It should include <gi>t</gi>
-                    <hi rend="italic">title</hi> and <gi>ab</gi>
-                    <hi rend="italic">anonymous block</hi> elements (see below).</p>
-            </div>
-            <div>
-                <head>Encoding the text </head>
-                <div>
-                    <head>Spelling, special characters and punctuation</head>
-                    <p>Transcribe each character as it appears on the page, without correcting or regularizing spelling.
-                        Selected special characters are to be transcribed with standard Unicode entity references.
-                        Transcribe typographical ligatures (e.g. “ct", “fl") as separate letters; transcribe diphthong
-                        ligatures, (e.g. “<emph>œ</emph>" “<emph>æ</emph>") with Unicode character entity references
-                        (see below). Punctuation should be transcribed as it appears, with virgules transcribed as
-                        “/".</p>
-                </div>
-                <div>
-                    <head>Leading dots</head>
-                    <p>Leading dots should not be transcribed.</p>
-                </div>
-                <div>
-                    <head>Gaps in the text</head>
-                    <p>Gaps fall into two main categories: points where Arber notes he has not transcribed something
-                        that appears in the original manuscript; and spaces where something that is expected does not
-                        appear. </p>
-                    <p>The former should be captured in <gi>gp</gi>
-                        <hi rend="italic">gap</hi> elements. </p>
-                    <p>
-                        <label rend="bold">Example</label><lb/>
-                        <egXML xmlns="http://www.tei-c.org/ns/Examples"><gp>[This page is entirely blank in the Original.]</gp></egXML>
-                    </p>
-                    <p>Many of these gaps follow a standard form, e.g. “[Four entries omitted.]". Where this is the
-                        case, please record the missing entries with an <att>n</att> number attribute in the <gi>gp</gi>
-                        <hi rend="italic">gap</hi> element.</p>
-                    <p>
-                        <label rend="bold">Example</label><lb/>
-                        <egXML xmlns="http://www.tei-c.org/ns/Examples"><gp n="4"/></egXML>
-                    </p>
-                    <p>Spaces should be marked with a <gi>spc</gi>
-                        <hi rend="italic">space</hi> element, for example where in an item in a list that should contain
-                        a sum is missing: “Summa totalis ____" </p>
-                    <p><label rend="bold">Example</label><lb/>
-                        <egXML xmlns="http://www.tei-c.org/ns/Examples"><it>Summa totalis <spc/></it></egXML></p>
-                    <p>Note that the <gi>spc</gi>
-                        <hi rend="italic">space</hi> element can include contents.</p>
-                    <p><label rend="bold">Example</label><lb/>
-                        <egXML xmlns="http://www.tei-c.org/ns/Examples"><spc>[<h r="i">no sum stated</h>]</spc></egXML></p>
-                    <div>
-                        <head>Hyphenation</head>
-                        <p>Soft hyphens (i.e. those that simply indicate that a word has been split across a line or
-                            page) should be transcribed using the Unicode reference &amp;#x00AD;. Hard hyphens that
-                            indicate an actual hyphenated word, whether occurring inline or at the end of a line, should
-                            be transcribed as Unicode &amp;#x2010;. </p>
-                    </div>
-                    <div>
-                        <head>Bracketing</head>
-                        <p>Curly brackets, “{…}", are often used to group the items of a list together. They should be
-                            noted in the encoding as a rend attribute in the appropriate element, e.g. <gi>ls</gi>
-                            <hi rend="italic">list</hi>, <gi>p</gi><hi rend="italic"> paragraph</hi> (see below for
-                            details of these elements). The <att>r</att>
-                            <hi rend="italic">rend</hi> values of 'brr' (bracketed right) and 'brl' (bracketed left) are
-                            provided for this purpose.</p>
-                        <p>Square brackets “[…]" are used to denote an editorial intervention by Arber. These should be
-                            transcribed where they appear as “[" or “]".</p>
-                    </div>
-                    <div>
-                        <head>Superscript and subscript text</head>
-                        <p>The most common superscript text is the superscript <hi rend="italic">li</hi>, <hi rend="italic">s</hi>, <hi rend="italic">d </hi>or <hi rend="italic">ob</hi>, denoting
-                            currency. These should be captured as plain text, without marking the fact of their
-                            superscription. For further explanation of transcribing sums of money, see below.</p>
-                        <p>All other superscript text, and subscript text, should be tagged where possible using a
-                                <att>r</att>
-                            <hi rend="italic">rend</hi> attribute in a surrounding element, or in the absence of another
-                            element, using a <gi>h</gi>
-                            <hi rend="italic">highlighting</hi> element with a <att>r</att>
-                            <hi rend="italic">rend</hi> attribute (see below).</p>
-                    </div>
-                    <div>
-                        <head>Decorative features</head>
-                        <p>The presence of decorative features, such as dropped capitals, decorative borders or
-                            illustrations should be noted with a <att>r</att>
-                            <hi rend="italic">rend</hi> attribute values, where possible, or a <gi>gr</gi>
-                            <hi rend="italic">graphic</hi> element (see below).</p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <head>Page layout</head>
-                <p>Encoding the layout of these volumes is important as Arber includes information in his choice of
-                    fonts that is not otherwise made explicit.</p>
-                <div>
-                    <head>Page, line and column breaks</head>
-                    <p>Page breaks should be noted inside <gi>fw</gi><hi rend="italic"> forme work</hi> elements, in
-                            <gi>pb</gi>
-                        <hi rend="italic">page break</hi> elements with <att>n</att> attribute values with any spaces
-                        removed.</p>
-                    <p><label rend="bold">Example</label><lb/>
-                        <egXML xmlns="http://www.tei-c.org/ns/Examples"><fw><pb n="28v"/></fw></egXML>
-                    </p>
-                    <p>Line breaks <tag>lb/</tag> should be noted where there is a line break which is not caused by
-                        reaching the edge of the text block, and where the break is not indicated by a closing
-                        structural element, e.g. <tag>/p</tag>
-                        <hi rend="italic">paragraph</hi>, <tag>/hd</tag>
-                        <hi rend="italic">heading</hi>.</p>
-                    <p>Column breaks, for example in lists, should always be noted using <tag>cb/</tag> elements.</p>
-                </div>
-                <div>
-                    <head>Highlighting</head>
-                    <p>Where the size or type of font differs from the usual Roman, this should be recorded as a
-                            <att>r</att>
-                        <hi rend="italic">rend</hi> attribute in a surrounding element, where possible. Where there is
-                        no suitable surrounding element, the change should be recorded in <gi>h</gi>
-                        <hi rend="italic">highlighting</hi> elements, with an appropriate <att>r</att>
-                        <hi rend="italic">rend</hi> attribute value (see below).</p>
-                    <p><label rend="bold">Example</label><lb/>
-                        <egXML xmlns="http://www.tei-c.org/ns/Examples"><p>Recevyd of 
-                            <n r="b"><fn>Roberte</fn> <sn>Robyns</sn></n> for his admyttinge freman of this howse
-                            <dt>the xj of <h r="i">februarij</h> 1570</dt> [<h r="i">i.e.</h> <dt>1571</dt>] 
-                            <nm r="rm ar">iijs iiijd</nm></p></egXML></p>
-                    <p>Note that the font used for names in particular is important (see below for details).</p>
-                    <p>Where text appears in a different size from normal, either smaller or larger, this should be
-                        encoded in the surrounding elements where possible, and where there are no appropriate elements,
-                        in <gi>h</gi>
-                        <hi rend="italic">highlighting</hi> elements.</p>
-                    <p><label rend="bold">Example</label><lb/>
-                        <egXML xmlns="http://www.tei-c.org/ns/Examples"><p><h r="i">by me</h> 
-                            <n r="lrg"><fn>Rychard</fn> <sn>Jugge</sn></n> <lb/><h r="i"> By
-                            me</h> <n r="lrg"><fn>Jhon</fn> <sn>Daye</sn></n></p></egXML></p>
-                    <p>
-                        <label rend="bold">Exceptions</label><lb/> Inside square brackets, which denote an editorial
-                        intervention by Arber, only changes in font need be indicated: if an entire note appears in
-                        italics, this should not be recorded; if a note contains a change of font, this should be
-                        recorded.</p>
-                </div>
-                <div>
-                    <head>Forme work</head>
-                    <p>The forme work at the head and foot of a page should be transcribed. </p>
-                    <p>Typically, the head forme work will contain a <gi>dt</gi>
-                        <hi rend="italic">date</hi>, a folio number, which should be transcribed in <tag>pb/</tag>
-                        <hi rend="italic">page break</hi> elements, and a group of names, which should be transcribed in
-                        a discrete <gi>seg</gi>
-                        <hi rend="italic">segment</hi> element containing as appropriate <gi>ls</gi>
-                        <hi rend="italic">list</hi> and <gi>it</gi>
-                        <hi rend="italic">item</hi> elements, <gi>n</gi>
-                        <hi rend="italic">name</hi>, <gi>fn</gi>
-                        <hi rend="italic">forename</hi> and <gi>sn</gi>
-                        <hi rend="italic">surname</hi> elements. It may also contain an alternative date (for example, a
-                        regnal year) and one or more editorial notes, marked by square brackets.</p>
-                    <p><label rend="bold">Example</label><lb/>
-                        <egXML xmlns="http://www.tei-c.org/ns/Examples"><fw> [<h r="i">Continued from page</h> 672.] 
-                            <seg>[<ls r="brr"> 
-                                <it><n><fn>G.</fn> <sn>Cawood</sn></n></it> 
-                                <it><n><fn>L.</fn> <sn>Binge</sn></n>.</it> 
-                                </ls> 
-                                <n><fn>R.</fn>
-                            <sn>Watkins</sn></n>.]
-                            </seg> 
-                            <dt>1594 [<h r="i">i.e.</h> 10—17 March 1595]</dt>
-                            <dt><h r="i">Anno</h> 37<h r="s">o</h> <h r="i">Regni Regin[a]e Elizabeth[æ]/</h></dt> 
-                        </fw>
-                        </egXML>
-                    </p>
-                    <p>Typically the foot forme work will contain a volume and page number, which should be transcribed
-                        in <gi>fw</gi>
-                        <hi rend="italic">forme work</hi> and <tag>pb/</tag>
-                        <hi rend="italic">page break</hi> elements.</p>
-                    <p><label rend="bold">Example</label><lb/>
-                        <egXML xmlns="http://www.tei-c.org/ns/Examples"><fw><pb n="I.561"/></fw></egXML></p>
-                    <p>Note that each page will therefore contain two <gi>pb</gi>
-                        <hi rend="italic">page break</hi> elements one at the start and one at the finish.</p>
-                    <p>Please note that paratextual information relating to Arber’s edition should not be transcribed,
-                        e.g. the catchwords “A TRANSCRIPT &amp;C." and signatures “21". </p>
-                </div>
-            </div>
-            <div>
-                <head>Structural encoding</head>
-                <div>
-                    <head>File, header and body</head>
-                    <p>Each page of the sample, and each complete volume, should be transcribed discretely, in
-                            <gi>file</gi>
-                        <hi rend="italic">file</hi> elements. </p>
-                    <p>Each <gi>file</gi> should contain a <gi>header</gi>
-                        <hi rend="italic">TEI header</hi>, which should contain basic information about the text, and a
-                            <gi>body</gi>
-                        <hi rend="italic">body</hi>, which will contain the text itself.</p>
-                </div>
-                <div>
-                    <head>Textual divisions</head>
-                    <p>The <gi>body</gi> should contain nested <gi>d</gi>
-                        <hi rend="italic">textual divisions</hi> elements, all of which should include <att>t</att>
-                        <hi rend="italic">type</hi> attributes which described the content of the individual division.
-                        See below for a complete list of <att>t</att>
-                        <hi rend="italic">type</hi> values for the <gi>d</gi> element.</p>
-                    <p>
-                        <!-- 
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" xml:lang="en">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Sample Transcription and Encoding Guidelines for the Stationers' Register Online</title>
+        <author xml:id="jc">James Cummings</author>
+        <author xml:id="pw">Pip Willcox</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Version 0.5</edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority>James Cummings</authority>
+        <availability status="free">
+          <p>This TEI ODD file is available under a Creative Commons Attribution license.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <p>ODD initially created on <date when="2011-08-11">11 August 2011</date> in Oxford by <persName>James
+          Cummings</persName>; Guideline prose mostly written by <name ref="#pw">Pip Willcox</name>
+        </p>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <change when="2011-09-29" who="#jc">Added in Prose written by <name ref="#pw">Pip</name> tweaking some of it</change>
+      <change when="2011-09-12" who="#jc">Updated</change>
+      <change when="2011-08-11" who="#jc">Initial creation</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>Sample Transcription and Encoding Guidelines for the Stationers' Register Online</head>
+      <p>These sample transcription and encoding Guidelines for the Stationers' Register Online project are derived from a TEI P5
+        ODD XML file acting as documentation and meta-schema. The examples and notes in the appendices may refer to elements which
+        are not included or have been renamed in this version. The prose and examples in the main encoding Guidelnes should be
+        considered more accurate and normative.</p>
+      <div>
+        <head>Inclusions</head>
+        <p>The following sample pages should be transcribed. Please note that they are edge cases, and deliberately chosen to test
+          our schema: the majority of the transcription will involve less problematic encoding.</p>
+        <p><bibl><author>Arber, Edward</author>, <title rend="italic">A Transcript of the Registers of the Company of Stationers
+              1554-1640 AD</title>, <biblScope>5 vols</biblScope>, (<pubPlace>London &amp; Birmingham</pubPlace>,
+              <date>1875</date>).</bibl></p>
+        <p><label rend="bold">Volume One:</label>
+          <list>
+            <item>image 106, folio 14v, page 60</item>
+            <item>image 132, folio 27v, page 86</item>
+            <item>image 159, folio 41r, page 113</item>
+            <item>image 267, folio 95r, page 221</item>
+            <item>image 394, folio 158v, page 348</item>
+            <item>image 513, folio 218r, page 467</item>
+          </list></p>
+        <p><label rend="bold">Volume Two:</label>
+          <list>
+            <item>image 301, folio 130r, page 293</item>
+          </list></p>
+      </div>
+      <div>
+        <head>Metadata</head>
+        <p>Each file should include a <gi>header</gi>
+          <hi rend="italic">TEI header</hi>, which will include information on the source and creation of that file. It should
+          include <gi>t</gi>
+          <hi rend="italic">title</hi> and <gi>ab</gi>
+          <hi rend="italic">anonymous block</hi> elements (see below).</p>
+      </div>
+      <div>
+        <head>Encoding the text </head>
+        <div>
+          <head>Spelling, special characters and punctuation</head>
+          <p>Transcribe each character as it appears on the page, without correcting or regularizing spelling. Selected special
+            characters are to be transcribed with standard Unicode entity references. Transcribe typographical ligatures (e.g.
+            “ct", “fl") as separate letters; transcribe diphthong ligatures, (e.g. “<emph>œ</emph>" “<emph>æ</emph>") with Unicode
+            character entity references (see below). Punctuation should be transcribed as it appears, with virgules transcribed as
+            “/".</p>
+        </div>
+        <div>
+          <head>Leading dots</head>
+          <p>Leading dots should not be transcribed.</p>
+        </div>
+        <div>
+          <head>Gaps in the text</head>
+          <p>Gaps fall into two main categories: points where Arber notes he has not transcribed something that appears in the
+            original manuscript; and spaces where something that is expected does not appear. </p>
+          <p>The former should be captured in <gi>gp</gi>
+            <hi rend="italic">gap</hi> elements. </p>
+          <p>
+            <label rend="bold">Example</label><lb/>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples"><gp>[This page is entirely blank in the Original.]</gp></egXML>
+          </p>
+          <p>Many of these gaps follow a standard form, e.g. “[Four entries omitted.]". Where this is the case, please record the
+            missing entries with an <att>n</att> number attribute in the <gi>gp</gi>
+            <hi rend="italic">gap</hi> element.</p>
+          <p>
+            <label rend="bold">Example</label><lb/>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples"><gp n="4"/></egXML>
+          </p>
+          <p>Spaces should be marked with a <gi>spc</gi>
+            <hi rend="italic">space</hi> element, for example where in an item in a list that should contain a sum is missing:
+            “Summa totalis ____" </p>
+          <p><label rend="bold">Example</label><lb/>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples"><it>Summa totalis <spc/></it></egXML></p>
+          <p>Note that the <gi>spc</gi>
+            <hi rend="italic">space</hi> element can include contents.</p>
+          <p><label rend="bold">Example</label><lb/>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples"><spc>[<h r="i">no sum stated</h>]</spc></egXML></p>
+          <div>
+            <head>Hyphenation</head>
+            <p>Soft hyphens (i.e. those that simply indicate that a word has been split across a line or page) should be
+              transcribed using the Unicode reference &amp;#x00AD;. Hard hyphens that indicate an actual hyphenated word, whether
+              occurring inline or at the end of a line, should be transcribed as Unicode &amp;#x2010;. </p>
+          </div>
+          <div>
+            <head>Bracketing</head>
+            <p>Curly brackets, “{…}", are often used to group the items of a list together. They should be noted in the encoding
+              as a rend attribute in the appropriate element, e.g. <gi>ls</gi>
+              <hi rend="italic">list</hi>, <gi>p</gi><hi rend="italic"> paragraph</hi> (see below for details of these elements).
+              The <att>r</att>
+              <hi rend="italic">rend</hi> values of 'brr' (bracketed right) and 'brl' (bracketed left) are provided for this
+              purpose.</p>
+            <p>Square brackets “[…]" are used to denote an editorial intervention by Arber. These should be transcribed where they
+              appear as “[" or “]".</p>
+          </div>
+          <div>
+            <head>Superscript and subscript text</head>
+            <p>The most common superscript text is the superscript <hi rend="italic">li</hi>, <hi rend="italic">s</hi>, <hi
+                rend="italic">d </hi>or <hi rend="italic">ob</hi>, denoting currency. These should be captured as plain text,
+              without marking the fact of their superscription. For further explanation of transcribing sums of money, see
+              below.</p>
+            <p>All other superscript text, and subscript text, should be tagged where possible using a <att>r</att>
+              <hi rend="italic">rend</hi> attribute in a surrounding element, or in the absence of another element, using a
+                <gi>h</gi>
+              <hi rend="italic">highlighting</hi> element with a <att>r</att>
+              <hi rend="italic">rend</hi> attribute (see below).</p>
+          </div>
+          <div>
+            <head>Decorative features</head>
+            <p>The presence of decorative features, such as dropped capitals, decorative borders or illustrations should be noted
+              with a <att>r</att>
+              <hi rend="italic">rend</hi> attribute values, where possible, or a <gi>gr</gi>
+              <hi rend="italic">graphic</hi> element (see below).</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <head>Page layout</head>
+        <p>Encoding the layout of these volumes is important as Arber includes information in his choice of fonts that is not
+          otherwise made explicit.</p>
+        <div>
+          <head>Page, line and column breaks</head>
+          <p>Page breaks should be noted inside <gi>fw</gi><hi rend="italic"> forme work</hi> elements, in <gi>pb</gi>
+            <hi rend="italic">page break</hi> elements with <att>n</att> attribute values with any spaces removed.</p>
+          <p><label rend="bold">Example</label><lb/>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples"><fw><pb n="28v"/></fw></egXML>
+          </p>
+          <p>Line breaks <tag>lb/</tag> should be noted where there is a line break which is not caused by reaching the edge of
+            the text block, and where the break is not indicated by a closing structural element, e.g. <tag>/p</tag>
+            <hi rend="italic">paragraph</hi>, <tag>/hd</tag>
+            <hi rend="italic">heading</hi>.</p>
+          <p>Column breaks, for example in lists, should always be noted using <tag>cb/</tag> elements.</p>
+        </div>
+        <div>
+          <head>Highlighting</head>
+          <p>Where the size or type of font differs from the usual Roman, this should be recorded as a <att>r</att>
+            <hi rend="italic">rend</hi> attribute in a surrounding element, where possible. Where there is no suitable surrounding
+            element, the change should be recorded in <gi>h</gi>
+            <hi rend="italic">highlighting</hi> elements, with an appropriate <att>r</att>
+            <hi rend="italic">rend</hi> attribute value (see below).</p>
+          <p><label rend="bold">Example</label><lb/>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples"><p>Recevyd of <n r="b"><fn>Roberte</fn>
+                  <sn>Robyns</sn></n> for his admyttinge freman of this howse <dt>the xj of <h r="i">februarij</h> 1570</dt> [<h
+                  r="i">i.e.</h>
+                <dt>1571</dt>] <nm r="rm ar">iijs iiijd</nm></p></egXML></p>
+          <p>Note that the font used for names in particular is important (see below for details).</p>
+          <p>Where text appears in a different size from normal, either smaller or larger, this should be encoded in the
+            surrounding elements where possible, and where there are no appropriate elements, in <gi>h</gi>
+            <hi rend="italic">highlighting</hi> elements.</p>
+          <p><label rend="bold">Example</label><lb/>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples"><p><h r="i">by me</h>
+                <n r="lrg"><fn>Rychard</fn>
+                  <sn>Jugge</sn></n>
+                <lb/><h r="i"> By me</h>
+                <n r="lrg"><fn>Jhon</fn>
+                  <sn>Daye</sn></n></p></egXML></p>
+          <p>
+            <label rend="bold">Exceptions</label><lb/> Inside square brackets, which denote an editorial intervention by Arber,
+            only changes in font need be indicated: if an entire note appears in italics, this should not be recorded; if a note
+            contains a change of font, this should be recorded.</p>
+        </div>
+        <div>
+          <head>Forme work</head>
+          <p>The forme work at the head and foot of a page should be transcribed. </p>
+          <p>Typically, the head forme work will contain a <gi>dt</gi>
+            <hi rend="italic">date</hi>, a folio number, which should be transcribed in <tag>pb/</tag>
+            <hi rend="italic">page break</hi> elements, and a group of names, which should be transcribed in a discrete
+              <gi>seg</gi>
+            <hi rend="italic">segment</hi> element containing as appropriate <gi>ls</gi>
+            <hi rend="italic">list</hi> and <gi>it</gi>
+            <hi rend="italic">item</hi> elements, <gi>n</gi>
+            <hi rend="italic">name</hi>, <gi>fn</gi>
+            <hi rend="italic">forename</hi> and <gi>sn</gi>
+            <hi rend="italic">surname</hi> elements. It may also contain an alternative date (for example, a regnal year) and one
+            or more editorial notes, marked by square brackets.</p>
+          <p><label rend="bold">Example</label><lb/>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples"><fw> [<h r="i">Continued from page</h> 672.] <seg>[<ls r="brr">
+                    <it><n><fn>G.</fn>
+                        <sn>Cawood</sn></n></it>
+                    <it><n><fn>L.</fn>
+                        <sn>Binge</sn></n>.</it>
+                  </ls>
+                  <n><fn>R.</fn>
+                    <sn>Watkins</sn></n>.] </seg>
+                <dt>1594 [<h r="i">i.e.</h> 10—17 March 1595]</dt>
+                <dt><h r="i">Anno</h> 37<h r="s">o</h>
+                  <h r="i">Regni Regin[a]e Elizabeth[æ]/</h></dt>
+              </fw>
+            </egXML>
+          </p>
+          <p>Typically the foot forme work will contain a volume and page number, which should be transcribed in <gi>fw</gi>
+            <hi rend="italic">forme work</hi> and <tag>pb/</tag>
+            <hi rend="italic">page break</hi> elements.</p>
+          <p><label rend="bold">Example</label><lb/>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples"><fw><pb n="I.561"/></fw></egXML></p>
+          <p>Note that each page will therefore contain two <gi>pb</gi>
+            <hi rend="italic">page break</hi> elements one at the start and one at the finish.</p>
+          <p>Please note that paratextual information relating to Arber’s edition should not be transcribed, e.g. the catchwords
+            “A TRANSCRIPT &amp;C." and signatures “21". </p>
+        </div>
+      </div>
+      <div>
+        <head>Structural encoding</head>
+        <div>
+          <head>File, header and body</head>
+          <p>Each page of the sample, and each complete volume, should be transcribed discretely, in <gi>file</gi>
+            <hi rend="italic">file</hi> elements. </p>
+          <p>Each <gi>file</gi> should contain a <gi>header</gi>
+            <hi rend="italic">TEI header</hi>, which should contain basic information about the text, and a <gi>body</gi>
+            <hi rend="italic">body</hi>, which will contain the text itself.</p>
+        </div>
+        <div>
+          <head>Textual divisions</head>
+          <p>The <gi>body</gi> should contain nested <gi>d</gi>
+            <hi rend="italic">textual divisions</hi> elements, all of which should include <att>t</att>
+            <hi rend="italic">type</hi> attributes which described the content of the individual division. See below for a
+            complete list of <att>t</att>
+            <hi rend="italic">type</hi> values for the <gi>d</gi> element.</p>
+          <p>
+            <!-- 
                             Match of the capturing group i.
                             
                             \i matches the subsequence that has already been saved as capturing group i.
@@ -265,577 +256,545 @@
                             
                             Note: in the replace string, $i stands for the capturing group i.
                         -->
-                        <list type="gloss">
-                            <label rend="bold">accounts</label>
-                            <item> A division containing a list of accounts </item>
-                            <label rend="bold">apprentices</label>
-                            <item> A division containing a list of apprentices </item>
-                            <label rend="bold">charges</label>
-                            <item> A division containing a list of charges </item>
-                            <label rend="bold">charters</label>
-                            <item> A division containing a list of charters </item>
-                            <label rend="bold">dinners</label>
-                            <item> A division containing a list of dinners </item>
-                            <label rend="bold">entries</label>
-                            <item> A division containing a list or sub-list of entries </item>
-                            <label rend="bold">e</label>
-                            <item> A division containing an entry </item>
-                            <label rend="bold">fines</label>
-                            <item> A division containing a list of fines </item>
-                            <label rend="bold">freemen</label>
-                            <item> A division containing a list of freemen </item>
-                            <label rend="bold">gifts</label>
-                            <item> A division containing a list of gifts </item>
-                            <label rend="bold">misc</label>
-                            <item> A division containing a list of misc </item>
-                            <label rend="bold">other</label>
-                            <item> Another type of division </item>
-                            <label rend="bold">payments</label>
-                            <item> A division containing a list of payments </item>
-                            <label rend="bold">receipts</label>
-                            <item> A division containing a list of receipts </item>
-                            <label rend="bold">year</label>
-                            <item> A division containing a year in the register </item>
-                        </list>
+            <list type="gloss">
+              <label rend="bold">accounts</label>
+              <item> A division containing a list of accounts </item>
+              <label rend="bold">apprentices</label>
+              <item> A division containing a list of apprentices </item>
+              <label rend="bold">charges</label>
+              <item> A division containing a list of charges </item>
+              <label rend="bold">charters</label>
+              <item> A division containing a list of charters </item>
+              <label rend="bold">dinners</label>
+              <item> A division containing a list of dinners </item>
+              <label rend="bold">entries</label>
+              <item> A division containing a list or sub-list of entries </item>
+              <label rend="bold">e</label>
+              <item> A division containing an entry </item>
+              <label rend="bold">fines</label>
+              <item> A division containing a list of fines </item>
+              <label rend="bold">freemen</label>
+              <item> A division containing a list of freemen </item>
+              <label rend="bold">gifts</label>
+              <item> A division containing a list of gifts </item>
+              <label rend="bold">misc</label>
+              <item> A division containing a list of misc </item>
+              <label rend="bold">other</label>
+              <item> Another type of division </item>
+              <label rend="bold">payments</label>
+              <item> A division containing a list of payments </item>
+              <label rend="bold">receipts</label>
+              <item> A division containing a list of receipts </item>
+              <label rend="bold">year</label>
+              <item> A division containing a year in the register </item>
+            </list>
+          </p>
+        </div>
+        <div>
+          <head>Headings</head>
+          <p>Headings and sub-headings in the text should be transcribed in <gi>hd</gi>
+            <hi rend="italic">heading</hi> elements, with <att>t</att>
+            <hi rend="italic">type</hi> values of “sub" as appropriate, at the beginning of the relevant <gi>d</gi>
+            <hi rend="italic">division</hi> or <gi>ls</gi>
+            <hi rend="italic">list</hi>.</p>
+          <p>Note that headings may appear in the margins, rather than above the body of a <gi>d</gi>
+            <hi rend="italic">division</hi> or <gi>ls</gi>
+            <hi rend="italic">list</hi>. This is particularly common in lists of book license entries where the names of licensees
+            appear in the left margin.</p>
+          <p><label rend="bold">Example</label><lb/>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples"><d t="e">
+                <hd><n><sn>lacy</sn></n></hd>
+                <p>Recevyd of <n r="b"><fn>Alexandre</fn>
+                    <sn>lacy</sn></n> for his lycense for pryntinge of a ballet intituled <t r="i">the lamentation to [a] frynde
+                    of of his</t>
+                  <nm r="ar rm">iiijd</nm></p>
+              </d></egXML></p>
+        </div>
+        <div>
+          <head>Paragraphs and lists</head>
+          <p>Text should be transcribed in <gi>p</gi>
+            <hi rend="italic">paragraph</hi> elements wherever possible, including where the function of the block of text appears
+            to have a discrete function, e.g. a signature. Where the text appears to be line-delimited by something other than the
+            edge of the text block, please note line breaks with <tag>lb/</tag>
+            <hi rend="italic">line beginning</hi> elements. Where text clearly forms part of a list, please use <gi>ls</gi>
+            <hi rend="italic">list</hi> elements containing <gi>it</gi>
+            <hi rend="italic">item</hi> elements, rather than <gi>p</gi>
+            <hi rend="italic">paragraph</hi> elements. </p>
+        </div>
+        <div>
+          <head>Tables</head>
+          <p>Where possible, transcribe information set out in tabular form (for example lists including right-justified sums of
+            money) in <gi>ls</gi>
+            <hi rend="italic">list</hi> and <gi>it</gi>
+            <hi rend="italic">item</hi> elements, and <tag>cb/</tag>
+            <hi rend="italic">column break</hi> elements, as appropriate. Where this is not possible, please transcribe tabular
+            information in <gi>tbl</gi>
+            <hi rend="italic">table</hi> and <gi>cell</gi>
+            <hi rend="italic">cell</hi> elements.</p>
+        </div>
+      </div>
+      <div>
+        <head>Encoding the content</head>
+        <div>
+          <head>Names</head>
+          <p>Where people and place names appear in the text, they should be transcribed in <gi>n</gi>
+            <hi rend="italic">name</hi> elements, and include <gi>fn</gi>
+            <hi rend="italic">forename</hi> (including initials) and <gi>sn</gi>
+            <hi rend="italic">surname</hi> elements as appropriate. <gi>n</gi>
+            <hi rend="italic">name</hi> elements should be used for all names that are recognized, whether fictional,
+            mythological, historical or contemporary. Titles and ranks should be included inside <gi>n</gi>
+            <hi rend="italic">name</hi> elements.</p>
+          <p>Small capitals should be recorded in the <att>r</att> attribute, but transcribed in mixed case to preserve capital
+            initial letters.</p>
+          <p><label rend="bold">Examples</label>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples"><n>Sir <fn>Robert</fn>
+                <sn>Bell</sn></n></egXML>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples"><n>my lorde of <h r="sc">Canterbury</h></n></egXML>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples"><n r="sc"><fn>John</fn>
+                <sn>Shorne</sn></n></egXML>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples"><n t="pla">Northumberlande</n></egXML>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples"><n r="sc">Archbishop</n>’s <hi r="sc">Patronage</hi></egXML>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples"><n t="pla" r="sc">Archbishopric of Yorke</n></egXML>
+          </p>
+          <p>The default assumption is that a <gi>n</gi>
+            <hi rend="italic">name</hi> element will be used to mark aperson's name. If the <gi>n</gi>
+            <hi rend="italic">name</hi> element marks the name of a place or another entity a <att>t</att>
+            <hi rend="italic">type</hi> should be included. Valid <att>t</att>
+            <hi rend="italic">type</hi> attribute values are 'pla' and 'other', for 'place' and 'other' respectively. </p>
+        </div>
+        <div>
+          <head>Dates</head>
+          <p>Dates should be encoded wherever they appear in <gi>dt</gi>
+            <hi rend="italic">date</hi> elements. <gi>dt</gi>
+            <hi rend="italic">date</hi> elements can include date ranges (usually separated by an em-dash). These may also be
+            regnal years or other textual date expressions.</p>
+          <p><label rend="bold">Example</label><lb/>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples"><dt>22 July 1565 — 22 July 1566</dt></egXML></p>
+        </div>
+        <div>
+          <head>Numbers</head>
+          <p>Roman and Arabic numerals should be transcribed in <gi>nm</gi>
+            <hi rend="italic">number</hi> elements. If the number has multiple parts (e.g. shillings and pence separated by a
+            space) these should be transcribed all in a single <gi>nm</gi> element.</p>
+          <p>Typically at the end of each book license entry is a sum of money, justified right after leading dots. </p>
+          <p><label rend="bold">Example</label><lb/>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples"><nm r="ar rm">iiijd</nm></egXML></p>
+          <p>Note that the <hi rend="italic">d</hi> (or <hi rend="italic">l</hi>, <hi rend="italic">li</hi>, <hi rend="italic"
+              >s</hi> or <hi rend="italic">ob</hi>) should be included in the <gi>nm</gi>
+            <hi rend="italic">number</hi> element, and that its superscription should not be encoded (see above). Note also that
+            leading dots should not be transcribed (see above). </p>
+          <p>
+            <label rend="bold">Exceptions</label><lb/> Where something other than, or in addition to, a sum of money appears,
+            please transcribe the complete phrase in <gi>seg</gi>
+            <hi rend="italic">segment</hi> elements.</p>
+          <p>
+            <label rend="bold">Examples</label>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples"><seg r="ar"><nm r="rm">iiijd</nm> and a copy</seg></egXML>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples"><seg>NEUER PRINTED</seg></egXML>
+          </p>
+        </div>
+        <div>
+          <head>Book titles</head>
+          <p>The majority of these volumes are lists of licenses to print books. Typically the title of the book appears in each
+            entry. These titles should be transcribed in <gi>t</gi>
+            <hi rend="italic">title</hi> elements, with <att>r</att>
+            <hi rend="italic">rend</hi> attributes as appropriate.</p>
+          <p><label rend="bold">Example</label><lb/>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples"><p>Recevyd of <n r="b"><fn>Alexandre</fn>
+                  <sn>lacy</sn></n> for his lycense for pryntinge of a ballet intituled <t r="i">the lamentation to [a] frynde of
+                  of his</t>
+                <nm r="ar rm">iiijd</nm></p></egXML></p>
+        </div>
+        <div>
+          <head>Marginal Notes</head>
+          <p>Marginal Notes should be transcribed in <gi>add</gi>
+            <hi rend="italic">addition</hi> elements, with <att>r</att>
+            <hi rend="italic">rend</hi> attributes as appropriate. This includes marginal notes, but excludes any of Arber's notes
+            that are already marked through the use of square brackets. </p>
+        </div>
+        <div>
+          <head>Quotations</head>
+          <p>Where quotations are marked in the text, transcribe them in <gi>q</gi>
+            <hi rend="italic">quotation</hi> elements.</p>
+        </div>
+        <div>
+          <head>Illustrations, figures or graphics</head>
+          <p>Where illustrations, figures of graphics appear in the text, encode their presence in an empty <tag>gr/</tag>
+            <hi rend="italic">graphic</hi> element.</p>
+        </div>
+        <div>
+          <head>Foreign (non-Roman) alphabets</head>
+          <p>Where text appears in a non-Roman alphabet, encode its presence in an empty <tag>for/</tag>
+            <hi rend="italic">foreign</hi> element.</p>
+        </div>
+        <div>
+          <head>Unclear, illegible or problematic passages</head>
+          <p>Where a passage is unclear or illegible in the PDF image, please capture it in <gi>un</gi>
+            <hi rend="italic">unclear</hi> elements. Where a passage is problematic for a reason other than legibility, for
+            example where the appropriate tagging cannot be understood, please surround it with <gi>nt</gi>
+            <hi rend="italic">note</hi> elements. If further explanation is necessary, please include it as a &lt;!-- comment
+            --&gt; <hi rend="italic">comment</hi></p>
+          <p><label rend="bold">Example</label><lb/>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples"><p>Recevyd of <n r="b"><fn>Tymo<un n="3"/></fn>
+                  <sn>Ryder</sn></n> …</p>
+              <nt><h r="bl med">Recevyd of the Renters</h></nt></egXML></p>
+        </div>
+      </div>
+      <div>
+        <head>Example <gi>header</gi>
+          <hi rend="italic">TEI header</hi></head>
+        <p>A space for title and basic metadata is provided but it is expected that this will be of a minimal nature as below.</p>
+        <p><egXML xmlns="http://www.tei-c.org/ns/Examples">
+            <header>
+              <t>Excerpt from the Stationers' Register</t>
+              <ab t="source">Digital image of Volume One folio 14v of Arber, Edward, A Transcript of the Registers of the Company
+                of Stationers 1554-1640 AD, 5 vols, (London &amp; Birmingham, 1875).</ab>
+              <ab t="notes">Prepared as a sample for the Stationer’s Register Online project.</ab>
+            </header></egXML></p>
+      </div>
+      <div>
+        <head>Unicode character reference entities</head>
+        <p>
+          <list type="gloss">
+            <label rend="bold">❧</label>
+            <item>Rotated floral heart bullet: &amp;#x2767;</item>
+            <label rend="bold">Œ</label>
+            <item>Latin capital OE ligature: &amp;#x0152;</item>
+            <label rend="bold">œ</label>
+            <item>Latin small oe ligature: &amp;#x0153;</item>
+            <label rend="bold">Æ</label>
+            <item>Latin capital AE ligature: &amp;#x00C6;</item>
+            <label rend="bold">æ</label>
+            <item>Latin small ae ligature: &amp;#x00E6;</item>
+            <label rend="bold">—</label>
+            <item>em-dash: &amp;#x2014;</item>
+          </list>
+        </p>
+        <p> For entities other than these, please use Unicode character reference entities, and mark them with <gi>nt</gi> to draw
+          our attention to them. </p>
+      </div>
+      <div>
+        <head>Valid <att>r</att>
+          <hi rend="italic">rend</hi> attribute values</head>
+        <list type="gloss">
+          <label rend="bold">ab</label>
+          <item> rendered above the line</item>
+          <label rend="bold">al</label>
+          <item> rendered aligned to the left</item>
+          <label rend="bold">ar</label>
+          <item> rendered aligned to the right</item>
+          <label rend="bold">b</label>
+          <item> rendered in bold</item>
+          <label rend="bold">bel</label>
+          <item> rendered below the line</item>
+          <label rend="bold">bl</label>
+          <item> rendered in blackletter font</item>
+          <label rend="bold">brl</label>
+          <item> rendering is bracketed to the left</item>
+          <label rend="bold">brr</label>
+          <item> rendering is bracketed to the right</item>
+          <label rend="bold">c</label>
+          <item> rendered centred</item>
+          <label rend="bold">dc</label>
+          <item> rendered as drop-cap or illuminated initial</item>
+          <label rend="bold">f</label>
+          <item> rendered in a different font</item>
+          <label rend="bold">i</label>
+          <item> rendered in italics</item>
+          <label rend="bold">l</label>
+          <item> rendered on the left</item>
+          <label rend="bold">lrg</label>
+          <item> rendering is of large size</item>
+          <label rend="bold">med</label>
+          <item> rendering is of medium size</item>
+          <label rend="bold">n</label>
+          <item> rendering returns to 'normal'</item>
+          <label rend="bold">o</label>
+          <item> other rendering</item>
+          <label rend="bold">r</label>
+          <item> rendered on the right</item>
+          <label rend="bold">rm</label>
+          <item> rendered in a roman numerals</item>
+          <label rend="bold">s</label>
+          <item> rendered in superscript</item>
+          <label rend="bold">sc</label>
+          <item> rendered in small caps</item>
+          <label rend="bold">sig</label>
+          <item> rendered as a signature</item>
+          <label rend="bold">sml</label>
+          <item> rendered as smaller</item>
+          <label rend="bold">st</label>
+          <item> rendered struck-through</item>
+          <label rend="bold">u</label>
+          <item> rendered in underline</item>
+          <label rend="bold">xlrg</label>
+          <item> rendering is of extra-large size</item>
+          <label rend="bold">xxlrg</label>
+          <item> rendering is of extra-large size</item>
+        </list>
+      </div>
+    </body>
+    <back>
+      <div>
+        <head>Example page</head>
+        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+          <file xmlns="http://www.tei-c.org/ns/corset/1.0">
+            <header> &lt;!-- title --&gt; <t>Excerpt from the Stationers' Register</t> &lt;!-- other simply classified metadata
+              notes --&gt; <ab t="source">Digital image of folio 183b, scanned by Ian Gadd. Arber, Edward, A Transcript of the
+                Registers of the Company of Stationers 1554-1640 AD, 5 vols, (London &amp; Birmingham, 1875).</ab>
+              <ab t="notes">Prepared as a sizing sample for Giles Bergel and Ian Gadd for their Stationers' Company project.</ab>
+            </header>
+            <body> &lt;!-- more years --&gt; <d t="year"> &lt;!-- new page --&gt; <fw> [ <pb n="183v"/>
+                  <dt>22 July 1569 -- 22 July 1570.</dt>
+                  <seg>
+                    <n><fn>R.</fn>
+                      <sn>Jugge</sn>
+                    </n>. <ls r="brl">
+                      <it><n><fn>J.</fn>
+                          <sn>Walley</sn></n>.</it>
+                      <it><n><fn>W.</fn>
+                          <sn>Norton</sn></n>.</it>
+                    </ls>
+                  </seg> ] </fw> &lt;!-- group of entries --&gt; <d t="entries"> &lt;!-- Blackletter heading --&gt; <hd r="bl">The
+                    enterynge of Copyes</hd> &lt;!-- an entry --&gt; <d t="e"> &lt;!-- header rendered left, surname in bold
+                    --&gt; <hd r="l"><n r="b"><sn>purfoote</sn></n></hd> &lt;!-- paragraph of entry --&gt; <p>Recevyd of &lt;!--
+                      bold forename and surname --&gt; <n r="b"><fn>Thomas</fn>
+                        <sn>purfoote</sn>
+                      </n> for his lycense for the prynting of &lt;!-- title with small caps highlighted section --&gt; <t>an
+                        history of <h r="sc">Nostagio</h></t> &lt;!-- amount of payment in roman numerals 'rm' and aligned right
+                      'ar' --&gt; <nm r="rm ar">iiijd</nm></p>
+                  </d>
+                  <d t="e">
+                    <hd r="l"><n r="b"><fn>L</fn>
+                        <sn>haryson</sn></n> and <n r="b"><sn>bisshope</sn></n></hd>
+                    <p>Recevyd of <n r="b"><fn>lucas</fn>
+                        <sn>haryson</sn></n> and <n r="b"><fn>george</fn>
+                        <sn>besshope</sn></n> for thayre lycense for pryntinge of a boke <t><h r="sc">Hummengious</h>
+                        <h r="i">postle</h></t> [authorized] by <n>[my] lorde of <h r="sc">London</h></n>
+                      <nm r="rm ar">iiijd</nm>
                     </p>
-                </div>
-                <div>
-                    <head>Headings</head>
-                    <p>Headings and sub-headings in the text should be transcribed in <gi>hd</gi>
-                        <hi rend="italic">heading</hi> elements, with <att>t</att>
-                        <hi rend="italic">type</hi> values of “sub" as appropriate, at the beginning of the relevant
-                            <gi>d</gi>
-                        <hi rend="italic">division</hi> or <gi>ls</gi>
-                        <hi rend="italic">list</hi>.</p>
-                    <p>Note that headings may appear in the margins, rather than above the body of a <gi>d</gi>
-                        <hi rend="italic">division</hi> or <gi>ls</gi>
-                        <hi rend="italic">list</hi>. This is particularly common in lists of book license entries where
-                        the names of licensees appear in the left margin.</p>
-                    <p><label rend="bold">Example</label><lb/>
-                        <egXML xmlns="http://www.tei-c.org/ns/Examples"><d t="e">
-                            <hd><n><sn>lacy</sn></n></hd>
-                            <p>Recevyd of <n r="b"><fn>Alexandre</fn> <sn>lacy</sn></n> 
-                            for his lycense for pryntinge of a ballet intituled <t r="i">the lamentation to [a] frynde of of
-                            his</t> <nm r="ar rm">iiijd</nm></p>
-                            </d></egXML></p>
-                </div>
-                <div>
-                    <head>Paragraphs and lists</head>
-                    <p>Text should be transcribed in <gi>p</gi>
-                        <hi rend="italic">paragraph</hi> elements wherever possible, including where the function of the
-                        block of text appears to have a discrete function, e.g. a signature. Where the text appears to
-                        be line-delimited by something other than the edge of the text block, please note line breaks
-                        with <tag>lb/</tag>
-                        <hi rend="italic">line beginning</hi> elements. Where text clearly forms part of a list, please
-                        use <gi>ls</gi>
-                        <hi rend="italic">list</hi> elements containing <gi>it</gi>
-                        <hi rend="italic">item</hi> elements, rather than <gi>p</gi>
-                        <hi rend="italic">paragraph</hi> elements. </p>
-                </div>
-                <div>
-                    <head>Tables</head>
-                    <p>Where possible, transcribe information set out in tabular form (for example lists including
-                        right-justified sums of money) in <gi>ls</gi>
-                        <hi rend="italic">list</hi> and <gi>it</gi>
-                        <hi rend="italic">item</hi> elements, and <tag>cb/</tag>
-                        <hi rend="italic">column break</hi> elements, as appropriate. Where this is not possible, please
-                        transcribe tabular information in <gi>tbl</gi>
-                        <hi rend="italic">table</hi> and <gi>cell</gi>
-                        <hi rend="italic">cell</hi> elements.</p>
-                </div>
-            </div>
-            <div>
-                <head>Encoding the content</head>
-                <div>
-                    <head>Names</head>
-                    <p>Where people and place names appear in the text, they should be transcribed in <gi>n</gi> 
-                        <hi rend="italic">name</hi> elements, and include <gi>fn</gi>
-                        <hi rend="italic">forename</hi> (including initials) and <gi>sn</gi>
-                        <hi rend="italic">surname</hi> elements as appropriate. <gi>n</gi>
-                        <hi rend="italic">name</hi> elements should be used for all names that are recognized, whether
-                        fictional, mythological, historical or contemporary. Titles and ranks should be included inside
-                            <gi>n</gi>
-                        <hi rend="italic">name</hi> elements.</p>
-                    <p>Small capitals should be recorded in the <att>r</att> attribute, but transcribed in mixed case to preserve capital initial letters.</p>
-                    <p><label rend="bold">Examples</label>
-                        <egXML xmlns="http://www.tei-c.org/ns/Examples"><n>Sir <fn>Robert</fn> <sn>Bell</sn></n></egXML>
-                        <egXML xmlns="http://www.tei-c.org/ns/Examples"><n>my lorde of <h r="sc">Canterbury</h></n></egXML>
-                        <egXML xmlns="http://www.tei-c.org/ns/Examples"><n r="sc"><fn>John</fn> <sn>Shorne</sn></n></egXML>
-                        <egXML xmlns="http://www.tei-c.org/ns/Examples"><n t="pla">Northumberlande</n></egXML>
-                        <egXML xmlns="http://www.tei-c.org/ns/Examples"><n r="sc">Archbishop</n>’s <hi r="sc">Patronage</hi></egXML>
-                        <egXML xmlns="http://www.tei-c.org/ns/Examples"><n t="pla" r="sc">Archbishopric of Yorke</n></egXML>
-                    </p>
-                    <p>The default assumption is that a <gi>n</gi> <hi rend="italic">name</hi> element will be used to mark aperson's name. If the <gi>n</gi> <hi rend="italic">name</hi> element marks the name of a place or another entity a <att>t</att> <hi rend="italic">type</hi>
-                        should be included. Valid <att>t</att> <hi rend="italic">type</hi> attribute values are 'pla' and 'other', for 'place' and 'other' respectively. </p>
-                </div>
-                <div>
-                    <head>Dates</head>
-                    <p>Dates should be encoded wherever they appear in <gi>dt</gi>
-                        <hi rend="italic">date</hi> elements. <gi>dt</gi>
-                        <hi rend="italic">date</hi> elements can include date ranges (usually separated by an
-                        em-dash). These may also be regnal years or other textual date expressions.</p>
-                    <p><label rend="bold">Example</label><lb/>
-                        <egXML xmlns="http://www.tei-c.org/ns/Examples"><dt>22 July 1565 — 22 July 1566</dt></egXML></p>
-                </div>
-                <div>
-                    <head>Numbers</head>
-                    <p>Roman and Arabic numerals should be transcribed in <gi>nm</gi>
-                        <hi rend="italic">number</hi> elements. If the number has multiple parts (e.g. shillings and pence separated by a space) 
-                        these should be transcribed all in a single <gi>nm</gi> element.</p>
-                    <p>Typically at the end of each book license entry is a sum of money, justified right after leading
-                        dots. </p>
-                    <p><label rend="bold">Example</label><lb/>
-                        <egXML xmlns="http://www.tei-c.org/ns/Examples"><nm r="ar rm">iiijd</nm></egXML></p>
-                    <p>Note that the <hi rend="italic">d</hi> (or <hi rend="italic">l</hi>, <hi rend="italic">li</hi>,
-                            <hi rend="italic">s</hi> or <hi rend="italic">ob</hi>) should be included in the <gi>nm</gi>
-                        <hi rend="italic">number</hi> element, and that its superscription should not be encoded (see
-                        above). Note also that leading dots should not be transcribed (see above). </p>
-                    <p>
-                        <label rend="bold">Exceptions</label><lb/> Where something other than, or in addition to, a sum of
-                        money appears, please transcribe the complete phrase in <gi>seg</gi>
-                        <hi rend="italic">segment</hi> elements.</p>
-                    <p>
-                        <label rend="bold">Examples</label>
-                        <egXML xmlns="http://www.tei-c.org/ns/Examples"><seg r="ar"><nm r="rm">iiijd</nm> and a copy</seg></egXML>
-                        <egXML xmlns="http://www.tei-c.org/ns/Examples"><seg>NEUER PRINTED</seg></egXML>
-                    </p>
-                </div>
-                <div>
-                    <head>Book titles</head>
-                    <p>The majority of these volumes are lists of licenses to print books. Typically the title of the
-                        book appears in each entry. These titles should be transcribed in <gi>t</gi>
-                        <hi rend="italic">title</hi> elements, with <att>r</att>
-                        <hi rend="italic">rend</hi> attributes as appropriate.</p>
-                    <p><label rend="bold">Example</label><lb/>
-                        <egXML xmlns="http://www.tei-c.org/ns/Examples"><p>Recevyd of 
-                            <n r="b"><fn>Alexandre</fn>
-                            <sn>lacy</sn></n> for his lycense for pryntinge of a
-                            ballet intituled <t r="i">the lamentation to [a] frynde of of
-                            his</t> <nm r="ar rm">iiijd</nm></p></egXML></p>
-                </div>
-                <div>
-                    <head>Marginal Notes</head>
-                    <p>Marginal Notes should be transcribed in <gi>add</gi>
-                        <hi rend="italic">addition</hi> elements, with <att>r</att>
-                        <hi rend="italic">rend</hi> attributes as appropriate. This includes marginal notes, but
-                        excludes any of Arber's notes that are already marked through the use of square brackets. </p>
-                </div>
-                <div>
-                    <head>Quotations</head>
-                    <p>Where quotations are marked in the text, transcribe them in <gi>q</gi>
-                        <hi rend="italic">quotation</hi> elements.</p>
-                </div>
-                <div>
-                    <head>Illustrations, figures or graphics</head>
-                    <p>Where illustrations, figures of graphics appear in the text, encode their presence in an empty
-                            <tag>gr/</tag>
-                        <hi rend="italic">graphic</hi> element.</p>
-                </div>
-                <div>
-                    <head>Foreign (non-Roman) alphabets</head>
-                    <p>Where text appears in a non-Roman alphabet, encode its presence in an empty <tag>for/</tag>
-                        <hi rend="italic">foreign</hi> element.</p>
-                </div>
-                <div>
-                    <head>Unclear, illegible or problematic passages</head>
-                    <p>Where a passage is unclear or illegible in the PDF image, please capture it in <gi>un</gi>
-                        <hi rend="italic">unclear</hi> elements. Where a passage is problematic for a reason other than
-                        legibility, for example where the appropriate tagging cannot be understood, please surround it
-                        with <gi>nt</gi>
-                        <hi rend="italic">note</hi> elements. If further explanation is necessary, please include it as a &lt;!-- comment --&gt; <hi rend="italic">comment</hi></p>
-                    <p><label rend="bold">Example</label><lb/>
-                        <egXML xmlns="http://www.tei-c.org/ns/Examples"><p>Recevyd of <n r="b"><fn>Tymo<un n="3"/></fn>
-                            <sn>Ryder</sn></n> …</p> <nt><h r="bl med">Recevyd of the Renters</h></nt></egXML></p>
-                </div>
-            </div>
-            <div>
-                <head>Example <gi>header</gi>
-                    <hi rend="italic">TEI header</hi></head>
-                <p>A space for title and basic metadata is provided but it is expected that this will be of a minimal
-                    nature as below.</p>
-                <p><egXML xmlns="http://www.tei-c.org/ns/Examples"> 
-                    <header>
-                    <t>Excerpt from the Stationers' Register</t> 
-                    <ab t="source">Digital image of Volume One folio 14v of Arber, Edward, A
-                    Transcript of the Registers of the Company of Stationers 1554-1640 AD, 5 vols,
-                    (London &amp; Birmingham, 1875).</ab> 
-                    <ab t="notes">Prepared as a sample for the Stationer’s Register Online project.</ab> 
-                    </header></egXML></p>
-            </div>
-            <div>
-                <head>Unicode character reference entities</head>
-                <p>
-                    <list type="gloss">
-                        <label rend="bold">❧</label>
-                        <item>Rotated floral heart bullet: &amp;#x2767;</item>
-                        <label rend="bold">Œ</label>
-                        <item>Latin capital OE ligature: &amp;#x0152;</item>
-                        <label rend="bold">œ</label>
-                        <item>Latin small oe ligature: &amp;#x0153;</item>
-                        <label rend="bold">Æ</label>
-                        <item>Latin capital AE ligature: &amp;#x00C6;</item>
-                        <label rend="bold">æ</label>
-                        <item>Latin small ae ligature: &amp;#x00E6;</item>
-                        <label rend="bold">—</label>
-                        <item>em-dash: &amp;#x2014;</item>
-                    </list>
-                </p>
-                <p> For entities other than these, please use Unicode character reference entities, and mark them with
-                        <gi>nt</gi> to draw our attention to them. </p>
-            </div>
-            <div>
-                <head>Valid <att>r</att>   <hi rend="italic">rend</hi> attribute values</head>
-                <list type="gloss">
-                    <label rend="bold">ab</label>
-                    <item> rendered above the line</item>
-                    <label rend="bold">al</label>
-                    <item> rendered aligned to the left</item>
-                    <label rend="bold">ar</label>
-                    <item> rendered aligned to the right</item>
-                    <label rend="bold">b</label>
-                    <item> rendered in bold</item>
-                    <label rend="bold">bel</label>
-                    <item> rendered below the line</item>
-                    <label rend="bold">bl</label>
-                    <item> rendered in blackletter font</item>
-                    <label rend="bold">brl</label>
-                    <item> rendering is bracketed to the left</item>
-                    <label rend="bold">brr</label>
-                    <item> rendering is bracketed to the right</item>
-                    <label rend="bold">c</label>
-                    <item> rendered centred</item>
-                    <label rend="bold">dc</label>
-                    <item> rendered as drop-cap or illuminated initial</item>
-                    <label rend="bold">f</label>
-                    <item> rendered in a different font</item>
-                    <label rend="bold">i</label>
-                    <item> rendered in italics</item>
-                    <label rend="bold">l</label>
-                    <item> rendered on the left</item>
-                    <label rend="bold">lrg</label>
-                    <item> rendering is of large size</item>
-                    <label rend="bold">med</label>
-                    <item> rendering is of medium size</item>
-                    <label rend="bold">n</label>
-                    <item> rendering returns to 'normal'</item>
-                    <label rend="bold">o</label>
-                    <item> other rendering</item>
-                    <label rend="bold">r</label>
-                    <item> rendered on the right</item>
-                    <label rend="bold">rm</label>
-                    <item> rendered in a roman numerals</item>
-                    <label rend="bold">s</label>
-                    <item> rendered in superscript</item>
-                    <label rend="bold">sc</label>
-                    <item> rendered in small caps</item>
-                    <label rend="bold">sig</label>
-                    <item> rendered as a signature</item>
-                    <label rend="bold">sml</label>
-                    <item> rendered as smaller</item>
-                    <label rend="bold">st</label>
-                    <item> rendered struck-through</item>
-                    <label rend="bold">u</label>
-                    <item> rendered in underline</item>
-                    <label rend="bold">xlrg</label>
-                    <item> rendering is of extra-large size</item>
-                    <label rend="bold">xxlrg</label>
-                    <item> rendering is of extra-large size</item>
-                </list>
-            </div>
-        </body>
-        <back>
-            <div>
-                <head>Example page</head>
-                <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                    
-                    <file xmlns="http://www.tei-c.org/ns/corset/1.0">
-                        <header>
-                            &lt;!-- title --&gt;
-                            <t>Excerpt from the Stationers' Register</t>
-                            &lt;!-- other simply classified metadata notes --&gt;
-                            <ab t="source">Digital image of folio 183b, scanned by Ian Gadd. Arber, Edward, A Transcript of the Registers of
-                                the Company of Stationers 1554-1640 AD, 5 vols, (London &amp; Birmingham, 1875).</ab>
-                            <ab t="notes">Prepared as a sizing sample for Giles Bergel and Ian Gadd for their Stationers' Company
-                                project.</ab>
-                        </header>
-                        <body>
-                            &lt;!-- more years --&gt;
-                            <d t="year">
-                                
-                                &lt;!-- new page --&gt;
-                                <fw> [ <pb n="183v"/>
-                                    <dt>22 July 1569 -- 22 July 1570.</dt>
-                                    <seg>
-                                        <n><fn>R.</fn>
-                                            <sn>Jugge</sn>
-                                        </n>. <ls r="brl">
-                                            <it><n><fn>J.</fn>
-                                                <sn>Walley</sn></n>.</it>
-                                            <it><n><fn>W.</fn>
-                                                <sn>Norton</sn></n>.</it>
-                                        </ls>
-                                    </seg> ] </fw>
-                                &lt;!-- group of entries --&gt;
-                                <d t="entries">
-                                    &lt;!-- Blackletter heading --&gt;
-                                    <hd r="bl">The enterynge of Copyes</hd>
-                                    &lt;!-- an entry --&gt;
-                                    <d t="e">
-                                        &lt;!-- header rendered left, surname in bold --&gt;
-                                        <hd r="l"><n r="b"><sn>purfoote</sn></n></hd>
-                                        &lt;!-- paragraph of entry --&gt;
-                                        <p>Recevyd of 
-                                            &lt;!-- bold forename and surname --&gt;
-                                            <n r="b"><fn>Thomas</fn>
-                                                <sn>purfoote</sn>
-                                            </n> for his lycense for the prynting of
-                                            &lt;!-- title with small caps highlighted section --&gt;
-                                            <t>an history of <h r="sc">Nostagio</h></t>
-                                            &lt;!-- amount of payment in roman numerals 'rm' and aligned right 'ar' --&gt;
-                                            <nm r="rm ar">iiijd</nm></p>
-                                    </d>
-                                    <d t="e">
-                                        <hd r="l"><n r="b"><fn>L</fn>
-                                            <sn>haryson</sn></n> and <n r="b"><sn>bisshope</sn></n></hd>
-                                        <p>Recevyd of <n r="b"><fn>lucas</fn>
-                                            <sn>haryson</sn></n> and <n r="b"><fn>george</fn>
-                                                <sn>besshope</sn></n> for thayre lycense for pryntinge of a boke <t><h r="sc">Hummengious</h>
-                                                    <h r="i">postle</h></t> [authorized] by <n>[my] lorde of <h r="sc">London</h></n>
-                                            <nm r="rm ar">iiijd</nm>
-                                        </p>
-                                    </d>
-                                    <d t="e">
-                                        <hd r="l">
-                                            <n r="b">
-                                                <sn>bynnyman</sn>
-                                            </n>
-                                        </hd>
-                                        <p>Recevyd of <n r="b"><fn>henry</fn>
-                                            <sn>bynnyman</sn></n> for his lycense for pryntinge of a boke <t>epistola cambrigienses</t>
-                                            [authorized] by <n>ye lorde of <h r="sc">Canterbury</h></n>
-                                            <nm r="rm ar">iiijd</nm></p>
-                                    </d>
-                                    <d t="e">
-                                        <hd r="l">
-                                            <n r="b">
-                                                <sn>bynnyman</sn>
-                                            </n>
-                                        </hd>
-                                        <p>Recevyd of <n r="b"><fn>henry</fn>
-                                            <sn>bynnyman</sn></n> for his lycense for the pryntinge of a boke intituled <t>theatrie or
-                                                mirror</t>
-                                            <nm r="rm ar">vjd</nm></p>
-                                        <p>[This was <n r="sc"><fn>John</fn>
-                                            <sn>Vander Noodt's</sn></n>
-                                            <t>Theatre &amp;c.</t>, containing the earliest known printed productions of <n r="sc">Edmund
-                                                Spenser</n>.]</p>
-                                    </d>
-                                    <d t="e">
-                                        <hd r="l">
-                                            <n r="b">
-                                                <fn>Rychard</fn>
-                                                <sn>Jonnes</sn>
-                                            </n>
-                                        </hd>
-                                        <p>Recevyd of <n r="b"><fn>Rychard</fn>
-                                            <sn>Jonnes</sn></n> for his lycense for pryntinge of a ballett intituled <t>example of
-                                                chastite</t>
-                                            <nm r="ar rm">iiijd</nm></p>
-                                    </d>
-                                    <d t="e">
-                                        <hd r="l">
-                                            <n r="b">
-                                                <sn>alde</sn>
-                                            </n>
-                                        </hd>
-                                        <p>Recevyd of <n r="b"><fn>John</fn>
-                                            <sn>alde</sn></n> for his lycense for pryntinge of a ballett intituled <t>the trubles of <n r="sc">Josephus</n></t>
-                                            <nm r="rm ar">vjd</nm></p>
-                                    </d>
-                                    <d t="e">
-                                        <hd r="l">
-                                            <n r="b">
-                                                <sn>alde</sn>
-                                            </n>
-                                        </hd>
-                                        <p>Recevyd of <n r="b"><fn>John</fn>
-                                            <sn>alde</sn></n> for his lycense for pryntinge of a ballett intituled <t>as Wyllowe for
-                                                payne hath bene Counted of late</t>
-                                            <nm r="rm ar">iiijd</nm></p>
-                                    </d>
-                                    <d t="e">
-                                        <hd r="l">
-                                            <n r="sc">
-                                                <sn>Barker</sn>
-                                            </n>
-                                        </hd>
-                                        <p>Recevyd of <n r="sc"><fn>Christofer</fn>
-                                            <sn>Barker</sn></n> for his lycense for prynting of <t>serten prayers of <n>my Lady
-                                                <sn>TYRWETT</sn></n></t>
-                                            <nm r="rm ar">viijd</nm></p>
-                                        <p>[This is the earliest work entered for this celebrated printer. He was not at this time a member
-                                            of the Stationers' Company, and did not now keep a printing press, see <h r="i">p</h>. 111: so
-                                            that he appears here only as a publisher. He became Printer to the Queen about the <dt>16th
-                                                September 1577</dt>.]</p>
-                                    </d>
-                                    <d t="e">
-                                        <hd r="l">
-                                            <n r="sc">
-                                                <sn>Barker</sn>
-                                            </n>
-                                        </hd>
-                                        <p>Recevyd of <n r="sc"><fn>Crestofer</fn>
-                                            <sn>Barker</sn></n> for his lycense for pryntinge of <t>serten prayers <h r="n">of <n>master
-                                                <sn>Bullion</sn></n></h></t>
-                                            <nm r="rm ar">iiijd</nm></p>
-                                    </d>
-                                    <d t="e">
-                                        <hd r="l">
-                                            <n r="b">
-                                                <sn>Colwell</sn>
-                                            </n>
-                                        </hd>
-                                        <p>Recevyd of <n r="b"><fn>Thomas</fn>
-                                            <sn>Colwell</sn></n> for his lycense for pryntinge of <t>an enterlude for boyes to handle
-                                                and to passe tyme at christinmas</t>
-                                            <nm r="rm ar">iiijd</nm></p>
-                                    </d>
-                                    <d t="e">
-                                        <hd r="l">
-                                            <n r="b">
-                                                <fn>T</fn>
-                                                <sn>marshe</sn>
-                                            </n>
-                                        </hd>
-                                        <p>Recevyd of <n r="b"><fn>Thomas</fn>
-                                            <sn>marshe</sn></n> for his lycense for pryntinge of a boke intituled <t>the Turkes
-                                                Cerymonyes</t>
-                                            <nm r="rm ar">iiijd</nm></p>
-                                    </d>
-                                    &lt;!-- end of entries div --&gt;
-                                </d>
-                                &lt;!-- Closing page footer --&gt;
-                                <fw><pb n="I. 398"/></fw>
-                                
-                                &lt;!-- more pages --&gt;
-                                
-                            </d>
-                        </body>
-                    </file>
-                    
-                </egXML>
-            </div>
-            <div>
-                <head>Formal TEI_corset specification</head>
-                <p>This specification is based on the TEI P5 Guidelines, however it renames standard TEI elements and
-                    removes or constrains a great deal of the Guidelines. However, the examples and notes below may
-                    refer to the original element names or aspects of the TEI not present in this schema. They are
-                    provided as additional (generated) reference material only. The prose and examples in the encoding
-                    guidelines above should be considered more accurate and normative.</p>
-                <schemaSpec ident="tei_corset" docLang="en" start="TEI" targetLang="en" ns="http://www.tei-c.org/ns/corset/1.0">
-                    <!-- references to modules/elements to include -->
-                    <moduleRef key="tei"/>
-                    <moduleRef key="textstructure" include="body div TEI"/>
-                    <moduleRef key="figures" include="cell row table"/>
-                    <moduleRef key="header" include="teiHeader"/>
-                    <moduleRef key="linking" include="seg ab"/>
-                    <moduleRef key="transcr" include="fw space"/>
-                    <moduleRef key="namesdates" include="forename surname"/>
-                    <moduleRef key="core" include="abbr add cb date foreign gap graphic head hi item label lb list name note num p pb q title unclear"/>
-                    <!-- Element renamings and re-declarations -->
-                    <!-- ab -->
-                    <elementSpec ident="ab" mode="change">
-                        <attList>
-                            <attDef ident="part" mode="delete"/>
-                        </attList>
-                    </elementSpec>
-                    <!-- abbr -->
-                    <elementSpec ident="abbr" mode="change">
-                        <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="abbr"/>
-                        <attList>
-                            <attDef ident="type" mode="change">
-                                <altIdent>t</altIdent>
-                            </attDef>
-                        </attList>
-                        </elementSpec>
-                                
-                    <!-- date -->
-                    <elementSpec ident="date" mode="change">
-                        <altIdent>dt</altIdent>
-                        <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="date"/>
-                        <attList>
-                            <attDef ident="calendar" mode="delete"/>
-                        </attList>
-                    </elementSpec>
-                    <!-- div -->
-                    <elementSpec ident="div" mode="change">
-                        <altIdent>d</altIdent>
-                        <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="div"/>
-                        <attList>
-                            <attDef ident="type" mode="replace" usage="req">
-                                <altIdent>t</altIdent>
-                                <valList type="closed">
-                                    <valItem ident="accounts">
-                                        <desc>A division containing a list of accounts</desc>
-                                    </valItem>
-                                    <valItem ident="apprentices">
-                                        <desc>A division containing a list of apprentices</desc>
-                                    </valItem>
-                                    <valItem ident="charges">
-                                        <desc>A division containing a list of charges</desc>
-                                    </valItem>
-                                    <valItem ident="charters">
-                                        <desc>A division containing a list of charters</desc>
-                                    </valItem>
-                                    <valItem ident="dinners">
-                                        <desc>A division containing a list of dinners</desc>
-                                    </valItem>
-                                    <valItem ident="d">
-                                        <desc>A division containing a specified set of dates</desc>
-                                    </valItem>
-                                    <valItem ident="entries">
-                                        <desc>A division containing a list or sub-list of entries</desc>
-                                    </valItem>
-                                    <valItem ident="e">
-                                        <desc>A division containing an entry</desc>
-                                    </valItem>
-                                    <valItem ident="fines">
-                                        <desc>A division containing a list of fines</desc>
-                                    </valItem>
-                                    <valItem ident="freemen">
-                                        <desc>A division containing a list of freemen</desc>
-                                    </valItem>
-                                    <valItem ident="gifts">
-                                        <desc>A division containing a list of gifts</desc>
-                                    </valItem>
-                                    <valItem ident="misc">
-                                        <desc>A division containing a list of misc</desc>
-                                    </valItem>
-                                    <valItem ident="other">
-                                        <desc>Another type of division</desc>
-                                    </valItem>
-                                    <valItem ident="payments">
-                                        <desc>A division containing a list of payments</desc>
-                                    </valItem>
-                                    <valItem ident="receipts">
-                                        <desc>A division containing a list of receipts</desc>
-                                    </valItem>
-                                    <valItem ident="year">
-                                        <desc>A division containing a year in the register</desc>
-                                    </valItem>
-                                </valList>
-                                <remarks>
-                                    <p><gi>d</gi> elements are required to have a <att>t</att> attribute.</p>
-                                </remarks>
-                            </attDef>
-                        </attList>
-                        <!--default value for @t is 'entry' -->
-                    </elementSpec>
-                    <!-- forename -->
-                    <elementSpec ident="forename" mode="change">
-                        <altIdent>fn</altIdent>
-                        <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="forename"/>
-                        <!--            <attList>
+                  </d>
+                  <d t="e">
+                    <hd r="l">
+                      <n r="b">
+                        <sn>bynnyman</sn>
+                      </n>
+                    </hd>
+                    <p>Recevyd of <n r="b"><fn>henry</fn>
+                        <sn>bynnyman</sn></n> for his lycense for pryntinge of a boke <t>epistola cambrigienses</t> [authorized]
+                      by <n>ye lorde of <h r="sc">Canterbury</h></n>
+                      <nm r="rm ar">iiijd</nm></p>
+                  </d>
+                  <d t="e">
+                    <hd r="l">
+                      <n r="b">
+                        <sn>bynnyman</sn>
+                      </n>
+                    </hd>
+                    <p>Recevyd of <n r="b"><fn>henry</fn>
+                        <sn>bynnyman</sn></n> for his lycense for the pryntinge of a boke intituled <t>theatrie or mirror</t>
+                      <nm r="rm ar">vjd</nm></p>
+                    <p>[This was <n r="sc"><fn>John</fn>
+                        <sn>Vander Noodt's</sn></n>
+                      <t>Theatre &amp;c.</t>, containing the earliest known printed productions of <n r="sc">Edmund
+                      Spenser</n>.]</p>
+                  </d>
+                  <d t="e">
+                    <hd r="l">
+                      <n r="b">
+                        <fn>Rychard</fn>
+                        <sn>Jonnes</sn>
+                      </n>
+                    </hd>
+                    <p>Recevyd of <n r="b"><fn>Rychard</fn>
+                        <sn>Jonnes</sn></n> for his lycense for pryntinge of a ballett intituled <t>example of chastite</t>
+                      <nm r="ar rm">iiijd</nm></p>
+                  </d>
+                  <d t="e">
+                    <hd r="l">
+                      <n r="b">
+                        <sn>alde</sn>
+                      </n>
+                    </hd>
+                    <p>Recevyd of <n r="b"><fn>John</fn>
+                        <sn>alde</sn></n> for his lycense for pryntinge of a ballett intituled <t>the trubles of <n r="sc"
+                          >Josephus</n></t>
+                      <nm r="rm ar">vjd</nm></p>
+                  </d>
+                  <d t="e">
+                    <hd r="l">
+                      <n r="b">
+                        <sn>alde</sn>
+                      </n>
+                    </hd>
+                    <p>Recevyd of <n r="b"><fn>John</fn>
+                        <sn>alde</sn></n> for his lycense for pryntinge of a ballett intituled <t>as Wyllowe for payne hath bene
+                        Counted of late</t>
+                      <nm r="rm ar">iiijd</nm></p>
+                  </d>
+                  <d t="e">
+                    <hd r="l">
+                      <n r="sc">
+                        <sn>Barker</sn>
+                      </n>
+                    </hd>
+                    <p>Recevyd of <n r="sc"><fn>Christofer</fn>
+                        <sn>Barker</sn></n> for his lycense for prynting of <t>serten prayers of <n>my Lady
+                        <sn>TYRWETT</sn></n></t>
+                      <nm r="rm ar">viijd</nm></p>
+                    <p>[This is the earliest work entered for this celebrated printer. He was not at this time a member of the
+                      Stationers' Company, and did not now keep a printing press, see <h r="i">p</h>. 111: so that he appears here
+                      only as a publisher. He became Printer to the Queen about the <dt>16th September 1577</dt>.]</p>
+                  </d>
+                  <d t="e">
+                    <hd r="l">
+                      <n r="sc">
+                        <sn>Barker</sn>
+                      </n>
+                    </hd>
+                    <p>Recevyd of <n r="sc"><fn>Crestofer</fn>
+                        <sn>Barker</sn></n> for his lycense for pryntinge of <t>serten prayers <h r="n">of <n>master
+                              <sn>Bullion</sn></n></h></t>
+                      <nm r="rm ar">iiijd</nm></p>
+                  </d>
+                  <d t="e">
+                    <hd r="l">
+                      <n r="b">
+                        <sn>Colwell</sn>
+                      </n>
+                    </hd>
+                    <p>Recevyd of <n r="b"><fn>Thomas</fn>
+                        <sn>Colwell</sn></n> for his lycense for pryntinge of <t>an enterlude for boyes to handle and to passe
+                        tyme at christinmas</t>
+                      <nm r="rm ar">iiijd</nm></p>
+                  </d>
+                  <d t="e">
+                    <hd r="l">
+                      <n r="b">
+                        <fn>T</fn>
+                        <sn>marshe</sn>
+                      </n>
+                    </hd>
+                    <p>Recevyd of <n r="b"><fn>Thomas</fn>
+                        <sn>marshe</sn></n> for his lycense for pryntinge of a boke intituled <t>the Turkes Cerymonyes</t>
+                      <nm r="rm ar">iiijd</nm></p>
+                  </d> &lt;!-- end of entries div --&gt; </d> &lt;!-- Closing page footer --&gt; <fw><pb n="I. 398"/></fw> &lt;!--
+                more pages --&gt; </d>
+            </body>
+          </file>
+        </egXML>
+      </div>
+      <div>
+        <head>Formal TEI_corset specification</head>
+        <p>This specification is based on the TEI P5 Guidelines, however it renames standard TEI elements and removes or
+          constrains a great deal of the Guidelines. However, the examples and notes below may refer to the original element names
+          or aspects of the TEI not present in this schema. They are provided as additional (generated) reference material only.
+          The prose and examples in the encoding guidelines above should be considered more accurate and normative.</p>
+        <schemaSpec ident="tei_corset" docLang="en" start="TEI" targetLang="en" ns="http://www.tei-c.org/ns/corset/1.0">
+          <!-- references to modules/elements to include -->
+          <moduleRef key="tei"/>
+          <moduleRef key="textstructure" include="body div TEI"/>
+          <moduleRef key="figures" include="cell row table"/>
+          <moduleRef key="header" include="teiHeader"/>
+          <moduleRef key="linking" include="seg ab"/>
+          <moduleRef key="transcr" include="fw space"/>
+          <moduleRef key="namesdates" include="forename surname"/>
+          <moduleRef key="core"
+            include="abbr add cb date foreign gap graphic head hi item label lb list name note num p pb q title unclear"/>
+          <!-- Element renamings and re-declarations -->
+          <!-- ab -->
+          <elementSpec ident="ab" mode="change">
+            <attList>
+              <attDef ident="part" mode="delete"/>
+            </attList>
+          </elementSpec>
+          <!-- abbr -->
+          <elementSpec ident="abbr" mode="change">
+            <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="abbr"/>
+            <attList>
+              <attDef ident="type" mode="change">
+                <altIdent>t</altIdent>
+              </attDef>
+            </attList>
+          </elementSpec>
+
+          <!-- date -->
+          <elementSpec ident="date" mode="change">
+            <altIdent>dt</altIdent>
+            <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="date"/>
+            <attList>
+              <attDef ident="calendar" mode="delete"/>
+            </attList>
+          </elementSpec>
+          <!-- div -->
+          <elementSpec ident="div" mode="change">
+            <altIdent>d</altIdent>
+            <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="div"/>
+            <attList>
+              <attDef ident="type" mode="replace" usage="req">
+                <altIdent>t</altIdent>
+                <valList type="closed">
+                  <valItem ident="accounts">
+                    <desc>A division containing a list of accounts</desc>
+                  </valItem>
+                  <valItem ident="apprentices">
+                    <desc>A division containing a list of apprentices</desc>
+                  </valItem>
+                  <valItem ident="charges">
+                    <desc>A division containing a list of charges</desc>
+                  </valItem>
+                  <valItem ident="charters">
+                    <desc>A division containing a list of charters</desc>
+                  </valItem>
+                  <valItem ident="dinners">
+                    <desc>A division containing a list of dinners</desc>
+                  </valItem>
+                  <valItem ident="d">
+                    <desc>A division containing a specified set of dates</desc>
+                  </valItem>
+                  <valItem ident="entries">
+                    <desc>A division containing a list or sub-list of entries</desc>
+                  </valItem>
+                  <valItem ident="e">
+                    <desc>A division containing an entry</desc>
+                  </valItem>
+                  <valItem ident="fines">
+                    <desc>A division containing a list of fines</desc>
+                  </valItem>
+                  <valItem ident="freemen">
+                    <desc>A division containing a list of freemen</desc>
+                  </valItem>
+                  <valItem ident="gifts">
+                    <desc>A division containing a list of gifts</desc>
+                  </valItem>
+                  <valItem ident="misc">
+                    <desc>A division containing a list of misc</desc>
+                  </valItem>
+                  <valItem ident="other">
+                    <desc>Another type of division</desc>
+                  </valItem>
+                  <valItem ident="payments">
+                    <desc>A division containing a list of payments</desc>
+                  </valItem>
+                  <valItem ident="receipts">
+                    <desc>A division containing a list of receipts</desc>
+                  </valItem>
+                  <valItem ident="year">
+                    <desc>A division containing a year in the register</desc>
+                  </valItem>
+                </valList>
+                <remarks>
+                  <p><gi>d</gi> elements are required to have a <att>t</att> attribute.</p>
+                </remarks>
+              </attDef>
+            </attList>
+            <!--default value for @t is 'entry' -->
+          </elementSpec>
+          <!-- forename -->
+          <elementSpec ident="forename" mode="change">
+            <altIdent>fn</altIdent>
+            <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="forename"/>
+            <!--            <attList>
               <attDef ident="type" mode="change">
                 <altIdent>t</altIdent>
                 <valList>
@@ -846,171 +805,171 @@
               </attDef>
             </attList>
 -->
-                    </elementSpec>
-                    <!-- foreign -->
-                    <elementSpec ident="foreign" mode="change">
-                        <altIdent>for</altIdent>
-                        <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="foreign"/>
-                    </elementSpec>
-                    <!-- fw -->
-                    <elementSpec ident="fw" mode="change">
-                        <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="fw"/>
-                        <attList>
-                            <attDef ident="type" mode="change">
-                                <altIdent>t</altIdent>
-                            </attDef>
-                        </attList>
-                    </elementSpec>
-                    <!-- gap -->
-                    <elementSpec ident="gap" mode="change">
-                        <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="gap"/>
-                        <altIdent>gp</altIdent>
-                        <!-- allow gap to have text content -->
-                        <content>
-                            <textNode/>
-                        </content>
-                        <attList>
-                            <attDef ident="agent" mode="delete"/>
-                            <attDef ident="hand" mode="delete"/>
-                            <attDef ident="reason" mode="delete"/>
-                        </attList>
-                    </elementSpec>
-                    <!-- graphic -->
-                    <elementSpec ident="graphic" mode="change">
-                        <altIdent>gr</altIdent>
-                        <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="graphic"/>
-                    </elementSpec>
-                    <!-- head -->
-                    <elementSpec ident="head" mode="change">
-                        <altIdent>hd</altIdent>
-                        <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="head"/>
-                    </elementSpec>
-                    <!-- hi -->
-                    <elementSpec ident="hi" mode="change">
-                        <altIdent>h</altIdent>
-                        <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="hi"/>
-                    </elementSpec>
-                    <!-- item -->
-                    <elementSpec ident="item" mode="change">
-                        <altIdent>it</altIdent>
-                        <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="item"/>
-                    </elementSpec>
-                    <!-- list -->
-                    <elementSpec ident="list" mode="change">
-                        <altIdent>ls</altIdent>
-                        <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="list"/>
-                        <attList>
-                                <attDef ident="type" mode="change">
-                                    <altIdent>t</altIdent>
-                                </attDef>
-                            </attList>
-                    </elementSpec>
-                    <!-- name -->
-                    <elementSpec ident="name" mode="change">
-                        <altIdent>n</altIdent>
-                        <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="name"/>
-                        <attList>
-                            <attDef ident="type" mode="change">
-                                <altIdent>t</altIdent>
-                                <valList mode="replace" type="closed">
-                                    <valItem ident="per">
-                                        <desc>personal name</desc>
-                                    </valItem>
-                                    <valItem ident="pla">
-                                        <desc>place name</desc>
-                                    </valItem>
-                                    <valItem ident="oth">
-                                        <desc>other name</desc>
-                                    </valItem>
-                                </valList>
-                            </attDef>
-                        </attList>
-                    </elementSpec>
-                    <!-- note -->
-                    <elementSpec ident="note" mode="change">
-                        <altIdent>nt</altIdent>
-                        <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="note"/>
-                        <attList>
-                            <attDef ident="targetEnd" mode="delete"/>
-                            <attDef ident="anchored" mode="delete"/>
-                            <attDef ident="target" mode="delete"/>
-                            <attDef ident="xml:lang" mode="delete"/>
-                            <attDef ident="n" mode="delete"/>
-                            <attDef ident="type" mode="delete"/>
-                            <attDef ident="rend" mode="delete"/>
-                        </attList>
-                    </elementSpec>
-                    <!-- num -->
-                    <elementSpec ident="num" mode="change">
-                        <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="num"/>
-                        <altIdent>nm</altIdent>
-                        <attList>
-                            <attDef ident="type" mode="change">
-                                <altIdent>t</altIdent>
-                            </attDef>
-                            <attDef ident="value" mode="delete"/>
-                        </attList>
-                    </elementSpec>
-                    <!-- pb -->
-                    <elementSpec ident="pb" mode="change">
-                        <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="pb"/>
-                        <!-- allow pb to have text content -->
-                        <!-- or not -->
-                        <!--<content>
+          </elementSpec>
+          <!-- foreign -->
+          <elementSpec ident="foreign" mode="change">
+            <altIdent>for</altIdent>
+            <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="foreign"/>
+          </elementSpec>
+          <!-- fw -->
+          <elementSpec ident="fw" mode="change">
+            <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="fw"/>
+            <attList>
+              <attDef ident="type" mode="change">
+                <altIdent>t</altIdent>
+              </attDef>
+            </attList>
+          </elementSpec>
+          <!-- gap -->
+          <elementSpec ident="gap" mode="change">
+            <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="gap"/>
+            <altIdent>gp</altIdent>
+            <!-- allow gap to have text content -->
+            <content>
+              <textNode/>
+            </content>
+            <attList>
+              <attDef ident="agent" mode="delete"/>
+              <attDef ident="hand" mode="delete"/>
+              <attDef ident="reason" mode="delete"/>
+            </attList>
+          </elementSpec>
+          <!-- graphic -->
+          <elementSpec ident="graphic" mode="change">
+            <altIdent>gr</altIdent>
+            <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="graphic"/>
+          </elementSpec>
+          <!-- head -->
+          <elementSpec ident="head" mode="change">
+            <altIdent>hd</altIdent>
+            <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="head"/>
+          </elementSpec>
+          <!-- hi -->
+          <elementSpec ident="hi" mode="change">
+            <altIdent>h</altIdent>
+            <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="hi"/>
+          </elementSpec>
+          <!-- item -->
+          <elementSpec ident="item" mode="change">
+            <altIdent>it</altIdent>
+            <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="item"/>
+          </elementSpec>
+          <!-- list -->
+          <elementSpec ident="list" mode="change">
+            <altIdent>ls</altIdent>
+            <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="list"/>
+            <attList>
+              <attDef ident="type" mode="change">
+                <altIdent>t</altIdent>
+              </attDef>
+            </attList>
+          </elementSpec>
+          <!-- name -->
+          <elementSpec ident="name" mode="change">
+            <altIdent>n</altIdent>
+            <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="name"/>
+            <attList>
+              <attDef ident="type" mode="change">
+                <altIdent>t</altIdent>
+                <valList mode="replace" type="closed">
+                  <valItem ident="per">
+                    <desc>personal name</desc>
+                  </valItem>
+                  <valItem ident="pla">
+                    <desc>place name</desc>
+                  </valItem>
+                  <valItem ident="oth">
+                    <desc>other name</desc>
+                  </valItem>
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          <!-- note -->
+          <elementSpec ident="note" mode="change">
+            <altIdent>nt</altIdent>
+            <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="note"/>
+            <attList>
+              <attDef ident="targetEnd" mode="delete"/>
+              <attDef ident="anchored" mode="delete"/>
+              <attDef ident="target" mode="delete"/>
+              <attDef ident="xml:lang" mode="delete"/>
+              <attDef ident="n" mode="delete"/>
+              <attDef ident="type" mode="delete"/>
+              <attDef ident="rend" mode="delete"/>
+            </attList>
+          </elementSpec>
+          <!-- num -->
+          <elementSpec ident="num" mode="change">
+            <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="num"/>
+            <altIdent>nm</altIdent>
+            <attList>
+              <attDef ident="type" mode="change">
+                <altIdent>t</altIdent>
+              </attDef>
+              <attDef ident="value" mode="delete"/>
+            </attList>
+          </elementSpec>
+          <!-- pb -->
+          <elementSpec ident="pb" mode="change">
+            <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="pb"/>
+            <!-- allow pb to have text content -->
+            <!-- or not -->
+            <!--<content>
                             <rng:text/>
                         </content>-->
-                    </elementSpec>
-                    <!-- ptr -->
-                    <elementSpec ident="ptr" mode="change">
-                        <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="ptr"/>
-                        <attList>
-                            <attDef ident="cRef" mode="delete"/>
-                        </attList>
-                    </elementSpec>
-                    <!-- q -->
-                    <elementSpec ident="q" mode="change">
-                        <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="q"/>
-                        <attList>
-                            <attDef ident="type" mode="delete"/>
-                        </attList>
-                    </elementSpec>
-                    <!-- ref -->
-                    <elementSpec ident="ref" mode="change">
-                        <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="ref"/>
-                        <altIdent>rf</altIdent>
-                        <attList>
-                            <attDef ident="cRef" mode="delete"/>
-                        </attList>
-                    </elementSpec>
-                    <!-- space-->
-                    <elementSpec ident="space" mode="change">
-                        <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="spc"/>
-                        <altIdent>spc</altIdent>
-                        <!-- allow space to have text content -->
-                        <content>
-                            <textNode/>
-                        </content>
-                        <attList>
-                            <attDef ident="dim" mode="change">
-                                <defaultVal>h</defaultVal>
-                                <valList mode="replace" type="closed">
-                                    <valItem ident="h">
-                                        <desc>Space is horizontal</desc>
-                                    </valItem>
-                                    <valItem ident="v">
-                                        <desc>Space is vertical</desc>
-                                    </valItem>
-                                </valList>
-                            </attDef>
-                            <attDef ident="resp" mode="delete"/>
-                          <attDef ident="rendition" mode="delete"/>
-                        </attList>
-                    </elementSpec>
-                    <!-- surname -->
-                    <elementSpec ident="surname" mode="change">
-                        <altIdent>sn</altIdent>
-                        <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="surname"/>
-                        <!--<attList>
+          </elementSpec>
+          <!-- ptr -->
+          <elementSpec ident="ptr" mode="change">
+            <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="ptr"/>
+            <attList>
+              <attDef ident="cRef" mode="delete"/>
+            </attList>
+          </elementSpec>
+          <!-- q -->
+          <elementSpec ident="q" mode="change">
+            <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="q"/>
+            <attList>
+              <attDef ident="type" mode="delete"/>
+            </attList>
+          </elementSpec>
+          <!-- ref -->
+          <elementSpec ident="ref" mode="change">
+            <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="ref"/>
+            <altIdent>rf</altIdent>
+            <attList>
+              <attDef ident="cRef" mode="delete"/>
+            </attList>
+          </elementSpec>
+          <!-- space-->
+          <elementSpec ident="space" mode="change">
+            <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="spc"/>
+            <altIdent>spc</altIdent>
+            <!-- allow space to have text content -->
+            <content>
+              <textNode/>
+            </content>
+            <attList>
+              <attDef ident="dim" mode="change">
+                <defaultVal>h</defaultVal>
+                <valList mode="replace" type="closed">
+                  <valItem ident="h">
+                    <desc>Space is horizontal</desc>
+                  </valItem>
+                  <valItem ident="v">
+                    <desc>Space is vertical</desc>
+                  </valItem>
+                </valList>
+              </attDef>
+              <attDef ident="resp" mode="delete"/>
+              <attDef ident="rendition" mode="delete"/>
+            </attList>
+          </elementSpec>
+          <!-- surname -->
+          <elementSpec ident="surname" mode="change">
+            <altIdent>sn</altIdent>
+            <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="surname"/>
+            <!--<attList>
               <attDef ident="type" mode="change">
                 <altIdent>t</altIdent>
                 <valList mode="replace" type="closed">
@@ -1036,128 +995,128 @@
               </attDef>
             </attList>
           -->
-                    </elementSpec>
-                    <!-- table -->
-                    <elementSpec ident="table" mode="change">
-                        <altIdent>tbl</altIdent>
-                        <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="table"/>
-                        <attList>
-                            <attDef ident="rows" mode="delete"/>
-                            <attDef ident="cols" mode="delete"/>
-                        </attList>
-                    </elementSpec>
-                    <!-- TEI -->
-                    <elementSpec ident="TEI" mode="change">
-                        <altIdent>file</altIdent>
-                        <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="TEI"/>
-                        <content>
-                            <elementRef key="teiHeader"/>
-                            <elementRef key="body"/>
-                        </content>
-                        <attList>
-                            <attDef ident="version" mode="change">
-                                <altIdent>ver</altIdent>
-                            </attDef>
-                        </attList>
-                    </elementSpec>
-                    <!-- teiHeader -->
-                    <elementSpec ident="teiHeader" mode="change">
-                        <altIdent>header</altIdent>
-                        <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="teiHeader"/>
-                        <content>
-                            <elementRef key="title"/>
-                            
-                                <classRef key="model.pLike" minOccurs="0" maxOccurs="unbounded"/>
-                            
-                        </content>
-                        <attList>
-                            <attDef ident="type" mode="delete"/>
-                        </attList>
-                    </elementSpec>
-                    <!-- title -->
-                    <elementSpec ident="title" mode="change">
-                        <altIdent>t</altIdent>
-                        <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="title"/>
-                        <attList>
-                            <attDef ident="level" mode="delete"/>
-                            <attDef ident="type" mode="change">
-                                <altIdent>t</altIdent>
-                            </attDef>
-                        </attList>
-                    </elementSpec>
-                    <!-- unclear -->
-                    <elementSpec ident="unclear" mode="change">
-                        <altIdent>un</altIdent>
-                        <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="unclear"/>
-                        <attList>
-                            <attDef ident="agent" mode="delete"/>
-                            <attDef ident="hand" mode="delete"/>
-                            <attDef ident="reason" mode="delete"/>
-                        </attList>
-                    </elementSpec>
-                    <!-- attribute classes -->
-                    <!-- Some we just delete -->
-                    <classSpec ident="att.ascribed" mode="delete" module="tei" type="atts"/>
-                    <classSpec ident="att.breaking" mode="delete" module="tei" type="atts"/>
-                    <classSpec ident="att.datable.iso" mode="delete" module="tei" type="atts"/>
-                  <classSpec ident="att.datable.w3c" mode="delete" module="tei" type="atts"/>
-                  <classSpec ident="att.datable.custom" mode="delete" module="tei" type="atts"/>
-                    <classSpec ident="att.declaring" mode="delete" module="tei" type="atts"/>
-                    <classSpec ident="att.dimensions" mode="delete" module="tei" type="atts"/>
-                    <classSpec ident="att.duration" mode="delete" module="tei" type="atts"/>
-                    <classSpec ident="att.internetMedia" mode="delete" module="tei" type="atts"/>
-                    <classSpec ident="att.naming" mode="delete" module="tei" type="atts"/>
-                    <classSpec ident="att.placement" mode="delete" module="tei" type="atts"/>
-                    <classSpec ident="att.ranging" mode="delete" module="tei" type="atts"/>
-                    <classSpec ident="att.sourced" mode="delete" module="tei" type="atts"/>
-                    <classSpec ident="att.spanning" mode="delete" module="tei" type="atts"/>
-                    <classSpec ident="att.translatable" mode="delete" module="tei" type="atts"/>
-                    <classSpec ident="att.transcriptional" mode="delete" module="tei" type="atts"/>
-                    <classSpec ident="att.divLike" mode="delete" module="tei" type="atts"/>
-                    <classSpec ident="att.editLike" mode="delete" module="tei" type="atts"/>
-                    <classSpec ident="att.segLike" mode="delete" module="tei" type="atts"/>
-                    <!-- delete @key, leaving @ref -->
-                    <classSpec ident="att.canonical" mode="change" module="tei" type="atts">
-                        <attList>
-                            <attDef ident="key" mode="delete"/>
-                        </attList>
-                    </classSpec>
-                  
-                  <!-- Delete those date attributes we don't need, rename others -->
-                    <classSpec ident="att.datable" mode="change" module="tei" type="atts">
-                        <attList>
-                            <attDef ident="period" mode="delete"/>
-                            <attDef ident="notBefore" mode="delete"/>
-                            <attDef ident="notAfter" mode="delete"/>
-                            <attDef ident="when" mode="change">
-                                <altIdent>w</altIdent>
-                                <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="when"/>
-                                <exemplum>
-                                    <egXML xmlns="http://www.tei-c.org/ns/Examples"/>
-                                </exemplum>
-                                <remarks>
-                                    <p/>
-                                </remarks>
-                            </attDef>
-                            <attDef ident="from" mode="change">
-                                <altIdent>fm</altIdent>
-                                <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="from"/>
-                            </attDef>
-                            <attDef ident="calendar" mode="delete"/>
-                        </attList>
-                    </classSpec>
-                    <!-- rename @place -->
-                    <classSpec ident="att.placement" mode="change" module="tei" type="atts">
-                        <attList>
-                            <attDef ident="place" mode="change">
-                                <altIdent>p</altIdent>
-                                <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="place"/>
-                            </attDef>
-                        </attList>
-                    </classSpec>
-                    <!-- rename @cert and @resp-->
-                    <classSpec ident="att.responsibility" mode="delete" module="tei" type="atts"/>
-                    <!--<attList>
+          </elementSpec>
+          <!-- table -->
+          <elementSpec ident="table" mode="change">
+            <altIdent>tbl</altIdent>
+            <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="table"/>
+            <attList>
+              <attDef ident="rows" mode="delete"/>
+              <attDef ident="cols" mode="delete"/>
+            </attList>
+          </elementSpec>
+          <!-- TEI -->
+          <elementSpec ident="TEI" mode="change">
+            <altIdent>file</altIdent>
+            <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="TEI"/>
+            <content>
+              <elementRef key="teiHeader"/>
+              <elementRef key="body"/>
+            </content>
+            <attList>
+              <attDef ident="version" mode="change">
+                <altIdent>ver</altIdent>
+              </attDef>
+            </attList>
+          </elementSpec>
+          <!-- teiHeader -->
+          <elementSpec ident="teiHeader" mode="change">
+            <altIdent>header</altIdent>
+            <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="teiHeader"/>
+            <content>
+              <elementRef key="title"/>
+
+              <classRef key="model.pLike" minOccurs="0" maxOccurs="unbounded"/>
+
+            </content>
+            <attList>
+              <attDef ident="type" mode="delete"/>
+            </attList>
+          </elementSpec>
+          <!-- title -->
+          <elementSpec ident="title" mode="change">
+            <altIdent>t</altIdent>
+            <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="title"/>
+            <attList>
+              <attDef ident="level" mode="delete"/>
+              <attDef ident="type" mode="change">
+                <altIdent>t</altIdent>
+              </attDef>
+            </attList>
+          </elementSpec>
+          <!-- unclear -->
+          <elementSpec ident="unclear" mode="change">
+            <altIdent>un</altIdent>
+            <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="unclear"/>
+            <attList>
+              <attDef ident="agent" mode="delete"/>
+              <attDef ident="hand" mode="delete"/>
+              <attDef ident="reason" mode="delete"/>
+            </attList>
+          </elementSpec>
+          <!-- attribute classes -->
+          <!-- Some we just delete -->
+          <classSpec ident="att.ascribed" mode="delete" module="tei" type="atts"/>
+          <classSpec ident="att.breaking" mode="delete" module="tei" type="atts"/>
+          <classSpec ident="att.datable.iso" mode="delete" module="tei" type="atts"/>
+          <classSpec ident="att.datable.w3c" mode="delete" module="tei" type="atts"/>
+          <classSpec ident="att.datable.custom" mode="delete" module="tei" type="atts"/>
+          <classSpec ident="att.declaring" mode="delete" module="tei" type="atts"/>
+          <classSpec ident="att.dimensions" mode="delete" module="tei" type="atts"/>
+          <classSpec ident="att.duration" mode="delete" module="tei" type="atts"/>
+          <classSpec ident="att.internetMedia" mode="delete" module="tei" type="atts"/>
+          <classSpec ident="att.naming" mode="delete" module="tei" type="atts"/>
+          <classSpec ident="att.placement" mode="delete" module="tei" type="atts"/>
+          <classSpec ident="att.ranging" mode="delete" module="tei" type="atts"/>
+          <classSpec ident="att.sourced" mode="delete" module="tei" type="atts"/>
+          <classSpec ident="att.spanning" mode="delete" module="tei" type="atts"/>
+          <classSpec ident="att.translatable" mode="delete" module="tei" type="atts"/>
+          <classSpec ident="att.transcriptional" mode="delete" module="tei" type="atts"/>
+          <classSpec ident="att.divLike" mode="delete" module="tei" type="atts"/>
+          <classSpec ident="att.editLike" mode="delete" module="tei" type="atts"/>
+          <classSpec ident="att.segLike" mode="delete" module="tei" type="atts"/>
+          <!-- delete @key, leaving @ref -->
+          <classSpec ident="att.canonical" mode="change" module="tei" type="atts">
+            <attList>
+              <attDef ident="key" mode="delete"/>
+            </attList>
+          </classSpec>
+
+          <!-- Delete those date attributes we don't need, rename others -->
+          <classSpec ident="att.datable" mode="change" module="tei" type="atts">
+            <attList>
+              <attDef ident="period" mode="delete"/>
+              <attDef ident="notBefore" mode="delete"/>
+              <attDef ident="notAfter" mode="delete"/>
+              <attDef ident="when" mode="change">
+                <altIdent>w</altIdent>
+                <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="when"/>
+                <exemplum>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples"/>
+                </exemplum>
+                <remarks>
+                  <p/>
+                </remarks>
+              </attDef>
+              <attDef ident="from" mode="change">
+                <altIdent>fm</altIdent>
+                <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="from"/>
+              </attDef>
+              <attDef ident="calendar" mode="delete"/>
+            </attList>
+          </classSpec>
+          <!-- rename @place -->
+          <classSpec ident="att.placement" mode="change" module="tei" type="atts">
+            <attList>
+              <attDef ident="place" mode="change">
+                <altIdent>p</altIdent>
+                <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="place"/>
+              </attDef>
+            </attList>
+          </classSpec>
+          <!-- rename @cert and @resp-->
+          <classSpec ident="att.responsibility" mode="delete" module="tei" type="atts"/>
+          <!--<attList>
                             <attDef ident="cert" mode="change">
                                 <altIdent>ct</altIdent>
                                 <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="cert"/>
@@ -1169,162 +1128,162 @@
                         </attList>
                     </classSpec>
 -->
-                    <!-- delete those global attributes we don't need, rename others -->
-                  <classSpec ident="att.global.rendition" type="atts" mode="change" module="tei">
-                    <attList>
-                      <attDef ident="rendition" mode="delete"/>
-                      <attDef ident="style" mode="delete"/>
-                      <attDef ident="rend" mode="change">
-                        <altIdent>r</altIdent>
-                        <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="rend"/>
-                        <!-- Provide a closed value list for renamed @rend -->
-                        <valList mode="replace" type="closed">
-                          <valItem ident="ab">
-                            <desc>rendered above the line</desc>
-                          </valItem>
-                          <valItem ident="al">
-                            <desc>rendered aligned to the left</desc>
-                          </valItem>
-                          <valItem ident="ar">
-                            <desc>rendered aligned to the right</desc>
-                          </valItem>
-                          <valItem ident="b">
-                            <desc>rendered in bold</desc>
-                          </valItem>
-                          <valItem ident="bel">
-                            <desc>rendered below the line</desc>
-                          </valItem>
-                          <valItem ident="bl">
-                            <desc>rendered in blackletter font</desc>
-                          </valItem>
-                          <valItem ident="brl">
-                            <desc>rendering is bracketed to the left</desc>
-                          </valItem>
-                          <valItem ident="brr">
-                            <desc>rendering is bracketed to the right</desc>
-                          </valItem>
-                          <valItem ident="c">
-                            <desc>rendered centred</desc>
-                          </valItem>
-                          <valItem ident="dc">
-                            <desc>rendered as drop-cap or illuminated initial</desc>
-                          </valItem>
-                          <valItem ident="f">
-                            <desc>rendered in a different font</desc>
-                          </valItem>
-                          <valItem ident="i">
-                            <desc>rendered in italics</desc>
-                          </valItem>
-                          <valItem ident="l">
-                            <desc>rendered on the left</desc>
-                          </valItem>
-                          <valItem ident="lrg">
-                            <desc>rendering is of large size</desc>
-                          </valItem>
-                          <valItem ident="med">
-                            <desc>rendering is of medium size</desc>
-                          </valItem>
-                          <valItem ident="n">
-                            <desc>rendering returns to 'normal'</desc>
-                          </valItem>
-                          <valItem ident="o">
-                            <desc>other rendering</desc>
-                          </valItem>
-                          <valItem ident="r">
-                            <desc>rendered on the right</desc>
-                          </valItem>
-                          <valItem ident="rm">
-                            <desc>rendered in a roman numerals</desc>
-                          </valItem>
-                          <valItem ident="s">
-                            <desc>rendered in superscript</desc>
-                          </valItem>
-                          <valItem ident="sc">
-                            <desc>rendered in small caps</desc>
-                          </valItem>
-                          <valItem ident="sig">
-                            <desc>rendered as a signature</desc>
-                            
-                          </valItem>
-                          <valItem ident="sml">
-                            <desc>rendered as smaller</desc>
-                          </valItem>
-                          <valItem ident="st">
-                            <desc>rendered struck-through</desc>
-                          </valItem>
-                          <valItem ident="u">
-                            <desc>rendered in underline</desc>
-                          </valItem>
-                          <valItem ident="xlrg">
-                            <desc>rendering is of extra-large size</desc>
-                          </valItem>
-                          <valItem ident="xxlrg">
-                            <desc>rendering is of extra-large size</desc>
-                          </valItem>
-                        </valList>
-                        <exemplum>
-                          <egXML xmlns="http://www.tei-c.org/ns/Examples"/>
-                        </exemplum>
-                        <remarks>
-                          <ab/>
-                        </remarks>
-                      </attDef>
-                    </attList>
-                  </classSpec>
-                  
-                  <classSpec ident="att.global" type="atts" mode="change" module="tei">
-                        <attList>
-                            <attDef ident="rendition" mode="delete"/>
-                            <attDef ident="xml:base" mode="delete"/>
-                            <attDef ident="xml:space" mode="delete"/>
-                            <attDef ident="xml:id" mode="change">
-                                <altIdent>id</altIdent>
-                                <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="xmlid"/>
-                            </attDef>
-                            <attDef ident="xml:lang" mode="change">
-                                <altIdent>lg</altIdent>
-                                <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="xmllang"/>
-                            </attDef>
-                          
-                            
-                        </attList>
-                    </classSpec>
-                    <!-- Delete @evaluate, rename @target -->
-                    <classSpec ident="att.pointing" type="atts" mode="change" module="tei">
-                        <attList>
-                            <attDef ident="evaluate" mode="delete"/>
-                            <attDef ident="target" mode="change">
-                                <altIdent>targ</altIdent>
-                            </attDef>
-                        </attList>
-                    </classSpec>
-                    <!-- Delete @subtype, rename @type -->
-                    <classSpec ident="att.typed" mode="change" module="tei" type="atts">
-                        <attList>
-                            <attDef ident="type" mode="change">
-                                <altIdent>t</altIdent>
-                                <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="type"/>
-                            </attDef>
-                            <attDef ident="subtype" mode="delete"/>
-                        </attList>
-                    </classSpec>
-                    <!-- remove @sort from att.personal -->
-                    <classSpec ident="att.personal" mode="change" module="tei" type="atts">
-                        <attList>
-                            <attDef ident="sort" mode="delete"/>
-                        </attList>
-                    </classSpec>
-                    <!-- model classes we don't need cluttering things up -->
-                    <classSpec ident="model.addrPart" type="model" mode="delete" module="tei"/>
-                    <classSpec ident="model.choicePart" type="model" mode="delete" module="tei"/>
-                    <classSpec ident="model.limitedPhrase" type="model" mode="delete" module="tei"/>
-                    <classSpec ident="model.msItemPart" type="model" mode="delete" module="tei"/>
-                    <classSpec ident="model.msQuotePart" type="model" mode="delete" module="tei"/>
-                    <classSpec ident="model.pLike.front" type="model" mode="delete" module="tei"/>
-                    <classSpec ident="model.publicationStmtPart" type="model" mode="delete" module="tei"/>
-                    <classSpec ident="model.titlepagePart" type="model" mode="delete" module="tei"/>
-                </schemaSpec>
-            </div>
-        </back>
-    </text>
+          <!-- delete those global attributes we don't need, rename others -->
+          <classSpec ident="att.global.rendition" type="atts" mode="change" module="tei">
+            <attList>
+              <attDef ident="rendition" mode="delete"/>
+              <attDef ident="style" mode="delete"/>
+              <attDef ident="rend" mode="change">
+                <altIdent>r</altIdent>
+                <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="rend"/>
+                <!-- Provide a closed value list for renamed @rend -->
+                <valList mode="replace" type="closed">
+                  <valItem ident="ab">
+                    <desc>rendered above the line</desc>
+                  </valItem>
+                  <valItem ident="al">
+                    <desc>rendered aligned to the left</desc>
+                  </valItem>
+                  <valItem ident="ar">
+                    <desc>rendered aligned to the right</desc>
+                  </valItem>
+                  <valItem ident="b">
+                    <desc>rendered in bold</desc>
+                  </valItem>
+                  <valItem ident="bel">
+                    <desc>rendered below the line</desc>
+                  </valItem>
+                  <valItem ident="bl">
+                    <desc>rendered in blackletter font</desc>
+                  </valItem>
+                  <valItem ident="brl">
+                    <desc>rendering is bracketed to the left</desc>
+                  </valItem>
+                  <valItem ident="brr">
+                    <desc>rendering is bracketed to the right</desc>
+                  </valItem>
+                  <valItem ident="c">
+                    <desc>rendered centred</desc>
+                  </valItem>
+                  <valItem ident="dc">
+                    <desc>rendered as drop-cap or illuminated initial</desc>
+                  </valItem>
+                  <valItem ident="f">
+                    <desc>rendered in a different font</desc>
+                  </valItem>
+                  <valItem ident="i">
+                    <desc>rendered in italics</desc>
+                  </valItem>
+                  <valItem ident="l">
+                    <desc>rendered on the left</desc>
+                  </valItem>
+                  <valItem ident="lrg">
+                    <desc>rendering is of large size</desc>
+                  </valItem>
+                  <valItem ident="med">
+                    <desc>rendering is of medium size</desc>
+                  </valItem>
+                  <valItem ident="n">
+                    <desc>rendering returns to 'normal'</desc>
+                  </valItem>
+                  <valItem ident="o">
+                    <desc>other rendering</desc>
+                  </valItem>
+                  <valItem ident="r">
+                    <desc>rendered on the right</desc>
+                  </valItem>
+                  <valItem ident="rm">
+                    <desc>rendered in a roman numerals</desc>
+                  </valItem>
+                  <valItem ident="s">
+                    <desc>rendered in superscript</desc>
+                  </valItem>
+                  <valItem ident="sc">
+                    <desc>rendered in small caps</desc>
+                  </valItem>
+                  <valItem ident="sig">
+                    <desc>rendered as a signature</desc>
+
+                  </valItem>
+                  <valItem ident="sml">
+                    <desc>rendered as smaller</desc>
+                  </valItem>
+                  <valItem ident="st">
+                    <desc>rendered struck-through</desc>
+                  </valItem>
+                  <valItem ident="u">
+                    <desc>rendered in underline</desc>
+                  </valItem>
+                  <valItem ident="xlrg">
+                    <desc>rendering is of extra-large size</desc>
+                  </valItem>
+                  <valItem ident="xxlrg">
+                    <desc>rendering is of extra-large size</desc>
+                  </valItem>
+                </valList>
+                <exemplum>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples"/>
+                </exemplum>
+                <remarks>
+                  <ab/>
+                </remarks>
+              </attDef>
+            </attList>
+          </classSpec>
+
+          <classSpec ident="att.global" type="atts" mode="change" module="tei">
+            <attList>
+              <attDef ident="rendition" mode="delete"/>
+              <attDef ident="xml:base" mode="delete"/>
+              <attDef ident="xml:space" mode="delete"/>
+              <attDef ident="xml:id" mode="change">
+                <altIdent>id</altIdent>
+                <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="xmlid"/>
+              </attDef>
+              <attDef ident="xml:lang" mode="change">
+                <altIdent>lg</altIdent>
+                <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="xmllang"/>
+              </attDef>
+
+
+            </attList>
+          </classSpec>
+          <!-- Delete @evaluate, rename @target -->
+          <classSpec ident="att.pointing" type="atts" mode="change" module="tei">
+            <attList>
+              <attDef ident="evaluate" mode="delete"/>
+              <attDef ident="target" mode="change">
+                <altIdent>targ</altIdent>
+              </attDef>
+            </attList>
+          </classSpec>
+          <!-- Delete @subtype, rename @type -->
+          <classSpec ident="att.typed" mode="change" module="tei" type="atts">
+            <attList>
+              <attDef ident="type" mode="change">
+                <altIdent>t</altIdent>
+                <equiv filter="corset-acdc.xsl" mimeType="text/xsl" name="type"/>
+              </attDef>
+              <attDef ident="subtype" mode="delete"/>
+            </attList>
+          </classSpec>
+          <!-- remove @sort from att.personal -->
+          <classSpec ident="att.personal" mode="change" module="tei" type="atts">
+            <attList>
+              <attDef ident="sort" mode="delete"/>
+            </attList>
+          </classSpec>
+          <!-- model classes we don't need cluttering things up -->
+          <classSpec ident="model.addrPart" type="model" mode="delete" module="tei"/>
+          <classSpec ident="model.choicePart" type="model" mode="delete" module="tei"/>
+          <classSpec ident="model.limitedPhrase" type="model" mode="delete" module="tei"/>
+          <classSpec ident="model.msItemPart" type="model" mode="delete" module="tei"/>
+          <classSpec ident="model.msQuotePart" type="model" mode="delete" module="tei"/>
+          <classSpec ident="model.pLike.front" type="model" mode="delete" module="tei"/>
+          <classSpec ident="model.publicationStmtPart" type="model" mode="delete" module="tei"/>
+          <classSpec ident="model.titlepagePart" type="model" mode="delete" module="tei"/>
+        </schemaSpec>
+      </div>
+    </back>
+  </text>
 </TEI>
