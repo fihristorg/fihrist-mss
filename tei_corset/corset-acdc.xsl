@@ -21,44 +21,44 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:jc="http://james.blushingbunny
    <xsl:template match="@id"><xsl:attribute name="xml:id"><xsl:value-of select="."/></xsl:attribute></xsl:template>
    <xsl:template match="@lg"><xsl:attribute name="xml:lang"><xsl:value-of select="."/></xsl:attribute></xsl:template>
    <xsl:template match="@targ"><xsl:attribute name="target"><xsl:value-of select="."/></xsl:attribute></xsl:template>
-   <xsl:template match="ab"  xmlns="http://www.tei-c.org/ns/1.0"><ab><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></ab></xsl:template>
-   <xsl:template match="abbr"  xmlns="http://www.tei-c.org/ns/1.0"><abbr><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></abbr></xsl:template>
-   <xsl:template match="add"  xmlns="http://www.tei-c.org/ns/1.0"><add><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></add></xsl:template>
-   <xsl:template match="cb"  xmlns="http://www.tei-c.org/ns/1.0"><cb><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></cb></xsl:template>
-   <xsl:template match="label"  xmlns="http://www.tei-c.org/ns/1.0"><label><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></label></xsl:template>
-   <xsl:template match="lb"  xmlns="http://www.tei-c.org/ns/1.0"><lb><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></lb></xsl:template>
-   <xsl:template match="q"  xmlns="http://www.tei-c.org/ns/1.0"><q><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></q></xsl:template>
-   <xsl:template match="ptr"  xmlns="http://www.tei-c.org/ns/1.0"><ptr><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></ptr></xsl:template>
-   <xsl:template match="body"  xmlns="http://www.tei-c.org/ns/1.0"><text><body><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></body></text></xsl:template>
-<!--   <xsl:template match="dt"  xmlns="http://www.tei-c.org/ns/1.0"><date><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></date></xsl:template>-->
-<!--   <xsl:template match="d"  xmlns="http://www.tei-c.org/ns/1.0"><div><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></div></xsl:template>-->
-   <xsl:template match="fn"  xmlns="http://www.tei-c.org/ns/1.0"><forename><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></forename></xsl:template>
-   <xsl:template match="for"  xmlns="http://www.tei-c.org/ns/1.0"><foreign><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></foreign></xsl:template>
-      <xsl:template match="fw"  xmlns="http://www.tei-c.org/ns/1.0"><fw><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></fw></xsl:template>
-      <!--<xsl:template match="gp"  xmlns="http://www.tei-c.org/ns/1.0"><gap><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></gap></xsl:template>-->
-<xsl:template match="gr"  xmlns="http://www.tei-c.org/ns/1.0"><graphic><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></graphic></xsl:template>
-<xsl:template match="hd"  xmlns="http://www.tei-c.org/ns/1.0"><head><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></head></xsl:template>
-<xsl:template match="h"  xmlns="http://www.tei-c.org/ns/1.0"><hi><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></hi></xsl:template>
- <xsl:template match="it"  xmlns="http://www.tei-c.org/ns/1.0"><item><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></item></xsl:template>
-   <xsl:template match="ls"  xmlns="http://www.tei-c.org/ns/1.0"><list><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></list></xsl:template>
-   <!--<xsl:template match="n"  xmlns="http://www.tei-c.org/ns/1.0"><name><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></name></xsl:template>-->
-   <xsl:template match="nt"  xmlns="http://www.tei-c.org/ns/1.0"><note><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></note></xsl:template>
-   <xsl:template match="nm"  xmlns="http://www.tei-c.org/ns/1.0"><num><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></num></xsl:template>
-   <xsl:template match="p"  xmlns="http://www.tei-c.org/ns/1.0"><p><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></p></xsl:template>
-   <xsl:template match="pb"  xmlns="http://www.tei-c.org/ns/1.0"><pb n="{@n}"/></xsl:template>
-   <xsl:template match="rf"  xmlns="http://www.tei-c.org/ns/1.0"><ref><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></ref></xsl:template>
-   <xsl:template match="seg"  xmlns="http://www.tei-c.org/ns/1.0"><seg><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></seg></xsl:template>
-   <!--<xsl:template match="spc"  xmlns="http://www.tei-c.org/ns/1.0"><xsl:choose><xsl:when test="text()"><space><desc><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></desc></space></xsl:when><xsl:otherwise><space><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></space></xsl:otherwise></xsl:choose></xsl:template>-->
-   <xsl:template match="sn"  xmlns="http://www.tei-c.org/ns/1.0"><surname><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></surname></xsl:template>
-   <xsl:template match="tbl"  xmlns="http://www.tei-c.org/ns/1.0"><table><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></table></xsl:template>
-   <xsl:template match="cell"  xmlns="http://www.tei-c.org/ns/1.0"><cell><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></cell></xsl:template>
-   <xsl:template match="row"  xmlns="http://www.tei-c.org/ns/1.0"><row><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></row></xsl:template>
-   <xsl:template match="file"  xmlns="http://www.tei-c.org/ns/1.0"><TEI><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></TEI></xsl:template>
+   <xsl:template match="ab" name="ab"  xmlns="http://www.tei-c.org/ns/1.0"><ab><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></ab></xsl:template>
+   <xsl:template match="abbr" name="abbr"  xmlns="http://www.tei-c.org/ns/1.0"><abbr><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></abbr></xsl:template>
+   <xsl:template match="add" name="add"  xmlns="http://www.tei-c.org/ns/1.0"><add><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></add></xsl:template>
+   <xsl:template match="cb" name="cb"  xmlns="http://www.tei-c.org/ns/1.0"><cb><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></cb></xsl:template>
+   <xsl:template match="label" name="label"  xmlns="http://www.tei-c.org/ns/1.0"><label><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></label></xsl:template>
+   <xsl:template match="lb" name="lb"  xmlns="http://www.tei-c.org/ns/1.0"><lb><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></lb></xsl:template>
+   <xsl:template match="q" name="q"  xmlns="http://www.tei-c.org/ns/1.0"><q><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></q></xsl:template>
+   <xsl:template match="ptr" name="ptr"  xmlns="http://www.tei-c.org/ns/1.0"><ptr><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></ptr></xsl:template>
+   <xsl:template match="body" name="body"  xmlns="http://www.tei-c.org/ns/1.0"><text><body><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></body></text></xsl:template>
+<!--   <xsl:template match="dt" name="dt"  xmlns="http://www.tei-c.org/ns/1.0"><date><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></date></xsl:template>-->
+<!--   <xsl:template match="d" name="d"  xmlns="http://www.tei-c.org/ns/1.0"><div><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></div></xsl:template>-->
+   <xsl:template match="fn" name="fn"  xmlns="http://www.tei-c.org/ns/1.0"><forename><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></forename></xsl:template>
+   <xsl:template match="for" name="for"  xmlns="http://www.tei-c.org/ns/1.0"><foreign><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></foreign></xsl:template>
+      <xsl:template match="fw" name="fw"  xmlns="http://www.tei-c.org/ns/1.0"><fw><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></fw></xsl:template>
+      <!--<xsl:template match="gp" name="gp"  xmlns="http://www.tei-c.org/ns/1.0"><gap><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></gap></xsl:template>-->
+<xsl:template match="gr" name="gr"  xmlns="http://www.tei-c.org/ns/1.0"><graphic><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></graphic></xsl:template>
+<xsl:template match="hd" name="hd"  xmlns="http://www.tei-c.org/ns/1.0"><head><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></head></xsl:template>
+<xsl:template match="h" name="h"  xmlns="http://www.tei-c.org/ns/1.0"><hi><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></hi></xsl:template>
+ <xsl:template match="it" name="it"  xmlns="http://www.tei-c.org/ns/1.0"><item><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></item></xsl:template>
+   <xsl:template match="ls" name="ls"  xmlns="http://www.tei-c.org/ns/1.0"><list><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></list></xsl:template>
+   <!--<xsl:template match="n" name="n"  xmlns="http://www.tei-c.org/ns/1.0"><name><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></name></xsl:template>-->
+   <xsl:template match="nt" name="nt"  xmlns="http://www.tei-c.org/ns/1.0"><note><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></note></xsl:template>
+   <xsl:template match="nm" name="nm"  xmlns="http://www.tei-c.org/ns/1.0"><num><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></num></xsl:template>
+   <xsl:template match="p" name="p"  xmlns="http://www.tei-c.org/ns/1.0"><p><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></p></xsl:template>
+   <xsl:template match="pb" name="pb"  xmlns="http://www.tei-c.org/ns/1.0"><pb n="{@n}"/></xsl:template>
+   <xsl:template match="rf" name="rf"  xmlns="http://www.tei-c.org/ns/1.0"><ref><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></ref></xsl:template>
+   <xsl:template match="seg" name="seg"  xmlns="http://www.tei-c.org/ns/1.0"><seg><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></seg></xsl:template>
+   <!--<xsl:template match="spc" name="spc"  xmlns="http://www.tei-c.org/ns/1.0"><xsl:choose><xsl:when test="text()"><space><desc><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></desc></space></xsl:when><xsl:otherwise><space><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></space></xsl:otherwise></xsl:choose></xsl:template>-->
+   <xsl:template match="sn" name="sn"  xmlns="http://www.tei-c.org/ns/1.0"><surname><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></surname></xsl:template>
+   <xsl:template match="tbl" name="tbl"  xmlns="http://www.tei-c.org/ns/1.0"><table><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></table></xsl:template>
+   <xsl:template match="cell" name="cell"  xmlns="http://www.tei-c.org/ns/1.0"><cell><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></cell></xsl:template>
+   <xsl:template match="row" name="row"  xmlns="http://www.tei-c.org/ns/1.0"><row><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></row></xsl:template>
+   <xsl:template match="file" name="file"  xmlns="http://www.tei-c.org/ns/1.0"><TEI><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></TEI></xsl:template>
    
-<xsl:template match="t"  xmlns="http://www.tei-c.org/ns/1.0"><title><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></title></xsl:template>
-   <xsl:template match="un"  xmlns="http://www.tei-c.org/ns/1.0"><unclear><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></unclear></xsl:template>
+<xsl:template match="t" name="t"  xmlns="http://www.tei-c.org/ns/1.0"><title><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></title></xsl:template>
+   <xsl:template match="un" name="un"  xmlns="http://www.tei-c.org/ns/1.0"><unclear><xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/></unclear></xsl:template>
 
-<xsl:template match="header"  xmlns="http://www.tei-c.org/ns/1.0">
+<xsl:template match="header" name="header"  xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
    <fileDesc>
       <titleStmt>
@@ -206,7 +206,7 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:jc="http://james.blushingbunny
   </xsl:template>
   
   
-  <xsl:template match="spc"  xmlns="http://www.tei-c.org/ns/1.0">
+  <xsl:template match="spc" name="spc"  xmlns="http://www.tei-c.org/ns/1.0">
       <xsl:choose><xsl:when test="normalize-space(text())='[no sum stated]'">
           <space><desc>no sum stated</desc></space>
       </xsl:when>
@@ -221,13 +221,13 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:jc="http://james.blushingbunny
   
   
   <!-- process dates -->
-<xsl:template match="dt"  xmlns="http://www.tei-c.org/ns/1.0">
+<xsl:template match="dt" name="dt"  xmlns="http://www.tei-c.org/ns/1.0">
   <xsl:copy-of select="jc:guessDate(.)"/>
   </xsl:template>
 
 
 <!-- process gaps -->
-<xsl:template match="gp"  xmlns="http://www.tei-c.org/ns/1.0">
+<xsl:template match="gp" name="gp"  xmlns="http://www.tei-c.org/ns/1.0">
 <xsl:choose>
     <xsl:when test="not(text()) and @n">
         <gap resp="#arber"><desc><xsl:value-of select="@n"/> entries omitted</desc></gap></xsl:when>
@@ -238,7 +238,7 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:jc="http://james.blushingbunny
 </xsl:template>
 
 <!-- deal with divs -->
-   <xsl:template match="d"  xmlns="http://www.tei-c.org/ns/1.0">
+   <xsl:template match="d" name="d"  xmlns="http://www.tei-c.org/ns/1.0">
        <div>
            <xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/>
        </div>
@@ -387,7 +387,7 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:jc="http://james.blushingbunny
     </placeName>
 </xsl:template>
 
-<xsl:template match="n"  xmlns="http://www.tei-c.org/ns/1.0" priority="-1">
+<xsl:template match="n" name="n"  xmlns="http://www.tei-c.org/ns/1.0" priority="-1">
     <name>
         <xsl:apply-templates select="@*|node()|comment()|processing-instruction()|text()"/>
     </name>
