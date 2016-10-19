@@ -29,7 +29,7 @@
 </xsl:template>
   
 
-  <!-- This function creates a string from the node (c01 or c02) provided to it --> 
+  <!-- This function creates a string from the node provided to it --> 
   <xsl:function name="jc:createCSV" as="xs:string" >
     <!-- Take in the node as a parameter -->
     <xsl:param as="node()" name="node"/>
