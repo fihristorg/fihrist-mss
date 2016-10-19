@@ -5,7 +5,7 @@
     <!-- Minimal Documentation -->
     <xd:doc scope="stylesheet">
         <xd:desc>
-            <xd:p><xd:b>Created on:</xd:b> Feb 13, 2012</xd:p>
+            <xd:p><xd:b>Created on:</xd:b> Feb 13, 2012 but modified many times thereafter</xd:p>
             <xd:p><xd:b>Author:</xd:b> jamesc</xd:p>
             <xd:p>Stylesheet to output all element names, attributes and attribute values with a
                 count of usage.</xd:p>
@@ -25,6 +25,7 @@
     <!-- files and recurse parameters defaulting to '*.xml' and 'no' respectively -->
     <xsl:param name="files" select="'*.xml'"/>
     <xsl:param name="recurse" select="'no'"/>
+  
     <!-- The main template, everything happens here. -->
     <xsl:template name="main">
         <!-- create path from params -->
@@ -51,27 +52,39 @@
                     <xsl:sort/>
                     <!-- Put current element in a variable -->
                     <xsl:variable name="currElem" select="."/>
+                    <!-- bare version of element name -->
+                    <xsl:variable name="elemName"><xsl:value-of select="substring-before($currElem, '#')"/></xsl:variable>  
                     <!-- count instances of the element -->
                     <xsl:variable name="currElemCount">
                         <xsl:value-of
-                            select="count($doc//*[concat(local-name(), '#', namespace-uri())=$currElem])"
+                          select="count($doc//*[concat(local-name(), '#', namespace-uri())=$currElem])"
                         />
                     </xsl:variable>
-                    <!-- an li per distinct element -->
-                    <li>
-                        <span class="elemName">
-                            <xsl:value-of select="substring-before($currElem, '#')"/>
-                        </span>
+                  <!-- Find all the parents of the current Element instances and make a distinct-values list of them -->
+                  <xsl:variable name="currElemInstancesParents">
+                    <xsl:for-each select="distinct-values($doc//*[concat(local-name(), '#', namespace-uri())=$currElem]/parent::node()/name())">
+                      <xsl:sort/>
+                      <a href="{concat('#', $elemName)}"><xsl:value-of select="."/></a><xsl:if test="position() != last()"><xsl:text>,</xsl:text></xsl:if><xsl:text> </xsl:text>
+                    </xsl:for-each>
+                  </xsl:variable>
+                  
+                  
+                 <!-- an li per distinct element -->
+                    <li id="{$elemName}">
+                      <span class="elemName"><xsl:value-of select="$elemName"/></span>
                         <span class="count"> (<xsl:value-of select="$currElemCount"/>) </span>
                         <!-- if there is a namespace -->
                         <xsl:if test="not(substring-after($currElem, '#')='')">
-                            <span class="attrName"> xmlns</span>
+                            <span class="xmlns"><span class="attrName"> xmlns</span>
                             <span class="punc">="</span>
                             <span class="attrVal">
                                 <xsl:value-of select="substring-after($currElem, '#')"/>
                             </span>
                             <span class="punc">"</span>
+                            </span>
                         </xsl:if>
+                      
+                         <span class="parents"> Parents: <xsl:copy-of select="$currElemInstancesParents"/></span>
                         <!-- if it has attributes -->
                         <xsl:if
                             test="$doc//*[concat(local-name(), '#', namespace-uri())=$currElem]/@*">
@@ -93,8 +106,7 @@
                                         <span class="attrName">
                                             <xsl:value-of select="$currAttr"/>
                                         </span>
-                                        <span class="count"> (<xsl:value-of select="$currAttrCount"
-                                            />) </span>
+                                        <span class="count"> (<xsl:value-of select="$currAttrCount"/>) </span>
                                         <span class="punc">="</span>
                                         <!-- for each distinct use of the tokenized attributes -->
                                         <xsl:for-each
@@ -110,7 +122,7 @@
                                             </span>
                                             <span class="count"> (<xsl:value-of
                                                   select="$currAttrValCount"/>) </span>
-                                            <!-- separate with a pipe symbol -->
+                                            <!-- separate with a pipe symbol with spaces on each side -->
                                             <xsl:if test="not(position()=last())">
                                                 <span class="sep">
                                                   <xsl:text> | </xsl:text>
@@ -134,35 +146,60 @@
                 <style type="text/css">
                     .elemName{
                         color:#33A;
+                        font-weight:bold;
                     }
                     .attrName{
                         color:#C93;
                     }
                     .attrVal{
                         color:#944;
+                        font-size:90%
                     }
                     .punc{
                         color:#009;
                     }
                     .count{
                         font-size:60%;
-                        color:#BBB;
+                        color:#444;
                     }
                     .sep{
                         color:#BBB;
-                    }</style>
+                    }
+                    .xmlns{font-size:70%;opacity:0.5; filter:alpha(opacity=50)}
+                 p.footer {font-size 90%; text-align:center; margin-left:auto;margin-right:auto;}
+                 .bold {font-weight:bold;}
+                 .parents a {text-decoration:none;}
+                </style>
             </head>
             <body>
+              <xsl:comment>Created by listelements.xsl script from https://github.com/jamescummings/conluvies/ </xsl:comment>
                 <h1>Element/Attribute/Value list</h1>
                 <!-- basic stats -->
-                <p>Element/Attribute/Value list generated: <xsl:value-of select="current-dateTime()"
-                    /> for <xsl:value-of select="count($doc/*)"/> files, <xsl:value-of
-                        select="count($doc//@*)"/> attributes, and <xsl:value-of
-                        select="count($doc//@*/tokenize(., '\s'))"/> attribute values.</p>
+                <p>
+                  Element/Attribute/Value list generated by James Cummings at <xsl:value-of select="current-dateTime()"
+                    /> for:
+                  <ul>
+                    <li><span class="bold">Number of XML Files: </span> <xsl:value-of select="count($doc/*)"/></li>
+                    <li><span class="bold">Number of XML Elements: </span> <xsl:value-of select="count($doc//*)"/></li>
+                    <li><span class="bold">Number of Attributes: </span> <xsl:value-of select="count($doc//@*)"/></li>
+                    <li><span class="bold">Number of Attribute Values: </span> <xsl:value-of
+                      select="count($doc//@*/tokenize(., '\s'))"/>.</li>
+                  </ul>
+                 
+                </p>
                 <!-- Just copy the distinctList variable from above and put it here.  -->
                 <xsl:copy-of select="$distinctList"/>
+              
+              <hr/>
+              <p class="footer">
+                <a href="https://github.com/jamescummings/conluvies/blob/master/xslt-misc/listelements.xsl">Source XSLT</a> -- 
+                <a href="https://github.com/jamescummings/conluvies/issues/new">Report Bugs</a>
+              </p>
             </body>
         </html>
     </xsl:template>
-    <!-- that's all she wrote -->
+  
+    <!-- And that's it. -->
+  
+  
 </xsl:stylesheet>
