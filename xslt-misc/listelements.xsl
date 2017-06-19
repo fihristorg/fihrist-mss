@@ -60,12 +60,19 @@
                           select="count($doc//*[concat(local-name(), '#', namespace-uri())=$currElem])"
                         />
                     </xsl:variable>
-                  <!-- Find all the parents of the current Element instances and make a distinct-values list of them -->
+                  <!-- Find the parent of the current Element instances and make a distinct-values list of them -->
                   <xsl:variable name="currElemInstancesParents">
+<xsl:choose>
+<xsl:when test="$doc//*[concat(local-name(), '#', namespace-uri())=$currElem]/parent::node()">
                     <xsl:for-each select="distinct-values($doc//*[concat(local-name(), '#', namespace-uri())=$currElem]/parent::node()/name())">
                       <xsl:sort/>
-                      <a href="{concat('#', $elemName)}"><xsl:value-of select="."/></a><xsl:if test="position() != last()"><xsl:text>,</xsl:text></xsl:if><xsl:text> </xsl:text>
+		    <xsl:message><xsl:value-of select="$elemName"/>
+</xsl:message>
+                     <xsl:if test="not($elemName='TEI')"> <a href="{concat('#', $elemName)}"><xsl:value-of select="."/></a></xsl:if><xsl:if test="position() != last()"><xsl:text>,</xsl:text></xsl:if><xsl:text> </xsl:text>
                     </xsl:for-each>
+</xsl:when>
+<xsl:otherwise>No Parent</xsl:otherwise>
+</xsl:choose>
                   </xsl:variable>
                   
                   
