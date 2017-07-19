@@ -15,8 +15,8 @@
 <xsl:import href="../../common-mss.xsl"/>
 
   <!-- variable for overall collection -->
-  <xsl:param name="cat" select="'Fihrist'"/>
-  <xsl:param name="catdir" select="'fihrist'"/>
+  <xsl:variable name="cat" select="'Fihrist'"/>
+  <xsl:variable name="catdir" select="'fihrist'"/>
 
   
 
