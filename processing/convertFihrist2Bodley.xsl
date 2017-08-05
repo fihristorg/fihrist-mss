@@ -12,6 +12,8 @@
 <!-- loading in common-mss.xsl for general stuff catalogue specific stuff below
      but hope is that most things will be common -->
 
+<!--the original common-mss.xsl is at https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/common-mss.xsl -->
+
 <xsl:import href="../../common-mss.xsl"/>
 
   <!-- variable for overall collection -->
