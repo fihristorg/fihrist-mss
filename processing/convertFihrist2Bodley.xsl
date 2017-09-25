@@ -14,7 +14,7 @@
 
 <!--the original common-mss.xsl is at https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/common-mss.xsl -->
 
-<xsl:import href="../../common-mss.xsl"/>
+<xsl:import href="./common-mss.xsl"/>
 
   <!-- variable for overall collection -->
   <xsl:variable name="cat" select="'Fihrist'"/>
