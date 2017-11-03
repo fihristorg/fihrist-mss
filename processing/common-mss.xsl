@@ -65,14 +65,14 @@
             <xsl:variable name="msID">
                 <xsl:value-of select="jc:normalizeID(normalize-space(.//msDesc[1]/msIdentifier/idno[1]/text()))"/>
             </xsl:variable>
-            <xsl:variable name="collection">
+            <!--<xsl:variable name="collection">
                 <xsl:value-of select="lower-case(.//msIdentifier[1]/collection/text()/normalize-space(.))" />
-            </xsl:variable>
+            </xsl:variable>-->
             <xsl:variable name="institution">
                 <xsl:value-of select="lower-case(.//msIdentifier[1]/institution/text()/normalize-space(.))" />
             </xsl:variable>
             <xsl:variable name="foldername">
-                <xsl:value-of select="concat($collection, ' ', $institution)" />
+                <xsl:value-of select="$institution" />
             </xsl:variable>
 
             <!-- This is just a debugging message so I see the filnames whiz by on the screen
