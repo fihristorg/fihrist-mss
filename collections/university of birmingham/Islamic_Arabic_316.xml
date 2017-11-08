@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3843">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,16 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_316-item1">
-                     <author key="nr89005826" ref="http://viaf.org/viaf/39221526">Sujāʾī, Aḥmad ibn Aḥmad,<date calendar="#Gregorian" from="1777" to="1783">-1783?</date>السجاعي، أحمد بن أحمد، ت. 1197 هـ
+                     <author key="nr89005826" ref="http://viaf.org/viaf/39221526">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Sujāʾī, Aḥmad ibn Aḥmad,<date calendar="#Gregorian" from="1777" to="1783">-1783?</date>
+                        </persName>
                         
                         
-                        
+                        <persName xml:lang="ar">السجاعي، أحمد بن أحمد، ت. 1197 هـ
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Ḥāshiyat Fatḥ al-jalīl ʿalá Sharḥ Ibn ʿAqīl</title>
                      
@@ -68,9 +74,11 @@
                            <foreign xml:lang="ar">ابن مالك، محمد بن عبد الله، 600-672 هـ</foreign>
                         </persName>
                      </note>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="fa" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 1473</bibl>
                         <bibl>GAL II 323/4; Suppl. II 445/6</bibl>
@@ -85,14 +93,14 @@
                               <height>23.2</height>
                               <width>16.5</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="25" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                            <note>25 lines per page</note>
                         </layout>
                      </layoutDesc>
@@ -147,7 +155,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-04-20">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_9357">
    <teiHeader>
       <fileDesc>
@@ -47,19 +47,26 @@
                      </title>
                   </summary>
                   <msItem xml:id="Add_844-item1" n="1">
-                     <author key="n82164402" ref="http://viaf.org/viaf/9907600/">Ḥarīrī, 1054-1122الحريري
+                     <author key="n82164402" ref="http://viaf.org/viaf/9907600/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ḥarīrī, 1054-1122</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">الحريري
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Maqāmāt al-Ḥarīrī</title>
                      
                      <title xml:lang="ar">مقمات الحريري</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/view.php?id=128">no. 1093</ref>
@@ -68,19 +75,26 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="Add_844-item2" n="2" class="#commentary">
-                     <author key="n92020432" ref="http://viaf.org/viaf/14633614/">Sharīshī, Aḥmad ibn ʻAbd al-Muʼmin, d. 1222 or 3الشريشي، أحمد بن عبد المؤمن
+                     <author key="n92020432" ref="http://viaf.org/viaf/14633614/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Sharīshī, Aḥmad ibn ʻAbd al-Muʼmin, d. 1222 or 3</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">الشريشي، أحمد بن عبد المؤمن
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Sharḥ Maqāmāt al-Ḥarīrī</title>
                      
                      <title xml:lang="ar">شرح مقمات الحريري</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/view.php?id=128">no. 1093</ref>
@@ -93,13 +107,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -175,7 +189,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-05-17">

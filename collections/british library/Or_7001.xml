@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6147">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,12 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="Or_7001-item1" n="3">
                      <locus from="122r" to="135v">f 122r-135v</locus>
-                     <author>Shādidī, Ibrāhīmشديدی، ابراهيمŞâhidî, Îbrahim
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Shādidī, Ibrāhīm</persName>
+                        <persName xml:lang="fa">شديدی، ابراهيم</persName>
+                        <persName xml:lang="tr-Latn-x-lc" type="alt">Şâhidî, Îbrahim</persName>
+                        
+                        
                         
                         
                         
@@ -54,8 +59,8 @@
                      <title xml:lang="fa">تحفۀ شاحدی</title>
                      <title xml:lang="tr-Latn-x-lc">Tuhfe-i Şâhidî</title>
                      
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>A Persian-Turkish vocabulary in verse</note>
                      <listBibl>
                         <bibl>For a more detailed description see Waley 1998, page 36-7.</bibl>
@@ -141,7 +146,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-10-20">

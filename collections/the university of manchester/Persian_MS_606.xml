@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7107">
    <teiHeader>
       <fileDesc>
@@ -42,11 +42,19 @@
                </msIdentifier>
                <msContents>
                   <summary>
-                     <title type="main"/>
+                     
                   </summary>
                   <msItem xml:id="Persian_MS_606-item1" n="1">
-                     <author>Naṣir al-Dīn Hamadānīناصرالدین همدانی
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="supplied">Naṣir al-Dīn Hamadānī</persName>
                         
+                        
+                        
+                        <persName xml:lang="fa">ناصرالدین همدانی
+                           
+                           
+                           
+                        </persName>
                         
                         
                      </author>
@@ -55,22 +63,32 @@
                      <title xml:lang="fa">انشا</title>
                      
                      
-                     
-                     
+                     <incipit xml:lang="ar" type="basmalla"/>
+                     <explicit xml:lang="ar"/>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="Persian_MS_606-item2" n="2">
-                     <author key="n89118275" ref="http://viaf.org/viaf/45890612/">Naʻmat K̲h̲ān-i-ʻĀlī, -approximately 1710Niʻmat Khān ʻĀlī Shīrāzīنعمت خان عالي
+                     <author key="n89118275" ref="http://viaf.org/viaf/45890612/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Naʻmat K̲h̲ān-i-ʻĀlī, -approximately 1710</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Niʻmat Khān ʻĀlī Shīrāzī</persName>
                         
                         
-                        نعمت خان علی شیرازی</author>
+                        
+                        <persName xml:lang="ar">نعمت خان عالي
+                           
+                           
+                           
+                        </persName>
+                        <persName xml:lang="fa" type="alt">نعمت خان علی شیرازی</persName>
+                        
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Ḥusn va ʻishq</title>
                      
                      <title xml:lang="fa">حسن وعشق</title>
                      
                      
-                     
-                     
+                     <incipit xml:lang="ar" type="basmalla"/>
+                     <explicit xml:lang="ar"/>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
@@ -78,8 +96,8 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
@@ -152,7 +170,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014">

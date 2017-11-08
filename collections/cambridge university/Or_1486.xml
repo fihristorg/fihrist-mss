@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_10094">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,15 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Or_1486-item1">
-                     <author key="n84003185" ref="http://viaf.org/viaf/90054636/">Junayd ibn Muḥammad, Abū al-Qāsim, d. 910?جنيد بن محمد
-                        <addName xml:lang="ar" type="kunyah">ابو الخير</addName>
+                     <author key="n84003185" ref="http://viaf.org/viaf/90054636/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard" evidence="conjecture">Junayd ibn Muḥammad, Abū al-Qāsim, d. 910?</persName>
                         
-                        <addName xml:lang="ar" type="nisbah">النهاوندي البغدادي</addName>
+                        
+                        <persName xml:lang="ar">جنيد بن محمد
+                           <addName xml:lang="ar" type="kunyah">ابو الخير</addName>
+                           
+                           <addName xml:lang="ar" type="nisbah">النهاوندي البغدادي</addName>
+                        </persName>
                         <note>Uncertain attribution.</note>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Qaṣd ilá Allāh</title>
@@ -55,9 +60,11 @@
                      <title xml:lang="ar">القصد الى الله</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/arberry/view.php?id=26">no. 275</ref>
@@ -71,13 +78,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -128,7 +135,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-07-14">

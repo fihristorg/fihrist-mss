@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_185">
    <teiHeader>
       <fileDesc>
@@ -45,19 +45,26 @@
                <msContents>
                   <summary>The manuscript contains a copy of the third volume and the conclusion of the work only.</summary>
                   <msItem xml:id="Add_3600-item1">
-                     <author key="n97922673" ref="http://viaf.org/viaf/45109504/">Khvānd Mīr, Ghiyās̲ al-Dīn ibn Humām al-Dīn, ca. 1475-1535?خواند مير، غياث الدين بن همام الدين
+                     <author key="n97922673" ref="http://viaf.org/viaf/45109504/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Khvānd Mīr, Ghiyās̲ al-Dīn ibn Humām al-Dīn, ca. 1475-1535?</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">خواند مير، غياث الدين بن همام الدين
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Rawz̤at al-ṣafāʼ</title>
                      <title xml:lang="ar-Latn-x-lc" type="alt">Rawḍat al-ṣafāʼ</title>
                      <title xml:lang="ar">روضه الصفاء</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/view.php?id=154">no. 1266</ref>
@@ -71,13 +78,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -135,7 +142,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-04-15">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6183">
    <teiHeader>
       <fileDesc>
@@ -43,10 +43,15 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Or_7076-item1">
-                     <author>ʻAlī ibn Idrīs ḤājjīAli ibn İdris Hacciعلی بن إدريس حاجی
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">ʻAlī ibn Idrīs Ḥājjī</persName>
                         
-                        
-                        
+                        <persName xml:lang="tr-Latn-x-lc" type="alt">Ali ibn İdris Hacci</persName>
+                        <persName xml:lang="fa">علی بن إدريس حاجی
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Baḥr al-gharāʼib</title>
                      
@@ -56,8 +61,8 @@
                      <note>An allegorical poem, mainly comprising a dialogue between the author and Wisdom</note>
                      <note>In Turkish, with a preface in Persian Prose,<locus>ff. 3v-4r</locus>Begun<date calendar="#Hijri-qamari" when="0890">890</date>/<date calendar="#Gregorian" when="1485">1485</date>; completed in<date calendar="#Hijri-qamari" when="0905">0905</date>/<date calendar="#Gregorian" when="1500">1500</date>
                      </note>
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <listBibl>
                         <bibl>For a more detailed description see Waley 1998, page 53.</bibl>
                      </listBibl>
@@ -115,7 +120,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-11-04">

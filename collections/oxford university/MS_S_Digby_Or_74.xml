@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5030">
    <teiHeader>
       <fileDesc>
@@ -44,23 +44,28 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_S_Digby_Or_74-item1">
-                     <author key="nr96002485" ref=" http://viaf.org/viaf/32890782">Fayz̤ī, Abū al-Fayz̤ ibn Mubārak, 1547 or 1548-1595شيخ ابو الفيض بن مباركفيضى</author>
+                     <author key="nr96002485" ref=" http://viaf.org/viaf/32890782">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Fayz̤ī, Abū al-Fayz̤ ibn Mubārak, 1547 or 1548-1595</persName>
+                        
+                        <persName xml:lang="fa">شيخ ابو الفيض بن مبارك</persName>
+                        <persName xml:lang="fa" type="alt">فيضى</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Dīvān-i Fayz̤ī</title>
                      <title xml:lang="fa">ديوان فيضى</title>
-                     
+                     <incipit xml:lang="fa"/>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>ff. 122
-                           
+                        <extent>ff. 122<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="in"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="14" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -164,7 +169,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-04-27"/>

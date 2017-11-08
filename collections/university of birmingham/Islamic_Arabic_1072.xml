@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3608">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,15 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_1072-item1">
-                     <author key="n81020342" ref="http://viaf.org/viaf/76293352/">Baghawī, al-Ḥusayn ibn Masʿūd, d. 1117?البغوي، الحسين بن مسعود<addName xml:lang="ar" type="laqab">الفراء</addName>
+                     <author key="n81020342" ref="http://viaf.org/viaf/76293352/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Baghawī, al-Ḥusayn ibn Masʿūd, d. 1117?</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">البغوي، الحسين بن مسعود<addName xml:lang="ar" type="laqab">الفراء</addName>
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Maʿālim al-tanzīl</title>
                      
@@ -55,9 +60,11 @@
                      
                      
                      <note>Defective at the end; contains first part only, ends sūrah 4 (al-nisāʾ<foreign xml:lang="ar">سورة النساء</foreign>), verse 127.</note>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 10</bibl>
                         <bibl>GAL I 363-4, esp. no. 4; I 620-2</bibl>
@@ -72,14 +79,14 @@
                               <height>25.5</height>
                               <width>18.5</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="23" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -140,7 +147,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-02-27">

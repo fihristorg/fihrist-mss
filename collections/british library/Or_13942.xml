@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5617">
    <teiHeader>
       <fileDesc>
@@ -43,10 +43,15 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85100077 http://lccn.loc.gov/n84160920 http://lccn.loc.gov/sh85046763">
                   <msItem xml:id="Or_13942-item1" class="#commentary">
-                     <author key="n85026579" ref="http://viaf.org/viaf/20030140/">Kāshifī, Ḥusayn Vāʻiẓ, d. 1504 or 5كاشفى، حسين بن علی واعض النسفی الکاشفی
+                     <author key="n85026579" ref="http://viaf.org/viaf/20030140/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Kāshifī, Ḥusayn Vāʻiẓ, d. 1504 or 5</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">كاشفى، حسين بن علی واعض النسفی الکاشفی
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Anvār Suhaylī</title>
                      
@@ -55,8 +60,8 @@
                      
                      <note type="text-relations">A reworked Persian version of<title xml:lang="en">The fables of Bīdpāy</title>
                      </note>
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <listBibl>
                         <bibl>For a more detailed description see Waley 1998, page 67.</bibl>
                      </listBibl>
@@ -123,7 +128,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-11-17">

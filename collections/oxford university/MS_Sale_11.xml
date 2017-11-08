@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1673">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,9 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Sale_11-item1" n="1">
                      <locus from="1" to="60">ff. 1v-60r</locus>
-                     <author>Mānjaq Pāshā ibn Muḥammad ibn Manjaq al-Dimashqī,<date calendar="#Gregorian" from="1596" to="1669">1596-1669</date>
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc">Mānjaq Pāshā ibn Muḥammad ibn Manjaq al-Dimashqī,<date calendar="#Gregorian" from="1596" to="1669">1596-1669</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Dīwān</title>
                      <note>Collected by<persName xml:lang="ar-Latn-x-lc">Faḍl Allāh ibn Muḥibb Allāh d. 1671</persName>, in the chronological or alphabetical recension?</note>
@@ -57,7 +59,9 @@
                   </msItem>
                   <msItem xml:id="MS_Sale_11-item2" n="2">
                      <locus from="60" to="85">ff. 60v-85r</locus>
-                     <author key="nr 92022824" ref="http://viaf.org/viaf/17086922/">Ibn al-Naḥḥās, Fatḥ Allāh ibn ʻAbd Allāh,<date calendar="#Gregorian" when="1643">d. 1642 or 3</date>
+                     <author key="nr 92022824" ref="http://viaf.org/viaf/17086922/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn al-Naḥḥās, Fatḥ Allāh ibn ʻAbd Allāh,<date calendar="#Gregorian" when="1643">d. 1642 or 3</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Dīwān</title>
                      <listBibl>
@@ -174,11 +178,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

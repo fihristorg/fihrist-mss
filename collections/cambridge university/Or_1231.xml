@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_9915">
    <teiHeader>
       <fileDesc>
@@ -44,25 +44,34 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Or_1231-item1" class="#commentary">
-                     <author key="n84227557" ref="http://viaf.org/viaf/67881292/">Nuqrahkār, ʻAbd Allāh ibn Muḥammad al-Ḥusaynī, d. 1374نقره كار، عبد الله بن محمد الحسيني
+                     <author key="n84227557" ref="http://viaf.org/viaf/67881292/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Nuqrahkār, ʻAbd Allāh ibn Muḥammad al-Ḥusaynī, d. 1374</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">نقره كار، عبد الله بن محمد الحسيني
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Sharḥ qaṣīdat al-Būstī al-nūnīyah</title>
                      
                      <title xml:lang="ar">شرح قصيدة البستي النونية</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/arberry/view.php?id=12">no. 105</ref>
                         </bibl>
                         <bibl type="text-relations">Commentary on<title xml:lang="ar-Latn-x-lc">Al-Qaṣīdah al-nūnīyah</title>
-                           <foreign xml:lang="ar">القصيدة النونية</foreign>of<author key="n88205224" ref="http://viaf.org/viaf/74241765/">Bustī, ʻAlī ibn Muḥammad, d. 1010(البستي، ابو الفتح علي بن محمد</author>.</bibl>
+                           <foreign xml:lang="ar">القصيدة النونية</foreign>of<author key="n88205224" ref="http://viaf.org/viaf/74241765/">
+                              <persName xml:lang="ar-Latn-x-lc">Bustī, ʻAlī ibn Muḥammad, d. 1010</persName>(<persName xml:lang="ar">البستي، ابو الفتح علي بن محمد</persName>
+                           </author>.</bibl>
                      </listBibl>
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
@@ -71,13 +80,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -144,7 +153,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-06-24">

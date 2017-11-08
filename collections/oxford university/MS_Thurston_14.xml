@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1800">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,9 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_Thurston_14-item1">
-                     <author key="n 2007090696" ref="http://viaf.org/viaf/28990489/">Ibn Muhannā, Jamāl-al-Dīn, fl. ca.<date calendar="#Gregorian" when="1400">1400</date>
+                     <author key="n 2007090696" ref="http://viaf.org/viaf/28990489/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ibn Muhannā, Jamāl-al-Dīn, fl. ca.<date calendar="#Gregorian" when="1400">1400</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Kitāb al-Tarjumān</title>
                      <title type="alt" xml:lang="ar-Latn-x-lc">Ḥilyat al-insān wa-ḥalbat al-lisān</title>
@@ -101,11 +103,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

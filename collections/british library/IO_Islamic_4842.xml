@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3586">
    <teiHeader>
       <fileDesc>
@@ -43,7 +43,12 @@
                </msIdentifier>
                <msContents class="http://id.loc.gov/authorities/sh85109233">
                   <msItem xml:id="IO_Islamic_4842-item1">
-                     <author key="n 82082621" ref="http://viaf.org/viaf/69921853/">Khwushḥāl Khān, active 17th centuryخوشحال خان خټک</author>
+                     <author key="n 82082621" ref="http://viaf.org/viaf/69921853/">
+                        <persName xml:lang="ps" type="standard">Khwushḥāl Khān, active 17th century</persName>
+                        
+                        
+                        <persName xml:lang="ps">خوشحال خان خټک</persName>
+                     </author>
                      <title xml:lang="pus-Latn-x-lc">Dīwān-i Khwushḥāl Khān</title>
                      <title xml:lang="ps">دیوان خوشحال خان</title>
                      <incipit>اي چه خیال کرءپه دنیا دنیا چه ده بي وفا</incipit>
@@ -62,7 +67,7 @@
                               <height>31.5</height>
                               <width>18.5</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -110,7 +115,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-12-14">

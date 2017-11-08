@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8437">
    <teiHeader>
       <fileDesc>
@@ -44,13 +44,18 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_44486-item1">
-                     <author key="n88168314‏" ref="http://www.viaf.org/viaf/27058051/">Kāshī, Jamshīd ibn Masʻūd, -approximately 1436كاشي، جمشيد بن مسعود</author>
+                     <author key="n88168314‏" ref="http://www.viaf.org/viaf/27058051/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Kāshī, Jamshīd ibn Masʻūd, -approximately 1436</persName>
+                        <persName xml:lang="ar">كاشي، جمشيد بن مسعود</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Miftāḥ al-ḥussāb</title>
                      <title xml:lang="ar">مفتاح الحساب</title>
                      <note>Treatise on arithmetic dedicated to Ulūgh Beg</note>
                      <incipit>الحمد لله الذي توحد بابداع الاحاد وتفرد بتاليف صنوف الاعداد ... اما بعد فان احوج خلق الله تعالى الى غفرانه جمشيد ... الكاشي الملقب بالغيات ... يقول لما مارست بالاعمال الحسابية ...</incipit>
                      <colophon>تمام شد كتاب مفتاح الحساب...بتاریخ بیست هفتم رمضان المبارک سنه 1222 هجری مطابق بيست نهم ماه نومبر سنه 1807 عيسوي</colophon>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://digital.info.soas.ac.uk/15594/#page/1/mode/2up/search/">View the printed catalogue Gacek no.209</ref>
@@ -74,7 +79,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -128,7 +133,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-07-07">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8993">
    <teiHeader>
       <fileDesc>
@@ -47,19 +47,27 @@
                      <msItem xml:id="Add_1092-item1-item1" n="1">
                         <locus from="5" to="13">pp. 5-13</locus>
                         <locus from="50" to="54">pp. 50-54</locus>
-                        <author>anonymous
+                        <author>
+                           <persName xml:lang="ar-Latn-x-lc" type="standard">anonymous</persName>
                            
                            
-                           
+                           <persName xml:lang="ar">
+                              
+                              
+                              
+                              
+                           </persName>
                         </author>
                         <title xml:lang="ar-Latn-x-lc">Tarjumān ʻalá al-lughah al-ʻarabīyah wa-maʻrifatihā ʻalá ṭarīqat al-naḥwīyah</title>
                         
                         <title xml:lang="ar">ترجمان على اللغة العربية ومعرفتها على طريقة النحوية</title>
                         
                         
-                        
-                        
-                        
+                        <incipit xml:lang="ar"/>
+                        <explicit xml:lang="ar" defective="true"/>
+                        <note>
+                           <foreign xml:lang="ar"/>
+                        </note>
                         <listBibl>
                            <bibl>
                               <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/view.php?id=188">no. 1440</ref>
@@ -69,19 +77,27 @@
                      </msItem>
                      <msItem xml:id="Add_1092-item1-item2" n="2">
                         <locus from="13" to="49">pp. 13-49</locus>
-                        <author>anonymous
+                        <author>
+                           <persName xml:lang="ar-Latn-x-lc" type="standard">anonymous</persName>
                            
                            
-                           
+                           <persName xml:lang="ar">
+                              
+                              
+                              
+                              
+                           </persName>
                         </author>
                         <title xml:lang="ar-Latn-x-lc">Ḥikāyat zahr al-azhār</title>
                         
                         <title xml:lang="ar">حكاية زهر الازهار</title>
                         
                         
-                        
-                        
-                        
+                        <incipit xml:lang="ar"/>
+                        <explicit xml:lang="ar" defective="true"/>
+                        <note>
+                           <foreign xml:lang="ar"/>
+                        </note>
                         <listBibl>
                            <bibl>
                               <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/view.php?id=188">no. 1440</ref>
@@ -91,19 +107,27 @@
                      </msItem>
                      <msItem xml:id="Add_1092-item1-item3" n="3">
                         <locus from="54" to="55">pp. 54-55</locus>
-                        <author>anonymous
+                        <author>
+                           <persName xml:lang="ar-Latn-x-lc" type="standard">anonymous</persName>
                            
                            
-                           
+                           <persName xml:lang="ar">
+                              
+                              
+                              
+                              
+                           </persName>
                         </author>
                         
                         
                         
                         
                         <title xml:lang="en" type="desc">Detached verses</title>
-                        
-                        
-                        
+                        <incipit xml:lang="ar"/>
+                        <explicit xml:lang="ar" defective="true"/>
+                        <note>
+                           <foreign xml:lang="ar"/>
+                        </note>
                         <listBibl>
                            <bibl>
                               <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/view.php?id=188">no. 1440</ref>
@@ -113,19 +137,27 @@
                      </msItem>
                      <msItem xml:id="Add_1092-item1-item4" n="4">
                         <locus from="56" to="62">pp. 56-62</locus>
-                        <author>anonymous
+                        <author>
+                           <persName xml:lang="ar-Latn-x-lc" type="standard">anonymous</persName>
                            
                            
-                           
+                           <persName xml:lang="ar">
+                              
+                              
+                              
+                              
+                           </persName>
                         </author>
                         
                         
                         
                         
                         <title xml:lang="en" type="desc">Account of the creation and the properties of the heavenly bodies</title>
-                        
-                        
-                        
+                        <incipit xml:lang="ar"/>
+                        <explicit xml:lang="ar" defective="true"/>
+                        <note>
+                           <foreign xml:lang="ar"/>
+                        </note>
                         <listBibl>
                            <bibl>
                               <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/view.php?id=188">no. 1440</ref>
@@ -139,13 +171,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -214,7 +246,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-05-18">

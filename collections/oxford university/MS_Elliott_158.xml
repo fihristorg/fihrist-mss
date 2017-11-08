@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4269">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,15 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_Elliott_158-item1">
-                     <author key="34425337" ref="http://viaf.org/viaf/34425337">Amīn Aḥmad, al-Rāzī, fl. 1593-1619امين احمد رازي
+                     <author key="34425337" ref="http://viaf.org/viaf/34425337">
+                        <persName xml:lang="ar-Latn-x-lc" type="supplied">Amīn Aḥmad, al-Rāzī, fl. 1593-1619</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">امين احمد رازي
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Haft iqlīm</title>
                      
@@ -64,12 +69,12 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>606 ff.
+                        <extent>606 ff.<dimensions type="leaf" unit="in"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -172,7 +177,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-10-16">

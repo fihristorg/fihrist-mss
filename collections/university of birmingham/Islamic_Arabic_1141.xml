@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3639">
    <teiHeader>
       <fileDesc>
@@ -44,19 +44,26 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_1141-item1">
-                     <author key="nr89007359" ref="http://viaf.org/viaf/44278131">Hibat Allāh ibn Salāmah, -1019ابن سلامة، هبة الله، ت. 410 هـ
+                     <author key="nr89007359" ref="http://viaf.org/viaf/44278131">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Hibat Allāh ibn Salāmah, -1019</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">ابن سلامة، هبة الله، ت. 410 هـ
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Al-nāsikh wa-al-mansūkh fī al-qurʾān</title>
                      
                      <title xml:lang="ar">ناسخ و المنسوخ فى القرآن</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 41</bibl>
                         <bibl>GAL I 192; I 335-6</bibl>
@@ -71,14 +78,14 @@
                               <height>13.5</height>
                               <width>10.2</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="9" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -133,7 +140,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-03-10">

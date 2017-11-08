@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7854">
    <teiHeader>
       <fileDesc>
@@ -55,7 +55,13 @@
                      <title xml:lang="fa" type="main">[رساله در هیئت]</title>
                      
                      
-                     <author key="nr 90029107‏‏" ref="http://viaf.org/viaf/90047204">Qūshjī, ʻAlī ibn Muḥammad -1474 or 1475.Qūshchī, ʻAlī ibn Muḥammad, died 879 Qamarī/1474.قوشجی، علی بن محمد.قوشچی، علی بن محمد، ۸۷۹ ق / ۱۴۷۴ م.</author>
+                     <author key="nr 90029107‏‏" ref="http://viaf.org/viaf/90047204">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Qūshjī, ʻAlī ibn Muḥammad -1474 or 1475.</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="org">Qūshchī, ʻAlī ibn Muḥammad, died 879 Qamarī/1474.</persName>
+                        
+                        <persName xml:lang="fa">قوشجی، علی بن محمد.</persName>
+                        <persName xml:lang="fa" type="alt">قوشچی، علی بن محمد، ۸۷۹ ق / ۱۴۷۴ م.</persName>
+                     </author>
                      <incipit xml:lang="fa">بسمله، الحمدلله رب العالمین حمد الشاکرین والصلوة علی خیر خلقه محمد و آله اما بعد این کتاب مشتملست بر مقدمه و دو مقاله مقدمه در بیان آنچه پیش از شروع درین علم دانستنیست و آن دو قسم است. قسم اول در آنچه…</incipit>
                      <explicit xml:lang="fa">… اصغر ثوابت مرصوده دویست و بیست و دو برابر زمین است و اصغر ثوابت مرصوده بیست و سه برابر زمین است والله اعلم.</explicit>
                      <colophon xml:lang="ar">تمت الرسالة هیات فارسی سنه ۱۱۲۹.</colophon>
@@ -93,7 +99,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="14">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -201,7 +207,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2017-05-05">

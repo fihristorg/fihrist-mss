@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3972">
    <teiHeader>
       <fileDesc>
@@ -44,18 +44,25 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_813-item1">
-                     <author key="n80109304" ref="http://viaf.org/viaf/90055949">Ibn al-Firkāḥ, Ibrāhīm ibn ʿAbd al-Raḥmān, 1262-1329الفزاري، إبراهيم بن عبد الرحمن، 660-729 هـ
+                     <author key="n80109304" ref="http://viaf.org/viaf/90055949">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn al-Firkāḥ, Ibrāhīm ibn ʿAbd al-Raḥmān, 1262-1329</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">الفزاري، إبراهيم بن عبد الرحمن، 660-729 هـ
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Bāʿith al-nufūs ilā́ ziyārat al-Quds al-maḥrūs</title>
                      
                      <title xml:lang="ar">باعث النفوس الى زيارة القدس المحروس</title>
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="fa" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 886</bibl>
                         <bibl>GAL II 130, esp. no. 1; II 161</bibl>
@@ -70,13 +77,13 @@
                               <height>17.7</height>
                               <width>12.8</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1" ruledLines="15" n="mistara">15 lines per page
+                        <layout columns="1" ruledLines="15" n="mistara">15 lines per page<dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -136,7 +143,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-05-08">

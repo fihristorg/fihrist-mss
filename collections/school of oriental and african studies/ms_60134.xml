@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8881">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,9 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_60134-item1">
-                     <author key="(DNB)100107893‏" ref="http://viaf.org/viaf/5268340/">Digeon, J. M. -1812‏</author>
+                     <author key="(DNB)100107893‏" ref="http://viaf.org/viaf/5268340/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Digeon, J. M. -1812‏</persName>
+                     </author>
                      <title>Traité de l'administration du Cérémonial de la Porte Ottomane</title>
                      
                      
@@ -56,13 +58,13 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>55 f.
-                           
+                        <extent>55 f.<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -107,7 +109,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2016-11-21">

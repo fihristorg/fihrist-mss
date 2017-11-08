@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7785">
    <teiHeader>
       <fileDesc>
@@ -113,9 +113,14 @@
                         <title type="original">تفسير ما تضمنته كلمات خير البرية من غامض اسرار الصناعة الطبية<locus>1a.1</locus>
                         </title>
                         <title type="other" facs="#i0004" xml:lang="ara-Arab">تضمنته كلمات خير البرية من غامض اسرار الصناعة الطبية للشيخ الامام السنوسى رحم الله تعالى ورضى عنه</title>
-                        <author>Abū `Abd Allāh Muḥammad as-Sanūsīابو عبد الله محمد السنوسى<surname>ابو عبد الله</surname>
-                           <forename>محمد</forename>
-                           <addName type="nisbah">السنوسى</addName>
+                        <author>
+                           <persName xml:lang="eng-Latn" type="standard">Abū `Abd Allāh Muḥammad as-Sanūsī</persName>
+                           <persName xml:lang="ara-Arab" type="original">ابو عبد الله محمد السنوسى</persName>
+                           <persName type="standard" xml:lang="ara-Arab">
+                              <surname>ابو عبد الله</surname>
+                              <forename>محمد</forename>
+                              <addName type="nisbah">السنوسى</addName>
+                           </persName>
                         </author>
                         <incipit facs="#i0005">
                            <locus>Fol. 1b.8</locus>
@@ -159,7 +164,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-04-01T16:21:18+01:00">Conversion from WMSmaster to WAMCP<persName>gbrey</persName>

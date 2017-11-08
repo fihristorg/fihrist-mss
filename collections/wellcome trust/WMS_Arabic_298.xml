@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7758">
    <teiHeader>
       <fileDesc>
@@ -42,7 +42,7 @@
                         </foliation>
                         <collation>
                            <seg type="gathering" n="3" subtype="folded">
-                              
+                              <dimensions type="leaf" unit="mm" quantity="1"/>
                            </seg>
                         </collation>
                         <condition>deteriorated</condition>
@@ -77,7 +77,9 @@
                            <locus>Fol.1a</locus>Marginal notes</item>
                      </list>
                   </additions>
-                  
+                  <bindingDesc>
+                     <binding/>
+                  </bindingDesc>
                </physDesc>
                <msPart xml:id="WMS_Arabic_298-part1">
                   <msIdentifier>
@@ -93,7 +95,9 @@
                         <explicit type="ending" facs="#i0007">
                            <locus>fol.5b.12</locus>علاجه جوارش الكمونى بسكنجبين البزوري والحقنه بدهن السداب ويستعمل ترياق الفاروق كل يوم قد الحمصه فيبرا في اربعين يوما ويمضغ الكمون والكندر ويضمد البطن بالجَاورس والملح والسنبل المسخن او يوخد بعر المعز واحتا البقر وبورق وخل وكبريت</explicit>
                         <note facs="#i0006">عليها تعليقات</note>
-                        <author>Anonymous</author>
+                        <author>
+                           <persName type="standard" xml:lang="eng-Latn">Anonymous</persName>
+                        </author>
                         <title type="normalised" xml:lang="ara-Latn">"No title"</title>
                         <textLang mainLang="ara-Arab"/>
                      </msItem>
@@ -115,7 +119,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-04-12T11:38:23+02:00">Committed to SVN. To view the changes in detail use SVN diff. SVN Url:http://wellcomesvn.local.bibalex.dom/svn/WellcomeTrust/trunk/WAMCPMetaGallery/XML/WMS_Arabic_298/WMS_Arabic_298.xml<persName>eralph</persName>

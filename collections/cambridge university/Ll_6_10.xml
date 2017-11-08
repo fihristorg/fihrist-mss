@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_760">
    <teiHeader>
       <fileDesc>
@@ -45,19 +45,26 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="Ll_6_10-item1" n="1">
                      <locus from="1b" to="106a">ff. 1b-106a</locus>
-                     <author key="n2006079671" ref="http://viaf.org/viaf/97004962/">Muḥammad ibn Hindūshāh Nakhjavānī, fl 1328-1358محمد هندوشاه نخجوانی
+                     <author key="n2006079671" ref="http://viaf.org/viaf/97004962/">
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Muḥammad ibn Hindūshāh Nakhjavānī, fl 1328-1358</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">محمد هندوشاه نخجوانی
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Ṣiḥāḥ al-ʻajamīyah</title>
                      
                      <title xml:lang="ar">صحاح العجمية</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref xml:id="b1">
@@ -73,10 +80,15 @@
                   </msItem>
                   <msItem xml:id="Ll_6_10-item2" n="2">
                      <locus from="1b" to="106a">ff. 1b-106a</locus>
-                     <author>Muḥammad Ḥājī Ilyāsمحمد حاجی الياس
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="supplied">Muḥammad Ḥājī Ilyās</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">محمد حاجی الياس
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Lughat-i dānistan</title>
                      <title xml:lang="ar-Latn-x-lc" type="alt">Tuḥfat al-hādīyah</title>
@@ -85,9 +97,11 @@
                      <title xml:lang="ar" type="alt">تحفة الهادية</title>
                      <title xml:lang="ar" type="alt">تحفة الهادي</title>
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref xml:id="b1a">
@@ -103,19 +117,26 @@
                   </msItem>
                   <msItem xml:id="Ll_6_10-item3" n="3">
                      <locus from="128b" to="153a">ff. 128b-153a</locus>
-                     <author key="n2006071896" ref="http://viaf.org/viaf/56368539/">Farāhī, Abū Naṣr Muḥammad Badr al-Dīnابو نصر فراهی
+                     <author key="n2006071896" ref="http://viaf.org/viaf/56368539/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Farāhī, Abū Naṣr Muḥammad Badr al-Dīn</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">ابو نصر فراهی
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Niṣāb al-ṣibyān</title>
                      <title xml:lang="fa-Latn-x-lc" type="alt">Kitāb-i lughat-i niṣāb-i ṣibyān</title>
                      <title xml:lang="ar">نصاب الصبيان</title>
                      <title xml:lang="fa" type="alt">كتاب لغت نصاب صبيان</title>
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref xml:id="b1b">
@@ -134,13 +155,13 @@
                   <objectDesc form="other">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -232,7 +253,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-09-22">

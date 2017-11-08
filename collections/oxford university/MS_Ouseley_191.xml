@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4642">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,12 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_Ouseley_191-item1">
-                     <author ref="http://viaf.org/viaf/41934">Yaḥyá ibn ʻAbd al-Laṭīf al-Qazwīnī, Mīr 1481-1555یحیی بن عبد اللطیف القزوینی</author>
+                     <author ref="http://viaf.org/viaf/41934">
+                        <persName xml:lang="fa-Latn-x-lc">Yaḥyá ibn ʻAbd al-Laṭīf al-Qazwīnī, Mīr 1481-1555</persName>
+                        <persName xml:lang="fa">یحیی بن عبد اللطیف القزوینی</persName>
+                        
+                        
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Lubb al-tawarīkh</title>
                      <title xml:lang="fa">لب التواريخ</title>
                      
@@ -160,7 +165,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-07-05">

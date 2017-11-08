@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6048">
    <teiHeader>
       <fileDesc>
@@ -43,11 +43,18 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh89005046">
                   <msItem xml:id="Or_5908-item1">
-                     <author key="n99910124" ref="http://viaf.org/viaf/51026511/">Qājār, Fatḥ ʻAlī Shāh, Shah of Iran, d. 1834Fatḥ ‘Alī Shāh KhāqānKhāqānخاقانقاجار، فتح علي شاه خاقانخاقان</author>
+                     <author key="n99910124" ref="http://viaf.org/viaf/51026511/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Qājār, Fatḥ ʻAlī Shāh, Shah of Iran, d. 1834</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Fatḥ ‘Alī Shāh Khāqān</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Khāqān</persName>
+                        <persName xml:lang="fa" type="alt">خاقان</persName>
+                        <persName xml:lang="fa">قاجار، فتح علي شاه خاقان</persName>
+                        <persName xml:lang="fa" type="alt">خاقان</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Dīvān of Khāqān</title>
                      <title xml:lang="fa">دیوان خاقان</title>
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <note>Copied by<persName xml:lang="fa-Latn-x-lc" type="supplied">Muḥammad Mahdī Ḥusaynī Farāhānī<foreign xml:lang="fa">محمد مهدی حسینی فراهانی</foreign>
                         </persName>
                      </note>
@@ -99,7 +106,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-11-06">

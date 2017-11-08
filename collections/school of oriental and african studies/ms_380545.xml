@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8298">
    <teiHeader>
       <fileDesc>
@@ -41,8 +41,15 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_380545-item1">
-                     <author key=" nr 91018937‏‏" ref="http://viaf.org/viaf/314817573/">Barzanjī, Jaʻfar ibn Ḥasan, -1763 or 1764برزنجي، جعفر بن حسن</author>
-                     <author key="(NTA)243056389" ref="http://viaf.org/viaf/290005681/">Ali Muhammad, Mzee Bin, Comorian</author>
+                     <author key=" nr 91018937‏‏" ref="http://viaf.org/viaf/314817573/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Barzanjī, Jaʻfar ibn Ḥasan, -1763 or 1764</persName>
+                        
+                        
+                        <persName xml:lang="ar">برزنجي، جعفر بن حسن</persName>
+                     </author>
+                     <author key="(NTA)243056389" ref="http://viaf.org/viaf/290005681/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ali Muhammad, Mzee Bin, Comorian</persName>
+                     </author>
                      <title xml:lang="swa-Latn-x-lc">Maulidi ya Hee</title>
                      
                      <note>A Swahili version of the Mawlid al-Barzanji nathr, an Arabic poem on the birth of the prophet Muhammad also known as the<title xml:lang="swa-Latn-x-lc">Maulidi Sharifu</title>with supplementary prayers</note>
@@ -58,13 +65,13 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>116 f.
-                           
+                        <extent>116 f.<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -117,7 +124,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2017-08-29">

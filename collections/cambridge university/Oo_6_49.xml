@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1946">
    <teiHeader>
       <fileDesc>
@@ -45,10 +45,15 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="Oo_6_49-item1" n="1">
                      <locus from="1b" to="125b">ff. 1b-125b</locus>
-                     <author key="n2004061869" ref="http://viaf.org/viaf/1862197/">Vaḥīd al-Zamān Qazvīnī, Muḥammad Ṭāhir, d. ca. 1708 or 9ميرزا محمد طاهر وحيد
+                     <author key="n2004061869" ref="http://viaf.org/viaf/1862197/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Vaḥīd al-Zamān Qazvīnī, Muḥammad Ṭāhir, d. ca. 1708 or 9</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">ميرزا محمد طاهر وحيد
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">ʻAbbāsnāmah</title>
                      <title xml:lang="fa-Latn-x-lc" type="alt">Tārīkh-i Ṭāhir Vaḥīd</title>
@@ -57,9 +62,11 @@
                      <title xml:lang="fa" type="alt">تاريخ طاهر وحيد</title>
                      <title xml:lang="fa" type="alt">تاريخ جديد</title>
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref xml:id="b1">
@@ -75,19 +82,26 @@
                   </msItem>
                   <msItem xml:id="Oo_6_49-item2" n="2">
                      <locus from="127b" to="131b">ff. 127b-131b</locus>
-                     <author key="n79068673" ref="http://viaf.org/viaf/90042997/">Jāmī, 1414-1492جامی
+                     <author key="n79068673" ref="http://viaf.org/viaf/90042997/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Jāmī, 1414-1492</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">جامی
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Risālah-ʼi qāfīyah</title>
                      
                      <title xml:lang="fa">رسالۀ قافيه</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref xml:id="b1a">
@@ -103,19 +117,26 @@
                   </msItem>
                   <msItem xml:id="Oo_6_49-item3" n="3">
                      <locus from="135b" to="178a">ff. 135b-178a</locus>
-                     <author ref="http://viaf.org/viaf/118045836/">Hānsavī, ʻAbd al-Vāsiʻحانسوی، عبد الواسع
+                     <author ref="http://viaf.org/viaf/118045836/">
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Hānsavī, ʻAbd al-Vāsiʻ</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">حانسوی، عبد الواسع
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Qavāʻid-i zabān-i Fārisī</title>
                      
                      <title xml:lang="fa">قواعد زبان فارسی</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref xml:id="b1b">
@@ -134,13 +155,13 @@
                   <objectDesc form="other">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -217,7 +238,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-09-15">

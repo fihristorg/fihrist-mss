@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_988">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,9 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Huntington_308-item1" n="1" class="#commentary">
                      <locus from="1" to="57">ff. 1r-57r</locus>
-                     <author key="n 82136884" ref="http://www.viaf.org/viaf/12392936/">Ṭūsī, Naṣīr al-Dīn Muḥammad ibn Muḥammad,<date calendar="#Gregorian" from="1201" to="1274">1201-1274</date>
+                     <author key="n 82136884" ref="http://www.viaf.org/viaf/12392936/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ṭūsī, Naṣīr al-Dīn Muḥammad ibn Muḥammad,<date calendar="#Gregorian" from="1201" to="1274">1201-1274</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Taḥrīr Uṣūl al-handasah</title>
                      <note>A commentary on Euclidʼs Elements. Defective, lacking maqālah 1-3 and the beginning of maqalah 4</note>
@@ -57,14 +59,18 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="MS_Huntington_308-item2" n="2">
-                     <author>Muḥaqqiq al-Kāẓimī, Asad Allāh ibn Ismāʻīl</author>
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc">Muḥaqqiq al-Kāẓimī, Asad Allāh ibn Ismāʻīl</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Kashf al-qināʻ ʻan wujūh ḥujjīyat al-ijmāʻ</title>
                      <note>Reprint of the 1317 [1899] edition.</note>
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="MS_Huntington_308-item3" n="3">
                      <locus from="59" to="75">ff. 59r-75r</locus>
-                     <author key="n 80013599" ref="http://viaf.org/viaf/39443200/">Theodosius,<date calendar="#Gregorian" notBefore="-0100" notAfter="0001">1st cent. B.C.</date>
+                     <author key="n 80013599" ref="http://viaf.org/viaf/39443200/">
+                        <persName type="standard">Theodosius,<date calendar="#Gregorian" notBefore="-0100" notAfter="0001">1st cent. B.C.</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Kitāb Ukar</title>
                      <title xml:lang="la">Sphaerica</title>
@@ -77,7 +83,9 @@
                   </msItem>
                   <msItem xml:id="MS_Huntington_308-item4" n="4">
                      <locus from="75" to="77">ff. 75v-77v</locus>
-                     <author ref="http://viaf.org/viaf/100218815/">Autolykos</author>
+                     <author ref="http://viaf.org/viaf/100218815/">
+                        <persName type="standard">Autolykos</persName>
+                     </author>
                      <title>al-Kurah al-mutaḥarrikah</title>
                      <note>? translated by<persName type="standard"
                                   xml:lang="ar-Latn-x-lc"
@@ -96,7 +104,9 @@
                   </msItem>
                   <msItem xml:id="MS_Huntington_308-item5" n="5">
                      <locus from="78" to="92">ff. 78r-92v</locus>
-                     <author key="92029163" ref="http://viaf.org/viaf/24465144/">Ibn ʻIrāq, Manṣūr ibn ʻAlī d. c. 1034</author>
+                     <author key="92029163" ref="http://viaf.org/viaf/24465144/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ibn ʻIrāq, Manṣūr ibn ʻAlī d. c. 1034</persName>
+                     </author>
                      <title>Iṣlāḥ kitāb Menelaos fī al-kurīyāt</title>
                      <note>[Sphaerica], in 3 books</note>
                      <note>SAUG §111 (b), p. 197 (189), who thinks it may be prior to the recension by Ṭūsī</note>
@@ -236,11 +246,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

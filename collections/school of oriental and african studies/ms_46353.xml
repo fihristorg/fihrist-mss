@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8610">
    <teiHeader>
       <fileDesc>
@@ -44,12 +44,17 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_46353-item1">
-                     <author key="n80107908" ref="http://viaf.org/viaf/70232883">Tadmurī, Isḥāq ibn Ibrāhīm, -1430?تدمري، إسحاق بن إبراهيم</author>
+                     <author key="n80107908" ref="http://viaf.org/viaf/70232883">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Tadmurī, Isḥāq ibn Ibrāhīm, -1430?</persName>
+                        <persName xml:lang="ar">تدمري، إسحاق بن إبراهيم</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Muthīr al-gharām wa-khulāṣat al-kalām fī faḍl ziyārat sayyidinā al-Khalīl</title>
                      <title xml:lang="ar">مثیر الغرام وخلاصة الكلام في فضل زيارة سيدنا الخليل</title>
                      <incipit>احمد الله ان جعلنا من حيران نبيه ابراهيم الخليل وعمنا ببركاته في عمل كل عدو ورواح عند كل بكرة واصيل ... اما بعد نور الله قلبي وقلبك بانوار اليقين ولطف بي وبك كما لطف باولياية المتقين فقد سالني سايل تعينت على اجابته ... ان اجمع جزا لطيفا من التفاسير التي يعتمد عليها والتواريخ التي يركن اليها فيما جاء من صحيح الاخبار والروايات والاثار ... في مولد سيدنا خليل الرحمن واولاده السادة الكرام</incipit>
                      <colophon>وتم...علی ید...غرس الدین الجعبری شیخ حرم سیدنا الخلیل...فی نهار الجمعة المبارك سادس عشرين شهر ذي القعدة احد شهور سنه سبع وتسعين وتسعمايه</colophon>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://digital.info.soas.ac.uk/15594/#page/1/mode/2up/search/">view the printed catalogue Gacek no.235</ref>
@@ -73,7 +78,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -128,7 +133,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-04-14">

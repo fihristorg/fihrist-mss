@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5953">
    <teiHeader>
       <fileDesc>
@@ -45,11 +45,14 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="Or_5341-item1" n="1" class="http://lccn.loc.gov/sh85100085">
                      <locus from="1r" to="127v">ff 1r-127v</locus>
-                     <author>‘Irāqīعراقی</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">‘Irāqī</persName>
+                        <persName xml:lang="fa">عراقی</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">The Dīvān of ‘Irāqī</title>
                      <title xml:lang="fa">دیوان عراقی</title>
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 50.</bibl>
                      </listBibl>
@@ -57,11 +60,14 @@
                   </msItem>
                   <msItem xml:id="Or_5341-item2" n="2" class="http://lccn.loc.gov/sh85100085">
                      <locus from="127r" to="154v">ff 127r-154v</locus>
-                     <author>‘Irāqīعراقی</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">‘Irāqī</persName>
+                        <persName xml:lang="fa">عراقی</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">‘Ushshāqnāmah</title>
                      <title xml:lang="fa">عشّاق نامه</title>
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 50.</bibl>
                      </listBibl>
@@ -69,11 +75,14 @@
                   </msItem>
                   <msItem xml:id="Or_5341-item3" n="3" class="http://lccn.loc.gov/sh85100085">
                      <locus from="154r" to="164r">ff 154r-164r</locus>
-                     <author>‘Irāqīعراقی</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">‘Irāqī</persName>
+                        <persName xml:lang="fa">عراقی</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Lama‘āt</title>
                      <title xml:lang="fa">لمعات</title>
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <note>Imperfect at end</note>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 50.</bibl>
@@ -88,7 +97,7 @@
                               <height>16.3</height>
                               <width>8.6</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -121,7 +130,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-11-05">

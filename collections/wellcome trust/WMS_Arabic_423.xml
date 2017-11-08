@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7773">
    <teiHeader>
       <fileDesc>
@@ -48,14 +48,14 @@
                            <seg type="gathering"
                                 subtype="folded"
                                 n="9x(4) .Two follios of the first and last gatherings are paste down">
-                              
+                              <dimensions type="leaf" unit="mm" quantity="9"/>
                            </seg>
                         </collation>
                         <condition facs="#i0002">deteriorated</condition>
                      </supportDesc>
                      <layoutDesc>
                         <layout n="mistara" ruledLines="19" columns="2">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                            <locus facs="#i0004">1b-8b</locus>
                         </layout>
                         <layout ruledLines="17" columns="1" n="mistara">
@@ -189,10 +189,15 @@
                         <title type="normalised" xml:lang="ara-Latn">Intiẖāb al-Iqtiḍāb</title>
                         <title type="original">انتخاب الاقتضاب<locus facs="#i0011">9b.3</locus>
                         </title>
-                        <author>Abū Naṣr Sa`īd b. Abī l-H̱ayr al-Masīḥī b.`Īsā al-Mutaṭabbibابو نصر سعيد بن ابي الخير المسيحى ابن عيسى المتطبب<surname>ابن عيسى</surname>
-                           <forename>سعيد بن ابي الخير</forename>
-                           <addName type="kunyah">ابو نصر</addName>
-                           <addName type="nisbah">المسيحى</addName>
+                        <author>
+                           <persName xml:lang="eng-Latn" type="standard">Abū Naṣr Sa`īd b. Abī l-H̱ayr al-Masīḥī b.`Īsā al-Mutaṭabbib</persName>
+                           <persName xml:lang="ara-Arab" type="original">ابو نصر سعيد بن ابي الخير المسيحى ابن عيسى المتطبب</persName>
+                           <persName type="standard" xml:lang="ara-Arab">
+                              <surname>ابن عيسى</surname>
+                              <forename>سعيد بن ابي الخير</forename>
+                              <addName type="kunyah">ابو نصر</addName>
+                              <addName type="nisbah">المسيحى</addName>
+                           </persName>
                         </author>
                         <incipit facs="#i0011">
                            <locus>Fol. 9b.8</locus>الطب علم يعرف منه احوال بدن الانسان</incipit>
@@ -219,7 +224,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-10-14T14:58:44+01:00">Conversion from WMSmaster to WAMCP<persName>gbrey</persName>

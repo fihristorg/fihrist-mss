@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6187">
    <teiHeader>
       <fileDesc>
@@ -43,10 +43,14 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh89005046 http://lccn.loc.gov/sh85138898 http://lccn.loc.gov/sh85006333">
                   <msItem xml:id="Or_7119-item1">
-                     <author>Aqūvalizādah Aḥmad Khātim EfendīAkovalızade Ahmed Hatim Efendīاقاوالیزاده احمد خاتم افندی</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Aqūvalizādah Aḥmad Khātim Efendī</persName>
+                        <persName xml:lang="ota-Latn-x-lc" type="supplied">Akovalızade Ahmed Hatim Efendī</persName>
+                        <persName xml:lang="fa">اقاوالیزاده احمد خاتم افندی</persName>
+                     </author>
                      <title xml:lang="en" type="desc">Arabic, Persian and Turkish Dīvāns of Khātim</title>
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <note>Persian poems in folios<locus from="11r" to="24v">11r-24v</locus>
                      </note>
                      <listBibl>
@@ -94,7 +98,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-11-07">

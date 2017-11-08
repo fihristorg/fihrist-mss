@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6452">
    <teiHeader>
       <fileDesc>
@@ -43,7 +43,12 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85100077">
                   <msItem xml:id="Or_9213-item1">
-                     <author>Pūr-i Bahā’-i JāmīTāj al-Dīn ibn Bahā’ al-Dīnپور بهاء جامیتاج الدین ابن بهاء الدین</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Pūr-i Bahā’-i Jāmī</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Tāj al-Dīn ibn Bahā’ al-Dīn</persName>
+                        <persName xml:lang="fa">پور بهاء جامی</persName>
+                        <persName xml:lang="fa" type="alt">تاج الدین ابن بهاء الدین</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Dīvān</title>
                      <title xml:lang="fa">دیوان</title>
                      <note>Copied for the library of<persName xml:lang="fa-Latn-x-lc"
@@ -98,7 +103,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-12-14">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1086">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,9 @@
                <msContents>
                   <msItem xml:id="MS_Marsh_291-item1" n="1">
                      <locus from="1" to="39">ff. 1-39v</locus>
-                     <author key="n 82162164" ref="http://www.viaf.org/viaf/29665940/">Ibn al-Ḥājib, ʻUthmān ibn ʻUmar,<date calendar="#Gregorian" from="1175" to="1249">1175-1249</date>
+                     <author key="n 82162164" ref="http://www.viaf.org/viaf/29665940/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn al-Ḥājib, ʻUthmān ibn ʻUmar,<date calendar="#Gregorian" from="1175" to="1249">1175-1249</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Kāfiyah</title>
                      <listBibl>
@@ -56,7 +58,9 @@
                   </msItem>
                   <msItem xml:id="MS_Marsh_291-item2" n="2">
                      <locus from="40" to="56">ff. 40r-56v</locus>
-                     <author key="n 82231797" ref="http://viaf.org/viaf/21042171/">Zanjānī, ʻAbd al-Wahhāb ibn Ibrāhīm, fl.<date calendar="#Gregorian" when="1257">1257</date>
+                     <author key="n 82231797" ref="http://viaf.org/viaf/21042171/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Zanjānī, ʻAbd al-Wahhāb ibn Ibrāhīm, fl.<date calendar="#Gregorian" when="1257">1257</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Kitāb al-Taṣrīf</title>
                      <listBibl>
@@ -178,11 +182,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_2112">
    <teiHeader>
       <fileDesc>
@@ -45,19 +45,26 @@
                <msContents class="#multipleWorks">
                   <summary>Photostats of Skrine manuscript.</summary>
                   <msItem xml:id="Or_1672-item1" n="1">
-                     <author key="n81059876" ref="http://viaf.org/viaf/98930150/">Jalāl al-Dīn Rūmī, Maulana, 1207-1273جلال الدين رومى
+                     <author key="n81059876" ref="http://viaf.org/viaf/98930150/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Jalāl al-Dīn Rūmī, Maulana, 1207-1273</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">جلال الدين رومى
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Fīhi mā fīhi</title>
                      
                      <title xml:lang="ar">فيه ما فيه</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/arberry/view.php?id=38">no. 422</ref>
@@ -67,19 +74,26 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="Or_1672-item2" n="2">
-                     <author key="n80129266" ref="http://viaf.org/viaf/38224074/">Mīr Ḥusaynī Haravī, Ḥusayn ibn ʻĀlim, 1272 or 3-ca. 1317فخر السادات ركن الدين حسين بن عالم حسيني
+                     <author key="n80129266" ref="http://viaf.org/viaf/38224074/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Mīr Ḥusaynī Haravī, Ḥusayn ibn ʻĀlim, 1272 or 3-ca. 1317</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">فخر السادات ركن الدين حسين بن عالم حسيني
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Ṭarab al-majālis</title>
                      
                      <title xml:lang="ar">طرب المجالس</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/arberry/view.php?id=38">no. 422</ref>
@@ -93,13 +107,13 @@
                   <objectDesc form="other">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -181,7 +195,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-07-21">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1231">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,9 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Marsh_716-item1" n="1">
                      <locus from="1" to="135">ff. 1v-135r</locus>
-                     <author key="n 82164402" ref="http://www.viaf.org/viaf/9907600/">Ḥarīrī,<date calendar="#Gregorian" from="1054" to="1122">1054-1122</date>
+                     <author key="n 82164402" ref="http://www.viaf.org/viaf/9907600/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ḥarīrī,<date calendar="#Gregorian" from="1054" to="1122">1054-1122</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Maqāmāt</title>
                      <note>With variant readings and glosses</note>
@@ -57,7 +59,9 @@
                   </msItem>
                   <msItem xml:id="MS_Marsh_716-item2" n="2">
                      <locus from="135" to="137">ff. 135v-137v</locus>
-                     <author key="n 82164402" ref="http://www.viaf.org/viaf/9907600/">Ḥarīrī,<date calendar="#Gregorian" from="1054" to="1122">1054-1122</date>
+                     <author key="n 82164402" ref="http://www.viaf.org/viaf/9907600/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ḥarīrī,<date calendar="#Gregorian" from="1054" to="1122">1054-1122</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Risālah al-sīnīyah wa-al-Risālah al-shīnīyah</title>
                      <listBibl>
@@ -68,7 +72,9 @@
                   </msItem>
                   <msItem xml:id="MS_Marsh_716-item3" n="3" class="#extract">
                      <locus from="138" to="148">ff. 138-148r</locus>
-                     <author key="n 84238992" ref="http://viaf.org/viaf/90043046/">Ibn ʻAbd Rabbih, Aḥmad ibn Muḥammad,<date calendar="#Gregorian" from="0860" to="0940">860-940</date>
+                     <author key="n 84238992" ref="http://viaf.org/viaf/90043046/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ibn ʻAbd Rabbih, Aḥmad ibn Muḥammad,<date calendar="#Gregorian" from="0860" to="0940">860-940</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-ʻIqd al-farīd</title>
                      <note>Extract only, with specimens of metres</note>
@@ -80,7 +86,9 @@
                   </msItem>
                   <msItem xml:id="MS_Marsh_716-item4" n="4">
                      <locus from="148" to="167">ff. 148v-167</locus>
-                     <author key="n 79074487" ref="http://www.viaf.org/viaf/29927443/">Masʻūdī, d.<date calendar="#Gregorian" when="0956">956</date>?</author>
+                     <author key="n 79074487" ref="http://www.viaf.org/viaf/29927443/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Masʻūdī, d.<date calendar="#Gregorian" when="0956">956</date>?</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Murūj al-dhahab wa-maʻādin al-jawāhir</title>
                      <note>Excerpts only</note>
                      <listBibl>
@@ -225,11 +233,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

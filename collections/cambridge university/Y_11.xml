@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3111">
    <teiHeader>
       <fileDesc>
@@ -45,19 +45,26 @@
                <msContents>
                   <msItem xml:id="Y_11-item1" n="1">
                      <locus from="1a" to="35b">ff. 1a-35b</locus>
-                     <author key="n86099940" ref="http://viaf.org/viaf/90055920/">Ibn Sayyid al-Nās, Muḥammad ibn Muḥammad, 1273?-1334ابن سيد الناس، محمد بن ابي بكر اليعموري
-                        <addName xml:lang="ar" type="kunyah">ابو الفتح</addName>
+                     <author key="n86099940" ref="http://viaf.org/viaf/90055920/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn Sayyid al-Nās, Muḥammad ibn Muḥammad, 1273?-1334</persName>
                         
                         
+                        <persName xml:lang="ar">ابن سيد الناس، محمد بن ابي بكر اليعموري
+                           <addName xml:lang="ar" type="kunyah">ابو الفتح</addName>
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Nūr al-ʻuyūn fī talkhīṣ siyar al-amīn al-maʼmūn</title>
                      
                      <title xml:lang="ar">نور العيون في تلخيص سير الامين والمامون</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/nicholson1932/view.php?id=314"/>
@@ -69,36 +76,51 @@
                   </msItem>
                   <msItem xml:id="Y_11-item2" n="2">
                      <locus from="36b" to="43a">ff. 36b-43a</locus>
-                     <author key="n94036418" ref="http://viaf.org/viaf/79452546/">Sayyid al-Ḥimyarī, Ismāʻil ibn Muḥammad, 723-789سيد الحميري، اسماعيل بن محمد
-                        <addName xml:lang="ar" type="kunyah">ابو هاشم</addName>
+                     <author key="n94036418" ref="http://viaf.org/viaf/79452546/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Sayyid al-Ḥimyarī, Ismāʻil ibn Muḥammad, 723-789</persName>
                         
                         
+                        <persName xml:lang="ar">سيد الحميري، اسماعيل بن محمد
+                           <addName xml:lang="ar" type="kunyah">ابو هاشم</addName>
+                           
+                           
+                        </persName>
                      </author>
                      
                      
                      
                      
                      <title xml:lang="en" type="desc">Qaṣīda in praise of the Prophet</title>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="Y_11-item3" n="3">
                      <locus from="43b" to="103b">ff. 43b-103b</locus>
-                     <author>anonymous
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">anonymous</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      
                      
                      
                      
                      <title xml:lang="en" type="desc">Collection of prayers, chanrs, homilies, etc.</title>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                </msContents>
@@ -106,13 +128,13 @@
                   <objectDesc form="other">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -204,7 +226,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-09-02">

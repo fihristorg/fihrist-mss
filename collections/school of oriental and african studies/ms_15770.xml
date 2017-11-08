@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8036">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,12 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_15770-item1">
-                     <author>Ḥusayn ibn Mīr ‘Imād al-Dīn MuḥammadSharaf al-Dīn Ḥusayn ibn Mīr ‘Imād al-Dīn MuḥammadIbn al-Ḥusaynī al-Harawī, Ḥusayn ibn Mīr ‘Imād al-Dīn Muḥammadحسین بن میر عماد الدین محمد</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Ḥusayn ibn Mīr ‘Imād al-Dīn Muḥammad</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Sharaf al-Dīn Ḥusayn ibn Mīr ‘Imād al-Dīn Muḥammad</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Ibn al-Ḥusaynī al-Harawī, Ḥusayn ibn Mīr ‘Imād al-Dīn Muḥammad</persName>
+                        <persName xml:lang="fa">حسین بن میر عماد الدین محمد</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Maktūbāt</title>
                      
                      <title xml:lang="fa">مكتوبات</title>
@@ -57,13 +62,13 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>218 f.
-                           
+                        <extent>218 f.<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -113,7 +118,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2016-09-26">

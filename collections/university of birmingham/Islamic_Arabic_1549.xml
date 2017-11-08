@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3747">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,16 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_1549-item1">
-                     <author>Imāmzāde Ḥasan Ibn Umm Sinān, d. 1088/1677
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="supplied">Imāmzāde Ḥasan Ibn Umm Sinān, d. 1088/1677</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Al-majālis al-sinānīyah al-kabīrah</title>
                      
@@ -56,9 +62,11 @@
                      
                      <note>Beginning missing; title, without author, added by a later hand.</note>
                      <note>Contents: majālis 2-18 complete, the first majālis defective.</note>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="fa" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 88</bibl>
                         <bibl>GAL Suppl., Nachträge 652. 6b (vol. III 1304)</bibl>
@@ -73,14 +81,14 @@
                               <height>21.4</height>
                               <width>15.2</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="18" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -134,7 +142,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-03-24">

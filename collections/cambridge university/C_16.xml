@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_409">
    <teiHeader>
       <fileDesc>
@@ -45,36 +45,50 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="C_16-item1" n="1">
                      <locus from="3b" to="60b">ff. 3b-60b</locus>
-                     <author key="n80128300" ref="http://viaf.org/viaf/8099998/">Narāqī, Muḥammad Mahdī ibn Abī Z̲arr, d. 1794 or 5نراقي، ملا محمد مهدي ابن أبي ذر
+                     <author key="n80128300" ref="http://viaf.org/viaf/8099998/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Narāqī, Muḥammad Mahdī ibn Abī Z̲arr, d. 1794 or 5</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">نراقي، ملا محمد مهدي ابن أبي ذر
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Anīs al-muwaḥḥidīn</title>
                      
                      <title xml:lang="ar">انيس الموحدين</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="C_16-item2" n="2">
                      <locus from="61b" to="291a">ff. 61b-291a</locus>
-                     <author key="n88640634" ref="http://viaf.org/viaf/26180674/">Majlisī, Muḥammad Taqī ibn Maqṣūd ʻAlī, 1594 or 5-1659 or 60مجلسي، ملا محمد تقي بن مقصود علي
+                     <author key="n88640634" ref="http://viaf.org/viaf/26180674/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Majlisī, Muḥammad Taqī ibn Maqṣūd ʻAlī, 1594 or 5-1659 or 60</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">مجلسي، ملا محمد تقي بن مقصود علي
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Ḥadīqat al-muttaqīn</title>
                      
                      <title xml:lang="ar">حديقة المتقين</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
@@ -82,13 +96,13 @@
                   <objectDesc form="other">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -170,7 +184,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-07-27">

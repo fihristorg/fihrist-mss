@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5420">
    <teiHeader>
       <fileDesc>
@@ -43,15 +43,18 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85046763">
                   <msItem xml:id="Or_11951-item1">
-                     <author>Ni‘matullāh al-Mūsāvī al-Ḥusaynī al-Jazā’irīنعمة الله الموسوی حسینی الجزائری</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Ni‘matullāh al-Mūsāvī al-Ḥusaynī al-Jazā’irī</persName>
+                        <persName xml:lang="fa">نعمة الله الموسوی حسینی الجزائری</persName>
+                     </author>
                      <editor role="translator" xml:lang="fa-Latn-x-lc">
                         <persName>Nūr al-Dīn Muḥammad ibn Ni‘matullāh al-Mūsavī al-Shūstarī<foreign xml:lang="fa">نور الدین محمد ابن نعمة الله الموسوی الشوستری</foreign>
                         </persName>
                      </editor>
                      <title xml:lang="fa-Latn-x-lc">Zahr al-rabī'</title>
                      <title xml:lang="fa">زهر الربیع</title>
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <note>Anecdotes collected by Ni‘matullāh al-Mūsāvī al-Ḥusaynī al-Jazā’irī in a Persian translation from the Arabic by Nūr al-Dīn Muḥammad ibn Ni‘matullāh al-Mūsavī al-Shūstarī</note>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 47.</bibl>
@@ -98,7 +101,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-10-26">

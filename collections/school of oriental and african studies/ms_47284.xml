@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8751">
    <teiHeader>
       <fileDesc>
@@ -44,12 +44,16 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_47284-item1" n="1">
-                     <author>Anonymous</author>
+                     <author>
+                        <persName>Anonymous</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Mawwālāt</title>
                      <title xml:lang="ar">موالات</title>
                      <note>218 stanzas of Colloquial Egyptian poetry accompanied by an Italian translation as far as stanza 128</note>
                      <incipit>* خذ حرف اثنين يا من قد تريد وسمى ميتين واثنين فوق الحرف واستسمى</incipit>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://digital.info.soas.ac.uk/15594/#page/1/mode/2up/search/">view the printed catalogue Gacek no.29</ref>
@@ -58,12 +62,16 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="ms_47284-item2" n="2">
-                     <author>Anonymous</author>
+                     <author>
+                        <persName>Anonymous</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Amthāl</title>
                      <title xml:lang="ar">امثال</title>
                      <note>A collection of proverbs</note>
                      <incipit>سنة الخرا اربعة وعشرين شهر ... تروح سنين الخرا وتبقى معايرها</incipit>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://digital.info.soas.ac.uk/15594/#page/1/mode/2up/search/">view the printed catalogue Gacek no.29</ref>
@@ -90,7 +98,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -157,7 +165,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-04-27">

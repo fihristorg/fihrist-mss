@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3725">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,16 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_1463-item1">
-                     <author>Aḥmad al-Fārūqī al-Naqshabandī, dates unknown
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="supplied">Aḥmad al-Fārūqī al-Naqshabandī, dates unknown</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Zubdat al-risālah al-Fārūqīyah waʾumdat al-masāʾil al-ṣūfīyah</title>
                      
@@ -57,8 +63,10 @@
                      <note>The zubdah has been extracted from the Persian original by<persName xml:lang="ar-Latn-x-lc" type="supplied ">Yūnus ibn ʿAbd al-Raḥmān al-Irānī</persName>
                      </note>
                      <incipit xml:lang="ar">الحمد لله رب العالمين ... و بعد فيقول اسير الذنوب و وعا النقائص و العيوب سمى صاحب الحوت</incipit>
-                     
-                     
+                     <explicit xml:lang="fa" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 1290</bibl>
                      </listBibl>
@@ -72,14 +80,14 @@
                               <height>22.3</height>
                               <width>16.0</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="22" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                            <note>22 lines per page</note>
                         </layout>
                      </layoutDesc>
@@ -134,7 +142,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-06-18">

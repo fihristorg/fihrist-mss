@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3862">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,15 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_356-item1">
-                     <author key="n84077020" ref="http://viaf.org/viaf/48162863">Khuḍarī, Muḥammad, 1872-1927الخضري، محمد، ١٨٧٢-١٩٢٧م
+                     <author key="n84077020" ref="http://viaf.org/viaf/48162863">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Khuḍarī, Muḥammad, 1872-1927</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">الخضري، محمد، ١٨٧٢-١٩٢٧م
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Risālah fī al-ʿibārāt wa-al-tawḥīd</title>
                      
@@ -56,9 +61,11 @@
                      
                      <note>Contains a tract on the divine attributes of God, apparently written by somebody who attended the author's lectures. No publication of Khuḍarī on this subject is mentioned by Sarkis.</note>
                      <note>Incomplete</note>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="fa" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 1189. Incorrectly given as 1005 II in the catalogue.</bibl>
                      </listBibl>
@@ -72,14 +79,14 @@
                               <height>20.0</height>
                               <width>13.9</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial">Catchwords on each leaf, lower left verso</foliation>
                         <foliation xml:id="modern">Modern foliation in pencil, upper left recto.</foliation>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="17" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                            <note>15-17 lines per page</note>
                         </layout>
                      </layoutDesc>
@@ -143,7 +150,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-05-21">

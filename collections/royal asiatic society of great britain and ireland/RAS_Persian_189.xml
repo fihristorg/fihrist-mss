@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7589">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,10 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="RAS_Persian_189-item1">
-                     <author key="n 82136884" ref="http://www.viaf.org/viaf/12392936/">Ṭūsī, Naṣīr al-Dīn Muḥammad ibn Muḥammad, 1201-1274الطوسي،نصير الدين محمد بن محمد</author>
+                     <author key="n 82136884" ref="http://www.viaf.org/viaf/12392936/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ṭūsī, Naṣīr al-Dīn Muḥammad ibn Muḥammad, 1201-1274</persName>
+                        <persName xml:lang="ar">الطوسي،نصير الدين محمد بن محمد</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Akhlāq-i Nāṣirī</title>
                      <title xml:lang="fa">اخلاق ناصری</title>
                      <note>Illuminated panel above beginning of text. Ruled margins. Headings in red.</note>
@@ -60,7 +63,7 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>Folios 180
+                        <extent>Folios 180<dimensions type="leaf" unit="in"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
@@ -114,7 +117,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-05-30">

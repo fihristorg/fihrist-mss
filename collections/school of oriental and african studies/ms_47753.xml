@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8782">
    <teiHeader>
       <fileDesc>
@@ -41,7 +41,10 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_47753-item1">
-                     <author key="no2003032817‏" ref="http://viaf.org/viaf/68615291/">Taylor, W. E. (William Ernest), 1856-1927</author>
+                     <author key="no2003032817‏" ref="http://viaf.org/viaf/68615291/">
+                        <persName xml:lang="swa-Latn-x-lc" type="standard">Taylor, W. E. (William Ernest), 1856-1927</persName>
+                        
+                     </author>
                      <title>Hymns in Swahili</title>
                      <note>Translations of Christian hymns in Swahili in Latin letters</note>
                      <incipit>Ndiye mtakatifu, Mwnyezi Mungu! Alfajiri sana, natukuhimidi</incipit>
@@ -56,13 +59,13 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>91 f.
-                           
+                        <extent>91 f.<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -112,7 +115,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2017-02-20">

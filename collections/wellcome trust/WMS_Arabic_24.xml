@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7736">
    <teiHeader>
       <fileDesc>
@@ -37,7 +37,7 @@
                         <foliation facs="#i0006">In Arabic numerals</foliation>
                         <collation>
                            <seg type="gathering" n="1-42">
-                              
+                              <dimensions type="leaf" unit="mm" quantity="6"/>
                               <note>4th gathering: centre bifolio (13-14b) is unsewn</note>
                               <formula>03+41+002</formula>
                            </seg>
@@ -134,8 +134,13 @@
                         <locus>Fol.1a to Fol.21b</locus>
                         <note facs="#i0026">Brockelmann refers that this work is an extract belongs to Ṣāliḥ b. Naṣrallāh al.Ḥalabī Ḥakīmbāšy b.Sallūm according to the system of Paracelsus (S. II, 666)</note>
                         <author>
-                           <forename facs="#i0045">براكلسٽوس</forename>
-                           <addName type="nisbah" facs="#i0045">الجرمانى</addName>Paracelsusبراكلسٮوس الجرمانى</author>
+                           <persName xml:lang="ara-Arab" type="standard">
+                              <forename facs="#i0045">براكلسٽوس</forename>
+                              <addName type="nisbah" facs="#i0045">الجرمانى</addName>
+                           </persName>
+                           <persName xml:lang="eng-Latn" type="standard">Paracelsus</persName>
+                           <persName xml:lang="ara-Arab" type="original" facs="#i0045">براكلسٮوس الجرمانى</persName>
+                        </author>
                         <title type="other" facs="#i0006" xml:lang="ara-Arab">الطب الجديد الكيميائي</title>
                         <title type="original" facs="#i0045">اساغريا الطبية<locus>Fol.41a.7</locus>
                         </title>
@@ -276,11 +281,17 @@
                         </title>
                         <title type="other" facs="#i0026" xml:lang="lat-Latn">Basilica Chymica</title>
                         <author>
-                           <forename facs="#i0026">قروليوس</forename>
-                           <addName type="laqab"/>
-                           <addName type="kunyah"/>
-                           <addName type="khitab"/>
-                           <addName type="nisbah"/>Oswald Crollius (Croll)قروليوس</author>
+                           <persName xml:lang="ara-Arab" type="standard">
+                              <forename facs="#i0026">قروليوس</forename>
+                              
+                              
+                              
+                              
+                           </persName>
+                           <persName xml:lang="eng-Latn" type="standard">Oswald Crollius (Croll)</persName>
+                           
+                           <persName xml:lang="ara-Arab" type="original" facs="#i0026">قروليوس</persName>
+                        </author>
                         <textLang mainLang="ara-Arab"/>
                         <title type="normalised" xml:lang="ara-Latn">Royal Chemistry</title>
                         <incipit type="basmala"/>
@@ -290,95 +301,95 @@
                         <explicit type="ending"/>
                         <msItem xml:id="WMS_Arabic_24-part1-item2-item1" n="toc">
                            <locus>fol.21b.6</locus>
-                           <title type="normalised"/>
+                           
                            <title type="original" facs="#i0026">المقالة الاولى اعلم ان معالجات الامراض منها ما هو كلى عام غير مختص بمرض</title>
                         </msItem>
                         <note facs="#i0045">The colophon found in the end of this manuscript is the colophon of the first work in this collection. The scribe is the same in both works.</note>
                         <msItem xml:id="WMS_Arabic_24-part1-item2-item2" n="toc">
                            <locus>fol.22a.5</locus>
-                           <title type="normalised"/>
+                           
                            <title type="original" facs="#i0026">فصل فى الانضاج والمنضج اعلم ان الامراض العارضة عن الاخلاط الفاسدة لا يتاتى قطع اصلها من غير انضاج</title>
                         </msItem>
                         <msItem xml:id="WMS_Arabic_24-part1-item2-item3" n="toc">
                            <locus>fol.22b.17</locus>
-                           <title type="normalised"/>
+                           
                            <title type="original" facs="#i0027">فصل فى القئ والمقئ المقيات ثلثة اقسام</title>
                         </msItem>
                         <msItem xml:id="WMS_Arabic_24-part1-item2-item4" n="toc">
                            <locus>Fol.23a.8</locus>
-                           <title type="normalised"/>
+                           
                            <title type="original" facs="#i0027">فصل فى المسهل اعلم لكل مسهل افعال ثلثة استفراغ الزائد وتقوية الاعضاء وتعديل المزاج</title>
                         </msItem>
                         <msItem xml:id="WMS_Arabic_24-part1-item2-item5" n="toc">
                            <locus>Fol.27b.1</locus>
-                           <title type="normalised"/>
+                           
                            <title type="original" facs="#i0032">فصل فى الادراروالمدِر اعلم ان الاسهال والقئ لا يكفى فى تنقية جميع الاعضاء</title>
                         </msItem>
                         <msItem xml:id="WMS_Arabic_24-part1-item2-item6" n="toc">
                            <locus>Fol.28a.15</locus>
-                           <title type="normalised"/>
+                           
                            <title type="original" facs="#i0032">فصل فى المعرق اعلم ان المعرق علاج عظيم للطاعون والحمى العرقية ويدفع السم بالعرق</title>
                         </msItem>
                         <msItem xml:id="WMS_Arabic_24-part1-item2-item7" n="toc">
                            <locus>Fol.29b.4</locus>
-                           <title type="normalised"/>
+                           
                            <title type="original" facs="#i0034">فصل فى التقوية والحفظ اعلم ان التقوية وحفظ</title>
                         </msItem>
                         <msItem xml:id="WMS_Arabic_24-part1-item2-item8" n="toc">
                            <locus>Fol.30b.8</locus>
-                           <title type="normalised"/>
+                           
                            <title type="original" facs="#i0035">فصل فى مسكنات الوجع والمنومات اعلم ان بعض الامراض لم يسكن الوجع فيها ما لا يتمكن من علاجها</title>
                         </msItem>
                         <msItem xml:id="WMS_Arabic_24-part1-item2-item9" n="toc">
                            <locus>Fol.31a.17</locus>
-                           <title type="normalised"/>
+                           
                            <title type="original" facs="#i0035">فصل فى المشمومات اعلم ان الروائح الطيبة المستنشقة مقوية للروح</title>
                         </msItem>
                         <msItem xml:id="WMS_Arabic_24-part1-item2-item10" n="toc">
                            <locus>Fol.31b.5</locus>
-                           <title type="normalised"/>
+                           
                            <title type="original" facs="#i0036">المقالة الثانية فى العلاجات الجزئية فصل دواء يقوى الاعضاء الرئيسة</title>
                         </msItem>
                         <msItem xml:id="WMS_Arabic_24-part1-item2-item11" n="toc">
                            <locus>Fol.33a.15</locus>
-                           <title type="normalised"/>
+                           
                            <title type="original" facs="#i0037">فصل دواء امراضالقلب يجب فى امراض معالجات الامراض تقوية القلب وحفظه</title>
                         </msItem>
                         <msItem xml:id="WMS_Arabic_24-part1-item2-item12" n="toc">
                            <locus>Fol.35a.4</locus>
-                           <title type="normalised"/>
+                           
                            <title type="original" facs="#i0039">فصل دواء امراض المعدة صفة استخراج زاج الزهرة والمريخ يؤخذ صفائح النحاس او الحديد الرقيقة</title>
                         </msItem>
                         <msItem xml:id="WMS_Arabic_24-part1-item2-item13" n="toc">
                            <locus>Fol.35b.5</locus>
-                           <title type="normalised"/>
+                           
                            <title type="original" facs="#i0040">فصل دواء الرحم صفة اكسير الرحم وامراضه يوخذ نصف رطل جندبيد ستر زعفران</title>
                         </msItem>
                         <msItem xml:id="WMS_Arabic_24-part1-item2-item14" n="toc">
                            <locus>Fol.35b.19</locus>
-                           <title type="normalised"/>
+                           
                            <title type="original" facs="#i0040">فصل دواء الكلى والمثانة اعلم ان الحيض المتولدة</title>
                         </msItem>
                         <msItem xml:id="WMS_Arabic_24-part1-item2-item15" n="toc">
                            <locus>Fol.36a.9</locus>
-                           <title type="normalised"/>
+                           
                            <title type="original" facs="#i0040">فصل دواء الاستسقاء اعلم ان الفضلات الحاصلة مما يوكل ويشرب ثلثة الاول المائية</title>
                         </msItem>
                         <msItem xml:id="WMS_Arabic_24-part1-item2-item16" n="toc">
                            <locus>Fol.36b.14</locus>
-                           <title type="normalised"/>
+                           
                            <title type="original" facs="#i0041">فصل فى الادوية لتقوية الجماع اعلم ان الراوند اذا قلى فارقته القوة المسهلة</title>
                         </msItem>
                         <msItem xml:id="WMS_Arabic_24-part1-item2-item17" n="toc">
                            <locus>Fol.37a.19</locus>
-                           <title type="normalised"/>
+                           
                            <title type="original" facs="#i0041">فصل فى ادوية الحميات اعلم ان الحمى اما ان يكون زيبقية او كبريتية</title>
                         </msItem>
                         <explicit facs="#i0045">
                            <locus>fol.41a.2</locus>ويقولون ان الطبيعة تدبره وتربيه خصوصا اذا انضم اليه اعتقاد انه يبرئ من هذا الجرح بهذا الدواء الغريب العجيب فيحصل للطبيعة انتعاش فتصلح الجرح وتبرئه وليس الامر كذلك كما زعموا فان خواص الاشياء لا تنكر فإن فعل هذا المرسم بخاصيته يتوسط روح العالم كما يفعل الحديد في المغناطيس فقط فقط</explicit>
                         <msItem xml:id="WMS_Arabic_24-part1-item2-item18" n="toc">
                            <locus>Fol.38b.19</locus>
-                           <title type="normalised"/>
+                           
                            <title type="original" facs="#i0043">فصل فى ادوية الجروح والقروح صفة دهن البلسان</title>
                         </msItem>
                      </msItem>
@@ -405,7 +416,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-09-24T13:30:02+03:00">Committed to SVN. To view the changes in detail use SVN diff. SVN Url: http://wellcomesvn.local.bibalex.dom/svn/WellcomeTrust/trunk/WAMCPMetaGallery/XML/WMS_Arabic_24/WMS_Arabic_24.xml<persName>abaldwin</persName>

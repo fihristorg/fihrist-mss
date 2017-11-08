@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6563">
    <teiHeader>
       <fileDesc>
@@ -40,10 +40,13 @@
                </msIdentifier>
                <msContents>
                   <summary>
-                     <title type="main"/>
+                     
                   </summary>
                   <msItem xml:id="Pashto_MS_13-item1" n="1">
-                     <author>Mullā ʻAbd al-Rashīd, active in 1716ملا عبد الرشید</author>
+                     <author>
+                        <persName xml:lang="pus-Latn-x-lc" type="supplied">Mullā ʻAbd al-Rashīd, active in 1716</persName>
+                        <persName xml:lang="ps">ملا عبد الرشید</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Rashīd al-bayān</title>
                      <title xml:lang="ar">رشيد البيان</title>
                      <note>A manual of religious instruction in verse, much annotated in English</note>
@@ -57,7 +60,9 @@
                      <textLang mainLang="ps">Pashto</textLang>
                   </msItem>
                   <msItem xml:id="Pashto_MS_13-item2" n="2">
-                     <author>Anonymous</author>
+                     <author>
+                        <persName>Anonymous</persName>
+                     </author>
                      <title xml:lang="pus-Latn-x-lc">Tawallud'nāmah</title>
                      
                      <title xml:lang="ps">تولدنامه</title>
@@ -85,7 +90,7 @@
                               <height>18.5</height>
                               <width>11</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
@@ -155,7 +160,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-10-16">

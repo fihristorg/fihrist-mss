@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7453">
    <teiHeader>
       <fileDesc>
@@ -53,11 +53,19 @@
                         <persName>Mushkin Qalam</persName>
                      </name>. He is the author of five masnavi poems; in his poetry he used the takhallus of<name>
                         <persName ref="http://viaf.org/viaf/72997583">Vaṣfî</persName>
-                     </name>. The present work, is seemingly written after his death by one of the desciples of the Shaikh.<title type="main"/>
+                     </name>. The present work, is seemingly written after his death by one of the desciples of the Shaikh.
                   </summary>
                   <msItem xml:id="Persian_MS_94-item1" n="1">
-                     <author key="n 85026579 " ref="http://viaf.org/viaf/90770167/">Kāshifī, Ḥusayn Vāʻiẓ, -1504 or 1505Bayhaqī, Kamāl al-Dīn Ḥusayn Vāʻiẓ Kāshifī,‏ ‎d. -1504 or 1505‏کاشفى بيهقى، کمال الدين حسين واعظ
+                     <author key="n 85026579 " ref="http://viaf.org/viaf/90770167/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Kāshifī, Ḥusayn Vāʻiẓ, -1504 or 1505</persName>
+                        <persName xml:lang="ar-Latn-x-lc" type="alt">Bayhaqī, Kamāl al-Dīn Ḥusayn Vāʻiẓ Kāshifī,‏ ‎d. -1504 or 1505‏</persName>
                         
+                        
+                        <persName xml:lang="fa">کاشفى بيهقى، کمال الدين حسين واعظ
+                           
+                           
+                           
+                        </persName>
                         
                         
                      </author>
@@ -70,7 +78,7 @@
                         <locus from="144v" to="144v">144v</locus>زهشتسد قرون بود هفتاد وپنج / که گشتیم از این نقد گنجینه سنج..</colophon>
                      <incipit xml:lang="ar" type="beginning">
                         <locus from="2r" to="2r">2r</locus>الحمدالله الذی زین سماء شرف السیادت بانوار اثار سنن سید السند الامین وجعل مصابیح احادیثه العالیه مطالع انوار شمس الملة والدین...</incipit>
-                     
+                     <explicit xml:lang="ar"/>
                      <listBibl>
                         <bibl>A critical edition of Risālat al-ʻaliyyah fi al-aḥādith al-nabawiyyah was produced by<name ref="http://viaf.org/viaf/33293142/">
                               <persName xml:lang="fa-Latn-x-lc">Jalāl al-Dīn Ḥusaynī Muḥaddis̲</persName>
@@ -122,8 +130,16 @@
                      </msItem>
                   </msItem>
                   <msItem xml:id="Persian_MS_94-item2" n="2">
-                     <author>Shaikh ʻAbd Allāh bin Mir Muẓaffar al-Ḥusaini al-Tirmiz̲ī (d. 1025/ 1616 or 1035/1626)‏شیخ عبدالله میر مظفر الحسینی الترمذي
+                     <author>
+                        <persName type="supplied">Shaikh ʻAbd Allāh bin Mir Muẓaffar al-Ḥusaini al-Tirmiz̲ī (d. 1025/ 1616 or 1035/1626)</persName>
+                        <persName xml:lang="ar-Latn-x-lc" type="alt">‏</persName>
                         
+                        
+                        <persName xml:lang="fa">شیخ عبدالله میر مظفر الحسینی الترمذي
+                           
+                           
+                           
+                        </persName>
                         
                         
                      </author>
@@ -133,7 +149,7 @@
                      
                      <title xml:lang="en" type="desc">Untitled Sufi treatise</title>
                      <incipit xml:lang="ar" type="beginning">فایضه روزی ولایت علم عبدالله شکین قلم قدس سره رو بسوی موالف کرده فرمود در ایام شباب اکثر مطالعه تذکره الاولیا مینمودم..الخ</incipit>
-                     
+                     <explicit xml:lang="ar"/>
                      <listBibl>
                         <bibl>For a similar work, titled Fatih al-Qulub, see Ethe, 10 650. Examples of<name>
                               <persName type="supplied">Shaikh Abdullah bin Mīr Muẓaffar al-Ḥusainī al-Tirmizī (d. A. H. 1025/A. D. 1616 or 1035/1626)</persName>
@@ -150,7 +166,7 @@
                               <height>172</height>
                               <width>112</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <condition>
                            <p>slightly wormeaten and water stained</p>
@@ -247,7 +263,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015">

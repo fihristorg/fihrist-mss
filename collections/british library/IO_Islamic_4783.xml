@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3503">
    <teiHeader>
       <fileDesc>
@@ -49,8 +49,8 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>61 ff of varying sizes
-                           
+                        <extent>61 ff of varying sizes<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -83,18 +83,24 @@
                      <msItem xml:id="IO_Islamic_4783-part1-item1"
                              n="1"
                              class="http://lccn.loc.gov/sh85064939 http://lccn.loc.gov/n80025804">
-                        <author>Unknwon
+                        <author>
+                           <persName xml:lang="en" type="desc">Unknwon</persName>
                            
                            
-                           
+                           <persName xml:lang="fa">
+                              
+                              
+                              
+                              
+                           </persName>
                         </author>
                         
                         
                         
                         
                         <title xml:lang="en" type="desc">A scrapbook</title>
-                        
-                        
+                        <incipit xml:lang="fa"/>
+                        <explicit xml:lang="ar" defective="true"/>
                         <note>Including copy of the Persian<title xml:lang="fa-Latn-x-lc">Dīvān of Girāmī (1856-1927)</title>(<locus from="23" to="51">ff. 23-51</locus>), made from a copy in the<name type="place"
                                  ref="http://lccn.loc.gov/n50000519"
                                  key="n50000519"
@@ -116,18 +122,23 @@
                      <msItem xml:id="IO_Islamic_4783-part2-item1"
                              n="2"
                              class="http://lccn.loc.gov/sh85064939">
-                        <author>Yāsīn ‘Alī Khānیاسین علی خان
+                        <author>
+                           <persName xml:lang="fa-Latn-x-lc" type="supplied">Yāsīn ‘Alī Khān</persName>
                            
                            
-                           
+                           <persName xml:lang="fa">یاسین علی خان
+                              
+                              
+                              
+                           </persName>
                         </author>
                         
                         
                         
                         
                         <title xml:lang="en" type="desc">Miscellaneous notes</title>
-                        
-                        
+                        <incipit xml:lang="fa"/>
+                        <explicit xml:lang="ar" defective="true"/>
                         <note>Including copies of 8 letters to<persName xml:lang="fa-Latn-x-lc" type="supplied">Mukharram al-Dawlah,<foreign>مخرم الدوله</foreign>
                            </persName>written by<persName xml:lang="fa-Latn-x-lc" type="supplied">Nawab Sir Sālār Jang, 1823-83,<foreign xml:lang="fa">سالار جنگ</foreign>
                            </persName>during his first visit to London and Europe in<date calendar="#Gregorian" when="1876">1876</date>
@@ -189,7 +200,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-12-21">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4393">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,12 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_Elliott_395-item1">
-                     <author>Aḥmad ʻAlī Khān ibn Shaykh Ghulām Muḥammad ibn Faḍīlat Hāshimī Sandīlīأحمد علي خان بن شيخ غلام محمد بن فضيلت هاشمي سنديلي</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc">Aḥmad ʻAlī Khān ibn Shaykh Ghulām Muḥammad ibn Faḍīlat Hāshimī Sandīlī</persName>
+                        <persName xml:lang="fa">أحمد علي خان بن شيخ غلام محمد بن فضيلت هاشمي سنديلي</persName>
+                        
+                        
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Makhzan al-gharāʼib</title>
                      <title xml:lang="fa">مخزن الغرائب</title>
                      
@@ -61,12 +66,12 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>516 ff.
+                        <extent>516 ff.<dimensions type="leaf" unit="in"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="4">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -172,7 +177,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-10-09">

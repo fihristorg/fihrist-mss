@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8843">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,10 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_50688-item1" n="1">
-                     <author>Khiṭāʼī, Mawlāzādah ʻAbd al-Ḥayy d. 1495خطائي، مولازاده عبد الحيّ</author>
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc">Khiṭāʼī, Mawlāzādah ʻAbd al-Ḥayy d. 1495</persName>
+                        <persName xml:lang="ar">خطائي، مولازاده عبد الحيّ</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">al-Risālah al-khiṭāʼīyah</title>
                      
                      <title xml:lang="ar">الرسالة الخطائية</title>
@@ -59,13 +62,21 @@
                                      xml:lang="ar-Latn-x-lc"
                                      key="n 79106223"
                                      ref="http://www.viaf.org/viaf/100374544/">Taftāzānī, Masʻūd ibn ʻUmar, 1322-1389</persName>his second commentary on the<title xml:lang="ar-Latn-x-lc">Talkhīṣ al-Miftāḥ<foreign xml:lang="ar">تلخيص المفتاح</foreign>
-                           </title>by<author key="n 84038585" ref="http://www.viaf.org/viaf/27296672/">Qazwīnī, Jalāl al-Dīn Muḥammad ibn ʻAbd al-Raḥmān, 1267 or 8-1338القزويني، جلال الدين محمد بن عبد الرحمن</author>
+                           </title>by<author key="n 84038585" ref="http://www.viaf.org/viaf/27296672/">
+                              <persName>Qazwīnī, Jalāl al-Dīn Muḥammad ibn ʻAbd al-Raḥmān, 1267 or 8-1338</persName>
+                              <persName xml:lang="ar">القزويني، جلال الدين محمد بن عبد الرحمن</persName>
+                           </author>
                         </bibl>
                      </listBibl>
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="ms_50688-item2" n="2">
-                     <author key="nr91022941" ref="http://viaf.org/viaf/19535198/">Qāḍī Mīr, Ḥusayn ibn Muʻīn al-Dīn, d. 1504 or 5حسين بن معين الدين الميبدي</author>
+                     <author key="nr91022941" ref="http://viaf.org/viaf/19535198/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Qāḍī Mīr, Ḥusayn ibn Muʻīn al-Dīn, d. 1504 or 5</persName>
+                        
+                        
+                        <persName xml:lang="ar">حسين بن معين الدين الميبدي</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Jām-i jahān'numā fī al-ḥikmah</title>
                      <title xml:lang="fa-Latn-x-lc" type="alt">Jām-i gītī'numā fī al-ḥikmah</title>
                      <title xml:lang="fa">جام جهان نما في الحكمة</title>
@@ -82,7 +93,9 @@
                      <textLang mainLang="ar">Persian</textLang>
                   </msItem>
                   <msItem xml:id="ms_50688-item3" n="3">
-                     <author>Anonymous</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Anonymous</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Sharḥ firaq al-shīʻah</title>
                      
                      <title xml:lang="ar">شرح فرق الشيعة</title>
@@ -122,8 +135,8 @@
                                  <width>4.5</width>
                               </dimensions>
                            </ref>
-                           <ref target="a2">fol. 120b-134a
-                              
+                           <ref target="a2">fol. 120b-134a<dimensions type="leaf" unit="cm"/>
+                              <dimensions type="written" unit="cm"/>
                            </ref>
                            <ref target="a3">fol. 136b-140b<dimensions type="leaf" unit="cm">
                                  <height>20</height>
@@ -137,7 +150,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -219,7 +232,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-03-13">

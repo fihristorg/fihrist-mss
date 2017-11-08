@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_648">
    <teiHeader>
       <fileDesc>
@@ -45,36 +45,50 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="G_11-item1" n="1">
                      <locus from="3b" to="44a">ff. 3b-44a</locus>
-                     <author key="n82027925" ref="http://viaf.org/viaf/21020332/">Mīr Khvānd, Muḥammad ibn Khāvandshāh, 1433-1498مير جواند، محمد بن جواندشاه
+                     <author key="n82027925" ref="http://viaf.org/viaf/21020332/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Mīr Khvānd, Muḥammad ibn Khāvandshāh, 1433-1498</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">مير جواند، محمد بن جواندشاه
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Rawz̤at al-ṣafā</title>
                      
                      <title xml:lang="fa">روضة الصفاء</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="G_11-item2" n="2">
                      <locus from="44b" to="72b">ff. 44b-72b</locus>
-                     <author>Abū al-Muʼayyad Abū Muṭīʻ al-Balkhīابو المؤيد ابو مطيع البلخي
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Abū al-Muʼayyad Abū Muṭīʻ al-Balkhī</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">ابو المؤيد ابو مطيع البلخي
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">ʻAjāʼib al-ashyāʼ</title>
                      <title xml:lang="ar-Latn-x-lc" type="alt">ʻAjāʼib al-dunyā</title>
                      <title xml:lang="fa">عجائب الاشياء</title>
                      <title xml:lang="ar" type="alt">عجائب الدنيا</title>
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
@@ -82,13 +96,13 @@
                   <objectDesc form="other">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -181,7 +195,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-08-05">

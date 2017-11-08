@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8518">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,11 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_44576-item1">
-                     <author key="n 50038449" ref="http://viaf.org/viaf/6178410/">Aurangzeb, Emperor of Hindustan, 1618-1707Awrangzīb ʻĀlamgīr Pādishāh-i Hindūstān</author>
+                     <author key="n 50038449" ref="http://viaf.org/viaf/6178410/">
+                        <persName xml:lang="en" type="standard">Aurangzeb, Emperor of Hindustan, 1618-1707</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Awrangzīb ʻĀlamgīr Pādishāh-i Hindūstān</persName>
+                        
+                     </author>
                      <title xml:lang="en" type="desc">A collection of the letters of the Emperor Aurangzeb</title>
                      <note>Letters written to Aurangzeb's son Muḥammad Aʻẓam Shāh and others, followed by an account of the Emperor's daily activities from 1066 AH/1655. Unfinished at end</note>
                      <incipit>فرزند عالیجاه اسپ را هواری که اینمرتبه فرستادند از سواری آن خیلی خوشیم</incipit>
@@ -54,13 +58,13 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>93 f.
-                           
+                        <extent>93 f.<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -104,7 +108,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2016-04-05">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5651">
    <teiHeader>
       <fileDesc>
@@ -43,10 +43,18 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/n79063030 http://lccn.loc.gov/sh85064865 http://lccn.loc.gov/sh85099890                             ">
                   <msItem xml:id="Or_14168-item1">
-                     <author>Ghaws̲, Ghulāmغوث، غلام
+                     <author>
+                        <persName key="n2005017862"
+                                  ref="http://lccn.loc.gov/n2005017862"
+                                  xml:lang="ar-Latn-x-lc"
+                                  type="standard">Ghaws̲, Ghulām</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">غوث، غلام
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Fihrist-i mawz̤ūʿāt istikhrāj shudah az majallah-ʼi Fūlklūr, chap-i Kābul 1352-1356</title>
                      
@@ -54,8 +62,8 @@
                      
                      
                      <note>Tabular indexes to<title xml:lang="fa-Latn-x-lc">Fūlklūr (<foreign xml:lang="fa">فولکلور</foreign>)</title>, an Afghan journal on folklore and culture</note>
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <listBibl>
                         <bibl>For a more detailed description see Waley 1998, page 69.</bibl>
                      </listBibl>
@@ -125,7 +133,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-11-17">

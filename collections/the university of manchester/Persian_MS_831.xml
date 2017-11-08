@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7339">
    <teiHeader>
       <fileDesc>
@@ -41,11 +41,19 @@
                   <idno>Persian MS 831</idno>
                </msIdentifier>
                <msContents>
-                  <summary>History of the Caliphs in the early days of Islam ending with Mu‘āviyyah's death.<title type="main"/>
+                  <summary>History of the Caliphs in the early days of Islam ending with Mu‘āviyyah's death.
                   </summary>
                   <msItem xml:id="Persian_MS_831-item1">
-                     <author key="n 83213743" ref="http://viaf.org/viaf/47069191/">Ibn Aʻtham al-Kūfī, Aḥmad,‏ ‎ -926?‏ابن أعثم الكوفي‏
+                     <author key="n 83213743" ref="http://viaf.org/viaf/47069191/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn Aʻtham al-Kūfī, Aḥmad,‏ ‎ -926?‏</persName>
                         
+                        
+                        
+                        <persName xml:lang="ar">ابن أعثم الكوفي‏
+                           
+                           
+                           
+                        </persName>
                         
                         
                      </author>
@@ -58,8 +66,8 @@
                      <title xml:lang="ar">كتاب الفتوح</title>
                      
                      
-                     
-                     
+                     <incipit xml:lang="ar" type="basmalla"/>
+                     <explicit xml:lang="ar"/>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
@@ -67,8 +75,8 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
@@ -133,7 +141,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014"/>

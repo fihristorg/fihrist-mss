@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_2564">
    <teiHeader>
       <fileDesc>
@@ -45,19 +45,26 @@
                <msContents>
                   <msItem xml:id="P_18-item1">
                      <note>Contains the books III, IV, and V of the work only</note>
-                     <author key="n94010125" ref="http://viaf.org/viaf/47935028/">Jurjānī, Ismāʻīl ibn Ḥasan, 1042 or 3-1136 or 7جرجانی، إسماعيل بن الحسين
+                     <author key="n94010125" ref="http://viaf.org/viaf/47935028/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Jurjānī, Ismāʻīl ibn Ḥasan, 1042 or 3-1136 or 7</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">جرجانی، إسماعيل بن الحسين
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Z̤akhīrah-ʼi Khwārazmshāhī</title>
                      
                      <title xml:lang="fa">ذخيرۀ خوارزمشاهی</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
@@ -65,13 +72,13 @@
                   <objectDesc form="other">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -128,7 +135,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-08-12">

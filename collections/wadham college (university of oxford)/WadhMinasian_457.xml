@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7849">
    <teiHeader>
       <fileDesc>
@@ -50,7 +50,12 @@
                      <locus from="1b" to="33b">ff. 1b-33b</locus>
                      <textLang mainLang="fa">Persian and Arabic</textLang>
                      <note type="content-genre">Prayers</note>
-                     <author>Anonymous</author>
+                     <author>
+                        
+                        
+                        <persName xml:lang="en">Anonymous</persName>
+                        
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">[Adʿīyah]</title>
                      <title xml:lang="fa">[ادعیه]</title>
                      <note xml:lang="en">In Minasian collection, there are 19 manuscripts under the generic title of Adʿīyah [Prayers]. The reason is that their individual titles have remained unknown for different reasons, including defective incipits and explicits.</note>
@@ -65,7 +70,15 @@
                      <locus from="35a" to="41a">ff. 35a-41a</locus>
                      <textLang mainLang="fa">Persian</textLang>
                      <note type="content-genre">Divination</note>
-                     <author key="n84033098‏" ref="http://viaf.org/viaf/100648969">Jaʿfar al-Ṣādiq, 702?-765 or 766‏Imām Jaʿfar Ṣādiqجعفر الصادقمنسوب به امام جعفر صادق</author>
+                     <author key="n84033098‏" ref="http://viaf.org/viaf/100648969">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" cert="low">Jaʿfar al-Ṣādiq, 702?-765 or 766‏</persName>
+                        <persName xml:lang="fa-Latn-x-lc"
+                                  type="alt"
+                                  cert="low"
+                                  evidence="conjecture">Imām Jaʿfar Ṣādiq</persName>
+                        <persName xml:lang="fa" cert="low">جعفر الصادق</persName>
+                        <persName xml:lang="fa" type="alt" cert="low">منسوب به امام جعفر صادق</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Fālnāmah-'i Imām Jaʿfar Ṣādiq</title>
                      <title xml:lang="fa">فالنامهٔ امام جعفر صادق</title>
                      <note xml:lang="en">This is a work on divinatory methods for Quran, along with some circles and tables describing how to achieve your needs from different Surahs.</note>
@@ -109,7 +122,7 @@
                               </dimensions>
                            </ref>
                            <ref target="#a1">
-                              
+                              <dimensions type="written" unit="cm"/>
                            </ref>
                            <ref target="#a2">
                               <dimensions type="written" unit="cm">
@@ -136,12 +149,12 @@
                         <layout n="1" columns="1" ruledLines="8">
                            <p>8 lines per page.</p>
                            <locus from="1b" to="33b">ff. 1b-33b</locus>
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                         <layout n="2" columns="1" ruledLines="13">
                            <p>13 lines per page.</p>
                            <locus from="35a" to="41a">ff. 35a-41a</locus>
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -277,7 +290,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2017-05-09">

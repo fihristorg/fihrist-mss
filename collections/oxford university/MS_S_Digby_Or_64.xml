@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5019">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,12 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_S_Digby_Or_64-item1">
-                     <author key="no2012152326" ref=" http://viaf.org/viaf/294571435">Tajallī Shīrāzī, ʻAlī Riz̤ā ibn Ḥusayn, -1674 or 1675Mullā ʻAlī Riḍā Tajallī Ardakkānīتجلي شيرازى، علي رضا بن حسينملا علي رضا تجلي اردكانى</author>
+                     <author key="no2012152326" ref=" http://viaf.org/viaf/294571435">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Tajallī Shīrāzī, ʻAlī Riz̤ā ibn Ḥusayn, -1674 or 1675</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Mullā ʻAlī Riḍā Tajallī Ardakkānī</persName>
+                        <persName xml:lang="fa">تجلي شيرازى، علي رضا بن حسين</persName>
+                        <persName xml:lang="fa" type="alt">ملا علي رضا تجلي اردكانى</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Miʻrāj al-Khayāl</title>
                      <title xml:lang="fa">معراج الخيال</title>
                      <note>A short mathnawī.</note>
@@ -59,12 +64,12 @@
                               <height>22.2</height>
                               <width>13.3</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="in"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="17" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -172,7 +177,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-04-27"/>

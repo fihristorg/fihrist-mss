@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5470">
    <teiHeader>
       <fileDesc>
@@ -43,7 +43,12 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/n50039100 http://lccn.loc.gov/sh85064480 http://lccn.loc.gov/sh2008121359">
                   <msItem xml:id="Or_12115-item1">
-                     <author ref="http://viaf.org/viaf/76204537" key="nr95010484">Qazvīnī, ʻAbd al-Karīm ibn Muḥammad Yaḥyá, 18th cent.‘Abd al-Karīm ibn Muḥammad Yaḥyā al-Qazvīnīقزوینی، عبد الکرىم بن محمد ىحىى
+                     <author ref="http://viaf.org/viaf/76204537" key="nr95010484">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Qazvīnī, ʻAbd al-Karīm ibn Muḥammad Yaḥyá, 18th cent.</persName>
+                        
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">‘Abd al-Karīm ibn Muḥammad Yaḥyā al-Qazvīnī</persName>
+                        <persName xml:lang="fa">قزوینی، عبد الکرىم بن محمد ىحىى</persName>
+                        
                         
                         
                         
@@ -60,9 +65,11 @@
                                   xml:lang="fa-Latn-x-lc"
                                   type="alt">Shāh Ḥusayn Ṣafavī</persName>
                      </note>
-                     
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
+                     <note>
+                        <foreign xml:lang="fa"/>
+                     </note>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 3.</bibl>
                      </listBibl>
@@ -76,7 +83,7 @@
                               <height>23.8</height>
                               <width>14.8</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -126,7 +133,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-03-13">

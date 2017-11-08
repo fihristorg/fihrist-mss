@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5551">
    <teiHeader>
       <fileDesc>
@@ -43,7 +43,12 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85089070 http://lccn.loc.gov/sh2010112937 http://lccn.loc.gov/sh87005732">
                   <msItem xml:id="Or_13206-item1">
-                     <author key="n86099931" ref="http://viaf.org/viaf/90076153/">Majlisī, Muḥammad Bāqir ibn Muḥammad Taqī, 1627 or 8-ca. 1699<foreign xml:lang="fa">مجلسى، محمد باقر بن محمد تقى</foreign>
+                     <author key="n86099931" ref="http://viaf.org/viaf/90076153/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Majlisī, Muḥammad Bāqir ibn Muḥammad Taqī, 1627 or 8-ca. 1699<foreign xml:lang="fa">مجلسى، محمد باقر بن محمد تقى</foreign>
+                        </persName>
+                        
+                        
+                        
                         
                         
                         
@@ -57,8 +62,8 @@
                      
                      
                      <note>A guide for pilgrims to the Shīʻite shrines</note>
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <listBibl>
                         <bibl>For a more detailed description see Waley 1998, page 6.</bibl>
                      </listBibl>
@@ -122,7 +127,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-09-30">

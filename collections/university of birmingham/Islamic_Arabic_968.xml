@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4003">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,15 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_968-item1">
-                     <author key="n83198301" ref="http://viaf.org/viaf/96969918/">Nābulusī, ʿAbd al-Ghanī ibn Ismāʻīl, 1641-1731النابلسي، عبد الغني بن اسماعيل
+                     <author key="n83198301" ref="http://viaf.org/viaf/96969918/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Nābulusī, ʿAbd al-Ghanī ibn Ismāʻīl, 1641-1731</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">النابلسي، عبد الغني بن اسماعيل
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Nukhbat al-masʾalah</title>
                      
@@ -61,9 +66,11 @@
                         </persName>
                      </note>
                      <note>Another treatise of Nābulusī, which is mentioned on the title page, is not to be found in the manuscript.</note>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="fa" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 814</bibl>
                         <bibl>GAL II 418, Cmt. 2; II 345-8; II 473-6</bibl>
@@ -78,14 +85,14 @@
                               <height>18.1</height>
                               <width>12.6</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="19" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                            <note>19 lines per page</note>
                         </layout>
                      </layoutDesc>
@@ -146,7 +153,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-07-08">

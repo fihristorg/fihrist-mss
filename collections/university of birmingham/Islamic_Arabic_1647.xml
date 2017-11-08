@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3768">
    <teiHeader>
       <fileDesc>
@@ -45,19 +45,26 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="Islamic_Arabic_1647-item1" n="1">
                      <locus from="1b" to="5a">ff. 1b-5a</locus>
-                     <author key="n92015276" ref="http://viaf.org/viaf/68792474/">Ghayṭī, Muḥammad ibn Aḥmad, 1504 or 5-1573 or 4الغيطي، نجم الدين محمد بن احمد بن علي<addName xml:lang="ar" type="laqab">الشافعي</addName>
+                     <author key="n92015276" ref="http://viaf.org/viaf/68792474/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ghayṭī, Muḥammad ibn Aḥmad, 1504 or 5-1573 or 4</persName>
                         
                         
-                        <addName xml:lang="ar" type="nisbah">الاسكندري</addName>
+                        <persName xml:lang="ar">الغيطي، نجم الدين محمد بن احمد بن علي<addName xml:lang="ar" type="laqab">الشافعي</addName>
+                           
+                           
+                           <addName xml:lang="ar" type="nisbah">الاسكندري</addName>
+                        </persName>
                      </author>
                      
                      
                      
                      
                      <title xml:lang="en" type="desc">Tract on ʿŪj ibn ʿAnaq</title>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="fa" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 750</bibl>
                         <bibl>GAL II 338-9, esp. no. 10</bibl>
@@ -66,19 +73,26 @@
                   </msItem>
                   <msItem xml:id="Islamic_Arabic_1647-item2" n="2">
                      <locus from="5b" to="8a">ff. 5b-8a</locus>
-                     <author key="n92015276" ref="http://viaf.org/viaf/68792474/">Ghayṭī, Muḥammad ibn Aḥmad, 1504 or 5-1573 or 4الغيطي، نجم الدين محمد بن احمد بن علي<addName xml:lang="ar" type="laqab">الشافعي</addName>
+                     <author key="n92015276" ref="http://viaf.org/viaf/68792474/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ghayṭī, Muḥammad ibn Aḥmad, 1504 or 5-1573 or 4</persName>
                         
                         
-                        <addName xml:lang="ar" type="nisbah">الاسكندري</addName>
+                        <persName xml:lang="ar">الغيطي، نجم الدين محمد بن احمد بن علي<addName xml:lang="ar" type="laqab">الشافعي</addName>
+                           
+                           
+                           <addName xml:lang="ar" type="nisbah">الاسكندري</addName>
+                        </persName>
                      </author>
                      
                      
                      
                      
                      <title xml:lang="en" type="desc">Tract on Iram dhāt al-ʿImād</title>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="fa" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 750</bibl>
                         <bibl>GAL II 338-9, esp. no. 10</bibl>
@@ -93,14 +107,14 @@
                               <height>20.4</height>
                               <width>15.3</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="27" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                            <note>27 lines per page</note>
                         </layout>
                      </layoutDesc>
@@ -180,7 +194,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-07-03">

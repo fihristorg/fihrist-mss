@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4435">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,12 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Elliott_89-item1" n="1">
                      <locus from="1" to="189">ff. 1-189</locus>
-                     <author>Mīr ʻAbd al-ʻĀl ibn Mīr Muḥammad Muʼmin Ḥusaynīمير عبد العال بن مير محمد مؤمن حسينيNajātنجات</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc">Mīr ʻAbd al-ʻĀl ibn Mīr Muḥammad Muʼmin Ḥusaynī</persName>
+                        <persName xml:lang="fa">مير عبد العال بن مير محمد مؤمن حسيني</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Najāt</persName>
+                        <persName xml:lang="fa" type="alt">نجات</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Dīwān-i Najāt</title>
                      <title xml:lang="fa">ديوان نجات</title>
                      
@@ -60,7 +65,12 @@
                   </msItem>
                   <msItem xml:id="MS_Elliott_89-item2" n="2">
                      <locus from="190" to="198">ff. 190-198</locus>
-                     <author key="no 98004614" ref="http://viaf.org/viaf/66081639">Fakhrii Ḣaravī, Sultonmuḣammadأميري هرويAmīrī HaravīFakhrī ibn Amīr Haravī</author>
+                     <author key="no 98004614" ref="http://viaf.org/viaf/66081639">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Fakhrii Ḣaravī, Sultonmuḣammad</persName>
+                        <persName xml:lang="fa">أميري هروي</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Amīrī Haravī</persName>
+                        <persName xml:lang="fa" type="alt">Fakhrī ibn Amīr Haravī</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Jawāhir al-ʻajāʼib</title>
                      <title xml:lang="fa">جواهر العجائب</title>
                      
@@ -77,12 +87,12 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>198 ff.
+                        <extent>198 ff.<dimensions type="leaf" unit="in"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -197,7 +207,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-09-20">

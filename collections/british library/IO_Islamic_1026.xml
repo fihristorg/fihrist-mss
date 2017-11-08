@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3525">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,12 @@
                <msContents class="http://lccn.loc.gov/sh2009125757 http://lccn.loc.gov/sh85100087  http://lccn.loc.gov/sh85054014 http://lccn.loc.gov/sh85020515">
                   <msItem xml:id="IO_Islamic_1026-item1">
                      <author ref="http://viaf.org/viaf/90053301"
-                             key="http://lccn.loc.gov/nr90002611">Abū Isḥāq Ibrāhīm b. Muḥammad al-Fārisīابو اسحاق ابراهیم ابن محمد الفارسیAl-Iṣṭakhrīالاصطخری</author>
+                             key="http://lccn.loc.gov/nr90002611">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Abū Isḥāq Ibrāhīm b. Muḥammad al-Fārisī</persName>
+                        <persName xml:lang="fa">ابو اسحاق ابراهیم ابن محمد الفارسی</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Al-Iṣṭakhrī</persName>
+                        <persName xml:lang="fa" type="alt">الاصطخری</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Tarjūmah-i al-masālik wa al-mamālik</title>
                      <title xml:lang="fa">ترجومۀ المسالک و الممالک</title>
                      <note>The same Persian adaptation of the famous geographical work, probably completed in AH<date calendar="#Hijri-qamari" notBefore="0951" notAfter="0952">340</date>, which is AD 951-952, as a revised an enlarged edition of<persName xml:lang="fa-Latn-x-lc"
@@ -220,7 +225,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-05-23">

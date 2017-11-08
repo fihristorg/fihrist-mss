@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1144">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,9 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Marsh_578-item1" n="1">
                      <locus from="1" to="10">fols. 1v-10r</locus>
-                     <author>Ṣāliḥī, Zayn al-Dīn ʻAbd al-Raḥmān</author>
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc">Ṣāliḥī, Zayn al-Dīn ʻAbd al-Raḥmān</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">al-Durr al-naẓīm fī tashīl al-taqwīm</title>
                      <note>Introductory text only, followed by calendar tables for reducing dates in one era to those of another, taken from<persName type="standard"
                                   key="n 84134433"
@@ -60,7 +62,9 @@
                   </msItem>
                   <msItem xml:id="MS_Marsh_578-item2" n="2">
                      <locus from="11" to="33">ff. 11v-33v</locus>
-                     <author key="n 84134433" ref="http://www.viaf.org/viaf/66844656/">Ulugh Beg,<date calendar="#Gregorian" from="1394" to="1449">1394-1449</date>
+                     <author key="n 84134433" ref="http://www.viaf.org/viaf/66844656/">
+                        <persName type="standard">Ulugh Beg,<date calendar="#Gregorian" from="1394" to="1449">1394-1449</date>
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Zīj-i jadīd-i sulṭānī</title>
                      <note>In the Arabic trans. by<persName xml:lang="ar-Latn-x-lc">Yaḥyá ibn ʻAlī al-Rifāʻī</persName>(part only [to end of Maq. 1, bāb 6])</note>
@@ -72,7 +76,9 @@
                   </msItem>
                   <msItem xml:id="MS_Marsh_578-item3" n="3">
                      <locus from="35" to="100">fols. 35v-100v</locus>
-                     <author key="n 2007003877" ref="http://www.viaf.org/viaf/36360883/">Nīsābūrī, Niẓām al-Dīn al-Ḥasan ibn Muḥammad, d.<date calendar="#Gregorian" when="1329">1328 or 9</date>
+                     <author key="n 2007003877" ref="http://www.viaf.org/viaf/36360883/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Nīsābūrī, Niẓām al-Dīn al-Ḥasan ibn Muḥammad, d.<date calendar="#Gregorian" when="1329">1328 or 9</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Risālah al-shamsīyah fī al-ḥisāb</title>
                      <note>Lacking end from fann 2, bāb 3, faṣl 2 (middle)</note>
@@ -223,11 +229,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

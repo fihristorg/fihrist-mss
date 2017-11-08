@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8914">
    <teiHeader>
       <fileDesc>
@@ -43,15 +43,20 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms14o-item1">
-                     <author>The name of author does not appear</author>
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">The name of author does not appear</persName>
+                        
+                        
+                        
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">A christian work on religion</title>
                      
                      
                      
                      
                      <note>The early date of writing can be clearly seen from comparsion with M3. Siani 155 (frontispice to Studia Sinaitica II, of Studia Sinaitica III, P.23) and MS. BM or 4950 (Studia Sinaitica III, Plate II, p.3) both of which closely resemble this manuscript. The oldest MS. in St Andrews collection. One or two fols are missing at the beginning. The heading of the 2nd chapter, on the unity of God:الباب الثاني القول في وحدايتي</note>
-                     
-                     
+                     <incipit xml:lang="ar" type="basmalla"/>
+                     <explicit xml:lang="ar"/>
                      <listBibl>
                         <bibl>British Museum of Oriental MSS II (Arabic), P.35, No.XXVI.</bibl>
                      </listBibl>
@@ -78,7 +83,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="5" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -143,7 +148,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-05-10">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6674">
    <teiHeader>
       <fileDesc>
@@ -44,8 +44,16 @@
                   <summary>The lives of the saints and holy men from early Islam to the time of the author<persName key="n 81102519" ref="http://viaf.org/viaf/27879596/">Dārā Shikūh</persName>Dārā Shikūh son of<persName key="n 50002533" ref="http://viaf.org/viaf/13108102/">Shahjahan,‏ Emperor of India,‏ ‎ approximately 1592-1666‏</persName>and brother of<persName key="n 50038449" ref="http://viaf.org/viaf/6178410/">Aurangzeb,‏ Emperor of Hindustan,‏ ‎1618-1707‏</persName>
                   </summary>
                   <msItem xml:id="Persian_MS_193-item1">
-                     <author key="n 81102519" ref="http://viaf.org/viaf/27879596/">Dārā Shikūh,‏ Prince, son of Shahjahan, Emperor of India,‏ 1615-1659‏دارا شكوه‏
+                     <author key="n 81102519" ref="http://viaf.org/viaf/27879596/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Dārā Shikūh,‏ Prince, son of Shahjahan, Emperor of India,‏ 1615-1659‏</persName>
                         
+                        
+                        
+                        <persName xml:lang="fa">دارا شكوه‏
+                           
+                           
+                           
+                        </persName>
                         
                         
                      </author>
@@ -54,8 +62,8 @@
                      <title xml:lang="ar">سفينة الاولياء</title>
                      <title xml:lang="ar" type="alt">سكينة الاولياء</title>
                      
-                     
-                     
+                     <incipit xml:lang="ar" type="basmalla"/>
+                     <explicit xml:lang="ar"/>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
@@ -63,8 +71,8 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
@@ -131,7 +139,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3797">
    <teiHeader>
       <fileDesc>
@@ -46,19 +46,26 @@
                   <summary>First of two volumes: Letters Alif to ẓā<foreign xml:lang="ar">(ا - ظ)</foreign>
                   </summary>
                   <msItem xml:id="Islamic_Arabic_215-item1">
-                     <author key="n83055935" ref="http://viaf.org/viaf/90045618">Fīrūzābādī, Muḥammad ibn Yaʿqūb, 1329-1414 or 1415الفيروزآبادي، محمد بن يعقوب، 729-817 هـ
+                     <author key="n83055935" ref="http://viaf.org/viaf/90045618">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Fīrūzābādī, Muḥammad ibn Yaʿqūb, 1329-1414 or 1415</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">الفيروزآبادي، محمد بن يعقوب، 729-817 هـ
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Qāmūs al-muḥīṭ</title>
                      
                      <title xml:lang="ar">القاموس المحيط</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="fa" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 1405</bibl>
                         <bibl>GAL II 181-3, no. 1; Suppl. II 234</bibl>
@@ -73,14 +80,14 @@
                               <height>28.6</height>
                               <width>19.6</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="33" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                            <note>33 lines per page</note>
                         </layout>
                      </layoutDesc>
@@ -142,7 +149,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-07-21">

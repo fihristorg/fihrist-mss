@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3977">
    <teiHeader>
       <fileDesc>
@@ -44,19 +44,26 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_848-item1">
-                     <author ref="http://viaf.org/viaf/90075818" key="n83121541">Anṭākī, Dāʼūd ibn ʻUmar, d. 1599الانطاكي، داؤود بن عمر<addName xml:lang="ar" type="laqab">البصير</addName>
+                     <author ref="http://viaf.org/viaf/90075818" key="n83121541">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Anṭākī, Dāʼūd ibn ʻUmar, d. 1599</persName>
                         
                         
-                        <addName xml:lang="ar" type="nisbah">السوري</addName>
+                        <persName xml:lang="ar">الانطاكي، داؤود بن عمر<addName xml:lang="ar" type="laqab">البصير</addName>
+                           
+                           
+                           <addName xml:lang="ar" type="nisbah">السوري</addName>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Tadhkirat ūlī al-albāb wa-al-jāmiʿ li-al-ʿajab al-ʿujāb</title>
                      
                      
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="false"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 984</bibl>
                         <bibl>GAL II 364, esp. no. 1; II 491-2</bibl>
@@ -71,14 +78,14 @@
                               <height>29.5</height>
                               <width>20.2</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="original"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="31" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -133,7 +140,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-02-19">

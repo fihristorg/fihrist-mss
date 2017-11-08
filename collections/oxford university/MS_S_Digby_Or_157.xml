@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4953">
    <teiHeader>
       <fileDesc>
@@ -44,11 +44,16 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_S_Digby_Or_157-item1">
-                     <author key="6818192003">Rāy Bindrāban ibn Rāy Bihārā Malراى بندرابن بن راى بهارا مل</author>
+                     <author key="6818192003">
+                        <persName xml:lang="fa-Latn-x-lc">Rāy Bindrāban ibn Rāy Bihārā Mal</persName>
+                        
+                        <persName xml:lang="fa">راى بندرابن بن راى بهارا مل</persName>
+                        
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Lubb al-tavārīkh</title>
                      <title xml:lang="fa">لب التواريخ</title>
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa"/>
                      <colophon xml:lang="fa"/>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
@@ -56,13 +61,13 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>ff. 205 + ii
-                           
+                        <extent>ff. 205 + ii<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="in"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="15" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -168,7 +173,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2016-09-12">

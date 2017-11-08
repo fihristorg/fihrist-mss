@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7605">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,10 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="RAS_Turkish_12-item1">
-                     <author key="n85055448" ref="http://viaf.org/viaf/44577559/">Naʿīmā, Muṣṭafā, 1655-1716نعيما، مصطفى</author>
+                     <author key="n85055448" ref="http://viaf.org/viaf/44577559/">
+                        <persName xml:lang="ota-Latn-x-lc" type="standard">Naʿīmā, Muṣṭafā, 1655-1716</persName>
+                        <persName xml:lang="ota">نعيما، مصطفى</persName>
+                     </author>
                      <title xml:lang="ota-Latn-x-lc">Tarih-i Naʿīmā</title>
                      <title xml:lang="tr-Latn-x-lc">Naîmâ târihi</title>
                      <title xml:lang="fa-Latn-x-lc" type="alt">Tārīkh-i Naʿīmā</title>
@@ -52,7 +55,7 @@
                      <title xml:lang="ar" type="alt">روضة الحسين في خلاصة اخبار الخافقين"</title>
                      <title xml:lang="ar-Latn-x-lc" type="alt">Rawḍat al-Ḥusayn fī khulāṣat akhbār al-khāfiqayn</title>
                      <incipit xml:lang="ota">لطائف حمد و سپاس و شرایف بی قیاس مالک الملک و الملکوت صاحب العز و الجبروت</incipit>
-                     
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>Naima's official history of the Ottoman Empire.</note>
                      <textLang mainLang="ota">Turkish</textLang>
                   </msItem>
@@ -60,7 +63,7 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>360 f.
+                        <extent>360 f.<dimensions type="leaf" unit="cm"/>
                            <dimensions type="written" unit="cm">
                               <height>11</height>
                            </dimensions>
@@ -111,7 +114,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-05-14">

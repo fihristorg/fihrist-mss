@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7846">
    <teiHeader>
       <fileDesc>
@@ -52,7 +52,12 @@
                      <note type="content-genre">Islamic jurisprudence</note>
                      <title xml:lang="ar-Latn-x-lc">Man lā yaḥz̤uruh al-faqīh</title>
                      <title xml:lang="ar">من لا یحضره الفقیه</title>
-                     <author key="nr90021741‏‏" ref="http://viaf.org/viaf/90043815">Ibn Bābawayh al-Qummī, Muḥammad ibn ʻAlī, 918 or 919-991 or 992‏Ibn Bābawayh, Muḥammad ibn ʻAlī (311-381 Qamarī/923-991)‏‏ابن بابویه القمی، محمد بن علیابن بابویه، محمد بن علی<addName xml:lang="ar-Latn-x-lc" type="laqab">Shaykh Ṣadūq</addName>
+                     <author key="nr90021741‏‏" ref="http://viaf.org/viaf/90043815">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn Bābawayh al-Qummī, Muḥammad ibn ʻAlī, 918 or 919-991 or 992‏</persName>
+                        <persName xml:lang="ar-Latn-x-lc" type="alt">Ibn Bābawayh, Muḥammad ibn ʻAlī (311-381 Qamarī/923-991)‏‏</persName>
+                        <persName xml:lang="ar">ابن بابویه القمی، محمد بن علی</persName>
+                        <persName xml:lang="ar" type="alt">ابن بابویه، محمد بن علی</persName>
+                        <addName xml:lang="ar-Latn-x-lc" type="laqab">Shaykh Ṣadūq</addName>
                         <addName xml:lang="ar" type="laqab">شیخ صدوق</addName>
                      </author>
                      <note>This work contains 5963 hadiths. It is one of the Four Books and one of the most credible Shiite books which is compiled in six volumes. Since its time of creation, it has always been acknowledged and received by Shiite scholars, who have continously refered to and cited from it in their short or long hadith collections. Shaykh Ṣaddūq has authored this book upon a request from one of the sayyids of the city of Balkh, called Sharīf al-Dīn Abū ʿAbd Allāh Muḥammad bin Ḥusayn, known as Niʿmat. He had requested Shaykh Ṣaddūq to write a book on Islamic jurisprudence similar to the medical book of Muḥammad ibn Zakariyā Rāzī, called "Man lā yaḥz̤uruh al-ṭabīb", so that it can be used by people who have no access to scholars and jurists.</note>
@@ -82,7 +87,12 @@
                      <locus from="421b" to="439a">ff. 421b-439a</locus>
                      <textLang mainLang="ar">Arabic</textLang>
                      <note type="content-genre">Rijāl (Biographical evaluation)</note>
-                     <author key="nr90021741‏‏" ref="http://viaf.org/viaf/90043815">Ibn Bābawayh al-Qummī, Muḥammad ibn ʻAlī, 918 or 919-991 or 992‏Ibn Bābawayh, Muḥammad ibn ʻAlī (311-381 Qamarī/923-991)‏‏ابن بابویه القمی، محمد بن علیابن بابویه، محمد بن علی<addName xml:lang="ar-Latn-x-lc" type="laqab">Shaykh Ṣadūq</addName>
+                     <author key="nr90021741‏‏" ref="http://viaf.org/viaf/90043815">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn Bābawayh al-Qummī, Muḥammad ibn ʻAlī, 918 or 919-991 or 992‏</persName>
+                        <persName xml:lang="ar-Latn-x-lc" type="alt">Ibn Bābawayh, Muḥammad ibn ʻAlī (311-381 Qamarī/923-991)‏‏</persName>
+                        <persName xml:lang="ar">ابن بابویه القمی، محمد بن علی</persName>
+                        <persName xml:lang="ar" type="alt">ابن بابویه، محمد بن علی</persName>
+                        <addName xml:lang="ar-Latn-x-lc" type="laqab">Shaykh Ṣadūq</addName>
                         <addName xml:lang="ar" type="laqab">شیخ صدوق</addName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Asānīd man lā yaḥz̤uruh al-faqīh</title>
@@ -166,12 +176,12 @@
                         <layout n="1" columns="1" ruledLines="23">
                            <p>23 lines per page.</p>
                            <locus from="1a" to="421a">ff. 1a-421a</locus>
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                         <layout n="2" columns="1" ruledLines="23">
                            <p>23 lines per page.</p>
                            <locus from="421b" to="439a">ff. 421b-439a</locus>
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -324,7 +334,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2017-06-03">

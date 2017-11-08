@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8574">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,12 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_45032-item1" n="1">
-                     <author key="nr98037725" ref="http://viaf.org/viaf/2384117/">Nevʿī, 1533-1599</author>
+                     <author key="nr98037725" ref="http://viaf.org/viaf/2384117/">
+                        <persName xml:lang="ota-Latn-x-lc" type="standard">Nevʿī, 1533-1599</persName>
+                        
+                        
+                        
+                     </author>
                      <title xml:lang="ota-Latn-x-lc">Netayic el-fünûn</title>
                      <title xml:lang="ar-Latn-x-lc" type="alt">Natāʼij al-funūn</title>
                      <title xml:lang="ota">نتائج الفنون</title>
@@ -52,26 +57,32 @@
                      
                      <note>Encyclopaedia of the twelve sciences.</note>
                      <incipit>حمد بى حد احد بى ابتدايه كه الف اسم ذاتى هر ابتدايه اول</incipit>
-                     
+                     <note>
+                        <foreign xml:lang="fa"/>
+                     </note>
                      <textLang mainLang="ota">Turkish</textLang>
                   </msItem>
                   <msItem xml:id="ms_45032-item2" n="2">
-                     <author key="n50082069" ref="http://viaf.org/viaf/95223177/">Ibn al-ʻArabī, 1165-1240</author>
+                     <author key="n50082069" ref="http://viaf.org/viaf/95223177/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Ibn al-ʻArabī, 1165-1240</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Risālah fī al-umūr al-muhimmah bi-al-tayammun wa-al-tabarruk</title>
                      
                      <title xml:lang="ar">رسالة في الامور المهمة بالتيمن والتبرك</title>
                      <note>Tables for telling fortunes (fal) ascribed to Ibn al-Arabi with an introductory page in Ottoman Turkish.</note>
                      <incipit xml:lang="ota">حضرت شيخ محي الدين العربي نيك كندي مؤلفاتندن قرآن عظيم ايله تيمن و تبرك و تفال ايدوب</incipit>
-                     
+                     <explicit xml:lang="ar" defective="true"/>
                      <textLang mainLang="ota">Turkish text</textLang>
                   </msItem>
                   <msItem xml:id="ms_45032-item3" n="3">
-                     <author key="n82220489" ref="http://viaf.org/viaf/19911704/">Ibn Hishām, ʻAbd Allāh ibn Yūsuf, 1309-1360</author>
+                     <author key="n82220489" ref="http://viaf.org/viaf/19911704/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn Hishām, ʻAbd Allāh ibn Yūsuf, 1309-1360</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Mughnī al-labīb ʻan kutub al-aʻārīb</title>
                      <title xml:lang="ar">مغني اللبيب عن كتب الأعاريب</title>
                      <note>An Arabic summary by an unknown hand of the fist chapter of the Mughni al-labib.</note>
                      <incipit xml:lang="ar">ان على وجهين اسم وحرف ضمير المتكلم</incipit>
-                     
+                     <explicit xml:lang="ar" defective="true"/>
                      <textLang mainLang="ar">Arabic text</textLang>
                   </msItem>
                </msContents>
@@ -86,7 +97,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -137,7 +148,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-09-05">

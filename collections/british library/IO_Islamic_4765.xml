@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3485">
    <teiHeader>
       <fileDesc>
@@ -43,18 +43,24 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85141347 http://lccn.loc.gov/n2008207320">
                   <msItem xml:id="IO_Islamic_4765-item1">
-                     <author ref="http://viaf.org/viaf/66566769" key="n50013040">Muir, William, Sir, 1819-1905ICS and member of the Council of India 1876-85مور، وليم
+                     <author ref="http://viaf.org/viaf/66566769" key="n50013040">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Muir, William, Sir, 1819-1905</persName>
                         
                         
-                        
+                        <persName xml:lang="en" type="desc">ICS and member of the Council of India 1876-85</persName>
+                        <persName xml:lang="fa">مور، وليم
+                           
+                           
+                           
+                        </persName>
                      </author>
                      
                      
                      
                      
                      <title xml:lang="en" type="desc">Personal letter</title>
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>Letter addressed to the Nawab of Rampur</note>
                      <listBibl>
                         <bibl>For a more detailed description see Sims-Williams 1986, page 19.</bibl>
@@ -69,7 +75,7 @@
                               <height>33</height>
                               <width>20.5</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -120,7 +126,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-12-22">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6169">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,10 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="Or_7047-item1" n="1" class="http://lccn.loc.gov/sh85100084">
                      <locus from="1r" to="145r">1r-145r ff</locus>
-                     <author key="n80115655" ref="http://viaf.org/viaf/2474895">Niẓāmī Ganjavīنظامی گنجوی</author>
+                     <author key="n80115655" ref="http://viaf.org/viaf/2474895">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Niẓāmī Ganjavī</persName>
+                        <persName xml:lang="fa">نظامی گنجوی</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Laylā u Majnūn</title>
                      <title xml:lang="fa">لیلی و مجنون</title>
                      <listBibl>
@@ -54,7 +57,10 @@
                   </msItem>
                   <msItem xml:id="Or_7047-item2" n="2" class="http://lccn.loc.gov/sh85100084">
                      <locus from="146r" to="235r">146r-235r ff</locus>
-                     <author key="n80115655" ref="http://viaf.org/viaf/2474895">Niẓāmī Ganjavīنظامی گنجوی</author>
+                     <author key="n80115655" ref="http://viaf.org/viaf/2474895">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Niẓāmī Ganjavī</persName>
+                        <persName xml:lang="fa">نظامی گنجوی</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Haft Paykar</title>
                      <title xml:lang="fa">هفت پیکر</title>
                      <title xml:lang="fa-Latn-x-lc" type="alt">Haft Gunbad</title>
@@ -72,7 +78,7 @@
                               <height>21</height>
                               <width>12.8</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -105,7 +111,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-02-18">

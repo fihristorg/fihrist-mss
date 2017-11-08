@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_916">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,9 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Bodl_Or_813-item1" n="1" class="#commentary">
                      <locus from="1" to="23">ff. 1v-23r</locus>
-                     <author key="nr 92026099" ref="http://www.viaf.org/viaf/76180518/">Makkūdī, ʻAbd al-Raḥmān ibn ʻAlī, d.<date calendar="#Gregorian" when="1405">1404 or 5</date>
+                     <author key="nr 92026099" ref="http://www.viaf.org/viaf/76180518/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Makkūdī, ʻAbd al-Raḥmān ibn ʻAlī, d.<date calendar="#Gregorian" when="1405">1404 or 5</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Sharḥ al-muqaddimah al-Ājurrūmīyah</title>
                      <note>Commentary on<title xml:lang="ar-Latn-x-lc" ref="#m2">al-Muqaddimah al-Ājurrūmīyah</title>of<persName type="standard"
@@ -73,7 +75,9 @@
                   </msItem>
                   <msItem xml:id="MS_Bodl_Or_813-item3" n="3">
                      <locus from="24" to="36">ff. 24v-36r</locus>
-                     <author>Abū al-Ḥasan ʻAlī ibn ʻĪsá al-Zayyātī</author>
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc">Abū al-Ḥasan ʻAlī ibn ʻĪsá al-Zayyātī</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Kitāb Mukhtaṣar fī al-lughah wa-mā yuḥtāj ilaihi min gharīb al-kalām</title>
                      <listBibl>
                         <bibl>Appendix Lexicography</bibl>
@@ -93,7 +97,9 @@
                   </msItem>
                   <msItem xml:id="MS_Bodl_Or_813-item5" n="5" class="#versification">
                      <locus from="37" to="39">ff. 37r-39r</locus>
-                     <author key="n 87907925" ref="http://viaf.org/viaf/90041394/">Dīrīnī, ʻAbd al-ʻAzīz,<date calendar="#Gregorian" from="1215" to="1295">1215-ca. 1295</date>
+                     <author key="n 87907925" ref="http://viaf.org/viaf/90041394/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Dīrīnī, ʻAbd al-ʻAzīz,<date calendar="#Gregorian" from="1215" to="1295">1215-ca. 1295</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Murabbaʼ fī al-muthallathāt al-lughawīyah</title>
                      <note>A versification of the<title xml:lang="ar-Latn-x-lc">Kitāb al-Muthallathāt</title>of<persName type="standard"
@@ -110,7 +116,9 @@
                   </msItem>
                   <msItem xml:id="MS_Bodl_Or_813-item6" n="6">
                      <locus from="39" to="40">ff. 39v-40r</locus>
-                     <author>Dunkuzī, ʻAbd Allāh,<date calendar="#Gregorian" notAfter="1628">fl. bef. 1628</date>
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc">Dunkuzī, ʻAbd Allāh,<date calendar="#Gregorian" notAfter="1628">fl. bef. 1628</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Bināʼ al-afʻāl</title>
                      <note>Lacking end</note>
@@ -254,11 +262,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4503">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,11 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_Huntington_212-item1">
-                     <author key="n 82216250" ref="http://viaf.org/viaf/117230225">Ṣūfī, ʻAbd al-Raḥmān ibn ʻUmar,<date calendar="#Gregorian" from="0903" to="0986">903-986</date>أبو الحسين الصوفي، عبد الرحمن بن عمر، 291-376 هـ</author>
+                     <author key="n 82216250" ref="http://viaf.org/viaf/117230225">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ṣūfī, ʻAbd al-Raḥmān ibn ʻUmar,<date calendar="#Gregorian" from="0903" to="0986">903-986</date>
+                        </persName>
+                        <persName xml:lang="ar">أبو الحسين الصوفي، عبد الرحمن بن عمر، 291-376 هـ</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Kitāb Ṣuwar al-kawākib al-thābitah</title>
                      <title xml:lang="ar">كتاب صور الكواكب الثابتة</title>
                      <incipit>بسم الله الرحمن الرحيم قال عبد الرحمن بن عمر المعروف بابي الحسين الصوفي بعد ان حمد الله فاثنى عليه وصلى على نبيه فصلى عليه اني رايتُ كثيراً من الناس يخوضون في معرفة الكواكب الثابتة ومواقعها من الفلك وصورها</incipit>
@@ -111,11 +115,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-02-22">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

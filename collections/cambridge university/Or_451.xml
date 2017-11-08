@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_2298">
    <teiHeader>
       <fileDesc>
@@ -44,43 +44,60 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Or_451-item1" n="1" class="#abridgement">
-                     <author key="n80150344" ref="http://viaf.org/viaf/65315194/">Ījī, ʻAḍud al-Dīn ʻAbd al-Raḥmān ibn Aḥmad, d. 1355?قاضي عضد الدين الإيجي
+                     <author key="n80150344" ref="http://viaf.org/viaf/65315194/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ījī, ʻAḍud al-Dīn ʻAbd al-Raḥmān ibn Aḥmad, d. 1355?</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">قاضي عضد الدين الإيجي
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Mukhtaṣar al-muntahá</title>
                      
                      <title xml:lang="ar">مختصر المنتهى</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne1922/view.php?id=118">no. 1169</ref>
                         </bibl>
                         <bibl type="text-relations">Abridgement of the<title xml:lang="ar-Latn-x-lc">Muntahá al-wuṣūl wa-al-amal fī ʻilmay al-uṣūl wa-al-jadal<foreign xml:lang="ar">منتهى الوصول والأمل في علمي الوصول والجدل</foreign>
-                           </title>of<author key="n82162164" ref="http://viaf.org/viaf/29665940/">Ibn al-Ḥājib, ʻUthmān ibn ʻUmar, 1175-1249ابن الحاجب</author>
+                           </title>of<author key="n82162164" ref="http://viaf.org/viaf/29665940/">
+                              <persName xml:lang="ar-Latn-x-lc">Ibn al-Ḥājib, ʻUthmān ibn ʻUmar, 1175-1249</persName>
+                              <persName xml:lang="ar">ابن الحاجب</persName>
+                           </author>
                         </bibl>
                      </listBibl>
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="Or_451-item2" n="2" class="#gloss">
-                     <author key="n88286025" ref="http://viaf.org/viaf/19930855/">Jurjānī, ʻAlī ibn Muḥammad, al-Sayyid al-Sharīf, 1340-1413السيد الشريف الجرجاني
+                     <author key="n88286025" ref="http://viaf.org/viaf/19930855/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Jurjānī, ʻAlī ibn Muḥammad, al-Sayyid al-Sharīf, 1340-1413</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">السيد الشريف الجرجاني
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Ḥāshiyāt ʻalá Mukhtaṣar al-muntahá</title>
                      
                      <title xml:lang="ar">حشيات على مختصر المنتهى</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne1922/view.php?id=118">no. 1169</ref>
@@ -95,13 +112,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -174,7 +191,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-11-23">

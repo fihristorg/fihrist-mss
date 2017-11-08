@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7782">
    <teiHeader>
       <fileDesc>
@@ -125,8 +125,13 @@
                         <title type="normalised" xml:lang="ara-Latn">Maqaṣid al-Aṭbbā'</title>
                         <title type="original">مقاصد الاطباء<locus facs="#i0007">1b.1</locus>
                         </title>
-                        <author>Rukn ad-Dīn Mas`ūd b. Ḥusayn aṭ-Ṭabībركن الدين مسعود بن حسين الطبيب<forename>مسعود بن حسين</forename>
-                           <addName type="khitab">ركن الدين</addName>
+                        <author>
+                           <persName xml:lang="eng-Latn" type="standard">Rukn ad-Dīn Mas`ūd b. Ḥusayn aṭ-Ṭabīb</persName>
+                           <persName xml:lang="ara-Arab" type="original">ركن الدين مسعود بن حسين الطبيب</persName>
+                           <persName xml:lang="ara-Arab" type="standard">
+                              <forename>مسعود بن حسين</forename>
+                              <addName type="khitab">ركن الدين</addName>
+                           </persName>
                         </author>
                         <incipit>
                            <locus>Fol. 1b.1</locus>مقصد او خاتمه كل من المقاصد مشتملًا على مباحث ساتي (sic!) والخاتمة فى وصايا الاطباء المقدمين مستنبطة من شرح كليات النافعين للستاذ العلامة رحمه الله تعالى رحمةًا واسعةًا ولما صار مشتملًا على اكثر مقاصد طالبى هذا الفن سميته مقاصد الاطباء وحصل الله تعالى مقاصدهم رجآء من الله تعالى ان يهدينى سبيل الرشاد وملتمسًا ممن ينظر فيه</incipit>
@@ -1881,7 +1886,9 @@
                         <title type="normalised" xml:lang="ara-Latn">Al-Faṣl al-ḥādīwa-l-ṯalaṯūna. Waṣiyat fī 'Inna-nā bi-ayal-Mu`āliǧāt nabtadī</title>
                         <title type="original">الفصل الحادي والثلثون وصية في انا باي المعالجات نبتدي<locus facs="#i0245">240a.1</locus>
                         </title>
-                        <author>Anonymous</author>
+                        <author>
+                           <persName xml:lang="eng-Latn" type="standard">Anonymous</persName>
+                        </author>
                         <incipit facs="#i0245">
                            <locus>Fol. 240a.2</locus>الفصل الحادي والثلثون وصية فى انا باي المعالجات نبتدى قد عرفت ان الغرض من المعالجة والبدن والعضو الى الحاله الطبيعيه عنير انه يجب على الطبيب ان يبتدى فى المعالجة بالهم</incipit>
                         <explicit type="ending" facs="#i0254">
@@ -1905,7 +1912,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-04-01T16:21:16+01:00">Conversion from WMSmaster to WAMCP<persName>gbrey</persName>

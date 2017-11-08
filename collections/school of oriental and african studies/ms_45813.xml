@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8586">
    <teiHeader>
       <fileDesc>
@@ -41,14 +41,19 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_45813-item1" n="1">
-                     <author key="n89239045" ref="http://www.viaf.org/viaf/12694190/">Ibn Ẓafar, Muḥammad ibn ʻAbd Allāh, 1104-1169ابن ظفر، محمد بن عبد الله</author>
+                     <author key="n89239045" ref="http://www.viaf.org/viaf/12694190/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ibn Ẓafar, Muḥammad ibn ʻAbd Allāh, 1104-1169</persName>
+                        <persName xml:lang="ar">ابن ظفر، محمد بن عبد الله</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Sulwān al-muṭāʻ fī ʻudwān al-atbāʻ</title>
                      <title xml:lang="ar">سلوان المطاع في عدوان الاتباع</title>
                      <note>Incomplete at beginning</note>
                      <incipit>ثم نهض مضطرب اليال وخرج بابك من فوره فساح ولم يعلم به ابوه قال عبد الله الفقير ... محمد ... بن محمد بن محمد بن ظفر انهيت ما اردت</incipit>
-                     
+                     <explicit xml:lang="ar"/>
                      <colophon>انتهی ما وجدناه من کتاب السلوانات...وکان تمامه یوم ثمانیة عشر من شهر محرم سنه 1313</colophon>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://digital.info.soas.ac.uk/15594/#page/1/mode/2up/search/">view the printed catalogue Gacek no.305</ref>
@@ -57,7 +62,10 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="ms_45813-item2" n="2">
-                     <author key="n 83162975" ref="http://viaf.org/viaf/34578551/">Māwardī, ʻAlī ibn Muḥammad, 974?-1058ماوردي، علي بن محمد</author>
+                     <author key="n 83162975" ref="http://viaf.org/viaf/34578551/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Māwardī, ʻAlī ibn Muḥammad, 974?-1058</persName>
+                        <persName xml:lang="ar">ماوردي، علي بن محمد</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Tashīl al-naṣr wa-taʻjīl al-ẓafar</title>
                      <title xml:lang="ar">تسهیل النصر وتعجیل الظفر</title>
                      <incipit>الحمد لله الذي جعل الحق معزا لمن اعتقده وتوخا ومعينا لمن اعتمده وابتعاه ... اما بعد ان الله لبليغ حكمته وعدل قضايه جعل الناس اصنافا مختلفين ... واطوارا متباينين ليكونوا بالاختلاف موتلغين</incipit>
@@ -69,7 +77,10 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="ms_45813-item3" n="3">
-                     <author>Sulaymān ibn ʻĀmir ibn Abī al-Khafīr al-Riyāmīسليمان بن عامر بن أبي الخفير الريامي</author>
+                     <author>
+                        <persName type="supplied" xml:lang="ar-Latn-x-lc">Sulaymān ibn ʻĀmir ibn Abī al-Khafīr al-Riyāmī</persName>
+                        <persName xml:lang="ar">سليمان بن عامر بن أبي الخفير الريامي</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Sharḥ al-Qaṣīdah al-Khafīrīyah</title>
                      <title xml:lang="ar">شرح القصیدة الخفيرية</title>
                      <note>Commentary on the poem al-Qaṣīdah al-Khafīrīyah in praise of Sulṭān Bin Sayf al-Ya’arubī II (d.1131/1718, see Badger 100), composed (most probably by the poet himself in 1126/1714 (fol.325a, lin.18). The work contains much biographical information about Imām-Sulṭāns of Oman.</note>
@@ -89,13 +100,13 @@
                            <ref target="a1">1b-53a f.</ref>
                            <ref target="a2">53a-66b f.</ref>
                            <ref target="a3">67a-362a f.</ref>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -164,7 +175,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-03-30">

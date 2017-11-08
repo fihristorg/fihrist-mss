@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8127">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,10 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_195880-item1">
-                     <author>Awrangābādī, Muḥammad Ḥusaynī Madanīاورنگابادی، محمد حسینی مدنی</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Awrangābādī, Muḥammad Ḥusaynī Madanī</persName>
+                        <persName xml:lang="fa">اورنگابادی، محمد حسینی مدنی</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Qirān suʻadā</title>
                      
                      <title xml:lang="fa">قران السعدا</title>
@@ -52,22 +55,24 @@
                      
                      <note>A biographical dictionary</note>
                      <incipit>اما بعد محمد الحسینی المدنی الاورنگابادی صانه عن الزلات المعاشی والمعادی</incipit>
-                     
+                     <explicit xml:lang="ar" defective="true"/>
                      <colophon>تمت 20 شهر ربیع الثانی سنه 1312</colophon>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>89 f.
-                           
+                        <extent>89 f.<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -117,7 +122,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-11-17">

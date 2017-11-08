@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_2580">
    <teiHeader>
       <fileDesc>
@@ -45,53 +45,75 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="P_32-item1" n="1">
                      <locus from="1b" to="56a">ff. 1b-56a</locus>
-                     <author>Amīn Ṣadr al-Dīn Muḥammad ibn Mīr Ghiyās̲ al-Dīn Manṣūr Shīrāzīامين صدر الدين محمد بن مير غياث الدين منصور
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Amīn Ṣadr al-Dīn Muḥammad ibn Mīr Ghiyās̲ al-Dīn Manṣūr Shīrāzī</persName>
                         
                         
-                        <addName xml:lang="ar" type="nisbah">شيرازی</addName>
+                        <persName xml:lang="ar">امين صدر الدين محمد بن مير غياث الدين منصور
+                           
+                           
+                           <addName xml:lang="ar" type="nisbah">شيرازی</addName>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Javāhir'nāmah</title>
                      
                      <title xml:lang="ar">جواهر نامه</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="P_32-item2" n="2">
                      <locus from="57a" to="73b">ff. 57a-73b</locus>
-                     <author>Zayn al-Dīn Muḥammad Jāmīزين الدين محمد جامی
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Zayn al-Dīn Muḥammad Jāmī</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">زين الدين محمد جامی
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Mukhtaṣar dar bayān-i shinākhtān-i jawāhir</title>
                      
                      <title xml:lang="fa">مختصر در بيان شناختان جواهر</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="P_32-item3" n="3">
                      <locus from="57a" to="73b">ff. 57a-73b</locus>
-                     <author>anonymous
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">anonymous</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      
                      
                      
                      
                      <title xml:lang="en" type="desc">Treatise on precious stones, inks, decoration, fireworks, etc.</title>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
@@ -99,13 +121,13 @@
                   <objectDesc form="other">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -196,7 +218,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-08-12">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3943">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,16 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_661-item1">
-                     <author>Anonymous
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="supplied">Anonymous</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Abbreviation of al-īḍāḥ fī al-wuqūf wa-al-ibtidāʾ</title>
                      
@@ -61,7 +67,9 @@
                      </note>
                      <incipit xml:lang="ar">فهذا مختصر من كتاب الوقوف في القران للشيخ الامام شمس العارفين ابي الفضل محمد بن طيفور السجاوندي</incipit>
                      <explicit xml:lang="ar" defective="inapplicable">تم الوقوف بعون الله و تاييده و كان الفراغ من هذه النسخة المباركة نهار الاربغاء المبارك من اول يوم في شهر رجب المبارك من شهور سنة سبعة وسبعين وثمانمائة</explicit>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 47</bibl>
                         <bibl>GAL I 408; I 724, where no abbreviation is mentioned</bibl>
@@ -76,14 +84,14 @@
                               <height>18.0</height>
                               <width>13.3</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="11" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -142,7 +150,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-03-12">

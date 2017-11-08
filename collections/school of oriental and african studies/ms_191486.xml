@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8095">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,10 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_191486-item1" n="1">
-                     <author>Fayshī, Muḥammad ibn Muḥammadفيشي ، محمد بن محمد</author>
+                     <author>
+                        <persName type="supplied" xml:lang="ar-Latn-x-lc">Fayshī, Muḥammad ibn Muḥammad</persName>
+                        <persName xml:lang="ar">فيشي ، محمد بن محمد</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">al-Minaḥ al-wafīyah li-sharḥ al-muqaddimah al-ʻizzīyah</title>
                      <title xml:lang="ar">المنح الوفیة لشرح المقدمة العزية</title>
                      <note>Commentary on<title xml:lang="ar-Latn-x-lc">al-Muqaddimah al-ʻizzīyah lil-jamāʻah al-azharīyah</title>
@@ -63,7 +66,10 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="ms_191486-item2" n="2">
-                     <author>al-Shaykh Aḥmadالشيخ احمد</author>
+                     <author>
+                        <persName type="supplied" xml:lang="ar-Latn-x-lc">al-Shaykh Aḥmad</persName>
+                        <persName xml:lang="ar">الشيخ احمد</persName>
+                     </author>
                      <title xml:lang="en" type="desc">A short exposition of Islamic doctrine</title>
                      <incipit>اعلم انه يجب لله تعالي عشرون اولها الوجود ومعناه يجب علينا ان نعتقد ان الوجود واجب لمولانا ... جل وعز</incipit>
                      <colophon>وكان الفراغ من نساخة هذا الكتاب المستطاب على يد ...الملا سلمان السعد فی یوم الخمیس خمسة عشر ...من شهر جماد اول في سنه 1285</colophon>
@@ -75,7 +81,9 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="ms_191486-item3" n="3">
-                     <author>Anonymous</author>
+                     <author>
+                        <persName>Anonymous</persName>
+                     </author>
                      <title xml:lang="en" type="desc">A short exposition of Islamic doctrine</title>
                      <incipit>الحمد لله ... اعلم انه يجب لله عشرون صفة ويستحيل عليه اضدادها ويجوز عليه فعل كل ممكين ... او تركه ويجب على كل مكلف معرفتها شرعا</incipit>
                      <listBibl>
@@ -105,7 +113,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -166,7 +174,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-06-01">

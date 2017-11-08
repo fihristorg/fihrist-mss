@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8388">
    <teiHeader>
       <fileDesc>
@@ -44,11 +44,15 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_41388-item1">
-                     <author key="n 90655566‏" ref="http://www.viaf.org/viaf/51917095/">Gleichen, Edward, Lord, 1863-1937</author>
+                     <author key="n 90655566‏" ref="http://www.viaf.org/viaf/51917095/">
+                        <persName type="standard">Gleichen, Edward, Lord, 1863-1937</persName>
+                     </author>
                      <title>Moghrebbin vocabulary</title>
                      
                      <note>Includes the 1893 vocabulary. Includes one sketch map of unnamed port</note>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://digital.info.soas.ac.uk/15594/#page/1/mode/2up/search/">view the printed catalogue Gacek no.220</ref>
@@ -64,12 +68,12 @@
                               <height>15.5</height>
                               <width>9.5</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -121,7 +125,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-07-27">

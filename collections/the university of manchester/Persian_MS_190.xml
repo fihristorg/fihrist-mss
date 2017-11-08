@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6671">
    <teiHeader>
       <fileDesc>
@@ -42,11 +42,19 @@
                </msIdentifier>
                <msContents>
                   <summary>
-                     <title type="main"/>
+                     
                   </summary>
                   <msItem xml:id="Persian_MS_190-item1">
-                     <author key="85073276" ref="http://viaf.org/viaf/47114320">Fānī, Muḥsin -1671 or 1672Mullā Muḥammad Amīnملا محمد امین
+                     <author key="85073276" ref="http://viaf.org/viaf/47114320">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Fānī, Muḥsin -1671 or 1672</persName>
                         
+                        
+                        <persName xml:lang="ar-Latn-x-lc" type="alt">Mullā Muḥammad Amīn</persName>
+                        <persName xml:lang="ar">ملا محمد امین
+                           
+                           
+                           
+                        </persName>
                         
                         
                      </author>
@@ -59,7 +67,7 @@
                      
                      <colophon>The title of the manuscript and the name of the author are given in the colophon, on f.<locus from="265v" to="265v">265v</locus>, as being Dabistān-i Maz̲āhib by Mullā Muḥammad Amīn, copied by Zu al-Fiqār ‘Alī on Wednesday 22nd Safar: بتاریخ بیست و دویم شهر صفر المظفر بروز چهارشنبه بوقت عصر بدستخط ذوالفقار علیصورت اتمام پذیرفت…. نسخه دبستان مذاهب من تصنیف ملا محمد امین</colophon>
                      <incipit xml:lang="fa" type="basmalla">بسم الله الرحمان ای نام تو سر دفتر اطفال دبستان یاد تو ببالغ نظران شمع شبستان</incipit>
-                     
+                     <explicit xml:lang="ar"/>
                      <listBibl>
                         <bibl>In the subscription of another copy of this work in British Museum (Rieu, BM 141a- 142b) the authorship is ascribed to Mullā Muḥammad Amīn, and Zu al-Fiqār ‘Alī, to whom this work is also ascribed, is only the copyist (see<idno>MS Persian 075</idno>,<idno>MS Persian 189</idno>,<idno>MS Persian 190</idno>and Rieu, BM 142b-143a).</bibl>
                      </listBibl>
@@ -163,7 +171,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015">

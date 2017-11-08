@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4214">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,18 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_Caps_Or_A_3-item1">
-                     <author key="n2006214686" ref="http://viaf.org/viaf/28973620/">Sūjan Rāʼi, fl. 1690-1698منشی سجان رای
+                     <author key="n2006214686" ref="http://viaf.org/viaf/28973620/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Sūjan Rāʼi, fl. 1690-1698</persName>
                         
                         
-                        <addName xml:lang="fa" type="nisbah">استرآبادی</addName>منشی سنجان رایمنشی سوجن رای</author>
+                        <persName xml:lang="fa">منشی سجان رای
+                           
+                           
+                           <addName xml:lang="fa" type="nisbah">استرآبادی</addName>
+                        </persName>
+                        <persName xml:lang="fa" type="alt">منشی سنجان رای</persName>
+                        <persName xml:lang="fa" type="alt">منشی سوجن رای</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Khulāṣat al-tawārīkh</title>
                      
                      <title xml:lang="fa">خلاصة التواريخ</title>
@@ -60,12 +68,12 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>302 ff.
+                        <extent>302 ff.<dimensions type="leaf" unit="in"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -165,7 +173,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-08-03">

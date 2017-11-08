@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4728">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,12 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_Ouseley_373-item1" class="#translation">
-                     <author key="nr 90002611" ref="http://viaf.org/viaf/90053301">Iṣṭakhrī, Ibrāhīm ibn Muḥammad, d. 957 or 8الإصطرخي، إبراهيم بن محمد، ت. 346 هـ</author>
+                     <author key="nr 90002611" ref="http://viaf.org/viaf/90053301">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Iṣṭakhrī, Ibrāhīm ibn Muḥammad, d. 957 or 8</persName>
+                        <persName xml:lang="ar">الإصطرخي، إبراهيم بن محمد، ت. 346 هـ</persName>
+                        
+                        
+                     </author>
                      <editor role="editor">
                         <persName>Muḥammad ibn Asʻad ibn ʻAbd Allāh</persName>
                         <persName xml:lang="ar">محمد بن أسعد بن عبد الله</persName>
@@ -65,12 +70,12 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>159 ff.
+                        <extent>159 ff.<dimensions type="leaf" unit="in"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -176,7 +181,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-10-11">

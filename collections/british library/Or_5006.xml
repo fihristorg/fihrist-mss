@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5930">
    <teiHeader>
       <fileDesc>
@@ -43,10 +43,15 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh89005046">
                   <msItem xml:id="Or_5006-item1">
-                     <author ref="http://viaf.org/viaf/90041360" key="nr96002485">Fayz̤ī, Abū al-Fayz̤ ibn Mubārak, 1547 or 8-1595فيضي ،ابو الفيض الله بن المباركFayz̤ī ibn Shaykh Mubārakفیضی ابن شیخ مبارک</author>
+                     <author ref="http://viaf.org/viaf/90041360" key="nr96002485">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Fayz̤ī, Abū al-Fayz̤ ibn Mubārak, 1547 or 8-1595</persName>
+                        <persName xml:lang="fa">فيضي ،ابو الفيض الله بن المبارك</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Fayz̤ī ibn Shaykh Mubārak</persName>
+                        <persName xml:lang="fa" type="alt">فیضی ابن شیخ مبارک</persName>
+                     </author>
                      <title xml:lang="en" type="desc">Poetical works</title>
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 49.</bibl>
                      </listBibl>
@@ -92,7 +97,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-11-01">

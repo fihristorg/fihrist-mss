@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3919">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,15 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_580-item1">
-                     <author key="n2003064272" ref="http://viaf.org/viaf/65847118">Khalīlī, Muḥammad ibn Muḥammad, -1734Ibn Sharaf al-Dīnخليلي، محمد بن محمد
+                     <author key="n2003064272" ref="http://viaf.org/viaf/65847118">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Khalīlī, Muḥammad ibn Muḥammad, -1734</persName>
                         
-                        
-                        
+                        <persName xml:lang="ar-Latn-x-lc" type="alt">Ibn Sharaf al-Dīn</persName>
+                        <persName xml:lang="ar">خليلي، محمد بن محمد
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Fakhr al-abrār fī baʿḍ mā fī ʿism Muḥammad min al-asrār</title>
                      
@@ -55,9 +60,11 @@
                      
                      
                      <note>Author's name on<locus from="3a" to="3a">fol. 3r</locus>. A later owner has mistaken the name of the copyist (Muḥammad al-Qubāritī (?)) for that of the author, and has so entered it on<locus from="1a" to="1a">fol. 1r</locus>.</note>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="fa" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 1179</bibl>
                         <bibl>GAl Suppl. II 943, no. 143</bibl>
@@ -72,14 +79,14 @@
                               <height>24.1</height>
                               <width>14.7</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="14" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                            <note>14 lines (up to<locus from="1a" to="6a">fol. 6r</locus>, 33 lines thereafter.</note>
                         </layout>
                      </layoutDesc>
@@ -134,7 +141,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-05-21">

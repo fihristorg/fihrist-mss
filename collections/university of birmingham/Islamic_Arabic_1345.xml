@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3694">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,15 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_1345-item1">
-                     <author key="no2007036320" ref="http://viaf.org/viaf/30700338">Mawṣilī, al-Muʿāfá ibn Ismāʿīl, 1156-1233موصلي، المعافى بن اسماعيل
+                     <author key="no2007036320" ref="http://viaf.org/viaf/30700338">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Mawṣilī, al-Muʿāfá ibn Ismāʿīl, 1156-1233</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">موصلي، المعافى بن اسماعيل
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Nihāyat al-bayān fī tafsīr al-qurʾān</title>
                      
@@ -57,8 +62,10 @@
                      <note>End missing; contains the fourth part only, beginning with sūrah 18 (al-kahf<foreign xml:lang="ar">سورة الكهف</foreign>) and ending abruptly with sūrah 24 (al-nūr<foreign xml:lang="ar">سورة النّور</foreign>), verse 49.</note>
                      <note>According to a note on the titlepage, written by a later hand, this fourth part should have contained sūrah 18 (al-kahf<foreign xml:lang="ar">سورة الكهف</foreign>) to sūrah 25 (al-furqān<foreign xml:lang="ar">سورة الفرقان</foreign>)</note>
                      <incipit xml:lang="ar">تفسير سورة الكهف وفيها ثلاثة اقوال احدها انها</incipit>
-                     
-                     
+                     <explicit xml:lang="ar" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 14</bibl>
                      </listBibl>
@@ -72,14 +79,14 @@
                               <height>25.3</height>
                               <width>17.5</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="22" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -134,7 +141,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-02-27">

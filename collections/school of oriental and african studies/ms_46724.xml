@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8726">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,15 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_46724-item1">
-                     <author key="nr40191359" ref="http://viaf.org/viaf/40191359/">Abd al-Rahman Khan,‏ ‎Amir of Afghanistan,‏ ‎d. 1901‏عبد الرحمان خان ،امیر افغانستان
+                     <author key="nr40191359" ref="http://viaf.org/viaf/40191359/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Abd al-Rahman Khan,‏ ‎Amir of Afghanistan,‏ ‎d. 1901‏</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">عبد الرحمان خان ،امیر افغانستان
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Pandnāmah-i dunyā va dīn : khāṭirat-i Amīr ʻAbd al-Raḥmān, bi-qalam-i khūdish</title>
                      
@@ -55,9 +60,11 @@
                      
                      
                      <note>A fragment of the Autobiography of 'Abd al-Rahman Khan ibn Afzal Khan, Amir of Afghanistan, 1880-1901. This work of which a complete copy was formerly in the possession Sultan Muhammad Khan was planned in 10 abwabs (titles in exordium) of which the first, partly here presented, contains the autobiography, while the remainder consisted of moralising reflections and advice on the art of ruling. The present fragment covers the first 62 pages of vol.1 of Mir Munshi Sultan's Mahomed Khan's published translation The life of Abdur Rahman, Amir of Afghanistan (1900, two volumes).</note>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <note>Digital facsimile available at<ref target="http://digital.info.soas.ac.uk/10504/">SOAS Digital Archive and Special Collections.</ref>
@@ -82,7 +89,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -135,7 +142,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-11-28">

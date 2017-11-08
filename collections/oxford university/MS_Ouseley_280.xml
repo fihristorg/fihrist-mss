@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4682">
    <teiHeader>
       <fileDesc>
@@ -58,7 +58,12 @@
                   </msItem>
                   <msItem xml:id="MS_Ouseley_280-item2" n="2">
                      <locus from="22" to="83">ff. 22-83</locus>
-                     <author>Anonymousمؤلف مجهول</author>
+                     <author>
+                        <persName>Anonymous</persName>
+                        <persName xml:lang="fa">مؤلف مجهول</persName>
+                        
+                        
+                     </author>
                      <title>A fragment of a history of the Mughals</title>
                      
                      
@@ -70,7 +75,12 @@
                   </msItem>
                   <msItem xml:id="MS_Ouseley_280-item3" n="3">
                      <locus from="85" to="91">ff. 85-91</locus>
-                     <author ref="http://viaf.org/viaf/164494033">Sādiq Isfahānī, Muḥammad Ṣādiq ibn Muḥammad Sạliḥ, 1609 or 10-1650 or 51میرزا محمد صادق بن میرزا محمد صالح زبیری اصفهانی آزدانی</author>
+                     <author ref="http://viaf.org/viaf/164494033">
+                        <persName xml:lang="fa-Latn-x-lc">Sādiq Isfahānī, Muḥammad Ṣādiq ibn Muḥammad Sạliḥ, 1609 or 10-1650 or 51</persName>
+                        <persName xml:lang="fa">میرزا محمد صادق بن میرزا محمد صالح زبیری اصفهانی آزدانی</persName>
+                        
+                        
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Mujmal-i tavārīkh-i Khāwaqīn-i Mā Warā al-Nahr</title>
                      <title xml:lang="fa">مجمل تواريخ خواقين ما وراء النهر</title>
                      
@@ -192,7 +202,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-07-05">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3813">
    <teiHeader>
       <fileDesc>
@@ -45,10 +45,16 @@
                <msContents>
                   <summary>A work containg the dealings which the author had with Abu ʿAbbās al-Yaḥmadī, the vizier of Morocco</summary>
                   <msItem xml:id="Islamic_Arabic_253-item1">
-                     <author>ʿAlī ibn Aḥmad ibn Qāsim ibn Mūsā Miṣbāḥ al-Darwīlīal-Zarwīlī
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="supplied">ʿAlī ibn Aḥmad ibn Qāsim ibn Mūsā Miṣbāḥ al-Darwīlī</persName>
                         
-                        
-                        
+                        <persName xml:lang="ar-Latn-x-lc" type="alt">al-Zarwīlī</persName>
+                        <persName xml:lang="ar">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Sanā al-muhtadī ilá mafākhir al-wazīr Abī al-ʿAbbās al-Yaḥmadī</title>
                      
@@ -59,9 +65,11 @@
                      </note>
                      <note>On<locus from="313b" to="313b">fol. 313v</locus>the author states that he wrote in<date calendar="#Hijri-qamari" when="1713">Hijri-qamari</date>
                      </note>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="fa" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 906</bibl>
                         <bibl>GAL II 457; II 684</bibl>
@@ -76,13 +84,13 @@
                               <height>21.4</height>
                               <width>15.8</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1" ruledLines="21" n="mistara">21 lines per page
+                        <layout columns="1" ruledLines="21" n="mistara">21 lines per page<dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -137,7 +145,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-05-16">

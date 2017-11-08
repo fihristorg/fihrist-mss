@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3148">
    <teiHeader>
       <fileDesc>
@@ -44,14 +44,24 @@
                <msContents>
                   <summary>A Commentary on the Lessons from the Epistles of S. Paul, the Acts and Catholic Epistles, as reed at the celebrations of the Eucharist in Lent and on other occasions throughout the year, and various extracts in Arabic.</summary>
                   <msItem xml:id="Add_3280-item1" n="1">
-                     
+                     <author>
+                        
+                        
+                        
+                        <persName xml:lang="syr">
+                           
+                           
+                           
+                           
+                        </persName>
+                     </author>
                      <title xml:lang="en">Lessons and accompanying commentaries from the Epistles of S. Paul, the Acts and Catholic Epistles, as reed at the celebrations of the Eucharist in Lent and on other occasions throughout the year.</title>
                      
                      <title xml:lang="syr">ܕܠܐܝܠ ܬܕܠ ܥܠܝ ܒܕܐܝܗ̈ ܘܢܗܐܝܗ̈ ܡܐ ܝܩܪܐ ܡܢ ܐܠܪܣܐܝܠ ܘܐܟܒܐܪ ܐܠܪܣܠ ܘܐܠܩܐܬܘܠܝܩܘܢ ܦܝ ܐܠܩܕܐܣܐܬ. ܦܝ ܐܝܐܡ ܐܠܟܡܣܝܢ. ܘܦܝ ܐܠܚܕܘܕ ܘܐܠܣܒܘܬ ܘܐܠܐܥܝܐܪ. ܘܦܝ ܐܝܐܡ ܐܠܣܢܗ ܓܡܝܥܗܐ ܡܥ ܬܦܐܣܝܪܗܐ ܒܣܠܐܡ ܐܠܪܒ. ܐܡܝܢ܀</title>
                      
                      <note>The Lessons are fist quoted, and then the Commentary follows</note>
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <colophon>
                         <locus from="176r" to="176r">f. 176r</locus>
                      </colophon>
@@ -63,14 +73,24 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="Add_3280-item2" n="2">
-                     
+                     <author>
+                        
+                        
+                        
+                        <persName xml:lang="syr">
+                           
+                           
+                           
+                           
+                        </persName>
+                     </author>
                      
                      
                      
                      
                      <title xml:lang="en">Extracts from several writers</title>
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <colophon>
                         <locus from="176r" to="176r">f. 176r</locus>
                      </colophon>
@@ -86,15 +106,15 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <support>Paper</support>
-                        <extent>176 ff.
-                           
+                        <extent>176 ff.<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <collation>
                            <p>19 quires, signed with letters, mostly of 10 leaves, except one witch has only 9, one witch has only 12, one witch has only 5, and some witch has only 8</p>
                         </collation>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1" writtenLines="22">22 or 23 lines to the page
+                        <layout columns="1" writtenLines="22">22 or 23 lines to the page<dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -158,7 +178,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015">

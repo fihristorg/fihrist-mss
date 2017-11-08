@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_969">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,9 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Huntington_148-item1" n="1">
                      <locus from="3" to="74">ff. 3r-74v</locus>
-                     <author key="n 88149284" ref="http://viaf.org/viaf/4026337/">Urmawī, Sirāj al-Dīn Maḥmūd ibn Abī Bakr,<date calendar="#Gregorian" from="1198" to="1283">1198-1283</date>
+                     <author key="n 88149284" ref="http://viaf.org/viaf/4026337/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Urmawī, Sirāj al-Dīn Maḥmūd ibn Abī Bakr,<date calendar="#Gregorian" from="1198" to="1283">1198-1283</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Maṭāliʻ al-anwār [fī al-manṭiq]</title>
                      <note>With commentary<title xml:lang="ar-Latn-x-lc">Lawāmiʻ al-asrār</title>by<persName xml:lang="ar-Latn-x-lc" type="standard" key="nr 91037727">Quṭb al-Taḥtānī, Muḥammad ibn Muḥammad,<date calendar="#Gregorian" from="1294" to="1365">1294 or 5-1364 or 5</date>
@@ -59,7 +61,9 @@
                   </msItem>
                   <msItem xml:id="MS_Huntington_148-item2" n="2">
                      <locus from="75" to="104">ff. 75r-104v</locus>
-                     <author>Mawlānāzādah, Ahmad ibn Maḥmūd, al-Harawī al-Kharazyānī</author>
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc">Mawlānāzādah, Ahmad ibn Maḥmūd, al-Harawī al-Kharazyānī</persName>
+                     </author>
                      <title>Commentary on the<title xml:lang="ar-Latn-x-lc">Hidāyat al-ḥikmah</title>of<persName type="standard"
                                   xml:lang="ar-Latn-x-lc"
                                   key="nr 91019719"
@@ -185,11 +189,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7929">
    <teiHeader>
       <fileDesc>
@@ -42,10 +42,15 @@
                </msIdentifier>
                <msContents class="#translation">
                   <msItem xml:id="Z_8-item1">
-                     <author>Tāj al-Dīn ibn Muʿīn Malikīتاج الدين بن معين ملكی
+                     <author>
+                        <persName xml:lang="sa-Latn-x-lc" type="supplied">Tāj al-Dīn ibn Muʿīn Malikī</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">تاج الدين بن معين ملكی
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="sans-Latn-x-lc">Mufarriḥ al-qulūb</title>
                      
@@ -53,13 +58,15 @@
                      
                      
                      <incipit xml:lang="ar">حمدو سپاس‌ بيقياس‌ مر حضرت‌ شاهي‌ را كه‌ از جمله‌ بندگان‌ خويش‌ بشر مراتب اعلى داد</incipit>
-                     
+                     <explicit xml:lang="ar"/>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne1922/view.php?id=125">no. 1230</ref>
                         </bibl>
                         <bibl type="text-relations">Persian version of the<title xml:lang="sans-Latn-x-lc">Hitopadeśa<foreign xml:lang="sans">हितोपदश</foreign>
-                           </title>, a collection of Indian fables written by<author key="n97113003" ref="http://viaf.org/viaf/59090393/">Viṣṇuśarman</author>
+                           </title>, a collection of Indian fables written by<author key="n97113003" ref="http://viaf.org/viaf/59090393/">
+                              <persName xml:lang="sa-Latn-x-lc" type="standard">Viṣṇuśarman</persName>
+                           </author>
                         </bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
@@ -87,7 +94,7 @@
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">12 lines per page
+                        <layout columns="0" ruledLines="00" n="mistara">12 lines per page<dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -170,7 +177,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-02-21">

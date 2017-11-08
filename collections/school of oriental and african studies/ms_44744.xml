@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8551">
    <teiHeader>
       <fileDesc>
@@ -41,7 +41,9 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_44744-item1" n="1">
-                     <author ref="http://viaf.org/viaf/65292796" key="n79140235">Khvājah Muḥammad Pārsā, 1338 or 9-1420</author>
+                     <author ref="http://viaf.org/viaf/65292796" key="n79140235">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Khvājah Muḥammad Pārsā, 1338 or 9-1420</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Sharḥ-i Mas̲navī</title>
                      <title xml:lang="fa">شرح مثنوي</title>
                      <note>The beginnings of a commentary on the Masnavi</note>
@@ -49,7 +51,10 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="ms_44744-item2" n="2">
-                     <author ref="http://viaf.org/viaf/220725873">ʻAbbāsī, ʻAbd al-Laṭīf, -1639 or 1640‏عباسى، عبد اللطيف</author>
+                     <author ref="http://viaf.org/viaf/220725873">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">ʻAbbāsī, ʻAbd al-Laṭīf, -1639 or 1640</persName>
+                        <persName xml:lang="fa">‏عباسى، عبد اللطيف</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Mirʼāt al-Mas̲navī</title>
                      <title xml:lang="fa">مرآت المثنوى</title>
                      <note>Preface to 'Abbasi's edition of the Masnavi</note>
@@ -57,7 +62,10 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="ms_44744-item3" n="3">
-                     <author ref="http://viaf.org/viaf/98930150" key="n81059876">Jalāl al-Dīn Rūmīجلال الدین رومی</author>
+                     <author ref="http://viaf.org/viaf/98930150" key="n81059876">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Jalāl al-Dīn Rūmī</persName>
+                        <persName xml:lang="fa">جلال الدین رومی</persName>
+                     </author>
                      <editor role="reviser">
                         <persName xml:lang="fa-Latn-x-lc"
                                   type="standard"
@@ -79,13 +87,13 @@
                            <ref target="a1">1-5 f.</ref>
                            <ref target="a2">6-13 f.</ref>
                            <ref target="a3">14-251 f.</ref>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -138,7 +146,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-09-05">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5972">
    <teiHeader>
       <fileDesc>
@@ -43,11 +43,14 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85010741 http://lccn.loc.gov/sh2009116580 http://lccn.loc.gov/sh2002002243">
                   <msItem xml:id="Or_5499-item1">
-                     <author ref="http://viaf.org/viaf/49008139" key="no2007069556">Ṣubḥ-i Azalصبح ازل</author>
+                     <author ref="http://viaf.org/viaf/49008139" key="no2007069556">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Ṣubḥ-i Azal</persName>
+                        <persName xml:lang="fa">صبح ازل</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Alvāḥ-i mutafarriqah</title>
                      <title xml:lang="fa">الواح متفرقه</title>
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <note>Letters, etc. mostly in Arabic but some in Persian</note>
                      <note>This manuscript is divided into two portions<locus from="1r" to="45r">1r-45r</locus>and<locus from="46r" to="66r">46r-66r</locus>bound together</note>
                      <listBibl>
@@ -95,7 +98,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-10-16">

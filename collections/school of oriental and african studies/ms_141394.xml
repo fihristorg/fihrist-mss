@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8011">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,10 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_141394-item1">
-                     <author key="n 83009078‏‏" ref="http://viaf.org/viaf/17232266/">ʻUrābī, Aḥmad, 1840 or 1841-1911عرابي، احمد</author>
+                     <author key="n 83009078‏‏" ref="http://viaf.org/viaf/17232266/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">ʻUrābī, Aḥmad, 1840 or 1841-1911</persName>
+                        <persName xml:lang="ar">عرابي، احمد</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Taqrīr ʿan al-ḥawādith allatī ḥaṣalat fī Miṣr min tārīkh yanāʼir sanat 1881 li-ghāyat shahr uktūbar sanat 1882</title>
                      <title xml:lang="ar">تقرير عن الحواث التي حصلت في مصر من تاريخ يناير سنه 1881 لغاية شهر اكتوبر سنه 1882</title>
                      <note>Defense statement of Ahmad ʿUrabi to the Commission of Enquiry October/November 1882 on the Egyptian Revolt. Holograph, with the author's seal</note>
@@ -73,7 +76,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -125,7 +128,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-08-25">

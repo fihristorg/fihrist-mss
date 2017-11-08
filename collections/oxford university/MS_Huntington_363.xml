@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1003">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,9 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Huntington_363-item1" n="1">
                      <locus from="1" to="8">ff. 1v-8r</locus>
-                     <author>ʻUmar ibn Muḥammad ibn ʻAlī</author>
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc">ʻUmar ibn Muḥammad ibn ʻAlī</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Risālah Maḥāsin al-asrār</title>
                      <note>A religious treatise</note>
                      <listBibl>
@@ -56,7 +58,9 @@
                   </msItem>
                   <msItem xml:id="MS_Huntington_363-item2" n="2">
                      <locus from="9" to="21">ff. 9r-21v</locus>
-                     <author>Hippolytus of Rome<date calendar="#Gregorian" when="0236">d.c. 236</date>
+                     <author>
+                        <persName>Hippolytus of Rome<date calendar="#Gregorian" when="0236">d.c. 236</date>
+                        </persName>
                      </author>
                      <title>Brief commentary on the Pentateuch</title>
                      <note>Lacking beginning and end</note>
@@ -68,7 +72,9 @@
                   </msItem>
                   <msItem xml:id="MS_Huntington_363-item3" n="3">
                      <locus from="22" to="33">ff. 22v-33v</locus>
-                     <author key="n 84007864" ref="http://www.viaf.org/viaf/81971228/">Zayn al-ʻĀbidīn ʻAlī ibn al-Ḥusayn, d.<date calendar="#Gregorian" when="0710" cert="unknown">710</date>?</author>
+                     <author key="n 84007864" ref="http://www.viaf.org/viaf/81971228/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Zayn al-ʻĀbidīn ʻAlī ibn al-Ḥusayn, d.<date calendar="#Gregorian" when="0710" cert="unknown">710</date>?</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">al-Ṣaḥīfah al-kāmilah</title>
                      <title type="alt" xml:lang="ar-Latn-x-lc">al-Ṣaḥīfah al-Sajjādīyah</title>
                      <note>First part only including the introduction</note>
@@ -80,7 +86,9 @@
                   </msItem>
                   <msItem xml:id="MS_Huntington_363-item4" n="4">
                      <locus from="34" to="48">ff. 34v-48v</locus>
-                     <author key="n 85331637" ref="http://viaf.org/viaf/49537725/">Suyūrī, al-Miqdād ibn ʻAbd Allāh,<date calendar="#Gregorian" when="1423">d. 1423</date>
+                     <author key="n 85331637" ref="http://viaf.org/viaf/49537725/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Suyūrī, al-Miqdād ibn ʻAbd Allāh,<date calendar="#Gregorian" when="1423">d. 1423</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Kanz al-ʻirfān fī fiqh al-Qurʼān</title>
                      <note>Lacking end</note>
@@ -228,11 +236,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

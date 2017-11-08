@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6193">
    <teiHeader>
       <fileDesc>
@@ -43,10 +43,13 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh89005046 http://lccn.loc.gov/sh85138898">
                   <msItem xml:id="Or_7182-item1">
-                     <author>Rāghib Pāshāراغب پاشا</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplies">Rāghib Pāshā</persName>
+                        <persName xml:lang="fa">راغب پاشا</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Dīvān of Rāghib Pāshā</title>
                      <incipit xml:lang="fa">دیوان راغب پاشا</incipit>
-                     
+                     <explicit xml:lang="fa" defective="true"/>
                      <note>The Persian and Turkish poems are mixed together</note>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 52.</bibl>
@@ -93,7 +96,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-11-07">

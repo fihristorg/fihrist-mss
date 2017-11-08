@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5915">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,12 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Or_3653-item1">
-                     <author ref="http://viaf.org/viaf/24350267/" key="no2006034540">Ḥalīmī, Luṭf Allāh ibn Yūsuf, d. 1494 or 5حليمي، لطف الله بن يوسفLuṭf Allāh ibn Abī Yūsuf al-Ḥalīmīلطف الله بن ابی يوسف الحلیمی
+                     <author ref="http://viaf.org/viaf/24350267/" key="no2006034540">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Ḥalīmī, Luṭf Allāh ibn Yūsuf, d. 1494 or 5</persName>
+                        <persName xml:lang="fa">حليمي، لطف الله بن يوسف</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Luṭf Allāh ibn Abī Yūsuf al-Ḥalīmī</persName>
+                        <persName xml:lang="fa" type="alt">لطف الله بن ابی يوسف الحلیمی</persName>
+                        
                         
                         
                         
@@ -52,8 +57,8 @@
                      <title xml:lang="fa-Latn-x-lc">Lughāt-i Ḥalīmī</title>
                      <title xml:lang="fa">لغات حلیمی</title>
                      
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>A Persian-Ottoman Turkish dictionary</note>
                      <note>This MS comprises only Daftar 1, the dictionary itself</note>
                      <note>Defective; one folio lacking after<locus n="266">f. 266</locus>
@@ -121,7 +126,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-10-20">

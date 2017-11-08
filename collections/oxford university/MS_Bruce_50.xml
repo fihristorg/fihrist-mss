@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_930">
    <teiHeader>
       <fileDesc>
@@ -55,7 +55,9 @@
                   </msItem>
                   <msItem xml:id="MS_Bruce_50-item2" n="2">
                      <locus from="20" to="22">ff. 20r-22r</locus>
-                     <author key="n 83047839" ref="http://viaf.org/viaf/32174934/">Ṭabarī, ʻAlī ibn Sahl Rabbān,<date calendar="#Gregorian" notBefore="0800" notAfter="0900">9th cent.</date>
+                     <author key="n 83047839" ref="http://viaf.org/viaf/32174934/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ṭabarī, ʻAlī ibn Sahl Rabbān,<date calendar="#Gregorian" notBefore="0800" notAfter="0900">9th cent.</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Firdaws al-ḥikmah</title>
                      <note>One chapter only,<title type="sub" xml:lang="ar-Latn-x-lc">bāb fī tadbīr al-ṣiḥḥah</title>
@@ -68,7 +70,9 @@
                   </msItem>
                   <msItem xml:id="MS_Bruce_50-item3" n="3">
                      <locus from="22" to="28">ff. 22v-28v</locus>
-                     <author key="n 89188648" ref="http://viaf.org/viaf/76706560/">ʻAṭṭār al-Hārūnī, Dāwud ibn Abī Naṣr,<date calendar="#Gregorian" notBefore="1200" notAfter="1300">13th cent.</date>
+                     <author key="n 89188648" ref="http://viaf.org/viaf/76706560/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">ʻAṭṭār al-Hārūnī, Dāwud ibn Abī Naṣr,<date calendar="#Gregorian" notBefore="1200" notAfter="1300">13th cent.</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Waṣīyah li-waladihi</title>
                      <listBibl>
@@ -109,7 +113,9 @@
                   </msItem>
                   <msItem xml:id="MS_Bruce_50-item6" n="6">
                      <locus from="51" to="72">ff. 51r-72v</locus>
-                     <author>Muḥammad ibn Zayn</author>
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc">Muḥammad ibn Zayn</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Kitāb al-maʻājīn</title>
                      <note>Beginning with remedies for the head</note>
                      <listBibl>
@@ -286,11 +292,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

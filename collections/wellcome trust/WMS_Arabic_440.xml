@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7780">
    <teiHeader>
       <fileDesc>
@@ -114,8 +114,13 @@
                         <title type="normalised" xml:lang="ara-Latn">Al-Qawā`id fī ṭ-Ṭibb</title>
                         <title type="original">القواعد فى الطبّ<locus facs="#i0004">1a</locus>
                         </title>
-                        <author>Šiḥāb ad-Dīn al-Kāzarūnīشهاب الدين الكازرونى<addName type="khitab">شهاب الدين</addName>
-                           <addName type="nisbah">الكازرونى</addName>
+                        <author>
+                           <persName xml:lang="eng-Latn" type="standard">Šiḥāb ad-Dīn al-Kāzarūnī</persName>
+                           <persName xml:lang="ara-Arab" type="original">شهاب الدين الكازرونى</persName>
+                           <persName xml:lang="ara-Arab" type="standard">
+                              <addName type="khitab">شهاب الدين</addName>
+                              <addName type="nisbah">الكازرونى</addName>
+                           </persName>
                         </author>
                         <incipit facs="#i0005">
                            <locus>Fol.1b.2</locus>الطب علم يحفظ به الصحة وترد وينقسم الى نظرى وهو معرفه الامور الطبيعيه والاحوال والاسباب والاعراض وعمل وهو معرفة كيفية حفظ الصحة</incipit>
@@ -180,7 +185,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-10-14T14:58:53+01:00">Conversion from WMSmaster to WAMCP<persName>gbrey</persName>

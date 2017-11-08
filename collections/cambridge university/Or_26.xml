@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_2208">
    <teiHeader>
       <fileDesc>
@@ -45,44 +45,61 @@
                <msContents>
                   <msItem xml:id="Or_26-item1" n="1">
                      <locus from="4b" to="74a">ff. 4b-74a</locus>
-                     <author key="nr 91044845" ref="http://viaf.org/viaf/31856257/">Baghdādī, Dāwūd ibn Sulaymān, 1815 or 16-1881 or 2شيخ داؤد بن سليمان البغدادي الخالدي النقشبندي
+                     <author key="nr 91044845" ref="http://viaf.org/viaf/31856257/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Baghdādī, Dāwūd ibn Sulaymān, 1815 or 16-1881 or 2</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">شيخ داؤد بن سليمان البغدادي الخالدي النقشبندي
+                           
+                           
+                           
+                        </persName>
                      </author>
                      
                      
                      
                      
                      <title xml:lang="en" type="desc">Refutation of an attack on the "poem of the Burdah" and its author, al-Būṣīrī</title>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne1922/view.php?id=21">no. 165</ref>
                         </bibl>
                         <bibl type="text-relations">Refutation of an attack of the<title xml:lang="ar-Latn-x-lc">al-Burdah<foreign xml:lang="ar">اليردة</foreign>
-                           </title>of<author key="n82047089" ref="http://viaf.org/viaf/90042754/">Būṣīrī, Sharaf al-Dīn Muḥammad ibn Saʻīd, 1213?-1296?البوصيري</author>
+                           </title>of<author key="n82047089" ref="http://viaf.org/viaf/90042754/">
+                              <persName xml:lang="ar-Latn-x-lc" key="n82047089">Būṣīrī, Sharaf al-Dīn Muḥammad ibn Saʻīd, 1213?-1296?</persName>
+                              <persName xml:lang="ar">البوصيري</persName>
+                           </author>
                         </bibl>
                      </listBibl>
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="Or_26-item2" n="2">
                      <locus from="75a" to="87b">ff. 75a-87b</locus>
-                     <author key="nr91044845" ref="http://viaf.org/viaf/31856257/">Baghdādī, Dāwūd ibn Sulaymān, 1815 or 16-1881 or 2سيخ داوود بن سليمان البغدادي الخالدي النقشبندي
+                     <author key="nr91044845" ref="http://viaf.org/viaf/31856257/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Baghdādī, Dāwūd ibn Sulaymān, 1815 or 16-1881 or 2</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">سيخ داوود بن سليمان البغدادي الخالدي النقشبندي
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Ṣāʻiqat al-rābiyah ʻalá al-firqat al-ṣābiyah al kadhdhabīyah</title>
                      
                      <title xml:lang="ar">صاعقة الرابية على الفرقة الصابية الكذابية</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne1922/view.php?id=84">no. 823</ref>
@@ -95,13 +112,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -180,7 +197,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-08-19">

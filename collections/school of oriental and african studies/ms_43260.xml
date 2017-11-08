@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8417">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,10 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_43260-item1" n="1">
-                     <author key="n92018469" ref="http://viaf.org/viaf/90042173/">Dawwānī, Muḥammad ibn Asʻad, 1426 or 7-1512 or 13الدواني، محمد بن اسعد</author>
+                     <author key="n92018469" ref="http://viaf.org/viaf/90042173/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Dawwānī, Muḥammad ibn Asʻad, 1426 or 7-1512 or 13</persName>
+                        <persName xml:lang="ar">الدواني، محمد بن اسعد</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">al-Ḥāshīyah al-jadīdah</title>
                      <title xml:lang="ar">الحاشیة الجديدة</title>
                      <note>Second of three sets of glosses on the commentary entitled<title xml:lang="ar-Latn-x-lc">al-Sharḥ al-jadīd</title>
@@ -59,7 +62,9 @@
                      </note>
                      <incipit>اللهم اهدنا الصراط المستقيم واعدنا من الشيطان الرجيم ... وبعد فانا قد كتبنا فى سالف الزمان ... حواش على الشرح الجديد للتجريد</incipit>
                      <colophon>تمت سنه 934</colophon>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://digital.info.soas.ac.uk/15594/#page/1/mode/2up/search/">view the printed catalogue Gacek no.95</ref>
@@ -68,13 +73,18 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="ms_43260-item2" n="2">
-                     <author key="n92018469" ref="http://viaf.org/viaf/90042173/">Dawwānī, Muḥammad ibn Asʻad, 1426 or 7-1512 or 13</author>
+                     <author key="n92018469" ref="http://viaf.org/viaf/90042173/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Dawwānī, Muḥammad ibn Asʻad, 1426 or 7-1512 or 13</persName>
+                        
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Ishkāl al-ʻasharah fī funūn al-ʻasharah</title>
                      <title xml:lang="ar-Latn-x-lc" type="alt">Risālah fī masāʼil min al-funūn</title>
                      <title xml:lang="ar">اشكال العشرة في فنون العشرة</title>
                      <title xml:lang="ar" type="alt">رسالة في مسائل من الفنون</title>
                      <incipit>الحمد لله الذى جعل السلطان غياثا للمستغيثين ... وبعد فيقول محمد بن اسعد الدوانى الصديقى انى كنت برهة من الزمان ومدة من الاوان مشغوفا بان ... اسلك فى سلك خدام حضرة من فاق سلاطين الايام</incipit>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://digital.info.soas.ac.uk/15594/#page/1/mode/2up/search/">view the printed catalogue Gacek no.125</ref>
@@ -101,7 +111,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -162,7 +172,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-07-13">

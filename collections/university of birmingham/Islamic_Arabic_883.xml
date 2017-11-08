@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3985">
    <teiHeader>
       <fileDesc>
@@ -45,10 +45,16 @@
                <msContents>
                   <summary>On Muḥammad's raids, with an introduction, based on tradition, on virtues of the jihād</summary>
                   <msItem xml:id="Islamic_Arabic_883-item1">
-                     <author>Anonymous
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="supplied">Anonymous</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Ghazawāt afḍal al-anbiyāʾ wasarāyā amthal al-atqiyāʾ</title>
                      
@@ -57,8 +63,10 @@
                      
                      <note>Index</note>
                      <incipit xml:lang="ar">الحمد للّه الذي شرع لنا الجهاد ... ورايت الناس يدخلون في دين الله افواجا</incipit>
-                     
-                     
+                     <explicit xml:lang="fa" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 1875</bibl>
                      </listBibl>
@@ -72,14 +80,14 @@
                               <height>19.2</height>
                               <width>13.8</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="23" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                            <note>23 lines per page</note>
                         </layout>
                      </layoutDesc>
@@ -134,7 +142,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-05-23">

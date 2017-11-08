@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8778">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,12 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_47655-item1" n="1">
-                     <author key="n89114122" ref="http://viaf.org/viaf/24842754/">Dard, K̲h̲vājah Mīr, 1720 or 1721-1785</author>
+                     <author key="n89114122" ref="http://viaf.org/viaf/24842754/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Dard, K̲h̲vājah Mīr, 1720 or 1721-1785</persName>
+                        
+                        
+                        
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Nālah-i Dard</title>
                      
                      <title xml:lang="fa">ناله درد</title>
@@ -52,11 +57,17 @@
                      
                      <incipit xml:lang="fa">حمد الهى كجا از دست من بيدگاه کما هو حقه سرانجام خواهد یافت</incipit>
                      <explicit xml:lang="fa" defective="true">تمت تمام شد مورخه 31 اگست سنه 1886 ع رقیمه محمد هدایت علی ساکندهلی</explicit>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="ms_47655-item2" n="2">
-                     <author key="n89118275" ref="http://viaf.org/viaf/45890612/">Naʻmat K̲h̲ān-i-ʻĀlī, -approximately 1710Niʻmat Khān ʻĀlīنعمت خان عالي</author>
+                     <author key="n89118275" ref="http://viaf.org/viaf/45890612/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Naʻmat K̲h̲ān-i-ʻĀlī, -approximately 1710</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Niʻmat Khān ʻĀlī</persName>
+                        <persName xml:lang="fa">نعمت خان عالي</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Jangnāmah</title>
                      <title xml:lang="fa">جنگنامه</title>
                      <note>An account of<persName xml:lang="fa-Latn-x-lc"
@@ -71,7 +82,11 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="ms_47655-item3" n="3">
-                     <author>Dārā Shikūh, Prince, son of Shahjahan, Emperor of India, 1615-1659</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc"
+                                  key="n81102519"
+                                  ref="http://viaf.org/viaf/27879596/">Dārā Shikūh, Prince, son of Shahjahan, Emperor of India, 1615-1659</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Majma‘ al-baḥrayn</title>
                      <title xml:lang="fa">مجمع البحرين</title>
                      
@@ -87,13 +102,13 @@
                            <ref target="a1">1-76 f.</ref>
                            <ref target="a2">78-113 f.</ref>
                            <ref target="a3">114-145 f.</ref>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -173,7 +188,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-11-12">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_606">
    <teiHeader>
       <fileDesc>
@@ -45,68 +45,97 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="F_36-item1" n="1">
                      <locus from="2b" to="382b">ff. 2b-382b</locus>
-                     <author key="n2007069556" ref="http://viaf.org/viaf/49008139/">Ṣubḥ-i Azal, d. 1912صبح ازل
+                     <author key="n2007069556" ref="http://viaf.org/viaf/49008139/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Ṣubḥ-i Azal, d. 1912</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">صبح ازل
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Dīwān al-Azal</title>
                      
                      <title xml:lang="ar">ديوان الازل</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="F_36-item2" n="2">
                      <locus from="383a" to="422">ff. 383a-422</locus>
-                     <author key="n2007069556" ref="http://viaf.org/viaf/49008139/">Ṣubḥ-i Azal, d. 1912صبح ازل
+                     <author key="n2007069556" ref="http://viaf.org/viaf/49008139/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Ṣubḥ-i Azal, d. 1912</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">صبح ازل
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Ṣaḥīfah-i wajdīyah</title>
                      
                      <title xml:lang="fa">صحيفه وجديه</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="F_36-item3" n="3">
-                     <author>Riḍwān ʻAlī ibn Ṣubḥ-i Azalرضوان علي بن صبح ازل
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Riḍwān ʻAlī ibn Ṣubḥ-i Azal</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">رضوان علي بن صبح ازل
+                           
+                           
+                           
+                        </persName>
                      </author>
                      
                      
                      
                      
                      <title xml:lang="en" type="desc">Tree letters</title>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="F_36-item4" n="4">
-                     <author key="n81047852" ref="http://viaf.org/viaf/47143611/">Cobham, Claude Delaval, 1842-1915
+                     <author key="n81047852" ref="http://viaf.org/viaf/47143611/">
+                        <persName xml:lang="en" type="standard">Cobham, Claude Delaval, 1842-1915</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      
                      
                      
                      
                      <title xml:lang="en" type="desc">Letter</title>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="en">English</textLang>
                   </msItem>
                </msContents>
@@ -114,13 +143,13 @@
                   <objectDesc form="other">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -204,7 +233,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-08-03">

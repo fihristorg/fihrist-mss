@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8260">
    <teiHeader>
       <fileDesc>
@@ -44,26 +44,33 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_35512-item1">
-                     <author ref="http://viaf.org/viaf/244502302">Muḥammad Mahdī ibn Muḥammad Riḍā al-Iṣfahānīالاصفهاني، محمد مهدي بن محمد رضا</author>
+                     <author ref="http://viaf.org/viaf/244502302">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Muḥammad Mahdī ibn Muḥammad Riḍā al-Iṣfahānī</persName>
+                        
+                        <persName xml:lang="fa" type="alt">الاصفهاني، محمد مهدي بن محمد رضا</persName>
+                        
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Niṣf-i jahān fī taʻrīf-i Iṣfahān</title>
                      <title xml:lang="fa">نصف جهان في تعريف اصفهان</title>
                      <note>A history and topography of Isfahan.</note>
                      <incipit>اما بعد اقل بندگان حضرت سبحانی محمد مهدى ابن محمد رضاء الاصهاني</incipit>
                      <explicit>اين كتاب تاريخ اصفهان مسمى بنصف جهان ...در شهر رجب المرجب سنه يكهزار و سيصد و هشت هجرى باتمام رسيد اين كتاب از روى نسخه خود مؤلف ...استنساخ شد بتاريخ شهر صفر سنه 1315</explicit>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>209 f.
-                           
+                        <extent>209 f.<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -112,7 +119,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-06-18">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4815">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,12 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_Ouseley_Add_43-item1">
-                     <author key="n 85108134" ref="http://viaf.org/viaf/72822762">Shāhnavāz Khān Awrangābādī, 1700-1758شاهنوازخان اورنگآبادیMīr ʻAbd al-Razzāq Ṣamṣām al-Dawlahمیر عبد الرزاق صمصام الدولة</author>
+                     <author key="n 85108134" ref="http://viaf.org/viaf/72822762">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Shāhnavāz Khān Awrangābādī, 1700-1758</persName>
+                        <persName xml:lang="fa">شاهنوازخان اورنگآبادی</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Mīr ʻAbd al-Razzāq Ṣamṣām al-Dawlah</persName>
+                        <persName xml:lang="fa" type="alt">میر عبد الرزاق صمصام الدولة</persName>
+                     </author>
                      <editor role="editor">
                         <persName ref="http://viaf.org/viaf/90779326/"
                                   key="n 89275211"
@@ -172,7 +177,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-07-12">

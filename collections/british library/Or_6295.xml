@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6072">
    <teiHeader>
       <fileDesc>
@@ -47,12 +47,18 @@
                           n="2"
                           class="http://lccn.loc.gov/sh85063200 http://lccn.loc.gov/sh85054793">
                      <locus from="48v" to="83r ">ff 48v-83r</locus>
-                     <author key="81059876" ref="http://viaf.org/viaf/98930150/">Jalāl al-Dīn Rūmī, Maulana, 1207-1273<surname>رومي</surname>
-                        <forename>جلال الدين محمد بن محمد</forename>
-                        <addName xml:lang="ar" type="laqab">مولانا</addName>
+                     <author key="81059876" ref="http://viaf.org/viaf/98930150/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Jalāl al-Dīn Rūmī, Maulana, 1207-1273</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">
+                           <surname>رومي</surname>
+                           <forename>جلال الدين محمد بن محمد</forename>
+                           <addName xml:lang="ar" type="laqab">مولانا</addName>
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <editor role="comentator">
                         <persName type="supplied" xml:lang="fa-Latn-x-lc">Ṣalāḥī Efendī,<foreign xml:lang="fa">صلاحی افندی</foreign>
@@ -65,8 +71,8 @@
                      <title xml:lang="en" type="desc">The ghazal rhyming in yāftam</title>
                      <note>With a Turkish commentary by Ṣalāḥī Efendī composed in<date calendar="#Hijri-qamari" notBefore="1761" notAfter="1762">1175</date>
                      </note>
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <bibl>
                         <ref target="Meredith-Owens_1968" type="page">Meredith-Owens 1968, page 10.</ref>
                      </bibl>
@@ -74,18 +80,24 @@
                   </msItem>
                   <msItem xml:id="Or_6295-item2" n="3" class="http://lccn.loc.gov/sh85063200">
                      <locus from="84v" to="103r">ff 84v-103r</locus>
-                     <author>Ṣalāḥī Efendīصلاحی افندی
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Ṣalāḥī Efendī</persName>
                         
                         
                         
+                        <persName xml:lang="fa">صلاحی افندی
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Risālah-’i Aṣḥāb-I Badr</title>
                      
                      <title xml:lang="ar">رسالۀ اصحاب بدر</title>
                      
                      
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <note>A Ḥurūfī poem on those present at the Battle of Badr</note>
                      <bibl>
                         <ref target="Meredith-Owens_1968" type="page">Meredith-Owens 1968, page 10.</ref>
@@ -100,7 +112,7 @@
                               <height>23</height>
                               <width>14.7</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -156,7 +168,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-05-07">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_9042">
    <teiHeader>
       <fileDesc>
@@ -45,18 +45,24 @@
                <msContents class="#multipleWorks">
                   <summary>The volume contains 26 separate fragments of Coptic manuscripts.</summary>
                   <msItem xml:id="Add_1886-item1" n="1">
-                     <author>anonymous
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">anonymous</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      
                      
                      
                      
                      <title xml:lang="en" type="desc">Leaf of Coptic text with Arabic gloss</title>
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/view.php?id=208">no. 1523</ref>
@@ -65,18 +71,24 @@
                      <textLang mainLang="cop" otherLangs="ar">Coptic, Arabic</textLang>
                   </msItem>
                   <msItem xml:id="Add_1886-item2" n="2">
-                     <author>anonymous
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">anonymous</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      
                      
                      
                      
                      <title xml:lang="en" type="desc">Two folios of a Coptic manucript with Arabic gloss</title>
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/view.php?id=208">no. 1523</ref>
@@ -85,18 +97,24 @@
                      <textLang mainLang="cop" otherLangs="ar">Coptic, Arabic</textLang>
                   </msItem>
                   <msItem xml:id="Add_1886-item3" n="3">
-                     <author>anonymous
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">anonymous</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      
                      
                      
                      
                      <title xml:lang="en" type="desc">Two leaves with Coptic and Arabic text</title>
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/view.php?id=208">no. 1523</ref>
@@ -105,18 +123,24 @@
                      <textLang mainLang="cop" otherLangs="ar">Coptic, Arabic</textLang>
                   </msItem>
                   <msItem xml:id="Add_1886-item4" n="4">
-                     <author>anonymous
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">anonymous</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      
                      
                      
                      
                      <title xml:lang="en" type="desc">Seven folios from a Coptic Liturgy</title>
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/view.php?id=208">no. 1523</ref>
@@ -129,13 +153,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -203,7 +227,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-05-19">

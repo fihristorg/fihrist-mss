@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_2776">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,10 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="RAS_Persian_230-item1">
-                     <author>Muḥammad Amīn Banī Isrāʼīlمحمد امين بني اشرائيل</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Muḥammad Amīn Banī Isrāʼīl</persName>
+                        <persName xml:lang="ar">محمد امين بني اشرائيل</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Majma‘ al-inshāʼ</title>
                      <title xml:lang="fa">مجمع الانشا</title>
                      <note>Incomplete, the text breaking off in the twenty-ninth section. Folio 1a. Note in Persian with the date 5 Safar 1190 (more likely than 1195), the remainder defaced and partly rewritten in another hand. This has evidently been taken as the date of copying, but there is no real reason to believe that. Flyleaves have several prayers, verses etc. on them, mostly difficult to read. Headings and punctuation in red. A collection of letters and other compositions in 30 sections (fasl)..</note>
@@ -119,7 +122,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-05-30">

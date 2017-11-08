@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4925">
    <teiHeader>
       <fileDesc>
@@ -44,27 +44,32 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_S_Digby_Or_127-item1">
-                     <author>Unknown</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc">Unknown</persName>
+                        
+                        
+                        
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Angrīznāmah</title>
                      <title xml:lang="fa">انگریزنامه</title>
                      
                      
                      <note>A mathnavī describing the campaign of Warren Hastings against the Mahārāja Chait Singh of Benares in 1781.</note>
                      <note>Defective at beginning.</note>
-                     
+                     <incipit xml:lang="fa"/>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>ff. 372+xxxvii
-                           
+                        <extent>ff. 372+xxxvii<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="in"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="13" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -169,7 +174,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2016-08-01">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6819">
    <teiHeader>
       <fileDesc>
@@ -42,11 +42,19 @@
                </msIdentifier>
                <msContents>
                   <summary>
-                     <title type="main"/>
+                     
                   </summary>
                   <msItem xml:id="Persian_MS_325-item1">
-                     <author key="nr 93017584" ref="http://viaf.org/viaf/170551551/">Ghaffārī, Ahmad ibn Muhammad approximately 1495-1567 or 1568Ghaffārī Qazvīnī, Aḥmadغفارى، احمد بن محمد
+                     <author key="nr 93017584" ref="http://viaf.org/viaf/170551551/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Ghaffārī, Ahmad ibn Muhammad approximately 1495-1567 or 1568</persName>
                         
+                        
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Ghaffārī Qazvīnī, Aḥmad</persName>
+                        <persName xml:lang="fa">غفارى، احمد بن محمد
+                           
+                           
+                           
+                        </persName>
                         
                         
                      </author>
@@ -55,8 +63,8 @@
                      <title xml:lang="fa">نگارستان قزوینی</title>
                      
                      
-                     
-                     
+                     <incipit xml:lang="ar" type="basmalla"/>
+                     <explicit xml:lang="ar"/>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
@@ -64,8 +72,8 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
@@ -132,7 +140,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015">

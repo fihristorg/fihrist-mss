@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7913">
    <teiHeader>
       <fileDesc>
@@ -39,17 +39,21 @@
                </msIdentifier>
                <msContents class="#translation">
                   <msItem xml:id="Z_1-item1">
-                     <author key="n82220255" ref="http://viaf.org/viaf/54940534/">Matthew, the Apostle, Saintمتى
+                     <author key="n82220255" ref="http://viaf.org/viaf/54940534/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Matthew, the Apostle, Saint</persName>
                         
-                        
-                        
+                        <persName xml:lang="ar">متى
+                           
+                           
+                           
+                        </persName>
                      </author>
                      
                      <title xml:lang="fa-Latn-x-lc">Injīl</title>
                      <title xml:lang="fa">انجيل</title>
                      
                      <title xml:lang="en" type="desc">Incomplete copy of St. Matthew's Gospel (end lacking)</title>
-                     
+                     <incipit xml:lang="ar" type="basmallah"/>
                      <explicit xml:lang="ar">
                         <locus from="113v" to="113v">f. 113v</locus>:<note>The manuscript ends with the following sentence:</note>كه همه سلطنت آسمان وزمين بمن واود شد اكنون</explicit>
                      <listBibl>
@@ -86,7 +90,7 @@
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">12 lines per page
+                        <layout columns="0" ruledLines="00" n="mistara">12 lines per page<dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -166,7 +170,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-02-24">

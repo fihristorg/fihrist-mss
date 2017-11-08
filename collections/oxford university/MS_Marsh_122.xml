@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4592">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,12 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_Marsh_122-item1">
-                     <author key="n 80012961" ref="http://viaf.org/viaf/90077852">Ṣafī, ʻAlī ibn Ḥusayn Kāshifī, 1463-1532 or 3صفي، علي بن الحسين الواعظ الكاشفي</author>
+                     <author key="n 80012961" ref="http://viaf.org/viaf/90077852">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Ṣafī, ʻAlī ibn Ḥusayn Kāshifī, 1463-1532 or 3</persName>
+                        <persName xml:lang="fa">صفي، علي بن الحسين الواعظ الكاشفي</persName>
+                        
+                        
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Rashaḥāt-i ʻayn al-ḥayāt</title>
                      <title xml:lang="fa">رشحات عين الحياة</title>
                      
@@ -61,12 +66,12 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>435 ff.
+                        <extent>435 ff.<dimensions type="leaf" unit="in"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -175,7 +180,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-09-20">

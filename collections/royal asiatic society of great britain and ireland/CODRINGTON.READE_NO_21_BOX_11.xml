@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_442">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,15 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="CODRINGTON.READE_NO_21_BOX_11-item1">
-                     <author key="n83213743" ref="http://viaf.org/viaf/47069191/">Ibn Aʻtham al-Kūfī, Aḥmad, d. 926?ابن اعثم
+                     <author key="n83213743" ref="http://viaf.org/viaf/47069191/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn Aʻtham al-Kūfī, Aḥmad, d. 926?</persName>
                         
                         
-                        <addName xml:lang="fa" type="nisbah">الكوفي</addName>
+                        <persName xml:lang="ar">ابن اعثم
+                           
+                           
+                           <addName xml:lang="fa" type="nisbah">الكوفي</addName>
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Futuh i Ibn i A'tham / Ahmad Ibn A'tham al-Kufi. Persian translation by Muhammad Ibn Ahmad Mustaufi Harawi.</title>
                      <note>Colophon states the MS was copied for John Romer, who is given titles suggesting he was a judge of some kind. A History of the immediate successors of Muhammad, and the early conquests of the Muslims. For Romer's gift see the Donations Register for November 18 1848 and the Journal for 1837, p. xiv. Headings and punctuation in red.</note>
@@ -120,7 +125,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-05-30">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7307">
    <teiHeader>
       <fileDesc>
@@ -43,18 +43,23 @@
                <msContents>
                   <summary>A general biography of patriarchs, kings and great me beginning with Adam and ending with<persName key="n 50002518" ref="http://viaf.org/viaf/70169499/">Shāh ʻĀlam</persName>.</summary>
                   <msItem xml:id="Persian_MS_80-item1">
-                     <author>Mawlavī Muḥammad Aslam ibn Muḥammad Hafīẓ al-Farsūrūrī al-Anṣārī al-Qādirī, fl. 1770مولوي محمد أسلم بن محمد حفيظ الفرسوروري الأنصاري القادري
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Mawlavī Muḥammad Aslam ibn Muḥammad Hafīẓ al-Farsūrūrī al-Anṣārī al-Qādirī, fl. 1770</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">مولوي محمد أسلم بن محمد حفيظ الفرسوروري الأنصاري القادري
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Farḥat al-nāẓirīn</title>
                      
                      <title xml:lang="ar">فرحة الناظرين</title>
                      
                      
-                     
-                     
+                     <incipit xml:lang="ar" type="basmalla"/>
+                     <explicit xml:lang="ar"/>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
@@ -62,8 +67,8 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
@@ -139,7 +144,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7753">
    <teiHeader>
       <fileDesc>
@@ -39,7 +39,7 @@
                         </extent>
                         <collation>
                            <seg type="gathering" n="23x (5)">
-                              
+                              <dimensions type="leaf" unit="mm" quantity="23"/>
                               <formula>01+228+001</formula>
                            </seg>
                         </collation>
@@ -145,10 +145,15 @@
                   <msContents>
                      <msItem xml:id="WMS_Arabic_289-part1-item1">
                         <author>
-                           <forename facs="#i0007">محمد</forename>
-                           <addName type="laqab" facs="#i0007">اللاري</addName>
-                           <addName type="khitab" facs="#i0007">مصلح الدين</addName>
-                           <addName type="nisbah" facs="#i0007">الانصارى</addName>Muslih Ad-dīn Muḥammad al-Lārī al-Ansārīمحمد المدعو بمصلح الدين اللارى الانصارى</author>
+                           <persName type="standard" xml:lang="ara-Arab">
+                              <forename facs="#i0007">محمد</forename>
+                              <addName type="laqab" facs="#i0007">اللاري</addName>
+                              <addName type="khitab" facs="#i0007">مصلح الدين</addName>
+                              <addName type="nisbah" facs="#i0007">الانصارى</addName>
+                           </persName>
+                           <persName type="standard" xml:lang="eng-Latn">Muslih Ad-dīn Muḥammad al-Lārī al-Ansārī</persName>
+                           <persName type="original" xml:lang="ara-Arab" facs="#i0007">محمد المدعو بمصلح الدين اللارى الانصارى</persName>
+                        </author>
                         <title type="normalised" xml:lang="ara-Latn">Kitāb al-Lārī fī `ilm al-ḥikma al-wāqi`a</title>
                         <incipit type="basmala" facs="#i0007">
                            <locus>fol.1b.1</locus>بسم الله الرحمن الرحيم وبه نستعين</incipit>
@@ -165,9 +170,14 @@
                      </msItem>
                      <msItem xml:id="WMS_Arabic_289-part1-item2">
                         <author>
-                           <forename facs="#i0124">حسين بن مُعين الدين</forename>
-                           <addName type="laqab" facs="#i0124">المَيْبُّدي</addName>
-                           <addName type="nisbah" facs="#i0124">المَيْبُّدي</addName>Ḥu. b.Mu`inaddīn al-Maibudī Qaḏi Mīr Manṭiqīحسين بن معين الدين المَيْبُّدي</author>
+                           <persName type="standard" xml:lang="ara-Arab">
+                              <forename facs="#i0124">حسين بن مُعين الدين</forename>
+                              <addName type="laqab" facs="#i0124">المَيْبُّدي</addName>
+                              <addName type="nisbah" facs="#i0124">المَيْبُّدي</addName>
+                           </persName>
+                           <persName type="standard" xml:lang="eng-Latn">Ḥu. b.Mu`inaddīn al-Maibudī Qaḏi Mīr Manṭiqī</persName>
+                           <persName type="original" xml:lang="ara-Arab" facs="#i0124">حسين بن معين الدين المَيْبُّدي</persName>
+                        </author>
                         <title type="normalised" xml:lang="ara-Latn">"No title"</title>
                         <incipit type="basmala" facs="#i0124">
                            <locus>fol.118b.1</locus>بسم الله الرحمن الرحيم</incipit>
@@ -371,7 +381,9 @@
                         <textLang mainLang="ara-Arab"/>
                      </msItem>
                      <msItem xml:id="WMS_Arabic_289-part1-item3">
-                        <author>Anonymous</author>
+                        <author>
+                           <persName type="standard" xml:lang="eng-Latn">Anonymous</persName>
+                        </author>
                         <textLang mainLang="ara-Arab"/>
                         <incipit type="basmala" facs="#i0292">
                            <locus>fol.286b.1</locus>بسم الله الرحمن الرحيم</incipit>
@@ -447,7 +459,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-03-30T11:33:46+02:00">Committed to SVN. To view the changes in detail use SVN diff. SVN Url:http://wellcomesvn.local.bibalex.dom/svn/WellcomeTrust/trunk/WAMCPMetaGallery/XML/WMS_Arabic_289/WMS_Arabic_289.xml<persName>hussien.soliman</persName>

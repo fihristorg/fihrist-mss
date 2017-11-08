@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_10103">
    <teiHeader>
       <fileDesc>
@@ -44,11 +44,16 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_Arab_b_1-item1">
-                     <author key="n 80145329" ref="http://viaf.org/viaf/90056948/">Rashīd al-Dīn Ṭabīb, 1247?-1318<surname>بن عماد الدولة</surname>
-                        <forename>فضل الله</forename>
-                        <addName type="laqab">رشيد الدين</addName>
-                        <addName type="kunyah">أبو الخير</addName>
-                        <addName type="nisbah">الهمداني</addName>
+                     <author key="n 80145329" ref="http://viaf.org/viaf/90056948/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Rashīd al-Dīn Ṭabīb, 1247?-1318</persName>
+                        
+                        <persName xml:lang="ar" type="standard">
+                           <surname>بن عماد الدولة</surname>
+                           <forename>فضل الله</forename>
+                           <addName type="laqab">رشيد الدين</addName>
+                           <addName type="kunyah">أبو الخير</addName>
+                           <addName type="nisbah">الهمداني</addName>
+                        </persName>
                      </author>
                      <docAuthor xml:lang="ar-Latn-x-lc">Rashīd al-Dīn Faḍl Allāh ibn Abī al-Khayr, al-Ṭabīb d. 1318.</docAuthor>
                      <title xml:lang="ar-Latn-x-lc" type="supplied">Taʼrīkh al-Khitā</title>
@@ -113,11 +118,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

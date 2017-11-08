@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7559">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,9 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="RAS_Ellis_Persian_13-item1">
-                     <author>Unidentified.</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Unidentified.</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Majalis al-imamiyah. (So in the colophon, f152a.)</title>
                      <note>Defective at the beginning. Text begins just before a preface. F1a. In the hand of Ellis: A.G. Ellis 14.2.21., and then 175(50)b Part of f152b and 153 completed in a different hand. Text breaks of at 153b. Unbound, partly loose sheets. Kept between boards in own cardboard casing. On the prescriptions of the Shi'i faith. The first part (juz'). Headings and punctuation in red.</note>
                      <incipit>... bar in nama'im kih 'aql az in jihat</incipit>
@@ -57,7 +59,7 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>152 + 1 folios
+                        <extent>152 + 1 folios<dimensions type="leaf" unit="in"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
@@ -106,7 +108,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-05-30">

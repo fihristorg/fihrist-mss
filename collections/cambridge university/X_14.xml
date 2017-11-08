@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3102">
    <teiHeader>
       <fileDesc>
@@ -45,10 +45,15 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="X_14-item1" n="1">
                      <locus from="1" to="115a">ff. 1-115a</locus>
-                     <author key="n92035168" ref="http://viaf.org/viaf/17290151/">Kemalpaşazade, 1468 or 9-1534كمال پاشازاده
+                     <author key="n92035168" ref="http://viaf.org/viaf/17290151/">
+                        <persName xml:lang="ota-Latn-x-lc" type="standard">Kemalpaşazade, 1468 or 9-1534</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">كمال پاشازاده
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Nigāristān-i Kamāl Pāshazādah</title>
                      
@@ -56,26 +61,36 @@
                      
                      
                      <note>This manuscript contains the last 24 chapters only.</note>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="X_14-item2" n="2">
                      <locus from="115b" to="121a">ff. 115b-121a</locus>
-                     <author>anonymous
+                     <author>
+                        <persName xml:lang="ota-Latn-x-lc" type="standard">anonymous</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      
                      
                      
                      
                      <title xml:lang="en" type="desc">Colletion of Persian and Turkish apophthegms, proverbs, etc.</title>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="fa" otherLangs="ota">Persian and Turkish</textLang>
                   </msItem>
                </msContents>
@@ -83,13 +98,13 @@
                   <objectDesc form="other">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -184,7 +199,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-09-02">

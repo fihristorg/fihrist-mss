@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5790">
    <teiHeader xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <fileDesc>
@@ -28,7 +28,12 @@
                <head>Sihr-i halal</head>
                <msContents>
                   <msItem xml:id="Or_15563-item1" class="http://lccn.loc.gov/sh85100084">
-                     <author>Ahlī Shīrāzī, Muḥammad ibn Yūsuf, 1454-1535 or 1536اهلي شيرازي، محمد بن يوسف</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc"
+                                  type="standard"
+                                  key="http://lccn.loc.gov/nr96024156">Ahlī Shīrāzī, Muḥammad ibn Yūsuf, 1454-1535 or 1536</persName>
+                        <persName xml:lang="fa" key="http://lccn.loc.gov/nr96024156" type="supplied">اهلي شيرازي، محمد بن يوسف</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Siḥr-i ḥalāl</title>
                      <title xml:lang="fa">سحر حلال</title>
                      <note>
@@ -46,7 +51,7 @@
                               <height>231</height>
                               <width>143</width>
                            </dimensions>
-                           
+                           <dimensions type="written"/>
                         </extent>
                         <condition>
                            <p>Extensive worming, but rarely affecting the legibility of the text.</p>
@@ -119,7 +124,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-12-16">

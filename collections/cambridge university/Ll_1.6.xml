@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_9470">
    <teiHeader>
       <fileDesc>
@@ -44,19 +44,26 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Ll_1.6-item1">
-                     <author key="n95036695" ref="http://viaf.org/viaf/62391312/">Ibn Wāṣil, Muḥammad ibn Sālim, 1207 or 8-1297 or 8ابن واصل،جمال الدين محمد بن سالم
+                     <author key="n95036695" ref="http://viaf.org/viaf/62391312/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn Wāṣil, Muḥammad ibn Sālim, 1207 or 8-1297 or 8</persName>
                         
                         
-                        <addName xml:lang="ar" type="nisbah">الحموي</addName>
+                        <persName xml:lang="ar">ابن واصل،جمال الدين محمد بن سالم
+                           
+                           
+                           <addName xml:lang="ar" type="nisbah">الحموي</addName>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Mufarrij al-kurūb fī akhbār Banī Ayyūb</title>
                      
                      <title xml:lang="ar">مفرج الكروب في اخبار بني ايوب</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/view.php?id=127">no. 1079</ref>
@@ -69,13 +76,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -130,7 +137,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-06-15">

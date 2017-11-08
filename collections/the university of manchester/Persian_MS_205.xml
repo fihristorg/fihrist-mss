@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6686">
    <teiHeader>
       <fileDesc>
@@ -42,16 +42,19 @@
                </msIdentifier>
                <msContents>
                   <summary>
-                     <title type="main"/>
+                     
                   </summary>
                   <msItem xml:id="Persian_MS_205-item1">
-                     <author key="n80108820" ref="http://viaf.org/viaf/27417654/">ʻAbd al-Rashīd ibn ʻAbd al-Ghafūr Tattavī, fl. 1653عبد الرشيد ابن عبد الغفور الحسينی المدنی تتوي</author>
+                     <author key="n80108820" ref="http://viaf.org/viaf/27417654/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">ʻAbd al-Rashīd ibn ʻAbd al-Ghafūr Tattavī, fl. 1653</persName>
+                        <persName xml:lang="fa">عبد الرشيد ابن عبد الغفور الحسينی المدنی تتوي</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Farhang-i Rashīdī</title>
                      <title xml:lang="fa">فرهنگ رشيدی</title>
                      
                      
-                     
-                     
+                     <incipit xml:lang="ar" type="basmalla"/>
+                     <explicit xml:lang="ar"/>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
@@ -59,8 +62,8 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
@@ -130,7 +133,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014">

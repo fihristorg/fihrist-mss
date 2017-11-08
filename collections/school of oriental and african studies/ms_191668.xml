@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8114">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,15 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_191668-item1">
-                     <author key="n83139697" ref="http://viaf.org/viaf/74763388/">Ḥujāwī, Mūsá ibn Aḥmad, d. 1560الحجاوي، موسى بن أحمد
+                     <author key="n83139697" ref="http://viaf.org/viaf/74763388/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ḥujāwī, Mūsá ibn Aḥmad, d. 1560</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">الحجاوي، موسى بن أحمد
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Zād al-mustaqni‘ fī ikhtiṣār al-muqni‘</title>
                      
@@ -55,14 +60,19 @@
                      
                      
                      <incipit xml:lang="ar">الحمد لله حمدا لا ينفد افضل ما ينبغي ان يحمد ... اما بعد فهذا مختصر في الفقه من مقنع الامام الموفق ابي محمد على قول واحد وهو الراجع في مذهب الامام احمد ... كتاب الطهارة وهي ارتفاع الحدث ... وما في معناه وزوال الخبث</incipit>
-                     
-                     
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://digital.info.soas.ac.uk/15594/#page/1/mode/2up/search/">view the printed catalogue&gt;Gacek no. 390</ref>
                         </bibl>
                         <bibl type="text-relations">Abridgment of<title xml:lang="ar-Latn-x-lc">al-Muqni‘ or al-Iqnā‘ li-talib al-intifā‘<foreign xml:lang="ar">المقنع او الاقناع لطالب الانتفاع</foreign>
-                           </title>of<author key="n83066615 " ref="http://viaf.org/viaf/21054589/">Ibn Qudāmah, Muwaffaq al-Dīn ʻAbd Allāh ibn Aḥmad, 1147-1223ابن قدامة، موفق الدين عبد الله بن احمد</author>.</bibl>
+                           </title>of<author key="n83066615 " ref="http://viaf.org/viaf/21054589/">
+                              <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn Qudāmah, Muwaffaq al-Dīn ʻAbd Allāh ibn Aḥmad, 1147-1223</persName>
+                              <persName xml:lang="ar">ابن قدامة، موفق الدين عبد الله بن احمد</persName>
+                           </author>.</bibl>
                      </listBibl>
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
@@ -89,7 +99,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -145,7 +155,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-03-01">

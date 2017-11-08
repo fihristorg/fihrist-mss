@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_9504">
    <teiHeader>
       <fileDesc>
@@ -45,15 +45,27 @@
                <msContents>
                   <summary>Illuminated Qurʾān from the library of Tippoo Ṣāḥib, presented to the University of Cambridge by the Court of Directors of the East India Company in 1806. The volume has two decorated shamsahs and two magnificent headpieces containing the Fātiḥa. The text of the Qurʾān is followed by some prayers, and a Fal-nāmah. The manuscript is not dated, but dates of ownership of 1028 A.H./1618 A.D and 1066 A.H./1655 A.D. occur at the beginning</summary>
                   <msItem xml:id="Nn_3.75-item1">
-                     
+                     <author>
+                        
+                        
+                        
+                        <persName xml:lang="ar">
+                           
+                           
+                           
+                           
+                        </persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">al-Qurʼān</title>
                      
                      <title xml:lang="ar">القرآن</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/view.php?id=89">no. 771</ref>
@@ -541,13 +553,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -599,7 +611,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-06-07">

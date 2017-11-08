@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4736">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,12 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Ouseley_386-item1" n="1">
                      <locus from="1" to="4">ff. 1-4</locus>
-                     <author>Anonymous</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Anonymous</persName>
+                        
+                        
+                        
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Marthiyah′nāmah</title>
                      <title xml:lang="fa">مرثيه نامه</title>
                      
@@ -60,7 +65,12 @@
                   </msItem>
                   <msItem xml:id="MS_Ouseley_386-item2" n="2">
                      <locus from="6" to="38">ff. 6-38</locus>
-                     <author ref="http://viaf.org/viaf/164494033">Sādiq Isfahānī, Muḥammad Ṣādiq ibn Muḥammad Sạliḥ, 1609 or 10-1650 or 51میرزا محمد صادق بن میرزا محمد صالح زبیری اصفهانی آزدانی</author>
+                     <author ref="http://viaf.org/viaf/164494033">
+                        <persName xml:lang="fa-Latn-x-lc">Sādiq Isfahānī, Muḥammad Ṣādiq ibn Muḥammad Sạliḥ, 1609 or 10-1650 or 51</persName>
+                        <persName xml:lang="fa">میرزا محمد صادق بن میرزا محمد صالح زبیری اصفهانی آزدانی</persName>
+                        
+                        
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Tadhkirat al-umarāʼ</title>
                      <title xml:lang="fa">تذكرة الأمراء</title>
                      
@@ -76,7 +86,12 @@
                   </msItem>
                   <msItem xml:id="MS_Ouseley_386-item3" n="3">
                      <locus from="41" to="52">ff. 41-52</locus>
-                     <author ref="http://viaf.org/viaf/164494033">Sādiq Isfahānī, Muḥammad Ṣādiq ibn Muḥammad Sạliḥ, 1609 or 10-1650 or 51میرزا محمد صادق بن میرزا محمد صالح زبیری اصفهانی آزدانی</author>
+                     <author ref="http://viaf.org/viaf/164494033">
+                        <persName xml:lang="fa-Latn-x-lc">Sādiq Isfahānī, Muḥammad Ṣādiq ibn Muḥammad Sạliḥ, 1609 or 10-1650 or 51</persName>
+                        <persName xml:lang="fa">میرزا محمد صادق بن میرزا محمد صالح زبیری اصفهانی آزدانی</persName>
+                        
+                        
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Documents relating to the stay of Humāyūn in Persia</title>
                      
                      
@@ -92,7 +107,12 @@
                   </msItem>
                   <msItem xml:id="MS_Ouseley_386-item4" n="4" class="#extract">
                      <locus from="51" to="86">ff. 51-86</locus>
-                     <author>Anonymous</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Anonymous</persName>
+                        
+                        
+                        
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Several extracts from a historical work</title>
                      
                      
@@ -107,7 +127,12 @@
                   </msItem>
                   <msItem xml:id="MS_Ouseley_386-item5" n="5">
                      <locus from="92" to="101">ff. 92-101</locus>
-                     <author>Various</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Various</persName>
+                        
+                        
+                        
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">A collection of poems and treatises on Sufism</title>
                      
                      
@@ -124,12 +149,12 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>ff.
+                        <extent>ff.<dimensions type="leaf" unit="in"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -269,7 +294,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-09-06">

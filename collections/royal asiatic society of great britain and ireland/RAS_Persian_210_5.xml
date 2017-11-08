@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_2754">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,9 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="RAS_Persian_210_5-item1">
-                     <author>Muhammad Salih.</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Muhammad Salih.</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Risalah-i Nishat-ara.</title>
                      <note>Occupies ff. 78-89 of the manuscript. For further details see Codrington/Reade No 210 (1). The note on f78a suggests the author may be the Mir Muhammad Salih Qawwal Dihlawi who is mentioned In (or under?) the rag Darpan. Work on music, divided into two sections, the first on Persian music, the second on Indian. Author's name appears in a note on f.78a.</note>
                      <incipit>Al-hamdu lillah rabb al-'alamain wa salat 'ala Muhammad</incipit>
@@ -58,7 +60,7 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
+                           <dimensions type="leaf" unit="in"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -106,7 +108,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-05-30">

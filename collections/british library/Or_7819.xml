@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6279">
    <teiHeader>
       <fileDesc>
@@ -43,10 +43,16 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85068403">
                   <msItem xml:id="Or_7819-item1">
-                     <author ref="http://viaf.org/viaf/81971228" key="n84007864">Zayn al-ʻĀbidīn ʻAlī ibn al-Ḥusayn, d. 710?Imām Zayn al-‘Abidīnامان زین العبدینزين العابدين بن علي بن الحسين
+                     <author ref="http://viaf.org/viaf/81971228" key="n84007864">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Zayn al-ʻĀbidīn ʻAlī ibn al-Ḥusayn, d. 710?</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Imām Zayn al-‘Abidīn</persName>
+                        <persName xml:lang="fa" type="alt">امان زین العبدین</persName>
                         
-                        
-                        
+                        <persName xml:lang="ar">زين العابدين بن علي بن الحسين
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Risālah-’i mir’āt al-mustahallin</title>
                      
@@ -54,8 +60,8 @@
                      
                      
                      <note>Written on sheets of wood bound in book form</note>
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <note>A prayer book with Persian interlinear translation and marginal glosses</note>
                      <note>Last folio restored</note>
                      <listBibl>
@@ -71,7 +77,7 @@
                               <height>19.2</height>
                               <width>12</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -115,7 +121,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-05-03">

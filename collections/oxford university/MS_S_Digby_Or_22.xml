@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4977">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,13 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_S_Digby_Or_22-item1">
-                     <author key="n81000986" ref="http://viaf.org/viaf/33311831">Mirzā Sangīn Bayg, active 1818-1820Aṣghar ʻAlī Bīg ibn ʻAlī Akbar Bīgمیرزا سنگین بیگاصغر علی بیگ ابن علی اکبر بیگ</author>
+                     <author key="n81000986" ref="http://viaf.org/viaf/33311831">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Mirzā Sangīn Bayg, active 1818-1820</persName>
+                        
+                        <persName xml:lang="ar-Latn-x-lc" type="alt">Aṣghar ʻAlī Bīg ibn ʻAlī Akbar Bīg</persName>
+                        <persName xml:lang="fa">میرزا سنگین بیگ</persName>
+                        <persName xml:lang="fa" type="alt">اصغر علی بیگ ابن علی اکبر بیگ</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Sayr al-manāzil</title>
                      <title xml:lang="fa">سير المنازل</title>
                      <incipit xml:lang="ar">معماری كه با معماری کن وجود</incipit>
@@ -61,12 +67,12 @@
                               <height>33.4</height>
                               <width>21</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="in"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="0" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -172,7 +178,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-04-27"/>

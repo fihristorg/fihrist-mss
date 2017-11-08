@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8065">
    <teiHeader>
       <fileDesc>
@@ -44,26 +44,32 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_18746-item1">
-                     <author key="n2011208269" ref="http://viaf.org/viaf/186833950">Ṭhaṭavī, Mīru ʻAlī Sheru Qāniʻ, 1725 or 1726-1788 or 1789ʻAlī Shīr Qāniʻ Tattavī, Mīr‏مير على شير قانع</author>
+                     <author key="n2011208269" ref="http://viaf.org/viaf/186833950">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Ṭhaṭavī, Mīru ʻAlī Sheru Qāniʻ, 1725 or 1726-1788 or 1789</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">ʻAlī Shīr Qāniʻ Tattavī, Mīr</persName>
+                        <persName xml:lang="fa">‏مير على شير قانع</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Tuḥfat al-kirām</title>
                      <title xml:lang="ar">تحفة الكرام</title>
                      <note>A history of various countries in Persian. Vol.3, On the history of Sind - Tārīkh-i Sind. Lacking folio 1.</note>
                      <incipit>كه تا من بامتحان بد هم اين را حافظ باش</incipit>
                      <colophon>نسخه تاريخ سند بيست هفتم ماه رمضان المبارك سنه 1225 از دست فقیر حقیر تقصیر بنده الهرکیه ولد مرحوم مغفور عطاء الله صورت اختتام يافت</colophon>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>205 f.
-                           
+                        <extent>205 f.<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -112,7 +118,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-03-17">

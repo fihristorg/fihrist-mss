@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7787">
    <teiHeader>
       <fileDesc>
@@ -140,7 +140,12 @@
                         <title type="normalised" xml:lang="ara-Latn">[Fawā'id]</title>
                         <title type="original">فوائد<locus>1a</locus>
                         </title>
-                        <author>[Ǧalāl ad-Dīn?] as-Suyūṭīجلال الدين [?] السيوطي<addName type="nisbah">السيوطي</addName>
+                        <author>
+                           <persName xml:lang="eng-Latn" type="standard">[Ǧalāl ad-Dīn?] as-Suyūṭī</persName>
+                           <persName xml:lang="ara-Arab" type="original">جلال الدين [?] السيوطي</persName>
+                           <persName xml:lang="ara-Arab" type="standard">
+                              <addName type="nisbah">السيوطي</addName>
+                           </persName>
                         </author>
                         <incipit facs="#i0004">
                            <locus>Fol. 1b.2</locus>وصلى الله على سيدنا ومولانا محمد وعلى آله وسلمفايدة مما ينفع للمعدة الباردة</incipit>
@@ -261,7 +266,9 @@
                         <title type="normalised" xml:lang="ara-Latn">[Fawā'id]</title>
                         <title type="original">No title<locus>52a.1</locus>
                         </title>
-                        <author>Anonymous</author>
+                        <author>
+                           <persName xml:lang="eng-Latn" type="standard">Anonymous</persName>
+                        </author>
                         <incipit facs="#i0053">
                            <locus>Fol. 52a.1</locus>فايدة الي عرق الاس</incipit>
                         <explicit type="ending" facs="#i0054">
@@ -289,7 +296,9 @@
                         <title type="normalised" xml:lang="ara-Latn">[Fawā'id]</title>
                         <title type="original">No title<locus>53b.1</locus>
                         </title>
-                        <author>Anonymous</author>
+                        <author>
+                           <persName xml:lang="eng-Latn" type="standard">Anonymous</persName>
+                        </author>
                         <incipit facs="#i0055">
                            <locus>Fol.53b.2</locus>باب فى دعوة البرهتية وهى للمحبة صحيحة مجرب اذا اردت من تريد عن الفسد (?) الرجال تاخذ بيضة الدجاجة السود</incipit>
                         <explicit facs="#i0055">
@@ -325,7 +334,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-04-01T16:21:19+01:00">Conversion from WMSmaster to WAMCP<persName>gbrey</persName>

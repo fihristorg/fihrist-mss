@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8110">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,10 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_191664-item1">
-                     <author key="n84077213‏‏" ref="http://viaf.org/viaf/47005120/">Ālūsī, Maḥmūd Shukrī, 1857-1924آلوسي، محمود شكري</author>
+                     <author key="n84077213‏‏" ref="http://viaf.org/viaf/47005120/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ālūsī, Maḥmūd Shukrī, 1857-1924</persName>
+                        <persName xml:lang="ar">آلوسي، محمود شكري</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Sharḥ al-masāʼil allatī khālafa fīhā rasūl Allāh ahl al-jāhilīyah</title>
                      <title xml:lang="ar">شرح المسائل التي خالف فيها رسوا الله اهل الجاهلية</title>
                      <note>Commentary on the<title xml:lang="ar-Latn-x-lc">al-Masāʼil</title>
@@ -77,7 +80,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -129,7 +132,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-08-17">

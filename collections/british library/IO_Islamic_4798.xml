@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3518">
    <teiHeader>
       <fileDesc>
@@ -43,18 +43,23 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh2005008719 http://lccn.loc.gov/sh85141355">
                   <msItem xml:id="IO_Islamic_4798-item1" defective="unknown">
-                     <author>ʻAbdulqādir SāmīḤaqqānīحقانىعبدالقادر سامی
-                        
-                        
-                        
+                     <author>
+                        <persName xml:lang="en" type="supplied">ʻAbdulqādir Sāmī</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Ḥaqqānī</persName>
+                        <persName xml:lang="fa" type="alt">حقانى</persName>
+                        <persName xml:lang="fa">عبدالقادر سامی
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Qiṣṣah-’i Sarv</title>
                      <title xml:lang="fa">قصۀ سرو</title>
                      <title xml:lang="fa-Latn-x-lc" type="alt">Qiṣṣah-’i Shamshād</title>
                      <title xml:lang="fa" type="alt">قصۀ شمشاد</title>
                      
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>The romance of Sarv and Shamshād composed in<date calendar="#Gregorian" when="1769">1769</date>in Dakkani verse</note>
                      <listBibl>
                         <bibl>For a more detailed description see Sims-Williams 1986, page 22.</bibl>
@@ -69,7 +74,7 @@
                               <height>27.5</height>
                               <width>15</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -119,7 +124,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-12-30">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8190">
    <teiHeader>
       <fileDesc>
@@ -44,13 +44,18 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_25735-item1">
-                     <author key="n80118462" ref="http://www.viaf.org/viaf/103638491/">Nuʻmān ibn Muḥammad, Abū Ḥanīfah, d. 974نعمان بن محمد، ابوحنيفة</author>
+                     <author key="n80118462" ref="http://www.viaf.org/viaf/103638491/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Nuʻmān ibn Muḥammad, Abū Ḥanīfah, d. 974</persName>
+                        <persName xml:lang="ar">نعمان بن محمد، ابوحنيفة</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Daʻāʼim al-Islām fī al-ḥalāl wa al-ḥarām wa-al-qaḍāyā wa-al-aḥkām ʻan ahl bayt rasūl Allāh</title>
                      <title xml:lang="ar">دعائم الاسلام في الحلال والحرام والقضايا والاحكام عن اهل بيت رسول الله</title>
                      <note>Manual of Ismaili fiqh and kalam. Vol.1 as far as Kitāb al-jihād</note>
                      <incipit>الحمد لله استفتاحا بحمده وصلى الله على محمد رسوله وعبده ... اما بعد فانه لما كثرت الدعاوى ... والاراء واختلفت المذاهب والاهواء</incipit>
                      <colophon>تمت كتاب الجهاد...فی یوم الثامن والعشرین من شهر ربیع الاول سنه 1309...بخط...محمد برهان الدین نجل ...عبد القادر نجم الدین...داود ابن مامونجی</colophon>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://digital.info.soas.ac.uk/15594/#page/1/mode/2up/search/">view the printed catalogue Gacek no.48</ref>
@@ -73,7 +78,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -128,7 +133,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-07-28">

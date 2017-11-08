@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8481">
    <teiHeader>
       <fileDesc>
@@ -44,20 +44,29 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_44531-item1" n="1">
-                     <author ref="http://viaf.org/viaf/60027758" key="n50045767">Ḥaydar Mīrzā, 1499 or 1500-1551Mirzā Ḥaydar Dūghlātميرزا حيدر دوغلاتحيدر ميرزا</author>
+                     <author ref="http://viaf.org/viaf/60027758" key="n50045767">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Ḥaydar Mīrzā, 1499 or 1500-1551</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Mirzā Ḥaydar Dūghlāt</persName>
+                        <persName xml:lang="fa" type="alt">ميرزا حيدر دوغلات</persName>
+                        <persName xml:lang="fa">حيدر ميرزا</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Tārīkh-i Rashīdī</title>
                      <title xml:lang="fa">تاریخ رشیدی</title>
                      <note>The second part only of a history of the Mongols of Central Asia</note>
                      <incipit>در حضرت حوزه پنان و در خدمت خرده آپتان احقر العباد محمد حسين</incipit>
                      <explicit>اختتام این تاریخ رشیدی در سنح ذی الحجه سنه اثنا و خمسین و تسعمایه واقع شد در بلده طيبه كشمير</explicit>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="ms_44531-item2" n="2">
                      <author>Anonymous</author>
                      <title xml:lang="en" type="desc">Part of an anonymous and untitled Persian dictionary arranged in babs under the last letter and in fasls under the first, with poetical quotations arranged both by alphabet and by subject</title>
                      <note>From Bab 1, fasl 9 to Bab 25, fasl 8</note>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
@@ -67,13 +76,13 @@
                         <extent>
                            <ref target="a1">1-53 f.</ref>
                            <ref target="a2">54-184 f.</ref>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -139,7 +148,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-05-20">

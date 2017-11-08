@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7755">
    <teiHeader>
       <fileDesc>
@@ -263,10 +263,15 @@
                            <title type="original" facs="#i0061">الباٿ الٿامں عشر فى دكر سبٿ كسوف الشمس</title>
                         </msItem>
                         <author>
-                           <forename facs="#i0002">محمد بن أحمد ابن ابى بشر</forename>
-                           <addName type="kunyah" facs="#i0002">ابى بكر</addName>
-                           <addName type="khitab" facs="#i0002">شمس الدين</addName>
-                           <addName type="nisbah" facs="#i0002">المروزى الخرقى</addName>شمس الدين ابى بكر محمد بن احمد ابن ابى بشر المروزى المعروف بالخرقىŠams ad-dīn Abū Bakr Muḥammad Ibn Aḥmad Ibn Abī Bišr al-Maruzī al-ẖarqī</author>
+                           <persName type="standard" xml:lang="ara-Arab">
+                              <forename facs="#i0002">محمد بن أحمد ابن ابى بشر</forename>
+                              <addName type="kunyah" facs="#i0002">ابى بكر</addName>
+                              <addName type="khitab" facs="#i0002">شمس الدين</addName>
+                              <addName type="nisbah" facs="#i0002">المروزى الخرقى</addName>
+                           </persName>
+                           <persName type="original" xml:lang="ara-Arab" facs="#i0002">شمس الدين ابى بكر محمد بن احمد ابن ابى بشر المروزى المعروف بالخرقى</persName>
+                           <persName xml:lang="eng-Latn" type="standard">Šams ad-dīn Abū Bakr Muḥammad Ibn Aḥmad Ibn Abī Bišr al-Maruzī al-ẖarqī</persName>
+                        </author>
                         <title type="original" facs="#i0005">التبصرة فى علم الهيئة<locus>Fol.1a.6</locus>
                         </title>
                         <explicit type="ending" facs="#i0061">
@@ -297,7 +302,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-03-30T16:27:02+02:00">Committed to SVN. To view the changes in detail use SVN diff. SVN Url:http://wellcomesvn.local.bibalex.dom/svn/WellcomeTrust/trunk/WAMCPMetaGallery/XML/WMS_Arabic_290/WMS_Arabic_290.xml<persName>ahmed.atteya</persName>

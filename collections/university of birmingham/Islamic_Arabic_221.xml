@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3800">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,15 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_221-item1">
-                     <author key="n84182375" ref="http://viaf.org/viaf/56597947">Sibṭ al-Māridīnī, Badr al-Dīn Muḥammad ibn Muḥammad, 1423-أسبط المارديني، محمد بن محمد، 826-912 هـ
+                     <author key="n84182375" ref="http://viaf.org/viaf/56597947">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Sibṭ al-Māridīnī, Badr al-Dīn Muḥammad ibn Muḥammad, 1423-</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">أسبط المارديني، محمد بن محمد، 826-912 هـ
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">ḥāwī al-mukhtaṣarāt fī al-ʿamal bi-rubʿ al-muqanṭarāt</title>
                      
@@ -61,7 +66,9 @@
                      <note>The work is divided into a muqaddamah, 30 bābs and a khātimah.</note>
                      <incipit xml:lang="ar">يقول العبد الفقير الى الله تعالى محمد بن محمد بن احمد سبط عبد الله المارديني الموقت بالجامع الازهر الحمد الله الذي بنعمته تتمالصا لحات ... و بعد فلما كان علم الوقت من اجل القرب ... و سميتها حاوي المختصرات في العمل بربع المقنطرات</incipit>
                      <explicit xml:lang="ar" defective="false">وكان الفراغ من تعليقها يوم الجمعة المبارك سادس عشرين صفر الخير من شهور سنة 1082 على يد كاتبها ... الفقير احمد الشيبتي القاطن بالفيوم</explicit>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 976</bibl>
                         <bibl>GAL 1.c., esp. no. 2, Auszüge a; II 167-8; II 215-17</bibl>
@@ -76,14 +83,14 @@
                               <height>20.4</height>
                               <width>15.0</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="original"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="23" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -138,7 +145,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-02-18">

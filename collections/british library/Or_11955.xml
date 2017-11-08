@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5424">
    <teiHeader>
       <fileDesc>
@@ -43,18 +43,23 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85014152 http://lccn.loc.gov/sh91004954 http://lccn.loc.gov/sh85064480">
                   <msItem xml:id="Or_11955-item1">
-                     <author>Naṣīr al-Dīn Muḥammad ibn ʻAbd al-Karīm al-Astarābādīنسیر الدین محمد بن عبد الکریم الاسترآبادی
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Naṣīr al-Dīn Muḥammad ibn ʻAbd al-Karīm al-Astarābādī</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">نسیر الدین محمد بن عبد الکریم الاسترآبادی
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Maḥāsin al-adab</title>
                      
                      <title xml:lang="fa">محاسن الادب</title>
                      
                      
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <note>A work on the customs and practice of the Prophet and the Imāms, quoting them as an example for all Muslims</note>
                      <note>It is a translation of the<title>Makārim al-akhlāq (<foreign>مکارم الأخلاق</foreign>)</title>of<persName key="n2002052868"
                                   ref="http://viaf.org/viaf/97601210/"
@@ -124,7 +129,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-07-10">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5522">
    <teiHeader>
       <fileDesc>
@@ -47,7 +47,10 @@
                           n="1"
                           class="http://lccn.loc.gov/sh85100084">
                      <locus from="1v" to="24v">1v-24v ff</locus>
-                     <author>Nāṣir al-Dīn Sharīf-i Iṣfahānī, d. AH 735ناصر الدین شریف اصفهانی<note>A didactic poem attributed to<persName xml:lang="fa-Latn-x-lc"
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Nāṣir al-Dīn Sharīf-i Iṣfahānī, d. AH 735</persName>
+                        <persName xml:lang="fa">ناصر الدین شریف اصفهانی</persName>
+                        <note>A didactic poem attributed to<persName xml:lang="fa-Latn-x-lc"
                                      type="standard"
                                      ref="http://viaf.org/viaf/65282887"
                                      key="n79074512">Nāṣir-i Khusraw<foreign xml:lang="fa">ناصر خسرو</foreign>
@@ -64,7 +67,10 @@
                           n="2"
                           class="http://lccn.loc.gov/sh85100084">
                      <locus from="25v" to="40r">25v-40r ff</locus>
-                     <author>Nāṣirناصر<note>By another poet named Nāṣir who may be identical with<persName xml:lang="fa-Latn-x-lc" type="supplied">Nāṣir-i Bukhārā’ī</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Nāṣir</persName>
+                        <persName xml:lang="fa">ناصر</persName>
+                        <note>By another poet named Nāṣir who may be identical with<persName xml:lang="fa-Latn-x-lc" type="supplied">Nāṣir-i Bukhārā’ī</persName>
                         </note>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Hidāyatnāmah</title>
@@ -82,7 +88,7 @@
                               <height>15.8</height>
                               <width>9.5</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <condition>
                            <p>Defective at the beginning and end</p>
@@ -142,7 +148,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-04-12">

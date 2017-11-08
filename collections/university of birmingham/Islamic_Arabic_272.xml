@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3822">
    <teiHeader>
       <fileDesc>
@@ -44,11 +44,16 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_272-item1">
-                     <author key="no2009178035" ref="http://viaf.org/viaf/61887119">Ibn Sharaf Shāh, Ḥasan ibn Muḥammad, 1247 or 1248-1315 or 1316Astarābādhī, Ḥasan ibn Muḥammadابن شرف شاه، حسن بن محمد، 645-715 هـ
+                     <author key="no2009178035" ref="http://viaf.org/viaf/61887119">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn Sharaf Shāh, Ḥasan ibn Muḥammad, 1247 or 1248-1315 or 1316</persName>
                         
-                        
-                        
-                        
+                        <persName xml:lang="ar-Latn-x-lc" type="alt">Astarābādhī, Ḥasan ibn Muḥammad</persName>
+                        <persName xml:lang="ar" type="standard">ابن شرف شاه، حسن بن محمد، 645-715 هـ
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Al-wāfiyah fī sharḥ al-Kāfiyah</title>
                      
@@ -63,9 +68,11 @@
                         </persName>
                      </note>
                      <note>Something mossing between<locus facs="57" to="58">fol. 57-58</locus>and<locus from="124" to="125">fol.124-125</locus>.</note>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="fa" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 1501, mentioned as another copy</bibl>
                         <bibl>GAL I 303-5, Cmt. 8b; Suppl. I 531</bibl>
@@ -80,14 +87,14 @@
                               <height>19.8</height>
                               <width>13.2</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="20" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                            <note>20 lines per page</note>
                         </layout>
                      </layoutDesc>
@@ -145,7 +152,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-07-23">

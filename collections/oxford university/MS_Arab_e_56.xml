@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_833">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,9 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Arab_e_56-item1" n="1">
                      <locus from="27" to="36">ff. 27-36, 1-26</locus>
-                     <author key="n 86099940" ref="http://viaf.org/viaf/121593351/">Ibn Sayyid al-Nās, Muḥammad ibn Muḥammad,<date calendar="#Gregorian" from="1273" to="1334">1273?-1334</date>
+                     <author key="n 86099940" ref="http://viaf.org/viaf/121593351/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ibn Sayyid al-Nās, Muḥammad ibn Muḥammad,<date calendar="#Gregorian" from="1273" to="1334">1273?-1334</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Nūr al-ʻuyūn</title>
                      <note>Transcribed by<persName type="standard"
@@ -59,7 +61,9 @@
                   </msItem>
                   <msItem xml:id="MS_Arab_e_56-item2" n="2">
                      <locus from="37" to="42">ff. 37-42</locus>
-                     <author key="n 81055666" ref="http://www.viaf.org/viaf/89645728/">Bukhārī, Muḥammad ibn Ismāʻīl,<date calendar="#Gregorian" from="0810" to="0870">810-870</date>
+                     <author key="n 81055666" ref="http://www.viaf.org/viaf/89645728/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Bukhārī, Muḥammad ibn Ismāʻīl,<date calendar="#Gregorian" from="0810" to="0870">810-870</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Jāmiʻ al-ṣaḥīḥ</title>
                      <note>A fragment only, the<title type="sub" xml:lang="ar-Latn-x-lc">bāb ḥadīth al-miʻrāj</title>, transcribed by<persName type="standard"
@@ -184,11 +188,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

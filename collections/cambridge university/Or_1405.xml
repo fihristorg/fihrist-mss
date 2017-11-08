@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_10015">
    <teiHeader>
       <fileDesc>
@@ -46,19 +46,26 @@
                   <msItem xml:id="Or_1405-item1">
                      <msItem xml:id="Or_1405-item1-item1" n="1">
                         <locus from="1" to="53">ff. 1-53</locus>
-                        <author>Sayf al-Dīn Tuquzسيف الدين تقز
+                        <author>
+                           <persName xml:lang="ar-Latn-x-lc" type="supplied">Sayf al-Dīn Tuquz</persName>
                            
                            
-                           
+                           <persName xml:lang="ar">سيف الدين تقز
+                              
+                              
+                              
+                           </persName>
                         </author>
                         <title xml:lang="ar-Latn-x-lc">Kitāb fī al-rumḥ wa-ghayrihi</title>
                         <title xml:lang="ar-Latn-x-lc" type="alt">Bunūd al-rumḥ</title>
                         <title xml:lang="ar">كتاب في الرمح وغيره</title>
                         <title xml:lang="ar" type="alt">بنود الرمح</title>
                         
-                        
-                        
-                        
+                        <incipit xml:lang="ar"/>
+                        <explicit xml:lang="ar" defective="true"/>
+                        <note>
+                           <foreign xml:lang="ar"/>
+                        </note>
                         <listBibl>
                            <bibl>
                               <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/arberry/view.php?id=19">no. 199</ref>
@@ -68,18 +75,23 @@
                      </msItem>
                      <msItem xml:id="Or_1405-item1-item2" n="2">
                         <locus from="54" to="149">ff. 54-149</locus>
-                        <author>Maqqarī, Aḥmad ibn Muḥammad, d. 1631 or 2شهاب الدين احمد بن محمد المقري
-                           <addName xml:lang="ar" type="kunyah">ابو العباس</addName>
+                        <author>
+                           <persName xml:lang="ar-Latn-x-lc" type="standard">Maqqarī, Aḥmad ibn Muḥammad, d. 1631 or 2</persName>
                            
-                           <addName xml:lang="ar" type="nisbah">التلمساني</addName>
+                           
+                           <persName xml:lang="ar">شهاب الدين احمد بن محمد المقري
+                              <addName xml:lang="ar" type="kunyah">ابو العباس</addName>
+                              
+                              <addName xml:lang="ar" type="nisbah">التلمساني</addName>
+                           </persName>
                         </author>
                         <title xml:lang="ar-Latn-x-lc">Al-Nafaḥāt al-ʻanbarīyah fī waṣf naʻāl khayr al-barīyah</title>
                         
                         <title xml:lang="ar">النفحات العنبرية في وصف نعال خير البرية</title>
                         
                         
-                        
-                        
+                        <incipit xml:lang="ar"/>
+                        <explicit xml:lang="ar" defective="true"/>
                         <listBibl>
                            <bibl>
                               <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/arberry/view.php?id=19">no. 199</ref>
@@ -89,19 +101,27 @@
                      </msItem>
                      <msItem xml:id="Or_1405-item1-item3" n="3">
                         <locus from="150" to="205">ff. 150-205</locus>
-                        <author>anonymous
+                        <author>
+                           <persName xml:lang="ar-Latn-x-lc" type="standard">anonymous</persName>
                            
                            
-                           
+                           <persName xml:lang="ar">
+                              
+                              
+                              
+                              
+                           </persName>
                         </author>
                         
                         
                         
                         
                         <title xml:lang="en" type="desc">Hand-list of certain manuscripts in the Damascus Public Library</title>
-                        
-                        
-                        
+                        <incipit xml:lang="ar"/>
+                        <explicit xml:lang="ar" defective="true"/>
+                        <note>
+                           <foreign xml:lang="ar"/>
+                        </note>
                         <listBibl>
                            <bibl>
                               <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/arberry/view.php?id=19">no. 199</ref>
@@ -115,13 +135,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -207,7 +227,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-06-30">

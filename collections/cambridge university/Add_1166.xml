@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3129">
    <teiHeader>
       <fileDesc>
@@ -44,15 +44,25 @@
                <msContents>
                   <summary>Miscellaneous works</summary>
                   <msItem xml:id="Add_1166-item1" n="1">
-                     
+                     <author>
+                        
+                        
+                        
+                        <persName xml:lang="syr">
+                           
+                           
+                           
+                           
+                        </persName>
+                     </author>
                      <title xml:lang="en">Psalter</title>
                      
                      <title xml:lang="syr">ܟܕ ܠܐܝܠ ܠܐܝܠܝ ܩܪܐ ܐܢܐ ܠܥܘܕܪܢܐ ܕܢܫܝܫܘܬܝ ܡܬܩܪܒ ܐܢܐ ܕܐܟܬܘܒ ܟܬܒܐ ܕܡܙܡܘܪ̈ܐ ܕܕܘܝܕ ܡܠܟܐ ܘܢܒܝܐ ܘܠܒܗ ܕܐܠܗܐ</title>
                      
                      
                      <note>Arranged for pubblic service</note>
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <colophon>
                         <locus from="146v" to="146v">f. "146v"</locus>
                      </colophon>
@@ -64,7 +74,17 @@
                      <textLang mainLang="syr">Syriac</textLang>
                   </msItem>
                   <msItem xml:id="Add_1166-item2" n="2">
-                     
+                     <author>
+                        
+                        
+                        
+                        <persName xml:lang="syr">
+                           
+                           
+                           
+                           
+                        </persName>
+                     </author>
                      <title xml:lang="en">The Canticles</title>
                      
                      
@@ -77,9 +97,11 @@
                      <title xml:lang="en" type="desc">The first song of Moses, Exod. XV</title>
                      <title xml:lang="en" type="desc">The song of Isaiah</title>
                      <title xml:lang="en" type="desc">The song of Isaiah, Deut. XXXII</title>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <colophon>
                         <locus from="146v" to="146v">f. "146v"</locus>
                      </colophon>
@@ -91,18 +113,27 @@
                      <textLang mainLang="syc">Syriac</textLang>
                   </msItem>
                   <msItem xml:id="Add_1166-item3" n="3">
-                     <author>Ephraem, Syrus, Saint, 303-373
+                     <author>
+                        <persName key="n 50082928" ref="http://viaf.org/viaf/100177778/">Ephraem, Syrus, Saint, 303-373</persName>
                         
                         
                         
+                        <persName xml:lang="syr">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="en">On humility, love of learning</title>
                      
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <colophon>
                         <locus from="146v" to="146v">f. "146v"</locus>
                      </colophon>
@@ -118,15 +149,15 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <support>Paper</support>
-                        <extent>148 ff.
-                           
+                        <extent>148 ff.<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <collation>
                            <p>15 quires, signed with letters, of 10 leaves, except 8th, witch has only 8</p>
                         </collation>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1" writtenLines="17">17 lines to the page
+                        <layout columns="1" writtenLines="17">17 lines to the page<dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -185,7 +216,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015">

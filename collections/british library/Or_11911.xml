@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5397">
    <teiHeader>
       <fileDesc>
@@ -43,18 +43,24 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85007710 http://lccn.loc.gov/sh85018960 http://lccn.loc.gov/sh89002521">
                   <msItem xml:id="Or_11911-item1">
-                     <author>Various calligraphers
+                     <author>
                         
                         
-                        
+                        <persName xml:lang="en" type="desc">Various calligraphers</persName>
+                        <persName xml:lang="fa">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      
                      
                      
                      
                      <title xml:lang="en" type="desc">Specimens of calligraphy</title>
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <note>An album containing specimens of calligraphy written by various masters, some of which bear dates. These include<persName type="supplied" xml:lang="Per-Latn-x-lc">Bhāskar Panḍit</persName>,dated<date calendar="#Hijri-qamari" notBefore="1747" notAfter="1748">1160</date>,<persName type="supplied" xml:lang="Per-Latn-x-lc">Muḥammad Ḥasan al-Samarqandī</persName>, dated<date calendar="#Hijri-qamari" notBefore="1713" notAfter="1714">1125</date>, Muṣṭafá, dated<date calendar="#Hijri-qamari" notBefore="1872" notAfter="1873">1289</date>, and<persName type="supplied" xml:lang="Per-Latn-x-lc">Shāh Ni‘matullāh Qāz̤ī</persName>, dated<date calendar="#Hijri-qamari" notBefore="1773" notAfter="1774">1187</date>
                      </note>
                      <note>The latest example is by<persName type="supplied" xml:lang="Per-Latn-x-lc">Murtaz̤á Khān</persName>, dated<date calendar="#Hijri-qamari" notBefore="1891" notAfter="1892">1309</date>and earliest are a mashq dated<date calendar="#Hijri-qamari" notBefore="1608" notAfter="1609">1017</date>, a folio written in the<date calendar="#Gregorian" notBefore="1200" notAfter="1299">13th century</date>, and some leaves from an early<date calendar="#Gregorian" notBefore="1500" notAfter="1599">16th century</date>copy of<persName type="standard"
@@ -128,7 +134,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-10-04">

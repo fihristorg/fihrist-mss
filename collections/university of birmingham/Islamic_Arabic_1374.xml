@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3705">
    <teiHeader>
       <fileDesc>
@@ -44,18 +44,25 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_1374-item1">
-                     <author key="nr90005455" ref="http://viaf.org/viaf/49075296">Ghazzī, Badr al-Dīn Muḥammad ibn Muḥammad, 1499-1577بدر الدين الغزي، محمد بن محمد، 904-984 هـ
+                     <author key="nr90005455" ref="http://viaf.org/viaf/49075296">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ghazzī, Badr al-Dīn Muḥammad ibn Muḥammad, 1499-1577</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">بدر الدين الغزي، محمد بن محمد، 904-984 هـ
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Al-tafsīr al-manthūr</title>
                      
                      
                      <note>Incomplete. Contains the first part only to sūrah 5 ( al-mā'idah<foreign xml:lang="ar">سورة المائدة‎</foreign>), verse 32.</note>
                      <incipit xml:lang="ar">الحمد لله وسلام على عباده الذين اصطفى هذا تفسير شيخ الاسلام الشيخ بدر الدين ابي البركات محمد ابنمحمد بن محمد بن احمد الغزي</incipit>
-                     
-                     
+                     <explicit xml:lang="ar" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 33</bibl>
                         <bibl>GAL II 360-1; II 488, where no copy of his commentary on the Qurʾān is mentioned.</bibl>
@@ -70,14 +77,14 @@
                               <height>28.7</height>
                               <width>18.0</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="31" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -135,7 +142,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-03-04">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5152">
    <teiHeader>
       <fileDesc>
@@ -43,7 +43,11 @@
                </msIdentifier>
                <msContents class="http://id.loc.gov/authorities/sh2010109187 http://id.loc.gov/authorities/sh85109230 http://id.loc.gov/authorities/sh99001606">
                   <msItem xml:id="Or_4491-item1">
-                     <author>Ilāhʹyār K̲h̲ān̲ ibn Ḥāfiẓ Raḥmat KhānAllāh Yār K̲h̲ān̲ ibn Ḥāfiẓ Raḥmat Khānالله يار خان بن حافظ رحمت خان</author>
+                     <author>
+                        <persName xml:lang="pus-Latn-x-lc" type="supplied">Ilāhʹyār K̲h̲ān̲ ibn Ḥāfiẓ Raḥmat Khān</persName>
+                        <persName xml:lang="pus-Latn-x-lc" type="alt">Allāh Yār K̲h̲ān̲ ibn Ḥāfiẓ Raḥmat Khān</persName>
+                        <persName xml:lang="ps">الله يار خان بن حافظ رحمت خان</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">ʻAjāʼib al-lughāt</title>
                      <title xml:lang="ar">عجائب اللغات</title>
                      <note>An Urdu-Pashto-Persian-Arabic dictionary preceded by a muqaddimah containing notes on Pashto grammar</note>
@@ -63,7 +67,7 @@
                               <height>31</height>
                               <width>19</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -117,7 +121,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2016-01-18">

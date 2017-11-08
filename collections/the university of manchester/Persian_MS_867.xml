@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7378">
    <teiHeader>
       <fileDesc>
@@ -42,28 +42,34 @@
                </msIdentifier>
                <msContents>
                   <summary>
-                     <title type="main"/>
+                     
                   </summary>
                   <msItem xml:id="Persian_MS_867-item1" n="1">
-                     <author key="n 88655562" ref="http://viaf.org/viaf/71533966/">Fattāḥī, -approximately 1448فتاحی</author>
+                     <author key="n 88655562" ref="http://viaf.org/viaf/71533966/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Fattāḥī, -approximately 1448</persName>
+                        <persName xml:lang="fa">فتاحی</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Shabistān-i nukāt</title>
                      <title xml:lang="fa">شبستان نکات</title>
                      <title xml:lang="fa-Latn-x-lc" type="alt">Shabistān-i khayāl</title>
                      <title xml:lang="fa" type="alt">شبستان خیال</title>
                      
-                     
-                     
+                     <incipit xml:lang="ar" type="basmalla"/>
+                     <explicit xml:lang="ar"/>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="Persian_MS_867-item2" n="2">
-                     <author key="n 88655562" ref="http://viaf.org/viaf/71533966/">Fattāḥī, -approximately 1448فتاحی</author>
+                     <author key="n 88655562" ref="http://viaf.org/viaf/71533966/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Fattāḥī, -approximately 1448</persName>
+                        <persName xml:lang="fa">فتاحی</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Dil</title>
                      <title xml:lang="fa-Latn-x-lc" type="alt">Ḥusn u dil</title>
                      <title xml:lang="fa">دل</title>
                      <title xml:lang="fa" type="alt">حسن و دل</title>
                      
-                     
-                     
+                     <incipit xml:lang="ar" type="basmalla"/>
+                     <explicit xml:lang="ar"/>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
@@ -71,8 +77,8 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
@@ -134,7 +140,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015"/>

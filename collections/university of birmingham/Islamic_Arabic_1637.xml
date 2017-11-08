@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3766">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,15 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_1637-item1">
-                     <author key="n50082069" ref="http://viaf.org/viaf/95223177">Ibn al-ʿArabī, 1165-1240ابن العربي، 560-638 هـ
+                     <author key="n50082069" ref="http://viaf.org/viaf/95223177">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn al-ʿArabī, 1165-1240</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">ابن العربي، 560-638 هـ
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Futūḥāt al-Makkīyah fī maʿrifat al-asrār al-malakīyah</title>
                      
@@ -56,9 +61,11 @@
                      
                      <note>Second part only</note>
                      <note>Fol<locus from="111" to="111">111</locus>and<locus from="116" to="116">116</locus>missing.<locus from="449" to="449">Fol. 449</locus>bound after<locus from="548" to="548">fol. 548</locus>.<locus from="679" to="688">Fol. 679-688</locus>bound after<locus from="698" to="698">fol. 698</locus>.</note>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="fa" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 652</bibl>
                         <bibl>GAL 1, c, esp. no. 11</bibl>
@@ -74,7 +81,7 @@
                               <height>28.7</height>
                               <width>19.3</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial">Contemporary foliation in black ink with eastern Arabic numerals from 1-951, top left recto. Catchwords on each leaf, lower left verso.</foliation>
                         <foliation xml:id="modern">Modern foliation in pencil in Wester Arabic numerals from 1-932, upper left recto.</foliation>
@@ -84,7 +91,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="49" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                            <note>49 lines per page</note>
                         </layout>
                      </layoutDesc>
@@ -143,7 +150,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-05-30">

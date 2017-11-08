@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_9668">
    <teiHeader>
       <fileDesc>
@@ -44,19 +44,26 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Qq_238-item1">
-                     <author key="n85237263" ref="http://viaf.org/viaf/90046751/">Maqdisī, ʻAlī ibn Ghānim, 1514-1596المقدسي، علي بن غانم
+                     <author key="n85237263" ref="http://viaf.org/viaf/90046751/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Maqdisī, ʻAlī ibn Ghānim, 1514-1596</persName>
                         
                         
-                        <addName xml:lang="ar" type="nisbah">اللقيمي الحسني</addName>
+                        <persName xml:lang="ar">المقدسي، علي بن غانم
+                           
+                           
+                           <addName xml:lang="ar" type="nisbah">اللقيمي الحسني</addName>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Mawāniḥ al-uns bi-riḥlatī li-wādī al-quds</title>
                      
                      <title xml:lang="ar">موانح الانس برحلتي لوادي القدس</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/view.php?id=134">no. 1140</ref>
@@ -69,13 +76,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -124,7 +131,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-05-04">

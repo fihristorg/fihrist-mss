@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_9630">
    <teiHeader>
       <fileDesc>
@@ -44,24 +44,37 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Qq_203-item1">
-                     <author>Baylūnī, Muḥammad Fatḥ Allāh Ibn Maḥmūd Ibn Muḥammad al-Ḥalabīالبيلوني، محمد فتح الله بن محمود بن محمد
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="supplied">Baylūnī, Muḥammad Fatḥ Allāh Ibn Maḥmūd Ibn Muḥammad al-Ḥalabī</persName>
                         
                         
-                        <addName xml:lang="ar" type="nisbah">الحلبي</addName>
+                        <persName xml:lang="ar">البيلوني، محمد فتح الله بن محمود بن محمد
+                           
+                           
+                           <addName xml:lang="ar" type="nisbah">الحلبي</addName>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Muntaqá mulakhkhaṣ riḥlat Ibn Baṭūṭah</title>
                      
                      <title xml:lang="ar">المنتقى ملخص رحلة ابن بطوطة</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/view.php?id=132">no. 1117</ref>
                         </bibl>
-                        <bibl type="text-relations">Abridgment of the travels of<author key="n50082288" ref="http://viaf.org/viaf/100202753/">Ibn Batuta, 1304-1377ابن بطوطة</author>, from the abstract of<author key="n" ref="http://viaf.org/viaf/90044172/">Ibn Juzayy, Muḥammad ibn Aḥmad, 1294-1340ابن جزي، محمد بن احمد</author>.</bibl>
+                        <bibl type="text-relations">Abridgment of the travels of<author key="n50082288" ref="http://viaf.org/viaf/100202753/">
+                              <persName xml:lang="ar-Latn-x-lc">Ibn Batuta, 1304-1377</persName>
+                              <persName xml:lang="ar">ابن بطوطة</persName>
+                           </author>, from the abstract of<author key="n" ref="http://viaf.org/viaf/90044172/">
+                              <persName xml:lang="ar-Latn-x-lc">Ibn Juzayy, Muḥammad ibn Aḥmad, 1294-1340</persName>
+                              <persName xml:lang="ar">ابن جزي، محمد بن احمد</persName>
+                           </author>.</bibl>
                      </listBibl>
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
@@ -70,13 +83,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -153,7 +166,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-04-27">

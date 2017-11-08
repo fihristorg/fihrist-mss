@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6185">
    <teiHeader>
       <fileDesc>
@@ -43,10 +43,14 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh89005046 http://lccn.loc.gov/sh85138898">
                   <msItem xml:id="Or_7092-item1">
-                     <author ref="http://viaf.org/viaf/24853816" key="no2005067635">Faṣīḥ Aḥmad Dadahفصیح احمد ددهFaṣīḥ Aḥmed Dede</author>
+                     <author ref="http://viaf.org/viaf/24853816" key="no2005067635">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Faṣīḥ Aḥmad Dadah</persName>
+                        <persName xml:lang="fa">فصیح احمد دده</persName>
+                        <persName xml:lang="ota-Latn-x-lc" type="alt">Faṣīḥ Aḥmed Dede</persName>
+                     </author>
                      <title xml:lang="en" type="desc">Persian and Turkish poems</title>
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <note>The Persian poems run from<locus from="70r" to="80r">70r-80r</locus>
                      </note>
                      <listBibl>
@@ -94,7 +98,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-11-07">

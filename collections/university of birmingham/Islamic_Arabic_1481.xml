@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3729">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,15 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_1481-item1">
-                     <author key="n92015239" ref="http://viaf.org/viaf/90076622/">Sharqāwī, ʿAbd Allāh ibn Ḥijāzī, 1737 or 8-1812 or 13شرقاوي، عبد الله بن حجازي
+                     <author key="n92015239" ref="http://viaf.org/viaf/90076622/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Sharqāwī, ʿAbd Allāh ibn Ḥijāzī, 1737 or 8-1812 or 13</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">شرقاوي، عبد الله بن حجازي
+                           
+                           
+                           
+                        </persName>
                      </author>
                      
                      
@@ -61,8 +66,10 @@
                         </persName>
                      </note>
                      <incipit xml:lang="ar">الحمد لله رب العالمين و صلى الله على سيدنا محمد و على اله و صحبه ... اما بعد فيقول ... عبد الله بن حجازي الخلوتي المشهور بالشرقاى هذه تقييدات لطيفة على حكم العرف بالله سيدى احمد بن عطاء الله</incipit>
-                     
-                     
+                     <explicit xml:lang="fa" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 700</bibl>
                         <bibl>GAL 1.c.; II 479-80; II 729</bibl>
@@ -77,14 +84,14 @@
                               <height>23.5</height>
                               <width>16.7</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="25" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                            <note>25 lines per page</note>
                         </layout>
                      </layoutDesc>
@@ -145,7 +152,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-06-10">

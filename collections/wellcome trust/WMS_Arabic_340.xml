@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7762">
    <teiHeader>
       <fileDesc>
@@ -41,7 +41,7 @@
                         </foliation>
                         <collation>
                            <seg type="gathering" n="1-25x(4)-1">
-                              
+                              <dimensions type="leaf" unit="mm" quantity="25"/>
                               <formula>01+200+001</formula>
                            </seg>
                         </collation>
@@ -203,12 +203,17 @@
                         <title type="normalised" xml:lang="ara-Latn">Al-mūğaz</title>
                         <textLang mainLang="ara-Arab"/>
                         <author>
-                           <surname facs="#i0004">ابن النفيس</surname>
-                           <forename facs="#i0004">على بن ابى الحزم</forename>
-                           <addName type="laqab" facs="#i0004">رئيس الحكماء</addName>
-                           <addName type="kunyah" facs="#i0004">ابو الحسن</addName>
-                           <addName type="khitab" facs="#i0004">علاء الملة والدين</addName>
-                           <addName type="nisbah" facs="#i0004">القرشى</addName>رئيس الحكماء ابو الحسن علاء الملة والدين على بن ابى الحزم القرشى المشهور بابن النفيس`Alā'addīn a. 'l-Ḥ `A. b. a. 'l-Ḥazm al-Qorašī b. an-Nafīs</author>
+                           <persName xml:lang="ara-Arab" type="standard">
+                              <surname facs="#i0004">ابن النفيس</surname>
+                              <forename facs="#i0004">على بن ابى الحزم</forename>
+                              <addName type="laqab" facs="#i0004">رئيس الحكماء</addName>
+                              <addName type="kunyah" facs="#i0004">ابو الحسن</addName>
+                              <addName type="khitab" facs="#i0004">علاء الملة والدين</addName>
+                              <addName type="nisbah" facs="#i0004">القرشى</addName>
+                           </persName>
+                           <persName xml:lang="ara-Arab" type="original" facs="#i0004">رئيس الحكماء ابو الحسن علاء الملة والدين على بن ابى الحزم القرشى المشهور بابن النفيس</persName>
+                           <persName xml:lang="eng-Latn" type="standard">`Alā'addīn a. 'l-Ḥ `A. b. a. 'l-Ḥazm al-Qorašī b. an-Nafīs</persName>
+                        </author>
                      </msItem>
                   </msContents>
                   <physDesc>
@@ -228,7 +233,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-04-27T12:33:52+02:00">Committed to SVN. To view the changes in detail use SVN diff. SVN Url:http://wellcomesvn.local.bibalex.dom/svn/WellcomeTrust/trunk/WAMCPMetaGallery/XML/WMS_Arabic_340/WMS_Arabic_340.xml<persName>ramy.ibrahim</persName>

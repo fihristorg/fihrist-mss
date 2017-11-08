@@ -461,9 +461,12 @@
     </xsl:template>
 
     <!-- Why have a persName inside author? -->
-    <xsl:template match="author/persName">
+    
+    <!--Fihrist data does have these-->
+    
+    <!--<xsl:template match="author/persName">
         <xsl:apply-templates/>
-    </xsl:template>
+    </xsl:template>-->
 
     <!-- Why does author sometimes have title in it? Let's move it to after -->
     <xsl:template match="author[title]">

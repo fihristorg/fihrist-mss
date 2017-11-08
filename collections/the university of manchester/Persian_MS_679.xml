@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7182">
    <teiHeader>
       <fileDesc>
@@ -42,20 +42,29 @@
                </msIdentifier>
                <msContents>
                   <summary>
-                     <title type="main"/>
+                     
                   </summary>
                   <msItem xml:id="Persian_MS_679-item1">
-                     <author key="n84041735" ref="http://viaf.org/viaf/90040229/">Niẓām al-Dīn Yamanī 14th/15th centuryNiẓām Ḥajī gharīb Yamanīنظام الدین یمنی
+                     <author key="n84041735" ref="http://viaf.org/viaf/90040229/">
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Niẓām al-Dīn Yamanī 14th/15th century</persName>
                         
                         
-                        نظام حاجي غريب يمني (ق 8)</author>
+                        <persName xml:lang="ar-Latn-x-lc" type="alt">Niẓām Ḥajī gharīb Yamanī</persName>
+                        <persName xml:lang="fa">نظام الدین یمنی
+                           
+                           
+                           
+                        </persName>
+                        <persName xml:lang="ar" type="alt">نظام حاجي غريب يمني (ق 8)</persName>
+                        
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Laṭāyif-i ashrāfī</title>
                      
                      <title xml:lang="fa">لطايف اشرفي</title>
                      <title xml:lang="fa" type="alt">لطايف اشرفي في بيان طوايف صوفي</title>
                      
-                     
-                     
+                     <incipit xml:lang="ar" type="basmalla"/>
+                     <explicit xml:lang="ar"/>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
@@ -63,8 +72,8 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
@@ -130,7 +139,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014">

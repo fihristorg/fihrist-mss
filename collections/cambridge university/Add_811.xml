@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_362">
    <teiHeader>
       <fileDesc>
@@ -44,21 +44,30 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Add_811-item1">
-                     <author key="n 80108820 " ref="http://viaf.org/viaf/27417654/">ʻAbd al-Rashīd ibn ʻAbd al-Ghafūr Tattavī, fl. 1653Tattavī, ʻAbd al-Rashīd ibn ʻAbd al-Ghafūr Ḥusaynī Madanīتتوى، عبد الرشيدشاهجهانی<surname>ابن عبد الغفور الحسينى</surname>
-                        <forename>عبد الرشيد</forename>
-                        
-                        
-                        
-                        
+                     <author key="n 80108820 " ref="http://viaf.org/viaf/27417654/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">ʻAbd al-Rashīd ibn ʻAbd al-Ghafūr Tattavī, fl. 1653</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Tattavī, ʻAbd al-Rashīd ibn ʻAbd al-Ghafūr Ḥusaynī Madanī</persName>
+                        <persName xml:lang="fa">تتوى، عبد الرشيد</persName>
+                        <persName xml:lang="fa" type="alt">شاهجهانی</persName>
+                        <persName xml:lang="fa">
+                           <surname>ابن عبد الغفور الحسينى</surname>
+                           <forename>عبد الرشيد</forename>
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Muntakhab al-lughāt-i Shāhjahānī</title>
                      
                      <title xml:lang="fa">منتخب اللغات شاهجهاني</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref xml:id="b1"
@@ -74,13 +83,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -133,11 +142,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-07-29">
-             Yasmin Faghihi</change>
+            Yasmin Faghihi</change>
       </revisionDesc>
    </teiHeader>
    <text>

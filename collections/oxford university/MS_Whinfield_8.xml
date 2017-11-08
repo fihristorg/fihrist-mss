@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1860">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,9 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Whinfield_8-item1" n="1">
                      <locus from="1" to="2">ff. 1v, 2r</locus>
-                     <author key="n 89645739" ref="http://www.viaf.org/viaf/5063727/">Suhrawardī, ʻUmar ibn Muḥammad,<date calendar="#Gregorian" from="1145" to="1234">1145-1234</date>
+                     <author key="n 89645739" ref="http://www.viaf.org/viaf/5063727/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Suhrawardī, ʻUmar ibn Muḥammad,<date calendar="#Gregorian" from="1145" to="1234">1145-1234</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Waṣīyah</title>
                      <note>To his son ʻImād al-Dīn</note>
@@ -57,7 +59,9 @@
                   </msItem>
                   <msItem xml:id="MS_Whinfield_8-item2" n="2">
                      <locus from="12" to="13">ff. 12v-13r</locus>
-                     <author key="n 90650670" ref="http://viaf.org/viaf/71359982/">ʻAbd al-Qādir al-Jīlānī,<date calendar="#Gregorian" when="1166">d. 1166</date>
+                     <author key="n 90650670" ref="http://viaf.org/viaf/71359982/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">ʻAbd al-Qādir al-Jīlānī,<date calendar="#Gregorian" when="1166">d. 1166</date>
+                        </persName>
                      </author>
                      <title>Questions and answers on Sufic doctrine</title>
                      <note>Supposed to have been exchanged between God and Jīlī [an extract from one of his works?]</note>
@@ -69,7 +73,9 @@
                   </msItem>
                   <msItem xml:id="MS_Whinfield_8-item3" n="3">
                      <locus from="13" to="14">ff. 13v-14v</locus>
-                     <author key="n 50082069" ref="http://www.viaf.org/viaf/95223177/">Ibn al-ʻArabī,<date calendar="#Gregorian" from="1165" to="1240">1165-1240</date>
+                     <author key="n 50082069" ref="http://www.viaf.org/viaf/95223177/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ibn al-ʻArabī,<date calendar="#Gregorian" from="1165" to="1240">1165-1240</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Ḥilyat al-abdāl wa-mā yaẓhar fīhā min al-maʻarif wa-al-ahwāl</title>
                      <listBibl>
@@ -95,7 +101,9 @@
                   </msItem>
                   <msItem xml:id="MS_Whinfield_8-item5" n="5">
                      <locus from="156" to="157">ff. 156v-157v</locus>
-                     <author key="n 82097778" ref="http://www.viaf.org/viaf/89736851/">Ghazzālī,<date calendar="#Gregorian" from="1058" to="1111">1058-1111</date>
+                     <author key="n 82097778" ref="http://www.viaf.org/viaf/89736851/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ghazzālī,<date calendar="#Gregorian" from="1058" to="1111">1058-1111</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-ʻAqīdah al-qudsīyah</title>
                      <listBibl>
@@ -119,7 +127,9 @@
                   </msItem>
                   <msItem xml:id="MS_Whinfield_8-item7" n="7">
                      <locus from="190" to="192">ff. 190v-192r</locus>
-                     <author>Tibrīzī, Abū al-Maḥāmid Aḥmad ibn Muḥammad ibn ʻAbd al-Malik, al-Ashʻarī<date calendar="#Gregorian" notBefore="1000" notAfter="1100">11th cent.</date>
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc">Tibrīzī, Abū al-Maḥāmid Aḥmad ibn Muḥammad ibn ʻAbd al-Malik, al-Ashʻarī<date calendar="#Gregorian" notBefore="1000" notAfter="1100">11th cent.</date>
+                        </persName>
                      </author>
                      <title>An extract on the two sorts of knowledge</title>
                      <listBibl>
@@ -281,11 +291,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

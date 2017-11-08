@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_11162">
    <teiHeader>
       <fileDesc>
@@ -46,7 +46,11 @@
                   <summary>The volume consists of 244 folios. Folio 225a has a recipe to stop nosebleed. Folio 244a has a khawāṣṣ recipe and an owner’s note (different hand) while on 224b there is an obliterated ex libris, some pious phrases, and pen practices (some possibly Karshūnī).There are three items in the volume, two of them medical.</summary>
                   <msItem xml:id="MS_Huntington_370-item1" n="1">
                      <locus from="1" to="224">ff. 1r-224v and 228rv</locus>
-                     <author>key="n 85331623" ref="http://viaf.org/viaf/17316331/"&gt;Ibn al-Nafīs, ʻAlī ibn Abī al-Ḥazm,<date calendar="#Gregorian" from="1210" to="1288">1210 or 11-1288</date>ابن النفيس، علي بن أبي الحزم، ت. 687 هـIbn al-Nafīs, ʻAlāʼ al-Dīn ʿAlī ibn Abī al-Ḥazm al-Qurashī (d. 687/1288)</author>
+                     <author>key="n 85331623" ref="http://viaf.org/viaf/17316331/"&gt;<persName type="standard" xml:lang="ar-Latn-x-lc">Ibn al-Nafīs, ʻAlī ibn Abī al-Ḥazm,<date calendar="#Gregorian" from="1210" to="1288">1210 or 11-1288</date>
+                        </persName>
+                        <persName xml:lang="ar">ابن النفيس، علي بن أبي الحزم، ت. 687 هـ</persName>
+                        <persName xml:lang="ar-Latn-x-lc" type="alt">Ibn al-Nafīs, ʻAlāʼ al-Dīn ʿAlī ibn Abī al-Ḥazm al-Qurashī (d. 687/1288)</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Sharḥ al-Fuṣūl li-Ibqurāṭ</title>
                      <title xml:lang="ar">شرح الفصول لإبقراط</title>
                      <title xml:lang="en" type="alt">Commentary on the Aphorisms of Hippocrates</title>
@@ -71,7 +75,10 @@
                   </msItem>
                   <msItem xml:id="MS_Huntington_370-item2" n="2">
                      <locus from="225" to="227">ff. 225v-227v</locus>
-                     <author>key="n 80133010" ref="http://viaf.org/viaf/95154093 "al-Rāzī, Abū Bakr Muḥammad ibn Zakarīyā <date calendar="#Gregorian" when="0925">(d. c. 313/925)</date>الرازي، محمد بن زكريا، 251-313 هـ.</author>
+                     <author>key="n 80133010" ref="http://viaf.org/viaf/95154093 "<persName type="standard" xml:lang="ar-Latn-x-lc">al-Rāzī, Abū Bakr Muḥammad ibn Zakarīyā <date calendar="#Gregorian" when="0925">(d. c. 313/925)</date>
+                        </persName>
+                        <persName xml:lang="ar">الرازي، محمد بن زكريا، 251-313 هـ.</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Kitāb Burʾ al-sāʿah</title>
                      <title xml:lang="ar-Latn-x-lc" type="alt">Kitāb al-Sirr fī al-ṣināʿah wa-burʾ al-sāʿah</title>
                      <title xml:lang="ar-Latn-x-lc" type="alt">Kitāb Dustūr al-ṭibb fī sirr al-ṣināʿah wa-burʾ al-sāʿah</title>
@@ -95,7 +102,9 @@
                   </msItem>
                   <msItem xml:id="MS_Huntington_370-item3" n="3">
                      <locus from="229" to="243">ff. 229r-243v</locus>
-                     <author>Anonymous</author>
+                     <author>
+                        <persName type="standard" xml:lang="en">Anonymous</persName>
+                     </author>
                      <title xml:lang="en">Extracts</title>
                      <note>Extracts ( قصة ) from accounts of various prophets, beginning with Adam, Noah, Abraham, then Muḥammad and continuing with Mary, Shu‘ayb, David, and Zacharias</note>
                      <note>Folio 244a has a khawāṣṣ recipe and an owner’s note (different hand)</note>
@@ -166,11 +175,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-02-07">
-             Lydia Wright</change>
+            Lydia Wright</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

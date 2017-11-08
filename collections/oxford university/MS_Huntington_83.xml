@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1029">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,9 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Huntington_83-item1" n="1" class="#translation">
                      <locus from="1" to="161">ff. 1r-161r</locus>
-                     <author>Ibrāhīm ibn Yuḥannā al-Anṭākī, protospatharius of Antioch sec. half of<date calendar="#Gregorian" notBefore="0950" notAfter="1000">10th cent.</date>
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc">Ibrāhīm ibn Yuḥannā al-Anṭākī, protospatharius of Antioch sec. half of<date calendar="#Gregorian" notBefore="0950" notAfter="1000">10th cent.</date>
+                        </persName>
                      </author>
                      <title>Translation [from Greek] of<persName type="standard"
                                   key="n 50082928"
@@ -62,7 +64,9 @@
                      <locus from="161" to="170">ff. 161v-170r</locus>
                      <author key="n 80001460"
                              ref="http://www.viaf.org/viaf/100910338/"
-                             xml:id="m1">John Chrysostom, Saint, d.<date calendar="#Gregorian" when="0407">407</date>
+                             xml:id="m1">
+                        <persName type="standard">John Chrysostom, Saint, d.<date calendar="#Gregorian" when="0407">407</date>
+                        </persName>
                      </author>
                      <title>Four sermons to the monks</title>
                      <listBibl>
@@ -73,7 +77,9 @@
                   </msItem>
                   <msItem xml:id="MS_Huntington_83-item3" n="3">
                      <locus from="170" to="177">ff. 170r-177r</locus>
-                     <author key="n 50030399" ref="http://viaf.org/viaf/107024917/">Anthony, of Egypt, Saint,<date calendar="#Gregorian" from="0250" to="0356">ca. 250-355 or 6</date>
+                     <author key="n 50030399" ref="http://viaf.org/viaf/107024917/">
+                        <persName type="standard">Anthony, of Egypt, Saint,<date calendar="#Gregorian" from="0250" to="0356">ca. 250-355 or 6</date>
+                        </persName>
                      </author>
                      <title>Moral teachings in 20 chapters</title>
                      <note>f. 177v contains a list of contents of the entire MS</note>
@@ -205,11 +211,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

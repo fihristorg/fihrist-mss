@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3475">
    <teiHeader>
       <fileDesc>
@@ -44,16 +44,22 @@
                <msContents class="http://lccn.loc.gov/sh85064939 http://lccn.loc.gov/sh85053112">
                   <summary>The second of five volumes of miscellaneous papers from the collection of Richard Johnson</summary>
                   <msItem xml:id="IO_Islamic_4756.B-item1">
-                     <author>Unknown
+                     <author>
+                        <persName xml:lang="en" type="desc">Unknown</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      
                      
                      <title xml:lang="en" type="desc">Accounts</title>
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>A list of trees in Johnson’s garden at Ras Paklā?; lists of grants; a list of flowers; copies of treaties signed between<persName xml:lang="fa-Latn-x-lc" type="supplied">Shujā’ al-Dawlah</persName>,<persName xml:lang="fa-Latn-x-lc" type="supplied">Nawab Wazir of Oudh</persName>, and the<persName xml:lang="en"
                                   type="standard"
                                   ref="http://viaf.org/viaf/152524782/"
@@ -68,8 +74,8 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>59 ff (Varying sizes)
-                           
+                        <extent>59 ff (Varying sizes)<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -119,7 +125,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-12-21">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_9827">
    <teiHeader>
       <fileDesc>
@@ -44,25 +44,34 @@
                </msIdentifier>
                <msContents class="commentary">
                   <msItem xml:id="Or_1009-item1">
-                     <author>Quṭb al-Dīn Ibrāhīm ibn ʻAlī ibn Muḥammad al-Sulamī al-Miṣrī, d. 1221قطب الدين ابراهيم بن علي بن محمد السلمي
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="supplied">Quṭb al-Dīn Ibrāhīm ibn ʻAlī ibn Muḥammad al-Sulamī al-Miṣrī, d. 1221</persName>
                         
                         
-                        <addName xml:lang="ar" type="nisbah">المصري</addName>
+                        <persName xml:lang="ar">قطب الدين ابراهيم بن علي بن محمد السلمي
+                           
+                           
+                           <addName xml:lang="ar" type="nisbah">المصري</addName>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Sharḥ kullīyāt al-qānūn</title>
                      
                      <title xml:lang="ar">شرح كليات القانون</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/arberry/view.php?id=5">no. 17</ref>
                         </bibl>
                         <bibl type="text-relations">Commentary on<title xml:lang="ar-Latn-x-lc">al-Qānūn fī al-ṭibb<foreign xml:lang="ar">القانون في الطب</foreign>
-                           </title>of<author key="n80002386" ref="http://viaf.org/viaf/89770781/">Avicenna, 980-1037<foreign xml:lang="ar">ابن سينا، الحسين بن عبد الله</foreign>
+                           </title>of<author key="n80002386" ref="http://viaf.org/viaf/89770781/">
+                              <persName xml:lang="en" type="supplied">Avicenna, 980-1037<foreign xml:lang="ar">ابن سينا، الحسين بن عبد الله</foreign>
+                              </persName>
                            </author>
                         </bibl>
                      </listBibl>
@@ -73,13 +82,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -151,7 +160,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-06-21">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3968">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,15 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_797-item1">
-                     <author key="n88234458" ref="http://viaf.org/viaf/96958106">Khāzin al-Baghdādī, ʻAlī ibn Muḥammad, 1279 or 1280-1341الخازن، علي بن محمد، 678-741 هـ
+                     <author key="n88234458" ref="http://viaf.org/viaf/96958106">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Khāzin al-Baghdādī, ʻAlī ibn Muḥammad, 1279 or 1280-1341</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">الخازن، علي بن محمد، 678-741 هـ
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Lubāb al-taʾwīl fī maʿānī al-tanzīl</title>
                      
@@ -55,9 +60,11 @@
                      
                      
                      <note>Third part only, beginning with sūrah 19 (Miryam<foreign xml:lang="ar">سورة مريم</foreign>), ending with sūrah 37 (al-ṣāffāt<foreign xml:lang="ar">سورة الصافات</foreign>), verse 182.</note>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 23</bibl>
                         <bibl>GAL II 109; II 135.</bibl>
@@ -72,14 +79,14 @@
                               <height>23.2</height>
                               <width>20.7</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="21" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -133,7 +140,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-02-28">

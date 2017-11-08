@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4492">
    <teiHeader xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <fileDesc>
@@ -44,7 +44,12 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_Fraser_85-item1">
-                     <author>Khwājah ʻAmīd ʻAṭāʼī ibn Yaʻqūbخواجه عميد عطائى بن يعقوبʻAṭāʼī Rāzīعطائى رازى</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc">Khwājah ʻAmīd ʻAṭāʼī ibn Yaʻqūb</persName>
+                        <persName xml:lang="fa">خواجه عميد عطائى بن يعقوب</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">ʻAṭāʼī Rāzī</persName>
+                        <persName xml:lang="fa" type="alt">عطائى رازى</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Barzūnāmah</title>
                      <title xml:lang="fa">برزونامه</title>
                      <title xml:lang="fa-Latn-x-lc" type="alt">Burzūnāmah</title>
@@ -61,12 +66,12 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>63 ff.
+                        <extent>63 ff.<dimensions type="leaf" unit="in"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="4">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -169,7 +174,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-03-06">

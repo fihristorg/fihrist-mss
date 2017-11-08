@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_9080">
    <teiHeader>
       <fileDesc>
@@ -45,15 +45,27 @@
                <msContents>
                   <summary>Burckhardt papers: Fourteen pieces which comprise several letters addressed by<persName>P. Lee</persName>to<persName xml:lang="ar-Latn-x-lc">Ibrāhīm ʻAbd Allāh</persName>; 60 slips and 2 cards with specimens of calligraphy; 2 short treatises of<persName xml:lang="ar-Latn-x-lc">Muḥammad al-ʻAṭṭār al-Dimashqī</persName>; and a Murabbaʻ by<persName xml:lang="ar-Latn-x-lc">Mawlānā Tharī al-Dīn Efendī</persName>entitled<title xml:lang="ar-Latn-x-lc">Nukhbat al-fikar</title>.</summary>
                   <msItem xml:id="Add_277-item1">
-                     
+                     <author>
+                        
+                        
+                        
+                        <persName xml:lang="ar">
+                           
+                           
+                           
+                           
+                        </persName>
+                     </author>
                      
                      
                      
                      
                      <title xml:lang="en" type="desc">Burckhardt papers</title>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/view.php?id=204">no. 1505</ref>
@@ -66,13 +78,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -127,7 +139,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-05-06">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3194">
    <teiHeader>
       <fileDesc>
@@ -43,10 +43,15 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85072967 http://lccn.loc.gov/n2007204421">
                   <msItem xml:id="Delhi_Persian_14-item1">
-                     <author ref="http://viaf.org/viaf/96972070" key="nr92014932">ʻAskarī, al-Ḥasan ibn ʻAlī, d. 874Imam Hasan al-‘Askarīعسكري، الحسن بن علي
+                     <author ref="http://viaf.org/viaf/96972070" key="nr92014932">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">ʻAskarī, al-Ḥasan ibn ʻAlī, d. 874</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Imam Hasan al-‘Askarī</persName>
                         
-                        
-                        
+                        <persName xml:lang="ar">عسكري، الحسن بن علي
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <editor role="translator">
                         <persName xml:lang="fa-Latn-x-lc" type="supplied">ʻAlī ibn Ḥasan Zavārī,<foreign xml:lang="fa">علی بن حسن زواری</foreign>
@@ -57,8 +62,8 @@
                      
                      
                      
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa"/>
                      <note>A neatly and clearly written copy of a Persian translation apparently by<persName xml:lang="fa-Latn-x-lc" type="supplied">ʻAlī ibn Ḥasan Zavārī,<foreign xml:lang="fa">علی بن حسن زواری</foreign>
                         </persName>who worked at least partly for<persName xml:lang="fa-Latn-x-lc"
                                   type="alt"
@@ -146,7 +151,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-03-06">

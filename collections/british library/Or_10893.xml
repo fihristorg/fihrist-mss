@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5194">
    <teiHeader>
       <fileDesc>
@@ -43,7 +43,13 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh87000152">
                   <msItem xml:id="Or_10893-item1">
-                     <author>Badr al-Dīn ibn ‘Abd al-Salām Kashmīrīبدر الدین عبد السلام کشمیری
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Badr al-Dīn ibn ‘Abd al-Salām Kashmīrī</persName>
+                        
+                        
+                        
+                        <persName xml:lang="fa">بدر الدین عبد السلام کشمیری</persName>
+                        
                         
                         
                         
@@ -53,8 +59,8 @@
                      <title xml:lang="fa">سراج الصالحین و معراج الکاملین</title>
                      
                      
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <note>Dicta on religious matters</note>
                      <note>The author is better known as the author of<title xml:lang="fa-Latn-x-lc">Qiṣṣah-’i Ẓū’l-Qarnayn (<foreign xml:lang="fa">قصۀ ظو القرنین</foreign>)</title>
                      </note>
@@ -71,7 +77,7 @@
                               <height>22.5</height>
                               <width>18.8</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -115,7 +121,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-04-17">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7742">
    <teiHeader>
       <fileDesc>
@@ -42,7 +42,7 @@
                         </foliation>
                         <collation>
                            <seg type="gathering" subtype="both">
-                              
+                              <dimensions type="leaf" unit="mm" quantity="9"/>
                               <formula>4+5+5+5+5+5+5+5+5</formula>
                            </seg>
                         </collation>
@@ -146,8 +146,13 @@
                      <msItem xml:id="WMS_Arabic_26-part1-item1" defective="unknown">
                         <locus>Fol.3a</locus>
                         <author>
-                           <forename facs="#i0104">على بن كمال الدين محمود</forename>
-                           <addName type="nisbah" facs="#i0104">الاستربادى المكى</addName>على بن كمال الذين محمود الاستربادى مولداً والمكى محتداًِAlī ibn Kamāl ad-Dīn al-'Astrābazī</author>
+                           <persName type="standard" xml:lang="ara-Arab">
+                              <forename facs="#i0104">على بن كمال الدين محمود</forename>
+                              <addName type="nisbah" facs="#i0104">الاستربادى المكى</addName>
+                           </persName>
+                           <persName type="original" xml:lang="ara-Arab" facs="#i0104">على بن كمال الذين محمود الاستربادى مولداً والمكى محتداً</persName>
+                           <persName type="standard" xml:lang="eng-Latn">ِAlī ibn Kamāl ad-Dīn al-'Astrābazī</persName>
+                        </author>
                         <title type="original" facs="#i0006">كتاب شرح قانونجه<locus>Fol.3a</locus>
                         </title>
                         <incipit type="basmala" facs="#i0008">
@@ -216,7 +221,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-10-21T16:10:44+02:00">Committed to SVN. To view the changes in detail use SVN diff. SVN Url: http://wellcomesvn.local.bibalex.dom/svn/WellcomeTrust/trunk/WAMCPMetaGallery/XML/WMS_Arabic_26/WMS_Arabic_26.xml<persName>eralph</persName>

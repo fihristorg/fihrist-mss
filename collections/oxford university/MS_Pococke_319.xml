@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1507">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,9 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_Pococke_319-item1">
-                     <author key="n 78096039" ref="http://viaf.org/viaf/100185495/">Maimonides, Moses,<date calendar="#Gregorian" from="1135" to="1204">1135-1204</date>
+                     <author key="n 78096039" ref="http://viaf.org/viaf/100185495/">
+                        <persName type="standard">Maimonides, Moses,<date calendar="#Gregorian" from="1135" to="1204">1135-1204</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Fuṣūl fī al-ṭibb</title>
                      <note>In Hebr. chars. in 25 chapters, with frequently marginal Hebrew translation</note>
@@ -103,11 +105,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

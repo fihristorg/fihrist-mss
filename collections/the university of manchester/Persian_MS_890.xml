@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7402">
    <teiHeader>
       <fileDesc>
@@ -42,21 +42,26 @@
                </msIdentifier>
                <msContents>
                   <summary>
-                     <title type="main"/>
+                     
                   </summary>
                   <msItem xml:id="Persian_MS_890-item1">
-                     <author key="n80129266" ref="http://viaf.org/viaf/38224074/">Mīr Ḥusaynī Haravī, Ḥusayn ibn ʻĀlim, 1272 or 3-ca. 1317Ibn Uzbakīفخر السادات ركن الدين حسين بن عالم حسيني
+                     <author key="n80129266" ref="http://viaf.org/viaf/38224074/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Mīr Ḥusaynī Haravī, Ḥusayn ibn ʻĀlim, 1272 or 3-ca. 1317</persName>
                         
-                        
-                        
+                        <persName xml:lang="ar-Latn-x-lc" type="alt">Ibn Uzbakī</persName>
+                        <persName xml:lang="fa">فخر السادات ركن الدين حسين بن عالم حسيني
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Ṭarab al-majālis</title>
                      
                      <title xml:lang="ar">طرب المجالس</title>
                      
                      
-                     
-                     
+                     <incipit xml:lang="ar" type="basmalla"/>
+                     <explicit xml:lang="ar"/>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
@@ -64,8 +69,8 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
@@ -127,7 +132,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014"/>

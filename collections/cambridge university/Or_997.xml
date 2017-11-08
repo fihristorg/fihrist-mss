@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_10099">
    <teiHeader>
       <fileDesc>
@@ -44,18 +44,23 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Or_997-item1">
-                     <author key="n90001076" ref="http://viaf.org/viaf/79380114/">Ibn Maʻṣūm, ʻAlī ibn Aḥmad, 1642-ca. 1707ابن معصوم، علي بن احمد
-                        <addName xml:lang="ar" type="kunyah">ابو الحسن</addName>
+                     <author key="n90001076" ref="http://viaf.org/viaf/79380114/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn Maʻṣūm, ʻAlī ibn Aḥmad, 1642-ca. 1707</persName>
                         
-                        <addName xml:lang="ar" type="nisbah">الموصلي</addName>
+                        
+                        <persName xml:lang="ar">ابن معصوم، علي بن احمد
+                           <addName xml:lang="ar" type="kunyah">ابو الحسن</addName>
+                           
+                           <addName xml:lang="ar" type="nisbah">الموصلي</addName>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Anwār al-rabīʻ fī anwāʻ al-badīʻ</title>
                      
                      <title xml:lang="ar">انوار الربيع في انواع البديع</title>
                      
                      
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/arberry/view.php?id=3">no. 5</ref>
@@ -68,13 +73,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -125,7 +130,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-06-21">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_378">
    <teiHeader>
       <fileDesc>
@@ -44,21 +44,30 @@
                </msIdentifier>
                <msContents class="#abridgement">
                   <msItem xml:id="Add_837-item1">
-                     <author>Qurashī, Muḥammad ibn ʻUmar ibn KhalidJamal QurashīAbū al-Faḍl Muḥammad ibn ʻUmar<surname>قرشي</surname>
-                        <forename>محمد بن عمر بن خالد</forename>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Qurashī, Muḥammad ibn ʻUmar ibn Khalid</persName>
                         
-                        <addName xml:lang="ar" type="kunyah">جمال الدين ابوالفضل</addName>
-                        
-                        
+                        <persName xml:lang="ar-Latn-x-lc" type="alt">Jamal Qurashī</persName>
+                        <persName xml:lang="ar-Latn-x-lc" type="alt">Abū al-Faḍl Muḥammad ibn ʻUmar</persName>
+                        <persName xml:lang="ar">
+                           <surname>قرشي</surname>
+                           <forename>محمد بن عمر بن خالد</forename>
+                           
+                           <addName xml:lang="ar" type="kunyah">جمال الدين ابوالفضل</addName>
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Ṣurāḥ min al-ṣiḥāḥ</title>
                      
                      <title xml:lang="ar">الصراح من الصحاح</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref xml:id="b1"
@@ -66,7 +75,10 @@
                            <ref xml:id="b2"
                                 target="http://www.lib.cam.ac.uk/arabic_catalogues/browne1896/view.php?id=142">no. CLIV</ref>
                         </bibl>
-                        <bibl type="text-relations">An abridgement of the<title xml:lang="ar-Latn-x-lc">Tāj al-lughah wa-ṣiḥāḥ al-ʻArabīyah (<foreign xml:lang="ar">تاج اللغة وصحاح العربية</foreign>)</title>by<author key="n 82085863" ref="http://viaf.org/viaf/89825396/">Jawharī, Ismāʻīl ibn Ḥammād, d. 1003?جواهري، اسماعيل بن حماد</author>with the addition of the Persian equivalents.</bibl>
+                        <bibl type="text-relations">An abridgement of the<title xml:lang="ar-Latn-x-lc">Tāj al-lughah wa-ṣiḥāḥ al-ʻArabīyah (<foreign xml:lang="ar">تاج اللغة وصحاح العربية</foreign>)</title>by<author key="n 82085863" ref="http://viaf.org/viaf/89825396/">
+                              <persName xml:lang="fa-Latn-x-lc" type="standard">Jawharī, Ismāʻīl ibn Ḥammād, d. 1003?</persName>
+                              <persName xml:lang="ar">جواهري، اسماعيل بن حماد</persName>
+                           </author>with the addition of the Persian equivalents.</bibl>
                      </listBibl>
                      <textLang mainLang="ar" otherLangs="fa">Arabic, Persian</textLang>
                   </msItem>
@@ -75,13 +87,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -157,11 +169,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-07-27">
-             Yasmin Faghihi</change>
+            Yasmin Faghihi</change>
       </revisionDesc>
    </teiHeader>
    <text>

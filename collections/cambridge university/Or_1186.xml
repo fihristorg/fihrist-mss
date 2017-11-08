@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_9907">
    <teiHeader>
       <fileDesc>
@@ -45,19 +45,26 @@
                <msContents>
                   <summary>The manuscript contains the second volume of the work</summary>
                   <msItem xml:id="Or_1186-item1">
-                     <author key="n85038131" ref="http://viaf.org/viaf/100626066/">Qurashī, Idrīs ʻImād al-Dīn, d. 1467القرسي، عماد الدين ادريس بن الحسن
+                     <author key="n85038131" ref="http://viaf.org/viaf/100626066/">
+                        <persName xml:lang="en" type="standard">Qurashī, Idrīs ʻImād al-Dīn, d. 1467</persName>
                         
                         
-                        <addName xml:lang="ar" type="nisbah">المكرمي</addName>
+                        <persName xml:lang="ar">القرسي، عماد الدين ادريس بن الحسن
+                           
+                           
+                           <addName xml:lang="ar" type="nisbah">المكرمي</addName>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">ʻUyūn al-akhbār wa-funūn al-āthār fī dhikr al-Nabī al-muṣṭafá al-mukhtār</title>
                      
                      <title xml:lang="ar">عيون الاخبار وفنون الاثار في ذكر النبي المصطفى المختار</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/arberry/view.php?id=11">no. 96</ref>
@@ -70,13 +77,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -133,7 +140,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-06-24">

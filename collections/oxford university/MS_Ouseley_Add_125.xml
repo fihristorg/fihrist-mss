@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4771">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,12 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_Ouseley_Add_125-item1">
-                     <author key="no2001070222" ref="http://viaf.org/viaf/24254261">Isfizārī, Muḥammad, 15th cent.معين الدين محمد الزمجي الاسفزاري</author>
+                     <author key="no2001070222" ref="http://viaf.org/viaf/24254261">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Isfizārī, Muḥammad, 15th cent.</persName>
+                        <persName xml:lang="fa">معين الدين محمد الزمجي الاسفزاري</persName>
+                        
+                        
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Rawḍat al-jannāt fī awṣāf madīnat Harāt</title>
                      <title xml:lang="fa">روضة الجنات في أوصاف مدينة هرات</title>
                      
@@ -58,12 +63,12 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>233 ff.
+                        <extent>233 ff.<dimensions type="leaf" unit="in"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -163,7 +168,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-08-30">

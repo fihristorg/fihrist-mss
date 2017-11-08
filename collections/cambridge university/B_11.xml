@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_388">
    <teiHeader>
       <fileDesc>
@@ -45,42 +45,60 @@
                <msContents>
                   <msItem xml:id="B_11-item1" n="1">
                      <locus from="1b" to="5a">ff. 1b-5a</locus>
-                     <author key="n89622149" ref="http://viaf.org/viaf/51499002/">Samarqandī, Muḥammad ibn Ashraf, 13th cent.السمرقندي، محمد بن اشرف
+                     <author key="n89622149" ref="http://viaf.org/viaf/51499002/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Samarqandī, Muḥammad ibn Ashraf, 13th cent.</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">السمرقندي، محمد بن اشرف
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Risālah fī ādāb al-baḥth</title>
                      
                      <title xml:lang="ar">رسالة في اداب البحث</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="B_11-item2" n="2">
                      <locus from="5b" to="45b">ff. 5b-45b</locus>
-                     <author>anonymous
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">anonymous</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      
                      
                      
                      
                      <title xml:lang="en" type="desc">Glosses</title>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/nicholson1932/view.php?id=29"/>
                         </bibl>
                         <bibl type="text-relations">Glosses to the<title xml:lang="ar-Latn-x-lc">Risālah fī ādāb al-baḥth<foreign xml:lang="ar">رسالة في اداب البحث</foreign>
-                           </title>of<author>Samarqandī, Muḥammad ibn Ashraf, 13th cent.السمرقندي، محمد بن اشرف</author>.</bibl>
+                           </title>of<author>
+                              <persName xml:lang="ar-Latn-x-lc">Samarqandī, Muḥammad ibn Ashraf, 13th cent.</persName>
+                              <persName xml:lang="ar">السمرقندي، محمد بن اشرف</persName>
+                           </author>.</bibl>
                      </listBibl>
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
@@ -89,13 +107,13 @@
                   <objectDesc form="other">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -152,7 +170,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-07-26">

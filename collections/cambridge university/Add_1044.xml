@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6">
    <teiHeader>
       <fileDesc>
@@ -45,19 +45,26 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="Add_1044-item1" n="1">
                      <locus from="1b" to="13a">ff. 1b-13a</locus>
-                     <author>Mīrzā Muḥammad Ibrāhīmميرزا محمد ابراهيم
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="supplied">Mīrzā Muḥammad Ibrāhīm</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">ميرزا محمد ابراهيم
+                           
+                           
+                           
+                        </persName>
                      </author>
                      
                      
                      
                      
                      <title xml:lang="en" type="desc">Defence of Islam</title>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref xml:id="b1">
@@ -73,19 +80,27 @@
                   </msItem>
                   <msItem xml:id="Add_1044-item2" n="2">
                      <locus from="13b" to="25b">ff. 13b-25b</locus>
-                     <author key="85250713" ref="http://viaf.org/viaf/64842594/">Martyn, Henry, 1781-1812
+                     <author key="85250713" ref="http://viaf.org/viaf/64842594/">
+                        <persName xml:lang="en" type="standard">Martyn, Henry, 1781-1812</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      
                      
                      
                      
                      <title xml:lang="en" type="desc">Third tract in reply to Mīrzā Ibrāhīm</title>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref xml:id="b1a">
@@ -101,19 +116,27 @@
                   </msItem>
                   <msItem xml:id="Add_1044-item3" n="3">
                      <locus from="25b" to="34b">ff. 25b-34b</locus>
-                     <author key="85250713" ref="http://viaf.org/viaf/64842594/">Martyn, Henry, 1781-1812
+                     <author key="85250713" ref="http://viaf.org/viaf/64842594/">
+                        <persName xml:lang="en" type="standard">Martyn, Henry, 1781-1812</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      
                      
                      
                      
                      <title xml:lang="en" type="desc">Second tract in reply to Mīrzā Ibrāhīm</title>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref xml:id="b1b">
@@ -129,19 +152,27 @@
                   </msItem>
                   <msItem xml:id="Add_1044-item4" n="4">
                      <locus from="35b" to="46b">ff. 35b-46b</locus>
-                     <author key="85250713" ref="http://viaf.org/viaf/64842594/">Martyn, Henry, 1781-1812
+                     <author key="85250713" ref="http://viaf.org/viaf/64842594/">
+                        <persName xml:lang="en" type="standard">Martyn, Henry, 1781-1812</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      
                      
                      
                      
                      <title xml:lang="en" type="desc">First tract in reply to Mīrzā Ibrāhīm</title>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref xml:id="b1c">
@@ -160,13 +191,13 @@
                   <objectDesc form="other">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -245,7 +276,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-09-06">

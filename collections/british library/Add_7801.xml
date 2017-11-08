@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3161">
    <teiHeader>
       <fileDesc>
@@ -43,11 +43,14 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85067899 http://lccn.loc.gov/sh2003009944 http://lccn.loc.gov/sh2010107737">
                   <msItem xml:id="Add_7801-item1">
-                     <author>Qadrīقدری</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Qadrī</persName>
+                        <persName xml:lang="fa">قدری</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Jarūnnāmah</title>
                      <title xml:lang="fa">جرون نامه</title>
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>A mas̲navī on the taking of Jarūn (Hormuz) from the Portuguese by<persName type="supplied" xml:lang="fa-Latn-x-lc">Imām Qūlī Khān</persName>
                      </note>
                      <note>Imām Qūlī Khān, son and successor of<persName type="supplied" xml:lang="fa-Latn-x-lc">Allāh Virdī Khān</persName>, Beglerbegi of the Province of Fars, captured Hormuz, after a seige of two months, in the 36th year of the reign of<persName type="ref"
@@ -158,7 +161,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-05-10">

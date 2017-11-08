@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8121">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,9 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_19320-item1" n="1">
-                     <author key="n82217749" ref="http://viaf.org/viaf/88038425/">Ibn Hishām, ʻAbd al-Malik, -834ابن هشام، عبد الملك</author>
+                     <author key="n82217749" ref="http://viaf.org/viaf/88038425/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn Hishām, ʻAbd al-Malik, -834</persName>
+                        ابن هشام، عبد الملك</author>
                      <title xml:lang="ar-Latn-x-lc">al-Tījān fī mulūk Ḥimyar</title>
                      <title xml:lang="ar">التيجان في ملوك حمير</title>
                      <note>History of the ancient kings of Yemen. Incomplete at beginning, lacuna after f. 59.</note>
@@ -58,7 +60,9 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="ms_19320-item2" n="2">
-                     <author key="no98073464" ref="http://viaf.org/viaf/14388305/">ʻUbayd ibn Sharīyah, -approximately 686عبيد بن شرية</author>
+                     <author key="no98073464" ref="http://viaf.org/viaf/14388305/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">ʻUbayd ibn Sharīyah, -approximately 686</persName>
+                        عبيد بن شرية</author>
                      <title xml:lang="ar-Latn-x-lc">Akhbār ʻUbayd ibn Sharīyah</title>
                      <title xml:lang="ar">اخبار عبيد بن شرية</title>
                      <note>Legends of the kings of Yemen and Yemenite poetry</note>
@@ -72,7 +76,10 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="ms_19320-item3" n="3">
-                     <author key="no99079076" ref="http://viaf.org/viaf/29171383/">Ghazūlī, ʻAlī ibn ʻAbd Allāh, d. 1412غزولي، علي بن عبد الله</author>
+                     <author key="no99079076" ref="http://viaf.org/viaf/29171383/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ghazūlī, ʻAlī ibn ʻAbd Allāh, d. 1412</persName>
+                        <persName xml:lang="ar">غزولي، علي بن عبد الله</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Maṭāliʻ al-budūr fī manāzil al-surūr</title>
                      <title xml:lang="ar">مطالع البدور في منازل السرور</title>
                      <note>Several pieces of poetry and an extract from the Matali' al-budur</note>
@@ -103,7 +110,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -155,7 +162,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-06-22">

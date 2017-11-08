@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_379">
    <teiHeader>
       <fileDesc>
@@ -45,15 +45,27 @@
                <msContents>
                   <msItem xml:id="Add_838-item1" n="1">
                      <locus from="1" to="479b">ff. 1-479b</locus>
-                     
+                     <author>
+                        
+                        
+                        
+                        <persName xml:lang="fa">
+                           
+                           
+                           
+                           
+                        </persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">al-Qurʼān</title>
                      
                      <title xml:lang="ar">القرآن</title>
                      
                      <title xml:lang="en" type="desc">The Qurʼān with a complete interlinear Persian paraphrase</title>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref xml:id="b1">
@@ -69,15 +81,27 @@
                   </msItem>
                   <msItem xml:id="Add_838-item2" n="2">
                      <locus from="480a" to="481a">ff. 480a-481a</locus>
-                     
+                     <author>
+                        
+                        
+                        
+                        <persName xml:lang="fa">
+                           
+                           
+                           
+                           
+                        </persName>
+                     </author>
                      
                      
                      
                      
                      <title xml:lang="en" type="desc">Collection of prayers</title>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref xml:id="b1a">
@@ -93,19 +117,27 @@
                   </msItem>
                   <msItem xml:id="Add_838-item3" n="3">
                      <locus from="481b" to="483a">ff. 481b-483a</locus>
-                     <author>anonymous
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">anonymous</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Fālnāmah</title>
                      
                      <title xml:lang="fa">فالنامه</title>
                      
                      <title xml:lang="en" type="desc">Poem with instructions for taking auguries from the Qurʼān</title>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref xml:id="b1b">
@@ -124,13 +156,13 @@
                   <objectDesc form="other">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -222,7 +254,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-09-07">

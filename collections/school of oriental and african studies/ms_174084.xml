@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8051">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,10 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_174084-item1">
-                     <author key="n 79072686‏" ref="http://viaf.org/viaf/34701692/">Ibn al-Muʻtazz, ʻAbd Allāh, 861-908ابن المعتز، عبد الله بن محمد</author>
+                     <author key="n 79072686‏" ref="http://viaf.org/viaf/34701692/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ibn al-Muʻtazz, ʻAbd Allāh, 861-908</persName>
+                        <persName xml:lang="ar">ابن المعتز، عبد الله بن محمد</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Ṭabaqāt al-shuʻarāʼ fī madḥ al-khulafāʼ wa-al-wuzarāʼ</title>
                      <title xml:lang="ar">طبقات الشعراء في مدح الخلفاء والوزراء</title>
                      <title xml:lang="ar-Latn-x-lc" type="alt">Ṭabaqāt al-shuʻarāʼ al-muḥdathīn</title>
@@ -52,7 +55,9 @@
                      <note>An anthology of Arabic poets. Preceded by a Fihrist</note>
                      <incipit>الحمد لله الذى اقحم مصاقع الفصحاء بمعجز كلامه واخرس شقاشق البلغاء بترتيبه ونظامه ... وبعد فيقول افقر العباد الى الله عبد الله بن المعتر بالله بن المتوكل ... على الله بن محمد المعتصم بالله بن الرشيد هرون عقد الفكر طرفى ليلة بالنجوم لوارد ورد على من الهموم فخطر على الخاطر فى بعض الافكار ان اذكر في نسخة ... ما وضعته الشعرا من الاشعار فى مدح الخلفاء والوزرا ... والامراء من بنى العباس</incipit>
                      <colophon>كمل كتاب طبقات الشعراءالمحدثین في اليوم السادس من شهر شوال سنه 1285 بيد الحقير مهدي بن علي نقي التبريزي</colophon>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://digital.info.soas.ac.uk/15594/#page/1/mode/2up/search/">view the printed catalogue Gacek no.375</ref>
@@ -76,7 +81,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -129,7 +134,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-08-25">

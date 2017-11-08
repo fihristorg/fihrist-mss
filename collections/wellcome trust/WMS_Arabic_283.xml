@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7750">
    <teiHeader>
       <fileDesc>
@@ -62,8 +62,13 @@
                   <msContents>
                      <msItem xml:id="WMS_Arabic_283-part1-item1">
                         <author>
-                           <forename>محمد بن علي</forename>
-                           <addName type="nisbah">الشبرملسي المالكي</addName>M. b. `A. M. b. `A. aš-Šabrāmallisīمحمد بن علي الشبرملسي المالكي</author>
+                           <persName type="standard" xml:lang="ara-Arab">
+                              <forename>محمد بن علي</forename>
+                              <addName type="nisbah">الشبرملسي المالكي</addName>
+                           </persName>
+                           <persName type="standard" xml:lang="eng-Latn">M. b. `A. M. b. `A. aš-Šabrāmallisī</persName>
+                           <persName type="original" xml:lang="ara-Arab" facs="#i0004">محمد بن علي الشبرملسي المالكي</persName>
+                        </author>
                         <title type="original" facs="#i0004">مباهج التيسير بمناهج التكسير<locus>Fol.1b.14</locus>
                         </title>
                         <incipit type="basmala" facs="#i0004">
@@ -143,7 +148,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-03-30T09:25:31+02:00">Committed to SVN. To view the changes in detail use SVN diff. SVN Url:http://wellcomesvn.local.bibalex.dom/svn/WellcomeTrust/trunk/WAMCPMetaGallery/XML/WMS_Arabic_283/WMS_Arabic_283.xml<persName>mohamed.abdelsamie</persName>

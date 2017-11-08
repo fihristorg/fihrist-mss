@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8091">
    <teiHeader>
       <fileDesc>
@@ -44,13 +44,17 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_19116-item1">
-                     <author key="n 82097778" ref="http://www.viaf.org/viaf/89736851/">Ghazzālī, 1058-1111</author>
+                     <author key="n 82097778" ref="http://www.viaf.org/viaf/89736851/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ghazzālī, 1058-1111</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Iḥyāʼ ʻulūm al-dīn</title>
                      <title xml:lang="ar">احیاء علوم الدين</title>
                      <note>Second part (Rubʻ al-muhlikāt and Rubʻ al-munjiyāt)</note>
                      <incipit>کتاب شرح عجایب القاب وهو الکتاب الاول من ربع المهلکات من کتاب احیاء علوم الدين</incipit>
                      <colophon>لعلی ید...محمد سعید بن الشیخ حسن...فقد ختم سنه 1174</colophon>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://digital.info.soas.ac.uk/15594/#page/1/mode/2up/search/">view the printed catalogue Gacek no.118</ref>
@@ -74,7 +78,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -131,7 +135,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-03-31">

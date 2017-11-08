@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5422">
    <teiHeader>
       <fileDesc>
@@ -43,7 +43,13 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85072967">
                   <msItem xml:id="Or_11953-item1">
-                     <author ref="http://viaf.org/viaf/7249959" key="nr91043772">Kāshānī, Fatḥ Allāh ibn Shukr Allāh, d. 1570 or 71Fatḥullāh-i Kāshānīكاشاني، فتح الله بن شكر الله
+                     <author ref="http://viaf.org/viaf/7249959" key="nr91043772">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Kāshānī, Fatḥ Allāh ibn Shukr Allāh, d. 1570 or 71</persName>
+                        
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Fatḥullāh-i Kāshānī</persName>
+                        
+                        <persName xml:lang="fa">كاشاني، فتح الله بن شكر الله</persName>
+                        
                         
                         
                         
@@ -55,9 +61,11 @@
                      
                      <note>A Shiah commentary on the Qur’ān by Fatḥullāh-i Kāshānī</note>
                      <note>Volume 2 only, beginning with Sūrah XIX</note>
-                     
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
+                     <note>
+                        <foreign xml:lang="fa"/>
+                     </note>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 2.</bibl>
                      </listBibl>
@@ -71,7 +79,7 @@
                               <height>27.6</height>
                               <width>17</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -115,7 +123,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-03-05">

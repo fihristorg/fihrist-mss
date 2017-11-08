@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8917">
    <teiHeader>
       <fileDesc>
@@ -43,7 +43,12 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms17o-item1">
-                     <author xml:id="m1">Imruʼ al-Qays,<date calendar="#Gregorian" from="0497" to="0545">497-545</date>
+                     <author xml:id="m1">
+                        <persName type="standard"
+                                  xml:lang="ar-Latn-x-lc"
+                                  key="n 85290605"
+                                  ref="http://www.viaf.org/viaf/2439278/">Imruʼ al-Qays,<date calendar="#Gregorian" from="0497" to="0545">497-545</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Muallaqat with commentary of az-Zauzani</title>
                      <title xml:lang="ar-Latn-x-lc" type="alt">Muallaqat with commentary of Zawzanī,</title>
@@ -67,7 +72,7 @@
                               <height>8.25</height>
                               <width>5.75</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="modern">
                            <locus>On European paper</locus>
@@ -81,7 +86,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="5" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -137,7 +142,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-05-10">

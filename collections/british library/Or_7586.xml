@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6254">
    <teiHeader>
       <fileDesc>
@@ -47,11 +47,14 @@
                           n="1"
                           class="http://lccn.loc.gov/sh85100085 http://lccn.loc.gov/sh89005046">
                      <locus from="4r" to="34v">ff 4r-34v</locus>
-                     <author>Hindīهندی</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Hindī</persName>
+                        <persName xml:lang="fa">هندی</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Dīvān of Hindī</title>
                      <title xml:lang="fa">دیوان هندی</title>
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 53.</bibl>
                      </listBibl>
@@ -61,11 +64,14 @@
                           n="2"
                           class="http://lccn.loc.gov/sh85100085 http://lccn.loc.gov/sh89005046">
                      <locus from="35r" to="75v">ff 35r-75v</locus>
-                     <author>Suhaylīسهیلی</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Suhaylī</persName>
+                        <persName xml:lang="fa">سهیلی</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc" type="main">Dīvān of Suhaylī</title>
                      <title xml:lang="fa" type="main">دیوان سهیلی</title>
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 53.</bibl>
                      </listBibl>
@@ -75,11 +81,14 @@
                           n="3"
                           class="http://lccn.loc.gov/sh85100085 http://lccn.loc.gov/sh89005046">
                      <locus from="57r" to="86r">ff 57r-86r</locus>
-                     <author>Riyāz̤īریاضی</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Riyāz̤ī</persName>
+                        <persName xml:lang="fa">ریاضی</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Dīvān of Riyāz̤ī</title>
                      <title xml:lang="fa">دیوان ریاضی</title>
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 53.</bibl>
                      </listBibl>
@@ -89,11 +98,16 @@
                           n="4"
                           class="http://lccn.loc.gov/sh85100085 http://lccn.loc.gov/sh89005046">
                      <locus from="69r" to="78r">ff 69r-78r</locus>
-                     <author ref="http://viaf.org/viaf/33595452" key="n89263356">Khvājah Ḥabībullāh Ḥubbī Nawshahrī, 1556-1618خواجه حبیب الله حبّی نوشهریḤubbīحبّی</author>
+                     <author ref="http://viaf.org/viaf/33595452" key="n89263356">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Khvājah Ḥabībullāh Ḥubbī Nawshahrī, 1556-1618</persName>
+                        <persName xml:lang="fa">خواجه حبیب الله حبّی نوشهری</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Ḥubbī</persName>
+                        <persName xml:lang="fa" type="alt">حبّی</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Dīvān of Ḥubbī</title>
                      <title xml:lang="fa">دیوان حبّی</title>
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 53.</bibl>
                      </listBibl>
@@ -107,7 +121,7 @@
                               <height>18.4</height>
                               <width>11.5</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -140,7 +154,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-11-09">

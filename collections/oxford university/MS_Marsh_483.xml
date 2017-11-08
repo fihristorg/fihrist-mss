@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1117">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,9 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Marsh_483-item1" n="1">
                      <locus from="1" to="141">ff. 1r-141r</locus>
-                     <author key="n 80158380" ref="http://www.viaf.org/viaf/90042253/">Shaʻrānī, ʻAbd al-Wahhāb ibn Aḥmad, ca.<date calendar="#Gregorian" from="1493" to="1566">1493-1565 or 6</date>
+                     <author key="n 80158380" ref="http://www.viaf.org/viaf/90042253/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Shaʻrānī, ʻAbd al-Wahhāb ibn Aḥmad, ca.<date calendar="#Gregorian" from="1493" to="1566">1493-1565 or 6</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Kashf al-ḥijāb wa-al-rān ʻan wajh asʼilat al-jānn</title>
                      <listBibl>
@@ -56,7 +58,9 @@
                   </msItem>
                   <msItem xml:id="MS_Marsh_483-item2" n="2">
                      <locus from="142" to="148">ff. 142v-148r</locus>
-                     <author key="nr 91037636" ref="http://viaf.org/viaf/55297335/">Akmal al-Dīn al-Bābartī, Muḥammad ibn Maḥmūd,<date calendar="#Gregorian" from="1310" to="1385">1310 or 11-1384 or 5</date>
+                     <author key="nr 91037636" ref="http://viaf.org/viaf/55297335/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Akmal al-Dīn al-Bābartī, Muḥammad ibn Maḥmūd,<date calendar="#Gregorian" from="1310" to="1385">1310 or 11-1384 or 5</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Risālah fīhā tarjīʻ madhhab al-Imām Abī Ḥanīfah al-Nuʻmān</title>
                      <note>[or al-Nukat al-ẓarīfah fī tarjīʼ etc., or al-Risālat al-naḍrah li-madhāhib al-Imām etc.]</note>
@@ -68,7 +72,9 @@
                   </msItem>
                   <msItem xml:id="MS_Marsh_483-item3" n="3">
                      <locus from="149" to="158">ff. 149r-158r</locus>
-                     <author>Ḥimṣī, Sirāj al-Dīn ʻUmar ibn Mūsā,<date calendar="#Gregorian" from="1376" to="1457">1376-1457</date>
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc">Ḥimṣī, Sirāj al-Dīn ʻUmar ibn Mūsā,<date calendar="#Gregorian" from="1376" to="1457">1376-1457</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Suṭūr* al-iʻlām fī mabānī al-īmān wa-al-islām</title>
                      <note>*[So Nicoll and G2, p. 142; S2 reads Shurūṭ and both the G2 and S2 refs. appear in the title index under Shurūṭ; the title index also gives Suṭūr al-iʻlām G II 412, which presumably is a corruption for G II 117 (on p. 142).]</note>
@@ -80,7 +86,9 @@
                   </msItem>
                   <msItem xml:id="MS_Marsh_483-item4" n="4">
                      <locus from="158" to="161">ff. 158v-161r</locus>
-                     <author>Ibn Muʻallá al-Ṣaʻīdī, Majd al-Dīn Ismāʻīl ibn ʻAlī ibn Ḥasan,<date calendar="#Gregorian" when="1425">b. 1425</date>
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc">Ibn Muʻallá al-Ṣaʻīdī, Majd al-Dīn Ismāʻīl ibn ʻAlī ibn Ḥasan,<date calendar="#Gregorian" when="1425">b. 1425</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Laith al-ʻābis fī ṣadamāt al-majālis fī uṣūl al-fiqh</title>
                      <note>Composed 1466</note>
@@ -226,11 +234,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4643">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,11 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_Ouseley_192-item1">
-                     <author key="n85079336" ref="http://viaf.org/viaf/15161227/">Khāqānī, Afz̤al al-Dīn Shirvānī, ca. 1126-1198 or 9خاقانی، افضل الدين ابراهيم بن على نجار شروانى</author>
+                     <author key="n85079336" ref="http://viaf.org/viaf/15161227/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Khāqānī, Afz̤al al-Dīn Shirvānī, ca. 1126-1198 or 9</persName>
+                        
+                        <persName xml:lang="fa">خاقانی، افضل الدين ابراهيم بن على نجار شروانى</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Dīvān-i Khāqānī</title>
                      <title xml:lang="fa">ديوان خاقانی</title>
                      <listBibl>
@@ -164,7 +168,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-06-11">

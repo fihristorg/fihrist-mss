@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7276">
    <teiHeader>
       <fileDesc>
@@ -42,10 +42,14 @@
                </msIdentifier>
                <msContents>
                   <summary>
-                     <title type="main"/>
+                     
                   </summary>
                   <msItem xml:id="Persian_MS_771-item1">
-                     <author ref="http://viaf.org/viaf/45890612" key="n89118275">Naʻmat Khān-i-ʻĀlī, -approximately 1710Ni‘mat Khān ‘Alīنعمت خان علی</author>
+                     <author ref="http://viaf.org/viaf/45890612" key="n89118275">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Naʻmat Khān-i-ʻĀlī, -approximately 1710</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Ni‘mat Khān ‘Alī</persName>
+                        <persName xml:lang="fa">نعمت خان علی</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Jangnāmah-’i ‘Alī</title>
                      <title xml:lang="fa">جنگنامۀ علی</title>
                      
@@ -53,8 +57,8 @@
                      
                      <title xml:lang="fa" type="alt">جنگنامۀ نعمت خان علی</title>
                      
-                     
-                     
+                     <incipit xml:lang="ar" type="basmalla"/>
+                     <explicit xml:lang="ar"/>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
@@ -62,8 +66,8 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
@@ -132,7 +136,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015">

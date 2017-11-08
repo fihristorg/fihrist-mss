@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1641">
    <teiHeader>
       <fileDesc>
@@ -55,7 +55,9 @@
                   </msItem>
                   <msItem xml:id="MS_Rawlinson_Or_12-item2" n="2">
                      <locus from="24" to="33">ff. 24v-33v</locus>
-                     <author>ʻAbd Allāh ibn Salām<date calendar="#Gregorian" when="0663">d. 663</date>
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc">ʻAbd Allāh ibn Salām<date calendar="#Gregorian" when="0663">d. 663</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Masāʼil</title>
                      <note>Questions put to<persName key="n 79130881" ref="http://viaf.org/viaf/97245226/">Muḥammad, Prophet,<date calendar="#Gregorian" when="0632">d. 632</date>
@@ -183,11 +185,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

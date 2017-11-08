@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5476">
    <teiHeader>
       <fileDesc>
@@ -47,7 +47,12 @@
                           n="1"
                           class="http://lccn.loc.gov/sh85100085 http://lccn.loc.gov/sh88000934">
                      <locus from="1v" to="29r">ff 1v-29r</locus>
-                     <author>Various authors
+                     <author>
+                        
+                        
+                        <persName xml:lang="en" type="desc">Various authors</persName>
+                        
+                        
                         
                         
                         
@@ -56,8 +61,8 @@
                      <title xml:lang="fa">مقامت</title>
                      
                      
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>Ilāhīs, or religious lyrics, by various authors</note>
                      <note type="text-relations">In Turkish but for bayts and rubāʻīs on<locus n="21r">f 21r</locus>, which are Persian and in two cases attributed to<persName xml:lang="fa-Latn-x-lc"
                                   type="standard"
@@ -148,7 +153,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-10-24">

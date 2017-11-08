@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6074">
    <teiHeader>
       <fileDesc>
@@ -43,7 +43,13 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh2008112367">
                   <msItem xml:id="Or_6311-item1">
-                     <author ref="http://viaf.org/viaf/68058549" key="n89137149">Jamālī, 1413 or 14-1474 or 5Jamālī-’i Ardistānī, d. 879/1474-5جمالی اردستانىجمالى
+                     <author ref="http://viaf.org/viaf/68058549" key="n89137149">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Jamālī, 1413 or 14-1474 or 5</persName>
+                        
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Jamālī-’i Ardistānī, d. 879/1474-5</persName>
+                        <persName xml:lang="fa" type="alt">جمالی اردستانى</persName>
+                        <persName xml:lang="fa">جمالى</persName>
+                        
                         
                         
                         
@@ -54,9 +60,11 @@
                      
                      
                      <note>A mystical life of the Prophet in mixed prose and verse</note>
-                     
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
+                     <note>
+                        <foreign xml:lang="fa"/>
+                     </note>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 4.</bibl>
                      </listBibl>
@@ -70,7 +78,7 @@
                               <height>20</height>
                               <width>11.2</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -114,7 +122,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-03-14">

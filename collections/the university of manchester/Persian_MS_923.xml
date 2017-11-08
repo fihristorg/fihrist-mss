@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7435">
    <teiHeader>
       <fileDesc>
@@ -44,18 +44,23 @@
                   <summary>The 3rd volume, containing the history of the reign of<persName ref="http://viaf.org/viaf/38320916/" key="n 84143316">Jahangir, Emperor of Hindustan, 1569-1627</persName>
                   </summary>
                   <msItem xml:id="Persian_MS_923-item1">
-                     <author key="n88648363" ref="http://viaf.org/viaf/71827117/">Mu’tamad Khān, Muhammad Sharif, d. 1639 or 40معتمد خان، محمد شريف
+                     <author key="n88648363" ref="http://viaf.org/viaf/71827117/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Mu’tamad Khān, Muhammad Sharif, d. 1639 or 40</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">معتمد خان، محمد شريف
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Iqbālnāmah</title>
                      <title xml:lang="fa-Latn-x-lc" type="alt">Iqbālnāmah-i Jahāngīrī</title>
                      <title xml:lang="fa">اقبالنامه</title>
                      <title xml:lang="fa" type="alt">اقبالنامه جهانگیری</title>
                      
-                     
-                     
+                     <incipit xml:lang="ar" type="basmalla"/>
+                     <explicit xml:lang="ar"/>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
@@ -63,8 +68,8 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
@@ -126,7 +131,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015"/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_2846">
    <teiHeader>
       <fileDesc>
@@ -44,8 +44,16 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="RAS_Persian_289-item1">
-                     <author>Saḥāb Iṣfahānī, Muḥammad ibn Aḥmad Hātifسحاب اصفهانی، محمد بن احمد هاتف</author>
-                     <author ref="http://viaf.org/viaf/264037871/" key="no2012122382">Ṣabā, Fatḥ ʻAlī ibn Muḥammad, -1822 or 1823صبا، فتح علي بن محمد</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Saḥāb Iṣfahānī, Muḥammad ibn Aḥmad Hātif</persName>
+                        <persName xml:lang="fa">سحاب اصفهانی، محمد بن احمد هاتف</persName>
+                     </author>
+                     <author ref="http://viaf.org/viaf/264037871/" key="no2012122382">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Ṣabā, Fatḥ ʻAlī ibn Muḥammad, -1822 or 1823</persName>
+                        
+                        <persName xml:lang="fa">صبا، فتح علي بن محمد</persName>
+                        
+                     </author>
                      <title xml:lang="en">A collection of poems mostly by Sahab, but beginning with two qasidahs by Fath 'Ali Khan Kashi, known as Saba.</title>
                      <note>F1a: Copied as by the present Poet Laureate Fath Alee Khan Kaushee 1804 Charles Pasley Front flyleaf, recto, in pencil: Donated by Sir Charles Malcolm. Penultimate flyleaf, verso: Presented to the Royal Asiatic Socy by Sir Charles Malcolm Inside back cover: armorial bookplate of Charles Pasley. Ruled margins and dividing panels. Headings in red. Panel of illumination over beginning of text. The last part of the manuscript contains the story of Shaikh San'an and the Christian maiden from the Mantiq al-Tair of 'Attar.</note>
                      <incipit>Chira ghamgin nabashad dil chira khurram nagrdad jan</incipit>
@@ -117,7 +125,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-05-30">

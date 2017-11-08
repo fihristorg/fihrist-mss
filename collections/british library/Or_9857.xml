@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6544">
    <teiHeader>
       <fileDesc>
@@ -62,7 +62,12 @@
                   </msItem>
                   <msItem xml:id="Or_9857-item2" n="2" class="http://lccn.loc.gov/sh85100084">
                      <locus from="6v" to="96v">6v-96v ff</locus>
-                     <author>MushtāqمشتاقMīr Sayyīd ‘Alī, floruit AH 1170میر سید علی</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Mushtāq</persName>
+                        <persName xml:lang="fa">مشتاق</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Mīr Sayyīd ‘Alī, floruit AH 1170</persName>
+                        <persName xml:lang="fa" type="alt">میر سید علی</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Dīvān</title>
                      <title xml:lang="fa">دیوان</title>
                      <listBibl>
@@ -72,7 +77,10 @@
                   </msItem>
                   <msItem xml:id="Or_9857-item3" n="3" class="http://lccn.loc.gov/sh85100084">
                      <locus from="96v" to="127r">96v-127r ff</locus>
-                     <author>Muẓaffar ‘Alīمظفر علی</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Muẓaffar ‘Alī</persName>
+                        <persName xml:lang="fa">مظفر علی</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Mas̲navīs and murāsalāt</title>
                      <title xml:lang="fa">مراسلات و مثنویها</title>
                      <listBibl>
@@ -82,7 +90,10 @@
                   </msItem>
                   <msItem xml:id="Or_9857-item4" n="4" class="http://lccn.loc.gov/sh85100084">
                      <locus from="129v" to="136v">129v-136v ff</locus>
-                     <author>Rāzī-i Shīrāzīرازی شیرازی</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Rāzī-i Shīrāzī</persName>
+                        <persName xml:lang="fa">رازی شیرازی</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc" type="desc">Extracts from the Dīvān of Rāzī-i Shīrāzī</title>
                      <listBibl>
                         <bibl>For a more detailed description see Glyn Meredith-Owens: Handlist of Persian Manuscripts, 1895-1966. [London]: Trustees of the British Museum, 1968, p.82.</bibl>
@@ -93,7 +104,10 @@
                           n="5"
                           class="http://lccn.loc.gov/sh85100084 http://lccn.loc.gov/sh85109764">
                      <locus from="136v" to="155r">136v-155r ff</locus>
-                     <author ref="http://viaf.org/viaf/101819933" key="n79105787">‘Umar Khayyāmعمر خیام</author>
+                     <author ref="http://viaf.org/viaf/101819933" key="n79105787">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">‘Umar Khayyām</persName>
+                        <persName xml:lang="fa">عمر خیام</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Rubā‘iyāt</title>
                      <title xml:lang="fa">رباعیات</title>
                      <listBibl>
@@ -184,7 +198,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-06-20">

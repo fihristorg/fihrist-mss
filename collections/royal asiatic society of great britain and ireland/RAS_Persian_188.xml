@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_2729">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,9 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="RAS_Persian_188-item1">
-                     <author key="n 82136884" ref="http://www.viaf.org/viaf/12392936/">Ṭūsī, Naṣīr al-Dīn Muḥammad ibn Muḥammad,<date calendar="#Gregorian" from="1201" to="1274">1201-1274</date>
+                     <author key="n 82136884" ref="http://www.viaf.org/viaf/12392936/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ṭūsī, Naṣīr al-Dīn Muḥammad ibn Muḥammad,<date calendar="#Gregorian" from="1201" to="1274">1201-1274</date>
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Akhlāq-i Nāṣirī</title>
                      <title xml:lang="fa">اخلاق ناصری</title>
@@ -121,7 +123,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-05-30">

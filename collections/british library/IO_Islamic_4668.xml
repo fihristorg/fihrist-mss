@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3335">
    <teiHeader>
       <fileDesc>
@@ -43,18 +43,23 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="IO_Islamic_4668-item1">
-                     <author>Rūḥ al-Amīn, d. 1047/1637‏روح الامين
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Rūḥ al-Amīn, d. 1047/1637</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">‏روح الامين
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Maktūbāt</title>
                      
                      <title xml:lang="ar">مکتوبات</title>
                      
                      
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>A letter copied by<persName xml:lang="fa-Latn-x-lc" type="supplied">Ghulām Muḥammad,<foreign xml:lang="fa">غلام محمد</foreign>
                         </persName>
                      </note>
@@ -71,7 +76,7 @@
                               <height>29</height>
                               <width>20</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -124,7 +129,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-11-30">

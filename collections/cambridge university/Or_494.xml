@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_2325">
    <teiHeader>
       <fileDesc>
@@ -45,44 +45,61 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="Or_494-item1" n="1" class="#commentary">
                      <locus from="1" to="36">ff. 1-36</locus>
-                     <author key="n84011667" ref="http://viaf.org/viaf/19913773/">Ṣadr al-Dīn al-Qūnawī, Muḥammad ibn Isḥāq, d. 1273 or 4صدر الدين القونوي
+                     <author key="n84011667" ref="http://viaf.org/viaf/19913773/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ṣadr al-Dīn al-Qūnawī, Muḥammad ibn Isḥāq, d. 1273 or 4</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">صدر الدين القونوي
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Maṭlaʻ khuṣūṣ al-kalam fī maʻānī fuṣūṣ al-ḥikām</title>
                      
                      <title xml:lang="ar">مطلع خصوص الكلم في معاني فصوص الحكم</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne1922/view.php?id=123">no. 1205</ref>
                         </bibl>
                         <bibl type="text-relations">Commentary on the<title xml:lang="ar-Latn-x-lc">Fuṣūṣ al-ḥikam<foreign xml:lang="ar">فصوص الحكم</foreign>
-                           </title>of<author key="n50082069" ref="http://viaf.org/viaf/95223177/">Ibn al-ʻArabī, 1165-1240ابن العربي</author>
+                           </title>of<author key="n50082069" ref="http://viaf.org/viaf/95223177/">
+                              <persName xml:lang="ar-Latn-x-lc">Ibn al-ʻArabī, 1165-1240</persName>
+                              <persName xml:lang="ar">ابن العربي</persName>
+                           </author>
                         </bibl>
                      </listBibl>
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="Or_494-item2" n="2">
                      <locus from="38" to="105">ff. 38-105</locus>
-                     <author key="n84011667" ref="http://viaf.org/viaf/19913773/">Ṣadr al-Dīn al-Qūnawī, Muḥammad ibn Isḥāq, d. 1273 or 4صدر الدين القونوي
+                     <author key="n84011667" ref="http://viaf.org/viaf/19913773/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ṣadr al-Dīn al-Qūnawī, Muḥammad ibn Isḥāq, d. 1273 or 4</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">صدر الدين القونوي
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Miftāḥ al-ghayb</title>
                      
                      <title xml:lang="ar">مفتاح الغيب</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne1922/view.php?id=125">no. 1225</ref>
@@ -95,13 +112,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -176,7 +193,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-12-05">

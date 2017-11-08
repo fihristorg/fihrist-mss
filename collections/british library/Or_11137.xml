@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5294">
    <teiHeader>
       <fileDesc>
@@ -46,18 +46,23 @@
                           n="1"
                           class="http://lccn.loc.gov/sh2011003391">
                      <locus from="1r" to="19b">ff 1r-19b</locus>
-                     <author key="n82136884" ref="http://viaf.org/viaf/12392936">Naṣīr al-Dīn Muḥammad ibn Muḥammad Ṭūsī’نصیر الدین محمد ابن محمد الطوسی
+                     <author key="n82136884" ref="http://viaf.org/viaf/12392936">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Naṣīr al-Dīn Muḥammad ibn Muḥammad Ṭūsī’</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">نصیر الدین محمد ابن محمد الطوسی
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Sī Faṣl</title>
                      
                      <title xml:lang="fa">سی فصل</title>
                      
                      <title xml:lang="en" type="desc">An abridgement of the Sī Faṣl</title>
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <listBibl>
                         <bibl>Meredith-Owens 1968, page 26.</bibl>
                      </listBibl>
@@ -67,18 +72,24 @@
                           n="2"
                           class="http://lccn.loc.gov/sh2011003391">
                      <locus from="20r" to="58v">ff 20r-58v</locus>
-                     <author>Anonymous
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Anonymous</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      
                      
                      
                      
                      <title xml:lang="en" type="desc">Anonymous commentary on the Sī Faṣl of Naṣīr al-Dīn Ṭūsī</title>
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <listBibl>
                         <bibl>Meredith-Owens 1968, page 26.</bibl>
                      </listBibl>
@@ -92,7 +103,7 @@
                               <height>28.7</height>
                               <width>20.5</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -143,7 +154,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-10-01">

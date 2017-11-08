@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1099">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,9 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Marsh_370-item1" n="1">
                      <locus from="4" to="19">ff. 4v-19r</locus>
-                     <author key="nr 90009575" ref="http://viaf.org/viaf/41688382/">Qayṣarī, Dāwūd ibn Maḥmūd, d.<date calendar="#Gregorian" when="1351">1350 or 51</date>
+                     <author key="nr 90009575" ref="http://viaf.org/viaf/41688382/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Qayṣarī, Dāwūd ibn Maḥmūd, d.<date calendar="#Gregorian" when="1351">1350 or 51</date>
+                        </persName>
                      </author>
                      <title>Tract on the existence of God, his names and attributes</title>
                      <note>= Brock. no. 1<title xml:lang="ar-Latn-x-lc">Risālah fī al-taṣawwuf</title>?</note>
@@ -57,7 +59,9 @@
                   </msItem>
                   <msItem xml:id="MS_Marsh_370-item2" n="2">
                      <locus from="20" to="114">ff. 20r-114r</locus>
-                     <author>Farghānī, Shams al-Dīn</author>
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc">Farghānī, Shams al-Dīn</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Kashf al-mabānī mimmā iʻtaná bihi ahl al-maʻānī</title>
                      <note>Commentary on<title xml:lang="ar-Latn-x-lc">al-Ṭāʼīyah al-ṣughrá</title>of<persName type="standard"
                                   xml:lang="ar-Latn-x-lc"
@@ -189,11 +193,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

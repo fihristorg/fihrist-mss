@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5107">
    <teiHeader>
       <fileDesc>
@@ -47,7 +47,12 @@
                   <msItem xml:id="MS296-item1" class="#commentary">
                      <textLang mainLang="ar">Arabic</textLang>
                      <note type="content-genre">Islamic Law</note>
-                     <author key="no2007070298" ref="http://viaf.org/viaf/41620228">ʻIbrī, ʻUbayd Allāh ibn Muḥammad, -1342 or 1343al-Sayyid Burhān al-Dīn al-ʻIbrī al-Ḥusaynīالعبري، عبد الله بن محمد، ت. 743 هـالسيد برهان الدين العبري الحسيني</author>
+                     <author key="no2007070298" ref="http://viaf.org/viaf/41620228">
+                        <persName type="standard">ʻIbrī, ʻUbayd Allāh ibn Muḥammad, -1342 or 1343</persName>
+                        <persName xml:lang="ar-Latn-x-lc" type="alt">al-Sayyid Burhān al-Dīn al-ʻIbrī al-Ḥusaynī</persName>
+                        <persName xml:lang="ar">العبري، عبد الله بن محمد، ت. 743 هـ</persName>
+                        <persName xml:lang="ar" type="alt">السيد برهان الدين العبري الحسيني</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Kitāb Ghurar al-farāʼid wa-durar al-fawāʼid wa-zawāhir al-jawāhir al-marzīyah li-qalāʼid al-kharāʼid sharḥ Minhāj al-wuṣūl ilá ʻilm al-uṣūl</title>
                      
                      <title xml:lang="ar">كتاب غرر الفرائد ودرر الفوائد وزواهر الجواهر المرزية لقلائد الخرائد شرح منهاج الوصول إلى علم الأصول</title>
@@ -89,7 +94,7 @@
                      <layoutDesc>
                         <layout columns="1" ruledLines="33">
                            <p>Single column with 33 lines of text per page.</p>
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -209,7 +214,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2017-02-20">

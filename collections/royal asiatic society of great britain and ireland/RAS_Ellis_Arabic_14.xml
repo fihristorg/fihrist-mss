@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7550">
    <teiHeader>
       <fileDesc>
@@ -44,29 +44,35 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="RAS_Ellis_Arabic_14-item1">
-                     <author key="n94016657" ref="http://viaf.org/viaf/90039227/">Kibrīt, Muḥammad ibn ʻAbd Allāh, 1603 or 4-1659 or 60كبريت، محمد بن عبد الله
+                     <author key="n94016657" ref="http://viaf.org/viaf/90039227/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Kibrīt, Muḥammad ibn ʻAbd Allāh, 1603 or 4-1659 or 60</persName>
                         
-                        
-                        
+                        <persName xml:lang="ar">كبريت، محمد بن عبد الله
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Jawāhir al-thamīnah fī maḥāsin al-Madīnah</title>
                      <title xml:lang="ar">الجواهر الثمينة في محاسن المدينة</title>
                      <incipit xml:lang="ar">بسم الله الرحمن الرحيم ورحمة ربك خير مما يجمعون الحمد لله الذي حبب الينا المدينة وجعلها من افضل البقاع الامينة</incipit>
                      <explicit xml:lang="ar" defective="true">والحمد لله الذي بامره جرى القلم على منوال ما اقتضته الحكم وسلام على عباده الذين اصطفى وحسبنا الله وكفى</explicit>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>124 p.
-                           
+                        <extent>124 p.<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -117,7 +123,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-02-04">

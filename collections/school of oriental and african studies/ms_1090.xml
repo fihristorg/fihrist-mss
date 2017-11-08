@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7939">
    <teiHeader>
       <fileDesc>
@@ -44,27 +44,34 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_1090-item1">
-                     <author>Dāī, Beşiktaşlıدعي، بشكطاشلي</author>
+                     <author>
+                        <persName xml:lang="ota-Latn-x-lc" type="standard">Dāī, Beşiktaşlı</persName>
+                        
+                        
+                        <persName xml:lang="ota" type="alt">دعي، بشكطاشلي</persName>
+                     </author>
                      <title xml:lang="ota-Latn-x-lc">Kitabı hazreti Yahyayı Beşiktaşı Sultan Sülemanın rızaan karındaşı</title>
                      <title xml:lang="ota">كتاب حضرت يحيای بشکطاشی سلطان سلیمانک ریضاعا قرنداشي</title>
                      
                      
                      <note>A rhymed life of Yahya bin Ömer el-Arabi, also known as Beşiktaşlı Şeyh Yahya Efendi and Molla Şeyhzade, foster-brother of Sultan Sulaiman the Magnificent</note>
                      <incipit>بسم الله الرحمن الرحيم كاشف اسرار خدای کریم</incipit>
-                     
+                     <note>
+                        <foreign xml:lang="fa"/>
+                     </note>
                      <textLang mainLang="ota">Turkish</textLang>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>61 f.
-                           
+                        <extent>61 f.<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -112,7 +119,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-01-09">

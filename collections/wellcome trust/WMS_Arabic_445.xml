@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7784">
    <teiHeader>
       <fileDesc>
@@ -108,9 +108,14 @@
                              class="sh85083064">
                         <textLang mainLang="ara-Arab"/>
                         <title type="normalised" xml:lang="ara-Latn">Šarḥ Mūǧiz al-Qānūn.</title>
-                        <author>Burhān ad-Dīn Nafīs b. `Iwāḍ al-Kirmānīبرهان الدّين نفيس بن عوض الكرماني<forename>نفيس بن عوض</forename>
-                           <addName type="khitab">برهان الدّين</addName>
-                           <addName type="nisbah">الكرماني</addName>
+                        <author>
+                           <persName xml:lang="eng-Latn" type="standard">Burhān ad-Dīn Nafīs b. `Iwāḍ al-Kirmānī</persName>
+                           <persName xml:lang="ara-Arab" type="original">برهان الدّين نفيس بن عوض الكرماني</persName>
+                           <persName type="standard" xml:lang="ara-Arab">
+                              <forename>نفيس بن عوض</forename>
+                              <addName type="khitab">برهان الدّين</addName>
+                              <addName type="nisbah">الكرماني</addName>
+                           </persName>
                         </author>
                         <incipit facs="#i0001">
                            <locus>Fol.1a.1</locus>هذه خطبة الكتابتوجهنا الى جانبك الاقدس يا من اليه ترجع الامور وتعرضنا بشمم لطفك المقدس يا من لديه دواء جراحات الحدور وسبحانه من حفظ حمانا عما ڻصڀ المحموڻڻ من التعب في درك الشفا وياله من حكيم انزل علينا في كتابه المحكم ما هو للذين آمنوا هداه شفاء والصلوة والسلام على النبى القرشى الذى لين بكلامه الموافعه المواد الفاسد في القلوب القاسيه وبين اسباب علاماته ڻعاصر الامراض الساريه لحفظ صحة<gap reason="omitted"/>
@@ -1790,7 +1795,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-04-01T16:21:18+01:00">Conversion from WMSmaster to WAMCP<persName>gbrey</persName>

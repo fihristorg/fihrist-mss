@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3374">
    <teiHeader>
       <fileDesc>
@@ -44,18 +44,23 @@
                <msContents>
                   <msItem xml:id="IO_Islamic_4710-item1"
                           class="http://lccn.loc.gov/sh2010102320 http://lccn.loc.gov/sh2010102321">
-                     <author key="n80145329" ref="http://viaf.org/viaf/9886449/">Rashīd al-Dīn Ṭabīb, 1247?-1318رشيد الدين فضل الله بن عماد الدولة
+                     <author key="n80145329" ref="http://viaf.org/viaf/9886449/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Rashīd al-Dīn Ṭabīb, 1247?-1318</persName>
                         
                         
-                        <addName xml:lang="fa" type="nisbah">همذاني</addName>
+                        <persName xml:lang="fa">رشيد الدين فضل الله بن عماد الدولة
+                           
+                           
+                           <addName xml:lang="fa" type="nisbah">همذاني</addName>
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Jamīʻ al-tavārīkh</title>
                      
                      <title xml:lang="fa">جميع التواريخ</title>
                      
                      
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>The third section of the history of<persName type="standard"
                                   xml:lang="per-Latn-x-l"
                                   ref="http://viaf.org/viaf/14641452/"
@@ -74,7 +79,7 @@
                               <height>20</height>
                               <width>13</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -121,7 +126,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-12-07">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7757">
    <teiHeader>
       <fileDesc>
@@ -42,7 +42,7 @@
                         </foliation>
                         <collation>
                            <seg type="gathering" n="19x(5)" subtype="folded">
-                              
+                              <dimensions type="leaf" unit="mm" quantity="19"/>
                               <formula>01+190+001</formula>
                            </seg>
                         </collation>
@@ -138,8 +138,13 @@
                         <title type="original" facs="#i0004">كلمات حررتها اثنآء المذاكرة على الحاشية اللآرية في الحكمة<locus>fol.1b.4</locus>
                         </title>
                         <author>
-                           <forename facs="#i0004">محمد</forename>
-                           <addName type="nisbah" facs="#i0004">الكفوى</addName>Muḥammd Al-kafawī Ibn hamīdمحمد الكفوى ابن الحاج حميد</author>
+                           <persName type="standard" xml:lang="ara-Arab">
+                              <forename facs="#i0004">محمد</forename>
+                              <addName type="nisbah" facs="#i0004">الكفوى</addName>
+                           </persName>
+                           <persName type="standard" xml:lang="eng-Latn">Muḥammd Al-kafawī Ibn hamīd</persName>
+                           <persName type="original" xml:lang="ara-Arab" facs="#i0004">محمد الكفوى ابن الحاج حميد</persName>
+                        </author>
                         <textLang mainLang="ara-Arab"/>
                         <incipit type="basmala" facs="#i0004">
                            <locus>fol.1b.1</locus>بسم الله الرحمن الرحيم</incipit>
@@ -171,7 +176,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-04-06T12:46:24+02:00">Committed to SVN. To view the changes in detail use SVN diff. SVN Url:http://wellcomesvn.local.bibalex.dom/svn/WellcomeTrust/trunk/WAMCPMetaGallery/XML/WMS_Arabic_292/WMS_Arabic_292.xml<persName>eralph</persName>

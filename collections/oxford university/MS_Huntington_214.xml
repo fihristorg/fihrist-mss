@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_978">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,9 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Huntington_214-item1" n="1" class="#abridgement">
                      <locus from="1" to="34">ff. 1v-34r</locus>
-                     <author key="n 84020660" ref="http://viaf.org/viaf/84026875/">Khuwārizmī, Muḥammad ibn Mūsá,<date calendar="#Gregorian" from="0813" to="0846">fl. 813-846</date>
+                     <author key="n 84020660" ref="http://viaf.org/viaf/84026875/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Khuwārizmī, Muḥammad ibn Mūsá,<date calendar="#Gregorian" from="0813" to="0846">fl. 813-846</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Mukhtaṣar min ḥisāb al-jabr wa-al-muqābalah*</title>
                      <note>*This title, used by Rosen in his edn. of 1831 from this unique MS., does not occur in the MS., which has simply Kitāb al-Khwārizmī [A. F. L. B.]</note>
@@ -57,7 +59,9 @@
                   </msItem>
                   <msItem xml:id="MS_Huntington_214-item2" n="2">
                      <locus from="34" to="52">ff. 34r-52v</locus>
-                     <author>Muztaḥfī, Jamāl al-Dīn Abū ʻAbd Allāh Muḥammad ibn Aḥmad ibn ʻUmar, al-Ḥarrāʻī*</author>
+                     <author>
+                        <persName>Muztaḥfī, Jamāl al-Dīn Abū ʻAbd Allāh Muḥammad ibn Aḥmad ibn ʻUmar, al-Ḥarrāʻī*</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Muqaddimah fī al-ḥisāb</title>
                      <note>*Beeston conjectures Khuzāʻī</note>
                      <note>f. 34r contains a fāʼidah on al-bidaʻ</note>
@@ -80,7 +84,9 @@
                   </msItem>
                   <msItem xml:id="MS_Huntington_214-item4" n="4">
                      <locus from="76" to="86">ff. 76v-86v</locus>
-                     <author>Faraḍī, Abū ʻAbd Allāh Ḥusayn ibn Aḥmad, al-Shaqqāq<date calendar="#Gregorian" when="1083">d. 1083</date>
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc">Faraḍī, Abū ʻAbd Allāh Ḥusayn ibn Aḥmad, al-Shaqqāq<date calendar="#Gregorian" when="1083">d. 1083</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Muqaddimah al-kāfiyah fī uṣūl al-jabr wa-al-muqābalah</title>
                      <note>Identification of author is Beestonʼs : MS. has only Abū... Aḥmad</note>
@@ -211,11 +217,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

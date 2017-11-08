@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8306">
    <teiHeader>
       <fileDesc>
@@ -41,7 +41,12 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_380553-item1">
-                     <author key="nr 91018940‏‏" ref="http://viaf.org/viaf/58936011/">ʻAzab, Muḥammad ibn MuḥammadʻAzab, Muḥammad al-MadanīMuḥammad al-ʻAzabīعزب، محمد بن محمد</author>
+                     <author key="nr 91018940‏‏" ref="http://viaf.org/viaf/58936011/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">ʻAzab, Muḥammad ibn Muḥammad</persName>
+                        <persName xml:lang="ar-Latn-x-lc" type="alt">ʻAzab, Muḥammad al-Madanī</persName>
+                        <persName xml:lang="ar-Latn-x-lc" type="alt">Muḥammad al-ʻAzabī</persName>
+                        <persName xml:lang="ar">عزب، محمد بن محمد</persName>
+                     </author>
                      <editor role="translator">
                         <persName type="supplied" xml:lang="ar-Latn-x-lc">Muhammad bin Othman</persName>
                         <persName type="alt" xml:lang="ar-Latn-x-lc">Muḥammad ibn ʿUthmān</persName>
@@ -62,13 +67,13 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>37 f.
-                           
+                        <extent>37 f.<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -121,7 +126,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2017-08-29">

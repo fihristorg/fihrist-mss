@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6251">
    <teiHeader>
       <fileDesc>
@@ -45,10 +45,15 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="Or_7577-item1" n="1" class="http://lccn.loc.gov/sh85063200">
                      <locus from="2v" to="64v">ff 2v-64v</locus>
-                     <author>Darvish ‘Alī Jāvīdīدروش علی جاویدی
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Darvish ‘Alī Jāvīdī</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">دروش علی جاویدی
+                           
+                           
+                           
+                        </persName>
                      </author>
                      
                      
@@ -56,8 +61,8 @@
                      
                      <title xml:lang="en" type="desc">A commentary on part of the Qur’ān in Persian</title>
                      <note>Incomplete</note>
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <bibl>
                         <ref target="Meredith-Owens_1968" type="page">Meredith-Owens 1968, page 11.</ref>
                      </bibl>
@@ -65,18 +70,25 @@
                   </msItem>
                   <msItem xml:id="Or_7577-item2" n="2" class="http://lccn.loc.gov/sh85063200">
                      <locus from="65v" to="140v">ff 65v-140v</locus>
-                     <author>Unknown
+                     <author>
+                        <persName xml:lang="en" type="desc">Unknown</persName>
                         
                         
                         
+                        <persName xml:lang="fa">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      
                      
                      
                      
                      <title xml:lang="en" type="desc">A Persian tract</title>
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <bibl>
                         <ref target="Meredith-Owens_1968" type="page">Meredith-Owens 1968, page 11.</ref>
                      </bibl>
@@ -84,18 +96,25 @@
                   </msItem>
                   <msItem xml:id="Or_7577-item3" n="3" class="http://lccn.loc.gov/sh85063200">
                      <locus from="159r" to="174r">ff 159r-174r</locus>
-                     <author>Unknown
+                     <author>
+                        <persName xml:lang="en" type="desc">Unknown</persName>
                         
                         
                         
+                        <persName xml:lang="fa">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      
                      
                      
                      
                      <title xml:lang="en" type="desc">An untitled tract</title>
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <bibl>
                         <ref target="Meredith-Owens_1968" type="page">Meredith-Owens 1968, page 11.</ref>
                      </bibl>
@@ -103,18 +122,25 @@
                   </msItem>
                   <msItem xml:id="Or_7577-item4" n="4" class="http://lccn.loc.gov/sh85063200">
                      <locus from="175v" to="179v">ff 175v-179v</locus>
-                     <author>Unknown
+                     <author>
+                        <persName xml:lang="en" type="desc">Unknown</persName>
                         
                         
                         
+                        <persName xml:lang="fa">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      
                      
                      
                      
                      <title xml:lang="en" type="desc">An untitled Ḥurūfī tract</title>
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <bibl>
                         <ref target="Meredith-Owens_1968" type="page">Meredith-Owens 1968, page 11.</ref>
                      </bibl>
@@ -128,7 +154,7 @@
                               <height>14.5</height>
                               <width>10</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -189,7 +215,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-05-07">

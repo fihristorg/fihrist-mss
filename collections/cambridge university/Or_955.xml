@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_2550">
    <teiHeader>
       <fileDesc>
@@ -44,19 +44,26 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Or_955-item1" n="1">
-                     <author key="n91025972" ref="http://viaf.org/viaf/31853136/">Akhḍarī, ʻAbd al-Raḥmān ibn Muḥammad, 1512 or 13-1575 or 6ابو زيد عبد الرحمان بن محمد بن عامر الاخضري
+                     <author key="n91025972" ref="http://viaf.org/viaf/31853136/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Akhḍarī, ʻAbd al-Raḥmān ibn Muḥammad, 1512 or 13-1575 or 6</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">ابو زيد عبد الرحمان بن محمد بن عامر الاخضري
+                           
+                           
+                           
+                        </persName>
                      </author>
                      
                      
                      
                      
                      <title xml:lang="en" type="desc">A complete tract on Prayer, Purification, Fasting, Repentance and other religious duties.</title>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne1922/view.php?id=160">no. 1567</ref>
@@ -65,19 +72,26 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="Or_955-item2" n="2">
-                     <author key="n82235929" ref="http://viaf.org/viaf/90073502/">Ibn Abī Zayd al-Qayrawānī, ʻAbd Allāh ibn ʻAbd al-Raḥmān, 10th cent.محمد عبد الله بن أبي زيد القيرواني
+                     <author key="n82235929" ref="http://viaf.org/viaf/90073502/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn Abī Zayd al-Qayrawānī, ʻAbd Allāh ibn ʻAbd al-Raḥmān, 10th cent.</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">محمد عبد الله بن أبي زيد القيرواني
+                           
+                           
+                           
+                        </persName>
                      </author>
                      
                      
                      
                      
                      <title xml:lang="en" type="desc">An Arabic Qaṣīdah of 36 bayts</title>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne1922/view.php?id=160">no. 1567</ref>
@@ -86,19 +100,27 @@
                      <textLang mainLang="ar">Arabic with glosses in some non-Arabic African language</textLang>
                   </msItem>
                   <msItem xml:id="Or_955-item3" n="3">
-                     <author>anonymous
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">anonymous</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      
                      
                      
                      
                      <title xml:lang="en" type="desc">A long slip of paper of 45 x 17.4 c. and 21 ll. containing magical formulae and a magic square.</title>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne1922/view.php?id=160">no. 1567</ref>
@@ -111,13 +133,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -198,7 +220,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-02-22">

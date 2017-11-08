@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1822">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,9 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Thurston_9-item1" n="1">
                      <locus from="8" to="99">ff. 8-99</locus>
-                     <author key="n 82235929" ref="http://viaf.org/viaf/90073502/">Ibn Abī Zayd al-Qayrawānī, ʻAbd Allāh ibn ʻAbd al-Raḥmān,<date calendar="#Gregorian" notBefore="0900" notAfter="1000">10th cent.</date>
+                     <author key="n 82235929" ref="http://viaf.org/viaf/90073502/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ibn Abī Zayd al-Qayrawānī, ʻAbd Allāh ibn ʻAbd al-Raḥmān,<date calendar="#Gregorian" notBefore="0900" notAfter="1000">10th cent.</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Risālah</title>
                      <listBibl>
@@ -66,7 +68,9 @@
                   </msItem>
                   <msItem xml:id="MS_Thurston_9-item3" n="3">
                      <locus from="103" to="110">ff. 103v-110r</locus>
-                     <author>ʻAbd Allāh ibn Sinān</author>
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc">ʻAbd Allāh ibn Sinān</persName>
+                     </author>
                      <title>On Muḥammadʼs visions and his talks with Gabriel</title>
                      <listBibl>
                         <bibl>Appendix Theology</bibl>
@@ -86,7 +90,9 @@
                   </msItem>
                   <msItem xml:id="MS_Thurston_9-item5" n="5">
                      <locus from="122" to="131">ff. 122v-131v</locus>
-                     <author key="n 82047089" ref="http://www.viaf.org/viaf/90042754/">Būṣīrī, Sharaf al-Dīn Muḥammad ibn Saʻīd,<date calendar="#Gregorian" from="1213" to="1296">1213?-1296</date>?</author>
+                     <author key="n 82047089" ref="http://www.viaf.org/viaf/90042754/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Būṣīrī, Sharaf al-Dīn Muḥammad ibn Saʻīd,<date calendar="#Gregorian" from="1213" to="1296">1213?-1296</date>?</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Qaṣīdat al-Burdah</title>
                      <listBibl>
                         <bibl>GAL I 264</bibl>
@@ -96,7 +102,9 @@
                   </msItem>
                   <msItem xml:id="MS_Thurston_9-item6" n="6">
                      <locus from="132" to="140">ff. 132v-140v</locus>
-                     <author key="n 84016675" ref="http://viaf.org/viaf/90044487/">Sanūsī, Muḥammad ibn Yūsuf,<date calendar="#Gregorian" from="1427" to="1490">ca. 1427-ca. 1490</date>
+                     <author key="n 84016675" ref="http://viaf.org/viaf/90044487/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Sanūsī, Muḥammad ibn Yūsuf,<date calendar="#Gregorian" from="1427" to="1490">ca. 1427-ca. 1490</date>
+                        </persName>
                      </author>
                      <title xml:lang="la">“Libellus de Deo, ejus unitate et potentia”</title>
                      <listBibl>
@@ -107,7 +115,9 @@
                   </msItem>
                   <msItem xml:id="MS_Thurston_9-item7" n="7">
                      <locus from="142" to="151">ff. 142r-151r</locus>
-                     <author key="n 82099509" ref="http://www.viaf.org/viaf/69100526/">Ibn Ājurrūm, Muḥammad ibn Muḥammad,<date calendar="#Gregorian" from="1273" to="1323">1273 or 4-1323</date>
+                     <author key="n 82099509" ref="http://www.viaf.org/viaf/69100526/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ibn Ājurrūm, Muḥammad ibn Muḥammad,<date calendar="#Gregorian" from="1273" to="1323">1273 or 4-1323</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Muqaddimah al-Ājurrūmīyah</title>
                      <listBibl>
@@ -267,11 +277,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

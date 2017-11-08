@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6386">
    <teiHeader>
       <fileDesc>
@@ -43,10 +43,15 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85072982">
                   <msItem xml:id="Or_8389-item1">
-                     <author>Muḥammad ibn Ṭaifūr al-Sajāvandīمحمد بن طیفور السجاوندی
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Muḥammad ibn Ṭaifūr al-Sajāvandī</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">محمد بن طیفور السجاوندی
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Vuqūf</title>
                      
@@ -54,9 +59,11 @@
                      
                      
                      <note>A treatise on the pauses to be observed in reading the Qur’ān</note>
-                     
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
+                     <note>
+                        <foreign xml:lang="fa"/>
+                     </note>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 1.</bibl>
                      </listBibl>
@@ -70,7 +77,7 @@
                               <height>23.4</height>
                               <width>16</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -117,7 +124,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-02-28">

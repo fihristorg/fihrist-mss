@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1619">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,9 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_Pococke_73-item1">
-                     <author key="n 82270593" ref="http://www.viaf.org/viaf/54439868/">Ibn al-Athīr, ʻIzz al-Dīn,<date calendar="#Gregorian" from="1160" to="1233">1160-1233</date>
+                     <author key="n 82270593" ref="http://www.viaf.org/viaf/54439868/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ibn al-Athīr, ʻIzz al-Dīn,<date calendar="#Gregorian" from="1160" to="1233">1160-1233</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Kāmil fī al-taʼrīkh</title>
                      <note>Vol. 8 only [A. H.<date calendar="#Hijri-qamari" from="0370" to="0455">370-455</date>]</note>
@@ -102,11 +104,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

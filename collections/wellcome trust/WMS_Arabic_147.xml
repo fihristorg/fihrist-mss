@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7723">
    <teiHeader>
       <fileDesc>
@@ -148,7 +148,12 @@
                      <msItem xml:id="WMS_Arabic_147-part1-item1">
                         <locus>fol.2a.15</locus>
                         <author>
-                           <forename facs="#i0008">خضر ابن علي ابن الخطاب</forename>Ḥāğğī Pāšā ẖiḏr b. `A. al-Āidīnī al-ẖaṭṭābخضر ابن علي ابن الخطاب</author>
+                           <persName type="standard" xml:lang="ara-Arab">
+                              <forename facs="#i0008">خضر ابن علي ابن الخطاب</forename>
+                           </persName>
+                           <persName type="standard" xml:lang="eng-Latn">Ḥāğğī Pāšā ẖiḏr b. `A. al-Āidīnī al-ẖaṭṭāb</persName>
+                           <persName type="original" xml:lang="ara-Arab" facs="#i0008">خضر ابن علي ابن الخطاب</persName>
+                        </author>
                         <title type="original" facs="#i0009">شفآء الاسقام ودوآء الآلام<locus>fol.2a.15</locus>
                         </title>
                         <title type="normalised" xml:lang="ara-Latn">šifā' al-asqām wadawā' al-ālām</title>
@@ -303,7 +308,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-01-07T13:56:01+02:00">Committed to SVN. To view the changes in detail use SVN diff. SVN Url:http://wellcomesvn.local.bibalex.dom/svn/WellcomeTrust/trunk/WAMCPMetaGallery/XML/WMS_Arabic_147/WMS_Arabic_147.xml<persName>gbrey</persName>

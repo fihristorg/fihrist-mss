@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7862">
    <teiHeader>
       <fileDesc>
@@ -51,7 +51,12 @@
                      <note type="content-genre">Jurisprudence</note>
                      <title xml:lang="ar-Latn-x-lc">Irshād al-aẕhān ilā aḥkām al-Īmān</title>
                      <title xml:lang="ar">ارشاد الاذهان الی احکام الایمان</title>
-                     <author key="n84166554" ref="http://viaf.org/viaf/32056992">Ibn al-Muṭahhar al-Ḥillī, al-Ḥasan ibn Yūsuf, 1250-1325Ḥillī, Jamāl al-Dīn Ḥasan ibn Sadīd al-Dīn Yūsuf ibn ʿAlī, 1250-1326ابن المطهر الحلي، الحسن ابن يوسف، ۱۳۲۵-۱۲۵۰حلی، علامه جمال‌الدین ابومنصور حسن بن سدیدالدین یوسف بن علی (۶۴۸-۷۲۶ ق / ۱۲۵۰-۱۳۲۶ م)<addName xml:lang="ar-Latn-x-lc" type="laqab">ʿAllāmah Ḥillī</addName>
+                     <author key="n84166554" ref="http://viaf.org/viaf/32056992">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn al-Muṭahhar al-Ḥillī, al-Ḥasan ibn Yūsuf, 1250-1325</persName>
+                        <persName xml:lang="ar-Latn-x-lc" type="alt">Ḥillī, Jamāl al-Dīn Ḥasan ibn Sadīd al-Dīn Yūsuf ibn ʿAlī, 1250-1326</persName>
+                        <persName xml:lang="ar" type="standard">ابن المطهر الحلي، الحسن ابن يوسف، ۱۳۲۵-۱۲۵۰</persName>
+                        <persName xml:lang="ar" type="alt">حلی، علامه جمال‌الدین ابومنصور حسن بن سدیدالدین یوسف بن علی (۶۴۸-۷۲۶ ق / ۱۲۵۰-۱۳۲۶ م)</persName>
+                        <addName xml:lang="ar-Latn-x-lc" type="laqab">ʿAllāmah Ḥillī</addName>
                         <addName xml:lang="ar" type="laqab">علامه حلّی</addName>
                         <addName xml:lang="ar-Latn-x-lc" type="kunyah">Abū Manṣūr</addName>
                         <addName xml:lang="ar" type="kunyah">ابو منصور</addName>
@@ -105,7 +110,7 @@
                      <layoutDesc>
                         <layout columns="1" ruledLines="14">
                            <note>14 lines per page.</note>
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -214,7 +219,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2017-05-24">

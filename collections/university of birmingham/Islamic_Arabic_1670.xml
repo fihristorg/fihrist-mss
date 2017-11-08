@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3776">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,16 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_1670-item1">
-                     <author key="n82220489" ref="http://viaf.org/viaf/19911704/">Ibn Hishām, ʿAbd Allāh ibn Yūsuf,<date calendar="#Gregorian" from="1309" to="1360">1309-1360</date>ابن هشام، عبد الله بن يوسف
+                     <author key="n82220489" ref="http://viaf.org/viaf/19911704/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn Hishām, ʿAbd Allāh ibn Yūsuf,<date calendar="#Gregorian" from="1309" to="1360">1309-1360</date>
+                        </persName>
                         
                         
-                        
+                        <persName xml:lang="ar">ابن هشام، عبد الله بن يوسف
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Qaṭr al-nadā wa-ball al-ṣadā</title>
                      
@@ -56,9 +62,11 @@
                      
                      <note>With the author's commentary.</note>
                      <note>End missing?</note>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="fa" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 1534</bibl>
                         <bibl>GAL II 23-25, no. 1; Suppl. II 16</bibl>
@@ -73,14 +81,14 @@
                               <height>23.2</height>
                               <width>16.0</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="13" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                            <note>13 lines per page</note>
                         </layout>
                      </layoutDesc>
@@ -138,7 +146,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-06-03">

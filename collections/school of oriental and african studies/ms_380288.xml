@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8276">
    <teiHeader>
       <fileDesc>
@@ -44,12 +44,18 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_380288-item1" n="1">
-                     <author key="no 92031382‏" ref="http://viaf.org/viaf/54536566/">Marwazī, Aḥmad ibn ʻAlī, 815-905Abū Bakr al-Marwazī, Aḥmad Ibn-ʿAlī 815-905مروزي، احمد بن علي</author>
+                     <author key="no 92031382‏" ref="http://viaf.org/viaf/54536566/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Marwazī, Aḥmad ibn ʻAlī, 815-905</persName>
+                        <persName xml:lang="ar-Latn-x-lc" type="alt">Abū Bakr al-Marwazī, Aḥmad Ibn-ʿAlī 815-905</persName>
+                        <persName xml:lang="ar">مروزي، احمد بن علي</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Kitāb al-waraʻʻan al-Imām</title>
                      <title xml:lang="ar">كتاب الورع عن الايمام</title>
                      <note>Extract from a book of piety, based on traditions.</note>
                      <incipit>سمعت ابا عبد الله احمد بن محمد بن حنبل رضى الله عنه وذكر اخلاق الورعين فقال اسال الله ان لا يمقتنا اين نحن من هولاء وسمعت ابا عبد الله وذكر ورع شعيب بن حرب فقال دقق فقال ليس لك ان يطين الحايط ... من خارج لئلا يخرج في الطريق</incipit>
-                     
+                     <note>
+                        <foreign xml:lang="fa"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://digital.info.soas.ac.uk/15594/#page/1/mode/2up/search/">view the printed catalogue&gt;Gacek no.384</ref>
@@ -58,7 +64,10 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="ms_380288-item2" n="2">
-                     <author key="n 85352687‏" ref="http://viaf.org/viaf/90060909/">Ibn Ḥanbal, Ṣāliḥ ibn Aḥmad 818 or 819-878ابن حنبل، صالح بن احمد</author>
+                     <author key="n 85352687‏" ref="http://viaf.org/viaf/90060909/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn Ḥanbal, Ṣāliḥ ibn Aḥmad 818 or 819-878</persName>
+                        <persName xml:lang="ar">ابن حنبل، صالح بن احمد</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Risālah fī al-Qurʼān</title>
                      <title xml:lang="ar">رسالة في القرآن</title>
                      
@@ -81,13 +90,13 @@
                         <extent>
                            <ref target="a1">1b-22a f.</ref>
                            <ref target="a2">89a-143a f.</ref>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -135,7 +144,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2016-11-28">

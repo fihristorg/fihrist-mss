@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1406">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,9 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_Pococke_169-item1">
-                     <author key="n 85155737" ref="http://viaf.org/viaf/22130286/">Ibn Ḥijjah al-Ḥamawī, Taqī al-Dīn Abū Bakr,<date calendar="#Gregorian" from="1366" to="1434">1366-1434</date>
+                     <author key="n 85155737" ref="http://viaf.org/viaf/22130286/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ibn Ḥijjah al-Ḥamawī, Taqī al-Dīn Abū Bakr,<date calendar="#Gregorian" from="1366" to="1434">1366-1434</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Badīʻīyah</title>
                      <note>With commentary [<title xml:lang="ar-Latn-x-lc">Taqdīm Abī Bakr</title>] by the author, part 4 only</note>
@@ -105,11 +107,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

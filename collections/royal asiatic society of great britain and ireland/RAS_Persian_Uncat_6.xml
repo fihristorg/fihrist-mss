@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_2961">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,9 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="RAS_Persian_Uncat_6-item1">
-                     <author key="n00048110" ref="http://viaf.org/viaf/31540986/">Yūsufī, Yūsuf ibn Muḥammad, 16th cent.</author>
+                     <author key="n00048110" ref="http://viaf.org/viaf/31540986/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Yūsufī, Yūsuf ibn Muḥammad, 16th cent.</persName>
+                     </author>
                      <title xml:lang="en">Collection of medical tracts of Yusufi, who was active in India under Babur and Humayun.</title>
                      <note>Contains, with reference to Storey's list of Yusufi's works. a) Sittah-i Daruriyyah. 6ff. Storey No 15. b) Qasidah dar Hifz-i Sihhat. 3ff. (Storey No 12). c) Nuskah dar Tadbir-i Ma'kul u Mashrub. In verse. 4ff. (Storey No 7). d) Qasidah dar Bayan-i Adwiyah. 2ff, On Arabic and Persian names for medicaments. (Storey No 8 cf. No 10). f) Jami' al-Fawa'id. 54ff. (Storey No 6). These items with the addition of the Fawa'id al-Akhyar (Storey No 4) and the Dala'il al-Nabd wa Dala'l al-Baul (Storey Nos 2 and 3) are listed with correct folio counts on the verso of the first page of b). Headings and punctuation etc in red, occasionally blue. Ruled margins.</note>
                      <incipit>Incipit of item a): Al-hamdu lillahi al-mun'im li-hayat al-nufus</incipit>
@@ -57,7 +59,7 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>Folios 70 or 71
+                        <extent>Folios 70 or 71<dimensions type="leaf" unit="in"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
@@ -111,7 +113,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-05-30">

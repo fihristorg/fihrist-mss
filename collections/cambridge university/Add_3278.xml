@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3147">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,16 @@
                <msContents>
                   <summary>A Commentary on the books of<title>Genesis</title>and<title>Exodus</title>attributed to a patriach of Alexandria.</summary>
                   <msItem xml:id="Add_3278-item1" n="1">
-                     <author>Anonymous
+                     <author>
+                        <persName xml:lang="en" type="anonymous">Anonymous</persName>
                         
                         
-                        
+                        <persName xml:lang="syr">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="en">Commentary of Genesis</title>
                      
@@ -55,8 +61,8 @@
                      
                      
                      <note>The text is divided into lessons</note>
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <colophon>
                         <locus from="350r" to="350r">f. 350r</locus>
                      </colophon>
@@ -68,18 +74,24 @@
                      <textLang mainLang="ar">Arabic- Karshūnī</textLang>
                   </msItem>
                   <msItem xml:id="Add_3278-item2" n="2">
-                     <author>Anonymous
+                     <author>
+                        <persName xml:lang="en" type="anonimus">Anonymous</persName>
                         
                         
-                        
+                        <persName xml:lang="syr">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="en">Commentary of Exodus</title>
                      
                      
                      
                      
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>The text is divided into lessons</note>
                      <colophon>
                         <locus from="350r" to="350r">f. 350r</locus>
@@ -96,15 +108,15 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <support>Paper</support>
-                        <extent>352 ff.
-                           
+                        <extent>352 ff.<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <collation>
                            <p>Quires, signed with letters only as far as<locus from="42r" to="42r">f. 42r</locus>, of 8 and 10 leaves, except 8th, witch has only 8</p>
                         </collation>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1" writtenLines="23">From 23 to 31 lines to the page
+                        <layout columns="1" writtenLines="23">From 23 to 31 lines to the page<dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -166,7 +178,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1000">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,9 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Huntington_355-item1" n="1">
                      <locus from="1" to="180">ff. 1v-180v</locus>
-                     <author key="n 85194395" ref="http://viaf.org/viaf/90045845/">Ibn Zuhr, ʻAbd al-Malik ibn Abī al-ʻAlāʾ,<date calendar="#Gregorian" when="1162">d. 1162</date>
+                     <author key="n 85194395" ref="http://viaf.org/viaf/90045845/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ibn Zuhr, ʻAbd al-Malik ibn Abī al-ʻAlāʾ,<date calendar="#Gregorian" when="1162">d. 1162</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Taysīr fī al-mudāwāh wa-al-tadbīr</title>
                      <listBibl>
@@ -56,7 +58,9 @@
                   </msItem>
                   <msItem xml:id="MS_Huntington_355-item2" n="2">
                      <locus from="181" to="201">ff. 181r-201r</locus>
-                     <author key="n 85194395" ref="http://viaf.org/viaf/90045845/">Ibn Zuhr, ʻAbd al-Malik ibn Abī al-ʻAlāʾ,<date calendar="#Gregorian" when="1162">d. 1162</date>
+                     <author key="n 85194395" ref="http://viaf.org/viaf/90045845/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ibn Zuhr, ʻAbd al-Malik ibn Abī al-ʻAlāʾ,<date calendar="#Gregorian" when="1162">d. 1162</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Jāmiʻ yashtamil ʻalá ʻilājāt bi-ashribah wa-maʻājin wa-adhhān</title>
                      <listBibl>
@@ -173,11 +177,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

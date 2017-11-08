@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_927">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,9 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Bruce_35-item1" n="1">
                      <locus from="1" to="87">ff. 1-87</locus>
-                     <author key="nr 95014234" ref="http://viaf.org/viaf/90042248/">Ibn Abī al-Surūr, Muḥammad ibn Muḥammad,<date calendar="#Gregorian" from="1596" to="1676">1596 or 7-1676 or 7</date>
+                     <author key="nr 95014234" ref="http://viaf.org/viaf/90042248/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ibn Abī al-Surūr, Muḥammad ibn Muḥammad,<date calendar="#Gregorian" from="1596" to="1676">1596 or 7-1676 or 7</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Rawḍah al-zahīyah fī akhbār Miṣr wa al-Qāhirah al-Muʻizzīyah</title>
                      <listBibl>
@@ -56,7 +58,9 @@
                   </msItem>
                   <msItem xml:id="MS_Bruce_35-item2" n="2">
                      <locus from="88" to="92">ff. 88-92</locus>
-                     <author>Muṣṭafá Efendī ibn Suhrāb</author>
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc">Muṣṭafá Efendī ibn Suhrāb</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">al-Dāʼirah al-kubrá al-jafrīyah</title>
                      <note>Commentary on<title xml:lang="ar-Latn-x-lc">al-Shajarah al-Nuʼmānīyah fī al-dawlah al-ʻUthmānīyah</title>of<persName key="n 50082069"
                                   ref="http://www.viaf.org/viaf/95223177/"
@@ -194,11 +198,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

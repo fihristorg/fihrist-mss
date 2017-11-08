@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_389">
    <teiHeader>
       <fileDesc>
@@ -44,19 +44,26 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="B_12-item1">
-                     <author key="n2001057964" ref="http://viaf.org/viaf/41186851/">Sanūsī, Muḥammad al-Mahdī, 1844-1902محمد بن سيد عبد الله المهدي
+                     <author key="n2001057964" ref="http://viaf.org/viaf/41186851/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Sanūsī, Muḥammad al-Mahdī, 1844-1902</persName>
                         
                         
-                        <addName xml:lang="ar" type="nisbah">السنوسي</addName>
+                        <persName xml:lang="ar">محمد بن سيد عبد الله المهدي
+                           
+                           
+                           <addName xml:lang="ar" type="nisbah">السنوسي</addName>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Kitāb majmūʻ manāshīr sayyidinā al-imām Muḥammad al-Mahdī</title>
                      
                      <title xml:lang="ar">كتاب مجموع مناشير سيدنا الامام محمد المهدي</title>
                      
                      <title xml:lang="en" type="desc">A collection of proclamations issued by the Mahdī of the Sudan</title>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                </msContents>
@@ -64,13 +71,13 @@
                   <objectDesc form="other">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -130,7 +137,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-07-26">

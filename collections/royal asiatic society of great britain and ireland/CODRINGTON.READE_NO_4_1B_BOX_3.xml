@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_464">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,15 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="CODRINGTON.READE_NO_4_1B_BOX_3-item1">
-                     <author key="n50039100" ref="http://viaf.org/viaf/44268122/">ʻAlī ibn Abī Ṭālib, Caliph, ca. 600-661علي بن ابي طالب
+                     <author key="n50039100" ref="http://viaf.org/viaf/44268122/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">ʻAlī ibn Abī Ṭālib, Caliph, ca. 600-661</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">علي بن ابي طالب
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="en">Prayers for the seven days of the week.</title>
                      <note>7.5 x 5ins. Text area 5.7 x 2.75 ins. Not in Morley printed Catalogue. References needed. Arabic. (Not Persian) This was overlooked by Codrington, but is noted, not very obviously, in Morley's handwritten catalogue. It follows Codrington Persian No 4. (1) in the MS. Bound with Nos 4 (1), 4 (2), 4 (3), 4 (4). Authorship attributed to 'Ali b. Abi Talib.</note>
@@ -58,7 +63,7 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>Folios 10
+                        <extent>Folios 10<dimensions type="leaf" unit="in"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
@@ -106,7 +111,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-05-30">

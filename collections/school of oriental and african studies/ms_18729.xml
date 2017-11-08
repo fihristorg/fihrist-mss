@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8058">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,9 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_18729-item1">
-                     <author key="n79065219" ref="http://viaf.org/viaf/76503034/">Amīr Khusraw Dihlavī, ca. 1253-1325</author>
+                     <author key="n79065219" ref="http://viaf.org/viaf/76503034/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Amīr Khusraw Dihlavī, ca. 1253-1325</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Qiṣṣah-ʼi Khiz̤r Khān va Duval Rānī</title>
                      <title xml:lang="fa-Latn-x-lc" type="alt">Qiṣṣah-ʼi Khaz̤ir Khān va Duval Rānī</title>
                      <title xml:lang="fa-Latn-x-lc" type="alt">Duval Rānī Khāz̤ir Khān</title>
@@ -52,20 +54,22 @@
                      <title xml:lang="fa" type="alt">دول رانی خضر خان</title>
                      <note>طبائع را بمر كز كز كرو مائل فلك را ساخت در كرون حمائل</note>
                      <incipit>تمام شد در غره شهر ذيقعده سنه 1304 بعد سعی بصحت کامل رسید</incipit>
-                     
+                     <note>
+                        <foreign xml:lang="fa"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>110 f.
-                           
+                        <extent>110 f.<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -112,7 +116,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-07-15">

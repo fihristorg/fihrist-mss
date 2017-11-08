@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6231">
    <teiHeader>
       <fileDesc>
@@ -43,11 +43,14 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh89004044 http://lccn.loc.gov/sh85107847">
                   <msItem xml:id="Or_7478-item1">
-                     <author>Ghubārīغباری</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Ghubārī</persName>
+                        <persName xml:lang="fa">غباری</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Shabistān-i khayāl</title>
                      <title xml:lang="fa">شبستان خیال</title>
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <note>A collection of artifical verses based upon the various combination of the letters of the word 'ishq<foreign xml:lang="fa">عشق</foreign>, completed in<date calendar="#Hijri-qamari" notBefore="1562" notAfter="1563">970</date>and imitating the work of<persName xml:lang="fa-Latn-x-lc"
                                   type="standard"
                                   ref="http://viaf.org/viaf/55732967"
@@ -99,7 +102,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-11-09">

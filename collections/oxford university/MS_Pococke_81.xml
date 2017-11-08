@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1626">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,9 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Pococke_81-item1" n="1">
                      <locus from="1" to="307">ff. 1v-307r</locus>
-                     <author key="n 83126412" ref="http://www.viaf.org/viaf/118486738/">Ibn al-Fāriḍ, ʻUmar ibn ʻAlī,<date calendar="#Gregorian" from="1181" to="1235">1181 or 2-1235</date>
+                     <author key="n 83126412" ref="http://www.viaf.org/viaf/118486738/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ibn al-Fāriḍ, ʻUmar ibn ʻAlī,<date calendar="#Gregorian" from="1181" to="1235">1181 or 2-1235</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Dīwān</title>
                      <note>With commentary by<persName type="standard"
@@ -62,7 +64,9 @@
                   </msItem>
                   <msItem xml:id="MS_Pococke_81-item2" n="2">
                      <locus from="310" to="324">ff. 310v-324r</locus>
-                     <author key="nr 90009575" ref="http://viaf.org/viaf/41688382/">Qayṣarī, Dāwūd ibn Maḥmūd, d.<date calendar="#Gregorian" when="1351">1350 or 51</date>
+                     <author key="nr 90009575" ref="http://viaf.org/viaf/41688382/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Qayṣarī, Dāwūd ibn Maḥmūd, d.<date calendar="#Gregorian" when="1351">1350 or 51</date>
+                        </persName>
                      </author>
                      <title>Commentary on the<title xml:lang="ar-Latn-x-lc">Qaṣīdah al-mīmīyah al-khamrīyah</title>of<persName type="standard"
                                   xml:lang="ar-Latn-x-lc"
@@ -185,11 +189,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

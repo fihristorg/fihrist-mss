@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_10489">
    <teiHeader>
       <fileDesc>
@@ -43,7 +43,9 @@
                   <idno>MS. Arab. f. 4</idno>
                </msIdentifier>.<msContents>
                   <msItem xml:id="MS_Arab_f_4-item1">
-                     <author ref="http://www.viaf.org/viaf/76305380/">Nicoll, Alexander<date calendar="#Gregorian" from="1793" to="1828">1793-1828</date>
+                     <author ref="http://www.viaf.org/viaf/76305380/">
+                        <persName type="standard">Nicoll, Alexander<date calendar="#Gregorian" from="1793" to="1828">1793-1828</date>
+                        </persName>
                      </author>
                      <title>A note-book containing remarks, excerpts, indexes, etc. and notes on Arabic material and MSS</title>
                      <listBibl>
@@ -100,11 +102,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3863">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,16 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_358-item1">
-                     <author key="n79106223" ref="http://viaf.org/viaf/90075678/">Taftāzānī, Masʿūd ibn ʿUmar,<date calendar="#Gregorian" from="1322" to="1389">1322-1389?</date>التفتازاني، سعد الدين مسعود بن عمر
+                     <author key="n79106223" ref="http://viaf.org/viaf/90075678/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Taftāzānī, Masʿūd ibn ʿUmar,<date calendar="#Gregorian" from="1322" to="1389">1322-1389?</date>
+                        </persName>
                         
                         
-                        
+                        <persName xml:lang="ar">التفتازاني، سعد الدين مسعود بن عمر
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Muṭawwal</title>
                      
@@ -62,9 +68,11 @@
                      <note>Detailed index on<locus from="1b" to="4b">fols. 1v-4v</locus>; the work itself starts on<locus from="7b" to="7b">fol. 7v</locus>.</note>
                      <note>Many marginal notes and collations added in<date calendar="#Hijri-qamari" when="1798">1213</date>by<persName xml:lang="ar-Latn-x-lc" type="supplied">Muḥāmmad Rāif ibn Ḥasan, known as Katkhudā</persName>
                      </note>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="fa" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 1662</bibl>
                         <bibl>GAL II 215/6; Suppl. II 301-5</bibl>
@@ -79,14 +87,14 @@
                               <height>20.3</height>
                               <width>14.5</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="23" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                            <note>23 lines per page</note>
                         </layout>
                      </layoutDesc>
@@ -144,7 +152,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-04-28">

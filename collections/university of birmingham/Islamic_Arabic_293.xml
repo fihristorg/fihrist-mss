@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3833">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,15 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_293-item1">
-                     <author key="nr94040455" ref="http://viaf.org/viaf/51575823">Arwādī, Aḥmad ibn Sulaymān, -ca 1858الأروادي، أحمد بن سليمان، ت. حو. 1275 هـ
+                     <author key="nr94040455" ref="http://viaf.org/viaf/51575823">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Arwādī, Aḥmad ibn Sulaymān, -ca 1858</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">الأروادي، أحمد بن سليمان، ت. حو. 1275 هـ
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Risālat nūr al-muẓahhar fī ṭarīqat sayyidī al-Shaykh al-Akbar</title>
                      
@@ -62,8 +67,10 @@
                      </note>
                      <note>The points discussed are silence, aloofness, fasting and vigils.</note>
                      <incipit xml:lang="ar">الحمد لمشرف شموس الطرايق ... و بعد فيقول العبد الفقير الى رحمة ربه الديان احمد الخالدي النقشبندي الاحمدي الاكبري ابن سليمان قد راى بعض الحفاظ للقران</incipit>
-                     
-                     
+                     <explicit xml:lang="fa" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 819</bibl>
                         <bibl>GAL II 489; Suppl II 774</bibl>
@@ -78,14 +85,14 @@
                               <height>23.8</height>
                               <width>16.6</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="19" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                            <note>19 lines per page</note>
                         </layout>
                      </layoutDesc>
@@ -143,7 +150,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-07-14">

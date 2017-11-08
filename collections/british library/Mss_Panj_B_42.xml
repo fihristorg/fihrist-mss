@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5112">
    <teiHeader>
       <fileDesc>
@@ -46,18 +46,23 @@
                           n="1"
                           class="http://lccn.loc.gov/sh2003007099">
                      <locus from="1r" to="4v">ff 1r-4v</locus>
-                     <author>Ḥāfiẓ Akhṣarīحافظ اخصری
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Ḥāfiẓ Akhṣarī</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">حافظ اخصری
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Manẓar al-qāriʼ</title>
                      <title xml:lang="fa">منظر القارئ</title>
                      
                      
                      
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>A short work on the pronunication of the Qurʼān</note>
                      <filiation>Other copies in the India Office Library:<ref type="no" target="Uk">Delhi Urdu 7 (British Library).</ref>
                      </filiation>
@@ -74,7 +79,7 @@
                               <height>21.5</height>
                               <width>14.5</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="in"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -131,7 +136,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-04-11">

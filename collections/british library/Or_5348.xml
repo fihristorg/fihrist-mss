@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5959">
    <teiHeader>
       <fileDesc>
@@ -43,10 +43,13 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85109764 http://lccn.loc.gov/sh85100085">
                   <msItem xml:id="Or_5348-item1">
-                     <author ref="http://viaf.org/viaf/5721767" key="n88155215">Abū Sa‘īd ibn Abī al-Khayrابو سعید ابن ابی الخیر</author>
+                     <author ref="http://viaf.org/viaf/5721767" key="n88155215">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Abū Sa‘īd ibn Abī al-Khayr</persName>
+                        <persName xml:lang="fa">ابو سعید ابن ابی الخیر</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Rubā‘īyāt</title>
                      <title xml:lang="fa">رباعیات</title>
-                     
+                     <explicit xml:lang="fa" defective="true"/>
                      <note>Attributed to Abū Sa‘īd ibn Abī al-Khayr on the flyleaf but quite different from those in the printed editions</note>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 50.</bibl>
@@ -93,7 +96,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-11-05">

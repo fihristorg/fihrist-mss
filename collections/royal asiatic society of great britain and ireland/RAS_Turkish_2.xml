@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7613">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,13 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="RAS_Turkish_2-item1" n="1">
-                     <author key="n87844807" ref="http://viaf.org/viaf/59888184/">Birgivî Mehmet Efendi, ca. 1522-1573محمد بن پير علي
-                        
-                        
-                        
+                     <author key="n87844807" ref="http://viaf.org/viaf/59888184/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Birgivî Mehmet Efendi, ca. 1522-1573</persName>
+                        <persName xml:lang="ar">محمد بن پير علي
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ota-Latn-x-lc">Vasiyet</title>
                      <title xml:lang="ota-Latn-x-lc" type="alt">Vasiyetname</title>
@@ -56,27 +59,39 @@
                      <title xml:lang="ota" type="alt">وصية نامه</title>
                      <title xml:lang="ota" type="alt">وصيت نامه</title>
                      <incipit xml:lang="ota">اما بعد فهذه وصية الفقير الحقير المعترف بالعجز والتقصير محمدپیر علی...كتبها بالتركية ليعم نفعها</incipit>
-                     
+                     <explicit xml:lang="ar" defective="true"/>
                      <textLang mainLang="ota">Turkish</textLang>
                   </msItem>
                   <msItem xml:id="RAS_Turkish_2-item2" n="2">
-                     <author>Rumi Mehmed EfendiRumi Efendiرومي محمد افنديرومي افندي</author>
+                     <author>
+                        <persName xml:lang="ota-Latn-x-lc" type="standard">Rumi Mehmed Efendi</persName>
+                        
+                        <persName xml:lang="ota-Latn-x-lc" type="alt">Rumi Efendi</persName>
+                        <persName xml:lang="ota">رومي محمد افندي</persName>
+                        <persName xml:lang="ota">رومي افندي</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Risale-i Mehmed Rumi Efendi</title>
                      
                      <title xml:lang="ar">رساله رومی محمد افندی</title>
                      <note>A treatise on Muslim beliefs.</note>
                      <incipit xml:lang="ota">وبعد اي طالب حق اولان اخوان مؤمنين بلكل واكاه اولغل كم فرض اوچ قسم دور</incipit>
-                     
+                     <explicit xml:lang="ar" defective="true"/>
                      <textLang mainLang="ota">Turkish</textLang>
                   </msItem>
                   <msItem xml:id="RAS_Turkish_2-item3" n="3">
-                     <author>Kadızâde, Mehmed b. MustafaKadızâde Efendiقاضي زاده، محمد بن مصطفىقاضي زاده افندي</author>
+                     <author>
+                        <persName xml:lang="ota-Latn-x-lc" type="standard">Kadızâde, Mehmed b. Mustafa</persName>
+                        
+                        <persName xml:lang="ota-Latn-x-lc" type="alt">Kadızâde Efendi</persName>
+                        <persName xml:lang="ar">قاضي زاده، محمد بن مصطفى</persName>
+                        <persName xml:lang="ar">قاضي زاده افندي</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Risale-i Kadızâde/</title>
                      
                      <title xml:lang="ar">رساله قاضی زاده</title>
                      <note>A treatise on Muslim beliefs.</note>
                      <incipit xml:lang="ota">وبعد اي طالب حق اولان اخوان مؤمنين بلكل واكاه اولغل کم ایمان اسلام حضرت محمد عليه الصلوة والسلام</incipit>
-                     
+                     <explicit xml:lang="ar" defective="true"/>
                      <textLang mainLang="ota">Turkish</textLang>
                   </msItem>
                </msContents>
@@ -130,7 +145,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-04-22">

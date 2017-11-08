@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6462">
    <teiHeader>
       <fileDesc>
@@ -46,7 +46,10 @@
                           n="1"
                           class="http://lccn.loc.gov/sh85100084 http://lccn.loc.gov/sh2002005579">
                      <locus from="1r" to="45r">1r-45r ff</locus>
-                     <author ref="http://viaf.org/viaf/24350267" key="no2006034540">Ḥalīmī, Luṭf Allāh ibn Yūsuf, -1494 or 1495لطف الله ابن ابی یوسف الحلیمی</author>
+                     <author ref="http://viaf.org/viaf/24350267" key="no2006034540">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Ḥalīmī, Luṭf Allāh ibn Yūsuf, -1494 or 1495</persName>
+                        <persName xml:lang="fa">لطف الله ابن ابی یوسف الحلیمی</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Nis̲ār al-Mulūk</title>
                      <title xml:lang="fa">نثار الملوک</title>
                      <note>A collection of rare Persian words glossed in Turkish</note>
@@ -72,7 +75,10 @@
                   </msItem>
                   <msItem xml:id="Or_9346-item3" n="3" class="http://lccn.loc.gov/sh85100084">
                      <locus from="48v" to="50r">48v-50r ff</locus>
-                     <author>Ibn Aḥmad al-Baṣrīابن احمد البصری</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Ibn Aḥmad al-Baṣrī</persName>
+                        <persName xml:lang="fa">ابن احمد البصری</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Lughāt-i Mus̲allasah</title>
                      <title xml:lang="fa">لغات مثلثه</title>
                      <note>An Arabic-Persian glossary</note>
@@ -259,7 +265,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-07-09">

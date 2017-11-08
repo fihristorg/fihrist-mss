@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_820">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,9 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Arab_e_165-item1" n="1">
                      <locus from="1" to="24">ff. 1v-24v</locus>
-                     <author key="n 83196143" ref="http://www.viaf.org/viaf/27052262/">ʻĀmilī, Bahāʼ al-Dīn Muḥammad ibn Ḥusayn,<date calendar="#Gregorian" from="1547" to="1621">1547-1621</date>
+                     <author key="n 83196143" ref="http://www.viaf.org/viaf/27052262/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">ʻĀmilī, Bahāʼ al-Dīn Muḥammad ibn Ḥusayn,<date calendar="#Gregorian" from="1547" to="1621">1547-1621</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Khulāṣat al-ḥisāb</title>
                      <listBibl>
@@ -56,7 +58,9 @@
                   </msItem>
                   <msItem xml:id="MS_Arab_e_165-item2" n="2">
                      <locus from="25" to="70">ff. 25-70</locus>
-                     <author key="n 88250931" ref="http://viaf.org/viaf/23706113/">Sijistānī, Muḥammad ibn ʻUzayr,<date calendar="#Gregorian" when="0942">d. 941 or 2</date>
+                     <author key="n 88250931" ref="http://viaf.org/viaf/23706113/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Sijistānī, Muḥammad ibn ʻUzayr,<date calendar="#Gregorian" when="0942">d. 941 or 2</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Nuzhat al-qulūb fī gharīb al-Qurʼān</title>
                      <listBibl>
@@ -178,11 +182,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

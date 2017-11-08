@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8541">
    <teiHeader>
       <fileDesc>
@@ -44,18 +44,26 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_44734-item1" n="1">
-                     <author key="nr96033389" ref="http://viaf.org/viaf/12207477/">Shāh Arzānī, Muḥammad Akbar ibn Muḥammad, 18th cent.شاه ارزانى، محمد اکبر بن محمدArzānī, Muḥammad Akbar, d. 1134/1722ارزانى، محمد اکبر</author>
+                     <author key="nr96033389" ref="http://viaf.org/viaf/12207477/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Shāh Arzānī, Muḥammad Akbar ibn Muḥammad, 18th cent.</persName>
+                        <persName xml:lang="fa">شاه ارزانى، محمد اکبر بن محمد</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Arzānī, Muḥammad Akbar, d. 1134/1722</persName>
+                        <persName xml:lang="fa" type="alt">ارزانى، محمد اکبر</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Mujarrabāt-i Akbarī</title>
                      
                      <title xml:lang="fa">مجربات اکبری</title>
                      
-                     
+                     <incipit xml:lang="ar"/>
                      <incipit>اما بعد احقر محمد اکبر ابن حاجی محمد مقیم معروض میدارد که ترکیبی چند</incipit>
                      <colophon>تمت تمام ...نسخه مجربات اکبری سنه 1237 در کوت بوته یازدهم ماه شعبان المعظم</colophon>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="ms_44734-item2" n="2">
-                     <author>Ghulām Rasūl Qādirī al-Anṣārīغلام رسول قادری الانصاری</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Ghulām Rasūl Qādirī al-Anṣārī</persName>
+                        <persName xml:lang="fa">غلام رسول قادری الانصاری</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Mujarrab al-shifā</title>
                      <title xml:lang="ar">مجرب الشفا</title>
                      
@@ -65,7 +73,10 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="ms_44734-item3" n="3">
-                     <author>Ghulām Rasūl Qādirī al-Anṣārīغلام رسول قادری الانصاری</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Ghulām Rasūl Qādirī al-Anṣārī</persName>
+                        <persName xml:lang="fa">غلام رسول قادری الانصاری</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Ṭuruq al-muʻālajāt</title>
                      <title xml:lang="ar">طرق المعالجات</title>
                      
@@ -75,7 +86,10 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="ms_44734-item4" n="4">
-                     <author>Ghulām Rasūl Qādirī al-Anṣārīغلام رسول قادری الانصاری</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Ghulām Rasūl Qādirī al-Anṣārī</persName>
+                        <persName xml:lang="fa">غلام رسول قادری الانصاری</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Mujarrab al-shifā</title>
                      <title xml:lang="ar">مجرب الشفا</title>
                      
@@ -93,13 +107,13 @@
                            <ref target="a2">42b-67a f.</ref>
                            <ref target="a3">67b-103b f.</ref>
                            <ref target="a4">103b-130a f.</ref>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -152,7 +166,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2016-10-24">

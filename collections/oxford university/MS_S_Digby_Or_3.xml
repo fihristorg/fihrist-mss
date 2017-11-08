@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4986">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,12 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_S_Digby_Or_3-item1">
-                     <author key="n84158098" ref="http://viaf.org/viaf/97126146/">Nakhshabī, Z̤iyāʼ al-Dīn, d. 1350ضياء الدين نخشبى</author>
+                     <author key="n84158098" ref="http://viaf.org/viaf/97126146/">
+                        <persName xml:lang="fa" type="standard">Nakhshabī, Z̤iyāʼ al-Dīn, d. 1350</persName>
+                        
+                        
+                        <persName xml:lang="fa">ضياء الدين نخشبى</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Sharḥ-i Duʻāʼ-i Suryānī</title>
                      <title xml:lang="fa">شرح دعاءى سرياني</title>
                      <incipit xml:lang="ar">حمد مر بادشاه بر حق را ذو الجلال و جليل مطلق را</incipit>
@@ -179,7 +184,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-04-20">

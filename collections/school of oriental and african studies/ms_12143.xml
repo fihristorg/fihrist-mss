@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7955">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,9 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_12143-item1">
-                     <author key="nخ2005054604" ref="http://viaf.org/viaf/51096485">Javier, Jerónimo, 1549-1617</author>
+                     <author key="nخ2005054604" ref="http://viaf.org/viaf/51096485">
+                        <persName xml:lang="por-Latn-x-lc" type="supplied">Javier, Jerónimo, 1549-1617</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Dāstān-i Aḥvāl-i Ḥavāriyān</title>
                      <title xml:lang="fa-Latn-x-lc" type="alt">Dāstān-i San Pidar va apūstulū ya‘nī rasūl-i ḥazrat-i ‘īsā khudāvand-i mā</title>
                      <title xml:lang="por-Latn-x-lc" type="alt">Vida dos doze Apostolos do senhor Jesu</title>
@@ -52,20 +54,22 @@
                      <title xml:lang="fa" type="alt">داستان سن پدر و اپوستلو یعنی رسول حضرت عیسی خداوند ما</title>
                      <note>Composto polo P. Jero. Xavier da Comp. de Jesu. Em Agra, corte do graō Mogol Rey Jahanguir.</note>
                      <incipit>المنت لله كه اعضاى ظاهرى و قواى باطنى از سر نو متوجه خدمت شدند</incipit>
-                     
+                     <note>
+                        <foreign xml:lang="fa"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>192 f.
-                           
+                        <extent>192 f.<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -119,7 +123,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-11-17">

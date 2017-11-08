@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7850">
    <teiHeader>
       <fileDesc>
@@ -53,9 +53,15 @@
                      <title xml:lang="ar">الفیه</title>
                      
                      
-                     <author key="n83056178‏" ref=" http://viaf.org/viaf/12537163">‎Ibn Mālik, Muḥammad ibn ʻAbd Allāh, -1274‏ابن مالک، محمد بن عبدالله، -۱۲۷۴Ibn Mālik, Muḥammad ibn ʻAbd Allāh bin Mālik al-Andulusī, 600-12 Shaʿbān 672/1204-1274ابن مالک، محمد بن عبدالله بن مالک الاندلسی، ۶۰۰-۱۲ شعبان ۶۷۲ق/۱۲۰۴-۱۲۷۴م<addName xml:lang="fa-Latn-x-lc" type="laqab"/>
+                     <author key="n83056178‏" ref=" http://viaf.org/viaf/12537163">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">‎Ibn Mālik, Muḥammad ibn ʻAbd Allāh, -1274‏</persName>
+                        <persName xml:lang="ar" type="standard">ابن مالک، محمد بن عبدالله، -۱۲۷۴</persName>
+                        <persName xml:lang="ar-Latn-x-lc" type="alt">Ibn Mālik, Muḥammad ibn ʻAbd Allāh bin Mālik al-Andulusī, 600-12 Shaʿbān 672/1204-1274</persName>
+                        <persName xml:lang="ar" type="alt">ابن مالک، محمد بن عبدالله بن مالک الاندلسی، ۶۰۰-۱۲ شعبان ۶۷۲ق/۱۲۰۴-۱۲۷۴م</persName>
                         
-                        <addName xml:lang="ar-Latn-x-lc" type="kunyah"/>
+                        
+                        
+                        
                         
                         
                         
@@ -105,14 +111,14 @@
                         <extent>60 ff.<dimensions type="leaf" unit="cm">
                               <height>13.5</height>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="9">
                            <note>9 lines per page.</note>
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -218,7 +224,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2017-08-01">

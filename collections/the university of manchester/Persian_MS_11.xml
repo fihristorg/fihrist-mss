@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6586">
    <teiHeader>
       <fileDesc>
@@ -42,20 +42,25 @@
                </msIdentifier>
                <msContents>
                   <summary>
-                     <title type="main"/>
+                     
                   </summary>
                   <msItem xml:id="Persian_MS_11-item1">
-                     <author key="n96024156" ref="http://viaf.org/viaf/36817419/">Ahlī Shīrāzī, Muḥammad ibn Yūsuf, 1454-1535 or 6Muḥammad Ahlī of Shirazاهلی شیرازی، محمد بن يوسف
+                     <author key="n96024156" ref="http://viaf.org/viaf/36817419/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Ahlī Shīrāzī, Muḥammad ibn Yūsuf, 1454-1535 or 6</persName>
                         
-                        
-                        
+                        <persName xml:lang="ar-Latn-x-lc" type="alt">Muḥammad Ahlī of Shiraz</persName>
+                        <persName xml:lang="fa">اهلی شیرازی، محمد بن يوسف
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Kullīyāt-i Ahlī-ʼi Shīrāzī</title>
                      <title xml:lang="fa">كليات اهلی شیرازی</title>
                      
                      
-                     
-                     
+                     <incipit xml:lang="ar" type="basmalla"/>
+                     <explicit xml:lang="ar"/>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
@@ -63,8 +68,8 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
@@ -135,7 +140,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014">

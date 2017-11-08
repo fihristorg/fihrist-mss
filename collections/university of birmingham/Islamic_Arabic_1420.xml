@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3716">
    <teiHeader>
       <fileDesc>
@@ -44,19 +44,26 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_1420-item1">
-                     <author key="no2009177975" ref="http://viaf.org/viaf/103009016">Ibn ʿAṭīyah, Muḥammad ibn ʿAlī, -1547 or 1548Ḥamawī, Ibn-ʿAṭīya al-محمد بن علي بن عطية بن علوان الحموي الشاذلي
+                     <author key="no2009177975" ref="http://viaf.org/viaf/103009016">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn ʿAṭīyah, Muḥammad ibn ʿAlī, -1547 or 1548</persName>
                         
-                        
-                        
+                        <persName xml:lang="ar-Latn-x-lc" type="alt">Ḥamawī, Ibn-ʿAṭīya al-</persName>
+                        <persName xml:lang="ar">محمد بن علي بن عطية بن علوان الحموي الشاذلي
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Tuḥfat al-ḥabīb fīmā yubhijuhu fī riyāḍ al-shuhūd wa-al-taqrīb</title>
                      
                      <title xml:lang="ar">تحفة الحبيب فيما يبهجه في رياض الشهود والتقريب</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="fa" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 1420</bibl>
                      </listBibl>
@@ -70,7 +77,7 @@
                               <height>15.1</height>
                               <width>10.3</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
@@ -80,7 +87,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="15" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                            <note>15 lines per page</note>
                         </layout>
                      </layoutDesc>
@@ -143,7 +150,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-06-19">

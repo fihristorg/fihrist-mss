@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8566">
    <teiHeader>
       <fileDesc>
@@ -41,14 +41,17 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_44760-item1">
-                     <author>Shīrāzī, Hidāyat Allāhشیرازی، هدایة الله</author>
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="supplied">Shīrāzī, Hidāyat Allāh</persName>
+                        <persName xml:lang="fa" type="alt">شیرازی، هدایة الله</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Hidāyat al-raml</title>
                      <title xml:lang="fa-Latn-x-lc" type="alt">Qavāʻid al-hidāyat</title>
                      <title xml:lang="fa">‏هدايت الرمل</title>
                      <title xml:lang="fa" type="alt">قواعد ال‏هدايت</title>
                      
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>A manual of raml or geomantic divination. The final leaf is in a different hand from the rest of the text</note>
                      <incipit>افتتاح کلام حکمیت علام که نیایر حکمت شامل در بدو فطرت بید قدرتش قرعه قبول بنام آدم</incipit>
                      <textLang mainLang="fa">Persian</textLang>
@@ -57,13 +60,13 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>232 f.
-                           
+                        <extent>232 f.<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -113,7 +116,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2016-03-10">

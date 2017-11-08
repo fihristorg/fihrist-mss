@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1071">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,9 @@
                <msContents>
                   <msItem xml:id="MS_Marsh_137-item1" n="1">
                      <locus from="1" to="65">ff. 1r-65r</locus>
-                     <author key="n 84218095" ref="http://viaf.org/viaf/55563658/">Thābit ibn Qurrah al-Ḥarrānī, d.<date calendar="#Gregorian" when="0901">901</date>
+                     <author key="n 84218095" ref="http://viaf.org/viaf/55563658/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Thābit ibn Qurrah al-Ḥarrānī, d.<date calendar="#Gregorian" when="0901">901</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Kitāb al-Rawḍah fī al-ṭibb</title>
                      <listBibl>
@@ -56,12 +58,17 @@
                   </msItem>
                   <msItem xml:id="MS_Marsh_137-item2" n="2">
                      <locus from="67" to="95">ff. 67r-95v</locus>
-                     <author key="n 80133010" ref="http://viaf.org/viaf/95154093/">Rāzī, Abū Bakr Muḥammad ibn Zakarīyā,<date calendar="#Gregorian" from="0865" to="0925">865?-925?</date>
-                        <surname>بن زکریّا</surname>
-                        <forename>محمد</forename>
-                        <addName type="laqab"/>
-                        <addName type="kunyah">أبو بكر</addName>
-                        <addName type="nisbah">الرازي</addName>
+                     <author key="n 80133010" ref="http://viaf.org/viaf/95154093/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Rāzī, Abū Bakr Muḥammad ibn Zakarīyā,<date calendar="#Gregorian" from="0865" to="0925">865?-925?</date>
+                        </persName>
+                        
+                        <persName xml:lang="ar" type="standard">
+                           <surname>بن زکریّا</surname>
+                           <forename>محمد</forename>
+                           
+                           <addName type="kunyah">أبو بكر</addName>
+                           <addName type="nisbah">الرازي</addName>
+                        </persName>
                      </author>
                      <title>162 aphorisms on medicine</title>
                      <note>See notes on MS. Huntington donat. 31</note>
@@ -179,11 +186,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

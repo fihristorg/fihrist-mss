@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7880">
    <teiHeader>
       <fileDesc>
@@ -54,9 +54,15 @@
                      <title xml:lang="ar">الفیه</title>
                      <title xml:lang="ar-Latn-x-lc" type="alt">Arjūzah</title>
                      <title xml:lang="ar" type="alt">ارجوزه</title>
-                     <author key="n83056178‏" ref="http://viaf.org/viaf/12537163">‎Ibn Mālik, Muḥammad ibn ʻAbd Allāh, -1274‏ابن مالک، محمد بن عبدالله، -۱۲۷۴Ibn Mālik, Muḥammad ibn ʻAbd Allāh bin Mālik al-Andulusī, 600-12 Shaʿbān 672/1204-1274ابن مالک، محمد بن عبدالله بن مالک الاندلسی، ۶۰۰-۱۲ شعبان ۶۷۲ق/۱۲۰۴-۱۲۷۴م<addName xml:lang="fa-Latn-x-lc" type="laqab"/>
+                     <author key="n83056178‏" ref="http://viaf.org/viaf/12537163">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">‎Ibn Mālik, Muḥammad ibn ʻAbd Allāh, -1274‏</persName>
+                        <persName xml:lang="ar" type="standard">ابن مالک، محمد بن عبدالله، -۱۲۷۴</persName>
+                        <persName xml:lang="ar-Latn-x-lc" type="alt">Ibn Mālik, Muḥammad ibn ʻAbd Allāh bin Mālik al-Andulusī, 600-12 Shaʿbān 672/1204-1274</persName>
+                        <persName xml:lang="ar" type="alt">ابن مالک، محمد بن عبدالله بن مالک الاندلسی، ۶۰۰-۱۲ شعبان ۶۷۲ق/۱۲۰۴-۱۲۷۴م</persName>
                         
-                        <addName xml:lang="ar-Latn-x-lc" type="kunyah"/>
+                        
+                        
+                        
                         
                         
                         
@@ -106,7 +112,12 @@
                      <title xml:lang="fa" type="alt">شرح سیوطی</title>
                      
                      
-                     <author key="n80081636" ref="http://viaf.org/viaf/90051632">Suyūṭī, 1445-1505‏سیوطی، ۱۴۴۵-۱۵۰۵Suyūṭī, ʿAbd al-Raḥmān ibn Abī Bakr, 1445-1505سیوطی، عبدالرحمن ابن ابی بکر، ۱۴۴۵-۱۵۰۵<addName xml:lang="ar-Latn-x-lc" type="kunyah">Jalāl al-Dīn</addName>
+                     <author key="n80081636" ref="http://viaf.org/viaf/90051632">
+                        <persName xml:lang="ar-Latn-x-lc">Suyūṭī, 1445-1505‏</persName>
+                        <persName xml:lang="ar">سیوطی، ۱۴۴۵-۱۵۰۵</persName>
+                        <persName xml:lang="ar-Latn-x-lc" type="alt">Suyūṭī, ʿAbd al-Raḥmān ibn Abī Bakr, 1445-1505</persName>
+                        <persName xml:lang="ar" type="alt">سیوطی، عبدالرحمن ابن ابی بکر، ۱۴۴۵-۱۵۰۵</persName>
+                        <addName xml:lang="ar-Latn-x-lc" type="kunyah">Jalāl al-Dīn</addName>
                         <addName xml:lang="ar" type="kunyah">جلال‌الدین</addName>
                      </author>
                      <note>This is a famous commentary on Alfīyah of Ibn Malik on Arabic syntax. Abū ʿAbd Allāh Muḥammad ibn ʿAbd Allāh al-Ṭāʾī al-Jīlānī known as Ibn Mālik composed a work including 1,000 couplets called 'Arjūzah' on Arabic syntax. This 1000-couplet composition in syntax is known as Alfīyah of Ibn Mālik. Numerous commentaries and annotations have been written on this work, that are listed in Kashf al-Ẓunūn. This work has always been a textbook used in Iranian religious schools and published several times in Iran and outside Iran.</note>
@@ -189,12 +200,12 @@
                         <layout n="1" columns="1" ruledLines="10">
                            <p>10 lines per page.</p>
                            <locus from="1a" to="104a">ff. 1a-104a</locus>
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                         <layout n="2" columns="1" ruledLines="10">
                            <p>10 lines per page.</p>
                            <locus from="1a" to="104a">ff. 1a-104a</locus>
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -339,7 +350,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2017-08-27">

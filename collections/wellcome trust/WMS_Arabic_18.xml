@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7732">
    <teiHeader>
       <fileDesc>
@@ -162,8 +162,13 @@
                      <msItem xml:id="WMS_Arabic_18-part1-item1">
                         <locus>Fol.5b.5</locus>
                         <author>
-                           <forename facs="#i0006">محمّد بّن محمّد</forename>
-                           <addName type="nisbah" facs="#i0006">القزويني</addName>محمّد بّن محمّد القزوينيAq-Qazwīnī, Muḥammad ibn Muḥammad</author>
+                           <persName type="standard" xml:lang="ara-Arab">
+                              <forename facs="#i0006">محمّد بّن محمّد</forename>
+                              <addName type="nisbah" facs="#i0006">القزويني</addName>
+                           </persName>
+                           <persName type="original" xml:lang="ara-Arab" facs="#i0006">محمّد بّن محمّد القزويني</persName>
+                           <persName type="standard" xml:lang="eng-Latn">Aq-Qazwīnī, Muḥammad ibn Muḥammad</persName>
+                        </author>
                         <title type="original" facs="#i0009">عجايب المخلوقات وغرايب المخلوقاتالموجودات<locus>Fol.5b.5</locus>
                         </title>
                         <incipit type="basmala" facs="#i0006">
@@ -414,7 +419,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-09-24T13:02:39+03:00">Committed to SVN. To view the changes in detail use SVN diff. SVN Url: http://wellcomesvn.local.bibalex.dom/svn/WellcomeTrust/trunk/WAMCPMetaGallery/XML/WMS_Arabic_18/WMS_Arabic_18.xml<persName>eralph</persName>

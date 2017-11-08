@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_9022">
    <teiHeader>
       <fileDesc>
@@ -45,16 +45,28 @@
                <msContents>
                   <summary>Fragment of an Abbasid Qur'ān probably written in the third or fourth century A.H. / ninth or tenth century C.E, containing verses 22-70 from Sura al-Ḥajj (سورة الحج). The script seems to correspond to the Abbasid Style<term subtype="script">D</term>as described by F. Deroche.</summary>
                   <msItem xml:id="Add_1136-item1">
-                     
+                     <author>
+                        
+                        
+                        
+                        <persName xml:lang="ar">
+                           
+                           
+                           
+                           
+                        </persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">al-Qurʼān</title>
                      
                      <title xml:lang="ar" type="main">القرآن</title>
                      
                      <title xml:lang="en" type="desc">Qurʼān xxii:22-70</title>
                      <note>First fragment continued in Add. 743</note>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/view.php?id=91">no. 817</ref>
@@ -70,7 +82,7 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
+                           <dimensions type="leaf" unit="cm"/>
                            <dimensions type="written" unit="cm">
                               <height>10.5</height>
                               <width>16.5</width>
@@ -79,7 +91,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                            <p>8 lines per page</p>
                         </layout>
                      </layoutDesc>
@@ -128,7 +140,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-08-08">

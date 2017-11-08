@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_2700">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,10 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="RAS_Persian_159_2-item1">
-                     <author key="no2004086764" ref="http://viaf.org/viaf/35540125">Muʼīn al-Fuqarāʼ, Aḥmad ibn Maḥmūdمعين الفقرا، احمد بن محمود</author>
+                     <author key="no2004086764" ref="http://viaf.org/viaf/35540125">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Muʼīn al-Fuqarāʼ, Aḥmad ibn Maḥmūd</persName>
+                        <persName xml:lang="fa">معين الفقرا، احمد بن محمود</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Tārīkh-i Mullā-zāda dar z̲ikr-i mazārāt-i Bukhārā‏</title>
                      <title xml:lang="fa-Latn-x-lc" type="alt">Kitab-i Mulla-zadah or Risalah-i Mulla-zadah.</title>
                      <note>Bound together and uniform with Codrington/Reade No 159 (1); written by the same scribe. The author's name is not given in the introduction. The last two pages may contain an addition to the original work. On f89b the title is given simply as 'Mulla-zadah'.An Account of the Holy and Learned Men of Bukhara and the vicinity from A.H. 54 to 814.</note>
@@ -113,7 +116,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-05-30">

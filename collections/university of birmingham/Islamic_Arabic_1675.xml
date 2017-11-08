@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3781">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,16 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_1675-item1">
-                     <author key="n88242413" ref="http://viaf.org/viaf/22548454">Amīr al-Kabīr, Muḥammad ibn Muḥammad,<date calendar="#Gregorian" from="1742" to="1817">1742-1817</date>الأمير، محمد بن محمد، 1154-1232 هـ
+                     <author key="n88242413" ref="http://viaf.org/viaf/22548454">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Amīr al-Kabīr, Muḥammad ibn Muḥammad,<date calendar="#Gregorian" from="1742" to="1817">1742-1817</date>
+                        </persName>
                         
                         
-                        
+                        <persName xml:lang="ar">الأمير، محمد بن محمد، 1154-1232 هـ
+                           
+                           
+                           
+                        </persName>
                      </author>
                      
                      
@@ -61,9 +67,11 @@
                            <foreign xml:lang="ar">خالد الأزهري، 838-905 هـ</foreign>
                         </persName>on his own work<title xml:lang="ar-Latn-x-lc">Al-muqaddimah al-Azharīyah fī ʿilm al-ʿarabīyah<foreign xml:lang="ar">المقدمة الأزهرية في علم العربية</foreign>
                         </title>.</note>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="fa" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 1573</bibl>
                         <bibl>GAL II 27, no. 1; Suppl II/22, Gloss e; II 485; Suppl. II 738</bibl>
@@ -78,14 +86,14 @@
                               <height>23.5</height>
                               <width>16.6</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="27" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                            <note>27 lines per page</note>
                         </layout>
                      </layoutDesc>
@@ -143,7 +151,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-06-17">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7798">
    <teiHeader>
       <fileDesc>
@@ -40,7 +40,7 @@
                         </extent>
                         <collation>
                            <seg type="gathering" n="1-22" subtype="folded">
-                              
+                              <dimensions type="leaf" unit="mm" quantity="1"/>
                               <formula>22</formula>
                            </seg>
                         </collation>
@@ -189,8 +189,13 @@
                            <title type="original" facs="#i0013">القول على حرف السين وطبعها هوائي قال الحكيم ان كان رجلا كاملا</title>
                         </msItem>
                         <author>
-                           <forename facs="#i0003">هرمس</forename>
-                           <addName type="laqab" facs="#i0003">هرمس الحكيم</addName>Hermesهرمس الحكيم</author>
+                           <persName xml:lang="ara-Arab" type="standard">
+                              <forename facs="#i0003">هرمس</forename>
+                              <addName type="laqab" facs="#i0003">هرمس الحكيم</addName>
+                           </persName>
+                           <persName xml:lang="eng-Latn" type="standard">Hermes</persName>
+                           <persName xml:lang="ara-Arab" type="original" facs="#i0003">هرمس الحكيم</persName>
+                        </author>
                         <title type="original" facs="#i0002">كتاب هرمس الحكيم<locus>Fol.1a</locus>
                         </title>
                         <title type="normalised" xml:lang="ara-Latn">Kitāb Hermes al-Hakīm</title>
@@ -263,7 +268,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-11-29T14:27:43+02:00">Committed to SVN. To view the changes in detail use SVN diff. SVN Url:http://wellcomesvn.local.bibalex.dom/svn/WellcomeTrust/trunk/WAMCPMetaGallery/XML/WMS_Arabic_99/WMS_Arabic_99.xml<persName>eralph</persName>

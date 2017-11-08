@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_948">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,9 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_ED_Clarke_Or_38-item1" n="1">
                      <locus from="1" to="11">ff. 1v-11v</locus>
-                     <author>Wajīh al-Dīn</author>
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc">Wajīh al-Dīn</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">al-Ḥaqīqah al-Muḥammadīyah</title>
                      <note>A Ṣūfī tract</note>
                      <listBibl>
@@ -56,7 +58,9 @@
                   </msItem>
                   <msItem xml:id="MS_ED_Clarke_Or_38-item2" n="2">
                      <locus from="12" to="13">ff. 12r-13r</locus>
-                     <author key="n 80158380" ref="http://viaf.org/viaf/90042253/">Shaʻrānī, ʻAbd al-Wahhāb ibn Aḥmad, ca.<date calendar="#Gregorian" from="1493" to="1566">1493-1565 or 6</date>
+                     <author key="n 80158380" ref="http://viaf.org/viaf/90042253/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Shaʻrānī, ʻAbd al-Wahhāb ibn Aḥmad, ca.<date calendar="#Gregorian" from="1493" to="1566">1493-1565 or 6</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Risālah fī al-Qawāʻid al-kashfīyah al-mūḍiḥah li-maʻānī al-ṣifāt al-ilāhīyah</title>
                      <note>An extract only, containing a theological discussion of kasb</note>
@@ -68,7 +72,9 @@
                   </msItem>
                   <msItem xml:id="MS_ED_Clarke_Or_38-item3" n="3">
                      <locus from="13" to="17">ff. 13v-17v</locus>
-                     <author key="nr 92018469" ref="http://www.viaf.org/viaf/100369838/">Dawwānī, Muḥammad ibn Asʻad,<date calendar="#Gregorian" from="1426" to="1513">1426 or 7-1512 or 13</date>
+                     <author key="nr 92018469" ref="http://www.viaf.org/viaf/100369838/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Dawwānī, Muḥammad ibn Asʻad,<date calendar="#Gregorian" from="1426" to="1513">1426 or 7-1512 or 13</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Risālat al-Zawrāʼ</title>
                      <listBibl>
@@ -79,7 +85,9 @@
                   </msItem>
                   <msItem xml:id="MS_ED_Clarke_Or_38-item4" n="4" class="#commentary">
                      <locus from="18" to="27">ff. 18v-27v</locus>
-                     <author key="nr 92018469" ref="http://www.viaf.org/viaf/100369838/">Dawwānī, Muḥammad ibn Asʻad,<date calendar="#Gregorian" from="1426" to="1513">1426 or 7-1512 or 13</date>
+                     <author key="nr 92018469" ref="http://www.viaf.org/viaf/100369838/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Dawwānī, Muḥammad ibn Asʻad,<date calendar="#Gregorian" from="1426" to="1513">1426 or 7-1512 or 13</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Ḥawrāʼ</title>
                      <note>Dawwānīʼs own commentary on his<title xml:lang="ar-Latn-x-lc">Risālat al-Zawrāʼ</title>
@@ -234,11 +242,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

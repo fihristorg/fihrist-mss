@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8327">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,10 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_380848-item1" n="1">
-                     <author>ʻAlī ibn Shahfīrūzعلى بن شهفيروز</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">ʻAlī ibn Shahfīrūz</persName>
+                        <persName xml:lang="fa">على بن شهفيروز</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Sharh ̣al-Qasị̄dah al-mudhahhabah</title>
                      <title xml:lang="ar">شرح القصيدة المذهبة</title>
                      <note>A commentary on<title xml:lang="ar-Latn-x-lc">al-Qasị̄dah al-mudhahhabah</title>, of<persName xml:lang="ar-Latn-x-lc"
@@ -58,7 +61,10 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="ms_380848-item2" n="2">
-                     <author ref="http://viaf.org/viaf/79452546" key="nr 94036418‏‏‏">Sayyid al-Ḥimyarī, Ismāʻil ibn Muḥammad, 723-789سيد الحميري، اسماعيل بن محمد ابو هاشم</author>
+                     <author ref="http://viaf.org/viaf/79452546" key="nr 94036418‏‏‏">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Sayyid al-Ḥimyarī, Ismāʻil ibn Muḥammad, 723-789</persName>
+                        <persName xml:lang="ar">سيد الحميري، اسماعيل بن محمد ابو هاشم</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">al-Nafḥ al-ʻanbarī fī aḥwāl al-sayyid al-Ḥimyarī</title>
                      
                      <title xml:lang="ar">النفح العنبري في احوال السيد الحميري</title>
@@ -81,13 +87,13 @@
                         <extent>
                            <ref target="a1">37 f.</ref>
                            <ref target="a2">101 f.</ref>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -142,7 +148,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2016-08-02">

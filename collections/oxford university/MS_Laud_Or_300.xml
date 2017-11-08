@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1051">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,9 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Laud_Or_300-item1" n="1" class="#commentary">
                      <locus from="1" to="171">ff. 1-171r</locus>
-                     <author>Jundī, Aḥmad ibn Maḥmūd</author>
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc">Jundī, Aḥmad ibn Maḥmūd</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">al-Iqūd</title>
                      <note>Commentary on<title xml:lang="ar-Latn-x-lc" ref="#m2">al-Mufaṣṣal</title>of<persName type="standard"
                                   xml:id="m2"
@@ -63,7 +65,9 @@
                   </msItem>
                   <msItem xml:id="MS_Laud_Or_300-item2" n="2">
                      <locus from="171" to="173">ff. 171v-173v</locus>
-                     <author>Ibn Burakāt, Shams al-Dīn Abū al-Qāsim ʻAbd al-Wahhāb ibn Ḥasan</author>
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc">Ibn Burakāt, Shams al-Dīn Abū al-Qāsim ʻAbd al-Wahhāb ibn Ḥasan</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Muthallathāt Quṭrub</title>
                      <note>A versification of the<title xml:lang="ar-Latn-x-lc">Kitāb al-Muthallath</title>of<persName type="standard"
                                   xml:lang="ar-Latn-x-lc"
@@ -190,11 +194,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

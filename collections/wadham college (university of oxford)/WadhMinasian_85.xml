@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7911">
    <teiHeader>
       <fileDesc>
@@ -53,7 +53,13 @@
                      <title xml:lang="ar">المختصر النافع</title>
                      <title xml:lang="ar-Latn-x-lc" type="alt">al-Nāfiʿ fī Mukhtaṣar al-Sharāyiʿ</title>
                      <title xml:lang="ar" type="alt">النافع فی مختصر الشرایع</title>
-                     <author key="n88259632‏‏" ref="http://viaf.org/viaf/90059858">‎Muḥaqqiq al-Ḥillī, Jaʿfar ibn al-Ḥasan, 1205 or 1206-1277‏محقق الحلی، جعفر ابن الحسن، ۱۲۰۵ یا ۱۲۰۶-۱۲۷۷Muḥaqqiq Ḥillī, Jaʿfar ibn al-Ḥasan‏محقق حلّی، جعفر بن حسن<addName xml:lang="fa-Latn-x-lc" type="laqab">Najm al-Dīn</addName>
+                     <author key="n88259632‏‏" ref="http://viaf.org/viaf/90059858">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">‎Muḥaqqiq al-Ḥillī, Jaʿfar ibn al-Ḥasan, 1205 or 1206-1277‏</persName>
+                        <persName xml:lang="ar" type="standard">محقق الحلی، جعفر ابن الحسن، ۱۲۰۵ یا ۱۲۰۶-۱۲۷۷</persName>
+                        <persName xml:lang="ar-Latn-x-lc" type="alt">Muḥaqqiq Ḥillī, Jaʿfar ibn al-Ḥasan‏</persName>
+                        <persName xml:lang="ar" type="alt">محقق حلّی، جعفر بن حسن</persName>
+                        
+                        <addName xml:lang="fa-Latn-x-lc" type="laqab">Najm al-Dīn</addName>
                         <addName xml:lang="fa" type="laqab">نجم‌الدین</addName>
                         <addName xml:lang="ar-Latn-x-lc" type="kunyah">Abu al-Qāsim</addName>
                         <addName xml:lang="ar" type="kunyah">ابوالقاسم</addName>
@@ -107,14 +113,14 @@
                               <height>20.5</height>
                               <width>15.5</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="12">
                            <note>12 lines per page.</note>
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -215,7 +221,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2017-09-12">

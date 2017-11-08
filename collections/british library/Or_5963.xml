@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6056">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,12 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="Or_5963-item1" n="1">
                      <locus from="1v" to="76v">f 1v-76v</locus>
-                     <author key="n83126412" ref="http://viaf.org/viaf/118486738/">Ibn al-Fāriḍ, ʻUmar ibn ʻAlī, 1181 or 2-1235ابن فارض، عمر بن على
+                     <author key="n83126412" ref="http://viaf.org/viaf/118486738/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Ibn al-Fāriḍ, ʻUmar ibn ʻAlī, 1181 or 2-1235</persName>
+                        <persName xml:lang="fa">ابن فارض، عمر بن على</persName>
+                        
+                        
+                        
                         
                         
                         
@@ -58,8 +63,8 @@
                      <title xml:lang="fa-Latn-x-lc" type="alt">Qaṣīdat al-sharīfah [sic] li-ʻUmar ibn Fāriz̤</title>
                      <title xml:lang="fa" type="alt">قسیدت الشریفه العمر بن فارض</title>
                      
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note type="text-relations">Arabic text, with interlinear verse translation, of<title xml:lang="fa-Latn-x-lc">Naẓm al-Sulūk (<foreign xml:lang="fa">نظم السلوک</foreign>)</title>, often known as<title xml:lang="ar-Latn-x-lc">al- Tāʼīyat al- kubrá (<foreign xml:lang="ar">تائية ابن الفارض الكبرى</foreign>)</title>on Sufism, of<persName key="n83126412"
                                   ref="http://viaf.org/viaf/118486738/"
                                   xml:lang="fa-Latn-x-lc"
@@ -156,7 +161,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-11-04">

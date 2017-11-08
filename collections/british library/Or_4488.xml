@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5149">
    <teiHeader>
       <fileDesc>
@@ -43,7 +43,12 @@
                </msIdentifier>
                <msContents class="http://id.loc.gov/authorities/sh96011772 http://id.loc.gov/authorities/sh90002018 http://id.loc.gov/authorities/sh85149528 http://id.loc.gov/authorities/sh2007003173">
                   <msItem xml:id="Or_4488-item1">
-                     <author key="1053810059‏‏‏" ref="http://viaf.org/viaf/309641093">Muʿaẓẓam ShāhPīr Muʿaẓẓam Shāhپیر معزم شاهمعزم شاه</author>
+                     <author key="1053810059‏‏‏" ref="http://viaf.org/viaf/309641093">
+                        <persName xml:lang="pus-Latn-x-lc" type="standard">Muʿaẓẓam Shāh</persName>
+                        <persName xml:lang="ps" type="alt">Pīr Muʿaẓẓam Shāh</persName>
+                        <persName xml:lang="ps" type="alt">پیر معزم شاه</persName>
+                        <persName xml:lang="ps">معزم شاه</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Tavārīkh-i Ḥāfiẓ Raḥmat Khānī</title>
                      <title xml:lang="pus-Latn-x-lc" type="alt">Tawārīkh-i Ḥāfiẓ Raḥmat Khānī</title>
                      <title xml:lang="fa">تواریخ حافظ رحمت خاني</title>
@@ -66,7 +71,7 @@
                               <height>30</height>
                               <width>19.5</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -123,7 +128,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2016-01-25">

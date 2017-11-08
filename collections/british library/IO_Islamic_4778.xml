@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3498">
    <teiHeader>
       <fileDesc>
@@ -43,18 +43,24 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85100074 http://lccn.loc.gov/n50052021 http://lccn.loc.gov/n80025804">
                   <msItem xml:id="IO_Islamic_4778-item1">
-                     <author>Various authors
+                     <author>
+                        <persName xml:lang="en" type="desc">Various authors</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="en" type="desc">Copies of letters from Ṭīpū Sulṭān’s agents</title>
                      
                      
                      
                      
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>Letters from the court of Hyderabad<date calendar="#Gregorian" notBefore="1781" notAfter="1798">1781-98</date>, including correspondence of<persName xml:lang="fa-Latn-x-lc" type="supplied">Asad ʻAlī Khān</persName>,<persName xml:lang="fa-Latn-x-lc" type="supplied">Qādir Ḥusayn Khān</persName>,<persName xml:lang="fa-Latn-x-lc" type="supplied">Sukhārān Panḍit</persName>,<persName xml:lang="fa-Latn-x-lc" type="supplied">Lachhmī Narāyan</persName>and<persName xml:lang="fa-Latn-x-lc" type="supplied">Madīnah Ṣāḥib</persName>
                      </note>
                      <note>Annotations by<persName ref="http://viaf.org/viaf/76424710"
@@ -74,7 +80,7 @@
                               <height>24</height>
                               <width>13</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -127,7 +133,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-12-29">

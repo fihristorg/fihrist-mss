@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6670">
    <teiHeader>
       <fileDesc>
@@ -42,24 +42,32 @@
                </msIdentifier>
                <msContents>
                   <summary>
-                     <title type="main"/>
+                     
                   </summary>
                   <msItem xml:id="Persian_MS_19-item1">
-                     <author key="n92018469" ref="http://viaf.org/viaf/90042173/">Dawwānī, Muḥammad ibn Asʻad, 1426 or 7-1512 or 13دواني، محمد بن اسعد
+                     <author key="n92018469" ref="http://viaf.org/viaf/90042173/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Dawwānī, Muḥammad ibn Asʻad, 1426 or 7-1512 or 13</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">دواني، محمد بن اسعد
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Lawāmiʻ al-ishrāq fī makārim al-akhlāq</title>
                      <title xml:lang="fa-Latn-x-lc" type="alt">Akhlāq-i Jalālī</title>
                      <title xml:lang="ar">لوامع الاشراق في مكارم الاخلاق</title>
                      <title xml:lang="fa" type="alt">اخلاق جلالی</title>
                      
-                     
-                     
+                     <incipit xml:lang="ar" type="basmalla"/>
+                     <explicit xml:lang="ar"/>
                      <listBibl>
                         <bibl>based on<title xml:lang="ar-Latn-x-lc">Kitāb al-ṭaharat</title>
-                           <title xml:lang="ar">كتاب الطهارة</title>a philisophical treatise written in Arabic in the<date calendar="#Gregorian" notBefore="0900" notAfter="1000">10th Century CE</date>by<author>Abu Ali al-Mashkurīابي علي المشكري</author>
+                           <title xml:lang="ar">كتاب الطهارة</title>a philisophical treatise written in Arabic in the<date calendar="#Gregorian" notBefore="0900" notAfter="1000">10th Century CE</date>by<author>
+                              <persName xml:lang="fa-Latn-x-lc" type="supplied">Abu Ali al-Mashkurī</persName>
+                              <persName xml:lang="ar">ابي علي المشكري</persName>
+                           </author>
                         </bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
@@ -69,8 +77,8 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
@@ -140,7 +148,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014">

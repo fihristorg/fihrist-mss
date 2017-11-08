@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3761">
    <teiHeader>
       <fileDesc>
@@ -45,10 +45,16 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="Islamic_Arabic_1625-item1" n="1">
                      <locus from="1" to="45">ff. 1-45</locus>
-                     <author key="nr92029548" ref="http://viaf.org/viaf/22007516">Shanawānī, Abū Bakr ibn Ismāʿīl,<date calendar="#Gregorian" notBefore="1551" notAfter="1611">1551 or 1552-1610 or 1611</date>الشنواني، أبو بكر بن إسماعيل، 959-1019 هـ
+                     <author key="nr92029548" ref="http://viaf.org/viaf/22007516">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Shanawānī, Abū Bakr ibn Ismāʿīl,<date calendar="#Gregorian" notBefore="1551" notAfter="1611">1551 or 1552-1610 or 1611</date>
+                        </persName>
                         
                         
-                        
+                        <persName xml:lang="ar">الشنواني، أبو بكر بن إسماعيل، 959-1019 هـ
+                           
+                           
+                           
+                        </persName>
                      </author>
                      
                      
@@ -56,9 +62,11 @@
                      
                      <title xml:lang="en" type="desc">Commentary on an unidentified grammatical work</title>
                      <note>End is missing</note>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="fa" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 1605</bibl>
                         <bibl>GAL II 285; Suppl. II 394</bibl>
@@ -67,10 +75,16 @@
                   </msItem>
                   <msItem xml:id="Islamic_Arabic_1625-item2" n="2">
                      <locus from="46" to="96">ff. 46-96</locus>
-                     <author key="n85009625" ref="http://viaf.org/viaf/24589357">Qalyūbī, Shihāb al-Dīn Aḥmad ibn Aḥmad,<date calendar="#Gregorian" to="1679">-1659</date>القليوبي، أحمد بن أحمد، ت. 1069 هـ
+                     <author key="n85009625" ref="http://viaf.org/viaf/24589357">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Qalyūbī, Shihāb al-Dīn Aḥmad ibn Aḥmad,<date calendar="#Gregorian" to="1679">-1659</date>
+                        </persName>
                         
                         
-                        
+                        <persName xml:lang="ar">القليوبي، أحمد بن أحمد، ت. 1069 هـ
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Ḥāshiyat ʿalà sharḥ al-ʿAzharī ʿalà al-Muqaddimah al-Ājurrūmīyah</title>
                      
@@ -89,9 +103,11 @@
                            <foreign xml:lang="ar">ابن آجروم، محمد بن محمد، 672-723 هـ</foreign>
                         </persName>
                      </note>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 1591</bibl>
                         <bibl>GAL II 237, Gloss c; II 364; SUppl. II 492</bibl>
@@ -106,14 +122,14 @@
                               <height>20.9</height>
                               <width>15.9</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="23" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                            <note>23 lines per page</note>
                         </layout>
                      </layoutDesc>
@@ -180,7 +196,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-06-23">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7335">
    <teiHeader>
       <fileDesc>
@@ -42,26 +42,36 @@
                </msIdentifier>
                <msContents>
                   <summary>
-                     <title type="main"/>
+                     
                   </summary>
                   <msItem xml:id="Persian_MS_828-item1" n="1">
-                     <author key="n88648363" ref="http://viaf.org/viaf/71827117/">Muʻtamad Khān, Muhammad Sharif, d. 1639 or 40معتمد خان، محمد شريف بن دوست محمد
+                     <author key="n88648363" ref="http://viaf.org/viaf/71827117/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Muʻtamad Khān, Muhammad Sharif, d. 1639 or 40</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">معتمد خان، محمد شريف بن دوست محمد
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Tārīkh-i Jahāngīrī</title>
                      
                      <title xml:lang="fa">تاریخ جهانگيری</title>
                      
                      
-                     
-                     
+                     <incipit xml:lang="ar" type="basmalla"/>
+                     <explicit xml:lang="ar"/>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="Persian_MS_828-item2" n="2">
-                     <author key="n 95039072" ref="http://viaf.org/viaf/95224252/">Sharaf al-Dīn ʻAlī Yazdī, d. 1454شرف الدين على يزدى
-                        
+                     <author key="n 95039072" ref="http://viaf.org/viaf/95224252/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Sharaf al-Dīn ʻAlī Yazdī, d. 1454</persName>
+                        <persName xml:lang="fa">شرف الدين على يزدى
+                           
+                           
+                           
+                        </persName>
                         
                         
                      </author>
@@ -70,8 +80,8 @@
                      <title xml:lang="fa">ظفرنامه</title>
                      
                      
-                     
-                     
+                     <incipit xml:lang="ar" type="basmalla"/>
+                     <explicit xml:lang="ar"/>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
@@ -79,8 +89,8 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
@@ -154,7 +164,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014"/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4765">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,11 @@
                <msContents>
                   <msItem xml:id="MS_Ouseley_Add_107-item1" n="1">
                      <locus from="1" to="69">ff. 1-69b</locus>
-                     <author key="n85079336" ref="http://viaf.org/viaf/15161227">Khāqānī, Afz̤al al-Dīn Shirvānī, ca. 1126-1198 or 9خاقانی، افضل الدين ابراهيم بن على نجار شروانى</author>
+                     <author key="n85079336" ref="http://viaf.org/viaf/15161227">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Khāqānī, Afz̤al al-Dīn Shirvānī, ca. 1126-1198 or 9</persName>
+                        
+                        <persName xml:lang="fa">خاقانی، افضل الدين ابراهيم بن على نجار شروانى</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Tuḥfat al-ʻIrāqayn</title>
                      <title xml:lang="fa">تحفت العراقين</title>
                      <listBibl>
@@ -58,10 +62,15 @@
                   </msItem>
                   <msItem xml:id="MS_Ouseley_Add_107-item2" n="2">
                      <locus from="70" to="123">ff. 70-123</locus>
-                     <author key="n80115655" ref="http://viaf.org/viaf/2474895">Niẓāmī Ganjavī, 1140 or 41-1202 or 3نظامى گنجوى
+                     <author key="n80115655" ref="http://viaf.org/viaf/2474895">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Niẓāmī Ganjavī, 1140 or 41-1202 or 3</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">نظامى گنجوى
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Makhzan al-asrār-i Niẓāmī</title>
                      
@@ -177,7 +186,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-06-11">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7078">
    <teiHeader>
       <fileDesc>
@@ -42,10 +42,15 @@
                   <idno>Persian MS 58</idno>
                </msIdentifier>
                <msContents>
-                  <summary>A partial copy of Riyāż al-shu‘arā’, containing entries until the letter sīn<title type="main"/>
+                  <summary>A partial copy of Riyāż al-shu‘arā’, containing entries until the letter sīn
                   </summary>
                   <msItem xml:id="Persian_MS_58-item1">
-                     <author key="n 85018182" ref="http://viaf.org/viaf/70348954">ʻAlī Qulī Khān Vālih, 1712-1756علی قلی خان داغستانیWālihواله</author>
+                     <author key="n 85018182" ref="http://viaf.org/viaf/70348954">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">ʻAlī Qulī Khān Vālih, 1712-1756</persName>
+                        <persName xml:lang="fa">علی قلی خان داغستانی</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Wālih</persName>
+                        <persName xml:lang="fa" type="alt">واله</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc" type="alt">Riyāż al-shu‘arā’</title>
                      <title xml:lang="fa" type="alt">ریاض الشعراء</title>
                      <title xml:lang="ar-Latn-x-lc">Riyāḍ al-shuʻarāʼ</title>
@@ -61,7 +66,7 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <support>Written on thick cream-coloured paper. Chain lines 25 cm apart.</support>
-                        <extent>ff. vi + 250 + vii
+                        <extent>ff. vi + 250 + vii<dimensions type="leaf" unit="cm"/>
                            <dimensions type="written" unit="mm">
                               <height>225</height>
                               <width>165</width>
@@ -158,7 +163,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8655">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,12 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_46481-item1" n="1">
-                     <author ref="http://viaf.org/viaf/280386320/">Hāshimī, Zayn al-ʿAbidīn ibn Sayyid Abū al-Ḥasan, fl. 1520هاشمي، زين العابدين بن سيد ابو الحسن</author>
+                     <author ref="http://viaf.org/viaf/280386320/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Hāshimī, Zayn al-ʿAbidīn ibn Sayyid Abū al-Ḥasan, fl. 1520</persName>
+                        
+                        
+                        <persName xml:lang="fa">هاشمي، زين العابدين بن سيد ابو الحسن</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Farasnāmah</title>
                      
                      <title xml:lang="fa">فرسنامه</title>
@@ -52,12 +57,17 @@
                      
                      <note>A treatise on farriery translated into Persian from a Sanksrit work entitled Ṣālihotra at the request of Muzaffar Shah II of Gujarat</note>
                      <incipit xml:lang="ar">اسپ فکرت چو زین کند دانا به که گوید نخست حمد خدا</incipit>
-                     
-                     
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="ms_46481-item2" n="2">
-                     <author ref="http://viaf.org/viaf/7524651" key="n79004182">Aristotleأرسطو</author>
+                     <author ref="http://viaf.org/viaf/7524651" key="n79004182">
+                        <persName xml:lang="en" type="standard">Aristotle</persName>
+                        <persName xml:lang="ar">أرسطو</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Farasnāmah</title>
                      <title xml:lang="fa">فرسنامه</title>
                      <note>A treatise on farriery by Aristotle translated from the Arabic translation into Persian by Shams al-Dīn Muḥammad ibn Ḥasan</note>
@@ -66,7 +76,9 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="ms_46481-item3" n="3">
-                     <author>Anonymous</author>
+                     <author>
+                        <persName>Anonymous</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Farasnāmah</title>
                      <title xml:lang="fa">فرسنامه</title>
                      <title xml:lang="fa" type="alt">فرس نامه</title>
@@ -82,13 +94,13 @@
                            <ref target="a1">1-78 f.</ref>
                            <ref target="a2">79-103 f.</ref>
                            <ref target="a2">104-179 f.</ref>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -144,7 +156,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-07-18">

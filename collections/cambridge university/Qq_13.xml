@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_9547">
    <teiHeader>
       <fileDesc>
@@ -44,19 +44,26 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Qq_13-item1" n="1">
-                     <author key="n82162164" ref="http://viaf.org/viaf/29665940/">Ibn al-Ḥājib, ʻUthmān ibn ʻUmar, 1175-1249ابن الحاجب
+                     <author key="n82162164" ref="http://viaf.org/viaf/29665940/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn al-Ḥājib, ʻUthmān ibn ʻUmar, 1175-1249</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">ابن الحاجب
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Kāfiyah li-Ibn Ḥājib</title>
                      
                      <title xml:lang="ar">الكافية لابن حاجب</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/view.php?id=99">no. 881</ref>
@@ -66,25 +73,35 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="Qq_13-item2" n="2" class="#commentary">
-                     <author key="n84173673" ref="http://viaf.org/viaf/12611927/">Astarābādhī, Raḍī al-Dīn Muḥammad ibn al-Ḥasan, fl. 1284الاسترآبادي، رضي الدين محمد بن الحسن
+                     <author key="n84173673" ref="http://viaf.org/viaf/12611927/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Astarābādhī, Raḍī al-Dīn Muḥammad ibn al-Ḥasan, fl. 1284</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">الاسترآبادي، رضي الدين محمد بن الحسن
+                           
+                           
+                           
+                        </persName>
                      </author>
                      
                      
                      
                      
                      <title xml:lang="en" type="desc">Commentary on Ibn al-Ḥājib's al-Kāfīyah</title>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/view.php?id=99">no. 881</ref>
                         </bibl>
                         <bibl type="text-relations">Commentary on<title xml:lang="ar-Latn-x-lc">al-Kāfiyah<foreign xml:lang="ar">الكافية</foreign>
-                           </title>of<author key="n82162164" ref="http://viaf.org/viaf/29665940/">Ibn al-Ḥājib, ʻUthmān ibn ʻUmar, 1175-1249ابن الحاجب، عثمان بن عمر</author>.</bibl>
+                           </title>of<author key="n82162164" ref="http://viaf.org/viaf/29665940/">
+                              <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn al-Ḥājib, ʻUthmān ibn ʻUmar, 1175-1249</persName>
+                              <persName xml:lang="ar">ابن الحاجب، عثمان بن عمر</persName>
+                           </author>.</bibl>
                      </listBibl>
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
@@ -93,13 +110,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -171,7 +188,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-11-30">

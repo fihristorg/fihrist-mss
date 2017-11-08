@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8090">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,11 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_19115-item1">
-                     <author key="no2004122140‏" ref="http://viaf.org/viaf/71379719/">Vankulu Mehmet Efendi, -1592Wānqūlī Muḥammad, -1592وانقولی</author>
+                     <author key="no2004122140‏" ref="http://viaf.org/viaf/71379719/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Vankulu Mehmet Efendi, -1592</persName>
+                        <persName type="alt" xml:lang="ar-Latn-x-lc">Wānqūlī Muḥammad, -1592</persName>
+                        <persName xml:lang="ar">وانقولی</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Taʻlīqāt ʻalá Durar al-ḥukkām</title>
                      <title xml:lang="ar">تعليقات على درر الحكام</title>
                      <note>Glosses on the<title xml:lang="ar-Latn-x-lc">Durar al-ḥukkām fī sharḥ ghurar al-aḥkām</title>of<persName xml:lang="ar-Latn-x-lc"
@@ -77,7 +81,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -125,7 +129,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-05-19">

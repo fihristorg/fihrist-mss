@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3974">
    <teiHeader>
       <fileDesc>
@@ -44,19 +44,26 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_828-item1">
-                     <author key="n81008058" ref="http://viaf.org/viaf/90045019/">Jīlī, ʿAbd al-Karīm ibn Ibrāhīm, b. 1365 or 6الجيلي ، عبد الكريم بن إبراهيم
+                     <author key="n81008058" ref="http://viaf.org/viaf/90045019/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Jīlī, ʿAbd al-Karīm ibn Ibrāhīm, b. 1365 or 6</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">الجيلي ، عبد الكريم بن إبراهيم
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Insān al-kāmil fī maʿrifat al-awākhir wa-al-awāʾil</title>
                      
                      <title xml:lang="ar">الانسان الكامل فى معرفة الاواخر و الاوائل</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="fa" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 710</bibl>
                         <bibl>GAL II 205-6, esp. no. 1; II 283-4</bibl>
@@ -71,14 +78,14 @@
                               <height>21.0</height>
                               <width>14.8</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="25" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                            <note>25 lines per page</note>
                         </layout>
                      </layoutDesc>
@@ -134,7 +141,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-06-11">

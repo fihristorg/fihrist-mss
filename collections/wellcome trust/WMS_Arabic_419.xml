@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7769">
    <teiHeader>
       <fileDesc>
@@ -146,8 +146,13 @@
                         <title type="normalised" xml:lang="ara-Latn">Kitāb Ibn Baiṭār huwa Munir al-Absār</title>
                         <title type="original">كتاب ابن بيطار هو منير الابصار<locus facs="#i0010">6a.6</locus>
                         </title>
-                        <author>Ibrāhīm b. Abī Sa`īdb. Ibrāhīm al-Maġribī al-`Alā'īابراهيم ابن ابي سعيد ابن ابراهيم المغربي العلاى<forename>ابراهيم ابن ابي سعيد ابن ابراهيم</forename>
-                           <addName type="nisbah">المغربي العلاى</addName>
+                        <author>
+                           <persName xml:lang="eng-Latn" type="standard">Ibrāhīm b. Abī Sa`īdb. Ibrāhīm al-Maġribī al-`Alā'ī</persName>
+                           <persName xml:lang="ara-Arab" type="original">ابراهيم ابن ابي سعيد ابن ابراهيم المغربي العلاى</persName>
+                           <persName xml:lang="ara-Arab" type="standard">
+                              <forename>ابراهيم ابن ابي سعيد ابن ابراهيم</forename>
+                              <addName type="nisbah">المغربي العلاى</addName>
+                           </persName>
                         </author>
                         <incipit facs="#i0010">
                            <locus>Fol. 6a.12</locus>اطريلاك اسم بربري معناه رجل الطير</incipit>
@@ -643,7 +648,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-10-14T14:58:42+01:00">Conversion from WMSmaster to WAMCP<persName>gbrey</persName>

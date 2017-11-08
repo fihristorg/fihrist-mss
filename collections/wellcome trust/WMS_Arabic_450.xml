@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7789">
    <teiHeader>
       <fileDesc>
@@ -123,9 +123,14 @@
                         <title type="original" facs="#i0005">مختصر التذكره<locus>2b.١</locus>
                         </title>
                         <title type="other" facs="#i0098" xml:lang="ara-Arab">اختصار الجزء الاول من تذكره الامام السويدي</title>
-                        <author>Muḥammad Badr ad-Dīn al-Qūṣūnīمحمد بدر الدين القوصونى<forename>محمد</forename>
-                           <addName type="khitab">بدر الدين</addName>
-                           <addName type="nisbah">القوصونى</addName>
+                        <author>
+                           <persName xml:lang="eng-Latn" type="standard">Muḥammad Badr ad-Dīn al-Qūṣūnī</persName>
+                           <persName xml:lang="ara-Arab" type="original">محمد بدر الدين القوصونى</persName>
+                           <persName xml:lang="ara-Arab" type="standard">
+                              <forename>محمد</forename>
+                              <addName type="khitab">بدر الدين</addName>
+                              <addName type="nisbah">القوصونى</addName>
+                           </persName>
                         </author>
                         <incipit facs="#i0008">
                            <locus>Fol.5b.4</locus>وبعد فهذا كتاب اختصرته فيه كتاب الطب المشهور المفرودات الامام الطبيب راييس الحكما مما نقله عن نحو اربعمايه حكيم من اهل الملة الاسلاميه ومن اليونان وغيرهم كما سنشير الي جملة من اسمايهم في خاتمة الكتاب ان شا الله تعالي وقد ذكر رحمه الله فى خطبة الكتاب انه ما جمع فيها الا ما استحسنه من مجربات الحكما واختاره من معالجات العلما بصناعة الطب او ما جربه مرارا فعمم نفعه وحسن امره<hi rend="bold">وقد رتبته</hi>على امراض الاعضا من بتدا علوا الراس الي القدمين فتبعته علي ذلك تقريبا للطريق علي من يكشف عن امراض عضو من الاعضا من الراس ثم الوجه ثم العنق ثم الصدر وهكذا والله فى عون العبد</incipit>
@@ -1665,7 +1670,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-04-01T16:21:20+01:00">Conversion from WMSmaster to WAMCP<persName>gbrey</persName>

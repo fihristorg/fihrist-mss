@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3829">
    <teiHeader>
       <fileDesc>
@@ -44,18 +44,25 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_284-item1">
-                     <author key="nr94007412" ref="http://viaf.org/viaf/37727988">Abū al-Saʿūd Muḥammad ibn Muḥammad, 1492 or 1493-1574 or 1575أبو السعود محمد بن محمد، 898-982 هـ
+                     <author key="nr94007412" ref="http://viaf.org/viaf/37727988">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Abū al-Saʿūd Muḥammad ibn Muḥammad, 1492 or 1493-1574 or 1575</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">أبو السعود محمد بن محمد، 898-982 هـ
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Irshād al-ʿaql al-salīm ilā mazāyā al-qurʾān al-karīm</title>
                      <title xml:lang="ar">ارشاد العقل السليم الى نزايا القران الكريم</title>
                      
                      <note>Incomplete at the end. Contains first part only to sūrah 7 ( al-aʿrāf<foreign xml:lang="ar">سورة الأعراف‎</foreign>), verse 91.</note>
                      <incipit xml:lang="ar">بسم الله الرحمن الرحيم ... و بعد فيقول العبد الفقير الى رحمة ربه الهاديابو السعود بن محمد العمادي ان الغاية الفصوى ... ناويا ان اسميه عند اتمامه ... ارشاد العقل السليمالى مزايا القران الكريم</incipit>
-                     
-                     
+                     <explicit xml:lang="ar" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 34</bibl>
                         <bibl>GAL II 438-9, esp. no. 1; II 651</bibl>
@@ -70,14 +77,14 @@
                               <height>30.4</height>
                               <width>19.0</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="29" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -131,7 +138,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-03-04">

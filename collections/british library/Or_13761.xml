@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5598">
    <teiHeader>
       <fileDesc>
@@ -43,7 +43,10 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh2008112367 http://lccn.loc.gov/sh85100934">
                   <msItem xml:id="Or_13761-item1">
-                     <author ref="http://viaf.org/viaf/45460576/" key="no2001069780">Turkah Iṣfahānī, ʻAlī ibn Muḥammad, 1368 or 9-1431 or 2تركة اصفهاني، علي بن محمد
+                     <author ref="http://viaf.org/viaf/45460576/" key="no2001069780">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Turkah Iṣfahānī, ʻAlī ibn Muḥammad, 1368 or 9-1431 or 2</persName>
+                        <persName xml:lang="fa">تركة اصفهاني، علي بن محمد</persName>
+                        
                         
                         
                         
@@ -53,9 +56,11 @@
                      
                      
                      <note>Five debates between allegorical personages: Reason v. Love; Fancy v. Reason; Fancy v. Imagination, Hearing v. Sight; Lover v. Beloved</note>
-                     
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
+                     <note>
+                        <foreign xml:lang="fa"/>
+                     </note>
                      <listBibl>
                         <bibl>For a more detailed description see Waley 1998, page 9.</bibl>
                      </listBibl>
@@ -114,7 +119,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-10-03">

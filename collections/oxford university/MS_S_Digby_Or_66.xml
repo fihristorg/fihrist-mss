@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5021">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,12 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_S_Digby_Or_66-item1">
-                     <author key="no2003107130" ref="http://viaf.org/viaf/61243125">Tattavī, Aḥmad, -1588Abū al-Jūd Aḥmad ibn Naṣr Allāh Tattavīأبو الجود أحمد بن نصر الله تتوي</author>
+                     <author key="no2003107130" ref="http://viaf.org/viaf/61243125">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Tattavī, Aḥmad, -1588</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Abū al-Jūd Aḥmad ibn Naṣr Allāh Tattavī</persName>
+                        
+                        <persName xml:lang="fa" type="alt">أبو الجود أحمد بن نصر الله تتوي</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Khulāṣat al-Ḥayāh</title>
                      <title xml:lang="fa">خلاصة الحياة</title>
                      <incipit xml:lang="fa">فتح كلام خير انجام بنام حكيمي كه سرد كه</incipit>
@@ -58,12 +63,12 @@
                               <height>24.8</height>
                               <width>15.2</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="in"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="15" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -173,7 +178,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-04-27"/>

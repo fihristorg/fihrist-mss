@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8803">
    <teiHeader>
       <fileDesc>
@@ -44,27 +44,33 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_47845-item1">
-                     <author>&gt;Amīr, KhvājahKhvājah Amīrامير، خواجه</author>
+                     <author>&gt;<persName xml:lang="fa-Latn-x-lc" type="supplied">Amīr, Khvājah</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Khvājah Amīr</persName>
+                        
+                        <persName xml:lang="fa">امير، خواجه</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Taʼlīf-i Amīr</title>
                      
                      <title xml:lang="fa">تأليف امير</title>
                      <note>A short grammar and vocabulary in Persian of the Turki language</note>
                      <incipit xml:lang="fa">حمد بيحد و سپاس بیعد موداي</incipit>
-                     
-                     
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="fa"/>
+                     </note>
                      <textLang mainLang="fa">Persian and Azerbaijani Turkish</textLang>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>10 f.
-                           
+                        <extent>10 f.<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -111,7 +117,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-09-20">

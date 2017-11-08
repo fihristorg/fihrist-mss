@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6502">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,10 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="Or_9688-item1" n="1" class="http://lccn.loc.gov/sh85100084">
                      <locus from="1r" to="45r">1r-45r ff</locus>
-                     <author key="n79068673" ref="http://viaf.org/viaf/90042997">Jāmīجامی</author>
+                     <author key="n79068673" ref="http://viaf.org/viaf/90042997">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Jāmī</persName>
+                        <persName xml:lang="fa">جامی</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Lavāmī‘</title>
                      <title xml:lang="fa">لوامع</title>
                      <note>A commentary on some verses of<title xml:lang="fa-Latn-x-lc">al-Qaṣīdah al-Khamrīyah<foreign xml:lang="fa">القصیدة الخمریة</foreign>
@@ -80,7 +83,7 @@
                               <height>20.2</height>
                               <width>13</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -113,7 +116,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-02-22">

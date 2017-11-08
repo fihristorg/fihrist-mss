@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_2632">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,9 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="RAS_Ellis_Persian_Uncat_1-item1">
-                     <author key="n90724783" ref="http://viaf.org/viaf/114270392">Bābā Afz̤al, 13th cent.</author>
+                     <author key="n90724783" ref="http://viaf.org/viaf/114270392">
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Bābā Afz̤al, 13th cent.</persName>
+                     </author>
                      <title xml:lang="en">A collection of works of Baba Afdal Qashani.</title>
                      <note>Though the author appears not to be named except in the last and the titles are later additions the works are all those taken to be by, or associated with, Baba Afdal. ) 'Ard-namah. b) Translation of Aristotle's De Anima. c) Jawidan-namah. d) Translation of the pseudo-Aristotelian De Pomo. e) Risalah-i Saz u Pirayah. f) Risalah-i Madarij al-Kamal. g) Insha'-namah. e) Letters, the first apparently that to Taj al-Din Nushabadi, the second to Shams al-Din.</note>
                      <incipit>Khudawanda bi-fuzuni-yi furugh wa jud u jawdat</incipit>
@@ -59,7 +61,7 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
+                           <dimensions type="leaf" unit="in"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -88,7 +90,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-05-30">

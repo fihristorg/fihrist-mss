@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4150">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,11 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_Arch_Seld_A_55-item1">
-                     <author key="nr 89011237" ref="http://viaf.org/viaf/81975562/">ʻAbd al-Laṭīf al-Baghdādī, Muwaffaq al-Dīn,<date calendar="#Gregorian" from="1162" to="1231">1162-1231</date>عبد اللطيف البغدادي، موفّق الدين 557-629 هـ</author>
+                     <author key="nr 89011237" ref="http://viaf.org/viaf/81975562/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">ʻAbd al-Laṭīf al-Baghdādī, Muwaffaq al-Dīn,<date calendar="#Gregorian" from="1162" to="1231">1162-1231</date>
+                        </persName>
+                        <persName xml:lang="ar">عبد اللطيف البغدادي، موفّق الدين 557-629 هـ</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">al-Tajrīd min alfāẓ Rasūl Allāh wa-al-Ṣaḥābah wa-al-Tābiʻīn</title>
                      <title xml:lang="ar">التجريد من ألفاظ رسول الله والصحابة والتابعين</title>
                      <listBibl>
@@ -104,11 +108,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

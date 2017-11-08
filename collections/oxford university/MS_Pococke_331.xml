@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1519">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,9 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_Pococke_331-item1" class="#abridgement">
-                     <author key="n 82232205" ref="http://viaf.org/viaf/90059940/">Yamanī, ʻAbd al-Bāqī ibn ʻAbd al-Majīd,<date calendar="#Gregorian" from="1281" to="1343">1281-1343</date>
+                     <author key="n 82232205" ref="http://viaf.org/viaf/90059940/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Yamanī, ʻAbd al-Bāqī ibn ʻAbd al-Majīd,<date calendar="#Gregorian" from="1281" to="1343">1281-1343</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Luqṭat al-ʻajlān</title>
                      <note>A compendium of the<title ref="#m2" xml:lang="ar-Latn-x-lc">Wafayāt al-aʼyān</title>of<persName type="standard"
@@ -154,11 +156,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

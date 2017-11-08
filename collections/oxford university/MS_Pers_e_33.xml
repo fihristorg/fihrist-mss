@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1343">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,9 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Pers_e_33-item1" n="1">
                      <locus from="1" to="14">ff. 1v-14v*</locus>
-                     <author key="n 79004182" ref="http://viaf.org/viaf/7524651/">Aristotle</author>
+                     <author key="n 79004182" ref="http://viaf.org/viaf/7524651/">
+                        <persName type="standard">Aristotle</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Risālah fī al-nujūm</title>
                      <note>In 100 faṣl, said to have been composed for<persName key="n 79004067"
                                   ref="http://www.viaf.org/viaf/101353608/"
@@ -61,7 +63,9 @@
                   </msItem>
                   <msItem xml:id="MS_Pers_e_33-item2" n="2">
                      <locus from="15" to="19">ff. 15v-19v*</locus>
-                     <author key="n 79004182" ref="http://viaf.org/viaf/7524651/">Aristotle</author>
+                     <author key="n 79004182" ref="http://viaf.org/viaf/7524651/">
+                        <persName type="standard">Aristotle</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Maqālah fī aḥkām al-nujūm</title>
                      <note>Same hand as rest of MS. (Beeston 2783) *ff. 15r, 20r blank</note>
                      <listBibl>
@@ -178,11 +182,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1011">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,9 @@
                </msIdentifier>
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Huntington_461-item1" n="1" class="#abridgement">
-                     <author key="n 92072344" ref="http://viaf.org/viaf/79162937/">Ibn Serapion, Yúhānnā,<date calendar="#Gregorian" atMost="0900">9th cent.</date>
+                     <author key="n 92072344" ref="http://viaf.org/viaf/79162937/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ibn Serapion, Yúhānnā,<date calendar="#Gregorian" atMost="0900">9th cent.</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Kitāb al-Fuṣūl al-muhimmah fī ṭibb al-ummah [?or aʼimmah]</title>
                      <note>A compendium in 43 faṣl of extracts from al-Rāzī, Ibn Sīnā and others, including also in full the texts of works by Rufus of Ephesus (see Appendix Medicine) Ḥunayn ibn Isḥāq (see I 205, 6), Ibn Sīnā (see I 458), and al-Rāzī (see I 235). Incomplete; runs to faṣl 26 only.</note>
@@ -57,7 +59,9 @@
                   </msItem>
                   <msItem xml:id="MS_Huntington_461-item2" n="2">
                      <locus from="38" to="50">ff. 38v-50r</locus>
-                     <author key="n 83122630" ref="http://viaf.org/viaf/42630594/">Rufus, of Ephesus</author>
+                     <author key="n 83122630" ref="http://viaf.org/viaf/42630594/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Rufus, of Ephesus</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">al-Amthilah wa-al-muʻālajāt al-juzʼīyah li-Rūfus wa-ghayrihi min al-qudamāʼ wa-al-muḥdathīn</title>
                      <listBibl>
                         <bibl>Appendix Medicine</bibl>
@@ -67,7 +71,9 @@
                   </msItem>
                   <msItem xml:id="MS_Huntington_461-item3" n="3">
                      <locus from="52" to="63">ff. 52v-63r</locus>
-                     <author key="n 80145641" ref="http://viaf.org/viaf/19690624/">Ḥunayn ibn Isḥāq al-ʻIbādī,<date calendar="#Gregorian" from="0809" to="0873">809?-873</date>
+                     <author key="n 80145641" ref="http://viaf.org/viaf/19690624/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ḥunayn ibn Isḥāq al-ʻIbādī,<date calendar="#Gregorian" from="0809" to="0873">809?-873</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Maqālah fī ḥifẓ al-asnān wa-al-lithah wa-istiṣlāḥihā</title>
                      <listBibl>
@@ -78,7 +84,9 @@
                   </msItem>
                   <msItem xml:id="MS_Huntington_461-item4" n="4">
                      <locus from="91" to="118">ff. 91r-118r</locus>
-                     <author key="n 80002386" ref="http://viaf.org/viaf/97166546/">Avicenna,<date calendar="#Gregorian" from="0980" to="1037">980-1037</date>
+                     <author key="n 80002386" ref="http://viaf.org/viaf/97166546/">
+                        <persName type="standard">Avicenna,<date calendar="#Gregorian" from="0980" to="1037">980-1037</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Risālah fī al-Adwiyah al-qalbīyah</title>
                      <listBibl>
@@ -89,12 +97,17 @@
                   </msItem>
                   <msItem xml:id="MS_Huntington_461-item5" n="5">
                      <locus from="151" to="172">ff. 151v-172v</locus>
-                     <author key="n 80133010" ref="http://viaf.org/viaf/95154093/">Rāzī, Abū Bakr Muḥammad ibn Zakarīyā,<date calendar="#Gregorian" from="0865" to="0925">865?-925?</date>
-                        <surname>بن زکریّا</surname>
-                        <forename>محمد</forename>
-                        <addName type="laqab"/>
-                        <addName type="kunyah">أبو بكر</addName>
-                        <addName type="nisbah">الرازي</addName>
+                     <author key="n 80133010" ref="http://viaf.org/viaf/95154093/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Rāzī, Abū Bakr Muḥammad ibn Zakarīyā,<date calendar="#Gregorian" from="0865" to="0925">865?-925?</date>
+                        </persName>
+                        
+                        <persName xml:lang="ar" type="standard">
+                           <surname>بن زکریّا</surname>
+                           <forename>محمد</forename>
+                           
+                           <addName type="kunyah">أبو بكر</addName>
+                           <addName type="nisbah">الرازي</addName>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Kitāb al-Qūlanj</title>
                      <listBibl>
@@ -228,11 +241,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

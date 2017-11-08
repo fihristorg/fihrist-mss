@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7766">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,7 @@
                               <formula>due to the binding could not be established exactly</formula>
                            </seg>
                            <seg type="gathering" subtype="folded">
-                              
+                              <dimensions type="leaf" unit="mm" quantity="6"/>
                               <note>Possibly not 6 gatherings, due to the binding it is difficult to see where one ends or begins.</note>
                            </seg>
                         </collation>
@@ -133,9 +133,14 @@
                         <title type="original">دفع المضار الكلية عن الابدان الانسانية<locus>1b.12</locus>
                         </title>
                         <title type="other" facs="#i0003" xml:lang="ara-Arab">تدارك الخطاء</title>
-                        <author>Abū `Alī al-Ḥusayn b. `Abd Allāh b. Sīnāابو على الحسين ابن عبد الله ابن سينا<surname>ابو على</surname>
-                           <forename>الحسين ابن عبد الله</forename>
-                           <addName type="kunyah">ابن سينا</addName>
+                        <author>
+                           <persName xml:lang="eng-Latn" type="standard">Abū `Alī al-Ḥusayn b. `Abd Allāh b. Sīnā</persName>
+                           <persName xml:lang="ara-Arab" type="original">ابو على الحسين ابن عبد الله ابن سينا</persName>
+                           <persName type="standard" xml:lang="ara-Arab">
+                              <surname>ابو على</surname>
+                              <forename>الحسين ابن عبد الله</forename>
+                              <addName type="kunyah">ابن سينا</addName>
+                           </persName>
                         </author>
                         <incipit facs="#i0004">
                            <locus>Fol. 1b.2</locus>قال الشيخ الرئيس حجة الحق ابو على ابن سينا الحمد للّه رب العالمين وصلواته علي ساير انبياه ورسله الطاهرينوبعد فان الشيخ الجليل السيد ابا الحسن احمد بن محمد السهلى وهو من عرف بعلو الهمّه وشرف الارومه ومحبه العلوم الحقيقه والاخد منها بالحظ الاوفر وارتباط المبردين فيها</incipit>
@@ -568,7 +573,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-10-14T14:58:39+01:00">Conversion from WMSmaster to WAMCP<persName>gbrey</persName>

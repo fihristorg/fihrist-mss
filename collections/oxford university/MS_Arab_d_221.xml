@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_10231">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,9 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_Arab_d_221-item1">
-                     <author key="n 80133312" ref="http://www.viaf.org/viaf/24571510/">Hermes, Trismegistus</author>
+                     <author key="n 80133312" ref="http://www.viaf.org/viaf/24571510/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Hermes, Trismegistus</persName>
+                     </author>
                      <title>A collection of magical and other treatises ascribed mainly to Hermes Trismegistus.</title>
                      <note>A. F. L. Beeston: BLR 7 (1962), pp. 11-23. For fols. 13r-31v see M. Ullmann, Neues zum Steinbuch des Xenokrates. (Sonderdruck: Medizin historisches Journal, Bd. 8, pp. 59-76.) = Arab. d. 5859. For fols. 64r-75v see idem, Proceedings of the vith congress of Arabic and Islamic studies, pp. 198-200.</note>
                      <listBibl>
@@ -104,11 +106,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

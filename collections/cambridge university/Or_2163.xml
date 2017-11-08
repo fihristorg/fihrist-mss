@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5875">
    <teiHeader>
       <fileDesc>
@@ -45,49 +45,64 @@
                <msContents>
                   <msItem xml:id="Or_2163-item1" n="1">
                      <locus from="1b" to="31b">ff. 1b-31b</locus>
-                     <author>Ibn Nujaym, Zayn al-Dīn ibn IbrāhīmIbn Nadīm?ابن نجيم، زين الدين بن ابراهيم
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn Nujaym, Zayn al-Dīn ibn Ibrāhīm</persName>
                         
-                        
-                        
+                        <persName xml:lang="ar-Latn-x-lc" type="alt">Ibn Nadīm?</persName>
+                        <persName xml:lang="ar">ابن نجيم، زين الدين بن ابراهيم
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Fawāʼid al-Zaynīyah fī madhhab al-Ḥanafīyah</title>
                      
                      <title xml:lang="ar">الفوائد الزينية في مذهب الحنفية</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="Or_2163-item2" n="2">
                      <locus from="33b" to="59b">ff. 33b-59b</locus>
-                     <author>Ibn al-Nāẓim?
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn al-Nāẓim?</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Aḥkām al-Nāẓim</title>
                      
                      <title xml:lang="ar">احكام الناظم</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc form="other">
                      <supportDesc material="chart">
-                        <extent>62 folios
-                           
+                        <extent>62 folios<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -137,7 +152,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-05-17">

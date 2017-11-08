@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3121">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,11 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_47280-item1">
-                     <author key="n84008357" ref="http://viaf.org/viaf/19720256/">Badīʻ al-Zamān al-Hamadhānī, 969-1008</author>
+                     <author key="n84008357" ref="http://viaf.org/viaf/19720256/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Badīʻ al-Zamān al-Hamadhānī, 969-1008</persName>
+                        
+                        
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Maqāmāt Badīʻ al-Zamān</title>
                      <title xml:lang="ar-Latn-x-lc" type="alt">Maqāmāt Badīʻ al-Zamān al-Hamadhānī</title>
                      <title xml:lang="ar">مقامات بديع الزمان</title>
@@ -52,8 +56,10 @@
                      
                      <note>Oriental paper. Black and red ink. Transcribed from a Ms dated Ramadan 562/1167.</note>
                      <incipit xml:lang="ar">الحمد لله على جزيل نعمائه وجليل الائه… اما بعد فهذا مما املاها الاستاذ الامام ابو الفضل… الهمداني رواية عن عيسى بن هشام من مقامات ابى الفتح الاسكندري قال البديع حدثنا عيسى بن هشام قال دخلت لبصرة وانا من سنى في فتاء…</incipit>
-                     
-                     
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://digital.info.soas.ac.uk/15594/#page/1/mode/2up/search/">Catalogue of the Arabic manuscripts in the Library of the School of Oriental and African Studies, University of London</ref>
@@ -81,7 +87,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -136,7 +142,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-07-08">

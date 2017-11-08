@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8030">
    <teiHeader>
       <fileDesc>
@@ -44,26 +44,32 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_1512-item1">
-                     <author key="n 85337895‏‏" ref="http://viaf.org/viaf/102396540/">Saudā, Mirzā Muḥammad Rafiʻ, 1713-1781Sawdā, Muḥammad Rafī‘, d. 1195/1781سودا، محمد رفیع</author>
+                     <author key="n 85337895‏‏" ref="http://viaf.org/viaf/102396540/">
+                        <persName xml:lang="ur-Latn-x-lc" type="standard">Saudā, Mirzā Muḥammad Rafiʻ, 1713-1781</persName>
+                        <persName xml:lang="ur-Latn-x-lc" type="alt">Sawdā, Muḥammad Rafī‘, d. 1195/1781</persName>
+                        <persName xml:lang="ur">سودا، محمد رفیع</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Muntakhab-i dīvān-i Sawdā</title>
                      <title xml:lang="fa">منتخب ديوان سودا</title>
                      <incipit>اب قصی کا کرتا هون ذرا کان دهر کر سنو</incipit>
-                     
+                     <explicit xml:lang="ar" defective="true"/>
                      <colophon>منتخب دیوان میرزا رفیع بیگ متخلص بسودا در گلگته بتاریخ دوازدهم شهر اکتوبر سنه 1802 عیسوی</colophon>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="ur">Urdu</textLang>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>vol.1: 119 f.; vol.2: 112 f.
-                           
+                        <extent>vol.1: 119 f.; vol.2: 112 f.<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -112,7 +118,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-10-27">

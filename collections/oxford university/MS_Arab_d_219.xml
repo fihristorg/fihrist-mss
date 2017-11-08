@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_799">
    <teiHeader>
       <fileDesc>
@@ -54,7 +54,9 @@
                   </msItem>
                   <msItem xml:id="MS_Arab_d_219-item2" n="2">
                      <locus from="63" to="65">ff. 63v-65v</locus>
-                     <author key="n 84238396" ref="http://viaf.org/viaf/90076738/">Ṣaghānī, al-Ḥasan ibn Muḥammad,<date calendar="#Gregorian" from="1181" to="1252">1181-1252</date>
+                     <author key="n 84238396" ref="http://viaf.org/viaf/90076738/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ṣaghānī, al-Ḥasan ibn Muḥammad,<date calendar="#Gregorian" from="1181" to="1252">1181-1252</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Durr al-multaqaṭ fī tabyīn al-ghalaṭ</title>
                      <listBibl>
@@ -64,7 +66,9 @@
                   </msItem>
                   <msItem xml:id="MS_Arab_d_219-item3" n="3" class="#commentary">
                      <locus from="66" to="114">ff. 66r-114v</locus>
-                     <author key="n 86801476" ref="http://viaf.org/viaf/76652384/">Baḥraq, Muḥammad ibn ʻUmar,<date calendar="#Gregorian" from="1465" to="1524">1465-1524</date>
+                     <author key="n 86801476" ref="http://viaf.org/viaf/76652384/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Baḥraq, Muḥammad ibn ʻUmar,<date calendar="#Gregorian" from="1465" to="1524">1465-1524</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Sharḥ Lāmiyat al-afʻāl</title>
                      <note>Commentary on the work of<persName type="standard"
@@ -200,11 +204,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

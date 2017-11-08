@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4445">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,12 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Fraser_115-item1" n="1">
                      <locus from="1" to="236">ff. 1-236</locus>
-                     <author key="nr 93044175" ref="http://viaf.org/viaf/31873893/">ʻAqīlī, Ḥājjī ibn Niẓām, 15th centسيف الدين حاجي بن نظام العقيلي</author>
+                     <author key="nr 93044175" ref="http://viaf.org/viaf/31873893/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">ʻAqīlī, Ḥājjī ibn Niẓām, 15th cent</persName>
+                        <persName xml:lang="fa">سيف الدين حاجي بن نظام العقيلي</persName>
+                        
+                        
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Ās̲ār al-Vuzarāʼ</title>
                      <title xml:lang="fa">آثار الوزراء</title>
                      <title xml:lang="ar-Latn-x-lc" type="alt">Āthār al-Wuzarāʼ</title>
@@ -60,7 +65,12 @@
                   </msItem>
                   <msItem xml:id="MS_Fraser_115-item2" n="2">
                      <locus from="237" to="300">ff. 237-300</locus>
-                     <author key="n 85181862" ref="http://viaf.org/viaf/46772622">Niẓām al-Mulk, 1018-1092نظام الملكAbū ʻAlī al-Ḥasan ibn ʻAlī ibn Isḥāq al-Ṭūsīأبو علي الحسن بن علي بن إسحاق الطوسي</author>
+                     <author key="n 85181862" ref="http://viaf.org/viaf/46772622">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Niẓām al-Mulk, 1018-1092</persName>
+                        <persName xml:lang="fa">نظام الملك</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Abū ʻAlī al-Ḥasan ibn ʻAlī ibn Isḥāq al-Ṭūsī</persName>
+                        <persName xml:lang="fa" type="alt">أبو علي الحسن بن علي بن إسحاق الطوسي</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Naṣāʼiḥ-i Niẓām al-Mulk</title>
                      <title xml:lang="fa">نصائح نظام الملك</title>
                      
@@ -77,12 +87,12 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>300 ff.
+                        <extent>300 ff.<dimensions type="leaf" unit="in"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -202,7 +212,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-09-18">

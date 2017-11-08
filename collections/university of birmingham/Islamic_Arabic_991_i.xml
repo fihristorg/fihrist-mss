@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4007">
    <teiHeader>
       <fileDesc>
@@ -45,14 +45,21 @@
                <msContents class="#multipleWorks">
                   <summary>Part of a compilation of seven works bound together (991 i-vii); each retaining their own foliation.</summary>
                   <msItem xml:id="Islamic_Arabic_991_i-item1">
-                     <author>Anonymous</author>
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="Supplied">Anonymous</persName>
+                        
+                        
+                        
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Risālah fī faḍāʿil sūrah al-ikhlāṣ</title>
                      
                      
                      
                      
                      <note>A work describing the merits of Sūrah al-ikhlāṣ (112) of the Qurʿān. At the end,<persName>al-Madābijī (d.1170/1757)</persName>is quoted.</note>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 96</bibl>
                      </listBibl>
@@ -66,12 +73,12 @@
                               <height>20.4</height>
                               <width>14.6</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="23" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                            <note>23 lines per page</note>
                         </layout>
                      </layoutDesc>
@@ -129,7 +136,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2016-07-20">

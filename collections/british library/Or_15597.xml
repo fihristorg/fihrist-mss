@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5792">
    <teiHeader>
       <fileDesc>
@@ -28,7 +28,13 @@
                <head>Munajat</head>
                <msContents class="http://lccn.loc.gov/sh2008104964 http://lccn.loc.gov/sh2008112367 http://lccn.loc.gov/nr96038220">
                   <msItem xml:id="Or_15597-item1">
-                     <author key="http://lccn.loc.gov/n80013285">Anṣārī al-Harawī, ʻAbd Allāh ibn Muḥammad, 1006-1089Khwājah ‘Abd Allāh Anṣārī Haraviانصارى الهروى، عبد الله بن محمد</author>
+                     <author key="http://lccn.loc.gov/n80013285">
+                        <persName xml:lang="fa-Latn-x-lc"
+                                  type="standard"
+                                  key="http://lccn.loc.gov/n80013285">Anṣārī al-Harawī, ʻAbd Allāh ibn Muḥammad, 1006-1089</persName>
+                        <persName xml:lang="ar-Latn-x-lc" key="http://lccn.loc.gov/n80013285">Khwājah ‘Abd Allāh Anṣārī Haravi</persName>
+                        <persName xml:lang="ar" key="http://lccn.loc.gov/n80013285" type="supplied">انصارى الهروى، عبد الله بن محمد</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Munājāt</title>
                      <title xml:lang="fa">مناجات</title>
                      <note>
@@ -47,7 +53,7 @@
                               <height>184</height>
                               <width>115</width>
                            </dimensions>
-                           
+                           <dimensions type="written"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -117,7 +123,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-02-08">

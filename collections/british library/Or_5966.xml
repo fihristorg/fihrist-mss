@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6057">
    <teiHeader>
       <fileDesc>
@@ -45,11 +45,14 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="Or_5966-item1" n="1" class="http://lccn.loc.gov/sh85109764">
                      <locus from="1r" to="35r">ff 1r-35r</locus>
-                     <author key="n79105787" ref="http://viaf.org/viaf/101819933">‘Umar Khayyāmعمر خیام</author>
+                     <author key="n79105787" ref="http://viaf.org/viaf/101819933">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">‘Umar Khayyām</persName>
+                        <persName xml:lang="fa">عمر خیام</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Rubā’īyāt</title>
                      <title xml:lang="fa">رباعیات</title>
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 50.</bibl>
                      </listBibl>
@@ -57,11 +60,14 @@
                   </msItem>
                   <msItem xml:id="Or_5966-item2" n="2" class="http://lccn.loc.gov/sh89005046">
                      <locus from="38r" to="77v">ff 38r-77v</locus>
-                     <author>Āṣafīآسفی</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Āṣafī</persName>
+                        <persName xml:lang="fa">آسفی</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">The Dīvān of Āṣafī</title>
                      <title xml:lang="fa">دیوان آسفی</title>
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 50.</bibl>
                      </listBibl>
@@ -75,7 +81,7 @@
                               <height>16.1</height>
                               <width>11</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -108,7 +114,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-11-06">

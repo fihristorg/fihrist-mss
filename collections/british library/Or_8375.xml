@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6375">
    <teiHeader>
       <fileDesc>
@@ -43,11 +43,15 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85100087 http://lccn.loc.gov/sh2010112015 ">
                   <msItem xml:id="Or_8375-item1">
-                     <author ref="http://viaf.org/viaf/68082027" key="n90601998">Ḥusaynī Qumī, Ṣafī al-Dīn Muḥammad ibn Muḥammad Hāshim, 17th centṢafī al-Dīn Muḥammad Hāshim ibn Ṣafī al-Dīn Muḥammad al-Ḥusaynī al-Riz̤avīصفی الدین محمد هاشم ابن صفی الدین محمد الحسینی الرضوی</author>
+                     <author ref="http://viaf.org/viaf/68082027" key="n90601998">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Ḥusaynī Qumī, Ṣafī al-Dīn Muḥammad ibn Muḥammad Hāshim, 17th cent</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Ṣafī al-Dīn Muḥammad Hāshim ibn Ṣafī al-Dīn Muḥammad al-Ḥusaynī al-Riz̤avī</persName>
+                        <persName xml:lang="fa">صفی الدین محمد هاشم ابن صفی الدین محمد الحسینی الرضوی</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Khulāṣat al-buldān</title>
                      <title xml:lang="fa">خلاصة البلدان</title>
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <note>A collection of anecdotes about the Shi‘i Imāms, translated into Persian with an account of Mecca, Medina, Kūfah, and other holy places associated with the Imāms, especially<name type="place" key="n82131780" xml:lang="fa-Latn-x-lc">Qum<foreign xml:lang="fa">قم</foreign>
                         </name>
                      </note>
@@ -97,7 +101,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-11-01">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1712">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,9 @@
                <msContents>
                   <msItem xml:id="MS_Sale_75-item1">
                      <locus from="1" to="158">ff. 1v-158r</locus>
-                     <author>Ibn al-Sharīf</author>
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc">Ibn al-Sharīf</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Kitāb al-Shādī wa-al-shādin</title>
                      <note>A fanciful duologue on Muslim arts and sciences, dedicated to<persName xml:lang="ar-Latn-x-lc">Najm al-Dīn Abū al-Muẓaffar Ayyūb ibn Nūr al-Dīn</persName>, who ascended the Egyptian throne<date calendar="#Hijri-qamari" when="0635">A. H. 635</date>=<date calendar="#Gregorian" when="1237">A. D. 1237</date>
                      </note>
@@ -103,11 +105,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

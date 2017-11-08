@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1381">
    <teiHeader>
       <fileDesc>
@@ -62,7 +62,10 @@
                   </msItem>
                   <msItem xml:id="MS_Pococke_142-item2" n="3">
                      <locus from="116" to="160">ff. 116r-160v</locus>
-                     <author key="nr 91021847‏" ref="http://viaf.org/viaf/90045354/">Ibn Nubātah, Muḥammad ibn Muḥammad, 1287-1366ابن نباتة، محمد بن محمد</author>
+                     <author key="nr 91021847‏" ref="http://viaf.org/viaf/90045354/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn Nubātah, Muḥammad ibn Muḥammad, 1287-1366</persName>
+                        <persName xml:lang="ar">ابن نباتة، محمد بن محمد</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Jumlah min mukātabāt ... bi-dīwān al-Shaʼm al-maḥrūs</title>
                      <listBibl>
                         <bibl>GAL II 11</bibl>
@@ -202,11 +205,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

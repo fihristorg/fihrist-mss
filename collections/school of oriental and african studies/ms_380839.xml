@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8319">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,10 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_380839-item1" n="1">
-                     <author>Muẓaffarمظفر</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Muẓaffar</persName>
+                        <persName xml:lang="fa">مظفر</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Ghazalīyāt-i Muẓaffar</title>
                      
                      <title xml:lang="fa">غزلیات مظفر</title>
@@ -53,7 +56,10 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="ms_380839-item2" n="2">
-                     <author>Mīrzā Ḥusayn Qulīمیرزا حسینقلی</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Mīrzā Ḥusayn Qulī</persName>
+                        <persName xml:lang="fa">میرزا حسینقلی</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Jung-i shiʻr az marḥum āqā Mīrzā Ḥusayn Qulī</title>
                      
                      <title xml:lang="fa">جنگ شعر از مرحوم آقا میرزا حسینقلی</title>
@@ -62,7 +68,10 @@
                      <textLang mainLang="ar" otherLangs="fa">Arabic and Persian</textLang>
                   </msItem>
                   <msItem xml:id="ms_380839-item3" n="3">
-                     <author>Mīrzā Jalīlميرزا جلیل</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Mīrzā Jalīl</persName>
+                        <persName xml:lang="fa">ميرزا جلیل</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Jung-i marḥum āqā Mīrzā Jalīl</title>
                      
                      <title xml:lang="fa">جنگ مرحوم آقا میرزا جلیل</title>
@@ -71,7 +80,10 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="ms_380839-item4" n="4">
-                     <author>Anonymous</author>
+                     <author>
+                        <persName>Anonymous</persName>
+                        
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Jung</title>
                      
                      <title xml:lang="fa">جنگ</title>
@@ -83,13 +95,13 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>3 v.
-                           
+                        <extent>3 v.<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -139,7 +151,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2016-07-11">

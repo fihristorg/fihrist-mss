@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6347">
    <teiHeader>
       <fileDesc>
@@ -46,7 +46,11 @@
                           n="1"
                           class="http://lccn.loc.gov/sh86000279 http://lccn.loc.gov/sh2009115202 http://lccn.loc.gov/sh2010105554">
                      <locus from="2v" to="57v">2v-57v ff</locus>
-                     <author ref="http://viaf.org/viaf/21042171" key="n82231797">Zanjānī, ʻAbd al-Wahhāb ibn Ibrāhīm, active 1257‘Abd al-Vahhāb Zanjānīسید شریف جرجانی</author>
+                     <author ref="http://viaf.org/viaf/21042171" key="n82231797">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Zanjānī, ʻAbd al-Wahhāb ibn Ibrāhīm, active 1257</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">‘Abd al-Vahhāb Zanjānī</persName>
+                        <persName xml:lang="fa">سید شریف جرجانی</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Taṣrīf al-Zanjānī</title>
                      <title xml:lang="fa">تصریف الزنجانی</title>
                      <note>A work on Arabic grammar by with a Persian commentary entitled<title xml:lang="ar-Latn-x-lc">Sharḥ-i Zanjānī fī al-Ṣarf<foreign xml:lang="fa">شرح زنجانی فی الصرف</foreign>
@@ -119,7 +123,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-07-08">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7768">
    <teiHeader>
       <fileDesc>
@@ -144,9 +144,14 @@
                              class="sh85083064">
                         <title type="original">ارجوزة في الطبّ<locus facs="#i0003">Fol. 1a</locus>
                         </title>
-                        <author>Abū `Alī al-Ḥusayn b. `Abd Allāh b. Sīnāابو على الحسين ابن عبد الله ابن سينا<surname>ابو على</surname>
-                           <forename>الحسين ابن عبد الله</forename>
-                           <addName type="kunyah">ابن سينا</addName>
+                        <author>
+                           <persName xml:lang="eng-Latn" type="standard">Abū `Alī al-Ḥusayn b. `Abd Allāh b. Sīnā</persName>
+                           <persName xml:lang="ara-Arab" type="original">ابو على الحسين ابن عبد الله ابن سينا</persName>
+                           <persName type="standard" xml:lang="ara-Arab">
+                              <surname>ابو على</surname>
+                              <forename>الحسين ابن عبد الله</forename>
+                              <addName type="kunyah">ابن سينا</addName>
+                           </persName>
                         </author>
                         <incipit facs="#i0004">
                            <locus>Fol.1b.2</locus>الطب خفظ صحةٍ برو مرض ٭٭ من سبب في بدن منه عرض</incipit>
@@ -177,7 +182,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-10-14T14:58:40+01:00">Conversion from WMSmaster to WAMCP<persName>gbrey</persName>

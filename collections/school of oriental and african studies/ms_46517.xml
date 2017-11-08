@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8660">
    <teiHeader>
       <fileDesc>
@@ -44,27 +44,34 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_46517-item1">
-                     <author>Mīr ʻAbd al-ʻĀl ibn Mīr Muḥammad Muʼmin Ḥusaynīمير عبد العال بن مير محمد مؤمن حسينيNajātنجات</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Mīr ʻAbd al-ʻĀl ibn Mīr Muḥammad Muʼmin Ḥusaynī</persName>
+                        <persName xml:lang="fa">مير عبد العال بن مير محمد مؤمن حسيني</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Najāt</persName>
+                        <persName xml:lang="fa" type="alt">نجات</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Gul-i kushtī</title>
                      <title xml:lang="fa-Latn-x-lc" type="alt">Gul-i kushtī</title>
                      <title xml:lang="fa">گل کشتی</title>
                      <note>A Persian masnavi poem followed by two commentaries</note>
                      <incipit>در گیتی عشق هران نامه که دلخواه بود ز نیتش نام خدا حضرت الله بود</incipit>
                      <colophon>بقلم ناقص غلام محی الدین بتریخ 18 شهر ربیع الاول در سنه 1293 هجری مطابق 12 شهر ابریل سنه 1876 عیسوی...بمقام دهلی</colophon>
-                     
+                     <note>
+                        <foreign xml:lang="fa"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>1-14 f., 1-7 f., 1-61 f.
-                           
+                        <extent>1-14 f., 1-7 f., 1-61 f.<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -111,7 +118,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-12-01">

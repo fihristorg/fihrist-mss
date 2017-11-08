@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6933">
    <teiHeader>
       <fileDesc>
@@ -42,11 +42,19 @@
                </msIdentifier>
                <msContents>
                   <summary>
-                     <title type="main"/>
+                     
                   </summary>
                   <msItem xml:id="Persian_MS_436-item1">
-                     <author key="n 84033080" ref="http://viaf.org/viaf/96961959/">Samhūdī, ʻAlī ibn ʻAbd Allāh, 1440-1506سمهودي، نور الدین علي بن احمد
+                     <author key="n 84033080" ref="http://viaf.org/viaf/96961959/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Samhūdī, ʻAlī ibn ʻAbd Allāh, 1440-1506</persName>
                         
+                        
+                        
+                        <persName xml:lang="fa">سمهودي، نور الدین علي بن احمد
+                           
+                           
+                           
+                        </persName>
                         
                         
                      </author>
@@ -60,11 +68,14 @@
                      <title xml:lang="fa">تاریخ مدینه</title>
                      
                      
-                     
-                     
+                     <incipit xml:lang="ar" type="basmalla"/>
+                     <explicit xml:lang="ar"/>
                      <listBibl>
                         <bibl type="text-relations">The text makes references to<title xml:lang="fa">جذب القلوب الي ديار المحبوب</title>
-                           <title xml:lang="fa-Latn-x-lc">Jaz̲b al-qulūb ilá diyār al-maḥbūb</title>by<author key="n 83311926" ref="http://viaf.org/viaf/45690112/">ʻAbd al-Ḥaqq ibn Sayf al-Dīn Dihlavī, 1551-1642عبد الحق بن سيف الدين دهلوى‏</author>
+                           <title xml:lang="fa-Latn-x-lc">Jaz̲b al-qulūb ilá diyār al-maḥbūb</title>by<author key="n 83311926" ref="http://viaf.org/viaf/45690112/">
+                              <persName xml:lang="fa-Latn-x-lc" type="standard">ʻAbd al-Ḥaqq ibn Sayf al-Dīn Dihlavī, 1551-1642</persName>
+                              <persName xml:lang="fa">عبد الحق بن سيف الدين دهلوى‏</persName>
+                           </author>
                         </bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
@@ -74,8 +85,8 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
@@ -143,7 +154,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015">

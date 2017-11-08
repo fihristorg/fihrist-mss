@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7722">
    <teiHeader>
       <fileDesc>
@@ -158,9 +158,14 @@
                         <colophon facs="#i0121">
                            <locus>fol.120a.18</locus>قال مؤلفهِ قدس الله تعالى سره واعاد علينا وعلى المسلمين من بركاته وهذا مقدار ما اختبرناه وانتقيناه من كتاب الفلاحه على حسب الامكان وتركنا مالا يليق ذكره مما لا يحتاج اليه الانسان وبالله المستعان وعلى كرمه واحسانه التكلان في كل عصر وزمان والحمد لله وحده والصلاة والسلام على من لا نبيَّ بعده وقد كمل ما سميناه عَلَمَ الملاحه في علم الفلاحه وكتبه جامعه العبد الفقير الى مولاه الخبير عبد الغنى ابن النابلسى ختم الله تعالى له بالحسنى وامده بالمدد الاسنى وذلك في صبيحة نهار الاثنين الثامن من شهر شوال لسنة سبعة وعشرين وماية والف من هجرته حامدا للَّه تعالى ومصلٿًا ومسلمًا على رسول الله وعَلى آلهِ واصحابه واتباعه واحزابه اجمعين يا رب العالمين</colophon>
                         <author>
-                           <surname facs="#i0122">ابن النابلسى</surname>
-                           <forename facs="#i0003">عبد الغنى</forename>
-                           <addName type="nisbah" facs="#i0122">النابلسى</addName>`Abdalğhanī b. Ism b.`Abdalğhanī an-Nābulusī,عبد الغنى ابن النابلسى</author>
+                           <persName xml:lang="ara-Arab" type="standard">
+                              <surname facs="#i0122">ابن النابلسى</surname>
+                              <forename facs="#i0003">عبد الغنى</forename>
+                              <addName type="nisbah" facs="#i0122">النابلسى</addName>
+                           </persName>
+                           <persName xml:lang="eng-Latn" type="standard">`Abdalğhanī b. Ism b.`Abdalğhanī an-Nābulusī,</persName>
+                           <persName xml:lang="ara-Arab" type="original" facs="#i0122">عبد الغنى ابن النابلسى</persName>
+                        </author>
                         <msItem xml:id="WMS_Arabic_117-part1-item1-item1" n="toc">
                            <locus>fol.2a.2</locus>
                            <title type="original" facs="#i0003">الباب الاول فى معرفة الاراضى اعلم ان الارض الطيبة هي الحارة الرطبة</title>
@@ -207,7 +212,7 @@
                         </msItem>
                         <textLang mainLang="ara-Arab"/>
                         <title type="normalised" xml:lang="ara-Latn">`Alam al-malāḥa fī 'ilm al-filāha</title>
-                        <title type="other" xml:lang="ara-Arab"/>
+                        
                      </msItem>
                   </msContents>
                </msPart>
@@ -224,7 +229,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-12-06T18:04:54+02:00">Committed to SVN. To view the changes in detail use SVN diff. SVN Url:http://wellcomesvn.local.bibalex.dom/svn/WellcomeTrust/trunk/WAMCPMetaGallery/XML/WMS_Arabic_117/WMS_Arabic_117.xml<persName>eralph</persName>

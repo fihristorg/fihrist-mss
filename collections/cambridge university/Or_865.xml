@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_2495">
    <teiHeader>
       <fileDesc>
@@ -44,25 +44,35 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Or_865-item1" class="#commentary">
-                     <author key="n79068673" ref="http://viaf.org/viaf/90042997/">Jāmī, 1414-1492جامي
+                     <author key="n79068673" ref="http://viaf.org/viaf/90042997/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Jāmī, 1414-1492</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">جامي
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Fawāʻid wāfiyah bi-ḥall mushkilāt al-kāfiyah</title>
                      <title xml:lang="ar-Latn-x-lc" type="alt">al-Fawāʼid al-ḍīyāʼīyah: sharḥ Kāfiyat Ibn al-Ḥājib</title>
                      <title xml:lang="ar">فوائد وافية بحل مشكلات الكافية</title>
                      <title xml:lang="ar" type="alt">الفوائد الضيائية: شرح كافية ابن الحجيب</title>
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne1922/view.php?id=94">no. 907</ref>
                         </bibl>
                         <bibl type="text-relations">Commentary on the<title xml:lang="ar-Latn-x-lc">Kāfiyah<foreign xml:lang="ar">كافية</foreign>
-                           </title>of<author key="n82162164" ref="http://viaf.org/viaf/29665940/">Ibn al-Ḥājib, ʻUthmān ibn ʻUmar, 1175-1249ابن الحاجب</author>
+                           </title>of<author key="n82162164" ref="http://viaf.org/viaf/29665940/">
+                              <persName xml:lang="ar-Latn-x-lc">Ibn al-Ḥājib, ʻUthmān ibn ʻUmar, 1175-1249</persName>
+                              <persName xml:lang="ar">ابن الحاجب</persName>
+                           </author>
                         </bibl>
                      </listBibl>
                      <textLang mainLang="ar">Arabic</textLang>
@@ -72,13 +82,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -149,7 +159,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-02-11">

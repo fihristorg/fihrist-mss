@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8390">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,11 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_41480-item1">
-                     <author>Riz̤vī, ʻAlī AkbarRaz̤avī, ʻAlī Akbarرضوي، علی اکبر</author>
+                     <author>
+                        <persName xml:lang="ur-Latn-x-lc" type="supplied">Riz̤vī, ʻAlī Akbar</persName>
+                        <persName xml:lang="ur-Latn-x-lc" type="alt">Raz̤avī, ʻAlī Akbar</persName>
+                        <persName xml:lang="ur">رضوي، علی اکبر</persName>
+                     </author>
                      <title xml:lang="ur-Latn-x-lc">Risālah-i dilkash ʻālī jāhī</title>
                      
                      <title xml:lang="ur">رساله دلکش عالی جاهی</title>
@@ -52,21 +56,23 @@
                      
                      <note>An Urdu treatise in 10 babs on the rearing and training of birds for singing, the chase, and fighting, with a pharmacopeia for birds and quadrupeds in the 9th and 10th babs respectively. The work is imperfect, ff.65-77 being wanting, and the last portion of the 7th of the 27 fasls detailed in the prefixed index. This may well be the original in autograph</note>
                      <incipit>هزار هزار شکر خدا بر حسن دانش و و هر وحش و طیر کو کوچائي جب تك</incipit>
-                     
-                     
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="ur">Urdu</textLang>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>208 f.
-                           
+                        <extent>208 f.<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -125,7 +131,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-11-09">

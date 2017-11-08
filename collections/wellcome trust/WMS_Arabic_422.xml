@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7772">
    <teiHeader>
       <fileDesc>
@@ -53,7 +53,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" n="mistara" ruledLines="18">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                            <locus facs="#i0078">2b-73a</locus>
                         </layout>
                         <layout ruledLines="16" columns="1" n="mistara">
@@ -162,10 +162,17 @@
                         <title type="normalised" facs="#i0007" xml:lang="ara-Latn">Intiẖāb al-Iqtiḍāb</title>
                         <title type="original" facs="#i0007">انتخاب الاقتضاب<locus>1b.3</locus>
                         </title>
-                        <author>Abū Naṣr Sa`īd b. Abī l-H̱ayr al-Masīḥī b.`Īsā al-Mutaṭabbibابو نصر سعيد بن ابي الخير المسيحى ابن عيسى المتطبب<surname>ابن عيسى</surname>
-                           <forename>سعيد بن ابي الخير</forename>
-                           <addName type="kunyah">ابو نصر</addName>
-                           <addName type="nisbah">المسيحى</addName>ابو نصر سعيد بن ابي الخير المسيحى ابن عيسى المتطبب</author>
+                        <author>
+                           <persName xml:lang="eng-Latn" type="standard">Abū Naṣr Sa`īd b. Abī l-H̱ayr al-Masīḥī b.`Īsā al-Mutaṭabbib</persName>
+                           <persName xml:lang="ara-Arab" type="original" facs="#i0007">ابو نصر سعيد بن ابي الخير المسيحى ابن عيسى المتطبب</persName>
+                           <persName type="standard" xml:lang="ara-Arab">
+                              <surname>ابن عيسى</surname>
+                              <forename>سعيد بن ابي الخير</forename>
+                              <addName type="kunyah">ابو نصر</addName>
+                              <addName type="nisbah">المسيحى</addName>
+                           </persName>
+                           <persName type="normalised" xml:lang="ara-Arab">ابو نصر سعيد بن ابي الخير المسيحى ابن عيسى المتطبب</persName>
+                        </author>
                         <incipit facs="#i0007">
                            <locus>Fol. 1b.10</locus>الطب علم يعرف منه احوال بدن الانسان</incipit>
                         <explicit facs="#i0079">
@@ -1291,7 +1298,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-10-14T14:58:43+01:00">Conversion from WMSmaster to WAMCP<persName>gbrey</persName>

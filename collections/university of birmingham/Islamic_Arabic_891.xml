@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3987">
    <teiHeader>
       <fileDesc>
@@ -45,10 +45,16 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="Islamic_Arabic_891-item1" n="1">
                      <locus from="1" to="31">ff. 1-31</locus>
-                     <author>Anonymous
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="supplied">Anonymous</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Malḥamat Dānyāl</title>
                      
@@ -56,9 +62,11 @@
                      
                      
                      <note>A work on astrology, ostensibly based on ancient Greek writers</note>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 1911</bibl>
                      </listBibl>
@@ -67,10 +75,16 @@
                   </msItem>
                   <msItem xml:id="Islamic_Arabic_891-item2" n="2" defective="unknown">
                      <locus from="32" to="50">ff. 32-50</locus>
-                     <author>Anonymous
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="supplied">Anonymous</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Qiṣṣat Tamīm al-Dārī</title>
                      
@@ -79,8 +93,10 @@
                      
                      <note>The legend of Tamīm who went on a miraculous journey and returned to find his wife married to another man.</note>
                      <incipit xml:lang="ar">قال بينما عمر بن الخطاب جالس في المحراب واذا بامرأة دخلت عليه و قالت السلام عليك عمر ... وقال من انت ... و قالت ... امرأة بنى الانصار</incipit>
-                     
-                     
+                     <explicit xml:lang="ar" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 1737</bibl>
                      </listBibl>
@@ -88,10 +104,16 @@
                   </msItem>
                   <msItem xml:id="Islamic_Arabic_891-item3" n="3">
                      <locus from="51" to="71">ff. 51-71</locus>
-                     <author>Anonymous
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="supplied">Anonymous</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Munājāt Mūsā</title>
                      
@@ -99,9 +121,11 @@
                      
                      
                      <note>Moses' conversation with God</note>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 11255</bibl>
                      </listBibl>
@@ -115,14 +139,14 @@
                               <height>21.0</height>
                               <width>15.3</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -199,7 +223,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-02-05">

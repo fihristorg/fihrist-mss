@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1775">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,9 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Selden_superius_80-item1" n="1">
                      <locus from="1" to="67">ff. 1-67v</locus>
-                     <author key="n 50082069" ref="http://www.viaf.org/viaf/95223177/">Ibn al-ʻArabī,<date calendar="#Gregorian" from="1165" to="1240">1165-1240</date>
+                     <author key="n 50082069" ref="http://www.viaf.org/viaf/95223177/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ibn al-ʻArabī,<date calendar="#Gregorian" from="1165" to="1240">1165-1240</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Tadbīrāt al-ilāhīyah fī iṣlāḥ al-mamlakah al-insānīyah</title>
                      <listBibl>
@@ -56,7 +58,11 @@
                   </msItem>
                   <msItem xml:id="MS_Selden_superius_80-item2" n="2">
                      <locus from="68" to="72">ff. 68v-72r</locus>
-                     <author key="no2006084971" ref="http://viaf.org/viaf/76074960/">Ibn Umayl, Muḥammad,<date calendar="#Gregorian" notBefore="0900" notAfter="1000">10th cent.</date>ابن أميل التميمي، محمد، ق. 4 هـ</author>
+                     <author key="no2006084971" ref="http://viaf.org/viaf/76074960/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn Umayl, Muḥammad,<date calendar="#Gregorian" notBefore="0900" notAfter="1000">10th cent.</date>
+                        </persName>
+                        <persName xml:lang="ar">ابن أميل التميمي، محمد، ق. 4 هـ</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">al-Qaṣīdah al-nūnīyah</title>
                      <listBibl>
                         <bibl>GAL I 242</bibl>
@@ -177,11 +183,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

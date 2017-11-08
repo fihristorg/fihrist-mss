@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3786">
    <teiHeader>
       <fileDesc>
@@ -46,10 +46,16 @@
                   <summary>A compilation of several works bound together; three have been identified and catalogued, with additional three unidentified short medical texts.</summary>
                   <msItem xml:id="Islamic_Arabic_178-item1" n="1">
                      <locus from="1" to="22">ff.1-22</locus>
-                     <author key="no 99051224" ref="http://viaf.org/viaf/79444240/">Ḥalabī, Ṣāliḥ Naṣr Allāh ibn Sallūm<date calendar="#Gregorian" notAfter="1670">d.1670</date>صالح نصر الله بن سلوم الحلبي
+                     <author key="no 99051224" ref="http://viaf.org/viaf/79444240/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ḥalabī, Ṣāliḥ Naṣr Allāh ibn Sallūm<date calendar="#Gregorian" notAfter="1670">d.1670</date>
+                        </persName>
                         
                         
-                        
+                        <persName xml:lang="ar">صالح نصر الله بن سلوم الحلبي
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Jayāt al-itqān fī tadbīr badan al-insān</title>
                      
@@ -57,7 +63,9 @@
                      
                      
                      <note>Fourth part of<title xml:lang="ar-Latn-x-lc">al-Ṭibb al-jadīd al-kīmiyāʼī alladhī ikhtaraʻahu Barākelsūs</title>, a work on medicine and alchemy.</note>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 987</bibl>
                         <bibl>GAL II.365; II.666-7.</bibl>
@@ -66,7 +74,13 @@
                   </msItem>
                   <msItem xml:id="Islamic_Arabic_178-item2" n="2">
                      <locus from="23" to="41">ff.23-41</locus>
-                     <author key="no 99051224" ref="http://viaf.org/viaf/79444240/">Ḥalabī, Ṣāliḥ Naṣr Allāh ibn Sallūm<date calendar="#Gregorian" notAfter="1670">d.1670</date>صالح نصر الله بن سلوم الحلبي</author>
+                     <author key="no 99051224" ref="http://viaf.org/viaf/79444240/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ḥalabī, Ṣāliḥ Naṣr Allāh ibn Sallūm<date calendar="#Gregorian" notAfter="1670">d.1670</date>
+                        </persName>
+                        
+                        
+                        <persName xml:lang="ar">صالح نصر الله بن سلوم الحلبي</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Kīmiyāʿ Basīlīqā (al-malakīyah)</title>
                      
                      
@@ -77,7 +91,9 @@
                                   type="standard"
                                   xml:lang="en">Croll, Oswald, approximately 1560-1609.</persName>
                      </note>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 988</bibl>
                         <bibl>GAL I.c, esp. Suppl.no.3</bibl>
@@ -86,14 +102,21 @@
                   </msItem>
                   <msItem xml:id="Islamic_Arabic_178-item3" n="3">
                      <locus from="43" to="49">ff.43-49v</locus>
-                     <author key="n81058690" ref="http://viaf.org/viaf/93768036">Ibn Jazlah, Yaḥyá ibn ʻĪsá, -1100ابن جزلة، يحيى بن عيسى، ت. 493 هـ.</author>
+                     <author key="n81058690" ref="http://viaf.org/viaf/93768036">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn Jazlah, Yaḥyá ibn ʻĪsá, -1100</persName>
+                        
+                        
+                        <persName xml:lang="ar">ابن جزلة، يحيى بن عيسى، ت. 493 هـ.</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Taqwīm al-abdān fī tadbīr al-insān</title>
                      
                      
                      
                      
                      <note>The manuscript only contains a small part of the whole work.</note>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 944</bibl>
                         <bibl>GAL I.485, esp.no.1; I.887-8</bibl>
@@ -108,12 +131,12 @@
                               <height>20.0</height>
                               <width>15.9</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="23" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                            <note>23 lines per page</note>
                         </layout>
                      </layoutDesc>
@@ -174,7 +197,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2016-07-20">

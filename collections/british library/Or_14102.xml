@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5634">
    <teiHeader>
       <fileDesc>
@@ -43,7 +43,12 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85072953 http://lccn.loc.gov/n84748509">
                   <msItem xml:id="Or_14102-item1" class="commentary">
-                     <author key="n85026579" ref="http://lccn.loc.gov/n85026579">Kāshifī, Ḥusayn Vāʻiẓ, d. 1504 or 5كاشفى، حسين واعض
+                     <author key="n85026579" ref="http://lccn.loc.gov/n85026579">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Kāshifī, Ḥusayn Vāʻiẓ, d. 1504 or 5</persName>
+                        
+                        
+                        <persName xml:lang="fa">كاشفى، حسين واعض</persName>
+                        
                         
                         
                         
@@ -55,9 +60,11 @@
                      
                      <note>A Persian commmentary on Sūra 1:1 – 4:84.</note>
                      <note>This copy contains only the Sūra commentary on Sūras 1-2</note>
-                     
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
+                     <note>
+                        <foreign xml:lang="fa"/>
+                     </note>
                      <listBibl>
                         <bibl>For a more detailed description see Waley 1998, page 1.</bibl>
                      </listBibl>
@@ -118,7 +125,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-09-12">

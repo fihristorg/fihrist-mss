@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7770">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,7 @@
                               <formula>1 - 14 (10)</formula>
                            </seg>
                            <seg type="gathering" subtype="both">
-                              
+                              <dimensions type="leaf" unit="mm" quantity="15"/>
                               <signatures facs="#i0015">In words</signatures>
                            </seg>
                         </collation>
@@ -159,8 +159,15 @@
                         <title type="normalised" xml:lang="ara-Latn">Aṣ-Ṣafwah</title>
                         <title type="original">الصفوة<locus facs="#i0005">02b.1</locus>
                         </title>
-                        <author>Abū Naṣr Sa`īd b. Abī l-H̱ayr b. `Īsā b. al-Masīḥīصاعد بن المسيحي<forename>صاعد بن المسيحي</forename>
-                           <addName type="nisbah">المسيحي</addName>ابو نصر سعيد بن ابى الخير بن عيسى بن المسيحى</author>
+                        <author>
+                           <persName xml:lang="eng-Latn" type="standard">Abū Naṣr Sa`īd b. Abī l-H̱ayr b. `Īsā b. al-Masīḥī</persName>
+                           <persName xml:lang="ara-Arab" type="original" facs="#i0005">صاعد بن المسيحي</persName>
+                           <persName xml:lang="ara-Arab" type="standard">
+                              <forename>صاعد بن المسيحي</forename>
+                              <addName type="nisbah">المسيحي</addName>
+                           </persName>
+                           <persName xml:lang="ara-Arab" type="normalised">ابو نصر سعيد بن ابى الخير بن عيسى بن المسيحى</persName>
+                        </author>
                         <incipit facs="#i0005">
                            <locus>Fol. 02b.1</locus>كتاب الصفوهلصاعد المسيحىالحمد للّه على الآيه والصلوه على رساله وانبيائهوبعد فخير ما اشغل به الانسان علم يصلح دنياه واخرته وهذا العلم فهو الطب فان به يخفظ على الانسان صحته</incipit>
                         <explicit facs="#i0145">
@@ -1949,7 +1956,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-10-14T14:58:42+01:00">Conversion from WMSmaster to WAMCP<persName>gbrey</persName>

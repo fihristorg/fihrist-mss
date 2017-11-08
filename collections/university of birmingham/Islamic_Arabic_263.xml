@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3818">
    <teiHeader>
       <fileDesc>
@@ -44,19 +44,26 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_263-item1">
-                     <author key="nr92007532" ref="http://viaf.org/viaf/29394719">Khānī, Qāsim ibn Ṣalāḥ al-Dīn, 1618 or 1619-1697 or 1698قاسم الخاني، 1028-1109 هـ
+                     <author key="nr92007532" ref="http://viaf.org/viaf/29394719">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Khānī, Qāsim ibn Ṣalāḥ al-Dīn, 1618 or 1619-1697 or 1698</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">قاسم الخاني، 1028-1109 هـ
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Sayr wa-al-sulūk ilá mālik al-mulūk</title>
                      
                      <title xml:lang="ar">السير والسلوك الى ملك الملوك</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="fa" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 753</bibl>
                         <bibl>GAL II 334, esp. no. 1; II 472</bibl>
@@ -71,14 +78,14 @@
                               <height>22.4</height>
                               <width>17.7</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="25" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                            <note>25 lines per page</note>
                         </layout>
                      </layoutDesc>
@@ -133,7 +140,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-07-03">

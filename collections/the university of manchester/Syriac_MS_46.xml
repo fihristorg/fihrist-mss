@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7691">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,12 @@
                      <persName>Moshe bar Kepha</persName>, incipits</summary>
                   <msItem xml:id="Syriac_MS_46-item1">
                      <title>Moshe bar Kepha, incipits</title>
-                     <author>Mus_ ibn al-Hajar (Moses bar Keph_), bishop of Mosul and B_-remm_n or Ba-rimm_</author>
+                     <author>
+                        <persName xml:lang="en"
+                                  type="person"
+                                  ref="http://viaf.org/viaf/67257819/"
+                                  key="96052187">Mus_ ibn al-Hajar (Moses bar Keph_), bishop of Mosul and B_-remm_n or Ba-rimm_</persName>
+                     </author>
                      <textLang mainLang="syr">Syriac</textLang>
                   </msItem>
                </msContents>
@@ -96,7 +101,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2016">

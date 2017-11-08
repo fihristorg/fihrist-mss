@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4246">
    <teiHeader xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <fileDesc>
@@ -45,7 +45,12 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Elliott_117-item1" n="1">
                      <locus from="1" to="92">1-92</locus>
-                     <author key="n 96035678" ref="http://viaf.org/viaf/4194571">Ibn Yamīn, Fakhr al-Dīn Maḥmūd, 1287 or 1288-1367 or 1368ابن يمينAmīr Fakhr al-Dīn Maḥmūd ibn Amīr Yamīn al-Dīn Muḥammad Mustawfī Faryūmadīامير فخر الدين محمود بن امير يمين الدين محمد مستوفى فريومدى، ت 745 هـ</author>
+                     <author key="n 96035678" ref="http://viaf.org/viaf/4194571">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Ibn Yamīn, Fakhr al-Dīn Maḥmūd, 1287 or 1288-1367 or 1368</persName>
+                        <persName xml:lang="fa">ابن يمين</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Amīr Fakhr al-Dīn Maḥmūd ibn Amīr Yamīn al-Dīn Muḥammad Mustawfī Faryūmadī</persName>
+                        <persName xml:lang="fa" type="alt">امير فخر الدين محمود بن امير يمين الدين محمد مستوفى فريومدى، ت 745 هـ</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Dīvān-i Ibn Yamīn</title>
                      <title xml:lang="fa">ديوان ابن يمين</title>
                      
@@ -60,7 +65,12 @@
                      <note>Contains the poet's Qiṭʻas only.</note>
                   </msItem>
                   <msItem xml:id="MS_Elliott_117-item2" n="2">
-                     <author key="no2012152383" ref="http://viaf.org/viaf/294721978">Imāmī Hiravī, Muḥammad ibn Abī Bakr, -1287 or 1288أبو عبد الله محمد بن أبي بكر عثمان إمامي هرويامامی هروی</author>
+                     <author key="no2012152383" ref="http://viaf.org/viaf/294721978">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Imāmī Hiravī, Muḥammad ibn Abī Bakr, -1287 or 1288</persName>
+                        
+                        <persName xml:lang="fa">أبو عبد الله محمد بن أبي بكر عثمان إمامي هروي</persName>
+                        <persName xml:lang="fa" type="alt">امامی هروی</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Dīvān-i Imāmi</title>
                      <title xml:lang="fa">ديوان امامی</title>
                      
@@ -77,12 +87,12 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>177 ff.
+                        <extent>177 ff.<dimensions type="leaf" unit="in"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="2">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -182,7 +192,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-06-23">

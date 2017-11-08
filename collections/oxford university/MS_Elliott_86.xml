@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4432">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,12 @@
                <msContents>
                   <msItem xml:id="MS_Elliott_86-item1" n="1">
                      <locus from="1" to="87">ff. 1-87</locus>
-                     <author key="n 80090827" ref="http://viaf.org/viaf/8688004">Mujīr al-Dīn Baylaqānī, -1197 or 1198أبو المكارم مجير الدين البيلقانيAbū al-Makārim Mujīr al-Dīn Baylaqānī</author>
+                     <author key="n 80090827" ref="http://viaf.org/viaf/8688004">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Mujīr al-Dīn Baylaqānī, -1197 or 1198</persName>
+                        <persName xml:lang="fa">أبو المكارم مجير الدين البيلقاني</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Abū al-Makārim Mujīr al-Dīn Baylaqānī</persName>
+                        
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Dīvān-i Baylaqānī</title>
                      <title xml:lang="fa">ديوان بيلقانى</title>
                      
@@ -60,7 +65,12 @@
                   </msItem>
                   <msItem xml:id="MS_Elliott_86-item2" n="2">
                      <locus from="89" to="136">ff. 89b-136b</locus>
-                     <author key="nr 98005080" ref="http://viaf.org/viaf/73765606">Majd al-Dīn Hamgar, 1210 or 1211-1287Majd al-Dīn Hibat Allāh Shīrāzīمجد همگرمجد الدین هبت الله شیرازی</author>
+                     <author key="nr 98005080" ref="http://viaf.org/viaf/73765606">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Majd al-Dīn Hamgar, 1210 or 1211-1287</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Majd al-Dīn Hibat Allāh Shīrāzī</persName>
+                        <persName xml:lang="fa" type="alt">مجد همگر</persName>
+                        <persName xml:lang="fa">مجد الدین هبت الله شیرازی</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Dīvān-i Majd-i Hamgar</title>
                      <title xml:lang="fa">ديوان مجد همگر</title>
                      
@@ -75,7 +85,12 @@
                   </msItem>
                   <msItem xml:id="MS_Elliott_86-item3" n="3">
                      <locus from="137" to="186">ff. 137-186</locus>
-                     <author>Qāḍī Shams al-Dīn Maḥmūd Ṭabasīقاضى شمس الدين محمود طبسى</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc">Qāḍī Shams al-Dīn Maḥmūd Ṭabasī</persName>
+                        <persName xml:lang="fa">قاضى شمس الدين محمود طبسى</persName>
+                        
+                        
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Dīvān-i Shams-i Ṭabasī</title>
                      <title xml:lang="fa">ديوان شمس طبسى</title>
                      
@@ -191,7 +206,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-06-10">

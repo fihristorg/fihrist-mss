@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1577">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,11 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_Pococke_400-item1">
-                     <author key="n 79145672" ref="http://www.viaf.org/viaf/89743196">Ibn al-Muqaffaʻ, d. ca.<date calendar="#Gregorian" when="0760">760</date>ابن المقفّع،أبو محمّد عبد الله، 106-142 هـ</author>
+                     <author key="n 79145672" ref="http://www.viaf.org/viaf/89743196">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ibn al-Muqaffaʻ, d. ca.<date calendar="#Gregorian" when="0760">760</date>
+                        </persName>
+                        <persName xml:lang="ar">ابن المقفّع،أبو محمّد عبد الله، 106-142 هـ</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Kitāb Kalīlah wa-Dimnah</title>
                      <title xml:lang="ar">كتاب كليلة ودمنة</title>
                      <listBibl>
@@ -101,11 +105,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-01-25">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

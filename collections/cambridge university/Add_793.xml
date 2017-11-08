@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_9334">
    <teiHeader>
       <fileDesc>
@@ -44,19 +44,26 @@
                </msIdentifier>
                <msContents class="#multipleWorks">
                   <msItem xml:id="Add_793-item1" n="1">
-                     <author key="n81048213" ref="http://viaf.org/viaf/90071384/">Zamakhsharī, Maḥmūd ibn ʻUmar, 1075-1144الزمخشرري، محمود بن عمر
+                     <author key="n81048213" ref="http://viaf.org/viaf/90071384/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Zamakhsharī, Maḥmūd ibn ʻUmar, 1075-1144</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">الزمخشرري، محمود بن عمر
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Unmūdhaj fī al-naḥw</title>
                      
                      <title xml:lang="ar">الانموذج في النحو</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="Missing page in online catalogue">no. 597</ref>
@@ -65,19 +72,26 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="Add_793-item2" n="2" class="#commentary">
-                     <author key="n89109485" ref="http://viaf.org/viaf/48354326/">Ardabīlī, Muḥammad ibn ʻAbd al-Ghanī, 1572-1627الاردبيلي، محمد بن عبد الغني
+                     <author key="n89109485" ref="http://viaf.org/viaf/48354326/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ardabīlī, Muḥammad ibn ʻAbd al-Ghanī, 1572-1627</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">الاردبيلي، محمد بن عبد الغني
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Sharḥ al-unmūdhaj</title>
                      
                      <title xml:lang="ar">شرح الانموذج</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="Missing page in online catalogue">no. 597</ref>
@@ -90,13 +104,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -164,7 +178,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-05-17">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5562">
    <teiHeader>
       <fileDesc>
@@ -43,7 +43,12 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85072953 http://lccn.loc.gov/sh85072967 http://lccn.loc.gov/n84748509">
                   <msItem xml:id="Or_13492-item1" class="commentary">
-                     <author key="nr90021765 " ref="http://viaf.org/viaf/53999017/">Dihlawī, ʻAbd al-ʻAzīz ibn Aḥmad, 1746 or 7-1823 or 4Shāh ʻAbd al-ʻAzīz ibn Valī Allāh Dihlavīشاه دهلوي، عبد العزيز بن ولی الله
+                     <author key="nr90021765 " ref="http://viaf.org/viaf/53999017/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Dihlawī, ʻAbd al-ʻAzīz ibn Aḥmad, 1746 or 7-1823 or 4</persName>
+                        
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Shāh ʻAbd al-ʻAzīz ibn Valī Allāh Dihlavī</persName>
+                        <persName xml:lang="fa">شاه دهلوي، عبد العزيز بن ولی الله</persName>
+                        
                         
                         
                         
@@ -57,9 +62,11 @@
                      <note>This manuscript has only Sūras 1:1 – 2:184</note>
                      <note>Title has been supplied by<ref target="Waley_1998" type="page">Waley 1998, page 1.</ref>
                      </note>
-                     
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
+                     <note>
+                        <foreign xml:lang="fa"/>
+                     </note>
                      <listBibl>
                         <bibl>For a more detailed description see Waley 1998, page 1.</bibl>
                      </listBibl>
@@ -123,7 +130,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-09-12">

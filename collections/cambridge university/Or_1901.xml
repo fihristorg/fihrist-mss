@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5826">
    <teiHeader>
       <fileDesc>
@@ -44,22 +44,32 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Or_1901-item1" class="#abridgement">
-                     <author key="n2007071001" ref="http://viaf.org/viaf/19459559/">Zāhidī al-Ghazmīnī, Mukhtār ibn Maḥmūd, d. 1259 or 60الزاهدي الغزميني، مختار بن محمود
+                     <author key="n2007071001" ref="http://viaf.org/viaf/19459559/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Zāhidī al-Ghazmīnī, Mukhtār ibn Maḥmūd, d. 1259 or 60</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">الزاهدي الغزميني، مختار بن محمود
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Qunyat al-fatāwá</title>
                      <title xml:lang="ar-Latn-x-lc" type="alt">‎Qunyat al-munyah li-taʻmīm al-ghunyah</title>
                      <title xml:lang="ar">قنية الفتاوى</title>
                      <title xml:lang="ar" type="alt">قنية المنية لتتميم الغنية</title>
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl type="text-relations">Summary of<title xml:lang="ar-Latn-x-lc">Munyat al-fuqahāʼ<foreign xml:lang="ar">منية الفقهاء</foreign>
-                           </title>, a compilation of legal cases by al-Zāhidī's teacher,<author>Quzabnī, Badīʻ ibn Abī Manṣūr, 13th cent.القزبني، بديع بن ابي منصور</author>.</bibl>
+                           </title>, a compilation of legal cases by al-Zāhidī's teacher,<author>
+                              <persName key="n2007095085" ref="http://viaf.org/viaf/14556133/">Quzabnī, Badīʻ ibn Abī Manṣūr, 13th cent.</persName>
+                              <persName>القزبني، بديع بن ابي منصور</persName>
+                           </author>.</bibl>
                      </listBibl>
                      <textLang mainLang="ar">Arabic</textLang>
                      <msItem xml:id="Or_1901-item1-item1" n="toc">
@@ -291,7 +301,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -341,7 +351,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-05-13">

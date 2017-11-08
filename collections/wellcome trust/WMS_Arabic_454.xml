@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7790">
    <teiHeader>
       <fileDesc>
@@ -42,7 +42,7 @@
                               <formula>due to the binding could not be established exactly; however fol. 1acontains words كراس ٦ and ورق ٤٨ (6 quires and 48 folios),which makes eight folios per quire</formula>
                            </seg>
                            <seg type="gathering" n="10 fols">
-                              
+                              <dimensions type="leaf" unit="mm" quantity="5"/>
                               <signatures facs="#i0012 #i0022">
                                  <locus>Fols 8b, 18b, 28b, 38b</locus>
                               </signatures>
@@ -137,7 +137,9 @@
                         <title type="normalised" xml:lang="ara-Latn">Fī Ḥadd al-Ǧirāḥat wa-Ḏikr al-Aẖlāṭ</title>
                         <title type="original">في حد الجراحة وذكر الاخلاط<locus facs="#i0004">1а.1</locus>
                         </title>
-                        <author>Anonymous</author>
+                        <author>
+                           <persName xml:lang="eng-Latn" type="standard">Anonymous</persName>
+                        </author>
                         <incipit facs="#i0005">
                            <locus>Fol.1b.2</locus>الفصل الاول فى حد الجراحة وذكر الاخلاط اعلم يرحمك الله تعالي ان هذه الصناعة لها مبادي ومطالب فمباديها الاهلاط والاعضا من الامور الطبيعية الناظر فيها الطبايعي والمطالب معرفة الاورام والقروح وانواع التفرق الحاصل في الاعضا الظاهرة</incipit>
                         <explicit facs="#i0051">
@@ -315,7 +317,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-04-01T16:21:22+01:00">Conversion from WMSmaster to WAMCP<persName>gbrey</persName>

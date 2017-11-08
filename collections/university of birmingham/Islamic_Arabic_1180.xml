@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3651">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,15 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_1180-item1">
-                     <author>Ḥussain ibn Muḥammad ibn Muṣṭafāحسين بن محمد بن مصطفىsurname/&gt;
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="supplied">Ḥussain ibn Muḥammad ibn Muṣṭafā</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">حسين بن محمد بن مصطفىsurname/&gt;
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Jawāb ʿan qawl al-Shaykh Dāūd al-Ḥakīm</title>
                      
@@ -55,9 +60,11 @@
                      
                      
                      <note>A text on astronomy. Title on front page.</note>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="fa" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 1908</bibl>
                         <bibl>Not mentioned in GAL</bibl>
@@ -72,14 +79,14 @@
                               <height>20.5</height>
                               <width>14.3</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="27" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                            <note>27 lines per page</note>
                         </layout>
                      </layoutDesc>
@@ -135,7 +142,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-07-29">

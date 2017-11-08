@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7845">
    <teiHeader>
       <fileDesc>
@@ -50,7 +50,9 @@
                      <locus from="1a" to="74a">ff. 1a-74a</locus>
                      <textLang mainLang="fa">Persian</textLang>
                      <note type="content-genre">Arabic grammar</note>
-                     <author>Anonymous</author>
+                     <author>
+                        <persName xml:lang="en">Anonymous</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">[Ṣarf and naḥv]</title>
                      <title xml:lang="fa">[صرف و نحو]</title>
                      <note xml:lang="en">In the Minasian collection, there are a number of manuscripts under the generic title of [Ṣarf va Naḥv]. The subject of all of these copies is the grammar of Arabic language, but their titles and authors are unknown due to various reasons, including the missing of their opening or ending folios.</note>
@@ -75,7 +77,12 @@
                      <locus from="74b" to="82a">ff. 74b-82a</locus>
                      <textLang mainLang="ar">Arabic</textLang>
                      <note type="content-genre">Ethics</note>
-                     <author key="n82241711" ref="http://viaf.org/viaf/35256148/">Zarnūjī, Burhān al-Dīn, 12th/13th centuryزرنوجي حنفي، برهان‌الدين - ۵۱۹ ق / ۱۱۲۵ م.</author>
+                     <author key="n82241711" ref="http://viaf.org/viaf/35256148/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Zarnūjī, Burhān al-Dīn, 12th/13th century</persName>
+                        
+                        
+                        <persName xml:lang="ar">زرنوجي حنفي، برهان‌الدين - ۵۱۹ ق / ۱۱۲۵ م.</persName>
+                     </author>
                      <note>This work is a guideline for Islamic education. The book has an introdution and 12 chapters as listed below:<p>Chapter one, The nature of science and its prominence over other professions</p>
                         <p>Chapter two, The student's intent, who should stand up for seeking knowledge for the sake of the truth and the elimination of ignorance.</p>
                         <p>Chapter three, How to choose the scientific discipline, teacher and classmate</p>
@@ -118,7 +125,12 @@
                      <locus from="82b" to="84b">ff. 82b-84b</locus>
                      <textLang mainLang="fa">Persian</textLang>
                      <note type="content-genre">Arabic orthoepy (Tajweed)</note>
-                     <author>al-ʾAʿmá al-ʾIṣfahānī, Mullā Mukhtār, 10th Q. / 16th centuryالأعمی الأصفهانی، ملا مختار القاری، ۱۰ ق / ۱۶ م.<addName xml:lang="fa" type="laqab">قاری صغیر</addName>
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">al-ʾAʿmá al-ʾIṣfahānī, Mullā Mukhtār, 10th Q. / 16th century</persName>
+                        
+                        
+                        <persName xml:lang="fa">الأعمی الأصفهانی، ملا مختار القاری، ۱۰ ق / ۱۶ م.</persName>
+                        <addName xml:lang="fa" type="laqab">قاری صغیر</addName>
                         <addName xml:lang="fa" type="laqab">مختار القراء</addName>
                      </author>
                      <note>This is a poem in Arabic orthoepy (Tajweed) in 72 verses which, according to the last verses of the poem, is composed in the year 949 Q. Several commentaries have been written in this poem. In addition to this treatise, Mukhtār Iṣfahānī has written two more treatises in Tajweed, called Mukhtār al-Qurāʾ and a Persian treatise in Tajweed (Risālah-i Fārsī dar Tajvīd).</note>
@@ -215,15 +227,15 @@
                      <layoutDesc>
                         <layout n="1" columns="1" ruledLines="15">
                            <locus from="1a" to="74a">ff. 1a-74a</locus>
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                         <layout n="2" columns="1" ruledLines="15">
                            <locus from="74b" to="82a">ff. 74b-82a</locus>
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                         <layout n="3" columns="1" ruledLines="15">
                            <locus from="82b" to="84b">ff. 82b-84b</locus>
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -395,7 +407,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2016-11-06">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7570">
    <teiHeader>
       <fileDesc>
@@ -44,20 +44,23 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="RAS_Ellis_Persian_42-item1">
-                     <author>‘Āshiqʻalī&gt;عاشقعلي</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">‘Āshiqʻalī</persName>
+                        <persName xml:lang="fa">&gt;عاشقعلي</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Tashrīḥ al-manāzil</title>
                      <title xml:lang="ar">تسريح المنازل</title>
                      <note>An account of the places visited by the East India Company's Army during it's invasion of Afghanistan in 1839, from Meerut to Kandahar, with notes on the produce etc.</note>
                      <incipit xml:lang="fa">اما بعد چنین گوید ... سيد عاشقعلي...كه در حين كه عساكر نصرت مآثر سركار کمپنی بهادر متوجه ملک افغانستان کردید این ذره بیمقدار مطابق سنه یکهزار هشت صد و نه عیسوی</incipit>
-                     
+                     <explicit xml:lang="fa" defective="true"/>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>64 f.
-                           
+                        <extent>64 f.<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -109,7 +112,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-07-09">

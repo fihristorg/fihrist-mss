@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3492">
    <teiHeader>
       <fileDesc>
@@ -43,16 +43,21 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85067900 http://lccn.loc.gov/sh85067909">
                   <msItem xml:id="IO_Islamic_4772-item1">
-                     <author ref="http://viaf.org/viaf/32788894" key="n79102800">Nāṣir al-Dīn Shāh, Shah of Iran, 1831-1896Nāṣir al-Dīn Shāh, ruled 1848-96ناصر الدين ساهناصر الدين شاه، شاه ايران
-                        
-                        
-                        
+                     <author ref="http://viaf.org/viaf/32788894" key="n79102800">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Nāṣir al-Dīn Shāh, Shah of Iran, 1831-1896</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Nāṣir al-Dīn Shāh, ruled 1848-96</persName>
+                        <persName xml:lang="fa" type="alt">ناصر الدين ساه</persName>
+                        <persName xml:lang="fa">ناصر الدين شاه، شاه ايران
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="en" type="desc">Qajar document</title>
                      
                      
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <listBibl>
                         <bibl>For a more detailed description see Sims-Williams 1986, page 20.</bibl>
                      </listBibl>
@@ -66,7 +71,7 @@
                               <height>45.5</height>
                               <width>32.5</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -116,7 +121,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-12-28">

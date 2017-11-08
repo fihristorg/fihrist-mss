@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1689">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,9 @@
                <msContents>
                   <msItem xml:id="MS_Sale_34-item1" n="1">
                      <locus from="1" to="102">ff. 1-102</locus>
-                     <author key="n 88095635" ref="http://www.viaf.org/viaf/17479309/">Shayzarī, ʻAbd al-Raḥmān ibn Naṣr,<date calendar="#Gregorian" notBefore="1100" notAfter="1200">12th cent.</date>
+                     <author key="n 88095635" ref="http://www.viaf.org/viaf/17479309/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Shayzarī, ʻAbd al-Raḥmān ibn Naṣr,<date calendar="#Gregorian" notBefore="1100" notAfter="1200">12th cent.</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Rawḍat al-qulūb wa nuzhat al-muḥibb wa-al-maḥbūb</title>
                      <listBibl>
@@ -56,7 +58,9 @@
                   </msItem>
                   <msItem xml:id="MS_Sale_34-item2" n="2">
                      <locus from="103" to="113">ff. 103r-113r</locus>
-                     <author key="n 82074055" ref="http://viaf.org/viaf/90041179/">Ṣafadī, Khalīl ibn Aybak, ca.<date calendar="#Gregorian" from="1297" to="1363">1297-1363</date>
+                     <author key="n 82074055" ref="http://viaf.org/viaf/90041179/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ṣafadī, Khalīl ibn Aybak, ca.<date calendar="#Gregorian" from="1297" to="1363">1297-1363</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">ʻIbrat al-labīb bi-ʻathrat al-kaʼīb</title>
                      <note>*Brock. “maṣraʻ”</note>
@@ -68,7 +72,9 @@
                   </msItem>
                   <msItem xml:id="MS_Sale_34-item3" n="3">
                      <locus from="114" to="144">ff. 114r-144v</locus>
-                     <author key="n 82074055" ref="http://viaf.org/viaf/90041179/">Ṣafadī, Khalīl ibn Aybak, ca.<date calendar="#Gregorian" from="1297" to="1363">1297-1363</date>
+                     <author key="n 82074055" ref="http://viaf.org/viaf/90041179/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ṣafadī, Khalīl ibn Aybak, ca.<date calendar="#Gregorian" from="1297" to="1363">1297-1363</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Damʻat al-bāqī wa-lawʻat al-shāqī*</title>
                      <note>*Brock. Lawʻat al-shāqī wa-damʻat al-bāqī. Also ascribed to Zayn al-Dīn Manṣūr ibn ʻAbd al-Raḥmān al-Shafiʻī al-Ḥarīrī d. 1559 (II. 335) and to Jamāl al-Dīn Yūsuf al-Khaṭīb al-Madanī al-Ṣāliḥī</note>
@@ -195,11 +201,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

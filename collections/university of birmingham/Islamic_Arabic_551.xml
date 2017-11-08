@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3910">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,16 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_551-item1">
-                     <author>Shams al-Dīn Abū ʿAbdallāh Muḥammad ibn Aḥmad ibn Aḥmad ibn ʿUmāra al-Ghassānī al-Andalusī al-Bargī, lived in the 10th/16th century (?)
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="supplied">Shams al-Dīn Abū ʿAbdallāh Muḥammad ibn Aḥmad ibn Aḥmad ibn ʿUmāra al-Ghassānī al-Andalusī al-Bargī, lived in the 10th/16th century (?)</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-ʿiqd al-naḍīd fī sharḥ al-waṣīd</title>
                      
@@ -63,8 +69,10 @@
                      <note>Contains the first part only, last verse commented upon:<foreign xml:lang="ar">سامضي علي شرطي و بالله اكتفي و ما خاب ذو جد اذا هو حسبلا</foreign>
                      </note>
                      <incipit xml:lang="ar">بسم الله الرحمن الرحيم ... اما بعد قال العبد الفقير الى عفو ربه محمد بن احمد بن احمد بن عمارة الغساني الاندلسي البرجي ... الحمد لله المنفرد بجلال عظمته ... و بعد فانكم سالتموني ... ان اجمع لكم شيئا في شرح قصيدة ... الي القاسم ..الشاطبي</incipit>
-                     
-                     
+                     <explicit xml:lang="fa" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 53</bibl>
                         <bibl>GAL 1.c., Cmt. 25 (al-Bāğī)</bibl>
@@ -79,14 +87,14 @@
                               <height>21.3</height>
                               <width>15.6</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="13" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -140,7 +148,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-03-13">

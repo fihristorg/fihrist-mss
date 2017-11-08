@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8924">
    <teiHeader>
       <fileDesc>
@@ -43,13 +43,17 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms22ao-item1">
-                     <author>anonymous</author>
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">anonymous</persName>
+                        
+                        
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Prayer sheet for illnesses</title>
                      
                      <title xml:lang="fa">دعا براي شفاي مريض</title>
                      <note>Large illuminated sheet in Arabic and Persian, Eighteenth table of a possibly bigger collection. Headings in squares describe ailments- to the right of the prayers to be said to remedy them. Blue, red, green, yellow and orange are generally used for text in Arabic, whereas black is used for Persian text. The Persian part describes what actions have to be taken and Arabic is the incantation to be used. Incantation for 18 different diseases. Central magic square (surrounded by Persian text)</note>
-                     
-                     
+                     <incipit xml:lang="ar" type="basmalla"/>
+                     <explicit xml:lang="ar"/>
                      <textLang mainLang="ar">Arabic and Persian</textLang>
                   </msItem>
                </msContents>
@@ -59,7 +63,7 @@
                         <extent>1ff.<dimensions type="leaf" unit="cm">
                               <height>Large illuminated sheet</height>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="modern"/>
                         <collation>
@@ -68,7 +72,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="5" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -131,7 +135,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-05-10">

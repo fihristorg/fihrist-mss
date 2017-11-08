@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7462">
    <teiHeader>
       <fileDesc>
@@ -42,15 +42,19 @@
                </msIdentifier>
                <msContents>
                   <summary>
-                     <title type="main"/>
+                     
                   </summary>
                   <msItem xml:id="Persian_MS_99-item1">
                      <author key="nr 94016220 "
-                             ref="http://viaf.org/viaf/44179902/#Muḥtasham,_ʻAlī_ibn_Aḥmad,_1499_or_1500-1587_or_1588">Muḥtasham, ʻAlī ibn Aḥmad, 1499 or 1500-1587 or 1588محتشم، علي بن احمد‏</author>
+                             ref="http://viaf.org/viaf/44179902/#Muḥtasham,_ʻAlī_ibn_Aḥmad,_1499_or_1500-1587_or_1588">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Muḥtasham, ʻAlī ibn Aḥmad, 1499 or 1500-1587 or 1588</persName>
+                        
+                        <persName xml:lang="fa">محتشم، علي بن احمد‏</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Dīvān</title>
                      <title xml:lang="fa">دیوان</title>
-                     
-                     
+                     <incipit xml:lang="ar" type="basmalla"/>
+                     <explicit xml:lang="ar"/>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
@@ -58,8 +62,8 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
@@ -126,7 +130,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014">

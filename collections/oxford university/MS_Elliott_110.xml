@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4242">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,12 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_Elliott_110-item1">
-                     <author key="no2012122753" ref="http://viaf.org/viaf/268080108">Sūzanī, Muḥammad ibn Masʻūd, d. 1173?سوزنی سمرقندی، شمس الدين محمد بن على، ت 569 هـ</author>
+                     <author key="no2012122753" ref="http://viaf.org/viaf/268080108">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Sūzanī, Muḥammad ibn Masʻūd, d. 1173?</persName>
+                        <persName xml:lang="fa">سوزنی سمرقندی، شمس الدين محمد بن على، ت 569 هـ</persName>
+                        
+                        
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Dīvān-i Sūzanī</title>
                      <title xml:lang="fa">ديوان سوزنى</title>
                      
@@ -160,7 +165,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-03-17">

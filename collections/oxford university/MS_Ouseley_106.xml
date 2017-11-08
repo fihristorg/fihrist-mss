@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1282">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,9 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Ouseley_106-item1" n="1">
                      <locus from="1" to="44">ff. 1v-44v</locus>
-                     <author key="no 88000627" ref="http://viaf.org/viaf/36909919/">Ṭāshkubrīʹzādah, Aḥmad ibn Muṣṭafá,<date calendar="#Gregorian" from="1495" to="1561">1495-1561</date>
+                     <author key="no 88000627" ref="http://viaf.org/viaf/36909919/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ṭāshkubrīʹzādah, Aḥmad ibn Muṣṭafá,<date calendar="#Gregorian" from="1495" to="1561">1495-1561</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Risālah al-Shifāʼ li-adwāʼ al-wabāʼ</title>
                      <note>*Brock. fī dawāʼ</note>
@@ -57,7 +59,9 @@
                   </msItem>
                   <msItem xml:id="MS_Ouseley_106-item2" n="2">
                      <locus from="46" to="54">ff. 46v-54r</locus>
-                     <author key="n 80038012" ref="http://viaf.org/viaf/90043051/">Dhahabī, Muḥammad ibn Aḥmad, 1274-1348</author>
+                     <author key="n 80038012" ref="http://viaf.org/viaf/90043051/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Dhahabī, Muḥammad ibn Aḥmad, 1274-1348</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Maʻrifat al-anghām</title>
                      <title xml:lang="ar-Latn-x-lc">Kanz al-ṭarab wa-ghāyat al-arab</title>
                      <note>Incomplete</note>
@@ -69,7 +73,9 @@
                   </msItem>
                   <msItem xml:id="MS_Ouseley_106-item3" n="3">
                      <locus from="55" to="85">ff. 55-85</locus>
-                     <author key="n 84030639" ref="http://viaf.org/viaf/29521580/">Azharī, Khālid ibn ʻAbd Allāh, d.<date calendar="#Gregorian" when="1499">1499</date>
+                     <author key="n 84030639" ref="http://viaf.org/viaf/29521580/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Azharī, Khālid ibn ʻAbd Allāh, d.<date calendar="#Gregorian" when="1499">1499</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Sharḥ al-Ājurrūmīyah</title>
                      <title type="alt" xml:lang="ar-Latn-x-lc">al-Muqaddimah al-Azharīyah fī ʻilm al-ʻarabīyah</title>
@@ -88,7 +94,9 @@
                   </msItem>
                   <msItem xml:id="MS_Ouseley_106-item4" n="4">
                      <locus from="87" to="122">ff. 87-122</locus>
-                     <author key="n 84182375" ref="http://www.viaf.org/viaf/56597947/">Sibṭ al-Māridīnī, Badr al-Dīn Muḥammad ibn Muḥammad, b.<date calendar="#Gregorian" when="1423">1423</date>
+                     <author key="n 84182375" ref="http://www.viaf.org/viaf/56597947/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Sibṭ al-Māridīnī, Badr al-Dīn Muḥammad ibn Muḥammad, b.<date calendar="#Gregorian" when="1423">1423</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Sharḥ al-Raḥbīyah</title>
                      <note>Commentary on<title xml:lang="ar-Latn-x-lc">al-Urjūzah al-Raḥbīyah</title>, or<title xml:lang="ar-Latn-x-lc">Bughyat al-bāḥith ʻan jumal al-mawārith</title>, of<persName xml:lang="ar-Latn-x-lc"
@@ -244,11 +252,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

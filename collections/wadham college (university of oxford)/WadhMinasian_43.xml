@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7842">
    <teiHeader>
       <fileDesc>
@@ -51,7 +51,13 @@
                      <note type="content-genre">Pharmacology</note>
                      <title xml:lang="fa-Latn-x-lc">Ikhtīyārāt-i Badīʿī</title>
                      <title xml:lang="fa">اختیارات بدیعی</title>
-                     <author key="no2011108879‏‏" ref="http://viaf.org/viaf/173251113">Anṣārī Shīrāzī, ʻAlī ibn Ḥusayn, approximately 1329-1403 or 1404.ʿAṭṭār Shīrāzī, Zayn al-ʿĀbidīn ʿAlī ibn Ḥusayn Anṣārī, 730-806 Qamarī/1330-1403.انصاری شیرازی، علی بن حسین.عطار شیرازی، زین‌العابدین علی بن حسین انصاری<addName xml:lang="fa-Latn-x-lc" type="laqab">Zayn al-ʿAṭṭār</addName>
+                     <author key="no2011108879‏‏" ref="http://viaf.org/viaf/173251113">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Anṣārī Shīrāzī, ʻAlī ibn Ḥusayn, approximately 1329-1403 or 1404.</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="org">ʿAṭṭār Shīrāzī, Zayn al-ʿĀbidīn ʿAlī ibn Ḥusayn Anṣārī, 730-806 Qamarī/1330-1403.</persName>
+                        
+                        <persName xml:lang="fa" type="standard">انصاری شیرازی، علی بن حسین.</persName>
+                        <persName xml:lang="fa" type="org">عطار شیرازی، زین‌العابدین علی بن حسین انصاری</persName>
+                        <addName xml:lang="fa-Latn-x-lc" type="laqab">Zayn al-ʿAṭṭār</addName>
                         <addName xml:lang="fa" type="laqab">زین‌العطار</addName>
                      </author>
                      <incipit xml:lang="fa">بسمله، امداد حمد بی‌عد و اعداد سپاس بی‌قیاس مبدعی را که آثار ابداع او بر هر ورقی از اوراق و شجری از اشجار وضوح یافته… اما بعد بر رای ارباب حکمت و اصحاب فطنت پوشیده نماند که … چون بندهٔ کمترین علی بن الحسین الانصاری المشتهر بحاجی زین‌العطار درین قسم بحسب المقدور و الامکان شروعی نموده میخواست…</incipit>
@@ -103,7 +109,7 @@
                      <layoutDesc>
                         <layout columns="1" ruledLines="18">
                            <p>18 lines per page.</p>
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -206,7 +212,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2017-05-05">

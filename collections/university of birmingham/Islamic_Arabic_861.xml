@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3982">
    <teiHeader>
       <fileDesc>
@@ -45,10 +45,15 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="Islamic_Arabic_861-item1" n="1">
                      <locus from="1" to="45">ff. 1-45</locus>
-                     <author key="nr91027100" ref="http://viaf.org/viaf/90042852">Kūrānī, Ibrāhīm ibn Ḥasan, 1616 or 1617-ca 1690الكوراني، إبراهيم بن حسن، 1025-1101 هـ
+                     <author key="nr91027100" ref="http://viaf.org/viaf/90042852">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Kūrānī, Ibrāhīm ibn Ḥasan, 1616 or 1617-ca 1690</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">الكوراني، إبراهيم بن حسن، 1025-1101 هـ
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Kitab al-ʿayn wa-al-athar fī ʿaqāʾid ahl al-athar</title>
                      
@@ -56,8 +61,10 @@
                      
                      
                      <incipit xml:lang="ar">الحمد لله الذى يسدل على وجوب وجوده بما له من بديع الافعال ... و بعد فقد طلب من بعض الاصقاء الذين لا يسعنى مخالفتهم ... وسميته بكتاب العين و التثر فى عقائد اهل الاثر</incipit>
-                     
-                     
+                     <explicit xml:lang="fa" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 176</bibl>
                         <bibl>GAL II 385-6; II 520-1, where this work is not mentioned</bibl>
@@ -66,10 +73,15 @@
                   </msItem>
                   <msItem xml:id="Islamic_Arabic_861-item2" n="2">
                      <locus from="1" to="40">ff. 1-406</locus>
-                     <author key="nr91027100" ref="http://viaf.org/viaf/90042852">Kūrānī, Ibrāhīm ibn Ḥasan, 1616 or 1617-ca 1690الكوراني، إبراهيم بن حسن، 1025-1101 هـ
+                     <author key="nr91027100" ref="http://viaf.org/viaf/90042852">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Kūrānī, Ibrāhīm ibn Ḥasan, 1616 or 1617-ca 1690</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">الكوراني، إبراهيم بن حسن، 1025-1101 هـ
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Itḥāf al-dhakī bi-sharh al-tuhfah al-mursalah ilá al-nabī</title>
                      
@@ -82,9 +94,11 @@
                                   xml:lang="ar-Latn-x-lc">Burhānpūrī, Muḥammad ibn Faḍl Allāh, d. 1619 or 20<foreign xml:lang="ar">برهانپوري، محمد بن فضل الله</foreign>
                         </persName>
                      </note>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 813</bibl>
                         <bibl>GAL II 418, Cmt. 1; II 617; II 385-6; II 520-1</bibl>
@@ -99,14 +113,14 @@
                               <height>23.8</height>
                               <width>16.2</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="27" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                            <note>27 lines per page</note>
                         </layout>
                      </layoutDesc>
@@ -187,7 +201,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-07-09">

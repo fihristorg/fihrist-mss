@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1137">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,9 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Marsh_548-item1" n="1">
                      <locus from="1" to="37">ff. 1v-37v</locus>
-                     <author key="no2006134960" ref="http://viaf.org/viaf/90039483/">Ibn al-Majdī, Aḥmad ibn Rajab,<date calendar="#Gregorian" from="1366" to="1447">1366-1447</date>
+                     <author key="no2006134960" ref="http://viaf.org/viaf/90039483/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ibn al-Majdī, Aḥmad ibn Rajab,<date calendar="#Gregorian" from="1366" to="1447">1366-1447</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Ghunyat al-fahīm wa-al-ṭarīq ilá ḥall al-taqwīm</title>
                      <listBibl>
@@ -56,7 +58,9 @@
                   </msItem>
                   <msItem xml:id="MS_Marsh_548-item2" n="2">
                      <locus from="37" to="40">ff. 37v-40v</locus>
-                     <author key="n 85026560" ref="http://www.viaf.org/viaf/15569629/">Ibn al-Shāṭir, ʻAlī ibn Ibrāhīm,<date calendar="#Gregorian" from="1304" to="1375">1304-1375</date>
+                     <author key="n 85026560" ref="http://www.viaf.org/viaf/15569629/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ibn al-Shāṭir, ʻAlī ibn Ibrāhīm,<date calendar="#Gregorian" from="1304" to="1375">1304-1375</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Faṣl fī maʻrifat awqāt al-rujūʻ wa-al-istiqāmah</title>
                      <note>An extract from one of his astronomical works, comprising bābs 9-11 thereof</note>
@@ -78,7 +82,9 @@
                   </msItem>
                   <msItem xml:id="MS_Marsh_548-item4" n="4">
                      <locus from="42" to="124">ff. 42v-124v</locus>
-                     <author key="n 2009038028" ref="http://www.viaf.org/viaf/90444131/">Maghribī, Muḥyī al-Dīn, d. ca.<date calendar="#Gregorian" when="1281">1281</date>
+                     <author key="n 2009038028" ref="http://www.viaf.org/viaf/90444131/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Maghribī, Muḥyī al-Dīn, d. ca.<date calendar="#Gregorian" when="1281">1281</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Risālah fī al-aḥkām ʻalá taḥwīl sinī al-ʻālam</title>
                      <listBibl>
@@ -227,11 +233,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

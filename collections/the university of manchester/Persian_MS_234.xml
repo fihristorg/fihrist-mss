@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6718">
    <teiHeader>
       <fileDesc>
@@ -45,10 +45,15 @@
                      <title xml:lang="ar">احياء علوم الدين</title>. Contains the fourth rukn entitled<title xml:lang="fa-Latn-x-lc">munjiāt</title>
                      <title xml:lang="fa">منجیات</title>, devided into ten aṣl. The volume begins with the table of contents followed by the text of the first asl.:</summary>
                   <msItem xml:id="Persian_MS_234-item1">
-                     <author key="n82097778" ref="http://viaf.org/viaf/89736851/">Ghazzālī, 1058-1111الغزالي
+                     <author key="n82097778" ref="http://viaf.org/viaf/89736851/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ghazzālī, 1058-1111</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">الغزالي
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Kīmiyā-yi saʻādat</title>
                      
@@ -57,7 +62,7 @@
                      
                      <note>Volume IV of 4. Unanimously written by the same hand.</note>
                      <incipit xml:lang="ar" type="beginning">اصل اول اندر توبه و بیرون آمدن از مظالم است اصل دوم 631 (این عدد که شماره صفحه است بعدأ و بخطی دیگر در بالای اصل دوم که به شنگرف نوشته شده افزوده شده است) ...اندرشکر و صبر است</incipit>
-                     
+                     <explicit xml:lang="ar"/>
                      <listBibl>
                         <bibl>Volume I<idno>Persian MS 231</idno>volume II<idno>Persian MS 232</idno>, volume III<idno>Persian MS 233</idno>
                         </bibl>
@@ -169,8 +174,8 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>128 folios, 2 fly leaves.
-                           
+                        <extent>128 folios, 2 fly leaves.<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation>
                            <p>Folioed with Arabic figures, 305-433, some folios missing or misarranged in binding. Arabic folio 431 (present folio 121) is wrongly placed between<locus from="424" to="424">424</locus>and<locus from="425" to="425">425</locus>.</p>
@@ -246,7 +251,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4749">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,12 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_Ouseley_59-item1">
-                     <author key="n 83311926" ref="http://viaf.org/viaf/45690112">ʻAbd al-Ḥaqq ibn Sayf al-Dīn Dihlavī, 1551-1642الدهلوي، عبد الحق بن سيف الدين، 959-1052 هـ</author>
+                     <author key="n 83311926" ref="http://viaf.org/viaf/45690112">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">ʻAbd al-Ḥaqq ibn Sayf al-Dīn Dihlavī, 1551-1642</persName>
+                        <persName xml:lang="fa">الدهلوي، عبد الحق بن سيف الدين، 959-1052 هـ</persName>
+                        
+                        
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Taʼrīkh-i Ḥaqqī</title>
                      <title xml:lang="fa">تأريخ حقّى</title>
                      
@@ -157,7 +162,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-07-12">

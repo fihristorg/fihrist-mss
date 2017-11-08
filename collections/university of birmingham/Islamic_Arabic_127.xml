@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3678">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,16 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_127-item1">
-                     <author>Muḥammad al-Bayyūmī al-ʿAzharīمحمد البيوي الازهري
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="supplied">Muḥammad al-Bayyūmī al-ʿAzharī</persName>
                         
-                        
-                        
+                        <persName xml:lang="ar-Latn-x-lc" type="alt">محمد البيوي الازهري</persName>
+                        <persName xml:lang="ar">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Sharḥ al-fuṣūl al-Fikrīyah</title>
                      <title xml:lang="ar-Latn-x-lc" type="alt">Al-durar al-zakīyah fī ḥall alfāẓ al-fuṣūl al-Fikrīyah</title>
@@ -61,8 +67,10 @@
                         </persName>
                      </note>
                      <incipit xml:lang="ar">الحمد لله رافع سقام المنتصبين للسيادة ... فيقول العبد الفقير ... محمد البيومي الازهري ... هذا شرح لطيف كل الفاظ الفصول الفكرية التي الفها صاحب السعادة و الاقبال حضرة عبد الله بيك فكرب</incipit>
-                     
-                     
+                     <explicit xml:lang="fa" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 1625</bibl>
                         <bibl>Not mentioned in GAL. For the ground text see Sarkis 1457.</bibl>
@@ -77,14 +85,14 @@
                               <height>24.6</height>
                               <width>17.2</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="32" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                            <note>Generally 30 - 34 lines per page</note>
                         </layout>
                      </layoutDesc>
@@ -142,7 +150,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-07-15">

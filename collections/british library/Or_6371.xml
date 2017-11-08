@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6078">
    <teiHeader>
       <fileDesc>
@@ -43,18 +43,23 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85064905 http://lccn.loc.gov/n50055095">
                   <msItem xml:id="Or_6371-item1">
-                     <author>Lālah Sīl Chandلاله سیل چند
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Lālah Sīl Chand</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">لاله سیل چند
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Tafrīḥ al-ʻimārāt</title>
                      
                      <title xml:lang="fa">تفریح العمارات</title>
                      
                      
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <note>A history and description of Agra written in<date calendar="#Gregoriani" notBefore="1825" notAfter="1826">1825-6</date>&gt;</note>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 17.</bibl>
@@ -118,7 +123,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-05-31">

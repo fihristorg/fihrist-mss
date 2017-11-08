@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_2594">
    <teiHeader>
       <fileDesc>
@@ -46,28 +46,38 @@
                   <msItem xml:id="Q_5-item1" class="#multipleWorks">
                      <msItem xml:id="Q_5-item1-item1" n="1">
                         <locus from="1b" to="23a">ff. 1b-23a</locus>
-                        <author key="n80013285" ref="http://viaf.org/viaf/19703891/">Anṣārī al-Harawī, ʻAbd Allāh ibn Muḥammad, 1006-1089انصارى الهروى، عبد الله بن محمد</author>
+                        <author key="n80013285" ref="http://viaf.org/viaf/19703891/">
+                           <persName xml:lang="ar-Latn-x-lc" type="standard">Anṣārī al-Harawī, ʻAbd Allāh ibn Muḥammad, 1006-1089</persName>
+                           <persName xml:lang="fa">انصارى الهروى، عبد الله بن محمد</persName>
+                        </author>
                         
                         
                         
                         
                         <title xml:lang="en" type="desc">Poem on oneiromancy</title>
-                        
-                        
-                        
+                        <incipit xml:lang="ar"/>
+                        <explicit xml:lang="ar" defective="true"/>
+                        <note>
+                           <foreign xml:lang="ar"/>
+                        </note>
                         <textLang mainLang="fa">Persian</textLang>
                      </msItem>
                      <msItem xml:id="Q_5-item1-item2" n="2">
                         <locus from="24b" to="28b">ff. 24b-28b</locus>
-                        <author key="n80013285" ref="http://viaf.org/viaf/19703891/">Anṣārī al-Harawī, ʻAbd Allāh ibn Muḥammad, 1006-1089انصارى الهروى، عبد الله بن محمد</author>
+                        <author key="n80013285" ref="http://viaf.org/viaf/19703891/">
+                           <persName xml:lang="ar-Latn-x-lc" type="standard">Anṣārī al-Harawī, ʻAbd Allāh ibn Muḥammad, 1006-1089</persName>
+                           <persName xml:lang="fa">انصارى الهروى، عبد الله بن محمد</persName>
+                        </author>
                         
                         
                         
                         
                         <title xml:lang="en" type="desc">Mystical treatise</title>
-                        
-                        
-                        
+                        <incipit xml:lang="ar"/>
+                        <explicit xml:lang="ar" defective="true"/>
+                        <note>
+                           <foreign xml:lang="ar"/>
+                        </note>
                         <textLang mainLang="fa">Persian</textLang>
                      </msItem>
                   </msItem>
@@ -76,13 +86,13 @@
                   <objectDesc form="other">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -162,7 +172,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-08-23">

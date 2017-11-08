@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7752">
    <teiHeader>
       <fileDesc>
@@ -41,7 +41,7 @@
                         <foliation>European,Pencil</foliation>
                         <collation>
                            <seg type="gathering" n="5-1-5-6-6-6-6" subtype="both">
-                              
+                              <dimensions type="leaf" unit="mm" quantity="6"/>
                               <formula>01+66</formula>
                            </seg>
                         </collation>
@@ -146,12 +146,16 @@
                         </msItem>
                         <note facs="#i0001">There is a note on the binding partially obliterated. written on the first page (Muhammad ibn ashiap on dialectics which means (محمد بن أشيب في الجدليات).</note>
                         <textLang mainLang="ara-Latn"/>
-                        <author>Anonymous</author>
+                        <author>
+                           <persName type="standard" xml:lang="eng-Latn">Anonymous</persName>
+                        </author>
                      </msItem>
                      <msItem xml:id="WMS_Arabic_286-part1-item2" defective="unknown">
                         <title type="original" facs="#i0028">تمحيص التلخيص<locus>fol.24b.7</locus>
                         </title>
-                        <author>Anonymous</author>
+                        <author>
+                           <persName type="standard" xml:lang="eng-Latn">Anonymous</persName>
+                        </author>
                         <textLang mainLang="ara-Latn"/>
                         <title type="normalised" xml:lang="ara-Latn">Tamḥīs al-talẖīs</title>
                         <incipit type="basmala" facs="#i0027">
@@ -237,7 +241,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-03-30T11:08:50+02:00">Committed to SVN. To view the changes in detail use SVN diff. SVN Url:http://wellcomesvn.local.bibalex.dom/svn/WellcomeTrust/trunk/WAMCPMetaGallery/XML/WMS_Arabic_286/WMS_Arabic_286.xml<persName>mohamed.abdelsamie</persName>

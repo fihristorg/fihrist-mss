@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7999">
    <teiHeader>
       <fileDesc>
@@ -44,27 +44,32 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_13491-item1">
-                     <author>Pertev Efendi, Mehmet, died 1807Mehmet Pertev Efendi</author>
+                     <author>
+                        <persName xml:lang="ota-Latn-x-lc" type="supplied">Pertev Efendi, Mehmet, died 1807</persName>
+                        <persName xml:lang="ota" type="alt">Mehmet Pertev Efendi</persName>
+                     </author>
                      <title xml:lang="ota-Latn-x-lc">Divanı Pertev</title>
                      <title xml:lang="fa-Latn-x-lc" type="alt">Dīvān-i Partaw</title>
                      <title xml:lang="ota">دیوان پرتو</title>
                      <note>Manuscript copied from the Bulaq edition of 1253/1837 in 1256/1840, and not to be confused with the Divan of Pertev Pasha, published in 1256 (EB84.806)</note>
                      <incipit xml:lang="ota">بدئت اين ديوان پرتوست</incipit>
                      <explicit xml:lang="ar" defective="true">تم طبع هذا الديوان...بمطبعة..ببولاق في خمس خلت من شهر صفر سنه الف ومأتين ثلاثه وخمسين...كتبه تاريخ 1256</explicit>
-                     
+                     <note>
+                        <foreign xml:lang="fa"/>
+                     </note>
                      <textLang mainLang="ota">Turkish</textLang>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>66 f.
-                           
+                        <extent>66 f.<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -103,7 +108,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-08-20">

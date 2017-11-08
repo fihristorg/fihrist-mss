@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6230">
    <teiHeader>
       <fileDesc>
@@ -69,8 +69,8 @@
                      <title xml:lang="fa" type="supplied">مجموعه</title>
                      
                      
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>Consisting chiefly of poems, in Turkish, Arabic, or Persian.</note>
                      <listBibl>
                         <bibl>For a more detailed description see Waley 1998, page 60.</bibl>
@@ -181,7 +181,9 @@
                   </msItem>
                   <msItem xml:id="Or_7477-item2" n="4">
                      <locus from="40r" to="41r">ff 40r-41r</locus>
-                     <author>Navāʼī, ʻAlī Shīr (d. 906/1501)
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Navāʼī, ʻAlī Shīr (d. 906/1501)</persName>
+                        
                         
                         
                         
@@ -190,8 +192,8 @@
                      
                      
                      
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>Letter on f. 40r is headed: ”کتابی که حضرت میر علی شیر به خدمه حضرت مولانا جامی نوشته شود”</note>
                      <listBibl>
                         <bibl>For a more detailed description see Waley 1998, page 19.</bibl>
@@ -296,7 +298,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-08-24">

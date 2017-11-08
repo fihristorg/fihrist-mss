@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7765">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,7 @@
                               <formula>due to the binding could not be established exactly</formula>
                            </seg>
                            <seg type="gathering" subtype="folded">
-                              
+                              <dimensions type="leaf" unit="mm" quantity="8"/>
                            </seg>
                         </collation>
                         <condition>sound</condition>
@@ -135,9 +135,14 @@
                         <title type="original">كتاب تفسير العقاقير وبدلها<locus facs="#i0004">2b.2</locus>
                         </title>
                         <title type="other" xml:lang="eng-Latn">Book of Explanation of the Drugs and their Substitutes</title>
-                        <author>Abū al-Qāsim H̱alaf b. `Abbās az-Zahrāwīابو القاسم خلف ابن العبّاس الزهراوي<forename>خلف ابن العبّاس</forename>
-                           <surname>ابو القاسم</surname>
-                           <addName type="nisbah">الزهراوي</addName>
+                        <author>
+                           <persName xml:lang="eng-Latn" type="standard">Abū al-Qāsim H̱alaf b. `Abbās az-Zahrāwī</persName>
+                           <persName xml:lang="ara-Arab" type="original">ابو القاسم خلف ابن العبّاس الزهراوي</persName>
+                           <persName xml:lang="ara-Arab" type="standard">
+                              <forename>خلف ابن العبّاس</forename>
+                              <surname>ابو القاسم</surname>
+                              <addName type="nisbah">الزهراوي</addName>
+                           </persName>
                         </author>
                         <incipit>
                            <locus>Fol. 1b.2</locus>كتاب تفسير العقاقير وبدلهاواعمال الادوية مما عنى بجمعه وتاليفه خلف بن عباس الانصاري الزهراوى قال المولف اعلم رحمك اللّه وايانا اني لما اكملت جميع هذا الكتاب وجدت فيه نقلت فيه من نسخ له ادوية اسما العقاقير بالسريانيه واليونانيه والفارسيه والعجميه ففسرت منها ما صح عندي وبان ما وجدته مترجما منه تصفحت كتب العلما والحكما والفلاسفة وما اخذته مشافهة من افواه العلما واختصرت ذلك وقربته علي حسب فهم اهل بلدنا مع قصدى يفهم يتى وثقه الذين هم كانوا الحسب لتاليف هذا الكتاب ثم اضفت الي الاسما بدل العقاقير بعضها من بعض فذكرت باعمارها وذكرت الادوية المركبة وجمعت ذلك كله في هذه المقاله الكريمه والذخاير النفسيه على حسب طاقي ووسعي وقسمتها على خمسة ابواب وزنيت ذلك كله على حروف المعجم ولا حول ولا قوة الا باللّه العلي العظيم<hi rend="overline">الباب الاول</hi>في قسمة العقاقير باختلاف اللغات<hi rend="overline">الباب الثانى</hi>في التفسير الاسما الجارية كتبهم من غير العقاقير<hi rend="overline">الباب الثالث</hi>فى بدل العقاقير بعضها من بعض اذا عدمت<hi rend="overline">والباب الرابع</hi>في الاعضا العقاقير والادوية المركبة</incipit>
@@ -381,7 +386,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-10-14T14:58:38+01:00">Conversion from WMSmaster to WAMCP<persName>gbrey</persName>

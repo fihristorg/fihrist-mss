@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6874">
    <teiHeader>
       <fileDesc>
@@ -47,33 +47,44 @@
                                   type="standard">ʻAlī ibn Abī Ṭālib, Caliph, approximately 600-661</persName>and his family particularly Imam<persName ref="http://viaf.org/viaf/89661385/" key="n 79142777">Ḥusayn ibn ʻAlī, -680</persName>.</ref>
                   </summary>
                   <msItem xml:id="Persian_MS_376-item1" n="1">
-                     <author key="n85026579" ref="http://viaf.org/viaf/20030140/">Kāshifī, Ḥusayn Vāʻiẓ, d. 1504 or 5حسين واعظ كاشفى
+                     <author key="n85026579" ref="http://viaf.org/viaf/20030140/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Kāshifī, Ḥusayn Vāʻiẓ, d. 1504 or 5</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">حسين واعظ كاشفى
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Rawz̤at al-shuhadā</title>
                      <title xml:lang="fa-Latn-x-lc" type="alt">Rawḍat al-shuhadāʼ</title>
                      <title xml:lang="ar">روضة الشهداء</title>
                      
                      
-                     
-                     
+                     <incipit xml:lang="ar" type="basmalla"/>
+                     <explicit xml:lang="ar"/>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="Persian_MS_376-item2" n="2">
-                     <author>unknown
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="unknown">unknown</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      
                      
                      
                      
                      <title xml:lang="en" type="desc">various astrological extracts</title>
-                     
-                     
+                     <incipit xml:lang="ar" type="basmalla"/>
+                     <explicit xml:lang="ar"/>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
@@ -81,8 +92,8 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
@@ -160,7 +171,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015">

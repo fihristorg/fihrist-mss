@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4097">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,10 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_A_Walker_24-item1" class="#abridgement">
-                     <author key="n2005181552" ref="http://www.viaf.org/viaf/48644515/">Maḥmūd ibn Muḥammad al-Jaghmīnī, -1344محمود بن محمد الجغمینی</author>
+                     <author key="n2005181552" ref="http://www.viaf.org/viaf/48644515/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Maḥmūd ibn Muḥammad al-Jaghmīnī, -1344</persName>
+                        <persName xml:lang="ar">محمود بن محمد الجغمینی</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">al-Qānūnchah fī al-ṭibb</title>
                      <title xml:lang="ar">القانونچة في الطبّ</title>
                      <note>An abridgement of<title xml:lang="ar-Latn-x-lc">al-Qānūn fī al-ṭibb</title>of<persName type="standard"
@@ -153,11 +156,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

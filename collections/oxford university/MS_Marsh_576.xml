@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1143">
    <teiHeader>
       <fileDesc>
@@ -60,7 +60,9 @@
                   </msItem>
                   <msItem xml:id="MS_Marsh_576-item2" n="2">
                      <locus from="382" to="383">ff. 382v-383v</locus>
-                     <author key="n 85271566" ref="http://viaf.org/viaf/86596251/">Ibn Khafājah, Ibrāhīm ibn Abī al-Fatḥ,<date calendar="#Gregorian" from="1058" to="1139">1058 or 9-1139</date>
+                     <author key="n 85271566" ref="http://viaf.org/viaf/86596251/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ibn Khafājah, Ibrāhīm ibn Abī al-Fatḥ,<date calendar="#Gregorian" from="1058" to="1139">1058 or 9-1139</date>
+                        </persName>
                      </author>
                      <title>Two poems*, the first rhyming in fāʼ, the second in hāʼ.</title>
                      <note>*Neither of these appears in the printed editions of Alexandria 1960 (ed. by Sayyid Muṣṭafá al-Ghāzī) and Beirut 1951 (ed. by Karam al-Bustānī)</note>
@@ -177,11 +179,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

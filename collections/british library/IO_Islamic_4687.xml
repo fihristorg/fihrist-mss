@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3351">
    <teiHeader>
       <fileDesc>
@@ -44,18 +44,23 @@
                <msContents>
                   <msItem xml:id="IO_Islamic_4687-item1"
                           class="http://lccn.loc.gov/sh2008115921 http://lccn.loc.gov/sh2008115920 http://lccn.loc.gov/n80002413 ">
-                     <author ref="http://viaf.org/viaf/5150639/" key="n81108300">Abū al-Faz̤l ibn Mubārak 1551-1602Abū al-Faz̤l ʻAllāmī, 1551-1602أبو الفضل علامی‏أبو الفضل بن مبارك
-                        
-                        
-                        
+                     <author ref="http://viaf.org/viaf/5150639/" key="n81108300">
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Abū al-Faz̤l ibn Mubārak 1551-1602</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Abū al-Faz̤l ʻAllāmī, 1551-1602</persName>
+                        <persName xml:lang="ar-Latn-x-lc" type="alt">أبو الفضل علامی</persName>
+                        <persName xml:lang="fa">‏أبو الفضل بن مبارك
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Akbarnāmah</title>
                      
                      <title xml:lang="ar">اکبرنامه</title>
                      
                      
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>The second part of daftar 1 describing the history of the first seventeen years of<persName ref="http://viaf.org/viaf/3264079/"
                                   key="n 80002413"
                                   type="alt"
@@ -74,7 +79,7 @@
                               <height>34.5</height>
                               <width>23</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -124,7 +129,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-12-05">

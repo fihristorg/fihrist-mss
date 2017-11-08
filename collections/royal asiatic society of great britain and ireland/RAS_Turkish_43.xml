@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7638">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,13 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="RAS_Turkish_43-item1" n="1">
-                     <author key="n 85245148" ref="http://www.viaf.org/viaf/26051046/">Kâtip Çelebi, 1609-1657كاتب چلبیḤājī Khalīfah, Muṣṭafā Ibn ʿAbd Allāhحاجي خليفه، مصطفى بن عبد اللهكاتب چلبی</author>
+                     <author key="n 85245148" ref="http://www.viaf.org/viaf/26051046/">
+                        <persName xml:lang="ota-Latn-x-lc" type="standard">Kâtip Çelebi, 1609-1657</persName>
+                        <persName xml:lang="ota">كاتب چلبی</persName>
+                        <persName xml:lang="ota-Latn-x-lc" type="alt">Ḥājī Khalīfah, Muṣṭafā Ibn ʿAbd Allāh</persName>
+                        <persName xml:lang="ota" type="alt">حاجي خليفه، مصطفى بن عبد الله</persName>
+                        <persName xml:lang="ota">كاتب چلبی</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Mīzān al-ḥaqq fī ikhtiyār al-aḥaqq</title>
                      <title xml:lang="ar">ميزان الحق في اختيارالاحق</title>
                      <incipit xml:lang="ar">الحمد لله الذي جعل العقل حجة في خلقه</incipit>
@@ -52,7 +58,9 @@
                      <textLang mainLang="ota">Turkish</textLang>
                   </msItem>
                   <msItem xml:id="RAS_Turkish_43-item2" n="2">
-                     <author key="n2005000320" ref="http://viaf.org/viaf/36318254/">Ḥusaynī, Muḥammad Muʼmin, d. 1698</author>
+                     <author key="n2005000320" ref="http://viaf.org/viaf/36318254/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Ḥusaynī, Muḥammad Muʼmin, d. 1698</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Muntakhab min tuḥfat al-muʼminīn</title>
                      <title xml:lang="fa-Latn-x-lc">منتخب من تحفة المؤمنين</title>
                      <note>Selections from the Medical work known as Tuḥfah-i Ḥakīm Muʼmin or Tuḥfat al-muʼminīn</note>
@@ -138,7 +146,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-06-18">

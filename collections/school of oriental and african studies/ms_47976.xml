@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8824">
    <teiHeader>
       <fileDesc>
@@ -44,15 +44,20 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_47976-item1">
-                     <author key="n 83302014" ref="http://www.viaf.org/viaf/69142749/">Ibn al-Daybaʻ, ʻAbd al-Raḥmān ibn ʻAlī, 1461-1537</author>
+                     <author key="n 83302014" ref="http://www.viaf.org/viaf/69142749/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ibn al-Daybaʻ, ʻAbd al-Raḥmān ibn ʻAlī, 1461-1537</persName>
+                        
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Qurrat al-ʻuyūn bi-akhbār al-Yaman al-maymūn</title>
                      <title xml:lang="ar">قرة العيون باخبار اليمن الميمون</title>
                      
                      
                      <incipit>الحمد لله الذي خص قطر اليمن الميمون بالايمان دون ساير الاقطار ... اما بعد فان علم التاريخ علم ... عظيم المقدار رفيع المنار</incipit>
                      <colophon>وكان الفراغ منه نساخته هذا التاريخ المبارك عصر يوم الخميس ثمانيه وعشرين شهر الحجه سنه 1289 بخط محمد بن يحيى امين قشاعه</colophon>
-                     
-                     
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://digital.info.soas.ac.uk/15594/#page/1/mode/2up/search/">view the printed catalogue Gacek no.273</ref>
@@ -76,7 +81,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -129,7 +134,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-09-08">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_2446">
    <teiHeader>
       <fileDesc>
@@ -44,25 +44,35 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Or_7-item1" class="#commentary">
-                     <author key="n91044051" ref="http://viaf.org/viaf/47153387/">Iṣfahānī, Maḥmūd ibn ʻAbd al-Raḥmān, 1275 or 6-1348 or 9محمود بن عبد الرحمان بن احمد بن محمد بن ابي بكر الاصفهاني
+                     <author key="n91044051" ref="http://viaf.org/viaf/47153387/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Iṣfahānī, Maḥmūd ibn ʻAbd al-Raḥmān, 1275 or 6-1348 or 9</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">محمود بن عبد الرحمان بن احمد بن محمد بن ابي بكر الاصفهاني
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Maṭāliʻ al-anẓār fī sharḥ ṭawāliʻ al-anwār</title>
                      
                      <title xml:lang="ar">مطالع الانظار في شرح طوالع الانوار</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne1922/view.php?id=121">no. 1199</ref>
                         </bibl>
                         <bibl type="text-relations">Commentary on the<title xml:lang="ar-Latn-x-lc">Ṭawāliʻ al-anwār min maṭāliʻ al-anẓār</title>
-                           <foreign xml:lang="ar">طوالع الانوار من مطالع الانظار</foreign>of<author key="n82085851" ref="http://viaf.org/viaf/44541329/">Bayḍāwī, ʻAbd Allāh ibn ʻUmar, d. 1286?قاصي عيد الله بن عمر البيضاوي</author>
+                           <foreign xml:lang="ar">طوالع الانوار من مطالع الانظار</foreign>of<author key="n82085851" ref="http://viaf.org/viaf/44541329/">
+                              <persName xml:lang="ar-Latn-x-lc">Bayḍāwī, ʻAbd Allāh ibn ʻUmar, d. 1286?</persName>
+                              <persName xml:lang="ar">قاصي عيد الله بن عمر البيضاوي</persName>
+                           </author>
                         </bibl>
                      </listBibl>
                      <textLang mainLang="ar">Arabic</textLang>
@@ -72,13 +82,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -146,7 +156,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-09-02">

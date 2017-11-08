@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4436">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,12 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_Elliott_95-item1">
-                     <author key="n 83311929" ref="http://viaf.org/viaf/110701627">Isfarangī, Sayf al-Dīn, 1185 or 1186-1267 or 1268سيف الدين اعرج اسفرنگیSayf al-Dīn Aʻraj Isfarangī</author>
+                     <author key="n 83311929" ref="http://viaf.org/viaf/110701627">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Isfarangī, Sayf al-Dīn, 1185 or 1186-1267 or 1268</persName>
+                        <persName xml:lang="fa">سيف الدين اعرج اسفرنگی</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Sayf al-Dīn Aʻraj Isfarangī</persName>
+                        
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Dīvān-i Sayf-i Isfarang</title>
                      <title xml:lang="fa">ديوان سيف اسفرنگ</title>
                      
@@ -161,7 +166,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-06-18">

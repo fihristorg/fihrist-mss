@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_431">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,9 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="CODRINGTON.READE_NO_10_BOX_4-item1">
-                     <author key="n80129266 " ref="http://viaf.org/viaf/121710001/">Mīr Ḥusaynī Haravī, Ḥusayn ibn ʻĀlim, 1272 or 3-ca. 1317</author>
+                     <author key="n80129266 " ref="http://viaf.org/viaf/121710001/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Mīr Ḥusaynī Haravī, Ḥusayn ibn ʻĀlim, 1272 or 3-ca. 1317</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Nuzhat al-arwāḥ</title>
                      <title xml:lang="ar">نزهة الأرواح</title>
                      <note>Not in Morley Printed Cat. Occasional marginal comments and corrections, probably in the hand of the original scribe. Front flyleaf, recto: pencil notes with description, numbers etc. Obscure notes in Persian. On gilt panel at bottom of first page of text, and repeated in margin: David Price 1798. The title 'Ara'sh Akbar in Codrington's catalogue is a misreading of 'Ara'is-i Abkar, which appears in Arabic script in the Morley Handwritten Catalogue. This is not in fact the title of the work, but a phrase that occurs near the end, where the author, having stated the true title, gives his own name and a florid decrioption of the book. Illuminated double page at beginning. Rubricated headings and punctuation. Text on gold-sprinkled paper set into margins, the joins concealed by ruled margins.</note>
@@ -59,7 +61,7 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>Folios 121
+                        <extent>Folios 121<dimensions type="leaf" unit="in"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
@@ -119,7 +121,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-05-30">

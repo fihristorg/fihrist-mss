@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_9107">
    <teiHeader>
       <fileDesc>
@@ -45,25 +45,36 @@
                <msContents>
                   <summary>Part of a bibliographical dictionary containing the letter ʻayn.</summary>
                   <msItem xml:id="Add_2924-item1" class="#supplement">
-                     <author>anonymous
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">anonymous</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Dhayl Taʼrīkh Baghdād</title>
                      
                      <title xml:lang="ar">ذيل تاريخ بغداد</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/view.php?id=25">no. 169</ref>
                         </bibl>
                         <bibl type="text-relations">Supplement to the<title xml:lang="ar-Latn-x-lc">Taʼrīkh Baghdād<foreign xml:lang="ar">تاريخ بغداد</foreign>
-                           </title>of<author key="n85231280" ref="http://viaf.org/viaf/69222089/">Khaṭīb al-Baghdādī, Abū Bakr Aḥmad ibn ʻAlī, 1002-1071الخطيب البغدادي، ابو بكر بن علي</author>
+                           </title>of<author key="n85231280" ref="http://viaf.org/viaf/69222089/">
+                              <persName xml:lang="ar-Latn-x-lc">Khaṭīb al-Baghdādī, Abū Bakr Aḥmad ibn ʻAlī, 1002-1071</persName>
+                              <persName xml:lang="ar">الخطيب البغدادي، ابو بكر بن علي</persName>
+                           </author>
                         </bibl>
                      </listBibl>
                      <textLang mainLang="ar">Arabic</textLang>
@@ -73,13 +84,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -150,7 +161,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-05-24">

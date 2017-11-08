@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8218">
    <teiHeader>
       <fileDesc>
@@ -44,11 +44,16 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_27155-item1">
-                     <author key="nr93049529‏" ref="http://viaf.org/viaf/61422965/">Mustanṣir billāh, Fatimid Caliph, 1029-1094المستنصر بالله</author>
+                     <author key="nr93049529‏" ref="http://viaf.org/viaf/61422965/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Mustanṣir billāh, Fatimid Caliph, 1029-1094</persName>
+                        <persName xml:lang="ar">المستنصر بالله</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Sijillāt wa-tawqīʻāt wa-kutub li-Mawlānā al-Imām al-Mustanṣir billāh Amīr al-Muʾminīn ilá duʻāt al-Yaman wa-ghayrihim</title>
                      <title xml:lang="ar">سجلات وتوقیعات وکتب لمولانا الامام المستنصر بالله امیر المؤمنين الی دعاة اليمن وغيرهم</title>
                      <incipit>الحمد لله رب العالمين من عبد الله ووليه معد ابى تميم الامام المستنصر بالله امير المومنين الى الامير تاج الدولة سيف الامام المظفر فى الدين نظام المومنين على بن محمد الصليحي سلام عليك فان امير ... المومنين يحمد الله الذي لا اله الا هو</incipit>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://digital.info.soas.ac.uk/15594/#page/1/mode/2up/search/">view the printed catalogue Gacek no.298</ref>
@@ -71,7 +76,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -120,7 +125,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-03-17">

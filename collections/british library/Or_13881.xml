@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5609">
    <teiHeader>
       <fileDesc>
@@ -43,7 +43,12 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh89005046 http://lccn.loc.gov/sh85054793 http://lccn.loc.gov/sh85138898">
                   <msItem xml:id="Or_13881-item1">
-                     <author>Ibrāhīm Ḥaqqī Arz̤urūmī, d. circa 1194/1780إبراهيم حقی ارظرومیİbrahim Hakki Erzurumî
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Ibrāhīm Ḥaqqī Arz̤urūmī, d. circa 1194/1780</persName>
+                        <persName xml:lang="fa">إبراهيم حقی ارظرومی</persName>
+                        
+                        <persName xml:lang="tur" type="alt">İbrahim Hakki Erzurumî</persName>
+                        
                         
                         
                         
@@ -57,8 +62,8 @@
                      </note>
                      <note>In Turkish but for one Persian ghazal,<locus n="41v">f. 41v</locus>, entitled<title xml:lang="fa-Latn-x-lc">Vaḥdatnāmah (<foreign xml:lang="fa">وحدتنامه</foreign>)</title>
                      </note>
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <listBibl>
                         <bibl>For a more detailed description see Waley 1998, page 46.</bibl>
                      </listBibl>
@@ -122,7 +127,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-11-01">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_2763">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,9 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="RAS_Persian_218-item1">
-                     <author>Anon.</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Anon.</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Farhang [A large Arabic-Persian dictionary]. Vol. I, From letter Alif to letter Sin.</title>
                      <note>13.75 by 9.5 ins. Folio one, recto: Presented to the Oriental Translation Com by by Sir A Malet Bt Final folio, verso: note on some of the surahs of the Qur'an. Headings and punctuation in red. The title Farhang (dictionary) appears on flyleaves and elsewhere. A substantial and serious work but since there is no introduction and end of the work is missing it is not easy to identify. There are many marginal additions. Could this be a draft?</note>
                      <incipit>Incipit (MS starts with section on alif) : hamzah-i maftuh barayi chand chiz mi-ayad</incipit>
@@ -57,7 +59,7 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>Folios 321
+                        <extent>Folios 321<dimensions type="leaf" unit="in"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
@@ -108,7 +110,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-05-30">

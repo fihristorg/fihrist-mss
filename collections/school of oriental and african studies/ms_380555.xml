@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8308">
    <teiHeader>
       <fileDesc>
@@ -41,7 +41,10 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_380555-item1" n="1">
-                     <author>Ḥabashī, Muḥammad ibn ʻAlīحبشي، محمد بن علي</author>
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="supplied">Ḥabashī, Muḥammad ibn ʻAlī</persName>
+                        <persName xml:lang="ar">حبشي، محمد بن علي</persName>
+                     </author>
                      <editor role="translator">
                         <persName type="supplied" xml:lang="ar-Latn-x-lc">Ḥasanī al-Salīm, Manṣab ibn ʿAbd al-Raḥmān, d.1922</persName>
                      </editor>
@@ -56,7 +59,9 @@
                      <textLang mainLang="swa">Swahili</textLang>
                   </msItem>
                   <msItem xml:id="ms_380555-item2" n="2">
-                     <author>Ḥasanī al-Salīm, Manṣab ibn ʿAbd al-Raḥmān, d.1922</author>
+                     <author>
+                        <persName type="supplied" xml:lang="swa-Latn-x-lc">Ḥasanī al-Salīm, Manṣab ibn ʿAbd al-Raḥmān, d.1922</persName>
+                     </author>
                      <title xml:lang="swa-Latn-x-lc">Mawaidha</title>
                      <title xml:lang="swa">موعظ</title>
                      <incipit>منن امير المومنين سيد عمر بن خطاب يوفقي منن يك ايا قران / Menena amiri al-muuminina Umari bin Khattwab (Radhiya Llahu ‘anhu) yawafikiyo maneno yake aya Qur’ani</incipit>
@@ -75,13 +80,13 @@
                         <extent>
                            <ref target="a1">16 f.</ref>
                            <ref target="a2">2 f.</ref>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -134,7 +139,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2017-09-19">

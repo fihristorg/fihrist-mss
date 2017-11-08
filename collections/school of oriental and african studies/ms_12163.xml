@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7959">
    <teiHeader>
       <fileDesc>
@@ -44,25 +44,33 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_12163-item1" n="1">
-                     <author key="n84033098" ref="http://www.viaf.org/viaf/100648969/">Jaʻfar al-Ṣādiq, 702?-765 or 6</author>
+                     <author key="n84033098" ref="http://www.viaf.org/viaf/100648969/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Jaʻfar al-Ṣādiq, 702?-765 or 6</persName>
+                     </author>
                      <title xml:lang="ota-Latn-x-lc">Fāl-nāmah</title>
                      <title xml:lang="ota-Latn-x-lc" type="alt">Fal-name</title>
                      <title xml:lang="ota">فال نامه</title>
                      <title xml:lang="ar" type="alt">مرآت الكائنات</title>
                      <note>Divination by verses of the<title xml:lang="ar-Latn-x-lc">Qurʼān</title>, with explanation in Turkish</note>
                      <incipit xml:lang="ota">هذا فال نامه جعفر الصادق...قال الله تعالى وجعلناه مالا ممدودا اى فال اسي بو فال كم سكا كلدى</incipit>
-                     
+                     <note>
+                        <foreign xml:lang="fa"/>
+                     </note>
                      <textLang mainLang="ota">Turkish</textLang>
                   </msItem>
                   <msItem xml:id="ms_12163-item2" n="2">
-                     <author>Anonymous</author>
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Anonymous</persName>
+                     </author>
                      <title xml:lang="ota-Latn-x-lc">Talıname</title>
                      <title xml:lang="tr-Latn-x-lc" type="alt">Talihname</title>
                      <title xml:lang="ota-Latn-x-lc" type="alt">Ṭāliʻ nāmah</title>
                      <title xml:lang="ota">طالع نامه</title>
                      <note>An anomymous treatise on horoscopy</note>
                      <incipit xml:lang="ota">هذا كتاب طالعنامه...اما ...بو كتاب طالع مولود ذرلر</incipit>
-                     
+                     <note>
+                        <foreign xml:lang="fa"/>
+                     </note>
                      <textLang mainLang="ota">Turkish</textLang>
                   </msItem>
                </msContents>
@@ -72,13 +80,13 @@
                         <extent>
                            <ref target="a1">1-40 f.</ref>
                            <ref target="a2">41-116- f.</ref>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -119,7 +127,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-08-07">

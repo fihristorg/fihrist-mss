@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6886">
    <teiHeader>
       <fileDesc>
@@ -43,16 +43,21 @@
                <msContents>
                   <summary>
                      <ref target="#a2">Contains over 70 drawings chieftly representing the famous dervishes and holy men of the Moqul Empire.</ref>
-                     <title type="main"/>
+                     
                   </summary>
                   <msItem xml:id="Persian_MS_39-item1">
-                     <author>Chandrabhan Barahman, d. 1662-63Čandra Bhān, d. 1662-63</author>
+                     <author>
+                        <persName type="supplied">Chandrabhan Barahman, d. 1662-63</persName>
+                        <persName type="alt">Čandra Bhān, d. 1662-63</persName>
+                        
+                        
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Tuḥfat al-fuqarā</title>
                      <title xml:lang="fa">تحفه الفقرا</title>
                      
                      
-                     
-                     
+                     <incipit xml:lang="ar" type="basmalla"/>
+                     <explicit xml:lang="ar"/>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
@@ -60,8 +65,8 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
@@ -128,7 +133,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015">

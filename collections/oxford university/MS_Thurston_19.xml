@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1802">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,9 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_Thurston_19-item1" class="#abridgement">
-                     <author key="nr2001045331" ref="http://viaf.org/viaf/90062524/">Ibn Qāḍī Shuhbah, Muḥammad ibn Abī Bakr,<date calendar="#Gregorian" from="1395" to="1470">1395 or 6-1469 or 70</date>
+                     <author key="nr2001045331" ref="http://viaf.org/viaf/90062524/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ibn Qāḍī Shuhbah, Muḥammad ibn Abī Bakr,<date calendar="#Gregorian" from="1395" to="1470">1395 or 6-1469 or 70</date>
+                        </persName>
                      </author>
                      <title>Epitome of the<title xml:lang="ar-Latn-x-lc">Kitāb al-Ḥayawān</title>of<persName type="standard"
                                   xml:lang="ar-Latn-x-lc"
@@ -153,11 +155,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

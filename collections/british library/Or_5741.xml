@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6000">
    <teiHeader>
       <fileDesc>
@@ -47,10 +47,15 @@
                           n="1"
                           class="http://lccn.loc.gov/sh85064905 http://lccn.loc.gov/n50038449">
                      <locus from="1v" to="63v">ff 1v-63v</locus>
-                     <author>Muʻtamad Khānمعتمد خان
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Muʻtamad Khān</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">معتمد خان
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Iqbālnamah-ʼi Jahāngīrī</title>
                      
@@ -58,8 +63,8 @@
                      
                      
                      <note>Imperfect (Volume 3, Part 1 only)</note>
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <bibl>
                         <ref target="Meredith-Owens_1968" type="page">Meredith-Owens 1968, page 17.</ref>
                      </bibl>
@@ -69,18 +74,23 @@
                           n="2"
                           class="http://lccn.loc.gov/sh85064905 http://lccn.loc.gov/n50038449">
                      <locus from="64r" to="126v">ff 64r-126v</locus>
-                     <author>ʻĀqil Khān Rāzīعاقل خان رازی
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">ʻĀqil Khān Rāzī</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">عاقل خان رازی
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Ẓafarnāmah-ʼi ʻĀlamgīrī</title>
                      
                      <title xml:lang="ar">ظفرنامۀ عالمگیری</title>
                      
                      
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <bibl>
                         <ref target="Meredith-Owens_1968" type="page">Meredith-Owens 1968, page 17.</ref>
                      </bibl>
@@ -94,12 +104,12 @@
                               <height>24</height>
                               <width>13.8</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -154,7 +164,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-05-07">

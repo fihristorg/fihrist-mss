@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_644">
    <teiHeader>
       <fileDesc>
@@ -45,10 +45,15 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="Ff_5.9-item1" n="1">
                      <locus from="2b" to="102a">ff. 2b-102a</locus>
-                     <author key="n79068673" ref="http://viaf.org/viaf/90042997/">Jāmī, 1414-1492جامی
+                     <author key="n79068673" ref="http://viaf.org/viaf/90042997/">
+                        <persName xml:lang="fa" type="standard">Jāmī, 1414-1492</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">جامی
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" type="main">Haft awrang</title>
                      <title xml:lang="fa-Latn-x-lc" type="sub">Subḥat al-abrār</title>
@@ -56,9 +61,11 @@
                      <title xml:lang="fa" type="sub">سبحة الابرار</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref xml:id="b1"
@@ -72,19 +79,26 @@
                   </msItem>
                   <msItem xml:id="Ff_5.9-item2" n="2">
                      <locus from="105b" to="182a">ff. 105b-182a</locus>
-                     <author key="n 80115655" ref="http://viaf.org/viaf/2474895/">Niẓāmī Ganjavī, 1140 or 41-1202 or 3نظامى گنجوى
+                     <author key="n 80115655" ref="http://viaf.org/viaf/2474895/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Niẓāmī Ganjavī, 1140 or 41-1202 or 3</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">نظامى گنجوى
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" type="main">Khamsah</title>
                      <title xml:lang="fa-Latn-x-lc" type="sub">Makhzan al-asrār</title>
                      <title xml:lang="fa" type="main">خمسه</title>
                      <title xml:lang="fa" type="sub">مخزن الاسرار</title>
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref xml:id="b2a"
@@ -97,20 +111,28 @@
                   </msItem>
                   <msItem xml:id="Ff_5.9-item3" n="3">
                      <locus from="182b" to="184b">ff. 182b-184b</locus>
-                     <author>anonymous<surname xml:lang="fa"/>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc">anonymous</persName>
                         
                         
-                        
-                        
+                        <persName xml:lang="fa">
+                           <surname xml:lang="fa"/>
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" type="supplied">Faṣl dar faz̤īlat-i namāz va duʻā-yi ʻĀshūrā</title>
                      
                      <title xml:lang="fa">فصل در فضيلت نماز ودعای عاشوره</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref xml:id="b2b"
@@ -123,14 +145,14 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="00" n="mistara">
                            <locus>...</locus>
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -219,7 +241,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-03-11">

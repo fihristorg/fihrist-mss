@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8738">
    <teiHeader>
       <fileDesc>
@@ -44,13 +44,18 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_47269-item1" n="1">
-                     <author key="no2001016239" ref="http://www.viaf.org/viaf/72556892/">Samarqandī, Muḥammad ibn Yūsuf, d. 1160 or 61سمرقندی، محمد بن یوسف</author>
+                     <author key="no2001016239" ref="http://www.viaf.org/viaf/72556892/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Samarqandī, Muḥammad ibn Yūsuf, d. 1160 or 61</persName>
+                        <persName xml:lang="ar">سمرقندی، محمد بن یوسف</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">al-Fiqh al-nāfiʻ</title>
                      <title xml:lang="ar">الفقه النافع</title>
                      <note>Handbook of Hanafi law</note>
                      <incipit>الحمد لله رب العالمين حمدا امده الابد وعدده ان لا يحصيه العدد ... وبعد قال الشيخ الامام الاجل الزاهد ابو القاسم ... الحسيني المديني سالتمونى ان ... اصوغ لكم فى الفقه كتابا نافعا</incipit>
                      <colophon>تم الکتاب...وفرغ من کتابته یوم الابعا من العشر الاول من شهر ذی القعده سنه خمس وثمانی وخمسماه</colophon>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://digital.info.soas.ac.uk/15594/#page/1/mode/2up/search/">view the printed catalogue Gacek no.83</ref>
@@ -59,13 +64,18 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="ms_47269-item2" n="2">
-                     <author key="n80157539" ref="http://viaf.org/viaf/90053598/">Ṣadr al-Shahīd, ʻUmar ibn ʻAbd al-ʻAzīz, 1090 or 91-1141صدر الشهيد، حسين الدبن عمر بن عبد العزيز بن مازة</author>
+                     <author key="n80157539" ref="http://viaf.org/viaf/90053598/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ṣadr al-Shahīd, ʻUmar ibn ʻAbd al-ʻAzīz, 1090 or 91-1141</persName>
+                        <persName xml:lang="ar">صدر الشهيد، حسين الدبن عمر بن عبد العزيز بن مازة</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">al-Farāʼiḍ al-Ḥusāmīyah</title>
                      <title xml:lang="ar">الفرائض الحسامية</title>
                      <note>Treatise on the Muslim law of inheritance</note>
                      <incipit>الحمد لله رب العالمين والصلاة والسلام على خير خلقه سيد المرسلين ... وبعد حمد الله تعالى قال الشيخ الامام الاجل الاستاذ الشهيد حسام الدين ... اعلموا ... وفقكم الله وايانا ان انواع العلوم كثيره</incipit>
                      <explicit>تم الفایض الحسامی ...وکان الفراغ منها فی الغر الول من شهر ذو القعده سنه خمس وثمانی خمسمایه</explicit>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://digital.info.soas.ac.uk/15594/#page/1/mode/2up/search/">view the printed catalogue Gacek no.70</ref>
@@ -92,7 +102,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -147,7 +157,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-04-20">

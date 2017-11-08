@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_9618">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,15 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Qq_193-item1">
-                     <author key="n91027556" ref="http://viaf.org/viaf/90042708/">Ghazzī, Muḥammad ibn Qāsim, 1454 or 5-1512 or 13الغزي، محمد بن قاسم
-                        <addName xml:lang="ar" type="kunyah">ابو عبد الله</addName>
+                     <author key="n91027556" ref="http://viaf.org/viaf/90042708/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ghazzī, Muḥammad ibn Qāsim, 1454 or 5-1512 or 13</persName>
                         
                         
+                        <persName xml:lang="ar">الغزي، محمد بن قاسم
+                           <addName xml:lang="ar" type="kunyah">ابو عبد الله</addName>
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Sharḥ ghāyat al-ikhtiṣār</title>
                      <title xml:lang="ar-Latn-x-lc" type="alt">Fatḥ al-qarīb al-mujīb fī sharḥ alfāẓ al-taqrīb</title>
@@ -56,15 +61,20 @@
                      <title xml:lang="ar" type="alt">فتح القريب المجيب في شرح الفاظ التقريب</title>
                      <title xml:lang="ar" type="alt">قول المختار في شرح غاية الاختصار</title>
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/view.php?id=68">no. 608</ref>
                         </bibl>
                         <bibl type="text-relations">A commentary of<title xml:lang="ar-Latn-x-lc">al-Ghāyah wa-al-taqrīb<foreign xml:lang="ar">الغاية والتقريب</foreign>
-                           </title>of<author key="n91027550" ref="http://viaf.org/viaf/7247393/">Abū Shujāʻ al-Iṣfahānī, Aḥmad ibn al-Ḥusayn, b. ca. 1042ابو شجاع الاصفهاني</author>
+                           </title>of<author key="n91027550" ref="http://viaf.org/viaf/7247393/">
+                              <persName xml:lang="ar-Latn-x-lc">Abū Shujāʻ al-Iṣfahānī, Aḥmad ibn al-Ḥusayn, b. ca. 1042</persName>
+                              <persName xml:lang="ar">ابو شجاع الاصفهاني</persName>
+                           </author>
                         </bibl>
                      </listBibl>
                      <textLang mainLang="ar">Arabic</textLang>
@@ -74,13 +84,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -154,7 +164,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-04-26">

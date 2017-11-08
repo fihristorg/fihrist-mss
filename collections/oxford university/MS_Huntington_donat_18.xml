@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1030">
    <teiHeader>
       <fileDesc>
@@ -46,7 +46,9 @@
                   <summary>The volume contains 130 leaves. It is a collection of miscellaneous pieces in Persian and Arabic in an unusual format. Through the greater part of the volume, four (and sometimes five) different texts run side by side on the same page. The centre of each page usually has two columns of writing; some treatises will be written in the right column of the front-side of a leaf and continued in the left-hand column of the back-side, while others will occupy the left column of the front-side of a leaf and the right-hand column of the back-side; the item catalogued here falls in the latter category. For a list of the other items, see the Concordance of Manuscripts (Appendix I)in Emilie Savage-Smith; A New Catalogue of Arabic Manuscripts in The Bodleian Library, University of Oxford. Volume I: Medicine, Oxford: OUP, 2011, and SEB I, cols. 1093−6 no. 1904, for further details.</summary>
                   <msItem xml:id="MS_Huntington_donat_18-item1" n="1">
                      <locus from="1" to="29">ff. 1v-29r (top lines)</locus>
-                     <author>Maḥāmilī, Abū al-Ḥasan Muḥammad ibn Ahmad ibn Abī al-Qāsim</author>
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc">Maḥāmilī, Abū al-Ḥasan Muḥammad ibn Ahmad ibn Abī al-Qāsim</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Kitāb i Manāhī</title>
                      <note>A collection of traditions on all that is forbidden to Muslims, with a Persian paraphrase</note>
                      <note>*?= Brock.ʼs Abu ʼ1-Ḥ. A.b.M. al-Maḥāmilī aḍ-Ḍabbī (GI 181)</note>
@@ -58,7 +60,9 @@
                   </msItem>
                   <msItem xml:id="MS_Huntington_donat_18-item2" n="2">
                      <locus from="30" to="36">ff. 30v-36r, centre-column (left on recto, right on verso)</locus>
-                     <author key="n 84220632" ref="http://viaf.org/viaf/122088668/">Shāfiʻī, Muḥammad ibn Idrīs,<date calendar="#Gregorian" from="0767" to="0820">767 or 8-820</date>
+                     <author key="n 84220632" ref="http://viaf.org/viaf/122088668/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Shāfiʻī, Muḥammad ibn Idrīs,<date calendar="#Gregorian" from="0767" to="0820">767 or 8-820</date>
+                        </persName>
                      </author>
                      <title>Arabic sentences in the form of qiṭʼahs, each of two bayts</title>
                      <listBibl>
@@ -91,7 +95,11 @@
                   </msItem>
                   <msItem xml:id="MS_Huntington_donat_18-item5" n="5">
                      <locus from="96" to="103">ff. 96v-103v, centre-column (left on recto right on verso)</locus>
-                     <author key="n 79005643" ref="http://viaf.org/viaf/104252438/">Hippocrates,<date calendar="#Gregorian" when="-0450">(fl. c. 450s BC)</date>ابقراط</author>
+                     <author key="n 79005643" ref="http://viaf.org/viaf/104252438/">
+                        <persName type="standard">Hippocrates,<date calendar="#Gregorian" when="-0450">(fl. c. 450s BC)</date>
+                        </persName>
+                        <persName xml:lang="ar">ابقراط</persName>
+                     </author>
                      <editor role="translator">
                         <persName type="standard"
                                   xml:lang="ar-Latn-x-lc"
@@ -122,7 +130,9 @@
                   </msItem>
                   <msItem xml:id="MS_Huntington_donat_18-item6" n="6">
                      <locus from="103" to="129">ff. 103v-129r, centre-column (right on recto, left on verso)</locus>
-                     <author key="nr 89007559" ref="http://viaf.org/viaf/68980610/">Qushayrī, ʻAbd al-Karīm ibn Hawāzin,<date calendar="#Gregorian" from="0986" to="1072">986-1072</date>
+                     <author key="nr 89007559" ref="http://viaf.org/viaf/68980610/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Qushayrī, ʻAbd al-Karīm ibn Hawāzin,<date calendar="#Gregorian" from="0986" to="1072">986-1072</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Kitāb Manthūr al-khiṭāb fī mashhūr al-abwāb</title>
                      <listBibl>
@@ -284,7 +294,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-06-06">

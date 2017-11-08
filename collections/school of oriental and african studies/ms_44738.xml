@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8545">
    <teiHeader>
       <fileDesc>
@@ -44,28 +44,44 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_44738-item1" n="1">
-                     <author key="nr94016220‏" ref="http://viaf.org/viaf/44179902/">Muḥtasham, ʻAlī ibn Aḥmad, 1499 or 1500-1587 or 1588Muḥtasham Kāshīمحتشم، علي بن احمد</author>
+                     <author key="nr94016220‏" ref="http://viaf.org/viaf/44179902/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Muḥtasham, ʻAlī ibn Aḥmad, 1499 or 1500-1587 or 1588</persName>
+                        <persName xml:lang="ar-Latn-x-lc" type="alt">Muḥtasham Kāshī</persName>
+                        <persName xml:lang="fa">محتشم، علي بن احمد</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Ghazalīyāt-i Muḥtasham</title>
                      <title xml:lang="fa">غزلیات محتشم</title>
                      <incipit>ای گوهر تام تو تاج سر دیوان ها ذکر تو بصد عنوان آرایش عنوان ها</incipit>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="ms_44738-item2" n="2">
-                     <author key="nr 98012263" ref="http://viaf.org/viaf/22546363/">Hilālī, Badr al-Dīn, d. 1528 or 9هلالي، بدر الدين</author>
+                     <author key="nr 98012263" ref="http://viaf.org/viaf/22546363/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Hilālī, Badr al-Dīn, d. 1528 or 9</persName>
+                        <persName xml:lang="fa">هلالي، بدر الدين</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Ghazalīyāt-i Hilālī</title>
                      <title xml:lang="fa">غزلیات هلالی</title>
                      <incipit>ای نور خدا در نظر از روی تو ما را بگذار که در رو تو ببینیم خدارا</incipit>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="ms_44738-item3" n="3">
-                     <author key="n 2013205311" ref="http://viaf.org/viaf/304081431/">Vāqif, Nūr al-ʻAyn, -approximately 1776واقف، نور العين</author>
+                     <author key="n 2013205311" ref="http://viaf.org/viaf/304081431/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Vāqif, Nūr al-ʻAyn, -approximately 1776</persName>
+                        <persName xml:lang="fa">واقف، نور العين</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Dīvān-i Vāqif</title>
                      <title xml:lang="fa">ديوان واقف</title>
                      <note>Accompanies the other texts on the margins</note>
                      <incipit>مبارک است بنام تو افتتاح کلام تبارک اسمک یا ذا الجلال والکرام</incipit>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
@@ -75,13 +91,13 @@
                         <extent>
                            <ref target="a1">1-90 f.</ref>
                            <ref target="a2">91-116 f.</ref>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -140,7 +156,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-11-24">

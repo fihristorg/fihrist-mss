@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7747">
    <teiHeader>
       <fileDesc>
@@ -87,8 +87,14 @@
                   <msContents>
                      <msItem xml:id="WMS_Arabic_277-part1-item1" defective="false">
                         <author>
-                           <addName type="kunyah" facs="#i0153">ابو علي</addName>
-                           <addName type="nisbah" facs="#i0153">المرَّاكشي</addName>Al-Ḥasan Ibn `Aly Ibn `Umar al-Murāqišīالحسن بن علي بن عمر المراكشيابو علي المرَّاكشي</author>
+                           <persName type="standard" xml:lang="ara-Arab">
+                              <addName type="kunyah" facs="#i0153">ابو علي</addName>
+                              <addName type="nisbah" facs="#i0153">المرَّاكشي</addName>
+                           </persName>
+                           <persName type="standard" xml:lang="eng-Latn">Al-Ḥasan Ibn `Aly Ibn `Umar al-Murāqišī</persName>
+                           <persName type="normalised" xml:lang="ara-Arab">الحسن بن علي بن عمر المراكشي</persName>
+                           <persName type="original" xml:lang="ara-Arab" facs="#i0153">ابو علي المرَّاكشي</persName>
+                        </author>
                         <title type="original" facs="#i0003 #i0153">المبادي والغايات فى اعمال الفلكيات<locus>fol.1a.1</locus>
                         </title>
                         <textLang mainLang="ara-Arab"/>
@@ -234,7 +240,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-03-24T11:43:40+02:00">Committed to SVN. To view the changes in detail use SVN diff. SVN Url:http://wellcomesvn.local.bibalex.dom/svn/WellcomeTrust/trunk/WAMCPMetaGallery/XML/WMS_Arabic_277/WMS_Arabic_277.xml<persName>mohamed.abdelsamie</persName>

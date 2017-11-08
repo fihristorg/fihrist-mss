@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6197">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,12 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="Or_7198-item1" n="1">
                      <locus from="7v" to="47r">f 80v-82r</locus>
-                     <author>Various authors
+                     <author>
+                        <persName xml:lang="en" type="supplied">Various authors</persName>
+                        
+                        
+                        
+                        
                         
                         
                         
@@ -54,8 +59,8 @@
                      
                      
                      <title xml:lang="en" type="desc">Poems by numerous authors</title>
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>Two Persian ghazals: on<locus n="26r">f. 26r</locus>, headed<title xml:lang="fa-Latn-x-lc">Munlā Jāmī (<foreign xml:lang="fa">منلا جامى</foreign>)</title>, and<locus n="34v">f. 34v</locus>, headed<title xml:lang="fa-Latn-x-lc">Ḥaz̤rat-i Shams al-Dīn (<foreign xml:lang="per">حضرت شمس الدین</foreign>)</title>, but not by<persName xml:lang="fa-Latn-x-lc"
                                   type="standard"
                                   key="n79068673"
@@ -73,7 +78,12 @@
                   </msItem>
                   <msItem xml:id="Or_7198-item2" n="2">
                      <locus from="47v" to="78r">f 47v-78r</locus>
-                     <author>Muḥammad Rāghib Pāshā, d. 1176/1762-3محمد راغب پاشاMehmed Ragib Paşa, d. 1176/1762-3
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Muḥammad Rāghib Pāshā, d. 1176/1762-3</persName>
+                        <persName xml:lang="fa">محمد راغب پاشا</persName>
+                        
+                        <persName xml:lang="tur" type="alt">Mehmed Ragib Paşa, d. 1176/1762-3</persName>
+                        
                         
                         
                         
@@ -82,8 +92,8 @@
                      <title xml:lang="fa">دیوان راغب</title>
                      
                      
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>Poetical works in Turkish, of<persName xml:lang="fa-Latn-x-lc" type="supplied">Muḥammad Rāghib Pāshā, d. 1176/1762-3</persName>
                      </note>
                      <note>Persian contents: two ghazals,<locus from="48v" to="49r">ff. 48v-49r</locus>
@@ -176,7 +186,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-11-01">

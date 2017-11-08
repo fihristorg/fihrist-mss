@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_712">
    <teiHeader>
       <fileDesc>
@@ -44,41 +44,59 @@
                </msIdentifier>
                <msContents class="#multipleWorks">
                   <msItem xml:id="I_4-item1" n="1">
-                     <author>anonymous
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">anonymous</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      
                      
                      
                      
                      <title xml:lang="en" type="desc">Tract composed at the request of a physician named Miīrzā ʻAlī Akbar Khān</title>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="I_4-item2" n="2" class="#translation">
-                     <author key="n2006092434" ref="http://viaf.org/viaf/26499401/">Qummī, Ḥasan ibn ʻAlī, fl. 1403حسن بن علي بن حسن بن عبد الملك
+                     <author key="n2006092434" ref="http://viaf.org/viaf/26499401/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Qummī, Ḥasan ibn ʻAlī, fl. 1403</persName>
                         
                         
-                        <addName xml:lang="ar" type="nisbah">قمي</addName>
+                        <persName xml:lang="ar">حسن بن علي بن حسن بن عبد الملك
+                           
+                           
+                           <addName xml:lang="ar" type="nisbah">قمي</addName>
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Qumnāmah</title>
                      <title xml:lang="ar-Latn-x-lc" type="alt">Taʼrīkh-i Qum</title>
                      <title xml:lang="fa">قمنامه</title>
                      <title xml:lang="ar" type="alt">تاريخ قم</title>
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/nicholson1932/view.php?id=142"/>
                         </bibl>
                         <bibl type="text-relations">Persian version of the<title xml:lang="ar-Latn-x-lc">Taʼrīkh Qum<foreign xml:lang="ar">تاريخ قم</foreign>
-                           </title>of<author key="n98032120" ref="http://viaf.org/viaf/31911638/">Qummī, Ḥasan ibn Muḥammad, d. 1015 or 16حسن بن محمد القمي</author>.</bibl>
+                           </title>of<author key="n98032120" ref="http://viaf.org/viaf/31911638/">
+                              <persName xml:lang="ar-Latn-x-lc">Qummī, Ḥasan ibn Muḥammad, d. 1015 or 16</persName>
+                              <persName xml:lang="ar">حسن بن محمد القمي</persName>
+                           </author>.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
@@ -87,13 +105,13 @@
                   <objectDesc form="other">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -167,7 +185,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-08-09">

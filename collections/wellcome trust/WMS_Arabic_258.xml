@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7740">
    <teiHeader>
       <fileDesc>
@@ -104,7 +104,12 @@
                            <locus>fol.88.5</locus>فان فعل هذا المرهم نما حينًا يتوسط روح العالم كما يفعل المغناطيس بالحديد</explicit>
                         <textLang mainLang="ara-Arab"/>
                         <author>
-                           <forename facs="#i0009">براكلسوس</forename>Paracelsusبراكلسوس</author>
+                           <persName type="standard" xml:lang="ara-Arab">
+                              <forename facs="#i0009">براكلسوس</forename>
+                           </persName>
+                           <persName type="normalised" xml:lang="ara-Arab">Paracelsus</persName>
+                           <persName type="original" xml:lang="ara-Arab" facs="#i0009">براكلسوس</persName>
+                        </author>
                         <title type="original" facs="#i0084 #i0009">(استاغريا) الطب الكيماوى<locus>Fol.40a.1</locus>
                         </title>
                         <title type="normalised" xml:lang="ara-Latn">Aṭ-ṭibb al-ğadīd al-kīmiyā'ī (Alchemical Medicine)</title>
@@ -112,7 +117,9 @@
                      </msItem>
                      <msItem xml:id="WMS_Arabic_258-part1-item2">
                         <locus facs="#i0010 #i0074">Fol.2a to Fol.35a</locus>
-                        <author>Anonymous</author>
+                        <author>
+                           <persName type="standard" xml:lang="eng-Latn">Anonymous</persName>
+                        </author>
                         <textLang mainLang="ara-Arab"/>
                         <title type="normalised" xml:lang="ara-Latn">"No title"</title>
                         <incipit type="beginning" facs="#i0010">
@@ -127,8 +134,13 @@
                         <title type="original" facs="#i0181">الرسالة المشفية للامراض المشكلة<locus>fol.88b.18</locus>
                         </title>
                         <author>
-                           <forename facs="#i0181">مصطفى</forename>
-                           <addName type="laqab" facs="#i0181">فيضى افندى</addName>Faiḍī Muṣṭafā Afandīفيضى مصطفى افندى</author>
+                           <persName type="standard" xml:lang="ara-Arab">
+                              <forename facs="#i0181">مصطفى</forename>
+                              <addName type="laqab" facs="#i0181">فيضى افندى</addName>
+                           </persName>
+                           <persName type="standard" xml:lang="eng-Latn">Faiḍī Muṣṭafā Afandī</persName>
+                           <persName type="original" xml:lang="ara-Arab" facs="#i0181">فيضى مصطفى افندى</persName>
+                        </author>
                         <textLang mainLang="ara-Arab"/>
                         <title type="normalised" xml:lang="ara-Latn">Ar-risālah al-mušfīyah lil-amrāḍ al-muškilah</title>
                         <incipit type="basmala" facs="#i0181">
@@ -146,7 +158,9 @@
                         <locus facs="#i0228 #i0538">Fol.112a to Fol.273a</locus>
                         <title type="original" facs="#i0228">مختصر غاية الاتقان على قدر الإمكان<locus>fol.112a.2</locus>
                         </title>
-                        <author>Anonymous</author>
+                        <author>
+                           <persName type="standard" xml:lang="eng-Latn">Anonymous</persName>
+                        </author>
                         <textLang mainLang="ara-Arab"/>
                         <title type="normalised" xml:lang="ara-Latn">Muẖtaṣar ġāyat al-itqān `alā qadr al-imkān</title>
                         <incipit type="basmala" facs="#i0228">
@@ -173,7 +187,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-03-23T10:19:50+02:00">Committed to SVN. To view the changes in detail use SVN diff. SVN Url:http://wellcomesvn.local.bibalex.dom/svn/WellcomeTrust/trunk/WAMCPMetaGallery/XML/WMS_Arabic_258/WMS_Arabic_258.xml<persName>ramy.ibrahim</persName>

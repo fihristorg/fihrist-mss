@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8776">
    <teiHeader>
       <fileDesc>
@@ -44,34 +44,53 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_47653-item1" n="1">
-                     <author key="n2007009173" ref="http://viaf.org/viaf/26833521/">Nāṣir ʻAlī Sirhindī, d. 1697ناصر علي سرهندي</author>
+                     <author key="n2007009173" ref="http://viaf.org/viaf/26833521/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Nāṣir ʻAlī Sirhindī, d. 1697</persName>
+                        <persName xml:lang="fa">ناصر علي سرهندي</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Dīvān-i Nāṣir ʻAlī</title>
                      <title xml:lang="fa">دیوان ناصر علی</title>
                      <incipit>آلهی ذره دردی بجان ریز شرر در بسته زار استخوان ریز</incipit>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="ms_47653-item2" n="2">
-                     <author key="n79068673" ref="http://viaf.org/viaf/90042997/">Jāmī, 1414-1492</author>
+                     <author key="n79068673" ref="http://viaf.org/viaf/90042997/">
+                        <persName xml:lang="fa" type="standard">Jāmī, 1414-1492</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Mas̲navī-yi Jāmī</title>
                      <title xml:lang="fa">مثنوی جامی</title>
                      <note>A masnavi followed by tawhids and munajat.</note>
                      <incipit>در سرم دیگر همای عشق یار ریخت طرح آشیان خار خار</incipit>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="ms_47653-item3" n="3">
-                     <author key="n 84221219‏" ref="http://viaf.org/viaf/242128896/">Ghanīmat, Muḥammad Akram, fl. 1685-1696غنيمت، محمد اكرم</author>
+                     <author key="n 84221219‏" ref="http://viaf.org/viaf/242128896/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Ghanīmat, Muḥammad Akram, fl. 1685-1696</persName>
+                        <persName xml:lang="fa">غنيمت، محمد اكرم</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Nayrang-i ʻishq</title>
                      <title xml:lang="fa">نيرنگی عشق</title>
                      <incipit>بنام شاهد نازک خالان عزیز خاطر آشفته حالان</incipit>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="ms_47653-item4" n="4">
-                     <author key="n98039975" ref="http://viaf.org/viaf/30738316/">Vaḥshī Bāfqī, d. 1583وحشى بافقى</author>
+                     <author key="n98039975" ref="http://viaf.org/viaf/30738316/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Vaḥshī Bāfqī, d. 1583</persName>
+                        <persName xml:lang="fa">وحشى بافقى</persName>
+                     </author>
                      <title xml:lang="en" type="desc">Poems by Vahshi Bafiqi and others</title>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
@@ -83,13 +102,13 @@
                            <ref target="a2">38a-63a f.</ref>
                            <ref target="a3">63b-108 f.</ref>
                            <ref target="a4">108b-113b f.</ref>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -157,7 +176,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-11-24">

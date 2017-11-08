@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8206">
    <teiHeader>
       <fileDesc>
@@ -41,7 +41,12 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_26387-item1">
-                     <author>Afshār, Maḥmūd ibn Mīrzā ŪghūrlūMaḥmūd ibn Mīrzā Ūghūrlū, Afshārمحمود بن مرزا اوغورلو، افشارافشار، محمود بن مرزا اوغورلو</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Afshār, Maḥmūd ibn Mīrzā Ūghūrlū</persName>
+                        <persName xml:lang="ar-Latn-x-lc" type="alt">Maḥmūd ibn Mīrzā Ūghūrlū, Afshār</persName>
+                        <persName xml:lang="fa" type="alt">محمود بن مرزا اوغورلو، افشار</persName>
+                        <persName xml:lang="fa">افشار، محمود بن مرزا اوغورلو</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Gulshan al-tavārīkh</title>
                      <title xml:lang="fa">گلشن التواریخ</title>
                      <note>َ A history of Urumiyah during the 18th and early 19th centurie, written during the reign of Muhmammad Shah Qajar. The history, which is extremely detailed, extends in this incomplete and possibly autograph copy to events in the year 1260/1844</note>
@@ -52,13 +57,13 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>289 f.
-                           
+                        <extent>289 f.<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -105,7 +110,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-08-26">

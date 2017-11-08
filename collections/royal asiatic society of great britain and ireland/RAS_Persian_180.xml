@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_2720">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,10 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="RAS_Persian_180-item1">
-                     <author key="n97028388" ref="http://viaf.org/viaf/51597417/">Māfarrūkhī, al-Mufaḍḍal ibn Saʻd, d. ca. 1082المافروخي، المفضل بن سعد</author>
+                     <author key="n97028388" ref="http://viaf.org/viaf/51597417/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Māfarrūkhī, al-Mufaḍḍal ibn Saʻd, d. ca. 1082</persName>
+                        <persName xml:lang="ar">المافروخي، المفضل بن سعد</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Tarjumah-ʼi Maḥāsin-i Iṣfahān yā Tārīkh-i Iṣfahān.</title>
                      <note>There are dislocations in the text and parts of it are written twice and even three times in error. Pencilled notes on the MS pointing out these flaws are in the hand of E.G. Browne, who notes them in the article cited below. Occasional marginal notes, some in Turkish. Folio 83a (main text ends on 82b): A saying of 'Ali quoted, signed 'Abd al-Baqi al-Husaini al-Isfahani. Front flyleaf, recto: a) Impression of small oval seal: 'Abduhu al-raji Abu 'l-Rida (?) al-Husaini. b) Presented by Sir John Malcolm May 19. 1827. Folio one, recto: a) Impression of small oval seal: Bandah-i Khuda Muhammad, and obscure date. b) Impression of small oval seal: Bandah-i Al-i Muhammad Mahmud. Inside front cover, note in Turkish suggesting consultation with 'Abdallah Effendi. (?) A descriptive and historical account of Isfahan. Illuminated initial opening. Headings and margins in red.</note>
                      <incipit>Khuday-rast buzurgi u 'izzat u jabarut</incipit>
@@ -117,7 +120,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-05-30">

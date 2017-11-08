@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5557">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,12 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="Or_13353-item1" n="2">
                      <locus from="131v" to="189r">f 131v-189r</locus>
-                     <author>ʻUmar Nafʻī, d. 1044/1635عمر نفعیÖmer Nefʻî, , d. 1044/1635
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">ʻUmar Nafʻī, d. 1044/1635</persName>
+                        <persName xml:lang="fa">عمر نفعی</persName>
+                        
+                        <persName xml:lang="tur" type="alt">Ömer Nefʻî, , d. 1044/1635</persName>
+                        
                         
                         
                         
@@ -54,8 +59,8 @@
                      <title xml:lang="fa">دیوان نفعی</title>
                      
                      
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>Collected Persian works of the Ottoman poet ʻUmar Nafʻī (Ömer Nefʻî)</note>
                      <note>Title has been supplied by<ref target="Waley_1998" type="page">Waley 1998, page 43.</ref>
                      </note>
@@ -136,7 +141,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-10-24">

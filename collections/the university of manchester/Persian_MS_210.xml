@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6692">
    <teiHeader>
       <fileDesc>
@@ -41,11 +41,19 @@
                   <idno>Persian MS 210</idno>
                </msIdentifier>
                <msContents>
-                  <summary>A Sufi poem on the meanings of such words as "soul", "spirit", "heart", "intellect" and "love".<title type="main"/>
+                  <summary>A Sufi poem on the meanings of such words as "soul", "spirit", "heart", "intellect" and "love".
                   </summary>
                   <msItem xml:id="Persian_MS_210-item1">
-                     <author key="n 2010039220" ref="http://viaf.org/viaf/182845166/">Qāsim Anvār, ʻAlī ibn Naṣīr, 1356-1433قاسم انوار٫ علي بن ناصر.
+                     <author key="n 2010039220" ref="http://viaf.org/viaf/182845166/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Qāsim Anvār, ʻAlī ibn Naṣīr, 1356-1433</persName>
                         
+                        
+                        
+                        <persName xml:lang="ar">قاسم انوار٫ علي بن ناصر.
+                           
+                           
+                           
+                        </persName>
                         
                         
                      </author>
@@ -54,8 +62,8 @@
                      <title xml:lang="ar">انيس العارفين</title>
                      
                      
-                     
-                     
+                     <incipit xml:lang="ar" type="basmalla"/>
+                     <explicit xml:lang="ar"/>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
@@ -63,8 +71,8 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
@@ -134,7 +142,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3145">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,21 @@
                <msContents>
                   <summary>Nomocanon</summary>
                   <msItem xml:id="Add_3276-item1" n="1">
-                     <author>Bar-Hebraeus (1226-1286)ܒܪ ܥܒܪܝܐ,ܓܪܝܓܘܪܝܘܣ d. 1286ابن العبري‏
+                     <author>
+                        <persName xml:lang="en"
+                                  type="standard"
+                                  ref="http://viaf.org/viaf/81959220/"
+                                  key="50024350">Bar-Hebraeus (1226-1286)</persName>
                         
                         
-                        
+                        <persName xml:lang="syr" type="alt">ܒܪ ܥܒܪܝܐ,ܓܪܝܓܘܪܝܘܣ d. 1286</persName>
+                        <persName xml:lang="ar" type="alt">ابن العبري‏</persName>
+                        <persName xml:lang="ar">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <editor role="translator ">
                         <name>
@@ -60,8 +71,8 @@
                      <title xml:lang="syr">ܟܬܒܐ ܕܗ̈ܘܕܕܳܝܶܐ</title>
                      
                      <note>transated into Arabic by Yohanna ibn Jarir az-Zirbabi</note>
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/deptserv/neareastern/syriacmanuscriptsvol2.pdf">Page 814</ref>
@@ -74,15 +85,15 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <support>Paper</support>
-                        <extent>156 ff.
-                           
+                        <extent>156 ff.<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <collation>
                            <p>16 quires, signed with letters, from 10 to 15 leaves, except the last, witch has only 5</p>
                         </collation>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="2" writtenLines="32">2 columns, 32 lines to the page
+                        <layout columns="2" writtenLines="32">2 columns, 32 lines to the page<dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -138,7 +149,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015">

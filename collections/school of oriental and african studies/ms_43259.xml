@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8416">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,10 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_43259-item1">
-                     <author key="n82097778" ref="http://viaf.org/viaf/89736851/">Ghazzālī, 1058-1111غزالی، محمد بن محمد</author>
+                     <author key="n82097778" ref="http://viaf.org/viaf/89736851/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ghazzālī, 1058-1111</persName>
+                        <persName xml:lang="ar">غزالی، محمد بن محمد</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">al-Maḍmūn al-ṣaghīr</title>
                      <title xml:lang="ar">المضمون الصغیر</title>
                      <title type="alt">Risālat al-nafkh wa-al-tasiwyah</title>
@@ -52,7 +55,9 @@
                      <note>A collection of responsa to theological questions</note>
                      <incipit>الحمد لله واهب الفضل الجاعل لنا سبيلا الى درك ما غاب ... وبعد قال الامام حجة الاسلام زين الملة وخير الامة ... الغزالي ... فقد سئلت عن مسائل غامضة مضنونة على غير اهلها ... سئلت عن قوله تعالى فاذا سويته ونفخت فيه من روحي يعنى ما التسوية وما النفخ ... وما الروح فقلت التسوية فعل في محل قابل</incipit>
                      <colophon>در ذی حجه سنه 1106</colophon>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://digital.info.soas.ac.uk/15594/#page/1/mode/2up/search/">view the printed catalogue Gacek no.185</ref>
@@ -75,7 +80,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -127,7 +132,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-07-13">

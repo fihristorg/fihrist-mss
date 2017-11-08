@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4305">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,10 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Elliott_239-item1" n="1">
                      <locus from="1" to="260">ff. 1-260a, centre columns</locus>
-                     <author key="n95038967" ref="http://viaf.org/viaf/31890001/">ʻAṣṣār Tabrīzī, Muḥammad, d. 1382 or 3عصار تبريزى، محمد</author>
+                     <author key="n95038967" ref="http://viaf.org/viaf/31890001/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">ʻAṣṣār Tabrīzī, Muḥammad, d. 1382 or 3</persName>
+                        <persName xml:lang="fa">عصار تبريزى، محمد</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Mihr va-Mushtarī</title>
                      <title xml:lang="fa">مهر و مشتری</title>
                      <incipit xml:lang="fa">بنام پادشاه عالم عشق - که نقش اوست نقش خاتم عشق</incipit>
@@ -59,7 +62,10 @@
                   </msItem>
                   <msItem xml:id="MS_Elliott_239-item2" n="2">
                      <locus from="260b" to="287a">ff. 260b-287a</locus>
-                     <author key="n 79120109" ref="http://viaf.org/viaf/6217907">Ghazālī Mashhadī, 1526-1572غزالی مشهدی</author>
+                     <author key="n 79120109" ref="http://viaf.org/viaf/6217907">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Ghazālī Mashhadī, 1526-1572</persName>
+                        <persName xml:lang="fa">غزالی مشهدی</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Naqsh-i badīʻ</title>
                      <title xml:lang="fa">نقس بدیع</title>
                      <incipit xml:lang="fa">بسم الله الرحمٰن الرحیم - نقش بدیعست زکلک قدیم</incipit>
@@ -73,7 +79,10 @@
                   </msItem>
                   <msItem xml:id="MS_Elliott_239-item3" n="3" class="#abridgement">
                      <locus from="287b" to="298b">ff. 287b-298b</locus>
-                     <author key="n79139394" ref="http://viaf.org/viaf/100206721">Saʻdīسعدی شیرازی</author>
+                     <author key="n79139394" ref="http://viaf.org/viaf/100206721">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Saʻdī</persName>
+                        <persName xml:lang="fa">سعدی شیرازی</persName>
+                     </author>
                      <editor role="abridger">
                         <persName xml:lang="fa-Latn-x-lc"
                                   key="n2003070314"
@@ -93,7 +102,12 @@
                   </msItem>
                   <msItem xml:id="MS_Elliott_239-item4" n="4">
                      <locus from="3b" to="270a">ff. 3b-270a, margin column</locus>
-                     <author key="n80115655" ref="http://viaf.org/viaf/2474895/">Niẓāmī Ganjavī, 1140 or 41-1202 or 3نظامى گنجوى</author>
+                     <author key="n80115655" ref="http://viaf.org/viaf/2474895/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Niẓāmī Ganjavī, 1140 or 41-1202 or 3</persName>
+                        
+                        
+                        <persName xml:lang="fa">نظامى گنجوى</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Khusraw va-Shīrīn</title>
                      <title xml:lang="fa">خسرو و شیرین</title>
                      <listBibl>
@@ -116,7 +130,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="4">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -224,7 +238,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-01-23">

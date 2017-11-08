@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7776">
    <teiHeader>
       <fileDesc>
@@ -143,10 +143,15 @@
                         <title type="original">موجز في الطب<locus>Fol. 1a</locus>
                         </title>
                         <title type="other" xml:lang="ara-Arab" facs="#i0003">الموجز</title>
-                        <author>`Alā ad-Dīn `Alī b. abī l-Ḥazm al-Qurašī(known as) Ibn an-Nafīsعلى الدين على ابن ابي الحزم القرشي المعروف بابن النفيس<forename>على ابن ابي الحزم</forename>
-                           <addName type="kunyah">بابن النفيس</addName>
-                           <addName type="khitab">على الدين</addName>
-                           <addName type="nisbah">القرشي</addName>
+                        <author>
+                           <persName xml:lang="eng-Latn" type="standard">`Alā ad-Dīn `Alī b. abī l-Ḥazm al-Qurašī(known as) Ibn an-Nafīs</persName>
+                           <persName xml:lang="ara-Arab" type="original">على الدين على ابن ابي الحزم القرشي المعروف بابن النفيس</persName>
+                           <persName type="standard" xml:lang="ara-Arab">
+                              <forename>على ابن ابي الحزم</forename>
+                              <addName type="kunyah">بابن النفيس</addName>
+                              <addName type="khitab">على الدين</addName>
+                              <addName type="nisbah">القرشي</addName>
+                           </persName>
                         </author>
                         <incipit>
                            <locus>Fol. 1b.2</locus>قال الشيخ الامام العالم الحير الكامل قد قوة العلماء رئيس الحكماء ابو الحسن علاء الدين على ابن ابى الحزم القرشى المتطبب قد رتبت هذا الكتاب على اربع فنون</incipit>
@@ -175,7 +180,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-10-14T14:58:50+01:00">Conversion from WMSmaster to WAMCP<persName>gbrey</persName>

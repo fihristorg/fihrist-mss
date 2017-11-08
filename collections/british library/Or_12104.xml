@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5469">
    <teiHeader>
       <fileDesc>
@@ -47,7 +47,10 @@
                           n="1"
                           class="http://lccn.loc.gov/sh85100084">
                      <locus from="1v" to="91r">1v-91r ff</locus>
-                     <author key="n79068673" ref="http://viaf.org/viaf/90042997">Jāmīجامی</author>
+                     <author key="n79068673" ref="http://viaf.org/viaf/90042997">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Jāmī</persName>
+                        <persName xml:lang="fa">جامی</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Subḥat al-abrār</title>
                      <title xml:lang="fa">سبحة الابرار</title>
                      <listBibl>
@@ -59,7 +62,10 @@
                           n="2"
                           class="http://lccn.loc.gov/sh85100084">
                      <locus from="92v" to="138v">92v-138v ff</locus>
-                     <author key="n79068673" ref="http://viaf.org/viaf/90042997">Jāmīجامی</author>
+                     <author key="n79068673" ref="http://viaf.org/viaf/90042997">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Jāmī</persName>
+                        <persName xml:lang="fa">جامی</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Tuḥfat al-aḥrār</title>
                      <title xml:lang="fa">تحفة الاحرار</title>
                      <listBibl>
@@ -75,7 +81,7 @@
                               <height>23.8</height>
                               <width>13.9</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <condition>
                            <p>Imperfect at the end</p>
@@ -129,7 +135,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-04-10">

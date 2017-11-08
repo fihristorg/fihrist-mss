@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8606">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,10 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_46350-item1" class="#translation">
-                     <author ref="http://viaf.org/viaf/66844656" key="n84134433">Ulugh Beg, 1394-1449Ūlūgh Bīk</author>
+                     <author ref="http://viaf.org/viaf/66844656" key="n84134433">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Ulugh Beg, 1394-1449</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Ūlūgh Bīk</persName>
+                     </author>
                      <editor role="trl">
                         <persName xml:lang="ar-Latn-x-lc"
                                   type="standard"
@@ -54,7 +57,9 @@
                      <title xml:lang="ar">در التتویج بتعریب معامرات الزیج</title>
                      <note>Arabic translation of the astronomical tables of Ulughbeg</note>
                      <incipit>الحمد لله الذي خلق السموات والارض وجعل الظلمات والنور ... اما بعد فيقول العبد الفقير... حسن ابن محمد الشهير بقاضى حسن ... لما من الله تعالى على في ... عام اربع عشرة بعد الالف الهجرة بملازمة العلامتين</incipit>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://digital.info.soas.ac.uk/15594/#page/1/mode/2up/search/">view the printed catalogue Gacek no.67</ref>
@@ -78,7 +83,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -133,7 +138,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-04-13">

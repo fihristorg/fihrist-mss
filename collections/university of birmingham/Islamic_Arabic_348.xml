@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3860">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,16 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_348-item1">
-                     <author key="n84030639" ref="http://viaf.org/viaf/29521580">Azharī, Khālid ibn ʿAbd Allāh,<date calendar="#Gregorian" from="1434" to="1499">-1499</date>خالد الأزهري، 838-905 هـ
+                     <author key="n84030639" ref="http://viaf.org/viaf/29521580">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Azharī, Khālid ibn ʿAbd Allāh,<date calendar="#Gregorian" from="1434" to="1499">-1499</date>
+                        </persName>
                         
                         
-                        
+                        <persName xml:lang="ar">خالد الأزهري، 838-905 هـ
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Sharḥ al-muqaddimah al-Ājurrūmīyah</title>
                      
@@ -62,9 +68,11 @@
                            <foreign xml:lang="ar">ابن آجروم، محمد بن محمد، 672-723 هـ</foreign>
                         </persName>
                      </note>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="fa" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 1588</bibl>
                         <bibl>GAL II 27; Suppl. II 22-23; also GAL II 237/8, Cmt. no. 6</bibl>
@@ -79,14 +87,14 @@
                               <height>15.7</height>
                               <width>12.2</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="17" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                            <note>17 lines per page</note>
                         </layout>
                      </layoutDesc>
@@ -144,7 +152,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-04-21">

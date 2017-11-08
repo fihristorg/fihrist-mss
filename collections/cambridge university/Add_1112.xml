@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8998">
    <teiHeader>
       <fileDesc>
@@ -45,16 +45,28 @@
                <msContents>
                   <summary>Fragment of an Abbasid Qur'ān probably written in the third or fourth century A.H. / ninth or tenth century C.E, containing verses 1-7 from the Sura al-Fātiḥah (سورة الفاتحة). The script seems to correspond to an Abbasid Style intermediate between<term subtype="script">D.I</term>and<term subtype="script">D.IV</term>as described by F. Deroche.</summary>
                   <msItem xml:id="Add_1112-item1" n="1">
-                     
+                     <author>
+                        
+                        
+                        
+                        <persName xml:lang="ar">
+                           
+                           
+                           
+                           
+                        </persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">al-Qurʼān</title>
                      
                      <title xml:lang="ar">القرآن</title>
                      
                      <title xml:lang="en" type="desc">Qurʼān i:2-7.</title>
                      <title xml:lang="ar" type="desc">سورة الفاتحة</title>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/view.php?id=90">no. 792</ref>
@@ -66,15 +78,27 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="Add_1112-item2" n="2">
-                     
+                     <author>
+                        
+                        
+                        
+                        <persName xml:lang="ar">
+                           
+                           
+                           
+                           
+                        </persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">al-Qurʼān</title>
                      
                      <title xml:lang="ar">القرآن</title>
                      
                      <title xml:lang="en" type="desc">Qurʼān xli, 21-23.</title>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/view.php?id=90">no. 793</ref>
@@ -87,13 +111,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -142,7 +166,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-05-18">

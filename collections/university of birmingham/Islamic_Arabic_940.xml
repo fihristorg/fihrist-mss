@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3993">
    <teiHeader>
       <fileDesc>
@@ -45,10 +45,15 @@
                <msContents>
                   <summary>Second of two volumes</summary>
                   <msItem xml:id="Islamic_Arabic_940-item1">
-                     <author key="n50035377" ref="http://viaf.org/viaf/90053837">ʿAbd al-Qādir ibn Muḥyī al-Dīn, Amir of Mascara, 1807?-1883عبد القادر الجزائري، الأمير، 1222-1300 هـ
+                     <author key="n50035377" ref="http://viaf.org/viaf/90053837">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">ʿAbd al-Qādir ibn Muḥyī al-Dīn, Amir of Mascara, 1807?-1883</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">عبد القادر الجزائري، الأمير، 1222-1300 هـ
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Kitāb al-Mawāqif</title>
                      
@@ -56,9 +61,11 @@
                      
                      
                      <note>indices</note>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="fa" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 915</bibl>
                         <bibl>GAL II 509-10; II 886-7, not mentioned</bibl>
@@ -73,13 +80,13 @@
                               <height>22.6</height>
                               <width>15.8</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1" ruledLines="29" n="mistara">29 lines per page
+                        <layout columns="1" ruledLines="29" n="mistara">29 lines per page<dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -143,7 +150,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-05-16">

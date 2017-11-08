@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8224">
    <teiHeader>
       <fileDesc>
@@ -44,27 +44,34 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_27689-item1">
-                     <author key="nr97009720" ref="http://viaf.org/viaf/76646847/">Ömer bin Mezid, active 15th centuryʻUmar ibn Mazīdعمر بن مزيد</author>
+                     <author key="nr97009720" ref="http://viaf.org/viaf/76646847/">
+                        <persName xml:lang="tr-Latn-x-lc" type="standard">Ömer bin Mezid, active 15th century</persName>
+                        
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">ʻUmar ibn Mazīd</persName>
+                        <persName xml:lang="fa" type="alt">عمر بن مزيد</persName>
+                     </author>
                      <title xml:lang="ota-Latn-x-lc">Mecmu'atü'n-neza'ir</title>
                      <title xml:lang="ar-Latn-x-lc" type="alt">Majmūʻat al-naẓāʼir</title>
                      <title xml:lang="ota">مجموعة النظائر</title>
                      <note>An anthology of Turkish poetry compiled in the fifteenth century. It lacks the first leaf. The work finishes at page 549, and a work containing various Turkish poems including riddles, enigmas, chronograms and couplets in the same hand is appended from page 550-614.</note>
                      <incipit xml:lang="ota">انك خلفا سى ارزنه اولسون كم ابى بكر الصديق التقى وعمر الاروق النقي</incipit>
                      <explicit>تمت المجمعة النظاير بعون الملك القادر</explicit>
-                     
+                     <note>
+                        <foreign xml:lang="fa"/>
+                     </note>
                      <textLang mainLang="ota">Turkish</textLang>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>309 f.
-                           
+                        <extent>309 f.<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -103,7 +110,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-09-16">

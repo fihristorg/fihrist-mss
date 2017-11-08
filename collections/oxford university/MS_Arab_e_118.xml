@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_10310">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,9 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_Arab_e_118-item1">
-                     <author key="n 84227262" ref="http://www.viaf.org/viaf/79380356/">Ibn Hubayrah, Yaḥyá ibn Muḥammad, d.<date calendar="#Gregorian" when="1165">1165</date>
+                     <author key="n 84227262" ref="http://www.viaf.org/viaf/79380356/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ibn Hubayrah, Yaḥyá ibn Muḥammad, d.<date calendar="#Gregorian" when="1165">1165</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Ifṣāḥ ʻan maʻānī al-ṣiḥāḥ</title>
                      <note>[incomplete at end]. Brock. at this point SI p. 578 (a) indulges in a plethora of false references: for "s. u. S. 409" read "s. u. S. 724 (zu S. 408, par. 11)", where for "s. S. 398, 2a" read s. S. 398, 2b"; and (b) confused two works differentiated by Vollers in Leipzig 313 and 314, the former of which is one vol. of a larger work probably a commentary on Ḥumaydī and the latter a smaller offshoot identical with the MS. above.</note>
@@ -108,11 +110,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

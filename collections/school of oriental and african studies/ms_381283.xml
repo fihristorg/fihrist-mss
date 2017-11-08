@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8343">
    <teiHeader>
       <fileDesc>
@@ -44,26 +44,31 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_381283-item1">
-                     <author key="n86099931" ref="http://viaf.org/viaf/90076153/">Majlisī, Muḥammad Bāqir ibn Muḥammad Taqī, 1627 or 8-ca. 1699مجلسى، محمد باقر بن محمد تقي</author>
+                     <author key="n86099931" ref="http://viaf.org/viaf/90076153/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Majlisī, Muḥammad Bāqir ibn Muḥammad Taqī, 1627 or 8-ca. 1699</persName>
+                        <persName xml:lang="fa">مجلسى، محمد باقر بن محمد تقي</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Zād al-maʻād</title>
                      <title xml:lang="ar">زاد المعاد</title>
                      <note>A handbook of prayers and religious observations for each month, and for special days and nights of the year. With an illuminated unwan</note>
                      <incipit>الحمدلله ‌الذی جعل‌العباده وسیلة لینل السعاده فی‌الاخره و الاولی و الصلوة علی خیرالوری محمد و عترته ائمة‌الهدی اما بعد بنده خاطی محمد باقر بن محمد تقی عفی الله عن جرائمها بر الواح ارواح</incipit>
                      <colophon>قد تشرف بكتابته...ابو القاسم بن حاجی علی محمد التبریزی فی عشر الاول من شهر جمادی الثانیه للسنه احدی ومائتین بعد الالف من الهجره النبویه</colophon>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>261 f.
-                           
+                        <extent>261 f.<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -120,7 +125,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2016-02-09">

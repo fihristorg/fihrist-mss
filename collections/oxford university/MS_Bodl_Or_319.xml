@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_882">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,9 @@
                </msIdentifier>
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Bodl_Or_319-item1" n="1" class="#extract">
-                     <author key="n 87899419" ref="http://www.viaf.org/viaf/94194423/">Gagnier, Jean,<date calendar="#Gregorian" from="1670" to="1740">1670?-1740.</date>
+                     <author key="n 87899419" ref="http://www.viaf.org/viaf/94194423/">
+                        <persName type="standard">Gagnier, Jean,<date calendar="#Gregorian" from="1670" to="1740">1670?-1740.</date>
+                        </persName>
                      </author>
                      <title>A volume of extracts and notes*, chiefly transcribed from Arabic historical MSS. in the Bodleian.</title>
                      <note>*Nicoll lists 18 items, of which no. 3 is individually mentioned by Brock. (G2, p. 504, q. v.)</note>
@@ -56,7 +58,9 @@
                   </msItem>
                   <msItem xml:id="MS_Bodl_Or_319-item2" n="2" class="#extract">
                      <locus from="107" to="124">PP. 107-124</locus>
-                     <author key="n 96902571" ref="http://viaf.org/viaf/26337751/">Bukhārī, Muḥammad ibn ʻAbd al-Bāqī, fl.<date calendar="#Gregorian" when="1583">1583</date>
+                     <author key="n 96902571" ref="http://viaf.org/viaf/26337751/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Bukhārī, Muḥammad ibn ʻAbd al-Bāqī, fl.<date calendar="#Gregorian" when="1583">1583</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Ṭirāz al-manqūsh fī maḥāsin al-Ḥubūsh</title>
                      <note>Excerpts transcribed by<persName>J. Gagnier</persName>, ?from MS. Laud Or. 120</note>
@@ -179,11 +183,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4244">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,10 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Elliott_114-item1" n="1">
                      <locus from="1" to="90">ff. 1-90</locus>
-                     <author key="n82252330" ref="http://viaf.org/viaf/45665479/">ʻUnṣurī, Abū al-Qāsim Ḥasan, fl. 1009-1041عنصوری بلخى، ابو القاسم حسن</author>
+                     <author key="n82252330" ref="http://viaf.org/viaf/45665479/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">ʻUnṣurī, Abū al-Qāsim Ḥasan, fl. 1009-1041</persName>
+                        <persName xml:lang="fa">عنصوری بلخى، ابو القاسم حسن</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Dīvān-i ʻUnṣūrī</title>
                      <title xml:lang="fa">ديوان عنصوری</title>
                      
@@ -60,7 +63,12 @@
                   </msItem>
                   <msItem xml:id="MS_Elliott_114-item2" n="2">
                      <locus from="93" to="250">ff. 93-250</locus>
-                     <author key="nr 97011527" ref="http://viaf.org/viaf/256108725">Awḥadī, Rukn al-Dīn, 1271 or 2-1337 or 8اوحدى، ركن الدين</author>
+                     <author key="nr 97011527" ref="http://viaf.org/viaf/256108725">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Awḥadī, Rukn al-Dīn, 1271 or 2-1337 or 8</persName>
+                        <persName xml:lang="fa">اوحدى، ركن الدين</persName>
+                        
+                        
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Jām-i jam</title>
                      <title xml:lang="fa">جام جم</title>
                      
@@ -176,7 +184,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-03-07">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5410">
    <teiHeader>
       <fileDesc>
@@ -43,7 +43,11 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh2009115202 http://lccn.loc.gov/sh2010105554">
                   <msItem xml:id="Or_11940-item1">
-                     <author ref="http://viaf.org/viaf/27417654" key="n80108820">ʻAbd al-Rashīd ibn ʻAbd al-Ghafūr Tattavī, active 1653by ‘Abd al-Rashīd al-Ḥusaynī al-Madanī al-Tattavīعبد الرشید الحسینی المدنی التتّوی</author>
+                     <author ref="http://viaf.org/viaf/27417654" key="n80108820">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">ʻAbd al-Rashīd ibn ʻAbd al-Ghafūr Tattavī, active 1653</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">by ‘Abd al-Rashīd al-Ḥusaynī al-Madanī al-Tattavī</persName>
+                        <persName xml:lang="fa">عبد الرشید الحسینی المدنی التتّوی</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Muntakhab al-Lughāt-i Shāhjahānī</title>
                      <title xml:lang="fa">منتخب اللغات شاهجهانی</title>
                      <note>An Arabic-Persian dictionary</note>
@@ -106,7 +110,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-07-18">

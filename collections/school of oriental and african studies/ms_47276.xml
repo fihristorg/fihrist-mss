@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8744">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,10 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_47276-item1" class="#commentary">
-                     <author key="n85225611" ref="http://viaf.org/viaf/53134259/">Shahīd al-Thānī, Zayn al-Dīn ibn ʻAlī, 1506-1559زين الدين بن علي بن أحمد الشامي العاملي</author>
+                     <author key="n85225611" ref="http://viaf.org/viaf/53134259/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Shahīd al-Thānī, Zayn al-Dīn ibn ʻAlī, 1506-1559</persName>
+                        <persName xml:lang="ar">زين الدين بن علي بن أحمد الشامي العاملي</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">al-Rawḍah al-bahīyah fī sharḥ al-Lumʻah al-Dimashqīyah</title>
                      <title xml:lang="ar">الروضة البهية في شرح اللمعة الدمشقية</title>
                      <incipit>كتاب الاحارة وهى العقد على تملك المنغفة المعلومة بعوض معلوم فالعقد بمنزلة الجنس يشتمل ساير ... العقود وخرج بتعلقه بالمنفعة البيع والصلع</incipit>
@@ -54,7 +57,9 @@
                            <ref target="http://digital.info.soas.ac.uk/15594/#page/1/mode/2up/search/">view the printed catalogue Gacek no.279</ref>
                         </bibl>
                         <bibl type="text-relations">Commentary on<title xml:lang="ar-Latn-x-lc">al-Lumʻah al-Dimashqīyah<foreign xml:lang="ar">اللمعة الدمشقية</foreign>
-                           </title>of<author key="n86099913" ref="http://viaf.org/viaf/90064475/">Shahīd al-Awwal, Muḥammad ibn Makkī, 1333 or 4-1380<persName xml:lang="ar">محمد بن مكي العاملي</persName>
+                           </title>of<author key="n86099913" ref="http://viaf.org/viaf/90064475/">
+                              <persName xml:lang="ar-Latn-x-lc">Shahīd al-Awwal, Muḥammad ibn Makkī, 1333 or 4-1380<persName xml:lang="ar">محمد بن مكي العاملي</persName>
+                              </persName>
                            </author>
                         </bibl>
                      </listBibl>
@@ -76,7 +81,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -129,7 +134,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-04-21">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5631">
    <teiHeader>
       <fileDesc>
@@ -60,8 +60,8 @@
                      <title xml:lang="fa">أبىات</title>
                      
                      
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>Selected verses from two ornate qaṣīdas in Persian</note>
                      <note>The first is that of<persName xml:lang="fa-Latn-x-lc" type="supplied">Qivāmī,<foreign xml:lang="fa">قوامی</foreign>
                         </persName>, who lived in the<date calendar="#Hijri-qamari" notBefore="1100" notAfter="1199">6th century</date>, bayts 30-44, 47-49, and 10</note>
@@ -76,7 +76,12 @@
                           n="3"
                           class="http://lccn.loc.gov/sh85109395 http://lccn.loc.gov/sh99004712">
                      <locus from="7v" to="14v">f 7v-14v</locus>
-                     <author>Humāmī Iznīqīهمامی ازنيقيHümāmī İzniḳī
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Humāmī Iznīqī</persName>
+                        <persName xml:lang="fa">همامی ازنيقي</persName>
+                        <persName xml:lang="tr-Latn-x-lc" type="alt">Hümāmī İzniḳī</persName>
+                        
+                        
                         
                         
                         
@@ -85,8 +90,8 @@
                      <title xml:lang="fa">قصيده</title>
                      
                      
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>A qaṣidah describing the poem as a nazira of<persName xml:lang="fa-Latn-x-lc" type="supplied">Qivāmī,<foreign xml:lang="fa">قوامی</foreign>
                         </persName>, who lived in the<date calendar="#Hijri-qamari" notBefore="1100" notAfter="1199">6th century</date>
                      </note>
@@ -182,7 +187,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-10-24">

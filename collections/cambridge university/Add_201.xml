@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_47">
    <teiHeader>
       <fileDesc>
@@ -47,10 +47,16 @@
                      </persName>from his accession to the throne until<date calendar="#Hijri-qamari" when="1025">1025</date>
                      <date calendar="#Gregorian" when="1616">1616</date>.</summary>
                   <msItem xml:id="Add_201-item1">
-                     <author key="n 2004022520" ref="http://viaf.org/viaf/73242494/">Iskandar Munshī, 1560 or 61-1633 or 4اسكندراسكندر بيك تركمان<addName xml:lang="ar" type="laqab">منشي</addName>
-                        
-                        
-                        
+                     <author key="n 2004022520" ref="http://viaf.org/viaf/73242494/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Iskandar Munshī, 1560 or 61-1633 or 4</persName>
+                        <persName xml:lang="fa">اسكندر</persName>
+                        <persName xml:lang="fa" type="alt">اسكندر بيك تركمان</persName>
+                        <persName xml:lang="fa">
+                           <addName xml:lang="ar" type="laqab">منشي</addName>
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Tarīkh-i ʻālam ārā-yi ʻAbbāsī</title>
                      
@@ -60,9 +66,11 @@
                      <note>
                         <foreign xml:lang="fa">صحيفه دويم</foreign>
                      </note>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref xml:id="b1"
@@ -78,13 +86,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -152,7 +160,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-01-31">

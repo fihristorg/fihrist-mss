@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3330">
    <teiHeader>
       <fileDesc>
@@ -43,18 +43,23 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="IO_Islamic_4663-item1" class="#commentary">
-                     <author ref="http://viaf.org/viaf/11844492/" key="no 00010177">Dihdār Shīrāzī, Muḥammad ibn Maḥmūd, 1540 or 41-1607 or 8‏دهدار شيرازى، محمد بن محمود
+                     <author ref="http://viaf.org/viaf/11844492/" key="no 00010177">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Dihdār Shīrāzī, Muḥammad ibn Maḥmūd, 1540 or 41-1607 or 8</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">‏دهدار شيرازى، محمد بن محمود
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Sharḥ-i Gulshan-i rāz</title>
                      
                      <title xml:lang="ar">شرح گلشن راز</title>
                      
                      
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note type="text-relations">A commentary on the<title xml:lang="fa-Latn-x-lc">Gulshan-i rāz (<foreign xml:lang="fa">گلشن راز</foreign>)</title>by<persName xml:lang="fa-Latn-x-lc"
                                   ref="http://viaf.org/viaf/107030610/"
                                   key="n 80089780"
@@ -74,7 +79,7 @@
                               <height>19</height>
                               <width>12.5</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -121,7 +126,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-11-30">

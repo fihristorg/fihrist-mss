@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7754">
    <teiHeader>
       <fileDesc>
@@ -43,7 +43,7 @@
                         </foliation>
                         <collation>
                            <seg type="gathering" n="1-224" subtype="both">
-                              
+                              <dimensions type="leaf" unit="mm" quantity="23"/>
                               <formula>2+221+3</formula>
                            </seg>
                         </collation>
@@ -213,9 +213,14 @@
                         <explicit facs="#i0222">
                            <locus>fol.226a.20</locus>واعلم بمقدار ما اجهدنا انفسنا فيه من اجلك ايّها الانسان وانّ من شكر النعم العمل بالعلم لظهور النتايج فى كل تدبير و ميزان لعساك ان تكون قطب زمانك</explicit>
                         <author>
-                           <forename facs="#i0223">علىّ بن ايدمر</forename>
-                           <addName type="laqab" facs="#i0223">الجلدكى</addName>
-                           <addName type="khitab" facs="#i0223">نور الدّين</addName>نور الدّين علىّ بن ايدمر الجلدكىNūr ad-Dīn Alī ibn Aidamur Al-ğildakī</author>
+                           <persName type="standard" xml:lang="ara-Arab">
+                              <forename facs="#i0223">علىّ بن ايدمر</forename>
+                              <addName type="laqab" facs="#i0223">الجلدكى</addName>
+                              <addName type="khitab" facs="#i0223">نور الدّين</addName>
+                           </persName>
+                           <persName type="original" xml:lang="ara-Arab" facs="#i0223">نور الدّين علىّ بن ايدمر الجلدكى</persName>
+                           <persName xml:lang="eng-Latn" type="standard">Nūr ad-Dīn Alī ibn Aidamur Al-ğildakī</persName>
+                        </author>
                         <colophon facs="#i0223">
                            <locus>fol.226b.6</locus>اللهم وانت المدعوّ بكل لسان والمسؤل لكل همة من كل انسان التوفيق لما يرضيك عنّا وان تعصمنا من مضلاّت الفتن<gap reason="omitted"/>ثم الصّلوةُ التامّات والتّحيّات المباركات واتمّ السّلام على سيّدنا محمد سيّد ولد عدنان صلى الله عليه وسلّم وعلى آله وصحابته نجوم الهداية فى الاكوان والحمد لله ربً العالمين وحسبنا الله ونعم الوكيل ويتلوه الجزء الثانى ممّا فيه من ابواب الجمل وفصول التفصيل</colophon>
                         <title type="original" facs="#i0006">انوار البيان واسرار البرهان فى فهم اوزان علم الميزان<locus>fol.3b.13</locus>
@@ -243,7 +248,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-11-08T12:53:04+02:00">Committed to SVN. To view the changes in detail use SVN diff. SVN Url:http://wellcomesvn.local.bibalex.dom/svn/WellcomeTrust/trunk/WAMCPMetaGallery/XML/WMS_Arabic_29/WMS_Arabic_29.xml<persName>eralph</persName>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_266">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,16 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Add_3705-item1" class="#commentary">
-                     <author>anonymous
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">anonymous</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      
                      
@@ -56,14 +62,18 @@
                      <title xml:lang="en" type="desc">Commentary on a takhmīs in praise of<persName xml:lang="fa-Latn-x-lc">Yūsuf Maẓhar Pāshā<foreign xml:lang="fa">يوسف مظهر پاشا</foreign>
                         </persName>
                      </title>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne1922/view.php?id=146">no. 1432</ref>
                         </bibl>
-                        <bibl type="text-relations">The original poem was written by<author>Rajab ʻAlī ibn Muḥammad Ḥusayn Iṣfahānī<foreign>رجب علی بن محمد حسين اصفهانی</foreign>
+                        <bibl type="text-relations">The original poem was written by<author>
+                              <persName xml:lang="fa-Latn-x-lc" type="supplied">Rajab ʻAlī ibn Muḥammad Ḥusayn Iṣfahānī<foreign>رجب علی بن محمد حسين اصفهانی</foreign>
+                              </persName>
                            </author>
                         </bibl>
                      </listBibl>
@@ -74,13 +84,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -153,7 +163,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-10-22">

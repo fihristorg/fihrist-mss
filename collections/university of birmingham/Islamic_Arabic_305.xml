@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3837">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,16 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_305-item1">
-                     <author key="n79106223" ref="http://viaf.org/viaf/90075678/">Taftāzānī, Masʿūd ibn ʿUmar,<date calendar="#Gregorian" from="1322" to="1389">1322-1389?</date>التفتازاني، سعد الدين مسعود بن عمر
+                     <author key="n79106223" ref="http://viaf.org/viaf/90075678/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Taftāzānī, Masʿūd ibn ʿUmar,<date calendar="#Gregorian" from="1322" to="1389">1322-1389?</date>
+                        </persName>
                         
                         
-                        
+                        <persName xml:lang="ar">التفتازاني، سعد الدين مسعود بن عمر
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Sharḥ al-mukhtaṣar</title>
                      
@@ -64,9 +70,11 @@
                                   ref="http://viaf.org/viaf/61532835/">Sakkākī, Yūsuf ibn Abī Bakr, 1160-<foreign xml:lang="ar">السكاكي، يوسف بن أبي بكر، 555-626 هـ</foreign>
                         </persName>
                      </note>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="fa" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 1671</bibl>
                         <bibl>GAL I 427; Suppl. I, 758-9</bibl>
@@ -81,14 +89,14 @@
                               <height>21.2</height>
                               <width>15.9</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="21" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                            <note>21 lines per page</note>
                         </layout>
                      </layoutDesc>
@@ -146,7 +154,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-07-30">

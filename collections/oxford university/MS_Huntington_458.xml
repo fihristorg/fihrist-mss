@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1010">
    <teiHeader>
       <fileDesc>
@@ -74,7 +74,9 @@
                   </msItem>
                   <msItem xml:id="MS_Huntington_458-item4" n="4">
                      <locus from="44" to="45">ff. 44r-45r</locus>
-                     <author key="n 87800234" ref="http://viaf.org/viaf/51708485/">Ibn al-ʻAssāl, al-Ṣafī Abū al-Faḍāʼil Mājid,<date calendar="#Gregorian" notBefore="1200" notAfter="1300">13th cent.</date>
+                     <author key="n 87800234" ref="http://viaf.org/viaf/51708485/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn al-ʻAssāl, al-Ṣafī Abū al-Faḍāʼil Mājid,<date calendar="#Gregorian" notBefore="1200" notAfter="1300">13th cent.</date>
+                        </persName>
                      </author>
                      <title>Note on the different recensions of the Apostolic canons</title>
                      <listBibl>
@@ -268,11 +270,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

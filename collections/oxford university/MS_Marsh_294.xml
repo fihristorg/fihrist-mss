@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_11616">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,10 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_Marsh_294-item1">
-                     <author key="nb2003049995" ref="http://viaf.org/viaf/19192266/">Safāqisī, ʻAlī ibn Aḥmad al-Sharqīالصفاقسي، علي بن أحمد الشرقي</author>
+                     <author key="nb2003049995" ref="http://viaf.org/viaf/19192266/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Safāqisī, ʻAlī ibn Aḥmad al-Sharqī</persName>
+                        <persName xml:lang="ar">الصفاقسي، علي بن أحمد الشرقي</persName>
+                     </author>
                      <title>Portolan atlas containing a world map, regional maps of the Mediterranean, and astronomical and chronological tables; composed in 1571</title>
                      <note>Brock, mentions no MSS.</note>
                      <listBibl>
@@ -107,11 +110,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3505">
    <teiHeader>
       <fileDesc>
@@ -43,18 +43,24 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85141347 http://lccn.loc.gov/n80025804 http://lccn.loc.gov/n80025804">
                   <msItem xml:id="IO_Islamic_4785-item1">
-                     <author>Various authors
+                     <author>
                         
+                        <persName xml:lang="en" type="desc">Various authors</persName>
                         
-                        
+                        <persName xml:lang="fa">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="en" type="desc">207 letters</title>
                      
                      
                      
                      
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>Comprising correspondence of<persName xml:lang="fa-Latn-x-lc" type="supplied">Mīr Maḥbūb ‘Alī Lhān</persName>, Nizam of Hyderabad addressed to<persName xml:lang="fa-Latn-x-lc" type="supplied">Akbar al-mulk</persName>, Chief of police and other state officials of the Hyderabad Court. These are dated between<date calendar="#Gregorian" notBefore="1890" notAfter="1913">1890 and 1913</date>and mostly relate to administrative affairs</note>
                      <note>The collection also includes letters of<persName xml:lang="fa-Latn-x-lc" type="supplied">Nizam Mīr ʻUs̲mān ‘Alī Khān</persName>, the poet<persName xml:lang="fa-Latn-x-lc" type="supplied">Dāgh Dihlavī</persName>,<persName xml:lang="fa-Latn-x-lc" type="supplied">Amīr Minā’ī</persName>,<persName xml:lang="fa-Latn-x-lc" type="supplied">Niyāz Patḥpīrī</persName>and<persName xml:lang="fa-Latn-x-lc" type="supplied">Nuḥ Nārvī</persName>
                      </note>
@@ -67,8 +73,8 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>207 items of varying sizes
-                           
+                        <extent>207 items of varying sizes<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -121,7 +127,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-12-30">

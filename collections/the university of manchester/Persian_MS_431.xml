@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6928">
    <teiHeader>
       <fileDesc>
@@ -45,8 +45,16 @@
                                key="n 50034146"
                                ref="http://viaf.org/viaf/11090963/">Humayun, Emperor of Hindustan, 1508-1556</persName>.</summary>
                   <msItem xml:id="Persian_MS_431-item1">
-                     <author key="nr 96002485" ref="http://viaf.org/viaf/90041360/">Fayz̤ī, Abū al-Fayz̤ ibn Mubārak 1547 or 1548-1595فيضى، ابوالفيض بن مبارك‏
+                     <author key="nr 96002485" ref="http://viaf.org/viaf/90041360/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Fayz̤ī, Abū al-Fayz̤ ibn Mubārak 1547 or 1548-1595</persName>
                         
+                        
+                        
+                        <persName xml:lang="ar">فيضى، ابوالفيض بن مبارك‏
+                           
+                           
+                           
+                        </persName>
                         
                         
                      </author>
@@ -55,8 +63,8 @@
                      <title xml:lang="fa">اقبالنامه تاریخ همایون پادشاه</title>
                      
                      
-                     
-                     
+                     <incipit xml:lang="ar" type="basmalla"/>
+                     <explicit xml:lang="ar"/>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
@@ -64,8 +72,8 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
@@ -134,7 +142,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014">

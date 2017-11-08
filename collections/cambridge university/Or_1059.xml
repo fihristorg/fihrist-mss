@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_9869">
    <teiHeader>
       <fileDesc>
@@ -44,18 +44,23 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Or_1059-item1">
-                     <author>Awrangābādī, Munʻim Khān ibn ʻAbd al-Mughnī al-Hamadhānīاورنغ آبادى، منعم خان بن عبد المغني
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Awrangābādī, Munʻim Khān ibn ʻAbd al-Mughnī al-Hamadhānī</persName>
                         
                         
-                        <addName xml:lang="fa" type="nisbah">الهمذانی</addName>
+                        <persName xml:lang="fa">اورنغ آبادى، منعم خان بن عبد المغني
+                           
+                           
+                           <addName xml:lang="fa" type="nisbah">الهمذانی</addName>
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Savāniḥ-i dakan</title>
                      
                      <title xml:lang="fa">سوانحي دكن</title>
                      
                      
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/arberry/view.php?id=8">no. 58</ref>
@@ -68,13 +73,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -115,7 +120,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-06-22">

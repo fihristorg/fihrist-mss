@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3664">
    <teiHeader>
       <fileDesc>
@@ -46,7 +46,13 @@
                   <summary>A compilation of two works bound together, each retaining their own foliation numbers.</summary>
                   <msItem xml:id="Islamic_Arabic_1213-item1" n="1">
                      <locus from="1" to="53">ff.1-53</locus>
-                     <author>Qāḍīʹzādah, Mūsā ibn Muḥammad</author>
+                     <author>
+                        <persName key="nr 90001949"
+                                  ref="http://www.viaf.org/viaf/73701246/"
+                                  type="standard"
+                                  xml:lang="ar-Latn-x-lc">Qāḍīʹzādah, Mūsā ibn Muḥammad</persName>
+                        
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">A commentary on al-Mulakhkhaṣ fī al-hayʿah</title>
                      
                      
@@ -56,7 +62,9 @@
                                   ref="http://www.viaf.org/viaf/24458289/"
                                   type="standard"
                                   xml:lang="ar-Latn-x-lc">Jighmīnī, Maḥmūd ibn Muḥammad, d. 1221? (<persName xml:lang="ar">الجغميني، محمود بن محمد</persName>)</persName>Title pages are missing.</note>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 940</bibl>
                         <bibl>GAL 1. 473, esp.Cmt I; 1.865, esp.no.1 Cmt I a; ii.212.</bibl>
@@ -65,7 +73,13 @@
                   </msItem>
                   <msItem xml:id="Islamic_Arabic_1213-item2" n="2">
                      <locus from="1" to="74">ff.1-74</locus>
-                     <author>Birjandī, ʻAbd al-ʻAlī ibn Muḥammad ibn Ḥusayn, active 16th century</author>
+                     <author>
+                        <persName key="nr93001807"
+                                  ref="http://viaf.org/viaf/7603024"
+                                  type="standard"
+                                  xml:lang="ar-Latn-x-lc">Birjandī, ʻAbd al-ʻAlī ibn Muḥammad ibn Ḥusayn, active 16th century</persName>
+                        
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">A gloss on a commentary of al-Mulakhkhaṣ fī al-hayʿah</title>
                      
                      
@@ -79,7 +93,9 @@
                                   type="standard"
                                   xml:lang="ar-Latn-x-lc">Jighmīnī, Maḥmūd ibn Muḥammad, d. 1221? (<persName xml:lang="ar">الجغميني، محمود بن محمد</persName>)</persName>
                      </note>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 942</bibl>
                         <bibl>GAL 1.c, Glossen b; Suppl.ii.591</bibl>
@@ -94,12 +110,12 @@
                               <height>20.2</height>
                               <width>14.5</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="21" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                            <note>21 lines per page</note>
                         </layout>
                      </layoutDesc>
@@ -154,7 +170,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2016-07-13">

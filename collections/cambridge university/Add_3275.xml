@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3144">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,21 @@
                <msContents>
                   <summary>Treatise on grammar</summary>
                   <msItem xml:id="Add_3275-item1" n="1">
-                     <author>Bar-Hebraeus (1226-1286)ܒܪ ܥܒܪܝܐ,ܓܪܝܓܘܪܝܘܣ d. 1286ابن العبري‏
+                     <author>
+                        <persName xml:lang="en"
+                                  type="standard"
+                                  ref="http://viaf.org/viaf/81959220/"
+                                  key="50024350">Bar-Hebraeus (1226-1286)</persName>
                         
                         
-                        
+                        <persName xml:lang="syr" type="alt">ܒܪ ܥܒܪܝܐ,ܓܪܝܓܘܪܝܘܣ d. 1286</persName>
+                        <persName xml:lang="ar" type="alt">ابن العبري‏</persName>
+                        <persName xml:lang="ar">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <editor role="translator ">
                         <name ref="http://viaf.org/viaf/94565361/">
@@ -59,7 +70,7 @@
                      
                      
                      <incipit xml:lang="syr">ܒܣܡ ܐܠܐܒ ܘܐܠܐܒܢ ܘܐܠܪܘܚ ܐܠܩܕܣ ܐܠܐܗܺܐ ܘܐܚܕܺܐ ܠܗ ܐܠܡܓܕ ܕܐܝܡܺܐ܀</incipit>
-                     
+                     <explicit xml:lang="ar" defective="true"/>
                      <colophon>
                         <locus from="122v" to="122v">f. 122v</locus>
                      </colophon>
@@ -75,8 +86,8 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <support>Paper</support>
-                        <extent>123 ff.
-                           
+                        <extent>123 ff.<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <collation>
                            <p>Quires, unsigned, of 8 and 12 leaves alternately</p>
@@ -87,7 +98,7 @@
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1" writtenLines="20">20 or 21 lines to the page
+                        <layout columns="1" writtenLines="20">20 or 21 lines to the page<dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -135,7 +146,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015">

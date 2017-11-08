@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6909">
    <teiHeader>
       <fileDesc>
@@ -41,17 +41,25 @@
                   <idno>Persian MS 412</idno>
                </msIdentifier>
                <msContents>
-                  <summary>Memoires of events in the life of<persName ref="http://viaf.org/viaf/11090963/" key="n 50034146">Humayun, Emperor of Hindustan, 1508-1556</persName>by his ewer bearer.<title type="main"/>
+                  <summary>Memoires of events in the life of<persName ref="http://viaf.org/viaf/11090963/" key="n 50034146">Humayun, Emperor of Hindustan, 1508-1556</persName>by his ewer bearer.
                   </summary>
                   <msItem xml:id="Persian_MS_412-item1">
-                     <author key="n 2004056841" ref="http://viaf.org/viaf/11698784/">Jawhar, active 1554Jawhar Āftābahchī,‏ ‎active 1554‏جوهر آفتابچی</author>
+                     <author key="n 2004056841" ref="http://viaf.org/viaf/11698784/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Jawhar, active 1554</persName>
+                        
+                        
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Jawhar Āftābahchī,‏ ‎active 1554‏</persName>
+                        <persName xml:lang="fa">جوهر آفتابچی</persName>
+                        
+                        
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Taẕkirat al-vāqi‘āt</title>
                      
                      <title xml:lang="fa">تذکره الواقعات</title>
                      
                      <title xml:lang="en" type="desc">The Private memoirs of the Moghul Emperor Humāyūn</title>
-                     
-                     
+                     <incipit xml:lang="ar" type="basmalla"/>
+                     <explicit xml:lang="ar"/>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
@@ -59,8 +67,8 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
@@ -127,7 +135,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015">

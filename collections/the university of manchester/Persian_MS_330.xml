@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6825">
    <teiHeader>
       <fileDesc>
@@ -43,8 +43,16 @@
                <msContents>
                   <summary>Collection of seven works</summary>
                   <msItem xml:id="Persian_MS_330-item1" n="1">
-                     <author>Muḥammad Ibn Ḥasan Muḥammad al-Jishtī al-Awhadīمحمد بن حسن محمد الجشتي الاودهي
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Muḥammad Ibn Ḥasan Muḥammad al-Jishtī al-Awhadī</persName>
                         
+                        
+                        
+                        <persName xml:lang="ar">محمد بن حسن محمد الجشتي الاودهي
+                           
+                           
+                           
+                        </persName>
                         
                         
                      </author>
@@ -53,20 +61,25 @@
                      <title xml:lang="fa">آداب الطالبين</title>
                      
                      
-                     
-                     
+                     <incipit xml:lang="ar" type="basmalla"/>
+                     <explicit xml:lang="ar"/>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="Persian_MS_330-item2" n="7">
-                     <author key="n89275211" ref="http://viaf.org/viaf/90779326/">Bilgrāmī, Sayyid Ghulām ʻAlī Āzād, 1704-1786Āzādبلغرامی، غلام علی حسينی واسطیآزاد</author>
+                     <author key="n89275211" ref="http://viaf.org/viaf/90779326/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Bilgrāmī, Sayyid Ghulām ʻAlī Āzād, 1704-1786</persName>
+                        <persName xml:lang="ar-Latn-x-lc" type="alt">Āzād</persName>
+                        <persName xml:lang="fa">بلغرامی، غلام علی حسينی واسطی</persName>
+                        <persName xml:lang="fa" type="alt">آزاد</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Sarv-i Āzād</title>
                      <title xml:lang="fa">سرو آزاد</title>
                      <title xml:lang="fa-Latn-x-lc" type="alt">Sarw-i Āzād</title>
                      
                      
                      
-                     
-                     
+                     <incipit xml:lang="ar" type="basmalla"/>
+                     <explicit xml:lang="ar"/>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
@@ -74,8 +87,8 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
@@ -149,7 +162,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015">

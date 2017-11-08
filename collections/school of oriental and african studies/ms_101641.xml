@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7933">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,13 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_101641-item1">
-                     <author key="no2013035920‏‏" ref="http://viaf.org/viaf/299440862">Birmāwī, Ibrāhīm ibn Muḥammad, -1694 or 1695برماوي، ابراهيم بن محمد</author>
+                     <author key="no2013035920‏‏" ref="http://viaf.org/viaf/299440862">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Birmāwī, Ibrāhīm ibn Muḥammad, -1694 or 1695</persName>
+                        <persName xml:lang="ar">برماوي، ابراهيم بن محمد</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Ḥāshiyah ʻalā sharḥ al-Ghāyah</title>
                      <title xml:lang="ar">حاشية على شرح الغاية</title>
-                     <title type="alt"/>
+                     
                      
                      <incipit>الحمد لله الذى جعل التفقه فى الدين من اهم المقصودات ... اما بعد فلما كان ولدى احمد ممن ... وفقهم الله تعالى للاشتغال بالعلم</incipit>
                      <colophon>وكان الفراغ من كتابة هذه الحاشية يوم يوم الابع المبارك في ثمانية وعشرون خلت من شهر شعبان ...سنه 1286 علی ید کاتبها...خلیل العجوز</colophon>
@@ -81,7 +84,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -138,7 +141,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-09-01">

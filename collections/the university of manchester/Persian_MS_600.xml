@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7101">
    <teiHeader>
       <fileDesc>
@@ -43,21 +43,29 @@
                <msContents>
                   <summary>An anonymous work on moral duties.</summary>
                   <msItem xml:id="Persian_MS_600-item1">
-                     <author>anonymous
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">anonymous</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Minhāj al-ʻābidīn</title>
                      
                      <title xml:lang="fa">منهاج العابدين</title>
                      
                      
-                     
-                     
+                     <incipit xml:lang="ar" type="basmalla"/>
+                     <explicit xml:lang="ar"/>
                      <listBibl>
                         <bibl>
-                           <author key="n 82097778" ref="http://www.viaf.org/viaf/89736851/">Ghazzālī, 1058-1111</author>wrote an Arabic work with the same title, which is known to be translated into Persian by<persName xml:lang="fa-Latn-x-lc">Shaikh Yūsuf Budh of Īrch.</persName>
+                           <author key="n 82097778" ref="http://www.viaf.org/viaf/89736851/">
+                              <persName type="standard" xml:lang="ar-Latn-x-lc">Ghazzālī, 1058-1111</persName>
+                           </author>wrote an Arabic work with the same title, which is known to be translated into Persian by<persName xml:lang="fa-Latn-x-lc">Shaikh Yūsuf Budh of Īrch.</persName>
                         </bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
@@ -67,8 +75,8 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
@@ -137,7 +145,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014">

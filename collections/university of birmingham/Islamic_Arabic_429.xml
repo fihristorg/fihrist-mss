@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3879">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,16 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_429-item1">
-                     <author>Shams al-Dīn Muḥammad al-ʿUmarī
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="supplied">Shams al-Dīn Muḥammad al-ʿUmarī</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Kashf alʿallām fī tafsīr al-manām</title>
                      
@@ -56,8 +62,10 @@
                      
                      <note>The text concludes with a 'tammat' and the date<date calendar="#Hijri-qamari" when="1447">581</date>, but it is impossible to say whether this refers to composition or copying; on the page facing the end of the work is what purports to be an owner's note dated<date calendar="#Hijri-qamari" when="1605">1014</date>. Both these indications, however, if they are not outright forgeries, must be reproduced from an earlier MS., for the paper of the present MS which is very thin and in various colours (bright blue, yellow, and pink) has a thoroughly modern appearance and can hardly be older than the<date calendar="#Gregorian" notBefore="1801" notAfter="1900">Gregorian</date>19th century.</note>
                      <incipit xml:lang="ar">الحمد الله نور الباب من الانام و كشف عن بصائرهم حتى ادركوا حقيقه كل ما شاهدوه في اليقظة و المنام</incipit>
-                     
-                     
+                     <explicit xml:lang="ar" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 1935</bibl>
                      </listBibl>
@@ -71,14 +79,14 @@
                               <height>27.2</height>
                               <width>20.0</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial">Red headings</foliation>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="21" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -132,7 +140,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-02-21">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4589">
    <teiHeader xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <fileDesc>
@@ -44,7 +44,9 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_Laud_Or_248-item1" class="#commentary">
-                     <author key="no 00101867" ref="http://viaf.org/viaf/68483252/">Surūrī, Muṣliḥ al-Dīn,<date calendar="#Gregorian" from="1492" to="1562">1492-1562</date>
+                     <author key="no 00101867" ref="http://viaf.org/viaf/68483252/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Surūrī, Muṣliḥ al-Dīn,<date calendar="#Gregorian" from="1492" to="1562">1492-1562</date>
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Sharḥ-i jild-i khāmis al-Mas̲navī al-Maʻnavī</title>
                      <title xml:lang="fa">شرح جلد خامس المثنوى المعنوى</title>
@@ -56,7 +58,9 @@
                            <ref target="http://archive.org/stream/catalogueofpersi01bodluoft#page/260/mode/2up">no. 668</ref>
                         </bibl>
                         <bibl type="text-relations">This work is a commentary on Book V of the<title xml:lang="fa-Latn-x-lc">Mas̲navī-i maʻnavī<foreign xml:lang="fa">مثنوی معنوی</foreign>
-                           </title>of<author key="n81059876" ref="http://viaf.org/viaf/98930150/">Jalāl al-Dīn Rūmī, Maulana, 1207-1273<foreign xml:lang="fa">جلال الدين رومى</foreign>
+                           </title>of<author key="n81059876" ref="http://viaf.org/viaf/98930150/">
+                              <persName xml:lang="ar-Latn-x-lc">Jalāl al-Dīn Rūmī, Maulana, 1207-1273<foreign xml:lang="fa">جلال الدين رومى</foreign>
+                              </persName>
                            </author>.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
@@ -65,12 +69,12 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>331 ff.
+                        <extent>331 ff.<dimensions type="leaf" unit="in"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -179,7 +183,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-06-23">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8875">
    <teiHeader>
       <fileDesc>
@@ -41,13 +41,17 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_54446-item1" n="1">
-                     <author key="n87844807" ref="http://viaf.org/viaf/59888184/">Birgivî Mehmet Efendi, ca 1522-1573</author>
+                     <author key="n87844807" ref="http://viaf.org/viaf/59888184/">
+                        <persName xml:lang="ota-Latn-x-lc" type="standard">Birgivî Mehmet Efendi, ca 1522-1573</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Jalāʼ al-qulūb</title>
                      <title xml:lang="ar">جلاء القلوب</title>
                      <note>A sufi treatise</note>
                      <incipit>الحمد لله الذى جعل الليل والنهار خلفة لمن اراد ان يذكر او اراد شكورا ... اما بعد فقد روى مسلم فى صحيحه عن تميم الدارى ... ان النبى صلى الله عليه وسلم قال الدين النصيحة الدين النصيحة الدين النصيحة قالوا ... لمن يا رسول الله قال لله تعالى ولرسوله ولكتابه﻿</incipit>
-                     
-                     
+                     <explicit xml:lang="ar"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://digital.info.soas.ac.uk/15594/#page/1/mode/2up/search/">view the printed catalogue Gacek no.143</ref>
@@ -56,7 +60,9 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="ms_54446-item2" n="2">
-                     <author key="n87844807" ref="http://viaf.org/viaf/59888184/">Birgivî Mehmet Efendi, ca 1522-1573</author>
+                     <author key="n87844807" ref="http://viaf.org/viaf/59888184/">
+                        <persName xml:lang="ota-Latn-x-lc" type="standard">Birgivî Mehmet Efendi, ca 1522-1573</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Muʻaddil al-ṣalāt</title>
                      <title xml:lang="ar">معدل الصلاه</title>
                      <note>Tract on prayer</note>
@@ -69,7 +75,9 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="ms_54446-item3" n="3">
-                     <author>Anonymous</author>
+                     <author>
+                        <persName>Anonymous</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Minhāj al-mutaʻallim</title>
                      <title xml:lang="ar">منهاج المتعلم</title>
                      <note>Tract on the acquisition of knowledge</note>
@@ -82,7 +90,9 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="ms_54446-item4" n="4">
-                     <author>Anonymous</author>
+                     <author>
+                        <persName>Anonymous</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Sirāj al-muṣallī wa-badr al-mubtadī wa-al-muntahī</title>
                      <title xml:lang="ar">سراج المصلی وبدر المبتدی والمنتهی</title>
                      <incipit>... الحمد لله رب العالمين والعاقبة للمتقين اعلم اسعدك الله فى الدارين ذكر فى الفتاوى الكبرى والفتاوى الناصرى والفتاوى الشهابى وصلوة المسعودى من ... لم يعلم فرايض الوضوء وغسل الاعضاء</incipit>
@@ -103,13 +113,13 @@
                            <ref target="a2">27b-38b f.</ref>
                            <ref target="a3">39b-51b f.</ref>
                            <ref target="a4">52b-64a f.</ref>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -167,7 +177,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-03-17">

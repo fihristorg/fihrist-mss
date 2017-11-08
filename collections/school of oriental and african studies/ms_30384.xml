@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8242">
    <teiHeader>
       <fileDesc>
@@ -44,27 +44,33 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_30384-item1">
-                     <author ref="http://viaf.org/viaf/284190346/">Bilgrāmī, Awḥad al-DīnAwḥad al-Dīn Bilgrāmī‏بلگرامي، اوحد الدين</author>
+                     <author ref="http://viaf.org/viaf/284190346/">
+                        <persName xml:lang="pus-Latn-x-lc" type="standard">Bilgrāmī, Awḥad al-Dīn</persName>
+                        <persName xml:lang="pus-Latn-x-lc" type="alt">Awḥad al-Dīn Bilgrāmī‏</persName>
+                        <persName xml:lang="fa">بلگرامي، اوحد الدين</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Nafāʾis al-lughāt</title>
                      <title xml:lang="ar">نفائس اللغات</title>
                      <note>A dictionary of Urdu words and phrases explained in Persian</note>
                      <incipit>بر ضمایر مرات نظاهر مي كساران خمخانه تحقيق</incipit>
-                     
+                     <explicit xml:lang="ar" defective="true"/>
                      <colophon>كتاب مستغنی عن الصفات نفایس اللغات از تالیف سرکرده عالمان نامی مولانا اوحد الدین احمد... بلکرامی بتاریخ...سنه 1905</colophon>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="fa" otherLangs="ur">Persian and Urdu</textLang>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>609 f.
-                           
+                        <extent>609 f.<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -118,7 +124,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-10-26">

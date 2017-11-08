@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1841">
    <teiHeader>
       <fileDesc>
@@ -47,7 +47,9 @@
                      <locus from="176" to="177">ff. 176v-177v</locus>
                      <author key="n 85370452 "
                              ref="http://www.viaf.org/viaf/53153025/"
-                             xml:id="m1">Kemalpaşazade,<date calendar="#Gregorian" from="1468" to="1534">1468 or 9-1534</date>
+                             xml:id="m1">
+                        <persName type="standard" xml:lang="tr-Latn-x-lc">Kemalpaşazade,<date calendar="#Gregorian" from="1468" to="1534">1468 or 9-1534</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Rāḥat al-arwāḥ</title>
                      <note>Incomplete, beginning only</note>
@@ -58,7 +60,9 @@
                   </msItem>
                   <msItem xml:id="MS_Turk_e_33-item2" n="2">
                      <locus from="178" to="181">ff. 178v-181r</locus>
-                     <author key="n 79059644" ref="http://viaf.org/viaf/44299175/">Galen</author>
+                     <author key="n 79059644" ref="http://viaf.org/viaf/44299175/">
+                        <persName type="standard">Galen</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Kitāb al-Bawl</title>
                      <title type="alt">Kitāb fī dalāʼil al-bawl</title>
                      <note>cf. Sezgin iii., 127, 128</note>
@@ -70,7 +74,9 @@
                   </msItem>
                   <msItem xml:id="MS_Turk_e_33-item3" n="3">
                      <locus from="195" to="204">ff. 195v-204r</locus>
-                     <author key="n 79059644" ref="http://viaf.org/viaf/44299175/">Galen</author>
+                     <author key="n 79059644" ref="http://viaf.org/viaf/44299175/">
+                        <persName type="standard">Galen</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Jawāmiʻ mā qāla Jālīnūs fī al-bawl</title>
                      <note>cf. Sezgin iii., 128</note>
                      <listBibl>
@@ -218,11 +224,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

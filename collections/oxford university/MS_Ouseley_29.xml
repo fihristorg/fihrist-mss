@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4686">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,12 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Ouseley_29-item1" n="1">
                      <locus from="1" to="276">ff. 1-276</locus>
-                     <author key="n2011083741" ref="http://viaf.org/viaf/220725873">ʻAbbāsī, ʻAbd al-Laṭīf, -1639 or 1640عبد اللطيف بن عبد الله العبّاسي</author>
+                     <author key="n2011083741" ref="http://viaf.org/viaf/220725873">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">ʻAbbāsī, ʻAbd al-Laṭīf, -1639 or 1640</persName>
+                        <persName xml:lang="fa">عبد اللطيف بن عبد الله العبّاسي</persName>
+                        
+                        
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Laṭāʼif al-lughāt</title>
                      <title xml:lang="ar-Latn-x-lc" type="alt">Farhang-i Mas̲navī</title>
                      <title xml:lang="fa">لطائف اللغات</title>
@@ -62,7 +67,12 @@
                   </msItem>
                   <msItem xml:id="MS_Ouseley_29-item2" n="2">
                      <locus from="277" to="420">ff. 277-420</locus>
-                     <author key="n791 39394" ref=" http://viaf.org/viaf/100206721">Saʻdīسعدي الشيرازي، عبد الله بن مشرف، ت. 690 هـ</author>
+                     <author key="n791 39394" ref=" http://viaf.org/viaf/100206721">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Saʻdī</persName>
+                        <persName xml:lang="fa">سعدي الشيرازي، عبد الله بن مشرف، ت. 690 هـ</persName>
+                        
+                        
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Kullīyāt-i Saʻdī</title>
                      <title xml:lang="fa">كلّيّات سعدى</title>
                      
@@ -80,12 +90,12 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>420 ff.
+                        <extent>420 ff.<dimensions type="leaf" unit="in"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="2">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -197,7 +207,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-06-25">

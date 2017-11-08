@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7751">
    <teiHeader>
       <fileDesc>
@@ -59,9 +59,14 @@
                   <msContents>
                      <msItem xml:id="WMS_Arabic_284-part1-item1" defective="false">
                         <author>
-                           <forename facs="#i0004">على نقى</forename>
-                           <addName type="laqab" facs="#i0004">الكمره</addName>
-                           <surname>ابن ابي العلا</surname>Ibn Abi al-`Alā al-kamrah `Alī Naqīابن ابى العلا الكمره على نقى</author>
+                           <persName type="standard" xml:lang="ara-Arab">
+                              <forename facs="#i0004">على نقى</forename>
+                              <addName type="laqab" facs="#i0004">الكمره</addName>
+                              <surname>ابن ابي العلا</surname>
+                           </persName>
+                           <persName type="standard" xml:lang="eng-Latn">Ibn Abi al-`Alā al-kamrah `Alī Naqī</persName>
+                           <persName type="original" xml:lang="ara-Arab" facs="#i0004">ابن ابى العلا الكمره على نقى</persName>
+                        </author>
                         <textLang mainLang="ara-Arab"/>
                         <incipit type="basmala" facs="#i0004">
                            <locus>fol.1b.1</locus>بسم الله الرّحمن الرّحيم</incipit>
@@ -170,7 +175,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-03-30T11:06:16+02:00">Committed to SVN. To view the changes in detail use SVN diff. SVN Url:http://wellcomesvn.local.bibalex.dom/svn/WellcomeTrust/trunk/WAMCPMetaGallery/XML/WMS_Arabic_284/WMS_Arabic_284.xml<persName>mohamed.abdelsamie</persName>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3933">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,15 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_623-item1">
-                     <author key="nr97020955" ref="http://viaf.org/viaf/31902779/">Dīnawarī, Naṣr ibn Yaʿqūbالدينوري، نصر بن يعقوب، ت. حو. 410 هـ
+                     <author key="nr97020955" ref="http://viaf.org/viaf/31902779/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Dīnawarī, Naṣr ibn Yaʿqūb</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">الدينوري، نصر بن يعقوب، ت. حو. 410 هـ
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Qādirī fī al-taʿbīr</title>
                      <title xml:lang="ar-Latn-x-lc" type="alt">taʿbīr al-ruʾyā</title>
@@ -57,9 +62,11 @@
                      <note>Two parts in one volume: part 1<locus from="1" to="166">fol. 1-166</locus>; part 2<locus from="167" to="304">fol. 167-304.</locus>
                      </note>
                      <note>Index</note>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 934</bibl>
                         <bibl>GAL I 244; I 433</bibl>
@@ -74,12 +81,12 @@
                               <height>26.4</height>
                               <width>16.9</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="27" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -134,7 +141,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-02-13">

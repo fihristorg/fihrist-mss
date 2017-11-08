@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8638">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,11 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_46451-item1" n="1">
-                     <author ref="http://viaf.org/viaf/11698784/" key="n2004056841‏">Jawhar, active 1554Jawhar Āftābachī,جوهر آفتابچی</author>
+                     <author ref="http://viaf.org/viaf/11698784/" key="n2004056841‏">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Jawhar, active 1554</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Jawhar Āftābachī,</persName>
+                        <persName xml:lang="fa">جوهر آفتابچی</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Tadhkirat al-wāqiʻāt</title>
                      <title xml:lang="fa-Latn-x-lc" type="alt">Taz̲kirah al-wāqiʻāt</title>
                      <title xml:lang="fa-Latn-x-lc" type="alt">Humāyūnnāmah</title>
@@ -53,16 +57,23 @@
                      <note>The private memoirs of the Emperor Humayun written by his ewer-bearer. "This is the original edition, and not the commoner revised edition of Ilāh-dād Fayḍī Sirhindī</note>
                      <incipit>کتاب تواریخ همایون پادشاه مسمی تذکرة الواقعات من تصنيف اكسير جوهر آفتاب</incipit>
                      <colophon>تمام شد کاتب الحروف سید حسین...سنه 1286 هجری</colophon>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="ms_46451-item2" n="2">
-                     <author>ʻAbd Allāh, active 17th centuryعبد الله</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">ʻAbd Allāh, active 17th century</persName>
+                        <persName xml:lang="fa">عبد الله</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Tārīkh-i Dā’ūdī</title>
                      <title xml:lang="fa">تاریخ داؤدی</title>
                      <note>"A desultory and almost dateless history of the Lodi and Sur dynasties"</note>
                      <incipit>ثنای هر که گویه بحضرت جهان آفرین سزد که کرم عام جمیع</incipit>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
@@ -72,13 +83,13 @@
                         <extent>
                            <ref target="a1">1-118 f.</ref>
                            <ref target="a2">119-279 f.</ref>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -141,7 +152,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-12-18">

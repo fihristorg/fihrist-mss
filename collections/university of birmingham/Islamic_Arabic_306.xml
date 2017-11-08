@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3838">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,15 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_306-item1">
-                     <author key="nr91001701" ref="http://viaf.org/viaf/49634107">Nūr al-Dīn al-Ḥalabī, ʿAlī ibn Ibrāhīm, 1567 or 1568-1635نور الدين الحلبي، علي بن إبراهيم، 975-1044 هـ
+                     <author key="nr91001701" ref="http://viaf.org/viaf/49634107">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Nūr al-Dīn al-Ḥalabī, ʿAlī ibn Ibrāhīm, 1567 or 1568-1635</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">نور الدين الحلبي، علي بن إبراهيم، 975-1044 هـ
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Ḥāshiyah ʿalá sharḥ al-muqaddimah al-Azharīyah</title>
                      
@@ -63,9 +68,11 @@
                      <note>On<locus from="213b" to="213b">fol. 213b</locus>is added a grammatical inquiry addressed by<persName xml:lang="ar-Latn-x-lc" type="supplied">Aḥmad al-Bishbīshī al-Azharī<foreign xml:lang="ar-Latn-x-lc">احمد البشبيشي اللزهري</foreign>
                         </persName>to<persName xml:lang="ar-Latn-x-lc" type="supplied">Muḥammad ibn Muḥammad ibn Abī Bakr al-Magrhibī al-Ṣaghīr al-Dallāʾī, known as al-Rabiṭ</persName>, with the latter's reply. The note was written by<persName xml:lang="ar-Latn-x-lc" type="supplied">Fataḥ Allāh ibn ʿAbd al-Waḥid al-Dādīkhī</persName>, dated<date calendar="#Hijri-qamari" when="1680">beginning of Rajab 1091(?)</date>
                      </note>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="fa" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 1569</bibl>
                         <bibl>GAL II 307; Suppl. II 418; GAL II 27; Suppl. II 22-3</bibl>
@@ -80,14 +87,14 @@
                               <height>20.3</height>
                               <width>14.4</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="21" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                            <note>21 lines per page</note>
                         </layout>
                      </layoutDesc>
@@ -153,7 +160,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-07-30">

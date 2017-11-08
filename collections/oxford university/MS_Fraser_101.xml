@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4439">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,12 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Fraser_101-item1" n="1">
                      <locus from="1" to="57">ff. 1-57</locus>
-                     <author>Anonymous</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Anonymous</persName>
+                        
+                        
+                        
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Āthār-i ʻiṣmat</title>
                      <title xml:lang="fa">آثار عصمت</title>
                      <title xml:lang="fa-Latn-x-lc" type="alt">Ās̲ār-i ʻiṣmat</title>
@@ -60,7 +65,12 @@
                   </msItem>
                   <msItem xml:id="MS_Fraser_101-item2" n="2">
                      <locus from="59" to="71">ff. 59-71</locus>
-                     <author key="83196143" ref="http://viaf.org/viaf/27052262">ʻĀmilī, Bahāʼ al-Dīn Muḥammad ibn Ḥusayn, 1547-1621بهاء الدين العاملي، محمد بن حسين، 953-1031 هـal-Shaykh al-Bahāʼīالشيخ البهائي</author>
+                     <author key="83196143" ref="http://viaf.org/viaf/27052262">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">ʻĀmilī, Bahāʼ al-Dīn Muḥammad ibn Ḥusayn, 1547-1621</persName>
+                        <persName xml:lang="fa">بهاء الدين العاملي، محمد بن حسين، 953-1031 هـ</persName>
+                        <persName xml:lang="ar-Latn-x-lc" type="alt">al-Shaykh al-Bahāʼī</persName>
+                        <persName xml:lang="ar" type="alt">الشيخ البهائي</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Nān va ḥalvā</title>
                      
                      <title xml:lang="fa">نان وحلوا</title>
@@ -189,7 +199,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-03-04">

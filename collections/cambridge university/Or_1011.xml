@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_9829">
    <teiHeader>
       <fileDesc>
@@ -44,19 +44,27 @@
                </msIdentifier>
                <msContents class="commentary">
                   <msItem xml:id="Or_1011-item1" class="#supercommentary">
-                     <author key="nr 94033786" ref="http://viaf.org/viaf/56636057/">anonymous 11
+                     <author key="nr 94033786" ref="http://viaf.org/viaf/56636057/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">anonymous 11</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Ḥall Mushkilāt al-Ishārāt wa-al-Tanbīhāt</title>
                      <title xml:lang="ar-Latn-x-lc" type="alt">Ḥashiyah ʻala Ḥall Mushkilāt al-Ishārāt wa-al-Tanbīhāt</title>
                      <title xml:lang="ar">حل مشكلات الاشارات والتنبيهات</title>
                      <title xml:lang="ar" type="alt">حاشية على حل مشكلات الاشارات والتنبيهات</title>
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <note>The description of the original catalogue has been revised by<persName type="standard"
@@ -78,7 +86,13 @@
                                      key="n82136884"
                                      ref="http://viaf.org/viaf/12392936/">Ṭūsī, Naṣīr al-Dīn Muḥammad ibn Muḥammad, 1201-1274<foreign xml:lang="ar">الطوسي، ناصر الدين محمد بن محمد</foreign>
                            </persName>being a commentary on<title xml:lang="ar-Latn-x-lc">al-Ishārāt wa-al-tanbīhāt<foreign xml:lang="ar">الاشارات والتنبيهات</foreign>
-                           </title>of<author key="n80002386" ref="http://viaf.org/viaf/89770781/">Avicenna, 980-1037ابن سينا</author>in response to the commentary on the same work by<author key="n 81070765" ref="http://viaf.org/viaf/90042555/">Rāzī, Fakhr al-Dīn Muḥammad ibn ʻUmar, 1149 or 50-1210الرازي، فخر الدين محمد بن عمر</author>
+                           </title>of<author key="n80002386" ref="http://viaf.org/viaf/89770781/">
+                              <persName xml:lang="ar-Latn-x-lc">Avicenna, 980-1037</persName>
+                              <persName xml:lang="ar">ابن سينا</persName>
+                           </author>in response to the commentary on the same work by<author key="n 81070765" ref="http://viaf.org/viaf/90042555/">
+                              <persName xml:lang="ar-Latn-x-lc" type="standard">Rāzī, Fakhr al-Dīn Muḥammad ibn ʻUmar, 1149 or 50-1210</persName>
+                              <persName xml:lang="ar">الرازي، فخر الدين محمد بن عمر</persName>
+                           </author>
                         </bibl>
                         <bibl type="ref"/>
                      </listBibl>
@@ -141,13 +155,13 @@
                      <supportDesc material="chart">
                         <support>paper, of In various bright colours from<locus from="101" to="147"/>Folio 101 onwards</support>
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                            <p>21 lines to the page</p>
                         </layout>
                      </layoutDesc>
@@ -232,7 +246,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-06-21">

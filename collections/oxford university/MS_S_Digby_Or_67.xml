@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5022">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,12 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_S_Digby_Or_67-item1" class="#letters">
-                     <author key="n2010210273" ref="http://viaf.org/viaf/170588717">Amān Allāh Khānah-zād Khān‏Amān Allāh Khān ibn Maḥabbat Khān, d. 1634-5 or 1636-7أمان الله خانهزاد خانأمان الله خان بن محبت خان</author>
+                     <author key="n2010210273" ref="http://viaf.org/viaf/170588717">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Amān Allāh Khānah-zād Khān‏</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Amān Allāh Khān ibn Maḥabbat Khān, d. 1634-5 or 1636-7</persName>
+                        <persName xml:lang="fa">أمان الله خانهزاد خان</persName>
+                        <persName xml:lang="fa" type="alt">أمان الله خان بن محبت خان</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Ruqʻāt-i Amān Allāh Ḥusaynī</title>
                      <title xml:lang="fa">رقعات أمان الله حسيني</title>
                      <incipit xml:lang="fa">حمد وافر مر خدايرا</incipit>
@@ -66,12 +71,12 @@
                               <height>21.7</height>
                               <width>15.1</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="in"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="15" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -179,7 +184,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-04-27"/>

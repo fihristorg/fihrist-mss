@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6399">
    <teiHeader>
       <fileDesc>
@@ -49,7 +49,7 @@
                               <height>21.9</height>
                               <width>14</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -75,10 +75,16 @@
                              n="1"
                              class="http://lccn.loc.gov/sh85068403">
                         <locus from="1v" to="12v ">ff 1v-12v</locus>
-                        <author>Muḥammad Muqīm Lārijānīمحمد مقیم لارجانی
+                        <author>
+                           <persName xml:lang="fa-Latn-x-lc" type="supplied">Muḥammad Muqīm Lārijānī</persName>
                            
                            
                            
+                           <persName xml:lang="fa">محمد مقیم لارجانی
+                              
+                              
+                              
+                           </persName>
                         </author>
                         <title xml:lang="ar-Latn-x-lc">Mishkāt al-varā</title>
                         
@@ -86,8 +92,8 @@
                         
                         
                         <note>On the validity of the ritual prayer</note>
-                        
-                        
+                        <incipit xml:lang="fa"/>
+                        <explicit xml:lang="fa" defective="true"/>
                         <bibl>
                            <ref target="Meredith-Owens_1968" type="page">Meredith-Owens 1968, page 9.</ref>
                         </bibl>
@@ -111,10 +117,16 @@
                              n="2"
                              class="http://lccn.loc.gov/sh85068403">
                         <locus from="130v" to="160r ">ff 130v-160r</locus>
-                        <author>Muḥammad Ja‘far Astarābādīمحمد جعفر استرابادی
+                        <author>
+                           <persName xml:lang="fa-Latn-x-lc" type="supplied">Muḥammad Ja‘far Astarābādī</persName>
                            
                            
                            
+                           <persName xml:lang="fa">محمد جعفر استرابادی
+                              
+                              
+                              
+                           </persName>
                         </author>
                         <title xml:lang="ar-Latn-x-lc">Z̤iyāʼ al-hudá</title>
                         
@@ -122,8 +134,8 @@
                         
                         
                         <note>On the validity of the ritual prayer</note>
-                        
-                        
+                        <incipit xml:lang="fa"/>
+                        <explicit xml:lang="fa" defective="true"/>
                         <bibl>
                            <ref target="Meredith-Owens_1968" type="page">Meredith-Owens 1968, page 9.</ref>
                         </bibl>
@@ -167,7 +179,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-05-03">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3931">
    <teiHeader>
       <fileDesc>
@@ -44,19 +44,26 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_616-item1">
-                     <author key="nr95010167" ref=" http://viaf.org/viaf/36806157">ʿUtbī, Muḥammad ibn ʿAbd al-Jabbār, -1035 or 1036العتبي، محمد بن عبد الجبار، ت. 427 هـ
+                     <author key="nr95010167" ref=" http://viaf.org/viaf/36806157">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">ʿUtbī, Muḥammad ibn ʿAbd al-Jabbār, -1035 or 1036</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">العتبي، محمد بن عبد الجبار، ت. 427 هـ
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Kitāb al-Yamanī</title>
                      
                      <title xml:lang="ar">كتاب اليميني</title>
                      
                      <note>Contains the last part of the second volume only.</note>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="fa" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 875</bibl>
                         <bibl>GAL I 314;I 547-8</bibl>
@@ -71,13 +78,13 @@
                               <height>19.0</height>
                               <width>13.0</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial">Near-contemporary(?) foliation in black ink with eastern Arabic numerals ('176-261'), upper left recto.</foliation>
                         <foliation xml:id="modern">Modern foliation in pencil ('1-75'), upper left recto including front fly leaves as ff. 1-2.</foliation>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1" ruledLines="15" n="mistara">15 lines per page
+                        <layout columns="1" ruledLines="15" n="mistara">15 lines per page<dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -135,7 +142,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-05-06">

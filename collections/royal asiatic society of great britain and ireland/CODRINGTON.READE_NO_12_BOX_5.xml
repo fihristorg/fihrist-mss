@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_433">
    <teiHeader>
       <fileDesc>
@@ -44,11 +44,18 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="CODRINGTON.READE_NO_12_BOX_5-item1">
-                     <author>Mubad Shah?</author>
-                     <author key="n85073276" ref="http://viaf.org/viaf/47114320/">Fānī, Muḥsin, d. 1671 or 2فاني، محسن
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Mubad Shah?</persName>
+                     </author>
+                     <author key="n85073276" ref="http://viaf.org/viaf/47114320/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Fānī, Muḥsin, d. 1671 or 2</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">فاني، محسن
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Dabistān-i madhāhib</title>
                      <title xml:lang="en">An account of the religious creeds and philosophical systems of the East.</title>
@@ -104,7 +111,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-05-30">

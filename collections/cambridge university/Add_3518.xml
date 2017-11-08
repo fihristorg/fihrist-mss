@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_165">
    <teiHeader>
       <fileDesc>
@@ -45,19 +45,26 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="Add_3518-item1" n="1">
                      <locus from="4b" to="104a">4b-104a</locus>
-                     <author>Muẓaffar ibn Muḥammad al-Ḥasanī al-Shifāʼīمظفر بن محمد الحسني الشفائی
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Muẓaffar ibn Muḥammad al-Ḥasanī al-Shifāʼī</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">مظفر بن محمد الحسني الشفائی
+                           
+                           
+                           
+                        </persName>
                      </author>
                      
                      
                      
                      
                      <title xml:lang="en" type="desc">Dictionary of drugs arranged in alphabetical order</title>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/view.php?id=183">no. 1392</ref>
@@ -68,25 +75,35 @@
                   </msItem>
                   <msItem xml:id="Add_3518-item2" n="2" class="#commentary">
                      <locus from="156" to="257">ff. 156-257</locus>
-                     <author>anonymous
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">anonymous</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Wāfīya</title>
                      
                      <title xml:lang="fa">وافيه</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/view.php?id=183">no. 1392</ref>
                         </bibl>
                         <bibl type="text-relations">Commentary on a medical work entitled<title xml:lang="fa-Latn-x-lc">Qānūnchah<foreign xml:lang="fa">قانونگه</foreign>
-                           </title>, probably the one written by<author key="n91035882" ref="http://viaf.org/viaf/24458289/">Jighmīnī, Maḥmūd ibn Muḥammad, d. 1221?<foreign xml:lang="fa">محمود بن محمد الجغميني</foreign>
+                           </title>, probably the one written by<author key="n91035882" ref="http://viaf.org/viaf/24458289/">
+                              <persName xml:lang="fa-Latn-x-lc">Jighmīnī, Maḥmūd ibn Muḥammad, d. 1221?<foreign xml:lang="fa">محمود بن محمد الجغميني</foreign>
+                              </persName>
                            </author>
                         </bibl>
                      </listBibl>
@@ -97,13 +114,13 @@
                   <objectDesc form="other">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -184,7 +201,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-10-01">

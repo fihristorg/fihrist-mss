@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8188">
    <teiHeader>
       <fileDesc>
@@ -41,12 +41,17 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_25733-item1" n="1">
-                     <author key="n82268078" ref="http://www.viaf.org/viaf/50591340/">ʻAlī ibn Muḥammad ibn al-Walīd, -1215علي بن محمد الوليد</author>
+                     <author key="n82268078" ref="http://www.viaf.org/viaf/50591340/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">ʻAlī ibn Muḥammad ibn al-Walīd, -1215</persName>
+                        <persName xml:lang="ar">علي بن محمد الوليد</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Jilāʼ al-ʻuqūl wa-zubdat al-maḥṣūl</title>
                      <title xml:lang="ar">جلاء العقول وزبدة المحصول</title>
                      <incipit>الحمد لله مختص ال محمد صلوات الله عليه وعليهم باسرار العلوم والحكم ... اما بعد فاني لما ... تعين على الشكر لمن خلصني من مهاوي الشبه</incipit>
                      <colophon>قد وقع الفراغ من تحریر هذه الرسالة...فی بلده اسلام پور یوم الاربعا...بخط عبد الحسین بن ملا هبة الله بن ملا جيواجي</colophon>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://digital.info.soas.ac.uk/15594/#page/1/mode/2up/search/">view the printed catalogue Gacek no.144</ref>
@@ -55,7 +60,10 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="ms_25733-item2" n="2">
-                     <author key="no2012023414" ref="http://viaf.org/viaf/231885250">Ḥāmidī, Ḥātim ibn Ibrāhīm, -1199حامدي، حاتم بن ابراهيم</author>
+                     <author key="no2012023414" ref="http://viaf.org/viaf/231885250">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ḥāmidī, Ḥātim ibn Ibrāhīm, -1199</persName>
+                        <persName xml:lang="ar">حامدي، حاتم بن ابراهيم</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Zahr badhr al-ḥaqāʼiq</title>
                      <title xml:lang="ar">زهر بذر الحقائق</title>
                      <incipit>الحمد لله الذي خرست الالسن الناطقة عن صفاته وانقطعت العقول الركية عن الادراك ... اما بعد ايها الاخ فقد جاني سوالك المنبي عن شريف افعالك ... واجبتك باجوبة تجلو القلوب وتضيء الابصار</incipit>
@@ -74,13 +82,13 @@
                         <extent>
                            <ref target="a1">1b-36b f.</ref>
                            <ref target="a2">38b-50 f.</ref>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -132,7 +140,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-02-17">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3493">
    <teiHeader>
       <fileDesc>
@@ -44,16 +44,21 @@
                <msContents>
                   <msItem xml:id="IO_Islamic_4773-item1"
                           class="http://lccn.loc.gov/sh85138802 http://lccn.loc.gov/sh85138844">
-                     <author ref="http://viaf.org/viaf/35254696" key="nr 98001117">Abdülmecit, Sultan of the Turks, 1823-1861Sultan ‘Abd al-Majīd Iسلطان عبد المجید
+                     <author ref="http://viaf.org/viaf/35254696" key="nr 98001117">
+                        <persName xml:lang="tr-Latn-x-lc" type="standard">Abdülmecit, Sultan of the Turks, 1823-1861</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Sultan ‘Abd al-Majīd I</persName>
                         
-                        
-                        
+                        <persName xml:lang="fa">سلطان عبد المجید
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="en" type="desc">Ottoman document</title>
                      
                      
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <listBibl>
                         <bibl>For a more detailed description see Sims-Williams 1986, page 20.</bibl>
                      </listBibl>
@@ -67,7 +72,7 @@
                               <height>75.5</height>
                               <width>54.5</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -117,7 +122,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-12-28">

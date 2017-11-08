@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_11844">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,9 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_Marsh_98-item1" class="#commentary">
-                     <author key="n 2008049541" ref="http://viaf.org/viaf/4405945/">Ibn Abī Ṣādiq al-Nīsābūrī, Abū al-Qāsim ʻAbd al-Raḥmān ibn ʻAlī, d. after<date calendar="#Gregorian" atLeast="1068">1068</date>
+                     <author key="n 2008049541" ref="http://viaf.org/viaf/4405945/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ibn Abī Ṣādiq al-Nīsābūrī, Abū al-Qāsim ʻAbd al-Raḥmān ibn ʻAlī, d. after<date calendar="#Gregorian" atLeast="1068">1068</date>
+                        </persName>
                      </author>
                      <title>Commentary on the medical questions of<persName>Ḥunayn ibn Isḥāq<date calendar="#Gregorian" from="0809" to="0873">809? - 873</date>
                         </persName>
@@ -148,11 +150,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

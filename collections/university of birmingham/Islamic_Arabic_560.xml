@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3915">
    <teiHeader>
       <fileDesc>
@@ -45,10 +45,16 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="Islamic_Arabic_560-item1" n="1">
                      <locus from="1" to="30">ff. 1-30</locus>
-                     <author key="n88266811" ref="http://viaf.org/viaf/8952465">Khujandi, Abu Mahmud, active 10th century
+                     <author key="n88266811" ref="http://viaf.org/viaf/8952465">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Khujandi, Abu Mahmud, active 10th century</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Kitāb ṣanʿat al-āla al-shāmila</title>
                      
@@ -60,8 +66,10 @@
                      </note>
                      <note>The work seems to be complete down to the 6th bāb of the first faṣl of the 4th maqāla. The remainder is missing, except that<locus from="30" to="30">fol. 30</locus>contains a fragment of text around the 2nd bāb of the first faṣl of the 5th (and last) maqāla.</note>
                      <incipit xml:lang="ar">اتمام ... لجميع البلدان استنباط هبة الله بن الحسين الاسطرلابي البغدادي قال رحمه الله نحمد الله الحنان</incipit>
-                     
-                     
+                     <explicit xml:lang="ar" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 1902</bibl>
                         <bibl>GAL Suppl. I 390. (The title fī ʿamal al-āla al-ʿamma given in GAL is a pure invention on the part of Brockelmann.</bibl>
@@ -71,10 +79,16 @@
                   </msItem>
                   <msItem xml:id="Islamic_Arabic_560-item2" n="2" defective="unknown">
                      <locus from="31" to="35">ff. 31-35</locus>
-                     <author key="no2010040530" ref="http://viaf.org/viaf/81318880">Badīʻ al-Asṭurlābī, Hibat Allāh ibn al-Ḥusayn, -1139 or 1140
+                     <author key="no2010040530" ref="http://viaf.org/viaf/81318880">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Badīʻ al-Asṭurlābī, Hibat Allāh ibn al-Ḥusayn, -1139 or 1140</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Itmām mā fī kitāb al-āla al-shāmila min al-nuqṣān (lil-tihādihā) li-jamīʿ al-buldān</title>
                      
@@ -82,9 +96,11 @@
                      
                      
                      <note>See Yāqūt, Irshād 7,241: '[Badīʻ al-Asṭurlābī] made good a deficiancy in the shāmila instrument which [Khujandi] had invented. The latter had constructed the instrument for one latitude, and proved that it was not possible to make it serve more than one latitude. [Badīʻ al-Asṭurlābī], however, pondered over it and discovered a method of constructing it to serve for various latitudes.' The present text is evidently Badīʻ al-Asṭurlābī's theoretical demonstration of the deficiency of Khujandi's work.</note>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 1902</bibl>
                      </listBibl>
@@ -98,7 +114,7 @@
                               <height>21.9</height>
                               <width>15.3</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
@@ -108,7 +124,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="24" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -166,7 +182,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-02-11">

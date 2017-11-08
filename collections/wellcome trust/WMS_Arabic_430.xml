@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7775">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,7 @@
                               <formula>041+002</formula>
                            </seg>
                            <seg type="gathering" n="4+2+2+1+1+4+6+1">
-                              
+                              <dimensions type="leaf" unit="mm" quantity="8"/>
                            </seg>
                         </collation>
                         <condition facs="#i0004">sound</condition>
@@ -149,10 +149,15 @@
                         <title type="normalised" xml:lang="ara-Latn">Mufarriḥ an-Nafs</title>
                         <title type="original">مفرح النفس<locus facs="#i0003">1a.1</locus>
                         </title>
-                        <author>Šaraf ad-Dīn Abū Naṣr Muḥammad b. `Umar Abī-l-Futūḥ al-Baġdādī al-Mārdīnī,<hi rend="italic">alias</hi>Ibn al-Murraشرف الدين ابو نصر محمد بن عمر ابي الفتوح البغدادي ثم المارديني المعروف بابن المرة<forename>محمد بن عمر ابي الفتوح</forename>
-                           <addName type="kunyah">ابو نصر</addName>
-                           <addName type="khitab">شرف الدين</addName>
-                           <addName type="nisbah">البغدادي ثم المارديني</addName>
+                        <author>
+                           <persName xml:lang="eng-Latn" type="standard" facs="#i0003">Šaraf ad-Dīn Abū Naṣr Muḥammad b. `Umar Abī-l-Futūḥ al-Baġdādī al-Mārdīnī,<hi rend="italic">alias</hi>Ibn al-Murra</persName>
+                           <persName xml:lang="ara-Arab" type="original" facs="#i0003">شرف الدين ابو نصر محمد بن عمر ابي الفتوح البغدادي ثم المارديني المعروف بابن المرة</persName>
+                           <persName type="standard" xml:lang="ara-Arab">
+                              <forename>محمد بن عمر ابي الفتوح</forename>
+                              <addName type="kunyah">ابو نصر</addName>
+                              <addName type="khitab">شرف الدين</addName>
+                              <addName type="nisbah">البغدادي ثم المارديني</addName>
+                           </persName>
                         </author>
                         <incipit facs="#i0004">
                            <locus>Fol. 1b.2 - 2a</locus>قال الشيخ الامام شرف الدين محمد بن عمر بن ابي الفتوح البغدادى ثم الماردينى المعروف بابن المره رحمه اللّه تعالى وعفا عنه اما بعد حمدا للّه تعالى خالق الداء والدوا والمنقد من الاغراض والادواء بمفتحات النجاة والشفاء والصلوة على سيد الانبيا محمد الذى جمع الطب<hi rend="bold">روى</hi>عنه روى صلى اللّه عليه وسلم انه قال المعدة بيت الداء والحميه راس الدواء فانى لما طالعت اكثر الكتب الطبيه لم اجد فيها ما يشفى القلب من ذكر الامور المفرحه للنفس والموجبة للذاتها وراحتها وسرورها وابتهاجها ثم ان الشيخ الريئس ابن سينا رحمه الله صنف كتابًا في الادوية القلبية ولم يستوعب اجناسها بل اقتصر على جنس واحدٍ منها وكان الواجب يسبب علو قرده وغزارة علمه ان غرضه الاقتصار ان يذكر من كل جنس طرفًا من الادوية المتناولة وغيرها ولما سالنى من لا يسعنى رد سواله ان جمع فى ذلك كتابًا جمعت هذا الكتاب وجعلته حاويا لاكثر المفرحات للنفس الواصلة اليها من جميع المحسوسات الباطنة والطاهرة وجعلت لكل حاسيةٍ بابًا يخصها ذكرت فيه ما يحصل لها من الامور الموجبة للفرح والسرور ليكون سببًا وتحريضًا على استعمال وقصدت مع ذالك من الايجاز فى كل باب ليكون سببًا لدوام المطالعة فان النفوس تأبى التطويل وان اخر اللّه فى الاجل وساعد القدر عملت فى هذا الفن على جيهة التفضيل دون الاجمال وسميته مفرح النفس وقسمته عشرة ابواب</incipit>
@@ -217,7 +222,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-10-14T14:58:48+01:00">Conversion from WMSmaster to WAMCP<persName>gbrey</persName>

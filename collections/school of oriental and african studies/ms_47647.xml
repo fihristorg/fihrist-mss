@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8770">
    <teiHeader>
       <fileDesc>
@@ -41,7 +41,9 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_47647-item1" n="1">
-                     <author>Anonymous</author>
+                     <author>
+                        <persName>Anonymous</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Nān va namak</title>
                      <title xml:lang="fa">نان و نمك</title>
                      <note>An anonymous manual of cookery, based on recipes used in Shahjahan's kitchens in ten aqsam. The colophon incorrectly calls this work Khan [Khvan]-i ni'mat which is the title of a well known work by Niʻmat Khān ʻAlī.</note>
@@ -50,8 +52,14 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="ms_47647-item2" n="2">
-                     <author>‘Alavī Shīrāzī, Muḥammad Hāshim, d. 1747علوي شيرازي، محمد هاشم</author>
-                     <author>Ḥakīm ʻAlī Riḍāحكيم علي رضى</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">‘Alavī Shīrāzī, Muḥammad Hāshim, d. 1747</persName>
+                        <persName xml:lang="fa">علوي شيرازي، محمد هاشم</persName>
+                     </author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Ḥakīm ʻAlī Riḍā</persName>
+                        <persName xml:lang="fa">حكيم علي رضى</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Khulāṣat qawānīn al-‘ilāj</title>
                      <title xml:lang="fa">خلاصة قوانين العلاج</title>
                      <note>An imperfect copy, lacking some folios at the beginning of a work of pharmacopoeia. It is ascribed to 'Alawi Khan in the colophon but is identical with the Khulasat qawanin al-'ilaj by Hakim 'Ali Riza.</note>
@@ -66,13 +74,13 @@
                         <extent>
                            <ref target="a1">1-83 f.</ref>
                            <ref target="a2">84-166 f.</ref>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -139,7 +147,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-08-28">

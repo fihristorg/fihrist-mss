@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3653">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,16 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_1184-item1">
-                     <author key="nr90001949" ref="http://viaf.org/viaf/73701246">Qāḍīʹzādah, Mūsá ibn Muḥammad
+                     <author key="nr90001949" ref="http://viaf.org/viaf/73701246">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Qāḍīʹzādah, Mūsá ibn Muḥammad</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      
                      
@@ -56,9 +62,11 @@
                      <title xml:lang="en" type="desc">Commentary on<title xml:lang="ar-Latn-x-lc">Al-mulakhkhaṣ fī al-hayʾah</title>by<persName xml:lang="ar-Latn-x-lc" ref="http://viaf.org/viaf/24458289">Maḥmūd ibn Muḥammad Jighmīnī, -1221?</persName>
                      </title>
                      <note>Very detailed marginal gloss, words commented on are overlined in red.</note>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 1904</bibl>
                         <bibl>GAL I 473, no.1, Cmt. 1, II 212; Suppl. I 865</bibl>
@@ -73,12 +81,12 @@
                               <height>17.3</height>
                               <width>12.6</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="25" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -132,7 +140,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-02-13">

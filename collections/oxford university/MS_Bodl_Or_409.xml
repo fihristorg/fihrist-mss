@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_10627">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,9 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_Bodl_Or_409-item1">
-                     <author key="n 85230420" ref="http://www.viaf.org/viaf/90041432/">Suhaylī, ʻAbd al-Raḥmān ibn ʻAbd Allāh,<date calendar="#Gregorian" from="1114" to="1185">1114 or 15-1185</date>
+                     <author key="n 85230420" ref="http://www.viaf.org/viaf/90041432/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Suhaylī, ʻAbd al-Raḥmān ibn ʻAbd Allāh,<date calendar="#Gregorian" from="1114" to="1185">1114 or 15-1185</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Ṫʻarīf wa-al-iʻlām bimā ubhima fī al-Qurʼān min al-asmāʼ al-aʻlām</title>
                      <note>[extracts]</note>
@@ -102,11 +104,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8187">
    <teiHeader>
       <fileDesc>
@@ -44,12 +44,17 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_25732-item1">
-                     <author key="n80118462" ref="http://www.viaf.org/viaf/103638491/">Nuʻmān ibn Muḥammad, Abū Ḥanīfah, d. 974نعمان بن محمد، ابوحنيفة</author>
+                     <author key="n80118462" ref="http://www.viaf.org/viaf/103638491/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Nuʻmān ibn Muḥammad, Abū Ḥanīfah, d. 974</persName>
+                        <persName xml:lang="ar">نعمان بن محمد، ابوحنيفة</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Sharḥ al-akhbār fī faḍāʼil al-aʼimmah al-abrār</title>
                      <title xml:lang="ar">شرح الاخبار في الفضائل الائمة الابرار</title>
                      <note>Ismail history of the Shi'ah. Parts 13-14.</note>
                      <incipit>... الجزء الثالث عسر من كتاب شرح الاخبار ذكر من قتل مع الحسين صلوات الله عليه من اهل بيته قتل مع الحسين بن على بن ابي طالب صلوات الله عليه ... يوم قتل ابنه على بن الحسين</incipit>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://digital.info.soas.ac.uk/15594/#page/1/mode/2up/search/">view the printed catalogue Gacek no.309</ref>
@@ -73,7 +78,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -125,7 +130,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-06-22">

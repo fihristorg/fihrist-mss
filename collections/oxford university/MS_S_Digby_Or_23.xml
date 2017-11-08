@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4978">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,13 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_S_Digby_Or_23-item1">
-                     <author>Shīrvānī, Zayn al-ʻĀbidīn, 1780-1837 or 1838Ibn Iskandar Zayn al-ʻĀbidīn Shirvānī Niʻmat Allāhīزين العابدين شيروانيابن اسكندر زين العابدين شيرواني نعمت اللهي</author>
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Shīrvānī, Zayn al-ʻĀbidīn, 1780-1837 or 1838</persName>
+                        
+                        <persName xml:lang="ar-Latn-x-lc" type="alt">Ibn Iskandar Zayn al-ʻĀbidīn Shirvānī Niʻmat Allāhī</persName>
+                        <persName xml:lang="fa">زين العابدين شيرواني</persName>
+                        <persName xml:lang="fa" type="alt">ابن اسكندر زين العابدين شيرواني نعمت اللهي</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Riyāz̤ al-siyāḥah</title>
                      <title xml:lang="fa">رياض السياحة</title>
                      <incipit xml:lang="fa">بوستان حمد و سپاس و گلستان ثنا بی قیاس</incipit>
@@ -61,12 +67,12 @@
                               <height>32</height>
                               <width>23</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="in"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="25" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -174,7 +180,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-04-27"/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8088">
    <teiHeader>
       <fileDesc>
@@ -41,7 +41,10 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_19074-item1" n="1">
-                     <author key="n83161675" ref="http://viaf.org/viaf/79028386/">Kalābādhī, Muḥammad ibn Ibrāhīm, active 10th centuryكلاباذي، محمد بن اسحاق بن ابراهيم ابو بكر البخاري</author>
+                     <author key="n83161675" ref="http://viaf.org/viaf/79028386/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Kalābādhī, Muḥammad ibn Ibrāhīm, active 10th century</persName>
+                        <persName xml:lang="ar">كلاباذي، محمد بن اسحاق بن ابراهيم ابو بكر البخاري</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Maʻānī al-akhbār</title>
                      <title xml:lang="ar-Latn-x-lc" type="alt">Baḥr al-fawā’id</title>
                      <title xml:lang="ar">‏معانی الاخبار</title>
@@ -57,7 +60,10 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="ms_19074-item2" n="2">
-                     <author>Ibn Wadʻān, Muḥammad ibn ʻAlī, d. 1100 or 1101ابن وعدان، محمد بن علي</author>
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="supplied">Ibn Wadʻān, Muḥammad ibn ʻAlī, d. 1100 or 1101</persName>
+                        <persName xml:lang="ar">ابن وعدان، محمد بن علي</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">al-Arbaʻūn al-wadʻānīyah fī al-mawāʿiẓ wa-al-khuṭab wa-al-aḥādīth</title>
                      <title xml:lang="ar">الاربعون الودعانییة في المواعظ والخطب والاحاديث</title>
                      <note>Forty traditions. Incomplete at end. Text breaks of after the 29th hadith</note>
@@ -88,7 +94,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -142,7 +148,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-05-18">

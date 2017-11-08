@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8438">
    <teiHeader>
       <fileDesc>
@@ -44,12 +44,17 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_44487-item1">
-                     <author key="n83196143" ref="http://www.viaf.org/viaf/27052262/">ʻĀmilī, Bahāʾ al-Dīn Muḥammad ibn Ḥusayn, 1547-1621</author>
+                     <author key="n83196143" ref="http://www.viaf.org/viaf/27052262/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">ʻĀmilī, Bahāʾ al-Dīn Muḥammad ibn Ḥusayn, 1547-1621</persName>
+                        
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Khulaṣāt al-ḥisāb</title>
                      <title xml:lang="ar">خلاصة الحساب</title>
                      <note>Compendium of arithmetic dedicated to Abū al-Ghālib Sulṭān al-Ḥusayn Bahādur Khān, a Safavi prince</note>
                      <incipit>نحمدك يا من لا يحيط بجمع نعمه عدد ولا ينتهى تضاعيف قسمته الى امد ... وبعد فان الفقير الى الله الغنى بهاء الدين ... العاملى ... يقول ان علم الحساب ... لا يخفى علو شانه وسمو مكان</incipit>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://digital.info.soas.ac.uk/15594/#page/1/mode/2up/search/">View the printed catalogue Gacek no.173</ref>
@@ -72,7 +77,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -126,7 +131,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-07-07">

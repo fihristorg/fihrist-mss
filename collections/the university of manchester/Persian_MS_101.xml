@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6577">
    <teiHeader>
       <fileDesc>
@@ -42,28 +42,39 @@
                </msIdentifier>
                <msContents>
                   <summary>
-                     <title type="main"/>
+                     
                   </summary>
                   <msItem xml:id="Persian_MS_101-item1" n="1">
-                     <author key="n 2006064300" ref="http://viaf.org/viaf/14200302/">Āṣafī, -1517Harawī, ĀṣafīĀṣafī Harawī, Āṣaf Ibn-Naʿīm-ad-Dīn Niʿmat-allāh ʿAlī‏Āṣifī Harawī‏ ‎‏آصفى
-                        
-                        
-                        
+                     <author key="n 2006064300" ref="http://viaf.org/viaf/14200302/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Āṣafī, -1517</persName>
+                        <persName xml:lang="ar-Latn-x-lc" type="alt">Harawī, Āṣafī</persName>
+                        <persName xml:lang="ar-Latn-x-lc" type="alt">Āṣafī Harawī, Āṣaf Ibn-Naʿīm-ad-Dīn Niʿmat-allāh ʿAlī‏</persName>
+                        <persName xml:lang="ar-Latn-x-lc" type="alt">Āṣifī Harawī‏ ‎</persName>
+                        <persName xml:lang="fa">‏آصفى
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Dīvān</title>
                      <title xml:lang="fa">دیوان</title>
-                     
-                     
+                     <incipit xml:lang="ar" type="basmalla"/>
+                     <explicit xml:lang="ar"/>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="Persian_MS_101-item2" n="2">
-                     <author key="n 80115655" ref="http://viaf.org/viaf/2474895">Niẓāmī Ganjavī, 1140 or 1141-1202 or 1203نظامی گنجویJamāl al-Dīn Abū Muḥammad Ilyās ibn Yūsuf ibn Muʼayyad Niẓām al-Dīn Ganjavīجمال الدين ابو محمد الياس بن يوسف بن مؤيد نظام الدين گنجوی</author>
+                     <author key="n 80115655" ref="http://viaf.org/viaf/2474895">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Niẓāmī Ganjavī, 1140 or 1141-1202 or 1203</persName>
+                        <persName xml:lang="fa">نظامی گنجوی</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Jamāl al-Dīn Abū Muḥammad Ilyās ibn Yūsuf ibn Muʼayyad Niẓām al-Dīn Ganjavī</persName>
+                        <persName xml:lang="fa" type="alt">جمال الدين ابو محمد الياس بن يوسف بن مؤيد نظام الدين گنجوی</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Makhzan al-asrār</title>
                      <title xml:lang="fa">مخزن الأسرار</title>
                      
                      
-                     
-                     
+                     <incipit xml:lang="ar" type="basmalla"/>
+                     <explicit xml:lang="ar"/>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
@@ -71,8 +82,8 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
@@ -142,7 +153,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014">

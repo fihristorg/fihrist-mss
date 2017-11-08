@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1154">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,9 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Marsh_611-item1" n="1" class="#supplement">
                      <locus from="3" to="215">ff. 3r-215r</locus>
-                     <author key="n 82231794" ref="http://viaf.org/viaf/118408498/">Sakhāwī, Muḥammad ibn ʻAbd al-Raḥmān,<date calendar="#Gregorian" from="1427" to="1497">1427 or 8-1497</date>
+                     <author key="n 82231794" ref="http://viaf.org/viaf/118408498/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Sakhāwī, Muḥammad ibn ʻAbd al-Raḥmān,<date calendar="#Gregorian" from="1427" to="1497">1427 or 8-1497</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Wajīh al-kalām</title>
                      <note>A continuation to 1493 of the<title xml:lang="ar-Latn-x-lc">Taʼrīkh al-Islām</title>of<persName type="standard"
@@ -60,7 +62,9 @@
                   </msItem>
                   <msItem xml:id="MS_Marsh_611-item2" n="2" class="#supplement">
                      <locus from="215" to="224">ff. 215v-224v</locus>
-                     <author key="n 84029870">ʻUlaymī, ʻAbd al-Raḥmān ibn Muḥammad,<date calendar="#Gregorian" from="1456" to="1521">1456-ca. 1521</date>
+                     <author key="n 84029870">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">ʻUlaymī, ʻAbd al-Raḥmān ibn Muḥammad,<date calendar="#Gregorian" from="1456" to="1521">1456-ca. 1521</date>
+                        </persName>
                      </author>
                      <title>Appendix to his<title xml:lang="ar-Latn-x-lc">al-Uns al-jalīl bi-taʼrīkh al-Quds wa-al-Khalīl</title>, covering years 1496-1508</title>
                      <listBibl>
@@ -201,11 +205,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

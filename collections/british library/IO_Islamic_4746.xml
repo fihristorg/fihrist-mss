@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3464">
    <teiHeader>
       <fileDesc>
@@ -49,18 +49,25 @@
                           n="1"
                           class="http://lccn.loc.gov/no2008062695 http://lccn.loc.gov/sh86007183">
                      <locus from="1r" to="6r">ff. 1r-6r</locus>
-                     <author>Unknown
+                     <author>
+                        <persName xml:lang="en" type="desc">Unknown</persName>
                         
                         
                         
+                        <persName xml:lang="fa">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      
                      
                      
                      
                      <title xml:lang="en" type="desc">English notes</title>
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>Written on<date calendar="#Gregorian" notBefore="1778" notAfter="1779">26 June 1778 and 1 Nov. 1779</date>
                      </note>
                      <listBibl>
@@ -72,18 +79,24 @@
                           n="2"
                           class="http://lccn.loc.gov/sh2009117610 http://lccn.loc.gov/sh85064939 http://lccn.loc.gov/sh86007183">
                      <locus from="7r" to="15r">ff. 7r-15r</locus>
-                     <author key="nr 98030666" ref="http://viaf.org/viaf/58997064/">Ṣanīʻ al-Dawlah, Murtaz̤á Qulī Khān, 1856 or 7-1911Murtaz̤á Qulī Khānمرتضى قلى خانصنيع الدوله، مرتضى قلى خان
+                     <author key="nr 98030666" ref="http://viaf.org/viaf/58997064/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Ṣanīʻ al-Dawlah, Murtaz̤á Qulī Khān, 1856 or 7-1911</persName>
                         
-                        
-                        
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Murtaz̤á Qulī Khān</persName>
+                        <persName xml:lang="fa" type="alt">مرتضى قلى خان</persName>
+                        <persName xml:lang="fa">صنيع الدوله، مرتضى قلى خان
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="en">A history of the career of Vizir ʻImād al-Mulk Ghāzī al-Dīn Khān, d. 1800?</title>
                      
                      
                      
                      
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <listBibl>
                         <bibl>For a more detailed description see Sims-Williams 1986, page 17.</bibl>
                      </listBibl>
@@ -93,18 +106,24 @@
                           n="3"
                           class="http://lccn.loc.gov/sh2009117610 http://lccn.loc.gov/sh85064939 http://lccn.loc.gov/sh86007183">
                      <locus from="24v" to="37v">ff. 24v-37v, one side only</locus>
-                     <author key="nr 98030666" ref="http://viaf.org/viaf/58997064/">Ṣanīʻ al-Dawlah, Murtaz̤á Qulī Khān, 1856 or 7-1911Murtaz̤á Qulī Khānمرتضى قلى خانصنيع الدوله، مرتضى قلى خان
+                     <author key="nr 98030666" ref="http://viaf.org/viaf/58997064/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Ṣanīʻ al-Dawlah, Murtaz̤á Qulī Khān, 1856 or 7-1911</persName>
                         
-                        
-                        
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Murtaz̤á Qulī Khān</persName>
+                        <persName xml:lang="fa" type="alt">مرتضى قلى خان</persName>
+                        <persName xml:lang="fa">صنيع الدوله، مرتضى قلى خان
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="en">An account of Nawab Mīrzā Najaf Khān (1737-82)</title>
                      
                      
                      
                      
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <listBibl>
                         <bibl>For a more detailed description see Sims-Williams 1986, page 17.</bibl>
                      </listBibl>
@@ -118,7 +137,7 @@
                               <height>32</height>
                               <width>20</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -201,7 +220,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-12-20">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5240">
    <teiHeader>
       <fileDesc>
@@ -43,13 +43,18 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85046763 http://lccn.loc.gov/sh85100077">
                   <msItem xml:id="Or_10945-item1">
-                     <author>Fakhr al-Dīn ‘Alī ibn Ḥusayn Vā’iẓ al-KāshifīṢāfīفخر الدین علی ابن حسین واعظ الکاشفیصافی</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Fakhr al-Dīn ‘Alī ibn Ḥusayn Vā’iẓ al-Kāshifī</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Ṣāfī</persName>
+                        <persName xml:lang="fa">فخر الدین علی ابن حسین واعظ الکاشفی</persName>
+                        <persName xml:lang="fa" type="alt">صافی</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Laṭā’if al-ẓarā’if</title>
                      <title xml:lang="fa-Latn-x-lc" type="alt">Laṭā’if al-ṭavā’if</title>
                      <title xml:lang="fa">لطائف الظرائف</title>
                      <title xml:lang="fa" type="alt">لطائف الطوائف</title>
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <note>Witty stories</note>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 46.</bibl>
@@ -96,7 +101,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-10-26">

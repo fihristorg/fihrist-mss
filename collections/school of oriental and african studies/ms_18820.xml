@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8074">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,10 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_18820-item1" n="1">
-                     <author ref="http://viaf.org/viaf/100164385/" key="n81059703">ʻAṭṭār, Farīd al-Dīn, d. ca. 1230عطار، فريد الدين محمد بن ابراهيم نيشابورى</author>
+                     <author ref="http://viaf.org/viaf/100164385/" key="n81059703">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">ʻAṭṭār, Farīd al-Dīn, d. ca. 1230</persName>
+                        <persName xml:lang="fa">عطار، فريد الدين محمد بن ابراهيم نيشابورى</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Bīsar′nāmah</title>
                      <title xml:lang="fa">بيسرنامه</title>
                      <incipit>من بغیر تو نبینم در جهان قادرا پروردگارا جاودان</incipit>
@@ -52,7 +55,10 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="ms_18820-item2" n="2">
-                     <author key="n79099888‏" ref="http://viaf.org/viaf/33279771/">Āfarīn Lāhūrī, Faqīr Allāh, -1741 or 1742آفرین لاهوری، فقیر الله</author>
+                     <author key="n79099888‏" ref="http://viaf.org/viaf/33279771/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Āfarīn Lāhūrī, Faqīr Allāh, -1741 or 1742</persName>
+                        <persName xml:lang="fa">آفرین لاهوری، فقیر الله</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Qiṣṣah-i Hīr u Rānjhan</title>
                      <title xml:lang="fa">قصه هیر و رانجهن</title>
                      <note>A masnavi poem based on a Panjabi love-story</note>
@@ -60,7 +66,9 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="ms_18820-item3" n="3">
-                     <author>Anonymous</author>
+                     <author>
+                        <persName>Anonymous</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Qiṣṣah-i Khvājah Ja‘far</title>
                      <title xml:lang="fa">قصه خواجه جعفر</title>
                      <incipit>راويان اخبار و ناقلان آثار چنین روایت کرده اند که در ابتدای دولت هارون رشید</incipit>
@@ -69,7 +77,9 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="ms_18820-item4" n="4">
-                     <author>Anonymous</author>
+                     <author>
+                        <persName>Anonymous</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Qiṣṣah-i Sulṭān Maḥmūd-i Ghaznavī</title>
                      <title xml:lang="fa">قصه سلطان محمود غزنوی</title>
                      <note>A prose tale. Pages are badly damaged</note>
@@ -85,13 +95,13 @@
                            <ref target="a1">1-8 f.</ref>
                            <ref target="a2">9-81 f.</ref>‏<ref target="a3">82-110a f.</ref>
                            <ref target="a4">110b-117 f.</ref>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -171,7 +181,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-11-14">

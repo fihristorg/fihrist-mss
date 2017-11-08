@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7642">
    <teiHeader>
       <fileDesc>
@@ -44,19 +44,21 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="RAS_Turkish_47-item1">
-                     <author key="n85019117" ref="http://viaf.org/viaf/22198747">Alisher Navoiĭ, 1441-1501</author>
+                     <author key="n85019117" ref="http://viaf.org/viaf/22198747">
+                        <persName type="standard">Alisher Navoiĭ, 1441-1501</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Kullīyāt-i Mīr ʻAlī Shīr Navāʼī</title>
                      <title xml:lang="fa">كليات مير علي شير نوائي</title>
                      <note>Illuminated with six miniatures</note>
-                     
-                     
+                     <incipit xml:lang="chg"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <textLang mainLang="chg" otherLangs="fa">Chaghatay Turkish and Persian</textLang>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>f.
+                        <extent>f.<dimensions type="leaf" unit="cm"/>
                            <dimensions type="written" unit="cm">
                               <height>13</height>
                            </dimensions>
@@ -106,7 +108,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-07-01">

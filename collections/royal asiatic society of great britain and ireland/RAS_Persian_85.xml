@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_2937">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,12 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="RAS_Persian_85-item1">
-                     <author key="n79099136‏" ref="http://viaf.org/viaf/57894800/">ʻAlī Muḥammad Khān, 1700?-Mirzā Muḥammad Ḥasan ibn Muḥammad ʻAlīعلي محمد خانمرزا محمد حسن بن محمد علي</author>
+                     <author key="n79099136‏" ref="http://viaf.org/viaf/57894800/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">ʻAlī Muḥammad Khān, 1700?-</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Mirzā Muḥammad Ḥasan ibn Muḥammad ʻAlī</persName>
+                        <persName xml:lang="fa">علي محمد خان</persName>
+                        <persName xml:lang="fa" type="alt">مرزا محمد حسن بن محمد علي</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Mirʼāt-i Aḥmadī</title>
                      <title xml:lang="fa">مرآت احمدي</title>
                      <note>Folio one, recto: two impressions of small bevelled rectangular seal: David Pris 1210. Last back flyleaf, verso: When kindred souls shall blend in [one?] another. Red leather Oriental bind with blind stamped and tooled decoration. Spine a European replacement. Detached portions of the work, as described in Morley's printed catalogue. Parts of the same work as Codrington/Reade No 82. Space for rubrics left unfilled.</note>
@@ -112,7 +117,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-05-30">

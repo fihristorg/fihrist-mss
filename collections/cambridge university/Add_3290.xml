@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_9212">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,20 @@
                <msContents>
                   <summary>Discourses</summary>
                   <msItem xml:id="Add_3290-item1">
-                     <author>Ephraem, Syrus, Saint, 303-373السرياني، مارܐܦܪܝܡ d. 373
+                     <author>
+                        <persName xml:lang="syr-Latn-x-lc"
+                                  type="person"
+                                  ref="http://viaf.org/viaf/100177778/"
+                                  key="n 50082928">Ephraem, Syrus, Saint, 303-373</persName>
                         
-                        
-                        
+                        <persName xml:lang="ar" type="alt">السرياني، مار</persName>
+                        <persName xml:lang="syc" type="alt">ܐܦܪܝܡ d. 373</persName>
+                        <persName xml:lang="syr">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      
                      
@@ -55,8 +65,8 @@
                      
                      <title xml:lang="en">Discourses of Ephraim Syrus,</title>
                      <note>Fifty-two in number, translated from Syriac into Arabic.</note>
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/deptserv/neareastern/syriacmanuscriptsvol2.pdf">Page 943</ref>
@@ -70,15 +80,15 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <support>Paper</support>
-                        <extent>255 ff.
-                           
+                        <extent>255 ff.<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <collation>
                            <p>The quires are mostly of 8 leaves, but some have 10, signed on the first and last page with Arabic words and numerals. The numeration ceases at f. 138v</p>
                         </collation>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1" writtenLines="19">19 lines to the page
+                        <layout columns="1" writtenLines="19">19 lines to the page<dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -132,7 +142,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6032">
    <teiHeader>
       <fileDesc>
@@ -46,7 +46,10 @@
                           n="1"
                           class="http://lccn.loc.gov/sh87001470 http://lccn.loc.gov/sh85142883">
                      <locus from="1v" to="49v">1v-49v ff</locus>
-                     <author>Shihāb ibn Niẓāmشهاب ابن نظام</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Shihāb ibn Niẓām</persName>
+                        <persName xml:lang="fa">شهاب ابن نظام</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Risālah fī ‘ilm al-mu‘ammāyāt</title>
                      <title xml:lang="fa">رسالة فی علم المعمایات</title>
                      <note>A treatise on poetical enigmas</note>
@@ -57,7 +60,10 @@
                   </msItem>
                   <msItem xml:id="Or_5871-item2" n="2" class="http://lccn.loc.gov/sh87001470">
                      <locus from="50r" to="54v">50r-54v ff</locus>
-                     <author>Amīr Sayyid Nīshāpūrīامیر سید نیشاپوری</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Amīr Sayyid Nīshāpūrī</persName>
+                        <persName xml:lang="fa">امیر سید نیشاپوری</persName>
+                     </author>
                      <title xml:lang="en" type="desc">Poetical enigmas</title>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 80.</bibl>
@@ -72,7 +78,7 @@
                               <height>20.4</height>
                               <width>13.8</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -126,7 +132,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-05-07">

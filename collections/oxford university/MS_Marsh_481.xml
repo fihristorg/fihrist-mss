@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1116">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,9 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Marsh_481-item1" n="1">
                      <locus from="2" to="3">ff. 2v-3r</locus>
-                     <author key="n 89109490" ref="http://viaf.org/viaf/103629562/">Ṣarṣarī, Yaḥyá ibn Yūsuf,<date calendar="#Gregorian" when="1258">d. 1258</date>
+                     <author key="n 89109490" ref="http://viaf.org/viaf/103629562/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ṣarṣarī, Yaḥyá ibn Yūsuf,<date calendar="#Gregorian" when="1258">d. 1258</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Qaṣīdah yudhkaru fī kull bayt min abyātihā ḥurūf al-khaṭṭ jamīʻan</title>
                      <listBibl>
@@ -56,7 +58,9 @@
                   </msItem>
                   <msItem xml:id="MS_Marsh_481-item2" n="2">
                      <locus from="4" to="4">f. 4v</locus>
-                     <author key="n 50082069" ref="http://www.viaf.org/viaf/95223177/">Ibn al-ʻArabī,<date calendar="#Gregorian" from="1165" to="1240">1165-1240</date>
+                     <author key="n 50082069" ref="http://www.viaf.org/viaf/95223177/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ibn al-ʻArabī,<date calendar="#Gregorian" from="1165" to="1240">1165-1240</date>
+                        </persName>
                      </author>
                      <title>[A single poem beginning<foreign xml:lang="ar-Latn-x-lc">Innī taʻawwadhtu bī minnī</foreign>...]</title>
                      <listBibl>
@@ -94,7 +98,9 @@
                   </msItem>
                   <msItem xml:id="MS_Marsh_481-item5" n="5">
                      <locus from="27" to="104">ff. 27-104</locus>
-                     <author key="n 84077355" ref="http://viaf.org/viaf/81960987/">Ibn Ghānim, ʻIzz al-Dīn ʻAbd al-Salām ibn Aḥmad, d.<date calendar="#Gregorian" when="1279">1279</date>?</author>
+                     <author key="n 84077355" ref="http://viaf.org/viaf/81960987/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ibn Ghānim, ʻIzz al-Dīn ʻAbd al-Salām ibn Aḥmad, d.<date calendar="#Gregorian" when="1279">1279</date>?</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Ḥall al-rumūz wa mafātīḥ al-kūnūz</title>
                      <listBibl>
                         <bibl>GAL I 451</bibl>
@@ -114,7 +120,9 @@
                   </msItem>
                   <msItem xml:id="MS_Marsh_481-item7" n="7">
                      <locus from="105" to="105">f. 105v*</locus>
-                     <author>Shāfiʻī [?]</author>
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc">Shāfiʻī [?]</persName>
+                     </author>
                      <title>A poem</title>
                      <note>*ff. 106, 107r are blank.</note>
                      <listBibl>
@@ -283,11 +291,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

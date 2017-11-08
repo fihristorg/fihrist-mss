@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7549">
    <teiHeader>
       <fileDesc>
@@ -44,12 +44,16 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="RAS_Ellis_Arabic_13-item1">
-                     <author>Anonymous</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Anonymous</persName>
+                     </author>
                      
                      <title xml:lang="en" type="desc">An unidentified history of the Caliphs from Mu'awiyah to Sulayman (A.H. 40-100) lacking beginning and end. First chapter: Bayʽat Muʽāwiyah li-Yazīd bi-al-Shām wa-akhdh ahl al-Madīnah bi-al-bayʽah. Last chapter: Mā qāla Abū Ḥāzim li-Sulayman wa-mā jará baynahumā min al-kalām.</title>
                      <incipit xml:lang="ar">عبد الله بن عباس وكان بالشام يومين فدخل على معاوية فلما جلس قال معاوية يا ابن عباس ملك الحسن بن علي فقال بن عباس نعم</incipit>
-                     
-                     
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="ar">Arabic</textLang>
                      <msItem xml:id="RAS_Ellis_Arabic_13-item1-item1">
                         <locus>Earliest chapter heading</locus>
@@ -66,13 +70,13 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>77 f.
-                           
+                        <extent>77 f.<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -121,7 +125,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-11-05">

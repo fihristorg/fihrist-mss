@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3825">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,15 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_275-item1">
-                     <author key="n91039792" ref="http://viaf.org/viaf/90063884/">Bakrī, Muṣṭafá, 1687 or 8-1748 or 9الصديقي، مصطفى بن كمال الدين
+                     <author key="n91039792" ref="http://viaf.org/viaf/90063884/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Bakrī, Muṣṭafá, 1687 or 8-1748 or 9</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">الصديقي، مصطفى بن كمال الدين
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Al-fatḥ al-Qudsī wa-al-kashf al-unsī</title>
                      <title xml:lang="ar-Latn-x-lc" type="alt">Wird al-saḥar</title>
@@ -57,8 +62,10 @@
                      <note>A work containing various prayers, both in poetry and prose</note>
                      <note>An index of the main contents is found on the title page.</note>
                      <incipit xml:lang="ar">الحمد لله الذي اورد من اراد المقام ... و بعد فاعلم ايها المريد الملازم على اقتطاف ازهار الاوراد ... و سميته بالفتح القدسي و الكشف الانسي و المنهج القريب الى لقاء الحبيب</incipit>
-                     
-                     
+                     <explicit xml:lang="fa" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 800</bibl>
                         <bibl>GAL II 348-51, esp. no. 14</bibl>
@@ -73,14 +80,14 @@
                               <height>16.3</height>
                               <width>11.4</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="13" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                            <note>13 lines per page</note>
                         </layout>
                      </layoutDesc>
@@ -139,7 +146,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-07-07">

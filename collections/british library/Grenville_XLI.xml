@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3267">
    <teiHeader>
       <fileDesc>
@@ -43,16 +43,23 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85100085">
                   <msItem xml:id="Grenville_XLI-item1" rend="visible">
-                     <author key="http://lccn.loc.gov/n79086812" ref="http://viaf.org/viaf/56731778">Ḥāfiẓ, 14th cent.حافظ شيرازى، شمس الدين محمد
+                     <author key="http://lccn.loc.gov/n79086812" ref="http://viaf.org/viaf/56731778">
+                        <persName xml:lang="fa-Latn-x-lc"
+                                  type="standard"
+                                  key="http://lccn.loc.gov/n79086812">Ḥāfiẓ, 14th cent.</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">حافظ شيرازى، شمس الدين محمد
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Dīvān-i Ḥāfiẓ</title>
                      <title xml:lang="fa">ديوان حافظ</title>
                      
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>The Dīvān of Ḥāfiẓ, wanting about forty leases at the beginning, and not including the Qaṣīdahs</note>
                      <listBibl>
                         <bibl>For a more detailed description see Rieu 1876-83, page 629.</bibl>
@@ -172,7 +179,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-07-16">

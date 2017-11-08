@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8302">
    <teiHeader>
       <fileDesc>
@@ -41,7 +41,10 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_380549-item1">
-                     <author>Ali wa Salimuعلي و سليم</author>
+                     <author>
+                        <persName type="supplied" xml:lang="swa-Latn-x-lc">Ali wa Salimu</persName>
+                        <persName type="supplied" xml:lang="swa">علي و سليم</persName>
+                     </author>
                      <title xml:lang="swa-Latn-x-lc">Mawaidha wa Ali Basa’ida</title>
                      
                      <incipit>نپ لبغ دفتار نینک مشعر ند ن یک خیر یا آخر اندنیا / Nipa langu daftari, niandike mashairi, ndani yake yenye kheri, ya akhera na duniya</incipit>
@@ -56,13 +59,13 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>18 f.
-                           
+                        <extent>18 f.<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -115,7 +118,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2017-10-04">

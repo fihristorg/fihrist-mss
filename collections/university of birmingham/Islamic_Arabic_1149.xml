@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3642">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,15 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_1149-item1">
-                     <author key="nr93046183" ref="http://viaf.org/viaf/44175712">Nashshār, ʿUmar ibn Qāsim, -1531 or 1532النشار، عمر بن قاسم، ت. 938 هـ
+                     <author key="nr93046183" ref="http://viaf.org/viaf/44175712">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Nashshār, ʿUmar ibn Qāsim, -1531 or 1532</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">النشار، عمر بن قاسم، ت. 938 هـ
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Al-budūr al-zāhirah fī al-qirāʿāt al-ʿashrah al-mutawātirah</title>
                      
@@ -55,8 +60,10 @@
                      
                      
                      <incipit xml:lang="ar">بسم الله الرحمن الرحيم يقول راجى عفو ربه القديم الدائم عمر الانصاري ابن قاسم الحمد لله الذي علم الانسان ما لم يعلم</incipit>
-                     
-                     
+                     <explicit xml:lang="fa" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 62</bibl>
                         <bibl>GAL II 115-16; II 142, esp. no. 3</bibl>
@@ -71,14 +78,14 @@
                               <height>20.5</height>
                               <width>15.6</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="21" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -132,7 +139,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-03-13">

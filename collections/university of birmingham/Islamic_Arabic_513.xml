@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3902">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,15 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_513-item1">
-                     <author key="n81048213" ref="http://viaf.org/viaf/90071384/">Zamakhsharī, Maḥmūd ibn ʻUmar, 1075-1144الزمخشري
+                     <author key="n81048213" ref="http://viaf.org/viaf/90071384/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Zamakhsharī, Maḥmūd ibn ʻUmar, 1075-1144</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">الزمخشري
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Al-kashshāf ʻan ḥaqāʼiq al-tanzīl</title>
                      
@@ -56,9 +61,11 @@
                      
                      <note>Verses of the Qurʾān in red, headings of the sūrahs in gold; golden and blue borderlines, first page illuminated; some notes on the margins; no title-page.</note>
                      <note>Illuminated incipit page has a headpiece</note>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 9</bibl>
                         <bibl>GAL I 289-93, esp. no. 1; I 507-13</bibl>
@@ -74,7 +81,7 @@
                               <height>21.8</height>
                               <width>12.6</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial">Contemporary foliation in black ink with Eastern Arabic numerals, top left recto.Catchwords on each leaf, lower left verso.</foliation>
                         <foliation xml:id="modern">Modern foliation in pencil with Western Arabic numerals, upper left recto.</foliation>
@@ -84,7 +91,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="35" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -150,7 +157,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-02-26">

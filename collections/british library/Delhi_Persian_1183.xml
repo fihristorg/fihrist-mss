@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3174">
    <teiHeader>
       <fileDesc>
@@ -47,18 +47,25 @@
                           n="14"
                           class="http://lccn.loc.gov/sh85004692 http://lccn.loc.gov/sh2010100284 http://lccn.loc.gov/n79046204">
                      <locus from="56r" to="66v">ff. 56r-66v</locus>
-                     <author>Muḥammad ibn Shaykh Muḥammad SabzavārīSarfarāzīÏadrīHaravīمحمد بن شیخ محمد سبزواری
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Muḥammad ibn Shaykh Muḥammad Sabzavārī</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Sarfarāzī</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Ïadrī</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Haravī</persName>
                         
-                        
-                        
+                        <persName xml:lang="fa">محمد بن شیخ محمد سبزواری
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Tuḥfat al-gharāʼib</title>
                      <title xml:lang="fa">تحفة الغرائب</title>
                      
                      
                      
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa"/>
                      <note>A compilation of Qurʼānic passages with talismanic and magical virtues, together with instructions for their use</note>
                      <note>This work is dated<date calendar="#Hijri-qamari" when="1684">22 Jum II 1095</date>, the date of<ref type="no" target="Uk">Delhi Persian 1183b (British Library).</ref>(<locus n="11r">f 11r</locus>)</note>
                      <listBibl>
@@ -150,7 +157,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-02-06">

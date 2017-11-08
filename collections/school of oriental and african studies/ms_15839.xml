@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8040">
    <teiHeader>
       <fileDesc>
@@ -44,26 +44,33 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_15839-item1">
-                     <author key="no 94007782" ref="http://viaf.org/viaf/37057665">Juvaynī, ʻAlāʼ al-Dīn ʻAṭā Malik, 1226-1283علاء الدين عطاملك بن بهاء الدين محمد الجويني</author>
+                     <author key="no 94007782" ref="http://viaf.org/viaf/37057665">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Juvaynī, ʻAlāʼ al-Dīn ʻAṭā Malik, 1226-1283</persName>
+                        <persName xml:lang="fa">علاء الدين عطاملك بن بهاء الدين محمد الجويني</persName>
+                        
+                        
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Taʼrīkh-i Jahāngushāy</title>
                      <title xml:lang="fa">تأريخ جهانگشای</title>
                      <note>A history of the Mongol Empire from the rise of Genghis Khan to 1256 A.D.</note>
                      <incipit>سپاس و ثنا معبودیرا که واجب الوجوب است</incipit>
                      <explicit>تمت اکتاب...سنه 1273</explicit>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>148 f.
-                           
+                        <extent>148 f.<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -114,7 +121,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-10-14">

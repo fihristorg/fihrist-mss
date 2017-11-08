@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5964">
    <teiHeader>
       <fileDesc>
@@ -73,7 +73,10 @@
                   </msItem>
                   <msItem xml:id="Or_5415-item3" n="3" class="http://lccn.loc.gov/sh85054793">
                      <locus from="35r" to="53v">35r-53v ff</locus>
-                     <author>Nāẓimناظم</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Nāẓim</persName>
+                        <persName xml:lang="fa">ناظم</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Some ghazals</title>
                      <listBibl>
                         <bibl>For a more detailed description see Glyn Meredith-Owens: Handlist of Persian Manuscripts, 1895-1966. [London]: Trustees of the British Museum, 1968, p.90.</bibl>
@@ -84,7 +87,10 @@
                           n="4"
                           class="http://lccn.loc.gov/sh2002005579 http://lccn.loc.gov/sh85129656">
                      <locus from="54v" to="65v">54v-65v ff</locus>
-                     <author ref="http://viaf.org/viaf/100164385" key="n81059703">ʻAṭṭār, Farīd al-Dīn, -approximately 1230فرید الدین عطّار<note>Ascribed to ‘Aṭṭār</note>
+                     <author ref="http://viaf.org/viaf/100164385" key="n81059703">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">ʻAṭṭār, Farīd al-Dīn, -approximately 1230</persName>
+                        <persName xml:lang="fa">فرید الدین عطّار</persName>
+                        <note>Ascribed to ‘Aṭṭār</note>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Vaṣlatnāmah</title>
                      <title xml:lang="fa">وصلتنامه</title>
@@ -98,7 +104,10 @@
                           n="5"
                           class="http://lccn.loc.gov/sh85100075  http://lccn.loc.gov/sh85046763">
                      <locus from="67v" to="71v">67v-71v ff</locus>
-                     <author>Buhlūlبهلول<note>An allegorical poem ascribed to ‘Aṭṭār but actually by Buhlūl</note>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Buhlūl</persName>
+                        <persName xml:lang="fa">بهلول</persName>
+                        <note>An allegorical poem ascribed to ‘Aṭṭār but actually by Buhlūl</note>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Gul u Bulbul</title>
                      <title xml:lang="fa">گل و بلبل</title>
@@ -111,7 +120,10 @@
                   </msItem>
                   <msItem xml:id="Or_5415-item6" n="6" class="http://lccn.loc.gov/sh85129656">
                      <locus from="54v" to="65v">54v-65v ff</locus>
-                     <author ref="http://viaf.org/viaf/100164385" key="n81059703">ʻAṭṭār, Farīd al-Dīn, -approximately 1230فرید الدین عطّار</author>
+                     <author ref="http://viaf.org/viaf/100164385" key="n81059703">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">ʻAṭṭār, Farīd al-Dīn, -approximately 1230</persName>
+                        <persName xml:lang="fa">فرید الدین عطّار</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">A portion of the Manṭiq al-Ṭayr</title>
                      <title xml:lang="fa">منطق الطیر</title>
                      <listBibl>
@@ -212,7 +224,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-07-22">

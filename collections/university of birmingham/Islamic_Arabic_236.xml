@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3805">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,16 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_236-item1">
-                     <author key="n81075789" ref="http://viaf.org/viaf/302752415">Thaʿālibī, ʿAbd al-Malik ibn Muḥammad, 961 or 962-1037 or 1038
+                     <author key="n81075789" ref="http://viaf.org/viaf/302752415">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Thaʿālibī, ʿAbd al-Malik ibn Muḥammad, 961 or 962-1037 or 1038</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Kitāb yawāqīt al-mawāqīt fī madḥ al-shayʾ wa-dhammihī</title>
                      
@@ -56,9 +62,11 @@
                      
                      <note>Praise and blame of many subjects supported by quotation from prose and poetry.</note>
                      <note>On the end fly leaves<locus from="74" to="76">(fol. 74-76)</locus>have been added some extra pieces, in other 18th-century hands, including a<title xml:lang="ar-Latn-x-lc">Qaṣīdah</title>by<persName xml:lang="ar-Latn-x-lc" type="supplied">Manjaq Pāshā, d. 1669</persName>, and a<title xml:lang="ar-Latn-x-lc">Qaṣīdah</title>on a visit to a graden in<date calendar="#Hijri-qamari" when="1737">1150</date>.</note>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="fa" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 1717</bibl>
                         <bibl>GAL I 284-6; no.24;</bibl>
@@ -73,14 +81,14 @@
                               <height>16.4</height>
                               <width>12.5</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="15" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                            <note>15-16 lines per page</note>
                         </layout>
                      </layoutDesc>
@@ -141,7 +149,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-07-16">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_285">
    <teiHeader>
       <fileDesc>
@@ -44,42 +44,59 @@
                </msIdentifier>
                <msContents class="#multipleWorks">
                   <msItem xml:id="Add_3727-item1" n="1" class="#abridgement">
-                     <author key="n85197808" ref="http://viaf.org/viaf/100328821/">Anṣārī, Zakarīyā ibn Muḥammad, ca. 1423-ca. 1520ابو يحيى زكريا الانصاري
+                     <author key="n85197808" ref="http://viaf.org/viaf/100328821/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Anṣārī, Zakarīyā ibn Muḥammad, ca. 1423-ca. 1520</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">ابو يحيى زكريا الانصاري
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Manhaj al-ṭullāb</title>
                      
                      <title xml:lang="ar">منهج الطلاب</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne1922/view.php?id=129">no. 1273</ref>
                         </bibl>
                         <bibl type="text-relations">Abridgement of the<title xml:lang="ar-Latn-x-lc">Minhāj al-ṭālibīn<foreign xml:lang="ar">منهاج الطالبين</foreign>
-                           </title>of<author key="n82009538" ref="http://viaf.org/viaf/90059668/">Nawawī, 1233-1277أبي زكريا يحيى ابن شرف النووي</author>.</bibl>
+                           </title>of<author key="n82009538" ref="http://viaf.org/viaf/90059668/">
+                              <persName xml:lang="ar-Latn-x-lc" key="n82009538">Nawawī, 1233-1277</persName>
+                              <persName xml:lang="ar">أبي زكريا يحيى ابن شرف النووي</persName>
+                           </author>.</bibl>
                      </listBibl>
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="Add_3727-item2" n="2" class="gloss">
-                     <author>Nūr al-Dīn al-Ziyādīنور الدين الزيادي
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="supplied">Nūr al-Dīn al-Ziyādī</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">نور الدين الزيادي
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Ḥāshiyat manhaj al-ṭullāb</title>
                      
                      <title xml:lang="ar">حاشية منهج الطلاب</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne1922/view.php?id=129">no. 1273</ref>
@@ -92,13 +109,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -169,7 +186,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-08-24">

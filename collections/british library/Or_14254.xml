@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5658">
    <teiHeader>
       <fileDesc>
@@ -43,10 +43,19 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh97008481 http://lccn.loc.gov/sh85100070">
                   <msItem xml:id="Or_14254-item1">
-                     <author>Forshall, Josiah, 1795-1863
+                     <author>
+                        <persName key="n82048625"
+                                  ref="http://viaf.org/viaf/22899508/"
+                                  xml:lang="ar-Latn-x-lc"
+                                  type="standard">Forshall, Josiah, 1795-1863</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="la">Catalogus Codicum Persicorum qui in Bibliotheca Richiana extant 1848, Nos. 7600-7829</title>
                      
@@ -55,8 +64,8 @@
                      
                      <note>Descriptive catalogue, in Latin, of Persian manuscripts collected by<persName ref="http://viaf.org/viaf/66558894/" xml:lang="en" key="no90026771">Rich, Claudius James, 1787-1821</persName>, now in the<name type="place" key="n81139951" ref="http://lccn.loc.gov/n81139951">British Library</name>
                      </note>
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <listBibl>
                         <bibl>For a more detailed description see Waley 1998, pages 68-9.</bibl>
                      </listBibl>
@@ -117,7 +126,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-11-17">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3966">
    <teiHeader>
       <fileDesc>
@@ -45,10 +45,15 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="Islamic_Arabic_781-item1" n="1">
                      <locus from="8" to="127b">ff. 8-127b</locus>
-                     <author key="n86079942" ref="http://viaf.org/viaf/100625716">Khafājī, Aḥmad ibn Muḥammad, 1571 or 1572-1659الخفاجي، أحمد بن محمد، 977-1069 هـ
+                     <author key="n86079942" ref="http://viaf.org/viaf/100625716">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Khafājī, Aḥmad ibn Muḥammad, 1571 or 1572-1659</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">الخفاجي، أحمد بن محمد، 977-1069 هـ
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Khabāyā al-zawāyā fīmā fī al-rijāl min al-baqāyā</title>
                      
@@ -57,9 +62,11 @@
                      
                      <note>Biographies of learned men of the author's time</note>
                      <note>Seems to be incomplete</note>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="fa" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 1882</bibl>
                         <bibl>GAL II 285, no. 6; Suppl. II 396</bibl>
@@ -68,19 +75,26 @@
                   </msItem>
                   <msItem xml:id="Islamic_Arabic_781-item2" n="2">
                      <locus from="128a" to="130a">ff. 128a-130a</locus>
-                     <author key="n86079942" ref="http://viaf.org/viaf/100625716">Khafājī, Aḥmad ibn Muḥammad, 1571 or 1572-1659الخفاجي، أحمد بن محمد، 977-1069 هـ
+                     <author key="n86079942" ref="http://viaf.org/viaf/100625716">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Khafājī, Aḥmad ibn Muḥammad, 1571 or 1572-1659</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">الخفاجي، أحمد بن محمد، 977-1069 هـ
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Qaṣīdah and other poetry</title>
                      
                      
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 1882</bibl>
                         <bibl>GAL II 285, no. 6; Suppl. II 396</bibl>
@@ -95,14 +109,14 @@
                               <height>20.3</height>
                               <width>15.4</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="25" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                            <note>25 lines per page</note>
                         </layout>
                      </layoutDesc>
@@ -167,7 +181,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-07-28">

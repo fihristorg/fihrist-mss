@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_9410">
    <teiHeader>
       <fileDesc>
@@ -46,19 +46,25 @@
                   <msItem xml:id="Dd_6.26-item1">
                      <msItem xml:id="Dd_6.26-item1-item1" n="1">
                         <locus from="1" to="54">ff. 1-54</locus>
-                        <author key="n85210805" ref="http://viaf.org/viaf/90062915/">Sajāwandī, Sirāj al-Dīn Muḥammad ibn Muḥammad, 12th cent.السجاوندي، سراج الدين محمد بن محمد
+                        <author key="n85210805" ref="http://viaf.org/viaf/90062915/">
+                           <persName xml:lang="ar-Latn-x-lc">Sajāwandī, Sirāj al-Dīn Muḥammad ibn Muḥammad, 12th cent.</persName>
                            
-                           
-                           
+                           <persName xml:lang="ar">السجاوندي، سراج الدين محمد بن محمد
+                              
+                              
+                              
+                           </persName>
                         </author>
                         <title xml:lang="ar-Latn-x-lc">al-Mabsūṭ fī ṭaraq al-ʻamal wa-al-ḥisāb</title>
                         
                         <title xml:lang="ar">المبسوط في طرق العمل والحساب</title>
                         
                         
-                        
-                        
-                        
+                        <incipit xml:lang="ar"/>
+                        <explicit xml:lang="ar" defective="true"/>
+                        <note>
+                           <foreign xml:lang="ar"/>
+                        </note>
                         <listBibl>
                            <bibl>
                               <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/view.php?id=117">no. 996</ref>
@@ -68,19 +74,25 @@
                      </msItem>
                      <msItem xml:id="Dd_6.26-item1-item2" n="2">
                         <locus from="58" to="88">ff. 58-88</locus>
-                        <author key="n91030450" ref="http://viaf.org/viaf/78635678/">Abū al-Jaysh, Muḥammad ibn Ḥusayn, d. 1228 or 9ابو الجيش، محمد بن حسين
+                        <author key="n91030450" ref="http://viaf.org/viaf/78635678/">
+                           <persName xml:lang="ar-Latn-x-lc" type="standard">Abū al-Jaysh, Muḥammad ibn Ḥusayn, d. 1228 or 9</persName>
                            
-                           
-                           <addName xml:lang="ar" type="nisbah">الانصري الاندلسي</addName>
+                           <persName xml:lang="ar">ابو الجيش، محمد بن حسين
+                              
+                              
+                              <addName xml:lang="ar" type="nisbah">الانصري الاندلسي</addName>
+                           </persName>
                         </author>
                         <title xml:lang="ar-Latn-x-lc">Mukhtaṣar fī al-ʻarūḍ</title>
                         
                         <title xml:lang="ar">مختصر في العروض</title>
                         
                         
-                        
-                        
-                        
+                        <incipit xml:lang="ar"/>
+                        <explicit xml:lang="ar" defective="true"/>
+                        <note>
+                           <foreign xml:lang="ar"/>
+                        </note>
                         <listBibl>
                            <bibl>
                               <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/view.php?id=120">no. 1020</ref>
@@ -94,13 +106,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -170,7 +182,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-06-08">

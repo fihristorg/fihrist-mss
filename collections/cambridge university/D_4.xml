@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_538">
    <teiHeader>
       <fileDesc>
@@ -44,25 +44,35 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="D_4-item1" class="#commentary">
-                     <author>Sabzavārī, Ḥusayn ibn Ḥasan, d. 1436-7سبزوارى، حسين بن حسن
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Sabzavārī, Ḥusayn ibn Ḥasan, d. 1436-7</persName>
                         
                         
-                        <addName xml:lang="fa" type="nisbah">الخوارزمى</addName>
+                        <persName xml:lang="fa">سبزوارى، حسين بن حسن
+                           
+                           
+                           <addName xml:lang="fa" type="nisbah">الخوارزمى</addName>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Jawāhir al-asrār fī sharḥ al-mathnawī</title>
                      
                      <title xml:lang="ar">جواهر الاسرار في شرح المثنوي</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/nicholson1932/view.php?id=47"/>
                         </bibl>
                         <bibl type="text-relations">Commentary on the<title xml:lang="fa-Latn-xlc">Mas̲navī-i maʻnavī<foreign xml:lang="fa">مثنوي معنوي</foreign>
-                           </title>of<author key="n81059876" ref="http://viaf.org/viaf/98930150/">Jalāl al-Dīn Rūmī, Maulana, 1207-1273&gt;مولانا جلال الدين رومى</author>.</bibl>
+                           </title>of<author key="n81059876" ref="http://viaf.org/viaf/98930150/">
+                              <persName xml:lang="fa-Latn-x-lc">Jalāl al-Dīn Rūmī, Maulana, 1207-1273</persName>
+                              <persName xml:lang="fa">&gt;مولانا جلال الدين رومى</persName>
+                           </author>.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
@@ -71,13 +81,13 @@
                   <objectDesc form="other">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -149,7 +159,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-07-28">

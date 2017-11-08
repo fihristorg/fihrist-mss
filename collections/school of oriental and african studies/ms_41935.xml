@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8402">
    <teiHeader>
       <fileDesc>
@@ -44,29 +44,45 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_41935-item1" n="1">
-                     <author>&gt;Ḥasan ibn Fatḥ Allāhحسن بن فتح الله</author>
+                     <author>&gt;<persName xml:lang="fa-Latn-x-lc" type="supplied">Ḥasan ibn Fatḥ Allāh</persName>
+                        <persName xml:lang="fa">حسن بن فتح الله</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Mas̲navī-i ḥusn</title>
                      <title xml:lang="fa">مثنوي حسن</title>
                      <title xml:lang="fa-Latn-x-lc" type="alt">Tuḥfah-’i maymūnah-i sharīfah</title>
                      <title xml:lang="fa" type="alt">تحفه ميمونه شريفه</title>
                      <note>A poem interspersed with qasidahs, chronograms etc. in praise of the Prophet and his family and of Shaykh Muḥammad ibn Faz̤l Allāh al-Bakrī</note>
                      <incipit xml:lang="fa">بسم الله الرحمن الرحيم كرد خدا رحمت خودرا عميم</incipit>
-                     
-                     
+                     <explicit xml:lang="fa" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="ms_41935-item2" n="2">
-                     <author ref="http://viaf.org/viaf/306124845">Munīr Lāhawrī, Abū al-Barakāt, -1644منير لاهوري، ابو البركات</author>
+                     <author ref="http://viaf.org/viaf/306124845">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Munīr Lāhawrī, Abū al-Barakāt, -1644</persName>
+                        <persName xml:lang="fa">منير لاهوري، ابو البركات</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Nawbāvah</title>
                      <title xml:lang="fa">نوباوه</title>
                      <note>A collection of letters</note>
                      <incipit xml:lang="fa">اين منتخب از بخت نكو فرجامش افتاده چو آغاز نکو انجامش</incipit>
-                     
+                     <explicit xml:lang="fa" defective="true"/>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="ms_41935-item3" n="3">
-                     <author key="(DNB)1089813872‏" ref="http://viaf.org/viaf/287381165">Nāmī Iṣfahānī, Muḥammad Ṣādiq, -1789Nāmī Iṣfahānī, Mīrzā Muḥammad Ṣādiq Mūsavī‏‏‏نامى اصفهانى، محمد صادق</author>
-                     <author key="nr 93051704" ref="http://viaf.org/viaf/2347436">Shīrāzī, ʻAlī Riz̤ā ibn ʻAbd al-Karīmشيرازي، علي رضا بن عبد الكريم</author>
+                     <author key="(DNB)1089813872‏" ref="http://viaf.org/viaf/287381165">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Nāmī Iṣfahānī, Muḥammad Ṣādiq, -1789</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Nāmī Iṣfahānī, Mīrzā Muḥammad Ṣādiq Mūsavī</persName>
+                        
+                        <persName xml:lang="fa">‏‏‏نامى اصفهانى، محمد صادق</persName>
+                     </author>
+                     <author key="nr 93051704" ref="http://viaf.org/viaf/2347436">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Shīrāzī, ʻAlī Riz̤ā ibn ʻAbd al-Karīm</persName>
+                        
+                        <persName xml:lang="fa">شيرازي، علي رضا بن عبد الكريم</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Tārīkh-i zandīyah</title>
                      <title xml:lang="fa">تاريخ زنديه</title>
                      <incipit xml:lang="fa">بر ارباب خرد و دانش و اصحاب ذكا و بينش نهى و مستور نخواهد بود</incipit>
@@ -81,13 +97,13 @@
                            <ref target="a1">1-155 f.</ref>
                            <ref target="a2">156-284 f.</ref>
                            <ref target="a3">285-357 f.</ref>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -157,7 +173,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-03-18">

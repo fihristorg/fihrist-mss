@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3607">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,15 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_1070-item1">
-                     <author key="n82164848" ref="http://viaf.org/viaf/90038752">Muslim ibn al-Ḥajjāj al-Qushayrī, ca. 821-875مسلم بن الحجاج النيسابوري، 206-261 هـ
+                     <author key="n82164848" ref="http://viaf.org/viaf/90038752">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Muslim ibn al-Ḥajjāj al-Qushayrī, ca. 821-875</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">مسلم بن الحجاج النيسابوري، 206-261 هـ
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Ṣaḥīḥ</title>
                      
@@ -56,9 +61,11 @@
                      
                      <note>Second part only.</note>
                      <note>Beginning: bāb al-bahy ʿan al-khurūj min al-masjid idhā adhdhana al-muʾadhdhin; end: wa ramalah bi al-bait li-yuriya al-mushrikīnah quwwatahu.</note>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 115</bibl>
                         <bibl>GAL I 160</bibl>
@@ -73,14 +80,14 @@
                               <height>26.1</height>
                               <width>17.6</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="17" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -143,7 +150,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-01-22">

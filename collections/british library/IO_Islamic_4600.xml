@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3301">
    <teiHeader>
       <fileDesc>
@@ -43,18 +43,23 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85100084">
                   <msItem xml:id="IO_Islamic_4600-item1">
-                     <author>Muḥammad b. Badr al-Jājurmīمحمد بن بدر الجاجرمی
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Muḥammad b. Badr al-Jājurmī</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">محمد بن بدر الجاجرمی
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Muʼnis al-aḥrār fī daqāʼiq al-ashʻār</title>
                      <title xml:lang="fa">موئنس الاحرار فی دقائق الاشعار</title>
                      
                      
                      
-                     
-                     
+                     <incipit xml:lang="ota"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>An extensive anthology of Persian poetry, arranged according to subjects in thirty chapters</note>
                      <note>The author in his preface, after setting forth the titles of the chapters, gives a detailed list of the poets from whose works he quotes in this book</note>
                      <note>For a full account of this exceedingly rare and very valuable work, originally completed in<date calendar="#Hijri-qamari" when="1341">Ramadan 741</date>
@@ -131,7 +136,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-02-01">

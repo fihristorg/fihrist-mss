@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8637">
    <teiHeader>
       <fileDesc>
@@ -41,7 +41,13 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_46450-item1">
-                     <author key="n80012961‏" ref="http://viaf.org/viaf/90077852/">Ṣafī, ʻAlī ibn Ḥusayn Kāshifī 1463-1532 or 1533صافي، علي بن حسين كاشفي</author>
+                     <author key="n80012961‏" ref="http://viaf.org/viaf/90077852/">
+                        <persName xml:lang="fa" type="standard">Ṣafī, ʻAlī ibn Ḥusayn Kāshifī 1463-1532 or 1533</persName>
+                        
+                        
+                        
+                        <persName xml:lang="fa">صافي، علي بن حسين كاشفي</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Laṭā’if al-ẓarā’if</title>
                      <title xml:lang="fa-Latn-x-lc" type="alt">Laṭā’if al-ṭavā’if</title>
                      <title xml:lang="fa">لطائف الظرائف</title>
@@ -55,13 +61,13 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>112 f.
-                           
+                        <extent>112 f.<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -114,7 +120,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-08-24">

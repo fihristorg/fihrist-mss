@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8280">
    <teiHeader>
       <fileDesc>
@@ -44,24 +44,26 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_380367-item1">
-                     <author>Anonymous</author>
+                     <author>
+                        <persName>Anonymous</persName>
+                     </author>
                      <title xml:lang="en" type="desc">Firman issued in the name of Sultan Mehmed IV from the Ottoman camp at Bursa in the ten day period 11th - 20th Dhu'l-Qa'da 1069 (31 July - 9 August 1659) and addressed to the qadi of Izmir (Smyrna)</title>
                      <note>Concerns a claim for money by the Jew Manul against three Jews of Smyrna. The qadi is ordered to see that they present themselves at a camp so that the case may be heard in the Divan before the Grand Vizier and the Kazaskers and no injustice be done.</note>
-                     
-                     
+                     <incipit xml:lang="ota"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <textLang mainLang="ota">Turkish</textLang>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>1 f.
-                           
+                        <extent>1 f.<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -111,7 +113,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-06-29">

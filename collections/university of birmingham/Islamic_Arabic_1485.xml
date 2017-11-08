@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3731">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,15 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_1485-item1">
-                     <author key="n92014962" ref="http://viaf.org/viaf/51552575/">Ibn al-Raqqām, Muḥammad ibn Ibrāhīm, d. 1315 or 16ابن الرقام، محمد بن ابراهيم
-                        <addName xml:lang="ar" type="kunyah">ابو عبد الله</addName>
+                     <author key="n92014962" ref="http://viaf.org/viaf/51552575/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn al-Raqqām, Muḥammad ibn Ibrāhīm, d. 1315 or 16</persName>
                         
-                        <addName xml:lang="ar" type="nisbah">المرسي الاندلسي</addName>
+                        
+                        <persName xml:lang="ar">ابن الرقام، محمد بن ابراهيم
+                           <addName xml:lang="ar" type="kunyah">ابو عبد الله</addName>
+                           
+                           <addName xml:lang="ar" type="nisbah">المرسي الاندلسي</addName>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Khulāṣat al-ikhtiṣāṣ fī maʿrifat al-quwā wa-al-khawāṣṣ</title>
                      
@@ -56,9 +61,11 @@
                      
                      <note>Abridgement of<title xml:lang="ar-Latn-x-lc">Al-filāḥah al-Nabaṭīyah</title>(<title xml:lang="ar">الفلاحة النبطية</title>) of<persName xml:lang="ar-Latn-x-lc" ref="http://viaf.org/viaf/88345338">Aḥmad ibn ʿAlī Ibn Waḥshīyah</persName>(<persName xml:lang="ar">ابن وحشية</persName>)</note>
                      <note>Index at the end, last folio missing.</note>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 933</bibl>
                         <bibl>GAL I 242-3, esp. no. 1; I 430-1; Suppl. II 378</bibl>
@@ -73,12 +80,12 @@
                               <height>31.8</height>
                               <width>22.0</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="23" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -136,7 +143,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-02-12">

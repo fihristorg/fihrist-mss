@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1100">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,9 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Marsh_378-item1" n="1">
                      <locus from="2" to="99">ff. 2-99</locus>
-                     <author key="no2008145897" ref="http://viaf.org/viaf/24425162/">Ḥawfī, Aḥmad ibn Muḥammad,<date calendar="#Gregorian" when="1193">d. 1192 or 3</date>
+                     <author key="no2008145897" ref="http://viaf.org/viaf/24425162/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ḥawfī, Aḥmad ibn Muḥammad,<date calendar="#Gregorian" when="1193">d. 1192 or 3</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Kitāb al-Farāʼiḍ</title>
                      <listBibl>
@@ -56,7 +58,9 @@
                   </msItem>
                   <msItem xml:id="MS_Marsh_378-item2" n="2">
                      <locus from="100" to="108">ff. 100-108</locus>
-                     <author key="n 82164819" ref="http://viaf.org/viaf/19728485/">Imām al-Ḥaramayn al-Juwaynī, ʻAbd al-Malik ibn ʻAbd Allāh,<date calendar="#Gregorian" from="1028" to="1085">1028-1085</date>
+                     <author key="n 82164819" ref="http://viaf.org/viaf/19728485/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Imām al-Ḥaramayn al-Juwaynī, ʻAbd al-Malik ibn ʻAbd Allāh,<date calendar="#Gregorian" from="1028" to="1085">1028-1085</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Kitāb al-Waraqāt</title>
                      <listBibl>
@@ -67,7 +71,9 @@
                   </msItem>
                   <msItem xml:id="MS_Marsh_378-item3" n="3">
                      <locus from="109" to="161">ff. 109r-161v</locus>
-                     <author key="n 84145925" ref="http://viaf.org/viaf/47152278/">Ibn al-Bannāʼ, Aḥmad ibn Muḥammad,<date calendar="#Gregorian" from="1256" to="1321">1256?-1321?</date>
+                     <author key="n 84145925" ref="http://viaf.org/viaf/47152278/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ibn al-Bannāʼ, Aḥmad ibn Muḥammad,<date calendar="#Gregorian" from="1256" to="1321">1256?-1321?</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Talkhīs fī ʻamal al-ḥisāb</title>
                      <note>With commentary<title xml:lang="ar-Latn-x-lc">Kitāb al-Lubāb</title>by<persName xml:lang="ar-Latn-x-lc">ʻAbd al-ʻAzīz ibn Dāʼūd al-Huwārī</persName>
@@ -80,7 +86,9 @@
                   </msItem>
                   <msItem xml:id="MS_Marsh_378-item4" n="4">
                      <locus from="162" to="171">ff. 162r-171v</locus>
-                     <author key="n 84145925" ref="http://viaf.org/viaf/47152278/">Ibn al-Bannāʼ, Aḥmad ibn Muḥammad,<date calendar="#Gregorian" from="1256" to="1321">1256?-1321?</date>
+                     <author key="n 84145925" ref="http://viaf.org/viaf/47152278/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ibn al-Bannāʼ, Aḥmad ibn Muḥammad,<date calendar="#Gregorian" from="1256" to="1321">1256?-1321?</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Talkhīṣ fī ʻamal al-ḥisāb</title>
                      <listBibl>
@@ -215,11 +223,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

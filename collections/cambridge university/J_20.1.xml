@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_733">
    <teiHeader>
       <fileDesc>
@@ -45,18 +45,27 @@
                <msContents>
                   <msItem xml:id="J_20.1-item1">
                      <note>Vol. 1</note>
-                     <author>Dashtakī, ʻAṭāʼ Allāh ibn Faḍl Allāh, -1400 or 1401ʻAṭāʼ Allāh ibn Faḍl Allāh al-Dashtakīدشتكي، عطاء الله بن فضل الله‏
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Dashtakī, ʻAṭāʼ Allāh ibn Faḍl Allāh, -1400 or 1401</persName>
                         
-                        
-                        عطاء الله بن فضل الله‏ الدشتكي</author>
+                        <persName xml:lang="ar-Latn-x-lc" type="alt">ʻAṭāʼ Allāh ibn Faḍl Allāh al-Dashtakī</persName>
+                        <persName xml:lang="ar">دشتكي، عطاء الله بن فضل الله‏
+                           
+                           
+                           
+                        </persName>
+                        <persName xml:lang="ar" type="alt">عطاء الله بن فضل الله‏ الدشتكي</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Rawḍat al-aḥbāb fī siyar al-Nabī wa-al-āl wa-al-aṣḥāb</title>
                      
                      <title xml:lang="ar">روضة الاحباب في سير النبي والآل والاصحاب</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
@@ -64,13 +73,13 @@
                   <objectDesc form="other">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -133,7 +142,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-08-10">

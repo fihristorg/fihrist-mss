@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7057">
    <teiHeader>
       <fileDesc>
@@ -45,11 +45,19 @@
                                type="standard"
                                key="n 2005074865 "
                                ref="http://viaf.org/viaf/176760326/">Bāb, ʻAlī Muḥammad Shīrāzī, 1819-1850</persName>
-                     <title type="main"/>
+                     
                   </summary>
                   <msItem xml:id="Persian_MS_56-item1">
-                     <author key="nr 94024572 " ref="http://viaf.org/viaf/20534948/">Āz̲ar Baygdilī, Luṭf ʻAlī ibn Āqā Khān, 1721 or 1722-1780 or 1781Baygdilī, Luṭf ʻAlī ibn Āqā Khān Āz̲arآذر بيگدلى، لطف على بن آقا خان‏
+                     <author key="nr 94024572 " ref="http://viaf.org/viaf/20534948/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Āz̲ar Baygdilī, Luṭf ʻAlī ibn Āqā Khān, 1721 or 1722-1780 or 1781</persName>
                         
+                        
+                        <persName xml:lang="ar-Latn-x-lc" type="alt">Baygdilī, Luṭf ʻAlī ibn Āqā Khān Āz̲ar</persName>
+                        <persName xml:lang="fa">آذر بيگدلى، لطف على بن آقا خان‏
+                           
+                           
+                           
+                        </persName>
                         
                         
                      </author>
@@ -65,8 +73,8 @@
                      <title xml:lang="fa">آتشكده</title>
                      
                      
-                     
-                     
+                     <incipit xml:lang="ar" type="basmalla"/>
+                     <explicit xml:lang="ar"/>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
@@ -74,8 +82,8 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
@@ -145,7 +153,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015">

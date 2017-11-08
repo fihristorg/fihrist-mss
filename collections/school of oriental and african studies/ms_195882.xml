@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8129">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,10 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_195882-item1">
-                     <author>ʻAbd al-Razzāq ibn ʻAbd al-Nabīعبد الرزاق بن عبد النبي</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">ʻAbd al-Razzāq ibn ʻAbd al-Nabī</persName>
+                        <persName xml:lang="fa">عبد الرزاق بن عبد النبي</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Taz̲kirah-ʼi Nirmal : al-maʻrūf bi-ism-i tārīkh-i Z̤arb-i Nirmal</title>
                      <title xml:lang="fa-Latn-x-lc" type="alt">Tārīkh-i Nirmal</title>
                      <title xml:lang="fa">تذكرۀ نرمل المعروف باسم تاریخ ضرب نرمل</title>
@@ -52,22 +55,24 @@
                      
                      <note>Account of the capture by the East India Company of the fortress of Nirmal during the Pindari Wars</note>
                      <incipit>بعده بر ضمير منير صدر نشينان چار بالش عز و جل و قدرت دستگاهان ارباب فضل</incipit>
-                     
+                     <explicit xml:lang="ar" defective="true"/>
                      <colophon>تمام شد کاتب سطورات این بنده...کریم خان ساکن پیشور...بتاریخ نوهم شهر رجب سنه 1288 هجری</colophon>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>50 f.
-                           
+                        <extent>50 f.<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -117,7 +122,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-11-21">

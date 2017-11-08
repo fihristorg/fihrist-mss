@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5007">
    <teiHeader>
       <fileDesc>
@@ -45,13 +45,18 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_S_Digby_Or_5-item1" n="1">
                      <locus from="1" to="86">ff. 1a-86b</locus>
-                     <author>Shaykh Yūsuf Būdh Īrichī (d. 834/1430-31)شيخ يوسف بوذ ايرچی ت ٨۳۴ هـ</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Shaykh Yūsuf Būdh Īrichī (d. 834/1430-31)</persName>
+                        <persName xml:lang="fa">شيخ يوسف بوذ ايرچی ت ٨۳۴ هـ</persName>
+                        
+                        
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Minhāj al-ʻābidīn</title>
                      <title xml:lang="fa">منهاج العابدين</title>
                      
                      
                      <incipit xml:lang="fa">و نیز گفته‌اند که عامر بن عیار قیش</incipit>
-                     
+                     <explicit xml:lang="fa"/>
                      <colophon xml:lang="fa"/>
                      <listBibl>
                         <bibl>Ethé I.O 1865, 1866</bibl>
@@ -62,7 +67,12 @@
                   </msItem>
                   <msItem xml:id="MS_S_Digby_Or_5-item2" n="2">
                      <locus from="86" to="141">ff. 86-141b</locus>
-                     <author key="n80031649" ref="http://viaf.org/viaf/17351669/">Simnānī, Aḥmad ibn Muḥammad, 1261-1336سمناني أحمد بن محمدShaykh Rukn al-Dīn ʻAlāʼ al-Dawlah Simnānīشيخ ركن الدين علاء الدولة سمناني</author>
+                     <author key="n80031649" ref="http://viaf.org/viaf/17351669/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Simnānī, Aḥmad ibn Muḥammad, 1261-1336</persName>
+                        <persName xml:lang="ar-Latn-x-lc">سمناني أحمد بن محمد</persName>
+                        <persName xml:lang="ar-Latn-x-lc">Shaykh Rukn al-Dīn ʻAlāʼ al-Dawlah Simnānī</persName>
+                        <persName xml:lang="ar">شيخ ركن الدين علاء الدولة سمناني</persName>
+                     </author>
                      <editor role="compiler">
                         <persName xml:lang="ar-Latn-x-lc">Iqbāl ibn Sābiq al-Sijistānī</persName>
                         <persName xml:lang="ar">اقبال بن سابق السجستاني</persName>
@@ -83,12 +93,12 @@
                               <height>22.2</height>
                               <width>13.7</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="in"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="19" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -193,7 +203,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-04-27"/>

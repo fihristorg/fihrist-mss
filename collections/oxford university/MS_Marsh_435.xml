@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_11727">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,11 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_Marsh_435-item1">
-                     <author key="n 85341060" ref="http://viaf.org/viaf/73841503/">Eutychius, Patriarch of Alexandria,<date calendar="#Gregorian" from="0877" to="0940">877-940</date>Saʻīd ibn Biṭrīq,<date calendar="#Gregorian" from="0877" to="0940">877-940</date>
+                     <author key="n 85341060" ref="http://viaf.org/viaf/73841503/">
+                        <persName type="standard">Eutychius, Patriarch of Alexandria,<date calendar="#Gregorian" from="0877" to="0940">877-940</date>
+                        </persName>
+                        <persName type="alt" xml:lang="ar-Latn-x-lc">Saʻīd ibn Biṭrīq,<date calendar="#Gregorian" from="0877" to="0940">877-940</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Naẓm al-jawhar</title>
                      <note>From the creation to<date calendar="#Gregorian" when="0938">A.D. 938</date>
@@ -103,11 +107,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

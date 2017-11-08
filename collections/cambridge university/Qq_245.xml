@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_9676">
    <teiHeader>
       <fileDesc>
@@ -48,19 +48,27 @@
                   </summary>
                   <msItem xml:id="Qq_245-item1" n="1">
                      <locus from="1b" to="10a">ff. 1b-10a</locus>
-                     <author>anonymous
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">anonymous</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      
                      
                      
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/view.php?id=155">no. 1273</ref>
@@ -70,19 +78,26 @@
                   </msItem>
                   <msItem xml:id="Qq_245-item2" n="2">
                      <locus from="11b" to="20a">ff. 11b-20a</locus>
-                     <author>Laqīmī, Muṣṭafá Asʻadاللقيمي، مصطفى اسعد
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="supplied">Laqīmī, Muṣṭafá Asʻad</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">اللقيمي، مصطفى اسعد
+                           
+                           
+                           
+                        </persName>
                      </author>
                      
                      
                      
                      
                      <title xml:lang="en" type="desc">Praises of varied flowers</title>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/view.php?id=155">no. 1273</ref>
@@ -92,19 +107,26 @@
                   </msItem>
                   <msItem xml:id="Qq_245-item3" n="3">
                      <locus from="21b" to="81a">ff. 21b-81a</locus>
-                     <author key="n" ref="http://viaf.org/viaf/96969918/">Nābulusī, ʻAbd al-Ghanī ibn Ismāʻīl, 1641-1731النابلسي، عبد الغني بن اسماعيل
+                     <author key="n" ref="http://viaf.org/viaf/96969918/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Nābulusī, ʻAbd al-Ghanī ibn Ismāʻīl, 1641-1731</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">النابلسي، عبد الغني بن اسماعيل
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Ṣulḥ bayna al-ikhwān fī ibāḥat sharb al-dukhān</title>
                      
                      <title xml:lang="ar">الصلح بين الاخوان في اباحة شرب الدخان</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/view.php?id=155">no. 1273</ref>
@@ -117,13 +139,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -188,7 +210,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-05-04">

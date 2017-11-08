@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_837">
    <teiHeader>
       <fileDesc>
@@ -56,7 +56,9 @@
                   </msItem>
                   <msItem xml:id="MS_Arab_e_93-item2" n="2">
                      <locus from="27" to="33">ff. 27v-33r</locus>
-                     <author key="n 88168314" ref="http://viaf.org/viaf/27058051/">Kāshī, Jamshīd ibn Masʻūd,<date calendar="#Gregorian" when="1436">d. ca. 1436</date>
+                     <author key="n 88168314" ref="http://viaf.org/viaf/27058051/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Kāshī, Jamshīd ibn Masʻūd,<date calendar="#Gregorian" when="1436">d. ca. 1436</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Risālah fī istikhrāj jayb darajah wāḥidah</title>
                      <listBibl>
@@ -67,7 +69,9 @@
                   </msItem>
                   <msItem xml:id="MS_Arab_e_93-item3" n="3">
                      <locus from="34" to="36">ff. 34v-36r</locus>
-                     <author key="n 88168314" ref="http://viaf.org/viaf/27058051/">Kāshī, Jamshīd ibn Masʻūd,<date calendar="#Gregorian" when="1436">d. ca. 1436</date>
+                     <author key="n 88168314" ref="http://viaf.org/viaf/27058051/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Kāshī, Jamshīd ibn Masʻūd,<date calendar="#Gregorian" when="1436">d. ca. 1436</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Maʻrifat samt al-qiblah bi-ʻamal ṣināʻī</title>
                      <note>The ascription to Kāshī is Beestonʼs, not Kahleʼs</note>
@@ -89,7 +93,9 @@
                   </msItem>
                   <msItem xml:id="MS_Arab_e_93-item5" n="5">
                      <locus from="43" to="45">ff. 43v-45v</locus>
-                     <author key="n 80115658" ref="http://viaf.org/viaf/90045995/">Taqī al-Dīn Muḥammad ibn Maʻrūf,<date calendar="#Gregorian" from="1525" to="1585">1525 or 6-1585</date>
+                     <author key="n 80115658" ref="http://viaf.org/viaf/90045995/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Taqī al-Dīn Muḥammad ibn Maʻrūf,<date calendar="#Gregorian" from="1525" to="1585">1525 or 6-1585</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Risālah fī al-ʻamal bil-rubʻ al-Shikkāzī</title>
                      <note>*Para. 6 has been dropped from G2, hence nos. 1-3and5 of Asadīʼs works appear in edn. 1. only.</note>
@@ -102,7 +108,9 @@
                   </msItem>
                   <msItem xml:id="MS_Arab_e_93-item6" n="6">
                      <locus from="45" to="47">ff. 45v-47r</locus>
-                     <author key="no2008119732">Ibn al-Sarrāj, Aḥmad ibn Abī Bakr,<date calendar="#Gregorian" notBefore="1300" notAfter="1400">14th cent.</date>
+                     <author key="no2008119732">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn al-Sarrāj, Aḥmad ibn Abī Bakr,<date calendar="#Gregorian" notBefore="1300" notAfter="1400">14th cent.</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Risālah Jayl al-ghāʼib</title>
                      <note>[= Brock. no. 1?]</note>
@@ -114,7 +122,9 @@
                   </msItem>
                   <msItem xml:id="MS_Arab_e_93-item7" n="7">
                      <locus from="47" to="49">ff. 47v-49v</locus>
-                     <author>Shādhilī, Aḥmad ibn ʻUmar</author>
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc">Shādhilī, Aḥmad ibn ʻUmar</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Risālah [al-]Rubʻ [al-]Shikkāzī</title>
                      <listBibl>
                         <bibl>Appendix Astronomy</bibl>
@@ -312,11 +322,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

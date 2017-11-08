@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6398">
    <teiHeader>
       <fileDesc>
@@ -47,7 +47,10 @@
                           n="1"
                           class="http://lccn.loc.gov/sh85129656 http://lccn.loc.gov/sh85109764">
                      <locus from="114r" to="115v">114r-115v ff</locus>
-                     <author ref="http://viaf.org/viaf/5721767" key="n88155215">ابو سعید ابن ابی الخیرAbū Saʻīd ibn Abī al-Khayr, 967-1049</author>
+                     <author ref="http://viaf.org/viaf/5721767" key="n88155215">
+                        <persName xml:lang="fa">ابو سعید ابن ابی الخیر</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Abū Saʻīd ibn Abī al-Khayr, 967-1049</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Rubā‘īyāt</title>
                      <title xml:lang="fa">رباعیات</title>
                      <note>Dated<date calendar="#Hijri-qamari" notBefore="1693" notAfter="1694">1105</date>
@@ -59,7 +62,10 @@
                   </msItem>
                   <msItem xml:id="Or_8503-item2" n="2" class="http://lccn.loc.gov/sh85072967">
                      <locus from="141r" to="143r">Margins of 141r-143r ff</locus>
-                     <author ref="http://viaf.org/viaf/90770167" key="n85026579">حسین وائظ کاشیKāshifī, Ḥusayn Vāʻiẓ, -1504 or 1505</author>
+                     <author ref="http://viaf.org/viaf/90770167" key="n85026579">
+                        <persName xml:lang="fa">حسین وائظ کاشی</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Kāshifī, Ḥusayn Vāʻiẓ, -1504 or 1505</persName>
+                     </author>
                      <title xml:lang="en" type="desc">An extract from the<title xml:lang="fa-Latn-x-lc">Mavāhib-i ‘Alīyah<foreign xml:lang="fa">مواهب علیه</foreign>
                         </title>
                      </title>
@@ -93,7 +99,10 @@
                   </msItem>
                   <msItem xml:id="Or_8503-item5" n="5" class="http://lccn.loc.gov/sh85129660">
                      <locus from="210v" to="219v">210v-219v ff</locus>
-                     <author>Muḥammad ibn al-Ṣūfīمحمد ابن الصوفی</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Muḥammad ibn al-Ṣūfī</persName>
+                        <persName xml:lang="fa">محمد ابن الصوفی</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Iṣṭilāḥāt al-Rūḥānī</title>
                      <title xml:lang="fa">اصطلاحات الروحانی</title>
                      <note>Treatises are written in different hands</note>
@@ -207,7 +216,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-08-01">

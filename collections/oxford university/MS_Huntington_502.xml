@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1016">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,9 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Huntington_502-item1" n="1">
                      <locus from="1" to="43">ff. 1-43</locus>
-                     <author key="n 80002386" ref="http://viaf.org/viaf/97166546/">Avicenna,<date calendar="#Gregorian" from="0980" to="1037">980-1037</date>
+                     <author key="n 80002386" ref="http://viaf.org/viaf/97166546/">
+                        <persName type="standard">Avicenna,<date calendar="#Gregorian" from="0980" to="1037">980-1037</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Manẓūmah fī al-ṭibb</title>
                      <title xml:lang="ar-Latn-x-lc" type="alt">Urjūzah fī al-ṭibb</title>
@@ -57,7 +59,9 @@
                   </msItem>
                   <msItem xml:id="MS_Huntington_502-item2" n="2">
                      <locus from="47" to="223">ff. 47v-223v</locus>
-                     <author key="n 80002386" ref="http://viaf.org/viaf/97166546/">Avicenna,<date calendar="#Gregorian" from="0980" to="1037">980-1037</date>
+                     <author key="n 80002386" ref="http://viaf.org/viaf/97166546/">
+                        <persName type="standard">Avicenna,<date calendar="#Gregorian" from="0980" to="1037">980-1037</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Manẓūmah fī al-ṭibb</title>
                      <title xml:lang="ar-Latn-x-lc" type="alt">Urjūzah fī al-ṭibb</title>
@@ -74,7 +78,9 @@
                   </msItem>
                   <msItem xml:id="MS_Huntington_502-item3" n="3">
                      <locus from="224" to="238">ff. 224v-238v</locus>
-                     <author key="n 80150246" ref="http://www.viaf.org/viaf/100186386/">Ibn Buṭlān, d. ca.<date calendar="#Gregorian" when="1068">1068</date>
+                     <author key="n 80150246" ref="http://www.viaf.org/viaf/100186386/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ibn Buṭlān, d. ca.<date calendar="#Gregorian" when="1068">1068</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Maqālah fī anna al-farrūj aḥarr min al-farkh</title>
                      <title xml:lang="ar-Latn-x-lc" type="alt">al-Shaʻbadhah al-ʻaqlīyah.</title>
@@ -215,11 +221,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

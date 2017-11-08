@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1005">
    <teiHeader>
       <fileDesc>
@@ -55,7 +55,9 @@
                   </msItem>
                   <msItem xml:id="MS_Huntington_383-item2" n="2">
                      <locus from="75" to="87">ff. 75r-87v</locus>
-                     <author key="n 50028822" ref="http://viaf.org/viaf/106211622/">Pseudo-Dionysius, the Areopagite</author>
+                     <author key="n 50028822" ref="http://viaf.org/viaf/106211622/">
+                        <persName type="standard">Pseudo-Dionysius, the Areopagite</persName>
+                     </author>
                      <title>Epistle to Timothy on the martyrdom of Peter and Paul</title>
                      <listBibl>
                         <bibl>Graf I, p. 270</bibl>
@@ -191,11 +193,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

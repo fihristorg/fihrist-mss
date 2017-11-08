@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5891">
    <teiHeader>
       <fileDesc>
@@ -44,22 +44,32 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Or_2217-item1" class="#commentary">
-                     <author key="n91037484" ref="http://viaf.org/viaf/63866369/">Mīrzā Jān, Ḥabīb Allāh, d. 1586?ميرزا جان، حبيب الله
+                     <author key="n91037484" ref="http://viaf.org/viaf/63866369/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Mīrzā Jān, Ḥabīb Allāh, d. 1586?</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">ميرزا جان، حبيب الله
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Sharḥ ḥikmat al-ʻayn</title>
                      
                      <title xml:lang="ar">شرح حكمة العين</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl type="text-relations">Commentary on<title xml:lang="ar-Latn-x-lc">Ḥikmat al-ʻayn<foreign xml:lang="ar">حكمة العين</foreign>
-                           </title>by<author key="n90015801" ref="http://viaf.org/viaf/63856938/">Qazwīnī, ʻAbd al-Ghaffār ibn ʻAbd al-Karīm, d. 1266 or 7القزويني، عبد الغفار بن عبد الكريم</author>
+                           </title>by<author key="n90015801" ref="http://viaf.org/viaf/63856938/">
+                              <persName xml:lang="ar-Latn-x-lc">Qazwīnī, ʻAbd al-Ghaffār ibn ʻAbd al-Karīm, d. 1266 or 7</persName>
+                              <persName xml:lang="ar">القزويني، عبد الغفار بن عبد الكريم</persName>
+                           </author>
                         </bibl>
                      </listBibl>
                      <textLang mainLang="ar">Arabic</textLang>
@@ -79,7 +89,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -135,7 +145,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-05-17">

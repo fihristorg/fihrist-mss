@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7482">
    <teiHeader>
       <fileDesc>
@@ -44,18 +44,26 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="RAS_Arabic_22-item1">
-                     <author key="91031544" ref="http://viaf.org/viaf/7248119/">Māzandarānī, Muḥammad Ṣāliḥ ibn Aḥmad, d. 1675 or 6مازندرانى، محمد صالح بن احمد</author>
+                     <author key="91031544" ref="http://viaf.org/viaf/7248119/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Māzandarānī, Muḥammad Ṣāliḥ ibn Aḥmad, d. 1675 or 6</persName>
+                        
+                        
+                        <persName xml:lang="ar">مازندرانى، محمد صالح بن احمد</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Sharḥ al-kāfī</title>
                      
                      <title xml:lang="ar">شرح الكافي</title>
                      
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>
                         <foreign xml:lang="ar">...المجلد الثاني من شرح كتاب الكافي كتاب الحجة باب التوقيت يا عالم الدقايق والسراير ويا ملهم الحقاير على الضمائر</foreign>... وبعد فيقول الفقير الى رحمة ربه المفتي محمد صالح الطبرسي</note>
                      <listBibl>
                         <bibl type="text-relations">Volume two of a commentary on the<title xml:lang="ar-Latn-x-lc">Uṣūl al-kāfī<foreign xml:lang="ar">اصول الكافي</foreign>
-                           </title>of<author key="n80158377" ref="http://viaf.org/viaf/60393215/">Kulaynī, Muḥammad ibn Yaʻqūb, d. 941?الكليني، محمد ابن يعقوب</author>.</bibl>
+                           </title>of<author key="n80158377" ref="http://viaf.org/viaf/60393215/">
+                              <persName xml:lang="ar-Latn-x-lc">Kulaynī, Muḥammad ibn Yaʻqūb, d. 941?</persName>
+                              <persName xml:lang="ar">الكليني، محمد ابن يعقوب</persName>
+                           </author>.</bibl>
                      </listBibl>
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
@@ -63,13 +71,13 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>255 f.
-                           
+                        <extent>255 f.<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -117,7 +125,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-01-16">

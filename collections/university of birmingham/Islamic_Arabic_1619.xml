@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3758">
    <teiHeader>
       <fileDesc>
@@ -45,19 +45,27 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="Islamic_Arabic_1619-item1" n="1">
                      <locus from="1" to="6">ff. 1-6</locus>
-                     <author key="n82099509" ref="http://viaf.org/viaf/69100526/">Ibn Ājurrūm, Muḥammad ibn Muḥammad,<date calendar="#Gregorian" from="1273" to="1323">1273 or 4-1323</date>ابن آجروم، محمد اين محمد
+                     <author key="n82099509" ref="http://viaf.org/viaf/69100526/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn Ājurrūm, Muḥammad ibn Muḥammad,<date calendar="#Gregorian" from="1273" to="1323">1273 or 4-1323</date>
+                        </persName>
                         
                         
-                        
+                        <persName xml:lang="ar">ابن آجروم، محمد اين محمد
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Muqaddimah al-Ājurrūmīyah</title>
                      
                      <title xml:lang="ar">المقدمة الآجرومية</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="fa" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 1580</bibl>
                         <bibl>GAL II 237; Suppl. II 332</bibl>
@@ -66,10 +74,16 @@
                   </msItem>
                   <msItem xml:id="Islamic_Arabic_1619-item2" n="2">
                      <locus from="7" to="50">ff. 7-50</locus>
-                     <author key="n79106223" ref="http://viaf.org/viaf/90075678/">Taftāzānī, Masʿūd ibn ʿUmar,<date calendar="#Gregorian" from="1322" to="1389">1322-1389?</date>التفتازاني، سعد الدين مسعود بن عمر
+                     <author key="n79106223" ref="http://viaf.org/viaf/90075678/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Taftāzānī, Masʿūd ibn ʿUmar,<date calendar="#Gregorian" from="1322" to="1389">1322-1389?</date>
+                        </persName>
                         
                         
-                        
+                        <persName xml:lang="ar">التفتازاني، سعد الدين مسعود بن عمر
+                           
+                           
+                           
+                        </persName>
                      </author>
                      
                      
@@ -82,9 +96,11 @@
                                   ref="http://viaf.org/viaf/21042171/">Zanjānī, ʿAbd al-Wahhāb ibn Ibrāhīm, active<date calendar="#Gregorian" when="1257">1257</date>
                         </persName>
                      </note>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 1421</bibl>
                         <bibl>GAL I 283, no. I, Cmt. I; II 215, no. 2; Suppl. I 497-8; II 301</bibl>
@@ -99,14 +115,14 @@
                               <height>18.0</height>
                               <width>13.8</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="19" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                            <note>Between 15 and 19 lines per page</note>
                         </layout>
                      </layoutDesc>
@@ -173,7 +189,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-06-23">

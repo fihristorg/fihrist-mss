@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5518">
    <teiHeader>
       <fileDesc>
@@ -43,7 +43,10 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85100084">
                   <msItem xml:id="Or_12876-item1">
-                     <author>‘Abd al-Raḥmān Ḥāfiẓعبد الرحمن حافظ</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">‘Abd al-Raḥmān Ḥāfiẓ</persName>
+                        <persName xml:lang="fa">عبد الرحمن حافظ</persName>
+                     </author>
                      <title xml:lang="en" type="desc">A qaṣīdah written in honour of the visit of the Prince of Wales, afterwards<persName type="standard"
                                   xml:lang="en"
                                   ref="http://viaf.org/viaf/265340794"
@@ -93,7 +96,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-01-29">

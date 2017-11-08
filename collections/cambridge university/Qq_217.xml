@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_9645">
    <teiHeader>
       <fileDesc>
@@ -45,35 +45,50 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="Qq_217-item1" n="1" class="#abridgement">
                      <locus from="1" to="82a">ff. 1-82a</locus>
-                     <author key="n80081636" ref="http://viaf.org/viaf/90051632/">Suyūṭī, 1445-1505السيوطي، جلال الدين
+                     <author key="n80081636" ref="http://viaf.org/viaf/90051632/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Suyūṭī, 1445-1505</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">السيوطي، جلال الدين
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Lubb al-albāb fī taḥrīr al-ansāb</title>
                      
                      <title xml:lang="ar">لب الالباب في تحرير الانساب</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/view.php?id=112">no. 971</ref>
                         </bibl>
                         <bibl type="text-relations">Epitome of<title xml:lang="ar-Latn-x-lc">al-Ansāb<foreign xml:lang="ar">الانساب</foreign>
-                           </title>by<author key="n84026240" ref="http://viaf.org/viaf/90054367/">Samʻānī, ʻAbd al-Karīm ibn Muḥammad, 1113-1166سمعاني، عبد الكريم بن محمد</author>
+                           </title>by<author key="n84026240" ref="http://viaf.org/viaf/90054367/">
+                              <persName xml:lang="ar-Latn-x-lc">Samʻānī, ʻAbd al-Karīm ibn Muḥammad, 1113-1166</persName>
+                              <persName xml:lang="ar">سمعاني، عبد الكريم بن محمد</persName>
+                           </author>
                         </bibl>
                      </listBibl>
                      <textLang mainLang="ar"/>
                   </msItem>
                   <msItem xml:id="Qq_217-item2" n="2" class="#notes">
                      <locus from="1" to="82a">ff. 1-82a</locus>
-                     <author key="n80081636" ref="http://viaf.org/viaf/90051632/">Shaykh Aḥmad ibn Aḥmad ibn al-ʻAjamīشيخ احمد بن احمد بن العجمي
+                     <author key="n80081636" ref="http://viaf.org/viaf/90051632/">
+                        <persName xml:lang="ar-Latn-x-lc" type="supplied">Shaykh Aḥmad ibn Aḥmad ibn al-ʻAjamī</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">شيخ احمد بن احمد بن العجمي
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <editor role="compiler">
                         <persName xml:lang="ar-Latn-x-lc">ʻAbd al-Raḥmān ibn ʻAbd al-ʻAḍīm ibn ʻAbd al-Raḥmān ibn Muḥammad ibn Taqī al-Dīn al-Ashmūnī<foreign xml:lang="ar">عبد الرحمن بن عبد العضيم بن عبد الرحمن بن محمد بن تقي الدين الاشمني</foreign>
@@ -84,9 +99,11 @@
                      
                      
                      <title xml:lang="en" type="desc">Notes on al-Suyūṭī's Lubb al-albāb</title>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/view.php?id=112">no. 971</ref>
@@ -102,13 +119,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -179,7 +196,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-05-03">

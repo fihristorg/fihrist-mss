@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4088">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,11 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_A_Walker_16-item1" n="1">
-                     <author key="nr 93027510" ref="http://www.viaf.org/viaf/7716905/">Qazwīnī, ʻAlī ibn ʻUmar,<date calendar="#Gregorian" from="1203" to="1277">1203 or 4-1276 or 7</date>القزويني، علي بن عمر، 600-675 هـ</author>
+                     <author key="nr 93027510" ref="http://www.viaf.org/viaf/7716905/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Qazwīnī, ʻAlī ibn ʻUmar,<date calendar="#Gregorian" from="1203" to="1277">1203 or 4-1276 or 7</date>
+                        </persName>
+                        <persName xml:lang="ar">القزويني، علي بن عمر، 600-675 هـ</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">al-Risālah al-Shamsīyah fī al-qawāʻid al-manṭiqīyah</title>
                      <title xml:lang="ar-Latn-x-lc" type="alt">Mīzān al-Manṭiq</title>
                      <title xml:lang="ar">الرسالة الشمسية في القواعد المنطقية</title>
@@ -150,11 +154,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

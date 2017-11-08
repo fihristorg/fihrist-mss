@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8786">
    <teiHeader>
       <fileDesc>
@@ -41,7 +41,12 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_47770-item1" n="1">
-                     <author ref="http://viaf.org/viaf/91224532/" key="no2001088530‏">Abdallah ibn ʻAlī ibn NāṣirIbn Nāṣir, Abdallah ibn ʻAlī‏ʿAbd Allāh ibn ʻAlī ibn Nāṣirعبد الله بن علي بن ناصر</author>
+                     <author ref="http://viaf.org/viaf/91224532/" key="no2001088530‏">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Abdallah ibn ʻAlī ibn Nāṣir</persName>
+                        <persName xml:lang="ar-Latn-x-lc" type="alt">Ibn Nāṣir, Abdallah ibn ʻAlī‏</persName>
+                        <persName xml:lang="ar-Latn-x-lc" type="alt">ʿAbd Allāh ibn ʻAlī ibn Nāṣir</persName>
+                        <persName xml:lang="ar">عبد الله بن علي بن ناصر</persName>
+                     </author>
                      <title xml:lang="swa-Latn-x-lc">Inkishafi</title>
                      <title xml:lang="swa">انکشاف</title>
                      <title xml:lang="swa-Latn-x-lc" type="alt">al-Inkishāf</title>
@@ -56,7 +61,10 @@
                      <textLang mainLang="swa">Swahili</textLang>
                   </msItem>
                   <msItem xml:id="ms_47770-item2" n="2">
-                     <author ref="http://viaf.org/viaf/91224532/" key="no2001088530‏">Abdallah ibn ʻAlī ibn Nāṣirعبد الله بن علي بن ناصر</author>
+                     <author ref="http://viaf.org/viaf/91224532/" key="no2001088530‏">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Abdallah ibn ʻAlī ibn Nāṣir</persName>
+                        <persName xml:lang="ar">عبد الله بن علي بن ناصر</persName>
+                     </author>
                      <title xml:lang="swa-Latn-x-lc">Inkishafi</title>
                      <title xml:lang="swa">انکشاف</title>
                      <note>"Illuminated manuscript obtained from a Mombasan scribe by Mbarak Ali Hinawiy in the spring of 1935"</note>
@@ -76,13 +84,13 @@
                         <extent>
                            <ref target="a1">3 f.</ref>
                            <ref target="a2">4 f.</ref>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -137,7 +145,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2017-03-07">

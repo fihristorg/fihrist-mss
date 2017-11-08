@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5001">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,12 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_S_Digby_Or_44-item1">
-                     <author ref="https://viaf.org/viaf/147338829" key="n85230986">Jān Jānān Maẓhar, Ḥabīb Allāh 1699-1780ميرزا جان جانان مظهر</author>
+                     <author ref="https://viaf.org/viaf/147338829" key="n85230986">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Jān Jānān Maẓhar, Ḥabīb Allāh 1699-1780</persName>
+                        
+                        <persName xml:lang="fa">ميرزا جان جانان مظهر</persName>
+                        
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Dīvān-i-Maz̤har-i-Jān-i-Jānān</title>
                      <title xml:lang="fa">ديوان مظهر جان جانان</title>
                      <incipit xml:lang="fa">ما را بآب گریۀ ما داد بخت ما غم بار کرد بر سر سیلاب رخت ما</incipit>
@@ -58,12 +63,12 @@
                               <height>23.3</height>
                               <width>14.2</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="in"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="15" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -172,7 +177,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-04-27"/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1855">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,9 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_Turk_e_81-item1" class="#translation">
-                     <author key="n 82000881" ref="http://viaf.org/viaf/81969903/">Najm al-Dīn Rāzī, ʻAbd Allāh ibn Muḥammad,<date calendar="#Gregorian" when="1257">d. 1256 or 7</date>
+                     <author key="n 82000881" ref="http://viaf.org/viaf/81969903/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Najm al-Dīn Rāzī, ʻAbd Allāh ibn Muḥammad,<date calendar="#Gregorian" when="1257">d. 1256 or 7</date>
+                        </persName>
                      </author>
                      <title xml:lang="ota-Latn-x-lc">İrşad ül-mürid ilal-murad</title>
                      <note>A Turkish translation [through Persian] by<persName xml:lang="ota-Latn-x-lc">Kasim ibn Mahmud Karahisari</persName>of the<title xml:lang="ar-Latn-x-lc">Mirṣād al-ʻibād min al-mabdaʼ ilá al-maʻād</title>
@@ -154,11 +156,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

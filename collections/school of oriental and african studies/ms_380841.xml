@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8321">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,11 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_380841-item1" n="1">
-                     <author>Īrawānī, ʻAbd al-Karīm ibn Abī al-QāsimĪravānī, ʻAbd al-Karīm ibn Abī al-Qāsimایروانی، عبد الكريم بن ابي القاسم</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Īrawānī, ʻAbd al-Karīm ibn Abī al-Qāsim</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Īravānī, ʻAbd al-Karīm ibn Abī al-Qāsim</persName>
+                        <persName xml:lang="fa">ایروانی، عبد الكريم بن ابي القاسم</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Qavāʻid-i farsī</title>
                      
                      <title xml:lang="ar">قواعد فارسی</title>
@@ -55,7 +59,10 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="ms_380841-item2" n="2">
-                     <author>Īrawānī, ʻAbd al-Karīm ibn Abī al-Qāsimایروانی، عبد الكريم بن ابي القاسم</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Īrawānī, ʻAbd al-Karīm ibn Abī al-Qāsim</persName>
+                        <persName xml:lang="fa">ایروانی، عبد الكريم بن ابي القاسم</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Mukhtaṣar al-ʻarūḍ</title>
                      
                      <title xml:lang="ar">مختصر العروض</title>
@@ -66,7 +73,11 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="ms_380841-item3" n="3">
-                     <author ref="http://viaf.org/viaf/66326101" key="nr 91030640‏">Qayṣarī, ʻAbd al-Muḥsinقيصري، عبد المحسن بن محمد</author>
+                     <author ref="http://viaf.org/viaf/66326101" key="nr 91030640‏">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Qayṣarī, ʻAbd al-Muḥsin</persName>
+                        
+                        <persName xml:lang="ar">قيصري، عبد المحسن بن محمد</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Sharḥ ʻArūḍ al-Andalusī</title>
                      
                      <title xml:lang="ar">شرح عروض الاندلسى</title>
@@ -83,7 +94,10 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="ms_380841-item4" n="4">
-                     <author key="n85051633" ref="http://viaf.org/viaf/69031653/">Ibn Abī al-Ḥadīd, ʻAbd al-Ḥamīd ibn Hibat Allāh, 1191-1257 or 8ابن ابي الحديد المعتزلى</author>
+                     <author key="n85051633" ref="http://viaf.org/viaf/69031653/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn Abī al-Ḥadīd, ʻAbd al-Ḥamīd ibn Hibat Allāh, 1191-1257 or 8</persName>
+                        <persName xml:lang="ar">ابن ابي الحديد المعتزلى</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">al-Qaṣāʼid al-sabʻ al-ʻalawīyāt</title>
                      <title xml:lang="ar">القصائد السبع العلويات</title>
                      
@@ -101,13 +115,13 @@
                            <ref target="a2">21 f.</ref>
                            <ref target="a3">30 f.</ref>
                            <ref target="a4">22 f.</ref>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -187,7 +201,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2016-08-01">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3098">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,15 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="X_1-item1" class="#selection">
-                     <author key="n94020882" ref="http://viaf.org/viaf/36800387/">Qābūs ibn Washmakīr, d. 1012 or 13قابوس بن وشمكير
+                     <author key="n94020882" ref="http://viaf.org/viaf/36800387/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Qābūs ibn Washmakīr, d. 1012 or 13</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">قابوس بن وشمكير
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <editor role="compiler">
                         <persName xml:lang="ar-Latn-x-lc">ʻAbd al-Raḥmān ibn ʻAlī al-Yazdādī<foreign xml:lang="ar">عبد الرحمن بن علي اليزدادي</foreign>
@@ -58,9 +63,11 @@
                      <title xml:lang="ar">كمال البلاغة</title>
                      
                      <title xml:lang="en" type="desc">Compilation of the epistles of Qābūs ibn Washmakīr, followed by some examples of prose and verse from various Arab authors</title>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                </msContents>
@@ -68,13 +75,13 @@
                   <objectDesc form="other">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -153,7 +160,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-09-01">

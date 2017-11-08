@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_9075">
    <teiHeader>
       <fileDesc>
@@ -46,19 +46,27 @@
                   <msItem xml:id="Add_266-item1">
                      <msItem xml:id="Add_266-item1-item1" n="1">
                         <locus from="1" to="64">ff. 1-64</locus>
-                        <author>anonymous
+                        <author>
+                           <persName xml:lang="ar-Latn-x-lc" type="standard">anonymous</persName>
                            
                            
-                           
+                           <persName xml:lang="ar">
+                              
+                              
+                              
+                              
+                           </persName>
                         </author>
                         <title xml:lang="ar-Latn-x-lc">Sirr rabbānī daqāʼiq al-mīzān kashf al-asrār</title>
                         <title xml:lang="ar-Latn-x-lc" type="alt">al-Ṭibb al-jadīd al-kimyāwī</title>
                         <title xml:lang="ar">سر رباني دقائق الميزان كشف الاسرار</title>
                         <title xml:lang="ar" type="alt">الطب الجديد الكيمياوي</title>
                         
-                        
-                        
-                        
+                        <incipit xml:lang="ar"/>
+                        <explicit xml:lang="ar" defective="true"/>
+                        <note>
+                           <foreign xml:lang="ar"/>
+                        </note>
                         <listBibl>
                            <bibl>
                               <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/view.php?id=63">no. 515</ref>
@@ -68,19 +76,27 @@
                      </msItem>
                      <msItem xml:id="Add_266-item1-item2" n="2">
                         <locus from="65b" to="105b">ff. 65b-105b</locus>
-                        <author>anonymous
+                        <author>
+                           <persName xml:lang="ar-Latn-x-lc" type="standard">anonymous</persName>
                            
                            
-                           
+                           <persName xml:lang="ar">
+                              
+                              
+                              
+                              
+                           </persName>
                         </author>
                         <title xml:lang="ar-Latn-x-lc">al-Ṭibb al-jadīd</title>
                         
                         <title xml:lang="ar">الطب الجديد</title>
                         
                         
-                        
-                        
-                        
+                        <incipit xml:lang="ar"/>
+                        <explicit xml:lang="ar" defective="true"/>
+                        <note>
+                           <foreign xml:lang="ar"/>
+                        </note>
                         <listBibl>
                            <bibl>
                               <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/view.php?id=74">no. 652</ref>
@@ -90,19 +106,26 @@
                      </msItem>
                      <msItem xml:id="Add_266-item1-item3" n="3">
                         <locus from="106" to="125">ff. 106-125</locus>
-                        <author>Ḥasanī, Muḥammad ibn Abī al-Khayr, 16th centزالحسني, محمد بن ابي الخير
+                        <author>
+                           <persName xml:lang="ar-Latn-x-lc" type="standard">Ḥasanī, Muḥammad ibn Abī al-Khayr, 16th centز</persName>
                            
                            
-                           <addName xml:lang="ar" type="nisbah">الاميوني</addName>
+                           <persName xml:lang="ar">الحسني, محمد بن ابي الخير
+                              
+                              
+                              <addName xml:lang="ar" type="nisbah">الاميوني</addName>
+                           </persName>
                         </author>
                         
                         
                         <title xml:lang="ar">كتاب النجوم الشارقات في بعض الصنائع المحتاج اليها في علم الميقات</title>
                         
                         
-                        
-                        
-                        
+                        <incipit xml:lang="ar"/>
+                        <explicit xml:lang="ar" defective="true"/>
+                        <note>
+                           <foreign xml:lang="ar"/>
+                        </note>
                         <listBibl>
                            <bibl>
                               <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/view.php?id=107">no. 922</ref>
@@ -116,13 +139,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -214,7 +237,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-05-06">

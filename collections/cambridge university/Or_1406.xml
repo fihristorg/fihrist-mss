@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_10016">
    <teiHeader>
       <fileDesc>
@@ -45,19 +45,26 @@
                <msContents>
                   <msItem xml:id="Or_1406-item1" n="1">
                      <locus from="1" to="103">ff. 1-103</locus>
-                     <author key="n00039394" ref="http://viaf.org/viaf/66013885/">Ibn Khvāndʹmīr, Amīr Maḥmūdابن خواندامير، امير محمود
+                     <author key="n00039394" ref="http://viaf.org/viaf/66013885/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn Khvāndʹmīr, Amīr Maḥmūd</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">ابن خواندامير، امير محمود
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Taʼrīkh-i Maḥmūd</title>
                      
                      <title xml:lang="fa">تاريخي محمود</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/arberry/view.php?id=19">no. 200</ref>
@@ -67,19 +74,26 @@
                   </msItem>
                   <msItem xml:id="Or_1406-item2" n="2">
                      <locus from="1" to="103">ff. 1-103</locus>
-                     <author key="n82027925" ref="http://viaf.org/viaf/90059149/">Mīr Khvānd, Muḥammad ibn Khāvandshāh, 1433-1498مير خواند، محمد بن خواندشاه
+                     <author key="n82027925" ref="http://viaf.org/viaf/90059149/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Mīr Khvānd, Muḥammad ibn Khāvandshāh, 1433-1498</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">مير خواند، محمد بن خواندشاه
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Rawḍat al-ṣafā (khātima)</title>
                      
                      <title xml:lang="ar">زوضة الصفا - خاتمة</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/arberry/view.php?id=19">no. 200</ref>
@@ -92,13 +106,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -149,7 +163,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-06-30">

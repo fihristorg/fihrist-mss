@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1113">
    <teiHeader>
       <fileDesc>
@@ -60,7 +60,9 @@
                   </msItem>
                   <msItem xml:id="MS_Marsh_457-item2" n="2" class="#translation">
                      <locus from="65" to="131">ff. 65r-131v</locus>
-                     <author>Ibn Mawhūb, ʻAlī ibn Mubārak,<date calendar="#Gregorian" notBefore="1100" notAfter="1200">12th cent.</date>
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc">Ibn Mawhūb, ʻAlī ibn Mubārak,<date calendar="#Gregorian" notBefore="1100" notAfter="1200">12th cent.</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Tibr al-masbūk fī naṣīḥat al-mulūk</title>
                      <note>Arabic version of the Persian<title xml:lang="ar-Latn-x-lc" ref="#m2">Naṣīḥat al-mulūk</title>of<persName xml:id="m2"
@@ -79,7 +81,9 @@
                   </msItem>
                   <msItem xml:id="MS_Marsh_457-item3" n="3">
                      <locus from="133" to="180">ff. 133r-180v</locus>
-                     <author key="n 81048213" ref="http://www.viaf.org/viaf/90071384/">Zamakhsharī, Maḥmūd ibn ʻUmar,<date calendar="#Gregorian" from="1075" to="1144">1075-1144</date>
+                     <author key="n 81048213" ref="http://www.viaf.org/viaf/90071384/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Zamakhsharī, Maḥmūd ibn ʻUmar,<date calendar="#Gregorian" from="1075" to="1144">1075-1144</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Kitāb al-Mufaṣṣal</title>
                      <note>Transcribed for<persName type="standard"
@@ -218,11 +222,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7867">
    <teiHeader>
       <fileDesc>
@@ -53,9 +53,15 @@
                      <title xml:lang="fa">نصاب الصبیان</title>
                      
                      
-                     <author key="no2006071896‏" ref="http://viaf.org/viaf/56368539">‎Farāhī, Abū Naṣr Muḥammad Badr al-Dīn‏‏فراهی، ابونصر محمد بدرالدینAbū Naṣr Farāhī, Masʿūd bin Abī Bakr (640 Qamarī/1242)ابونصر فراهی، مسعود بن ابی بکر (۶۴۰ ق/۱۲۴۲م)<addName xml:lang="fa-Latn-x-lc" type="laqab"/>
+                     <author key="no2006071896‏" ref="http://viaf.org/viaf/56368539">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">‎Farāhī, Abū Naṣr Muḥammad Badr al-Dīn‏‏</persName>
+                        <persName xml:lang="fa" type="standard">فراهی، ابونصر محمد بدرالدین</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Abū Naṣr Farāhī, Masʿūd bin Abī Bakr (640 Qamarī/1242)</persName>
+                        <persName xml:lang="fa" type="alt">ابونصر فراهی، مسعود بن ابی بکر (۶۴۰ ق/۱۲۴۲م)</persName>
                         
-                        <addName xml:lang="fa-Latn-x-lc" type="kunyah"/>
+                        
+                        
+                        
                         
                         
                         
@@ -116,7 +122,7 @@
                      <layoutDesc>
                         <layout columns="1" ruledLines="15">
                            <note>15 lines per page.</note>
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -217,7 +223,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2017-08-30">

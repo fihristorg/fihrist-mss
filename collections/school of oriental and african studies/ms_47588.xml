@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8765">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,10 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_47588-item1">
-                     <author key="nr91037727" ref="http://viaf.org/viaf/90046369/">Quṭb al-Taḥtānī, Muḥammad ibn Muḥammad, 1294 or 5-1364 or 5قطب التحتاني، محمد بن محمد</author>
+                     <author key="nr91037727" ref="http://viaf.org/viaf/90046369/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Quṭb al-Taḥtānī, Muḥammad ibn Muḥammad, 1294 or 5-1364 or 5</persName>
+                        <persName xml:lang="ar" type="alt">قطب التحتاني، محمد بن محمد</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Taḥrīr al-qawāʻid al-manṭiqīyah</title>
                      <title xml:lang="ar">تحرير القواعد المنطقية</title>
                      <note>A commentary on the<title xml:lang="ar-Latn-x-lc">al-Risālah al-Shamsīyah</title>of<persName type="standard"
@@ -54,7 +57,9 @@
                      </note>
                      <incipit>ان ابهى دررتنظم بيان البيان وازهر زهر تنثر فى اردان الاذهان حمد مبدع انطق الموجود ات بايات وجوب وجوده ... وبعد فقد طال الحاح المشتغلین على ... المترددين الى ان اشرح له الرسالة الشمسية</incipit>
                      <colophon>قد وقع الفراغ من تسوید هذا الکتاب المستطاب علی ید...ابن فضل الله محمد معصوم الحسینی فی عشر الثانی من شهر ربیع الثانی من شهور سنه تسع وتسعین بعد الالف</colophon>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://digital.info.soas.ac.uk/15594/#page/1/mode/2up/search/">view the printed catalogue Gacek no.348</ref>
@@ -78,7 +83,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -131,7 +136,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-03-30">

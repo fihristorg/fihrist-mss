@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6172">
    <teiHeader>
       <fileDesc>
@@ -43,11 +43,14 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh89005046">
                   <msItem xml:id="Or_7050-item1">
-                     <author ref="http://viaf.org/viaf/176421469">Ṣaʾib Tabrīzī, Muḥammad ʿAlī 1602-1677محمد علی صائب تبریزی</author>
+                     <author ref="http://viaf.org/viaf/176421469">
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Ṣaʾib Tabrīzī, Muḥammad ʿAlī 1602-1677</persName>
+                        <persName xml:lang="fa">محمد علی صائب تبریزی</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Dīvān of Ṣā’ib</title>
                      <title xml:lang="fa">دیوان صائب</title>
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 52.</bibl>
                      </listBibl>
@@ -93,7 +96,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-11-07">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_11669">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,9 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_Marsh_36-item1" class="#extract">
-                     <author>Ḥanbalī, Raḍī al-Dīn Muḥammad,<date calendar="#Gregorian" from="1472" to="1563">1472-1563</date>
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc">Ḥanbalī, Raḍī al-Dīn Muḥammad,<date calendar="#Gregorian" from="1472" to="1563">1472-1563</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Zubad wa-al-ḍarab fī taʼrīkh Ḥalab</title>
                      <note type="text-relations">extracts from the<title xml:lang="ar-Latn-x-lc" ref="#m2">Zubdat al-ḥalab fī taʼrīkh Ḥalab</title>of<persName xml:lang="ar-Latn-x-lc"
@@ -150,11 +152,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

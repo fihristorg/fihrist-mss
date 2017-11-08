@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_9807">
    <teiHeader>
       <fileDesc>
@@ -45,19 +45,26 @@
                <msContents>
                   <msItem xml:id="Qq_9-item1" n="1" class="#abridgement">
                      <locus from="1" to="108">ff. 1-108</locus>
-                     <author key="n81075789" ref="http://viaf.org/viaf/44327347/">Thaʻālibī, ʻAbd al-Malik ibn Muḥammad, 961 or 2-1037 or 8الثعالبي، عبد المالك بن محمد
+                     <author key="n81075789" ref="http://viaf.org/viaf/44327347/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Thaʻālibī, ʻAbd al-Malik ibn Muḥammad, 961 or 2-1037 or 8</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">الثعالبي، عبد المالك بن محمد
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Nafḥat al-majlūb min thimār al-qulūb fī al-muḍāf wa-al-mansūb</title>
                      
                      <title xml:lang="ar">نفحة المجلوب من ثمار القلوب في المضاف والمنسوب</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/view.php?id=141">no. 1192</ref>
@@ -69,19 +76,26 @@
                   </msItem>
                   <msItem xml:id="Qq_9-item2" n="2">
                      <locus from="111b" to="157b">ff. 111b-157b</locus>
-                     <author key="n94035881" ref="http://viaf.org/viaf/68814480/">Maqdisī, Aḥmad ibn ʻAbd al-Razzāqالمقدسي، احمد بن عبد الرزاق
+                     <author key="n94035881" ref="http://viaf.org/viaf/68814480/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Maqdisī, Aḥmad ibn ʻAbd al-Razzāq</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">المقدسي، احمد بن عبد الرزاق
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Ẓarāʼif wa-al-laṭāʼif fī madḥ al-shayʼ wa-dhammihi</title>
                      
                      <title xml:lang="ar">الظرائف واللطائف في مدح الشي وذمه</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/view.php?id=74">no. 659</ref>
@@ -95,13 +109,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -183,7 +197,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-11-30">

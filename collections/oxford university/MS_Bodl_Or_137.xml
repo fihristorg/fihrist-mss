@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_858">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,9 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Bodl_Or_137-item1" n="1">
                      <locus from="1" to="179">ff. 1r-65v, 120r-179v</locus>
-                     <author>Qummī, Abū Naṣr al-Ḥasan ibn ʻAlī, al-Munajjim<date calendar="#Gregorian" when="0968">fl. c. 968</date>
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc">Qummī, Abū Naṣr al-Ḥasan ibn ʻAlī, al-Munajjim<date calendar="#Gregorian" when="0968">fl. c. 968</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Madkhal ilá ʻilm aḥkām al-nujūm</title>
                      <note>Incomplete</note>
@@ -67,7 +69,9 @@
                   </msItem>
                   <msItem xml:id="MS_Bodl_Or_137-item3" n="3">
                      <locus from="69" to="119">ff. 69v-119v</locus>
-                     <author key="n 87874054" ref="http://viaf.org/viaf/21206998/">Khayyāṭ, Yaḥyá ibn Ghālib,<date calendar="#Gregorian" when="0835">d. ca. 835</date>
+                     <author key="n 87874054" ref="http://viaf.org/viaf/21206998/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Khayyāṭ, Yaḥyá ibn Ghālib,<date calendar="#Gregorian" when="0835">d. ca. 835</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Kitāb al-Mawālīd</title>
                      <listBibl>
@@ -204,11 +208,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

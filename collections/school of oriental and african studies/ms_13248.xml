@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7989">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,10 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_13248-item1" n="1">
-                     <author key="n92028230" ref="http://viaf.org/viaf/54013407/">Ibn al-Nabīh, ʻAlī ibn Muḥammad, d. 1222 or 3ابن النبيه، علي بن محمد</author>
+                     <author key="n92028230" ref="http://viaf.org/viaf/54013407/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn al-Nabīh, ʻAlī ibn Muḥammad, d. 1222 or 3</persName>
+                        <persName xml:lang="ar">ابن النبيه، علي بن محمد</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Dīwān Ibn al-Nabīh</title>
                      <title xml:lang="ar">ديوان ابن النبيه</title>
                      <incipit>الحمد لله الذي بث ارواح العقول في اجساد الصور وعم البسيطة باجناس الحيوان ... الخليفتيات قال يمدح الامام الناصر لدين الله قدس الله روحه بغداد مكتنا واحمد احمد * حجوا الى تلك المناسك واسحدوا</incipit>
@@ -57,7 +60,10 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="ms_13248-item2" n="2">
-                     <author key="nr91009181‏" ref="http://viaf.org/viaf/42230819/">Ibn Maṭrūḥ, Yaḥyá ibn ʻĪsá, 1196-1251ابن النبيه، علي بن محمد</author>
+                     <author key="nr91009181‏" ref="http://viaf.org/viaf/42230819/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn Maṭrūḥ, Yaḥyá ibn ʻĪsá, 1196-1251</persName>
+                        <persName xml:lang="ar">ابن النبيه، علي بن محمد</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Dīwān Ibn Maṭrūḥ</title>
                      <title xml:lang="ar">ديوان ابن مطروح</title>
                      <incipit>قال الصاحب الوزير جمال الدين ... بن مطروح يمدح الامام امير المومنين المستنصر بالله رضي الله عنه الله اكبر اي طرف يطمح * ام اي ذي لسن يقول فيفصح</incipit>
@@ -76,13 +82,13 @@
                         <extent>
                            <ref target="a1">2b-64a f.</ref>
                            <ref target="a2">65b-92b f.</ref>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -133,7 +139,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-06-16">

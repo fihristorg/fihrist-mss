@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_10249">
    <teiHeader>
       <fileDesc>
@@ -46,15 +46,21 @@
                   <msItem xml:id="MS_Arab_d_24-item1">
                      <author key="n 80001460"
                              ref="http://www.viaf.org/viaf/100910338/"
-                             xml:id="m1">John Chrysostom, Saint, d.<date calendar="#Gregorian" when="0407">407</date>
+                             xml:id="m1">
+                        <persName type="standard">John Chrysostom, Saint, d.<date calendar="#Gregorian" when="0407">407</date>
+                        </persName>
                      </author>
                      <author key="n 80004066"
                              ref="http://www.viaf.org/viaf/88967224/"
-                             xml:id="m2">Basil, Saint, Bishop of Caesarea, ca.<date calendar="#Gregorian" from="0329" to="0379">329-379</date>
+                             xml:id="m2">
+                        <persName type="standard">Basil, Saint, Bishop of Caesarea, ca.<date calendar="#Gregorian" from="0329" to="0379">329-379</date>
+                        </persName>
                      </author>
                      <author key="n 79056801"
                              ref="http://www.viaf.org/viaf/100184667/"
-                             xml:id="m3">Gregory I, Pope, ca.<date calendar="#Gregorian" from="0540" to="0604">540-604</date>
+                             xml:id="m3">
+                        <persName type="standard">Gregory I, Pope, ca.<date calendar="#Gregorian" from="0540" to="0604">540-604</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Kitāb al-Qundāq</title>
                      <note>consisting of the liturgies of<persName type="standard"
@@ -115,11 +121,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8165">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,12 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_24959-item1">
-                     <author key="n2007060467" ref="http://viaf.org/viaf/26516971">ʻAbbāsī, Khudā Yār Khān, active 14th centuryYār Muḥammad Dā’ūd ʻAbbāsīيار محمد داؤد عباسيعباسي، خدا يار خان</author>
+                     <author key="n2007060467" ref="http://viaf.org/viaf/26516971">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">ʻAbbāsī, Khudā Yār Khān, active 14th century</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Yār Muḥammad Dā’ūd ʻAbbāsī</persName>
+                        <persName xml:lang="fa" type="alt">يار محمد داؤد عباسي</persName>
+                        <persName xml:lang="fa">عباسي، خدا يار خان</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Bāznāmah</title>
                      <title xml:lang="fa">بازنامه</title>
                      <title xml:lang="fa-Latn-x-lc" type="alt">Qawānīn al-ṣayyād</title>
@@ -54,20 +59,22 @@
                      <note>A treatise on falconry composed during the reign of Tughan Timur Khan of Khorasan (737-754/1336-1352) in a dibachah, 31 abwabs and a khatimah. This is the manuscript D.C Phillott used in his edition. Unwans on f. 1b and f. 13b.</note>
                      <incipit>حمد بيحد و ثنائ بيعد مالك الملكى سزد</incipit>
                      <explicit>باتمام رسيد كتاب كامل نصاب مشهور به بازنامه از دست ...كريم بخش ...بتريخ بيست هفتم ماه رمضان المبارك سنه 1290</explicit>
-                     
+                     <note>
+                        <foreign xml:lang="fa"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>245 f.
-                           
+                        <extent>245 f.<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -117,7 +124,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-07-04">

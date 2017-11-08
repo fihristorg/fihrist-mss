@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1057">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,9 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Laud_Or_61-item1" n="1">
                      <locus from="1" to="22">ff. 1v-22r</locus>
-                     <author key="n 87907884" ref="http://viaf.org/viaf/66582641/">Ḥaṭṭāb, Muḥammad ibn Muḥammad,<date calendar="#Gregorian" from="1497" to="1547">1497-1547</date>
+                     <author key="n 87907884" ref="http://viaf.org/viaf/66582641/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ḥaṭṭāb, Muḥammad ibn Muḥammad,<date calendar="#Gregorian" from="1497" to="1547">1497-1547</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Tafrīḥ al-qulūb bil-khiṣāl al-mukaffirah limā taqaddama wa-mā taʼakhkhara min al-dhunūb</title>
                      <listBibl>
@@ -56,7 +58,9 @@
                   </msItem>
                   <msItem xml:id="MS_Laud_Or_61-item2" n="2">
                      <locus from="22" to="58">ff. 22v-58r</locus>
-                     <author>*Zubaydī, ʻAbd al-Raḥmān ibn ʻAlī</author>
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc">*Zubaydī, ʻAbd al-Raḥmān ibn ʻAlī</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Ghāyat al-maṭlūb wa-aʻzam al-munyah fīmā yaghfir Allāh bihi al-dhunūb wa-yūjib al-jannah</title>
                      <note>On remission of sins as exemplified in Muslim tradition</note>
                      <note>*Authorship from H. Khal. (who has al-marghūb for al-maṭlūb) see Nicoll p. 514</note>
@@ -174,11 +178,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

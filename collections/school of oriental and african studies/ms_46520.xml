@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8663">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,12 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_46520-item1">
-                     <author key="n80149346" ref="http://viaf.org/viaf/180320264">Ākhundʹzādah, Fatḥ ʻAlī, 1812-1878Akhundov, Mirza Fath Ali, 1812-1878Akhundzadeh, Mirza Fath Aliآخوندزاده، فتح علي</author>
+                     <author key="n80149346" ref="http://viaf.org/viaf/180320264">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Ākhundʹzādah, Fatḥ ʻAlī, 1812-1878</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Akhundov, Mirza Fath Ali, 1812-1878</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Akhundzadeh, Mirza Fath Ali</persName>
+                        <persName xml:lang="fa">آخوندزاده، فتح علي</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Tams̲īlāt</title>
                      <title xml:lang="fa">تمثيلات</title>
                      <note>A Persian translation by<persName type="standard"
@@ -59,13 +64,13 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>178 f.
-                           
+                        <extent>178 f.<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -112,7 +117,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-02-10">

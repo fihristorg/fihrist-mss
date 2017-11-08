@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5508">
    <teiHeader>
       <fileDesc>
@@ -62,8 +62,8 @@
                      <title xml:lang="en" type="desc">Verses</title>
                      <title xml:lang="fa">دیوان هلالی</title>
                      
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>Verses in Persian, including one excerpt of five bayts and one single bayt attributed to<persName xml:lang="fa-Latn-x-lc"
                                   type="standard"
                                   key="nr98012263"
@@ -81,7 +81,12 @@
                           n="2"
                           class="http://lccn.loc.gov/sh93009493 http://lccn.loc.gov/sh85111205">
                      <locus from="6r" to="8r">ff 6r-8r</locus>
-                     <author>Muḥammad ibn Manṣūrمحمد بن منصور
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Muḥammad ibn Manṣūr</persName>
+                        <persName xml:lang="fa">محمد بن منصور</persName>
+                        
+                        
+                        
                         
                         
                         
@@ -91,8 +96,8 @@
                      <title xml:lang="fa">رساله در بیات حدوث قوس الله</title>
                      
                      
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>A tract on the conditions traditionally believed to cause rainbows</note>
                      <note>Title has been supplied by<ref target="Waley_1998" type="page">Waley 1998, page 30.</ref>
                      </note>
@@ -180,7 +185,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-10-14">

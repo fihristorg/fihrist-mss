@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3925">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,16 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_599-item1">
-                     <author>Fakhr al-Dīn ibn Muḥammad Ṭarīḥ ibn ʿAlī al-Najafī, d. 1085/1674
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="supplied">Fakhr al-Dīn ibn Muḥammad Ṭarīḥ ibn ʿAlī al-Najafī, d. 1085/1674</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Nuzhat al-khāṭir wa-surūr al-nāḍir</title>
                      
@@ -59,8 +65,10 @@
                                   ref="http://viaf.org/viaf/23706113"
                                   type="standard">Muḥammad ibn ʿUzayr Sijistānī</persName>, brought into ordinary alphabetical order</note>
                      <incipit xml:lang="ar">الحمد لله الذي جعل القران وسيلة لنا الى اشرف منازا الكرامة ... واما بعد فيقول الفقير الى ربه الغني فخر الدين بن محمد علي طريح النجفي اني لما عثرت بكتاب غريب القران المسمي بنزهة القلوب وفرحة المكروب تاليف ابي بكر محمد بن عزيز السجستاني و تاملته ... و سميته بنزهة الخاطر وسرور الناضر وتحفة الحاضر</incipit>
-                     
-                     
+                     <explicit xml:lang="ar" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 39</bibl>
                         <bibl>GAL 1.c; II 286; II 500, where this work is not mentioned</bibl>
@@ -75,14 +83,14 @@
                               <height>18.4</height>
                               <width>12.3</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="21" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -136,7 +144,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-03-05">

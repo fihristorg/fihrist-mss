@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1167">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,9 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Marsh_627-item1" n="1">
                      <locus from="4" to="73">ff. 4r-73r</locus>
-                     <author key="n 85203389" ref="http://viaf.org/viaf/17352036/">Zarkashī, Muḥammad ibn Bahādur,<date calendar="#Gregorian" from="1344" to="1392">1344 or 5-1392</date>
+                     <author key="n 85203389" ref="http://viaf.org/viaf/17352036/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Zarkashī, Muḥammad ibn Bahādur,<date calendar="#Gregorian" from="1344" to="1392">1344 or 5-1392</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Khabāyā al-zawāyā fī al-furūʻ</title>
                      <listBibl>
@@ -56,7 +58,9 @@
                   </msItem>
                   <msItem xml:id="MS_Marsh_627-item2" n="2">
                      <locus from="77" to="195">ff. 77-195</locus>
-                     <author>Ushnuhī, Abū al-Faḍl ʻAbd al-ʻAzīz,<date calendar="#Gregorian" when="1111">fl. 1111</date>
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc">Ushnuhī, Abū al-Faḍl ʻAbd al-ʻAzīz,<date calendar="#Gregorian" when="1111">fl. 1111</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Ushnuhīyah fī al-farāʼiḍ</title>
                      <title>With commentary<title xml:lang="ar-Latn-x-lc">al-Mawāhib al-sanīyah</title>* by<persName type="standard"
@@ -185,11 +189,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

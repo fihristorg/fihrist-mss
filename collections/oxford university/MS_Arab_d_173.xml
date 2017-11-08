@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_797">
    <teiHeader>
       <fileDesc>
@@ -106,7 +106,9 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="MS_Arab_d_173-item7" n="7">
-                     <author key="n 84030639" ref="http://viaf.org/viaf/29521580/">Azharī, Khālid ibn ʻAbd Allāh, d.<date calendar="#Gregorian" when="1499">1499</date>
+                     <author key="n 84030639" ref="http://viaf.org/viaf/29521580/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Azharī, Khālid ibn ʻAbd Allāh, d.<date calendar="#Gregorian" when="1499">1499</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Sharḥ al-muqaddimah al-Ājurrūmīyah</title>
                      <note>Commentary on<title xml:lang="ar-Latn-x-lc" ref="#m2">al-Muqaddimah al-Ājurrūmīyah</title>of<persName type="standard"
@@ -145,7 +147,9 @@
                   </msItem>
                   <msItem xml:id="MS_Arab_d_173-item10" n="10">
                      <locus from="78" to="81">ff. 78r-81v</locus>
-                     <author key="n 82100618" ref="http://www.viaf.org/viaf/27237410/">Shirbīnī, Muḥammad ibn Aḥmad, d.<date calendar="#Gregorian" when="1570">1570</date>
+                     <author key="n 82100618" ref="http://www.viaf.org/viaf/27237410/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Shirbīnī, Muḥammad ibn Aḥmad, d.<date calendar="#Gregorian" when="1570">1570</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Iqnāʻ fī ḥall alfāẓ Abī Shujāʻ</title>
                      <note xml:lang="ar-Latn-x-lc">A commentary on<title xml:lang="ar-Latn-x-lc">al-Mukhtaṣar fī al-fiqh</title>of<persName xml:lang="ar-Latn-x-lc"
@@ -397,11 +401,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

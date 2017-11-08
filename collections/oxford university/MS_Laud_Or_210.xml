@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1047">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,9 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Laud_Or_210-item1" n="1" class="#translation">
                      <locus from="3" to="80">ff. 3r-80v</locus>
-                     <author>Ibn Mawhūb, ʻAlī ibn Mubārak,<date calendar="#Gregorian" notBefore="1100" notAfter="1200">12th cent.</date>
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc">Ibn Mawhūb, ʻAlī ibn Mubārak,<date calendar="#Gregorian" notBefore="1100" notAfter="1200">12th cent.</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Tibr al-masbūk fī naṣīḥat al-mulūk</title>
                      <note>Arabic version of the Persian<title xml:lang="ar-Latn-x-lc" ref="#m2">Naṣīḥat al-mulūk</title>of<persName xml:id="m2"
@@ -62,7 +64,9 @@
                   </msItem>
                   <msItem xml:id="MS_Laud_Or_210-item2" n="2">
                      <locus from="82" to="102">ff. 82r-102v</locus>
-                     <author key="nr2002000451" ref="http://viaf.org/viaf/97020948/">Yaḥyá ibn al-Biṭrīq</author>
+                     <author key="nr2002000451" ref="http://viaf.org/viaf/97020948/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Yaḥyá ibn al-Biṭrīq</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Kitāb al-Siyāsah fī tadbīr al-riyāsah</title>
                      <title xml:lang="ar-Latn-x-lc">Sirr al-asrār li-taʼsīs al-siyāsah wa tartīb aḥwāl al-riyāsah</title>
                      <note>Adapted from various sources and attributed to<persName type="standard"
@@ -184,11 +188,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

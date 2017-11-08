@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_9415">
    <teiHeader>
       <fileDesc>
@@ -45,24 +45,33 @@
                <msContents>
                   <summary>This Aljamiado manuscript contains a compendium of Islamic law written by Baray de Reminjo with the help of a young scholar known as Mancebo de Arévalo. The treatise was composed in Spain in the third decade of the XVI century. A<locus from="1v" to="1v">Latin note</locus>at the top of the first page states that the manuscript was given as a gift from Engelbertus van Engelen to Henry Sike in 1703.</summary>
                   <msItem xml:id="Dd_9.49-item1">
-                     <author>Baray de Reminjoبري دا رامنجه
-                        
-                        
-                        
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="supplied">Baray de Reminjo</persName>
+                        <persName xml:lang="ar">بري دا رامنجه
+                           
+                           
+                           
+                        </persName>
                      </author>
-                     <author key="n2004040198" ref="http://viaf.org/viaf/60933980/">Mancebo de Arévaloبري دا رامنجه
+                     <author key="n2004040198" ref="http://viaf.org/viaf/60933980/">
+                        <persName xml:lang="en" type="standard">Mancebo de Arévalo</persName>
                         
-                        
-                        
+                        <persName xml:lang="ar">بري دا رامنجه
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">El breve compendio de nuestra santa ley alçunna que acopilo el honrrado sabidor alfaqui de la aljamaʻa de los muslimes de Cadrete que se llamaba Baray de Reminjo</title>
                      
                      <title xml:lang="ar">ال بارابا كمبانديه دا نواشتر شنت لاي السنة كا اكبله ال انرد شبدر الفقي داللجمعه دا لش مسلماش دا كدراتا كا شا لمب بري دا رامنجه</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/view.php?id=171">no. 1348</ref>
@@ -698,13 +707,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -758,7 +767,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-06-08">

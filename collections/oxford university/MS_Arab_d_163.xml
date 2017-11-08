@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_10188">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,9 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_Arab_d_163-item1">
-                     <author key="n 86822371" ref="http://www.viaf.org/viaf/89785182/">Sāwīrus ibn al-Muqaffaʻ, Bishop of el-Ashmunein, fl.<date calendar="#Gregorian" from="0955" to="0987">955-987</date>
+                     <author key="n 86822371" ref="http://www.viaf.org/viaf/89785182/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Sāwīrus ibn al-Muqaffaʻ, Bishop of el-Ashmunein, fl.<date calendar="#Gregorian" from="0955" to="0987">955-987</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Siyar al-ābāʼ al-baṭāriqah</title>
                      <note>[history of the Coptic patriarchs of Alexandria], vols. 2 and 3 [lacking end]. Transcribed from ms. arabe 302 (anciens fonds 140) [15th cent.?], of the<name type="org">Bibliothèque Nationale</name>
@@ -103,11 +105,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

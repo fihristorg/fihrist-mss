@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8141">
    <teiHeader>
       <fileDesc>
@@ -41,7 +41,12 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_210009-item1" n="1">
-                     <author key="nb2013022935‏" ref="http://viaf.org/viaf/305366593/">Al-Hinawy, Mbarak, Sheikh-Sir, 1896-1959Hinawy, Mbarak A.Mbarak Ali Hinawyهنائي، مبارك بن علي</author>
+                     <author key="nb2013022935‏" ref="http://viaf.org/viaf/305366593/">
+                        <persName xml:lang="swa-Latn-x-lc" type="standard">Al-Hinawy, Mbarak, Sheikh-Sir, 1896-1959</persName>
+                        <persName xml:lang="swa-Latn-x-lc" type="alt">Hinawy, Mbarak A.</persName>
+                        <persName xml:lang="swa-Latn-x-lc" type="alt">Mbarak Ali Hinawy</persName>
+                        <persName xml:lang="swa">هنائي، مبارك بن علي</persName>
+                     </author>
                      <editor role="editor">
                         <persName type="standard"
                                   key="no2011008441‏"
@@ -58,7 +63,11 @@
                      <textLang mainLang="en">English</textLang>
                   </msItem>
                   <msItem xml:id="ms_210009-item2" n="2">
-                     <author>Mazrui, Abdallah bin Masuud bin SalimAbdallah bin Masuud bin Salim al-Mazruiمزروعي، عبد الله بن سالم</author>
+                     <author>
+                        <persName xml:lang="swa-Latn-x-lc" type="supplied">Mazrui, Abdallah bin Masuud bin Salim</persName>
+                        <persName xml:lang="swa-Latn-x-lc" type="alt">Abdallah bin Masuud bin Salim al-Mazrui</persName>
+                        <persName xml:lang="swa">مزروعي، عبد الله بن سالم</persName>
+                     </author>
                      <title xml:lang="swa-Latn-x-lc">Utenzi wa al-Akida</title>
                      
                      <note>Swahili poetry</note>
@@ -77,13 +86,13 @@
                         <extent>
                            <ref target="a1">1-68f.</ref>
                            <ref target="a2">69-79 f.</ref>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -130,7 +139,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2017-01-24">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8759">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,9 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_47513-item1" n="1">
-                     <author ref="http://viaf.org/viaf/19703891" key="n80013285">Anṣārī al-Harawī, ʻAbd Allāh ibn Muḥammad, 1006-1089</author>
+                     <author ref="http://viaf.org/viaf/19703891" key="n80013285">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Anṣārī al-Harawī, ʻAbd Allāh ibn Muḥammad, 1006-1089</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Rubā‘īyāt-i Khvājah ʻAbd Allāh Anṣārī</title>
                      <title xml:lang="fa">رباعیات خواجه عبد الله انصاری</title>
                      <title>Sufi quatrains</title>
@@ -52,21 +54,30 @@
                      
                      <incipit>الحمد لله رب العالمین...قال الشیخ الامام ...خواجه عبد الله انصاری</incipit>
                      <colophon>بتاریخ شهر المظفر قلمی شد سنه 1033 محمد اکرم</colophon>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="ms_47513-item2" n="2">
-                     <author>Anonymous</author>
+                     <author>
+                        <persName>Anonymous</persName>
+                     </author>
                      <title>A poem in praise of ʻAbd al-Qādir al-Jīlānī</title>
                      
                      
                      <incipit>پادشاه مشایخ امام أيمه غوث الثقلين ابو محمد</incipit>
                      <colophon>كتبت هذا الاسماء عند حضور مرقد الشريف شيخ عبد القادر الجيلاني</colophon>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="ms_47513-item3" n="3">
-                     <author ref="http://viaf.org/viaf/5721767" key="n88155215">Abū Sa‘īd ibn Abī al-Khayrابو سعید ابن ابی الخیر</author>
+                     <author ref="http://viaf.org/viaf/5721767" key="n88155215">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Abū Sa‘īd ibn Abī al-Khayr</persName>
+                        <persName xml:lang="fa">ابو سعید ابن ابی الخیر</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Rubā‘īyāt</title>
                      <title xml:lang="fa">رباعیات</title>
                      <title>Sufi quatrains</title>
@@ -74,7 +85,9 @@
                      
                      <incipit>مردان خدا ز خاکدان دگرند. مرغان هوا ز آشیان دگرند</incipit>
                      <colophon>بتاریخ شهر المظفر قلمی شد سنه 1033 محمد اکرم</colophon>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
@@ -85,13 +98,13 @@
                            <ref target="a1">1b-45b f.</ref>
                            <ref target="a2">47b-48a f.</ref>
                            <ref target="a3">49b-69b f.</ref>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -146,7 +159,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2016-11-08">

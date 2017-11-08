@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7794">
    <teiHeader>
       <fileDesc>
@@ -39,7 +39,7 @@
                         </extent>
                         <collation>
                            <seg type="gathering" n="1-131" subtype="folded">
-                              
+                              <dimensions type="leaf" unit="mm" quantity="15"/>
                               <formula>01+131+001</formula>
                            </seg>
                         </collation>
@@ -105,7 +105,12 @@
                         <note facs="#i0005">
                            <locus>fol.2b.1</locus>This work is written by Galine (Ğālīnūs) and translated by Ḥunain b. Isḥāq</note>
                         <author>
-                           <forename facs="#i0005">جالينوس</forename>جالينوسGaline (Ğālīnūs)</author>
+                           <persName xml:lang="ara-Arab" type="standard">
+                              <forename facs="#i0005">جالينوس</forename>
+                           </persName>
+                           <persName xml:lang="ara-Arab" type="original" facs="#i0005">جالينوس</persName>
+                           <persName type="standard" xml:lang="eng-Latn">Galine (Ğālīnūs)</persName>
+                        </author>
                         <title type="other" facs="#i0003" xml:lang="ara-Arab">مقالات جالينوس</title>
                         <title type="original" facs="#i0005">كتاب جالينوس الى علوقن<locus>fol.2b.2</locus>
                         </title>
@@ -163,7 +168,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-11-22T18:08:28+02:00">Committed to SVN. To view the changes in detail use SVN diff. SVN Url:http://wellcomesvn.local.bibalex.dom/svn/WellcomeTrust/trunk/WAMCPMetaGallery/XML/WMS_Arabic_62/WMS_Arabic_62.xml<persName>eralph</persName>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5184">
    <teiHeader>
       <fileDesc>
@@ -46,7 +46,9 @@
                           n="1"
                           class="http://lccn.loc.gov/sh85070893 http://lccn.loc.gov/sh85076357">
                      <locus from="1v" to="95r">ff 1v-95r</locus>
-                     <author>Aaron ben She’erit Shirvānī</author>
+                     <author>
+                        <persName xml:lang="jpr-Latn">Aaron ben She’erit Shirvānī</persName>
+                     </author>
                      <title xml:lang="he-Latn-x-lc">Agron</title>
                      <note>A Hebrew-Persian dictionary covering the Hebrew and Aramaic vocabulary of the Bible</note>
                      <note>Probably an autograph</note>
@@ -66,7 +68,9 @@
                           n="2"
                           class="http://lccn.loc.gov/sh85070893 http://lccn.loc.gov/sh85070835">
                      <locus from="99v" to="114r">ff 99v-114r</locus>
-                     <author>‘Amukot Shemu’el</author>
+                     <author>
+                        <persName xml:lang="he-Latn-x-lc">‘Amukot Shemu’el</persName>
+                     </author>
                      <title xml:lang="en" type="desc">A Hebrew-Persian commentary on the Book of Samuel and the beginning of the Book of Kings</title>
                      <note>See ZDMG li (1897), pp. 392 ff</note>
                      <note>
@@ -85,7 +89,7 @@
                               <height>20.6</height>
                               <width>12.8</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -118,7 +122,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-11-16">

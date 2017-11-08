@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1079">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,9 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Marsh_236-item1" n="1">
                      <locus from="2" to="124">ff. 2v-124r</locus>
-                     <author key="nr 94033070" ref="http://www.viaf.org/viaf/24485062/">Ibn al-Taʻāwīdhī, Muḥammad ibn ʻUbayd Allāh,<date calendar="#Gregorian" from="1125" to="1188">1125-1187 or 8</date>
+                     <author key="nr 94033070" ref="http://www.viaf.org/viaf/24485062/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ibn al-Taʻāwīdhī, Muḥammad ibn ʻUbayd Allāh,<date calendar="#Gregorian" from="1125" to="1188">1125-1187 or 8</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Dīwān</title>
                      <listBibl>
@@ -56,7 +58,9 @@
                   </msItem>
                   <msItem xml:id="MS_Marsh_236-item2" n="2">
                      <locus from="125" to="259">ff. 125v-259v</locus>
-                     <author key="nr 92033203" ref="http://viaf.org/viaf/54277335/">Ibn Sanāʼ al-Mulk, Hibat Allāh ibn Jaʻfar,<date calendar="#Gregorian" from="1150" to="1212">1150 or 51-1211 or 12</date>
+                     <author key="nr 92033203" ref="http://viaf.org/viaf/54277335/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ibn Sanāʼ al-Mulk, Hibat Allāh ibn Jaʻfar,<date calendar="#Gregorian" from="1150" to="1212">1150 or 51-1211 or 12</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Dīwān</title>
                      <listBibl>
@@ -173,11 +177,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

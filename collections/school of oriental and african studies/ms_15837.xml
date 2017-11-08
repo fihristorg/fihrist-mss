@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8038">
    <teiHeader>
       <fileDesc>
@@ -44,26 +44,31 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_15837-item1">
-                     <author ref="http://viaf.org/viaf/60944944">Lāhījī, Ḥasan ibn ʻAbd al-Razzāq, 1635 or 1636-1709 or 1710لاهيجى، حسن بن عبد الرزاق</author>
+                     <author ref="http://viaf.org/viaf/60944944">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Lāhījī, Ḥasan ibn ʻAbd al-Razzāq, 1635 or 1636-1709 or 1710</persName>
+                        <persName xml:lang="fa">لاهيجى، حسن بن عبد الرزاق</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Jamāl al-ṣāliḥīn</title>
                      <title xml:lang="fa">جمال الصالحين</title>
                      <note>A work in 12 babs on Muslim ethics and devotions, translated into Persian from the original Arabic</note>
                      <incipit xml:lang="fa">وبعد چنین گوید احوج عباد الله الی فضل ربه حسن بن عبد الرزاق</incipit>
                      <explicit>تمت رساله جمال الصالحین علی يد افقر عباد الله ابن محمد صادق عبد الحميد</explicit>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>260 f.
-                           
+                        <extent>260 f.<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -113,7 +118,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-03-17">

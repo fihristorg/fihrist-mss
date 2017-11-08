@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6305">
    <teiHeader>
       <fileDesc>
@@ -43,11 +43,14 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85006317 http://lccn.loc.gov/sh85100087">
                   <msItem xml:id="Or_7976-item1">
-                     <author ref="http://viaf.org/viaf/9907600" key="n82164402">Ḥarīrī, 1054-1122حریری</author>
+                     <author ref="http://viaf.org/viaf/9907600" key="n82164402">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ḥarīrī, 1054-1122</persName>
+                        <persName xml:lang="ar">حریری</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Maqāmāt</title>
                      <title xml:lang="ar">مقامات</title>
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <note>With interlinear Persian translation of the greater part, made in<date calendar="#Hijri-qamari" notBefore="1191" notAfter="1192">587</date>by<persName xml:lang="fa-Latn-x-lc" type="supplied">Faz̤lullāh ibn ‘Usmān ibn . . . Sabzavārī?<foreign xml:lang="fa">فضل الله بن عثمان ابن . . . سبزواری</foreign>
                         </persName>called<persName xml:lang="fa-Latn-x-lc" type="supplied">Sirāj al-Kātib<foreign xml:lang="fa">سراج الکتاب</foreign>
                         </persName>
@@ -97,7 +100,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-10-25">

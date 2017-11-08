@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1280">
    <teiHeader>
       <fileDesc>
@@ -66,7 +66,9 @@
                   </msItem>
                   <msItem xml:id="MS_Ouseley_104-item2" n="2" class="#commentary">
                      <locus from="160" to="180">ff. 160v-180v</locus>
-                     <author key="nr 91041701" ref="http://viaf.org/viaf/36776499/">Maghnīsāwī, Aḥmad ibn Muḥammad,<date calendar="#Gregorian" when="1592">d. 1591 or 2</date>
+                     <author key="nr 91041701" ref="http://viaf.org/viaf/36776499/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Maghnīsāwī, Aḥmad ibn Muḥammad,<date calendar="#Gregorian" when="1592">d. 1591 or 2</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Sharḥ al-fiqh al-akbar lil-Imām Abī Ḥanīfah</title>
                      <title xml:lang="ar">شرح الفقه الأكبر للإمام أبي حنيفة</title>
@@ -195,11 +197,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

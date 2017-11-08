@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1132">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,9 @@
                <msContents>
                   <msItem xml:id="MS_Marsh_538-item1" n="1">
                      <locus from="5" to="25">ff. 5-25r</locus>
-                     <author key="nr 91019719" ref="http://www.viaf.org/viaf/51545226/">Athīr al-Dīn al-Abharī, al-Mufaḍḍal ibn ʻUmar, d.<date calendar="#Gregorian" when="1265">1265</date>
+                     <author key="nr 91019719" ref="http://www.viaf.org/viaf/51545226/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Athīr al-Dīn al-Abharī, al-Mufaḍḍal ibn ʻUmar, d.<date calendar="#Gregorian" when="1265">1265</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Kitāb al-Īsaghūjī</title>
                      <note>With commentary by<persName xml:lang="ar-Latn-x-lc">Ḥusām al-Dīn Ḥasan al-Kātī<date calendar="#Gregorian" when="1359">d. 1359</date>
@@ -59,7 +61,9 @@
                   </msItem>
                   <msItem xml:id="MS_Marsh_538-item2" n="2" class="#gloss">
                      <locus from="25" to="38">ff. 25v-38r</locus>
-                     <author>Bardaʻī, Muḥammad ibn Muḥammad, d. 1521</author>
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc">Bardaʻī, Muḥammad ibn Muḥammad, d. 1521</persName>
+                     </author>
                      <title>Glosses to the commentary by<persName xml:lang="ar-Latn-x-lc">Ḥusām al-Dīn Ḥasan al-Kātī<date calendar="#Gregorian" when="1359">d. 1359</date>
                         </persName>on the<title xml:lang="ar-Latn-x-lc">Kitāb al-īsāghūjī</title>of<persName type="standard"
                                   xml:lang="ar-Latn-x-lc"
@@ -91,7 +95,9 @@
                   </msItem>
                   <msItem xml:id="MS_Marsh_538-item4" n="4">
                      <locus from="89" to="94">ff. 89r-94r</locus>
-                     <author key="nr 91019719" ref="http://www.viaf.org/viaf/51545226/">Athīr al-Dīn al-Abharī, al-Mufaḍḍal ibn ʻUmar, d.<date calendar="#Gregorian" when="1265">1265</date>
+                     <author key="nr 91019719" ref="http://www.viaf.org/viaf/51545226/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Athīr al-Dīn al-Abharī, al-Mufaḍḍal ibn ʻUmar, d.<date calendar="#Gregorian" when="1265">1265</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Kitāb al-Īsaghūjī</title>
                      <note>Based on the<title xml:lang="grc">εἰσαγωγή</title>of Porphyrius</note>
@@ -103,7 +109,9 @@
                   </msItem>
                   <msItem xml:id="MS_Marsh_538-item5" n="5">
                      <locus from="95" to="103">fols. 95r-103v</locus>
-                     <author key="n 88286025" ref="http://www.viaf.org/viaf/19930855/">Jurjānī, ʻAlī ibn Muḥammad, al-Sayyid al-Sharīf,<date calendar="#Gregorian">1340-1413</date>
+                     <author key="n 88286025" ref="http://www.viaf.org/viaf/19930855/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Jurjānī, ʻAlī ibn Muḥammad, al-Sayyid al-Sharīf,<date calendar="#Gregorian">1340-1413</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Risālah al-Waladīyah fī al-manṭiq</title>
                      <listBibl>
@@ -252,11 +260,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

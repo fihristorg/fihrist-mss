@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7734">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,9 @@
                         </seg>
                      </handNote>
                   </handDesc>
-                  
+                  <bindingDesc>
+                     <binding/>
+                  </bindingDesc>
                   <accMat facs="#i0003">Cataloging Card refers to some information about the manuscript in english.</accMat>
                </physDesc>
                <history>
@@ -81,8 +83,14 @@
                            <locus>fol.1b.2</locus>الحمد للـه الذي خلق ادم من طين ثم نفخ فيه روحا واصطفاه للرسالة كما اصطفى ادريس من بعده ونوحا ونجي يوسف من الجب وعلمه تاويل الاحاديث<gap reason="omitted"/>وجعل علم التعبير من العلوم الشرعية</incipit>
                         <incipit facs="#i0006">
                            <locus>fol.1b.21</locus>يقول الفقير الي اللـه خليل بن شاهين الظاهري لطف اللـه به قوله تعالي فلما خر تبينت الجن ان لو كانوا يعلمون الغيب ما لبثوا في العذاب المهين وقوله تعالى في تكذيب الكهانة ولا بقول كاهن قليلا ما تذكرون قال الواحدى الكاهن هو الذي يخبر عن المغيبات وقد ذم الشرع الكل لنفوده تعالي بعلم الغيب فاعرضت عن ذلك ولم التفت اليه واردت ان اجمع كتابا يشتمل علي علم يظهر به المغيبات وله اصل في الشريعة وهو علم التاويل والتعبير وسميته كتاب الاشارات في علم العبارات</incipit>
-                        <author>خليل بن شاهين الظاهري<forename facs="#i0006">خليل بن شاهين</forename>
-                           <addName type="nisbah" facs="#i0006">الظاهري</addName>ẖalīl b. Šāhīn aẓ-Ẓāhirī Ğarsaḏdīn</author>
+                        <author>
+                           <persName xml:lang="ara-Arab" type="original" facs="#i0006">خليل بن شاهين الظاهري</persName>
+                           <persName type="standard" xml:lang="ara-Arab">
+                              <forename facs="#i0006">خليل بن شاهين</forename>
+                              <addName type="nisbah" facs="#i0006">الظاهري</addName>
+                           </persName>
+                           <persName type="standard" xml:lang="eng-Latn">ẖalīl b. Šāhīn aẓ-Ẓāhirī Ğarsaḏdīn</persName>
+                        </author>
                         <title type="original" facs="#i0006">كتاب الاشارات في علم العبارات<locus>fol.2a.5</locus>
                         </title>
                         <explicit facs="#i0439">
@@ -419,7 +427,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-01-06T10:34:12+02:00">Committed to SVN. To view the changes in detail use SVN diff. SVN Url:http://wellcomesvn.local.bibalex.dom/svn/WellcomeTrust/trunk/WAMCPMetaGallery/XML/WMS_Arabic_22/WMS_Arabic_22.xml<persName>sherif.masry</persName>

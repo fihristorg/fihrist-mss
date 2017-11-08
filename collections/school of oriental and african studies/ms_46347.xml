@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8603">
    <teiHeader>
       <fileDesc>
@@ -44,13 +44,18 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_46347-item1">
-                     <author key="n 84031911" ref="http://viaf.org/viaf/61532835/">Sakkākī, Yūsuf ibn Abī Bakr, b. 1160سکاکی، یوسف بن ابی بکر</author>
+                     <author key="n 84031911" ref="http://viaf.org/viaf/61532835/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Sakkākī, Yūsuf ibn Abī Bakr, b. 1160</persName>
+                        <persName xml:lang="ar">سکاکی، یوسف بن ابی بکر</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Kitāb al-Shāmil wa-baḥr al-kāmil fī uṣūl al-taʻẓīm wa-qawāʻid al-tanjīm</title>
                      <title xml:lang="ar">کتاب الشامل وبحر الکامل فی اصول التعظیم وقواعد التنجیم</title>
                      <note>Encyclopaedia of magic and divination in five maqalat</note>
                      <incipit>الحمد لله الذي جاعل الملايكة رسلا اولي اجنحة مثنى وثلاث ورباع يزيد فى الخلق ما يشاء ان الله على كل شي قدير ... اما بعد قال الشيخ الجليل سراج الدين ابو يعقوب يوسف السكاكي ان هذا كتاب فيه سراير ... العلماء الاولين وكانوا يكتمونه عن الناس</incipit>
                      <colophon>كتبه سراج الدين ابي يعقوب الكاكي في تاريخ سنه 652</colophon>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://digital.info.soas.ac.uk/15594/#page/1/mode/2up/search/">view the printed catalogue Gacek no.168</ref>
@@ -73,7 +78,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -131,7 +136,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-04-13">

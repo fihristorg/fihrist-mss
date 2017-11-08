@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8494">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,11 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_44545-item1">
-                     <author>Muḥammad Fāʼiq ibn Ghulām Ḥusaynمحمد فائق بن غلام حسينMuḥammad Fāyiq ibn Ghulām Ḥusayn</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Muḥammad Fāʼiq ibn Ghulām Ḥusayn</persName>
+                        <persName xml:lang="fa">محمد فائق بن غلام حسين</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Muḥammad Fāyiq ibn Ghulām Ḥusayn</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Dastūr al-inshā</title>
                      <title xml:lang="fa-Latn-x-lc" type="alt">Inshā-yi Fāʼiq</title>
                      <title xml:lang="fa">دستور الانشا</title>
@@ -57,13 +61,13 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>39 f.
-                           
+                        <extent>39 f.<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -113,7 +117,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-04-07">

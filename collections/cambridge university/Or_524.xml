@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_2357">
    <teiHeader>
       <fileDesc>
@@ -45,10 +45,15 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="Or_524-item1" n="1">
                      <locus from="1" to="55">ff. 1-55</locus>
-                     <author>Imām al-Dīn ibn Shaykh Abū al-Makārimامام الدين بن شيخ ابو المكارم
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Imām al-Dīn ibn Shaykh Abū al-Makārim</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">امام الدين بن شيخ ابو المكارم
+                           
+                           
+                           
+                        </persName>
                      </author>
                      
                      
@@ -65,10 +70,15 @@
                   </msItem>
                   <msItem xml:id="Or_524-item2" n="2">
                      <locus from="59b" to="113b">ff. 59b-113b</locus>
-                     <author key="n88646608" ref="http://viaf.org/viaf/50013027/">Muḥammad ʻAlī Ḥazīn, 1692?-1766?محمد علی حزين
+                     <author key="n88646608" ref="http://viaf.org/viaf/50013027/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Muḥammad ʻAlī Ḥazīn, 1692?-1766?</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">محمد علی حزين
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Dīvān-i Ḥazīn</title>
                      
@@ -88,13 +98,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -174,7 +184,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-11-09">

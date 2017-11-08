@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3939">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,15 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_638-item1">
-                     <author key="n8210896" ref="http://viaf.org/viaf/71525784">Ibn Ḥajar al-ʿAsqalānī, Aḥmad ibn ʿAlī, 1372-1449بن حجر العسقلاني، أحمد بن علي، 773-852 هـ
+                     <author key="n8210896" ref="http://viaf.org/viaf/71525784">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn Ḥajar al-ʿAsqalānī, Aḥmad ibn ʿAlī, 1372-1449</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">بن حجر العسقلاني، أحمد بن علي، 773-852 هـ
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Fatḥ al-bārī fī sharḥ al-Bukhārī</title>
                      
@@ -60,9 +65,11 @@
                                   ref="http://viaf.org/viaf/89645728/">Muḥammad ibn Ismāʿīl Bukhārī</persName>
                      </note>
                      <note>Fifth part only</note>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 113</bibl>
                         <bibl>GAL II 67-70</bibl>
@@ -77,7 +84,7 @@
                               <height>21.7</height>
                               <width>15.7</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
@@ -87,7 +94,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="29" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -142,7 +149,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-01-21">

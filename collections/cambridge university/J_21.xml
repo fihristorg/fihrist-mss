@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_735">
    <teiHeader>
       <fileDesc>
@@ -44,25 +44,35 @@
                </msIdentifier>
                <msContents class="#translation">
                   <msItem xml:id="J_21-item1">
-                     <author key="n2008020672" ref="http://viaf.org/viaf/56411441/">Tustarī, Muḥammad ibn Asʻad ibn ʻAbd Allāh al-Ḥanafīمحمد بن اسعد بن عبد الله<addName xml:lang="ar" type="laqab">الحنفي</addName>
+                     <author key="n2008020672" ref="http://viaf.org/viaf/56411441/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Tustarī, Muḥammad ibn Asʻad ibn ʻAbd Allāh al-Ḥanafī</persName>
                         
                         
-                        <addName xml:lang="ar" type="nisbah">التستري</addName>
+                        <persName xml:lang="ar">محمد بن اسعد بن عبد الله<addName xml:lang="ar" type="laqab">الحنفي</addName>
+                           
+                           
+                           <addName xml:lang="ar" type="nisbah">التستري</addName>
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Qiṣaṣ al-anbiyāʼ</title>
                      
                      <title xml:lang="fa">قصص الانبياء</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/nicholson1932/view.php?id=158"/>
                         </bibl>
                         <bibl type="text-relations">This work is a Persian version of the Arabic<title xml:lang="ar-Latn-x-lc">Qiṣaṣ al-Qurʼān al-Karīm<foreign xml:lang="ar">قصص القرآن الكريم</foreign>
-                           </title>of<author key="n2006109649" ref="http://viaf.org/viaf/12069464/">Būshanjī, al-Hayṣam ibn Muḥammad, 11th cent.بوشنجي، الهيصم بن محمد</author>.</bibl>
+                           </title>of<author key="n2006109649" ref="http://viaf.org/viaf/12069464/">
+                              <persName xml:lang="ar-Latn-x-lc">Būshanjī, al-Hayṣam ibn Muḥammad, 11th cent.</persName>
+                              <persName xml:lang="ar">بوشنجي، الهيصم بن محمد</persName>
+                           </author>.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
@@ -71,13 +81,13 @@
                   <objectDesc form="other">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -153,7 +163,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-08-10">

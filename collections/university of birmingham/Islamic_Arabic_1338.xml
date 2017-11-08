@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3690">
    <teiHeader>
       <fileDesc>
@@ -44,19 +44,26 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_1338-item1">
-                     <author key="n 80161625" ref="http://www.viaf.org/viaf/27877669/">Būnī, Aḥmad ibn ʿAlī, -1225البوني، أحمد بن علي، ت. 622 هـ
+                     <author key="n 80161625" ref="http://www.viaf.org/viaf/27877669/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Būnī, Aḥmad ibn ʿAlī, -1225</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">البوني، أحمد بن علي، ت. 622 هـ
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Shams al-maʿārif wa-laṭāʾif al-ʿawārif</title>
                      
                      <title xml:lang="ar">كتاب شمس المعارف ولطائف العوارف</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 951</bibl>
                         <bibl>GAL I 497-8, esp. no 3.; I 910-11</bibl>
@@ -71,7 +78,7 @@
                               <height>30.0</height>
                               <width>19.5</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="original">Catchwords on each leaf, lower left verso. Additional pagination in pencil with eastern Arabic numerals, top left recto and top right verso.</foliation>
                         <foliation xml:id="modern">Modern foliation in pencil with western Arabic numerals, upper left recto</foliation>
@@ -81,7 +88,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="15" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -150,7 +157,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-02-14">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4126">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,12 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_Arch_Seld_A_10-item1">
-                     <author key="n88001230" ref="http://viaf.org/viaf/50761734/">Rāfiʻī, ʻAbd al-Karīm ibn Muḥammad, 1162-1226الرافعي، عبد الكريم بن محمد، 557-623 هـ</author>
+                     <author key="n88001230" ref="http://viaf.org/viaf/50761734/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Rāfiʻī, ʻAbd al-Karīm ibn Muḥammad, 1162-1226</persName>
+                        
+                        
+                        <persName xml:lang="ar">الرافعي، عبد الكريم بن محمد، 557-623 هـ</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Kitāb al-Muḥarrar</title>
                      <title xml:lang="ar">كتاب المحرّر</title>
                      <listBibl>
@@ -104,11 +109,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

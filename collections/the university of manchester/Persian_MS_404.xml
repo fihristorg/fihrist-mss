@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6900">
    <teiHeader>
       <fileDesc>
@@ -43,14 +43,17 @@
                <msContents>
                   <summary>A history of the reign of<persName key="n 80002413 " ref="http://viaf.org/viaf/3264079/">Akbar, Emperor of Hindustan, 1542-1605</persName>.</summary>
                   <msItem xml:id="Persian_MS_404-item1">
-                     <author key="n81108300" ref="http://viaf.org/viaf/5150639/">Abū al-Faz̤l ibn Mubārak, 1551-1602أبو الفضل بن مبارك‏</author>
+                     <author key="n81108300" ref="http://viaf.org/viaf/5150639/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Abū al-Faz̤l ibn Mubārak, 1551-1602</persName>
+                        <persName xml:lang="fa">أبو الفضل بن مبارك‏</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Akbarnāmah</title>
                      
                      <title xml:lang="fa">اكبرنامه</title>
                      
                      
-                     
-                     
+                     <incipit xml:lang="ar" type="basmalla"/>
+                     <explicit xml:lang="ar"/>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
@@ -58,8 +61,8 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
@@ -134,7 +137,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014">

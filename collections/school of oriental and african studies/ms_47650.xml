@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8773">
    <teiHeader>
       <fileDesc>
@@ -44,43 +44,65 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_47650-item1" n="1">
-                     <author>Anonymous</author>
+                     <author>
+                        <persName>Anonymous</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Mihr u Māh</title>
                      <title xml:lang="fa">مهر و ماه</title>
                      <note>It is not clear on what basis this has been identified as Mihr u mah, but it is evidently not the poem of this name by ʻĀqil Khān Rāzī</note>
                      <incipit>اسم اله رحمان است آنچه حرز دل و جان است</incipit>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="ms_47650-item2" n="2">
-                     <author>Anonymous</author>
+                     <author>
+                        <persName>Anonymous</persName>
+                     </author>
                      <title xml:lang="en" type="desc">Unidentified verse in Urdu</title>
                      <incipit>عشق هی تازه کار تازه خیال هر جکه اوسکی هی نی یک چال</incipit>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="ur">Urdu</textLang>
                   </msItem>
                   <msItem xml:id="ms_47650-item3" n="3">
-                     <author key="n85230986" ref="http://viaf.org/viaf/30981708/">Jān Jānān Maẓhar, Ḥabīb Allāh, 1699-1780جان جانان مظهر، حبيب الله</author>
+                     <author key="n85230986" ref="http://viaf.org/viaf/30981708/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Jān Jānān Maẓhar, Ḥabīb Allāh, 1699-1780</persName>
+                        <persName xml:lang="fa">جان جانان مظهر، حبيب الله</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Dīvān-i Maẓhar</title>
                      <title xml:lang="fa">ديوان مظهر</title>
                      <incipit>آبی نزد بروی گران خواب بخت ما با اینکه گریه داد بسیلاب رخت ما</incipit>
                      <colophon>تمت 12 ماه ذی قعده سنه 1251</colophon>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="ms_47650-item4" n="4">
-                     <author key="n2007009173" ref="http://viaf.org/viaf/26833521/">Nāṣir ʻAlī Sirhindī, d. 1697ناصر علي سرهندي</author>
+                     <author key="n2007009173" ref="http://viaf.org/viaf/26833521/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Nāṣir ʻAlī Sirhindī, d. 1697</persName>
+                        <persName xml:lang="fa">ناصر علي سرهندي</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Dīvān-i Nāṣir ʻAlī</title>
                      <title xml:lang="fa">دیوان ناصر علی</title>
                      <incipit>محبت جاده دارد نهان در خلوت دلها چو تار سبحه گم گرديد اين ره زير منزلها ا</incipit>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="ms_47650-item5" n="5">
-                     <author>Anonymous</author>
+                     <author>
+                        <persName>Anonymous</persName>
+                     </author>
                      <title xml:lang="en" type="desc">Unidentified verse in Urdu</title>
                      <incipit>جسم اوس انسان کا غمی پاک هی جسکا دل راه خدا مین خاک هی</incipit>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="ur">Urdu</textLang>
                   </msItem>
                </msContents>
@@ -93,13 +115,13 @@
                            <ref target="a3">23-78 f.</ref>
                            <ref target="a4">79-172 f.</ref>
                            <ref target="a5">174-184 f.</ref>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -172,7 +194,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-10-28">

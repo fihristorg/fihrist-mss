@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8887">
    <teiHeader>
       <fileDesc>
@@ -44,26 +44,33 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_64857-item1">
-                     <author key="n94007421" ref="http://viaf.org/viaf/31876500/">Rāghib, Muḥammad, 1698 or 1699-1762 or 1763Rağıp Mehmet Paşa, 1698 or 1699-1762 or 1763راغب محمد پاشا</author>
+                     <author key="n94007421" ref="http://viaf.org/viaf/31876500/">
+                        <persName xml:lang="ota-Latn-x-lc" type="standard">Rāghib, Muḥammad, 1698 or 1699-1762 or 1763</persName>
+                        <persName xml:lang="tr-Latn-x-lc" type="alt">Rağıp Mehmet Paşa, 1698 or 1699-1762 or 1763</persName>
+                        
+                        <persName xml:lang="ota">راغب محمد پاشا</persName>
+                     </author>
                      <title xml:lang="ota-Latn-x-lc">Divanı Rağıp Mehmet Paşa</title>
                      <title xml:lang="fa-Latn-x-lc" type="alt">Dīvān-i Rāghib Muḥammad Pāshā</title>
                      <title xml:lang="ota">دیوان راغب محمد پاشا</title>
                      <incipit xml:lang="ota">ديوان بلاغت عنوان راغب محمد پاشا در ستایش والیء بغداد احمد پاشا در وقت دفتردارى كفته بود</incipit>
                      <explicit xml:lang="ar" defective="true">كريمك نوش جانمز رچلرسم قهرینی راغب زلال لطفله اولدم ليئمك سير و ممنونى</explicit>
-                     
+                     <note>
+                        <foreign xml:lang="fa"/>
+                     </note>
                      <textLang mainLang="ota">Turkish</textLang>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>91 f.
-                           
+                        <extent>91 f.<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -102,7 +109,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-08-20">

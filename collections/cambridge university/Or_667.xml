@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_2429">
    <teiHeader>
       <fileDesc>
@@ -44,25 +44,35 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Or_667-item1" class="#commentary">
-                     <author>Shaykh Rashīd al-Dīn Abū Muḥammad ibn al-Ẓāhir ibn Abī al-Makārim Nashwān ibn ʻAbd al-Ẓāhir al-Rūḥī al-Saʻdī, d. 1251-2شيخ رشيد الدين ابو محمد بن الظاهر بن ابي المكارم نشوان بن عبد الظاهر الروحي السعدي
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="supplied">Shaykh Rashīd al-Dīn Abū Muḥammad ibn al-Ẓāhir ibn Abī al-Makārim Nashwān ibn ʻAbd al-Ẓāhir al-Rūḥī al-Saʻdī, d. 1251-2</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">شيخ رشيد الدين ابو محمد بن الظاهر بن ابي المكارم نشوان بن عبد الظاهر الروحي السعدي
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Sharḥ al-ʻunwān</title>
                      
                      <title xml:lang="ar">شرح العنوان</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne1922/view.php?id=83">no. 806</ref>
                         </bibl>
                         <bibl type="text-relations">Commentary on the<title xml:lang="ar-Latn-x-lc">Kitāb al-ʻunwān fī al-qirāʼāt al-sabʻ<foreign xml:lang="ar">‏كتاب العنوان في القراءات السبع</foreign>
-                           </title>of<author key="nr89017631" ref="http://viaf.org/viaf/45444729/">Saraqusṭī, Ismāʻīl ibn Khalaf, d. 1063ابو طاهر إسماعيل بن خلف المقري الأنصاري الأندلسي</author>
+                           </title>of<author key="nr89017631" ref="http://viaf.org/viaf/45444729/">
+                              <persName xml:lang="ar-Latn-x-lc">Saraqusṭī, Ismāʻīl ibn Khalaf, d. 1063</persName>
+                              <persName xml:lang="ar">ابو طاهر إسماعيل بن خلف المقري الأنصاري الأندلسي</persName>
+                           </author>
                         </bibl>
                      </listBibl>
                      <textLang mainLang="ar">Arabic</textLang>
@@ -72,13 +82,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -149,7 +159,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-01-06">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3549">
    <teiHeader>
       <fileDesc>
@@ -43,7 +43,10 @@
                </msIdentifier>
                <msContents class="http://id.loc.gov/authorities/sh85109233 http://lccn.loc.gov/sh85068396">
                   <msItem xml:id="IO_Islamic_2883-item1">
-                     <author key="n 2014214603‏" ref="http://viaf.org/viaf/313485392/">Jān, Bāboجان، بابو</author>
+                     <author key="n 2014214603‏" ref="http://viaf.org/viaf/313485392/">
+                        <persName xml:lang="pus-Latn-x-lc" type="standard">Jān, Bābo</persName>
+                        <persName xml:lang="ps">جان، بابو</persName>
+                     </author>
                      <title xml:lang="pus-Latn-x-lc">Kitāb-i Bābū Jān</title>
                      <title xml:lang="ps">کتاب بابو جان</title>
                      <note>A manual of religious instruction in verse</note>
@@ -64,7 +67,7 @@
                               <height>30.5</height>
                               <width>19</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -115,7 +118,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-12-21">

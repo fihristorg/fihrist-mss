@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7746">
    <teiHeader>
       <fileDesc>
@@ -46,15 +46,22 @@
                            <locus>fol.1a.4</locus>قال الشيخ الامام العالم العلامة شيخ القرا والمحدثين محمد ابن محمد ابن محمد الجزري الشافعى قال يقول راجي عفو رب سامع . محمد بن الجزري الشافعى الرجا فى الطمع ما يمكن وصوله والعفو الصفح عن الذنب</incipit>
                         <explicit type="ending" facs="#i0019">
                            <locus>fol.18b.21</locus>لانعام والمفتوح يدعون معا وخلف لانفال ونحل وقعا اي اقطعوا كلمة ان ما المكسور الهمزة في سورة الانعام في قوله تعالي ولا تشتروا بعهد الله ثمنا قليلا ان ما عند الله خير</explicit>
-                        <author>Anonymous</author>
+                        <author>
+                           <persName type="standard" xml:lang="eng-Latn">Anonymous</persName>
+                        </author>
                      </msItem>
                      <msItem xml:id="WMS_Arabic_274-part1-item2">
                         <locus facs="#i0021 #i0055">Fol.20b to Fol.53a</locus>
                         <title type="original" facs="#i0021">كلمات على شرح العلامة بن تركي على العشماوية<locus>Fol.20b.8</locus>
                         </title>
                         <author>
-                           <forename>يوسف</forename>
-                           <addName type="laqab" facs="#i0021">الصفتى</addName>Yūsuf ibn Sa`īd as-Ṣaftī al-Mālikīيوسف بن الشٿخ سعيد الصفتى المالكى</author>
+                           <persName xml:lang="ara-Arab" type="standard">
+                              <forename>يوسف</forename>
+                              <addName type="laqab" facs="#i0021">الصفتى</addName>
+                           </persName>
+                           <persName xml:lang="eng-Latn" type="standard">Yūsuf ibn Sa`īd as-Ṣaftī al-Mālikī</persName>
+                           <persName xml:lang="ara-Arab" type="original" facs="#i0021">يوسف بن الشٿخ سعيد الصفتى المالكى</persName>
+                        </author>
                         <textLang mainLang="ara-Arab"/>
                         <title type="normalised" xml:lang="ara-Latn">Kalimāt `alā šarḥ al-`ašmāwīyah</title>
                         <incipit type="basmala" facs="#i0021">
@@ -81,7 +88,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-03-23T18:27:25+02:00">Committed to SVN. To view the changes in detail use SVN diff. SVN Url:http://wellcomesvn.local.bibalex.dom/svn/WellcomeTrust/trunk/WAMCPMetaGallery/XML/WMS_Arabic_274/WMS_Arabic_274.xml<persName>eralph</persName>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_2013">
    <teiHeader>
       <fileDesc>
@@ -44,24 +44,36 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Or_1545-item1" class="#commentary">
-                     <author>Talḥuq, Muḥammad BeyTalḥuq, Muḥammad Bik al-Lubnaniمحمد باي التلحوق
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="supplied">Talḥuq, Muḥammad Bey</persName>
                         
-                        
-                        <addName xml:lang="ar" type="nisbah">اللبناني</addName>محمد بك التلحوق اللبناني</author>
+                        <persName xml:lang="ar-Latn-x-lc" type="alt">Talḥuq, Muḥammad Bik al-Lubnani</persName>
+                        <persName xml:lang="ar">محمد باي التلحوق
+                           
+                           
+                           <addName xml:lang="ar" type="nisbah">اللبناني</addName>
+                        </persName>
+                        <persName xml:lang="ar" type="alt">محمد بك التلحوق اللبناني</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">al-Ajwibah al-jalīyah fī uṣūl al-ʻarabīyah</title>
                      <title xml:lang="ar-Latn-x-lc" type="alt">al-Ajwibah al-jalīyah fī uṣūl al-ṣarfīyah</title>
                      <title xml:lang="ar">الاجوبة الجلية في اصول العربية</title>
                      <title xml:lang="ar" type="alt">الاجوبة الجلية في اصول الصرفية</title>
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/arberry/view.php?id=31">no. 333</ref>
                         </bibl>
                         <bibl type="text-relations">Commentary on the<title xml:lang="ar-Latn-x-lc">al-Ājurrūmīyah<foreign xml:lang="ar">الاجرومية</foreign>
-                           </title>of<author key="n82099509" ref="http://viaf.org/viaf/69100526/">Ibn Ājurrūm, Muḥammad ibn Muḥammad, 1273 or 4-1323ابن آجروم، محمد اين محمد</author>.</bibl>
+                           </title>of<author key="n82099509" ref="http://viaf.org/viaf/69100526/">
+                              <persName xml:lang="ar-Latn-x-lc">Ibn Ājurrūm, Muḥammad ibn Muḥammad, 1273 or 4-1323</persName>
+                              <persName xml:lang="ar">ابن آجروم، محمد اين محمد</persName>
+                           </author>.</bibl>
                      </listBibl>
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
@@ -70,13 +82,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -146,7 +158,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-07-19">

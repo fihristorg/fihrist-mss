@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_808">
    <teiHeader>
       <fileDesc>
@@ -55,7 +55,9 @@
                   </msItem>
                   <msItem xml:id="MS_Arab_e_109-item2" n="2">
                      <locus from="6" to="46">ff. 6r-46v</locus>
-                     <author key="n 80133312" ref="http://viaf.org/viaf/24571510/">Hermes, Trismegistus</author>
+                     <author key="n 80133312" ref="http://viaf.org/viaf/24571510/">
+                        <persName type="standard">Hermes, Trismegistus</persName>
+                     </author>
                      <title>A work dealing with problems of astronomy and meteorology, attributed to<persName key="n 80133312" ref="http://viaf.org/viaf/24571510/">Hermes</persName>,<persName>Daniel</persName>and<persName xml:lang="ar-Latn-x-lc">Dhū al-Qarnayn</persName>, in 22 numbered and 7 unnumbered chapters.</title>
                      <listBibl>
                         <bibl>Appendix Hermetica</bibl>
@@ -176,11 +178,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

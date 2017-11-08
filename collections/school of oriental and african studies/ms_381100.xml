@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8337">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,10 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_381100-item1" class="#gloss">
-                     <author key="n86140758" ref="http://viaf.org/viaf/45792051/">Siyālkūtī, ʻAbd al-Ḥakīm ibn Shams al-Dīn, d. 1656سيالكوتي، عبد الحكيم بن شمس الدينّ</author>
+                     <author key="n86140758" ref="http://viaf.org/viaf/45792051/">
+                        <persName xml:lang="ar-Latn-x-lc">Siyālkūtī, ʻAbd al-Ḥakīm ibn Shams al-Dīn, d. 1656</persName>
+                        <persName xml:lang="ar">سيالكوتي، عبد الحكيم بن شمس الدينّ</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Ḥāshiyah al-Siyālkūtī ʻalá kitāb al-Muṭawwal</title>
                      <title xml:lang="ar-Latn-x-lc" type="alt">Ḥāshiyah ʻalá al-Muṭawwal</title>
                      <title xml:lang="ar">حاشيةالسيالكوتي على كتاب المطوّل</title>
@@ -68,13 +71,13 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>fol. .
-                           
+                        <extent>fol. .<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -126,7 +129,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-12-19">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4979">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,11 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_S_Digby_Or_233-item1">
-                     <author key="n82270593" ref="http://viaf.org/viaf/54439868">Ibn al-Athīr, ʿIzz al-Dīn, 1160-1233ابن الأثير، علي بن محمد، 555-630 هـ</author>
+                     <author key="n82270593" ref="http://viaf.org/viaf/54439868">
+                        <persName xml:lang="fa" type="standard">Ibn al-Athīr, ʿIzz al-Dīn, 1160-1233</persName>
+                        
+                        <persName xml:lang="ar">ابن الأثير، علي بن محمد، 555-630 هـ</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">al-Kāmil fī al-taʼrīkh</title>
                      <title xml:lang="fa" type="alt">الكامل في التاريخ</title>
                      <incipit xml:lang="ar">على رغم انفك يا ماصّ بظر امّه فقال له ابو العباس مه وامر ابا سلمة بالعود الى معسكره</incipit>
@@ -71,7 +75,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="21" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -176,7 +180,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-04-27">

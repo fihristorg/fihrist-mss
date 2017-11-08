@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6278">
    <teiHeader>
       <fileDesc>
@@ -43,10 +43,16 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85068403">
                   <msItem xml:id="Or_7816-item1">
-                     <author>Abū’l-Mafākhir Niẓām al-Dīn Mīr Mahdī Khān Muḥammad Hādī al-Ḥusaynī al-Ṣafavīابو المفاخر نظام الدین میر مهدی خان محمد هادی الحسینی الصفوی
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Abū’l-Mafākhir Niẓām al-Dīn Mīr Mahdī Khān Muḥammad Hādī al-Ḥusaynī al-Ṣafavī</persName>
                         
                         
                         
+                        <persName xml:lang="fa">ابو المفاخر نظام الدین میر مهدی خان محمد هادی الحسینی الصفوی
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Risālah-’i mir’āt al-mustahallin</title>
                      
@@ -54,8 +60,8 @@
                      
                      
                      <note>Written on sheets of wood bound in book form</note>
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <note>A treatise upon the devotions connected with the ceremony of watching the moon</note>
                      <note>It is provided with an index (<locus from="1v" to="2v">ff. 1v-2v</locus>)</note>
                      <note>Imperfect at the end</note>
@@ -72,7 +78,7 @@
                               <height>18.4</height>
                               <width>11.2</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -116,7 +122,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-05-01">

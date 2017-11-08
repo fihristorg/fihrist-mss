@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6306">
    <teiHeader>
       <fileDesc>
@@ -43,7 +43,13 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh2010115027">
                   <msItem xml:id="Or_7986-item1">
-                     <author ref="http://viaf.org/viaf/5063727" key="n89645739">Suhrawardī, ʻUmar ibn Muḥammad, 1145-1234سهروردی، عمر بن محمد
+                     <author ref="http://viaf.org/viaf/5063727" key="n89645739">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Suhrawardī, ʻUmar ibn Muḥammad, 1145-1234</persName>
+                        
+                        
+                        
+                        <persName xml:lang="fa">سهروردی، عمر بن محمد</persName>
+                        
                         
                         
                         
@@ -59,9 +65,11 @@
                      <title xml:lang="fa">عوارف المعارف</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
+                     <note>
+                        <foreign xml:lang="fa"/>
+                     </note>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 5.</bibl>
                      </listBibl>
@@ -75,7 +83,7 @@
                               <height>25.9</height>
                               <width>17.4</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -119,7 +127,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-03-28">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_923">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,9 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Bruce_15-item1" n="1">
                      <locus from="1" to="117v">ff. 1-117v</locus>
-                     <author key="nr 91039607" ref="http://viaf.org/viaf/90050701/">Bakrī, Aḥmad ibn ʻAbd Allāh,<date calendar="#Gregorian" notBefore="0800" notAfter="0900">9th cent.</date>
+                     <author key="nr 91039607" ref="http://viaf.org/viaf/90050701/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Bakrī, Aḥmad ibn ʻAbd Allāh,<date calendar="#Gregorian" notBefore="0800" notAfter="0900">9th cent.</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Futūḥ al-Yaman wa mā waqaʻa lil-nabī wa aṣḥābihi</title>
                      <title xml:lang="ar-Latn-x-lc">Futūḥ, al-Yaman wa qatl al-malʻūn Raʼs al-ghūl ʻalà al-tamām wa-al-kamāl</title>
@@ -57,7 +59,9 @@
                   </msItem>
                   <msItem xml:id="MS_Bruce_15-item2" n="2">
                      <locus from="117v" to="126">ff. 117v-126</locus>
-                     <author key="nr 91039607" ref="http://viaf.org/viaf/90050701/">Bakrī, Aḥmad ibn ʻAbd Allāh,<date calendar="#Gregorian" notBefore="0800" notAfter="0900">9th cent.</date>
+                     <author key="nr 91039607" ref="http://viaf.org/viaf/90050701/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Bakrī, Aḥmad ibn ʻAbd Allāh,<date calendar="#Gregorian" notBefore="0800" notAfter="0900">9th cent.</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Ghazwat Ḥunayn</title>
                      <note>Attributed to this author though not by this MS. itself: see R. Paret, Die legendäre Maghāzi-Literature (Tübingen, 1930), pp.44-49</note>
@@ -184,11 +188,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

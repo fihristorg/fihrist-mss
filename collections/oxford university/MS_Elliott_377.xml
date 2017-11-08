@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4376">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,11 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Elliott_377-item1" n="1">
                      <locus from="1" to="331">ff. 1-331</locus>
-                     <author key="n 81005044" ref="http://viaf.org/viaf/9854001/">Ṭabarī,<date calendar="#Gregorian" from="0838" to="0923">838?-923</date>الطبري، محمد بن جرير، 224-310 هـ</author>
+                     <author key="n 81005044" ref="http://viaf.org/viaf/9854001/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ṭabarī,<date calendar="#Gregorian" from="0838" to="0923">838?-923</date>
+                        </persName>
+                        <persName xml:lang="ar">الطبري، محمد بن جرير، 224-310 هـ</persName>
+                     </author>
                      <editor role="translator">
                         <persName xml:lang="ar-Latn-x-lc"
                                   key="n 88294155"
@@ -61,7 +65,12 @@
                   </msItem>
                   <msItem xml:id="MS_Elliott_377-item2" n="2">
                      <locus from="332" to="567">ff. 332b-567</locus>
-                     <author key="n 80145329" ref="http://viaf.org/viaf/90056948">Rashīd al-Dīn Ṭabīb, 1247?-1318رشيد الدولة فضل الله بن أبي الخير، ت. 716 هـ</author>
+                     <author key="n 80145329" ref="http://viaf.org/viaf/90056948">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Rashīd al-Dīn Ṭabīb, 1247?-1318</persName>
+                        <persName xml:lang="fa">رشيد الدولة فضل الله بن أبي الخير، ت. 716 هـ</persName>
+                        
+                        
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Jāmiʻ al-tawārīkh</title>
                      <title xml:lang="fa">جامع التواريخ</title>
                      
@@ -73,7 +82,12 @@
                   </msItem>
                   <msItem xml:id="MS_Elliott_377-item3" n="3">
                      <locus from="568" to="617">ff. 568b-617</locus>
-                     <author>Anonymousمؤلف مجهول</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Anonymous</persName>
+                        <persName xml:lang="fa">مؤلف مجهول</persName>
+                        
+                        
+                     </author>
                      <title>A fragment of a general history of the Moghul dynasty</title>
                      
                      
@@ -87,12 +101,12 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>617 ff.
+                        <extent>617 ff.<dimensions type="leaf" unit="in"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -199,7 +213,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-07-03">

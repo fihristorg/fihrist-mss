@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6133">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,10 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="Or_6944-item1" n="1" class="http://lccn.loc.gov/sh85100084">
                      <locus from="3r" to="16v">3r-16v ff</locus>
-                     <author>Ahlīاهلی</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Ahlī</persName>
+                        <persName xml:lang="fa">اهلی</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Mas̲navī-i Ahlī</title>
                      <title xml:lang="fa">مثنوی اهلی</title>
                      <listBibl>
@@ -54,7 +57,10 @@
                   </msItem>
                   <msItem xml:id="Or_6944-item2" n="2" class="http://lccn.loc.gov/sh85100084">
                      <locus from="17r" to="28r">17r-28r ff</locus>
-                     <author>‘Ali Hamadānīعلی همدانی</author>
+                     <author>
+                        <persName xml:lang="fa" type="standard">‘Ali Hamadānī</persName>
+                        <persName xml:lang="fa">علی همدانی</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Chihil Asrār</title>
                      <title xml:lang="fa">چهل اسرار</title>
                      <note>Ghazals</note>
@@ -77,7 +83,7 @@
                               <height>17.3</height>
                               <width>10.3</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -110,7 +116,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-02-12">

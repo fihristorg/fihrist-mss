@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7721">
    <teiHeader>
       <fileDesc>
@@ -42,7 +42,7 @@
                            <seg type="gathering" n="1-216">
                               <note facs="#i0023">A gathering note comprises the number of the gathering, an extended letter غ and the word بلغ</note>
                               <formula>216+005</formula>
-                              
+                              <dimensions type="leaf" unit="mm" quantity="22"/>
                               <signatures>Fols 10b, 20b, 30b, 30b, 50b, 60b, 70b, 80b, 90b, 100b, 110b, 120b, 130b, 140b, 150b, 160b, 170b, 180b, 200b, 210b,</signatures>
                            </seg>
                         </collation>
@@ -201,10 +201,15 @@
                      <msItem xml:id="WMS_Arabic_116-part1-item1">
                         <locus>Fol.1b.19</locus>
                         <author>
-                           <surname facs="#i0004">ابن القف</surname>
-                           <forename facs="#i0004">ابو الفرج بن يعقوب</forename>
-                           <addName type="kunyah" facs="#i0004">ابو الفرج</addName>
-                           <addName type="nisbah" facs="#i0004">المسيحى</addName>ابو الفرج بن يعقوب المعروف بابن القف المسيحىAbu'l-Farağ b.Ya`qūb b.Isḥāq (an-Naṣrānī) b. al-Quff Amīnaddaula al-Karakī</author>
+                           <persName xml:lang="ara-Arab" type="standard">
+                              <surname facs="#i0004">ابن القف</surname>
+                              <forename facs="#i0004">ابو الفرج بن يعقوب</forename>
+                              <addName type="kunyah" facs="#i0004">ابو الفرج</addName>
+                              <addName type="nisbah" facs="#i0004">المسيحى</addName>
+                           </persName>
+                           <persName xml:lang="ara-Arab" type="original" facs="#i0004">ابو الفرج بن يعقوب المعروف بابن القف المسيحى</persName>
+                           <persName xml:lang="eng-Latn" type="standard">Abu'l-Farağ b.Ya`qūb b.Isḥāq (an-Naṣrānī) b. al-Quff Amīnaddaula al-Karakī</persName>
+                        </author>
                         <title type="original" facs="#i0004">جامع الغرض فى حفظ الصحة ودفع المرض<locus>1b</locus>
                         </title>
                         <incipit type="basmala" facs="#i0004">
@@ -458,7 +463,7 @@
                            <locus>Fol.215a.11</locus>
                            <title type="original" facs="#i0274">الفصل الستون فى امور ماخوذه من الفراسه القاعده فى احكام الفراسه هى ان انفعالات البدن ومزاجه</title>
                         </msItem>
-                        <title type="other" xml:lang="ara-Arab"/>
+                        
                         <textLang mainLang="ara-Arab"/>
                      </msItem>
                   </msContents>
@@ -476,7 +481,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-12-06T17:35:55+02:00">Committed to SVN. To view the changes in detail use SVN diff. SVN Url:http://wellcomesvn.local.bibalex.dom/svn/WellcomeTrust/trunk/WAMCPMetaGallery/XML/WMS_Arabic_116/WMS_Arabic_116.xml<persName>eralph</persName>

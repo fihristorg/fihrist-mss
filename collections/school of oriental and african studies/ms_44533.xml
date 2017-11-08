@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8483">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,10 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_44533-item1" n="1">
-                     <author key="no2011123081" ref="http://viaf.org/viaf/183790847/">Miṣrī, Yūḥannā ibn Isrāʼīlمصرى، ىوحنا بن اسرائيل</author>
+                     <author key="no2011123081" ref="http://viaf.org/viaf/183790847/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Miṣrī, Yūḥannā ibn Isrāʼīl</persName>
+                        <persName xml:lang="fa">مصرى، ىوحنا بن اسرائيل</persName>
+                     </author>
                      <title xml:lang="arab-Latn-x-lc">Khaṭīʼat al-aʼimmah</title>
                      
                      <title xml:lang="ar">خطيئة الائمة</title>
@@ -53,7 +56,9 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="ms_44533-item2" n="2">
-                     <author key="n86099931" ref="http://viaf.org/viaf/90076153/">Majlisī, Muḥammad Bāqir ibn Muḥammad Taqī, 1627 or 8-ca. 1699</author>
+                     <author key="n86099931" ref="http://viaf.org/viaf/90076153/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Majlisī, Muḥammad Bāqir ibn Muḥammad Taqī, 1627 or 8-ca. 1699</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Rīsālah-i rajʼat</title>
                      <title xml:lang="fa">رسالۀ رجعت</title>
                      
@@ -68,13 +73,13 @@
                         <extent>
                            <ref target="a1">1-39 f.</ref>
                            <ref target="a2">40-120 f.</ref>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -118,7 +123,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2016-10-21">

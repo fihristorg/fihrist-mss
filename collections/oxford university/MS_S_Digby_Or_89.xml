@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5046">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,15 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_S_Digby_Or_89-item1">
-                     <author>Munshī Indarjīt AhīrMunshī Indarjīt Hīrمنشى اندرجيت اهيرمنشى اندرجيت هير</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc">Munshī Indarjīt Ahīr</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Munshī Indarjīt Hīr</persName>
+                        <persName xml:lang="fa">منشى اندرجيت اهير</persName>
+                        <persName xml:lang="fa" type="alt">منشى اندرجيت هير</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Nushka-ʼi Gul Ṣanawbar</title>
                      <title xml:lang="fa">نسخۀ گل صنوبر</title>
-                     
+                     <incipit xml:lang="fa"/>
                      <note>Contains 23 illustrations in a 'crude' style but 'not without vigour'.</note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
@@ -55,13 +60,13 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>ff. 66
-                           
+                        <extent>ff. 66<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="in"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="13" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -167,7 +172,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2016-07-18">

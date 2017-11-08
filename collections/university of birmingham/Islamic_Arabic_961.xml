@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4000">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,15 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_961-item1">
-                     <author>Muḥammad ibn Muḥammad al-Tāfilātī al-Khalwatī Muftī al-Quds, d. 1777تافلاتي، محمد بن محمد
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="supplied">Muḥammad ibn Muḥammad al-Tāfilātī al-Khalwatī Muftī al-Quds, d. 1777</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">تافلاتي، محمد بن محمد
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Al-durr al-aghlá</title>
                      
@@ -61,9 +66,11 @@
                                   type="standard">Ibn al-ʿArabī, 1165-1240<foreign xml:lang="ar">ابن العربي، 560-638 هـ</foreign>
                         </persName>
                      </note>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="fa" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 679</bibl>
                         <bibl>GAL I 447, no. 118; I 799</bibl>
@@ -78,14 +85,14 @@
                               <height>18.3</height>
                               <width>11.4</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="13" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                            <note>13 lines per page</note>
                         </layout>
                      </layoutDesc>
@@ -146,7 +153,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-06-03">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_9313">
    <teiHeader>
       <fileDesc>
@@ -44,19 +44,26 @@
                </msIdentifier>
                <msContents class="#multipleWorks">
                   <msItem xml:id="Add_769-item1" n="1">
-                     <author key="n82162164" ref="http://viaf.org/viaf/29665940/">Ibn al-Ḥājib, ʻUthmān ibn ʻUmar, 1175-1249ابن الحاجب، عثمان ابن عمر
+                     <author key="n82162164" ref="http://viaf.org/viaf/29665940/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn al-Ḥājib, ʻUthmān ibn ʻUmar, 1175-1249</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">ابن الحاجب، عثمان ابن عمر
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Shāfīyah</title>
                      <title xml:lang="ar-Latn-x-lc" type="alt">al-Shāfīyah fī ʿilm al-taṣrīf</title>
                      <title xml:lang="ar">الشافية</title>
                      <title xml:lang="ar" type="alt">الشافية في علم التصريف</title>
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/view.php?id=68">no. 603</ref>
@@ -65,25 +72,35 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="Add_769-item2" n="2" class="#commentary">
-                     <author key="n2007094962" ref="http://viaf.org/viaf/56395703/">Jārabardī, Aḥmad ibn al-Ḥusayn, d. 1346جاربردي، احمد بن الحسين
+                     <author key="n2007094962" ref="http://viaf.org/viaf/56395703/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Jārabardī, Aḥmad ibn al-Ḥusayn, d. 1346</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">جاربردي، احمد بن الحسين
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Sharḥ al-Shāfīyah</title>
                      
                      <title xml:lang="ar">شرح الشافية</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/view.php?id=68">no. 603</ref>
                         </bibl>
                         <bibl type="text-relations">Commentary on the<title xml:lang="ar-Latn-x-lc">al-Shāfīyah fī ʿilm al-taṣrīf<foreign xml:lang="ar">الشافية في علم التصريف</foreign>
-                           </title>by<author key="n82162164" ref="http://viaf.org/viaf/29665940/">Ibn al-Ḥājib, ʻUthmān ibn ʻUmar, 1175-1249ابن الحاجب، عثمان ابن عمر</author>
+                           </title>by<author key="n82162164" ref="http://viaf.org/viaf/29665940/">
+                              <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn al-Ḥājib, ʻUthmān ibn ʻUmar, 1175-1249</persName>
+                              <persName xml:lang="ar">ابن الحاجب، عثمان ابن عمر</persName>
+                           </author>
                         </bibl>
                      </listBibl>
                      <textLang mainLang="ar">Arabic</textLang>
@@ -93,13 +110,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -167,7 +184,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-05-13">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8764">
    <teiHeader>
       <fileDesc>
@@ -44,25 +44,30 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_47587-item1">
-                     <author ref="http://viaf.org/viaf/20030140/" key="n85026579">Kāshifī, Ḥusayn Vāʻiẓ, d. 1504 or 5كاشفي، حسين واعظ</author>
+                     <author ref="http://viaf.org/viaf/20030140/" key="n85026579">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Kāshifī, Ḥusayn Vāʻiẓ, d. 1504 or 5</persName>
+                        <persName xml:lang="fa">كاشفي، حسين واعظ</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Akhlāq-i Muḥsinī</title>
                      <title xml:lang="fa">اخلاق محسنی</title>
                      <incipit xml:lang="fa">حضرت پادشاه على الاطلاق عزت كلمته و جلت و عظمته منشور</incipit>
                      <explicit>تاريخ سرنويسي ز اخلاق محسني تمت الكتاب بعون الملك الوهاب في تاريخ شب سه شنبه بيست وچهارم شهر ذی الحجه الحرام سنه 1086 اقل عباد الله...ابو طالب محمد جعفر الحسيني</explicit>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>107 f.
-                           
+                        <extent>107 f.<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -116,7 +121,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-02-18">

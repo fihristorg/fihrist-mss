@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_10975">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,9 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_Fraser_237-item1">
-                     <author key="nr 93005400" ref="http://www.viaf.org/viaf/46631593/">ʻAlawī, Aḥmad ibn Zayn al-ʻĀbidīn,<date calendar="#Gregorian" notBefore="1600" notAfter="1700">17th cent.</date>
+                     <author key="nr 93005400" ref="http://www.viaf.org/viaf/46631593/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">ʻAlawī, Aḥmad ibn Zayn al-ʻĀbidīn,<date calendar="#Gregorian" notBefore="1600" notAfter="1700">17th cent.</date>
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Laṭāʼif-i ghaybī</title>
                      <note>a Persian commentary on those verses of the Qurʼān relating to the person and attributes of God</note>
@@ -105,11 +107,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

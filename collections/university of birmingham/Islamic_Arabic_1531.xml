@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3740">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,15 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_1531-item1">
-                     <author key="n85386312" ref="http://viaf.org/viaf/65472499">Qaramānī, Aḥmad ibn Yūsuf, 1532 or 1533-1611القرماني، أحمد بن يوسف، 939-1019 هـ
+                     <author key="n85386312" ref="http://viaf.org/viaf/65472499">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Qaramānī, Aḥmad ibn Yūsuf, 1532 or 1533-1611</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">القرماني، أحمد بن يوسف، 939-1019 هـ
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Akhbār al-duwal waʾāthārl al-uwal</title>
                      
@@ -59,9 +64,11 @@
                                   ref="http://viaf.org/viaf/276293867">Jannābī, Muṣṭafá ibn Ḥasan, 1533 or 1534-1590 or 1591<foreign xml:lang="ar">جنابى، مصطفى بن حسن</foreign>
                         </persName>
                      </note>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="fa" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 1854</bibl>
                         <bibl>GAL II 300, no. 1, Auszug b, 301; Suppl. II 411, 412</bibl>
@@ -76,13 +83,13 @@
                               <height>28.5</height>
                               <width>18.5</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1" ruledLines="31" n="mistara">31 lines per page
+                        <layout columns="1" ruledLines="31" n="mistara">31 lines per page<dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -136,7 +143,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-05-14">

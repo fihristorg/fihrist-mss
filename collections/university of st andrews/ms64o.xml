@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8959">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,15 @@
                <msContents>
                   <summary>The Kifāyah-ʼi Mujāhidīyah and a few other short tracts on medical subjects</summary>
                   <msItem xml:id="ms64o-item1">
-                     <author>Shirāzī, Manṣūr ibn Muḥammad ibn Yūsuf ibn Ilyāsشيرازی، منصور بن محمد بن يوسف بن الياس
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Shirāzī, Manṣūr ibn Muḥammad ibn Yūsuf ibn Ilyās</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">شيرازی، منصور بن محمد بن يوسف بن الياس
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Kifāyah-ʼi mujāhidīyah</title>
                      
@@ -64,8 +69,8 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>200ff.
-                           
+                        <extent>200ff.<dimensions type="leaf" unit="in"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="modern"/>
                         <collation>
@@ -74,7 +79,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="5" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -128,7 +133,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-05-10">

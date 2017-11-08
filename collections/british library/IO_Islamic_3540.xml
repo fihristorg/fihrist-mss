@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3561">
    <teiHeader>
       <fileDesc>
@@ -44,11 +44,18 @@
                <msContents class="http://lccn.loc.gov/sh2006007951">
                   <msItem xml:id="IO_Islamic_3540-item1" rend="visible">
                      <author key="http://lccn.loc.gov/n79094717"
-                             ref="http://viaf.org/viaf/101359236/">Firdawsīفردوسی<forename xml:lang="fa"/>
+                             ref="http://viaf.org/viaf/101359236/">
+                        <persName xml:lang="fa-Latn-x-lc"
+                                  type="standard"
+                                  key="http://lccn.loc.gov/n79094717">Firdawsī</persName>
                         
                         
-                        
-                        
+                        <persName xml:lang="fa">فردوسی<forename xml:lang="fa"/>
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Shāhnāmah</title>
                      
@@ -445,7 +452,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-07-12">

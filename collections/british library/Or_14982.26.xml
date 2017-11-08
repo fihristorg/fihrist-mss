@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5744">
    <teiHeader>
       <fileDesc>
@@ -43,7 +43,16 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Or_14982.26-item1">
-                     <author>Aurangzeb, Emperor of Hindustan, 1618-1707<foreign xml:lang="fa">اورنگزيب، شهنشاه هندوستان</foreign>ʻĀlamgīr Iعالمگير‏
+                     <author>
+                        <persName type="standard"
+                                  key="n50038449"
+                                  ref="http://lccn.loc.gov/n 50038449"
+                                  xml:lang="ar-Latn-x-lc">Aurangzeb, Emperor of Hindustan, 1618-1707</persName>
+                        <foreign xml:lang="fa">اورنگزيب، شهنشاه هندوستان</foreign>
+                        <persName xml:lang="ar-Latn-x-lc" type="alt">ʻĀlamgīr I</persName>
+                        <persName type="alt" xml:lang="fa">عالمگير‏</persName>
+                        
+                        
                         
                         
                         
@@ -121,7 +130,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-08-23">

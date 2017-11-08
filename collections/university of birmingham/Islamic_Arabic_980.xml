@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4006">
    <teiHeader>
       <fileDesc>
@@ -45,10 +45,15 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="Islamic_Arabic_980-item1" n="1">
                      <locus from="1" to="24">ff. 1-24</locus>
-                     <author key="n82144362" ref="http://viaf.org/viaf/90076084/">Dardīr, Aḥmad ibn Muḥammad, 1715-1786ابو البركات احمد بن محمد بن احمد الدردير
+                     <author key="n82144362" ref="http://viaf.org/viaf/90076084/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Dardīr, Aḥmad ibn Muḥammad, 1715-1786</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">ابو البركات احمد بن محمد بن احمد الدردير
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Sharḥ tuḥfat al-ikhwān</title>
                      
@@ -57,9 +62,11 @@
                      
                      <note>Commentary on the author's own treatise entitled<title xml:lang="ar-Latn-x-lc">Tuḥfat al-ikhwān fī bayān ṭarīq ahl al-ʿirfān</title>
                      </note>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="fa" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 806</bibl>
                         <bibl>GAL II 353, esp. no. 7</bibl>
@@ -68,10 +75,16 @@
                   </msItem>
                   <msItem xml:id="Islamic_Arabic_980-item2" n="2">
                      <locus from="1" to="26">ff. 1-26</locus>
-                     <author key="n82144361" ref="http://viaf.org/viaf/90054932">Ṣāwī, Aḥmad ibn Muḥammad, -1825 or 1826
+                     <author key="n82144361" ref="http://viaf.org/viaf/90054932">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ṣāwī, Aḥmad ibn Muḥammad, -1825 or 1826</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Ḥāshiyat al-Ṣāwī ʿalá sharḥ al-Dardīr li-rsālāt Tuḥfat al-ikhwān</title>
                      
@@ -87,9 +100,11 @@
                      </note>
                      <note>According to the colophon al-Ṣāwī finished his commentary in<date calendar="#Hijri-qamari" notBefore="1804" notAfter="1805">1219</date>
                      </note>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 808</bibl>
                      </listBibl>
@@ -103,14 +118,14 @@
                               <height>22.5</height>
                               <width>16.3</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                            <note>17 and 23 lines per page</note>
                         </layout>
                      </layoutDesc>
@@ -172,7 +187,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-07-08">

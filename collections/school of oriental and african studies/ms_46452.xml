@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8639">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,12 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_46452-item1">
-                     <author>Fayḍ Allāh ibn Zayn al-ʻĀbidīn ibn Ḥusām Banbānī fl. c. 900/1500.فیض الله بن زین العابدین بن حسام بنبانیMalik al-Quḍāt Ṣadr-i Jahānملک القضاة صدر جهان</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc">Fayḍ Allāh ibn Zayn al-ʻĀbidīn ibn Ḥusām Banbānī fl. c. 900/1500.</persName>
+                        <persName xml:lang="fa">فیض الله بن زین العابدین بن حسام بنبانی</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Malik al-Quḍāt Ṣadr-i Jahān</persName>
+                        <persName xml:lang="fa" type="alt">ملک القضاة صدر جهان</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Maʻdan al-asrār</title>
                      <title xml:lang="ar">معدن الاسرار</title>
                      <note>A systematic treatise on Sufi theosophy based on two works of Ghazzali entitled al-Maḍnūn bihi ʻalá ghayr ahlihi and al-Maḍnūn bihi ʻalá ahlihi</note>
@@ -55,13 +60,13 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>85 f.
-                           
+                        <extent>85 f.<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -102,7 +107,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-09-23">

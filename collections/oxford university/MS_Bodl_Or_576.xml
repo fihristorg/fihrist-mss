@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_10680">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,9 @@
                <msContents>
                   <msItem xml:id="MS_Bodl_Or_576-item1">
                      <locus from="4" to="91">ff. 4v-91r</locus>
-                     <author>al-Lakhmī, Abū Muḥammad ʻĪsá ibn ʻAlī ibn Aḥmad, al-Ishbīlī al-Andalusī d.<date calendar="#Gregorian" when="1029">1029</date>*.</author>
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc">al-Lakhmī, Abū Muḥammad ʻĪsá ibn ʻAlī ibn Aḥmad, al-Ishbīlī al-Andalusī d.<date calendar="#Gregorian" when="1029">1029</date>*.</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Kitāb ʻUyūn al-akhbār fī al-mawāʻiẓ wa al-āthār</title>
                      <note>[with marginal notes]. *so H. Khal., and Kaḥḥālah. Brockʼs "um 930/1524" appears to be based on the remark in Ahlwardt 8417 "Er scheint nach einer Randbemerkung im J. 930/1524 am Leben gewesen zu sein"</note>
                      <note>ff. 1v-2v contain index</note>
@@ -102,11 +104,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5188">
    <teiHeader>
       <fileDesc>
@@ -46,7 +46,10 @@
                           n="1"
                           class="http://lccn.loc.gov/sh85070893 http://lccn.loc.gov/sh95003071">
                      <locus from="1v" to="79v">ff 1v-79v</locus>
-                     <author ref="http://viaf.org/viaf/49160204" key="nr2001051624">Elisha ben SamuelRāghib</author>
+                     <author ref="http://viaf.org/viaf/49160204" key="nr2001051624">
+                        <persName xml:lang="jpr-Latn" type="standard">Elisha ben Samuel</persName>
+                        <persName xml:lang="jpr-Latn" type="alt">Rāghib</persName>
+                     </author>
                      <title xml:lang="jpr-Latn">Shāhzādah u Ṣūfī</title>
                      <note>The story of Barlaam and Josaphat in a Judaeo-Persian metrical version</note>
                      <note>Or. 4731, item no. 8; Or, 4732; Or 4744, item no. 1; Or. 10196</note>
@@ -75,7 +78,7 @@
                               <height>20.5</height>
                               <width>16</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -109,7 +112,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-11-16">

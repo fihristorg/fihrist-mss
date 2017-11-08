@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_547">
    <teiHeader>
       <fileDesc>
@@ -47,19 +47,26 @@
                      </title>
                   </summary>
                   <msItem xml:id="Dd_11_16-item1" n="1">
-                     <author key="n81059703" ref="http://viaf.org/viaf/100164385/">ʻAṭṭār, Farīd al-Dīn, d. ca. 1230عطار، فريد الدين
+                     <author key="n81059703" ref="http://viaf.org/viaf/100164385/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">ʻAṭṭār, Farīd al-Dīn, d. ca. 1230</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">عطار، فريد الدين
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Pandnāmah</title>
                      
                      <title xml:lang="fa">پندنامه</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref xml:id="b1">
@@ -75,19 +82,26 @@
                   </msItem>
                   <msItem xml:id="Dd_11_16-item2" n="2" class="#commentary">
                      <locus>Running commentary</locus>
-                     <author>Şem'î Mevlânâ Mustafa, f 15..-1601‏شمعى مولانا مصطفى‏
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Şem'î Mevlânâ Mustafa, f 15..-1601‏</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">شمعى مولانا مصطفى‏
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Sharh-i Pandnāmah</title>
                      
                      <title xml:lang="fa">شرح پندنامه</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref xml:id="b1a">
@@ -106,13 +120,13 @@
                   <objectDesc form="other">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -174,7 +188,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-09-29">

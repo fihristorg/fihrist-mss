@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4349">
    <teiHeader xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <fileDesc>
@@ -44,7 +44,12 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_Elliott_334-item1">
-                     <author key="n86868258" ref="http://viaf.org/viaf/114789698">Khvārazmī, Kamāl al-Dīn Ḥusayn ibn Ḥasanخوارزمى، كمال الدين حسين بن حسن</author>
+                     <author key="n86868258" ref="http://viaf.org/viaf/114789698">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Khvārazmī, Kamāl al-Dīn Ḥusayn ibn Ḥasan</persName>
+                        
+                        
+                        <persName xml:lang="fa">خوارزمى، كمال الدين حسين بن حسن</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Jawāhir al-asrār wa-zawāhir al-anwār</title>
                      <title xml:lang="fa-Latn-x-lc" type="alt">Javāhir al-asrār va zavāhir al-anvār</title>
                      <title xml:lang="ar">جواهر الاسرار وزواهر الانوار</title>
@@ -56,7 +61,9 @@
                            <ref target="http://archive.org/stream/catalogueofpersi01bodluoft#page/260/mode/2up">no. 666</ref>
                         </bibl>
                         <bibl type="text-relations">This work is a commentary on Books I-III of the<title xml:lang="fa-Latn-x-lc">Mas̲navī-i maʻnavī<foreign xml:lang="fa">مثنوی معنوی</foreign>
-                           </title>of<author key="n81059876" ref="http://viaf.org/viaf/98930150/">Jalāl al-Dīn Rūmī, Maulana, 1207-1273<foreign xml:lang="fa">جلال الدين رومى</foreign>
+                           </title>of<author key="n81059876" ref="http://viaf.org/viaf/98930150/">
+                              <persName xml:lang="ar-Latn-x-lc">Jalāl al-Dīn Rūmī, Maulana, 1207-1273<foreign xml:lang="fa">جلال الدين رومى</foreign>
+                              </persName>
                            </author>.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
@@ -65,12 +72,12 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>393 ff.
+                        <extent>393 ff.<dimensions type="leaf" unit="in"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -180,7 +187,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-06-23">

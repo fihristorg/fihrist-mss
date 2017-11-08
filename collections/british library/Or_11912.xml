@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5398">
    <teiHeader>
       <fileDesc>
@@ -43,18 +43,24 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85007710 http://lccn.loc.gov/sh85018960 http://lccn.loc.gov/sh89002521">
                   <msItem xml:id="Or_11912-item1">
-                     <author>Various calligraphers
+                     <author>
                         
                         
-                        
+                        <persName xml:lang="en" type="desc">Various calligraphers</persName>
+                        <persName xml:lang="fa">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      
                      
                      
                      
                      <title xml:lang="en" type="desc">Specimens of calligraphy by celebrated masters</title>
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <note>These calligraphic specimens include the practice models, i.e., mashq of<persName type="supplied" xml:lang="Per-Latn-x-lc">Muṣṭafá Khān</persName>,<persName type="supplied" xml:lang="Per-Latn-x-lc">‘Alī al-Kātib</persName>,<persName type="supplied" xml:lang="Per-Latn-x-lc">Sayyid ‘Alī</persName>,<persName type="supplied" xml:lang="Per-Latn-x-lc">‘Abd al-Ghanī</persName>,<persName type="supplied" xml:lang="Per-Latn-x-lc">Mīr ‘Alī</persName>,<persName type="supplied" xml:lang="Per-Latn-x-lc">‘Abd al-Ḥamīd</persName>
                      </note>
                      <note>Some are dated<date calendar="#Hijri-qamari" notBefore="1754" notAfter="1755">1168</date>at Awrangābād, such as that of<persName type="supplied" xml:lang="Per-Latn-x-lc">Muḥammad Ismā‘īl</persName>and those of<persName type="supplied" xml:lang="Per-Latn-x-lc">Muḥammad Ḥusayn</persName>are dated<date calendar="#Hijri-qamari" notBefore="1767" notAfter="1768">1181</date>,<date calendar="#Hijri-qamari" notBefore="1768" notAfter="1769">1182</date>, and<date calendar="#Hijri-qamari" notBefore="1777" notAfter="1778">1191</date>
@@ -121,7 +127,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-10-04">

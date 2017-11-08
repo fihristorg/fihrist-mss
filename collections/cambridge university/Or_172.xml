@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_2143">
    <teiHeader>
       <fileDesc>
@@ -45,19 +45,26 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="Or_172-item1" n="1">
                      <locus from="1" to="28">ff. 1-28</locus>
-                     <author key="n80081636" ref="http://viaf.org/viaf/90051632/">Suyūṭī, 1445-1505شيخ جلال الدين السيوطي
+                     <author key="n80081636" ref="http://viaf.org/viaf/90051632/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Suyūṭī, 1445-1505</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">شيخ جلال الدين السيوطي
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Kashf al-ṣalṣalah ʻan waṣf al-zalzalah</title>
                      
                      <title xml:lang="ar">كشف الصلصلة عن وصف الزلزلة</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne1922/view.php?id=107">no. 1041</ref>
@@ -67,19 +74,26 @@
                   </msItem>
                   <msItem xml:id="Or_172-item2" n="2">
                      <locus from="29b" to="50b">ff. 29b-50b</locus>
-                     <author key="n80081636" ref="http://viaf.org/viaf/90051632/">Suyūṭī, 1445-1505شيخ جلال الدين السيوطي
+                     <author key="n80081636" ref="http://viaf.org/viaf/90051632/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Suyūṭī, 1445-1505</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">شيخ جلال الدين السيوطي
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Kitāb mā rawāhu al-wāʻūn fī akhbār al-ṭāʻūn</title>
                      
                      <title xml:lang="ar">كتاب ما رواه الواعون في اخبار الطاعون</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne1922/view.php?id=106">no. 1029</ref>
@@ -89,19 +103,26 @@
                   </msItem>
                   <msItem xml:id="Or_172-item3" n="3">
                      <locus from="51" to="51">ff. 51</locus>
-                     <author key="n88250340" ref="http://viaf.org/viaf/81959174/">Ibn al-Wardī, Zayn al-Dīn ʻUmar ibn al-Muẓaffar, d. 1349عمر ابن الوردي
+                     <author key="n88250340" ref="http://viaf.org/viaf/81959174/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn al-Wardī, Zayn al-Dīn ʻUmar ibn al-Muẓaffar, d. 1349</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">عمر ابن الوردي
+                           
+                           
+                           
+                        </persName>
                      </author>
                      
                      
                      
                      
                      <title xml:lang="en" type="desc">Poem in praise of the Prophet</title>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne1922/view.php?id=106">no. 1029</ref>
@@ -114,13 +135,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -216,7 +237,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-09-22">

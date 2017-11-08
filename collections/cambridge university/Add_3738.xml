@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_296">
    <teiHeader>
       <fileDesc>
@@ -44,19 +44,26 @@
                </msIdentifier>
                <msContents class="#multipleWorks">
                   <msItem xml:id="Add_3738-item1" n="1">
-                     <author key="n83039734" ref="http://viaf.org/viaf/34606830/">Ibn Durayd, Muḥammad ibn al-Ḥasan, 837 or 8-933ابن دريد
+                     <author key="n83039734" ref="http://viaf.org/viaf/34606830/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn Durayd, Muḥammad ibn al-Ḥasan, 837 or 8-933</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">ابن دريد
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Qaṣīdah al-maqṣūrah</title>
                      
                      <title xml:lang="ar">القصيدة المقصورة</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne1922/view.php?id=100">no. 989</ref>
@@ -65,19 +72,26 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="Add_3738-item2" n="2" class="commentary">
-                     <author key="n84032248" ref="http://viaf.org/viaf/100230089/">Lakhmī, Muḥammad ibn Aḥmad, fl. 1161اللخمي
+                     <author key="n84032248" ref="http://viaf.org/viaf/100230089/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Lakhmī, Muḥammad ibn Aḥmad, fl. 1161</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">اللخمي
+                           
+                           
+                           
+                        </persName>
                      </author>
                      
                      
                      
                      
                      <title xml:lang="en" type="desc">commentary on the al-Qaṣīdah al-maqṣūrah</title>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne1922/view.php?id=100">no. 989</ref>
@@ -90,13 +104,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -186,7 +200,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-08-25">

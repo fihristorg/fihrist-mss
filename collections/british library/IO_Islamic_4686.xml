@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3350">
    <teiHeader>
       <fileDesc>
@@ -44,18 +44,23 @@
                <msContents>
                   <msItem xml:id="IO_Islamic_4686-item1"
                           class="http://lccn.loc.gov/sh2009114917 ">
-                     <author>Muḥammad Kabīr ibn Ismāʻīl‏محمد کبیر بن إسماعيل
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Muḥammad Kabīr ibn Ismāʻīl</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">‏محمد کبیر بن إسماعيل
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Afsānah-ʼi Shāhān</title>
                      
                      <title xml:lang="ar">افسانۀ شاهان</title>
                      
                      
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>Anecdotes of the Afghan Sultans of Delhi</note>
                      <listBibl>
                         <bibl>For a more detailed description see Sims-Williams 1986, page 7.</bibl>
@@ -70,7 +75,7 @@
                               <height>21.5</height>
                               <width>13</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -122,7 +127,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-11-30">

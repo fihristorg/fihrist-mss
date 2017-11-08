@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5781">
    <teiHeader>
       <fileDesc>
@@ -43,7 +43,14 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/2007377475 http://lccn.loc.gov/2003052329 http://lccn.loc.gov/sh 85067899  http://lccn.loc.gov/n96041809 http://lccn.loc.gov/n88001229">
                   <msItem xml:id="Or_15272-item1">
-                     <author>ʻḤusayn I, Shah of Iran, 1668-1726<foreign xml:lang="fa">شاه سلطان حسىن صفوى</foreign>
+                     <author>
+                        <persName key="no96041809"
+                                  ref="http://lccn.loc.gov/no 96041809"
+                                  type="standard"
+                                  xml:lang="ar-Latn-x-lc">ʻḤusayn I, Shah of Iran, 1668-1726</persName>
+                        <foreign xml:lang="fa">شاه سلطان حسىن صفوى</foreign>
+                        
+                        
                         
                         
                         
@@ -126,7 +133,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-08-24">

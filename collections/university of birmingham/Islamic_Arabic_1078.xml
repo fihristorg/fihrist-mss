@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3611">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,15 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_1078-item1">
-                     <author key="n78093327" ref="http://viaf.org/viaf/60346321">Jazūlī, Muḥammad ibn Sulaymān, -1465الجزولي، محمد بن سليمان، 807-870 هـ
+                     <author key="n78093327" ref="http://viaf.org/viaf/60346321">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Jazūlī, Muḥammad ibn Sulaymān, -1465</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">الجزولي، محمد بن سليمان، 807-870 هـ
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Dalāʾil al-khayrāt wa-shawāriq al-anwār fī dhikr al-ṣalāt ʿalá al-nabī al-mukhtār</title>
                      
@@ -56,9 +61,11 @@
                      
                      <note>
                         <locus from="1a" to="1b">Fol. 1</locus>missing.</note>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="fa" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 721</bibl>
                         <bibl>GAL II 252-3; II 359-60</bibl>
@@ -73,14 +80,14 @@
                               <height>18.3</height>
                               <width>11.4</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="9" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                            <note>9 lines per page</note>
                         </layout>
                      </layoutDesc>
@@ -135,7 +142,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-06-13">

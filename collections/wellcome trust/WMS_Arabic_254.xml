@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7738">
    <teiHeader>
       <fileDesc>
@@ -55,13 +55,13 @@
                   <msContents>
                      <msItem xml:id="WMS_Arabic_254-part1-item1" defective="false">
                         <title type="normalised" xml:lang="ara-Latn">Kitab al-agzeya</title>
-                        <title type="normalised" xml:lang="ara-Latn"/>
-                        <title type="normalised" xml:lang="ara-Latn"/>
-                        <title type="normalised" xml:lang="ara-Latn"/>
-                        <title type="normalised" xml:lang="ara-Latn"/>
-                        <title type="normalised" xml:lang="ara-Latn"/>
-                        <title type="normalised" xml:lang="ara-Latn"/>
-                        <title type="other" xml:lang="ara-Arab"/>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
                         <explicit facs="#i0125">
                            <locus>fol.121b.7</locus>ويحسب الاغذية البارجة باسرها وما اشبهها م التدبير من خارج</explicit>
                         <incipit facs="#i0005">
@@ -522,17 +522,23 @@
                            <locus>fol.118b.7</locus>
                            <title type="original" facs="#i0122">البَاب الرَابع عشر نذكر ڣيه ڣصُول السَنة وحُدودهَا ومَا يجب ڣى كل ڣَصلٍ منهَا ان يعلم من الاطعمة وَالادوية والمَلاَبسْ</title>
                         </msItem>
-                        <author>Muḥammad Ibn Ibrahīm al-Randi<forename facs="#i0005">مُحَمد بْن إبْرَاهيم</forename>
-                           <addName type="nisbah" facs="#i0005">الرندى</addName>مُحَمد بْن إبْرَاهيم الرندى</author>
+                        <author>
+                           <persName type="standard" xml:lang="eng-Latn">Muḥammad Ibn Ibrahīm al-Randi</persName>
+                           <persName type="standard" xml:lang="ara-Arab">
+                              <forename facs="#i0005">مُحَمد بْن إبْرَاهيم</forename>
+                              <addName type="nisbah" facs="#i0005">الرندى</addName>
+                           </persName>
+                           <persName type="original" xml:lang="ara-Arab" facs="#i0005">مُحَمد بْن إبْرَاهيم الرندى</persName>
+                        </author>
                         <textLang mainLang="ara-Arab"/>
-                        <title type="normalised" xml:lang="ara-Latn"/>
-                        <title type="normalised" xml:lang="ara-Latn"/>
-                        <title type="normalised" xml:lang="ara-Latn"/>
-                        <title type="normalised" xml:lang="ara-Latn"/>
-                        <title type="normalised" xml:lang="ara-Latn"/>
-                        <title type="normalised" xml:lang="ara-Latn"/>
-                        <title type="normalised" xml:lang="ara-Latn"/>
-                        <title type="normalised" xml:lang="ara-Latn"/>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
                      </msItem>
                   </msContents>
                </msPart>
@@ -549,7 +555,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-02-22T11:48:04+02:00">Committed to SVN. To view the changes in detail use SVN diff. SVN Url:http://wellcomesvn.local.bibalex.dom/svn/WellcomeTrust/trunk/WAMCPMetaGallery/XML/WMS_Arabic_254/WMS_Arabic_254.xml<persName>sherif.masry</persName>

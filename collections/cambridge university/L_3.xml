@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_755">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,16 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="L_3-item1">
-                     <author key="n83001579" ref="http://viaf.org/viaf/36907729/">Le Strange, G. (Guy), 1854-1933
+                     <author key="n83001579" ref="http://viaf.org/viaf/36907729/">
+                        <persName xml:lang="en" type="standard">Le Strange, G. (Guy), 1854-1933</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      
                      
@@ -55,14 +61,19 @@
                      
                      <title xml:lang="en" type="desc">Summary of the contents of the Persian MS. Despatches of<persName>Rashīd al-Dīn</persName>
                      </title>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/nicholson1932/view.php?id=166"/>
                         </bibl>
-                        <bibl type="text-relations">Summary of the letters of<author>Rashīd al-Dīn Ṭabīb, 1247?-1318رشيد الدين فضل الله</author>contained in the manuscripts<idno>L. 1</idno>and<idno>L. 2</idno>.</bibl>
+                        <bibl type="text-relations">Summary of the letters of<author>
+                              <persName xml:lang="ar-Latn-x-lc">Rashīd al-Dīn Ṭabīb, 1247?-1318</persName>
+                              <persName xml:lang="ar">رشيد الدين فضل الله</persName>
+                           </author>contained in the manuscripts<idno>L. 1</idno>and<idno>L. 2</idno>.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
@@ -71,13 +82,13 @@
                   <objectDesc form="other">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -131,7 +142,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-08-11">

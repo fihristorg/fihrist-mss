@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5036">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,12 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_S_Digby_Or_8-item1">
-                     <author key="nb2009017333" ref=" http://viaf.org/viaf/91095241">Mak̲h̲dūm Jahāniyān Jahān̲ Gasht, Jalāluddīn, -1383Abū ʻAbd Allāh Jalāl al-Dīn Ḥusayn ibn Aḥmad ibn Ḥusayn al-Bukhārī al-Ḥusaynīمخدوم جهانيان جهان گشت، جلال الدينأبو عبد الله جلال الدين حسين بن أحمد بن حسين البخاري الحسيني</author>
+                     <author key="nb2009017333" ref=" http://viaf.org/viaf/91095241">
+                        <persName xml:lang="fa" type="standard">Mak̲h̲dūm Jahāniyān Jahān̲ Gasht, Jalāluddīn, -1383</persName>
+                        <persName xml:lang="ar-Latn-x-lc" type="alt">Abū ʻAbd Allāh Jalāl al-Dīn Ḥusayn ibn Aḥmad ibn Ḥusayn al-Bukhārī al-Ḥusaynī</persName>
+                        <persName xml:lang="fa">مخدوم جهانيان جهان گشت، جلال الدين</persName>
+                        <persName xml:lang="fa" type="alt">أبو عبد الله جلال الدين حسين بن أحمد بن حسين البخاري الحسيني</persName>
+                     </author>
                      <editor role="compiler">
                         <persName>Sayyid Abū ʻAbd Allāh ʻAlāʼ al-Dīn ʻAlī ibn Saʻd ibn ʻAlī al-Qurayshī al-Ḥusaynī</persName>
                      </editor>
@@ -181,7 +186,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-04-27"/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_624">
    <teiHeader>
       <fileDesc>
@@ -45,19 +45,26 @@
                <msContents>
                   <msItem xml:id="F_54.1-item1" n="1">
                      <note>Vol. 1</note>
-                     <author>Mīrzā Jawād Shīrāzīميرزا جواد
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Mīrzā Jawād Shīrāzī</persName>
                         
                         
-                        <addName xml:lang="fa" type="nisbah">شيرازي</addName>
+                        <persName xml:lang="fa">ميرزا جواد
+                           
+                           
+                           <addName xml:lang="fa" type="nisbah">شيرازي</addName>
+                        </persName>
                      </author>
                      
                      
                      
                      
                      <title xml:lang="en" type="desc">Preface to the Hasht bihist</title>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/nicholson1932/view.php?id=96"/>
@@ -68,24 +75,36 @@
                      <textLang mainLang="ar">Persian</textLang>
                   </msItem>
                   <msItem xml:id="F_54.1-item2" n="2">
-                     <author>Shaykh Aḥmad Rūḥī Kirmānīشيخ احمد روحى
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied" evidence="conjecture">Shaykh Aḥmad Rūḥī Kirmānī</persName>
                         
                         
-                        <addName xml:lang="fa" type="nisbah">كرمانى</addName>
+                        <persName xml:lang="fa">شيخ احمد روحى
+                           
+                           
+                           <addName xml:lang="fa" type="nisbah">كرمانى</addName>
+                        </persName>
                      </author>
-                     <author>Mīrzā Āqā Khān Kirmānīميرزا آقا خان
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied" evidence="conjecture">Mīrzā Āqā Khān Kirmānī</persName>
                         
                         
-                        <addName xml:lang="fa" type="nisbah">كرمانى</addName>
+                        <persName xml:lang="fa">ميرزا آقا خان
+                           
+                           
+                           <addName xml:lang="fa" type="nisbah">كرمانى</addName>
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Hasht bihist</title>
                      
                      <title xml:lang="fa">هشت بهشت</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/nicholson1932/view.php?id=96"/>
@@ -100,13 +119,13 @@
                   <objectDesc form="other">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -166,7 +185,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-08-04">

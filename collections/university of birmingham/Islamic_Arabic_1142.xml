@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3640">
    <teiHeader>
       <fileDesc>
@@ -44,19 +44,26 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_1142-item1">
-                     <author key="nr91040847" ref="http://viaf.org/viaf/51549062">Awsī, ʿUmar ibn Ibrāhīm, -1350 or 1351المرسي، عمر بن إبراهيم، ت. 751 هـ
+                     <author key="nr91040847" ref="http://viaf.org/viaf/51549062">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Awsī, ʿUmar ibn Ibrāhīm, -1350 or 1351</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">المرسي، عمر بن إبراهيم، ت. 751 هـ
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Zahr al-kimām fī Qiṣṣat Yūsuf ʿalayh al-salām</title>
                      
                      <title xml:lang="ar">زهر الكمام في قصة سيدنا يوسف عليه السلام</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="fa" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 724</bibl>
                         <bibl>GAL II 265; II 377-8</bibl>
@@ -71,14 +78,14 @@
                               <height>22.5</height>
                               <width>16.1</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="15" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                            <note>15 lines per page</note>
                         </layout>
                      </layoutDesc>
@@ -133,7 +140,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-06-13">

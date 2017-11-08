@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_877">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,9 @@
                </msIdentifier>
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Bodl_Or_306-item1" n="1" class="#extract">
-                     <author key="n 87899419" ref="http://www.viaf.org/viaf/94194423/">Gagnier, Jean,<date calendar="#Gregorian" from="1670" to="1740">1670?-1740.</date>
+                     <author key="n 87899419" ref="http://www.viaf.org/viaf/94194423/">
+                        <persName type="standard">Gagnier, Jean,<date calendar="#Gregorian" from="1670" to="1740">1670?-1740.</date>
+                        </persName>
                      </author>
                      <title>Excerpts* transcribed by Gagnier from Arabic and Persian geographical MSS. in the Bodleian, together with notes by him.</title>
                      <note>*Nicoll lists 8 items, of which no. 1 is individually mentioned by Brock. (G1, 337, q. v.).</note>
@@ -56,7 +58,9 @@
                   </msItem>
                   <msItem xml:id="MS_Bodl_Or_306-item2" n="2">
                      <locus from="1" to="46">ff. 1-46</locus>
-                     <author key="n 83172955" ref="http://viaf.org/viaf/27198358/">Ibn Saʻīd, ʻAlī ibn Mūsá,<date calendar="#Gregorian" from="1213" to="1286">1213-1286</date>
+                     <author key="n 83172955" ref="http://viaf.org/viaf/27198358/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ibn Saʻīd, ʻAlī ibn Mūsá,<date calendar="#Gregorian" from="1213" to="1286">1213-1286</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Kitāb al-Badʼ</title>
                      <note>A transcript MS. Laud Or. 317 by<persName>J. Gagnier</persName>
@@ -69,7 +73,9 @@
                   </msItem>
                   <msItem xml:id="MS_Bodl_Or_306-item3" n="3">
                      <locus from="75" to="76">ff. 75r-76v</locus>
-                     <author key="nr 92033150" ref="http://viaf.org/viaf/95296958/">Ibn Ḥawqal, Muḥammad,<date calendar="#Gregorian" notBefore="0900" notAfter="1000">10th cent.</date>
+                     <author key="nr 92033150" ref="http://viaf.org/viaf/95296958/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ibn Ḥawqal, Muḥammad,<date calendar="#Gregorian" notBefore="0900" notAfter="1000">10th cent.</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Kitāb al-Masālik wa-al-mamālik</title>
                      <note>Extracts from MS. Hunt. 538, transcribed by<persName>J. Gagnier</persName>
@@ -197,11 +203,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

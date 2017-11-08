@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6239">
    <teiHeader>
       <fileDesc>
@@ -43,7 +43,13 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh2010115027">
                   <msItem xml:id="Or_7535-item1">
-                     <author ref="http://viaf.org/viaf/74159218" key="n80040239">Manīrī, Sharaf al-Dīn Aḥmad ibn Yaḥyá, d. 1380?Aḥmad ibn Yaḥyā Munyārīاحمد بن يحيى منيرىمنيرى، شرف الدين احمد بن يحيى
+                     <author ref="http://viaf.org/viaf/74159218" key="n80040239">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Manīrī, Sharaf al-Dīn Aḥmad ibn Yaḥyá, d. 1380?</persName>
+                        
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Aḥmad ibn Yaḥyā Munyārī</persName>
+                        <persName xml:lang="fa" type="alt">احمد بن يحيى منيرى</persName>
+                        <persName xml:lang="fa">منيرى، شرف الدين احمد بن يحيى</persName>
+                        
                         
                         
                         
@@ -55,8 +61,8 @@
                      
                      <note>A collection of 151 letters on mystical doctrine compiled by<persName xml:lang="fa-Latn-x-lc" type="supplied">Zain-i Badr-i ‘Arabī</persName>in<date calendar="#Hijri-qamari" notBefore="1367" notAfter="1368">769</date>
                      </note>
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 4.</bibl>
                      </listBibl>
@@ -70,7 +76,7 @@
                               <height>24.2</height>
                               <width>13.7</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -114,7 +120,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-03-14">

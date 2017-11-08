@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_931">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,9 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Bruce_56-item1" n="1">
                      <locus from="3" to="90">ff. 3-90</locus>
-                     <author key="n 82270593" ref="http://www.viaf.org/viaf/54439868/">Ibn al-Athīr, ʻIzz al-Dīn,<date calendar="#Gregorian" from="1160" to="1233">1160-1233</date>
+                     <author key="n 82270593" ref="http://www.viaf.org/viaf/54439868/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ibn al-Athīr, ʻIzz al-Dīn,<date calendar="#Gregorian" from="1160" to="1233">1160-1233</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Kāmil fī al-taʼrīkh</title>
                      <note>Fragments only containing passages corresponding to parts of Tornbergʼs edn. vol. 2, pp. 250-387</note>
@@ -57,7 +59,9 @@
                   </msItem>
                   <msItem xml:id="MS_Bruce_56-item2" n="2">
                      <locus from="91" to="115">ff. 91-115</locus>
-                     <author key="n 87898981" ref="http://www.viaf.org/viaf/49372318/">Ibn Khallikān,<date calendar="#Gregorian" from="1211" to="1282">1211-1282</date>
+                     <author key="n 87898981" ref="http://www.viaf.org/viaf/49372318/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ibn Khallikān,<date calendar="#Gregorian" from="1211" to="1282">1211-1282</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Wafayāt al-aʻyān wa-anbāʼ abnāʼ al-zamān</title>
                      <note>Fragments only, containing passages corresponding to parts of the Bulaq edn. of 1882, vol. 1, pp. 532-597</note>
@@ -69,7 +73,9 @@
                   </msItem>
                   <msItem xml:id="MS_Bruce_56-item3" n="3">
                      <locus from="116" to="146">ff. 116-146</locus>
-                     <author key="n 79074487" ref="http://www.viaf.org/viaf/29927443/">Masʻūdī, d.<date calendar="#Gregorian" when="0956">956</date>?</author>
+                     <author key="n 79074487" ref="http://www.viaf.org/viaf/29927443/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Masʻūdī, d.<date calendar="#Gregorian" when="0956">956</date>?</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Murūj al-dhahab wa-maʻādin al-jawāhir</title>
                      <note>Fragments only, corresponding to parts of Barbier de Meynardʼs edn., vol. III, p. 422-vol. V, p. 71</note>
                      <listBibl>
@@ -90,7 +96,9 @@
                   </msItem>
                   <msItem xml:id="MS_Bruce_56-item5" n="5">
                      <locus from="150" to="294">ff. 150-268; 269-294</locus>
-                     <author key="nr 95036695" ref="http://viaf.org/viaf/62391312/">Ibn Wāṣil, Muḥammad ibn Sālim,<date calendar="#Gregorian" from="1207" to="1298">1207 or 8-1297 or 8</date>
+                     <author key="nr 95036695" ref="http://viaf.org/viaf/62391312/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn Wāṣil, Muḥammad ibn Sālim,<date calendar="#Gregorian" from="1207" to="1298">1207 or 8-1297 or 8</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Mufarrij al-kurūb fī akhbār Banī Ayyūb</title>
                      <note>Fragments of two MSS., the first covering parts of A. H. 517-595, the second parts of A. H. 600 and 613-17</note>
@@ -230,11 +238,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_9560">
    <teiHeader>
       <fileDesc>
@@ -46,19 +46,26 @@
                   <msItem xml:id="Qq_141-item1">
                      <msItem xml:id="Qq_141-item1-item1" n="1">
                         <locus from="1" to="37">ff. 1-37</locus>
-                        <author key="n80056737" ref="http://viaf.org/viaf/88345774/">Maqrīzī, Aḥmad ibn ʻAlī, 1364-1442المقريزي، أحمد بن علي
+                        <author key="n80056737" ref="http://viaf.org/viaf/88345774/">
+                           <persName xml:lang="ar-Latn-x-lc" type="standard">Maqrīzī, Aḥmad ibn ʻAlī, 1364-1442</persName>
                            
                            
-                           
+                           <persName xml:lang="ar">المقريزي، أحمد بن علي
+                              
+                              
+                              
+                           </persName>
                         </author>
                         <title xml:lang="ar-Latn-x-lc">al-Dhahab al-masbūk fīman ḥajja min al-mulūk</title>
                         
                         <title xml:lang="ar">الذهب المسبوك فيمن حخ من الملوك</title>
                         
                         
-                        
-                        
-                        
+                        <incipit xml:lang="ar"/>
+                        <explicit xml:lang="ar" defective="true"/>
+                        <note>
+                           <foreign xml:lang="ar"/>
+                        </note>
                         <listBibl>
                            <bibl>
                               <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/full/CUL003_052.jpg">no.442</ref>
@@ -68,15 +75,19 @@
                      </msItem>
                      <msItem xml:id="Qq_141-item1-item2" n="2">
                         <locus from="40b" to="76a">ff. 40b-76a</locus>
-                        <author key="n80056737" ref="http://viaf.org/viaf/88345774/">Maqrīzī, Aḥmad ibn ʻAlī, 1364-1442</author>
+                        <author key="n80056737" ref="http://viaf.org/viaf/88345774/">
+                           <persName xml:lang="ar-Latn-x-lc" type="standard">Maqrīzī, Aḥmad ibn ʻAlī, 1364-1442</persName>
+                        </author>
                         <title xml:lang="ar-Latn-x-lc">ʻIbar al-naḥl</title>
                         
                         <title xml:lang="ar">عبر النحل</title>
                         
                         
-                        
-                        
-                        
+                        <incipit xml:lang="ar"/>
+                        <explicit xml:lang="ar" defective="true"/>
+                        <note>
+                           <foreign xml:lang="ar"/>
+                        </note>
                         <listBibl>
                            <bibl>
                               <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/full/CUL003_070.jpg">no. 664</ref>
@@ -86,15 +97,19 @@
                      </msItem>
                      <msItem xml:id="Qq_141-item1-item3" n="3">
                         <locus from="79b" to="86a">ff. 79b-86a</locus>
-                        <author key="n80056737" ref="http://viaf.org/viaf/88345774/">Maqrīzī, Aḥmad ibn ʻAlī, 1364-1442</author>
+                        <author key="n80056737" ref="http://viaf.org/viaf/88345774/">
+                           <persName xml:lang="ar-Latn-x-lc" type="standard">Maqrīzī, Aḥmad ibn ʻAlī, 1364-1442</persName>
+                        </author>
                         <title xml:lang="ar-Latn-x-lc">al-Ṭarf al-gharībah min akhbār Wādī Ḥaḍramawt al-ʻajībah</title>
                         
                         <title xml:lang="ar">الطرف الغريبة من اخبار وادي حضرموت العجيبة</title>
                         
                         
-                        
-                        
-                        
+                        <incipit xml:lang="ar"/>
+                        <explicit xml:lang="ar" defective="true"/>
+                        <note>
+                           <foreign xml:lang="ar"/>
+                        </note>
                         <listBibl>
                            <bibl>
                               <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/full/CUL003_069.jpg">no. 655</ref>
@@ -108,13 +123,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -199,7 +214,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-04-13">

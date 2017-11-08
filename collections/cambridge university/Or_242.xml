@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_2189">
    <teiHeader>
       <fileDesc>
@@ -44,25 +44,35 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Or_242-item1" class="#abridgement">
-                     <author key="n97922673" ref="http://viaf.org/viaf/45109504/">Khvānd Mīr, Ghiyās̲ al-Dīn ibn Humām al-Dīn, ca. 1475-1535?خواند مير، غياث الدين بن همام الدين
+                     <author key="n97922673" ref="http://viaf.org/viaf/45109504/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Khvānd Mīr, Ghiyās̲ al-Dīn ibn Humām al-Dīn, ca. 1475-1535?</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">خواند مير، غياث الدين بن همام الدين
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Khulāṣat al-akhbār fī bayān aḥwāl al-akhyār</title>
                      
                      <title xml:lang="ar">خلاصة الاخبار في بيان احوال الاخيار</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne1922/view.php?id=47">no. 432</ref>
                         </bibl>
                         <bibl type="text-relations">This work is an abridgement of the<title xml:lang="fa-Latn-x-lc">Rawz̤at al-ṣafāʼ<foreign xml:lang="fa">روضه الصفاء</foreign>
-                           </title>of<author key="n82027925" ref="http://viaf.org/viaf/21020332/">Mīr Khvānd, Muḥammad ibn Khāvandshāh, 1433-1498مير خواند، محمد بن خاوند شاه</author>.</bibl>
+                           </title>of<author key="n82027925" ref="http://viaf.org/viaf/21020332/">
+                              <persName xml:lang="fa-Latn-x-lc">Mīr Khvānd, Muḥammad ibn Khāvandshāh, 1433-1498</persName>
+                              <persName>مير خواند، محمد بن خاوند شاه</persName>
+                           </author>.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
@@ -71,13 +81,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -150,7 +160,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-10-28">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5196">
    <teiHeader>
       <fileDesc>
@@ -47,7 +47,15 @@
                           n="5"
                           class="http://lccn.loc.gov/sh85063200 http://lccn.loc.gov/sh85060381">
                      <locus from="101v" to="121v">ff 101v-121v</locus>
-                     <author>ʻFiristazādah, ‘Abd al-MajīdIbn FirishatahFirişteoğluفرستزاده، عبد المجیدبن فرشته
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">ʻFiristazādah, ‘Abd al-Majīd</persName>
+                        
+                        <persName xml:lang="ar-Latn-x-lc" type="alt">Ibn Firishatah</persName>
+                        <persName xml:lang="tr-Latn-x-lc" type="alt">Firişteoğlu</persName>
+                        <persName xml:lang="fa">فرستزاده، عبد المجید</persName>
+                        <persName xml:lang="fa" type="alt">بن فرشته</persName>
+                        
+                        
                         
                         
                         
@@ -57,8 +65,8 @@
                      <title xml:lang="fa-Latn-x-lc" type="alt">Risālah-ʼi Hidāyatnāmah-ʼi ilāhī</title>
                      <title xml:lang="fa" type="alt">رسالۀ هدایتنامۀ الهى</title>
                      
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>A tract on Ḥarūfī doctrine</note>
                      <note>Title has been supplied by<ref target="Waley_1998" type="page">Waley 1998, page 14.</ref>
                      </note>
@@ -145,7 +153,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-10-12">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8301">
    <teiHeader>
       <fileDesc>
@@ -41,7 +41,10 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_380548-item1" n="1">
-                     <author ref="http://viaf.org/viaf/91224532/" key="no2001088530‏">Abdallah ibn ʻAlī ibn Nāṣirعبد الله بن علي بن ناصر</author>
+                     <author ref="http://viaf.org/viaf/91224532/" key="no2001088530‏">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Abdallah ibn ʻAlī ibn Nāṣir</persName>
+                        <persName xml:lang="ar">عبد الله بن علي بن ناصر</persName>
+                     </author>
                      <title xml:lang="swa-Latn-x-lc">Inkishafi</title>
                      <title xml:lang="swa">انکشاف</title>
                      <incipit>بسم الله نيقدم حال يكتنغ هن نظوم / Bismillahi naiqadimu, Hali ya kutunga hino nudhumu</incipit>
@@ -49,7 +52,10 @@
                      <textLang mainLang="swa">Swahili</textLang>
                   </msItem>
                   <msItem xml:id="ms_380548-item2" n="2">
-                     <author key="no2003023084‏" ref="http://viaf.org/viaf/55052255/">Mwana, Kupona, 1810-1860</author>
+                     <author key="no2003023084‏" ref="http://viaf.org/viaf/55052255/">
+                        <persName xml:lang="swa-Latn-x-lc" type="standard">Mwana, Kupona, 1810-1860</persName>
+                        
+                     </author>
                      <title xml:lang="swa-Latn-x-lc">Utenzi wa Mwana Kupona</title>
                      <title xml:lang="swa">اتند و مون كيون</title>
                      <incipit>نغما وغ بنت ماککف و سنات / Negema wangu binti mcachefu wa sanati</incipit>
@@ -62,7 +68,9 @@
                      <textLang mainLang="swa">Swahili</textLang>
                   </msItem>
                   <msItem xml:id="ms_380548-item3" n="3">
-                     <author key="(DNB)124320457" ref="http://viaf.org/viaf/225493124/">Liongo Fumo</author>
+                     <author key="(DNB)124320457" ref="http://viaf.org/viaf/225493124/">
+                        <persName xml:lang="swa-Latn-x-lc" type="standard">Liongo Fumo</persName>
+                     </author>
                      <title xml:lang="swa-Latn-x-lc">Mashairi ya Fumo Liongo</title>
                      <title xml:lang="swa">مشعير يفوم ليونغو</title>
                      <note>A poem in praise of the poet's wife</note>
@@ -75,7 +83,9 @@
                      <textLang mainLang="swa">Swahili</textLang>
                   </msItem>
                   <msItem xml:id="ms_380548-item4" n="4">
-                     <author>Anonymous</author>
+                     <author>
+                        <persName>Anonymous</persName>
+                     </author>
                      <title xml:lang="swa-Latn-x-lc">Mashairi ya zamani</title>
                      <title xml:lang="swa">مشعير يزمن</title>
                      <incipit>پمبا نپجیا پمبا کو ککون تحامو مونغ / Pembe nipigie pembe, kwa kikuni cha mwanga</incipit>
@@ -88,7 +98,9 @@
                      <textLang mainLang="swa">Swahili</textLang>
                   </msItem>
                   <msItem xml:id="ms_380548-item5" n="5">
-                     <author>Anonymous</author>
+                     <author>
+                        <persName>Anonymous</persName>
+                     </author>
                      <title xml:lang="swa-Latn-x-lc">Dua</title>
                      <title xml:lang="swa">دوعا</title>
                      <incipit>رب توكشتاك نيي زت هزنيوك / Ya Rabbi twakushitaki, nyoyo zetu hazinyoki</incipit>
@@ -110,13 +122,13 @@
                            <ref target="a3">7 f.</ref>
                            <ref target="a4">4 f.</ref>
                            <ref target="a5">4 f.</ref>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -169,7 +181,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2017-03-07">

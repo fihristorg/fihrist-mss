@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7763">
    <teiHeader>
       <fileDesc>
@@ -40,7 +40,7 @@
                         </extent>
                         <collation>
                            <seg type="gathering" n="1-226" subtype="folded">
-                              
+                              <dimensions type="leaf" unit="mm" quantity="30"/>
                               <formula>226</formula>
                            </seg>
                         </collation>
@@ -49,15 +49,15 @@
                      <layoutDesc>
                         <layout ruledLines="17" columns="1" n="mistara">
                            <locus facs="#i0003">1b</locus>
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                         <layout ruledLines="21" columns="1" n="mistara">
                            <locus facs="#i0004">2a-225b</locus>
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                         <layout ruledLines="25" columns="1" n="mistara">
                            <locus facs="#i0228">226a</locus>
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -128,8 +128,13 @@
                              class="sh85083064">
                         <locus>fol.226a.20</locus>
                         <author>
-                           <addName type="nisbah" facs="#i0228">الكازرونى</addName>
-                           <forename>سديد</forename>Sadīd ad-Dīn al-Kāzarūnīسديد الكازرونى</author>
+                           <persName type="standard" xml:lang="ara-Arab">
+                              <addName type="nisbah" facs="#i0228">الكازرونى</addName>
+                              <forename>سديد</forename>
+                           </persName>
+                           <persName xml:lang="eng-Latn" type="standard">Sadīd ad-Dīn al-Kāzarūnī</persName>
+                           <persName type="original" xml:lang="ara-Arab" facs="#i0228">سديد الكازرونى</persName>
+                        </author>
                         <textLang mainLang="ara-Arab"/>
                         <incipit type="basmala" facs="#i0003">
                            <locus>fol.1b.1</locus>بِسم اللّه الرّحمن الرّحيم وبه نستعينُ</incipit>
@@ -253,7 +258,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-11-08T18:55:02+02:00">Committed to SVN. To view the changes in detail use SVN diff. SVN Url:http://wellcomesvn.local.bibalex.dom/svn/WellcomeTrust/trunk/WAMCPMetaGallery/XML/WMS_Arabic_35/WMS_Arabic_35.xml<persName>eralph</persName>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_981">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,10 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Huntington_237-item1" n="1" class="#commentary">
                      <locus from="1" to="76">ff. 1r-76r</locus>
-                     <author key="n 81027793" ref="http://viaf.org/viaf/90038995/">Alhazen, 965-1039ابن الهيثم، محمد بن الحسن، 354-حو. 430 هـ</author>
+                     <author key="n 81027793" ref="http://viaf.org/viaf/90038995/">
+                        <persName type="standard">Alhazen, 965-1039</persName>
+                        <persName xml:lang="ar">ابن الهيثم، محمد بن الحسن، 354-حو. 430 هـ</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Sharḥ muṣādarat kitab Uqlīdus fī uṣūl handasah</title>
                      <note>SAUG §90, p. 168</note>
                      <listBibl>
@@ -56,7 +59,9 @@
                   </msItem>
                   <msItem xml:id="MS_Huntington_237-item2" n="2" class="#translation">
                      <locus from="76" to="82">ff. 76r-82r</locus>
-                     <author>Autolykos</author>
+                     <author>
+                        <persName>Autolykos</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">al-Kurah al-mutaḥarrikah</title>
                      <note>Translated by<persName type="standard"
                                   xml:lang="ar-Latn-x-lc"
@@ -222,11 +227,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

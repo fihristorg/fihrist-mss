@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_2441">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,15 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Or_693-item1">
-                     <author>Muẓaffar Birjandīمظفر
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Muẓaffar Birjandī</persName>
                         
                         
-                        <addName xml:lang="ar" type="nisbah">برجندی</addName>
+                        <persName xml:lang="fa">مظفر
+                           
+                           
+                           <addName xml:lang="ar" type="nisbah">برجندی</addName>
+                        </persName>
                      </author>
                      
                      
@@ -60,7 +65,10 @@
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne1922/view.php?id=151">no. 1487</ref>
                         </bibl>
                         <bibl type="text-relations">The treatise is based on the<title xml:lang="fa-Latn-x-lc">Bīst bāb<foreign xml:lang="fa">بيست باب</foreign>
-                           </title>of<author key="n93001807" ref="http://viaf.org/viaf/7603024/">Birjandī, ʻAbd al-ʻAlī ibn Muḥammad ibn Ḥusayn, 16th cent.برجندی، عبد العلی بن محمد بن حسين</author>
+                           </title>of<author key="n93001807" ref="http://viaf.org/viaf/7603024/">
+                              <persName xml:lang="fa-Latn-x-lc">Birjandī, ʻAbd al-ʻAlī ibn Muḥammad ibn Ḥusayn, 16th cent.</persName>
+                              <persName xml:lang="fa">برجندی، عبد العلی بن محمد بن حسين</persName>
+                           </author>
                         </bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
@@ -70,13 +78,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -130,7 +138,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-11-11">

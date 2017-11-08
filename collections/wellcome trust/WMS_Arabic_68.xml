@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7795">
    <teiHeader>
       <fileDesc>
@@ -39,7 +39,7 @@
                         </extent>
                         <collation>
                            <seg type="gathering" n="1-22">
-                              
+                              <dimensions type="leaf" unit="mm" quantity="3"/>
                               <formula>03+22+003</formula>
                            </seg>
                         </collation>
@@ -127,9 +127,14 @@
                      <msItem xml:id="WMS_Arabic_68-part1-item1" defective="false">
                         <locus>fol.1b.5</locus>
                         <author>
-                           <surname facs="#i0026">ابن سينا</surname>
-                           <forename facs="#i0026">عبد الله بن سينا</forename>
-                           <addName type="kunyah" facs="#i0026">ابي على</addName>Abū ‘Alī. al-Ḥusain. b. `Abdallāh b. Sīnā ( Avicenna )ابي على عبد الله بن سينا</author>
+                           <persName xml:lang="ara-Arab" type="standard">
+                              <surname facs="#i0026">ابن سينا</surname>
+                              <forename facs="#i0026">عبد الله بن سينا</forename>
+                              <addName type="kunyah" facs="#i0026">ابي على</addName>
+                           </persName>
+                           <persName xml:lang="eng-Latn" type="standard">Abū ‘Alī. al-Ḥusain. b. `Abdallāh b. Sīnā ( Avicenna )</persName>
+                           <persName xml:lang="ara-Arab" type="original" facs="#i0026">ابي على عبد الله بن سينا</persName>
+                        </author>
                         <title type="original" facs="#i0006">كتابا يشتمل على ما ان ينبغى ان يتحقق من حال القولنج<locus>fol.1b.5</locus>
                         </title>
                         <title type="normalised" xml:lang="ara-Latn">Risāla fi al-qūlunğ</title>
@@ -272,7 +277,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-11-22T12:52:38+02:00">Committed to SVN. To view the changes in detail use SVN diff. SVN Url:http://wellcomesvn.local.bibalex.dom/svn/WellcomeTrust/trunk/WAMCPMetaGallery/XML/WMS_Arabic_68/WMS_Arabic_68.xml<persName>eralph</persName>

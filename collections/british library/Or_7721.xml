@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6267">
    <teiHeader>
       <fileDesc>
@@ -47,18 +47,23 @@
                           n="2"
                           class="http://lccn.loc.gov/sh2008112367">
                      <locus from="15v" to="43r">ff 15v-43r</locus>
-                     <author ref="http://viaf.org/viaf/84084776" key="n85109465">Nasafī, ʻAzīz al-Dīn ibn Muḥammad, 13th cent.نسفى، عزيز الدين بن محمد
+                     <author ref="http://viaf.org/viaf/84084776" key="n85109465">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Nasafī, ʻAzīz al-Dīn ibn Muḥammad, 13th cent.</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">نسفى، عزيز الدين بن محمد
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Zubdat al-ḥaqā’iq</title>
                      
                      <title xml:lang="fa">زبدة الحقائق</title>
                      
                      
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 4-5.</bibl>
                      </listBibl>
@@ -68,10 +73,16 @@
                           n="3"
                           class="http://lccn.loc.gov/sh2008112367">
                      <locus from="15v" to="43r">ff 49v-118v</locus>
-                     <author>Abū’l-Fatḥ Muḥammad ibn Muẓaffar al-Dīn Shaykh al-MakkīKhākīخاکیابو الفتح محمد بن مظفر الدین شیخ المکی
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Abū’l-Fatḥ Muḥammad ibn Muẓaffar al-Dīn Shaykh al-Makkī</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Khākī</persName>
+                        <persName xml:lang="fa" type="alt">خاکی</persName>
                         
-                        
-                        
+                        <persName xml:lang="fa">ابو الفتح محمد بن مظفر الدین شیخ المکی
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Al-jānib al-gharbī dar ḥall al-mushkilāt-i Muḥyī al-Dīn al-‘Arabī</title>
                      
@@ -83,8 +94,8 @@
                                   xml:lang="fa-Latn-x-lc"
                                   type="standard">Selim I, Sultan of the Turks, 1470-1520</persName>
                      </note>
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 4-5.</bibl>
                      </listBibl>
@@ -94,18 +105,24 @@
                           n="4"
                           class="http://lccn.loc.gov/sh2008112367">
                      <locus from="119r" to="140r ">ff 119r-140r</locus>
-                     <author ref="http://viaf.org/viaf/31996761" key="n82097778">Ghazzālī, 1058-1111Khākīخاکیغوالی
+                     <author ref="http://viaf.org/viaf/31996761" key="n82097778">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Ghazzālī, 1058-1111</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Khākī</persName>
+                        <persName xml:lang="fa" type="alt">خاکی</persName>
                         
-                        
-                        
+                        <persName xml:lang="fa">غوالی
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Ghāyat al-imkān</title>
                      
                      <title xml:lang="fa">غایة الامکان</title>
                      
                      
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 4-5.</bibl>
                      </listBibl>
@@ -119,7 +136,7 @@
                               <height>19</height>
                               <width>11.5</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -175,7 +192,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-03-26">

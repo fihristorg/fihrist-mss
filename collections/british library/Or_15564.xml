@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5791">
    <teiHeader xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <fileDesc>
@@ -28,7 +28,10 @@
                <head>Badaʼiʻ al-akhbar</head>
                <msContents>
                   <msItem xml:id="Or_15564-item1" class="http://lccn.loc.gov/sh89005046">
-                     <author>ʻImād al-Dīn ibn Khusraw al-Ḥusaynī al-Haravīعماد الدین بن خسرو الحسینی الهروی</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied" key="Persian_0075">ʻImād al-Dīn ibn Khusraw al-Ḥusaynī al-Haravī</persName>
+                        <persName xml:lang="fa" key="Persian_0075" type="supplied">عماد الدین بن خسرو الحسینی الهروی</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Badā’i‘ al-akhbār</title>
                      <title xml:lang="fa">بدائع الاخبار</title>
                      <note>
@@ -118,7 +121,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-12-16">

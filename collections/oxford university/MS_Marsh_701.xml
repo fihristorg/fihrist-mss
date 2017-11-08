@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1225">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,9 @@
                <msContents>
                   <msItem xml:id="MS_Marsh_701-item1" n="1">
                      <locus from="1" to="86">ff. 1-86v</locus>
-                     <author key="n 82136884" ref="http://www.viaf.org/viaf/12392936/">Ṭūsī, Naṣīr al-Dīn Muḥammad ibn Muḥammad,<date calendar="#Gregorian" from="1201" to="1274">1201-1274</date>
+                     <author key="n 82136884" ref="http://www.viaf.org/viaf/12392936/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ṭūsī, Naṣīr al-Dīn Muḥammad ibn Muḥammad,<date calendar="#Gregorian" from="1201" to="1274">1201-1274</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Jawāmiʻ al-ḥisāb bil-takht wa-al-turāb</title>
                      <note>As in Meshed and Esc. MSS.; Brock. “Jāmiʻ”</note>
@@ -57,7 +59,9 @@
                   </msItem>
                   <msItem xml:id="MS_Marsh_701-item2" n="2">
                      <locus from="187" to="362">ff. 187v-362v</locus>
-                     <author key="n 80014376" ref="http://viaf.org/viaf/100174240/">Bīrūnī, Muḥammad ibn Aḥmad,<date calendar="#Gregorian" from="0973" to="1048">973?-1048</date>
+                     <author key="n 80014376" ref="http://viaf.org/viaf/100174240/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Bīrūnī, Muḥammad ibn Aḥmad,<date calendar="#Gregorian" from="0973" to="1048">973?-1048</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Istīʻāb al-wujūh al-mumkinah fī ṣanʻat al-aṣṭurlāb</title>
                      <listBibl>
@@ -184,11 +188,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

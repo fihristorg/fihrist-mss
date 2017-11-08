@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5510">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,12 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh2007002370 http://lccn.loc.gov/sh96009249 http://lccn.loc.gov/sh85138802">
                   <msItem xml:id="Or_12826-item1" class="#abridgement">
-                     <author>Sayyid Fakhr al-Dīn al-Mawṣilīسید فخر الدین الموصلی
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Sayyid Fakhr al-Dīn al-Mawṣilī</persName>
+                        <persName xml:lang="fa">سید فخر الدین الموصلی</persName>
+                        
+                        
+                        
                         
                         
                         
@@ -52,8 +57,8 @@
                      <title xml:lang="fa-Latn-x-lc">Ikhtiṣār-i Lughat-i Niʻmat Allāh</title>
                      <title xml:lang="fa">اختصار لغت نعمت الله</title>
                      
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note type="text-relations">The abridgement by<persName xml:lang="fa-Latn-x-lc" type="supplied">Sayyid Fakhr al-Dīn al-Mawṣilī,<foreign xml:lang="fa">سید فخر الدین الموصلی</foreign>
                         </persName>, of<title xml:lang="fa-Latn-x-lc">Lughat-i Niʻmat Allāh (<foreign xml:lang="fa">لغت نعمت الله</foreign>)</title>, an explanatory Persian-Turkish dictionary by<persName xml:lang="fa-Latn-x-lc" type="supplied">Niʻmat Allāh ibn Aḥmad ibn Qāz̤ī Mubārak al-Rūmī, d. 969/1561-2,<foreign xml:lang="fa">نعمت الله بن احمد بن قاضى مبارک الرومی</foreign>
                         </persName>
@@ -122,7 +127,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-10-20">

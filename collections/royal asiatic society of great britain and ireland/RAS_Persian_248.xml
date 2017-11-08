@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_2797">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,12 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="RAS_Persian_248-item1">
-                     <author key="n80115655" ref="http://viaf.org/viaf/2474895/">Niẓāmī Ganjavī, 1140 or 41-1202 or 3نظامى گنجوى</author>
+                     <author key="n80115655" ref="http://viaf.org/viaf/2474895/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Niẓāmī Ganjavī, 1140 or 41-1202 or 3</persName>
+                        
+                        
+                        <persName xml:lang="fa">نظامى گنجوى</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Makhzan al-Asrar.</title>
                      <note>F1a: a) Dr? Tho? Wilkinson? Oct. 4th 1787. b) The Legacy of Hugh Rose? to David Price (in pencil in Price's hand). F1b: Signature of David Price. F55b: Nezamee's Treasury of Secrets the Legacy of Hugh Rose? to David Price (in ink in Price's hand). Ruled margins, headings in blue. On f1a there is an illuminated roundel, much rubbed, with an illegible central inscription. This has been cut out of another page and pasted on to the backing which supports the original text on f1b. Above the text on f1b is a panel of illumination. The MS appears to date from the fourteenth or fifteenth century.</note>
                      <incipit>Bismi 'llahi 'l-rahmani 'l-rahim</incipit>
@@ -112,7 +117,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-05-30">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7803">
    <teiHeader>
       <fileDesc>
@@ -50,7 +50,12 @@
                      <locus from="1b" to="74a">ff. 1b-74a</locus>
                      <textLang mainLang="fa">Persian</textLang>
                      <note type="content-genre">Ḥadith</note>
-                     <author key="nr90020028‏" ref="http://viaf.org/viaf/56460508">Shuʿayrī, Muḥammad ibn Muḥammad,‏ active 12th century‏Shuʿayrī Sabzivārī, Shams al-Dīn Muḥammad ibn Muḥammad, 6th century Qamarī/12th centuryشعیری، محمد بن محمدشعیری سبزواری، شمس‌الدین محمد بن محمد</author>
+                     <author key="nr90020028‏" ref="http://viaf.org/viaf/56460508">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Shuʿayrī, Muḥammad ibn Muḥammad,‏ active 12th century‏</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Shuʿayrī Sabzivārī, Shams al-Dīn Muḥammad ibn Muḥammad, 6th century Qamarī/12th century</persName>
+                        <persName xml:lang="fa">شعیری، محمد بن محمد</persName>
+                        <persName xml:lang="fa" type="alt">شعیری سبزواری، شمس‌الدین محمد بن محمد</persName>
+                     </author>
                      <editor role="translator">
                         <persName key="n2009031990‏"
                                   ref="http://viaf.org/viaf/88408811"
@@ -85,7 +90,12 @@
                      <locus from="74a" to="148b">ff. 74a-148b</locus>
                      <textLang mainLang="ar">Arabic and Persian</textLang>
                      <note type="content-genre">Ethics</note>
-                     <author>Anonymous</author>
+                     <author>
+                        
+                        
+                        <persName xml:lang="en">Anonymous</persName>
+                        
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">[Akhlāq]</title>
                      <title xml:lang="fa">[اخلاق]</title>
                      <note xml:lang="en">In Minasian collection, the generic title of Akhlāq [Ethics] is given to a number of brief treatises that have defective incipits and explicits, hence lacking title and author information. They all, however, have the genral topic of ethics in common.</note>
@@ -114,10 +124,10 @@
                               </dimensions>
                            </ref>
                            <ref target="#a2">
-                              
+                              <dimensions type="written" unit="cm"/>
                            </ref>
                            <ref target="#a1">
-                              
+                              <dimensions type="written" unit="cm"/>
                            </ref>
                         </extent>
                         <foliation xml:id="modern"/>
@@ -137,11 +147,11 @@
                      <layoutDesc>
                         <layout n="1" columns="1">
                            <locus from="1b" to="74a">ff. 1b-74a</locus>
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                         <layout n="2" columns="1">
                            <locus from="74a" to="148b">ff. 74a-148b</locus>
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -270,7 +280,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2017-05-07">

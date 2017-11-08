@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4939">
    <teiHeader>
       <fileDesc>
@@ -44,12 +44,17 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_S_Digby_Or_142-item1">
-                     <author key="290191893" ref="http://viaf.org/viaf/290191893">Shihāb al-Dīn DawlatābādīShihāb al-Dīn ibn Shams al-Dīn ibn ʻUmar Zāwulī Dawlatābādīشهاب الدين دولت آبادىشهاب الدين بن شمس الدين بن عمر زاولى دولت آبادى</author>
+                     <author key="290191893" ref="http://viaf.org/viaf/290191893">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Shihāb al-Dīn Dawlatābādī</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Shihāb al-Dīn ibn Shams al-Dīn ibn ʻUmar Zāwulī Dawlatābādī</persName>
+                        <persName xml:lang="fa">شهاب الدين دولت آبادى</persName>
+                        <persName xml:lang="fa" type="alt">شهاب الدين بن شمس الدين بن عمر زاولى دولت آبادى</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Baḥr-i mawwāj</title>
                      <title xml:lang="fa">بحر موّاج</title>
                      <note>A commentary on the Qur'an. Incomplete copy beginning Surah 3, verse 165 to the end of Surah 6.</note>
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa"/>
                      <colophon xml:lang="fa"/>
                      <listBibl>
                         <bibl>Storey I, no.16, p.9-10.</bibl>
@@ -60,13 +65,13 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>ff. 323
-                           
+                        <extent>ff. 323<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="in"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="13" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -172,7 +177,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2016-09-12">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3782">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,16 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_1676-item1">
-                     <author key="nr94033043" ref="http://viaf.org/viaf/19563959">Jawharī, Ismāʻīl ibn Ghunaym,<date calendar="#Gregorian" notAfter="1752">-1751 or 1752</date>الجوهري، إسماعيل بن غنيم، ت. 1165 هـ
+                     <author key="nr94033043" ref="http://viaf.org/viaf/19563959">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Jawharī, Ismāʻīl ibn Ghunaym,<date calendar="#Gregorian" notAfter="1752">-1751 or 1752</date>
+                        </persName>
                         
                         
-                        
+                        <persName xml:lang="ar">الجوهري، إسماعيل بن غنيم، ت. 1165 هـ
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Bulugh al-marām</title>
                      
@@ -63,9 +69,11 @@
                            <foreign xml:lang="ar">ابن هشام، عبد الله بن يوسف</foreign>
                         </persName>
                      </note>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="fa" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 1550</bibl>
                         <bibl>GAL II 23-25, no. 1; Suppl. II 16, Cmt. o; Suppl. II 422</bibl>
@@ -80,14 +88,14 @@
                               <height>23.0</height>
                               <width>17.0</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="25" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                            <note>25 lines per page</note>
                         </layout>
                      </layoutDesc>
@@ -145,7 +153,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-06-17">

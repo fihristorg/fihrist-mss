@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6479">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,12 @@
                <msContents>
                   <msItem xml:id="Or_9490-item1"
                           class="http://lccn.loc.gov/n2007204421 http://lccn.loc.gov/sh85072967">
-                     <author ref="http://viaf.org/viaf/11716360" key="n2005050806">Charkhī, Yaʻqūb, d. 1447چرخى، يعقوب
+                     <author ref="http://viaf.org/viaf/11716360" key="n2005050806">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Charkhī, Yaʻqūb, d. 1447</persName>
+                        
+                        
+                        <persName xml:lang="fa">چرخى، يعقوب</persName>
+                        
                         
                         
                         
@@ -54,9 +59,11 @@
                      
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
+                     <note>
+                        <foreign xml:lang="fa"/>
+                     </note>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 1.</bibl>
                      </listBibl>
@@ -70,7 +77,7 @@
                               <height>25.5</height>
                               <width>17</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -117,7 +124,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-11-18">

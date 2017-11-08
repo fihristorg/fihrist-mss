@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7905">
    <teiHeader>
       <fileDesc>
@@ -49,7 +49,12 @@
                   <msItem xml:id="WadhMinasian_745-item1">
                      <textLang mainLang="ar">Arabic</textLang>
                      <note type="content-genre">Prayers</note>
-                     <author>Anonymous</author>
+                     <author>
+                        
+                        
+                        <persName xml:lang="en">Anonymous</persName>
+                        
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">[Adʿīyah]</title>
                      <title xml:lang="fa">[ادعیه]</title>
                      <note xml:lang="en">A collection of prayers, including for amulets and phylacteries (scattered pieces, also survived from various books, but mostly prayer books).</note>
@@ -68,15 +73,15 @@
                            <material>European paper (plain and watermark), Eastern paper, plain and dark buff, varying thickness (thin, regular and thick), one size, glossy. Paper infestation.</material>
                         </support>
                         <extent>186 ff.<note>The copy's dimensions of paper and written text vary.</note>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1">
                            <note>Number of lines varies per page.</note>
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -179,7 +184,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2017-05-18">

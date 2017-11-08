@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_2004">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,15 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Or_1536-item1" class="#commentary">
-                     <author key="n79106223" ref="http://viaf.org/viaf/90075678/">Taftāzānī, Masʻūd ibn ʻUmar, 1322-1389?التفتازاني، سعد الدين مسعود بن عمر
+                     <author key="n79106223" ref="http://viaf.org/viaf/90075678/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Taftāzānī, Masʻūd ibn ʻUmar, 1322-1389?</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">التفتازاني، سعد الدين مسعود بن عمر
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Sharḥ al-mukhtaṣar</title>
                      <title xml:lang="ar-Latn-x-lc" type="alt">Sharḥ al-ʻaqāʼid al-nasafīyah</title>
@@ -55,15 +60,20 @@
                      <title xml:lang="ar" type="alt">شرح العقائد النسفية</title>
                      
                      <note>First part only.</note>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/arberry/view.php?id=31">no. 324</ref>
                         </bibl>
                         <bibl type="text-relations">A commentary on<title xml:lang="ar-Latn-x-lc">al-ʻAqāʼid fī uṣūl al-dīn wa-ʻilm al-kalām<foreign xml:lang="ar">العقائد في اصول الدين وعلم الكلام</foreign>
-                           </title>of<author key="n79106197" ref="http://viaf.org/viaf/90041228/">Nasafī, ʻUmar ibn Muḥammad, 1068?-1142النسفي، عمر بن محمد</author>.</bibl>
+                           </title>of<author key="n79106197" ref="http://viaf.org/viaf/90041228/">
+                              <persName xml:lang="ar-Latn-x-lc">Nasafī, ʻUmar ibn Muḥammad, 1068?-1142</persName>
+                              <persName xml:lang="ar">النسفي، عمر بن محمد</persName>
+                           </author>.</bibl>
                      </listBibl>
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
@@ -72,13 +82,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -151,7 +161,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-07-19">

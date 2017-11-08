@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_28">
    <teiHeader>
       <fileDesc>
@@ -46,20 +46,26 @@
                   <summary>A work in 2 volumes</summary>
                   <msItem xml:id="Add_182-item1">
                      <note>Volume 2</note>
-                     <author key="n85093344" ref="http://viaf.org/viaf/60511096/">Burhān, Muḥammad Ḥusayn ibn Khalaf Tabrīzī, 17th cent.<surname>برهان</surname>
-                        <forename>محمد حسين بن خلف تبريزي</forename>
+                     <author key="n85093344" ref="http://viaf.org/viaf/60511096/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Burhān, Muḥammad Ḥusayn ibn Khalaf Tabrīzī, 17th cent.</persName>
                         
                         
-                        
-                        
+                        <persName xml:lang="fa">
+                           <surname>برهان</surname>
+                           <forename>محمد حسين بن خلف تبريزي</forename>
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Burhān-i qāṭiʻ</title>
                      
                      <title xml:lang="fa">برهان قاطع</title>
                      
                      
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <listBibl>
                         <bibl>
                            <ref xml:id="b1"
@@ -75,13 +81,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -129,11 +135,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-09-15">
-             Yasmin Faghihi</change>
+            Yasmin Faghihi</change>
       </revisionDesc>
    </teiHeader>
    <text>

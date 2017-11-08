@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7004">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,20 @@
                   <summary>An introduction to a commentary on an originally Arabic divan ascribed to ʻAlī ibn Abī Ṭālib (ff.<locus from="2r" to="2r">2r</locus>and<locus from="4r" to="4r">4r</locus>), composed in the year<date calendar="#Hijri-qamari" when="1485">890</date>, by Ḥusayn ibn Muʻīn Maybudī, (d.<date calendar="#Hijri-qamari" when="1505">911</date>), whose name is given on f.<locus from="4r" to="4r">4r</locus>. The authenticity of the divan is doubtful even to the commentator as he states on f.<locus from="4r" to="4r">4r</locus>
                      <foreign>هر چند بیقین معلوم نیست .که این بحر از خاشاک شعر غیر صافی است اگر یک بیت شعر اوست مرا در دنیا و عقبی کافیست</foreign>but he seems not to be concerned about the authenticity of the the commentary of the divan<foreign>من خود چه کسم که در شماری باشم- یا در صف اهل دل سواری باشم- مقصود همین است که در شأن علی- گویم سخنی چند و بکاری باشم.</foreign>The commentary is, however, wanting in the present MS. which only contains an extensive seven-part fatihah or preliminary discourse on Sufi doctrines and philosophical, astrological and mystical matters. The fatihah, according to Maibudi, j is useful to a better understanding of the commentary<foreign>قبل از شروعدر شرح ابیات مطالب بلند و مارب ارجمند که در اثنای شرح مفید است و اکثر آن مشتمل بر فایده جدید است مسطور خامۀ تحریر و مزبورنامۀ تصویرخواهد شد در ضمن هفت فاتحه</foreign>. the MS. comes to a conclusion with the end of the seventh fdtihah and the beginning of the commentary.</summary>
                   <msItem xml:id="Persian_MS_508-item1">
-                     <author key="nr 91022941" ref="http://viaf.org/viaf/19535198/">Qāḍī Mīr, Ḥusayn ibn Muʻīn al-Dīn, -1504 or 1505Maybudī, Ḥusayn ibn Muʻīn al-DīnMaybudī Yazdī, Mīr Ḥusaynقاضي مير، حسين بن معين الدين
+                     <author key="nr 91022941" ref="http://viaf.org/viaf/19535198/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Qāḍī Mīr, Ḥusayn ibn Muʻīn al-Dīn, -1504 or 1505</persName>
                         
                         
-                        میبدی، حسین بن معین الدین</author>
+                        Maybudī, Ḥusayn ibn Muʻīn al-Dīn<persName xml:lang="ar-Latn-x-lc" type="alt">Maybudī Yazdī, Mīr Ḥusayn</persName>
+                        <persName xml:lang="ar">قاضي مير، حسين بن معين الدين
+                           
+                           
+                           
+                        </persName>
+                        <persName xml:lang="ar" type="alt">میبدی، حسین بن معین الدین</persName>
+                        
+                        
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Favatiḥ dar sharḥ-i Dīvān-i ‘Alī Ibn Ṭālib</title>
                      <title xml:lang="ar-Latn-x-lc" type="alt">Favatiḥ Maybudī</title>
                      <title xml:lang="ar">فواتح در شرح دیوان علی بن ابی طالب</title>
@@ -55,7 +65,7 @@
                      
                      <incipit xml:lang="fa" type="beginning">
                         <locus from="2v" to="2v">2v</locus>سپاس سعادت اساس و شکر عبادت لباس معبودی را که احکام نبوت و ولایت در میدان فتوت و هدایت برافراشت و ارقام حقایق انجام حدس و الهام بر صحایف قلوب علما و الواح ارواح حکما نگاشت</incipit>
-                     
+                     <explicit xml:lang="ar"/>
                      <listBibl type="text-relations">
                         <bibl>
                            <idno>Arabic MS 728</idno>
@@ -221,7 +231,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2016">

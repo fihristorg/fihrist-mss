@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3534">
    <teiHeader>
       <fileDesc>
@@ -43,7 +43,9 @@
                </msIdentifier>
                <msContents class="http://id.loc.gov/authorities/sh2012002109 http://lccn.loc.gov/sh85132085">
                   <msItem xml:id="IO_Islamic_2484-item1">
-                     <author>Anonymous</author>
+                     <author>
+                        <persName>Anonymous</persName>
+                     </author>
                      <title>A collection of anecdotes</title>
                      <note>The anecdotes are evidently translated from another collection, either Persian or Indian. Copy is imperfect at end</note>
                      <incipit>وړنبي نقل - یو پات شاه له خپل وزیر ن وپوښتی دل چه پدنیا کښ له واړو څما په حق کښ ښه څه دي عرض ي ورته و که که عدل و انصاف کول او د رعیت ساتله دي</incipit>
@@ -62,7 +64,7 @@
                               <height>20.5</height>
                               <width>13</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -113,7 +115,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2016-02-01">

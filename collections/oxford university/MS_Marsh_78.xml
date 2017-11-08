@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1238">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,9 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Marsh_78-item1" n="1">
                      <locus from="1" to="83">fols. 1v-83r</locus>
-                     <author key="n 88286025" ref="http://www.viaf.org/viaf/19930855/">Jurjānī, ʻAlī ibn Muḥammad, al-Sayyid al-Sharīf,<date calendar="#Gregorian">1340-1413</date>
+                     <author key="n 88286025" ref="http://www.viaf.org/viaf/19930855/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Jurjānī, ʻAlī ibn Muḥammad, al-Sayyid al-Sharīf,<date calendar="#Gregorian">1340-1413</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Taʻrīfāt</title>
                      <listBibl>
@@ -56,7 +58,9 @@
                   </msItem>
                   <msItem xml:id="MS_Marsh_78-item2" n="2">
                      <locus from="83" to="86">ff. 83v-86r</locus>
-                     <author key="n 88635190" ref="http://viaf.org/viaf/417725/">Quṭrub, Muḥammad ibn al-Mustanīr,<date calendar="#Gregorian" when="0822">d. 821 or 2</date>
+                     <author key="n 88635190" ref="http://viaf.org/viaf/417725/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Quṭrub, Muḥammad ibn al-Mustanīr,<date calendar="#Gregorian" when="0822">d. 821 or 2</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Kitāb al-Muthallath</title>
                      <note>With interlinear Turkish equivalents*</note>
@@ -185,11 +189,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

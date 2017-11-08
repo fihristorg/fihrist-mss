@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3700">
    <teiHeader>
       <fileDesc>
@@ -45,18 +45,25 @@
                <msContents>
                   <summary>Third of four volumes</summary>
                   <msItem xml:id="Islamic_Arabic_1364-item1">
-                     <author key="n79135427" ref="http://viaf.org/viaf/100256393">Jabartī, ʿAbd al-Raḥmān, 1754-1822جبرتي، عبد الرحمن
+                     <author key="n79135427" ref="http://viaf.org/viaf/100256393">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Jabartī, ʿAbd al-Raḥmān, 1754-1822</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">جبرتي، عبد الرحمن
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">ʿAjāʾib al-āthār fī al-tarājim wa-al-akhbār</title>
                      
                      <title xml:lang="ar">عجائب الآثار في التراجم والأخبار</title>
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="fa" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 911</bibl>
                         <bibl>GAL II 480, esp. no. 1; II 730-1</bibl>
@@ -71,13 +78,13 @@
                               <height>27.1</height>
                               <width>19.7</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1" ruledLines="29" n="mistara">29 lines per page
+                        <layout columns="1" ruledLines="29" n="mistara">29 lines per page<dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -138,7 +145,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-05-16">

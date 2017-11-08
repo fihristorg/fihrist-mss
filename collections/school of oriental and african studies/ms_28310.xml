@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8231">
    <teiHeader>
       <fileDesc>
@@ -44,26 +44,31 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_28310-item1">
-                     <author key="n95038967" ref="http://viaf.org/viaf/31890001/">ʻAṣṣār Tabrīzī, Muḥammad, d. 1382 or 3عصار تبريزى، محمد</author>
+                     <author key="n95038967" ref="http://viaf.org/viaf/31890001/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">ʻAṣṣār Tabrīzī, Muḥammad, d. 1382 or 3</persName>
+                        <persName xml:lang="fa">عصار تبريزى، محمد</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Mihr va-Mushtarī</title>
                      <title xml:lang="fa">مهر و مشتری</title>
                      <note>A romantic masnavi poem. An illuminated unwan and a miniature on f. 15b</note>
                      <incipit>بنام پادشاه عالم عشق - که نامش هست نقش خاتم عشق</incipit>
                      <explicit>تمت الكتاب...على يد شيخ محمد بن الحاج نظام الدين علي الفاسى في سادس شهر رمضان المبارك سنه ثلث وثلثين وتسعمأيه الهجريه النبيه</explicit>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>227 f.
-                           
+                        <extent>227 f.<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -114,7 +119,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-04-08">

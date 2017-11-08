@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4051">
    <teiHeader>
       <fileDesc>
@@ -14,7 +14,7 @@
             </respStmt>
          </titleStmt>
          <publicationStmt><!--First publisher-->
-            <publisher>The University of Manchester School of Arts, Languages and Cultures</publisher><pubPlace>
+            <publisher>The University of Manchester School of Arts, Languages and Cultures</publisher> then <pubPlace>
                <address>
                   <addrLine>
                      <email>peter.pormann@manchester.ac.uk</email>
@@ -55,7 +55,9 @@
                         <bibl>
                            <title level="m">Arabic manuscripts in the libraries of McGill University: Union catalogue</title>
                            <title type="short">Arabic manuscripts in the libraries of McGill University,</title>
-                           <author ref="http://viaf.org/viaf/41990775" key="n83164681">Adam Gacek,</author>
+                           <author ref="http://viaf.org/viaf/41990775" key="n83164681">
+                              <persName>Adam Gacek,</persName>
+                           </author>
                            <pubPlace>Montreal:</pubPlace>
                            <publisher>McGill University Libraries.</publisher>
                            <date calendar="#Gregorian">1991.</date>Entry no. 207,<biblScope unit="pages" n="184">p. 184</biblScope>.</bibl>
@@ -66,7 +68,7 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc>
-                        <extent n="126">126 leaves (ff. 1a-126b)
+                        <extent n="126">126 leaves (ff. 1a-126b)<dimensions type="leaf" unit="mm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
@@ -119,7 +121,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2017">

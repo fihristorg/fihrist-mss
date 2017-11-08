@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3956">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,15 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_720-item1">
-                     <author>Abū al-Faḍāʾil Ḥasan ibn ʿAlī al- ʿAwḍī al-Badrī, d. 1214/1800al-Muqriʾ ibn al-Muqriʾابو الفضائل حسن بن علي العوضي البدري
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="supplied">Abū al-Faḍāʾil Ḥasan ibn ʿAlī al- ʿAwḍī al-Badrī, d. 1214/1800</persName>
                         
-                        
-                        
+                        <persName xml:lang="ar-Latn-x-lc" type="alt">al-Muqriʾ ibn al-Muqriʾ</persName>
+                        <persName xml:lang="ar">ابو الفضائل حسن بن علي العوضي البدري
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Faṣl al-maqāl ʿalā naẓm ibn Ghāzī fawāṣil al-mumāl</title>
                      
@@ -61,8 +66,10 @@
                         </persName>
                      </note>
                      <incipit xml:lang="ar">الحمد لله الذي انزل الكتاب ايات منه محكمات ... اما بعد فيقول الفقير المقري بن المقري ابو الفضائل حسن بن علي العوضي البدري ... ان من مسائل القران المهمات ... مسئلة الفتح والامالة ... و كان من جملة من اعتنى بها و بالغ في كشف نقابها العلامة ابن غازي في كتابه انشاد الشريد ... وسميته فصل المقال على نطم ابن غازي فواصل الممال</incipit>
-                     
-                     
+                     <explicit xml:lang="fa" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 81</bibl>
                         <bibl>GAL II 240, esp. no. 3; II 337-8; II 294</bibl>
@@ -77,14 +84,14 @@
                               <height>22.4</height>
                               <width>14.9</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="23" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -138,7 +145,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-03-21">

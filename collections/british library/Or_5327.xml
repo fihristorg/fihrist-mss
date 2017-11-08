@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5950">
    <teiHeader>
       <fileDesc>
@@ -47,7 +47,11 @@
                           n="1"
                           class="http://lccn.loc.gov/sh85067895 http://lccn.loc.gov/sh85135483">
                      <locus from="1v" to="110r">1v-110r ff</locus>
-                     <author ref="http://viaf.org/viaf/90059149" key="n82027925">Mīr Khvānd, Muhammad ibn Khāvandshāh, 1433-1498Mīr Khvāndمحمد ابن خواندشاه میر خواند</author>
+                     <author ref="http://viaf.org/viaf/90059149" key="n82027925">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Mīr Khvānd, Muhammad ibn Khāvandshāh, 1433-1498</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Mīr Khvānd</persName>
+                        <persName xml:lang="fa">محمد ابن خواندشاه میر خواند</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Rawz̤at al-Ṣafā</title>
                      <title xml:lang="fa">روضة الصفاء</title>
                      <note>The last volume, containing the reign of<persName xml:lang="fa-Latn-x-lc"
@@ -65,7 +69,10 @@
                           n="2"
                           class="http://lccn.loc.gov/n2007024725 http://lccn.loc.gov/sh85064913 http://lccn.loc.gov/sh85001521">
                      <locus from="110v" to="214v">110v-214v ff</locus>
-                     <author>Rashīd Khānرشید خان</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Rashīd Khān</persName>
+                        <persName xml:lang="fa">رشید خان</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Laṭā’if al-Akhbār</title>
                      <title xml:lang="fa">لطائف الاخبار</title>
                      <note>A detailed account of the seige of<name type="place" key=" n83042981">Qandahār</name>by<persName xml:lang="fa-Latn-x-lc"
@@ -82,7 +89,10 @@
                           n="3"
                           class="http://lccn.loc.gov/sh85100075 http://lccn.loc.gov/sh85067895">
                      <locus from="215v" to="263r">215v-263r ff</locus>
-                     <author>Muḥammad al-Bulghārīمحمد البلغاری</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Muḥammad al-Bulghārī</persName>
+                        <persName xml:lang="fa">محمد البلغاری</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Nuzhat al-Mulūk</title>
                      <title xml:lang="fa">نزهة الملوک</title>
                      <note>Anecdotes collected by Muḥammad al-Bulghārī, divided into 8 bāb, each of which contains two items</note>
@@ -221,7 +231,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-07-19">

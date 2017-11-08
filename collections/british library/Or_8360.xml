@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6360">
    <teiHeader>
       <fileDesc>
@@ -46,7 +46,10 @@
                           n="1"
                           class="http://lccn.loc.gov/sh2010105554 http://lccn.loc.gov/sh85076357">
                      <locus from="1v" to="32v">1v-32v ff</locus>
-                     <author>Mubārak Shāh Ghaznavīمبارک شاه غزنوی</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Mubārak Shāh Ghaznavī</persName>
+                        <persName xml:lang="fa">مبارک شاه غزنوی</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Risālah-’i Panj Bakhshī</title>
                      <title xml:lang="fa">رسالۀ پنج بخشی</title>
                      <note>A lexicographical sketch</note>
@@ -59,7 +62,11 @@
                           n="2"
                           class="http://lccn.loc.gov/sh2010105554 http://lccn.loc.gov/sh85076357">
                      <locus from="33v" to="518v">33v-518v ff</locus>
-                     <author ref="http://viaf.org/viaf/27417654" key="n80108820">ʻAbd al-Rashīd ibn ʻAbd al-Ghafūr Tattavī, active 1653‘Abd al-Rashīd al-Ḥusaynī al-Madanī al-Tattavīعبد الرشید الحسینی المدنی التتّوی</author>
+                     <author ref="http://viaf.org/viaf/27417654" key="n80108820">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">ʻAbd al-Rashīd ibn ʻAbd al-Ghafūr Tattavī, active 1653</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">‘Abd al-Rashīd al-Ḥusaynī al-Madanī al-Tattavī</persName>
+                        <persName xml:lang="fa">عبد الرشید الحسینی المدنی التتّوی</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Farhang-i Rashīdī</title>
                      <title xml:lang="fa">فرهنگ رشیدی</title>
                      <listBibl>
@@ -135,7 +142,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-07-08">

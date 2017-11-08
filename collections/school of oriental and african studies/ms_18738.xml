@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8059">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,10 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_18738-item1" n="1">
-                     <author key="n2010058592‏" ref="http://viaf.org/viaf/123397452/">Naḥwī, al-Ḥasan ibn Muḥammad, -1389نحوي، الحسن بن محمد</author>
+                     <author key="n2010058592‏" ref="http://viaf.org/viaf/123397452/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Naḥwī, al-Ḥasan ibn Muḥammad, -1389</persName>
+                        <persName xml:lang="ar">نحوي، الحسن بن محمد</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">al-Tadhkirah al-fākhirah fī fiqh al-ʻitrah al-ṭāhirah</title>
                      <title xml:lang="ar">‏التذكرة الفاخرة في فقه العترة الطاهرة</title>
                      <note>A compendium of Zaidi law</note>
@@ -58,7 +61,9 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="ms_18738-item2" n="2">
-                     <author>Anonymous</author>
+                     <author>
+                        <persName>Anonymous</persName>
+                     </author>
                      <title xml:lang="en" type="desc">A prayer in Arabic</title>
                      <incipit>الهي وسيدي ومولاى وربي وخالقى ورازقى وعالم ظهرى وسرى ... تكاثرت على ... الاوجاع وتطاولت الالم وتقاصرت عني الافهام والفطر</incipit>
                      <listBibl>
@@ -69,7 +74,9 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="ms_18738-item3" n="3">
-                     <author>Anonymous</author>
+                     <author>
+                        <persName>Anonymous</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">al-Abyāt fī al-ism al-aʻẓam</title>
                      <title xml:lang="ar">‏الابيات في اسم الاعظم</title>
                      <note>Nine verses on the names of God</note>
@@ -82,7 +89,9 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="ms_18738-item4" n="4">
-                     <author>Anonymous</author>
+                     <author>
+                        <persName>Anonymous</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Abyāt al-faraḥ</title>
                      <title xml:lang="ar">ابيات الفرح‏</title>
                      <note>Fifteen stanzas of Arabic verse</note>
@@ -95,7 +104,10 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="ms_18738-item5" n="5">
-                     <author>al-Wāthiq billāh al- Muṭahhar ibn Muḥammad d. 1390 or 1400الواثق بالله المطهر بن محمد</author>
+                     <author>
+                        <persName type="supplied" xml:lang="ar-Latn-x-lc">al-Wāthiq billāh al- Muṭahhar ibn Muḥammad d. 1390 or 1400</persName>
+                        <persName xml:lang="ar">الواثق بالله المطهر بن محمد</persName>
+                     </author>
                      <title xml:lang="en" type="desc">A letter in Arabic</title>
                      <listBibl>
                         <bibl>
@@ -126,7 +138,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -192,7 +204,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-05-18">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3077">
    <teiHeader>
       <fileDesc>
@@ -45,36 +45,50 @@
                <msContents>
                   <msItem xml:id="V_72-item1" n="1">
                      <locus from="2b" to="142a">ff. 2b-142a</locus>
-                     <author key="n79139394" ref="http://viaf.org/viaf/100206721/">Saʿdīسعدی
+                     <author key="n79139394" ref="http://viaf.org/viaf/100206721/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Saʿdī</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">سعدی
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Gulistān</title>
                      
                      <title xml:lang="ar">گلستان</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="V_72-item2" n="2">
                      <locus from="143b" to="186b">ff. 143b-186b</locus>
-                     <author key="n2006071896" ref="http://viaf.org/viaf/56368539/">Farāhī, Abū Naṣr Muḥammad Badr al-Dīnابو نصر محمد بدر الدين فراهی
+                     <author key="n2006071896" ref="http://viaf.org/viaf/56368539/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Farāhī, Abū Naṣr Muḥammad Badr al-Dīn</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">ابو نصر محمد بدر الدين فراهی
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Niṣāb al-ṣibyān</title>
                      
                      <title xml:lang="ar">نصاب الصبيان</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
@@ -82,13 +96,13 @@
                   <objectDesc form="other">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -154,7 +168,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-08-31">

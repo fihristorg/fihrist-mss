@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3871">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,15 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_383-item1">
-                     <author key="n98952343" ref="http://viaf.org/viaf/51013740">Ḥamawī, Alī ibn ʿAṭīyah, -1530علوان بن عطية، ت. 936 هـ
+                     <author key="n98952343" ref="http://viaf.org/viaf/51013740">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ḥamawī, Alī ibn ʿAṭīyah, -1530</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">علوان بن عطية، ت. 936 هـ
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Nūr al-ʿayn</title>
                      
@@ -59,9 +64,11 @@
                                   xml:lang="ar-Latn-x-lc"
                                   type="standard">Ṣafadī, ʿAbd al-Qādir ibn Muḥammad, -1509 or 1510<foreign xml:lang="ar">صفدي، عبد القادر بن محمد</foreign>
                         </persName>entitled<title xml:lang="ar-Latn-x-lc">Silk al-ʿayn li-idhhāb al-ghayn</title>.</note>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="fa" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 705</bibl>
                         <bibl>GAL 1.c.; II 333; II 461</bibl>
@@ -76,14 +83,14 @@
                               <height>21.9</height>
                               <width>15.9</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="24" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                            <note>24 lines per page</note>
                         </layout>
                      </layoutDesc>
@@ -141,7 +148,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-06-11">

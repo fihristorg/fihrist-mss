@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7749">
    <teiHeader>
       <fileDesc>
@@ -42,7 +42,7 @@
                         </foliation>
                         <collation>
                            <seg type="gathering" subtype="both" n="4-2-3-5-4-1-1-1-1-1-8">
-                              
+                              <dimensions type="leaf" unit="mm" quantity="6"/>
                               <formula>57</formula>
                            </seg>
                         </collation>
@@ -185,7 +185,9 @@
                            <locus facs="#i0006">fol.5a.6</locus>
                            <title type="original" facs="#i0006">اِلَهَنَا وَسيِّدَنَا حَضَرْنَا خَتْمَ كِتَابِكْ وَاَنَحْناَ مَطَايَانَا بِبَابِكْ فَلَا تُبْعِدْنَا عَنْ جَنَابِكْ</title>
                         </msItem>
-                        <author>Anonymous</author>
+                        <author>
+                           <persName type="standard" xml:lang="eng-Latn">Anonymous</persName>
+                        </author>
                         <title type="normalised" xml:lang="ara-Latn">"No title"</title>
                         <note>This copy contains three works</note>
                         <textLang mainLang="ara-Arab"/>
@@ -194,7 +196,9 @@
                         <locus>Fol.11b to Fol.25a</locus>
                         <title type="original" facs="#i0013">دعاء حٿم القران<locus facs="#i0013">11b.1</locus>
                         </title>
-                        <author>Anonymous</author>
+                        <author>
+                           <persName xml:lang="eng-Latn" type="standard">Anonymous</persName>
+                        </author>
                         <textLang mainLang="ara-Arab"/>
                         <title type="normalised" xml:lang="ara-Latn">Du`ā' ẖatm al-qur'ān</title>
                         <incipit type="basmala" facs="#i0013">
@@ -213,7 +217,12 @@
                         <title type="original" facs="#i0029">القصٹده الذى ذكرها الشيخ محي الدين فى علم العرف بالاوفاق<locus>27b.1</locus>
                         </title>
                         <author>
-                           <addName type="khitab" facs="#i0029">محيى الدين</addName>Muḥyīaddīnمحيى الدين</author>
+                           <persName xml:lang="ara-Arab" type="standard">
+                              <addName type="khitab" facs="#i0029">محيى الدين</addName>
+                           </persName>
+                           <persName xml:lang="eng-Latn" type="standard">Muḥyīaddīn</persName>
+                           <persName xml:lang="ara-Arab" type="original" facs="#i0029">محيى الدين</persName>
+                        </author>
                         <textLang mainLang="ara-Arab"/>
                         <title type="normalised" xml:lang="ara-Latn">Qaṣīda fī `ilm al-ḥarf bil-awfāq</title>
                         <incipit type="basmala" facs="#i0029">
@@ -256,7 +265,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-03-28T10:35:57+02:00">Committed to SVN. To view the changes in detail use SVN diff. SVN Url:http://wellcomesvn.local.bibalex.dom/svn/WellcomeTrust/trunk/WAMCPMetaGallery/XML/WMS_Arabic_281/WMS_Arabic_281.xml<persName>mohamed.abdelsamie</persName>

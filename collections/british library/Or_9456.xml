@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6466">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,10 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="Or_9456-item1" n="1" class="http://lccn.loc.gov/sh85100084">
                      <locus from="176r" to="220v">176r-220v ff</locus>
-                     <author>Muḥammad ibn Yaḥya Lāhījī Nūrbakhshīمحمد ابن یحیا لاهیجی نوربخشی</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Muḥammad ibn Yaḥya Lāhījī Nūrbakhshī</persName>
+                        <persName xml:lang="fa">محمد ابن یحیا لاهیجی نوربخشی</persName>
+                     </author>
                      <title xml:lang="en" type="desc">Commentary</title>
                      <note>A commentary on the<title xml:lang="fa-Latn-x-lc">Gulshan-i Rāz<foreign xml:lang="fa">گلشن راز</foreign>
                         </title>of<persName type="supplied"
@@ -65,7 +68,7 @@
                               <height>24</height>
                               <width>14</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -98,7 +101,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-02-22">

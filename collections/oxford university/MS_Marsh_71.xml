@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1229">
    <teiHeader>
       <fileDesc>
@@ -46,7 +46,9 @@
                   <summary>The volume contains 97 leaves. Folios 1a, 17a, 18b, and an unnumbered folio between 17 and 18 are blank. There are four preliminary folios: folio ia has Arabic and Latin titles for the first item in the volume, with the lower quarter torn away; folios iia, iiia, and ivab have Arabic pious phrases, prayers, and a note of purchase for 20 dinars, written in Maghribī script; folios ib, iib, and iiib are blank.</summary>
                   <msItem xml:id="MS_Marsh_71-item1" n="1">
                      <locus from="1" to="15">ff. 1v-15v</locus>
-                     <author key="n 84033098" ref="http://www.viaf.org/viaf/100648969/">Jaʻfar al-Ṣādiq,<date calendar="#Gregorian" from="0702" to="0766">702?-765 or 6</date>
+                     <author key="n 84033098" ref="http://www.viaf.org/viaf/100648969/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Jaʻfar al-Ṣādiq,<date calendar="#Gregorian" from="0702" to="0766">702?-765 or 6</date>
+                        </persName>
                      </author>
                      <title xml:lang="en">Untitled Turkish treatise on lot casting (Fāl-nāme)</title>
                      <note>Divination by verses of the<title xml:lang="ar-Latn-x-lc">Qurʼān</title>, here given with their magic interpretation in Turkish</note>
@@ -64,7 +66,9 @@
                   </msItem>
                   <msItem xml:id="MS_Marsh_71-item3" n="3">
                      <locus from="20" to="92">ff. 20r-92r</locus>
-                     <author>Ṣafī al-Dawlah Mālik al-Najm al-Masīḥī (dates uncertain)</author>
+                     <author>
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ṣafī al-Dawlah Mālik al-Najm al-Masīḥī (dates uncertain)</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Kitāb al-Dustūr</title>
                      <title xml:lang="ar">كتاب الدستور</title>
                      <title xml:lang="en" type="alt">The Book of Rules</title>
@@ -98,7 +102,9 @@
                   </msItem>
                   <msItem xml:id="MS_Marsh_71-item4" n="4">
                      <locus from="92" to="95">ff. 92r-95v</locus>
-                     <author>Sīz Dāfīd al-ḥakīm of Nicosia<date calendar="#Gregorian" when="1593">(fl. before 1001/1593)</date>
+                     <author>
+                        <persName type="standard">Sīz Dāfīd al-ḥakīm of Nicosia<date calendar="#Gregorian" when="1593">(fl. before 1001/1593)</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Ziyādah fī al-kitāb</title>
                      <title xml:lang="ar">زيادة في الكتاب</title>
@@ -118,7 +124,9 @@
                   </msItem>
                   <msItem xml:id="MS_Marsh_71-item5" n="5">
                      <locus from="96" to="97">ff. 96r-97v</locus>
-                     <author key="n 79005643" ref="http://viaf.org/viaf/104252438/">Hippocrates<date calendar="#Gregorian" when="0450">(fl. c. 450s BC)</date>
+                     <author key="n 79005643" ref="http://viaf.org/viaf/104252438/">
+                        <persName type="standard">Hippocrates</persName>
+                        <date calendar="#Gregorian" when="0450">(fl. c. 450s BC)</date>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Urjūzah laṭīfah fī qaḍāyā Buqrāṭ al-khams wa-al-ʿishrīn</title>
                      <title xml:lang="ar">أرجوزة لطيفة فى قضايا بقراط الخمس والعشرين</title>
@@ -270,7 +278,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-06-13">

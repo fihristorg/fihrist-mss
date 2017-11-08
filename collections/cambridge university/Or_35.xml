@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_2254">
    <teiHeader>
       <fileDesc>
@@ -45,19 +45,27 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="Or_35-item1" n="1">
                      <locus from="1" to="17">ff. 1-17</locus>
-                     <author>anonymous
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">anonymous</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      
                      
                      
                      
                      <title xml:lang="en" type="desc">A few Arabic poems in the zajal style</title>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne1922/view.php?id=156">no. 1522</ref>
@@ -67,19 +75,26 @@
                   </msItem>
                   <msItem xml:id="Or_35-item2" n="2">
                      <locus from="19" to="27">ff. 19-27</locus>
-                     <author key="nr91030450" ref="http://viaf.org/viaf/78635678/">Abū al-Jaysh, Muḥammad ibn Ḥusayn, d. 1228 or 9ابو عبد الله محمد ابو الجيش الانصاري الاندلسي
+                     <author key="nr91030450" ref="http://viaf.org/viaf/78635678/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Abū al-Jaysh, Muḥammad ibn Ḥusayn, d. 1228 or 9</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">ابو عبد الله محمد ابو الجيش الانصاري الاندلسي
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Risālah fī al-ʻarūḍ</title>
                      
                      <title xml:lang="ar">رسالة في العروض</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne1922/view.php?id=68">no. 661</ref>
@@ -89,19 +104,26 @@
                   </msItem>
                   <msItem xml:id="Or_35-item3" n="3">
                      <locus from="29" to="52">ff. "29-52</locus>
-                     <author key="n80081636" ref="http://viaf.org/viaf/90051632/">Suyūṭī, 1445-1505جلال الدين السيوطي
+                     <author key="n80081636" ref="http://viaf.org/viaf/90051632/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Suyūṭī, 1445-1505</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">جلال الدين السيوطي
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Maqāmah al-laṭīfah</title>
                      
                      <title xml:lang="ar">المقامة اللطيفة</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne1922/view.php?id=125">no. 1233</ref>
@@ -114,13 +136,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -230,7 +252,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-09-06">

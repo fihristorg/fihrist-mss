@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7449">
    <teiHeader>
       <fileDesc>
@@ -45,18 +45,23 @@
                         <persName ref="http://viaf.org/viaf/243240472/" key="no2012054977">Hülegü, 1217-1265</persName>
                      </name>.</summary>
                   <msItem xml:id="Persian_MS_936-item1">
-                     <author key="nr94024575" ref="http://viaf.org/viaf/63890560/">Vaṣṣāf al-Ḥaz̤rat, ʻAbd Allāh ibn Faz̤l Allāh, 1264 or 5-1329?وصاف الحضرة، عبد الله بن فضل الله
+                     <author key="nr94024575" ref="http://viaf.org/viaf/63890560/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Vaṣṣāf al-Ḥaz̤rat, ʻAbd Allāh ibn Faz̤l Allāh, 1264 or 5-1329?</persName>
                         
                         
-                        <addName xml:lang="ar" type="nisbah">شيرازی</addName>
+                        <persName xml:lang="fa">وصاف الحضرة، عبد الله بن فضل الله
+                           
+                           
+                           <addName xml:lang="ar" type="nisbah">شيرازی</addName>
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Tajzīyat al-amṣār va tazjīyat al-aʻṣār</title>
                      <title xml:lang="fa-Latn-x-lc" type="alt">Tārīkh-i Vaṣṣāf</title>
                      <title xml:lang="fa">تجزية الامصار و تزجية الاعصار</title>
                      <title xml:lang="fa" type="alt">تاريخ وصاف</title>
                      
-                     
-                     
+                     <incipit xml:lang="ar" type="basmalla"/>
+                     <explicit xml:lang="ar"/>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
@@ -64,8 +69,8 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
@@ -127,7 +132,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015"/>

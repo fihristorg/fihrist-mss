@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6258">
    <teiHeader>
       <fileDesc>
@@ -43,10 +43,15 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh89005046">
                   <msItem xml:id="Or_7599-item1">
-                     <author>Mawlānā Muḥammad Bāqir Kāshānīمولانا باقر کاشانیBāqirباقر</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Mawlānā Muḥammad Bāqir Kāshānī</persName>
+                        <persName xml:lang="fa">مولانا باقر کاشانی</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Bāqir</persName>
+                        <persName xml:lang="fa" type="alt">باقر</persName>
+                     </author>
                      <title xml:lang="en" type="desc">Collected poems of Bāqir</title>
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <note>Collected poems of Bāqir,<date calendar="#Hijri-qamari" notBefore="1624" notAfter="1625">1034</date>including a mas̲navī entitled<title xml:lang="fa-Latn-x-lc">Tanzīl al-ash‘ār<foreign xml:lang="fa">تنزیل الاشعار</foreign>
                         </title>
                         <locus from="29r" to="61v">29r-61v</locus>
@@ -96,7 +101,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-11-09">

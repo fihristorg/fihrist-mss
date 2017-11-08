@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8128">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,14 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_195881-item1">
-                     <author key="n 89253297‏‏" ref="http://viaf.org/viaf/26198777/">Khader Khan Munshi, active 19th centuryQādir Khān MunshīMunshī, Qādir KhānMuḥammad Qādir Khān MunshīBīdarī, Munshī Qādir Khānقادر خان منشی</author>
+                     <author key="n 89253297‏‏" ref="http://viaf.org/viaf/26198777/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Khader Khan Munshi, active 19th century</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Qādir Khān Munshī</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Munshī, Qādir Khān</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Muḥammad Qādir Khān Munshī</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Bīdarī, Munshī Qādir Khān</persName>
+                        <persName xml:lang="fa">قادر خان منشی</persName>
+                     </author>
                      <title xml:lang="ur-Latn-x-lc">Sayr al-Hind va gulgasht-i Dakan</title>
                      
                      <title xml:lang="ur">سیر الهند و گلگشت دکن</title>
@@ -52,21 +59,23 @@
                      
                      <note>A geographical description of India</note>
                      <incipit>آغاز طلوع قطب محمت و اشنیه مر قطب شاه سجده گاهی را که که حیدرآباد رفعتش بلده ایست</incipit>
-                     
-                     
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>102 f.
-                           
+                        <extent>102 f.<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -116,7 +125,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-11-16">

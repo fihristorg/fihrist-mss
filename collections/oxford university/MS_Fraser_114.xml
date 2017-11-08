@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4444">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,12 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Fraser_114-item1" n="1">
                      <locus from="1" to="71">ff. 1-71</locus>
-                     <author>Muḥammad ibn Ḥusayn Luṭf Allāhمحمد بن حسين لطف الله</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc">Muḥammad ibn Ḥusayn Luṭf Allāh</persName>
+                        <persName xml:lang="fa">محمد بن حسين لطف الله</persName>
+                        
+                        
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Ṣafwat al-akhbār</title>
                      
                      <title xml:lang="ar">صفوة الأخبار</title>
@@ -58,7 +63,13 @@
                   </msItem>
                   <msItem xml:id="MS_Fraser_114-item2" n="2">
                      <locus from="73" to="269">ff. 73-269</locus>
-                     <author key="n 85009623" ref="http://viaf.org/viaf/79207794/">Sharīf al-Murtaḍá, ʻAlam al-Hudá ʻAlī ibn al-Ḥusayn,<date calendar="#Gregorian" from="0966" to="1044">966-1044 or 5</date>الشريف المرتضى، علي بن الحسين، 355-436 هـ</author>
+                     <author key="n 85009623" ref="http://viaf.org/viaf/79207794/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Sharīf al-Murtaḍá, ʻAlam al-Hudá ʻAlī ibn al-Ḥusayn,<date calendar="#Gregorian" from="0966" to="1044">966-1044 or 5</date>
+                        </persName>
+                        <persName xml:lang="ar">الشريف المرتضى، علي بن الحسين، 355-436 هـ</persName>
+                        
+                        
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Tabṣirat al-ʻawwām fī maʻrifat maqālāt al-anām</title>
                      
                      <title xml:lang="ar">تبصرة العوام في معرفة مقالات الأنام</title>
@@ -71,7 +82,12 @@
                   </msItem>
                   <msItem xml:id="MS_Fraser_114-item3" n="3">
                      <locus>ff. 273-320</locus>
-                     <author>Ibn Kamāl al-Dīn Ḥusayn Muḥammad Muqīm al-Ḥusaynī al-Astarābādīابن كمال الدين حسين محمد مقيم الحسيني الأسترآبادي</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc">Ibn Kamāl al-Dīn Ḥusayn Muḥammad Muqīm al-Ḥusaynī al-Astarābādī</persName>
+                        <persName xml:lang="fa">ابن كمال الدين حسين محمد مقيم الحسيني الأسترآبادي</persName>
+                        
+                        
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Dar taḥqīq-i maʻād va ḥashr-i ajsād</title>
                      
                      <title xml:lang="fa">در تحقیق معاد و حشر اجساد</title>
@@ -86,12 +102,12 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>320 ff.
+                        <extent>320 ff.<dimensions type="leaf" unit="in"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -203,7 +219,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-07-03">

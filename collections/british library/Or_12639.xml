@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5501">
    <teiHeader>
       <fileDesc>
@@ -43,11 +43,14 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh00001747  http://lccn.loc.gov/sh2002001761">
                   <msItem xml:id="Or_12639-item1">
-                     <author>Muṣṭafā Afshār ibn Naṣrullahمصطفی افشار ابن نصر الله</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Muṣṭafā Afshār ibn Naṣrullah</persName>
+                        <persName xml:lang="fa">مصطفی افشار ابن نصر الله</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Rūznāmah-’i safar-i Pitirbūrgh</title>
                      <title xml:lang="fa">روزنامۀ سفر پتربورغ</title>
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <note>An account of the journey of<persName xml:lang="fa-Latn-x-lc" type="supplied">Mīrzā Mas‘ūd<foreign xml:lang="fa">میرزا مسعود</foreign>
                         </persName>, an Ambassador Extraordinary sent to St. Petersburg, following the murder of<persName xml:lang="en"
                                   type="standard"
@@ -98,7 +101,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-11-01">

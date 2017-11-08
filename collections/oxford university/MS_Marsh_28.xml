@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_11606">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,9 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_Marsh_28-item1" class="#commentary">
-                     <author key="nr 95024340">Abū al-Faraj ʻAbd Allāh ibn al-Tayyib, d.<date calendar="#Gregorian" when="1043">1043</date>
+                     <author key="nr 95024340">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Abū al-Faraj ʻAbd Allāh ibn al-Tayyib, d.<date calendar="#Gregorian" when="1043">1043</date>
+                        </persName>
                      </author>
                      <title>Commentary on the<title>Eisagoge</title>of<persName>Porphyry</persName>[wrongly ascribed to<persName xml:lang="ar-Latn-x-lc">Abū Naṣr al-Fārābī</persName>*].</title>
                      <note>*See Stern, BSOAS 19 (1957), pp. 419-25.</note>
@@ -146,11 +148,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

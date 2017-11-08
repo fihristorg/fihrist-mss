@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5289">
    <teiHeader>
       <fileDesc>
@@ -43,10 +43,13 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh2009116582 http://lccn.loc.gov/sh2009116580">
                   <msItem xml:id="Or_11095-item1">
-                     <author ref="http://viaf.org/viaf/88702713" key="n79055250">Bahāʼullāh, 1817-1892بهاء الله</author>
+                     <author ref="http://viaf.org/viaf/88702713" key="n79055250">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Bahāʼullāh, 1817-1892</persName>
+                        <persName xml:lang="fa">بهاء الله</persName>
+                     </author>
                      <title xml:lang="en" type="desc">Collection of discourses</title>
-                     
-                     
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <note>A collection of discourses attributed to Bahāʼullāh, a list of which has been added at the end</note>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 35.</bibl>
@@ -93,7 +96,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-10-17">

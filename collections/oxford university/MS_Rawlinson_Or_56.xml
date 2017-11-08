@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1658">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,9 @@
                </msIdentifier>
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Rawlinson_Or_56-item1" n="1">
-                     <author>Dadichius, Theochares,<date calendar="#Gregorian" when="1734">d. 1734</date>
+                     <author>
+                        <persName>Dadichius, Theochares,<date calendar="#Gregorian" when="1734">d. 1734</date>
+                        </persName>
                      </author>
                      <title xml:lang="la">Diyani seu lectionum orientalium liber primus</title>
                      <note>A commonplace book of extracts and notes</note>
@@ -57,7 +59,9 @@
                   </msItem>
                   <msItem xml:id="MS_Rawlinson_Or_56-item2" n="2">
                      <locus from="49" to="50">pp. 49, 50</locus>
-                     <author key="n 88095635" ref="http://www.viaf.org/viaf/17479309/">Shayzarī, ʻAbd al-Raḥmān ibn Naṣr,<date calendar="#Gregorian" notBefore="1100" notAfter="1200">12th cent.</date>
+                     <author key="n 88095635" ref="http://www.viaf.org/viaf/17479309/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Shayzarī, ʻAbd al-Raḥmān ibn Naṣr,<date calendar="#Gregorian" notBefore="1100" notAfter="1200">12th cent.</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Rawḍat al-qulūb wa nuzhat al-muḥibb wa-al-maḥbūb</title>
                      <note>A summary of the chapter headings only, with Latin version and comments by<persName>T. Dadichi</persName>
@@ -176,11 +180,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

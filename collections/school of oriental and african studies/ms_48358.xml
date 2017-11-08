@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8840">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,10 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_48358-item1" n="1">
-                     <author key="n82220255" ref="http://viaf.org/viaf/54940534/">Matthew, the Apostle, Saint</author>
+                     <author key="n82220255" ref="http://viaf.org/viaf/54940534/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Matthew, the Apostle, Saint</persName>
+                        
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Injīl-i Mattā</title>
                      <title xml:lang="fa">انجیل متی</title>
                      
@@ -55,11 +58,17 @@
                                   type="standard">Javier, Jerónimo, 1549-1617.</persName>With notes in Armenian</note>
                      <incipit>بنام پدر و پسر و جان پاک خدای</incipit>
                      <colophon>تمام شد بشارت مرقوس... بدست ...شرکش لوچ بن امیر ملک...</colophon>
-                     
+                     <note>
+                        <foreign xml:lang="fa"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="ms_48358-item2" n="2">
-                     <author key="n50044098" ref="http://viaf.org/viaf/57858432/">Mark, Saintمرقوس</author>
+                     <author key="n50044098" ref="http://viaf.org/viaf/57858432/">
+                        <persName xml:lang="en" type="standard">Mark, Saint</persName>
+                        
+                        <persName xml:lang="ar">مرقوس</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Injīl-i Marqus</title>
                      <title xml:lang="fa">انجیل مرقوس</title>
                      
@@ -67,11 +76,17 @@
                      <note>Persian translation of the gospel of Mark</note>
                      <incipit>بنام ایزد که پدر است و پسر و جان پاک</incipit>
                      <colophon>تمام شد بشرت مرقوس... بدست شرکش لوچ امیر ملک...از بیستم ماه مبارک شوال سنه ثمانیه و عشرین و سبعمایه</colophon>
-                     
+                     <note>
+                        <foreign xml:lang="fa"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="ms_48358-item3" n="3">
-                     <author key="n50082065" ref="http://viaf.org/viaf/3720897/">Luke, Saintلوقا</author>
+                     <author key="n50082065" ref="http://viaf.org/viaf/3720897/">
+                        <persName xml:lang="en" type="standard">Luke, Saint</persName>
+                        
+                        <persName xml:lang="ar">لوقا</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Injīl-i Luqā</title>
                      <title xml:lang="fa">انجیل لوقا</title>
                      
@@ -79,18 +94,26 @@
                      <note>Persian translation of the gospel of Luke</note>
                      <incipit>بسم الله الحی المحی بشارة كوقا</incipit>
                      <colophon>تمام شد بشارت لوقا...نبشته شد در ماه مبارک ..ششم ذی القعده سنه ثمانیه و عشرین و سبعمایه بخط شرکیش لوچ کلامج</colophon>
-                     
+                     <note>
+                        <foreign xml:lang="fa"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="ms_48358-item4" n="4">
-                     <author key="n79060715" ref="http://viaf.org/viaf/78822416/">John, the Apostle, Saintيوحنا</author>
+                     <author key="n79060715" ref="http://viaf.org/viaf/78822416/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">John, the Apostle, Saint</persName>
+                        
+                        <persName xml:lang="ar">يوحنا</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Injīl-i Yūḥannā</title>
                      <title xml:lang="fa">انجیل یحنا</title>
                      
                      
                      <note>Persian translation of the gospel of John. Last two pages and colophon badly damaged</note>
                      <incipit>بسم الله الحی الناطق المحی</incipit>
-                     
+                     <note>
+                        <foreign xml:lang="fa"/>
+                     </note>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
@@ -102,13 +125,13 @@
                            <ref target="a2">89a-143a f.</ref>
                            <ref target="a3">144a-217b f.</ref>
                            <ref target="a4">218b-270a f.</ref>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -155,7 +178,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2016-11-15">

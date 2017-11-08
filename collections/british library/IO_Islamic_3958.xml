@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3276">
    <teiHeader xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <fileDesc>
@@ -43,7 +43,14 @@
                   <msItem xml:id="IO_Islamic_3958-item2"
                           class="http://lccn.loc.gov/sh85135483 http://lccn.loc.gov/sh85100074">
                      <locus from="34" to="138">ff. 34-138</locus>
-                     <author>Murvārīd, ʿAbd Allāhعبد الله مروارىد</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc"
+                                  type="supplied"
+                                  key="http://lccn.loc.gov/no2012041871">Murvārīd, ʿAbd Allāh</persName>
+                        <persName xml:lang="fa"
+                                  type="supplied"
+                                  key="http://lccn.loc.gov/no2012041871">عبد الله مروارىد</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Inshāʾ-i Murvārīd</title>
                      <title xml:lang="fa">انشأ مرواريد</title>
                      <note>
@@ -55,7 +62,10 @@
                   <msItem xml:id="IO_Islamic_3958-item3"
                           class="http://lccn.loc.gov/sh2008115920 http://lccn.loc.gov/n84226939 http://lccn.loc.gov/sh85097443">
                      <locus from="139" to="166">ff. 139-166</locus>
-                     <author>Ghulām Ḥasan "S̲amīn"غلام حسن ثمين</author>
+                     <author>
+                        <persName key="Persian_0082" xml:lang="fa-Latn-x-lc" type="supplied">Ghulām Ḥasan "S̲amīn"</persName>
+                        <persName key="Persian_0082" xml:lang="fa" type="supplied">غلام حسن ثمين</persName>
+                     </author>
                      <note>
                         <p>Untitled account of Aḥmad Shāh Abdālī following the third battle of Panipat (<date calendar="#Gregorian">1761</date>), written at the request of Captain Jonathan Scott in<date calendar="#Hijri-qamari">1169</date>
                         </p>
@@ -66,7 +76,10 @@
                   <msItem xml:id="IO_Islamic_3958-item4"
                           class="http://lccn.loc.gov/n8315832 http://lccn.loc.gov/sh2008115921">
                      <locus from="167" to="210">ff. 167-210</locus>
-                     <author>Mīr Muḥammad Aḥsan Ījādمير محمّد احسن ايجاد</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied" key="Persian_0091">Mīr Muḥammad Aḥsan Ījād</persName>
+                        <persName xml:lang="fa" type="supplied" key="Persian_0091">مير محمّد احسن ايجاد</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Farrukh Siyar'nāmah</title>
                      <title xml:lang="fa">فرّخ سير نامه</title>
                      <note>
@@ -83,7 +96,7 @@
                               <height>227</height>
                               <width>205</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="mm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -124,7 +137,7 @@
          </sourceDesc>
       </fileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015-03-03">

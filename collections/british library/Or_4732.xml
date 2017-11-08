@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5925">
    <teiHeader>
       <fileDesc>
@@ -43,7 +43,10 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85070893">
                   <msItem xml:id="Or_4732-item1">
-                     <author ref="http://viaf.org/viaf/49160204" key="nr2001051624">Elisha ben SamuelRāghib</author>
+                     <author ref="http://viaf.org/viaf/49160204" key="nr2001051624">
+                        <persName xml:lang="jpr-Latn" type="standard">Elisha ben Samuel</persName>
+                        <persName xml:lang="jpr-Latn" type="alt">Rāghib</persName>
+                     </author>
                      <title xml:lang="jpr-Latn">Shāhzādah u Ṣūfī</title>
                      <note>The story of Barlaam and Josaphat in a Judaeo-Persian metrical version, based on<title xml:lang="he-Latn-x-lc">Ben ha-melekh veha-nazir</title>of<persName xml:lang="he-Latn-x-lc"
                                   type="standard"
@@ -96,7 +99,7 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-11-14">

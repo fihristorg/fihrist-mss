@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_2638">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,11 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="RAS_Persian_100-item1">
-                     <author ref="http://viaf.org/viaf/298670931/">Kāmwar Khān, Muḥammad HādīMuḥammad Hādī Kāmwar Khānكامور خان، محمد هادي</author>
+                     <author ref="http://viaf.org/viaf/298670931/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Kāmwar Khān, Muḥammad Hādī</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Muḥammad Hādī Kāmwar Khān</persName>
+                        <persName xml:lang="fa">كامور خان، محمد هادي</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Tadhkirat al-Salāṭīn-i Chaghatā</title>
                      <title xml:lang="fa">تذكرة السلاطين چغتای</title>
                      <note>First leaf of blank gathering preceding text: a column of Chinese characters. A history of the house of Timur, especially the Mughals of India. Vol. I. From the Origin of the Turks to tbe death of Jahangir in A.H. 1037. Headings and punctuation in red.</note>
@@ -116,7 +120,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-05-30">

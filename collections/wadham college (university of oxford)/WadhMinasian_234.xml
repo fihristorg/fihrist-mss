@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7817">
    <teiHeader>
       <fileDesc>
@@ -49,7 +49,12 @@
                   <msItem xml:id="WadhMinasian_234-item1">
                      <textLang mainLang="fa">Persian</textLang>
                      <note type="content-genre">Biography</note>
-                     <author key="n94024572" ref="http://viaf.org/viaf/314818188">Āz̤ar Baygdilī, Luṭf ʻAlī ibn Āqā Khān, 1721 or 2-1780 or 81آذر بيگدلى، لطف على بن آقا خانآذر بیگدلی، لطفعلی بیک (۱۱۳۴-۱۱۹۵ ق ۱۷۲۲/۱-۱۷۸۱ م)</author>
+                     <author key="n94024572" ref="http://viaf.org/viaf/314818188">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Āz̤ar Baygdilī, Luṭf ʻAlī ibn Āqā Khān, 1721 or 2-1780 or 81</persName>
+                        
+                        <persName xml:lang="fa">آذر بيگدلى، لطف على بن آقا خان</persName>
+                        <persName xml:lang="fa" type="alt">آذر بیگدلی، لطفعلی بیک (۱۱۳۴-۱۱۹۵ ق ۱۷۲۲/۱-۱۷۸۱ م)</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Ātashkadah</title>
                      <title xml:lang="fa">آتشکده</title>
                      <incipit xml:lang="fa">بسمله، در طوف حرم دیدم دی مغبچه میگفت / کین خانه به این خوبی آتشکده بایستی. فروغ آتشکده دل و زبان اخگر زبان سپاس قدیمی است</incipit>
@@ -102,7 +107,7 @@
                      <layoutDesc>
                         <layout columns="1" ruledLines="25">
                            <p>Poems in 4 columns. 25 lines per page.</p>
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -201,7 +206,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2016-08-14">

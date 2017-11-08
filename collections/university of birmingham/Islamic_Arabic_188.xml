@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3788">
    <teiHeader>
       <fileDesc>
@@ -45,19 +45,26 @@
                <msContents>
                   <summary>A history of Mecca and the Kaaba</summary>
                   <msItem xml:id="Islamic_Arabic_188-item1">
-                     <author key="nr91008814" ref="http://viaf.org/viaf/90051031">Nahrawālī, Muḥammad ibn Aḥmad, -1580 or 1581النهروالي، محمد بن أحمد، ت. 988 هـ
+                     <author key="nr91008814" ref="http://viaf.org/viaf/90051031">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Nahrawālī, Muḥammad ibn Aḥmad, -1580 or 1581</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">النهروالي، محمد بن أحمد، ت. 988 هـ
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Iʿlām bi-aʿlām bayt Allāh al-ḥarām</title>
                      
                      <title xml:lang="ar">الاعلام باعلام بيت الله الحرام</title>
                      
                      <note>The work is divided into a muqadamah, then bābs and a khātimah.</note>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="fa" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 904</bibl>
                         <bibl>GAL II 381-2, esp. no. 1; II 514-5</bibl>
@@ -72,7 +79,7 @@
                               <height>20.5</height>
                               <width>15.6</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
@@ -82,7 +89,7 @@
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1" ruledLines="27" n="mistara">27 lines per page
+                        <layout columns="1" ruledLines="27" n="mistara">27 lines per page<dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -140,7 +147,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-05-14">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3325">
    <teiHeader>
       <fileDesc>
@@ -43,14 +43,16 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85148567">
                   <msItem xml:id="IO_Islamic_4655-item1">
-                     <author>Anonymous</author>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Anonymous</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Risālat al-ʻubūdīyah ʻalá muṭābaʻat al-sunnah</title>
                      
                      <title xml:lang="ar">رسالة العبودیة علی مطابعة السنة</title>
                      
                      
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>An anonymous treatise on the means of approaching God through the proper performance of the prescribed religious duties, written not later than the<date calendar="#Gregorian" notBefore="1200" notAfter="1299">13th century</date>
                      </note>
                      <textLang mainLang="ar">Arabic</textLang>
@@ -66,7 +68,7 @@
                               <height>20.5</height>
                               <width>12</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -116,7 +118,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-08-18">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4462">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,15 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_Fraser_140-item1">
-                     <author key="n50053659" ref="http://viaf.org/viaf/97090468/">Babur, Emperor of Hindustan, 1483-1530Ẓahīr al-Dīn Muḥammad Bāburظهیر الدین محمد بابر
+                     <author key="n50053659" ref="http://viaf.org/viaf/97090468/">
+                        <persName xml:lang="en" type="standard">Babur, Emperor of Hindustan, 1483-1530</persName>
                         
-                        
-                        
+                        <persName xml:lang="ar-Latn-x-lc" type="alt">Ẓahīr al-Dīn Muḥammad Bābur</persName>
+                        <persName xml:lang="fa">ظهیر الدین محمد بابر
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <editor role="translator">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Mīrzā Khān ʻAbd al-Raḥīm ibn Bayrām Khān<foreign xml:lang="fa">ميرزا خان عبد الرحيم بن بيرام خان</foreign>
@@ -167,7 +172,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-07-12">

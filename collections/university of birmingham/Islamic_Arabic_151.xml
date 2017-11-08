@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3736">
    <teiHeader>
       <fileDesc>
@@ -44,10 +44,15 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Islamic_Arabic_151-item1">
-                     <author key="no2012123046" ref="http://viaf.org/viaf/267150460">Ibn Ṭūrghūd, Ḥamzah, -1571 or 1572حمزة بن طورغود
+                     <author key="no2012123046" ref="http://viaf.org/viaf/267150460">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn Ṭūrghūd, Ḥamzah, -1571 or 1572</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">حمزة بن طورغود
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Al-masālik fī al-maʿānī wa-al-bayān</title>
                      
@@ -64,9 +69,11 @@
                                   ref="http://viaf.org/viaf/61532835">Sakkākī, Yūsuf ibn Abī Bakr, 1160-<foreign xml:lang="ar">السكاكي، يوسف بن أبي بكر، 555-626 هـ</foreign>
                         </persName>
                      </note>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="fa" defective="inapplicable"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>Printed catalogue no. 1677</bibl>
                         <bibl>GAL I 294-6, no. 1, Auszüge 2</bibl>
@@ -81,14 +88,14 @@
                               <height>19.6</height>
                               <width>13.0</width>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation xml:id="orginial"/>
                         <foliation xml:id="modern"/>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" ruledLines="15" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                            <note>15 lines per page</note>
                         </layout>
                      </layoutDesc>
@@ -149,7 +156,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2014-07-21">

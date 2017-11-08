@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6636">
    <teiHeader>
       <fileDesc>
@@ -42,21 +42,26 @@
                </msIdentifier>
                <msContents>
                   <summary>
-                     <title type="main"/>
+                     
                   </summary>
                   <msItem xml:id="Persian_MS_155-item1">
-                     <author key="n80131886" ref="http://viaf.org/viaf/35539655/">Niʻmat Allāh, fl. 1613-1630خواجه نعمت الله بن خواجه حبيب الله
+                     <author key="n80131886" ref="http://viaf.org/viaf/35539655/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Niʻmat Allāh, fl. 1613-1630</persName>
                         
                         
-                        <addName xml:lang="fa" type="nisbah">هروی</addName>
+                        <persName xml:lang="fa">خواجه نعمت الله بن خواجه حبيب الله
+                           
+                           
+                           <addName xml:lang="fa" type="nisbah">هروی</addName>
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Makhzan-i afghānī</title>
                      <title xml:lang="fa-Latn-x-lc" type="alt">Makhzan al-afghānī</title>
                      <title xml:lang="fa">مخزن افغانی</title>
                      <title xml:lang="ar" type="alt">مخزن الافغاني</title>
                      
-                     
-                     
+                     <incipit xml:lang="ar" type="basmalla"/>
+                     <explicit xml:lang="ar"/>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
@@ -64,8 +69,8 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
@@ -135,7 +140,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2015">

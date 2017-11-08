@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1075">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,9 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Marsh_188-item1" n="1">
                      <locus from="1" to="160">ff. 1r-160v</locus>
-                     <author key="n 89106587" ref="http://www.viaf.org/viaf/9992190/">Kisāʼī, Muḥammad ibn ʻAbd Allāh,<date calendar="#Gregorian" notBefore="1000" notAfter="1100">11th cent.</date>
+                     <author key="n 89106587" ref="http://www.viaf.org/viaf/9992190/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Kisāʼī, Muḥammad ibn ʻAbd Allāh,<date calendar="#Gregorian" notBefore="1000" notAfter="1100">11th cent.</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Kitāb Badʼ al-dunyā wa-qiṣaṣ al-anbiyāʼ</title>
                      <listBibl>
@@ -56,7 +58,9 @@
                   </msItem>
                   <msItem xml:id="MS_Marsh_188-item2" n="2">
                      <locus from="161" to="213">ff. 161v-213v</locus>
-                     <author>Hamadānī, Abū Naṣr Muḥammad,<date calendar="#Gregorian" when="1493">fl. bef. 1493</date>
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc">Hamadānī, Abū Naṣr Muḥammad,<date calendar="#Gregorian" when="1493">fl. bef. 1493</date>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">al-Sabʻīyāt fī mawāʻiẓ al-barīyāt</title>
                      <listBibl>
@@ -67,7 +71,9 @@
                   </msItem>
                   <msItem xml:id="MS_Marsh_188-item3" n="3">
                      <locus from="214" to="258">ff. 214v-258r</locus>
-                     <author>ʻAbd Allāh ibn al-Ḥusayn ibn ʻAbd Allāh ibn ʻĪsá ibn Raḥmūz al-Samarqandī</author>
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc">ʻAbd Allāh ibn al-Ḥusayn ibn ʻAbd Allāh ibn ʻĪsá ibn Raḥmūz al-Samarqandī</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Qiṣṣat Yūsuf</title>
                      <listBibl>
                         <bibl>Appendix Tales</bibl>
@@ -202,11 +208,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

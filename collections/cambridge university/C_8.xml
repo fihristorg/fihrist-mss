@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_423">
    <teiHeader>
       <fileDesc>
@@ -45,36 +45,50 @@
                <msContents>
                   <msItem xml:id="C_8-item1" n="1">
                      <locus from="1b" to="35b">ff. 1b-35b</locus>
-                     <author key="n91011701" ref="http://viaf.org/viaf/79259516/">Ibn Bābūyah al-Qummī, ʻAlī ibn ʻUbayd Allāh, 1110 or 11-ca. 1189ابن بابووه القمى، على بن عبيد الله بن الحسن بن الحسين
-                        <addName xml:lang="ar" type="kunyah">ابو الحسن</addName>
+                     <author key="n91011701" ref="http://viaf.org/viaf/79259516/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn Bābūyah al-Qummī, ʻAlī ibn ʻUbayd Allāh, 1110 or 11-ca. 1189</persName>
                         
                         
+                        <persName xml:lang="ar">ابن بابووه القمى، على بن عبيد الله بن الحسن بن الحسين
+                           <addName xml:lang="ar" type="kunyah">ابو الحسن</addName>
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Fihrist asmāʼ ʻulamāʼ al-shīʻah</title>
                      
                      <title xml:lang="ar">فهرست اسماء علماء الشيعة</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="C_8-item2" n="2">
                      <locus from="37b" to="83a">ff. 37b-83a</locus>
-                     <author key="n80031676" ref="http://viaf.org/viaf/90053420/">Ibn Shahrāshūb, Muḥammad ibn ʻAlī, d. 1192رسيد الدين محمد بن علي بن شهراشوب
+                     <author key="n80031676" ref="http://viaf.org/viaf/90053420/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn Shahrāshūb, Muḥammad ibn ʻAlī, d. 1192</persName>
                         
                         
-                        <addName xml:lang="ar" type="nisbah">السروي المازندراني</addName>
+                        <persName xml:lang="ar">رسيد الدين محمد بن علي بن شهراشوب
+                           
+                           
+                           <addName xml:lang="ar" type="nisbah">السروي المازندراني</addName>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Maʻālim al-ʻulamāʼ</title>
                      
                      <title xml:lang="ar">معالم العلماء</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                </msContents>
@@ -82,13 +96,13 @@
                   <objectDesc form="other">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -145,7 +159,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-07-27">

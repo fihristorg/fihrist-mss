@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4094">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,11 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="MS_A_Walker_22-item1">
-                     <author key="nr 93008186" ref="http://viaf.org/viaf/36787525/">Jawnfūrī, ʻAbd al-Rashīd ibn Muṣṭafá,<date calendar="#Gregorian" when="1673">d. 1672 or 3</date>الجونفوري، عبد الرشيد بن مصطفى، ت. 1083 هـ</author>
+                     <author key="nr 93008186" ref="http://viaf.org/viaf/36787525/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Jawnfūrī, ʻAbd al-Rashīd ibn Muṣṭafá,<date calendar="#Gregorian" when="1673">d. 1672 or 3</date>
+                        </persName>
+                        <persName xml:lang="ar">الجونفوري، عبد الرشيد بن مصطفى، ت. 1083 هـ</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">al-Risālah al-Rashīdīyah</title>
                      <title xml:lang="ar">الرسالة الرشيدية</title>
                      <note>A commentary on<title xml:lang="ar-Latn-x-lc">al-Risālah al-Sharīfīyah fī qawāʻid al-baḥth</title>of<persName xml:lang="ar-Latn-x-lc"
@@ -107,11 +111,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7636">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,10 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="RAS_Turkish_41-item1" n="1">
-                     <author>Lârendeli Şânìلارندلى شاني</author>
+                     <author>
+                        <persName xml:lang="ota-Latn-x-lc" type="standard">Lârendeli Şânì</persName>
+                        <persName xml:lang="ota">لارندلى شاني</persName>
+                     </author>
                      <title xml:lang="ota-Latn-x-lc">Gülşen-i efkar</title>
                      <title xml:lang="fa-Latn-x-lc" type="alt">Gulshan-i afkār</title>
                      <title xml:lang="fa">گلشن افکار</title>
@@ -54,7 +57,9 @@
                      <textLang mainLang="ota">Turkish</textLang>
                   </msItem>
                   <msItem xml:id="RAS_Turkish_41-item2" n="2">
-                     <author>Anonymous</author>
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Anonymous</persName>
+                     </author>
                      <title xml:lang="en" type="desc">A long poem in Ottoman Turkish without a title.</title>
                      
                      
@@ -134,7 +139,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-06-18">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_349">
    <teiHeader>
       <fileDesc>
@@ -44,15 +44,25 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="Add_756-item1" class="#abridgement">
-                     <author key="nr97033165" ref="http://viaf.org/viaf/24509051/">Şahidî İbrahim Dede, 1470-1550Ibrāhīm Shāhidī, d. 957/1550-1Shahīdī Bursavīشاهدي ابراهيم ددهشهيدیبرسوی مولوی</author>
+                     <author key="nr97033165" ref="http://viaf.org/viaf/24509051/">
+                        <persName xml:lang="tr-Latn-x-lc" type="standard">Şahidî İbrahim Dede, 1470-1550</persName>
+                        
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Ibrāhīm Shāhidī, d. 957/1550-1</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Shahīdī Bursavī</persName>
+                        <persName xml:lang="fa">شاهدي ابراهيم دده</persName>
+                        <persName xml:lang="fa" type="alt">شهيدی</persName>
+                        <persName xml:lang="fa" type="alt">برسوی مولوی</persName>
+                     </author>
                      <title xml:lang="fa-Latn-x-lc">Gulshān-i tawḥīd</title>
                      <title xml:lang="ar-Latn-x-lc" type="alt">Intikhāb-i mas̲navī</title>
                      <title xml:lang="fa">گلشن توحيد</title>
                      <title xml:lang="fa" type="alt">انتخاب مثنوی</title>
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref xml:id="b1">
@@ -73,13 +83,13 @@
                   <objectDesc form="other">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -162,7 +172,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-09-30">

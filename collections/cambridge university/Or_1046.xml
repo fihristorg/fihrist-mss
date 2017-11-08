@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_9856">
    <teiHeader>
       <fileDesc>
@@ -46,43 +46,59 @@
                   <msItem xml:id="Or_1046-item1">
                      <msItem xml:id="Or_1046-item1-item1" n="1" class="#supplement">
                         <locus from="1" to="30">ff. 1-30</locus>
-                        <author>anonymous
+                        <author>
+                           <persName xml:lang="ar-Latn-x-lc" type="standard">anonymous</persName>
                            
                            
-                           
+                           <persName xml:lang="ar">
+                              
+                              
+                              
+                              
+                           </persName>
                         </author>
                         <title xml:lang="ar-Latn-x-lc">Takhmīs al-burdah</title>
                         
                         <title xml:lang="ar">تخميس البردة</title>
                         
                         
-                        
-                        
-                        
+                        <incipit xml:lang="ar"/>
+                        <explicit xml:lang="ar" defective="true"/>
+                        <note>
+                           <foreign xml:lang="ar"/>
+                        </note>
                         <listBibl>
                            <bibl>
                               <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/arberry/view.php?id=7">no. 46</ref>
                            </bibl>
                            <bibl type="text-relations">A supplementary poem to the<title xml:lang="ar-Latn-x-lx">Qaṣīdat al-burdah<foreign xml:lang="ar">قصيدة البردة</foreign>
-                              </title>of<author key="n82047089" ref="http://viaf.org/viaf/90042754/">Būṣīrī, Sharaf al-Dīn Muḥammad ibn Saʻīd, 1213?-1296?البوصيري، شرف الدين محمد بن سعيد</author>
+                              </title>of<author key="n82047089" ref="http://viaf.org/viaf/90042754/">
+                                 <persName xml:lang="ar-Latn-x-lc">Būṣīrī, Sharaf al-Dīn Muḥammad ibn Saʻīd, 1213?-1296?</persName>
+                                 <persName xml:lang="ar">البوصيري، شرف الدين محمد بن سعيد</persName>
+                              </author>
                            </bibl>
                         </listBibl>
                         <textLang mainLang="ar">Arabic</textLang>
                      </msItem>
                      <msItem xml:id="Or_1046-item1-item2" n="2">
                         <locus from="33" to="101">ff. 33-101</locus>
-                        <author key="n92044851" ref="http://viaf.org/viaf/81975768/">Iṣfahānī, ʻAbd al-Muʼmin ibn Hibat Allāh, d. 1203 or 4اصفهاني، عبد المؤمن بن هبة الله<addName xml:lang="ar" type="laqab">شفروه</addName>
+                        <author key="n92044851" ref="http://viaf.org/viaf/81975768/">
+                           <persName xml:lang="ar-Latn-x-lc" type="standard">Iṣfahānī, ʻAbd al-Muʼmin ibn Hibat Allāh, d. 1203 or 4</persName>
                            
                            
-                           <addName xml:lang="ar" type="nisbah">المغربي</addName>
+                           <persName xml:lang="ar">اصفهاني، عبد المؤمن بن هبة الله<addName xml:lang="ar" type="laqab">شفروه</addName>
+                              
+                              
+                              <addName xml:lang="ar" type="nisbah">المغربي</addName>
+                           </persName>
                         </author>
                         <title xml:lang="ar-Latn-x-lc">Aṭbāq al-dhahab</title>
                         
                         <title xml:lang="ar">اطباق الذهب</title>
                         
                         
-                        
-                        
+                        <incipit xml:lang="ar"/>
+                        <explicit xml:lang="ar" defective="true"/>
                         <listBibl>
                            <bibl>
                               <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/arberry/view.php?id=7">no. 46</ref>
@@ -96,13 +112,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -181,7 +197,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-06-22">

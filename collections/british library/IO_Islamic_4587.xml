@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3292">
    <teiHeader>
       <fileDesc>
@@ -43,18 +43,24 @@
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh89005046">
                   <msItem xml:id="IO_Islamic_4587-item1">
-                     <author ref="http://viaf.org/viaf/31132651" key="n89250409">Zeb-un-Nissa, Princess, 17th cent.Princess Zīb al-Nisāʼ "Makhfī", d. 1114/1703Zīb-an-Nisāʾزيب النساء
+                     <author ref="http://viaf.org/viaf/31132651" key="n89250409">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Zeb-un-Nissa, Princess, 17th cent.</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Princess Zīb al-Nisāʼ "Makhfī", d. 1114/1703</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Zīb-an-Nisāʾ</persName>
                         
-                        
-                        
+                        <persName xml:lang="fa">زيب النساء
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Dīvān-i Makhfī</title>
                      <title xml:lang="fa">دیوان مخفی</title>
                      
                      
                      
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>A transliteration and translation, with notes and index, of the complete poetical works of the<persName xml:lang="fa-Latn-x-lc"
                                   type="alt"
                                   ref="http://viaf.org/viaf/31132651"
@@ -74,7 +80,7 @@
                         <extent>979 ff<dimensions type="leaf" unit="in">
                               <height>12.3</height>
                            </dimensions>
-                           
+                           <dimensions type="written" unit="in"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -125,7 +131,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-01-26">

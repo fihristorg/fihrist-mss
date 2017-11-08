@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7840">
    <teiHeader>
       <fileDesc>
@@ -50,7 +50,9 @@
                      <locus from="1b" to="24b">ff. 1b-24b</locus>
                      <textLang mainLang="ar">Arabic</textLang>
                      <note type="content-genre">Argumentation</note>
-                     <author>Anonymous</author>
+                     <author>
+                        <persName xml:lang="en">Anonymous</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Ādāb al-baḥs̱</title>
                      <title xml:lang="ar">آداب‌البحث</title>
                      <note type="list-of-contents" xml:lang="fa-Latn-x-lc">The author of this copy is unknown, and has organized their work in 6 'lessons' [sections]: 1. Aqsām al-munāẓarat al-vāqiʿah, 2. Aḥvāl al-manʿ, 3. Aḥvāl al-muʿāriz̤ah, 4. Aḥvāl-i aqsām al-munāẓarat al-maẕkūrah, 5. al-Munāẓarat al-vāqiʿah fī al-taʿrīfāt, 6. Maʿnī al-ẕāt va al-ʿarz̤iyāt.</note>
@@ -77,7 +79,9 @@
                      <locus from="25a" to="44b">ff. 25a-44b</locus>
                      <textLang mainLang="ar">Arabic</textLang>
                      <note type="content-genre">Argumentation</note>
-                     <author>Anonymous</author>
+                     <author>
+                        <persName xml:lang="en">Anonymous</persName>
+                     </author>
                      <title xml:lang="ar-Latn-x-lc">Sharḥ-i Ādāb al-baḥs̱</title>
                      <title xml:lang="ar">شرح آداب‌البحث</title>
                      <incipit defective="true" xml:lang="ar">…طلبه و کل ما هو خارج عن علم و تعین فی طلبه و فهو ما یعد من المقدمه…</incipit>
@@ -158,11 +162,11 @@
                      <layoutDesc>
                         <layout n="1" columns="1" ruledLines="14">
                            <locus from="1b" to="24b">ff. 1b-24b</locus>
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                         <layout n="2" columns="1" ruledLines="19">
                            <locus from="25a" to="44b">ff. 25a-44b</locus>
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -285,7 +289,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2016-08-14">

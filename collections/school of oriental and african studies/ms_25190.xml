@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8178">
    <teiHeader>
       <fileDesc>
@@ -44,7 +44,9 @@
                </msIdentifier>
                <msContents>
                   <msItem xml:id="ms_25190-item1">
-                     <author key="n 79138789" ref="http://viaf.org/viaf/90634457/">Kindī, d. ca. 873</author>
+                     <author key="n 79138789" ref="http://viaf.org/viaf/90634457/">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc">Kindī, d. ca. 873</persName>
+                     </author>
                      <editor role="translator">Translated by<persName xml:lang="en-Latn-x-lc"
                                   type="standard"
                                   key="nr 95020930"
@@ -53,7 +55,9 @@
                      
                      
                      <note>A "Romanized Arabic edition of this work" is said to have been prepared by Anton Tien and the Turkish Mission Aid Society, 1885, pp. 272. It was alleged to have been used by Sir William Muir to write The Apology of Al Kindy: Written at the Court of Mâmûm (Circa A.H. 215; A.D. 830) This English translation is attributed to Anton Tien in the SOAS accesion register and is translated directly, whereas Muir's introduction states "With the view, therefore, of facilitating the use and translation of the Apology, or of selections from it, I have compiled a very full analysis of its contents, with a copious translation of the more interesting portions." A note further states " For the careful editing of the text, the Turkish Mission Aid Society was indebted to the labours and scholarship of Dr. Tien, who from imperfect materials has produced a very fairly intelligible text ; and deserves much credit for the same." This typewritten translation with many hand written corrections and introduction is evidently an English translation of the text and not a Romanised Arabic edition.</note>
-                     
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="en">English</textLang>
                   </msItem>
                </msContents>
@@ -61,13 +65,13 @@
                   <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -111,7 +115,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2016-10-11">

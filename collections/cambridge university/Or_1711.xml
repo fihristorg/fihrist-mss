@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5801">
    <teiHeader>
       <fileDesc>
@@ -45,19 +45,26 @@
                <msContents>
                   <msItem xml:id="Or_1711-item1" n="1">
                      <locus>ff. 1-50a</locus>
-                     <author>Bahāʼ al-Dīn Zuhayr ibn Muḥammad, 1185-1258بهاء الدين زهير بن محمد
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Bahāʼ al-Dīn Zuhayr ibn Muḥammad, 1185-1258</persName>
                         
                         
-                        <addName xml:lang="ar" type="nisbah">المهلبي</addName>
+                        <persName xml:lang="ar">بهاء الدين زهير بن محمد
+                           
+                           
+                           <addName xml:lang="ar" type="nisbah">المهلبي</addName>
+                        </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Dīwān wardat al-nāshiq</title>
                      
                      <title xml:lang="ar">ديوان وردة الناشق</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>GAL I, 264; Supp. I, 465</bibl>
                         <bibl type="text-relations"/>
@@ -66,27 +73,34 @@
                   </msItem>
                   <msItem xml:id="Or_1711-item2" n="2">
                      <locus>50b-215a</locus>
-                     <author>Badr al-Dīn Abū al-Ḥasan ibn ʿUmar ibn al-Ḥasan al-Ḥalabī al-Muthāfaʿīبدر الدين ابو الحسن بن عمر بن الحسن الحلبي الشافعي
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="supplied">Badr al-Dīn Abū al-Ḥasan ibn ʿUmar ibn al-Ḥasan al-Ḥalabī al-Muthāfaʿī</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">بدر الدين ابو الحسن بن عمر بن الحسن الحلبي الشافعي
+                           
+                           
+                           
+                        </persName>
                      </author>
                      
                      
                      
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc form="other">
                      <supportDesc material="chart">
-                        <extent>217 ff.
-                           
+                        <extent>217 ff.<dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                         <foliation>
                            <p>Modern foliation</p>
@@ -97,7 +111,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -151,7 +165,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-05-11">

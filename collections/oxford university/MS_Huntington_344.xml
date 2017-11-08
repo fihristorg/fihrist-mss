@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_996">
    <teiHeader>
       <fileDesc>
@@ -45,7 +45,9 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="MS_Huntington_344-item1" n="1">
                      <locus from="1" to="83">ff. 1r-83r</locus>
-                     <author>Theodosius* bp of Gangra</author>
+                     <author>
+                        <persName>Theodosius* bp of Gangra</persName>
+                     </author>
                      <title>Homily on St. George</title>
                      <note>*not, as Uri, Theodorus</note>
                      <listBibl>
@@ -56,7 +58,9 @@
                   </msItem>
                   <msItem xml:id="MS_Huntington_344-item2" n="2">
                      <locus from="85" to="97">ff. 85r-97r</locus>
-                     <author key="n 50082928" ref="http://www.viaf.org/viaf/100177778/">Ephraem, Syrus, Saint,<date calendar="#Gregorian" from="0303" to="0373">303-373</date>
+                     <author key="n 50082928" ref="http://www.viaf.org/viaf/100177778/">
+                        <persName type="standard">Ephraem, Syrus, Saint,<date calendar="#Gregorian" from="0303" to="0373">303-373</date>
+                        </persName>
                      </author>
                      <title>Homily on the birth of the Blessed Virgin Mary</title>
                      <note>*f. 97r contains a Coptic date: the first day of Abib in the year one thousand? hundred and twenty two</note>
@@ -179,11 +183,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">
-             created this file</change>
+            created this file</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

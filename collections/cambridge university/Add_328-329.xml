@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_155">
    <teiHeader>
       <fileDesc>
@@ -45,19 +45,26 @@
                <msContents class="#multipleWorks">
                   <msItem xml:id="Add_328-329-item1" n="1">
                      <locus from="1b" to="6a">ff. 1b-6a</locus>
-                     <author>Māvindād ibn Narimāhān ibn Vāhrām ibn Mitrūʹāpānماونداد ابن نرماهان ابن واهرام ابن متروآپان
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Māvindād ibn Narimāhān ibn Vāhrām ibn Mitrūʹāpān</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">ماونداد ابن نرماهان ابن واهرام ابن متروآپان
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Bayān-i nivisandah-ʼi kitāb-i dīnkard</title>
                      
                      <title xml:lang="fa">بيان نوسندۀ كتاب دين كرد</title>
                      
                      <title xml:lang="en" type="desc">Colophon of the Dīnkard</title>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref xml:id="b1">
@@ -75,19 +82,26 @@
                   </msItem>
                   <msItem xml:id="Add_328-329-item2" n="2">
                      <locus from="6b" to="9b">ff. 6b-9a</locus>
-                     <author>Shahriyār ibn Ardashīr ibn Īraj ibn Rustam ibn Īraj ibn Qubād ibn Īrānshāhشهريار ابن اردشير ابن ايريج ابن رستم ابن ايريج ابن قباد ابن ايرانشاه
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Shahriyār ibn Ardashīr ibn Īraj ibn Rustam ibn Īraj ibn Qubād ibn Īrānshāh</persName>
                         
                         
-                        
+                        <persName xml:lang="fa">شهريار ابن اردشير ابن ايريج ابن رستم ابن ايريج ابن قباد ابن ايرانشاه
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Bayān-i nivisandah-ʼi kitāb-i dīnkard</title>
                      
                      <title xml:lang="fa">بيان نوسندۀ كتاب دين كرد</title>
                      
                      <title xml:lang="en" type="desc">Colophon of the Dīnkard</title>
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref xml:id="b1a">
@@ -104,19 +118,27 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="Add_328-329-item3" n="3">
-                     <author>anonymous
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">anonymous</persName>
                         
                         
-                        
+                        <persName xml:lang="ar">
+                           
+                           
+                           
+                           
+                        </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc">Shammah-ʼi az qāʻidah-ʼi naḥw zabān-i Pahlavī</title>
                      
                      <title xml:lang="fa">شمۀ از قاعدۀ نحو زبان پهلوی</title>
                      
                      
-                     
-                     
-                     
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
                      <listBibl>
                         <bibl>
                            <ref target="#b1">
@@ -135,13 +157,13 @@
                   <objectDesc form="other">
                      <supportDesc material="chart">
                         <extent>
-                           
-                           
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" ruledLines="00" n="mistara">
-                           
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -232,7 +254,7 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2017-11-03">
+         <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-09-08">
