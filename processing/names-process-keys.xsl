@@ -42,13 +42,13 @@
 
             <!-- This is just a debugging message so I see the filnames whiz by on the screen
               and I know what the last file was when something breaks  -->
-            <xsl:message>
+           <!-- <xsl:message>
                 <xsl:value-of select="$filename"/>
             </xsl:message>
-
+-->
             <!-- Create the (hard coded) output file name -->
             <xsl:variable name="outputFilename"
-                select="concat('../collections-proc/', $folder, '/', $filename, '.xml')"/>
+                select="concat('../collections-proc/', $folder, '/', $filename)"/>
             <!-- create output file -->
             <xsl:result-document href="{$outputFilename}" method="xml" indent="yes">
 
@@ -127,12 +127,29 @@
                     
                 </xsl:variable>
                 
+                <xsl:variable name="key1">
+                    <xsl:value-of select="concat('person_', $ref4)"/>
+                </xsl:variable>
+                
 
-                <xsl:if test="normalize-space($ref4)">
-                    <xsl:message select="$ref4"/>
+                <xsl:if test="normalize-space($key1)">
+                    <xsl:message select="$key1"/>
                 </xsl:if>
+                
+                <xsl:copy>
+                    <xsl:apply-templates select="@*" />
+                    <xsl:attribute name="key" select="$key1"/>
+                    <xsl:apply-templates/>
+                </xsl:copy>
+                
 
             </xsl:when>
+            
+            <xsl:otherwise>
+                <xsl:copy-of select="."/>
+            </xsl:otherwise>
+            
+            
         </xsl:choose>
 
     </xsl:template>
