@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-        xmlns:tei="http://www.tei-c.org/ns/1.0" xpath-default-namespace="http://www.tei-c.org/ns/1.0"
-        xmlns:jc="http://james.blushingbunny.net/ns.html" exclude-result-prefixes="tei jc xsi" version="2.0"
-        xmlns:xsi="http://www.w3.org/1999/XMLSchema-instance">
+    xmlns:tei="http://www.tei-c.org/ns/1.0" xpath-default-namespace="http://www.tei-c.org/ns/1.0"
+    xmlns:jc="http://james.blushingbunny.net/ns.html" exclude-result-prefixes="tei jc xsi"
+    version="2.0" xmlns:xsi="http://www.w3.org/1999/XMLSchema-instance">
 
-    
+
 
     <!-- Set up the collection of files to be converted -->
     <!-- files and recurse parameters defaulting to '*.xml' and 'no' respectively -->
@@ -13,7 +13,8 @@
 
     <!-- path hard-coded to location on my desktop cuz that was convenient -->
     <xsl:variable name="path">
-        <xsl:value-of select="concat('../collections/?select=', $files,';on-error=warning;recurse=yes')" />
+        <xsl:value-of
+            select="concat('../collections/?select=', $files,';on-error=warning;recurse=yes')"/>
     </xsl:variable>
 
     <!-- the main collection of all the documents we are dealing with -->
@@ -37,7 +38,7 @@
             <xsl:variable name="fileNum">
                 <xsl:value-of select="position()"/>
             </xsl:variable>
-            
+
 
             <!-- This is just a debugging message so I see the filnames whiz by on the screen
               and I know what the last file was when something breaks  -->
@@ -47,26 +48,29 @@
 
             <!-- Create the (hard coded) output file name -->
             <xsl:variable name="outputFilename"
-                    select="concat('../collections-proc/', $folder, '/', $filename, '.xml')"/>
+                select="concat('../collections-proc/', $folder, '/', $filename, '.xml')"/>
             <!-- create output file -->
             <xsl:result-document href="{$outputFilename}" method="xml" indent="yes">
-                
-                
-                    <xsl:apply-templates/>
-                
+
+
+                <xsl:apply-templates/>
+
             </xsl:result-document>
         </xsl:for-each>
     </xsl:template>
-    
-    
+
+
     <xsl:template match="processing-instruction()">
+        <xsl:copy/>
+    </xsl:template>
+    <xsl:template match="comment()">
         <xsl:copy/>
     </xsl:template>
 
     <!-- By default we just copy the input to the output when it isn't empty -->
-    <xsl:template match="*[jc:checkEmpty(.)='false']" priority="-1">
+    <xsl:template match="*" priority="-1">
         <xsl:copy>
-            <xsl:apply-templates select="@*|node()|comment()"/>
+            <xsl:apply-templates select="@*|node()"/>
         </xsl:copy>
     </xsl:template>
     <!-- By default we copy the text to the output except we normalize space since it is so messy -->
@@ -76,13 +80,61 @@
 
     <!-- If something is entirely empty (no descendent text content or attributes)
           and not matched separately let's get rid of it. -->
-    <xsl:template match="node()[jc:checkEmpty(.)='true']" priority="-1"/>
+    <!--<xsl:template match="node()" priority="-1"/>-->
 
     <!-- By default, copy attributes -->
     <xsl:template match="@*" priority="-1">
         <xsl:if test="not(normalize-space(.) = '')">
             <xsl:copy-of select="."/>
         </xsl:if>
+    </xsl:template>
+
+
+    <xsl:template match="persName|author">
+
+
+        <xsl:choose>
+            <xsl:when test="contains(@ref, 'viaf')">
+
+                <xsl:variable name="ref1" select="@ref"/>
+                <xsl:variable name="ref2">
+                    <xsl:choose>
+                        <xsl:when test="contains($ref1, '#')">
+                            <xsl:value-of select="substring-before($ref1, '#')"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="$ref1"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:variable>
+
+                <xsl:variable name="ref3">
+
+                    <xsl:choose>
+                        <xsl:when test="ends-with($ref2, '/')">
+                            <xsl:value-of select="substring($ref2, 1, string-length($ref2) - 1)"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="$ref2"/>
+                        </xsl:otherwise>
+
+                    </xsl:choose>
+
+                </xsl:variable>
+                
+                <xsl:variable name="ref4">
+                    <xsl:value-of select="tokenize($ref3, '/')[last()]"/>
+                    
+                </xsl:variable>
+                
+
+                <xsl:if test="normalize-space($ref4)">
+                    <xsl:message select="$ref4"/>
+                </xsl:if>
+
+            </xsl:when>
+        </xsl:choose>
+
     </xsl:template>
 
 
@@ -95,8 +147,8 @@
         <xsl:variable name="output">
             <xsl:choose>
                 <xsl:when
-                        test="($node//text()[string-length(normalize-space(.)) gt 1]) or ($node//@*[string-length(normalize-space(.)) gt 1])"
-                >false</xsl:when>
+                    test="($node//text()[string-length(normalize-space(.)) gt 1]) or ($node//@*[string-length(normalize-space(.)) gt 1])"
+                    >false</xsl:when>
                 <xsl:otherwise>true</xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
@@ -104,6 +156,5 @@
     </xsl:function>
 
 
-    <!-- man... imagine what I'd do if I had had time allocated to actually _improve_ it
-      rather than just convert it and make it syntatically valid. Manuscript cataloguers are weird. -->
+
 </xsl:stylesheet>
