@@ -131,7 +131,7 @@
                                     <person>
                                         <xsl:attribute name="xml:id" select="$key"/>
                                         <persName type="display">
-                                            <xsl:value-of select="normalize-space(.)"/>
+                                            <xsl:value-of select="normalize-space($persName)"/>
                                         </persName>
                                     </person>
 
