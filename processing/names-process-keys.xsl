@@ -52,7 +52,6 @@
             <!-- create output file -->
             <xsl:result-document href="{$outputFilename}" method="xml" indent="yes">
 
-
                 <xsl:apply-templates/>
 
             </xsl:result-document>
@@ -144,6 +143,33 @@
                 
 
             </xsl:when>
+            
+            <xsl:when test="normalize-space(@key)">
+                
+                <xsl:variable name="key1">
+                    
+                    <xsl:value-of select="normalize-space(@key)"/>
+                    
+                    
+                </xsl:variable>
+                
+                <xsl:variable name="key2">
+                    
+                    <xsl:value-of select="concat('person_', $key1)"/>
+                    
+                </xsl:variable>
+                
+                
+                <xsl:copy>
+                    <xsl:apply-templates select="@*" />
+                    <xsl:attribute name="key" select="$key2"/>
+                    <xsl:apply-templates/>
+                </xsl:copy>
+                
+                
+            </xsl:when>
+            
+            
             
             <xsl:otherwise>
                 <xsl:copy-of select="."/>
