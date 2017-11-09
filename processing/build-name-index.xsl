@@ -14,7 +14,7 @@
     <!-- path hard-coded to location on my desktop cuz that was convenient -->
     <xsl:variable name="path">
         <xsl:value-of
-            select="concat('../collections-proc/?select=', $files,';on-error=warning;recurse=yes')"/>
+            select="concat('../collections/?select=', $files,';on-error=warning;recurse=yes')"/>
     </xsl:variable>
 
     <!-- the main collection of all the documents we are dealing with -->
