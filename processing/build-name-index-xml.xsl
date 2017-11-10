@@ -28,7 +28,7 @@
 
         <xsl:result-document method="xml" href="names_index.xml">
 
-           <!-- <xsl:processing-instruction name="xml-model">href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"</xsl:processing-instruction>
+            <!--<xsl:processing-instruction name="xml-model">href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"</xsl:processing-instruction>
             <xsl:text>&#xA;</xsl:text>
             <xsl:processing-instruction name="xml-model">href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"</xsl:processing-instruction>
             <xsl:text>&#xA;</xsl:text>
@@ -65,27 +65,11 @@
                                 <xsl:message select="$filename"/>
 
                                 
-                                <xsl:for-each select="//*:msDesc//*:persName[not(ancestor::author) and not(@key)]">
+                                <xsl:for-each select="//*:msDesc//*:persName[not(ancestor::author)]">
 
-                                    <xsl:variable name="key">
-                                        
-                                        <xsl:choose>
-                                            <xsl:when test="normalize-space(@key)">
-                                                <xsl:value-of select="@key"/>
-                                            </xsl:when>
-                                            <xsl:otherwise>
-                                                
-                                                <xsl:text>xxx</xsl:text>
-                                                
-                                            </xsl:otherwise>
-                                        </xsl:choose>    
-                                        
-                                    </xsl:variable>
-                                    
-                                    
                                     
                                     <person>
-                                        <xsl:attribute name="xml:id" select="$key"/>
+                                        <xsl:attribute name="xml:id" select="@key"/>
                                         <persName type="display">
                                             <xsl:value-of select="normalize-space(.)"/>
                                         </persName>
@@ -96,22 +80,9 @@
 
                                 </xsl:for-each>
 
-                                <xsl:for-each select="//*:msDesc//*:author[not(@key)]">
+                                <xsl:for-each select="//*:msDesc//*:author">
                                     
-                                    <xsl:variable name="key">
-                                        
-                                        <xsl:choose>
-                                            <xsl:when test="normalize-space(@key)">
-                                                <xsl:value-of select="@key"/>
-                                            </xsl:when>
-                                            <xsl:otherwise>
-                                                
-                                                <xsl:text>xxx</xsl:text>
-                                                
-                                            </xsl:otherwise>
-                                        </xsl:choose>    
-                                        
-                                    </xsl:variable>
+                                    
                                     
 
                                     <xsl:variable name="persName">
@@ -129,7 +100,7 @@
                                     </xsl:variable>
 
                                     <person>
-                                        <xsl:attribute name="xml:id" select="$key"/>
+                                        <xsl:attribute name="xml:id" select="@key"/>
                                         <persName type="display">
                                             <xsl:value-of select="normalize-space($persName)"/>
                                         </persName>
