@@ -3,23 +3,23 @@
     xmlns:tei="http://www.tei-c.org/ns/1.0" xpath-default-namespace="http://www.tei-c.org/ns/1.0"
     xmlns:jc="http://james.blushingbunny.net/ns.html" exclude-result-prefixes="tei jc xsi"
     version="2.0" xmlns:xsi="http://www.w3.org/1999/XMLSchema-instance">
-
-
-
+    
+    
+    
     <!-- Set up the collection of files to be converted -->
     <!-- files and recurse parameters defaulting to '*.xml' and 'no' respectively -->
     <xsl:param name="files" select="'*.xml'"/>
     <!-- <xsl:param name="recurse" select="yes" /> -->
-
+    
     <!-- path hard-coded to location on my desktop cuz that was convenient -->
     <xsl:variable name="path">
         <xsl:value-of
             select="concat('../collections/?select=', $files,';on-error=warning;recurse=yes')"/>
     </xsl:variable>
-
+    
     <!-- the main collection of all the documents we are dealing with -->
     <xsl:variable name="doc" select="collection($path)"/>
-
+    
     <!-- Named template which we call that starts off the whole thing-->
     <xsl:template name="main">
         <!-- For each item in the collection -->
@@ -38,11 +38,11 @@
             <xsl:variable name="fileNum">
                 <xsl:value-of select="position()"/>
             </xsl:variable>
-
-
+            
+            
             <!-- This is just a debugging message so I see the filnames whiz by on the screen
               and I know what the last file was when something breaks  -->
-           <!-- <xsl:message>
+            <!-- <xsl:message>
                 <xsl:value-of select="$filename"/>
             </xsl:message>
 -->
@@ -51,21 +51,21 @@
                 select="concat('../collections-proc/', $folder, '/', $filename)"/>
             <!-- create output file -->
             <xsl:result-document href="{$outputFilename}" method="xml" indent="yes">
-
+                
                 <xsl:apply-templates/>
-
+                
             </xsl:result-document>
         </xsl:for-each>
     </xsl:template>
-
-
+    
+    
     <xsl:template match="processing-instruction()">
         <xsl:copy/>
     </xsl:template>
     <xsl:template match="comment()">
         <xsl:copy/>
     </xsl:template>
-
+    
     <!-- By default we just copy the input to the output when it isn't empty -->
     <xsl:template match="*" priority="-1">
         <xsl:copy>
@@ -76,25 +76,25 @@
     <xsl:template match="text()" priority="2">
         <xsl:value-of select="normalize-space(.)"/>
     </xsl:template>
-
+    
     <!-- If something is entirely empty (no descendent text content or attributes)
           and not matched separately let's get rid of it. -->
     <!--<xsl:template match="node()" priority="-1"/>-->
-
+    
     <!-- By default, copy attributes -->
     <xsl:template match="@*" priority="-1">
         <xsl:if test="not(normalize-space(.) = '')">
             <xsl:copy-of select="."/>
         </xsl:if>
     </xsl:template>
-
-
+    
+    
     <xsl:template match="persName|author">
-
-
+        
+        
         <xsl:choose>
             <xsl:when test="contains(@ref, 'viaf')">
-
+                
                 <xsl:variable name="ref1" select="@ref"/>
                 <xsl:variable name="ref2">
                     <xsl:choose>
@@ -106,9 +106,9 @@
                         </xsl:otherwise>
                     </xsl:choose>
                 </xsl:variable>
-
+                
                 <xsl:variable name="ref3">
-
+                    
                     <xsl:choose>
                         <xsl:when test="ends-with($ref2, '/')">
                             <xsl:value-of select="substring($ref2, 1, string-length($ref2) - 1)"/>
@@ -116,9 +116,9 @@
                         <xsl:otherwise>
                             <xsl:value-of select="$ref2"/>
                         </xsl:otherwise>
-
+                        
                     </xsl:choose>
-
+                    
                 </xsl:variable>
                 
                 <xsl:variable name="ref4">
@@ -130,7 +130,7 @@
                     <xsl:value-of select="concat('person_', $ref4)"/>
                 </xsl:variable>
                 
-
+                
                 <xsl:if test="normalize-space($key1)">
                     <xsl:message select="$key1"/>
                 </xsl:if>
@@ -141,7 +141,7 @@
                     <xsl:apply-templates/>
                 </xsl:copy>
                 
-
+                
             </xsl:when>
             
             <xsl:when test="normalize-space(@key)">
@@ -177,13 +177,13 @@
             
             
         </xsl:choose>
-
+        
     </xsl:template>
-
-
-
-
-
+    
+    
+    
+    
+    
     <!-- to copy return true/false  if something is empty-->
     <xsl:function name="jc:checkEmpty" as="text()">
         <xsl:param name="node" as="node()"/>
@@ -197,7 +197,7 @@
         </xsl:variable>
         <xsl:value-of select="normalize-space($output)"/>
     </xsl:function>
-
-
-
+    
+    
+    
 </xsl:stylesheet>
