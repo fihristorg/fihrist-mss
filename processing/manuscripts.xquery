@@ -82,7 +82,7 @@ declare function local:works_ar_latn($contents)
             <field name="ms_date_stmt_s">{ $x//tei:history/tei:origin/tei:date/text() }</field>
             <field name="ms_shelfmark_s">{ $x//tei:msDesc/tei:msIdentifier/tei:idno/text() }</field>
             <field name="ms_shelfmark_sort">{ $x//tei:msDesc/tei:msIdentifier/tei:idno/text() }</field>
-            <field name="ms_physform_s">{ $x//tei:physDesc/tei:objectDesc[@form]/string(@form) }</field>
+            <field name="ms_physform_s">{ $x//tei:physDesc[1]/tei:objectDesc[@form]/string(@form)[1] }</field>
             { local:contents_summary($x//tei:msContents) }
             { local:works_ar($x//tei:msContents) }
             { local:works_ps($x//tei:msContents) }
