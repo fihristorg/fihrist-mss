@@ -64,6 +64,12 @@ declare function local:works_ar_latn($contents)
     return <field name="ms_works_ar_latn_sm">{ fn:normalize-space($item) }</field>
 };
 
+declare function local:physform($desc)
+{
+    for $item in distinct-values($desc/tei:objectDesc[@form]/@form)
+    return <field name="ms_physform_sm">{$item}</field>
+};
+
 <add>
 {
     for $x in collection('../collections/?select=*.xml;recurse=yes')
@@ -82,7 +88,7 @@ declare function local:works_ar_latn($contents)
             <field name="ms_date_stmt_s">{ $x//tei:history/tei:origin/tei:date/text() }</field>
             <field name="ms_shelfmark_s">{ $x//tei:msDesc/tei:msIdentifier/tei:idno/text() }</field>
             <field name="ms_shelfmark_sort">{ $x//tei:msDesc/tei:msIdentifier/tei:idno/text() }</field>
-            <field name="ms_physform_s">{ $x//tei:physDesc[1]/tei:objectDesc[@form]/string(@form)[1] }</field>
+            { local:physform($x//tei:physDesc) }
             { local:contents_summary($x//tei:msContents) }
             { local:works_ar($x//tei:msContents) }
             { local:works_ps($x//tei:msContents) }
