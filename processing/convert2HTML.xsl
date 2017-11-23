@@ -8,7 +8,7 @@
     exclude-result-prefixes="tei html xs"
     version="2.0">
     
-    <xsl:import href="https://raw.githubusercontent.com/bodleian/medieval-mss/master/processing/convert2HTML.xsl"/>
+    <xsl:import href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc2html.xsl"/>
 
     <!-- Any templates added here will override the templates in the
          imported stylesheet, allowing customization of manuscript display. -->
