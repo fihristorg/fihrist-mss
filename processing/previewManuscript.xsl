@@ -10,6 +10,10 @@
     
     <xsl:import href="convert2HTML.xsl"/>
 
+    <!-- Set URL here to allow links (e.g. to persons or places) to work
+         when previewing (if destinations exist on the web site.) -->
+    <xsl:variable name="website-url" as="xs:string" select="'http://fihrist-qa.bodleian.ox.ac.uk'"/>
+
     <!-- Do NOT add customizations here. This stylesheet merely wraps 
          the output of convert2HTML.xsl in html and body tags, for previewing
          while editing the TEI in Oxygen. -->
