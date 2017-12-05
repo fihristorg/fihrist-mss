@@ -21,13 +21,16 @@
     <xsl:template match="/">
         <html>
             <head>
-                <link rel="stylesheet" media="all" href="https://medieval.bodleian.ox.ac.uk/assets/application-6bfca9b06bca925147856b007c4f62b7a22c690872e8d141bcc17b7b9703808c.css" />
+                <style type="text/css">
+                    <xsl:value-of select="unparsed-text('preview.css')"/>
+            </style>
             </head>
             <body style="padding:2em ! important;">
-                <div>
-                    <div class="content tei-body" id="{//TEI/@xml:id}">
-                        <xsl:apply-templates select="//msDesc"/>
-                    </div>
+                <h1 itemprop="name">
+                    <xsl:value-of select="//tei:msDesc/tei:msIdentifier/tei:idno[@type='shelfmark']/text()"/>
+                </h1>
+                <div class="content tei-body" id="{//TEI/@xml:id}">
+                    <xsl:apply-templates select="//msDesc"/>
                 </div>
             </body>
         </html>

@@ -10,10 +10,17 @@
     
     <xsl:import href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc2html.xsl"/>
 
-    <!-- Only set this variable if you want full URLs hardcoded into the HTML. -->
+    <!-- Only set this variable if you want full URLs hardcoded into the HTML
+         on the web site (previewManuscript.xsl overrides this to do so when previewing.) -->
     <xsl:variable name="website-url" as="xs:string" select="''"/>
 
-    <!-- Any templates added here will override the templates in the
-         imported stylesheet, allowing customization of manuscript display. -->
+    <!-- Any templates added below will override the templates in the shared
+         imported stylesheet, allowing customization of manuscript display for each catalogue. -->
+
+
+
+
+
+
 
 </xsl:stylesheet>
