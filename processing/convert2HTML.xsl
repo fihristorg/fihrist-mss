@@ -19,6 +19,16 @@
 
 
 
+    <xsl:template match="origin//origDate[@calendar and preceding-sibling::origDate[not(@calendar = current()/@calendar)]]">
+        <!-- When two dates in different calendars are given, add some text to explain the difference. -->
+        <span class="{name()}">
+            <xsl:text>(</xsl:text>
+            <xsl:apply-templates/>
+            <xsl:text> in the </xsl:text>
+            <xsl:value-of select="replace(@calendar, '#', '')"/>
+            <xsl:text> calendar)</xsl:text>
+        </span>
+    </xsl:template>
 
 
 
