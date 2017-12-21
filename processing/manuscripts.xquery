@@ -1,103 +1,63 @@
+import module namespace bod = "http://www.bodleian.ox.ac.uk/bdlss" at "https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc2solr.xquery";
 declare namespace tei="http://www.tei-c.org/ns/1.0";
+declare option saxon:output "indent=yes";
 
-declare function local:contents_summary($contents)
-{
-    for $item in $contents/tei:summary/string()
-    let $v := fn:normalize-space($item)
-
-    return if (empty($v)) then
-        ()
-    else
-        <field name="ms_summary_sm">{ $v }</field>
-};
-
-
-declare function local:layout($desc)
-{
-    for $item in $desc//tei:layout/string()
-    let $v := fn:normalize-space($item)
-    return if (empty($v)) then
-        ()
-    else
-        <field name="ms_layout_sm">{ $v }</field>
-};
-
-declare function local:extent($desc)
-{
-    for $item in $desc//tei:extent/*[normalize-space()]
-    return <field name="ms_extents_sm">{ fn:normalize-space($item) }</field>
-};
-
-declare function local:notes($contents)
-{
-    for $item in $contents/tei:msItem/tei:note/string(.)
-    return <field name="ms_notes_sm">{ fn:normalize-space($item) }</field>
-};
-
-declare function local:authors($contents)
-{
-    for $item in distinct-values($contents/tei:msItem/tei:author/tei:persName/text()/fn:normalize-space(.))
-    return <field name="ms_authors_sm">{ $item }</field>
-};
-
-declare function local:works_ps($contents)
-{
-    for $item in distinct-values(fn:data($contents/tei:msItem/tei:title[@xml:lang="ps"]))
-    return <field name="ms_works_ps_sm">{ fn:normalize-space($item) }</field>
-};
-
-declare function local:works_ar($contents)
-{
-    for $item in distinct-values(fn:data($contents/tei:msItem/tei:title[@xml:lang="ar"]))
-    return <field name="ms_works_ar_sm">{ normalize-space($item) }</field>
-};
-
-declare function local:works_en($contents)
-{
-    for $item in distinct-values(fn:data($contents/tei:msItem/tei:title[@xml:lang="en"]))
-    return <field name="ms_works_en_sm">{ fn:normalize-space($item) }</field>
-};
-
-declare function local:works_ar_latn($contents)
-{
-    for $item in distinct-values(fn:data($contents/tei:msItem/tei:title[@xml:lang="ar-Latn-x-lc"]))
-    return <field name="ms_works_ar_latn_sm">{ fn:normalize-space($item) }</field>
-};
-
-declare function local:physform($desc)
-{
-    for $item in distinct-values($desc/tei:objectDesc[@form]/@form)
-    return <field name="ms_physform_sm">{$item}</field>
-};
 
 <add>
 {
     for $x in collection('../collections/?select=*.xml;recurse=yes')
-        let $title := concat($x//tei:msDesc/tei:msIdentifier/tei:repository/text(), " ", $x//tei:msDesc/tei:msIdentifier/tei:idno[1]/text())
+    
         let $msid := $x//tei:TEI/@xml:id/data()
-
+        let $subfolders := string-join(tokenize(substring-after(base-uri($x), 'collections/'), '/')[position() lt last()], '/')
+        let $htmlfilename := concat($x//tei:sourceDesc/tei:msDesc[1]/@xml:id/data(), '.html')
+        let $htmldoc := doc(concat("html/", $subfolders, '/', $htmlfilename))
+        
+        (:
+            Guide to Solr field naming conventions:
+                ms_ = manuscript index field
+                _i = integer field
+                _b = boolean field
+                _s = string field (tokenized)
+                _t = text field (not tokenized)
+                _?m = multiple field (typically facets)
+                *ni = not indexed (except _tni fields which are copied to the fulltext index)
+        :)
+            
         return <doc>
             <field name="type">manuscript</field>
             <field name="pk">{ $msid }</field>
             <field name="id">{ $msid }</field>
-            <field name="filename_sni">{ fn:base-uri($x) }</field>
-            <field name="title">{ $title }</field>
-            <field name="ms_collection_s">{ $x//tei:msDesc/tei:msIdentifier/tei:collection/text()  }</field>
-            <field name="ms_institution_s">{ $x//tei:msDesc/tei:msIdentifier/tei:institution/text() }</field>
-            <field name="ms_repository_s">{ $x//tei:msDesc/tei:msIdentifier/tei:repository/text() }</field>
-            <field name="ms_date_stmt_s">{ $x//tei:history/tei:origin/tei:date/text() }</field>
-            <field name="ms_shelfmark_s">{ $x//tei:msDesc/tei:msIdentifier/tei:idno/text() }</field>
-            <field name="ms_shelfmark_sort">{ $x//tei:msDesc/tei:msIdentifier/tei:idno/text() }</field>
-            { local:physform($x//tei:physDesc) }
-            { local:contents_summary($x//tei:msContents) }
-            { local:works_ar($x//tei:msContents) }
-            { local:works_ps($x//tei:msContents) }
-            { local:works_en($x//tei:msContents) }
-            { local:works_ar_latn($x//tei:msContents) }
-            { local:authors($x//tei:msContents) }
-            { local:notes($x//tei:msContents) }
-            { local:extent($x//tei:physDesc) }
-            { local:layout($x//tei:physDesc) }
+            <field name="filename_sni">{ base-uri($x) }</field>
+            { bod:one2one($x//tei:titleStmt/tei:title[@type="collection"], 'ms_collection_s') }
+            { bod:one2one($x//tei:msDesc/tei:msIdentifier/tei:institution, 'ms_institution_s') }
+            { bod:one2one($x//tei:msDesc/tei:msIdentifier/tei:idno[@type="shelfmark"], 'ms_shelfmark_s') }
+            { bod:one2one($x//tei:msDesc/tei:msIdentifier/tei:idno[@type="shelfmark"], 'ms_shelfmark_sort') }
+            { bod:one2one($x//tei:msDesc/tei:msIdentifier/tei:collection, 'ms_collection_s') }
+            { bod:one2one($x//tei:msDesc/tei:msIdentifier/tei:idno, 'ms_shelfmark_s') }
+            { bod:one2one($x//tei:msDesc/tei:msIdentifier/tei:idno, 'ms_shelfmark_sort') }
+            { bod:many2one(($x//tei:msDesc/tei:msIdentifier/tei:repository, $x//tei:msDesc/tei:msIdentifier/tei:idno), 'title', 'error') }
+            { bod:many2one($x//tei:msDesc/tei:msIdentifier/tei:repository, 'ms_repository_s') }
+            { bod:many2many($x//tei:msContents/tei:msItem/tei:title, 'ms_works_sm') }
+            { bod:many2many($x//tei:msContents/tei:msItem/tei:author/tei:persName, 'ms_authors_sm') }
+            { bod:many2many($x//tei:sourceDesc//tei:name[@type="corporate"]/tei:persName, 'ms_corpnames_sm') }
+            { bod:many2many($x//tei:sourceDesc//tei:persName, 'ms_persnames_sm') }
+            { bod:many2many($x//tei:physDesc//tei:extent, 'ms_extents_sm') }
+            { bod:many2many($x//tei:physDesc//tei:layout, 'ms_layout_sm') }
+            { bod:many2many($x//tei:msContents/tei:msItem/tei:note, 'ms_notes_sm') }
+            { bod:many2many($x//tei:msContents/tei:summary, 'ms_summary_sm') }
+            { bod:many2many($x//tei:msContents/tei:msItem/tei:title[@xml:lang='ar'], 'ms_works_ar_sm') }
+            { bod:many2many($x//tei:msContents/tei:msItem/tei:title[@xml:lang='ar-Latn-x-lc'], 'ms_works_ar_latn_sm') }
+            { bod:many2many($x//tei:msContents/tei:msItem/tei:title[@xml:lang='en'], 'ms_works_en_sm') }
+            { bod:many2many($x//tei:msContents/tei:msItem/tei:title[@xml:lang='ps'], 'ms_works_ps_sm') }
+            { bod:trueIfExists($x//tei:sourceDesc//tei:decoDesc/tei:decoNote, 'ms_deconote_b') }
+            { bod:materials($x//tei:msDesc//tei:physDesc//tei:supportDesc[@material], 'ms_materials_sm') }
+            { bod:physForm($x//tei:physDesc/tei:objectDesc, 'ms_physform_sm') }
+            { bod:languages($x//tei:sourceDesc//tei:textLang, 'ms_lang_sm') }
+            { bod:centuries($x//tei:origin//tei:origDate[@calendar = '#Gregorian'], 'ms_date_sm') }
+            { bod:indexHTML($htmldoc, 'ms_textcontent_tni') }
+            { bod:displayHTML($htmldoc, 'display') }
         </doc>
 }
 </add>
+
+
