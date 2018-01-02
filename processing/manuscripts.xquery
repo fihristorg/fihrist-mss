@@ -28,11 +28,10 @@ declare option saxon:output "indent=yes";
             <field name="pk">{ $msid }</field>
             <field name="id">{ $msid }</field>
             <field name="filename_sni">{ base-uri($x) }</field>
-            { bod:one2one($x//tei:titleStmt/tei:title[@type="collection"], 'ms_collection_s') }
-            { bod:one2one($x//tei:msDesc/tei:msIdentifier/tei:institution, 'ms_institution_s') }
+            { bod:one2one($x//tei:msDesc/tei:msIdentifier/tei:collection, 'ms_collection_s', 'Not specified') }
+            { bod:one2one($x//tei:msDesc/tei:msIdentifier/tei:institution, 'ms_institution_s', 'Not specified') }
             { bod:one2one($x//tei:msDesc/tei:msIdentifier/tei:idno[@type="shelfmark"], 'ms_shelfmark_s') }
             { bod:one2one($x//tei:msDesc/tei:msIdentifier/tei:idno[@type="shelfmark"], 'ms_shelfmark_sort') }
-            { bod:one2one($x//tei:msDesc/tei:msIdentifier/tei:collection, 'ms_collection_s') }
             { bod:one2one($x//tei:msDesc/tei:msIdentifier/tei:idno, 'ms_shelfmark_s') }
             { bod:one2one($x//tei:msDesc/tei:msIdentifier/tei:idno, 'ms_shelfmark_sort') }
             { bod:many2one(($x//tei:msDesc/tei:msIdentifier/tei:repository, $x//tei:msDesc/tei:msIdentifier/tei:idno), 'title', 'error') }
@@ -50,10 +49,10 @@ declare option saxon:output "indent=yes";
             { bod:many2many($x//tei:msContents/tei:msItem/tei:title[@xml:lang='en'], 'ms_works_en_sm') }
             { bod:many2many($x//tei:msContents/tei:msItem/tei:title[@xml:lang='ps'], 'ms_works_ps_sm') }
             { bod:trueIfExists($x//tei:sourceDesc//tei:decoDesc/tei:decoNote, 'ms_deconote_b') }
-            { bod:materials($x//tei:msDesc//tei:physDesc//tei:supportDesc[@material], 'ms_materials_sm') }
-            { bod:physForm($x//tei:physDesc/tei:objectDesc, 'ms_physform_sm') }
-            { bod:languages($x//tei:sourceDesc//tei:textLang, 'ms_lang_sm') }
-            { bod:centuries($x//tei:origin//tei:origDate[@calendar = '#Gregorian'], 'ms_date_sm') }
+            { bod:materials($x//tei:msDesc//tei:physDesc//tei:supportDesc[@material], 'ms_materials_sm', 'Not specified') }
+            { bod:physForm($x//tei:physDesc/tei:objectDesc, 'ms_physform_sm', 'Not specified') }
+            { bod:languages($x//tei:sourceDesc//tei:textLang, 'ms_lang_sm', 'Not specified') }
+            { bod:centuries($x//tei:origin//tei:origDate[@calendar = '#Gregorian'], 'ms_date_sm', 'Gregorian Date Not Specified') }
             { bod:indexHTML($htmldoc, 'ms_textcontent_tni') }
             { bod:displayHTML($htmldoc, 'display') }
         </doc>
