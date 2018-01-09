@@ -30,7 +30,7 @@ echo "Processing TEI files in collections folder using $1 on $(date +"%Y-%m-%d %
 
 # Run XQuery to build Solr XML index files
 echo "Generating Solr XML file containing $3 records..."
-java -Xmx1G -Xms1G -cp "saxon/saxon9he.jar" net.sf.saxon.Query -q:$1 1> solr/$2 2>> $LOGFILE
+java -Xmx1G -Xms1G -cp "saxon/saxon9he.jar" net.sf.saxon.Query -xi:on -q:$1 1> solr/$2 2>> $LOGFILE
 if [ $? -gt 0 ]; then
     echo "XQuery failed. Re-indexing of $3 records cancelled. Please raise an issue on GitHub, attaching $LOGFILE"
     exit 1;
@@ -77,7 +77,7 @@ if [ ! "$5" == "noindex" ]; then
 
     # Upload generated XML to Solr
     if [ $? -gt 0 ]; then
-        echo "Emptying Solr failed. Try again later. If problem persists, please raise an issue on GitHub, attaching $LOGFILE."
+        echo "Emptying Solr failed. The indexes cannot be updated. Please try again later. If problem persists, raise an issue on GitHub, attaching $LOGFILE"
         exit 1;
     else
         echo "Sending new $3 records to Solr..."
@@ -86,7 +86,7 @@ if [ ! "$5" == "noindex" ]; then
             echo "Re-indexing of $3 records finished. Please check the web site for expected changes."
             exit 0;
         else
-            echo "Re-indexing of $3 records failed. The web site will have no $3s. If this is on production, raise an urgent issue on GitHub, attaching $LOGFILE."
+            echo "Re-indexing of $3 records failed. The web site will have no $3s. If this is on production, raise an urgent issue on GitHub, attaching $LOGFILE"
             exit 1;
         fi
     fi

@@ -4,7 +4,7 @@ declare option saxon:output "indent=yes";
 
 <add>
 {
-    let $doc := doc("../persons.xml")
+    let $doc := doc("../authority/persons_master.xml")
     let $collection := collection('../collections?select=*.xml;recurse=yes')
     let $people := $doc//tei:person
 
@@ -62,16 +62,16 @@ declare option saxon:output "indent=yes";
             }
         </doc>
         else
-            bod:logging('info', 'Skipping person in persons.xml but not in any manuscript', ($id, $name))
+            bod:logging('info', 'Skipping person in authority files but not in any manuscript', ($id, $name))
 }
 
 {
-    let $controlledpeopleids := doc("../persons.xml")//tei:person/@xml:id/string()
+    let $controlledpeopleids := distinct-values(doc("../authority/persons_master.xml")//tei:person/@xml:id/string())
     let $allpeople := collection("../collections?select=*.xml;recurse=yes")//tei:TEI//(tei:persName|tei:author)
     let $allpeopleids := distinct-values($allpeople/@key/string())
     for $personid in $allpeopleids
         return if (not($controlledpeopleids[. = $personid])) then
-            bod:logging('warn', 'Person in manuscripts not in persons.xml: will create broken link', ($personid, normalize-space(string-join($allpeople[@key = $personid][1]/text(), ''))))
+            bod:logging('warn', 'Person in manuscripts not in authority files: will create broken link', ($personid, normalize-space(string-join($allpeople[@key = $personid][1]/text(), ''))))
         else 
             ()
 }
