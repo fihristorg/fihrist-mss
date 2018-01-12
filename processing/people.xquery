@@ -11,13 +11,14 @@ declare option saxon:output "indent=yes";
     for $person in $people
     
         let $id := $person/@xml:id/string()
-        let $name := normalize-space($person//tei:persName[@type='display'][1]/string())
-        let $isauthor := boolean($collection//tei:author[@key = $id])
+        let $name := normalize-space($person//tei:persName[@type = 'display' or (@type = 'variant' and not(preceding-sibling::tei:persName))]/string())
+        let $isauthor := boolean($collection//tei:author[@key = $id or .//persName/@key = $id])
         let $issubject := boolean($collection//tei:msItem/tei:title//tei:persName[not(@role) and @key = $id])
 
-        let $mss1 := $collection//tei:TEI[.//(tei:persName)[@key = $id]]/concat('/catalog/', string(@xml:id), '|', (./tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:idno[@type = "shelfmark"])[1]/text())
-        let $mss2 := $collection//tei:TEI[.//(tei:author)[@key = $id]]/concat('/catalog/', string(@xml:id), '|', (./tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:idno[@type = "shelfmark"])[1]/text())
-        let $mss := distinct-values(($mss1, $mss2))
+        let $mss1 := $collection//tei:TEI[.//(tei:persName)[@key = $id]]/concat('/catalog/', string(@xml:id), '|', (./tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:idno)[1]/text())
+        let $mss2 := $collection//tei:TEI[.//(tei:author)[@key = $id]]/concat('/catalog/', string(@xml:id), '|', (./tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:idno)[1]/text())
+        let $mss3 := $collection//tei:TEI[.//(tei:name)[@key = $id]]/concat('/catalog/', string(@xml:id), '|', (./tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:idno)[1]/text())
+        let $mss := distinct-values(($mss1, $mss2, $mss3))
 
         let $variants := $person/tei:persName[@type="variant"]
         let $noteitems := $person/tei:note[@type="links"]//tei:item
@@ -63,17 +64,6 @@ declare option saxon:output "indent=yes";
         </doc>
         else
             bod:logging('info', 'Skipping person in authority files but not in any manuscript', ($id, $name))
-}
-
-{
-    let $controlledpeopleids := distinct-values(doc("../authority/persons_master.xml")//tei:person/@xml:id/string())
-    let $allpeople := collection("../collections?select=*.xml;recurse=yes")//tei:TEI//(tei:persName|tei:author)
-    let $allpeopleids := distinct-values($allpeople/@key/string())
-    for $personid in $allpeopleids
-        return if (not($controlledpeopleids[. = $personid])) then
-            bod:logging('warn', 'Person in manuscripts not in authority files: will create broken link', ($personid, normalize-space(string-join($allpeople[@key = $personid][1]/text(), ''))))
-        else 
-            ()
 }
 
 {

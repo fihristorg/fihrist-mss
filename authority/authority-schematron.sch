@@ -5,26 +5,18 @@
  <ns prefix="tei" uri="http://www.tei-c.org/ns/1.0"/> 
     
     <!-- currently, these are basic rules relating to correct entry of names and ids. Later they may be expanded to cover other areas. -->
-        
+
     <pattern>
         <rule context="tei:person">
-            <assert test="matches(@xml:id, 'person_\d+')">The person element must have an xml:id attribute matching the pattern 'person_[digits]'</assert>
-            <assert test="count(tei:persName[@type='display']) = 1">One persName element only must have @type=display</assert>
+            <assert test="count(tei:persName[@type='display']) = 1" role="warn">One persName element should have @type=display</assert>
         </rule>
-    </pattern>
-    
-    
-    <pattern>
         <rule context="tei:org">
-            <assert test="matches(@xml:id, 'org_\d+')">The org element must have an xml:id attribute matching the pattern 'org_[digits]'</assert>
-            <assert test="count(tei:orgName[@type='display']) = 1">One orgName element only must have @type=display</assert>
+            <assert test="count(tei:orgName[@type='display']) = 1" role="warn">One orgName element should have @type=display</assert>
         </rule>
         <rule context="tei:place">
-            <assert test="matches(@xml:id, 'place_\d+')">The place element must have an xml:id attribute matching the pattern 'place_[digits]'</assert>
-            <assert test="count(tei:placeName[@type='index']) = 1">One placeName element only must have @type=index</assert>
+            <assert test="count(tei:placeName[@type='index']) = 1" role="warn">One placeName element should have @type=index</assert>
         </rule>
     </pattern>
-    
     
     <pattern>
         <rule context="tei:text/tei:body/tei:listBibl/tei:bibl">
