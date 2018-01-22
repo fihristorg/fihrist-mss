@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_9749">
    <teiHeader>
       <fileDesc>
@@ -48,7 +48,7 @@
                      <author key="person_90049646" ref="http://viaf.org/viaf/90049646/">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">Fāsī, Muḥammad ibn Aḥmad, 1373 or 4-1428 or 9</persName>
                         <persName xml:lang="ar-Latn-x-lc" type="alt">Fāsī, Taqī al-Dīn Muḥammad ibn Aḥmad al-Makkī</persName>
-                        <persName xml:lang="ar">الفاسي، تقي الدين محمد بن احمد<addName xml:lang="ar" type="nisbah">المكي</addName>
+                        <persName xml:lang="ar">الفاسي، تقي الدين محمد بن احمد <addName xml:lang="ar" type="nisbah">المكي</addName>
                         </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Al-ʻIqd al-thamīn fī taʼrīkh al-balad al-amīn</title>
@@ -82,7 +82,7 @@
                   </objectDesc>
                   <handDesc>
                      <handNote scope="major" script="unknown">
-                        <persName type="scribe" xml:lang="ar-Latn-x-lc" key="person_f4737">ʻAbd al-ʻAzīz ibn ʻUmar ibn Muḥammad ibn Abū al-Naṣr Muḥammad ibn Abū Khayr Muḥammad ibn Fahd al-Hāshimī al-ʻAlawī al-Makkī<persName xml:lang="ar" key="person_f5177">عبد العزيز بن عمر بن محمد بن ابو النصر محمد بن ابو خير محمد بن فهد الهاشمي العلوي المكي</persName>
+                        <persName type="scribe" xml:lang="ar-Latn-x-lc" key="person_f4737">ʻAbd al-ʻAzīz ibn ʻUmar ibn Muḥammad ibn Abū al-Naṣr Muḥammad ibn Abū Khayr Muḥammad ibn Fahd al-Hāshimī al-ʻAlawī al-Makkī <persName xml:lang="ar" key="person_f5177">عبد العزيز بن عمر بن محمد بن ابو النصر محمد بن ابو خير محمد بن فهد الهاشمي العلوي المكي</persName>
                         </persName>
                      </handNote>
                   </handDesc>
@@ -92,7 +92,7 @@
                      <origDate calendar="#Hijri-qamari" when="0878">878</origDate>
                      <origDate calendar="#Gregorian" when="1474">1474</origDate>
                   </origin>
-                  <acquisition>Bequest of<persName key="person_f1655">J.L. Burckhardt (1784-1817)</persName>in<date calendar="#Gregorian">1819</date>.</acquisition>
+                  <acquisition>Bequest of <persName key="person_f1655">J.L. Burckhardt (1784-1817)</persName> in <date calendar="#Gregorian">1819</date>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
@@ -100,11 +100,11 @@
                         <source>Manuscript description based on E. G. Browne: A hand-list of the Muhammadan manuscripts, including all those written in the Arabic character, preserved in the Library of the University of Cambridge. Cambridge, 1900. abbreviated by the OCIMCO project team.</source>
                      </recordHist>
                      <availability status="restricted">
-                        <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact<ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact<email>near_eastern@lib.cam.ac.uk</email>for further information on the availability of this manuscript</p>
+                        <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
                      </availability>
                   </adminInfo>
                   <listBibl>
-                     <bibl type="related">Other copies:<idno>Qq. 31</idno>,<idno>Qq. 32</idno>,<idno>Qq. 43</idno>.</bibl>
+                     <bibl type="related">Other copies: <idno>Qq. 31</idno>, <idno>Qq. 32</idno>, <idno>Qq. 43</idno>.</bibl>
                   </listBibl>
                </additional>
             </msDesc>
@@ -143,8 +143,7 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh2007001197"
-                           target="http://id.loc.gov/authorities/sh2007001197#concept">Mecca (Saudi Arabia) History</term>
+                     <term key="subject_sh2007001197" target="http://id.loc.gov/authorities/sh2007001197#concept">Mecca (Saudi Arabia) History</term>
                   </item>
                </list>
             </keywords>
@@ -152,7 +151,7 @@
       </profileDesc>
       <revisionDesc>
          <change when="2017-11-07">
-            <persName>James Cummings</persName>Up-converted the markup using<ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-03-22">
             <persName>Ignacio Sanchez</persName>

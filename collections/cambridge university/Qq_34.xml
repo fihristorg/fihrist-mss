@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/bodley-msDesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_9746">
    <teiHeader>
       <fileDesc>
@@ -46,7 +46,7 @@
                   <msItem xml:id="Qq_34-item1" class="#abridgement">
                      <author key="person_f1818">
                         <persName xml:lang="ar-Latn-x-lc" type="supplied">Kamāl al-Dīn Muḥammad Abū al-Futūḥ ibn Muṣṭafá ibn Kamāl al-Dīn ibn ʻAlī al-Ṣiddīqī</persName>
-                        <persName xml:lang="ar">كمال الدين محمد ابو الفتوح بن مصطفى بن كمال الدين بن علي الصديقي<addName xml:lang="ar" type="laqab">الصديقي</addName>
+                        <persName xml:lang="ar">كمال الدين محمد ابو الفتوح بن مصطفى بن كمال الدين بن علي الصديقي <addName xml:lang="ar" type="laqab">الصديقي</addName>
                         </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc">Khulāṣat taḥqīq al-ẓunūn fī al-shurūḥ wa-al-mutūn</title>
@@ -60,8 +60,8 @@
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/view.php?id=46">no. 345</ref>
                         </bibl>
-                        <bibl type="text-relations">Abridgement and supplement to the<title xml:lang="ar-Latn-x-lc">Kashf al-ẓunūn<foreign xml:lang="ar">كشف الظنون</foreign>
-                           </title>of<author key="person_26051046" ref="http://viaf.org/viaf/26051046/">
+                        <bibl type="text-relations">Abridgement and supplement to the <title xml:lang="ar-Latn-x-lc">Kashf al-ẓunūn <foreign xml:lang="ar">كشف الظنون</foreign>
+                           </title> of <author key="person_26051046" ref="http://viaf.org/viaf/26051046/">
                               <persName xml:lang="ar-Latn-x-lc">Kâtip Çelebi, 1609-1657</persName>
                               <persName xml:lang="ar">كاتب الجلبي</persName>
                            </author>.</bibl>
@@ -92,7 +92,7 @@
                      <origDate calendar="#Hijri-qamari" when="1187">1187</origDate>
                      <origDate calendar="#Gregorian" when="1773">1773</origDate>
                   </origin>
-                  <acquisition>Bequest of<persName key="person_f1655">J.L. Burckhardt (1784-1817)</persName>in<date calendar="#Gregorian">1819</date>.</acquisition>
+                  <acquisition>Bequest of <persName key="person_f1655">J.L. Burckhardt (1784-1817)</persName> in <date calendar="#Gregorian">1819</date>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
@@ -100,7 +100,7 @@
                         <source>Manuscript description based on E. G. Browne: A hand-list of the Muhammadan manuscripts, including all those written in the Arabic character, preserved in the Library of the University of Cambridge. Cambridge, 1900. abbreviated by the OCIMCO project team.</source>
                      </recordHist>
                      <availability status="restricted">
-                        <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact<ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact<email>near_eastern@lib.cam.ac.uk</email>for further information on the availability of this manuscript</p>
+                        <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
                      </availability>
                   </adminInfo>
                </additional>
@@ -140,12 +140,9 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh85043000"
-                           target="http://id.loc.gov/authorities/sh85043000#concept">Encyclopedias and dictionaries, Arabic</term>
-                     <term key="subject_sh85042998"
-                           target="http://id.loc.gov/authorities/sh85042998#concept">Encyclopedias and dictionaries Early works to 1600</term>
-                     <term key="subject_sh2009115249"
-                           target="http://id.loc.gov/authorities/sh2009115249#concept">Arabic literature Bibliography</term>
+                     <term key="subject_sh85043000" target="http://id.loc.gov/authorities/sh85043000#concept">Encyclopedias and dictionaries, Arabic</term>
+                     <term key="subject_sh85042998" target="http://id.loc.gov/authorities/sh85042998#concept">Encyclopedias and dictionaries Early works to 1600</term>
+                     <term key="subject_sh2009115249" target="http://id.loc.gov/authorities/sh2009115249#concept">Arabic literature Bibliography</term>
                   </item>
                </list>
             </keywords>
@@ -153,7 +150,7 @@
       </profileDesc>
       <revisionDesc>
          <change when="2017-11-07">
-            <persName>James Cummings</persName>Up-converted the markup using<ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-03-22">
             <persName>Ignacio Sanchez</persName>
