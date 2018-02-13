@@ -38,7 +38,7 @@ declare option saxon:output "indent=yes";
                     order by $role
                     return <field name="pp_roles_sm">{ bod:personRoleLookup($role) }</field>
             else
-                ()
+                <field name="pp_roles_sm">Not Specified</field>
             }
             {
             for $variant in $variants
