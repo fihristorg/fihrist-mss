@@ -12,6 +12,18 @@ declare option saxon:output "indent=yes";
         let $htmlfilename := concat($x//tei:sourceDesc/tei:msDesc[1]/@xml:id/data(), '.html')
         let $htmldoc := doc(concat("html/", $subfolders, '/', $htmlfilename))
         
+        let $repository := normalize-space($x//tei:msDesc/tei:msIdentifier/tei:repository[1]/text())
+        let $institution := normalize-space($x//tei:msDesc/tei:msIdentifier/tei:institution/text())
+        let $title := concat(
+                            $x//tei:msDesc/tei:msIdentifier/tei:idno[1]/text(), 
+                            ' (', 
+                            $repository,
+                            if ($repository ne $institution) then
+                                concat(', ', translate(replace($institution, ' \(', ', '), ')', ''), ')')
+                            else
+                                ')'
+                        )
+                            
         (:
             Guide to Solr field naming conventions:
                 ms_ = manuscript index field
@@ -34,7 +46,7 @@ declare option saxon:output "indent=yes";
             { bod:one2one($x//tei:msDesc/tei:msIdentifier/tei:idno[@type="shelfmark"], 'ms_shelfmark_sort') }
             { bod:one2one($x//tei:msDesc/tei:msIdentifier/tei:idno, 'ms_shelfmark_s') }
             { bod:one2one($x//tei:msDesc/tei:msIdentifier/tei:idno, 'ms_shelfmark_sort') }
-            { bod:string2one(concat($x//tei:msDesc/tei:msIdentifier/tei:idno[1]/text(), ' (', $x//tei:msDesc/tei:msIdentifier/tei:repository[1]/text(), ')'), 'title') }
+            { bod:string2one($title, 'title') }
             { bod:many2one($x//tei:msDesc/tei:msIdentifier/tei:repository, 'ms_repository_s') }
             { bod:many2many($x//tei:msContents/tei:msItem/tei:title, 'ms_works_sm') }
             { bod:many2many($x//tei:msContents/tei:msItem/tei:author/tei:persName, 'ms_authors_sm') }
