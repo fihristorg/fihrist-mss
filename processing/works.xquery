@@ -27,6 +27,11 @@ declare option saxon:output "indent=yes";
                 order by $vname
                 return <field name="wk_variant_sm">{ $vname }</field>
             }
+            {
+            let $institutions := (for $ms in $mss return $ms//tei:msDesc/tei:msIdentifier/tei:institution/text())
+            for $institution in distinct-values($institutions) 
+                return <field name="wk_institution_sm">{ $institution }</field>
+            }
             <field name="alpha_title">{ 
                 if (contains($title, ':')) then
                     bod:alphabetize($title)
