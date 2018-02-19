@@ -29,6 +29,14 @@
             <xsl:text> calendar)</xsl:text>
         </span>
     </xsl:template>
+    
+    
+    <xsl:template match="name[@key]/persName | author[@key]/persName">
+        <!-- In Fihrist, persNames are quite often nested inside name or author elements, which have their own @key. It is that @key which 
+             has been chosen when building authority files, and will be in the index. Not the @key of the persName. So, override the default 
+             and do NOT output these persNames as links. -->
+        <xsl:apply-templates/>
+    </xsl:template>
 
 
 
