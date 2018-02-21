@@ -41,11 +41,11 @@ declare option saxon:output "indent=yes";
             <field name="id">{ $msid }</field>
             <field name="filename_sni">{ base-uri($x) }</field>
             { bod:one2one($x//tei:msDesc/tei:msIdentifier/tei:collection, 'ms_collection_s', 'Not specified') }
-            { bod:one2one($x//tei:msDesc/tei:msIdentifier/tei:institution, 'ms_institution_s', 'Not specified') }
             { bod:one2one($x//tei:msDesc/tei:msIdentifier/tei:idno[@type="shelfmark"], 'ms_shelfmark_s') }
             { bod:one2one($x//tei:msDesc/tei:msIdentifier/tei:idno[@type="shelfmark"], 'ms_shelfmark_sort') }
             { bod:one2one($x//tei:msDesc/tei:msIdentifier/tei:idno, 'ms_shelfmark_s') }
             { bod:one2one($x//tei:msDesc/tei:msIdentifier/tei:idno, 'ms_shelfmark_sort') }
+            { bod:one2one($x//tei:msDesc/tei:msIdentifier/tei:institution, 'institution_sm', 'Not specified') }
             { bod:one2one(($x//tei:publicationStmt/tei:pubPlace/tei:address/tei:addrLine/tei:email, $x//tei:additional/tei:adminInfo/tei:availability//tei:email)[1], 'ms_contactemail_sni') }
             { bod:string2one($title, 'title') }
             { bod:many2one($x//tei:msDesc/tei:msIdentifier/tei:repository, 'ms_repository_s') }
@@ -64,7 +64,7 @@ declare option saxon:output "indent=yes";
             { bod:trueIfExists($x//tei:sourceDesc//tei:decoDesc/tei:decoNote, 'ms_deconote_b') }
             { bod:materials($x//tei:msDesc//tei:physDesc//tei:supportDesc[@material], 'ms_materials_sm', 'Not specified') }
             { bod:physForm($x//tei:physDesc/tei:objectDesc, 'ms_physform_sm', 'Not specified') }
-            { bod:languages($x//tei:sourceDesc//tei:textLang, 'ms_lang_sm', 'Not specified') }
+            { bod:languages($x//tei:sourceDesc//tei:textLang, 'lang_sm', 'Not specified') }
             { bod:centuries($x//tei:origin//tei:origDate[@calendar = '#Gregorian' or (not(@calendar) and count(ancestor::tei:origin//tei:origDate) eq 1)], 'ms_date_sm', 'Gregorian Date Not Specified') }
             { bod:indexHTML($htmldoc, 'ms_textcontent_tni') }
             { bod:displayHTML($htmldoc, 'display') }

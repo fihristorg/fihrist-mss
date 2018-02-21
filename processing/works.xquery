@@ -30,7 +30,7 @@ declare option saxon:output "indent=yes";
             {
             let $institutions := (for $ms in $mss return $ms//tei:msDesc/tei:msIdentifier/tei:institution/text())
             for $institution in distinct-values($institutions) 
-                return <field name="wk_institution_sm">{ $institution }</field>
+                return <field name="institution_sm">{ $institution }</field>
             }
             <field name="alpha_title">{ 
                 if (contains($title, ':')) then
@@ -38,7 +38,7 @@ declare option saxon:output "indent=yes";
                 else
                     bod:alphabetizeTitle($title)
             }</field>
-            { bod:languages($work/tei:textLang, 'wk_lang_sm') }
+            { bod:languages($work/tei:textLang, 'lang_sm') }
             {
             for $ms in $mss
                 let $msid := $ms/string(@xml:id)
