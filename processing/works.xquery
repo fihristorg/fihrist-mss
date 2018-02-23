@@ -12,6 +12,7 @@ declare option saxon:output "indent=yes";
         let $id := $work/@xml:id/string()
         let $title := normalize-space($work//tei:title[@type="uniform"][1]/string())
         let $variants := $work//tei:title[@type="variant"]
+        
         let $targetids := (for $i in $work/tei:ref/@target/string() return $i)
         let $mss := $collection//tei:TEI[.//tei:msItem[@xml:id = $targetids]]
         
@@ -22,7 +23,8 @@ declare option saxon:output "indent=yes";
             <field name="id">{ $id }</field>
             <field name="title">{ $title }</field>
             <field name="wk_title_s">{ $title }</field>
-            { for $variant in $variants
+            {
+            for $variant in $variants
                 let $vname := normalize-space($variant/string())
                 order by $vname
                 return <field name="wk_variant_sm">{ $vname }</field>
@@ -38,13 +40,26 @@ declare option saxon:output "indent=yes";
                 else
                     bod:alphabetizeTitle($title)
             }</field>
-            { bod:languages($work/tei:textLang, 'lang_sm') }
+            {
+            bod:languages($work/tei:textLang, 'lang_sm')
+            }
             {
             for $ms in $mss
                 let $msid := $ms/string(@xml:id)
                 let $url := concat("/catalog/", $msid[1])
-                let $linktext := concat(($ms//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:idno)[1]/text(), ' (', $ms//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:repository[1]/text(), ')')
-                (: TODO: Does data need fixing to allow this: let $linktext := $ms//tei:idno[@type="shelfmark"]/text() :)
+                let $classmark := $ms//tei:msDesc/tei:msIdentifier/tei:idno[1]/text()
+                let $repository := normalize-space($ms//tei:msDesc/tei:msIdentifier/tei:repository[1]/text())
+                let $institution := normalize-space($ms//tei:msDesc/tei:msIdentifier/tei:institution/text())
+                let $linktext := concat(
+                                    $classmark, 
+                                    ' (', 
+                                    $repository,
+                                    if ($repository ne $institution) then
+                                        concat(', ', translate(replace($institution, ' \(', ', '), ')', ''), ')')
+                                    else
+                                        ')'
+                                )
+                order by $institution, $classmark
                 return <field name="link_manuscripts_smni">{ concat($url, "|", $linktext[1]) }</field>
             }
         </doc>
@@ -53,5 +68,4 @@ declare option saxon:output "indent=yes";
             bod:logging('info', 'Skipping work in works.xml but not in any manuscript', ($id, $title))
             )
 }
-
 </add>
