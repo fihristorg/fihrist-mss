@@ -4,9 +4,9 @@ declare option saxon:output "indent=yes";
 
 <add>
 {
-    let $doc := doc("../authority/persons_master.xml")
+    let $doc := doc("../authority/persons.xml")
     let $collection := collection('../collections?select=*.xml;recurse=yes')
-    let $people := $doc//tei:person
+    let $people := $doc//tei:person[@xml:id]
 
     for $person in $people
     
@@ -32,7 +32,13 @@ declare option saxon:output "indent=yes";
             <field name="alpha_title">{  bod:alphabetize($name) }</field>
             <field name="pp_name_s">{ $name }</field>
             {
-            let $roles := distinct-values(($collection//tei:persName[@key = $id]/@role/tokenize(., ' '), if ($isauthor) then 'author' else if ($issubject) then 'subject' else ()))
+            let $roles := distinct-values(
+                            (
+                            $collection//(tei:persName|tei:author|tei:name)[@key = $id]/@role/tokenize(., ' '), 
+                            $collection//(tei:persName|tei:author|tei:name)[@key = $id]/parent::*[self::tei:author or self::tei:name or self::tei:editor]/@role/tokenize(., ' '), 
+                            if ($isauthor) then 'author' else if ($issubject) then 'subject' else ()
+                            )
+                            )
             return if (count($roles) > 0) then
                 for $role in $roles
                     order by $role
