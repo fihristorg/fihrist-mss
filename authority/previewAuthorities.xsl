@@ -4,7 +4,9 @@
     xmlns:xi="http://www.w3.org/2001/XInclude" 
     version="1.0">
 
-    <!-- Using XSLT 1.0 to allow viewing in web browsers -->
+    <!-- Using XSLT 1.0 to allow viewing in web browsers that support client-side transformation: Firefox and Safari only
+         when the file is on local filesystem, Chrome on a web server that responds with XML MIME type (which is not the case
+         on raw.githubusercontent.com that serves everything as text/plain), possibly IE/Edge with some more work. -->
 
     <xsl:template match="/">
         <html>
@@ -25,7 +27,7 @@
                         text-align: left ! important;
                     }
                     td.ids {
-                        word-break: break-all;
+                        word-break: keep-all;
                     }</style>
                 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css"/>
                 <script type="text/javascript" language="javascript" src="http://code.jquery.com/jquery-1.12.4.js"/>
@@ -66,19 +68,19 @@
             <tbody>
 
                 <!-- Next line works with or without XInclude support enabled in the XSLT processor -->
-                <xsl:for-each select=".//tei:person | document(xi:include/@href)//tei:person">
+                <xsl:for-each select=".//*[@xml:id] | document(xi:include/@href)//*[@xml:id]">
                     <tr>
                         <td class="ids">
                             <xsl:value-of select="@xml:id"/>
                         </td>
                         <td>
-                            <!-- Primary form of the person's name, which will be displayed on the web site -->
-                            <xsl:value-of select="normalize-space(tei:persName[@type = 'display'])"/>
+                            <!-- Preferred form of the entry (e.g. person's name, work title, etc) -->
+                            <xsl:value-of select="normalize-space(*[@type = 'display' or @type = 'uniform'])"/>
 
-                            <!-- List alternative forms/spellings, if any, that will be indexed only the web site -->
-                            <xsl:if test="tei:persName[@type = 'variant']">
+                            <!-- List of alternative forms/spellings, if any, which will be indexed but not displayed in the search results on the web site -->
+                            <xsl:if test="*[@type = 'variant']">
                                 <ul>
-                                    <xsl:for-each select="tei:persName[@type = 'variant']">
+                                    <xsl:for-each select="*[@type = 'variant']">
                                         <li>
                                             <xsl:value-of select="normalize-space(.)"/>
                                         </li>
@@ -100,13 +102,9 @@
                             </xsl:if>
                         </td>
                     </tr>
-
-                    <!-- TODO: Similar code needed for other types of authority files -->
-
                 </xsl:for-each>
             </tbody>
         </table>
     </xsl:template>
-
 
 </xsl:stylesheet>
