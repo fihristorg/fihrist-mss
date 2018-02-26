@@ -22,10 +22,10 @@ declare option saxon:output "indent=yes";
         let $mss := $collection//tei:TEI[.//(tei:term|tei:placeName|tei:name[@type='place'])[@key = $id]]
         
         let $types := distinct-values((
-                                                $collection//(tei:term|tei:placeName|tei:name[@type='place'])[@key = $id]/@role/tokenize(normalize-space(.), ' '), 
-                                                if ($isplace) then 'Place' else (),
-                                                if ($islcsh) then 'Library of Congress Subject Heading' else ()
-                                            ))
+                                        $mss//(tei:term|tei:placeName|tei:name[@type='place'])[@key = $id]/@role/tokenize(normalize-space(.), ' '), 
+                                        if ($isplace) then 'Place' else (),
+                                        if ($islcsh) then 'Library of Congress Subject Heading' else ()
+                                     ))
 
         return if (count($mss) > 0) then
         <doc>

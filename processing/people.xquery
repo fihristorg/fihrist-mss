@@ -23,7 +23,7 @@ declare option saxon:output "indent=yes";
         let $mss := $collection//tei:TEI[.//(tei:persName|tei:author|tei:name[tei:persName])[@key = $id]]
         
         let $roles := distinct-values((
-                                        $collection//(tei:persName|tei:author|tei:name[tei:persName]|tei:editor)[@key = $id or .//@key = $id]/@role/tokenize(normalize-space(.), ' '),  
+                                        $mss//(tei:persName|tei:author|tei:name[tei:persName]|tei:editor)[@key = $id or .//@key = $id]/@role/tokenize(normalize-space(.), ' '),  
                                         if ($isauthor) then 'author' else if ($issubject) then 'subject of a work' else ()
                                      ))
 
