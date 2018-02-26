@@ -16,6 +16,8 @@ declare option saxon:output "indent=yes";
         let $targetids := (for $i in $work/tei:ref/@target/string() return $i)
         let $mss := $collection//tei:TEI[.//tei:msItem[@xml:id = $targetids]]
         
+        let $langs := $mss//tei:msItem[@xml:id = $targetids]//tei:textLang
+        
         return if (count($mss) > 0) then
         <doc>
             <field name="type">work</field>
@@ -41,7 +43,7 @@ declare option saxon:output "indent=yes";
                     bod:alphabetizeTitle($title)
             }</field>
             {
-            bod:languages($work/tei:textLang, 'lang_sm')
+            bod:languages($langs, 'lang_sm')
             }
             {
             for $ms in $mss
