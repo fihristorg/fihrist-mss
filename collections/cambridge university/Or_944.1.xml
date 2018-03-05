@@ -85,11 +85,11 @@
                   </decoDesc>
                </physDesc>
                <history>
-                  <origin>
-                     <p>Copied in <orgName xml:lang="fa-Latn-x-lc">Shīrāz <foreign xml:lang="fa">شيراز</foreign>
+                  <origin change="#fix-dates">
+                     Copied in <orgName xml:lang="fa-Latn-x-lc">Shīrāz <foreign xml:lang="fa">شيراز</foreign>
                         </orgName>
-                     </p>
-                     <origDate calendar="#Hijri-qamari" when="1225">1225</origDate>
+                     
+                     <origDate notBefore="1810" notAfter="1811" calendar="#Hijri-qamari">1225</origDate>
                      <origDate calendar="#Gregorian" when="1810">1810</origDate>
                   </origin>
                   <acquisition>Donated by <persName key="person_f1246">Guy Le Strange Esq.</persName> in <date calendar="#Gregorian">1916</date>.</acquisition>
@@ -132,6 +132,9 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2018-03-02" xml:id="fix-dates">
+            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+         </change>
          <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>

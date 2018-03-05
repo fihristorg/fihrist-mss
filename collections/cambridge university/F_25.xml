@@ -367,9 +367,9 @@
                   </handDesc>
                </physDesc>
                <history>
-                  <origin>
+                  <origin change="#fix-dates">
                      <ref target="#a1 #a3">
-                        <origDate calendar="#Hijri-qamari" when="1314">1314</origDate>
+                        <origDate notBefore="1896" notAfter="1897" calendar="#Hijri-qamari">1314</origDate>
                         <origDate calendar="#Gregorian" when="1897">1897</origDate>
                      </ref>
                      <ref target="#a10 #a11 #a12 #a13">
@@ -377,15 +377,15 @@
                         <origDate calendar="#Gregorian" notAfter="1913">Gregorian<!-- Please review date text, see https://git.io/fihrist-dates --></origDate>
                      </ref>
                      <ref target="#a14 #a15">
-                        <origDate calendar="#Hijri-qamari" when="1313">1313</origDate>
+                        <origDate notBefore="1895" notAfter="1896" calendar="#Hijri-qamari">1313</origDate>
                         <origDate calendar="#Gregorian" when="1896">1896</origDate>
                      </ref>
                      <ref target="#a16 #a17">
-                        <origDate calendar="#Hijri-qamari" when="1309">1309</origDate>
+                        <origDate notBefore="1891" notAfter="1892" calendar="#Hijri-qamari">1309</origDate>
                         <origDate calendar="#Gregorian" when="1892">1892</origDate>
                      </ref>
                      <ref target="#a18">
-                        <origDate calendar="#Hijri-qamari" when="1307">1307</origDate>
+                        <origDate notBefore="1889" notAfter="1890" calendar="#Hijri-qamari">1307</origDate>
                         <origDate calendar="#Gregorian" when="1890">1890</origDate>
                      </ref>
                      <ref target="#a21">
@@ -393,7 +393,7 @@
                         <origDate calendar="#Gregorian" notAfter="1891">Gregorian<!-- Please review date text, see https://git.io/fihrist-dates --></origDate>
                      </ref>
                      <ref target="#a23">
-                        <origDate calendar="#Hijri-qamari" when="1330">1330</origDate>
+                        <origDate notBefore="1911" notAfter="1912" calendar="#Hijri-qamari">1330</origDate>
                         <origDate calendar="#Gregorian" when="1912">1912</origDate>
                      </ref>
                   </origin>
@@ -489,6 +489,9 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2018-03-02" xml:id="fix-dates">
+            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+         </change>
          <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>

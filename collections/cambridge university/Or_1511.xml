@@ -128,18 +128,18 @@
                   </handDesc>
                </physDesc>
                <history>
-                  <origin>
+                  <origin change="#fix-dates">
                      <ref target="#a1">
                         <origDate calendar="#Hijri-qamari" from="1000" to="1100">11th/17th century<!-- Please review date attributes, see https://git.io/fihrist-dates --></origDate>
                         <origDate calendar="#Gregorian" from="1591" to="1688">Gregorian<!-- Please review date text, see https://git.io/fihrist-dates --></origDate>
                      </ref>
                      <ref target="#a2">
-                        <origDate calendar="#Hijri-qamari" when="0865">865</origDate>
+                        <origDate notBefore="1460" notAfter="1461" calendar="#Hijri-qamari">865</origDate>
                         <origDate calendar="#Gregorian" when="1461">1461</origDate>
                      </ref>
                      <ref target="#a3">
-                        <origDate calendar="#Hijri-qamari">undated</origDate>
-                        <origDate calendar="#Gregorian">undated</origDate>
+                        undated
+                        
                      </ref>
                   </origin>
                   <acquisition>Bequest of <persName xml:lang="en" key="person_64055571" ref="http://viaf.org/viaf/64055571/">R. A. Nicholson</persName>.</acquisition>
@@ -203,6 +203,9 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2018-03-02" xml:id="fix-dates">
+            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements and removed origDate tags around something which is not a date using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+         </change>
          <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>

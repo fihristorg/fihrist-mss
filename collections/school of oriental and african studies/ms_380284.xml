@@ -140,17 +140,17 @@
                   </handDesc>
                </physDesc>
                <history>
-                  <origin>
+                  <origin change="#fix-dates">
                      <ref target="a1"/>
-                     <p>copied in</p>
-                     <origDate calendar="#Hijri-qamari">1172</origDate>
+                     copied in
+                     <origDate notBefore="1758" notAfter="1759" calendar="#Hijri-qamari">1172</origDate>
                      <origDate calendar="#Gregorian" when="1639">/1639</origDate>
                      <ref target="a2"/>
-                     <p>copied in</p>
-                     <origDate calendar="#Hijri-qamari">987</origDate>
+                     copied in
+                     <origDate notBefore="1579" notAfter="1580" calendar="#Hijri-qamari">987</origDate>
                      <origDate calendar="#Gregorian" when="1579">/1579</origDate>
                      <origDate calendar="#Hijri-qamari">12th century</origDate>
-                     <origDate calendar="#Gregorian">18th century</origDate>
+                     <origDate notBefore="1700" notAfter="1800" calendar="#Gregorian">18th century</origDate>
                   </origin>
                   <acquisition>in <date calendar="#Gregorian">20th century</date>.</acquisition>
                </history>
@@ -193,6 +193,9 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2018-03-02" xml:id="fix-dates">
+            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+         </change>
          <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>

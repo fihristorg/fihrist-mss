@@ -111,8 +111,8 @@
                   </sealDesc>
                </physDesc>
                <history>
-                  <origin>
-                     <origDate type="written" calendar="#Gregorian" facs="#i0151">17th october 1857</origDate>
+                  <origin change="#fix-dates">
+                     <origDate when="1857" type="written" calendar="#Gregorian" facs="#i0151">17th october 1857</origDate>
                      <quote type="colophon">
                         <locus>Fol.145a.22</locus> قد كان النجاز من تبييض اسْتخراجهِ فى اليوم الشابع والعشرين من شهر حزيران الذى هو احد شهور سنه ١٨٥٧ الف وثمانماية وسبعة وخمَسين مَسيحية وذلك فى مدرسٮه صارى يوحنا مارون شرقى كفرجى. فليكن مخلصًا لوجههِ الكريم. صح وكانت نهاية هذا الكتاب على يد افقر عبيد الله الخورى يوسف الجميل من اسمر جبيل من شهر تشرين الاول من شهور سنه ١٨٥٧ <gap reason="omitted"/> سبع وخمسين وثمانماية والف للتجسد وذلك بسعى وعناية حضرة الاب الجليل الخورى سمعان الففالى راعى مدرسة مارى يوحنا مارون وقتيذ فالكاتب يرجو الدعا وعدم الملام صح</quote>
                   </origin>
@@ -516,6 +516,9 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
+         <change when="2018-03-02" xml:id="fix-dates">
+            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+         </change>
          <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>

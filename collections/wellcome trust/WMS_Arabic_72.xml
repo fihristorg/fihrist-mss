@@ -104,9 +104,9 @@
                   <accMat facs="#i0002">Cataloging card refers to some information about the manuscript in english.</accMat>
                </physDesc>
                <history>
-                  <origin>
+                  <origin change="#fix-dates">
                      <origDate type="written" facs="#i0135" calendar="#Hijri-shamsi">13 Muḥarram 1301</origDate>
-                     <origDate type="given" facs="#i0135" calendar="#Gregorian">13th November 1883</origDate>
+                     <origDate when="1883" type="given" facs="#i0135" calendar="#Gregorian">13th November 1883</origDate>
                      <quote type="colophon" facs="#i0135">
                         <locus>Fol.134b.1</locus> تمام شد كتاب افاضت انتساب وافادت نصاب جامع نكات عجيبة وحاوي لطائف غريبة متضمن مجربات بهيه اعنى مسائل طبيه المسمى به زمرّد اخضر وياقوت احمرمنجمله مصنفات عالم تحرير <gap reason="omitted"/> بتاريخ ١٣ <gap reason="omitted"/> محرم هجري مقدّس</quote>
                   </origin>
@@ -284,6 +284,9 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
+         <change when="2018-03-02" xml:id="fix-dates">
+            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+         </change>
          <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>

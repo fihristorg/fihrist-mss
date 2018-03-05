@@ -282,12 +282,12 @@
                   </bindingDesc>
                </physDesc>
                <history>
-                  <origin>
+                  <origin change="#fix-dates">
                      <ref target="#a1">
                         <origPlace>Unknown place of origin</origPlace>
                      </ref>
                      <ref target="#a1">
-                        <origDate calendar="#Hijri-qamari" cert="high">1013</origDate>
+                        <origDate notBefore="1604" notAfter="1605" calendar="#Hijri-qamari" cert="high">1013</origDate>
                      </ref>
                      <ref target="#a1">
                         <origDate calendar="#Gregorian" when="1604">1604</origDate>
@@ -296,7 +296,7 @@
                         <origPlace>Unknown place of origin</origPlace>
                      </ref>
                      <ref target="#a2">
-                        <origDate calendar="#Hijri-qamari" cert="high">1141</origDate>
+                        <origDate notBefore="1728" notAfter="1729" calendar="#Hijri-qamari" cert="high">1141</origDate>
                      </ref>
                      <ref target="#a2">
                         <origDate calendar="#Gregorian" cert="high" when="1729">1729</origDate>
@@ -305,7 +305,7 @@
                         <origPlace>Unknown place of origin</origPlace>
                      </ref>
                      <ref target="#a3">
-                        <origDate calendar="#Hijri-qamari" cert="high">1141</origDate>
+                        <origDate notBefore="1728" notAfter="1729" calendar="#Hijri-qamari" cert="high">1141</origDate>
                      </ref>
                      <ref target="#a3">
                         <origDate calendar="#Gregorian" cert="high" when="1729">1729</origDate>
@@ -399,6 +399,9 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2018-03-02" xml:id="fix-dates">
+            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+         </change>
          <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>

@@ -155,11 +155,11 @@
                   </bindingDesc>
                </physDesc>
                <history>
-                  <origin>
+                  <origin change="#fix-dates">
                      <origPlace>Unknown place of origin</origPlace>
                      <note>The copy was not scribed in 1244 Qamarī/1829; it was only decorated in this year using cinnabar by the owner of the copy. The copying date should have been before the year 1233 Qamarī/1818, as there is a purchase note in this year on <locus from="1a" to="1a">f. 1a</locus>.</note>
                      <origDate calendar="#Hijri-qamari">12-13th century</origDate>
-                     <origDate calendar="#Gregorian">18-19th century</origDate>
+                     <origDate notBefore="1800" notAfter="1900" calendar="#Gregorian">18-19th century</origDate>
                   </origin>
                   <acquisition>Donated to The Ferdowsi Library by Dr Caro Minasian in 1972.</acquisition>
                </history>
@@ -225,6 +225,9 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2018-03-02" xml:id="fix-dates">
+            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+         </change>
          <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>

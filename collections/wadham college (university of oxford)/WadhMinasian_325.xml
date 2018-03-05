@@ -463,24 +463,24 @@
                   </bindingDesc>
                </physDesc>
                <history>
-                  <origin>
+                  <origin change="#fix-dates">
                      <ref target="#a1 #a2 #a3 #a4 #a5 #a6 #a7 #a8">
                         <origPlace>Unknown place of origin</origPlace>
                      </ref>
                      <ref target="#a1 #a2 #a8">
-                        <origDate calendar="#Hijri-qamari">1256</origDate>
+                        <origDate notBefore="1840" notAfter="1841" calendar="#Hijri-qamari">1256</origDate>
                      </ref>
                      <ref target="#a1 #a2 #a8">
                         <origDate calendar="#Gregorian" when="1840">1840</origDate>
                      </ref>
                      <ref target="#a3">
-                        <origDate calendar="#Hijri-qamari">1251</origDate>
+                        <origDate notBefore="1835" notAfter="1836" calendar="#Hijri-qamari">1251</origDate>
                      </ref>
                      <ref target="#a3">
                         <origDate calendar="#Gregorian" when="1836">1836</origDate>
                      </ref>
                      <ref target="#a4">
-                        <origDate calendar="#Hijri-qamari">1255</origDate>
+                        <origDate notBefore="1839" notAfter="1840" calendar="#Hijri-qamari">1255</origDate>
                      </ref>
                      <ref target="#a4">
                         <origDate calendar="#Gregorian" when="1840">1840</origDate>
@@ -489,7 +489,7 @@
                         <origDate calendar="#Hijri-qamari">13th century</origDate>
                      </ref>
                      <ref target="#a5 #a6 #a7">
-                        <origDate calendar="#Gregorian">19th Century</origDate>
+                        <origDate notBefore="1800" notAfter="1900" calendar="#Gregorian">19th Century</origDate>
                      </ref>
                   </origin>
                   <acquisition>Donated to The Ferdowsi Library by Dr Caro Minasian in 1972.</acquisition>
@@ -605,6 +605,9 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2018-03-02" xml:id="fix-dates">
+            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+         </change>
          <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>

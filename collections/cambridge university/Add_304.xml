@@ -152,13 +152,13 @@
                   </handDesc>
                </physDesc>
                <history>
-                  <origin>
+                  <origin change="#fix-dates">
                      <ref target="#a1">
-                        <origDate calendar="#Hijri-qamari" when="1220">1220</origDate>
+                        <origDate notBefore="1805" notAfter="1806" calendar="#Hijri-qamari">1220</origDate>
                         <origDate calendar="#Gregorian" when="1805">1805</origDate>
                      </ref>
                      <ref target="#a4">
-                        <origDate calendar="#Hijri-qamari" notBefore="0838">Contains copies of documents dated in A.H. 745, 831 and 838</origDate>
+                        <origDate notBefore="1434" calendar="#Hijri-qamari">Contains copies of documents dated in A.H. 745, 831 and 838</origDate>
                         <origDate calendar="#Gregorian" notBefore="1434">Contains copies of documents dated in A.D. 1344, 1428 and 1434</origDate>
                      </ref>
                   </origin>
@@ -236,6 +236,9 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2018-03-02" xml:id="fix-dates">
+            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+         </change>
          <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>

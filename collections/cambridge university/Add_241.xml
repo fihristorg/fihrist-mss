@@ -133,15 +133,15 @@
                   </handDesc>
                </physDesc>
                <history>
-                  <origin>
+                  <origin change="#fix-dates">
                      <ref target="#a1">
-                        <origDate calendar="#Hijri-qamari ">undated</origDate>
+                        undated
                      </ref>
                      <ref target="#a2">
                         <origDate calendar="#Hijri-qamari" when="0983">980</origDate>
                         <origDate calendar="#Gregorian" when="1575">Gregorian<!-- Please review date text, see https://git.io/fihrist-dates --></origDate> 1575-6</ref>
                      <ref target="#a3">
-                        <origDate calendar="#Gregorian">undated</origDate>
+                        undated
                      </ref>
                   </origin>
                   <acquisition>Donated by <persName type="supplied" key="person_f1113">G. Lewis (d. 1729)</persName> in <date calendar="#Gregorian" when="1727">1727</date>.</acquisition>
@@ -216,6 +216,9 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2018-03-02" xml:id="fix-dates">
+            <persName>Andrew Morrison</persName> Removed origDate tags around something which is not a date using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+         </change>
          <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>

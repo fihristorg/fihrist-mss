@@ -118,9 +118,9 @@
                   <accMat facs="#i0118 #i0119 #i0120 #i0121">accompanying papers concerning some philosophical notes in arabic language</accMat>
                </physDesc>
                <history>
-                  <origin>
+                  <origin change="#fix-dates">
                      <origDate type="written" calendar="#Hijri-shamsi" facs="#i0113">1088</origDate>
-                     <origDate type="given" calendar="#Gregorian">1677</origDate>
+                     <origDate when="1677" type="given" calendar="#Gregorian">1677</origDate>
                      <origDate type="approxDate" calendar="#Hijri-shamsi" notAfter="1299" notBefore="0900" notAfter-custom="766" notBefore-custom="999">Hijri-shamsi<!-- Please review date text, see https://git.io/fihrist-dates --></origDate>
                      <quote type="colophon" facs="#i0113">
                         <locus>fol.107b.11</locus> تمت الكتاب بعون اللّه ملك الوهّاب فى شهر اول ذات القعد يوم الاربع وقت الصبح قضئه بياس مدرسته كوسج نائب تاريخ سنة ١٠٨٨ من الهجرة النبي من مكة الى المدينة وقد وقع الفراغ من هذه النسخة على يد العبد الضعيف المحتاج الى رحمة رب العالمين وشفاعة سيد المرسلين ودعاء المسلمين والمؤمنين كاتبه ومالكه الياس بن على بن الياس بن على غفر الله له ولوالديه ولجميع المسلمين والمسلمات والمؤمنين والمؤمنات الاحياء منهم والاموات آمين يا رب العالمين</quote>
@@ -456,6 +456,9 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
+         <change when="2018-03-02" xml:id="fix-dates">
+            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+         </change>
          <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>

@@ -78,8 +78,8 @@
                   </additions>
                </physDesc>
                <history>
-                  <origin>
-                     <note>The copy was completed by two unnamed hands. The first hand completed the copy of ff. 1-81; the second hand completed ff. 82-105, and recorded the date of copying as <origDate calendar="#Hijri-qamari" notAfter="0725" notBefore="0725">Thursday, 9th of Shawwal, 725 AH</origDate> / <origDate calendar="#Gregorian" notBefore="1325" notAfter="1325">September 1325 CE</origDate>.</note>
+                  <origin change="#fix-dates">
+                     <note>The copy was completed by two unnamed hands. The first hand completed the copy of ff. 1-81; the second hand completed ff. 82-105, and recorded the date of copying as <origDate notBefore="1324" notAfter="1325" calendar="#Hijri-qamari">Thursday, 9th of Shawwal, 725 AH</origDate> / <origDate calendar="#Gregorian" notBefore="1325" notAfter="1325">September 1325 CE</origDate>.</note>
                   </origin>
                </history>
                <additional>
@@ -116,6 +116,9 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2018-03-02" xml:id="fix-dates">
+            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+         </change>
          <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>

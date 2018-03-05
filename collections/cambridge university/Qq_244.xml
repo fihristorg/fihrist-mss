@@ -100,14 +100,14 @@
                   </handDesc>
                </physDesc>
                <history>
-                  <origin>
+                  <origin change="#fix-dates">
                      <ref target="#a1">
-                        <origDate calendar="#Hijri-qamari" when="0597">597</origDate>
+                        <origDate notBefore="1200" notAfter="1201" calendar="#Hijri-qamari">597</origDate>
                         <origDate calendar="#Gregorian" when="1200">1200</origDate>
                      </ref>
                      <ref target="#a2">
-                        <origDate calendar="#Hijri-qamari">undated</origDate>
-                        <origDate calendar="#Gregorian">Gregorian</origDate>
+                        undated
+                        
                      </ref>
                   </origin>
                   <acquisition>Bequest of <persName key="person_f1655">J.L. Burckhardt (1784-1817)</persName> in <date calendar="#Gregorian">1819</date>.</acquisition>
@@ -168,6 +168,9 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2018-03-02" xml:id="fix-dates">
+            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements and removed origDate tags around something which is not a date using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+         </change>
          <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>

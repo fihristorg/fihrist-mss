@@ -91,8 +91,8 @@
                   </sealDesc>
                </physDesc>
                <history>
-                  <origin>
-                     <origDate calendar="#Gregorian" type="approxDate">18th cent.</origDate>
+                  <origin change="#fix-dates">
+                     <origDate notBefore="1700" notAfter="1800" calendar="#Gregorian" type="approxDate">18th cent.</origDate>
                      <quote type="colophon" facs="#i0245">تمت الكتاب بعون الملك الوهاب بيد الفقير الحاج ابن اسمعيل بن ابراهيم غفر الله له ولولديه ولجميع المؤمنات والمؤمنات بمحمد وآله الامجاد</quote>
                   </origin>
                   <provenance facs="#i0006">Amīn al-`Umarī (a seal)</provenance>
@@ -1908,6 +1908,9 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
+         <change when="2018-03-02" xml:id="fix-dates">
+            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+         </change>
          <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>

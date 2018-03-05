@@ -76,9 +76,9 @@
                   </handDesc>
                </physDesc>
                <history>
-                  <origin>
-                     <origDate calendar="#Hijri-qamari">Beginning of Rabīʻ II 906</origDate>
-                     <origDate calendar="#Gregorian">October-November 1500</origDate>
+                  <origin change="#fix-dates">
+                     <origDate notBefore="1500" notAfter="1501" calendar="#Hijri-qamari">Beginning of Rabīʻ II 906</origDate>
+                     <origDate when="1500" calendar="#Gregorian">October-November 1500</origDate>
                   </origin>
                   <provenance>Sale, Sotheby's, 26th June 1967.</provenance>
                   <provenance>The collection of Mr. Simon Digby.</provenance>
@@ -168,6 +168,9 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2018-03-02" xml:id="fix-dates">
+            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+         </change>
          <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>

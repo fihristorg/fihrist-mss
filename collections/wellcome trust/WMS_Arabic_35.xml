@@ -107,9 +107,9 @@
                      <locus>Fol.1a</locus> Two cataloging cards refer to some information about the manuscript in english.</accMat>
                </physDesc>
                <history>
-                  <origin>
+                  <origin change="#fix-dates">
                      <origDate type="written" calendar="#Hijri-shamsi" facs="#i0228">21 Rābī Aṯ-ṯānī 1065</origDate>
-                     <origDate type="given" calendar="#Gregorian">1655</origDate>
+                     <origDate when="1655" type="given" calendar="#Gregorian">1655</origDate>
                      <quote type="colophon" facs="#i0228">
                         <locus>fol.226a.19</locus> قد وقع الفراع من اتمام بعض شرح الموجز السّديدى فى علم الطب يوم السبت واحد عشرٿن من شهر ربٿع الثانى سنه خمس وستٿن بعد الف من الهحره النبوٮه علٿه الف تحيه على ٿد اٯل العٿٿد واحوحهم الى رحمه الملك المجيد اٿن عبد الواحد التسٿري عبد الرشيد عفى عنهما بمحمد واله الطيٿٿن الطاهرٿن م م م</quote>
                   </origin>
@@ -256,6 +256,9 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
+         <change when="2018-03-02" xml:id="fix-dates">
+            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+         </change>
          <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>

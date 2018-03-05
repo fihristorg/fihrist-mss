@@ -129,9 +129,9 @@
                   <accMat facs="#i0002">Cataloging Card which refers to some information about the manuscript in english.</accMat>
                </physDesc>
                <history>
-                  <origin>
+                  <origin change="#fix-dates">
                      <origDate type="written" calendar="#Hijri-shamsi" facs="#i0104">24 Šawwāl 1174</origDate>
-                     <origDate type="given" calendar="#Gregorian">29 May 1761</origDate>
+                     <origDate when="1761" type="given" calendar="#Gregorian">29 May 1761</origDate>
                      <quote type="colophon" facs="#i0104">
                         <locus>Fol.101a.17</locus> تم بعون الله الملك المعين وحسن توفيقه على يد اضعف العباد محمد طاهر كاتب كتخداى صدر عالى بمقام قصطنيةسنه ١١٧٤ شهر شوال ٢٤ يوم جمعه م</quote>
                   </origin>
@@ -221,6 +221,9 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
+         <change when="2018-03-02" xml:id="fix-dates">
+            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+         </change>
          <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>

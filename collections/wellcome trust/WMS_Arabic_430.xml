@@ -121,8 +121,8 @@
                   </bindingDesc>
                </physDesc>
                <history>
-                  <origin>
-                     <origDate type="written" calendar="#Hijri-qamari" facs="#i0044">1354 AH / 1935 - 36</origDate>
+                  <origin change="#fix-dates">
+                     <origDate notBefore="19352498" notAfter="19362499" type="written" calendar="#Hijri-qamari" facs="#i0044">1354 AH / 1935 - 36</origDate>
                      <quote type="colophon" facs="#i0044">تم نسخه عن يد الفقير الى الله تعالى محمد رضا ابن المرحوم السيد حامد البابا غفر الله لكاتبه ولوالده ولقارئه ولكل المسلمين امين سنة ١٣٥٤ ه</quote>
                   </origin>
                   <provenance>Sāmī Ibrāhīm Ḥaddād (1986).</provenance>
@@ -220,6 +220,9 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
+         <change when="2018-03-02" xml:id="fix-dates">
+            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+         </change>
          <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>

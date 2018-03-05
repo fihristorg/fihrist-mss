@@ -89,11 +89,11 @@
                   </handDesc>
                </physDesc>
                <history>
-                  <origin>
-                     <note>No colophon but at the end there are several ijāzas dated A.H. <origDate calendar="#Hijri-qamari" when="0617">617</origDate>, <origDate calendar="#Hijri-qamari" when="0622">622</origDate>, and <origDate calendar="#Hijri-qamari" when="0626">626</origDate>
+                  <origin change="#fix-dates">
+                     <note>No colophon but at the end there are several ijāzas dated A.H. <origDate notBefore="1220" notAfter="1221" calendar="#Hijri-qamari">617</origDate>, <origDate notBefore="1225" notAfter="1226" calendar="#Hijri-qamari">622</origDate>, and <origDate notBefore="1228" notAfter="1229" calendar="#Hijri-qamari">626</origDate>
                      </note>
-                     <origDate calendar="#Hijri-qamari">undated</origDate>
-                     <origDate calendar="#Gregorian">Gregorian</origDate>
+                     undated
+                     
                   </origin>
                   <acquisition>Bequest of <persName key="person_f1655">J.L. Burckhardt (1784-1817)</persName> in <date calendar="#Gregorian">1819</date>.</acquisition>
                </history>
@@ -131,6 +131,9 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2018-03-02" xml:id="fix-dates">
+            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements and removed origDate tags around something which is not a date using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+         </change>
          <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>

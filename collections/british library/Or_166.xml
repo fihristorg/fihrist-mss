@@ -81,10 +81,10 @@
                   </handDesc>
                </physDesc>
                <history>
-                  <origin>
+                  <origin change="#fix-dates">
                      <origPlace>India</origPlace>
                      <origDate calendar="#Hijri-qamari" period="11th century">11th century</origDate>
-                     <origDate calendar="#Gregorian" period="17th century">17th century</origDate>
+                     <origDate notBefore="1600" notAfter="1700" calendar="#Gregorian" period="17th century">17th century</origDate>
                   </origin>
                   <acquisition>
                      <p>Purchased from the widow of <persName key="person_f825">Col. George W. Hamilton</persName> in <date calendar="#Gregorian" when="1868">April 1868</date>
@@ -131,6 +131,9 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2018-03-02" xml:id="fix-dates">
+            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+         </change>
          <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>

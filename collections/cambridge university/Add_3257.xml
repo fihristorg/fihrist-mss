@@ -346,10 +346,10 @@
                   </handDesc>
                </physDesc>
                <history>
-                  <origin>
+                  <origin change="#fix-dates">
                      <ref target="#a1 #a2 #a3 #a4 #a5 #a6 #a7">
-                        <origDate calendar="#Hijri-qamari">999</origDate>
-                        <origDate calendar="#Gregorian">1590</origDate>
+                        <origDate notBefore="1590" notAfter="1591" calendar="#Hijri-qamari">999</origDate>
+                        <origDate when="1590" calendar="#Gregorian">1590</origDate>
                      </ref>
                   </origin>
                   <acquisition>Bequest of <persName key="person_f3467">R.L. Bensly (1831-1893)</persName> in <date calendar="#Gregorian">1895</date>.</acquisition>
@@ -415,6 +415,9 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2018-03-02" xml:id="fix-dates">
+            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+         </change>
          <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>

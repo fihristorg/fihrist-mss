@@ -75,9 +75,7 @@
                   </handDesc>
                </physDesc>
                <history>
-                  <origin>
-                     <origDate calendar="#Gregorian">The copy is undated</origDate>
-                  </origin>
+                  <origin change="#fix-dates">The copy is undated</origin>
                   <provenance>The provenance of the manuscript is unknown. Lebanese physician and historian of medicine <persName key="person_64218974" ref="http://viaf.org/viaf/64218974">Sami Haddad</persName> purchased it in <date calendar="#Gregorian" when="1935" cert="high">1935</date>.</provenance>
                </history>
                <additional>
@@ -119,6 +117,9 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2018-03-02" xml:id="fix-dates">
+            <persName>Andrew Morrison</persName> Removed origDate tags around something which is not a date using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+         </change>
          <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>

@@ -96,10 +96,10 @@
                   </bindingDesc>
                </physDesc>
                <history>
-                  <origin>
+                  <origin change="#fix-dates">
                      <origPlace>Iran</origPlace>
                      <origDate calendar="#Hijri-qamari">Undated. Probably 13th century.</origDate>
-                     <origDate calendar="#Gregorian">Undated. Probably 19th century.</origDate>
+                     <origDate notBefore="1800" notAfter="1900" calendar="#Gregorian">Undated. Probably 19th century.</origDate>
                   </origin>
                   <provenance>Belonged to Harold and Doreen Ingrams, [Kent, UK].</provenance>
                   <acquisition>Bequeathed to MEC Library by Miss Leila Ingrams, 9th September 2015.</acquisition>
@@ -190,6 +190,9 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2018-03-02" xml:id="fix-dates">
+            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+         </change>
          <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>

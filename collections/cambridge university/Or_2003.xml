@@ -101,10 +101,10 @@
                   </additions>
                </physDesc>
                <history>
-                  <origin>
-                     <origDate calendar="#Hijri-qamari">1267</origDate>
-                     <origDate calendar="#Gregorian">1850</origDate>
-                     <note>Copied in <origPlace xml:lang="ar-Latn-x-lc">Madīna Ghuṭah al-Malʿūnah?</origPlace>, from an original dated in <origDate calendar="#Hijri-qamari" when="0896">896</origDate> / <origDate calendar="#Gregorian" when="1491">1491</origDate>
+                  <origin change="#fix-dates">
+                     <origDate notBefore="1850" notAfter="1851" calendar="#Hijri-qamari">1267</origDate>
+                     <origDate when="1850" calendar="#Gregorian">1850</origDate>
+                     <note>Copied in <origPlace xml:lang="ar-Latn-x-lc">Madīna Ghuṭah al-Malʿūnah?</origPlace>, from an original dated in <origDate notBefore="1490" notAfter="1491" calendar="#Hijri-qamari">896</origDate> / <origDate calendar="#Gregorian" when="1491">1491</origDate>
                      </note>
                   </origin>
                   <provenance>
@@ -144,6 +144,9 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2018-03-02" xml:id="fix-dates">
+            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+         </change>
          <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>

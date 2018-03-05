@@ -125,9 +125,9 @@
                      <locus>fol.1a</locus> Cataloging card refers to some information about the manuscript in english</accMat>
                </physDesc>
                <history>
-                  <origin>
-                     <origDate type="written" calendar="#Gregorian">Gregorian</origDate>
-                     <origDate type="given" calendar="#Gregorian">Gregorian</origDate>
+                  <origin change="#fix-dates">
+                     
+                     
                      <quote type="colophon" facs="#i0175">
                         <locus>fol.169b.16</locus> فرغت من تسويد هدا الكتاب ٽعون الله الملك الوهاب</quote>
                   </origin>
@@ -593,6 +593,9 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
+         <change when="2018-03-02" xml:id="fix-dates">
+            <persName>Andrew Morrison</persName> Removed origDate tags around something which is not a date using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+         </change>
          <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>

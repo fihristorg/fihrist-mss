@@ -83,9 +83,9 @@
                   </additions>
                </physDesc>
                <history>
-                  <origin>
+                  <origin change="#fix-dates">
                      <origDate calendar="#Gregorian" notBefore="1209" notAfter="1209">1209 CE.</origDate>
-                     <origDate calendar="#Hijri-qamari">Produced on 20th Šaʿbān 605H.</origDate>
+                     <origDate notBefore="1208" notAfter="1209" calendar="#Hijri-qamari">Produced on 20th Šaʿbān 605H.</origDate>
                   </origin>
                </history>
                <additional>
@@ -122,6 +122,9 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2018-03-02" xml:id="fix-dates">
+            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+         </change>
          <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>

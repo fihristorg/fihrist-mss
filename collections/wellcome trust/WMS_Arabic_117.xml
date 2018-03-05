@@ -125,8 +125,8 @@
                   <accMat facs="#i0002">Cataloging card by R Walzer with corrections and additions by A.Z. Iskandar indicating the title and the authorship of the work.</accMat>
                </physDesc>
                <history>
-                  <origin>
-                     <origDate type="approxDate" calendar="#Gregorian">19th cent.</origDate>
+                  <origin change="#fix-dates">
+                     <origDate notBefore="1800" notAfter="1900" type="approxDate" calendar="#Gregorian">19th cent.</origDate>
                   </origin>
                </history>
                <additional>
@@ -228,6 +228,9 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
+         <change when="2018-03-02" xml:id="fix-dates">
+            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+         </change>
          <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>

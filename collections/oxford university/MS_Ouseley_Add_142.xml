@@ -77,9 +77,9 @@
                   </handDesc>
                </physDesc>
                <history>
-                  <origin>
+                  <origin change="#fix-dates">
                      <origPlace>Gujarat</origPlace>
-                     <origDate calendar="#Hijri-qamari">27th Jumādá I 1205?</origDate>
+                     <origDate notBefore="1790" notAfter="1791" calendar="#Hijri-qamari">27th Jumādá I 1205?</origDate>
                      <origDate calendar="#Gregorian" when="1791-02-01">1st February 1791</origDate>
                   </origin>
                </history>
@@ -170,6 +170,9 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2018-03-02" xml:id="fix-dates">
+            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+         </change>
          <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>

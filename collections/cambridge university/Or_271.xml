@@ -84,10 +84,10 @@
                   </handDesc>
                </physDesc>
                <history>
-                  <origin>
-                     <origDate calendar="#Hijri-qamari" when="1237">1237</origDate>
+                  <origin change="#fix-dates">
+                     <origDate notBefore="1821" notAfter="1822" calendar="#Hijri-qamari">1237</origDate>
                      <origDate calendar="#Gregorian" when="1821">1821-22</origDate>
-                     <note>Copied from an original dated on <origDate calendar="#Hijri-qamari" when="1183">1183</origDate> / <origDate calendar="#Gregorian" when="1769">1769-70</origDate>.</note>
+                     <note>Copied from an original dated on <origDate notBefore="1769" notAfter="1770" calendar="#Hijri-qamari">1183</origDate> / <origDate calendar="#Gregorian" when="1769">1769-70</origDate>.</note>
                   </origin>
                   <acquisition>Bequest of <persName type="supplied" key="person_f3329">Professor E.B. Cowell (1826-1903)</persName> in <date calendar="#Gregorian">1903</date>.</acquisition>
                </history>
@@ -128,6 +128,9 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2018-03-02" xml:id="fix-dates">
+            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+         </change>
          <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>

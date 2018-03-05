@@ -78,8 +78,8 @@
                   </bindingDesc>
                </physDesc>
                <history>
-                  <origin>
-                     <origDate calendar="#Hijri-qamari" when="1215" evidence="conjecture">1215 ca.</origDate>
+                  <origin change="#fix-dates">
+                     <origDate notBefore="1800" notAfter="1801" calendar="#Hijri-qamari" evidence="conjecture">1215 ca.</origDate>
                      <origDate calendar="#Gregorian" when="1800" evidence="conjecture">1800 ca.</origDate>
                   </origin>
                   <acquisition>Acquired from the library of <persName type="standard" key="person_f3794">Shakespear, John, 1775-1858</persName> in <date calendar="#Gregorian" when="1972">1972</date>
@@ -116,6 +116,9 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2018-03-02" xml:id="fix-dates">
+            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+         </change>
          <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>

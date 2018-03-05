@@ -145,18 +145,18 @@
                   </handDesc>
                </physDesc>
                <history>
-                  <origin>
+                  <origin change="#fix-dates">
                      <ref target="#a1">
-                        <origDate calendar="#Hijri-qamari" when="0411">411</origDate>
+                        <origDate notBefore="1020" notAfter="1021" calendar="#Hijri-qamari">411</origDate>
                         <origDate calendar="#Gregorian" when="1020">1020</origDate>
                      </ref>
                      <ref target="#a2">
-                        <origDate calendar="#Hijri-qamari" when="0922">922</origDate>
+                        <origDate notBefore="1516" notAfter="1517" calendar="#Hijri-qamari">922</origDate>
                         <origDate calendar="#Gregorian" when="1516">1516</origDate>
                      </ref>
                      <ref target="#a">
-                        <origDate calendar="#Hijri-qamari">undated</origDate>
-                        <origDate calendar="#Gregorian">Gregorian</origDate>
+                        undated
+                        
                      </ref>
                   </origin>
                   <acquisition>Bought from <persName key="person_f4085">Sotheby's</persName> in <date calendar="#Gregorian">no date</date>.</acquisition>
@@ -224,6 +224,9 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2018-03-02" xml:id="fix-dates">
+            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements and removed origDate tags around something which is not a date using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+         </change>
          <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>

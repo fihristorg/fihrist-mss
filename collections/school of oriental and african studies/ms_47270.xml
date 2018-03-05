@@ -183,18 +183,18 @@
                   </bindingDesc>
                </physDesc>
                <history>
-                  <origin>
+                  <origin change="#fix-dates">
                      <ref target="a1"/>
-                     <p>copied in</p>
-                     <origDate calendar="#Hijri-qamari">990</origDate>
+                     copied in
+                     <origDate notBefore="1582" notAfter="1583" calendar="#Hijri-qamari">990</origDate>
                      <origDate calendar="#Gregorian" when="1579">/1582</origDate>
                      <ref target="a2"/>
-                     <p>copied in</p>
-                     <origDate calendar="#Hijri-qamari">987</origDate>
+                     copied in
+                     <origDate notBefore="1579" notAfter="1580" calendar="#Hijri-qamari">987</origDate>
                      <origDate calendar="#Gregorian" when="1579">/1579</origDate>
                      <ref target="a3"/>
-                     <p>copied in</p>
-                     <origDate calendar="#Hijri-qamari">Dhu al-hajj 987</origDate>
+                     copied in
+                     <origDate notBefore="1579" notAfter="1580" calendar="#Hijri-qamari">Dhu al-hajj 987</origDate>
                      <origDate calendar="#Gregorian" when="1579">/1579</origDate>
                   </origin>
                   <acquisition>
@@ -237,6 +237,9 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2018-03-02" xml:id="fix-dates">
+            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+         </change>
          <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>

@@ -325,12 +325,12 @@
                   </bindingDesc>
                </physDesc>
                <history>
-                  <origin>
+                  <origin change="#fix-dates">
                      <ref target="#a1 #a2 #a3 #a4">
                         <origPlace>Unknown place of origin</origPlace>
                      </ref>
                      <ref target="#a1 #a2 #a3">
-                        <origDate calendar="#Hijri-qamari">1248</origDate>
+                        <origDate notBefore="1832" notAfter="1833" calendar="#Hijri-qamari">1248</origDate>
                      </ref>
                      <ref target="#a3">
                         <note>This copy is scribed during the author's life.</note>
@@ -342,7 +342,7 @@
                         <origDate calendar="#Hijri-qamari">12th century</origDate>
                      </ref>
                      <ref target="#a4">
-                        <origDate calendar="#Gregorian">18th century</origDate>
+                        <origDate notBefore="1700" notAfter="1800" calendar="#Gregorian">18th century</origDate>
                      </ref>
                   </origin>
                   <acquisition>Donated to The Ferdowsi Library by Dr Caro Minasian in 1972.</acquisition>
@@ -423,6 +423,9 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2018-03-02" xml:id="fix-dates">
+            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+         </change>
          <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>

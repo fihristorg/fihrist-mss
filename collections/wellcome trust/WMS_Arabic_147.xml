@@ -131,9 +131,9 @@
                   <accMat facs="#i0823">Cataloging card refers to some information about the manuscript in english</accMat>
                </physDesc>
                <history>
-                  <origin>
-                     <origDate type="written" facs="#i0820" calendar="#Hijri-shamsi">ثمان وثماںين وسبعمايه</origDate>
-                     <origDate type="given" calendar="#Gregorian" facs="#i0820">1386</origDate>
+                  <origin change="#fix-dates">
+                     ثمان وثماںين وسبعمايه
+                     <origDate when="1386" type="given" calendar="#Gregorian" facs="#i0820">1386</origDate>
                      <quote type="colophon" facs="#i0820">
                         <locus>Fol.406b.5</locus> وقع الفراغ من تحرير هذه النسخه الشريفه يوم الأربعآء وقت العصر فى منتصف شهر شوال المبارك فى مدينة اياثلوغ حماها الله تعالى سنه ثمان وثماںيں وسبعمايه من يد العبد الضعٹف النحيف المحتاج الى رحمه الودود سليمان ٿن محمد القونوى عفر الله له ولوالديه واحسن اليهما واليه والحمد لله اولا واخرا وظاهرا وباطنا وصلى الله على سٹدنا محمد واله اجمعٿں وحسٿنا الله ونعم الوكيل والله اعلم ٿالصواب</quote>
                   </origin>
@@ -308,6 +308,9 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
+         <change when="2018-03-02" xml:id="fix-dates">
+            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements and removed origDate tags around something which is not a date using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+         </change>
          <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>

@@ -76,8 +76,8 @@
                   </additions>
                </physDesc>
                <history>
-                  <origin>
-                     <origDate calendar="#Gregorian" type="approxDate">19th cent.</origDate>
+                  <origin change="#fix-dates">
+                     <origDate notBefore="1800" notAfter="1900" calendar="#Gregorian" type="approxDate">19th cent.</origDate>
                      <quote type="colophon" facs="#i0059">تم كتاب منبع الحياة وقد نقلت هذه النسخة على نسخة قديمة مكتوب فى اخرها دخل فى ملك الفقير ابراهيم ولد هدايا طبيب سنة ١٢٠٠ فى غرة رجب // وتلك النسخة المذكورة خطها دقيق جميل وقطع الورق صغير تبلغ مائتين واربعين صحيفة</quote>
                   </origin>
                   <provenance>Sāmī Ibrāhīm Ḥaddād (1986).</provenance>
@@ -618,6 +618,9 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
+         <change when="2018-03-02" xml:id="fix-dates">
+            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+         </change>
          <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>

@@ -78,9 +78,9 @@
                   </additions>
                </physDesc>
                <history>
-                  <origin>
-                     <note>The copy was completed in <origDate calendar="#Hijri-qamari">1163 H</origDate>
-                        <origDate calendar="#Gregorian">(1691 AD)</origDate> by <persName type="copyist" key="person_f2332">Muhammad al-Ghafiri</persName>.</note>
+                  <origin change="#fix-dates">
+                     <note>The copy was completed in <origDate notBefore="1749" notAfter="1750" calendar="#Hijri-qamari">1163 H</origDate>
+                        <origDate when="1691" calendar="#Gregorian">(1691 AD)</origDate> by <persName type="copyist" key="person_f2332">Muhammad al-Ghafiri</persName>.</note>
                      <origDate from="1691" to="1691">1691 AD.</origDate>
                   </origin>
                </history>
@@ -118,6 +118,9 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2018-03-02" xml:id="fix-dates">
+            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+         </change>
          <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>

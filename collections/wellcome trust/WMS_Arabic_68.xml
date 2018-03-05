@@ -108,9 +108,9 @@
                   <accMat facs="#i0003">Cataloging card refers to some information about the manuscript in english.</accMat>
                </physDesc>
                <history>
-                  <origin>
+                  <origin change="#fix-dates">
                      <origDate type="written" calendar="#Hijri-shamsi">Ğumāda ath-thānī 1063</origDate>
-                     <origDate type="given" calendar="#Gregorian">April 1653</origDate>
+                     <origDate when="1653" type="given" calendar="#Gregorian">April 1653</origDate>
                      <quote type="colophon" facs="#i0026">
                         <locus>fol.21b.3</locus> وقد اتفق تسويد هذه الرساله الشريفه التى هى اهم رسايل الشيخ ابي على عبد الله بن سينا <gap reason="omitted"/> على يد المحتاج الى رحمه الله الملك الغنى كلب صيں <gap reason="omitted"/> فى شهر جمادى الثانى من شهور ثلث وستين بعد الالف من الهجرة النبويه المقدسه حامدً الله تعالى تمت</quote>
                   </origin>
@@ -277,6 +277,9 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
+         <change when="2018-03-02" xml:id="fix-dates">
+            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+         </change>
          <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>

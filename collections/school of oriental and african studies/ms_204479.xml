@@ -196,19 +196,19 @@
                   </bindingDesc>
                </physDesc>
                <history>
-                  <origin>
+                  <origin change="#fix-dates">
                      <ref target="a1"/>
-                     <p>copied in</p>
-                     <origDate calendar="#Hijri-qamari">1112</origDate>
-                     <origDate calendar="#Gregorian">/1700</origDate>
+                     copied in
+                     <origDate notBefore="1700" notAfter="1701" calendar="#Hijri-qamari">1112</origDate>
+                     <origDate when="1700" calendar="#Gregorian">/1700</origDate>
                      <ref target="a2"/>
-                     <p>copied in</p>
-                     <origDate calendar="#Hijri-qamari">no date</origDate>
-                     <origDate calendar="#Gregorian">no date</origDate>
+                     copied in
+                     no date
+                     
                      <ref target="a3"/>
-                     <p>copied in</p>
-                     <origDate calendar="#Hijri-qamari">1046</origDate>
-                     <origDate calendar="#Gregorian">/1636</origDate>
+                     copied in
+                     <origDate notBefore="1636" notAfter="1637" calendar="#Hijri-qamari">1046</origDate>
+                     <origDate when="1636" calendar="#Gregorian">/1636</origDate>
                   </origin>
                   <acquisition>
                      <date calendar="#Gregorian">Gregorian</date>
@@ -250,6 +250,9 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2018-03-02" xml:id="fix-dates">
+            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements and removed origDate tags around something which is not a date using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+         </change>
          <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>

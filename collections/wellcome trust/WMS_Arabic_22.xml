@@ -51,9 +51,9 @@
                   <accMat facs="#i0003">Cataloging Card refers to some information about the manuscript in english.</accMat>
                </physDesc>
                <history>
-                  <origin>
+                  <origin change="#fix-dates">
                      <origDate type="written" facs="#i0439" calendar="#Hijri-shamsi">10 dul-Qa`dah 1131</origDate>
-                     <origDate type="given" calendar="#Gregorian">24th septembre 1719</origDate>
+                     <origDate when="1719" type="given" calendar="#Gregorian">24th septembre 1719</origDate>
                      <quote type="colophon" facs="#i0439">
                         <locus>fol.428b.10</locus> وكان الفراغ من كتابة هذا الكتاب وللـه الحمد والمنه يوم الاثنين المبارك عاشر ذو القعدة الحرام ختام سنة 1131 علي يد العبد الفقير الحقير <gap reason="omitted"/> محمد صالح بن رمضان بن حمد بن داوود غفر اللـه له ولوالديه ولمشايخه ولاموات المسلمين والمسلمات والمومنين والمومنات الاحيا منهم والاموات والحمد للـه وحده ٿم</quote>
                   </origin>
@@ -427,6 +427,9 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
+         <change when="2018-03-02" xml:id="fix-dates">
+            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+         </change>
          <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>

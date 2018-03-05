@@ -247,8 +247,8 @@
                   </bindingDesc>
                </physDesc>
                <history>
-                  <origin>
-                     <origDate calendar="#Hijri-qamari" when="1239">1239</origDate>
+                  <origin change="#fix-dates">
+                     <origDate notBefore="1823" notAfter="1824" calendar="#Hijri-qamari">1239</origDate>
                      <origDate calendar="#Gregorian" when="1824">1824</origDate>
                   </origin>
                   <provenance>The manuscript was purchased for £10 in September <date calendar="#Gregorian" when="1859">1859</date>, from a merchant at <placeName>Latakia</placeName>, into whose hands it fell in the time of <persName key="person_f1566">Ibrāḥīm Pasha</persName>
@@ -289,6 +289,9 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2018-03-02" xml:id="fix-dates">
+            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+         </change>
          <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>

@@ -95,8 +95,8 @@
                   </bindingDesc>
                </physDesc>
                <history>
-                  <origin>
-                     <origDate calendar="#Hijri-qamari">Hijri-qamari</origDate> 845 A.H <origDate calendar="#Gregorian">1441A.D</origDate>
+                  <origin change="#fix-dates">
+                      845 A.H <origDate when="1441" calendar="#Gregorian">1441A.D</origDate>
                   </origin>
                   <provenance>Written for Sultan Abu Said Shuja ad-Din Bahadur Khan. Later in library of Sultan Tipu in Mysore</provenance>
                   <acquisition>Wilkins, East India Company, 1806</acquisition>
@@ -124,6 +124,9 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
+         <change when="2018-03-02" xml:id="fix-dates">
+            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements and removed origDate tags around something which is not a date using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+         </change>
          <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
