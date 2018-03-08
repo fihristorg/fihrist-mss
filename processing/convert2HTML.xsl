@@ -83,7 +83,12 @@
     </xsl:template>
 
 
-
+    <!-- Do not output organization names as links, because Fihrist doesn't have an index for those -->
+    <xsl:template match="name[@type = 'org'] | orgName">
+        <span class="{name()}">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
 
 
 
