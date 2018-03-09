@@ -8,7 +8,7 @@ declare option saxon:output "indent=yes";
     let $collection := collection('../collections?select=*.xml;recurse=yes')
     let $people := $doc//tei:person[@xml:id]
 
-    let $authorkeys := distinct-values($collection//(tei:author|(tei:persName|tei:name[tei:persName])[parent::tei:author])/@key)
+    let $authorkeys := distinct-values($collection//tei:msItem/(tei:author|(tei:persName|tei:name[tei:persName])[parent::tei:author])/@key)
     let $subjectkeys := distinct-values($collection//tei:msItem/tei:title//(tei:persName|tei:name[tei:persName])/@key)
 
     for $person in $people
