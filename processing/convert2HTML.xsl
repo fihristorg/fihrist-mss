@@ -83,12 +83,14 @@
     </xsl:template>
 
 
+
     <!-- Do not output organization names as links, because Fihrist doesn't have an index for those -->
     <xsl:template match="name[@type = 'org'] | orgName">
         <span class="{name()}">
             <xsl:apply-templates/>
         </span>
     </xsl:template>
+
 
 
     <!-- Move bibliographic references (which can include a links to the digitial surrogates but those are not tagged any differently) 
@@ -115,5 +117,35 @@
             <xsl:apply-templates select="listBibl/bibl"/>
         </xsl:if>
     </xsl:template>
+    
+    
+    
+    <!-- The following templates should be moved into msdesc2html.xsl when I've tested their effect on other catalogues -->
+    <xsl:template match="list">
+        <ul>
+            <xsl:apply-templates/>
+        </ul>
+    </xsl:template>
+    
+    <xsl:template match="item">
+        <li>
+            <xsl:apply-templates/>
+        </li>
+    </xsl:template>
+    
+    <xsl:template match="label">
+        <span class="mslabel"><!-- The class of "label" clashes with something in the CSS -->
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+    
+    
+    
+    <!-- These should be fixed in the source TEI -->
+    <xsl:template match="recordHist/source/list[count(item) eq 1] | recordHist/source/list[count(item) eq 1]/item">
+        <xsl:apply-templates/>
+    </xsl:template>
+    
+    
 
 </xsl:stylesheet>
