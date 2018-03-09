@@ -91,6 +91,29 @@
     </xsl:template>
 
 
-
+    <!-- Move bibliographic references (which can include a links to the digitial surrogates but those are not tagged any differently) 
+         so they appear under a separate subheading. First override their display in document order... -->
+    <xsl:template match="msItem/listBibl"></xsl:template>
+    
+    <!-- ...then implement a named-template that will be called at the appropriate point in msdesc2html.xsl to display after the rest 
+         of the item description but before nested msItems, if any. The context for this template is the msItem. -->
+    <xsl:template name="MsItemFooter">
+        <xsl:if test="listBibl/bibl">
+            <xsl:choose>
+                <xsl:when test="@n or ancestor::msItem[@xml:id and title] or following-sibling::msItem or preceding-sibling::msItem">
+                    <h4>
+                        <xsl:copy-of select="bod:standardText('References')"/>
+                    </h4>
+                </xsl:when>
+                <xsl:otherwise>
+                    <h3>
+                        <xsl:copy-of select="bod:standardText('References')"/>
+                    </h3>
+                </xsl:otherwise>
+            </xsl:choose>
+            <!-- Return control back to msdesc2html.xsl -->
+            <xsl:apply-templates select="listBibl/bibl"/>
+        </xsl:if>
+    </xsl:template>
 
 </xsl:stylesheet>
