@@ -122,19 +122,19 @@
     
     <!-- The following templates should be moved into msdesc2html.xsl when I've tested their effect on other catalogues -->
     <xsl:template match="list">
-        <ul>
+        <ul class="mslist">
             <xsl:apply-templates/>
         </ul>
     </xsl:template>
     
     <xsl:template match="item">
-        <li>
+        <li class="mslistitem">
             <xsl:apply-templates/>
         </li>
     </xsl:template>
     
     <xsl:template match="label">
-        <span class="mslabel"><!-- The class of "label" clashes with something in the CSS -->
+        <span class="mslabel"><!-- Cannot use class of "label" as clashes with something else in the CSS -->
             <xsl:apply-templates/>
         </span>
     </xsl:template>
