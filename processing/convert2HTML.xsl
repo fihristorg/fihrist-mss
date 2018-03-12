@@ -44,7 +44,7 @@
 
 
 
-    <!-- The next two templates override the default by putting authors and titles on separate lines, because in Fihirst there are often multiple
+    <!-- The next three templates override the default by putting authors, editors and titles on separate lines, because in Fihirst there are often multiple
          titles in different languages, and versions of the author name in different languages, which gets confusing all on one line -->
     <xsl:template match="msItem/author">
         <div class="{name()}">
@@ -79,6 +79,26 @@
             <span class="italic">
                 <xsl:apply-templates/>
             </span>
+        </div>
+    </xsl:template>
+    
+    <xsl:template match="msItem/editor">
+        <xsl:variable name="rolelabel" select="(@role, 'editor')[1]"/>
+        <div class="tei-editor{ if ($rolelabel ne 'editor') then concat(' tei-', lower-case($rolelabel)) else ''}">
+            <span class="tei-label">
+                <xsl:choose>
+                    <xsl:when test="$rolelabel ne 'editor'">
+                        <xsl:value-of select="upper-case(substring($rolelabel, 1, 1))"/>
+                        <xsl:copy-of select="lower-case(substring($rolelabel, 2))"/>
+                     <xsl:text>: </xsl:text>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:copy-of select="bod:standardText('Editor:')"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+                <xsl:text> </xsl:text>
+            </span>
+            <xsl:apply-templates/>
         </div>
     </xsl:template>
 
