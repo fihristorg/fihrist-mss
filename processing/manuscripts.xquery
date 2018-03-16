@@ -66,6 +66,7 @@ declare option saxon:output "indent=yes";
             { bod:physForm($x//tei:physDesc/tei:objectDesc, 'ms_physform_sm', 'Not specified') }
             { bod:languages($x//tei:sourceDesc//tei:textLang, 'lang_sm', 'Not specified') }
             { bod:centuries($x//tei:origin//tei:origDate[@calendar = '#Gregorian' or @calendar = '#Hijri-qamari'], 'ms_date_sm', if ($x//tei:origin//tei:origDate[@calendar = '#Gregorian' or @calendar = '#Hijri-qamari']) then 'Date not machine-readable' else if ($x//tei:origin//tei:origDate) then 'Date in unsupported calendar' else 'Undated') }
+            { bod:string2one(bod:shortenToNearestWord(string-join(($x//tei:msContents/tei:summary)[1]//text(), ' '), 128), 'ms_summary_sni') }
             { bod:indexHTML($htmldoc, 'ms_textcontent_tni') }
             { bod:displayHTML($htmldoc, 'display') }
         </doc>
