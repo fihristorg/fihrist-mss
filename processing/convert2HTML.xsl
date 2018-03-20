@@ -22,15 +22,24 @@
 
 
 
-    <!-- When two dates in different calendars are given, add some text to explain the difference. -->
-    <xsl:template match="origin//origDate[@calendar and preceding-sibling::origDate[not(@calendar = current()/@calendar)]]">
+    <!-- Append the calendar if it does not appear to have been mentioned in the origDate text -->
+    <xsl:template match="origDate[@calendar]">
         <span class="{name()}">
-            <xsl:text>(</xsl:text>
             <xsl:apply-templates/>
-            <xsl:text> in the </xsl:text>
-            <xsl:value-of select="replace(@calendar, '#', '')"/>
-            <xsl:text> calendar)</xsl:text>
+            <xsl:choose>
+                <xsl:when test="@calendar = '#Hijri-qamari' and not(matches(string-join(.//text(), ''), '[\d\s](H|AH|A\.H|Hijri)'))">
+                    <xsl:text> AH</xsl:text>
+                </xsl:when>
+                <xsl:when test="@calendar = '#Gregorian' and not(matches(string-join(.//text(), ''), '[\d\s](CE|AD|C\.E|A\.D|Gregorian)'))">
+                    <xsl:text> CE</xsl:text>
+                </xsl:when>
+            </xsl:choose>
         </span>
+        <xsl:variable name="nextelem" select="following-sibling::*[1]"/>
+        <xsl:if test="following-sibling::*[self::origDate] and not(following-sibling::node()[1][self::text()][string-length(normalize-space(.)) gt 0])">
+            <!-- Insert a semi-colon between adjacent dates without text between them -->
+            <xsl:text>; </xsl:text>
+        </xsl:if>
     </xsl:template>
     
     
