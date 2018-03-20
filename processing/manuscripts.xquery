@@ -14,8 +14,11 @@ declare option saxon:output "indent=yes";
         
         let $repository := normalize-space($x//tei:msDesc/tei:msIdentifier/tei:repository[1]/text())
         let $institution := normalize-space($x//tei:msDesc/tei:msIdentifier/tei:institution/text())
+        let $shelfmark := normalize-space($x//tei:msDesc/tei:msIdentifier/tei:idno[1]/text())
+        let $normalizedshelfmark := replace($shelfmark, '\W', ' ')
+        let $sortshelfmark := upper-case(replace($normalizedshelfmark, '\s', ''))
         let $title := concat(
-                            $x//tei:msDesc/tei:msIdentifier/tei:idno[1]/text(), 
+                            $shelfmark, 
                             ' (', 
                             $repository,
                             if ($repository ne $institution) then
@@ -23,7 +26,7 @@ declare option saxon:output "indent=yes";
                             else
                                 ')'
                         )
-                            
+
         (:
             Guide to Solr field naming conventions:
                 ms_ = manuscript index field
@@ -41,11 +44,10 @@ declare option saxon:output "indent=yes";
             <field name="id">{ $msid }</field>
             <field name="filename_sni">{ base-uri($x) }</field>
             { bod:one2one($x//tei:msDesc/tei:msIdentifier/tei:collection, 'ms_collection_s', 'Not specified') }
-            { bod:one2one($x//tei:msDesc/tei:msIdentifier/tei:idno[@type="shelfmark"], 'ms_shelfmark_s') }
-            { bod:one2one($x//tei:msDesc/tei:msIdentifier/tei:idno[@type="shelfmark"], 'ms_shelfmark_sort') }
-            { bod:one2one($x//tei:msDesc/tei:msIdentifier/tei:idno, 'ms_shelfmark_s') }
-            { bod:one2one($x//tei:msDesc/tei:msIdentifier/tei:idno, 'ms_shelfmark_sort') }
             { bod:one2one($x//tei:msDesc/tei:msIdentifier/tei:institution, 'institution_sm', 'Not specified') }
+            { bod:string2one($shelfmark, 'ms_shelfmark_s') }
+            { bod:strings2many(($normalizedshelfmark, $sortshelfmark), 'ms_altshelfmark_sm')}
+            { bod:string2one($sortshelfmark, 'ms_shelfmark_sort') }
             { bod:one2one(($x//tei:publicationStmt/tei:pubPlace/tei:address/tei:addrLine/tei:email, $x//tei:additional/tei:adminInfo/tei:availability//tei:email)[1], 'ms_contactemail_sni') }
             { bod:string2one($title, 'title') }
             { bod:many2one($x//tei:msDesc/tei:msIdentifier/tei:repository, 'ms_repository_s') }
