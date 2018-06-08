@@ -7,16 +7,16 @@ declare option saxon:output "indent=yes";
     let $doc := doc("../authority/works.xml")
     let $collection := collection("../collections?select=*.xml;recurse=yes")
     let $works := $doc//tei:listBibl/tei:bibl[@xml:id]
-   
+       
     for $work in $works
+    
         let $id := $work/@xml:id/string()
         let $title := normalize-space($work//tei:title[@type="uniform"][1]/string())
         let $variants := $work//tei:title[@type="variant"]
         
-        let $targetids := (for $i in $work/tei:ref/@target/string() return $i)
-        let $mss := $collection//tei:TEI[.//tei:msItem[@xml:id = $targetids]]
-        
-        let $langs := $mss//tei:msItem[@xml:id = $targetids]//tei:textLang
+        let $mss := $collection//tei:TEI[.//tei:title[@key = $id]]
+                
+        let $langs := $mss//tei:msItem[.//tei:title[@key = $id]]//tei:textLang
         
         return if (count($mss) > 0) then
         <doc>

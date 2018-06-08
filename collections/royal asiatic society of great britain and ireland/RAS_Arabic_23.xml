@@ -2,7 +2,7 @@
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7483">
-   <TEI xmlns="" mlns="http://www.tei-c.org/ns/1.0">
+
       <teiHeader xmlns="http://www.tei-c.org/ns/1.0">
          <fileDesc>
             <titleStmt>
@@ -52,9 +52,9 @@
                            <persName xml:lang="ar-Latn-x-lc" type="standard">Kharshī, Muḥammad ibn ʻAbd Allāh, 1601 or 2-1689 or 90</persName>
                            <persName xml:lang="ar">الخرشي، محمد بن عبد الله</persName>
                         </author>
-                        <title xml:lang="ar-Latn-x-lc">Sharḥ mukhtaṣar al-jalīl</title>
-                        <title xml:lang="ar-Latn-x-lc" type="alt">-</title>
-                        <title xml:lang="ar">شرح مختصر الجليل</title>
+                        <title xml:lang="ar-Latn-x-lc" key="work_1341">Sharḥ mukhtaṣar al-jalīl</title>
+                        <title xml:lang="ar-Latn-x-lc" type="alt" key="work_1341">-</title>
+                        <title xml:lang="ar" key="work_1341">شرح مختصر الجليل</title>
                         <incipit xml:lang="ar"/>
                         <explicit xml:lang="ar" defective="true"/>
                         <note>
@@ -131,6 +131,9 @@
             </textClass>
          </profileDesc>
          <revisionDesc>
+         <change when="2018-06-08">
+            <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
+         </change>
          <change when="2018-03-15" xml:id="add-summary">
             <persName>Andrew Morrison</persName> Added summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl">add-summaries.xsl</ref>
          </change>
@@ -145,5 +148,10 @@
             </change>
          </revisionDesc>
       </teiHeader>
-   </TEI>
+    <text>
+        <body>
+            <p><!--Body paragraph provided for validation and future transcription--></p>
+        </body>
+    </text>
+   
 </TEI>
