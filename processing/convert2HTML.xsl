@@ -62,7 +62,7 @@
                 <xsl:text> </xsl:text>
             </span>
             <xsl:choose>
-                <xsl:when test="@key">
+                <xsl:when test="@key and not(@key='')">
                     <a>
                         <xsl:attribute name="href">
                             <xsl:value-of select="$website-url"/>
@@ -108,7 +108,7 @@
                 <xsl:text> </xsl:text>
             </span>
             <xsl:choose>
-                <xsl:when test="@key">
+                <xsl:when test="@key and not(@key='')">
                     <a>
                         <xsl:attribute name="href">
                             <xsl:value-of select="$website-url"/>
@@ -203,7 +203,7 @@
                 </h3>
                 <ul>
                     <!-- First the terms with keys, which can be turned into links to their entry in the subjects index -->
-                    <xsl:for-each select="distinct-values($profiledesc//term/@key)">
+                    <xsl:for-each select="distinct-values($profiledesc//term/@key[not(. = '')])">
                         <xsl:variable name="key" as="xs:string" select="."/>
                         <xsl:variable name="termswiththiskey" as="xs:string*" select="distinct-values(for $term in $profiledesc//term[@key = $key] return normalize-space(string-join($term//text(), ' ')))[string-length() gt 0]"/>
                         <li>
@@ -225,7 +225,7 @@
                     </xsl:for-each>
                     
                     <!-- Next the terms without keys, which can only be displayed as text -->
-                    <xsl:for-each select="distinct-values(for $term in $profiledesc//term[not(@key)] return normalize-space(string-join($term//text(), ' ')))[string-length() gt 0]">
+                    <xsl:for-each select="distinct-values(for $term in $profiledesc//term[not(@key) or @key=''] return normalize-space(string-join($term//text(), ' ')))[string-length() gt 0]">
                         <li>
                             <xsl:value-of select="."/>
                         </li>
@@ -234,7 +234,7 @@
             </div>
         </xsl:if>
     </xsl:template>
-    
+        
     
     
 </xsl:stylesheet>
