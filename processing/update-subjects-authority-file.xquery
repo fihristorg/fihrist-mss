@@ -91,9 +91,9 @@ processing-instruction xml-model {'href="authority-schematron.sch" type="applica
                             <ref>
                                 {
                                 if (starts-with($k, 'subject_sh')) then
-                                    attribute target { concat('http://id.loc.gov/authorities/subjects/', substring-after($k, 'subject_')) }
+                                    attribute target { concat('https://id.loc.gov/authorities/subjects/', substring-after($k, 'subject_'), '.html') }
                                 else
-                                    attribute target { concat('http://id.loc.gov/authorities/names/', substring-after($k, 'subject_')) }
+                                    attribute target { concat('https://id.loc.gov/authorities/names/', substring-after($k, 'subject_'), '.html') }
                                 }
                                 <title>LC</title>
                             </ref>

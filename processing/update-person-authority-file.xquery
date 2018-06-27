@@ -104,7 +104,7 @@ processing-instruction xml-model {'href="authority-schematron.sch" type="applica
                 <note type="links">
                     <list type="links">
                         <item>
-                            <ref target="https://viaf.org/viaf/{ substring-after($k, 'person_') }">
+                            <ref target="https://viaf.org/viaf/{ substring-after($k, 'person_') }/">
                                 <title>VIAF</title>
                             </ref>
                         </item>
