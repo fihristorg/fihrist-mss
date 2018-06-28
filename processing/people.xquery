@@ -20,7 +20,7 @@ declare option saxon:output "indent=yes";
         let $variants := $person/tei:persName[@type="variant"]
         let $noteitems := $person/tei:note[@type="links"]//tei:item
         
-        let $mss := $collection//tei:TEI[.//(tei:persName|tei:author|tei:name[tei:persName])[@key = $id]]
+        let $mss := $collection//tei:TEI[.//(tei:persName|tei:author|tei:name[tei:persName]|tei:editor)[@key = $id]]
         
         let $roles := distinct-values((
                                         $mss//(tei:persName|tei:author|tei:name[tei:persName]|tei:editor)[@key = $id or .//@key = $id]/@role/tokenize(normalize-space(.), ' '),  
@@ -55,7 +55,8 @@ declare option saxon:output "indent=yes";
                 order by $refs[1]
                 for $ref in $refs
                     let $linktarget := $ref/string(@target)
-                    let $linktext := $ref/normalize-space(tei:title/string())
+                    let $linktitle := $ref/normalize-space(tei:title/string())
+                    let $linktext := if ($linktitle eq 'VIAF') then 'VIAF: Virtual International Authority File (authority record)' else if ($linktitle eq 'LC') then 'Library of Congress (authority record)' else $linktitle
                     order by $linktarget
                     return <field name="link_external_smni">{ concat($linktarget, "|", $linktext)}</field>
             }

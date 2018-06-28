@@ -47,7 +47,7 @@
     <!-- In Fihrist, persNames are quite often nested inside name or author elements, which have their own @key. It is that @key which 
          has been chosen when building authority files, and will be in the index. Not the @key of the persName. So, override the default 
          and do NOT output these persNames as links. -->
-    <xsl:template match="name[@key]/persName | author[@key]/persName">
+    <xsl:template match="name[@key]/persName | author[@key]/persName | editor[@key]/persName">
         <xsl:apply-templates/>
     </xsl:template>
 
@@ -92,20 +92,11 @@
     </xsl:template>
     
     <xsl:template match="msItem/editor">
-        <xsl:variable name="rolelabel" select="(@role, 'editor')[1]"/>
-        <div class="tei-editor{ if ($rolelabel ne 'editor') then concat(' tei-', lower-case($rolelabel)) else ''}">
+        <xsl:variable name="rolelabel" as="xs:string" select="if(@role) then bod:personRoleLookup(@role) else 'Editor'"/>
+        <div class="tei-editor">
             <span class="tei-label">
-                <xsl:choose>
-                    <xsl:when test="$rolelabel ne 'editor'">
-                        <xsl:value-of select="upper-case(substring($rolelabel, 1, 1))"/>
-                        <xsl:copy-of select="lower-case(substring($rolelabel, 2))"/>
-                        <xsl:text>: </xsl:text>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:copy-of select="bod:standardText('Editor:')"/>
-                    </xsl:otherwise>
-                </xsl:choose>
-                <xsl:text> </xsl:text>
+                <xsl:value-of select="$rolelabel"/>
+                <xsl:text>: </xsl:text>
             </span>
             <xsl:choose>
                 <xsl:when test="@key and not(@key='')">
