@@ -147,8 +147,30 @@
                     </h3>
                 </xsl:otherwise>
             </xsl:choose>
+            <xsl:choose>
+                <xsl:when test="not(listBibl/head)">
             <!-- Return control back to msdesc2html.xsl -->
             <xsl:apply-templates select="listBibl/bibl"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:for-each select="listBibl">
+                        <xsl:if test="head">
+                            <h4>
+                                <xsl:apply-templates select="head"/>
+                            </h4>
+                        </xsl:if>
+                        <ul>
+                            <xsl:for-each select="bibl">
+                                <li>
+                                    <!-- Return control back to msdesc2html.xsl -->
+                                    <xsl:apply-templates select="."/>
+                                </li>
+                            </xsl:for-each>
+                        </ul>
+                    </xsl:for-each>
+                </xsl:otherwise>
+            </xsl:choose>
+            
         </xsl:if>
     </xsl:template>
     
