@@ -101,10 +101,12 @@ processing-instruction xml-model {'href="authority-schematron.sch" type="applica
     
     let $allnewworks := ($worksfrompreviousrun, $newworks)
     
-    let $dedupednewworks := (
-        for $w at $pos in $allnewworks  
+    let $dedupedworks := (
+        for $w at $pos in $allnewworks
+            order by exists($w/@xml:id) descending, number(substring-after($w/@xml:id, 'work_')) ascending (: Sort entries with IDs first, and lower IDs before higher ones :)
             return 
             if (some $v in $w/norm/text() satisfies $v = $allnewworks[position() lt $pos]/norm/text()) then
+                (: This is a duplicate of another entry so skip it :)
                 ()
             else
                 let $duplicates := $allnewworks[position() gt $pos and (some $v in ./norm/text() satisfies $v = $w/norm/text())]
@@ -131,15 +133,15 @@ processing-instruction xml-model {'href="authority-schematron.sch" type="applica
                 </bibl>
     )
     
-    let $dedupednewworkswithids := (
-        for $w at $pos in $dedupednewworks[not(exists(@xml:id))]
+    let $dedupedworkswithids := (
+        for $w at $pos in $dedupedworks[not(exists(@xml:id))]
             return
             <bibl xml:id="{ concat('work_', ($highestcurrentkey + $pos)) }">
                 { $w/* }
                 { $w/comment() }
             </bibl>
         ,
-        $dedupednewworks[exists(@xml:id)]
+        $dedupedworks[exists(@xml:id)]
     )
 
     (: Output the new _additions authority file :)
@@ -150,7 +152,7 @@ processing-instruction xml-model {'href="authority-schematron.sch" type="applica
         $linebreak,
         comment{' TODO: Review the following entries, update their key attributes in the TEI files, then cut and paste them into works_base.xml '},
         $linebreak,
-        for $e in $dedupednewworkswithids order by $e/title[@type='uniform']/text() return ($e, $linebreak),
+        for $e in $dedupedworkswithids order by $e/title[@type='uniform']/text() return ($e, $linebreak),
         $linebreak,
         $linebreak
     )

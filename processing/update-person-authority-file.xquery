@@ -63,7 +63,7 @@ processing-instruction xml-model {'href="authority-schematron.sch" type="applica
             <listPerson>
 {
     let $newviafpeople := (      
-        for $p in $collection//(tei:author|tei:editor|tei:persName[not(ancestor::*/@key)]|tei:name[tei:persName])[matches(@key, 'person_\d+') and not(@key = $currentkeys)]
+        for $p in $collection//(tei:author|tei:editor|tei:persName[not(ancestor::tei:author/@key or ancestor::tei:editor/@key)]|tei:name[tei:persName])[matches(@key, 'person_\d+') and not(@key = $currentkeys)]
             let $names := 
                 if ($p/tei:persName) then
                     for $n in $p/tei:persName
@@ -121,7 +121,7 @@ processing-instruction xml-model {'href="authority-schematron.sch" type="applica
     let $viafpeoplefrompreviousrun := $additions[matches(@xml:id, 'person_\d+')]
     
     let $newlocalpeople := (
-        for $p in $collection//(tei:author|tei:editor|tei:persName[not(ancestor::*/@key)]|tei:name[tei:persName])[@key = '']
+        for $p in $collection//(tei:author|tei:editor|tei:persName[not(ancestor::tei:author/@key or ancestor::tei:editor/@key)]|tei:name[tei:persName])[@key = '']
             let $names := 
                 if ($p/tei:persName) then
                     for $n in $p/tei:persName
@@ -161,10 +161,12 @@ processing-instruction xml-model {'href="authority-schematron.sch" type="applica
     
     let $alllocalpeople := ($localpeoplefrompreviousrun, $newlocalpeople)
     
-    let $dedupednewlocalpeople := (
-        for $n at $pos in $alllocalpeople  
+    let $dedupedlocalpeople := (
+        for $n at $pos in $alllocalpeople
+            order by exists($n/@xml:id) descending, number(substring-after($n/@xml:id, 'person_f')) ascending (: Sort entries with IDs first, and lower IDs before higher ones :)
             return 
             if (some $v in $n/norm/text() satisfies $v = $alllocalpeople[position() lt $pos]/norm/text()) then
+                (: This is a duplicate of another entry, so skip it :)
                 ()
             else
                 let $duplicates := $alllocalpeople[position() gt $pos and (some $v in ./norm/text() satisfies $v = $n/norm/text())]
@@ -191,15 +193,15 @@ processing-instruction xml-model {'href="authority-schematron.sch" type="applica
                 </person>
     )
     
-    let $dedupednewlocalpeoplewithids := (
-        for $n at $pos in $dedupednewlocalpeople[not(exists(@xml:id))]
+    let $dedupedlocalpeoplewithids := (
+        for $n at $pos in $dedupedlocalpeople[not(exists(@xml:id))]
             return
             <person xml:id="{ concat('person_f', ($highestcurrentkey + $pos)) }">
                 { $n/* }
                 { $n/comment() }
             </person>
         ,
-        $dedupednewlocalpeople[exists(@xml:id)]
+        $dedupedlocalpeople[exists(@xml:id)]
     )
 
     (: Output the new _additions authority file :)
@@ -210,7 +212,7 @@ processing-instruction xml-model {'href="authority-schematron.sch" type="applica
         $linebreak,
         comment{' TODO: Review the following entries, update their key attributes in the TEI files, then cut and paste them into persons_base.xml '},
         $linebreak,
-        for $e in ($dedupednewviafpeople, $viafpeoplefrompreviousrun, $dedupednewlocalpeoplewithids) order by $e/persName[@type='display']/text() return ($e, $linebreak),
+        for $e in ($dedupednewviafpeople, $viafpeoplefrompreviousrun, $dedupedlocalpeoplewithids) order by $e/persName[@type='display']/text() return ($e, $linebreak),
         $linebreak,
         $linebreak
     )
