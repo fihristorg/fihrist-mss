@@ -28,7 +28,7 @@ if [ "$1" == "reuse" ]; then
         done
     fi
     # Send the files to Solr
-    printf "manuscript\nwork\nperson\nplace" | xargs -I {} -P 2 ./generate-solr-document.sh "{}s.xquery" "{}s_index.xml" {} $SERVER $1
+    printf "manuscript\nwork\nperson\nsubject" | xargs -I {} -P 2 ./generate-solr-document.sh "{}s.xquery" "{}s_index.xml" {} $SERVER $1
 
 else
 
@@ -64,7 +64,7 @@ else
     if [ "$1" == "force" ] || [ "$1" == "noindex" ]; then
 
         echo "Rebuilding index files two at a time..."
-        printf "manuscript\nwork\nperson\nplace" | xargs -I {} -P 2 ./generate-solr-document.sh "{}s.xquery" "{}s_index.xml" {} $SERVER $1
+        printf "manuscript\nsubject\nwork\nperson" | xargs -I {} -P 2 ./generate-solr-document.sh "{}s.xquery" "{}s_index.xml" {} $SERVER $1
         if [ $? -gt 0 ]; then
             echo
             echo "WARNING: One or more index files was not completed. The web site will not be fully updated. Check the log files in the solr subfolder."
@@ -78,6 +78,6 @@ else
         ./generate-solr-document.sh "manuscripts.xquery" "manuscripts_index.xml" manuscript $SERVER $1
         ./generate-solr-document.sh "works.xquery" "works_index.xml" work $SERVER $1
         ./generate-solr-document.sh "persons.xquery" "persons_index.xml" person $SERVER $1
-        ./generate-solr-document.sh "places.xquery" "places_index.xml" place $SERVER $1
+        ./generate-solr-document.sh "subjects.xquery" "subjects_index.xml" subject $SERVER $1
     fi
 fi

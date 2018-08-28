@@ -20,7 +20,7 @@ declare variable $collection := collection('../collections/?select=*.xml;recurse
             order by $msid
             return
             if (string-length($msid) ne 0) then
-                let $mainshelfmark := ($ms/tei:TEI/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:idno[@type='shelfmark'])[1]
+                let $mainshelfmark := ($ms/tei:TEI/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:idno)[1]
                 let $allshelfmarks := $ms//tei:msIdentifier//tei:idno[(@type, parent::tei:altIdentifier/@type)=('shelfmark','part','former')]
                 let $subfolders := string-join(tokenize(substring-after(base-uri($ms), 'collections/'), '/')[position() lt last()], '/')
                 let $htmlfilename := concat($msid, '.html')
@@ -56,7 +56,7 @@ declare variable $collection := collection('../collections/?select=*.xml;recurse
                     { bod:digitized($ms//tei:sourceDesc//tei:surrogates/tei:bibl, 'ms_digitized_s') }
                     { bod:languages($ms//tei:sourceDesc//tei:textLang, 'lang_sm') }
                     { bod:centuries($ms//tei:origin//tei:origDate, 'ms_date_sm') }
-                    { bod:many2many($x//tei:msContents/tei:summary, 'ms_summary_sm') }
+                    { bod:many2many($ms//tei:msContents/tei:summary, 'ms_summary_sm') }
                     { bod:indexHTML($htmldoc, 'ms_textcontent_tni') }
                     { bod:displayHTML($htmldoc, 'display') }
                 </doc>

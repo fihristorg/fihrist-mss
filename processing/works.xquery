@@ -5,14 +5,14 @@ declare option saxon:output "indent=yes";
 (: Read authority file :)
 declare variable $authorityentries := doc("../authority/works.xml")/tei:TEI/tei:text/tei:body/tei:listBibl/tei:bibl[@xml:id];
 declare variable $authorsinworksauthority := false();
-declare variable $personauthority := (); (: Use this if Fihrist ever start adding authors to works authority:  doc("../persons.xml")/tei:TEI/tei:text/tei:body/tei:listPerson/tei:person[@xml:id]; :)
+declare variable $personauthority := doc("../persons.xml")/tei:TEI/tei:text/tei:body/tei:listPerson/tei:person[@xml:id];
 
 (: Find instances in manuscript description files, building in-memory data 
    structure, to avoid having to search across all files for each authority file entry :)
 declare variable $allinstances :=
     for $instance in collection('../collections?select=*.xml;recurse=yes')//tei:title
         let $roottei := $instance/ancestor::tei:TEI
-        let $shelfmark := ($roottei/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:idno[@type = "shelfmark"])[1]/text()
+        let $shelfmark := ($roottei/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:idno)[1]/string()
         let $datesoforigin := distinct-values($roottei//tei:origin//tei:origDate/normalize-space())
         let $placesoforigin := distinct-values($roottei//tei:origin//tei:origPlace/normalize-space())
         let $langcodes := tokenize(string-join(($instance/ancestor::*[tei:textLang])[position() = last()]/(@mainLang|@otherLangs), ' '), ' ')
@@ -129,6 +129,7 @@ declare variable $allinstances :=
                 (: Languages in the authority file (so far only Medieval does this)
                 bod:languages($work/tei:textLang, 'lang_sm')
                 :)
+                ()
                 }
                 {
                 (: Languages in TEI files :)
@@ -140,6 +141,7 @@ declare variable $allinstances :=
                 for $subject in $subjects
                     return <field name="wk_subjects_sm">{ normalize-space($subject) }</field>
                 :)
+                ()
                 }
                 {
                 (: See also links to other entries in the same authority file :)
