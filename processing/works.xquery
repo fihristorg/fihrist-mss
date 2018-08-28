@@ -1,11 +1,12 @@
 import module namespace bod = "http://www.bodleian.ox.ac.uk/bdlss" at "lib/msdesc2solr.xquery";
+import module namespace lang = "http://www.bodleian.ox.ac.uk/bdlss/lang" at "languages.xquery";
 declare namespace tei="http://www.tei-c.org/ns/1.0";
 declare option saxon:output "indent=yes";
 
 (: Read authority file :)
 declare variable $authorityentries := doc("../authority/works.xml")/tei:TEI/tei:text/tei:body/tei:listBibl/tei:bibl[@xml:id];
 declare variable $authorsinworksauthority := false();
-declare variable $personauthority := doc("../persons.xml")/tei:TEI/tei:text/tei:body/tei:listPerson/tei:person[@xml:id];
+declare variable $personauthority := doc("../authority/persons.xml")/tei:TEI/tei:text/tei:body/tei:listPerson/tei:person[@xml:id];
 
 (: Find instances in manuscript description files, building in-memory data 
    structure, to avoid having to search across all files for each authority file entry :)
@@ -134,7 +135,7 @@ declare variable $allinstances :=
                 {
                 (: Languages in TEI files :)
                 for $langcode in distinct-values($instances/lang/text())
-                    return <field name="lang_sm">{ $langcode }</field>
+                    return <field name="lang_sm">{ lang:languageCodeLookup($langcode) }</field>
                 }
                 {
                 (: Subjects (Medieval only)

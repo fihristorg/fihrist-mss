@@ -7,7 +7,7 @@ declare variable $authorityentries := doc("../authority/subjects.xml")/tei:TEI/t
 
 (: Find instances in manuscript description files, building in-memory data structure, to avoid having to search across all files for each authority file entry :)
 declare variable $allinstances :=
-    for $instance in collection('../collections?select=*.xml;recurse=yes')//tei:msDesc//(tei:placeName|tei:term)[not(ancestor::tei:msIdentifier)]
+    for $instance in collection('../collections?select=*.xml;recurse=yes')/(.//tei:msDesc//tei:placeName|.//tei:term)[not(ancestor::tei:msIdentifier)]
         let $roottei := $instance/ancestor::tei:TEI
         let $shelfmark := ($roottei/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:idno)[1]/string()
         let $datesoforigin := distinct-values($roottei//tei:origin//tei:origDate/normalize-space())
