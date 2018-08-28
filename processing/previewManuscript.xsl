@@ -9,7 +9,7 @@
     version="2.0">
     
     <xsl:import href="convert2HTML.xsl"/>
-
+    
     <!-- Set URL here to allow links (e.g. to persons or places) to work
          when previewing (if destinations exist on the web site.) -->
     <xsl:variable name="website-url" as="xs:string" select="'https://www.fihrist.org.uk'"/>
@@ -20,11 +20,11 @@
 
     <xsl:template match="/">
         <html>
-            <head>
+           <!-- <head>
                 <style type="text/css">
-                    <xsl:value-of select="unparsed-text('preview.css')"/>
-            </style>
-            </head>
+                    <xsl:value-of select="string-join(tokenize(unparsed-text('preview.css', 'utf-8'), '&#xD;'))"/>
+                </style>
+            </head>-->
             <body style="padding:2em ! important;">
                 <h1 itemprop="name">
                     <xsl:value-of select="//tei:msDesc/tei:msIdentifier/tei:idno[@type='shelfmark']/text()"/>
