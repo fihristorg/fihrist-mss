@@ -7,11 +7,13 @@ declare variable $authorityentries := doc("../authority/subjects.xml")/tei:TEI/t
 
 (: Find instances in manuscript description files, building in-memory data structure, to avoid having to search across all files for each authority file entry :)
 declare variable $allinstances :=
-    for $instance in collection('../collections?select=*.xml;recurse=yes')/(.//tei:msDesc//tei:placeName|.//tei:term)[not(ancestor::tei:msIdentifier)]
+    for $instance in collection('../collections?select=*.xml;recurse=yes')/(.//tei:msDesc//(tei:placeName|tei:name[@type='place'])|.//tei:term)[not(ancestor::tei:msIdentifier)]
         let $roottei := $instance/ancestor::tei:TEI
         let $shelfmark := ($roottei/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:idno)[1]/string()
         let $datesoforigin := distinct-values($roottei//tei:origin//tei:origDate/normalize-space())
         let $placesoforigin := distinct-values($roottei//tei:origin//tei:origPlace/normalize-space())
+        let $institution := $roottei//tei:msDesc/tei:msIdentifier/tei:institution/string()
+        let $repository := $roottei//tei:msDesc/tei:msIdentifier/tei:repository[1]/string()
         return
         <instance>
             { attribute of { if ($instance/self::tei:term) then 'term' else 'place' } }
@@ -22,17 +24,15 @@ declare variable $allinstances :=
                         $roottei/@xml:id/data(), 
                         '|', 
                         $shelfmark,
-                        if ($roottei//tei:sourceDesc//tei:surrogates/tei:bibl[@type=('digital-fascimile','digital-facsimile') and @subtype='full']) then
-                            ' (Digital facsimile online)'
-                        else if ($roottei//tei:sourceDesc//tei:surrogates/tei:bibl[@type=('digital-fascimile','digital-facsimile') and @subtype='partial']) then
-                            ' (Selected pages online)'
-                        else
-                            ''
-                        ,'|',
+                        ' (', 
+                        $repository,
+                        if ($repository ne $institution) then concat(', ', translate(replace($institution, ' \(', ', '), ')', ''), ')') else ')',
+                        '|',
                         if ($roottei//tei:msPart) then 'Composite manuscript' else string-join(($datesoforigin, $placesoforigin), '; ')
                     )
             }</link>
             <shelfmark>{ $shelfmark }</shelfmark>
+            <type>{ if ($instance/self::tei:placeName or $instance/self::tei:name) then 'place' else 'term' }</type>
         </instance>;
 
 <add>
@@ -62,6 +62,12 @@ declare variable $allinstances :=
         (: Get info in all the instances in the manuscript description files :)
         let $instances := $allinstances[key = $id]
         
+        let $types := distinct-values((
+                                        if ($instances/type/text() = 'place') then 'Place' else (),
+                                        if (starts-with($id, 'subject_s')) then 'Library of Congress Subject Heading' else (),
+                                        if (starts-with($id, 'subject_n')) then 'Library of Congress Name Authority' else ()
+                                     ))
+        
         (: Output a Solr doc element :)
         return if (count($instances) gt 0) then
             <doc>
@@ -86,6 +92,11 @@ declare variable $allinstances :=
                         ()
                 }
                 {
+                for $type in $types
+                    order by $type
+                    return <field name="sb_type_sm">{ $type }</field>
+                }
+                {
                 (: Links to external authorities and other web sites :)
                 for $extref in $extrefs
                     order by $extref
@@ -94,13 +105,11 @@ declare variable $allinstances :=
                 {
                 (: Bibliographic references :)
                 for $bibref in $bibrefs
-                    order by $bibref
                     return <field name="bibref_smni">{ $bibref }</field>
                 }
                 {
                 (: Notes :)
                 for $note in $notes
-                    order by $note
                     return <field name="note_smni">{ $note }</field>
                 }
                 {
@@ -109,7 +118,7 @@ declare variable $allinstances :=
                 for $relatedid in distinct-values($relatedids)
                     let $url := concat("/catalog/", $relatedid)
                     let $linktext := ($authorityentries[@xml:id = $relatedid]/tei:term[@type = 'display'][1])[1]
-                    order by $linktext
+                    order by lower-case($linktext)
                     return
                     if (exists($linktext) and $allinstances[key = $relatedid]) then
                         let $link := concat($url, "|", normalize-space($linktext/string()))
@@ -128,7 +137,7 @@ declare variable $allinstances :=
                 {
                 (: Links to manuscripts containing mentions of the term or place :)
                 for $link in distinct-values($instances/link/text())
-                    order by tokenize($link, '\|')[2]
+                    order by lower-case(tokenize($link, '\|')[2])
                     return
                     <field name="link_manuscripts_smni">{ $link }</field>
                 }

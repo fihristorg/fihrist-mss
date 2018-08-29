@@ -1,5 +1,4 @@
 import module namespace bod = "http://www.bodleian.ox.ac.uk/bdlss" at "lib/msdesc2solr.xquery";
-import module namespace lang = "http://www.bodleian.ox.ac.uk/bdlss/lang" at "languages.xquery";
 declare namespace tei="http://www.tei-c.org/ns/1.0";
 declare option saxon:output "indent=yes";
 
@@ -16,7 +15,9 @@ declare variable $allinstances :=
         let $shelfmark := ($roottei/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:idno)[1]/string()
         let $datesoforigin := distinct-values($roottei//tei:origin//tei:origDate/normalize-space())
         let $placesoforigin := distinct-values($roottei//tei:origin//tei:origPlace/normalize-space())
-        let $langcodes := tokenize(string-join(($instance/ancestor::*[tei:textLang])[position() = last()]/(@mainLang|@otherLangs), ' '), ' ')
+        let $langcodes := tokenize(string-join($instance/ancestor::*[tei:textLang][1]/tei:textLang/(@mainLang|@otherLangs), ' '), ' ')
+        let $institution := $roottei//tei:msDesc/tei:msIdentifier/tei:institution/string()
+        let $repository := $roottei//tei:msDesc/tei:msIdentifier/tei:repository[1]/string()
         return
         <instance>
             { for $key in tokenize($instance/@key, ' ') return <key>{ $key }</key> }
@@ -26,13 +27,10 @@ declare variable $allinstances :=
                         $roottei/@xml:id/data(), 
                         '|', 
                         $shelfmark,
-                        if ($roottei//tei:sourceDesc//tei:surrogates/tei:bibl[@type=('digital-fascimile','digital-facsimile') and @subtype='full']) then
-                            ' (Digital facsimile online)'
-                        else if ($roottei//tei:sourceDesc//tei:surrogates/tei:bibl[@type=('digital-fascimile','digital-facsimile') and @subtype='partial']) then
-                            ' (Selected pages online)'
-                        else
-                            ''
-                        ,'|',
+                        ' (', 
+                        $repository,
+                        if ($repository ne $institution) then concat(', ', translate(replace($institution, ' \(', ', '), ')', ''), ')') else ')',
+                        '|',
                         if ($roottei//tei:msPart) then 'Composite manuscript' else string-join(($datesoforigin, $placesoforigin), '; ')
                     )
             }</link>
@@ -41,11 +39,12 @@ declare variable $allinstances :=
                 for $authorid in ($instance/ancestor::tei:msItem[tei:author][1]/tei:author/@key/data(), $instance/parent::*/(tei:author|tei:persName[@role=('author','aut')])/@key/data())
                     return <author>{ $authorid }</author>
                 ,
-                for $translatorid in $instance/parent::*/tei:persName[@role=('translator','trl')]/@key/data()
+                for $translatorid in $instance/parent::*//*[@role=('translator','trl')]/@key/data()
                     return <translator>{ $translatorid }</translator>
             }
             { for $instanceid in $instance/parent::tei:msItem/@xml:id return <instanceid>{ $instanceid }</instanceid> }
             <shelfmark>{ $shelfmark }</shelfmark>
+            <institution>{ $institution }</institution>
             { for $langcode in $langcodes return <lang>{ $langcode }</lang> }
         </instance>;
 
@@ -109,6 +108,11 @@ declare variable $allinstances :=
                         ()
                 }
                 {
+                for $institution in distinct-values($instances/institution/text())
+                    order by $institution
+                    return <field name="institution_sm">{ $institution }</field>
+                }
+                {
                 (: Links to external authorities and other web sites :)
                 for $extref in $extrefs
                     order by $extref
@@ -117,13 +121,11 @@ declare variable $allinstances :=
                 {
                 (: Bibliographic references about the work :)
                 for $bibref in $bibrefs
-                    order by $bibref
                     return <field name="bibref_smni">{ $bibref }</field>
                 }
                 {
                 (: Notes about the work :)
                 for $note in $notes
-                    order by $note
                     return <field name="note_smni">{ $note }</field>
                 }
                 {
@@ -135,7 +137,7 @@ declare variable $allinstances :=
                 {
                 (: Languages in TEI files :)
                 for $langcode in distinct-values($instances/lang/text())
-                    return <field name="lang_sm">{ lang:languageCodeLookup($langcode) }</field>
+                    return <field name="lang_sm">{ bod:languageCodeLookup($langcode) }</field>
                 }
                 {
                 (: Subjects (Medieval only)
@@ -150,7 +152,7 @@ declare variable $allinstances :=
                 for $relatedid in distinct-values($relatedids)
                     let $url := concat("/catalog/", $relatedid)
                     let $linktext := ($authorityentries[@xml:id = $relatedid]/tei:title[@type = 'uniform'][1])[1]
-                    order by $linktext
+                    order by lower-case($linktext)
                     return
                     if (exists($linktext) and $allinstances[key = $relatedid]) then
                         let $link := concat($url, "|", normalize-space($linktext/string()))
@@ -167,7 +169,7 @@ declare variable $allinstances :=
                 for $authorid in $authorids
                     let $url := concat("/catalog/", $authorid)
                     let $linktext := ($personauthority[@xml:id = $authorid]/tei:persName[@type = 'display'][1])[1]
-                    order by $linktext
+                    order by lower-case($linktext)
                     return
                     if (exists($linktext)) then
                         let $link := concat($url, "|", normalize-space($linktext/string()))
@@ -184,7 +186,7 @@ declare variable $allinstances :=
                 for $translatorid in $translatorids
                     let $url := concat("/catalog/", $translatorid)
                     let $linktext := ($personauthority[@xml:id = $translatorid]/tei:persName[@type = 'display'][1])[1]
-                    order by $linktext
+                    order by lower-case($linktext)
                     return
                     if (exists($linktext)) then
                         let $link := concat($url, "|", normalize-space($linktext/string()))
@@ -203,7 +205,7 @@ declare variable $allinstances :=
                 {
                 (: Links to manuscripts containing the work :)
                 for $link in distinct-values($instances/link/text())
-                    order by tokenize($link, '\|')[2]
+                    order by lower-case(tokenize($link, '\|')[2])
                     return
                     <field name="link_manuscripts_smni">{ $link }</field>
                 }
