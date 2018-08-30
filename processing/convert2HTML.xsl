@@ -85,9 +85,12 @@
                 <xsl:copy-of select="bod:standardText('Title:')"/>
                 <xsl:text> </xsl:text>
             </span>
-            <span class="italic">
-                <xsl:apply-templates/>
-            </span>
+                    <span>
+                        <xsl:if test="not(@type = 'desc')">
+                            <xsl:attribute name="class" select="'italic'"/>
+                        </xsl:if>
+                        <xsl:apply-templates/>
+                    </span>
         </div>
     </xsl:template>
     
