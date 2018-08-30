@@ -18,7 +18,17 @@ declare variable $allinstances :=
             else if ($instance/parent::tei:title)
                 then ('Subject of a work', tokenize($instance/@role/data(), ' '))
             else tokenize($instance/@role/data(), ' ')
-        let $datesoforigin := distinct-values($roottei//tei:origin//tei:origDate/normalize-space())
+        let $datesoforigin := distinct-values(
+            for $origdate in $roottei//tei:origin//tei:origDate[@when or @notBefore or @notAfter or @from or @to]
+                return
+                if (matches($origdate/string(), '\s*(\d+|\d+(st|nd|rd|th) (century|cent\.?))\??\s*$')) then 
+                    concat(
+                        normalize-space(string($origdate)), 
+                        if ($origdate/@calendar='#Hijri-qamari') then ' AH' else if ($origdate/@calendar='#Gregorian') then ' CE' else ''
+                    )
+                else
+                    normalize-space(string($origdate))
+            )
         let $placesoforigin := distinct-values($roottei//tei:origin//tei:origPlace/normalize-space())
         let $institution := $roottei//tei:msDesc/tei:msIdentifier/tei:institution/string()
         let $repository := $roottei//tei:msDesc/tei:msIdentifier/tei:repository[1]/string()
@@ -153,7 +163,7 @@ declare variable $allinstances :=
                     for $workid in $workids
                         let $url := concat("/catalog/", $workid)
                         let $linktext := ($worksauthority[@xml:id = $workid]/tei:title[@type = 'uniform'][1])[1]
-                        order by lower-case($linktext)
+                        order by lower-case(bod:stripLeadingStopWordsNew($linktext))
                         return
                         if (exists($linktext)) then
                             let $link := concat($url, "|", normalize-space($linktext/string()))
