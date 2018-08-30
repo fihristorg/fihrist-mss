@@ -85,12 +85,29 @@
                 <xsl:copy-of select="bod:standardText('Title:')"/>
                 <xsl:text> </xsl:text>
             </span>
+            <xsl:choose>
+                <xsl:when test="@key and not(@key='')">
+                    <a>
+                        <xsl:if test="not(@type = 'desc')">
+                            <xsl:attribute name="class" select="'italic'"/>
+                        </xsl:if>
+                        <xsl:attribute name="href">
+                            <xsl:value-of select="$website-url"/>
+                            <xsl:text>/catalog/</xsl:text>
+                            <xsl:value-of select="@key"/>
+                        </xsl:attribute>
+                        <xsl:apply-templates/>
+                    </a>
+                </xsl:when>
+                <xsl:otherwise>
                     <span>
                         <xsl:if test="not(@type = 'desc')">
                             <xsl:attribute name="class" select="'italic'"/>
                         </xsl:if>
                         <xsl:apply-templates/>
                     </span>
+                </xsl:otherwise>
+            </xsl:choose>
         </div>
     </xsl:template>
     
