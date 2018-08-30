@@ -13,7 +13,17 @@ declare variable $allinstances :=
     for $instance in collection('../collections?select=*.xml;recurse=yes')//tei:title
         let $roottei := $instance/ancestor::tei:TEI
         let $shelfmark := ($roottei/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:idno)[1]/string()
-        let $datesoforigin := distinct-values($roottei//tei:origin//tei:origDate/normalize-space())
+        let $datesoforigin := distinct-values(
+            for $origdate in $roottei//tei:origin//tei:origDate[@when or @notBefore or @notAfter or @from or @to]
+                return
+                if (matches($origdate/string(), '\s*(\d+|\d+(st|nd|rd|th) (century|cent\.?))\??\s*$')) then 
+                    concat(
+                        normalize-space(string($origdate)), 
+                        if ($origdate/@calendar='#Hijri-qamari') then ' AH' else if ($origdate/@calendar='#Gregorian') then ' CE' else ''
+                    )
+                else
+                    normalize-space(string($origdate))
+            )
         let $placesoforigin := distinct-values($roottei//tei:origin//tei:origPlace/normalize-space())
         let $langcodes := tokenize(string-join($instance/ancestor::*[tei:textLang][1]/tei:textLang/(@mainLang|@otherLangs), ' '), ' ')
         let $institution := $roottei//tei:msDesc/tei:msIdentifier/tei:institution/string()
