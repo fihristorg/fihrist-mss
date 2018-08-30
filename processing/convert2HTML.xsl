@@ -56,14 +56,14 @@
     <!-- The next three templates override the default by putting authors, editors and titles on separate lines, because in Fihirst there are often multiple
          titles in different languages, and versions of the author name in different languages, which gets confusing all on one line -->
     <xsl:template match="msItem/author">
-        <div class="{name()}">
+        <div class="tei-author">
             <span class="tei-label">
                 <xsl:copy-of select="bod:standardText('Author:')"/>
                 <xsl:text> </xsl:text>
             </span>
             <xsl:choose>
                 <xsl:when test="@key and not(@key='')">
-                    <a>
+                    <a class="author">
                         <xsl:attribute name="href">
                             <xsl:value-of select="$website-url"/>
                             <xsl:text>/catalog/</xsl:text>
