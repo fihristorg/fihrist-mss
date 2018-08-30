@@ -10,18 +10,8 @@ declare variable $allinstances :=
     for $instance in collection('../collections?select=*.xml;recurse=yes')/(.//tei:msDesc//(tei:placeName|tei:name[@type='place'])|.//tei:term)[not(ancestor::tei:msIdentifier)]
         let $roottei := $instance/ancestor::tei:TEI
         let $shelfmark := ($roottei/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:idno)[1]/string()
-        let $datesoforigin := distinct-values(
-            for $origdate in $roottei//tei:origin//tei:origDate[@when or @notBefore or @notAfter or @from or @to]
-                return
-                if (matches($origdate/string(), '\s*(\d+|\d+(st|nd|rd|th) (century|cent\.?))\??\s*$')) then 
-                    concat(
-                        normalize-space(string($origdate)), 
-                        if ($origdate/@calendar='#Hijri-qamari') then ' AH' else if ($origdate/@calendar='#Gregorian') then ' CE' else ''
-                    )
-                else
-                    normalize-space(string($origdate))
-            )
-        let $placesoforigin := distinct-values($roottei//tei:origin//tei:origPlace/normalize-space())
+        let $datesoforigin := bod:summarizeDate(min($roottei//tei:origin//tei:origDate/(@when|@notBefore|@notAfter|@from|@to)/string()), max($roottei//tei:origin//tei:origDate/(@when|@notBefore|@notAfter|@from|@to)/string()))
+        let $placesoforigin := distinct-values($roottei//tei:origin//tei:origPlace/normalize-space()[string-length(.) gt 0])
         let $institution := $roottei//tei:msDesc/tei:msIdentifier/tei:institution/string()
         let $repository := $roottei//tei:msDesc/tei:msIdentifier/tei:repository[1]/string()
         return
