@@ -267,7 +267,11 @@
             </div>
         </xsl:if>
     </xsl:template>
+
+
+
+    <!-- Prevent facs attributes from being displayed. Move to msdesc2html.xsl? -->
+    <xsl:template match="@facs"/>
         
-    
     
 </xsl:stylesheet>
