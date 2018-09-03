@@ -96,6 +96,7 @@
                             <xsl:text>/catalog/</xsl:text>
                             <xsl:value-of select="@key"/>
                         </xsl:attribute>
+                        <xsl:copy-of select="bod:rtl(@xml:lang)"/>
                         <xsl:apply-templates/>
                     </a>
                 </xsl:when>
@@ -104,6 +105,7 @@
                         <xsl:if test="not(@type = 'desc')">
                             <xsl:attribute name="class" select="'italic'"/>
                         </xsl:if>
+                        <xsl:copy-of select="bod:rtl(@xml:lang)"/>
                         <xsl:apply-templates/>
                     </span>
                 </xsl:otherwise>
