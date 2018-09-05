@@ -159,27 +159,53 @@ processing-instruction xml-model {'href="authority-schematron.sch" type="applica
             </person>
     )
     
-    let $alllocalpeople := ($localpeoplefrompreviousrun, $newlocalpeople)
-    
-    let $dedupedlocalpeople := (
-        for $n at $pos in $alllocalpeople
-            order by exists($n/@xml:id) descending, number(substring-after($n/@xml:id, 'person_f')) ascending (: Sort entries with IDs first, and lower IDs before higher ones :)
-            return 
-            if (some $v in $n/norm/text() satisfies $v = $alllocalpeople[position() lt $pos]/norm/text()) then
-                (: This is a duplicate of another entry, so skip it :)
+    let $dedupednewlocalpeople := (
+        for $n at $pos in $newlocalpeople
+            return
+            if (some $v in $n/norm/text() satisfies $v = $localpeoplefrompreviousrun/norm/text()) then
+                (: This is a duplicate of an entry created by a previous running of this script, so skip it :)
+                ()
+            else if (some $v in $n/norm/text() satisfies $v = $newlocalpeople[position() lt $pos]/norm/text()) then
+                (: This is a duplicate of another new entry already processed in this for-loop, so skip it :)
                 ()
             else
-                let $duplicates := $alllocalpeople[position() gt $pos and (some $v in ./norm/text() satisfies $v = $n/norm/text())]
+                let $duplicates := $newlocalpeople[position() gt $pos and (some $v in ./norm/text() satisfies $v = $n/norm/text())]
                 return
+                if (count($duplicates) gt 0) then
+                    (: This has duplicates, so merge them into this entry :)
+                    <person>
+                        {
+                        for $f at $pos2 in distinct-values(($n/persName/text(), $duplicates/persName/text()))
+                            return
+                            (
+                            if ($pos2 eq 1) then
+                                <persName type="display">{ $f }</persName>
+                            else
+                                <persName type="variant">{ $f }</persName>
+                            )
+                        }
+                        {
+                        for $c in distinct-values(($n/comment(), $duplicates/comment()))
+                            order by $c
+                            return comment{ $c }
+                        }
+                    </person>
+                else
+                    $n
+    )
+    
+    let $localpeoplefrompreviousrunwithnewvariants := (
+        for $n in $localpeoplefrompreviousrun
+            let $duplicates := $newlocalpeople[some $v in ./norm/text() satisfies $v = $n/norm/text()]
+            return
+            if (count($duplicates) gt 0) then
                 <person>
+                    { $n/@xml:id }
                     {
-                    if ($n/@xml:id) then $n/@xml:id else if (exists($duplicates[@xml:id])) then $duplicates[@xml:id][1]/@xml:id else ()
-                    }
-                    {
-                    for $f at $pos2 in distinct-values(($n/persName/text(), $duplicates/persName/text()))
+                    for $f at $pos in distinct-values(($n/persName/text(), $duplicates/persName/text()))
                         return
                         (
-                        if ($pos2 eq 1) then
+                        if ($pos eq 1) then
                             <persName type="display">{ $f }</persName>
                         else
                             <persName type="variant">{ $f }</persName>
@@ -191,17 +217,24 @@ processing-instruction xml-model {'href="authority-schematron.sch" type="applica
                         return comment{ $c }
                     }
                 </person>
+            else
+                $n
     )
     
     let $dedupedlocalpeoplewithids := (
-        for $n at $pos in $dedupedlocalpeople[not(exists(@xml:id))]
+        for $n at $pos in $dedupednewlocalpeople
             return
             <person xml:id="{ concat('person_f', ($highestcurrentkey + $pos)) }">
-                { $n/* }
+                { $n/*[not(self::norm)] }
                 { $n/comment() }
             </person>
         ,
-        $dedupedlocalpeople[exists(@xml:id)]
+        for $n in $localpeoplefrompreviousrunwithnewvariants
+            return
+            <person xml:id="{ $n/@xml:id }">
+                { $n/*[not(self::norm)] }
+                { $n/comment() }
+            </person>
     )
 
     (: Output the new _additions authority file :)
