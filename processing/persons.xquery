@@ -93,9 +93,12 @@ declare variable $allinstances :=
                 <field name="alpha_title">{  bod:alphabetize($name) }</field>
                 {
                 (: Roles (e.g. author, translator, scribe, former owner, etc) :)
-                for $role in $roles
-                    order by $role
-                    return <field name="pp_roles_sm">{ $role }</field>
+                if (count($roles) gt 0) then
+                    for $role in $roles
+                        order by $role
+                        return <field name="pp_roles_sm">{ $role }</field>
+                else
+                    <field name="pp_roles_sm">Not specified</field>
                 }
                 {
                 (: Alternative names :)
