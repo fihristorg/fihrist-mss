@@ -10,8 +10,6 @@
 #           'noindex' to generate the files and do the checking but not push to Solr
 #           'reuse' to send files previously created to Solr without rebuilding them
 
-echo
-
 if [ $# -lt 4 ]; then
     echo "Too few command line arguments."
     exit 1;

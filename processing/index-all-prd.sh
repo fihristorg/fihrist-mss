@@ -19,7 +19,7 @@ if [ "$1" == "reuse" ]; then
     if [ $ageofsolrdir -ge 1 ]; then
         echo -n "The solr files are $ageofsolrdir hours old. "
         while true; do
-            read -p "Are you sure you want to send these to the production Solr server?? [Yes|No] " answer
+            read -p "Are you sure you want to send these to the production Solr server? [Yes|No] " answer
             case $answer in
                 [Yy]|YES|Yes|yes ) break;;
                 [Nn]|NO|No|no ) echo "Abandoning re-indexing. The production server has not been updated."; exit 0;;

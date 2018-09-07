@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-echo
 echo "Generating HTML for customized manuscript view..."
 
 if [[ ! "`pwd`" == *-mss/processing ]]; then
