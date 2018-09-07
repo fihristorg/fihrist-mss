@@ -9,7 +9,7 @@
     exclude-result-prefixes="tei html xs bod"
     version="2.0">
     
-    <xsl:import href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc2html.xsl"/>
+    <xsl:import href="lib/msdesc2html.xsl"/>
 
     <!-- Only set this variable if you want full URLs hardcoded into the HTML
          on the web site (previewManuscript.xsl overrides this to do so when previewing.) -->
@@ -56,14 +56,14 @@
     <!-- The next three templates override the default by putting authors, editors and titles on separate lines, because in Fihirst there are often multiple
          titles in different languages, and versions of the author name in different languages, which gets confusing all on one line -->
     <xsl:template match="msItem/author">
-        <div class="{name()}">
+        <div class="tei-author">
             <span class="tei-label">
                 <xsl:copy-of select="bod:standardText('Author:')"/>
                 <xsl:text> </xsl:text>
             </span>
             <xsl:choose>
                 <xsl:when test="@key and not(@key='')">
-                    <a>
+                    <a class="author">
                         <xsl:attribute name="href">
                             <xsl:value-of select="$website-url"/>
                             <xsl:text>/catalog/</xsl:text>
@@ -85,9 +85,31 @@
                 <xsl:copy-of select="bod:standardText('Title:')"/>
                 <xsl:text> </xsl:text>
             </span>
-            <span class="italic">
-                <xsl:apply-templates/>
-            </span>
+            <xsl:choose>
+                <xsl:when test="@key and not(@key='')">
+                    <a>
+                        <xsl:if test="not(@type = 'desc')">
+                            <xsl:attribute name="class" select="'italic'"/>
+                        </xsl:if>
+                        <xsl:attribute name="href">
+                            <xsl:value-of select="$website-url"/>
+                            <xsl:text>/catalog/</xsl:text>
+                            <xsl:value-of select="@key"/>
+                        </xsl:attribute>
+                        <xsl:copy-of select="bod:rtl(@xml:lang)"/>
+                        <xsl:apply-templates/>
+                    </a>
+                </xsl:when>
+                <xsl:otherwise>
+                    <span>
+                        <xsl:if test="not(@type = 'desc')">
+                            <xsl:attribute name="class" select="'italic'"/>
+                        </xsl:if>
+                        <xsl:copy-of select="bod:rtl(@xml:lang)"/>
+                        <xsl:apply-templates/>
+                    </span>
+                </xsl:otherwise>
+            </xsl:choose>
         </div>
     </xsl:template>
     
@@ -247,7 +269,11 @@
             </div>
         </xsl:if>
     </xsl:template>
+
+
+
+    <!-- Prevent facs attributes from being displayed. Move to msdesc2html.xsl? -->
+    <xsl:template match="@facs"/>
         
-    
     
 </xsl:stylesheet>
