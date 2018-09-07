@@ -10,7 +10,7 @@ declare variable $allinstances :=
     for $instance in collection('../collections?select=*.xml;recurse=yes')/(.//tei:msDesc//(tei:placeName|tei:name[@type='place'])|.//tei:term)[not(ancestor::tei:msIdentifier)]
         let $roottei := $instance/ancestor::tei:TEI
         let $shelfmark := ($roottei/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:idno)[1]/string()
-        let $datesoforigin := bod:summarizeDate(min($roottei//tei:origin//tei:origDate/(@when|@notBefore|@notAfter|@from|@to)/string()), max($roottei//tei:origin//tei:origDate/(@when|@notBefore|@notAfter|@from|@to)/string()))
+        let $datesoforigin := bod:summarizeDates($roottei//tei:origin//tei:origDate)
         let $placesoforigin := distinct-values($roottei//tei:origin//tei:origPlace/normalize-space()[string-length(.) gt 0])
         let $institution := $roottei//tei:msDesc/tei:msIdentifier/tei:institution/string()
         let $repository := $roottei//tei:msDesc/tei:msIdentifier/tei:repository[1]/string()
@@ -28,7 +28,7 @@ declare variable $allinstances :=
                         $repository,
                         if ($repository ne $institution) then concat(', ', translate(replace($institution, ' \(', ', '), ')', ''), ')') else ')',
                         '|',
-                        if ($roottei//tei:msPart) then 'Composite manuscript' else string-join(($datesoforigin, $placesoforigin), '; ')
+                        if ($roottei//tei:msPart) then 'Composite manuscript' else string-join(($datesoforigin, $placesoforigin)[string-length() gt 0], '; ')
                     )
             }</link>
             <shelfmark>{ $shelfmark }</shelfmark>

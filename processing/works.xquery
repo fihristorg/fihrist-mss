@@ -10,10 +10,10 @@ declare variable $personauthority := doc("../authority/persons.xml")/tei:TEI/tei
 (: Find instances in manuscript description files, building in-memory data 
    structure, to avoid having to search across all files for each authority file entry :)
 declare variable $allinstances :=
-    for $instance in collection('../collections?select=*.xml;recurse=yes')//tei:title
+    for $instance in collection('../collections?select=*.xml;recurse=yes')//tei:title[@key or not((parent::tei:msItem/@n and count(ancestor::tei:msItem) gt 1) or matches(., '(chapter|section|باب)', 'i'))]
         let $roottei := $instance/ancestor::tei:TEI
         let $shelfmark := ($roottei/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:idno)[1]/string()
-        let $datesoforigin := bod:summarizeDate(min($roottei//tei:origin//tei:origDate/(@when|@notBefore|@notAfter|@from|@to)/string()), max($roottei//tei:origin//tei:origDate/(@when|@notBefore|@notAfter|@from|@to)/string()))
+        let $datesoforigin := bod:summarizeDates($roottei//tei:origin//tei:origDate)
         let $placesoforigin := distinct-values($roottei//tei:origin//tei:origPlace/normalize-space()[string-length(.) gt 0])
         let $langcodes := tokenize(string-join($instance/ancestor::*[tei:textLang][1]/tei:textLang/(@mainLang|@otherLangs), ' '), ' ')
         let $institution := $roottei//tei:msDesc/tei:msIdentifier/tei:institution/string()
@@ -31,7 +31,7 @@ declare variable $allinstances :=
                         $repository,
                         if ($repository ne $institution) then concat(', ', translate(replace($institution, ' \(', ', '), ')', ''), ')') else ')',
                         '|',
-                        if ($roottei//tei:msPart) then 'Composite manuscript' else string-join(($datesoforigin, $placesoforigin), '; ')
+                        if ($roottei//tei:msPart) then 'Composite manuscript' else string-join(($datesoforigin, $placesoforigin)[string-length() gt 0], '; ')
                     )
             }</link>
             {
