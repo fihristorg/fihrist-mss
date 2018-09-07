@@ -39,8 +39,12 @@ declare variable $allinstances :=
                 for $authorid in ($instance/ancestor::tei:msItem[tei:author][1]/tei:author/@key/data(), $instance/parent::*/(tei:author|tei:persName[@role=('author','aut')])/@key/data())
                     return <author>{ $authorid }</author>
                 ,
-                for $translatorid in $instance/parent::*//*[@role=('translator','trl')]/@key/data()
+                for $translatorid in $instance/parent::*//*[@role=('trl','translator','Translator')]/@key/data()
                     return <translator>{ $translatorid }</translator>
+            }
+            {
+            for $subjectid in $instance/parent::tei:msItem/tei:title//tei:persName/@key/data()
+                return <personintitle>{ $subjectid }</personintitle>
             }
             { for $instanceid in $instance/parent::tei:msItem/@xml:id return <instanceid>{ $instanceid }</instanceid> }
             <shelfmark>{ $shelfmark }</shelfmark>
@@ -194,6 +198,21 @@ declare variable $allinstances :=
                         <field name="link_translator_smni">{ $link }</field>
                     else
                         bod:logging('info', 'Cannot create link from work to translator', ($id, $translatorid))
+                }
+                {
+                (: Links to people who are subjects of the work (based on their name being tagged inside the title) :)
+                let $subjectids := distinct-values($instances/personintitle/text())
+                for $subjectid in $subjectids
+                    let $url := concat("/catalog/", $subjectid)
+                    let $linktext := ($personauthority[@xml:id = $subjectid]/tei:persName[@type = 'display'][1])[1]
+                    order by lower-case($linktext)
+                    return
+                    if (exists($linktext)) then
+                        let $link := concat($url, "|", normalize-space($linktext/string()))
+                        return
+                        <field name="link_subject_smni">{ $link }</field>
+                    else
+                        bod:logging('info', 'Cannot create link from work to subject of the work', ($id, $subjectid))
                 }
                 {
                 (: Shelfmarks (indexed in special non-tokenized field) :)

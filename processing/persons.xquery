@@ -50,6 +50,13 @@ declare variable $allinstances :=
                 else
                     ()
             }
+            {
+            if (some $role in $roles satisfies $role eq 'Subject of a work' and not($instance/parent::tei:bibl)) then 
+                for $workid in distinct-values($instance/../../tei:title[@key]/@key/tokenize(data(), ' '))
+                    return <subjectof>{ $workid }</subjectof>
+            else
+                ()
+            }
             <shelfmark>{ $shelfmark }</shelfmark>
         </instance>;
 
@@ -79,9 +86,10 @@ declare variable $allinstances :=
         
         (: Get info in all the instances in the manuscript description files :)
         let $instances := $allinstances[key = $id]
-        let $roles := for $role in distinct-values($instances/role/text()) return bod:personRoleLookup($role)
+        let $roles := distinct-values(for $role in distinct-values($instances/role/text()) return bod:personRoleLookup($role))
         let $isauthor := some $role in $instances/role/text() satisfies $role = ('author','aut')
         let $istranslator := some $role in $instances/role/text() satisfies $role = ('translator','trl')
+        let $issubjectofawork := some $role in $instances/role/text() satisfies $role eq 'Subject of a work'
 
         (: Output a Solr doc element :)
         return if (count($instances) gt 0) then
@@ -186,6 +194,25 @@ declare variable $allinstances :=
                             <field name="link_translations_smni">{ $link }</field>
                         else
                             bod:logging('info', 'Cannot create link from translator to work', ($id, $workid))
+                else
+                    ()
+                }
+                {
+                (: Links to works this person is a subject of :)
+                if ($issubjectofawork) then 
+                    let $workids := distinct-values($instances/subjectof/text())
+                    return 
+                    for $workid in $workids
+                        let $url := concat("/catalog/", $workid)
+                        let $linktext := ($worksauthority[@xml:id = $workid]/tei:title[@type = 'uniform'][1])[1]
+                        order by lower-case($linktext)
+                        return
+                        if (exists($linktext)) then
+                            let $link := concat($url, "|", normalize-space($linktext/string()))
+                            return
+                            <field name="link_subjectofworks_smni">{ $link }</field>
+                        else
+                            bod:logging('info', 'Cannot create link from subject of work to the work', ($id, $workid))
                 else
                     ()
                 }
