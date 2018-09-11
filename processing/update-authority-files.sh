@@ -11,7 +11,9 @@ TEMPFILE1=$(mktemp)
 TEMPFILE2=$(mktemp)
 TEMPFILE3=$(mktemp)
 
-AUTHORITYDIR="../wibble/wobble"
+AUTHORITYDIR="../authority"
+
+echo "Updating files in authority folder using on $(date +"%Y-%m-%d %H:%M:%S") with new works/persons/subjects added to TEI files in the collections folder." > $LOGFILE
 
 java -Xmx1G -cp "saxon/saxon9he.jar" net.sf.saxon.Query -q:update-works-authority-file.xquery -o:"$TEMPFILE1" 2>> $LOGFILE
 if [ $? -gt 0 ]; then
@@ -47,7 +49,7 @@ else
         echo "Cannot write to authority folder. Check permissions on $AUTHORITYDIR and re-run."
         exit 1;
     else
-        echo "All authority files updated. Check for changes in your Git client. If any, and they look OK, commit and push them. Then re-index to update the web site."
+        echo "All authority files updated. Check for changes in your Git client. If any, commit and push them. Then re-index to update the web site."
         exit 0;
     fi
 fi
