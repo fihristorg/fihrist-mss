@@ -2,141 +2,210 @@
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7420">
-   <teiHeader>
-      <fileDesc>
-         <titleStmt>
-            <title>Persian MS 908</title>
-            <funder>Iran Heritage Foundation and The John Rylands Research Institute</funder>
-            <principal>????</principal>
-         </titleStmt>
-         <publicationStmt>
-            <publisher>The University of Manchester Library</publisher>
-            <date calendar="#Gregorian">2014-MM-DD</date>
-            <pubPlace>
-               <address>
-                  <addrLine>The John Rylands Library</addrLine>
-                  <street>150 Deansgate</street>
-                  <settlement>Manchester</settlement>
-                  <postCode>M3 3EH</postCode>
-                  <addrLine>
-                     <ref target="http://www.library.manchester.ac.uk/specialcollections/">The John Rylands Library</ref>
-                  </addrLine>
-                  <addrLine>
-                     <email>uml.special-collections@manchester.ac.uk</email>
-                  </addrLine>
-               </address>
-            </pubPlace>
-            <idno>UkMaJRU</idno>
-            <idno type="msID">Persian_MS_908</idno>
-            <idno type="catalogue">Fihrist</idno>
-         </publicationStmt>
-         <sourceDesc>
-            <msDesc xml:id="Persian_MS_908" xml:lang="en">
-               <msIdentifier>
-                  <country>United Kingdom</country>
-                  <settlement>Manchester</settlement>
-                  <institution>The University of Manchester</institution>
-                  <repository>The John Rylands Library</repository>
-                  <collection>Persian Manuscripts</collection>
-                  <idno>Persian MS 908</idno>
-               </msIdentifier>
-               <msContents>
-                  <summary change="#add-summary">
-                     1 copy of Kullīyāt by ʻUrfī Shīrāzī, Muḥammad, 1555 or 6-1590 or 91
-                  </summary>
-                  
-                  <msItem xml:id="Persian_MS_908-item1">
-                     <author key="person_50413291" ref="http://viaf.org/viaf/50413291/">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">ʻUrfī Shīrāzī, Muḥammad, 1555 or 6-1590 or 91</persName>
-                        <persName xml:lang="fa">عرفى</persName>
-                     </author>
-                     <title xml:lang="ar-Latn-x-lc" key="work_2251">Kullīyāt</title>
-                     <title xml:lang="fa" key="work_2251">كليات</title>
-                     <incipit xml:lang="ar" type="basmalla"/>
-                     <explicit xml:lang="ar"/>
-                     <textLang mainLang="fa">Persian</textLang>
-                  </msItem>
-               </msContents>
-               <physDesc>
-                  <objectDesc form="codex">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
-                        </extent>
-                     </supportDesc>
-                     <layoutDesc>
-                        <layout columns="1" ruledLines="20" n="mistara"/>
-                     </layoutDesc>
-                  </objectDesc>
-                  <handDesc>
-                     <handNote scope="major" script="naskh" medium="ink"/>
-                  </handDesc>
-                  <bindingDesc>
-                     <decoNote type="illustration"/>
-                  </bindingDesc>
-               </physDesc>
-               <history>
-                  <origin change="#fix-dates">undated</origin>
-                  <acquisition>
-                     <p>Purchased by Mrs Enriqueta Rylands, on behalf of the John Rylands Library, in <date calendar="#Gregorian" when="1901">1901</date> from <persName type="standard" ref="http://viaf.org/viaf/9985420/#Crawford,_James_Ludovic_Lindsay,_Earl_of,_1847-1913" key="person_9985420">James Ludovic Lindsay, 26th Earl of Crawford</persName>.</p>
-                  </acquisition>
-               </history>
-               <additional>
-                  <adminInfo>
-                     <recordHist>
-                        <source>
-                           <p>Bibliographical description based on an index created by <persName key="person_f3520">Reza Navabpour</persName> circa <date calendar="#Gregorian" notBefore="1992" notAfter="1994">1993</date>. Identification of provenance based on manuscript catalogue by Michael Kerney, <date calendar="#Gregorian" notAfter="1901" notBefore="1868">circa 1890s.</date>
-                           </p>
-                        </source>
-                     </recordHist>
-                     <availability status="restricted">
-                        <p>The mansucript is available for consultation by any accredited reader, see <ref target="http://www.library.manchester.ac.uk/ourservices/howtousethespecialcollections/becomingareader">Becoming a Reader</ref> for details. Please contact <email>uml.special-collections@manchester.ac.uk</email> for further information on the availability of this manuscript.</p>
-                     </availability>
-                  </adminInfo>
-               </additional>
-            </msDesc>
-         </sourceDesc>
-      </fileDesc>
-      <encodingDesc>
-         <classDecl>
-            <taxonomy xml:id="LCSH">
-               <bibl>
-                  <ref target="http://id.loc.gov/authorities/about.html#lcsh">Library of Congress Subject Headings</ref>
-               </bibl>
-            </taxonomy>
-         </classDecl>
-      </encodingDesc>
-      <profileDesc>
-         <textClass>
-            <keywords scheme="#LCSH">
-               <list>
-                  <item>
-                     <term key="subject_sh89005046" target="http://lccn.loc.gov/sh89005046">Persian poetry--1500-1796</term>
-                  </item>
-               </list>
-            </keywords>
-         </textClass>
-      </profileDesc>
-      <revisionDesc>
-         <change when="2018-06-08">
-            <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
-         </change>
-         <change when="2018-03-15" xml:id="add-summary">
-            <persName>Andrew Morrison</persName> Added summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl">add-summaries.xsl</ref>
-         </change>
-         <change when="2018-03-02" xml:id="fix-dates">
-            <persName>Andrew Morrison</persName> Removed origDate tags around something which is not a date using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
-         </change>
-         <change when="2017-11-07">
-            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
-         </change>
-         <change when="2014"/>
-      </revisionDesc>
-   </teiHeader>
-   <text>
-      <body>
-         <p><!--Body paragraph provided for validation and future transcription--></p>
-      </body>
-   </text>
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Persian MS 908</title>
+                <funder>Iran Heritage Foundation and The John Rylands Research Institute</funder>
+                            </titleStmt>
+            <publicationStmt>
+                <publisher>The University of Manchester Library</publisher>
+                <date calendar="#Gregorian">2014-MM-DD</date>
+                <pubPlace>
+                    <address>
+                        <addrLine>The John Rylands Library</addrLine>
+                        <street>150 Deansgate</street>
+                        <settlement>Manchester</settlement>
+                        <postCode>M3 3EH</postCode>
+                        <addrLine>
+                            <ref target="http://www.library.manchester.ac.uk/specialcollections/"
+                                >The John Rylands Library</ref>
+                        </addrLine>
+                        <addrLine>
+                            <email>uml.special-collections@manchester.ac.uk</email>
+                        </addrLine>
+                    </address>
+                </pubPlace>
+                <idno>UkMaJRU</idno>
+                <idno type="msID">Persian_MS_908</idno>
+                <idno type="catalogue">Fihrist</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc xml:id="Persian_MS_908" xml:lang="en">
+                    <msIdentifier>
+                        <country>United Kingdom</country>
+                        <settlement>Manchester</settlement>
+                        <institution>The University of Manchester</institution>
+                        <repository>The John Rylands Library</repository>
+                        <collection>Persian Manuscripts</collection>
+                        <idno>Persian MS 908</idno>
+                    </msIdentifier>
+                    <msContents>
+                        <summary> Illustrated copy of the <title>Kullīyāt</title> (collected poems) of ʻUrfī Shīrāzī </summary>
+                        <msItem xml:id="Persian_MS_908-item1">
+                            <author key="person_50413291" ref="http://viaf.org/viaf/50413291/">
+                                <persName xml:lang="fa-Latn-x-lc" type="standard">ʻUrfī Shīrāzī,
+                                    Muḥammad, 1555 or 6-1590 or 91</persName>
+                                <persName xml:lang="fa">عرفى</persName>
+                            </author>
+                            <title xml:lang="ar-Latn-x-lc" key="work_2251">Kullīyāt</title>
+                            <title xml:lang="fa" key="work_2251">كليات</title>
+                                                     <textLang mainLang="fa">Persian</textLang>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc form="codex">
+                            <supportDesc material="chart">
+                                <extent> 271 folios <dimensions type="leaf" unit="cm">
+                                        <height>22.2</height>
+                                        <width>12.3</width>
+                                    </dimensions>
+                                    <dimensions type="written" unit="cm">
+                                        <height>13</height>
+                                        <width>6</width>
+                                    </dimensions>
+                                </extent>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout columns="2" ruledLines="17" n="mistara"/>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote scope="major" script="nasta_liq" medium="ink"/>
+                        </handDesc>
+                        <decoDesc>
+                            <decoNote type="illustration"> Two double page miniatures at the
+                                beginning (<locus from="1b" to="1b">1b</locus> and <locus from="2a"
+                                    to="2a">2a</locus>) and end (<locus from="270b" to="270b"
+                                    >270b</locus> and <locus from="271a" to="271a">271a</locus>),
+                                both enclosed in richly illuminated borders. </decoNote>
+                            <decoNote type="decoration">Illuminated headings
+                                with richly decorated margins on folios <locus from="2b" to="2b"
+                                    >2b</locus> (Preface), <locus from="66b" to="66b">66b</locus>
+                                (Qasidas), <locus from="131b" to="131b">131b</locus> (Short Poems),
+                                    <locus from="141b" to="141b">141b</locus> (Ghazals) and <locus
+                                    from="253b" to="253b">253b</locus> (Quatrains).</decoNote>
+                        </decoDesc>
+                        <bindingDesc>
+                            <decoNote>Modern red leather slip-case. Contemporary binding very
+                                similar to that of Persian MS 35 (the gilt panels on the outer faces
+                                are from the same die) and no doubt from the same workshop, with
+                                panels of inscription of cut-out and inlaid coloured leather and
+                                cut-out work on the doublures.</decoNote>
+                        </bindingDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origDate calendar="#Hijri-qamari" when="1628">Tuesday, 8 Rabi' II
+                                1038 (1628 CE)</origDate>
+                        </origin>
+                        <provenance>
+                            <p>Colophon on folio <locus from="270a" to="270a">270a</locus> by the
+                                scribe <persName role="scribe" key="">Muhammad Husayn Dar-al-Marzi, called Qazi</persName>.</p>
+                            <p>Formerly part of the collection of a Chevalier J. Ferrão de
+                                Castel-Branco (or Castelbranco) who
+                                makes a single appearance in 1847 as a member of the Royal Asiatic
+                                Society. Also formerly part of the collection of the orientalist
+                                    <persName type="standard" ref="http://viaf.org/viaf/51695910"
+                                    key="person_51695910">Antoine-Isaac Silvestre de Sacy
+                                    (1758-1838).</persName></p>
+                            <p>A note on a slip inserted in the manuscript reads 'Purchased in May
+                                1883 at an orientalist sale in Lisbon for £80'.</p>
+                        </provenance>
+                        <acquisition>
+                            <p>Purchased by Enriqueta Rylands, on behalf of the John Rylands
+                                Library, in <date calendar="#Gregorian" when="1901">1901</date> from
+                                    <persName type="standard"
+                                    ref="http://viaf.org/viaf/9985420/#Crawford,_James_Ludovic_Lindsay,_Earl_of,_1847-1913"
+                                    key="person_9985420">James Ludovic Lindsay, 26th Earl of
+                                    Crawford</persName>.</p>
+                        </acquisition>
+                    </history>
+                    <additional>
+                        <adminInfo>
+                            <recordHist>
+                                <source>
+                                    <p>Bibliographical description based on an index created by
+                                            <persName key="person_f3520">Reza Navabpour</persName>
+                                        circa <date calendar="#Gregorian" notBefore="1992"
+                                            notAfter="1994">1993</date>. Identification of
+                                        provenance based on manuscript catalogue by Michael Kerney,
+                                            <date calendar="#Gregorian" notAfter="1901"
+                                            notBefore="1868">circa 1890s.</date>
+                                    </p><p>Manuscript description based on B.W. Robinson,
+                                        <title>Persian Paintings in the John Rylands Library: A
+                                            Descriptive Catalogue</title> (London, 1980).</p>
+                                </source>
+                            </recordHist>
+                            <availability status="restricted">
+                                <p>The manuscript is available for consultation by any accredited
+                                    reader, see <ref
+                                        target="http://www.library.manchester.ac.uk/ourservices/howtousethespecialcollections/becomingareader"
+                                        >Becoming a Reader</ref> for details. Please contact
+                                        <email>uml.special-collections@manchester.ac.uk</email> for
+                                    further information on the availability of this manuscript.</p>
+                                <p>A digital facsimile is available via the University of Manchester
+                                        Library<ref
+                                        target="https://luna.manchester.ac.uk/luna/servlet/s/2ruht6"
+                                        >Image Collections</ref></p>
+                            </availability>
+                        </adminInfo>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <classDecl>
+                <taxonomy xml:id="LCSH">
+                    <bibl>
+                        <ref target="http://id.loc.gov/authorities/about.html#lcsh">Library of
+                            Congress Subject Headings</ref>
+                    </bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="#LCSH">
+                    <list>
+                        <item>
+                            <term key="subject_sh89005046" target="http://lccn.loc.gov/sh89005046"
+                                >Persian poetry--1500-1796</term>
+                        </item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2018-06-14"><persName>Sophia Christmann</persName>Added codicological
+                information from Robinson catalogue.</change>
+            <change when="2018-06-08">
+                <persName>Andrew Morrison</persName> Updated key attributes using <ref
+                    target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl"
+                    >update-keys.xsl</ref>
+            </change>
+            <change when="2018-03-15" xml:id="add-summary">
+                <persName>Andrew Morrison</persName> Added summary using <ref
+                    target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl"
+                    >add-summaries.xsl</ref>
+            </change>
+            <change when="2018-03-02" xml:id="fix-dates">
+                <persName>Andrew Morrison</persName> Removed origDate tags around something which is
+                not a date using <ref
+                    target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl"
+                    >fix-dates.xsl</ref>
+            </change>
+            <change when="2017-11-07">
+                <persName>James Cummings</persName> Up-converted the markup using <ref
+                    target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl"
+                    >https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
+            </change>
+            <change when="2014"/>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p><!--Body paragraph provided for validation and future transcription--></p>
+        </body>
+    </text>
 </TEI>
