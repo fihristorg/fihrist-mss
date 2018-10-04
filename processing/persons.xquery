@@ -164,7 +164,7 @@ declare variable $allinstances :=
                     for $workid in $workids
                         let $url := concat("/catalog/", $workid)
                         let $linktext := ($worksauthority[@xml:id = $workid]/tei:title[@type = 'uniform'][1])[1]
-                        order by lower-case(bod:stripLeadingStopWords($linktext))
+                        order by lower-case(bod:stripLeadingStopWords(($linktext, '')[1]))
                         return
                         if (exists($linktext)) then
                             let $link := concat($url, "|", normalize-space($linktext/string()))

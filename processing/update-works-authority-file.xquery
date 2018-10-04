@@ -17,7 +17,7 @@ declare function local:logging($level, $msg, $values)
     substring(trace('', concat(upper-case($level), '	', $msg, '	', string-join($values, '	'), '	')), 0, 0)
 };
 
-declare function local:normalize4Crossrefing($name as xs:string) as xs:string
+declare function local:normalize4Crossrefing($name as xs:string*) as xs:string
 {
     let $normalized1 := replace(normalize-unicode($name, 'NFKD'), '^(the|a|an|al-|el-) ', '', 'i')
     let $normalized2 := 
