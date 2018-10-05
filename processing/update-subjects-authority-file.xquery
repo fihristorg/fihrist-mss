@@ -116,7 +116,7 @@ processing-instruction xml-model {'href="authority-schematron.sch" type="applica
         <item>{ comment{' Dummy subject, just so this file validates, do not delete '} }<term type="display"/></item>,
         $linebreak,
         $linebreak,
-        comment{' TODO: Review the following entries, update their key attributes in the TEI files, then cut and paste them into subjects_base.xml '},
+        comment{' TODO: Review the following entries, update their key attributes in the TEI files, add corresp attributes pointing to related terms, then cut and paste them into subjects_base.xml '},
         $linebreak,
         for $e in ($dedupednewlcsh, $lcshfrompreviousrun) order by $e/term[@type='display']/text() return ($e, $linebreak),
         $linebreak,
