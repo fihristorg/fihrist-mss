@@ -23,7 +23,7 @@
                      <ref target="http://www.bodleian.ox.ac.uk/libraries/collections">Bodleian Library</ref>
                   </addrLine>
                   <addrLine>
-                     <email>oriental@bodleian.ox.ac.uk</email>
+                     <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
                   </addrLine>
                </address>
             </pubPlace>
@@ -53,12 +53,12 @@
                         </persName>
                         <persName xml:lang="ar">الطبري، محمد بن جرير، 224-310 هـ</persName>
                      </author>
-                     <editor role="translator">
-                        <persName xml:lang="ar-Latn-x-lc" key="person_45495483" ref="http://viaf.org/viaf/45495483/">Balʻamī, Abū ʻAlī Muḥammad ibn Muḥammad, fl. 946-973</persName>
-                        <persName xml:lang="ar" key="person_f4981">أبو علي محمد بن محمد البلعمي</persName>
+                     <editor role="trl" key="person_45495483">
+                        <persName xml:lang="ar-Latn-x-lc" ref="http://viaf.org/viaf/45495483/">Balʻamī, Abū ʻAlī Muḥammad ibn Muḥammad, fl. 946-973</persName>
+                        <persName xml:lang="ar">أبو علي محمد بن محمد البلعمي</persName>
                      </editor>
-                     <title xml:lang="fa-Latn-x-lc">Taʼrīkh-i Ṭabarī</title>
-                     <title xml:lang="fa">تأريخ طبری</title>
+                     <title xml:lang="fa-Latn-x-lc" key="work_3401">Taʼrīkh-i Ṭabarī</title>
+                     <title xml:lang="fa" key="work_3401">تأريخ طبری</title>
                      <listBibl>
                         <bibl>Ethé 6</bibl>
                      </listBibl>
@@ -70,8 +70,8 @@
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Rashīd al-Dīn Ṭabīb, 1247?-1318</persName>
                         <persName xml:lang="fa">رشيد الدولة فضل الله بن أبي الخير، ت. 716 هـ</persName>
                      </author>
-                     <title xml:lang="fa-Latn-x-lc">Jāmiʻ al-tawārīkh</title>
-                     <title xml:lang="fa">جامع التواريخ</title>
+                     <title xml:lang="fa-Latn-x-lc" key="work_3831">Jāmiʻ al-tawārīkh</title>
+                     <title xml:lang="fa" key="work_3831">جامع التواريخ</title>
                      <listBibl>
                         <bibl>Ethé 23</bibl>
                      </listBibl>
@@ -83,7 +83,7 @@
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Anonymous</persName>
                         <persName xml:lang="fa">مؤلف مجهول</persName>
                      </author>
-                     <title>A fragment of a general history of the Moghul dynasty</title>
+                     <title key="work_3832">A fragment of a general history of the Moghul dynasty</title>
                      <listBibl>
                         <bibl>Ethé 148</bibl>
                      </listBibl>
@@ -120,7 +120,7 @@
                         <source>Manuscript description based on: Beeston, A. F. L. (Alfred Felix Landon); Ethé, Hermann, 1844-1917.; Sachau, Eduard, 1845-1930; Catalogue of the Persian, Turkish, Hindûstânî, and Pushtû manuscripts in the Bodleian Library, Oxford; at the Clarendon Press 1889-1953</source>
                      </recordHist>
                      <availability status="restricted">
-                        <p>Entry to read in the Library is permitted only on presentation of a valid reader's card (for admissions procedures contact <ref target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian Admissions</ref>). Contact <email>oriental@bodleian.ox.ac.uk</email> for further information on the availability of this manuscript</p>
+                        <p>Entry to read in the Library is permitted only on presentation of a valid reader's card (for admissions procedures contact <ref target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian Admissions</ref>). Contact <email>specialcollections.enquiries@bodleian.ox.ac.uk</email> for further information on the availability of this manuscript</p>
                      </availability>
                   </adminInfo>
                </additional>
@@ -205,6 +205,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2018-06-27">
+            <persName>Andrew Morrison</persName> Normalized roles using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/normalize-roles.xsl">normalize-roles.xsl</ref>
+         </change>
+         <change when="2018-06-08">
+            <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
+         </change>
          <change when="2018-03-28" xml:id="add-summary2">
             <persName>Andrew Morrison</persName> Adjusted summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries2.xsl">add-summaries2.xsl</ref>
          </change>
