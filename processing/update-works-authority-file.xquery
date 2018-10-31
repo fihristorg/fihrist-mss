@@ -17,7 +17,7 @@ declare function local:logging($level, $msg, $values)
     substring(trace('', concat(upper-case($level), '	', $msg, '	', string-join($values, '	'), '	')), 0, 0)
 };
 
-declare function local:normalize4Crossrefing($name as xs:string) as xs:string
+declare function local:normalize4Crossrefing($name as xs:string*) as xs:string
 {
     let $normalized1 := replace(normalize-unicode($name, 'NFKD'), '^(the|a|an|al-|el-) ', '', 'i')
     let $normalized2 := 
@@ -99,25 +99,53 @@ processing-instruction xml-model {'href="authority-schematron.sch" type="applica
             </bibl>
     )
     
-    let $allnewworks := ($worksfrompreviousrun, $newworks)
-    
     let $dedupednewworks := (
-        for $w at $pos in $allnewworks  
+        for $w at $pos in $newworks
             return 
-            if (some $v in $w/norm/text() satisfies $v = $allnewworks[position() lt $pos]/norm/text()) then
+            if (some $v in $w/norm/text() satisfies $v = $worksfrompreviousrun/norm/text()) then
+                (: This is a duplicate of an entry created by a previous running of this script, so skip it :)
+                ()
+            else if (some $v in $w/norm/text() satisfies $v = $newworks[position() lt $pos]/norm/text()) then
+                (: This is a duplicate of another new entry already processed in this for-loop, so skip it :)
                 ()
             else
-                let $duplicates := $allnewworks[position() gt $pos and (some $v in ./norm/text() satisfies $v = $w/norm/text())]
+                let $duplicates := $newworks[position() gt $pos and (some $v in ./norm/text() satisfies $v = $w/norm/text())]
                 return
+                if (count($duplicates) gt 0) then
+                    (: This has duplicates, so merge them into this entry :)
+                    <bibl>
+                        {
+                        for $t at $pos2 in distinct-values(($w/title/text(), $duplicates/title/text()))
+                            return
+                            (
+                            if ($pos2 eq 1) then
+                                <title type="uniform">{ $t }</title>
+                            else
+                                <title type="variant">{ $t }</title>
+                            )
+                        }
+                        {
+                        for $c in distinct-values(($w/comment(), $duplicates/comment()))
+                            order by $c
+                            return comment{ $c }
+                        }
+                    </bibl>
+                else
+                    $w
+    )
+    
+    let $worksfrompreviousrunwithnewvariants := (
+        for $w in $worksfrompreviousrun
+            let $duplicates := $newworks[some $v in ./norm/text() satisfies $v = $w/norm/text()]
+            return
+            if (count($duplicates) gt 0) then
                 <bibl>
+                    { $w/@xml:id }
                     {
-                    if ($w/@xml:id) then $w/@xml:id else if (exists($duplicates[@xml:id])) then $duplicates[@xml:id][1]/@xml:id else ()
-                    }
-                    {
-                    for $t at $pos2 in distinct-values(($w/title/text(), $duplicates/title/text()))
+                    for $t at $pos in distinct-values(($w/title/text(), $duplicates/title/text()))
                         return
                         (
-                        if ($pos2 eq 1) then
+                        if ($pos eq 1) then
                             <title type="uniform">{ $t }</title>
                         else
                             <title type="variant">{ $t }</title>
@@ -129,17 +157,24 @@ processing-instruction xml-model {'href="authority-schematron.sch" type="applica
                         return comment{ $c }
                     }
                 </bibl>
+            else
+                $w
     )
     
-    let $dedupednewworkswithids := (
+    let $dedupedworkswithids := (
         for $w at $pos in $dedupednewworks[not(exists(@xml:id))]
             return
             <bibl xml:id="{ concat('work_', ($highestcurrentkey + $pos)) }">
-                { $w/* }
+                { $w/*[not(self::norm)] }
                 { $w/comment() }
             </bibl>
         ,
-        $dedupednewworks[exists(@xml:id)]
+        for $w in $worksfrompreviousrunwithnewvariants
+            return
+            <bibl xml:id="{ $w/@xml:id }">
+                { $w/*[not(self::norm)] }
+                { $w/comment() }
+            </bibl>
     )
 
     (: Output the new _additions authority file :)
@@ -150,7 +185,7 @@ processing-instruction xml-model {'href="authority-schematron.sch" type="applica
         $linebreak,
         comment{' TODO: Review the following entries, update their key attributes in the TEI files, then cut and paste them into works_base.xml '},
         $linebreak,
-        for $e in $dedupednewworkswithids order by $e/title[@type='uniform']/text() return ($e, $linebreak),
+        for $e in $dedupedworkswithids order by $e/title[@type='uniform']/text() return ($e, $linebreak),
         $linebreak,
         $linebreak
     )
