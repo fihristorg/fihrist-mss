@@ -38,7 +38,7 @@ declare function local:normalize4Crossrefing($name as xs:string) as xs:string
 
 declare function local:percentEncode($str as xs:string) as xs:string
 {
-    string-join(for $s in tokenize($str, '%') return encode-for-uri($s), '%')
+    string-join(tokenize(string-join(for $s in tokenize($str, '%') return encode-for-uri($s), '%'), '-'), '%2D')
 };
 
 processing-instruction xml-model {'href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"'},
@@ -83,7 +83,7 @@ processing-instruction xml-model {'href="authority-schematron.sch" type="applica
                     
                 }
                 {
-                comment{concat(' ../collections/', local:percentEncode(substring-after(base-uri($p), 'collections/')), '#', $p/ancestor::*[@xml:id][1]/@xml:id, ' ')}
+                comment{concat(' ../collections/', local:percentEncode(substring-after(base-uri($p), 'collections/')), '#', local:percentEncode($p/ancestor::*[@xml:id][1]/@xml:id), ' ')}
                 }
             </person>       
     )
