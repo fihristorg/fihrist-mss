@@ -143,7 +143,7 @@ processing-instruction xml-model {'href="authority-schematron.sch" type="applica
                     )
                 }
                 {
-                comment{concat(' ../collections/', local:percentEncode(substring-after(base-uri($p), 'collections/')), '#', $p/ancestor::*[@xml:id][1]/@xml:id, ' ')}
+                comment{concat(' ../collections/', local:percentEncode(substring-after(base-uri($p), 'collections/')), '#', local:percentEncode($p/ancestor::*[@xml:id][1]/@xml:id), ' ')}
                 }
             </person>
     )
