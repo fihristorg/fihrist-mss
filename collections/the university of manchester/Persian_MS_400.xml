@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6657">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_14614">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Persian MS 176</title>
+            <title>Persian MS 400</title>
             <funder>Iran Heritage Foundation and The John Rylands Research Institute</funder>
                      </titleStmt>
          <publicationStmt>
@@ -26,34 +26,45 @@
                </address>
             </pubPlace>
             <idno>UkMaJRU</idno>
-            <idno type="msID">Persian_MS_176</idno>
+            <idno type="msID">Persian_MS_400</idno>
             <idno type="catalogue">Fihrist</idno>
          </publicationStmt>
          <sourceDesc>
-            <msDesc xml:id="Persian_MS_176" xml:lang="en">
+            <msDesc xml:lang="en">
                <msIdentifier>
                   <country>United Kingdom</country>
                   <settlement>Manchester</settlement>
                   <institution>The University of Manchester</institution>
                   <repository>The John Rylands Library</repository>
                   <collection>Persian Manuscripts</collection>
-                  <idno>Persian MS 176</idno>
+                  <idno>Persian MS 400</idno>
                </msIdentifier>
                <msContents>
-                  <summary>A general history from the creation of the world to the time of the author (volume 4 of 6, incomplete)</summary>
-                  <msItem xml:id="Persian_MS_176-item1">
-                     <author key="person_21020332" ref="http://viaf.org/viaf/21020332/">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Mīr Khvānd, Muḥammad ibn Khāvandshāh, 1433-1498</persName>
-                        <persName xml:lang="fa">مير خواند، محمد بن خواندشاه</persName>
+                  <summary change="#add-summary">
+                     Nigāristān-i Qazvīnī by Ghaffārī 
+                  </summary>
+                                    <msItem xml:id="manuscript_14614-item1">
+                     <author key="person_170551551" ref="http://viaf.org/viaf/170551551/">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Ghaffārī, Ahmad ibn Muhammad approximately 1495-1567 or 1568</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt">Ghaffārī Qazvīnī, Aḥmad</persName>
+                        <persName xml:lang="fa">غفارى، احمد بن محمد</persName>
                      </author>
-                     <title xml:lang="fa-Latn-x-lc" key="work_6898">Rawz̤at al-ṣafā fī sīrat al-anbiyā wa-al-mulūk</title>
-                     <title xml:lang="ar-Latn-x-lc" type="alt" key="work_6898">Rawḍat al-ṣafāʼ</title>
-                     <title xml:lang="fa" key="work_6898">روضة الصفاء فی سیرة الانبيا و الملوك</title>
-                                        <textLang mainLang="fa">Persian</textLang>
+                     <title xml:lang="fa-Latn-x-lc" key="work_7003">Nigāristān-i Qazvīnī</title>
+                     <title xml:lang="fa" key="work_7003">نگارستان قزوینی</title>
+                                       <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
-                            <history>
-                 <origin change="#fix-dates">Not dated</origin>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="chart">
+                        <extent>
+                           <dimensions type="leaf" unit="cm"><height>23.4</height><width>12.8</width></dimensions>
+                                        </extent>
+                     </supportDesc>
+                                     </objectDesc>
+                                           </physDesc>
+               <history>
+                  <origin change="#fix-dates">Not dated (<origDate calendar="#Gregorian" notBefore="1550" notAfter="1650">circa 1600</origDate></origin>
                   <provenance>
                      <p>Formerly part of the collection of the Persian scholar <persName type="standard" ref="http://viaf.org/viaf/20108923/#Bland,_Nathaniel,_1803-1865" key="person_20108923">Nathaniel Bland (1803-1865)</persName>. Bland’s oriental manuscripts were sold through Bernard Quaritch in 1866 to <persName type="standard" ref="http://viaf.org/viaf/97751058/#Crawford,_Alexander_Crawford_Lindsay,_Earl_of,_1812-1880" key="person_97751058">Alexander Lindsay, 25th Earl of Crawford</persName>.</p>
                   </provenance>
@@ -91,30 +102,15 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh85068446" target="http://id.loc.gov/authorities/sh85068446#concept">Islamic Empire--History</term>
-                  </item>
-                  <item>
-                     <term key="subject_sh85148201" target="http://id.loc.gov/authorities/sh85148201#concept">World history</term>
-                  </item>
-                  <item>
-                     <term key="subject_sh85148201" target="http://id.loc.gov/authorities/sh85148201#concept">Universal history</term>
+                     <term key="subject_sh85067895" target="http://lccn.loc.gov/sh85067895">Iran--History</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
-      <revisionDesc><change when="2018-12-07"><persName>Elizabeth Gow</persName> Amended summary for multi-volume set.</change>
-         <change when="2018-06-08">
-            <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
-         </change>
-         <change when="2018-03-02" xml:id="fix-dates">
-            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
-         </change>
-         <change when="2017-11-07">
-            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
-         </change>
-         <change when="2014">
-            <persName>Yasmin Faghihi</persName>
+      <revisionDesc>
+          <change when="2018-12-07">
+            <persName>Elizabeth Gow</persName> Created record using Persian MS 324 as a template.
          </change>
       </revisionDesc>
    </teiHeader>
