@@ -14,9 +14,9 @@ declare variable $allinstances :=
         let $shelfmark := ($roottei/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:idno)[1]/string()
         let $roles := 
             if ($instance/self::tei:author) 
-                then ('author') 
+                then ('aut') 
             else if ($instance/parent::tei:title)
-                then ('Subject of a work', tokenize($instance/@role/data(), ' '))
+                then ('subject', tokenize($instance/@role/data(), ' '))
             else tokenize($instance/@role/data(), ' ')
         let $datesoforigin := bod:summarizeDates($roottei//tei:origin//tei:origDate)
         let $placesoforigin := distinct-values($roottei//tei:origin//tei:origPlace/normalize-space()[string-length(.) gt 0])
@@ -51,7 +51,7 @@ declare variable $allinstances :=
                     ()
             }
             {
-            if (some $role in $roles satisfies $role eq 'Subject of a work' and not($instance/parent::tei:bibl)) then 
+            if (some $role in $roles satisfies $role eq 'subject' and not($instance/parent::tei:bibl)) then 
                 for $workid in distinct-values($instance/../../tei:title[@key]/@key/tokenize(data(), ' '))
                     return <subjectof>{ $workid }</subjectof>
             else
@@ -89,7 +89,7 @@ declare variable $allinstances :=
         let $roles := distinct-values(for $role in distinct-values($instances/role/text()) return bod:personRoleLookup($role))
         let $isauthor := some $role in $instances/role/text() satisfies $role = ('author','aut')
         let $istranslator := some $role in $instances/role/text() satisfies $role = ('translator','trl')
-        let $issubjectofawork := some $role in $instances/role/text() satisfies $role eq 'Subject of a work'
+        let $issubjectofawork := some $role in $instances/role/text() satisfies $role eq 'subject'
 
         (: Output a Solr doc element :)
         return if (count($instances) gt 0) then

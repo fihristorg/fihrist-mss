@@ -64,9 +64,9 @@ declare variable $collection := collection('../collections/?select=*.xml;recurse
                     { (: Fihrist doesn't consistently markup links to digital copies: bod:digitized($ms//tei:sourceDesc//tei:surrogates/tei:bibl, 'ms_digitized_s'):)() }
                     { bod:languages($ms//tei:sourceDesc//tei:textLang, 'lang_sm') }
                     { bod:centuries(
-                        $ms//tei:origin//tei:origDate[@calendar = '#Gregorian' or @calendar = '#Hijri-qamari'], 
+                        $ms//tei:origin//tei:origDate[@calendar = ('#Gregorian', '#Hijri-qamari', '#Hindu')], 
                         'ms_date_sm', 
-                        if ($ms//tei:origin//tei:origDate[@calendar = '#Gregorian' or @calendar = '#Hijri-qamari']) 
+                        if ($ms//tei:origin//tei:origDate[@calendar = ('#Gregorian', '#Hijri-qamari', '#Hindu')]) 
                             then 'Date not machine-readable' 
                         else if ($ms//tei:origin//tei:origDate) 
                             then 'Date in unsupported calendar' 
