@@ -193,27 +193,7 @@
     </xsl:template>
     
     
-    
-    <!-- The following templates should be moved into msdesc2html.xsl when I've tested their effect on other catalogues -->
-    <xsl:template match="list">
-        <ul class="mslist">
-            <xsl:apply-templates/>
-        </ul>
-    </xsl:template>
-    
-    <xsl:template match="item">
-        <li class="mslistitem">
-            <xsl:apply-templates/>
-        </li>
-    </xsl:template>
-    
-    <xsl:template match="label">
-        <span class="mslabel"><!-- Cannot use class of "label" as clashes with something else in the CSS -->
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    
-
+  
     
     <!-- These really should be fixed in the source TEI - pointless single-item lists in the source 
          history - but this is a quick fix to stop them looking ugly on the web site -->
