@@ -58,15 +58,15 @@ declare variable $collection := collection('../collections/?select=*.xml;recurse
                     { bod:many2one($ms//tei:msIdentifier/tei:msName, 'ms_name_sm') }
                     { bod:one2one(($ms//tei:publicationStmt/tei:pubPlace/tei:address/tei:addrLine/tei:email, $ms//tei:additional/tei:adminInfo/tei:availability//tei:email)[1], 'ms_contactemail_sni') }
                     <field name="filename_s">{ substring-after(base-uri($ms), 'collections/') }</field>
-                    { bod:materials($ms//tei:msDesc//tei:physDesc//tei:supportDesc[@material], 'ms_materials_sm', 'Not specified') }
+                    { bod:materials($ms//tei:msDesc//tei:physDesc//tei:supportDesc[@material], 'ms_materials_sm', 'Unknown') }
                     { bod:physForm($ms//tei:physDesc/tei:objectDesc, 'ms_physform_sm', 'Not specified') }
                     { bod:trueIfExists($ms//tei:sourceDesc//tei:decoDesc/tei:decoNote, 'ms_deconote_b') }
                     { (: Fihrist doesn't consistently markup links to digital copies: bod:digitized($ms//tei:sourceDesc//tei:surrogates/tei:bibl, 'ms_digitized_s'):)() }
                     { bod:languages($ms//tei:sourceDesc//tei:textLang, 'lang_sm') }
                     { bod:centuries(
-                        $ms//tei:origin//tei:origDate[@calendar = '#Gregorian' or @calendar = '#Hijri-qamari'], 
+                        $ms//tei:origin//tei:origDate[@calendar = ('#Gregorian', '#Hijri-qamari', '#Hindu')], 
                         'ms_date_sm', 
-                        if ($ms//tei:origin//tei:origDate[@calendar = '#Gregorian' or @calendar = '#Hijri-qamari']) 
+                        if ($ms//tei:origin//tei:origDate[@calendar = ('#Gregorian', '#Hijri-qamari', '#Hindu')]) 
                             then 'Date not machine-readable' 
                         else if ($ms//tei:origin//tei:origDate) 
                             then 'Date in unsupported calendar' 
