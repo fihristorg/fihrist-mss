@@ -1,16 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_12936">
-    <teiHeader>
+<?oxygen RNGSchema="enrich-wamcp.rnc" type="compact"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_12930">
+    <!-- VALIDATE Increment -->
+    <teiHeader xmlns="http://www.tei-c.org/ns/1.0">
         <fileDesc>
             <titleStmt>
-                <title>R.10.3</title>
+                <title/>
                 <funder>Trinity College Cambridge</funder>
                 <principal/>
             </titleStmt>
             <publicationStmt>
-
+                <date calendar="Gregorian">[Date when first made available]</date>
                 <publisher>Trinity College Cambridge</publisher>
                 <pubPlace>
                     <address>
@@ -24,12 +23,10 @@
                         <addrLine><email>wren.library@trin.cam.ac.uk</email></addrLine>
                     </address>
                 </pubPlace>
-                <idno>UkCU-TRI</idno>
-                <idno type="msID">R_10_3</idno>
-                <idno type="catalogue">Fihrist</idno>
+                <idno type="msID">R_8_7</idno>
             </publicationStmt>
             <sourceDesc>
-                <msDesc xml:id="R_10_3" xml:lang="en">
+                <msDesc xmlns="http://www.tei-c.org/ns/1.0" xml:id="R_8_7" xml:lang="en">
                     <msIdentifier>
                         <country>United Kingdom</country>
                         <region type="county">Cambridgeshire</region>
@@ -37,70 +34,83 @@
                         <institution>Trinity College Cambridge</institution>
                         <repository>Wren Library</repository>
                         <collection>Oriental Manuscripts</collection>
-                        <idno>R.10.3</idno>
-
+                        <idno>R.8.7</idno>
+                        <!-- Identifier from Google Books -->
+                        <altIdentifier type="other">
+                            <idno/>
+                        </altIdentifier>
                     </msIdentifier>
                     <msContents>
-                        <summary>The dīvān of Shawkat Bukhārī, a collection of Persian mystical
-                            poems, consisting of ghazals and rubāʿis. </summary>
-                        <msItem xml:id="R_10_3-item1">
-                            <author key="person_31909742">
-                                <persName xml:lang="ota-Latn-x-lc">Şevket Buharı̂, Mehmet İshak,
-                                    d. 1695</persName>
-                                <persName xml:lang="fa">شوكت بخاری </persName>
-                            </author>
-                            <title xml:lang="fa-Latn-x-lc" key="work_2317">Dīvān-i Shawkat
-                                Bukhārī</title>
+                        <summary>1 copy of the Qurʼān, undated. </summary>
+                        <msItem xml:id="R_8_7-item1">
+                           
+                            <title xml:lang="ar-Latn-x-lc" key="work_112">al-Qurʼān</title>
+                           
+                            <title xml:lang="ar" key="work_112">القرآن</title>
+                           
+                           
+                            
+                            <explicit xml:lang="ar" defective="true"/>
+                            <note>The headings of the sūrahs are in red, and upon the cover is
+                                stamped the sentence: <foreign xml:lang="ar">لا يمسه إلا المطهرين
+                                    تنزيل من رب العالمين</foreign> ('No one shall touch it save the
+                                pure; it is a revelation from the Lord of the Universe'. </note>
 
-                            <title xml:lang="fa" key="work_2317">ديوان شوكت بخاری</title>
-
-
-
-                            <incipit xml:lang="fa">إلهي رنگ تاثیری کرامت کن فغنام را زموج اشک بلبل
-                                آب ده تيغ زبانم را </incipit>
-                            <explicit xml:lang="fa">هركه خواند دعا طمع دارم زآنكه من بنده گنه گارم </explicit>
                             <listBibl>
                                 <bibl>
                                     <ref
-                                        target="http://www.lib.cam.ac.uk/arabic_catalogues/browne1922/view.php?id=59"
-                                        >no. 563</ref>
+                                        target="http://www.lib.cam.ac.uk/arabic_catalogues/browne1922/view.php?id=95"
+                                        >no. 928</ref>
                                 </bibl>
                                 <bibl>
                                     <ref
                                         target="https://www.trin.cam.ac.uk/library/library-catalogues/"
-                                        >Palmer, p. 6-7</ref>
+                                        >Palmer, p. 1</ref>
                                 </bibl>
-
                             </listBibl>
-                            <textLang mainLang="fa">Persian</textLang>
+
+
+                            <textLang mainLang="ar">Arabic</textLang>
                         </msItem>
                     </msContents>
                     <physDesc>
                         <objectDesc form="codex">
+                            
                             <supportDesc material="chart">
-                                <extent>193 ff. </extent>
-
+                                <extent>243 ff.
+                                </extent>
+                               
+                                <condition>
+                                    <p>In a good state of preservation.</p>
+                                </condition>
                             </supportDesc>
-
+                            <layoutDesc>
+                                <layout columns="0" ruledLines="00" n="mistara">
+                                    <locus/>
+                                    <dimensions type="line-height" unit="mm">
+                                        <height/>
+                                    </dimensions>
+                                </layout>
+                            </layoutDesc>
                         </objectDesc>
                         <handDesc>
-                            <handNote scope="major" script="ta_liq"><desc>Written in small,
-                                    beautiful taʿlīq </desc></handNote>
+                            <handNote scope="major" script="naskh">
+                                <desc>Written in plain Naskh characters - transcribed by an Indian
+                                    or Persian hand, and fully pointed throughout. </desc>
+                            </handNote>
                         </handDesc>
-
-                        <additions><list>
-                                <item><locus>Fly-leaf</locus>
-                                    <label>marginalia</label>
-                                    <quote xml:lang="per">قیمت بیست روپیه</quote></item>
-                            </list>
-                            <p/>
-                        </additions>
-
+                       
+                        <bindingDesc>
+                            <p>Native binding</p>
+                        </bindingDesc>
                     </physDesc>
                     <history>
-                        <origin>Undated</origin>
-
-
+                        <origin>
+                           Undated
+                        </origin>
+                        <provenance/>
+                        <acquisition>Presented to the Library in 1682 by <persName key="" xml:lang="en">Richard Duke</persName>, a Fellow
+                            of the college.</acquisition>
                     </history>
                     <additional>
                         <adminInfo>
@@ -115,17 +125,15 @@
                             </recordHist>
                             <availability status="restricted">
                                 <p>Entry to read in the Library is permitted only on presentation of
-                                    a valid reader's card. (For admissions procedures contact <ref
-                                        target="https://www.trin.cam.ac.uk/library/wren-library/#Visit"
-                                        >Wren Library Admissions</ref>). Contact
-                                        <email>wren.library@trin.cam.ac.uk</email> for further
+                                    a valid reader's card. For admissions procedures contact: <ref
+                                        target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/"
+                                        >Cambridge University Library Admissions</ref>. Contact
+                                        <email>near_eastern@lib.cam.ac.uk</email> for further
                                     information on the availability of this manuscript.</p>
                             </availability>
-
+                            <note/>
                         </adminInfo>
-                        <listBibl>
-                            <bibl type="related-items"/>
-                        </listBibl>
+                       
                     </additional>
                 </msDesc>
             </sourceDesc>
@@ -145,29 +153,30 @@
                 <keywords scheme="#LCSH">
                     <list>
                         <item>
-                            <term key="subject_sh89005046">Persian poetry--1500-1796</term>
+                            <term key="subject_sh85072953">Koran</term>
+                           
                         </item>
                     </list>
                 </keywords>
             </textClass>
         </profileDesc>
         <revisionDesc>
-            <change when="2017">
+            <change when="2018">
                 <persName>Rosie Maxton</persName></change>
             <!-- Your revisionDesc should include information concerning 
             major changes to the electronic file.  Replace the above 
             with something more suitable.   -->
         </revisionDesc>
     </teiHeader>
-    <!--<facsimile>
-        <!-\- facsimile information about the manuscript -\->
+    <facsimile>
+        <!-- facsimile information about the manuscript -->
         <graphic/>
         <graphic/>
         <graphic/>
         <graphic/>
-        <!-\- Alternatively you could provide 'surface' elements with more than one image per surface, and optionally with 'zone' 
-            elements to give coordinates for any special areas of interest -\->
-    </facsimile>-->
+        <!-- Alternatively you could provide 'surface' elements with more than one image per surface, and optionally with 'zone' 
+            elements to give coordinates for any special areas of interest -->
+    </facsimile>
     <text>
         <body>
             <!-- If you had a transcription of the manuscript you would put it here -->
