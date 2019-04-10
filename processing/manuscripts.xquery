@@ -71,7 +71,7 @@ declare variable $collection := collection('../collections/?select=*.xml;recurse
                         else if ($ms//tei:origin//tei:origDate) 
                             then 'Date in unsupported calendar' 
                         else 'Undated') }
-                    { bod:string2one(bod:shortenToNearestWord(string-join(($ms//tei:msContents/tei:summary)[1]//text(), ' '), 128), 'ms_summary_s') }
+                    { bod:string2one(bod:shortenToNearestWord(string-join(($ms//tei:msDesc/tei:head, $ms//tei:msContents/tei:summary)[1]//text(), ' '), 128), 'ms_summary_s') }
                     { bod:indexHTML($htmldoc, 'ms_textcontent_tni') }
                     { bod:displayHTML($htmldoc, 'display') }
                 </doc>
