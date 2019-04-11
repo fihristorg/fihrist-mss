@@ -154,7 +154,7 @@
     <xsl:template name="MsItemFooter">
         <xsl:if test="listBibl/bibl">
             <xsl:choose>
-                <xsl:when test="@n or ancestor::msItem[@xml:id and title] or following-sibling::msItem or preceding-sibling::msItem">
+                <xsl:when test="@n or ancestor::msItem[@xml:id and title] or following-sibling::msItem or preceding-sibling::msItem or ancestor::msPart">
                     <h4>
                         <xsl:copy-of select="bod:standardText('References')"/>
                     </h4>
