@@ -62,7 +62,7 @@ processing-instruction xml-model {'href="authority-schematron.sch" type="applica
             <list>
 {
     let $newlcsh := (      
-        for $s in $collection//(tei:term|tei:placeName|tei:settlement|tei:region|tei:country)[matches(@key, 'subject_(sh|n)\d+') and not(@key = $currentkeys)]
+        for $s in $collection//(tei:term|tei:placeName|tei:settlement|tei:region|tei:country)[matches(@key, 'subject_(sh|n|no)\d+') and not(@key = $currentkeys)]
             return 
             <item xml:id="{ $s/@key }">
                 <term type="display">{ normalize-space(string-join($s//text(), ' ')) }</term>
@@ -108,7 +108,7 @@ processing-instruction xml-model {'href="authority-schematron.sch" type="applica
             </item>
     )
     
-    let $lcshfrompreviousrun := $additions[matches(@xml:id, 'subject_(sh|n)\d+')]
+    let $lcshfrompreviousrun := $additions[matches(@xml:id, 'subject_(sh|n|no)\d+')]
 
     (: Output the new _additions authority file :)
     return (
