@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_15828">
   <teiHeader>
     <fileDesc>
@@ -12,7 +14,138 @@
         <idno type="catalogue">Fihrist</idno>
       </publicationStmt>
       <sourceDesc>
-        <p>Born Digital</p>
+        <msDesc xml:id="MS_Arabic_183" xml:lang="en">
+          <msIdentifier>
+            <country>UK</country>
+            <settlement>London</settlement>
+            <institution>Wellcome Trust</institution>
+            <repository>Wellcome Collection</repository>
+            <collection> Manuscripts in Arabic</collection>
+            <idno>MS Arabic 183</idno>
+          </msIdentifier>
+          
+          
+          
+          <msContents>
+            <summary>1 anonymously written pharmacopoeia</summary>
+            <msItem xml:id="MS_Arabic_183-item1">
+              <author>
+                <persName xml:lang="en" key="person_f407">Anonymous</persName>
+              </author>
+              <title xml:lang="en" type="desc">Pharmacopoeia</title>
+              <note>Tract on identifying compound medicines.</note>
+              <note>The basmala and colophon of this copy were transcribed by different hands, so
+                were probably added at a later stage. There are leaves missing at the beginning and
+                end of the MS.</note>
+              <note>Text mentions the name <persName xml:lang="ar-Latn-x-lc" key="person_273335435">Ibn Zuhr, ʻAbd al-Malik
+                ibn Abī al-ʻAlāʾ, d. 1162</persName>.</note>
+              
+              
+              <incipit type="basmala" facs="#i0002" xml:lang="ar">
+                <locus>fol.1a.1</locus> بسم الله الرحمن الرحيم </incipit>
+              <incipit xml:lang="ar">
+                <locus>fol.1a.2</locus> بسم الله الرحمن الرحيم وورق الفار وعيدان البلسان وساذج هندي
+                وراسن وابهل وادخر وورق الاس وقردمانا واذان الفار ومر زنجوس من كل واحد اوقيتان </incipit>
+              <explicit facs="#i0023" xml:lang="ar"> 
+                <locus>fol.21b.22</locus> مقل اليهود هو المقل الازرق وماعلمت لم سمي مقل اليهود الي
+                الان مرارة الصخر هو الحنظل مدمت الحصا هو حجر اليهود </explicit>
+              <colophon facs="#i0023">
+                <locus>fol.21b.25</locus> تم بعونه تعالى سة ١٠٥١ فى شهر رجاب ١٥ والحمد لله رب
+                العالمين </colophon>
+              <msItem n="toc">
+                <locus>fol.8b.1</locus>
+                <title type="original" facs="#i0010"> الباب العشرين في ابدال الادويه التي يتعذر في
+                  وجودها في الوقت الحاضر ودعت الضروره الي تركيب دوا منها وهو مرتب علي حروف العجم فمن
+                  ذالك <sic/> حرف الالف من كتاب الرازي في الابدال ومن غير اكتمكت وهو حجر اصفر داخله
+                  لب يتهرك يسهل الولاده اذا علق علي المراه وهو دوا هندي </title>
+              </msItem>
+              <msItem n="toc">
+                <locus>fol.11a.25</locus>
+                <title type="original" facs="#i0012">باب في صفة بيان الاقاقير باختلاف اللغات على لغت
+                  العجم ولسان اليوناني ولسان الفارسي حرف الحا حرحور قيل هو الصفصاف</title>
+              </msItem>
+              
+              
+              <textLang mainLang="ar">Arabic</textLang>
+            </msItem>
+          </msContents>
+          <physDesc>
+            <objectDesc form="codex">
+              <supportDesc material="chart">
+                <support>
+                  <material>Burnished</material>
+                </support>
+                <extent> 21 ff. <dimensions type="leaf" unit="mm">
+                  <height>255</height>
+                  <width>190</width>
+                </dimensions>
+                  <dimensions type="written" unit="mm">
+                    <height>185</height>
+                    <width>118</width>
+                  </dimensions>
+                </extent>
+                <foliation facs="#i0004"> in pencil, European. <catchwords facs="#i0004">Catchwords present in
+                  text.</catchwords>
+                </foliation>
+                <collation>
+                  <seg type="gathering" subtype="folded">
+                    <dimensions type="leaf" unit="mm" quantity="1"/>
+                    <note>Single section binding.</note>
+                    <formula>1-21</formula>
+                  </seg>
+                </collation>
+                <condition>Sound</condition>
+              </supportDesc>
+              <layoutDesc>
+                <layout ruledLines="25" columns="1"/>
+              </layoutDesc>
+            </objectDesc>
+            <handDesc>
+              <handNote scope="major" script="naskh">
+                <p><label>Script:</label> Naskh</p>
+                <p><label>Ink:</label> Black and red</p>
+                
+                
+                <seg type="lines">25</seg>
+                <seg type="density">575</seg>
+                <seg type="ratio">1:1</seg>
+                <seg type="anglealef">90</seg>
+                <seg type="anglekaf">25</seg>
+                
+              </handNote>
+            </handDesc>
+            <decoDesc>
+              
+              <decoNote type="rubrication">
+                <desc facs="#i0004">Rubrication throughout.</desc>
+              </decoNote>
+              
+            </decoDesc>
+            <bindingDesc>
+              <binding contemporary="true">
+                <p>
+                  <seg type="board">
+                    <dimensions type="binding" unit="mm">
+                      <height>255</height>
+                      <width>190</width>
+                    </dimensions>
+                  </seg>
+                  <seg type="covers" subtype="attached">
+                    <material>Paper covers.</material>
+                  </seg>
+                </p>
+              </binding>
+            </bindingDesc>
+          </physDesc>
+          <history>
+            <origin>
+              <origDate calendar="#Hijri-qamari" when="1641">1051 A.H.</origDate>
+              
+              
+              
+            </origin>
+          </history>
+        </msDesc>
       </sourceDesc>
 
     </fileDesc>
@@ -290,138 +423,7 @@
   <text>
     <body>
       <div>
-        <msDesc xml:id="MS_Arabic_183" xml:lang="en">
-          <msIdentifier>
-            <country>UK</country>
-            <settlement>London</settlement>
-            <institution>Wellcome Trust</institution>
-            <repository>Wellcome Library</repository>
-            <collection type="main">Asian Collection</collection>
-            <idno>MS Arabic 183</idno>
-          </msIdentifier>
-
-
-
-          <msContents>
-            <summary>1 anonymously written pharmacopoeia</summary>
-            <msItem xml:id="MS_Arabic_183-item1">
-              <author>
-                <persName xml:lang="en" key="person_f407">Anonymous</persName>
-              </author>
-              <title xml:lang="en" type="desc">Pharmacopoeia</title>
-              <note>Tract on identifying compound medicines.</note>
-              <note>The basmala and colophon of this copy were transcribed by different hands, so
-                were probably added at a later stage. There are leaves missing at the beginning and
-                end of the MS.</note>
-              <note>Text mentions the name <persName xml:lang="ar-Latn-x-lc" key="person_273335435">Ibn Zuhr, ʻAbd al-Malik
-                  ibn Abī al-ʻAlāʾ, d. 1162</persName>.</note>
-
-
-              <incipit type="basmala" facs="#i0002" xml:lang="ar">
-                <locus>fol.1a.1</locus> بسم الله الرحمن الرحيم </incipit>
-              <incipit xml:lang="ar">
-                <locus>fol.1a.2</locus> بسم الله الرحمن الرحيم وورق الفار وعيدان البلسان وساذج هندي
-                وراسن وابهل وادخر وورق الاس وقردمانا واذان الفار ومر زنجوس من كل واحد اوقيتان </incipit>
-              <explicit facs="#i0023" xml:lang="ar"> 
-                <locus>fol.21b.22</locus> مقل اليهود هو المقل الازرق وماعلمت لم سمي مقل اليهود الي
-                الان مرارة الصخر هو الحنظل مدمت الحصا هو حجر اليهود </explicit>
-              <colophon facs="#i0023">
-                <locus>fol.21b.25</locus> تم بعونه تعالى سة ١٠٥١ فى شهر رجاب ١٥ والحمد لله رب
-                العالمين </colophon>
-              <msItem n="toc">
-                <locus>fol.8b.1</locus>
-                <title type="original" facs="#i0010"> الباب العشرين في ابدال الادويه التي يتعذر في
-                  وجودها في الوقت الحاضر ودعت الضروره الي تركيب دوا منها وهو مرتب علي حروف العجم فمن
-                  ذالك <sic/> حرف الالف من كتاب الرازي في الابدال ومن غير اكتمكت وهو حجر اصفر داخله
-                  لب يتهرك يسهل الولاده اذا علق علي المراه وهو دوا هندي </title>
-              </msItem>
-              <msItem n="toc">
-                <locus>fol.11a.25</locus>
-                <title type="original" facs="#i0012">باب في صفة بيان الاقاقير باختلاف اللغات على لغت
-                  العجم ولسان اليوناني ولسان الفارسي حرف الحا حرحور قيل هو الصفصاف</title>
-              </msItem>
-
-
-              <textLang mainLang="ar">Arabic</textLang>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc form="codex">
-              <supportDesc material="chart">
-                <support>
-                  <material>Burnished</material>
-                </support>
-                <extent> 21 ff. <dimensions type="leaf" unit="mm">
-                    <height>255</height>
-                    <width>190</width>
-                  </dimensions>
-                  <dimensions type="written" unit="mm">
-                    <height>185</height>
-                    <width>118</width>
-                  </dimensions>
-                </extent>
-                <foliation facs="#i0004"> in pencil, European. <catchwords facs="#i0004">Catchwords present in
-                     text.</catchwords>
-                </foliation>
-                <collation>
-                  <seg type="gathering" subtype="folded">
-                    <dimensions type="leaf" unit="mm" quantity="1"/>
-                    <note>Single section binding.</note>
-                    <formula>1-21</formula>
-                  </seg>
-                </collation>
-                <condition>Sound</condition>
-              </supportDesc>
-              <layoutDesc>
-                <layout ruledLines="25" columns="1"/>
-              </layoutDesc>
-            </objectDesc>
-            <handDesc>
-              <handNote scope="major" script="naskh">
-                <p><label>Script:</label> Naskh</p>
-                <p><label>Ink:</label> Black and red</p>
-              
-               
-                  <seg type="lines">25</seg>
-                  <seg type="density">575</seg>
-                  <seg type="ratio">1:1</seg>
-                  <seg type="anglealef">90</seg>
-                  <seg type="anglekaf">25</seg>
-                
-              </handNote>
-            </handDesc>
-            <decoDesc>
-              
-              <decoNote type="rubrication">
-                <desc facs="#i0004">Rubrication throughout.</desc>
-              </decoNote>
-             
-            </decoDesc>
-            <bindingDesc>
-              <binding>
-                <p>
-                  <seg type="board">
-                    <dimensions type="binding" unit="mm">
-                      <height>255</height>
-                      <width>190</width>
-                    </dimensions>
-                  </seg>
-                  <seg type="covers" subtype="attached">
-                    <material>Paper covers.</material>
-                  </seg>
-                </p>
-              </binding>
-            </bindingDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origDate calendar="#Hijri-qamari" when="1641">1051 A.H.</origDate>
-              
-            
-              
-            </origin>
-          </history>
-        </msDesc>
+        
       </div>
     </body>
   </text>

@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_15714">
   <teiHeader>
     <fileDesc>
@@ -12,7 +14,160 @@
         <idno type="catalogue">Fihrist</idno>
       </publicationStmt>
       <sourceDesc>
-        <p>Born Digital</p>
+        <msDesc xml:lang="en" xml:id="MS_Arabic_66">
+          <msIdentifier>
+            <country>United Kingdom</country>
+            <settlement>London</settlement>
+            <institution>Wellcome Trust</institution>
+            <repository>Wellcome Collection</repository>
+            <collection> Manuscripts in Arabic</collection>
+            
+            <idno>MS Arabic 66</idno>
+            <altIdentifier type="former">
+              <idno>Iskandar 66a</idno>
+            </altIdentifier>
+          </msIdentifier>
+          
+          <msContents>
+            <summary>1 copy of Kitāb al-Qānūn fī al-ṭibb by Avicenna</summary>
+            <msItem xml:id="MS_Arabic_66-item1">
+              <author key="person_97166546">
+                <persName xml:lang="en">Avicenna, d. 980-1037</persName>
+                <persName xml:lang="ar">ابو على الحسين ابن عبد الله ابن سينا</persName>
+              </author>
+              
+              <title xml:lang="ar-Latn-x-lc" key="work_3001">Kitāb al-Qānūn fī al-ṭibb</title>
+              <title xml:lang="ar" key="work_3001"> كتاب القانون في الطبّ <locus>194b</locus>
+              </title>
+              <note>The first book of Avicenna's Canon. Ullmann <hi rend="italic">Medizin</hi> p.
+                152. </note>
+              <incipit type="basmala" facs="#i0004" xml:lang="ar">
+                <locus>Fol. 1b.1</locus> بسم اللّه الرحمن الرحيم رب </incipit>
+              <incipit type="tahmid" facs="#i0004" xml:lang="ar">
+                <locus>Fol. 1b.2</locus> الحمد لله ربّ العلمين وصلوة علي انبيائه ورسله اجمعين خصوصا
+                علي محمّد و^اله الطّيبين الطاهرين </incipit>
+              
+              <incipit facs="#i0004" xml:lang="ar">
+                <locus>Fol. 1b.4</locus> بسم اللّه الرحمن الرحيم رب وبعد فقد التمس مني بعض خلص
+                اخواني ومن يلزمني اسعافه فيما يسمح به وسعي ان اصنف في الطبّ كتابا مشتملًا علي
+                قوانينه </incipit>
+              <explicit facs="#i0191" xml:lang="ar">
+                <locus>Fol. 194b.17</locus> وليكن هذ القدر من كلامنا المحتصر فى فى الاصول الكلية
+                لصناعة الطب كافيا ولناخد في الادوية المفردة انشاء الله تعالى </explicit>
+              <colophon facs="#i0191" xml:lang="ar">تم الكتاب بعون الله تعالى</colophon>
+              
+              
+              
+              <textLang mainLang="ar">Arabic</textLang>
+            </msItem>
+          </msContents>
+          <physDesc>
+            <objectDesc form="codex">
+              <supportDesc material="chart">
+                <support>
+                  <material>Burnished</material>
+                </support>
+                <extent> 01+194 ff. <dimensions unit="mm" type="leaf">
+                  <height>290</height>
+                  <width>175</width>
+                </dimensions>
+                  <dimensions unit="mm" type="written">
+                    <height>225</height>
+                    <width>105</width>
+                  </dimensions>
+                </extent>
+                
+                <foliation> in Arabic (fols. 190 and 191 are numbered as 90 and 91).
+                  <catchwords>Catchwords are written underneath the text-block.</catchwords>
+                </foliation>
+                <collation>
+                  <seg>
+                    <formula>Collation cannot be identified due to the poor condition of
+                      MS.</formula>
+                  </seg>
+                </collation>
+                <condition>Poor - MS is disintegrating.</condition>
+              </supportDesc>
+              <layoutDesc>
+                <layout columns="1">
+                  <dimensions type="line-height" unit=" mm"/>
+                </layout>
+              </layoutDesc>
+            </objectDesc>
+            <handDesc>
+              <handNote script="taliq" scope="major">
+                <p><label>Script:</label> taʿlīq</p>
+                <p><label>Ink:</label> black; headings and dividers are highlighted in red.</p>
+                <seg type="density">420</seg>
+                <seg type="ratio">1:2</seg>
+                <seg type="anglealef">75</seg>
+                <seg type="anglekaf">50</seg>
+              </handNote>
+            </handDesc>
+            <decoDesc>
+              <decoNote type="unwan">
+                <desc facs="#i0191">ʿUnwān on fol. 1b</desc>
+              </decoNote>
+              
+              <decoNote type="rubrication">Rubrication</decoNote>
+              <decoNote type="gild">Fols. 1b and 2a gilded.</decoNote>
+            </decoDesc>
+            <additions>
+              <list>
+                <item facs="#i0002">Fol. 1a: Shelf-mark title كليات قانون</item>
+                <item facs="#i0002">Fol. 1a: scribbles in Persian, some of them illegible.</item>
+                <item facs="#i0002">Fol. 1a: Calculations, related to the death of a certain
+                  `Azīz al-Dīn (تاريخ وفات عزيز الدين).</item>
+                <item>Fol. 1a: هذ الكتاب [damaged]... بتاريخ ٥٧١٦ [not clear, ] سنه ١٢٧٣ <lb/> b.
+                  كليات بو على سينا <lb/> c. تمڀ الكتاب بعون تعالى قد ڻمڀ الكتاب فى علم الطڀ
+                  (written several times). </item>
+                <item>Fol. 1b.: تمت كتاب بعون الله تعالى (written upside down).</item>
+                
+                <item>Fols. 38a - 39b, 46ab, 48a, 78a, 82ab, 86a, 101b, 103a, 110a, 113a, 114a,
+                  123a, 157a, 174a,b: contain chapter headings on the margins, which had to be
+                  inserted in red into the main text.</item>
+                <item>Fols. 42a, 43a - 45b, 48b - 194b do not have chapter headings.</item>
+                <item facs="#i0005">Fols. 2b, 3a, 4a, 6a, 15a, 31b, 40a,b: margins contain
+                  words which could not be inserted into the frame.</item>
+                <item>Fols. 15a, 16a - 17a, 19a, 55a, 82a, 126b, 151a, 175b, 183a contain
+                  additions, corrections and notes in the margins. Triple frame.</item>
+                <item>
+                  <label>Orthography:</label> the <hi rend="italic">hamza</hi> is occasionally
+                  missing. Diacritical dots for <hi rend="italic">fā'</hi> , <hi rend="italic"
+                    >qāf</hi>, <hi rend="italic">yā'</hi> and <hi rend="italic">ṭā'
+                      marbūṭah</hi> are occasionally omitted.</item>
+              </list>
+            </additions>
+            <bindingDesc>
+              <binding contemporary="true">
+                <p>
+                  <seg type="board">Cardboard
+                    <dimensions type="binding" unit="mm">
+                      <height>294</height>
+                      <width>179</width>
+                    </dimensions>
+                  </seg>
+                  <seg type="covers" subtype="attached">
+                    <seg type="spine_formation" subtype="flush"/>
+                    <material>cloth</material>
+                  </seg>
+                </p>
+              </binding>
+            </bindingDesc>
+            <accMat facs="#i0002">Attached are R. Walzer's handwritten and typed notes containing a description
+              of this MS.</accMat>
+          </physDesc>
+          <history>
+            <origin><origDate calendar="#Gregorian" type="approxDate" notBefore="1800" notAfter="1899">19th century</origDate>
+            </origin>
+          </history>
+          <additional>
+            <listBibl>
+              <bibl> Iskandar <hi rend="italic">Catalogue</hi> p. 160 (Shelf-mark: WMS Or. 66a).
+              </bibl>
+            </listBibl>
+          </additional>
+        </msDesc>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -689,162 +844,7 @@
   <text>
     <body>
       <div>
-        <msDesc xml:lang="en" xml:id="MS_Arabic_66">
-          <msIdentifier>
-            <country>United Kingdom</country>
-            <settlement>London</settlement>
-            <institution>The Wellcome Trust</institution>
-            <repository>The Wellcome Library</repository>
-            <collection type="main"> Asian Collection</collection>
-            <collection type="sub">Iskandar</collection>
-
-            <idno>MS Arabic 66</idno>
-            <altIdentifier type="former">
-              <idno>Iskandar 66a</idno>
-            </altIdentifier>
-          </msIdentifier>
-
-          <msContents>
-            <summary>1 copy of Kitāb al-Qānūn fī al-ṭibb by Avicenna</summary>
-            <msItem xml:id="MS_Arabic_66-item1">
-              <author key="person_97166546">
-                <persName xml:lang="en">Avicenna, d. 980-1037</persName>
-                <persName xml:lang="ar">ابو على الحسين ابن عبد الله ابن سينا</persName>
-              </author>
-
-              <title xml:lang="ar-Latn-x-lc" key="work_3001">Kitāb al-Qānūn fī al-ṭibb</title>
-              <title xml:lang="ar" key="work_3001"> كتاب القانون في الطبّ <locus>194b</locus>
-              </title>
-              <note>The first book of Avicenna's Canon. Ullmann <hi rend="italic">Medizin</hi> p.
-                152. </note>
-              <incipit type="basmala" facs="#i0004" xml:lang="ar">
-                <locus>Fol. 1b.1</locus> بسم اللّه الرحمن الرحيم رب </incipit>
-              <incipit type="tahmid" facs="#i0004" xml:lang="ar">
-                <locus>Fol. 1b.2</locus> الحمد لله ربّ العلمين وصلوة علي انبيائه ورسله اجمعين خصوصا
-                علي محمّد و^اله الطّيبين الطاهرين </incipit>
-
-              <incipit facs="#i0004" xml:lang="ar">
-                <locus>Fol. 1b.4</locus> بسم اللّه الرحمن الرحيم رب وبعد فقد التمس مني بعض خلص
-                اخواني ومن يلزمني اسعافه فيما يسمح به وسعي ان اصنف في الطبّ كتابا مشتملًا علي
-                قوانينه </incipit>
-              <explicit facs="#i0191" xml:lang="ar">
-                <locus>Fol. 194b.17</locus> وليكن هذ القدر من كلامنا المحتصر فى فى الاصول الكلية
-                لصناعة الطب كافيا ولناخد في الادوية المفردة انشاء الله تعالى </explicit>
-              <colophon facs="#i0191" xml:lang="ar">تم الكتاب بعون الله تعالى</colophon>
-
-
-
-              <textLang mainLang="ar">Arabic</textLang>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc form="codex">
-              <supportDesc material="chart">
-                <support>
-                  <material>Burnished</material>
-                </support>
-                <extent> 01+194 ff. <dimensions unit="mm" type="leaf">
-                    <height>290</height>
-                    <width>175</width>
-                  </dimensions>
-                  <dimensions unit="mm" type="written">
-                    <height>225</height>
-                    <width>105</width>
-                  </dimensions>
-                </extent>
-
-                <foliation> in Arabic (fols. 190 and 191 are numbered as 90 and 91).
-                    <catchwords>Catchwords are written underneath the text-block.</catchwords>
-                </foliation>
-                <collation>
-                  <seg>
-                    <formula>Collation cannot be identified due to the poor condition of
-                      MS.</formula>
-                  </seg>
-                </collation>
-                <condition>Poor - MS is disintegrating.</condition>
-              </supportDesc>
-              <layoutDesc>
-                <layout columns="1">
-                  <dimensions type="line-height" unit=" mm"/>
-                </layout>
-              </layoutDesc>
-            </objectDesc>
-            <handDesc>
-              <handNote script="taliq" scope="major">
-                <p><label>Script:</label> taʿlīq</p>
-                <p><label>Ink:</label> black; headings and dividers are highlighted in red.</p>
-                <seg type="density">420</seg>
-                <seg type="ratio">1:2</seg>
-                <seg type="anglealef">75</seg>
-                <seg type="anglekaf">50</seg>
-              </handNote>
-            </handDesc>
-            <decoDesc>
-              <decoNote type="unwan">
-                <desc facs="#i0191">ʿUnwān on fol. 1b</desc>
-              </decoNote>
-
-              <decoNote type="rubrication">Rubrication</decoNote>
-              <decoNote type="gild">Fols. 1b and 2a gilded.</decoNote>
-            </decoDesc>
-            <additions>
-              <list>
-                <item facs="#i0002">Fol. 1a: Shelf-mark title كليات قانون</item>
-                <item facs="#i0002">Fol. 1a: scribbles in Persian, some of them illegible.</item>
-                <item facs="#i0002">Fol. 1a: Calculations, related to the death of a certain
-                  `Azīz al-Dīn (تاريخ وفات عزيز الدين).</item>
-                <item>Fol. 1a: هذ الكتاب [damaged]... بتاريخ ٥٧١٦ [not clear, ] سنه ١٢٧٣ <lb/> b.
-                  كليات بو على سينا <lb/> c. تمڀ الكتاب بعون تعالى قد ڻمڀ الكتاب فى علم الطڀ
-                  (written several times). </item>
-                <item>Fol. 1b.: تمت كتاب بعون الله تعالى (written upside down).</item>
-               
-                <item>Fols. 38a - 39b, 46ab, 48a, 78a, 82ab, 86a, 101b, 103a, 110a, 113a, 114a,
-                  123a, 157a, 174a,b: contain chapter headings on the margins, which had to be
-                  inserted in red into the main text.</item>
-                <item>Fols. 42a, 43a - 45b, 48b - 194b do not have chapter headings.</item>
-                <item facs="#i0005">Fols. 2b, 3a, 4a, 6a, 15a, 31b, 40a,b: margins contain
-                  words which could not be inserted into the frame.</item>
-                <item>Fols. 15a, 16a - 17a, 19a, 55a, 82a, 126b, 151a, 175b, 183a contain
-                  additions, corrections and notes in the margins. Triple frame.</item>
-                <item>
-                  <label>Orthography:</label> the <hi rend="italic">hamza</hi> is occasionally
-                  missing. Diacritical dots for <hi rend="italic">fā'</hi> , <hi rend="italic"
-                    >qāf</hi>, <hi rend="italic">yā'</hi> and <hi rend="italic">ṭā'
-                    marbūṭah</hi> are occasionally omitted.</item>
-              </list>
-            </additions>
-            <bindingDesc>
-              <binding>
-                <p>
-                  <seg type="board">Cardboard
-                    <dimensions type="binding" unit="mm">
-                      <height>294</height>
-                      <width>179</width>
-                    </dimensions>
-                  </seg>
-                  <seg type="covers" subtype="attached">
-                    <seg type="spine_formation" subtype="flush"/>
-                    <material>cloth</material>
-                  </seg>
-                </p>
-              </binding>
-            </bindingDesc>
-            <accMat facs="#i0002">Attached are R. Walzer's handwritten and typed notes containing a description
-              of this MS.</accMat>
-          </physDesc>
-          <history>
-            <origin><origDate type="approxDate" calendar="Gregorian"></origDate>
-              <date type="approxDate" calendar="Gregorian">19th century</date>
-            </origin>
-          </history>
-          <additional>
-            <listBibl>
-              <bibl> Iskandar <hi rend="italic">Catalogue</hi> p. 160 (Shelf-mark: WMS Or. 66a).
-              </bibl>
-            </listBibl>
-          </additional>
-        </msDesc>
+        
       </div>
     </body>
   </text>

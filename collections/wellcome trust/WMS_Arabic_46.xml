@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_15695">
   <teiHeader>
     <fileDesc>
@@ -12,7 +14,133 @@
         <idno type="catalogue">Fihrist</idno>
       </publicationStmt>
       <sourceDesc>
-        <p>Born Digital</p>
+        <msDesc xml:lang="en" xml:id="MS_Arabic_46">
+          <msIdentifier>
+            <country>United Kingdom</country>
+            <settlement>London</settlement>
+            <institution>Wellcome Trust</institution>
+            <repository>Wellcome Collection</repository>
+            <collection> Manuscripts in Arabic</collection>
+            
+            <idno>MS Arabic 46</idno>
+          </msIdentifier>
+          
+          
+          
+          <msContents><summary>1 copy of Kitāb al-Qānūn fī al-ṭibb by Avicenna</summary>
+            <msItem xml:id="MS_Arabic_46-item1">
+              <author key="person_97166546">
+                <persName xml:lang="en">Avicenna, d. 980-1037</persName>
+                <persName xml:lang="ar">ابو على الحسين ابن عبد الله ابن
+                  سينا</persName>
+              </author>
+              
+              <title xml:lang="ar-Latn-x-lc" key="work_3001">Kitāb al-Qānūn fī al-ṭibb</title>
+              <title xml:lang="ar" key="work_3001"> كتاب القانون في الطبّ <locus facs="#i0207">205b</locus>
+              </title>
+              <note> The fourth book of Avicenna's Canon. See Ullmann <hi rend="italic">Medizin</hi>
+                p. 152. </note>
+              
+              <incipit type="basmala" facs="#i0004">
+                <locus>Fol. 1b.1</locus> بسم اللّه الرحمن الرحيم وسلامْو على عباده المومنين
+              </incipit>
+              <incipit facs="#i0004">
+                <locus>Fol. 1b.2</locus> واذ قد وعدنا من تصنف كتبنا فى الطب التى اول منها فى
+                الاصول الكليه والثانى منها المجموع فى الادوية المفردة </incipit>
+              <explicit facs="#i0207">
+                <locus>Fol. 205b.1</locus> اعظم من الداخس بل عظه به وانطل علي الظفر الماء والدهن
+                الفاتر ووضع عليه من بعد وباخره مرهم الباسليقون </explicit>
+              <colophon facs="#i0207">ان الله وملايكته يصلون علي النبي والحمد للّه رب العالمين قد
+                تم الكتاب الرابع من الكتب الخمسة من القانون الشيخ الرئيس ابي على بن
+                سينا</colophon>
+              
+              
+              
+              <textLang mainLang="ar">Arabic</textLang>
+            </msItem>
+            
+          </msContents>
+          <physDesc>
+            <objectDesc form="codex">
+              <supportDesc material="chart">
+                <support>
+                  <material>Unburnished</material>
+                </support>
+                <extent> 01+205 ff.<dimensions unit="mm" type="leaf">
+                  <height>295</height>
+                  <width>195</width>
+                </dimensions>
+                  <dimensions unit="mm" type="written">
+                    <height>220</height>
+                    <width>120</width>
+                  </dimensions>
+                </extent>
+                <foliation>
+                  <catchwords>Catchwords are written underneath the text-block.</catchwords>
+                </foliation>
+                <collation>
+                  <seg>
+                    <formula>Due to the later binding, collation could not be established exactly.</formula>
+                  </seg>
+                </collation>
+              </supportDesc>
+              <layoutDesc>
+                <layout columns="1">1 column.</layout>
+              </layoutDesc>
+            </objectDesc>
+            <handDesc>
+              <handNote script="taliq" scope="major">
+                <p><label>Script:</label> taʿlīq</p>
+                <p><label>Ink:</label> black; headings and dividers are highlighted in red.</p>
+                
+                <seg type="density">680</seg>
+                <seg type="ratio">1:1,6</seg>
+                <seg type="anglealef">75</seg>
+                <seg type="anglekaf">40</seg>
+              </handNote>
+            </handDesc>
+            <additions>
+              <list>
+                <item> Fol. 1a: contains binder's mark (معالجات قانون ).</item>
+                <item>Fol. 1a: وليمه طعام عرف وضميه طعام ما تم و كيره مهمانى مكان توتو كيره طعام
+                  [not clear]</item>
+                <item> Fol. 1b: space left for 'unwān.</item>
+                <item>Fols. 2a - 205a: occasional indications as to the contents and
+                  corrections.</item>
+                <item>Fols. 2 - 54: signs of later restoration.</item>
+              </list>
+            </additions>
+            <bindingDesc>
+              <binding contemporary="true">
+                <p>
+                  <seg type="board">Cardboard
+                    <dimensions type="binding" unit="mm">
+                      <height>302</height>
+                      <width>190</width>
+                    </dimensions>
+                  </seg>
+                  <seg type="covers">
+                    <seg type="spine_formation" subtype="moulded"/>
+                  </seg>
+                </p>
+              </binding>
+            </bindingDesc>
+          </physDesc>
+          <history>
+            <origin>
+              <origDate calendar="#Gregorian" type="approxDate" notBefore="1800" notAfter="1899">19th century</origDate>
+              
+            </origin>
+            <provenance>Copied in India (judging from the paper and style of the handwriting)</provenance>
+            <acquisition>Wellcome Library accession number: 68802</acquisition>
+          </history>
+          <additional>
+            <listBibl>
+              <bibl> Iskandar <hi rend="italic">Catalogue</hi> p. 165 (Shelf-mark: WMS Or. 46).
+              </bibl>
+            </listBibl>
+          </additional>
+        </msDesc>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -711,134 +839,7 @@
   <text>
     <body>
       <div>
-        <msDesc xml:lang="en" xml:id="MS_Arabic_46">
-          <msIdentifier>
-            <country>United Kingdom</country>
-            <settlement>London</settlement>
-            <institution>The Wellcome Trust</institution>
-            <repository>The Wellcome Library</repository>
-            <collection type="main"> Asian Collection </collection>
-            <collection type="sub">Iskandar</collection>
-
-            <idno>MS Arabic 46</idno>
-          </msIdentifier>
-          
-         
         
-          <msContents><summary>1 copy of Kitāb al-Qānūn fī al-ṭibb by Avicenna</summary>
-              <msItem xml:id="MS_Arabic_46-item1">
-                <author key="person_97166546">
-                  <persName xml:lang="en">Avicenna, d. 980-1037</persName>
-                  <persName xml:lang="ar">ابو على الحسين ابن عبد الله ابن
-                    سينا</persName>
-                </author>
-               
-                <title xml:lang="ar-Latn-x-lc" key="work_3001">Kitāb al-Qānūn fī al-ṭibb</title>
-                <title xml:lang="ar" key="work_3001"> كتاب القانون في الطبّ <locus facs="#i0207">205b</locus>
-                </title>
-                <note> The fourth book of Avicenna's Canon. See Ullmann <hi rend="italic">Medizin</hi>
-                  p. 152. </note>
-               
-                <incipit type="basmala" facs="#i0004">
-                  <locus>Fol. 1b.1</locus> بسم اللّه الرحمن الرحيم وسلامْو على عباده المومنين
-                </incipit>
-                <incipit facs="#i0004">
-                  <locus>Fol. 1b.2</locus> واذ قد وعدنا من تصنف كتبنا فى الطب التى اول منها فى
-                  الاصول الكليه والثانى منها المجموع فى الادوية المفردة </incipit>
-                <explicit facs="#i0207">
-                  <locus>Fol. 205b.1</locus> اعظم من الداخس بل عظه به وانطل علي الظفر الماء والدهن
-                  الفاتر ووضع عليه من بعد وباخره مرهم الباسليقون </explicit>
-                <colophon facs="#i0207">ان الله وملايكته يصلون علي النبي والحمد للّه رب العالمين قد
-                  تم الكتاب الرابع من الكتب الخمسة من القانون الشيخ الرئيس ابي على بن
-                  سينا</colophon>
-                
-                
-               
-                <textLang mainLang="ar">Arabic</textLang>
-              </msItem>
-            
-            </msContents>
-            <physDesc>
-              <objectDesc form="codex">
-                <supportDesc material="chart">
-                  <support>
-                    <material>Unburnished</material>
-                  </support>
-                  <extent> 01+205 ff.<dimensions unit="mm" type="leaf">
-                    <height>295</height>
-                    <width>195</width>
-                  </dimensions>
-                    <dimensions unit="mm" type="written">
-                      <height>220</height>
-                      <width>120</width>
-                    </dimensions>
-                  </extent>
-                  <foliation>
-                    <catchwords>Catchwords are written underneath the text-block.</catchwords>
-                  </foliation>
-                  <collation>
-                    <seg>
-                      <formula>Due to the later binding, collation could not be established exactly.</formula>
-                    </seg>
-                  </collation>
-                </supportDesc>
-                <layoutDesc>
-                  <layout columns="1">1 column.</layout>
-                </layoutDesc>
-              </objectDesc>
-              <handDesc>
-                <handNote script="taliq" scope="major">
-                  <p><label>Script:</label> taʿlīq</p>
-                  <p><label>Ink:</label> black; headings and dividers are highlighted in red.</p>
-                  
-                    <seg type="density">680</seg>
-                    <seg type="ratio">1:1,6</seg>
-                    <seg type="anglealef">75</seg>
-                    <seg type="anglekaf">40</seg>
-                </handNote>
-              </handDesc>
-              <additions>
-                <list>
-                  <item> Fol. 1a: contains binder's mark (معالجات قانون ).</item>
-                  <item>Fol. 1a: وليمه طعام عرف وضميه طعام ما تم و كيره مهمانى مكان توتو كيره طعام
-                    [not clear]</item>
-                  <item> Fol. 1b: space left for 'unwān.</item>
-                  <item>Fols. 2a - 205a: occasional indications as to the contents and
-                    corrections.</item>
-                  <item>Fols. 2 - 54: signs of later restoration.</item>
-                </list>
-              </additions>
-              <bindingDesc>
-                <binding>
-                  <p>
-                    <seg type="board">Cardboard
-                      <dimensions type="binding" unit="mm">
-                        <height>302</height>
-                        <width>190</width>
-                      </dimensions>
-                    </seg>
-                    <seg type="covers">
-                      <seg type="spine_formation" subtype="moulded"/>
-                    </seg>
-                  </p>
-                </binding>
-              </bindingDesc>
-            </physDesc>
-            <history>
-              <origin>
-                <origDate calendar="Gregorian" type="approxDate">19th century</origDate>
-               
-              </origin>
-              <provenance>Copied in India (judging from the paper and style of the handwriting)</provenance>
-              <acquisition>Wellcome Library accession number: 68802</acquisition>
-            </history>
-            <additional>
-              <listBibl>
-                <bibl> Iskandar <hi rend="italic">Catalogue</hi> p. 165 (Shelf-mark: WMS Or. 46).
-                </bibl>
-              </listBibl>
-            </additional>
-        </msDesc>
       </div>
     </body>
   </text>

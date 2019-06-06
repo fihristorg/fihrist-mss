@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_15727">
   <teiHeader>
     <fileDesc>
@@ -12,7 +14,184 @@
         <idno type="catalogue">Fihrist</idno>
       </publicationStmt>
       <sourceDesc>
-        <p>Born Digital</p>
+        <msDesc xml:lang="en" xml:id="MS_Arabic_80">
+          <msIdentifier>
+            <country>United Kingdom</country>
+            <settlement>London</settlement>
+            <institution>Wellcome Trust</institution>
+            <repository>Wellcome Collection</repository>
+            <collection> Manuscripts in Arabic</collection>
+            
+            <idno>MS Arabic 80</idno>
+          </msIdentifier>
+          
+          
+          
+          <msContents>
+            <summary>Book 1 and part of Book 2 of Avicenna's Kitāb al-Qānūn fī al-ṭibb</summary>
+            <msItem xml:id="MS_Arabic_80-item1" n="1">
+              <author key="person_97166546">
+                <persName xml:lang="en">Avicenna, d. 980-1037</persName>
+                <persName xml:lang="ar">ابو على الحسين ابن عبد الله ابن سينا</persName>
+              </author>
+              <title xml:lang="ar-Latn-x-lc" key="work_3001">Kitāb al-Qānūn fī al-ṭibb</title>
+              <title xml:lang="ar" key="work_3001"> كتاب القانون في الطبّ <locus facs="#i0296"
+                >293b</locus>
+              </title>
+              <incipit type="basmala" facs="#i0005" xml:lang="ar">
+                <locus>Fol. 1b.1</locus> بسم اللّه الرحمن الرحيم صلى اللّه على سيدنا محمد نبڻه
+                الكريم وعلى اله </incipit>
+              <incipit type="tahmid" facs="#i0005" xml:lang="ar">
+                <locus>Fol. 1b.2</locus> الحمد للّه حمدًا يستحقه على سبوغ احسانه وصلواته </incipit>
+              
+              <incipit facs="#i0005" xml:lang="ar">
+                <locus>Fol. 1b.3</locus> وَبَعدُ فَقَدْ التمسَ منّى خلّصُ اخوانى ومن يلزمنى اسعافه
+                بما يسمحُ به وَسعىِ َن اصنّف كتابًا فى الطبّ مشتملًا على قوانينه </incipit>
+              <explicit facs="#i0296" xml:lang="ar">
+                <locus>Fol. 293b.8</locus> في الاصول الكلْ_يّة لصْ_نأعة الطْ_بّ كافيًا ولڻاخد فى
+                تصنيف كتابنا فى الادْويه المفردة <pb/> واللّه المستعانُ </explicit>
+              <colophon facs="#i0296" xml:lang="ar">تم الكتاب الاول من كڻاب القانوُن فى الطّْ_بّ وهو
+                فى الحكام الكليّه علي يد ألعبْد الضعْ_ف المُحتاج الي رحمة اللّه تعالى محمود ڻن عمر
+                ڻن اڻى بكر يُعرف بخالُويه اللهم آغفر لصأحبه ولكاتبه ولڦارئه ولجمڻع المومنڻڻ فى اوْسط
+                شهرْ ربڻع ال^اخر سنه تسع وعشرڻڻ وسبعمائه حمدًا ومصلڻًا وصلما واللم</colophon>
+              <note>The first book of Avicenna's Canon.</note>
+              
+              <textLang mainLang="ar">Arabic</textLang>
+            </msItem>
+            
+            <msItem xml:id="MS_Arabic_80-item2" n="2">
+              <author key="person_97166546">
+                <persName xml:lang="en">Avicenna, d. 980-1037</persName>
+                <persName xml:lang="ar">ابو على الحسين ابن عبد الله ابن سينا</persName>
+              </author>
+              <title xml:lang="ar-Latn-x-lc" key="work_3001">Kitāb al-Qānūn fī al-ṭibb</title>
+              <title xml:lang="ar" key="work_3001"> كتاب القانون في الطبّ <locus facs="#i0298"
+                >294b</locus>
+              </title>
+              
+              <note>Incomplete version of the second book of Avicenna's Canon.</note>
+              <note>In some instances the divisions in the MS are identified as فصل instead of the
+                conventional مقالة, cf. e.g. fol. 298b.7 etc.</note>
+              <incipit type="basmala" facs="#i0298" xml:lang="ar">
+                <locus>Fol. 294b.1</locus> بسم الله الرحمن الرحيم </incipit>
+              
+              <incipit facs="#i0298" xml:lang="ar">
+                <locus>Fol. 294b.2</locus> وبعد حمد الله والڻن^ا عليه بما هُو أهله والصلوة على
+                أنبڻايه اجْمعينفان هذأ الكڻأب هو ڻانى الكتُڀ الّتى صڻفڻأها فىْ_ الطبّ ألتىْ_ الاوولء
+                منها هوُ في ألحكأم الكليّه مْ_ن الطّبّ واڻڻأنى منها هُو هذا الكْ_ڻأب آلمجمُوع فى
+                الأدوية المفرده وقسمنا هذا الكڻأب مقالتين الاُولي مْ_نهما فىْ_ القوانين الطّبيعية
+                اللتىْ_ ڻُحب ان ڻعرف من أمر الطّبْ والڻانية منهما في قوى الأدويه المفرده الجزئية </incipit>
+              <explicit xml:lang="ar">
+                <locus>Fol. 314a.8</locus> ونهمل ذكر أدوي لسنأ ڻڦڦ <note>Read: نقف .</note> منها
+                الأعلي اسأمي فقط ونرنب <note>Read: نرتب .</note> الألو^اح المذكُوره damaged]... اغها
+                وڻدل اولًا علي عده امرأ [damaged]... وعلي صنع كل مرض <pb/> مشڻه أللّه تعألي
+                [damaged]... <pb/> والحمدُ للّه ربّ العألمين </explicit>
+              <colophon xml:lang="ar">واصصلوة و [damaged]... سيّدنا ومولأنا [damaged]... أططاهرڻن فى
+                شهور سنه تسع وعشرڻن وسبعمأيه حامدًا ومُصليًّا</colophon>
+              
+              <textLang mainLang="ar">Arabic</textLang>
+            </msItem>
+          </msContents>
+          <physDesc>
+            <objectDesc form="codex">
+              <supportDesc material="chart">
+                <extent> 01+314+001 ff. <dimensions unit="mm" type="leaf">
+                  <height>250</height>
+                  <width>195</width>
+                </dimensions>
+                  <dimensions unit="mm" type="written">
+                    <height>160</height>
+                    <width>120</width>
+                  </dimensions>
+                </extent>
+                <foliation>
+                  <catchwords>Catchwords are written underneath the text-block.</catchwords>
+                </foliation>
+                <collation>
+                  <seg>
+                    <formula>Due to the binding, collation could not be established exactly;
+                      occasional traces are to be found, e.g. fol. 208a.</formula>
+                  </seg>
+                </collation>
+                <condition>Damp-stained leaves.</condition>
+              </supportDesc>
+              <layoutDesc>
+                <layout columns="1" n="mistara">
+                  <dimensions type="line-height" unit="mm">
+                    <height>12</height>
+                  </dimensions>
+                </layout>
+              </layoutDesc>
+            </objectDesc>
+            
+            <handDesc>
+              <handNote script="naskh" scope="major">
+                <p><label>Script:</label> naskh</p>
+                <p><label>Scribe:</label>
+                  <persName xml:lang="ar" role="scr" key="">محمود بن ابي بكر يعرف بخالويه (<foreign
+                    xml:lang="ar-Latn-x-lc">Maḥmūd b. ʿUmar b. Abī Bakr, known as Khālawayh
+                  </foreign>) </persName></p>
+                <p><label>Ink:</label> Black; red headings.</p>
+                <seg type="density">1220</seg>
+                <seg type="ratio">1:1,4</seg>
+                <seg type="anglealef">90</seg>
+                <seg type="anglekaf">35</seg>
+              </handNote>
+            </handDesc>
+            <decoDesc><decoNote type="rubrication">Rubrication;</decoNote>
+              <decoNote type="gild">Fols. 2b and 3a gilded.</decoNote>
+            </decoDesc>
+            
+            <additions>
+              <list>
+                <item facs="#i0297">Fol. 293b contains a poem (as seen): <lb/> لعين القصا <lb/>
+                  فارفتُ ارونْدَ لا طَابت مَرا تعهَا <pb/> بعّدى كما لم يَطب لى ڻعدَها جَبَلُ <lb/>
+                  ِنّى تركتُ به^ا الامالَ مُثْ_رةًا <pb/> لَا ارتجى بعدها َنْ يثمر الَمالُ <lb/> هبُ
+                  لى اط.لعت على لروندَ ثانيةًا <pb/> هل للشباب الذى ضَيّعتُه بدلُ <lb/> وله <lb/>
+                  الَا ليڀ شعرى هل اذى الدَمر مرَّةًا <pb/> ذرى قُلّتى اروندَ مڻ همدلن [not clear]
+                  <lb/> بلا ذَبها نيطت علىّ تمأعى <pb/> وارضعتُ مڻ عفّاتِها بلبان <lb/> . </item>
+                <item facs="#i0315"> Lacuna (ca 1 quire) between fols 313 and 314.</item>
+                <item facs="#i0005 #i0298 #i0296"> Fol. 1b has an <hi rend="italic">'unwān</hi>
+                  (restored), fol. 294a (original), fol. 293a, 314a (colophons written in
+                  frame).</item>
+                <item facs="#i0110"> Owners' and readers' notes: Fols 106b - 107a, 115b - 116a, 150b
+                  - 151a, 232b - 233a (erased), 314a لطف الله ابن مبارك .</item>
+                <item facs="#i0032">Fols 5a, 13a, 17a, 18a, 19a, 20a, 22a, 23b, 24a, 27ab, 28a -
+                  29b, 30b, 32ab, 33b, 35a - 46b, 48a, 49a - 52a, 53a, 55a - 56b, 58b, 59a, 60a -
+                  62b, 68b, 69a, 88ab, 91a, 94a, 95b, 97ab, 99b,158a, 159b, 160b, 161b, 163b - 166b,
+                  168a - 169a, 197b contain occasional additions and corrections.</item>
+                <item facs="#i0080"> Fols 76, 231, 312 - 314 bear traces of restoration; fols 266 -
+                  276 have been replaced.</item>
+                <item facs="#i0040"> Fols 37a, 42a contain drawings on margins. </item>
+                <item facs="#i0321"> Evidence of old shelf-mark on the spine.</item>
+              </list>
+            </additions>
+            <bindingDesc>
+              <binding contemporary="true">
+                <p>
+                  <seg type="board">
+                    <dimensions type="binding" unit="mm">
+                      <height>254</height>
+                      <width>198</width>
+                    </dimensions>
+                  </seg>
+                  <seg type="covers" subtype="attached">
+                    <seg type="spine_formation" subtype="flush"/>
+                    <material>leather covers.</material>
+                  </seg>
+                </p>
+              </binding>
+            </bindingDesc>
+          </physDesc>
+          <history>
+            <origin>
+              <origDate calendar="Hijri-qamari" when="1329">729 A.H.</origDate>
+            </origin>
+            <provenance>Known owners/readers: <persName xml:lang="ar-Latn-x-lc" key="">Luṭf Allāh
+              b. Mubārak</persName> fols 106b - 107a, 115b - 116a, 150b - 151a, 232b - 233a
+              (erased), 314a.</provenance>
+          </history>
+        </msDesc>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -1049,185 +1228,7 @@
   <text>
     <body>
       <div>
-        <msDesc xml:lang="en" xml:id="MS_Arabic_80">
-          <msIdentifier>
-            <country>United Kingdom</country>
-            <settlement>London</settlement>
-            <institution>The Wellcome Trust</institution>
-            <repository>The Wellcome Library</repository>
-            <collection type="main"> Asian Collection</collection>
-            <collection type="sub">Iskandar</collection>
-
-            <idno>MS Arabic 80</idno>
-          </msIdentifier>
-
-
-
-          <msContents>
-            <summary>Book 1 and part of Book 2 of Avicenna's Kitāb al-Qānūn fī al-ṭibb</summary>
-            <msItem xml:id="MS_Arabic_80-item1" n="1">
-              <author key="person_97166546">
-                <persName xml:lang="en">Avicenna, d. 980-1037</persName>
-                <persName xml:lang="ar">ابو على الحسين ابن عبد الله ابن سينا</persName>
-              </author>
-              <title xml:lang="ar-Latn-x-lc" key="work_3001">Kitāb al-Qānūn fī al-ṭibb</title>
-              <title xml:lang="ar" key="work_3001"> كتاب القانون في الطبّ <locus facs="#i0296"
-                  >293b</locus>
-              </title>
-              <incipit type="basmala" facs="#i0005" xml:lang="ar">
-                <locus>Fol. 1b.1</locus> بسم اللّه الرحمن الرحيم صلى اللّه على سيدنا محمد نبڻه
-                الكريم وعلى اله </incipit>
-              <incipit type="tahmid" facs="#i0005" xml:lang="ar">
-                <locus>Fol. 1b.2</locus> الحمد للّه حمدًا يستحقه على سبوغ احسانه وصلواته </incipit>
-
-              <incipit facs="#i0005" xml:lang="ar">
-                <locus>Fol. 1b.3</locus> وَبَعدُ فَقَدْ التمسَ منّى خلّصُ اخوانى ومن يلزمنى اسعافه
-                بما يسمحُ به وَسعىِ َن اصنّف كتابًا فى الطبّ مشتملًا على قوانينه </incipit>
-              <explicit facs="#i0296" xml:lang="ar">
-                <locus>Fol. 293b.8</locus> في الاصول الكلْ_يّة لصْ_نأعة الطْ_بّ كافيًا ولڻاخد فى
-                تصنيف كتابنا فى الادْويه المفردة <pb/> واللّه المستعانُ </explicit>
-              <colophon facs="#i0296" xml:lang="ar">تم الكتاب الاول من كڻاب القانوُن فى الطّْ_بّ وهو
-                فى الحكام الكليّه علي يد ألعبْد الضعْ_ف المُحتاج الي رحمة اللّه تعالى محمود ڻن عمر
-                ڻن اڻى بكر يُعرف بخالُويه اللهم آغفر لصأحبه ولكاتبه ولڦارئه ولجمڻع المومنڻڻ فى اوْسط
-                شهرْ ربڻع ال^اخر سنه تسع وعشرڻڻ وسبعمائه حمدًا ومصلڻًا وصلما واللم</colophon>
-              <note>The first book of Avicenna's Canon.</note>
-
-              <textLang mainLang="ar">Arabic</textLang>
-            </msItem>
-
-            <msItem xml:id="MS_Arabic_80-item2" n="2">
-              <author key="person_97166546">
-                <persName xml:lang="en">Avicenna, d. 980-1037</persName>
-                <persName xml:lang="ar">ابو على الحسين ابن عبد الله ابن سينا</persName>
-              </author>
-              <title xml:lang="ar-Latn-x-lc" key="work_3001">Kitāb al-Qānūn fī al-ṭibb</title>
-              <title xml:lang="ar" key="work_3001"> كتاب القانون في الطبّ <locus facs="#i0298"
-                  >294b</locus>
-              </title>
-
-              <note>Incomplete version of the second book of Avicenna's Canon.</note>
-              <note>In some instances the divisions in the MS are identified as فصل instead of the
-                conventional مقالة, cf. e.g. fol. 298b.7 etc.</note>
-              <incipit type="basmala" facs="#i0298" xml:lang="ar">
-                <locus>Fol. 294b.1</locus> بسم الله الرحمن الرحيم </incipit>
-
-              <incipit facs="#i0298" xml:lang="ar">
-                <locus>Fol. 294b.2</locus> وبعد حمد الله والڻن^ا عليه بما هُو أهله والصلوة على
-                أنبڻايه اجْمعينفان هذأ الكڻأب هو ڻانى الكتُڀ الّتى صڻفڻأها فىْ_ الطبّ ألتىْ_ الاوولء
-                منها هوُ في ألحكأم الكليّه مْ_ن الطّبّ واڻڻأنى منها هُو هذا الكْ_ڻأب آلمجمُوع فى
-                الأدوية المفرده وقسمنا هذا الكڻأب مقالتين الاُولي مْ_نهما فىْ_ القوانين الطّبيعية
-                اللتىْ_ ڻُحب ان ڻعرف من أمر الطّبْ والڻانية منهما في قوى الأدويه المفرده الجزئية </incipit>
-              <explicit xml:lang="ar">
-                <locus>Fol. 314a.8</locus> ونهمل ذكر أدوي لسنأ ڻڦڦ <note>Read: نقف .</note> منها
-                الأعلي اسأمي فقط ونرنب <note>Read: نرتب .</note> الألو^اح المذكُوره damaged]... اغها
-                وڻدل اولًا علي عده امرأ [damaged]... وعلي صنع كل مرض <pb/> مشڻه أللّه تعألي
-                [damaged]... <pb/> والحمدُ للّه ربّ العألمين </explicit>
-              <colophon xml:lang="ar">واصصلوة و [damaged]... سيّدنا ومولأنا [damaged]... أططاهرڻن فى
-                شهور سنه تسع وعشرڻن وسبعمأيه حامدًا ومُصليًّا</colophon>
-
-              <textLang mainLang="ar">Arabic</textLang>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc form="codex">
-              <supportDesc material="chart">
-                <extent> 01+314+001 ff. <dimensions unit="mm" type="leaf">
-                    <height>250</height>
-                    <width>195</width>
-                  </dimensions>
-                  <dimensions unit="mm" type="written">
-                    <height>160</height>
-                    <width>120</width>
-                  </dimensions>
-                </extent>
-                <foliation>
-                  <catchwords>Catchwords are written underneath the text-block.</catchwords>
-                </foliation>
-                <collation>
-                  <seg>
-                    <formula>Due to the binding, collation could not be established exactly;
-                      occasional traces are to be found, e.g. fol. 208a.</formula>
-                  </seg>
-                </collation>
-                <condition>Damp-stained leaves.</condition>
-              </supportDesc>
-              <layoutDesc>
-                <layout columns="1" n="mistara">
-                  <dimensions type="line-height" unit="mm">
-                    <height>12</height>
-                  </dimensions>
-                </layout>
-              </layoutDesc>
-            </objectDesc>
-            
-            <handDesc>
-              <handNote script="naskh" scope="major">
-                <p><label>Script:</label> naskh</p>
-                <p><label>Scribe:</label>
-                  <persName xml:lang="ar" role="scr" key="">محمود بن ابي بكر يعرف بخالويه (<foreign
-                      xml:lang="ar-Latn-x-lc">Maḥmūd b. ʿUmar b. Abī Bakr, known as Khālawayh
-                    </foreign>) </persName></p>
-                <p><label>Ink:</label> Black; red headings.</p>
-                <seg type="density">1220</seg>
-                <seg type="ratio">1:1,4</seg>
-                <seg type="anglealef">90</seg>
-                <seg type="anglekaf">35</seg>
-              </handNote>
-            </handDesc>
-            <decoDesc><decoNote type="rubrication">Rubrication;</decoNote>
-              <decoNote type="gild">Fols. 2b and 3a gilded.</decoNote>
-            </decoDesc>
-           
-            <additions>
-              <list>
-                <item facs="#i0297">Fol. 293b contains a poem (as seen): <lb/> لعين القصا <lb/>
-                  فارفتُ ارونْدَ لا طَابت مَرا تعهَا <pb/> بعّدى كما لم يَطب لى ڻعدَها جَبَلُ <lb/>
-                  ِنّى تركتُ به^ا الامالَ مُثْ_رةًا <pb/> لَا ارتجى بعدها َنْ يثمر الَمالُ <lb/> هبُ
-                  لى اط.لعت على لروندَ ثانيةًا <pb/> هل للشباب الذى ضَيّعتُه بدلُ <lb/> وله <lb/>
-                  الَا ليڀ شعرى هل اذى الدَمر مرَّةًا <pb/> ذرى قُلّتى اروندَ مڻ همدلن [not clear]
-                  <lb/> بلا ذَبها نيطت علىّ تمأعى <pb/> وارضعتُ مڻ عفّاتِها بلبان <lb/> . </item>
-                <item facs="#i0315"> Lacuna (ca 1 quire) between fols 313 and 314.</item>
-                <item facs="#i0005 #i0298 #i0296"> Fol. 1b has an <hi rend="italic">'unwān</hi>
-                  (restored), fol. 294a (original), fol. 293a, 314a (colophons written in
-                  frame).</item>
-                <item facs="#i0110"> Owners' and readers' notes: Fols 106b - 107a, 115b - 116a, 150b
-                  - 151a, 232b - 233a (erased), 314a لطف الله ابن مبارك .</item>
-                <item facs="#i0032">Fols 5a, 13a, 17a, 18a, 19a, 20a, 22a, 23b, 24a, 27ab, 28a -
-                  29b, 30b, 32ab, 33b, 35a - 46b, 48a, 49a - 52a, 53a, 55a - 56b, 58b, 59a, 60a -
-                  62b, 68b, 69a, 88ab, 91a, 94a, 95b, 97ab, 99b,158a, 159b, 160b, 161b, 163b - 166b,
-                  168a - 169a, 197b contain occasional additions and corrections.</item>
-                <item facs="#i0080"> Fols 76, 231, 312 - 314 bear traces of restoration; fols 266 -
-                  276 have been replaced.</item>
-                <item facs="#i0040"> Fols 37a, 42a contain drawings on margins. </item>
-                <item facs="#i0321"> Evidence of old shelf-mark on the spine.</item>
-              </list>
-            </additions>
-            <bindingDesc>
-              <binding>
-                <p>
-                  <seg type="board">
-                    <dimensions type="binding" unit="mm">
-                      <height>254</height>
-                      <width>198</width>
-                    </dimensions>
-                  </seg>
-                  <seg type="covers" subtype="attached">
-                    <seg type="spine_formation" subtype="flush"/>
-                    <material>leather covers.</material>
-                  </seg>
-                </p>
-              </binding>
-            </bindingDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origDate calendar="Hijri-qamari" when="1329">729 A.H.</origDate>
-                         </origin>
-            <provenance>Known owners/readers: <persName xml:lang="ar-Latn-x-lc" key="">Luṭf Allāh
-                b. Mubārak</persName> fols 106b - 107a, 115b - 116a, 150b - 151a, 232b - 233a
-              (erased), 314a.</provenance>
-          </history>
-        </msDesc>
+        
       </div>
     </body>
   </text>

@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_15819">
   <teiHeader>
     <fileDesc>
@@ -12,7 +14,149 @@
         <idno type="catalogue">Fihrist</idno>
       </publicationStmt>
       <sourceDesc>
-        <p>Born Digital</p>
+        <msDesc xml:id="MS_Arabic_174" xml:lang="en">
+          <msIdentifier>
+            <country>UK</country>
+            <settlement>London</settlement>
+            <institution>Wellcome Trust</institution>
+            <repository>Wellcome Collection</repository>
+            <collection> Manuscripts in Arabic</collection>
+            <idno>MS Arabic 174</idno>
+          </msIdentifier>
+          
+          
+          <msContents>
+            <summary>1 copy of Jāmiʻ mufradāt al-adwiyah wa-al-aghdhiyah by Ibn al-Bayṭār, ʻAbd
+              Allāh ibn Aḥmad</summary>
+            <msItem xml:id="MS_Arabic_174-item1">
+              <author key="person_94095759">
+                <persName xml:lang="ar-Latn-x-lc">Ibn al-Bayṭār, ʻAbd Allāh ibn Aḥmad,‏ ‎d.
+                  -1248‏</persName>
+                <persName xml:lang="ar">ابن البيطار، ابو محمد عبد الله بن احمد بن محمد</persName>
+              </author>
+              
+              <title xml:lang="ar-Latn-x-lc" key="work_619">Jāmiʻ mufradāt al-adwiyah
+                wa-al-aghdhiyah</title>
+              <title xml:lang="ar" key="work_619">جامع مفردات الادوية والاغذية</title>
+              <note>Though the title and author of the treatise do not appear in the MS, it has been
+                identified as al-Bayṭār's  <title xml:lang="ar-Latn-x-lc">Jāmiʻ mufradāt al-adwiyah</title> (Compendium of
+                simple drugs and foods). </note>
+              <note>Work is incomplete: contains only Book 2 and part of Book 3.</note>
+              <incipit type="beginning" facs="#i0008" xml:lang="ar">
+                <locus>fol.1a.1</locus> ابن سينا ٹحلل جدا يرش بطبيخه البيت فيقتل البراغيث والارضة </incipit>
+              <explicit type="ending" facs="#i0083" xml:lang="ar">
+                <locus>fol.78a.29</locus> سراج القطرٮ الٿمٹمى فى كتابه المرشد الٮٹروح الوقاد وٹسمى
+                سحره الصںم وهذه السحره <gap reason="omitted"/> سحره سلٹماں اٮں داوود علٹهما السلام </explicit>
+              <msItem n="toc">
+                <locus>fol.17a.9</locus>
+                <title type="original" facs="#i0024" xml:lang="ar">حرف الذال داقي الاسلندارني معناه
+                  ٮالٹوںانيه</title>
+              </msItem>
+              <msItem n="toc">
+                <locus>fol.30a.19</locus>
+                <title type="original" facs="#i0027" xml:lang="ar">حرف الراء راسْن هو الحٮاح بلغه
+                  الاٮدلس</title>
+              </msItem>
+              <msItem n="toc">
+                <locus>fol.31b.14</locus>
+                <title type="original" facs="#i0039" xml:lang="ar">حَرف الزاي زَاجَ</title>
+              </msItem>
+              <msItem n="toc">
+                <locus>fol.49b.2</locus>
+                <title type="original" facs="#i0057" xml:lang="ar">حرف السٿں سادح دسقورٽدوس فى
+                  الاولى ما لا ينزل</title>
+              </msItem>
+              <msItem n="toc">
+                <locus>fol.75b.8</locus>
+                <title type="original" facs="#i0081" xml:lang="ar">حرف الشين</title>
+              </msItem>
+              <textLang mainLang="ar">Arabic</textLang>
+              
+            </msItem>
+          </msContents>
+          <physDesc>
+            <objectDesc form="codex">
+              <supportDesc material="chart">
+                <support>
+                  <material>Burnished</material>
+                </support>
+                <extent> 76 ff. <dimensions type="leaf" unit="mm">
+                  <height>236</height>
+                  <width>171</width>
+                </dimensions>
+                  <dimensions type="written" unit="mm">
+                    <height>208</height>
+                    <width>132</width>
+                  </dimensions>
+                </extent>
+                <foliation facs="#i0011">all in Arabic; <catchwords facs="#i0011">catchwords
+                  present.</catchwords>
+                </foliation>
+                <collation>
+                  <seg type="gathering" n="1-76" subtype="folded">
+                    <note>Cannot distinguish between the gatherings due to tight binding.</note>
+                    <formula facs="#i0003">01,1-76, 001</formula>
+                  </seg>
+                </collation>
+                <condition facs="#i0001">sound</condition>
+              </supportDesc>
+              <layoutDesc>
+                <layout ruledLines="32" columns="1" n="mistara">
+                  <locus facs="#i0072"/>
+                  <dimensions unit="mm">
+                    <height facs="#i0084">7mm</height>
+                  </dimensions>
+                </layout>
+              </layoutDesc>
+            </objectDesc>
+            <handDesc>
+              <handNote scope="major" script="naskh">
+                <p><label>Script:</label> Naskh</p>
+                <p><label>Ink:</label> Black and red</p>
+                <seg type="lines">32</seg>
+                <seg type="density">960</seg>
+                <seg type="ratio">0.36</seg>
+                <seg type="anglealef">90</seg>
+                <seg type="anglekaf">20</seg>
+              </handNote>
+            </handDesc>
+            <decoDesc>
+              
+              <decoNote type="rubrication">
+                <desc facs="#i0014">Rubrication throughout.</desc>
+              </decoNote>
+            </decoDesc>
+            <additions>
+              <list>
+                <item facs="#i0007">Some additional notes.</item>
+              </list>
+            </additions>
+            <bindingDesc>
+              <binding contemporary="true">
+                <p>
+                  <seg type="board">
+                    <dimensions type="binding" unit="mm">
+                      <height>243</height>
+                      <width>177</width>
+                    </dimensions>; <material>Paper</material>
+                  </seg>
+                  <seg type="covers" subtype="attached">
+                    <seg type="spine_formation" subtype="flush"/>
+                    <material>paper / cloth covers.</material>
+                  </seg>
+                </p>
+              </binding>
+            </bindingDesc>
+            <accMat facs="#i0002">Cataloguing card refers to some information about the manuscript
+              in English.</accMat>
+          </physDesc>
+          <history>
+            <origin>Undated</origin>
+            <provenance facs="#i0084">
+              <locus>Fol.78b</locus> An endowment by <persName xml:lang="ar-Latn-x-lc" key="">Ḥajjī
+                Muḥammad Afandī</persName>. </provenance>
+          </history>
+        </msDesc>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -404,149 +548,7 @@
   <text>
     <body>
       <div>
-        <msDesc xml:id="MS_Arabic_174" xml:lang="en">
-          <msIdentifier>
-            <country>UK</country>
-            <settlement>London</settlement>
-            <institution>Wellcome Trust</institution>
-            <repository>Wellcome Library</repository>
-            <collection type="main">Asian Collection</collection>
-            <idno>MS Arabic 174</idno>
-          </msIdentifier>
-
-
-          <msContents>
-            <summary>1 copy of Jāmiʻ mufradāt al-adwiyah wa-al-aghdhiyah by Ibn al-Bayṭār, ʻAbd
-              Allāh ibn Aḥmad</summary>
-            <msItem xml:id="MS_Arabic_174-item1">
-              <author key="person_94095759">
-                <persName xml:lang="ar-Latn-x-lc">Ibn al-Bayṭār, ʻAbd Allāh ibn Aḥmad,‏ ‎d.
-                  -1248‏</persName>
-                <persName xml:lang="ar">ابن البيطار، ابو محمد عبد الله بن احمد بن محمد</persName>
-              </author>
-
-              <title xml:lang="ar-Latn-x-lc" key="work_619">Jāmiʻ mufradāt al-adwiyah
-                wa-al-aghdhiyah</title>
-              <title xml:lang="ar" key="work_619">جامع مفردات الادوية والاغذية</title>
-              <note>Though the title and author of the treatise do not appear in the MS, it has been
-                identified as al-Bayṭār's  <title xml:lang="ar-Latn-x-lc">Jāmiʻ mufradāt al-adwiyah</title> (Compendium of
-                simple drugs and foods). </note>
-              <note>Work is incomplete: contains only Book 2 and part of Book 3.</note>
-              <incipit type="beginning" facs="#i0008" xml:lang="ar">
-                <locus>fol.1a.1</locus> ابن سينا ٹحلل جدا يرش بطبيخه البيت فيقتل البراغيث والارضة </incipit>
-              <explicit type="ending" facs="#i0083" xml:lang="ar">
-                <locus>fol.78a.29</locus> سراج القطرٮ الٿمٹمى فى كتابه المرشد الٮٹروح الوقاد وٹسمى
-                سحره الصںم وهذه السحره <gap reason="omitted"/> سحره سلٹماں اٮں داوود علٹهما السلام </explicit>
-              <msItem n="toc">
-                <locus>fol.17a.9</locus>
-                <title type="original" facs="#i0024" xml:lang="ar">حرف الذال داقي الاسلندارني معناه
-                  ٮالٹوںانيه</title>
-              </msItem>
-              <msItem n="toc">
-                <locus>fol.30a.19</locus>
-                <title type="original" facs="#i0027" xml:lang="ar">حرف الراء راسْن هو الحٮاح بلغه
-                  الاٮدلس</title>
-              </msItem>
-              <msItem n="toc">
-                <locus>fol.31b.14</locus>
-                <title type="original" facs="#i0039" xml:lang="ar">حَرف الزاي زَاجَ</title>
-              </msItem>
-              <msItem n="toc">
-                <locus>fol.49b.2</locus>
-                <title type="original" facs="#i0057" xml:lang="ar">حرف السٿں سادح دسقورٽدوس فى
-                  الاولى ما لا ينزل</title>
-              </msItem>
-              <msItem n="toc">
-                <locus>fol.75b.8</locus>
-                <title type="original" facs="#i0081" xml:lang="ar">حرف الشين</title>
-              </msItem>
-              <textLang mainLang="ar">Arabic</textLang>
-
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc form="codex">
-              <supportDesc material="chart">
-                <support>
-                  <material>Burnished</material>
-                </support>
-                <extent> 76 ff. <dimensions type="leaf" unit="mm">
-                    <height>236</height>
-                    <width>171</width>
-                  </dimensions>
-                  <dimensions type="written" unit="mm">
-                    <height>208</height>
-                    <width>132</width>
-                  </dimensions>
-                </extent>
-                <foliation facs="#i0011">all in Arabic; <catchwords facs="#i0011">catchwords
-                    present.</catchwords>
-                </foliation>
-                <collation>
-                  <seg type="gathering" n="1-76" subtype="folded">
-                    <note>Cannot distinguish between the gatherings due to tight binding.</note>
-                    <formula facs="#i0003">01,1-76, 001</formula>
-                  </seg>
-                </collation>
-                <condition facs="#i0001">sound</condition>
-              </supportDesc>
-              <layoutDesc>
-                <layout ruledLines="32" columns="1" n="mistara">
-                  <locus facs="#i0072"/>
-                  <dimensions>
-                    <height facs="#i0084">7mm</height>
-                  </dimensions>
-                </layout>
-              </layoutDesc>
-            </objectDesc>
-            <handDesc>
-              <handNote scope="major" script="naskh">
-                <p><label>Script:</label> Naskh</p>
-                <p><label>Ink:</label> Black and red</p>
-                <seg type="lines">32</seg>
-                <seg type="density">960</seg>
-                <seg type="ratio">0.36</seg>
-                <seg type="anglealef">90</seg>
-                <seg type="anglekaf">20</seg>
-              </handNote>
-            </handDesc>
-            <decoDesc>
-
-              <decoNote type="rubrication">
-                <desc facs="#i0014">Rubrication throughout.</desc>
-              </decoNote>
-            </decoDesc>
-            <additions>
-              <list>
-                <item facs="#i0007">Some additional notes.</item>
-              </list>
-            </additions>
-            <bindingDesc>
-              <binding>
-                <p>
-                  <seg type="board">
-                    <dimensions type="binding" unit="mm">
-                      <height>243</height>
-                      <width>177</width>
-                    </dimensions>; <material>Paper</material>
-                  </seg>
-                  <seg type="covers" subtype="attached">
-                    <seg type="spine_formation" subtype="flush"/>
-                    <material>paper / cloth covers.</material>
-                  </seg>
-                </p>
-              </binding>
-            </bindingDesc>
-            <accMat facs="#i0002">Cataloguing card refers to some information about the manuscript
-              in English.</accMat>
-          </physDesc>
-          <history>
-            <origin>Undated</origin>
-            <provenance facs="#i0084">
-              <locus>Fol.78b</locus> An endowment by <persName xml:lang="ar-Latn-x-lc" key="">Ḥajjī
-                Muḥammad Afandī</persName>. </provenance>
-          </history>
-        </msDesc>
+        
       </div>
     </body>
   </text>

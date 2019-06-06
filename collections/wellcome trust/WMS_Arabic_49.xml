@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_15698">
   <teiHeader>
     <fileDesc>
@@ -12,7 +14,159 @@
         <idno type="catalogue">Fihrist</idno>
       </publicationStmt>
       <sourceDesc>
-        <p>Born Digital</p>
+        <msDesc xml:lang="en" xml:id="MS_Arabic_49">
+          <msIdentifier>
+            <country>United Kingdom</country>
+            <settlement>London</settlement>
+            <institution>Wellcome Trust</institution>
+            <repository>Wellcome Collection</repository>
+            <collection> Manuscripts in Arabic</collection>
+            
+            <idno>MS Arabic 49</idno>
+          </msIdentifier>
+          
+          
+          <msContents>
+            <summary>1 copy of Kitāb al-Qānūn fī al-ṭibb by Avicenna</summary>
+            <msItem xml:id="MS_Arabic_49-item1">
+              <author key="person_97166546">
+                <persName xml:lang="en">Avicenna, d. 980-1037</persName>
+                <persName xml:lang="ar">ابو على الحسين ابن عبد الله ابن سينا</persName>
+              </author>
+              
+              
+              <title xml:lang="ar-Latn-x-lc" key="work_3001">Kitāb al-Qānūn fī al-ṭibb</title>
+              <title xml:lang="ar" key="work_3001"> كتاب القانون في الطبّ </title>
+              
+              <note> The first book of Avicenna's Canon.</note>
+              
+              <incipit type="basmala" facs="#i0007" xml:lang="ar">
+                <locus>Fol. 2b.1</locus> بسم اللّه الرحمن الرحيم </incipit>
+              <incipit type="tahmid" facs="#i0007" xml:lang="ar">
+                <locus>Fol. 2b.2</locus> الحمد للّه حمدًا يَسْتَحِقُّهُ بعُلوو شانه وسبوغ احسانهِ
+                وصلوته على نبيه محمد المصطفى و^اله </incipit>
+              <incipit facs="#i0007" xml:lang="ar">
+                <locus>Fol. 2b.3</locus> بسم اللّه الرحمن الرحيم وبعدُ فقد التمس منى بعضُ خُلِّصَ
+                اخوانى ومَن يُلزمنى اسْعافه فيما يَسْمَحُ به وسَّعِى ان ُصنّف فى الطبّ كتابًا
+                مشتملًا على قوانينه </incipit>
+              <explicit xml:lang="ar">
+                <locus>Fol. 177a.7</locus> وليكن هذا القدر من كلامنا المختصر فى الاصول الكلية لصناعة
+                الطب كافيا ولنأخذ فى تصنيف كتابنا فى الادوية المفردة مستعنين باللّه العلى الكبير </explicit>
+              <colophon xml:lang="ar"> تم الكتاب الاول من قانون فى الطب والحمد للّه العظيم واصصلوة
+                على رسوله محمد و^اله واصحابه اجمعين <pb/> كتبه العبد خدا بخش فى سنه ١١٥٧ هجرى مقدس ه </colophon>
+              
+              
+              <textLang mainLang="ar">Arabic</textLang>
+            </msItem>
+          </msContents>
+          <physDesc>
+            <objectDesc form="codex">
+              <supportDesc material="chart">
+                <support>Oriental paper in a variety of colours: biscuit, pink, beige, green and
+                  grey.</support>
+                
+                
+                <extent> 179 ff. (01+177+001) <dimensions unit="mm" type="leaf">
+                  <height>270</height>
+                  <width>157</width>
+                </dimensions>
+                  <dimensions unit="mm" type="written">
+                    <height>200</height>
+                    <width>95</width>
+                  </dimensions>
+                </extent>
+                <foliation>in Arabic until fol. 153. <catchwords>Catchwords are written
+                  underneath the text-block.</catchwords>
+                </foliation>
+                <collation>
+                  <seg>
+                    <formula>Due to the binding, collation could not be established
+                      exactly.</formula>
+                  </seg>
+                </collation>
+              </supportDesc>
+              <layoutDesc>
+                <layout columns="1" n="mistara" ruledLines="21">
+                  <dimensions type="line-height" unit=" mm">
+                    <height>10</height>
+                  </dimensions>
+                </layout>
+              </layoutDesc>
+            </objectDesc>
+            <handDesc>
+              <handNote script="taliq" scope="major">
+                <p><label>Script:</label>taʿlīq</p>
+                <p><label>Scribe:</label>
+                  <persName xml:lang="ar" role="scr" key="">العبد خدا بخش (<foreign
+                    xml:lang="ar-Latn-x-lc">al-ʿAbd Khudā Bakhsh</foreign>) </persName></p>
+                <p><label>Ink:</label> Black; headings and dividers are highlighted in red.</p>
+                <seg type="density">500</seg>
+                <seg type="ratio">1:1,5</seg>
+                <seg type="anglealef">85</seg>
+                <seg type="anglekaf">40</seg>
+              </handNote>
+            </handDesc>
+            <decoDesc>
+              
+              <decoNote type="rubrication">
+                <desc>Rubrication throughout the text.</desc>
+              </decoNote>
+            </decoDesc>
+            <additions>
+              <list>
+                
+                
+                <item>Fol. 1a: contains binder's mark (القانون فى الطب قلمى سنه ١١٥٧ هجره).</item>
+                <item>Fols. A1 and B1, 2a contain owners' and readers' notes in Persian.</item>
+                <item>Fol. 2a: a note has been erased.</item>
+                <item>Fols. 22-23 contain diagrams and drawings.</item>
+                <item>Front cover: a tag has been pasted, reading: 'Qānūn-i Shaikh. Kulliyāt'; cf.
+                  similar hand on the tag on the cover of the WMS Arabic 133.</item>
+                <item>Fols. 2b - 176b are heavily annotated and also contain references to the
+                  contents and corrections. Occasional interlinear translations of Arabic words into
+                  Persian are also present.</item>
+                <item>Fols. 98- 99 were added later, since they do not have running numbers. They
+                  comprise a note on music, possibly taken from Avicenna's <hi rend="italic">Kitāb
+                    al-Shifā'</hi>. Incipit (fol. 99a.1):<foreign xml:lang="ar"> قال فى الشفاء
+                      الموسيقى علم رياضى يبحث فيه من احوال الڻغم</foreign> .Explicit (fol. 99a. 6-7):
+                  <foreign xml:lang="ar">ونقول ان النبض اما ان يكون جيد الوزن الى قوله يدل على
+                    تغير حال عظيم ١٣ حكيم على</foreign> Ullmann <hi rend="italic">Medizin</hi> p.
+                  152.</item>
+              </list>
+            </additions>
+            <bindingDesc>
+              <binding contemporary="true">
+                <p>
+                  <seg type="board">Cardbaord
+                    <dimensions type="binding" unit="mm">
+                      <height>279</height>
+                      <width>155</width>
+                    </dimensions>
+                  </seg>
+                  <seg type="covers" subtype="attached">
+                    <seg type="spine_formation" subtype="flush"/>
+                  </seg>
+                </p>
+              </binding>
+            </bindingDesc>
+          </physDesc>
+          <history>
+            <origin>
+              <origDate when="1744" calendar="Hijri-qamari">1157 AH</origDate>
+              
+            </origin>
+            <provenance>
+              <p>Copied in India (judging from the paper and style of the handwriting).</p>
+            </provenance>
+            <acquisition>Wellcome Library accession number: 66818</acquisition>
+          </history>
+          <additional>
+            <listBibl>
+              <bibl> Iskandar <hi rend="italic">Catalogue</hi> p. 159 - 160 (Shelf-mark: WMS Or.
+                49). </bibl>
+            </listBibl>
+          </additional>
+        </msDesc>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -1179,160 +1333,7 @@
   <text>
     <body>
       <div>
-        <msDesc xml:lang="en" xml:id="MS_Arabic_49">
-          <msIdentifier>
-            <country>United Kingdom</country>
-            <settlement>London</settlement>
-            <institution>The Wellcome Trust</institution>
-            <repository>The Wellcome Library</repository>
-            <collection type="main"> Asian Collection</collection>
-            <collection type="sub">Iskandar</collection>
-
-            <idno>MS Arabic 49</idno>
-          </msIdentifier>
-
-
-          <msContents>
-            <summary>1 copy of Kitāb al-Qānūn fī al-ṭibb by Avicenna</summary>
-            <msItem xml:id="MS_Arabic_49-item1">
-              <author key="person_97166546">
-                <persName xml:lang="en">Avicenna, d. 980-1037</persName>
-                <persName xml:lang="ar">ابو على الحسين ابن عبد الله ابن سينا</persName>
-              </author>
-
-
-              <title xml:lang="ar-Latn-x-lc" key="work_3001">Kitāb al-Qānūn fī al-ṭibb</title>
-              <title xml:lang="ar" key="work_3001"> كتاب القانون في الطبّ </title>
-
-              <note> The first book of Avicenna's Canon.</note>
-             
-              <incipit type="basmala" facs="#i0007" xml:lang="ar">
-                <locus>Fol. 2b.1</locus> بسم اللّه الرحمن الرحيم </incipit>
-              <incipit type="tahmid" facs="#i0007" xml:lang="ar">
-                <locus>Fol. 2b.2</locus> الحمد للّه حمدًا يَسْتَحِقُّهُ بعُلوو شانه وسبوغ احسانهِ
-                وصلوته على نبيه محمد المصطفى و^اله </incipit>
-              <incipit facs="#i0007" xml:lang="ar">
-                <locus>Fol. 2b.3</locus> بسم اللّه الرحمن الرحيم وبعدُ فقد التمس منى بعضُ خُلِّصَ
-                اخوانى ومَن يُلزمنى اسْعافه فيما يَسْمَحُ به وسَّعِى ان ُصنّف فى الطبّ كتابًا
-                مشتملًا على قوانينه </incipit>
-              <explicit xml:lang="ar">
-                <locus>Fol. 177a.7</locus> وليكن هذا القدر من كلامنا المختصر فى الاصول الكلية لصناعة
-                الطب كافيا ولنأخذ فى تصنيف كتابنا فى الادوية المفردة مستعنين باللّه العلى الكبير </explicit>
-              <colophon xml:lang="ar"> تم الكتاب الاول من قانون فى الطب والحمد للّه العظيم واصصلوة
-                على رسوله محمد و^اله واصحابه اجمعين <pb/> كتبه العبد خدا بخش فى سنه ١١٥٧ هجرى مقدس ه </colophon>
-
-
-              <textLang mainLang="ar">Arabic</textLang>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc form="codex">
-              <supportDesc material="chart">
-                <support>Oriental paper in a variety of colours: biscuit, pink, beige, green and
-                  grey.</support>
-
-
-                <extent> 179 ff. (01+177+001) <dimensions unit="mm" type="leaf">
-                    <height>270</height>
-                    <width>157</width>
-                  </dimensions>
-                  <dimensions unit="mm" type="written">
-                    <height>200</height>
-                    <width>95</width>
-                  </dimensions>
-                </extent>
-                <foliation>in Arabic until fol. 153. <catchwords>Catchwords are written
-                    underneath the text-block.</catchwords>
-                </foliation>
-                <collation>
-                  <seg>
-                    <formula>Due to the binding, collation could not be established
-                      exactly.</formula>
-                  </seg>
-                </collation>
-              </supportDesc>
-              <layoutDesc>
-                <layout columns="1" n="mistara" ruledLines="21">
-                  <dimensions type="line-height" unit=" mm">
-                    <height>10</height>
-                  </dimensions>
-                </layout>
-              </layoutDesc>
-            </objectDesc>
-            <handDesc>
-              <handNote script="taliq" scope="major">
-                <p><label>Script:</label>taʿlīq</p>
-                <p><label>Scribe:</label>
-                  <persName xml:lang="ar" role="scr" key="">العبد خدا بخش (<foreign
-                      xml:lang="ar-Latn-x-lc">al-ʿAbd Khudā Bakhsh</foreign>) </persName></p>
-                <p><label>Ink:</label> Black; headings and dividers are highlighted in red.</p>
-                <seg type="density">500</seg>
-                <seg type="ratio">1:1,5</seg>
-                <seg type="anglealef">85</seg>
-                <seg type="anglekaf">40</seg>
-              </handNote>
-            </handDesc>
-            <decoDesc>
-
-              <decoNote type="rubrication">
-                <desc>Rubrication throughout the text.</desc>
-              </decoNote>
-            </decoDesc>
-            <additions>
-              <list>
-
-
-                <item>Fol. 1a: contains binder's mark (القانون فى الطب قلمى سنه ١١٥٧ هجره).</item>
-                <item>Fols. A1 and B1, 2a contain owners' and readers' notes in Persian.</item>
-                <item>Fol. 2a: a note has been erased.</item>
-                <item>Fols. 22-23 contain diagrams and drawings.</item>
-                <item>Front cover: a tag has been pasted, reading: 'Qānūn-i Shaikh. Kulliyāt'; cf.
-                  similar hand on the tag on the cover of the WMS Arabic 133.</item>
-                <item>Fols. 2b - 176b are heavily annotated and also contain references to the
-                  contents and corrections. Occasional interlinear translations of Arabic words into
-                  Persian are also present.</item>
-                <item>Fols. 98- 99 were added later, since they do not have running numbers. They
-                  comprise a note on music, possibly taken from Avicenna's <hi rend="italic">Kitāb
-                    al-Shifā'</hi>. Incipit (fol. 99a.1):<foreign xml:lang="ar"> قال فى الشفاء
-                    الموسيقى علم رياضى يبحث فيه من احوال الڻغم</foreign> .Explicit (fol. 99a. 6-7):
-                    <foreign xml:lang="ar">ونقول ان النبض اما ان يكون جيد الوزن الى قوله يدل على
-                    تغير حال عظيم ١٣ حكيم على</foreign> Ullmann <hi rend="italic">Medizin</hi> p.
-                  152.</item>
-              </list>
-            </additions>
-            <bindingDesc>
-              <binding>
-                <p>
-                  <seg type="board">Cardbaord
-                    <dimensions type="binding" unit="mm">
-                      <height>279</height>
-                      <width>155</width>
-                    </dimensions>
-                  </seg>
-                  <seg type="covers" subtype="attached">
-                    <seg type="spine_formation" subtype="flush"/>
-                  </seg>
-                </p>
-              </binding>
-            </bindingDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origDate when="1744" calendar="Hijri-qamari">1157 AH</origDate>
-             
-            </origin>
-            <provenance>
-              <p>Copied in India (judging from the paper and style of the handwriting).</p>
-            </provenance>
-            <acquisition>Wellcome Library accession number: 66818</acquisition>
-          </history>
-          <additional>
-            <listBibl>
-              <bibl> Iskandar <hi rend="italic">Catalogue</hi> p. 159 - 160 (Shelf-mark: WMS Or.
-                49). </bibl>
-            </listBibl>
-          </additional>
-        </msDesc>
+        
       </div>
     </body>
   </text>
