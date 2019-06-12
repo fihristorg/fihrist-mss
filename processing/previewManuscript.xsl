@@ -35,6 +35,7 @@
                 <div class="content tei-body" id="{//TEI/@xml:id}">
                     <xsl:call-template name="Header"/>
                     <xsl:apply-templates select="//msDesc"/>
+                    <xsl:call-template name="AbbreviationsKey"/>
                     <xsl:call-template name="Footer"/>
                 </div>
             </body>

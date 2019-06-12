@@ -41,10 +41,10 @@ declare variable $allinstances :=
             { for $role in $roles return <role>{ $role }</role> }
             {
             if ($authorsinworksauthority) then () else
-                if (some $role in $roles satisfies $role = ('author','aut') and not($instance/parent::tei:bibl)) then 
+                if (some $role in $roles satisfies lower-case($role) = ('author','aut') and not($instance/parent::tei:bibl)) then 
                     for $workid in distinct-values($instance/ancestor::tei:msItem[tei:title/@key][1]/tei:title/@key/tokenize(data(), ' '))
                         return <authored>{ $workid }</authored>
-                else if (some $role in $roles satisfies $role = ('translator','trl') and not($instance/parent::tei:bibl)) then 
+                else if (some $role in $roles satisfies lower-case($role) = ('translator','trl') and not($instance/parent::tei:bibl)) then 
                     for $workid in distinct-values($instance/ancestor::tei:msItem[tei:title/@key][1]/tei:title/@key/tokenize(data(), ' '))
                         return <translated>{ $workid }</translated>
                 else
@@ -87,8 +87,8 @@ declare variable $allinstances :=
         (: Get info in all the instances in the manuscript description files :)
         let $instances := $allinstances[key = $id]
         let $roles := distinct-values(for $role in distinct-values($instances/role/text()) return bod:personRoleLookup($role))
-        let $isauthor := some $role in $instances/role/text() satisfies $role = ('author','aut')
-        let $istranslator := some $role in $instances/role/text() satisfies $role = ('translator','trl')
+        let $isauthor := some $role in $instances/role/text() satisfies lower-case($role) = ('author','aut')
+        let $istranslator := some $role in $instances/role/text() satisfies lower-case($role) = ('translator','trl')
         let $issubjectofawork := some $role in $instances/role/text() satisfies $role eq 'subject'
 
         (: Output a Solr doc element :)

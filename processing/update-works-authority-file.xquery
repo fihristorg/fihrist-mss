@@ -64,7 +64,7 @@ processing-instruction xml-model {'href="authority-schematron.sch" type="applica
             <listBibl>
 {
     let $newworks := (
-        for $w in $collection//tei:msItem[tei:title/@key = '' and not(tei:title/@key != '')]
+        for $w in $collection/tei:TEI[@xml:id]//tei:msItem[tei:title/@key = '' and not(tei:title/@key != '')]
             let $titles := 
                 for $t in $w/tei:title
                     return

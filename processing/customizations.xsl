@@ -52,10 +52,11 @@
     <!-- The next three templates override the default by putting authors, editors and titles on separate lines, because in Fihirst there are often multiple
          titles in different languages, and versions of the author name in different languages, which gets confusing all on one line -->
     <xsl:template match="msItem/author">
+        <xsl:variable name="rolelabel" as="xs:string" select="if(@role) then bod:personRoleLookup(concat('aut ', @role)) else 'Author'"/>
         <div class="tei-author">
             <span class="tei-label">
-                <xsl:copy-of select="bod:standardText('Author:')"/>
-                <xsl:text> </xsl:text>
+                <xsl:value-of select="$rolelabel"/>
+                <xsl:text>: </xsl:text>
             </span>
             <xsl:choose>
                 <xsl:when test="@key and not(@key='')">
@@ -154,7 +155,7 @@
     <xsl:template name="MsItemFooter">
         <xsl:if test="listBibl/bibl">
             <xsl:choose>
-                <xsl:when test="@n or ancestor::msItem[@xml:id and title] or following-sibling::msItem or preceding-sibling::msItem">
+                <xsl:when test="@n or ancestor::msItem[@xml:id and title] or following-sibling::msItem or preceding-sibling::msItem or ancestor::msPart">
                     <h4>
                         <xsl:copy-of select="bod:standardText('References')"/>
                     </h4>

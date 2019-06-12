@@ -47,7 +47,7 @@ declare variable $collection := collection('../collections/?select=*.xml;recurse
                     <field name="id">{ $msid }</field>
                     { bod:string2one($title, 'title') }
                     { bod:one2one($ms//tei:titleStmt/tei:title[@type='collection'], 'ms_collection_s') }
-                    { bod:one2one($ms//tei:msDesc/tei:msIdentifier/tei:collection, 'ms_collection_s', 'Not specified') }
+                    { bod:many2one($ms//tei:msDesc/tei:msIdentifier/tei:collection, 'ms_collection_s', 'Not specified') }
                     { bod:one2one($ms//tei:msDesc/tei:msIdentifier/tei:institution, 'institution_sm') }
                     { bod:many2one($ms//tei:msDesc/tei:msIdentifier/tei:repository, 'ms_repository_s') }
                     { bod:strings2many(bod:shelfmarkVariants($allshelfmarks), 'shelfmarks') (: Non-tokenized field :) }
@@ -71,7 +71,7 @@ declare variable $collection := collection('../collections/?select=*.xml;recurse
                         else if ($ms//tei:origin//tei:origDate) 
                             then 'Date in unsupported calendar' 
                         else 'Undated') }
-                    { bod:string2one(bod:shortenToNearestWord(string-join(($ms//tei:msContents/tei:summary)[1]//text(), ' '), 128), 'ms_summary_s') }
+                    { bod:string2one(bod:shortenToNearestWord(string-join(($ms//tei:msDesc/tei:head, $ms//tei:msContents/tei:summary)[1]//text(), ' '), 128), 'ms_summary_s') }
                     { bod:indexHTML($htmldoc, 'ms_textcontent_tni') }
                     { bod:displayHTML($htmldoc, 'display') }
                 </doc>
