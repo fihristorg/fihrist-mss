@@ -63,7 +63,7 @@ processing-instruction xml-model {'href="authority-schematron.sch" type="applica
             <listPerson>
 {
     let $newviafpeople := (      
-        for $p in $collection/tei:TEI[@xml:id]//(tei:author|tei:editor|tei:persName[not(ancestor::tei:author/@key or ancestor::tei:editor/@key)]|tei:name[tei:persName])[matches(@key, 'person_\d+') and not(@key = $currentkeys)]
+        for $p in $collection/tei:TEI[@xml:id]//(tei:author|tei:editor|tei:persName[not(ancestor::tei:author/@key or ancestor::tei:editor/@key)]|tei:name[tei:persName])[matches(@key, 'person_\d+') and not(tokenize(@key, '\s+') = $currentkeys) and string-length(normalize-space(string())) gt 1]
             let $names := 
                 if ($p/tei:persName) then
                     for $n in $p/tei:persName
@@ -121,7 +121,7 @@ processing-instruction xml-model {'href="authority-schematron.sch" type="applica
     let $viafpeoplefrompreviousrun := $additions[matches(@xml:id, 'person_\d+')]
     
     let $newlocalpeople := (
-        for $p in $collection/tei:TEI[@xml:id]//(tei:author|tei:editor|tei:persName[not(ancestor::tei:author/@key or ancestor::tei:editor/@key)]|tei:name[tei:persName])[@key = '']
+        for $p in $collection/tei:TEI[@xml:id]//(tei:author|tei:editor|tei:persName[not(ancestor::tei:author/@key or ancestor::tei:editor/@key)]|tei:name[tei:persName])[@key = ''  and string-length(normalize-space(string())) gt 1]
             let $names := 
                 if ($p/tei:persName) then
                     for $n in $p/tei:persName

@@ -62,7 +62,7 @@ processing-instruction xml-model {'href="authority-schematron.sch" type="applica
             <list>
 {
     let $newlcsh := (      
-        for $s in $collection/tei:TEI[@xml:id]//(tei:term|tei:placeName|tei:settlement|tei:region|tei:country)[matches(@key, 'subject_(sh|n|no)\d+') and not(@key = $currentkeys)]
+        for $s in $collection/tei:TEI[@xml:id]//(tei:term|tei:placeName|tei:settlement|tei:region|tei:country)[matches(@key, 'subject_(sh|n|no)\d+') and not(tokenize(@key, '\s+') = $currentkeys) and string-length(normalize-space(string())) gt 1]
             return 
             <item xml:id="{ $s/@key }">
                 <term type="display">{ normalize-space(string-join($s//text(), ' ')) }</term>
