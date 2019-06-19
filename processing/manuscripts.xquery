@@ -61,7 +61,7 @@ declare variable $collection := collection('../collections/?select=*.xml;recurse
                     { bod:materials($ms//tei:msDesc//tei:physDesc//tei:supportDesc[@material], 'ms_materials_sm', 'Unknown') }
                     { bod:physForm($ms//tei:physDesc/tei:objectDesc, 'ms_physform_sm', 'Not specified') }
                     { bod:trueIfExists($ms//tei:sourceDesc//tei:decoDesc/tei:decoNote, 'ms_deconote_b') }
-                    { (: Fihrist doesn't consistently markup links to digital copies: bod:digitized($ms//tei:sourceDesc//tei:surrogates/tei:bibl, 'ms_digitized_s'):)() }
+                    { bod:digitized($ms//tei:sourceDesc//tei:surrogates/tei:bibl, 'ms_digitized_s') }
                     { bod:languages($ms//tei:sourceDesc//tei:textLang, 'lang_sm') }
                     { bod:centuries(
                         $ms//tei:origin//tei:origDate[@calendar = ('#Gregorian', '#Hijri-qamari', '#Hindu')], 
