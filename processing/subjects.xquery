@@ -17,7 +17,7 @@ declare variable $allinstances :=
         return
         <instance>
             { attribute of { if ($instance/self::tei:term) then 'term' else 'place' } }
-            { for $key in tokenize($instance/@key, ' ') return <key>{ $key }</key> }
+            { for $key in tokenize($instance/@key, '\s+')[string-length() gt 0] return <key>{ $key }</key> }
             <name>{ normalize-space($instance/string()) }</name>
             <link>{ concat(
                         '/catalog/', 
@@ -114,7 +114,7 @@ declare variable $allinstances :=
                 }
                 {
                 (: See also links to other entries in the same authority file :)
-                let $relatedids := tokenize(translate(string-join(($subject/@corresp, $subject/@sameAs), ' '), '#', ''), ' ')
+                let $relatedids := tokenize(translate(string-join(($subject/@corresp, $subject/@sameAs), ' '), '#', ''), '\s+')[string-length() gt 0]
                 for $relatedid in distinct-values($relatedids)
                     let $url := concat("/catalog/", $relatedid)
                     let $linktext := ($authorityentries[@xml:id = $relatedid]/tei:term[@type = 'display'][1])[1]
