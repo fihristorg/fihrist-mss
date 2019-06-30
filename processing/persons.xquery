@@ -16,15 +16,15 @@ declare variable $allinstances :=
             if ($instance/self::tei:author) 
                 then ('aut') 
             else if ($instance/parent::tei:title)
-                then ('subject', tokenize($instance/@role/data(), ' '))
-            else tokenize($instance/@role/data(), ' ')
+                then ('subject', tokenize($instance/@role/data(), '\s+')[string-length() gt 0])
+            else tokenize($instance/@role/data(), '\s+')[string-length() gt 0]
         let $datesoforigin := bod:summarizeDates($roottei//tei:origin//tei:origDate)
         let $placesoforigin := distinct-values($roottei//tei:origin//tei:origPlace/normalize-space()[string-length(.) gt 0])
         let $institution := $roottei//tei:msDesc/tei:msIdentifier/tei:institution/string()
         let $repository := $roottei//tei:msDesc/tei:msIdentifier/tei:repository[1]/string()
         return
         <instance>
-            { for $key in tokenize($instance/@key, ' ') return <key>{ $key }</key> }
+            { for $key in tokenize($instance/@key, '\s+')[string-length() gt 0] return <key>{ $key }</key> }
             <name>{ normalize-space($instance/string()) }</name>
             <link>{ concat(
                         '/catalog/', 
@@ -41,18 +41,18 @@ declare variable $allinstances :=
             { for $role in $roles return <role>{ $role }</role> }
             {
             if ($authorsinworksauthority) then () else
-                if (some $role in $roles satisfies $role = ('author','aut') and not($instance/parent::tei:bibl)) then 
-                    for $workid in distinct-values($instance/ancestor::tei:msItem[tei:title/@key][1]/tei:title/@key/tokenize(data(), ' '))
+                if (some $role in $roles satisfies lower-case($role) = ('author','aut') and not($instance/parent::tei:bibl)) then 
+                    for $workid in distinct-values($instance/ancestor::tei:msItem[tei:title/@key][1]/tei:title/@key/tokenize(data(), '\s+')[string-length() gt 0])
                         return <authored>{ $workid }</authored>
-                else if (some $role in $roles satisfies $role = ('translator','trl') and not($instance/parent::tei:bibl)) then 
-                    for $workid in distinct-values($instance/ancestor::tei:msItem[tei:title/@key][1]/tei:title/@key/tokenize(data(), ' '))
+                else if (some $role in $roles satisfies lower-case($role) = ('translator','trl') and not($instance/parent::tei:bibl)) then 
+                    for $workid in distinct-values($instance/ancestor::tei:msItem[tei:title/@key][1]/tei:title/@key/tokenize(data(), '\s+')[string-length() gt 0])
                         return <translated>{ $workid }</translated>
                 else
                     ()
             }
             {
             if (some $role in $roles satisfies $role eq 'subject' and not($instance/parent::tei:bibl)) then 
-                for $workid in distinct-values($instance/../../tei:title[@key]/@key/tokenize(data(), ' '))
+                for $workid in distinct-values($instance/../../tei:title[@key]/@key/tokenize(data(), '\s+')[string-length() gt 0])
                     return <subjectof>{ $workid }</subjectof>
             else
                 ()
@@ -87,8 +87,8 @@ declare variable $allinstances :=
         (: Get info in all the instances in the manuscript description files :)
         let $instances := $allinstances[key = $id]
         let $roles := distinct-values(for $role in distinct-values($instances/role/text()) return bod:personRoleLookup($role))
-        let $isauthor := some $role in $instances/role/text() satisfies $role = ('author','aut')
-        let $istranslator := some $role in $instances/role/text() satisfies $role = ('translator','trl')
+        let $isauthor := some $role in $instances/role/text() satisfies lower-case($role) = ('author','aut')
+        let $istranslator := some $role in $instances/role/text() satisfies lower-case($role) = ('translator','trl')
         let $issubjectofawork := some $role in $instances/role/text() satisfies $role eq 'subject'
 
         (: Output a Solr doc element :)
@@ -141,7 +141,7 @@ declare variable $allinstances :=
                 }
                 {
                 (: See also links to other entries in the same authority file :)
-                let $relatedids := tokenize(translate(string-join(($person/@corresp, $person/@sameAs), ' '), '#', ''), ' ')
+                let $relatedids := tokenize(translate(string-join(($person/@corresp, $person/@sameAs), ' '), '#', ''), '\s+')[string-length() gt 0]
                 for $relatedid in distinct-values($relatedids)
                     let $url := concat("/catalog/", $relatedid)
                     let $linktext := ($authorityentries[@xml:id = $relatedid]/tei:persName[@type = 'display'][1])[1]
