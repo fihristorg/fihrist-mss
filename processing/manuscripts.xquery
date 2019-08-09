@@ -60,7 +60,7 @@ declare variable $collection := collection('../collections/?select=*.xml;recurse
                     <field name="filename_s">{ substring-after(base-uri($ms), 'collections/') }</field>
                     { bod:materials($ms//tei:msDesc//tei:physDesc//tei:supportDesc[@material], 'ms_materials_sm', 'Unknown') }
                     { bod:physForm($ms//tei:physDesc/tei:objectDesc, 'ms_physform_sm', 'Not specified') }
-                    { bod:trueIfExists($ms//tei:sourceDesc//tei:decoDesc/tei:decoNote, 'ms_deconote_b') }
+                    { bod:trueIfExists($ms//tei:sourceDesc//tei:decoDesc/tei:decoNote[not(@type='none')], 'ms_deconote_b') }
                     { bod:digitized($ms//tei:sourceDesc//tei:surrogates/tei:bibl, 'ms_digitized_s') }
                     { bod:languages($ms//tei:sourceDesc//tei:textLang, 'lang_sm') }
                     { bod:centuries(
