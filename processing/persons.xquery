@@ -24,7 +24,7 @@ declare variable $allinstances :=
         let $repository := $roottei//tei:msDesc/tei:msIdentifier/tei:repository[1]/string()
         return
         <instance>
-            { for $key in tokenize($instance/@key, '\s+')[string-length() gt 0] return <key>{ $key }</key> }
+            { for $key in tokenize(($instance/@key, $instance/tei:persName[@key][1]/@key)[1], '\s+')[string-length() gt 0] return <key>{ $key }</key> }
             <name>{ normalize-space($instance/string()) }</name>
             <link>{ concat(
                         '/catalog/', 
