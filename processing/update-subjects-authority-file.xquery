@@ -15,25 +15,6 @@ declare function local:logging($level, $msg, $values)
     substring(trace('', concat(upper-case($level), '	', $msg, '	', string-join($values, '	'), '	')), 0, 0)
 };
 
-declare function local:normalize4Crossrefing($name as xs:string) as xs:string
-{
-    let $normalized1 := replace(normalize-unicode($name, 'NFKD'), '^(the|al-|el-) ', '', 'i')
-    let $normalized2 := 
-        translate(
-            translate(
-                replace(
-                    replace(
-                        replace(
-                            lower-case($normalized1), 
-                            '[^\p{L}\d]', ''
-                        ),
-                    'æ', 'ae'),
-                'œ', 'oe'),
-            'ạĀāàáâḅÇçČḌḍḏèéëēĞğĠġǦǧḢḣḤḥḪḫẖĪīĭİıÎÏìíîïḲḳḴṇōóÖṛŕśṢṣŞşŠšṬṭṯúûüŪūżẒẓẔẕ', 'aaaaaabcccdddeeeegggggghhhhhhhiiiiiiiiiiikkknooorrssssssstttuuuuuzzzzz'),
-        'ʼ', '')
-    let $normalized3 := replace(replace(replace(replace(replace($normalized2, "[ʻ’'ʻ‘ʺʹ]" ,""), 'ʻ̐', ''), 'ʹ̨', ''), 'ʻ̨', ''), '"', '')
-    return $normalized3
-};
 
 declare function local:percentEncode($str as xs:string) as xs:string
 {

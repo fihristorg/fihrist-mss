@@ -99,11 +99,25 @@ processing-instruction xml-model {'href="authority-schematron.sch" type="applica
             </bibl>
     )
     
+    let $worksinbase := (
+        for $w in $base[starts-with(@xml:id, 'work_')]
+            return
+            <bibl>
+                { $w/@* }
+                { $w/* }
+                { for $t in $w/title return <norm>{ local:normalize4Crossrefing($t/text()) }</norm> }
+                { $w/comment() }                
+            </bibl>
+    )
+    
     let $dedupednewworks := (
         for $w at $pos in $newworks
             return 
             if (some $v in $w/norm/text() satisfies $v = $worksfrompreviousrun/norm/text()) then
                 (: This is a duplicate of an entry created by a previous running of this script, so skip it :)
+                ()
+            else if (some $v in $w/norm/text() satisfies $v = $worksinbase/norm/text()) then
+                (: This is a duplicate of an entry in the base file, so skip it :)
                 ()
             else if (some $v in $w/norm/text() satisfies $v = $newworks[position() lt $pos]/norm/text()) then
                 (: This is a duplicate of another new entry already processed in this for-loop, so skip it :)

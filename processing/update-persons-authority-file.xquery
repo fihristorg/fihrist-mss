@@ -159,11 +159,25 @@ processing-instruction xml-model {'href="authority-schematron.sch" type="applica
             </person>
     )
     
+    let $localpeopleinbase := (
+        for $p in $base[starts-with(@xml:id, 'person_f')]
+            return
+            <person>
+                { $p/@* }
+                { $p/* }
+                { for $n in $p/persName return <norm>{ local:normalize4Crossrefing($n/text()) }</norm> }
+                { $p/comment() }                
+            </person>
+    )
+    
     let $dedupednewlocalpeople := (
         for $n at $pos in $newlocalpeople
             return
             if (some $v in $n/norm/text() satisfies $v = $localpeoplefrompreviousrun/norm/text()) then
                 (: This is a duplicate of an entry created by a previous running of this script, so skip it :)
+                ()
+            else if (some $v in $n/norm/text() satisfies $v = $localpeopleinbase/norm/text()) then
+                (: This is a duplicate of an entry in the base file, so skip it :)
                 ()
             else if (some $v in $n/norm/text() satisfies $v = $newlocalpeople[position() lt $pos]/norm/text()) then
                 (: This is a duplicate of another new entry already processed in this for-loop, so skip it :)
