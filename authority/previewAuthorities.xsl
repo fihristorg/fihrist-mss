@@ -51,6 +51,7 @@
                         }   
                     );
                 </script>
+                <base target="_blank"/>
             </head>
             <body>
                 <xsl:apply-templates select="/tei:TEI/tei:text/tei:body"/>
@@ -64,13 +65,21 @@
                 <tr>
                     <th width="15%">ID</th>
                     <th width="70%">Names</th>
-                    <th width="15%">Sources</th>
+                    <xsl:choose>
+                        <xsl:when test="tei:listBibl or xi:include[contains(@href, 'work')]">
+                            <th width="15%">Authors</th>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <th width="15%">Sources</th>
+                        </xsl:otherwise>
+                    </xsl:choose>
                 </tr>
             </thead>
             <tbody>
 
                 <!-- Next line works with or without XInclude support enabled in the XSLT processor -->
                 <xsl:for-each select=".//*[@xml:id] | document(xi:include/@href)//*[@xml:id]">
+                    <xsl:sort select="@xml:id"/>
                     <tr>
                         <td class="ids">
                             <a href="{ $website }/catalog/{ @xml:id }">
@@ -93,17 +102,37 @@
                             </xsl:if>
                         </td>
                         <td>
-                            <xsl:if test=".//tei:list[@type = 'links']">
-                                <ul>
-                                    <xsl:for-each select=".//tei:list[@type = 'links']//tei:ref">
-                                        <li>
-                                            <a href="{@target}">
-                                                <xsl:value-of select="tei:title"/>
-                                            </a>
-                                        </li>
-                                    </xsl:for-each>
-                                </ul>
-                            </xsl:if>
+                            <xsl:choose>
+                                <xsl:when test="self::tei:bibl">
+                                    <ul>
+                                        <xsl:for-each select="tei:author">
+                                            <li>
+                                                <xsl:choose>
+                                                    <xsl:when test="@key">
+                                                        <a href="{ $website }/catalog/{ @key }">
+                                                            <xsl:value-of select="string(.)"/>
+                                                        </a>
+                                                    </xsl:when>
+                                                    <xsl:otherwise>
+                                                        <xsl:value-of select="string(.)"/>
+                                                    </xsl:otherwise>
+                                                </xsl:choose>
+                                            </li>
+                                        </xsl:for-each>
+                                    </ul>
+                                </xsl:when>
+                                <xsl:when test=".//tei:list[@type = 'links']">
+                                    <ul>
+                                        <xsl:for-each select=".//tei:list[@type = 'links']//tei:ref">
+                                            <li>
+                                                <a href="{@target}">
+                                                    <xsl:value-of select="tei:title"/>
+                                                </a>
+                                            </li>
+                                        </xsl:for-each>
+                                    </ul>
+                                </xsl:when>
+                            </xsl:choose>
                         </td>
                     </tr>
                 </xsl:for-each>
