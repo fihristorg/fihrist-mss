@@ -49,11 +49,11 @@
                   <msItem xml:id="Dd_4.14-item1">
                      <msItem xml:id="Dd_4.14-item1-item1" n="1">
                         <locus from="1" to="247">ff. 1-247</locus>
-                        <author key="person_90051632" ref="http://viaf.org/viaf/90051632/">
+                        <author key="person_90051632" ref="http://viaf.org/viaf/90051632/" role="aut" change="#role-assignment">
                            <persName xml:lang="ar-Latn-x-lc" type="standard">Suyūṭī, 1445-1505</persName>
                            <persName xml:lang="ar">السيوطي، جلال الدين</persName>
                         </author>
-                        <author key="person_13667800" ref="http://viaf.org/viaf/13667800/">
+                        <author key="person_13667800" ref="http://viaf.org/viaf/13667800/" role="aut" change="#role-assignment">
                            <persName xml:lang="ar-Latn-x-lc" type="standard">Maḥallī, Jalāl al-Dīn Muḥammad ibn Aḥmad, 1389-1459</persName>
                            <persName xml:lang="ar">المحلي ، حلال الدين محمد بن احمد</persName>
                         </author>
@@ -73,7 +73,7 @@
                      </msItem>
                      <msItem xml:id="Dd_4.14-item1-item2" n="2">
                         <locus from="248b" to="251a">ff. 248b-251a</locus>
-                        <author key="person_f3851">
+                        <author key="person_f3851" role="aut" change="#role-assignment">
                            <persName xml:lang="ar-Latn-x-lc" type="supplied">Shaykh Abū ʻAbd Allāh Muḥammad ibn Ibrāhīm ibn Sulaymān</persName>
                            <persName xml:lang="ar">محمد بن ابراهيم بن سليمان <addName xml:lang="ar" type="kunyah">ابو عبد الله</addName>
                            </persName>
@@ -93,7 +93,7 @@
                      </msItem>
                      <msItem xml:id="Dd_4.14-item1-item3" n="3">
                         <locus from="252" to="254">ff. 252-254</locus>
-                        <author key="person_f4580">
+                        <author key="person_f407" change="#ids-cleanup #role-assignment" role="aut">
                            <persName xml:lang="ar-Latn-x-lc" type="standard">anonymous</persName>
                         </author>
                         <title xml:lang="en" type="desc" key="work_1389">Fragments of different calendars (Arab, Syrian, Greek, etc.)</title>
@@ -131,7 +131,7 @@
                </physDesc>
                <history>
                   <origin change="#fix-dates">undated</origin>
-                  <acquisition>Donated as part of the Royal library of <persName key="person_f1141">George I (1660-1727)</persName> in <date calendar="#Gregorian">1715</date>.</acquisition>
+                  <acquisition>Donated as part of the Royal library of <persName key="person_263401905" role="fmo" change="#role-assignment #ids-cleanup">George I (1660-1727)</persName> in <date calendar="#Gregorian">1715</date>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
@@ -179,6 +179,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>

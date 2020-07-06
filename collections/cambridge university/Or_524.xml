@@ -48,7 +48,7 @@
                   </summary>
                   <msItem xml:id="Or_524-item1" n="1">
                      <locus from="1" to="55">ff. 1-55</locus>
-                     <author key="person_f1589">
+                     <author key="person_f1589" role="aut" change="#role-assignment">
                         <persName xml:lang="fa-Latn-x-lc" type="supplied">Imām al-Dīn ibn Shaykh Abū al-Makārim</persName>
                         <persName xml:lang="fa">امام الدين بن شيخ ابو المكارم</persName>
                      </author>
@@ -63,12 +63,12 @@
                   </msItem>
                   <msItem xml:id="Or_524-item2" n="2">
                      <locus from="59b" to="113b">ff. 59b-113b</locus>
-                     <author key="person_50013027" ref="http://viaf.org/viaf/50013027/">
+                     <author key="person_50013027" ref="http://viaf.org/viaf/50013027/" role="aut" change="#role-assignment">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Muḥammad ʻAlī Ḥazīn, 1692?-1766?</persName>
                         <persName xml:lang="fa">محمد علی حزين</persName>
                      </author>
-                     <title xml:lang="fa-Latn-x-lc" key="work_953">Dīvān-i Ḥazīn</title>
-                     <title xml:lang="fa" key="work_953">ديوان حزين</title>
+                     <title xml:lang="fa-Latn-x-lc" key="work_20661" change="#ids-cleanup">Dīvān-i Ḥazīn</title>
+                     <title xml:lang="fa" key="work_20661" change="#ids-cleanup">ديوان حزين</title>
                      <listBibl>
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne1922/view.php?id=57">no. 538</ref>
@@ -104,7 +104,7 @@
                      <origDate notBefore="1789" notAfter="1790" calendar="#Hijri-qamari">1204</origDate>
                      <origDate calendar="#Gregorian" when="1789">1789-90</origDate>
                   </origin>
-                  <acquisition>Bought from <persName type="supplied" key="person_f2031">Luzac and Co.</persName> in <date calendar="#Gregorian">1904</date>.</acquisition>
+                  <acquisition>Bought from <persName type="supplied" key="person_f2031" role="fmo" change="#role-assignment">Luzac and Co.</persName> in <date calendar="#Gregorian">1904</date>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
@@ -166,6 +166,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>

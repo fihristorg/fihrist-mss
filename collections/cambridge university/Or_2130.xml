@@ -48,7 +48,7 @@
                   </summary>
                   <msItem xml:id="Or_2130-item1" n="1">
                      <locus from="1b" to="28b">1b-28b</locus>
-                     <author key="person_f765">
+                     <author key="person_f765" role="aut" change="#role-assignment">
                         <persName xml:lang="ar-Latn-x-lc" type="supplied">Bābā Shāh</persName>
                         <persName xml:lang="ar">بابا شاه</persName>
                      </author>
@@ -63,7 +63,7 @@
                   </msItem>
                   <msItem xml:id="Or_2130-item2" n="2">
                      <locus from="30b" to="56b">30b-56b</locus>
-                     <author key="person_f765">
+                     <author key="person_f765" role="aut" change="#role-assignment">
                         <persName xml:lang="ar-Latn-x-lc" type="supplied">Bābā Shāh</persName>
                         <persName xml:lang="ar">بابا شاه</persName>
                      </author>
@@ -78,14 +78,14 @@
                   </msItem>
                   <msItem xml:id="Or_2130-item3" n="3">
                      <locus>57a-59a</locus>
-                     <author key="person_88126052" ref="http://viaf.org/viaf/88126052/">
+                     <author key="person_88126052" ref="http://viaf.org/viaf/88126052/" role="aut" change="#role-assignment">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">Abū Ḥanīfah, d. 767 or 8</persName>
                         <persName xml:lang="ar">ابو حنيفة النعمان بن ثابت</persName>
                      </author>
-                     <title xml:lang="fa-Latn-x-lc" key="work_559">Waṣīyat'nāmah-ʾi Imām Aʿẓam</title>
-                     <title xml:lang="ar-Latn-x-lc" type="alt" key="work_559">Kitāb al-waṣiyyah li-al-Imām al-Aʿẓam Abī Ḥanīfah</title>
-                     <title xml:lang="fa" key="work_559">وصييتنامه امام اعظم</title>
-                     <title xml:lang="ar" type="alt" key="work_559">كتاب الوصية للامام الاعظم ابو حنيفة</title>
+                     <title xml:lang="fa-Latn-x-lc" key="work_20296" change="#ids-cleanup">Waṣīyat'nāmah-ʾi Imām Aʿẓam</title>
+                     <title xml:lang="ar-Latn-x-lc" type="alt" key="work_20296" change="#ids-cleanup">Kitāb al-waṣiyyah li-al-Imām al-Aʿẓam Abī Ḥanīfah</title>
+                     <title xml:lang="fa" key="work_20296" change="#ids-cleanup">وصييتنامه امام اعظم</title>
+                     <title xml:lang="ar" type="alt" key="work_20296" change="#ids-cleanup">كتاب الوصية للامام الاعظم ابو حنيفة</title>
                      <incipit xml:lang="ar"/>
                      <explicit xml:lang="ar" defective="true"/>
                      <note>
@@ -95,7 +95,7 @@
                   </msItem>
                   <msItem xml:id="Or_2130-item4" n="4">
                      <locus from="59b" to="66a">59b-66a</locus>
-                     <author key="person_31996761" ref="http://viaf.org/viaf/31996761/">
+                     <author key="person_31996761" ref="http://viaf.org/viaf/31996761/" role="aut" change="#role-assignment">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">Ghazzālī, 1058-1111</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_560">Ayyuhā al-walad</title>
@@ -138,7 +138,7 @@
                      <origDate notBefore="1582" notAfter="1583" calendar="#Hijri-qamari">990</origDate>
                      <origDate calendar="#Gregorian" when="1582">1582</origDate>
                   </origin>
-                  <acquisition>Bought from <persName key="person_f3278">O. Reser</persName> in <placeName>Istanbul</placeName>, in <date calendar="#Gregorian">1967</date>
+                  <acquisition>Bought from <persName key="person_f3278" role="fmo" change="#role-assignment">O. Reser</persName> in <placeName>Istanbul</placeName>, in <date calendar="#Gregorian">1967</date>
                   </acquisition>
                </history>
                <additional>
@@ -184,6 +184,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>

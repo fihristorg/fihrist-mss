@@ -48,8 +48,8 @@
                   </summary>
                   <msItem xml:id="MS_Turk_e_94-item1" n="1">
                      <locus from="143" to="145">ff. 143v-145v</locus>
-                     <author key="person_f407">Anonymous</author>
-                     <title xml:lang="ar-Latn-x-lc" key="work_1183">Qaṣīdah</title>
+                     <author key="person_f407" role="aut" change="#role-assignment">Anonymous</author>
+                     <title xml:lang="ar-Latn-x-lc" key="work_20122" change="#ids-cleanup">Qaṣīdah</title>
                      <note>In basīṭ metre, rhyme-letter mīm. beginning <foreign xml:lang="ar-Latn-x-lc">“a min tadhakkur jabrān bi-dhī salam mazajta damʻan jará min muqlah bi-dam.”</foreign>
                      </note>
                      <listBibl>
@@ -59,11 +59,11 @@
                   </msItem>
                   <msItem xml:id="MS_Turk_e_94-item2" n="2" class="#commentary">
                      <locus from="231" to="258">ff. 231v-258v</locus>
-                     <author key="person_f2958">
+                     <author key="person_78785291" change="#ids-cleanup #role-assignment" role="aut">
                         <persName xml:lang="ota-Latn-x-lc">Müstakimzade Süleyman Saʼdeddin 1719-1788</persName>
                      </author>
                      <title xml:lang="ota-Latn-x-lc" key="work_6506">Şerh-i Evrad-i Kadiriye</title>
-                     <note>A commentary [in Turkish] on <persName type="standard" xml:lang="ar-Latn-x-lc" key="person_71359982" ref="http://viaf.org/viaf/71359982/">ʻAbd al-Qādir al-Jīlānī, <date calendar="#Gregorian" when="1166">d. 1166</date>
+                     <note>A commentary [in Turkish] on <persName type="standard" xml:lang="ar-Latn-x-lc" key="person_71359982" ref="http://viaf.org/viaf/71359982/" role="ant" change="#role-assignment">ʻAbd al-Qādir al-Jīlānī, <date calendar="#Gregorian" when="1166">d. 1166</date>
                         </persName> ʼs <title xml:lang="ar-Latn-x-lc">Awrād</title>
                      </note>
                      <note>ff. 259-261 are blank</note>
@@ -185,6 +185,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>

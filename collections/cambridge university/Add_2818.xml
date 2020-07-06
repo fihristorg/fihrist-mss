@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_15359">
     <teiHeader xmlns="http://www.tei-c.org/ns/1.0">
@@ -18,8 +19,7 @@
                         <street>West Road</street>
                         <settlement>Cambridge</settlement>
                         <postCode>CB3 9DR</postCode>
-                        <addrLine><ref target="http://www.lib.cam.ac.uk/deptserv/neareastern/"
-                                >Cambridge University Library </ref></addrLine>
+                        <addrLine><ref target="http://www.lib.cam.ac.uk/deptserv/neareastern/">Cambridge University Library </ref></addrLine>
                         <addrLine><email>near_eastern@lib.cam.ac.uk</email></addrLine>
                     </address>
                 </pubPlace>
@@ -46,7 +46,7 @@
                         <summary>E. Syriac liturgical poetry. </summary>
                         <msItem>
                             <locus>ff. 1v-40v</locus>
-                            <author><persName key="person_5985460"/></author>
+                            <author role="aut" change="#role-assignment"><persName key="person_5985460"/></author>
                             <title>Turgame </title>
                             <textLang mainLang="syc">Syriac</textLang>
                             <note>Hymns before the Gospel, mostly for festivals. </note>
@@ -58,13 +58,13 @@
                                 </title>
                             <textLang mainLang="syc">Syriac</textLang>
                             <note>In 12-syllable metre. It is anonymous in this ms. but is actually
-                                by <persName key="person_52493723">Narsai</persName>. </note>
+                                by <persName key="person_52493723" role="att" change="#role-assignment">Narsai</persName>. </note>
 
                         </msItem>
 
                         <msItem>
                             <locus>ff. 76v-118v</locus>
-                            <author><persName key="person_305022767"/>John bar Zoʿbi. </author>
+                            <author role="aut" change="#role-assignment"><persName key="person_305022767"/>John bar Zoʿbi. </author>
                             <title type="desc"><hi rend="italic">Memre</hi> on the eucharist in
                                 12-syllable metre, and on baptism and the holy leaven in 7-syllable
                                 metre.</title>
@@ -79,7 +79,7 @@
                         </msItem>
                         <msItem>
                             <locus>ff. 139r-140r</locus>
-                            <author><persName key="person_5985460"/>Abdishoʿ of Nisibis. </author>
+                            <author role="aut" change="#role-assignment"><persName key="person_5985460"/>Abdishoʿ of Nisibis. </author>
                             <title type="desc">Two <hi rend="italic">turgame. </hi> </title>
                             <textLang mainLang="syc">Syriac</textLang>
                         </msItem>
@@ -98,8 +98,7 @@
                         </objectDesc>
                         <handDesc>
                             <handNote script="E. Syriac">
-                                <p>Written in a good upright E. Syriac hand of the <date
-                                        notBefore="1700" notAfter="1800">18th cent. </date></p>
+                                <p>Written in a good upright E. Syriac hand of the <date notBefore="1700" notAfter="1800">18th cent. </date></p>
                             </handNote>
                         </handDesc>
                         <bindingDesc>
@@ -108,7 +107,7 @@
                     </physDesc>
                     <history>
                         <origin/>
-                        <provenance>Purchased from <persName key="person_54261122">Prof. William
+                        <provenance>Purchased from <persName key="person_54261122" role="fmo" change="#role-assignment">Prof. William
                                 Wright</persName> in 1888. </provenance>
                         <acquisition/>
                     </history>
@@ -122,9 +121,7 @@
                             </recordHist>
                             <availability status="restricted">
                                 <p>Entry to read in the Library is permitted only on presentation of
-                                    a valid reader's card. For admissions procedures contact <ref
-                                        target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/"
-                                        >Cambridge University Library Admissions</ref>. Contact
+                                    a valid reader's card. For admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>. Contact
                                         <email>near_eastern@lib.cam.ac.uk</email> for further
                                     information on the availability of this manuscript.</p>
                             </availability>
@@ -147,8 +144,11 @@
             <textClass> </textClass>
         </profileDesc>
         <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
             <change when="2019">
-                <persName key="person_32017775">J. F. Coakley</persName></change>
+                <persName key="person_32017775" role="dtm" change="#role-assignment">J. F. Coakley</persName></change>
 
         </revisionDesc>
     </teiHeader>

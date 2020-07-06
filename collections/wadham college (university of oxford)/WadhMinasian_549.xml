@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_13042">
@@ -56,12 +56,12 @@
                             <title xml:lang="ara" key="work_3020">المختصر النافع</title>
                             <title xml:lang="ara-Latn-x-lc" type="alt" key="work_3020">al-Nāfiʿ fī Mukhtaṣar al-Sharāyiʿ</title>
                             <title xml:lang="ara" type="alt" key="work_3020">النافع فی مختصر الشرایع</title>
-                            <author key="person_90059858">
+                            <author key="person_90059858" role="aut" change="#role-assignment">
                                 <persName xml:lang="ara-Latn-x-lc" type="standard">‎Muḥaqqiq al-Ḥillī, Jaʿfar ibn al-Ḥasan, 1205 or 1206-1277‏</persName>
                                 <persName xml:lang="ara" type="standard">محقق الحلی، جعفر ابن الحسن، ۱۲۰۵ یا ۱۲۰۶-۱۲۷۷</persName>
                                 <persName xml:lang="ara-Latn-x-lc" type="alt">Muḥaqqiq Ḥillī, Jaʿfar ibn al-Ḥasan‏</persName>
-                                <persName xml:lang="ara"  type="alt">محقق حلّی، جعفر بن حسن</persName>
-                                <persName xml:lang="ara" type="alt"></persName>
+                                <persName xml:lang="ara" type="alt">محقق حلّی، جعفر بن حسن</persName>
+                                <persName xml:lang="ara" type="alt"/>
                                 <addName xml:lang="per-Latn-x-lc" type="laqab">Najm al-Dīn</addName>
                                 <addName xml:lang="per" type="laqab">نجم‌الدین</addName>
                                 <addName xml:lang="ara-Latn-x-lc" type="kunyah">Abu al-Qāsim</addName>
@@ -109,7 +109,7 @@
                                     </material>
                                 </support>
                                 <extent>135 ff.
-                                    <note></note>
+                                    <note/>
                                         <dimensions type="leaf" unit="cm">
                                             <height>20.5</height>
                                             <width>13</width>
@@ -161,11 +161,9 @@
                             </recordHist>
                             <availability status="restricted">
                                 <p>Entry to the Library is permitted upon presentation of
-                                    a valid university ID card (for admissions procedures, please visit <ref
-                                        target="https://www.wadham.ox.ac.uk/about-wadham/library/persian-studies-section"
-                                        >Wadham College Library, Persian Studies Section</ref>). Please Contact
+                                    a valid university ID card (for admissions procedures, please visit <ref target="https://www.wadham.ox.ac.uk/about-wadham/library/persian-studies-section">Wadham College Library, Persian Studies Section</ref>). Please Contact
                                         <email>persian.library@wadham.ox.ac.uk</email> for further information
-                                    on the availability of this manuscript.</p><p></p>
+                                    on the availability of this manuscript.</p><p/>
                             </availability>
                             <note><hi rend="bold">Key to bibliographical abbreviations of alternative versions:</hi>
                                 <p><hi rend="bold">Libraries:</hi></p><p>
@@ -223,7 +221,10 @@
                 </keywords>
             </textClass>
         </profileDesc>
-        <revisionDesc>          <change when="2019-08-06"> Binding information updated.             <persName>Mohammad Emami</persName>          </change>
+        <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>          <change when="2019-08-06"> Binding information updated.             <persName>Mohammad Emami</persName>          </change>
             <change when="2017-10-10">
                 <persName>Mohammad Emami</persName>
             </change>

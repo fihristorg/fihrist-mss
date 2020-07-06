@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_13082">
@@ -67,7 +67,7 @@
                             <title xml:lang="per" key="work_7005">تجزية الامصار و تزجية الاعصار</title>
                             <title xml:lang="per" key="work_7005" type="alt">تجزية الامصار و ترجمة الاعصار</title>
                             <title xml:lang="per" key="work_7005" type="alt">تاریخ وصّاف</title>
-                            <author key="person_63890560">
+                            <author key="person_63890560" role="aut" change="#role-assignment">
                                 <persName xml:lang="per-Latn-x-lc">Vaṣṣāf al-Ḥaz̤rat, ʻAbd Allāh ibn Faz̤l Allāh, 1264 or 5-1329?</persName>
                                 <persName xml:lang="per">وصاف الحضرة، عبد الله بن فضل الله، ۶۶۳-۷۳۰ق/۱۲۶۴-۱۳۳۰</persName>
                             </author>
@@ -161,7 +161,7 @@
                                 <p>Entry to the Library is permitted upon presentation of
                                     a valid university ID card (for admissions procedures, please visit <ref target="https://www.wadham.ox.ac.uk/about-wadham/library/persian-studies-section">
                                     Wadham College Library, Persian Studies Section</ref>). Please Contact <email>persian.library@wadham.ox.ac.uk</email> 
-                                    for further information on the availability of this manuscript.</p><p></p>
+                                    for further information on the availability of this manuscript.</p><p/>
                             </availability>
                             <note><hi rend="bold">Key to bibliographical abbreviations of alternative versions:</hi>
                                 <p><hi rend="bold">Libraries:</hi></p><p>
@@ -222,7 +222,10 @@
                 </keywords>
             </textClass>
         </profileDesc>
-        <revisionDesc>          <change when="2019-08-06"> Binding information updated.             <persName>Mohammad Emami</persName>          </change>
+        <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>          <change when="2019-08-06"> Binding information updated.             <persName>Mohammad Emami</persName>          </change>
             <change when="2019-04-01">
                 <persName>Mohammad Emami</persName>
             </change>

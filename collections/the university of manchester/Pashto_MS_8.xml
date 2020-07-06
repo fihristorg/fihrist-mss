@@ -44,7 +44,7 @@
                   </summary>
                   
                   <msItem xml:id="Pashto_MS_8-item1" n="1">
-                     <author key="person_295047620" ref="http://viaf.org/viaf/295047620/">
+                     <author key="person_295047620" ref="http://viaf.org/viaf/295047620/" role="aut" change="#role-assignment">
                         <persName xml:lang="pus-Latn-x-lc" type="standard">Khaṭak, ʻAbd al-Qādir Khān, 1653-1713</persName>
                         <persName xml:lang="ps">خټک، عبد القادر خان</persName>
                      </author>
@@ -60,11 +60,11 @@
                      <textLang mainLang="ps">Pashto</textLang>
                   </msItem>
                   <msItem xml:id="Pashto_MS_8-item2" n="2">
-                     <author key="person_f407">
+                     <author key="person_f407" role="aut" change="#role-assignment">
                         <persName>Anonymous</persName>
                      </author>
-                     <title xml:lang="pus-Latn-x-lc" key="work_5375">Miʻrājnāmah</title>
-                     <title xml:lang="ps" key="work_5375">معراجنامه</title>
+                     <title xml:lang="pus-Latn-x-lc" key="work_20746" change="#ids-cleanup">Miʻrājnāmah</title>
+                     <title xml:lang="ps" key="work_20746" change="#ids-cleanup">معراجنامه</title>
                      <note>A translation of an anonymous account in Persian verse of Muhammad's night ascent to heaven. Fols. 4,5,8-12 and 15-19 have been added at a later date</note>
                      <editor role="trl" key="person_f1179">Translated into Pashto by <persName xml:lang="pus-Latn-x-lc" type="supplied">Ghulām Muḥammad Gagyāṇī</persName>
                         <persName xml:lang="ps">غلام محمد ولد شیر خان گگیاڼی</persName>
@@ -100,10 +100,10 @@
                      <handNote scope="major" script="naskh" medium="ink">
                         <desc>Crude naskhi hand</desc>
                         <ref target="a1">
-                           <persName key="person_f3100">Nabī Nūr Khān</persName>
+                           <persName key="person_f3100" role="scr" change="#role-assignment">Nabī Nūr Khān</persName>
                         </ref>
                         <ref target="a2">
-                           <persName key="person_f2590">Muḥammad Mīr Taḥrīr</persName>
+                           <persName key="person_f2590" role="scr" change="#role-assignment">Muḥammad Mīr Taḥrīr</persName>
                         </ref>
                      </handNote>
                   </handDesc>
@@ -119,10 +119,10 @@
                      </ref>
                   </origin>
                   <provenance>
-                     <p>From the collection of <persName type="supplied" key="person_f830">Colonel George William Hamilton (1807-1868)</persName> who served in India from 1823 to 1867 latterly as Commissioner in Delhi. He acquired over a thousand Indian and Persian manuscripts of which 352 were selected after his death for the British Museum. The remainder were purchased in 1868 by <persName type="standard" ref="http://viaf.org/viaf/97751058/#Crawford,_Alexander_Crawford_Lindsay,_Earl_of,_1812-1880" key="person_97751058">Alexander Lindsay, 25th Earl of Crawford</persName>.</p>
+                     <p>From the collection of <persName type="supplied" key="person_f830" role="fmo" change="#role-assignment">Colonel George William Hamilton (1807-1868)</persName> who served in India from 1823 to 1867 latterly as Commissioner in Delhi. He acquired over a thousand Indian and Persian manuscripts of which 352 were selected after his death for the British Museum. The remainder were purchased in 1868 by <persName type="standard" ref="http://viaf.org/viaf/97751058/#Crawford,_Alexander_Crawford_Lindsay,_Earl_of,_1812-1880" key="person_97751058" role="fmo" change="#role-assignment">Alexander Lindsay, 25th Earl of Crawford</persName>.</p>
                   </provenance>
                   <acquisition>
-                     <p>Purchased by Mrs Enriqueta Rylands, on behalf of the John Rylands Library, in <date calendar="#Gregorian" when="1901">1901</date> from <persName type="standard" ref="http://viaf.org/viaf/9985420/#Crawford,_James_Ludovic_Lindsay,_Earl_of,_1847-1913" key="person_9985420">James Ludovic Lindsay, 26th Earl of Crawford</persName>.</p>
+                     <p>Purchased by Mrs Enriqueta Rylands, on behalf of the John Rylands Library, in <date calendar="#Gregorian" when="1901">1901</date> from <persName type="standard" ref="http://viaf.org/viaf/9985420/#Crawford,_James_Ludovic_Lindsay,_Earl_of,_1847-1913" key="person_9985420" role="fmo" change="#role-assignment">James Ludovic Lindsay, 26th Earl of Crawford</persName>.</p>
                   </acquisition>
                </history>
                <additional>
@@ -159,6 +159,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-27">
             <persName>Andrew Morrison</persName> Normalized roles using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/normalize-roles.xsl">normalize-roles.xsl</ref>
          </change>

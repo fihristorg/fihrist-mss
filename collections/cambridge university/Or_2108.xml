@@ -48,7 +48,7 @@
                   </summary>
                   <msItem xml:id="Or_2108-item1" n="1">
                      <locus from="1b" to="4b">ff. 1b-4b</locus>
-                     <author key="person_f4580">
+                     <author key="person_f407" change="#ids-cleanup #role-assignment" role="aut">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">anonymous</persName>
                      </author>
                      <title xml:lang="en" type="desc" key="work_224">Unidentified fragments</title>
@@ -60,7 +60,7 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="Or_2108-item2" n="2">
-                     <author key="person_19930855" ref="http://viaf.org/viaf/19930855/">
+                     <author key="person_19930855" ref="http://viaf.org/viaf/19930855/" role="aut" change="#role-assignment">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">Jurjānī, ʻAlī ibn Muḥammad, al-Sayyid al-Sharīf, 1340-1413</persName>
                         <persName xml:lang="ar">الجرجاني، علي بن محمد</persName>
                      </author>
@@ -74,8 +74,8 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="Or_2108-item3" n="3">
-                     <author key="person_19930855" ref="http://viaf.org/viaf/19930855/"/>
-                     <title xml:lang="en" type="desc" key="work_226">Epistolary examples attributed to the secretaries of <persName key="person_20477658" ref="http://viaf.org/viaf/20477658/">al-Maʾmūn</persName>, an epistle by <persName key="person_19720256" ref="http://viaf.org/viaf/19720256/">al-Hamadhānī</persName>, and two qasidas</title>
+                     <author key="person_19930855" ref="http://viaf.org/viaf/19930855/" role="aut" change="#role-assignment"/>
+                     <title xml:lang="en" type="desc" key="work_226">Epistolary examples attributed to the secretaries of <persName key="person_20477658" ref="http://viaf.org/viaf/20477658/" role="oth" change="#role-assignment">al-Maʾmūn</persName>, an epistle by <persName key="person_19720256" ref="http://viaf.org/viaf/19720256/" role="aut" change="#role-assignment">al-Hamadhānī</persName>, and two qasidas</title>
                      <incipit xml:lang="ar"/>
                      <explicit xml:lang="ar" defective="true"/>
                      <note>
@@ -122,8 +122,8 @@
                      </ref>
                   </origin>
                   <provenance>
-                     <persName ref="http://viaf.org/viaf/64011794/" key="person_64011794" xml:lang="en">R.B. Serjeant, 1915-1993</persName>.</provenance>
-                  <acquisition>Presented by the managers of the Browne Fund <persName ref="http://viaf.org/viaf/29651479/" key="person_29651479" xml:lang="en">E.G. Browne,1862-1926</persName>.</acquisition>
+                     <persName ref="http://viaf.org/viaf/64011794/" key="person_64011794" xml:lang="en" role="fmo" change="#role-assignment">R.B. Serjeant, 1915-1993</persName>.</provenance>
+                  <acquisition>Presented by the managers of the Browne Fund <persName ref="http://viaf.org/viaf/29651479/" key="person_29651479" xml:lang="en" role="fmo" change="#role-assignment">E.G. Browne,1862-1926</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
@@ -161,6 +161,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>

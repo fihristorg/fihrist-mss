@@ -48,7 +48,7 @@
                   </summary>
                   <msItem xml:id="Add_422-item1" n="1">
                      <locus from="1b" to="20a">ff. 1b-20a</locus>
-                     <author key="person_f3918">
+                     <author key="person_f3918" role="aut" change="#role-assignment">
                         <persName xml:lang="ar-Latn-x-lc" type="supplied">Shaykh ʻAbd al-Laṭīf</persName>
                         <persName xml:lang="ar">شيخ عبد اللطيف</persName>
                      </author>
@@ -74,14 +74,14 @@
                   </msItem>
                   <msItem xml:id="Add_422-item2" n="2">
                      <locus from="22a" to="29a">ff. 22a-29a</locus>
-                     <author key="person_71359982" ref="http://viaf.org/viaf/71359982/">
+                     <author key="person_71359982" ref="http://viaf.org/viaf/71359982/" role="aut" change="#role-assignment">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">ʻAbd al-Qādir al-Jīlānī, d. 1166</persName>
                         <persName xml:lang="fa">عبد القادر الجيلانی</persName>
                      </author>
-                     <title xml:lang="fa-Latn-x-lc" key="work_1321">Kīmīyā-yi saʻādat</title>
-                     <title xml:lang="ar-Latn-x-lc" type="alt" key="work_1321">Kīmīyat al-saʻādah</title>
-                     <title xml:lang="fa" key="work_1321">كيميای سعادت</title>
-                     <title xml:lang="ar" type="alt" key="work_1321">كيمية السعادة</title>
+                     <title xml:lang="fa-Latn-x-lc" key="work_20477" change="#ids-cleanup">Kīmīyā-yi saʻādat</title>
+                     <title xml:lang="ar-Latn-x-lc" type="alt" key="work_20477" change="#ids-cleanup">Kīmīyat al-saʻādah</title>
+                     <title xml:lang="fa" key="work_20477" change="#ids-cleanup">كيميای سعادت</title>
+                     <title xml:lang="ar" type="alt" key="work_20477" change="#ids-cleanup">كيمية السعادة</title>
                      <incipit xml:lang="ar"/>
                      <explicit xml:lang="ar" defective="true"/>
                      <note>
@@ -102,7 +102,7 @@
                   </msItem>
                   <msItem xml:id="Add_422-item3" n="3">
                      <locus from="29a" to="33a">ff. 29a-33a</locus>
-                     <author key="person_f4580">
+                     <author key="person_f407" change="#ids-cleanup #role-assignment" role="aut">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">anonymous</persName>
                      </author>
                      <title xml:lang="en" type="desc" key="work_1953">A prayer to be used on completing the reading of the Qurʼān</title>
@@ -142,7 +142,7 @@
                   <handDesc>
                      <handNote scope="major" script="unknown">
                         <ref target="#a1">
-                           <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f4298">Valad ʻAlī Muḥammad-i Qurayshī <foreign xml:lang="fa">ولد علی محمد قريشی</foreign>
+                           <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f4298" role="scr" change="#role-assignment">Valad ʻAlī Muḥammad-i Qurayshī <foreign xml:lang="fa">ولد علی محمد قريشی</foreign>
                            </persName>
                         </ref>
                      </handNote>
@@ -155,7 +155,7 @@
                         <origDate calendar="#Gregorian" when="1694">1694-5</origDate>
                      </ref>
                   </origin>
-                  <acquisition>Donated by <persName key="person_f4321">W. Moore</persName> in <date calendar="#Gregorian">1653</date>.</acquisition>
+                  <acquisition>Donated by <persName key="person_f4321" role="fmo" change="#role-assignment">W. Moore</persName> in <date calendar="#Gregorian">1653</date>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
@@ -222,6 +222,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>

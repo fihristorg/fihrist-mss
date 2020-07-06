@@ -51,7 +51,7 @@
                      <note type="content-genre">Jurisprudence</note>
                      <title xml:lang="ar-Latn-x-lc" key="work_2984">Irshād al-aẕhān ilā aḥkām al-Īmān</title>
                      <title xml:lang="ar" key="work_2984">ارشاد الاذهان الی احکام الایمان</title>
-                     <author key="person_32056992" ref="http://viaf.org/viaf/32056992">
+                     <author key="person_32056992" ref="http://viaf.org/viaf/32056992" role="aut" change="#role-assignment">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn al-Muṭahhar al-Ḥillī, al-Ḥasan ibn Yūsuf, 1250-1325</persName>
                         <persName xml:lang="ar-Latn-x-lc" type="alt">Ḥillī, Jamāl al-Dīn Ḥasan ibn Sadīd al-Dīn Yūsuf ibn ʿAlī, 1250-1326</persName>
                         <persName xml:lang="ar" type="standard">ابن المطهر الحلي، الحسن ابن يوسف، ۱۳۲۵-۱۲۵۰</persName>
@@ -114,8 +114,8 @@
                   <handDesc>
                      <handNote scope="major" script="naskh" medium="blackink">
                         <desc>Cursive, graceful Naskh, regular hand, three hands. Marginalia in Nastaʿalīq and Shikastah Nastaʿalīq; annotated.</desc>
-                        <persName xml:lang="fa-Latn-x-lc" key="person_f1993">Kūshluvān Fūman, Muḥammad Taqī ibn Āqā Mīrzāy</persName>
-                        <persName xml:lang="fa" key="person_f5330">کوشلوان فومن، محمد تقی بن آقا میرزای</persName>
+                        <persName xml:lang="fa-Latn-x-lc" key="person_f1993" role="scr" change="#role-assignment">Kūshluvān Fūman, Muḥammad Taqī ibn Āqā Mīrzāy</persName>
+                        <persName xml:lang="fa" key="person_f1993" role="scr" change="#role-assignment #ids-cleanup">کوشلوان فومن، محمد تقی بن آقا میرزای</persName>
                      </handNote>
                   </handDesc>
                   <additions>
@@ -142,7 +142,7 @@
                         <source>This record was created based on the information published in: Mir-Ansari, Ali, <hi rend="italic">Catalogue of the Persian and Arabic Manuscripts in the Ferdowsi Library, Wadham College, University of Oxford (Minasian Collection)</hi>, Tehran: Miras-e Maktoob, 2016.</source>
                      </recordHist>
                      <availability status="restricted">
-                        <p>Entry to the Library is permitted upon presentation of a valid university ID card (for admissions procedures, please visit <ref target="https://www.wadham.ox.ac.uk/about-wadham/library/persian-studies-section">Wadham College Library, Persian Studies Section</ref>). Please Contact <email>persian.library@wadham.ox.ac.uk</email> for further information on the availability of this manuscript.</p><p></p>
+                        <p>Entry to the Library is permitted upon presentation of a valid university ID card (for admissions procedures, please visit <ref target="https://www.wadham.ox.ac.uk/about-wadham/library/persian-studies-section">Wadham College Library, Persian Studies Section</ref>). Please Contact <email>persian.library@wadham.ox.ac.uk</email> for further information on the availability of this manuscript.</p><p/>
                      </availability>
                      <note><hi rend="bold">Key to bibliographical abbreviations of alternative versions:</hi> <p><hi rend="bold">Libraries:</hi></p><p>
                         <hi rend="underline">AQR:</hi>
@@ -200,7 +200,13 @@
             </keywords>
          </textClass>
       </profileDesc>
-      <revisionDesc>          <change when="2019-08-06"> Binding information updated.             <persName>Mohammad Emami</persName>          </change>
+      <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>          <change when="2019-08-06"> Binding information updated.             <persName>Mohammad Emami</persName>          </change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>

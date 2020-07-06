@@ -44,11 +44,11 @@
                   </summary>
                   
                   <msItem xml:id="Pashto_MS_15-item1">
-                     <author key="person_90042997" ref="http://viaf.org/viaf/90042997/">
+                     <author key="person_90042997" ref="http://viaf.org/viaf/90042997/" role="aut" change="#role-assignment">
                         <persName xml:lang="fa" type="standard">Jāmī, 1414-1492</persName>
                      </author>
-                     <title xml:lang="pus-Latn-x-lc" key="work_1853">Yūsuf Zulaykhā</title>
-                     <title xml:lang="ps" key="work_1853">يوسف زليخا</title>
+                     <title xml:lang="pus-Latn-x-lc" key="work_20143" change="#ids-cleanup">Yūsuf Zulaykhā</title>
+                     <title xml:lang="ps" key="work_20143" change="#ids-cleanup">يوسف زليخا</title>
                      <note>A metrical translation of Jāmī's Yūsuf va Zulaykhā. With 33 half-page and 5 full-page miniatures</note>
                      <editor role="edt" key="person_295047620">Translated into Pashto by <persName ref="http://viaf.org/viaf/295047620" xml:lang="pus-Latn-x-lc" type="standard">Khaṭak, ʻAbd al-Qādir Khān, 1653-1713</persName>
                         <persName xml:lang="ps">خټک، عبد القادر خان</persName>
@@ -79,7 +79,7 @@
                   <handDesc>
                      <handNote scope="major" script="naskh" medium="ink">
                         <desc>Naskhi hand</desc>
-                        <persName key="person_f2393">Mullā Walī Muḥammad</persName>
+                        <persName key="person_f2393" role="scr" change="#role-assignment">Mullā Walī Muḥammad</persName>
                      </handNote>
                   </handDesc>
                   <bindingDesc>
@@ -87,7 +87,7 @@
                   </bindingDesc>
                </physDesc>
                <history>
-                  <summary>Written for <persName key="person_f3550">Rustam Khān Achakzạy.</persName>
+                  <summary>Written for <persName key="person_f3550" role="fmo" change="#role-assignment">Rustam Khān Achakzạy.</persName>
                   </summary>
                   <origin change="#fix-dates">
                      <origDate notBefore="1814" notAfter="1815" calendar="#Hijri-qamari">1230</origDate>
@@ -132,6 +132,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-27">
             <persName>Andrew Morrison</persName> Normalized roles using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/normalize-roles.xsl">normalize-roles.xsl</ref>
          </change>

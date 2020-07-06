@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_13061">
@@ -50,7 +50,7 @@
                             <note type="content-genre">Mathematics</note>
                             <title xml:lang="ara-Latn-x-lc" key="work_4467">Khulāṣat al-Ḥisāb</title>
                             <title xml:lang="ara" key="work_4467">خلاصة الحساب</title>
-                            <author key="person_27052262">
+                            <author key="person_27052262" role="aut" change="#role-assignment">
                                 <persName xml:lang="per-Latn-x-lc" type="standard">ʻĀmilī, Bahāʾ al-Dīn Muḥammad ibn Ḥusayn, 1547-1621‏</persName>
                                 <persName xml:lang="per">عاملی، بهاءالدین محمد ابن حسین، ۹۵۳-۱۰۳۰</persName>
                                 <persName xml:lang="per-Latn-x-lc" type="alt">Bahāʾī, Shaykh Bahāʾ al-Dīn Muḥammad ibn Ḥusayn ibn ʿAbd al-Ṣamad Ḥāris̱ī ʿĀmilī, 1546-1622</persName>
@@ -137,11 +137,11 @@
                             </handNote>
                         </handDesc>
                         <additions>
-                            <note><locus from="1" to="1"></locus>Arabic-Persian glossary</note>
-                            <note><locus from="1a" to="1a"></locus>Note on mathematical topics; chronogram; a note on the purchase of the book: <foreign xml:lang="ara">بعت هذا الکتاب باحدی عشر عبّاسی.</foreign>.</note>
-                            <note><locus from="75" to="75"></locus><foreign xml:lang="per">حرکت از اصفهان الی ولایت بیستم جمادی الاولی سنه ۱۲۴۷.</foreign></note>
-                            <stamp><locus from="1" to="1"></locus><foreign xml:lang="per">محمد شریعتمدار</foreign></stamp>
-                            <stamp><locus from="75" to="75"></locus><foreign xml:lang="per">محمد شریعتمدار</foreign></stamp>
+                            <note><locus from="1" to="1"/>Arabic-Persian glossary</note>
+                            <note><locus from="1a" to="1a"/>Note on mathematical topics; chronogram; a note on the purchase of the book: <foreign xml:lang="ara">بعت هذا الکتاب باحدی عشر عبّاسی.</foreign>.</note>
+                            <note><locus from="75" to="75"/><foreign xml:lang="per">حرکت از اصفهان الی ولایت بیستم جمادی الاولی سنه ۱۲۴۷.</foreign></note>
+                            <stamp><locus from="1" to="1"/><foreign xml:lang="per">محمد شریعتمدار</foreign></stamp>
+                            <stamp><locus from="75" to="75"/><foreign xml:lang="per">محمد شریعتمدار</foreign></stamp>
                         </additions>
                         <bindingDesc>
                             <p>Black leather, 15 × 24 cm, front + back cover, single layer of leather only.</p>
@@ -170,7 +170,7 @@
                                 <p>Entry to the Library is permitted upon presentation of
                                     a valid university ID card (for admissions procedures, please visit <ref target="https://www.wadham.ox.ac.uk/about-wadham/library/persian-studies-section">
                                     Wadham College Library, Persian Studies Section</ref>). Please Contact <email>persian.library@wadham.ox.ac.uk</email> 
-                                    for further information on the availability of this manuscript.</p><p></p>
+                                    for further information on the availability of this manuscript.</p><p/>
                             </availability>
                             <note><hi rend="bold">Key to bibliographical abbreviations of alternative versions:</hi>
                                 <p><hi rend="bold">Libraries:</hi></p><p>
@@ -229,7 +229,10 @@
                 </keywords>
             </textClass>
         </profileDesc>
-        <revisionDesc>          <change when="2019-08-06"> Binding information updated.             <persName>Mohammad Emami</persName>          </change>
+        <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>          <change when="2019-08-06"> Binding information updated.             <persName>Mohammad Emami</persName>          </change>
             <change when="2018-11-24">
                 <persName>Mohammad Emami</persName>
             </change>

@@ -35,10 +35,10 @@
 
                      <msItem xml:id="MS_Arabic_281-part1-item1" n="1">
                         <locus facs="#i0012 #i0002">Fol.1b to Fol.11a</locus>
-                        <author key="person_f407">
+                        <author key="person_f407" role="aut" change="#role-assignment">
                            <persName type="standard" xml:lang="en">Anonymous</persName>
                         </author>
-                        <title type="normalised" xml:lang="en" key="work_9889">No title</title>
+                        <title type="normalised" xml:lang="en" key="work_21154" change="#ids-cleanup">No title</title>
                         <note>Various Islamic prayers.</note>
                         <incipit type="basmala" facs="#i0003">
                            <locus>Fol.1b.1</locus> بسم الله الرحمن الرحيم</incipit>
@@ -88,7 +88,7 @@
                      </msItem>
                      <msItem xml:id="WMS_Arabic_281-part1-item2" n="2">
                         <locus>Fol.11b to Fol.25a</locus>
-                        <author key="person_f407">
+                        <author key="person_f407" role="aut" change="#role-assignment">
                            <persName xml:lang="en" type="standard">Anonymous</persName>
                         </author>
                         <title type="normalised" xml:lang="ara-Latn" key="work_9898">Duʻāʼ khatm
@@ -119,7 +119,7 @@
                      </msItem>
                      <msItem xml:id="WMS_Arabic_281-part1-item3" n="3">
                         <locus>Fol.27b to Fol.58b</locus>
-                        <author key="person_95223177">
+                        <author key="person_95223177" role="aut" change="#role-assignment">
                            <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn ʻArabī, Muḥyī
                               al-Dīn Muḥammad ibn ʻAlī,‏ ‎d. 1165-1240‏</persName>
                            <persName xml:lang="ar" type="standard" facs="#i0029"> محيى الدين
@@ -259,7 +259,7 @@
                               <locus>Fol.6a.1</locus> Some invocations</item>
                            <item facs="#i0008">
                               <locus>Fol.7a.1</locus> Persian notes concerning geomancy ( علم
-                              الرمل), claimed to be taken from <persName key="person_34436377" xml:lang="ar-Latn-x-lc">ʻAlī ibn Abī Ṭālib</persName>.</item>
+                              الرمل), claimed to be taken from <persName key="person_34436377" xml:lang="ar-Latn-x-lc" role="oth" change="#role-assignment">ʻAlī ibn Abī Ṭālib</persName>.</item>
                            <item facs="#i0009">
                               <locus>Fol.8a.4</locus> Notes on magic and astrology</item>
                            <item facs="#i0019 #i0020 #i0021 #i0023 #i0024 #i0025 #i0026">
@@ -324,7 +324,7 @@
                      </bindingDesc>
                   </physDesc>
                   <history>
-                     <provenance facs="#i0002">The manuscript was previously owned by <persName xml:lang="ar-Latn-x-lc" key="person_f5979">Muḥammad al-Ḥaydarī</persName></provenance>
+                     <provenance facs="#i0002">The manuscript was previously owned by <persName xml:lang="ar-Latn-x-lc" key="person_f5979" role="fmo" change="#role-assignment">Muḥammad al-Ḥaydarī</persName></provenance>
                   </history>
                </msPart>
             </msDesc>
@@ -362,6 +362,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2019"><persName>Rosie Maxton</persName></change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

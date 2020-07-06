@@ -45,12 +45,12 @@
                <msContents>
                   <summary>This volume is a copy from the manuscript of St. Petersburg.</summary>
                   <msItem xml:id="Add_3191-item1">
-                     <author key="person_100186598" ref="http://viaf.org/viaf/100186598/">
+                     <author key="person_100186598" ref="http://viaf.org/viaf/100186598/" role="aut" change="#role-assignment">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">Akhṭal, Ghiyāth ibn Ghawth al-Taghlibī, ca. 640-ca. 710</persName>
                         <persName xml:lang="ar">الاخطل، غياث بن غوث التغلبي</persName>
                      </author>
-                     <title xml:lang="ar-Latn-x-lc" key="work_887">Dīwān al-Akhṭal</title>
-                     <title xml:lang="ar" key="work_887">ديوان الاخطل</title>
+                     <title xml:lang="ar-Latn-x-lc" key="work_20760" change="#ids-cleanup">Dīwān al-Akhṭal</title>
+                     <title xml:lang="ar" key="work_20760" change="#ids-cleanup">ديوان الاخطل</title>
                      <incipit xml:lang="ar"/>
                      <explicit xml:lang="ar" defective="true"/>
                      <note>
@@ -80,7 +80,7 @@
                   </objectDesc>
                   <handDesc>
                      <handNote scope="major" script="unknown">
-                        <persName xml:lang="ar-Latn-x-lc" key="person_f3528">Rizq Allāh ibn Niʻmat Allāh Ḥasūn <foreign xml:lang="ar">رزق الله بن نعمة الله حسون</foreign>
+                        <persName xml:lang="ar-Latn-x-lc" key="person_f3528" role="scr" change="#role-assignment">Rizq Allāh ibn Niʻmat Allāh Ḥasūn <foreign xml:lang="ar">رزق الله بن نعمة الله حسون</foreign>
                         </persName>
                      </handNote>
                   </handDesc>
@@ -90,7 +90,7 @@
                      <origDate notBefore="1867" notAfter="1868" calendar="#Hijri-qamari">1284</origDate>
                      <origDate calendar="#Gregorian" when="1867">1867</origDate>
                   </origin>
-                  <acquisition>Bequest of <persName key="person_f3336">Professor. W.R. Smith</persName> in <date calendar="#Gregorian">1894</date>.</acquisition>
+                  <acquisition>Bequest of <persName key="person_88901103" role="fmo" change="#role-assignment #ids-cleanup">Professor. W.R. Smith</persName> in <date calendar="#Gregorian">1894</date>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
@@ -126,6 +126,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>

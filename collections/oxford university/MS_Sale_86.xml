@@ -48,13 +48,13 @@
                   </summary>
                   <msItem xml:id="MS_Sale_86-item1" n="1">
                      <locus from="1" to="151">ff. 1r-151v</locus>
-                     <author key="person_f2091">
+                     <author key="person_f2091" role="aut" change="#role-assignment">
                         <persName xml:lang="ar-Latn-x-lc">Makarius ibn al-Zaʻīm [or al-Zaʼīmī], archbp. of Aleppo <date calendar="#Gregorian" when="1672">d. 1672</date>
                         </persName>
                      </author>
                      <title key="work_5172">Sīrat abīnā ... Yūḥannā Fam al-dhahab</title>
-                     <note>An epitome of a life of <persName type="standard" key="person_100910338" ref="http://www.viaf.org/viaf/100910338/">John Chrysostom, Saint, d. <date calendar="#Gregorian" when="0407">407</date>
-                        </persName> by one <persName key="person_f1143">George of Alexandria</persName>
+                     <note>An epitome of a life of <persName type="standard" key="person_297475745" ref="http://www.viaf.org/viaf/297475745/" role="dpc" change="#role-assignment #ids-cleanup">John Chrysostom, Saint, d. <date calendar="#Gregorian" when="0407">407</date>
+                        </persName> by one <persName key="person_f1143" role="ant" change="#role-assignment">George of Alexandria</persName>
                      </note>
                      <listBibl>
                         <bibl>Graf III, p. 107</bibl>
@@ -64,11 +64,11 @@
                   </msItem>
                   <msItem xml:id="MS_Sale_86-item2" n="2">
                      <locus from="152" to="164">ff. 152r-164r*</locus>
-                     <author key="person_100910338" ref="http://www.viaf.org/viaf/100910338/">
+                     <author key="person_297475745" ref="http://www.viaf.org/viaf/297475745/" change="#ids-cleanup #role-assignment" role="aut">
                         <persName type="standard">John Chrysostom, Saint, d. <date calendar="#Gregorian" when="0407">407</date>
                         </persName>
                      </author>
-                     <title key="work_5173">Sermon on <persName key="person_f995">Eutropius</persName>, translated from Greek by <persName key="person_f1569">Ignatius patriarch of Antioch</persName>, and a sermon on the benefit of reading the Holy Scriptures</title>
+                     <title key="work_5173">Sermon on <persName key="person_f995" role="oth" change="#role-assignment">Eutropius</persName>, translated from Greek by <persName key="person_267432724" role="trl" change="#role-assignment #ids-cleanup">Ignatius patriarch of Antioch</persName>, and a sermon on the benefit of reading the Holy Scriptures</title>
                      <note>*ff. 164v-182v contain an index of Chrysostomʼs writings publ. in the greek edn. of 1612</note>
                      <listBibl>
                         <bibl>Graf I, p. 350</bibl>
@@ -189,6 +189,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>

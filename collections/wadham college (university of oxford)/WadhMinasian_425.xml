@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7839">
@@ -78,11 +78,11 @@
                             <locus from="1b" to="119b">ff. 1b-119b</locus>
                             <note type="content-genre">Principles of Islamic jurisprudence</note>
                             <textLang mainLang="fa">Persian</textLang>
-                            <title xml:lang="fa-Latn-x-lc" key="work_2971">ʾUṣūl-i dīn</title>
-                            <title xml:lang="fa" key="work_2971">اصول دین</title>
-                            <title xml:lang="fa-Latn-x-lc" type="alt" key="work_2971">ʾUṣūl-i ʿaqāyid</title>
-                            <title xml:lang="fa" type="alt" key="work_2971">اصول عقاید</title>
-                            <author key="person_64932206">
+                            <title xml:lang="fa-Latn-x-lc" key="work_20395" change="#ids-cleanup">ʾUṣūl-i dīn</title>
+                            <title xml:lang="fa" key="work_20395" change="#ids-cleanup">اصول دین</title>
+                            <title xml:lang="fa-Latn-x-lc" type="alt" key="work_20395" change="#ids-cleanup">ʾUṣūl-i ʿaqāyid</title>
+                            <title xml:lang="fa" type="alt" key="work_20395" change="#ids-cleanup">اصول عقاید</title>
+                            <author key="person_64932206" role="aut" change="#role-assignment">
                                 <persName xml:lang="fa-Latn-x-lc" type="standard">Rashtī, Kāẓim ibn Qāsim, -1843</persName>
                                 <persName xml:lang="fa">رشتی، کاظم بن قاسم، -۱۸۴۳</persName>
                                 <persName xml:lang="fa-Latn-x-lc" type="alt">Rashtī, Sayid Kāẓim ibn Qāsim (1259 AH/1843)</persName>
@@ -172,7 +172,7 @@
                             <locus from="120a" to="127a">ff. 120a-127a</locus>
                             <textLang mainLang="ar">Arabic</textLang>
                             <note type="content-genre">Hadith</note>
-                            <author key="person_64932206">
+                            <author key="person_64932206" role="aut" change="#role-assignment">
                                 <persName xml:lang="fa-Latn-x-lc" type="standard">Rashtī, Kāẓim ibn Qāsim, -1843</persName>
                                 <persName xml:lang="fa">رشتی، کاظم بن قاسم، -۱۸۴۳</persName>
                                 <persName xml:lang="fa-Latn-x-lc" type="alt">Rashtī, Sayid Kāẓim ibn Qāsim (1259 AH/1843)</persName>
@@ -247,7 +247,7 @@
                                 <note type="content-genre">History</note>
                                 <title xml:lang="fa-Latn-x-lc" key="work_2978">Tarjumah va sharḥ-i ʾAsrār al-Shahādah</title>
                                 <title xml:lang="fa" key="work_2978">ترجمه و شرح اسرار الشهاده</title>
-                                <author key="person_64932206">
+                                <author key="person_64932206" role="aut" change="#role-assignment">
                                     <persName xml:lang="fa-Latn-x-lc" type="standard">Rashtī, Kāẓim ibn Qāsim, -1843</persName>
                                     <persName xml:lang="fa">رشتی، کاظم بن قاسم، -۱۸۴۳</persName>
                                     <persName xml:lang="fa-Latn-x-lc" type="alt">Rashtī, Sayid Kāẓim ibn Qāsim (1259 AH/1843)</persName>
@@ -333,7 +333,7 @@
                                 <textLang mainLang="fa">Persian</textLang>
                                 <title xml:lang="ar-Latn-x-lc" key="work_2979">Dalīl al-mutaḥayyirīn</title>
                                 <title xml:lang="ar" key="work_2979">دلیل‌المتحیرین</title>
-                                <author key="person_64932206" ref="http://viaf.org/viaf/64932206">
+                                <author key="person_64932206" ref="http://viaf.org/viaf/64932206" role="aut" change="#role-assignment">
                                     <persName xml:lang="fa-Latn-x-lc" type="standard">Rashtī, Kāẓim ibn Qāsim, -1843</persName>
                                     <persName xml:lang="fa">رشتی، کاظم بن قاسم، -۱۸۴۳</persName>
                                     <persName xml:lang="fa-Latn-x-lc" type="alt">Rashtī, Sayid Kāẓim ibn Qāsim (1259 AH/1843)</persName>
@@ -444,6 +444,12 @@
             </textClass>
         </profileDesc>
         <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
             <change when="2019-08-14"> Revamped according to the latest template for multi part items..             
                 <persName>Mohammad Emami</persName>          
             </change>

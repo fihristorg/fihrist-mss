@@ -45,12 +45,12 @@
                <msContents>
                   <summary>This volume contains books vi-xi of al-Bukhārī's work.</summary>
                   <msItem xml:id="Add_1076-item1">
-                     <author key="person_89645728" ref="http://viaf.org/viaf/89645728/">
+                     <author key="person_154679127" ref="http://viaf.org/viaf/154679127/" change="#ids-cleanup #role-assignment" role="aut">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">Bukhārī, Muḥammad ibn Ismāʻīl, 810-870</persName>
                         <persName xml:lang="ar">البخارى، ابن عبد الله محمد بن اسمعيل</persName>
                      </author>
-                     <title xml:lang="ar-Latn-x-lc" key="work_389">Al-Jāmiʻ al-saḥīḥ</title>
-                     <title xml:lang="ar" key="work_389">الجامع الصحيح</title>
+                     <title xml:lang="ar-Latn-x-lc" key="work_20487" change="#ids-cleanup">Al-Jāmiʻ al-saḥīḥ</title>
+                     <title xml:lang="ar" key="work_20487" change="#ids-cleanup">الجامع الصحيح</title>
                      <incipit xml:lang="ar"/>
                      <explicit xml:lang="ar" defective="true"/>
                      <note>
@@ -80,7 +80,7 @@
                   </objectDesc>
                   <handDesc>
                      <handNote scope="major" script="unknown">
-                        <persName xml:lang="ar-Latn-x-lc" key="person_f2783">Muḥammad ibn ʻAlī al-Andalusī <foreign xml:lang="ar">محمد بن علي الاندلسي</foreign>
+                        <persName xml:lang="ar-Latn-x-lc" key="person_f2783" role="scr" change="#role-assignment">Muḥammad ibn ʻAlī al-Andalusī <foreign xml:lang="ar">محمد بن علي الاندلسي</foreign>
                         </persName>
                      </handNote>
                   </handDesc>
@@ -90,7 +90,7 @@
                      <origDate notBefore="1652" notAfter="1653" calendar="#Hijri-qamari">1063</origDate>
                      <origDate calendar="#Gregorian" when="1653">1653</origDate>
                   </origin>
-                  <acquisition>Bought from <persName key="person_f1782">Judas</persName> in <date calendar="#Gregorian">1873</date>.</acquisition>
+                  <acquisition>Bought from <persName key="person_f1782" role="fmo" change="#role-assignment">Judas</persName> in <date calendar="#Gregorian">1873</date>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
@@ -126,6 +126,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>

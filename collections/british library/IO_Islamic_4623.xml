@@ -79,14 +79,14 @@
                   
                      <msItem xml:id="IO_Islamic_4623-part1-item1" n="1" class="http://lccn.loc.gov/sh85076229">
                         <locus from="1" to="63">ff. 1-63</locus>
-                        <author key="person_f525">
+                        <author key="person_f525" role="aut" change="#role-assignment">
                            <persName xml:lang="fa-Latn-x-lc" type="supplied">Aḥmad b. ʻAlī b. Aḥmad</persName>
                            <persName xml:lang="fa">احمد بن علی بن احمد</persName>
                         </author>
-                        <title xml:lang="fa-Latn-x-lc" key="work_8677">Kanz al-laṭāʼif</title>
-                        <title xml:lang="fa" key="work_8677">کنز الاطائف</title>
-                        <title xml:lang="fa-Latn-x-lc" type="alt" key="work_8677">Kanz al-balāghah</title>
-                        <title xml:lang="fa" type="alt" key="work_8677">کنز بلاغه</title>
+                        <title xml:lang="fa-Latn-x-lc" key="work_21115" change="#ids-cleanup">Kanz al-laṭāʼif</title>
+                        <title xml:lang="fa" key="work_21115" change="#ids-cleanup">کنز الاطائف</title>
+                        <title xml:lang="fa-Latn-x-lc" type="alt" key="work_21115" change="#ids-cleanup">Kanz al-balāghah</title>
+                        <title xml:lang="fa" type="alt" key="work_21115" change="#ids-cleanup">کنز بلاغه</title>
                         <incipit xml:lang="fa"/>
                         <explicit xml:lang="fa"/>
                         <note>A collection of model letters—probably fifty: this copy has a heading of the 49th on <locus n="62a">fol. 62a</locus>, and there is a lacuna after that folio</note>
@@ -116,7 +116,7 @@
                      <handDesc>
                         <handNote scope="major" script="nasta_liq">
                            <desc>Good Indian nastaʻlīq</desc>
-                           <p>Copyist, <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f1159">Ghiyās̲ al-Dīn Muḥammad b. Pīr Muḥammad, <foreign xml:lang="fa">غیاث الدین بن پیر محمد</foreign>
+                           <p>Copyist, <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f1159" role="scr" change="#role-assignment">Ghiyās̲ al-Dīn Muḥammad b. Pīr Muḥammad, <foreign xml:lang="fa">غیاث الدین بن پیر محمد</foreign>
                               </persName>
                            </p>
                         </handNote>
@@ -143,7 +143,7 @@
                   
                      <msItem xml:id="IO_Islamic_4623-part2-item1" n="2" class="http://lccn.loc.gov/sh85068403 http://lccn.loc.gov/sh85107528">
                         <locus from="64" to="88">ff. 64-88</locus>
-                        <author ref="http://viaf.org/viaf/90770167" key="person_90770167">
+                        <author ref="http://viaf.org/viaf/90770167" key="person_90770167" role="aut" change="#role-assignment">
                            <persName xml:lang="fa-Latn-x-lc" type="standard">Kāshifī, Ḥusayn Vāʻiẓ, d. 1504 or 5Library of Congress/NACO</persName>
                            <persName xml:lang="fa-Latn-x-lc" type="alt">Ḥusain Vāʻiẓ Kāshifī</persName>
                            <persName xml:lang="fa" type="alt">حسين واعظ كاشفي</persName>
@@ -154,7 +154,7 @@
                         <incipit xml:lang="fa"/>
                         <explicit xml:lang="ar" defective="true"/>
                         <note>An epitome, apparently made by the author himself, of a treatise on the cult of the Prophet, and prayer</note>
-                        <note>It is stated in the preface that the epitome was made at the request of <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f4129">Sulṭān Abū ʼ1-Ghāzī, <foreign xml:lang="fa">سلطان ابو الغازی</foreign>
+                        <note>It is stated in the preface that the epitome was made at the request of <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f4129" role="pat" change="#role-assignment">Sulṭān Abū ʼ1-Ghāzī, <foreign xml:lang="fa">سلطان ابو الغازی</foreign>
                            </persName> [Mīrzā Baiqarā of Herat], who reigned <date calendar="#Hijri-qamari" notBefore="1468" notAfter="1505">873-911</date>
                         </note>
                         <listBibl>
@@ -222,6 +222,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>

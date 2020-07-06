@@ -47,12 +47,12 @@
                      2 works by 2 authors on the subject of Arabic language
                   </summary>
                   <msItem xml:id="Qq_13-item1" n="1">
-                     <author key="person_29665940" ref="http://viaf.org/viaf/29665940/">
+                     <author key="person_29665940" ref="http://viaf.org/viaf/29665940/" role="aut" change="#role-assignment">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn al-Ḥājib, ʻUthmān ibn ʻUmar, 1175-1249</persName>
                         <persName xml:lang="ar">ابن الحاجب</persName>
                      </author>
-                     <title xml:lang="ar-Latn-x-lc" key="work_435">al-Kāfiyah li-Ibn Ḥājib</title>
-                     <title xml:lang="ar" key="work_435">الكافية لابن حاجب</title>
+                     <title xml:lang="ar-Latn-x-lc" key="work_2023" change="#ids-cleanup">al-Kāfiyah li-Ibn Ḥājib</title>
+                     <title xml:lang="ar" key="work_2023" change="#ids-cleanup">الكافية لابن حاجب</title>
                      <incipit xml:lang="ar"/>
                      <explicit xml:lang="ar" defective="true"/>
                      <note>
@@ -67,7 +67,7 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="Qq_13-item2" n="2" class="#commentary">
-                     <author key="person_12611927" ref="http://viaf.org/viaf/12611927/">
+                     <author key="person_12611927" ref="http://viaf.org/viaf/12611927/" role="aut" change="#role-assignment">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">Astarābādhī, Raḍī al-Dīn Muḥammad ibn al-Ḥasan, fl. 1284</persName>
                         <persName xml:lang="ar">الاسترآبادي، رضي الدين محمد بن الحسن</persName>
                      </author>
@@ -82,7 +82,7 @@
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/view.php?id=99">no. 881</ref>
                         </bibl>
                         <bibl type="text-relations">Commentary on <title xml:lang="ar-Latn-x-lc">al-Kāfiyah <foreign xml:lang="ar">الكافية</foreign>
-                           </title> of <author key="person_29665940" ref="http://viaf.org/viaf/29665940/">
+                           </title> of <author key="person_29665940" ref="http://viaf.org/viaf/29665940/" role="ant" change="#role-assignment">
                               <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn al-Ḥājib, ʻUthmān ibn ʻUmar, 1175-1249</persName>
                               <persName xml:lang="ar">ابن الحاجب، عثمان بن عمر</persName>
                            </author>.</bibl>
@@ -106,7 +106,7 @@
                   </objectDesc>
                   <handDesc>
                      <handNote scope="major" script="unknown">
-                        <persName type="scribe" xml:lang="ar-Latn-x-lc">&gt;</persName>
+                        <persName type="scribe" xml:lang="ar-Latn-x-lc">></persName>
                      </handNote>
                   </handDesc>
                </physDesc>
@@ -116,7 +116,7 @@
                      <origDate calendar="#Gregorian" when="1668">1668</origDate>
                   </origin>
                   <acquisition>
-                     <p>Bequest of <persName key="person_f1655">J.L. Burckhardt (1784-1817)</persName> in <date calendar="#Gregorian">1819</date>.</p>
+                     <p>Bequest of <persName key="person_59176329" role="fmo" change="#role-assignment #ids-cleanup">J.L. Burckhardt (1784-1817)</persName> in <date calendar="#Gregorian">1819</date>.</p>
                   </acquisition>
                </history>
                <additional>
@@ -172,6 +172,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>

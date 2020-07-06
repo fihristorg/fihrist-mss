@@ -45,12 +45,12 @@
                      1 copy of Yūsuf va Zulaykhā by Jāmī, 1414-1492
                   </summary>
                   <msItem xml:id="Ms_88-item1">
-                     <author key="person_90042997" ref="http://viaf.org/viaf/90042997/">
+                     <author key="person_90042997" ref="http://viaf.org/viaf/90042997/" role="aut" change="#role-assignment">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Jāmī, 1414-1492</persName>
                         <persName xml:lang="fa">جامی</persName>
                      </author>
-                     <title xml:lang="fa-Latn-x-lc" key="work_1313">Yūsuf va Zulaykhā</title>
-                     <title xml:lang="fa" key="work_1313">یوسف و زلیخا</title>
+                     <title xml:lang="fa-Latn-x-lc" key="work_20147" change="#ids-cleanup">Yūsuf va Zulaykhā</title>
+                     <title xml:lang="fa" key="work_20147" change="#ids-cleanup">یوسف و زلیخا</title>
                      <incipit xml:lang="ar" type="basmallah">
                         <locus from="9b" to="9b">F. 9b</locus>: بسم الله الرحمن الرحيم</incipit>
                      <incipit xml:lang="ar">
@@ -292,7 +292,7 @@
                      <handNote scope="major" script="nasta_liq" medium="blackink">
                         <p>Nastaʿlīq, black ink</p>
                         <ref>
-                           <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f2243">Miskīn ʿAbbās <foreign xml:lang="fa">مسكين عباس</foreign>
+                           <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f2243" role="scr" change="#role-assignment">Miskīn ʿAbbās <foreign xml:lang="fa">مسكين عباس</foreign>
                            </persName>
                         </ref>
                      </handNote>
@@ -310,7 +310,7 @@
                      <list>
                         <item>
                            <label>ownership statement</label>
-                           <p>The ownership statement in <locus from="158b" to="158b">f. 158b</locus> states that this book belonged to certain <persName xml:lang="fa-Latn-x-lc" key="person_f2912">Muḥsin <foreign xml:lang="fa">محسن</foreign>
+                           <p>The ownership statement in <locus from="158b" to="158b">f. 158b</locus> states that this book belonged to certain <persName xml:lang="fa-Latn-x-lc" key="person_f2912" role="fmo" change="#role-assignment">Muḥsin <foreign xml:lang="fa">محسن</foreign>
                               </persName>.</p>
                         </item>
                      </list>
@@ -326,8 +326,8 @@
                      <origDate calendar="#Gregorian" when="1614">1614</origDate>
                      <placeName>Mirpur Khas</placeName>
                   </origin>
-                  <provenance>The manuscript belonged to the library of <persName key="person_f347">Ali Murad Talpur</persName>, the second ruler of the Mankani Talpurs state of Mirpur Khas; as seen in the seal dated in <date calendar="#Hijri-qamari" when="1230">1230</date> / <date calendar="#Gregorian" when="1814">1814</date>.</provenance>
-                  <acquisition>Presented to Trinity Hall by <persName key="person_f1145">Geraldine Essayan</persName> in memory of her uncle, <persName key="person_f2010">Lawrence Strangman</persName>, in <date calendar="#Gregorian" when="1996">1996</date>
+                  <provenance>The manuscript belonged to the library of <persName key="person_f347" role="fmo" change="#role-assignment">Ali Murad Talpur</persName>, the second ruler of the Mankani Talpurs state of Mirpur Khas; as seen in the seal dated in <date calendar="#Hijri-qamari" when="1230">1230</date> / <date calendar="#Gregorian" when="1814">1814</date>.</provenance>
+                  <acquisition>Presented to Trinity Hall by <persName key="person_f1145" role="fmo" change="#role-assignment">Geraldine Essayan</persName> in memory of her uncle, <persName key="person_f2010" role="fmo" change="#role-assignment">Lawrence Strangman</persName>, in <date calendar="#Gregorian" when="1996">1996</date>
                   </acquisition>
                </history>
                <additional>
@@ -361,6 +361,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>

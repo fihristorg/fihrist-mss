@@ -48,7 +48,7 @@
                   </summary>
                   <msItem xml:id="Add_771-item1">
                      <note>Vol. 2</note>
-                     <author key="person_90039023" ref="http://viaf.org/viaf/90039023/">
+                     <author key="person_90039023" ref="http://viaf.org/viaf/90039023/" role="aut" change="#role-assignment">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">Ibshīhī, Muḥammad ibn Aḥmad, 1388-ca. 1446</persName>
                         <persName xml:lang="ar">ابشيهي، محمد بن احمد <addName xml:lang="ar" type="laqab">الكاتب</addName>
                         </persName>
@@ -84,8 +84,8 @@
                   </objectDesc>
                   <handDesc>
                      <handNote scope="major" script="unknown">
-                        <persName xml:lang="ar-Latn-x-lc" key="person_f4873">ʻUmar ibn Shaykh Aḥmad</persName>
-                        <persName xml:lang="ar" key="person_f5204">عمر بن شيخ احمد</persName>
+                        <persName xml:lang="ar-Latn-x-lc" key="person_f4873" role="scr" change="#role-assignment">ʻUmar ibn Shaykh Aḥmad</persName>
+                        <persName xml:lang="ar" key="person_f4873" role="scr" change="#role-assignment #ids-cleanup">عمر بن شيخ احمد</persName>
                      </handNote>
                   </handDesc>
                </physDesc>
@@ -94,7 +94,7 @@
                      <origDate notBefore="1836" notAfter="1837" calendar="#Hijri-qamari">1252</origDate>
                      <origDate calendar="#Gregorian" when="1836">1836</origDate>
                   </origin>
-                  <acquisition>Bequest of <persName key="person_f3517">Reverand Professor H.G. Williams (d. 1870)</persName> in <date calendar="#Gregorian">1870</date>.</acquisition>
+                  <acquisition>Bequest of <persName key="person_f3517" role="fmo" change="#role-assignment">Reverand Professor H.G. Williams (d. 1870)</persName> in <date calendar="#Gregorian">1870</date>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
@@ -133,6 +133,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>

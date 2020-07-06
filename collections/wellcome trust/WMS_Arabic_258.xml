@@ -36,7 +36,7 @@
                      <msItem xml:id="WMS_Arabic_258-part1-item1" n="1">
                         <locus facs="#i0008 #i0009 #i0084 #i0088 #i0092 #i0180">Fol.1a to Fol.1b,
                            Fol.40a to Fol.42a, and Fol.44a to 88a</locus>
-                        <author key="person_12313247">
+                        <author key="person_12313247" role="aut" change="#role-assignment">
                            <persName type="standard" xml:lang="ar-Latn-x-lc"> Paracelsus,‏ ‎d.
                               1493-1541 </persName>
                            <persName type="original" xml:lang="ar" facs="#i0009">براكلسوس</persName>
@@ -63,11 +63,11 @@
                      </msItem>
                      <msItem xml:id="WMS_Arabic_258-part1-item2" n="2">
                         <locus facs="#i0010 #i0074">Fol.2a to Fol.35a</locus>
-                        <author key="person_f407">
+                        <author key="person_f407" role="aut" change="#role-assignment">
                            <persName type="standard" xml:lang="en">Anonymous</persName>
                         </author>
 
-                        <title type="normalised" xml:lang="en" key="work_9889">No title</title>
+                        <title type="normalised" xml:lang="en" key="work_21154" change="#ids-cleanup">No title</title>
                         <note>Anonymous medical tract.</note>
                         <incipit type="beginning" facs="#i0010">
                            <locus>fol.2a.1</locus> مفصليهما اللدينلهما مع الساقين اثنان وخمسون ما هى
@@ -84,7 +84,7 @@
                      </msItem>
                      <msItem xml:id="WMS_Arabic_258-part1-item3" defective="false" n="3">
                         <locus facs="#i0181 #i0213">Fol.88b to Fol.104b</locus>
-                        <author key="person_241921227">
+                        <author key="person_241921227" role="aut" change="#role-assignment">
                            <persName xml:lang="ar-Latn-x-lc"> Ebulfeyz Mustafa Efendi,‏ ‎d.
                               -1744</persName>
                            <persName type="standard" xml:lang="ar" facs="#i0181"> فيضى مصطفى
@@ -121,7 +121,7 @@
                      </msItem>
                      <msItem xml:id="WMS_Arabic_258-part1-item4" defective="false" n="4">
                         <locus facs="#i0228 #i0538">Fol.112a to Fol.273a</locus>
-                        <author key="person_f407">
+                        <author key="person_f407" role="aut" change="#role-assignment">
                            <persName type="standard" xml:lang="en">Anonymous</persName>
                         </author>
                         <title type="normalised" xml:lang="ara-Latn" key="work_9964">Mukhtaṣar
@@ -165,8 +165,7 @@
                                     al-Khazinī </foreign>) </persName>
                            </p>
                            <p><label>Scribe:</label>
-                              <persName xml:lang="ar" role="scr" key="person_f1287" facs="#i0539"
-                                 >حنا ابن نجورى حنا (<foreign>Hannā
+                              <persName xml:lang="ar" role="scr" key="person_f1287" facs="#i0539">حنا ابن نجورى حنا (<foreign>Hannā
                                     ibn Najurī Hannā</foreign>)</persName></p>
                            <p><label>Ink:</label> Black</p>
                         </handNote>
@@ -187,17 +186,12 @@
                   <history>
                      <origin change="#fix-dates">
                        
-                        <origDate when="1810" type="given" facs="#i0074" calendar="#Gregorian"
-                           >1810</origDate>
-                        <origDate when="1222" type="written" facs="#i0180" calendar="#Gregorian"
-                           >1222</origDate>
-                        <origDate when="1808" type="given" calendar="#Gregorian" facs="#i0180"
-                           >1808</origDate>
-                        <origDate when="1808" type="written" calendar="#Gregorian" facs="#i0213"
-                           >1808</origDate>
+                        <origDate when="1810" type="given" facs="#i0074" calendar="#Gregorian">1810</origDate>
+                        <origDate when="1222" type="written" facs="#i0180" calendar="#Gregorian">1222</origDate>
+                        <origDate when="1808" type="given" calendar="#Gregorian" facs="#i0180">1808</origDate>
+                        <origDate when="1808" type="written" calendar="#Gregorian" facs="#i0213">1808</origDate>
                         
-                        <origDate when="1830" type="written" facs="#i0539" calendar="#Gregorian"
-                           >1830</origDate>
+                        <origDate when="1830" type="written" facs="#i0539" calendar="#Gregorian">1830</origDate>
                        
                         <quote type="colophon" facs="#i0180">
                            <locus>fol.88.5</locus> انتهى والحمد لله الدى لا ينتهى بقلم كاتبه
@@ -252,27 +246,25 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2019"><persName>Rosie Maxton</persName></change>
          <change when="2018-06-08">
-            <persName>Andrew Morrison</persName> Updated key attributes using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl"
-               >update-keys.xsl</ref>
+            <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>
          <change when="2018-03-15" xml:id="add-summary">
-            <persName>Andrew Morrison</persName> Added summary using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl"
-               >add-summaries.xsl</ref>
+            <persName>Andrew Morrison</persName> Added summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl">add-summaries.xsl</ref>
          </change>
          <change when="2018-03-02" xml:id="fix-dates">
             <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements
-            using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl"
-               >fix-dates.xsl</ref>
+            using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
          </change>
          <change when="2017-11-07">
-            <persName>James Cummings</persName> Up-converted the markup using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl"
-               >https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2011-03-23T10:19:50+02:00">Committed to SVN. To view the changes in detail
             use SVN diff. SVN

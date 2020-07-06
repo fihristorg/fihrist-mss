@@ -48,7 +48,7 @@
                   </summary>
                   <msItem xml:id="Add_2893-item1" n="1">
                      <locus from="1" to="134">ff. 1-134</locus>
-                     <author key="person_f1357">
+                     <author key="person_f1357" role="aut" change="#role-assignment">
                         <persName xml:lang="ar-Latn-x-lc" type="supplied">Ḥabsī, Rāshid ibn Khamīs ibn Jumʻah ibn Aḥmad, b. 1678.</persName>
                         <persName xml:lang="ar">الحبسي، راشد بن خميس بن جمعة بن احمد <addName xml:lang="ar" type="nisbah">البروي العماني</addName>
                         </persName>
@@ -57,8 +57,8 @@
                         <persName xml:lang="ar-Latn-x-lc">Sulaymān ibn Balʻarab ibn ʻĀmir ibn ʻAbd Allāh ibn Balʻarab ibn ʻAbd Allāh ibn Balʻarab al-Muḥammadī al-Sulaymānī al-ʻAqarī al-Nazawī al-ʻUmānī <foreign xml:lang="ar">سليمان بن بلعرب بن عامر بن عبد الله بن بلعرب عبد الله بن بلعرب المحمدي السليماني العقري النزوي العماني</foreign>
                         </persName>
                      </editor>
-                     <title xml:lang="ar-Latn-x-lc" key="work_556">Dīwān</title>
-                     <title xml:lang="ar" key="work_556">ديوان</title>
+                     <title xml:lang="ar-Latn-x-lc" key="work_20792" change="#ids-cleanup">Dīwān</title>
+                     <title xml:lang="ar" key="work_20792" change="#ids-cleanup">ديوان</title>
                      <incipit xml:lang="ar"/>
                      <explicit xml:lang="ar" defective="true"/>
                      <listBibl>
@@ -70,7 +70,7 @@
                   </msItem>
                   <msItem xml:id="Add_2893-item2" n="2">
                      <locus from="134" to="159">ff.. 134-159</locus>
-                     <author key="person_f1357">
+                     <author key="person_f1357" role="aut" change="#role-assignment">
                         <persName xml:lang="ar-Latn-x-lc" type="supplied">Ḥabsī, Rāshid ibn Khamīs ibn Jumʻah ibn Aḥmad, b. 1678.</persName>
                         <persName xml:lang="ar">الحبسي، راشد بن خميس بن جمعة بن احمد <addName xml:lang="ar" type="nisbah">البروي العماني</addName>
                         </persName>
@@ -92,7 +92,7 @@
                   </msItem>
                   <msItem xml:id="Add_2893-item3" n="3">
                      <locus from="161" to="191">ff, 161-191</locus>
-                     <author key="person_f4580">
+                     <author key="person_f407" change="#ids-cleanup #role-assignment" role="aut">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">anonymous</persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc" key="work_2732">Al-Sīrah al-jillīyah al-musammāh saʻd al-saʻūd al-būsaʻīdīyah</title>
@@ -128,7 +128,7 @@
                   <handDesc>
                      <handNote scope="major" script="unknown">
                         <ref target="#a1, #a2">
-                           <persName xml:lang="ar-Latn-x-lc" key="person_f4112">Sulaymān ibn Balʻarab ibn ʻĀmir ibn ʻAbd Allāh ibn Balʻarab ibn ʻAbd Allāh ibn Balʻarab al-Muḥammadī al-Sulaymānī al-ʻAqarī al-Nazawī al-ʻUmānī <foreign xml:lang="ar">سليمان بن بلعرب بن عامر بن عبد الله بن بلعرب عبد الله بن بلعرب المحمدي السليماني العقري النزوي العماني</foreign>
+                           <persName xml:lang="ar-Latn-x-lc" key="person_f4112" role="scr" change="#role-assignment">Sulaymān ibn Balʻarab ibn ʻĀmir ibn ʻAbd Allāh ibn Balʻarab ibn ʻAbd Allāh ibn Balʻarab al-Muḥammadī al-Sulaymānī al-ʻAqarī al-Nazawī al-ʻUmānī <foreign xml:lang="ar">سليمان بن بلعرب بن عامر بن عبد الله بن بلعرب عبد الله بن بلعرب المحمدي السليماني العقري النزوي العماني</foreign>
                            </persName>
                         </ref>
                      </handNote>
@@ -145,7 +145,7 @@
                         <origDate calendar="#Gregorian" when="1854">1854</origDate>
                      </ref>
                   </origin>
-                  <acquisition>Donated by <persName key="person_f2270">Mrs Badger</persName> in <date calendar="#Gregorian">1888</date>.</acquisition>
+                  <acquisition>Donated by <persName key="person_f2270" role="fmo" change="#role-assignment">Mrs Badger</persName> in <date calendar="#Gregorian">1888</date>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
@@ -220,6 +220,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-27">
             <persName>Andrew Morrison</persName> Normalized roles using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/normalize-roles.xsl">normalize-roles.xsl</ref>
          </change>

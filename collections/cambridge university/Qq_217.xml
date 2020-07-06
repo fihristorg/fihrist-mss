@@ -48,7 +48,7 @@
                   </summary>
                   <msItem xml:id="Qq_217-item1" n="1" class="#abridgement">
                      <locus from="1" to="82a">ff. 1-82a</locus>
-                     <author key="person_90051632" ref="http://viaf.org/viaf/90051632/">
+                     <author key="person_90051632" ref="http://viaf.org/viaf/90051632/" role="aut" change="#role-assignment">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">Suyūṭī, 1445-1505</persName>
                         <persName xml:lang="ar">السيوطي، جلال الدين</persName>
                      </author>
@@ -64,7 +64,7 @@
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/view.php?id=112">no. 971</ref>
                         </bibl>
                         <bibl type="text-relations">Epitome of <title xml:lang="ar-Latn-x-lc">al-Ansāb <foreign xml:lang="ar">الانساب</foreign>
-                           </title> by <author key="person_90054367" ref="http://viaf.org/viaf/90054367/">
+                           </title> by <author key="person_90054367" ref="http://viaf.org/viaf/90054367/" role="ant" change="#role-assignment">
                               <persName xml:lang="ar-Latn-x-lc">Samʻānī, ʻAbd al-Karīm ibn Muḥammad, 1113-1166</persName>
                               <persName xml:lang="ar">سمعاني، عبد الكريم بن محمد</persName>
                            </author>
@@ -74,7 +74,7 @@
                   </msItem>
                   <msItem xml:id="Qq_217-item2" n="2" class="#notes">
                      <locus from="1" to="82a">ff. 1-82a</locus>
-                     <author key="person_90051632" ref="http://viaf.org/viaf/90051632/">
+                     <author key="person_90051632" ref="http://viaf.org/viaf/90051632/" role="aut" change="#role-assignment">
                         <persName xml:lang="ar-Latn-x-lc" type="supplied">Shaykh Aḥmad ibn Aḥmad ibn al-ʻAjamī</persName>
                         <persName xml:lang="ar">شيخ احمد بن احمد بن العجمي</persName>
                      </author>
@@ -115,7 +115,7 @@
                   </objectDesc>
                   <handDesc>
                      <handNote scope="major" script="unknown">
-                        <persName xml:lang="ar-Latn-x-lc" type="standard" key="person_f4548">al-Shaykh al-ʻAjamī <foreign xml:lang="ar">الشيخ العجمي</foreign>
+                        <persName xml:lang="ar-Latn-x-lc" type="standard" key="person_f4548" role="scr" change="#role-assignment">al-Shaykh al-ʻAjamī <foreign xml:lang="ar">الشيخ العجمي</foreign>
                         </persName>
                      </handNote>
                   </handDesc>
@@ -125,7 +125,7 @@
                      <origDate notBefore="1754" notAfter="1755" calendar="#Hijri-qamari">1168</origDate>
                      <origDate calendar="#Gregorian" when="1754">1754</origDate>
                   </origin>
-                  <acquisition>Bequest of <persName key="person_f1655">J.L. Burckhardt (1784-1817)</persName> in <date calendar="#Gregorian">1819</date>.</acquisition>
+                  <acquisition>Bequest of <persName key="person_59176329" role="fmo" change="#role-assignment #ids-cleanup">J.L. Burckhardt (1784-1817)</persName> in <date calendar="#Gregorian">1819</date>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
@@ -180,6 +180,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-27">
             <persName>Andrew Morrison</persName> Normalized roles using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/normalize-roles.xsl">normalize-roles.xsl</ref>
          </change>

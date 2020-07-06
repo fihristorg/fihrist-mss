@@ -37,7 +37,7 @@
                      <msItem xml:id="WMS_Arabic_24-part1-item1" class="sh85083064 sh85003265" n="1">
                         <locus>Fol.1a to Fol.21b</locus>
 
-                        <author key="person_79444240">
+                        <author key="person_79444240" role="aut" change="#role-assignment">
                            <persName xml:lang="ar-Latn-x-lc">Ḥalabī, Ṣāliḥ Naṣr Allāh ibn
                               Sallūm</persName>
                            <persName xml:lang="ar">صالح نصر الله بن سلوم الحلبي</persName>
@@ -46,8 +46,7 @@
                            al-kīmīyāʼī alladhī ikhtara᾽ahu Barākilsūs</title>
                         <title xml:lang="ar" key="work_1056">كتاب الطب الجديد الكيميائي الذي اخترعه
                            براكلسوس</title>
-                        <note>New chemical medicine invented by <persName xml:lang="en"
-                              key="person_12313247">Paracelcus</persName>.</note>
+                        <note>New chemical medicine invented by <persName xml:lang="en" key="person_12313247" role="ant" change="#role-assignment">Paracelcus</persName>.</note>
                         <incipit type="basmala" facs="#i0006">
                            <locus>fol.1b.1</locus> بسم الله الرحمن الرحيم</incipit>
                         <incipit facs="#i0006">
@@ -219,7 +218,7 @@
                      </msItem>
                      <msItem xml:id="WMS_Arabic_24-part1-item2" defective="false" n="2">
                         <locus>Fol.21b to Fol.41a</locus>
-                        <author key="person_88064235">
+                        <author key="person_22267241" change="#ids-cleanup #role-assignment" role="aut">
                            <persName xml:lang="en"> Croll, Oswald,‏ ‎d.  approximately 1560-1609‏</persName>
                            <persName xml:lang="ar" facs="#i0026">قروليوس</persName>
                           
@@ -227,8 +226,7 @@
                         <title type="original" facs="#i0026" key="work_9924">الكيمياء الملكية
                               <locus>Fol.21b.5</locus>
                         </title>
-                        <title type="other" facs="#i0026" xml:lang="lat" key="work_9924"
-                           >Basilica Chymica</title>
+                        <title type="other" facs="#i0026" xml:lang="lat" key="work_9924">Basilica Chymica</title>
                        
                        
                         <title type="normalised" xml:lang="ara-Latn" key="work_9924">Royal
@@ -237,8 +235,7 @@
                         <incipit type="beginning" facs="#i0026">
                            <locus>Fol.21b.4</locus> وقد الف فى صناعة الطب الكيميائى قروليوس كتابا
                            مختصرا معيدا لملك زمانه وهو يشتمل على مقالتين فاردنا نقله من اللاطنينيه
-                           الى العربية ليكون عام النفع وسمى هذا المختصر كيميا باسلبقا <gap
-                              reason="omitted"/> الكيمياء الملكية المقالة الاولى اعلم ان معالجات
+                           الى العربية ليكون عام النفع وسمى هذا المختصر كيميا باسلبقا <gap reason="omitted"/> الكيمياء الملكية المقالة الاولى اعلم ان معالجات
                            الامراض منها ما هو كلى عام غير مختص بمرض والعلاج الكلى هو قطع سبب المرض
                            واصله</incipit>
                         <explicit facs="#i0045">
@@ -443,8 +440,7 @@
                      <origin change="#fix-dates">
                         <origDate type="written" facs="#i0045" calendar="#Hijri-shamsi">20 Muḥarram
                            1050</origDate>
-                        <origDate when="1640" type="given" calendar="#Gregorian"
-                           >12.05.1640</origDate>
+                        <origDate when="1640" type="given" calendar="#Gregorian">12.05.1640</origDate>
                         <quote type="colophon" facs="#i0045">
                            <locus>fol.41a.6</locus> الحمد لله علي حصول الفراغ من تسويد هذه الوجيزة
                            العجيبة فى المعالجات الانسانى من صناعة الطب الكميائى المكناة باساغريا
@@ -492,29 +488,27 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-10-29">
             <persName>Rosie Maxton</persName>
          </change>
          <change when="2018-06-08">
-            <persName>Andrew Morrison</persName> Updated key attributes using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl"
-               >update-keys.xsl</ref>
+            <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>
          <change when="2018-03-15" xml:id="add-summary">
-            <persName>Andrew Morrison</persName> Added summary using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl"
-               >add-summaries.xsl</ref>
+            <persName>Andrew Morrison</persName> Added summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl">add-summaries.xsl</ref>
          </change>
          <change when="2018-03-02" xml:id="fix-dates">
             <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements
-            using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl"
-               >fix-dates.xsl</ref>
+            using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
          </change>
          <change when="2017-11-07">
-            <persName>James Cummings</persName> Up-converted the markup using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl"
-               >https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-09-24T13:30:02+03:00">Committed to SVN. To view the changes in detail
             use SVN diff. SVN Url:

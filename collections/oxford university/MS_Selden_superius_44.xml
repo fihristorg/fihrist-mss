@@ -46,7 +46,7 @@
                   <summary>The volume contains 65 leaves. Folio 54a is blank. Folio 22 has been cut out from the volume and is now missing except for a 30 mm strip still attached in the gutter. Folio 23 is blank. Folios 24a–25b are bound in upside down in the volume. Folio 26 is blank except for two lines of casually written poetry; folio 27a is blank. Folio 57a is a later fihrist to the fragment comprising item 6; folio 56b is blank. The two front and two back endleaves are blank, except for the UAM entry number.</summary>
                   <msItem xml:id="MS_Selden_superius_44-item1" n="1">
                      <locus from="1" to="21">ff. 1v-21v</locus>
-                     <author key="person_36360883" ref="http://viaf.org/viaf/36360883/">
+                     <author key="person_36360883" ref="http://viaf.org/viaf/36360883/" role="aut" change="#role-assignment">
                         <persName type="standard" xml:lang="ar-Latn-x-lc">Nīsābūrī, Niẓām al-Dīn al-Ḥasan ibn Muḥammad, d. <date calendar="#Gregorian" when="1329">1328 or 9</date>
                         </persName>
                      </author>
@@ -61,7 +61,7 @@
                   </msItem>
                   <msItem xml:id="MS_Selden_superius_44-item2" n="2">
                      <locus from="24" to="25">ff. 24r, 25v</locus>
-                     <author key="person_f1463">
+                     <author key="person_f1463" role="aut" change="#role-assignment">
                         <persName xml:lang="ar-Latn-x-lc">Ibn al-Khaddām, ʻImād al-Dīn ʻAbd Allāh ibn Muḥammad, 1245 -?</persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc" key="work_6222">al-Risālah al-Shamsīyah fī qawāʻid al-ḥisāb al-handasīyah</title>
@@ -75,7 +75,7 @@
                   </msItem>
                   <msItem xml:id="MS_Selden_superius_44-item3" n="3">
                      <locus from="27" to="53">ff. 27v-53v</locus>
-                     <author key="person_12392936" ref="http://www.viaf.org/viaf/12392936/">
+                     <author key="person_12392936" ref="http://www.viaf.org/viaf/12392936/" role="aut" change="#role-assignment">
                         <persName type="standard" xml:lang="ar-Latn-x-lc">Ṭūsī, Naṣīr al-Dīn Muḥammad ibn Muḥammad, <date calendar="#Gregorian" from="1201" to="1274">1201-1274</date>
                         </persName>
                      </author>
@@ -89,7 +89,7 @@
                   </msItem>
                   <msItem xml:id="MS_Selden_superius_44-item4" n="4">
                      <locus from="54" to="54">f. 54v</locus>
-                     <author key="person_96446777" ref="http://viaf.org/viaf/96446777">
+                     <author key="person_287984736" ref="http://viaf.org/viaf/287984736" change="#ids-cleanup #role-assignment" role="aut">
                         <persName type="standard">Hippocrates</persName>
                         <persName xml:lang="ar">أبقراط</persName>
                      </author>
@@ -111,7 +111,7 @@
                   </msItem>
                   <msItem xml:id="MS_Selden_superius_44-item5" n="5">
                      <locus from="55" to="56">ff. 55v, 56r</locus>
-                     <author key="person_f407">Anonymous</author>
+                     <author key="person_f407" role="aut" change="#role-assignment">Anonymous</author>
                      <title key="work_6225">Diagrams of pulleys... etc.</title>
                      <note>Sketches for various water-lifting and mechanical devices</note>
                      <listBibl>
@@ -122,7 +122,7 @@
                   </msItem>
                   <msItem xml:id="MS_Selden_superius_44-item6" n="6">
                      <locus from="57" to="65">ff. 57v, 65v</locus>
-                     <author key="person_f1962">
+                     <author key="person_7256639" change="#ids-cleanup #role-assignment" role="aut">
                         <persName xml:lang="ar-Latn-x-lc">Kirmānī, ʿImād al-Dīn Faqīh</persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc" key="work_6226">Dīwān-i ʿImād</title>
@@ -171,7 +171,7 @@
                      </ref>
                   </origin>
                   <provenance>[Any information about a single identifiable episode in the life of the manuscript between origin and acquisition]</provenance>
-                  <acquisition>From the collection of <persName key="person_f1764">John Selden</persName> acquired by the Bodleian Library in <date calendar="#Gregorian" when="1659">1659</date>.</acquisition>
+                  <acquisition>From the collection of <persName key="person_f1764" role="fmo" change="#role-assignment">John Selden</persName> acquired by the Bodleian Library in <date calendar="#Gregorian" when="1659">1659</date>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
@@ -264,6 +264,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>

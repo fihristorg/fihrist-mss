@@ -48,15 +48,15 @@
                   </summary>
                   <msItem xml:id="Add_304-item1" n="1">
                      <locus from="1b" to="22a">ff. 1b-22a</locus>
-                     <author key="person_x00000008">
+                     <author key="person_x00000008" role="aut" change="#role-assignment">
                         <persName xml:lang="fa-Latn-x-lc" type="supplied">Sayyid Ghulām Ḥasanī Zaydī</persName>
                         <persName xml:lang="ar-Latn-x-lc" type="alt">al-Wāsiṭī</persName>
                         <persName xml:lang="fa">سيد غلام حسنی زيدی <addName xml:lang="ar" type="laqab">الواسطی</addName>
                         </persName>
                      </author>
-                     <title xml:lang="fa-Latn-x-lc" key="work_1307">Tārīkh-i Jawnpūr</title>
-                     <title xml:lang="fa" key="work_1307">تاريخ جونپور</title>
-                     <title xml:lang="en" type="desc" key="work_1307">History of Jawnpur</title>
+                     <title xml:lang="fa-Latn-x-lc" key="work_20141" change="#ids-cleanup">Tārīkh-i Jawnpūr</title>
+                     <title xml:lang="fa" key="work_20141" change="#ids-cleanup">تاريخ جونپور</title>
+                     <title xml:lang="en" type="desc" key="work_20141" change="#ids-cleanup">History of Jawnpur</title>
                      <incipit xml:lang="ar"/>
                      <explicit xml:lang="ar" defective="true"/>
                      <note>
@@ -72,7 +72,7 @@
                   </msItem>
                   <msItem xml:id="Add_304-item2" n="2">
                      <locus from="25a-41b">ff. 25a-41b</locus>
-                     <author key="person_x00000008">
+                     <author key="person_x00000008" role="aut" change="#role-assignment">
                         <persName xml:lang="fa-Latn-x-lc" type="supplied">Sayyid Ghulām Ḥasanī Zaydī</persName>
                         <persName xml:lang="ar-Latn-x-lc" type="alt">al-Wāsiṭī</persName>
                         <persName xml:lang="fa">سيد غلام حسنی زيدی <addName xml:lang="ar" type="laqab">الواسطی</addName>
@@ -96,7 +96,7 @@
                   </msItem>
                   <msItem xml:id="Add_304-item3" n="3">
                      <locus from="43-87">ff. 43-87</locus>
-                     <author key="person_f4580">
+                     <author key="person_f407" change="#ids-cleanup #role-assignment" role="aut">
                         <persName xml:lang="fa-Latn-x-lc" type="supplied">anonymous</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_2217">Tarāsul-i Shihābī</title>
@@ -119,7 +119,7 @@
                   </msItem>
                   <msItem xml:id="Add_304-item4" n="4">
                      <locus from="86b" to="87b">ff. 86b-87b</locus>
-                     <author key="person_f4580">
+                     <author key="person_f407" change="#ids-cleanup #role-assignment" role="aut">
                         <persName xml:lang="fa-Latn-x-lc" type="supplied">anonymous</persName>
                      </author>
                      <title xml:lang="en" type="desc" key="work_2218">Tables of cypher called raqam and some verses of poetry</title>
@@ -165,7 +165,7 @@
                         <origDate calendar="#Gregorian" notBefore="1434">Contains copies of documents dated in A.D. 1344, 1428 and 1434</origDate>
                      </ref>
                   </origin>
-                  <acquisition>Donated by <persName type="supplied" key="person_f476">Austin</persName>.</acquisition>
+                  <acquisition>Donated by <persName type="supplied" key="person_f476" role="fmo" change="#role-assignment">Austin</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
@@ -239,6 +239,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>

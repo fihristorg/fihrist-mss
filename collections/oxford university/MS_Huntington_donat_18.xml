@@ -46,7 +46,7 @@
                   <summary>The volume contains 130 leaves. It is a collection of miscellaneous pieces in Persian and Arabic in an unusual format. Through the greater part of the volume, four (and sometimes five) different texts run side by side on the same page. The centre of each page usually has two columns of writing; some treatises will be written in the right column of the front-side of a leaf and continued in the left-hand column of the back-side, while others will occupy the left column of the front-side of a leaf and the right-hand column of the back-side; the item catalogued here falls in the latter category. For a list of the other items, see the Concordance of Manuscripts (Appendix I)in Emilie Savage-Smith; A New Catalogue of Arabic Manuscripts in The Bodleian Library, University of Oxford. Volume I: Medicine, Oxford: OUP, 2011, and SEB I, cols. 1093−6 no. 1904, for further details.</summary>
                   <msItem xml:id="MS_Huntington_donat_18-item1" n="1">
                      <locus from="1" to="29">ff. 1v-29r (top lines)</locus>
-                     <author key="person_f2192">
+                     <author key="person_f2192" role="aut" change="#role-assignment">
                         <persName xml:lang="ar-Latn-x-lc">Maḥāmilī, Abū al-Ḥasan Muḥammad ibn Ahmad ibn Abī al-Qāsim</persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc" key="work_5693">Kitāb i Manāhī</title>
@@ -60,7 +60,7 @@
                   </msItem>
                   <msItem xml:id="MS_Huntington_donat_18-item2" n="2">
                      <locus from="30" to="36">ff. 30v-36r, centre-column (left on recto, right on verso)</locus>
-                     <author key="person_122088668" ref="http://viaf.org/viaf/122088668/">
+                     <author key="person_122088668" ref="http://viaf.org/viaf/122088668/" role="aut" change="#role-assignment">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">Shāfiʻī, Muḥammad ibn Idrīs, <date calendar="#Gregorian" from="0767" to="0820">767 or 8-820</date>
                         </persName>
                      </author>
@@ -73,7 +73,7 @@
                   </msItem>
                   <msItem xml:id="MS_Huntington_donat_18-item3" n="3">
                      <locus from="93" to="99">ff. 93v-99v, bottom lines</locus>
-                     <author key="person_f407">Anonymous</author>
+                     <author key="person_f407" role="aut" change="#role-assignment">Anonymous</author>
                      <title key="work_5695">Prayers and invocations</title>
                      <listBibl>
                         <bibl>Appendix Prayers</bibl>
@@ -83,7 +83,7 @@
                   </msItem>
                   <msItem xml:id="MS_Huntington_donat_18-item4" n="4">
                      <locus from="93" to="103">ff. 93v-103v</locus>
-                     <author key="person_f407">Anonymous</author>
+                     <author key="person_f407" role="aut" change="#role-assignment">Anonymous</author>
                      <title xml:lang="ar-Latn-x-lc" key="work_5696">Kitāb al-Arbaʻīn min aḥādīth al-rasūl</title>
                      <note>to top lines only of f. 103v</note>
                      <note>? identifiable with known versions</note>
@@ -95,13 +95,13 @@
                   </msItem>
                   <msItem xml:id="MS_Huntington_donat_18-item5" n="5">
                      <locus from="96" to="103">ff. 96v-103v, centre-column (left on recto right on verso)</locus>
-                     <author key="person_104252438" ref="http://viaf.org/viaf/104252438/">
+                     <author key="person_287984736" ref="http://viaf.org/viaf/287984736/" change="#ids-cleanup #role-assignment" role="aut">
                         <persName type="standard">Hippocrates, <date calendar="#Gregorian" when="-0450">(fl. c. 450s BC)</date>
                         </persName>
                         <persName xml:lang="ar">ابقراط</persName>
                      </author>
-                     <editor role="trl" key="person_97020948">
-                        <persName type="standard" xml:lang="ar-Latn-x-lc" ref="http://viaf.org/viaf/97020948/">Yaḥyá ibn al-Biṭrīq</persName>
+                     <editor role="trl" key="person_103373918" change="#ids-cleanup">
+                        <persName type="standard" xml:lang="ar-Latn-x-lc" ref="http://viaf.org/viaf/103373918/" change="#ids-cleanup">Yaḥyá ibn al-Biṭrīq</persName>
                      </editor>
                      <title xml:lang="ar-Latn-x-lc" key="work_5255">Kitāb al-Buthūr</title>
                      <title xml:lang="ar" key="work_5255">كتاب البثور</title>
@@ -127,7 +127,7 @@
                   </msItem>
                   <msItem xml:id="MS_Huntington_donat_18-item6" n="6">
                      <locus from="103" to="129">ff. 103v-129r, centre-column (right on recto, left on verso)</locus>
-                     <author key="person_68980610" ref="http://viaf.org/viaf/68980610/">
+                     <author key="person_68980610" ref="http://viaf.org/viaf/68980610/" role="aut" change="#role-assignment">
                         <persName type="standard" xml:lang="ar-Latn-x-lc">Qushayrī, ʻAbd al-Karīm ibn Hawāzin, <date calendar="#Gregorian" from="0986" to="1072">986-1072</date>
                         </persName>
                      </author>
@@ -291,6 +291,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-27">
             <persName>Andrew Morrison</persName> Normalized roles using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/normalize-roles.xsl">normalize-roles.xsl</ref>
          </change>

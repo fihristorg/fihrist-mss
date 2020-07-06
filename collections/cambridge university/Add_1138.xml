@@ -86,7 +86,7 @@
                   <origin>
                      <origDate calendar="#Gregorian" notBefore="0800" notAfter="1000">undated<!-- Please review date text, see https://git.io/fihrist-dates --></origDate>
                   </origin>
-                  <acquisition>Bought from <persName type="standard" ref="http://viaf.org/viaf/56683055" key="person_56683055">Professor E.H. Palmer</persName> and <persName type="supplied" key="person_f969">E.E. Tyrwhitt</persName> in <date calendar="#Gregorian">1878</date>.</acquisition>
+                  <acquisition>Bought from <persName type="standard" ref="http://viaf.org/viaf/56683055" key="person_56683055" role="fmo" change="#role-assignment">Professor E.H. Palmer</persName> and <persName type="supplied" key="person_f969" role="fmo" change="#role-assignment">E.E. Tyrwhitt</persName> in <date calendar="#Gregorian">1878</date>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
@@ -122,6 +122,9 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>

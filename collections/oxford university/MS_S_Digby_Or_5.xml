@@ -48,12 +48,12 @@
                   </summary>
                   <msItem xml:id="MS_S_Digby_Or_5-item1" n="1">
                      <locus from="1" to="86">ff. 1a-86b</locus>
-                     <author key="person_f3907">
+                     <author key="person_f3907" role="aut" change="#role-assignment">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Shaykh Yūsuf Būdh Īrichī (d. 834/1430-31)</persName>
                         <persName xml:lang="fa">شيخ يوسف بوذ ايرچی ت ٨۳۴ هـ</persName>
                      </author>
-                     <title xml:lang="fa-Latn-x-lc" key="work_5674">Minhāj al-ʻābidīn</title>
-                     <title xml:lang="fa" key="work_5674">منهاج العابدين</title>
+                     <title xml:lang="fa-Latn-x-lc" key="work_20600" change="#ids-cleanup">Minhāj al-ʻābidīn</title>
+                     <title xml:lang="fa" key="work_20600" change="#ids-cleanup">منهاج العابدين</title>
                      <incipit xml:lang="fa">و نیز گفته‌اند که عامر بن عیار قیش</incipit>
                      <explicit xml:lang="fa"/>
                      <colophon xml:lang="fa"/>
@@ -66,13 +66,13 @@
                   </msItem>
                   <msItem xml:id="MS_S_Digby_Or_5-item2" n="2">
                      <locus from="86" to="141">ff. 86-141b</locus>
-                     <author key="person_17351669" ref="http://viaf.org/viaf/17351669/">
+                     <author key="person_17351669" ref="http://viaf.org/viaf/17351669/" role="aut" change="#role-assignment">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">Simnānī, Aḥmad ibn Muḥammad, 1261-1336</persName>
                         <persName xml:lang="ar-Latn-x-lc">سمناني أحمد بن محمد</persName>
                         <persName xml:lang="ar-Latn-x-lc">Shaykh Rukn al-Dīn ʻAlāʼ al-Dawlah Simnānī</persName>
                         <persName xml:lang="ar">شيخ ركن الدين علاء الدولة سمناني</persName>
                      </author>
-                     <editor role="com" key="person_f1598">
+                     <editor role="com" key="person_2120536" change="#ids-cleanup">
                         <persName xml:lang="ar-Latn-x-lc">Iqbāl ibn Sābiq al-Sijistānī</persName>
                         <persName xml:lang="ar">اقبال بن سابق السجستاني</persName>
                      </editor>
@@ -200,6 +200,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-27">
             <persName>Andrew Morrison</persName> Normalized roles using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/normalize-roles.xsl">normalize-roles.xsl</ref>
          </change>

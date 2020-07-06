@@ -47,7 +47,7 @@
                      3 works by 3 authors on the subjects of Mecca, Caliphs, and Arabic letters
                   </summary>
                   <msItem xml:id="Qq_44-item1" n="1">
-                     <author key="person_90044748" ref="http://viaf.org/viaf/90044748/">
+                     <author key="person_90044748" ref="http://viaf.org/viaf/90044748/" role="aut" change="#role-assignment">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">Azraqī, Muḥammad ibn ʻAbd Allāh, d. ca. 865</persName>
                         <persName xml:lang="ar">الازرقي، محمد بن عبد الله القادر</persName>
                      </author>
@@ -66,7 +66,7 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="Qq_44-item2" n="2">
-                     <author key="person_4031200" ref="http://viaf.org/viaf/4031200/">
+                     <author key="person_4031200" ref="http://viaf.org/viaf/4031200/" role="aut" change="#role-assignment">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">Mahdī, Caliph, d. 785</persName>
                         <persName xml:lang="ar">المهدي</persName>
                      </author>
@@ -85,10 +85,10 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="Qq_44-item3" n="3">
-                     <author key="person_f4580">
+                     <author key="person_f407" change="#ids-cleanup #role-assignment" role="aut">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">anonymous</persName>
                      </author>
-                     <title xml:lang="en" type="desc" key="work_1094">Poem addressed to <persName xml:lang="ar-Latn-x-lc" key="person_f884">Daʼūd ibn ʻĪsá ibn Mūsá</persName>, governor of Mecca and Medina, from the people of Medina, persuading him to transfer his residence thither</title>
+                     <title xml:lang="en" type="desc" key="work_1094">Poem addressed to <persName xml:lang="ar-Latn-x-lc" key="person_f884" role="rcp" change="#role-assignment">Daʼūd ibn ʻĪsá ibn Mūsá</persName>, governor of Mecca and Medina, from the people of Medina, persuading him to transfer his residence thither</title>
                      <incipit xml:lang="ar"/>
                      <explicit xml:lang="ar" defective="true"/>
                      <note>
@@ -122,7 +122,7 @@
                </physDesc>
                <history>
                   <origin change="#fix-dates">undated</origin>
-                  <acquisition>Bequest of <persName key="person_f1655">J.L. Burckhardt (1784-1817)</persName> in <date calendar="#Gregorian">1819</date>.</acquisition>
+                  <acquisition>Bequest of <persName key="person_59176329" role="fmo" change="#role-assignment #ids-cleanup">J.L. Burckhardt (1784-1817)</persName> in <date calendar="#Gregorian">1819</date>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
@@ -168,6 +168,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>

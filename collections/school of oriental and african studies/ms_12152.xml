@@ -45,7 +45,7 @@
                      <note>Manuscript is written in several hands. Imperfect at both ends</note>
                   </summary>
                   <msItem xml:id="ms_12152-item1" n="1">
-                     <author key="person_f407">
+                     <author key="person_f407" role="aut" change="#role-assignment">
                         <persName>Anonymous</persName>
                      </author>
                      <title xml:lang="en" type="desc" key="work_10366">Persian tales</title>
@@ -57,7 +57,7 @@
                      <textLang mainLang="fa">Per</textLang>
                   </msItem>
                   <msItem xml:id="ms_12152-item2" n="2">
-                     <author key="person_f407">
+                     <author key="person_f407" role="aut" change="#role-assignment">
                         <persName>Anonymous</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_10367">Ḥikāyat-i dāstān-i Sayf al-Mulūk va Badī‘ al-Jamāl</title>
@@ -69,11 +69,11 @@
                      <textLang mainLang="fa">Per</textLang>
                   </msItem>
                   <msItem xml:id="ms_12152-item3" n="3">
-                     <author key="person_f407">
+                     <author key="person_f407" role="aut" change="#role-assignment">
                         <persName>Anonymous</persName>
                      </author>
-                     <title xml:lang="fa-Latn-x-lc" key="work_10368">Jāmi‘ al-Ḥikāyat</title>
-                     <title xml:lang="fa" key="work_10368">جامع الحکايات</title>
+                     <title xml:lang="fa-Latn-x-lc" key="work_2292" change="#ids-cleanup">Jāmi‘ al-Ḥikāyat</title>
+                     <title xml:lang="fa" key="work_2292" change="#ids-cleanup">جامع الحکايات</title>
                      <note>Breaks off near the beginning of Ḥikāyat-i Vazīr-i nuhum</note>
                      <incipit>حکایت پادشاه مصر غیاث نام که اورا فرزند نمیشد</incipit>
                      <note>
@@ -112,7 +112,7 @@
                         <origDate calendar="#Gregorian" when="1714">1714</origDate>
                      </ref>
                   </origin>
-                  <acquisition>Bequest of <persName key="person_f2131">Marsden</persName>
+                  <acquisition>Bequest of <persName key="person_f2131" role="fmo" change="#role-assignment">Marsden</persName>
                   </acquisition>
                </history>
                <additional>
@@ -152,6 +152,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>

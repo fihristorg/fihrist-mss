@@ -48,7 +48,7 @@
                   </summary>
                   <msItem xml:id="Add_922-item1" n="1" class="#translation">
                      <locus from="1b" to="177a">ff. 1b-177a</locus>
-                     <author key="person_24264869">
+                     <author key="person_24264869" role="aut" change="#role-assignment">
                         <persName ref="http://viaf.org/viaf/24264869/" xml:lang="fa-Latn-x-lc" type="standard">Saʻdullāh Masīḥ, active 17th century</persName>
                         <persName xml:lang="fa">سعد الله مسيح <addName xml:lang="fa" type="nisbah">كيرناوی</addName>
                         </persName>
@@ -70,7 +70,7 @@
                            </ref>
                         </bibl>
                         <bibl type="text-relations">Persian version of the <title xml:lang="sa-Latn-x-lc">Rāmāyaṇa <foreign xml:lang="fa">رام آين</foreign>
-                           </title> of <author key="person_102331839" ref="http://viaf.org/viaf/102331839/">
+                           </title> of <author key="person_288016626" ref="http://viaf.org/viaf/288016626/" role="ant" change="#role-assignment #ids-cleanup">
                               <persName xml:lang="fa-Latn-x-lc">Vālmīki</persName>
                               <persName xml:lang="fa">والميكى</persName>
                            </author>.</bibl>
@@ -79,7 +79,7 @@
                   </msItem>
                   <msItem xml:id="Add_922-item2" n="2">
                      <locus from="177b" to="177b">f. 177b</locus>
-                     <author key="person_f4580">
+                     <author key="person_f407" change="#ids-cleanup #role-assignment" role="aut">
                         <persName xml:lang="fa" type="standard">anonymous</persName>
                      </author>
                      <title xml:lang="en" type="desc" key="work_1191">Religious meditations</title>
@@ -100,11 +100,11 @@
                   </msItem>
                   <msItem xml:id="Add_922-item3" n="3">
                      <locus from="178a" to="181a">ff. 178a-181a</locus>
-                     <author key="person_30738316" ref="http://viaf.org/viaf/30738316/">
+                     <author key="person_30738316" ref="http://viaf.org/viaf/30738316/" role="aut" change="#role-assignment">
                         <persName xml:lang="fa" type="standard">Vaḥshī Bāfqī, d. 1583</persName>
                         <persName xml:lang="fa">ملا وحشى بافقى</persName>
                      </author>
-                     <title xml:lang="en" type="desc" key="work_1192">Collection of poems</title>
+                     <title xml:lang="en" type="desc" key="work_20128" change="#ids-cleanup">Collection of poems</title>
                      <incipit xml:lang="ar"/>
                      <explicit xml:lang="ar" defective="true"/>
                      <note>
@@ -122,11 +122,11 @@
                   </msItem>
                   <msItem xml:id="Add_922-item4" n="4">
                      <locus from="181b" to="187b">ff. 181b-187b</locus>
-                     <author key="person_100206721" ref="http://viaf.org/viaf/100206721/">
+                     <author key="person_100206721" ref="http://viaf.org/viaf/100206721/" role="aut" change="#role-assignment">
                         <persName xml:lang="fa" type="standard">Saʻdī</persName>
                         <persName xml:lang="fa">سعدی</persName>
                      </author>
-                     <title xml:lang="en" type="desc" key="work_1192">Collection of poems</title>
+                     <title xml:lang="en" type="desc" key="work_20127" change="#ids-cleanup">Collection of poems</title>
                      <incipit xml:lang="ar"/>
                      <explicit xml:lang="ar" defective="true"/>
                      <note>
@@ -159,7 +159,7 @@
                   </objectDesc>
                   <handDesc>
                      <handNote scope="major" script="unknown">
-                        <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f2011">Laʻalchand <foreign xml:lang="fa">لعلچند</foreign>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f2011" role="scr" change="#role-assignment">Laʻalchand <foreign xml:lang="fa">لعلچند</foreign>
                         </persName>
                      </handNote>
                   </handDesc>
@@ -173,7 +173,7 @@
                      <origDate notBefore="1821" notAfter="1822" calendar="#Hijri-qamari">1237</origDate>
                      <origDate calendar="#Gregorian" when="1821">1821-2</origDate>
                   </origin>
-                  <acquisition>Bought from <persName key="person_f3541">Rodgers</persName> in <date calendar="#Gregorian">1874</date>.</acquisition>
+                  <acquisition>Bought from <persName key="person_f3541" role="fmo" change="#role-assignment">Rodgers</persName> in <date calendar="#Gregorian">1874</date>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
@@ -242,6 +242,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>

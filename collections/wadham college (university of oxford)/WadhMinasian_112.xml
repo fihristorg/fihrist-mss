@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7802">
@@ -80,7 +80,7 @@
                             <note type="content-genre">Islamic jurisprudence</note>
                             <title xml:lang="ar-Latn-x-lc" key="work_2970">Murshid al-ʿavām</title>
                             <title xml:lang="ar" key="work_2970">مرشد العوام</title>
-                            <author key="person_3964249">
+                            <author key="person_3964249" role="aut" change="#role-assignment">
                                 <persName xml:lang="ar-Latn-x-lc" type="standard">Qummī, Abū al-Qāsim, -1816‏</persName>
                                 <persName xml:lang="ar-Latn-x-lc" type="alt">Mīrzā-yi Qumī, Abū al-Qāsim ibn Ḥasan Gīlānī Shaftī (1151-1231 AH/1738-1816)</persName>
                                 <persName xml:lang="ar">قمی،‌ ابوالقاسم، -۱۸۱۶</persName>
@@ -126,8 +126,8 @@
                         <handDesc>
                             <handNote scope="major" script="naskh" medium="blackink">
                                 <desc>Graceful Naskh, one hand, regular hand.</desc>
-                                <persName xml:lang="ar-Latn-x-lc" key="person_f1413">Ibn Mīr Niẓām al-Raz̤avī</persName>
-                                <persName xml:lang="ar" key="person_f1413">ابن میر نظام الرضوی</persName>
+                                <persName xml:lang="ar-Latn-x-lc" key="person_f1413" role="scr" change="#role-assignment">Ibn Mīr Niẓām al-Raz̤avī</persName>
+                                <persName xml:lang="ar" key="person_f1413" role="scr" change="#role-assignment">ابن میر نظام الرضوی</persName>
                             </handNote>
                         </handDesc>
                         <additions>
@@ -155,10 +155,10 @@
                         <msItem>
                             <locus from="139b" to="234b">ff. 139b-234b</locus>
                             <textLang mainLang="fa">Persian</textLang>
-                            <title xml:lang="fa-Latn-x-lc" key="work_2971">ʾUṣūl-i dīn</title>
-                            <title xml:lang="fa" key="work_2971">اصول دین</title>
+                            <title xml:lang="fa-Latn-x-lc" key="work_20394" change="#ids-cleanup">ʾUṣūl-i dīn</title>
+                            <title xml:lang="fa" key="work_20394" change="#ids-cleanup">اصول دین</title>
                             <note type="content-genre">Principles of Islamic jurisprudence</note>
-                            <author key="person_3964249">
+                            <author key="person_3964249" role="aut" change="#role-assignment">
                                 <persName xml:lang="fa-Latn-x-lc" type="standard">Qummī, Abū al-Qāsim, -1816‏</persName>
                                 <persName xml:lang="fa-Latn-x-lc" type="alt">Jīlānī, Abū al-Qāsim ibn Ḥasan (1231 AH/1816)</persName>
                                 <persName xml:lang="fa">قمی،‌ ابوالقاسم، -۱۸۱۶</persName>
@@ -262,6 +262,12 @@
             </textClass>
         </profileDesc>
         <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
             <change when="2019-08-14"> Revamped according to the new template for multi part items.
                 <persName>Mohammad Emami</persName>
             </change>

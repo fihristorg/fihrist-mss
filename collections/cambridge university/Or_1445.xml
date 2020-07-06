@@ -45,13 +45,13 @@
                <msContents>
                   <summary>The manuscript contains parts two and three of the work only</summary>
                   <msItem xml:id="Or_1445-item1">
-                     <author key="person_90042555" ref="http://viaf.org/viaf/90042555/">
+                     <author key="person_90042555" ref="http://viaf.org/viaf/90042555/" role="aut" change="#role-assignment">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">Rāzī, Fakhr al-Dīn Muḥammad ibn ʻUmar, 1149 or 50-1210</persName>
                         <persName xml:lang="ar">الرازي، فخر الدين محمد بن عمر بن الحسين بن الخطيب <addName xml:lang="ar" type="kunyah">ابو عبد الله</addName>
                         </persName>
                      </author>
-                     <title xml:lang="ar-Latn-x-lc" key="work_1522">Sharḥ ʻuyūn al-ḥikmah</title>
-                     <title xml:lang="ar" key="work_1522">شرح عيون الحكمة</title>
+                     <title xml:lang="ar-Latn-x-lc" key="work_20178" change="#ids-cleanup">Sharḥ ʻuyūn al-ḥikmah</title>
+                     <title xml:lang="ar" key="work_20178" change="#ids-cleanup">شرح عيون الحكمة</title>
                      <incipit xml:lang="ar"/>
                      <explicit xml:lang="ar" defective="true"/>
                      <note>
@@ -62,7 +62,7 @@
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/arberry/view.php?id=22">no. 236</ref>
                         </bibl>
                         <bibl type="text-relations">Commentary on the <title xml:lang="ar-Latn-x-lc">ʻUyūn al-ḥikmah <foreign xml:lang="ar">عيون الحكمة</foreign>
-                           </title> of <author key="person_89770781" ref="http://viaf.org/viaf/89770781/">
+                           </title> of <author key="person_89770781" ref="http://viaf.org/viaf/89770781/" role="ant" change="#role-assignment">
                               <persName xml:lang="ar-Latn-x-lc">Avicenna, 980-1037</persName> (<persName xml:lang="ar">ابن سينا</persName>
                            </author>.</bibl>
                      </listBibl>
@@ -92,7 +92,7 @@
                      <origDate calendar="#Hijri-qamari" from="1100" to="1200">12th/18th century<!-- Please review date attributes, see https://git.io/fihrist-dates --></origDate>
                      <origDate calendar="#Gregorian" from="1688" to="1785">Gregorian<!-- Please review date text, see https://git.io/fihrist-dates --></origDate>
                   </origin>
-                  <acquisition>Bequest of <persName xml:lang="en" key="person_64055571" ref="http://viaf.org/viaf/64055571/">R. A. Nicholson</persName>.</acquisition>
+                  <acquisition>Bequest of <persName xml:lang="en" key="person_64055571" ref="http://viaf.org/viaf/64055571/" role="fmo" change="#role-assignment">R. A. Nicholson</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
@@ -147,6 +147,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>

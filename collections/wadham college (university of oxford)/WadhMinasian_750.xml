@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_13138">
@@ -56,11 +56,11 @@
                                 <title xml:lang="ara" key="work_3015">شرح التصریف العزی</title>
                                 <title xml:lang="ara-Latn-x-lc" type="alt" key="work_3015">Sharḥ-i Taṣrīf</title>
                                 <title xml:lang="ara" type="alt" key="work_3015">شرح تصریف</title>
-                                <author key="person_100374544">
+                                <author key="person_641145857886423020766" change="#ids-cleanup #role-assignment" role="aut">
                                     <persName xml:lang="ara-Latn-x-lc" type="standard">‎Taftāzānī, Masʿūd ibn ʿUmar, 1322-1389?‏</persName>
                                     <persName xml:lang="ara" type="standard">تفتازانی، مسعود ابن عمر، ۱۳۲۲-۱۳۸۹؟</persName>
                                     <persName xml:lang="ara-Latn-x-lc" type="alt">Taftāzānī, Masʿūd ibn ʿUmar, 722-792 AH, 1322-1390</persName>
-                                    <persName xml:lang="ara"  type="alt">تفتازانی، مسعود بن عمر، ۷۲۲-۷۹۲ق/ ۱۳۲۲-۱۳۹۰</persName>
+                                    <persName xml:lang="ara" type="alt">تفتازانی، مسعود بن عمر، ۷۲۲-۷۹۲ق/ ۱۳۲۲-۱۳۹۰</persName>
                                     <addName xml:lang="ara-Latn-x-lc" type="kunyah">Saʿd al-Dīn</addName>
                                     <addName xml:lang="ara" type="kunyah">سعد الدین</addName>
                                 </author>
@@ -174,7 +174,13 @@
                 </keywords>
             </textClass>
         </profileDesc>
-        <revisionDesc>          <change when="2019-08-06"> Binding information updated.             <persName>Mohammad Emami</persName>          </change>
+        <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>          <change when="2019-08-06"> Binding information updated.             <persName>Mohammad Emami</persName>          </change>
             <change when="2019-06-10">
                 <persName>Mohammad Emami</persName>
             </change>

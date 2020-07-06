@@ -49,7 +49,7 @@
                   <msItem xml:id="Add_3603-item1">
                      <msItem xml:id="Add_3603-item1-item1" n="1">
                         <locus from="2b" to="23a">ff, 2b-23a</locus>
-                        <author key="person_63942373" ref="http://viaf.org/viaf/63942373/">
+                        <author key="person_63942373" ref="http://viaf.org/viaf/63942373/" role="aut" change="#role-assignment">
                            <persName xml:lang="ar-Latn-x-lc" type="standard">ʻAqīlah, Muḥammad ibn Aḥmad, d. 1737 or 8</persName>
                            <persName xml:lang="ar">عقيلة، محمد بن أحمد</persName>
                         </author>
@@ -69,7 +69,7 @@
                      </msItem>
                      <msItem xml:id="Add_3603-item1-item2" n="2">
                         <locus from="24b" to="63b">ff, 24b-63b</locus>
-                        <author key="person_96969918" ref="http://viaf.org/viaf/96969918/">
+                        <author key="person_96969918" ref="http://viaf.org/viaf/96969918/" role="aut" change="#role-assignment">
                            <persName xml:lang="ar-Latn-x-lc" type="standard">Nābulusī, ʻAbd al-Ghanī ibn Ismāʻīl, 1641-1731</persName>
                            <persName xml:lang="ar">النابلسي، عبد الغني بن اسماعيل</persName>
                         </author>
@@ -104,7 +104,7 @@
                   </objectDesc>
                   <handDesc>
                      <handNote scope="major" script="unknown">
-                        <persName xml:lang="ar-Latn-x-lc" key="person_f2755">Muḥammad ibn Shaykh ʻAlī al-Khaṭīb al-Ḥamawī <foreign xml:lang="ar">محمد بن شيخ علي الخطيب الحموي</foreign>
+                        <persName xml:lang="ar-Latn-x-lc" key="person_f2755" role="scr" change="#role-assignment">Muḥammad ibn Shaykh ʻAlī al-Khaṭīb al-Ḥamawī <foreign xml:lang="ar">محمد بن شيخ علي الخطيب الحموي</foreign>
                         </persName>
                      </handNote>
                   </handDesc>
@@ -114,7 +114,7 @@
                      <origDate notBefore="1713" notAfter="1714" calendar="#Hijri-qamari">1125</origDate>
                      <origDate calendar="#Gregorian" when="1713">1713</origDate>
                   </origin>
-                  <acquisition>Bought from <persName key="person_f1135">Gejou</persName> in <date calendar="#Gregorian">1899</date>.</acquisition>
+                  <acquisition>Bought from <persName key="person_f1247" role="fmo" change="#role-assignment #ids-cleanup">Gejou</persName> in <date calendar="#Gregorian">1899</date>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
@@ -167,6 +167,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>

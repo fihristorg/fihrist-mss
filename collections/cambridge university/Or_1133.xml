@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_15259">
     <teiHeader xmlns="http://www.tei-c.org/ns/1.0">
@@ -18,8 +19,7 @@
                         <street>West Road</street>
                         <settlement>Cambridge</settlement>
                         <postCode>CB3 9DR</postCode>
-                        <addrLine><ref target="http://www.lib.cam.ac.uk/deptserv/neareastern/"
-                                >Cambridge University Library </ref></addrLine>
+                        <addrLine><ref target="http://www.lib.cam.ac.uk/deptserv/neareastern/">Cambridge University Library </ref></addrLine>
                         <addrLine><email>near_eastern@lib.cam.ac.uk</email></addrLine>
                     </address>
                 </pubPlace>
@@ -49,8 +49,7 @@
                             <locus>2v-37v </locus>
                             <title type="desc">A treatise on confession and absolution.
                                         <note><p>This includes various penitential canons including
-                                            52 of <persName key="person_66823251"
-                                            ref="http://syriaca.org/person/212">Dionysius bar
+                                            52 of <persName key="person_66823251" ref="http://syriaca.org/person/212" role="aut" change="#role-assignment">Dionysius bar
                                             Ṣalibi. </persName></p></note>
                             </title>
                         </msItem>
@@ -68,8 +67,7 @@
 
                         <msItem>
                             <locus>47r-85v</locus>
-                            <author><persName key="person_81959220"
-                                >Bar Hebraeus</persName></author>
+                            <author role="aut" change="#role-assignment"><persName key="person_81959220">Bar Hebraeus</persName></author>
                             <title>Book of the dove</title>
                         </msItem>
 
@@ -89,9 +87,7 @@
 
                         <msItem>
                             <locus>112v-127v </locus>
-                            <title type="desc">Questions of <persName key="person_88967224"
-                                    >Basil</persName> and <persName key="person_46897094"
-                                    >Gregory</persName>. </title>
+                            <title type="desc">Questions of <persName key="person_88967224" role="ant" change="#role-assignment">Basil</persName> and <persName key="person_46897094" role="ant" change="#role-assignment">Gregory</persName>. </title>
                             <note>Imperfect. </note>
                         </msItem>
 
@@ -103,15 +99,14 @@
 
                         <msItem>
                             <locus>131r-164v</locus>
-                            <title type="desc">Martyrdom of Mar <persName key="person_231940395"></persName>Giwargis. </title>
+                            <title type="desc">Martyrdom of Mar <persName key="person_231940395" role="dpc" change="#role-assignment"/>Giwargis. </title>
 
                         </msItem>
 
                         <msItem>
                             <locus>164r-187r</locus>
                             <title>A memra on Alexander's entry into the land of darkness. </title>
-                            <note><p>A version of the verse-history of <persName
-                                        key="person_101353608">Alexander the
+                            <note><p>A version of the verse-history of <persName key="person_88742742" role="dpc" change="#role-assignment #ids-cleanup">Alexander the
                                         Great.</persName>
                                 </p></note>
 
@@ -129,8 +124,7 @@
                         </objectDesc>
                         <handDesc>
                             <handNote scope="sole" script="serto">
-                                <p>Written in a good serto hand of the <date notBefore="1600"
-                                        notAfter="1711">17th-18th century. </date></p>
+                                <p>Written in a good serto hand of the <date notBefore="1600" notAfter="1711">17th-18th century. </date></p>
                             </handNote>
                         </handDesc>
                         <bindingDesc>
@@ -140,23 +134,19 @@
                     <history>
                         <origin/>
                         <provenance>
-                            <p>Presented by <persName>Huw Ifor Lloyd, </persName><date
-                                    calendar="Gregorian" when="1928">1928. </date></p>
+                            <p>Presented by <persName>Huw Ifor Lloyd, </persName><date calendar="Gregorian" when="1928">1928. </date></p>
                         </provenance>
                         <acquisition/>
                     </history>
                     <additional>
                         <adminInfo>
                             <recordHist>
-                                <source>For a full description see J. F. Coakley, <hi rend="italic"
-                                        >Catalogue of Syriac manuscripts in Cambridge University
+                                <source>For a full description see J. F. Coakley, <hi rend="italic">Catalogue of Syriac manuscripts in Cambridge University
                                         Library acquired since 1901</hi> (2018). </source>
                             </recordHist>
                             <availability status="restricted">
                                 <p>Entry to read in the Library is permitted only on presentation of
-                                    a valid reader's card. For admissions procedures contact <ref
-                                        target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/"
-                                        >Cambridge University Library Admissions</ref>. Contact
+                                    a valid reader's card. For admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>. Contact
                                         <email>near_eastern@lib.cam.ac.uk</email> for further
                                     information on the availability of this manuscript.</p>
                             </availability>
@@ -187,8 +177,14 @@
             </textClass>
         </profileDesc>
         <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
             <change when="2018">
-                <persName key="person_32017775">J. F.
+                <persName key="person_32017775" role="dtm" change="#role-assignment">J. F.
                     Coakley</persName></change>
 
         </revisionDesc>

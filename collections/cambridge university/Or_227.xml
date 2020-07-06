@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_15240">
     <teiHeader xmlns="http://www.tei-c.org/ns/1.0">
@@ -17,8 +18,7 @@
                         <street>West Road</street>
                         <settlement>Cambridge</settlement>
                         <postCode>CB3 9DR</postCode>
-                        <addrLine><ref target="http://www.lib.cam.ac.uk/deptserv/neareastern/"
-                                >Cambridge University Library </ref></addrLine>
+                        <addrLine><ref target="http://www.lib.cam.ac.uk/deptserv/neareastern/">Cambridge University Library </ref></addrLine>
                         <addrLine><email>near_eastern@lib.cam.ac.uk</email></addrLine>
                     </address>
                 </pubPlace>
@@ -57,8 +57,7 @@
                                 <p>Written in a fine formal serto hand in a village near
                                         <placeName>Melitene </placeName>in <placeName>Cappadocia
                                     </placeName>in <date calendar="Gregorian" when="1011">1011
-                                    </date>CE or perhaps <date calendar="Gregorian" when="1061"
-                                        >1061</date> CE (the date in the colophon being hard to make
+                                    </date>CE or perhaps <date calendar="Gregorian" when="1061">1061</date> CE (the date in the colophon being hard to make
                                     out). </p>
                             </handNote>
                         </handDesc>
@@ -77,15 +76,12 @@
                     <additional>
                         <adminInfo>
                             <recordHist>
-                                <source>For a full description see J. F. Coakley, <hi rend="italic"
-                                        >Catalogue of Syriac manuscripts in Cambridge University
+                                <source>For a full description see J. F. Coakley, <hi rend="italic">Catalogue of Syriac manuscripts in Cambridge University
                                         Library acquired since 1901</hi> (2018). </source>
                             </recordHist>
                             <availability status="restricted">
                                 <p>Entry to read in the Library is permitted only on presentation of
-                                    a valid reader's card. For admissions procedures contact <ref
-                                        target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/"
-                                        >Cambridge University Library Admissions</ref>. Contact
+                                    a valid reader's card. For admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>. Contact
                                         <email>near_eastern@lib.cam.ac.uk</email> for further
                                     information on the availability of this manuscript.</p>
                             </availability>
@@ -108,7 +104,7 @@
             <textClass>
                 <keywords scheme="#LCSH">
                     <list>
-                        <item><ref target="	https://lccn.loc.gov/n79063688">Bible.
+                        <item><ref target=" https://lccn.loc.gov/n79063688">Bible.
                                 Gospels--Syriac--Versions--Ḥarklean. </ref>.</item>
 
                     </list>
@@ -116,8 +112,11 @@
             </textClass>
         </profileDesc>
         <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
             <change when="2018">
-                <persName key="person_32017775">J. F.
+                <persName key="person_32017775" role="dtm" change="#role-assignment">J. F.
                     Coakley</persName></change>
 
         </revisionDesc>

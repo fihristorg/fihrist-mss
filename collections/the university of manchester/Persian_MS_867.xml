@@ -43,7 +43,7 @@
                   <summary change="#add-summary2">
                      Two works by Fattāḥī (Persian literature)</summary>
                                     <msItem xml:id="Persian_MS_867-item1" n="1">
-                     <author key="person_71533966" ref="http://viaf.org/viaf/71533966/">
+                     <author key="person_71533966" ref="http://viaf.org/viaf/71533966/" role="aut" change="#role-assignment">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Fattāḥī, -approximately 1448</persName>
                         <persName xml:lang="fa">فتاحی</persName>
                      </author>
@@ -56,14 +56,14 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="Persian_MS_867-item2" n="2">
-                     <author key="person_71533966" ref="http://viaf.org/viaf/71533966/">
+                     <author key="person_71533966" ref="http://viaf.org/viaf/71533966/" role="aut" change="#role-assignment">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Fattāḥī, -approximately 1448</persName>
                         <persName xml:lang="fa">فتاحی</persName>
                      </author>
-                     <title xml:lang="fa-Latn-x-lc" key="work_7201">Dil</title>
-                     <title xml:lang="fa-Latn-x-lc" type="alt" key="work_7201">Ḥusn u dil</title>
-                     <title xml:lang="fa" key="work_7201">دل</title>
-                     <title xml:lang="fa" type="alt" key="work_7201">حسن و دل</title>
+                     <title xml:lang="fa-Latn-x-lc" key="work_21036" change="#ids-cleanup">Dil</title>
+                     <title xml:lang="fa-Latn-x-lc" type="alt" key="work_21036" change="#ids-cleanup">Ḥusn u dil</title>
+                     <title xml:lang="fa" key="work_21036" change="#ids-cleanup">دل</title>
+                     <title xml:lang="fa" type="alt" key="work_21036" change="#ids-cleanup">حسن و دل</title>
                      <incipit xml:lang="ar" type="basmalla"/>
                      <explicit xml:lang="ar"/>
                      <textLang mainLang="fa">Persian</textLang>
@@ -82,7 +82,7 @@
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="naskh" medium="ink">Copied by <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f2694">Muḥammad bin Ḥasan Kātib Iṣfahānī <foreign xml:lang="fa">محمد ابن حسن کاتب اصفهانی</foreign>
+                     <handNote scope="major" script="naskh" medium="ink">Copied by <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f2694" role="scr" change="#role-assignment">Muḥammad bin Ḥasan Kātib Iṣfahānī <foreign xml:lang="fa">محمد ابن حسن کاتب اصفهانی</foreign>
                         </persName>
                      </handNote>
                   </handDesc>
@@ -93,14 +93,14 @@
                <history>
                  <origin><origDate calendar="#Hijri-qamari" when="1562">970 AH (1562 CE)</origDate></origin>
                   <acquisition>
-                     <p>Purchased by Enriqueta Rylands, on behalf of the John Rylands Library, in <date calendar="#Gregorian" when="1901">1901</date> from <persName type="standard" ref="http://viaf.org/viaf/9985420/#Crawford,_James_Ludovic_Lindsay,_Earl_of,_1847-1913" key="person_9985420">James Ludovic Lindsay, 26th Earl of Crawford</persName>.</p>
+                     <p>Purchased by Enriqueta Rylands, on behalf of the John Rylands Library, in <date calendar="#Gregorian" when="1901">1901</date> from <persName type="standard" ref="http://viaf.org/viaf/9985420/#Crawford,_James_Ludovic_Lindsay,_Earl_of,_1847-1913" key="person_9985420" role="fmo" change="#role-assignment">James Ludovic Lindsay, 26th Earl of Crawford</persName>.</p>
                   </acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
                         <source>
-                           <p>Bibliographical description based on an index created by <persName key="person_f3520">Reza Navabpour</persName> circa <date calendar="#Gregorian" notBefore="1992" notAfter="1994">1993</date>. Identification of provenance based on manuscript catalogue by Michael Kerney, <date calendar="#Gregorian" notAfter="1901" notBefore="1868">circa 1890s.</date>
+                           <p>Bibliographical description based on an index created by <persName key="person_56454583" role="cataloguer" change="#role-assignment #ids-cleanup">Reza Navabpour</persName> circa <date calendar="#Gregorian" notBefore="1992" notAfter="1994">1993</date>. Identification of provenance based on manuscript catalogue by Michael Kerney, <date calendar="#Gregorian" notAfter="1901" notBefore="1868">circa 1890s.</date>
                            </p>
                         </source>
                      </recordHist>
@@ -133,6 +133,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>

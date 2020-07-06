@@ -47,7 +47,7 @@
                      2 works by 2 authors on the subjects of History and Ethiopa
                   </summary>
                   <msItem xml:id="MS_Bodl_Or_319-item1" n="1" class="#extract">
-                     <author key="person_94194423" ref="http://www.viaf.org/viaf/94194423/">
+                     <author key="person_94194423" ref="http://www.viaf.org/viaf/94194423/" role="aut" change="#role-assignment">
                         <persName type="standard">Gagnier, Jean, <date calendar="#Gregorian" from="1670" to="1740">1670?-1740.</date>
                         </persName>
                      </author>
@@ -61,12 +61,12 @@
                   </msItem>
                   <msItem xml:id="MS_Bodl_Or_319-item2" n="2" class="#extract">
                      <locus from="107" to="124">PP. 107-124</locus>
-                     <author key="person_26337751" ref="http://viaf.org/viaf/26337751/">
+                     <author key="person_305409950" ref="http://viaf.org/viaf/305409950/" change="#ids-cleanup #role-assignment" role="aut">
                         <persName type="standard" xml:lang="ar-Latn-x-lc">Bukhārī, Muḥammad ibn ʻAbd al-Bāqī, fl. <date calendar="#Gregorian" when="1583">1583</date>
                         </persName>
                      </author>
-                     <title xml:lang="ar-Latn-x-lc" key="work_3185">al-Ṭirāz al-manqūsh fī maḥāsin al-Ḥubūsh</title>
-                     <note>Excerpts transcribed by <persName key="person_f1650">J. Gagnier</persName>, ?from MS. Laud Or. 120</note>
+                     <title xml:lang="ar-Latn-x-lc" key="work_936" change="#ids-cleanup">al-Ṭirāz al-manqūsh fī maḥāsin al-Ḥubūsh</title>
+                     <note>Excerpts transcribed by <persName key="person_94194423" role="scr" change="#role-assignment #ids-cleanup">J. Gagnier</persName>, ?from MS. Laud Or. 120</note>
                      <listBibl>
                         <bibl>GAL II 385</bibl>
                         <bibl>[NAM. 136 (3)]</bibl>
@@ -186,6 +186,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>

@@ -47,7 +47,7 @@
                      2 works by 2 authors on the subject of Iran
                   </summary>
                   <msItem xml:id="I_4-item1" n="1">
-                     <author key="person_f4580">
+                     <author key="person_f407" change="#ids-cleanup #role-assignment" role="aut">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">anonymous</persName>
                      </author>
                      <title xml:lang="en" type="desc" key="work_45">Tract composed at the request of a physician named Miīrzā ʻAlī Akbar Khān</title>
@@ -59,7 +59,7 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="I_4-item2" n="2" class="#translation">
-                     <author key="person_26499401" ref="http://viaf.org/viaf/26499401/">
+                     <author key="person_26499401" ref="http://viaf.org/viaf/26499401/" role="aut" change="#role-assignment">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">Qummī, Ḥasan ibn ʻAlī, fl. 1403</persName>
                         <persName xml:lang="ar">حسن بن علي بن حسن بن عبد الملك <addName xml:lang="ar" type="nisbah">قمي</addName>
                         </persName>
@@ -78,7 +78,7 @@
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/nicholson1932/view.php?id=142"/>
                         </bibl>
                         <bibl type="text-relations">Persian version of the <title xml:lang="ar-Latn-x-lc">Taʼrīkh Qum <foreign xml:lang="ar">تاريخ قم</foreign>
-                           </title> of <author key="person_31911638" ref="http://viaf.org/viaf/31911638/">
+                           </title> of <author key="person_306133724" ref="http://viaf.org/viaf/306133724/" role="ant" change="#role-assignment #ids-cleanup">
                               <persName xml:lang="ar-Latn-x-lc">Qummī, Ḥasan ibn Muḥammad, d. 1015 or 16</persName>
                               <persName xml:lang="ar">حسن بن محمد القمي</persName>
                            </author>.</bibl>
@@ -106,7 +106,7 @@
                </physDesc>
                <history>
                   <origin change="#fix-dates">undated</origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/">E. G. Browne</persName>.</acquisition>
+                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
@@ -161,6 +161,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>

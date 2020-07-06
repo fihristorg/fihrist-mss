@@ -1,4 +1,5 @@
-﻿<?oxygen RNGSchema="enrich-wamcp.rnc" type="compact"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="enrich-wamcp.rnc" type="compact"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_12988">
     <teiHeader xmlns="http://www.tei-c.org/ns/1.0">
         <fileDesc>
@@ -17,8 +18,7 @@
                         <street>Trinity Street</street>
                         <settlement>Cambridge</settlement>
                         <postCode>CB2 1TQ</postCode>
-                        <addrLine><ref target="https://www.trin.cam.ac.uk/library/wren-library/"
-                                >Trinity College Library</ref></addrLine>
+                        <addrLine><ref target="https://www.trin.cam.ac.uk/library/wren-library/">Trinity College Library</ref></addrLine>
                         <addrLine><email>wren.library@trin.cam.ac.uk</email></addrLine>
                     </address>
                 </pubPlace>
@@ -44,14 +44,14 @@
                         <summary>An Arabic translation of the Spherics of Theodosius</summary>
                         <msItem xml:id="R_13_52-item1">
 
-                            <author key="person_25377100">
+                            <author key="person_25377100" role="aut" change="#role-assignment">
                                 <persName xml:lang="en">Theodosius, 1st cent. B.C.</persName>
                                 <persName xml:lang="ar">ثيودوسيوس</persName>
                             </author>
                             
                             
                           
-                            <author key="person_36906875">
+                            <author key="person_36906875" role="aut" change="#role-assignment">
                                 <persName xml:lang="ar-Latn-x-lc">Qusṭā ibn Lūqā,‏ ‎d.
                                     approximately 820-approximately 912</persName>
                                 <persName xml:lang="ar">قسطا بن لوقا‏</persName>
@@ -60,7 +60,7 @@
                       
 
                             <title xml:lang="ar-Latn-x-lc" key="work_6068">Kitāb Ukar</title>
-                            <title xml:lang="ar" key="work_2444">كتاب أكر</title>
+                            <title xml:lang="ar" key="work_6068" change="#ids-cleanup">كتاب أكر</title>
                             <title xml:lang="ar" type="alt">أكر ثاودوسيوس </title>
                             <note>This was translated from Greek to Arabic by Qusṭā ibn Lūqā at
                                 the order of <persName xml:lang="ar-Latn-x-lc">Caliph al-Mustaʿīn
@@ -79,14 +79,10 @@
                                 ما أردنا وتمت</explicit>
                             <listBibl>
                                 <bibl>
-                                    <ref
-                                        target="http://www.lib.cam.ac.uk/arabic_catalogues/browne1922/view.php?id=13"
-                                        >no. 83</ref>
+                                    <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne1922/view.php?id=13">no. 83</ref>
                                 </bibl>
                                 <bibl>
-                                    <ref
-                                        target="https://www.trin.cam.ac.uk/library/library-catalogues/"
-                                        >Palmer, p. 139</ref>
+                                    <ref target="https://www.trin.cam.ac.uk/library/library-catalogues/">Palmer, p. 139</ref>
                                 </bibl>
                             </listBibl>
                             <textLang mainLang="ar">Arabic</textLang>
@@ -136,9 +132,7 @@
                             </recordHist>
                             <availability status="restricted">
                                 <p>Entry to read in the Library is permitted only on presentation of
-                                    a valid reader's card. (For admissions procedures contact <ref
-                                        target="https://www.trin.cam.ac.uk/library/wren-library/#Visit"
-                                        >Wren Library Admissions</ref>). Contact
+                                    a valid reader's card. (For admissions procedures contact <ref target="https://www.trin.cam.ac.uk/library/wren-library/#Visit">Wren Library Admissions</ref>). Contact
                                         <email>wren.library@trin.cam.ac.uk</email> for further
                                     information on the availability of this manuscript.</p>
                             </availability>
@@ -229,6 +223,12 @@
             </textClass>
         </profileDesc>
         <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
             <change when="2018">
                 <persName>Rosie Maxton</persName></change>
             <!-- Your revisionDesc should include information concerning major changes to the electronic file.  Replace the above with something more suitable. -->

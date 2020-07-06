@@ -48,7 +48,7 @@
                   </summary>
                   <msItem xml:id="H_23-item1" n="1">
                      <locus from="1a" to="9b">ff. 1a-9b</locus>
-                     <author key="person_f4580">
+                     <author key="person_f407" change="#ids-cleanup #role-assignment" role="aut">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">anonymous</persName>
                      </author>
                      <title xml:lang="en" type="desc" key="work_2809">Introduction to logic</title>
@@ -61,7 +61,7 @@
                   </msItem>
                   <msItem xml:id="H_23-item2" n="2">
                      <locus from="11a" to="11b">ff. 11a-11b</locus>
-                     <author key="person_f4580">
+                     <author key="person_f407" change="#ids-cleanup #role-assignment" role="aut">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">anonymous</persName>
                         <persName xml:lang="fa">اسد الله</persName>
                      </author>
@@ -75,7 +75,7 @@
                   </msItem>
                   <msItem xml:id="H_23-item3" n="3">
                      <locus from="12a" to="35b">ff. 12a-35b</locus>
-                     <author key="person_f719">
+                     <author key="person_f719" role="aut" change="#role-assignment">
                         <persName xml:lang="fa-Latn-x-lc" type="supplied">Budh Singh Arūrā</persName>
                         <persName xml:lang="fa">بذ سنغ <addName xml:lang="fa" type="laqab">ارورا</addName>
                         </persName>
@@ -101,12 +101,12 @@
                   </msItem>
                   <msItem xml:id="H_23-item5" n="5">
                      <locus from="47b" to="156b">ff. 47b-156b</locus>
-                     <author key="person_5150639">
+                     <author key="person_5150639" role="aut" change="#role-assignment">
                         <persName xml:lang="fa-Latn-x-lc" type="supplied">Abū al-Faz̤l ibn Mubārak, 1551-1602</persName>
                         <persName xml:lang="fa">ابو الفضل بن مبارك</persName>
                      </author>
-                     <title xml:lang="fa-Latn-x-lc" key="work_2813">ʻIyār-i dānish</title>
-                     <title xml:lang="fa" key="work_2813">عيار دانش</title>
+                     <title xml:lang="fa-Latn-x-lc" key="work_28" change="#ids-cleanup">ʻIyār-i dānish</title>
+                     <title xml:lang="fa" key="work_28" change="#ids-cleanup">عيار دانش</title>
                      <incipit xml:lang="ar"/>
                      <explicit xml:lang="ar" defective="true"/>
                      <note>
@@ -117,7 +117,7 @@
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/nicholson1932/view.php?id=138"/>
                         </bibl>
                         <bibl type="text-relations">This work is a version of the <title xml:lang="fa-Latn-x-lc">Anwār-i Suhaylī <foreign xml:lang="fa">انوار سهيلي</foreign>
-                           </title> of <author key="person_90770167" ref="http://viaf.org/viaf/90770167/">
+                           </title> of <author key="person_90770167" ref="http://viaf.org/viaf/90770167/" role="ant" change="#role-assignment">
                               <persName xml:lang="fa-Latn-x-lc">Kāshifī, Ḥusayn Vāʻiẓ, d. 1504 or 5</persName>
                               <persName xml:lang="fa">حسين واعظ كاشفی</persName>
                            </author>, which, in turn, is a Persian version of the <title xml:lang="ar-Latn-x-lc">Kalīlah wa-Dimnah <foreign xml:lang="ar">كليلة ودمنة</foreign>
@@ -146,7 +146,7 @@
                </physDesc>
                <history>
                   <origin change="#fix-dates">undated</origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/">E. G. Browne</persName>.</acquisition>
+                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
@@ -228,6 +228,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>

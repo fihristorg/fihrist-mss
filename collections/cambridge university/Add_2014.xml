@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_15341">
     <teiHeader xmlns="http://www.tei-c.org/ns/1.0">
@@ -18,8 +19,7 @@
                         <street>West Road</street>
                         <settlement>Cambridge</settlement>
                         <postCode>CB3 9DR</postCode>
-                        <addrLine><ref target="http://www.lib.cam.ac.uk/deptserv/neareastern/"
-                                >Cambridge University Library </ref></addrLine>
+                        <addrLine><ref target="http://www.lib.cam.ac.uk/deptserv/neareastern/">Cambridge University Library </ref></addrLine>
                         <addrLine><email>near_eastern@lib.cam.ac.uk</email></addrLine>
                     </address>
                 </pubPlace>
@@ -46,22 +46,21 @@
                         <msItem>
                         <locus>2v-56v</locus>
                        <author><persName>Timothy Isaac Metropolitan of Amid. </persName></author>
-                        <title >Beginners' Syriac grammar</title>
+                        <title>Beginners' Syriac grammar</title>
                         <textLang mainLang="syc"> Syriac</textLang>
                        
                     </msItem> 
                         <msItem>
                             <locus>56v-60r</locus>
                           
-                            <title type="desc" >Verb paradigms with Garshuni glosses. </title>
+                            <title type="desc">Verb paradigms with Garshuni glosses. </title>
                             <textLang mainLang="syc" otherLangs="ar"> Syriac and Arabic</textLang>
                           
                         </msItem>
                         <msItem>
                         <locus>60v-61v</locus>
-                        <author><persName key="person_50027842">Jacob of Edessa</persName></author>
-                        <title >Index to the Dominical feasts and <hi rend="italic"
-                            >dukrane</hi> of martyrs for the year. </title>
+                        <author role="aut" change="#role-assignment"><persName key="person_50027842">Jacob of Edessa</persName></author>
+                        <title>Index to the Dominical feasts and <hi rend="italic">dukrane</hi> of martyrs for the year. </title>
                         <textLang mainLang="syc"> Syriac</textLang>
                         <note><p>Breaking off with Nisan. </p></note>
                     </msItem>
@@ -114,7 +113,7 @@
                     </physDesc>
                     <history>
                         <origin/>
-                        <provenance>Acquired for the SPCK by <persName key="person_37056995">George
+                        <provenance>Acquired for the SPCK by <persName key="person_37056995" role="fmo" change="#role-assignment">George
                                 Percy Badger</persName> and presented to the Library in 1887. </provenance>
                         <acquisition/>
                     </history>
@@ -128,9 +127,7 @@
                             </recordHist>
                             <availability status="restricted">
                                 <p>Entry to read in the Library is permitted only on presentation of
-                                    a valid reader's card. For admissions procedures contact <ref
-                                        target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/"
-                                        >Cambridge University Library Admissions</ref>. Contact
+                                    a valid reader's card. For admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>. Contact
                                         <email>near_eastern@lib.cam.ac.uk</email> for further
                                     information on the availability of this manuscript.</p>
                             </availability>
@@ -154,15 +151,18 @@
                 <keywords scheme="#LCSH">
                     <list>
 
-                        <item><ref target="	https://lccn.loc.gov/sh2010115257">Syriac
+                        <item><ref target=" https://lccn.loc.gov/sh2010115257">Syriac
                                 language--Grammar--early works to 1800. </ref></item>
                     </list>
                 </keywords>
             </textClass>
         </profileDesc>
         <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
             <change when="2019">
-                <persName key="person_32017775">J. F. Coakley</persName></change>
+                <persName key="person_32017775" role="dtm" change="#role-assignment">J. F. Coakley</persName></change>
 
         </revisionDesc>
     </teiHeader>

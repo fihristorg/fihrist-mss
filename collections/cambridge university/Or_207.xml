@@ -48,7 +48,7 @@
                   </summary>
                   <msItem xml:id="Or_207-item1" n="1">
                      <locus from="1b" to="10a">ff. 1b-10a</locus>
-                     <author key="person_f4580">
+                     <author key="person_f407" change="#ids-cleanup #role-assignment" role="aut">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">anonymous</persName>
                      </author>
                      <title xml:lang="en" type="desc" key="work_2420">Arabic prayers and doxology and instructions in Turkish preceding the Burdat al-Būṣīrī</title>
@@ -66,7 +66,7 @@
                   </msItem>
                   <msItem xml:id="Or_207-item2" n="2">
                      <locus from="11b" to="15a">ff. 11b-15a</locus>
-                     <author key="person_f4580">
+                     <author key="person_f407" change="#ids-cleanup #role-assignment" role="aut">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">anonymous</persName>
                      </author>
                      <title xml:lang="en" type="desc" key="work_2421">Arabic poem preceding the Burdah of al-Būṣīrī</title>
@@ -84,12 +84,12 @@
                   </msItem>
                   <msItem xml:id="Or_207-item3" n="3">
                      <locus from="15b" to="38a">ff. 1b-10a</locus>
-                     <author key="person_90042754" ref="http://viaf.org/viaf/90042754/">
+                     <author key="person_90042754" ref="http://viaf.org/viaf/90042754/" role="aut" change="#role-assignment">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">Būṣīrī, Sharaf al-Dīn Muḥammad ibn Saʻīd, 1213?-1296?</persName>
                         <persName xml:lang="ar">البوصيري</persName>
                      </author>
-                     <title xml:lang="ar-Latn-x-lc" key="work_384">Burdat al-Būṣīrī</title>
-                     <title xml:lang="ar" key="work_384">يردة البوصيري</title>
+                     <title xml:lang="ar-Latn-x-lc" key="work_21179" change="#ids-cleanup">Burdat al-Būṣīrī</title>
+                     <title xml:lang="ar" key="work_21179" change="#ids-cleanup">يردة البوصيري</title>
                      <incipit xml:lang="ar"/>
                      <explicit xml:lang="ar" defective="true"/>
                      <note>
@@ -123,7 +123,7 @@
                </physDesc>
                <history>
                   <origin change="#fix-dates">undated</origin>
-                  <acquisition>Bought from <persName type="supplied" key="person_f1654">J.J. Naaman</persName> in <date calendar="#Gregorian">1902</date>.</acquisition>
+                  <acquisition>Bought from <persName type="supplied" key="person_f1654" role="fmo" change="#role-assignment">J.J. Naaman</persName> in <date calendar="#Gregorian">1902</date>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
@@ -178,6 +178,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>

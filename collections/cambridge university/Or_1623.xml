@@ -45,12 +45,12 @@
                <msContents>
                   <summary>The manuscript contains only daftars 2, 3 and 4 of the work.</summary>
                   <msItem xml:id="Or_1623-item1">
-                     <author key="person_98930150" ref="http://viaf.org/viaf/98930150/">
+                     <author key="person_98930150" ref="http://viaf.org/viaf/98930150/" role="aut" change="#role-assignment">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Jalāl al-Dīn Rūmī, Maulana, 1207-1273</persName>
                         <persName xml:lang="fa">جلال الدين محمد بن محمد رومي</persName>
                      </author>
-                     <title xml:lang="fa-Latn-x-lc" key="work_751">Mas̲navī-i maʻnawī</title>
-                     <title xml:lang="fa" key="work_751">مثنوى معنوى</title>
+                     <title xml:lang="fa-Latn-x-lc" key="work_20506" change="#ids-cleanup">Mas̲navī-i maʻnawī</title>
+                     <title xml:lang="fa" key="work_20506" change="#ids-cleanup">مثنوى معنوى</title>
                      <incipit xml:lang="ar"/>
                      <explicit xml:lang="ar" defective="true"/>
                      <note>
@@ -87,7 +87,7 @@
                      <origDate calendar="#Hijri-qamari" from="1000" to="1100">11th/17th century<!-- Please review date attributes, see https://git.io/fihrist-dates --></origDate>
                      <origDate calendar="#Gregorian" from="1591" to="1688">Gregorian<!-- Please review date text, see https://git.io/fihrist-dates --></origDate>
                   </origin>
-                  <acquisition>Presented by <persName xml:lang="en" type="supplied" key="person_f4324">W. S. Adie</persName>.</acquisition>
+                  <acquisition>Presented by <persName xml:lang="en" type="supplied" key="person_f4334" role="fmo" change="#role-assignment #ids-cleanup">W. S. Adie</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
@@ -126,6 +126,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>

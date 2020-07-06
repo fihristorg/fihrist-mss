@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_15243">
     <teiHeader xmlns="http://www.tei-c.org/ns/1.0">
@@ -17,8 +18,7 @@
                         <street>West Road</street>
                         <settlement>Cambridge</settlement>
                         <postCode>CB3 9DR</postCode>
-                        <addrLine><ref target="http://www.lib.cam.ac.uk/deptserv/neareastern/"
-                                >Cambridge University Library </ref></addrLine>
+                        <addrLine><ref target="http://www.lib.cam.ac.uk/deptserv/neareastern/">Cambridge University Library </ref></addrLine>
                         <addrLine><email>near_eastern@lib.cam.ac.uk</email></addrLine>
                     </address>
                 </pubPlace>
@@ -68,22 +68,19 @@
                     </physDesc>
                     <history>
                         <origin/>
-                        <provenance>Purchased from <persName key="person_73580526">George B. Howard, </persName>
+                        <provenance>Purchased from <persName key="person_73580526" role="fmo" change="#role-assignment">George B. Howard, </persName>
                             <date calendar="Gregorian" when="1910">1910. </date></provenance>
                         <acquisition/>
                     </history>
                     <additional>
                         <adminInfo>
                             <recordHist>
-                                <source>For a full description see J. F. Coakley, <hi rend="italic"
-                                        >Catalogue of Syriac manuscripts in Cambridge University
+                                <source>For a full description see J. F. Coakley, <hi rend="italic">Catalogue of Syriac manuscripts in Cambridge University
                                         Library acquired since 1901</hi> (2018). </source>
                             </recordHist>
                             <availability status="restricted">
                                 <p>Entry to read in the Library is permitted only on presentation of
-                                    a valid reader's card. For admissions procedures contact <ref
-                                        target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/"
-                                        >Cambridge University Library Admissions</ref>. Contact
+                                    a valid reader's card. For admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>. Contact
                                         <email>near_eastern@lib.cam.ac.uk</email> for further
                                     information on the availability of this manuscript.</p>
                             </availability>
@@ -106,19 +103,22 @@
             <textClass>
                 <keywords scheme="#LCSH">
                     <list>
-                        <item><ref target="	https://lccn.loc.gov/sh85080092">Malayalam
+                        <item><ref target=" https://lccn.loc.gov/sh85080092">Malayalam
                             poetry</ref>.</item>
-                        <item><ref target="	https://lccn.loc.gov/n84002368">Syrian Orthodox
+                        <item><ref target=" https://lccn.loc.gov/n84002368">Syrian Orthodox
                                 Church--Liturgy</ref>.</item>
-                        <item><ref target="	https://lccn.loc.gov/sh85045511">Eucharistic
+                        <item><ref target=" https://lccn.loc.gov/sh85045511">Eucharistic
                                 prayers--Syrian Orthodox</ref></item>
                     </list>
                 </keywords>
             </textClass>
         </profileDesc>
         <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
             <change when="2018">
-                <persName key="person_32017775">J. F.
+                <persName key="person_32017775" role="dtm" change="#role-assignment">J. F.
                     Coakley</persName></change>
 
         </revisionDesc>

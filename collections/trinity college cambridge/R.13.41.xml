@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="enrich-wamcp.rnc" type="compact"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_12977">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="enrich-wamcp.rnc" type="compact"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_12977">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -40,10 +42,10 @@
                         <summary>3 works on history, poetry and the Qur᾽ān</summary>
                         <msItem n="1" xml:id="R_13_41-item1">
                             <locus from="1r" to="59v">ff. 1r.-59v.</locus>
-                            <author>
+                            <author role="aut" change="#role-assignment">
                                 <persName xml:lang="ar-Latn-x-lc" key="person_f5928">Qarā Yaʿqūb b. Idrīs
                                     al-Qaramānī, d.1429 </persName>
-                                <persName xml:lang="ar" key="person_f5929">قرا يعقوب بن إدريس القرماني <surname/>
+                                <persName xml:lang="ar" key="person_f5928" change="#ids-cleanup">قرا يعقوب بن إدريس القرماني <surname/>
                                 </persName>
                             </author>
                             <title xml:lang="ar-Latn-x-lc" key="work_11094">Kitāb ishrāq al-tawārīkh</title>
@@ -73,7 +75,7 @@
                         
                         <msItem n="2" xml:id="R_13_41-item2" class="#commentary">
                             <locus from="61r" to="137r">ff. 61r.-137r.</locus>
-                            <author key="person_186072428" ref="http://viaf.org/viaf/186072428">
+                            <author key="person_317285414" ref="http://viaf.org/viaf/317285414" change="#ids-cleanup #role-assignment" role="aut">
                                 <persName xml:lang="ar-Latn-x-lc">Abū ʻAbd Allāh al-Fāsī,
                                     Muḥammad ibn Ḥasan,‏ ‎d. 1193-1258</persName>
                                 <persName xml:lang="ar">أبو عبدالله الفاسي، محمد بن الحسن<surname/>
@@ -89,7 +91,7 @@
                                 الشاطبية</title>
 
                             <note> A commentary on the qaṣīdah <title xml:lang="ar-Latn-x-lc">Ḥirz
-                                    al-amānī wa-wajh al-tahānī</title> by <persName key="person_13726755">Shāṭibī, al-Qāsim ibn
+                                    al-amānī wa-wajh al-tahānī</title> by <persName key="person_13726755" role="ant" change="#role-assignment">Shāṭibī, al-Qāsim ibn
                                     Fīrruh</persName>. </note>
                             <note>This book is intended to serve as an introduction to the qaṣīdah,
                                 and forms a handbook to the critical recension of the Qur᾽ānic
@@ -113,7 +115,7 @@
                         
                         <msItem n="3" xml:id="R_13_41-item3">
                             <locus from="141v" to="146v">ff. 141v.-146v.</locus>
-                            <author key="person_90041228" ref="http://viaf.org/viaf/90041228">
+                            <author key="person_90041228" ref="http://viaf.org/viaf/90041228" role="aut" change="#role-assignment">
                                 <persName xml:lang="ar-Latn-x-lc">Nasafī, ʻUmar ibn Muḥammad,‏ ‎d.
                                     1068?-1142 </persName>
                                 <persName xml:lang="ar"> النسفي، عمر بن محمد<surname/>
@@ -223,6 +225,12 @@
             </textClass>
         </profileDesc>
         <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
             <change when="2018">
                 <persName>Rosie Maxton</persName>
             </change>

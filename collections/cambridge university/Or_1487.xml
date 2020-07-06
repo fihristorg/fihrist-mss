@@ -48,7 +48,7 @@
                   </summary>
                   <msItem xml:id="Or_1487-item1" n="1">
                      <locus from="1" to="7">ff. 1-7</locus>
-                     <author key="person_9918029" ref="http://viaf.org/viaf/9918029/">
+                     <author key="person_9918029" ref="http://viaf.org/viaf/9918029/" role="aut" change="#role-assignment">
                         <persName xml:lang="ar-Latn-x-lc" type="standard" evidence="conjecture">Jurjānī, ʻAbd al-Qāhir ibn ʻAbd al-Raḥmān, d. 1078?</persName>
                         <persName xml:lang="ar">الجرجاني،ابو بكر عبد القاهر بن عبد الرحمن</persName>
                      </author>
@@ -69,7 +69,7 @@
                   </msItem>
                   <msItem xml:id="Or_1487-item2" n="2" class="#commentary">
                      <locus from="9" to="32">ff. 9-32</locus>
-                     <author key="person_9918029" ref="http://viaf.org/viaf/9918029/">
+                     <author key="person_9918029" ref="http://viaf.org/viaf/9918029/" role="aut" change="#role-assignment">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">Jurjānī, ʻAbd al-Qāhir ibn ʻAbd al-Raḥmān, d. 1078?</persName>
                         <persName xml:lang="ar">الجرجاني،ابو بكر عبد القاهر بن عبد الرحمن</persName>
                      </author>
@@ -90,7 +90,7 @@
                   </msItem>
                   <msItem xml:id="Or_1487-item3" n="3">
                      <locus from="33" to="38">ff. 33-38</locus>
-                     <author key="person_f4580">
+                     <author key="person_f407" change="#ids-cleanup #role-assignment" role="aut">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">anonymous</persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc" key="work_2558">Risālah fī al-jumlah</title>
@@ -110,7 +110,7 @@
                   </msItem>
                   <msItem xml:id="Or_1487-item4" n="4">
                      <locus from="41" to="45">ff. 41-45</locus>
-                     <author key="person_f4580">
+                     <author key="person_f407" change="#ids-cleanup #role-assignment" role="aut">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">anonymous</persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc" key="work_2559">Risālah fī al-naḥw</title>
@@ -130,13 +130,13 @@
                   </msItem>
                   <msItem xml:id="Or_1487-item5" n="5">
                      <locus from="46" to="93">ff. 46-93</locus>
-                     <author key="person_90040229" ref="http://viaf.org/viaf/90040229/">
+                     <author key="person_90040229" ref="http://viaf.org/viaf/90040229/" role="aut" change="#role-assignment">
                         <persName xml:lang="ar-Latn-x-lc" type="standard" evidence="conjecture">Muṭarrizī, Nāṣir ibn ʻAbd al-Sayyid, 1144-1213</persName>
                         <persName xml:lang="ar">المطرزى، ناصر ابن عبد السيد <addName xml:lang="ar" type="kunyah">ابو الفتح</addName>
                         </persName>
                      </author>
-                     <title xml:lang="ar-Latn-x-lc" key="work_1240">al-Miṣbāḥ fī al-naḥw</title>
-                     <title xml:lang="ar" key="work_1240">المصباح في النحو</title>
+                     <title xml:lang="ar-Latn-x-lc" key="work_2024" change="#ids-cleanup">al-Miṣbāḥ fī al-naḥw</title>
+                     <title xml:lang="ar" key="work_2024" change="#ids-cleanup">المصباح في النحو</title>
                      <incipit xml:lang="ar"/>
                      <explicit xml:lang="ar" defective="true"/>
                      <note>
@@ -174,7 +174,7 @@
                      <origDate calendar="#Hijri-qamari" from="1100" to="1200">12th/18th century<!-- Please review date attributes, see https://git.io/fihrist-dates --></origDate>
                      <origDate calendar="#Gregorian" from="1688" to="1785">Gregorian<!-- Please review date text, see https://git.io/fihrist-dates --></origDate>
                   </origin>
-                  <acquisition>Bequest of <persName xml:lang="en" key="person_64055571" ref="http://viaf.org/viaf/64055571/">R. A. Nicholson</persName>.</acquisition>
+                  <acquisition>Bequest of <persName xml:lang="en" key="person_64055571" ref="http://viaf.org/viaf/64055571/" role="fmo" change="#role-assignment">R. A. Nicholson</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
@@ -231,6 +231,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>

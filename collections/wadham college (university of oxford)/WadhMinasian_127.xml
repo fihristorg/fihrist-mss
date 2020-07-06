@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_13071">
@@ -48,7 +48,7 @@
                         </supportDesc></objectDesc>
                         <bindingDesc>
                             <p>Black leather, 10×20.5 cm, front + back cover, single layer of leather only.</p>
-                            <decoNote type="border"></decoNote>
+                            <decoNote type="border"/>
                             <condition>Cover detached from the copy; head band and stitching in disarray.</condition>
                         </bindingDesc>
                     </physDesc>
@@ -64,9 +64,7 @@
                             </recordHist>
                             <availability status="restricted">
                                 <p>Entry to the Library is permitted upon presentation of
-                                    a valid university ID card (for admissions procedures, please visit <ref
-                                        target="https://www.wadham.ox.ac.uk/about-wadham/library/persian-studies-section"
-                                        >Wadham College Library, Persian Studies Section</ref>). Please Contact
+                                    a valid university ID card (for admissions procedures, please visit <ref target="https://www.wadham.ox.ac.uk/about-wadham/library/persian-studies-section">Wadham College Library, Persian Studies Section</ref>). Please Contact
                                     <email>persian.library@wadham.ox.ac.uk</email> for further information
                                     on the availability of this manuscript</p>
                             </availability>
@@ -87,16 +85,16 @@
                             <locus from="1a" to="55a">ff. 1a-55a</locus>
                             <textLang mainLang="ar">Arabic</textLang>
                             <note type="content-genre">Islamic logic</note>                            
-                            <author key="person_24447170">
+                            <author key="person_24447170" role="aut" change="#role-assignment">
                                 <persName xml:lang="ara-Latn-x-lc" type="standard">Yazdī, ʻAbd Allāh ibn al-Ḥusayn, -1606 or 1607‏</persName>
                                 <persName xml:lang="ara" type="standard">یزدی، عبدالله ابن الحسین، -۱۶۰۶ یا ۱۶۰۷</persName>
                                 <persName xml:lang="ara-Latn-x-lc" type="alt">Mullā ʻAbd Allāh ibn Ḥusayn Yazdī, -981 AH/-1573‏</persName>
                                 <persName xml:lang="ara" type="alt">ملا عبدالله ابن حسین یزدی، -۹۸۱ق/-۱۵۷۳</persName>
                             </author>
-                            <title xml:lang="ara-Latn-x-lc" key="work_4904">Ḥāshīyah ʿalá Tahẕīb al-Manṭiq</title>
-                            <title xml:lang="ara-Latn-x-lc" key="work_4904" type="alt">Ḥāshīyah-i Mullā ʿAbd Allāh</title>
-                            <title xml:lang="ara" key="work_4904">حاشیه علی تهذیب المنطق</title>
-                            <title xml:lang="ara" key="work_4904" type="alt">حاشیه ملا عبدالله</title>
+                            <title xml:lang="ara-Latn-x-lc" key="work_20515" change="#ids-cleanup">Ḥāshīyah ʿalá Tahẕīb al-Manṭiq</title>
+                            <title xml:lang="ara-Latn-x-lc" key="work_20515" type="alt" change="#ids-cleanup">Ḥāshīyah-i Mullā ʿAbd Allāh</title>
+                            <title xml:lang="ara" key="work_20515" change="#ids-cleanup">حاشیه علی تهذیب المنطق</title>
+                            <title xml:lang="ara" key="work_20515" type="alt" change="#ids-cleanup">حاشیه ملا عبدالله</title>
                             <incipit xml:lang="ara" defective="true">… علی انّه ذکر من الوصف بمرتبه لا بتبادر الذهن منه الا… بین الصفات هذه لکونها مستلزمه…
                             </incipit>
                             <explicit xml:lang="ara">… قوله و هذا بالمقاصد اشبه ایّ الامر الثامن اشبه بمقاصد الفن بمقدماته… و ایاکم من الراسخین فی الامرین و رزقنا الله بفضله و جوده… والحمد لله رب العالمین.
@@ -198,7 +196,7 @@
                             <note type="content-genre">Kalām (Islamic Scholastic Theology)</note>
                             <title xml:lang="ara-Latn-x-lc" key="work_4296">Bāb-i Ḥādī ʿAshar</title>
                             <title xml:lang="ara" key="work_4296">باب حادی عشر</title>
-                            <author key="person_32056992">
+                            <author key="person_32056992" role="aut" change="#role-assignment">
                                 <persName xml:lang="ara-Latn-x-lc" type="standard">Ibn al-Muṭahhar al-Ḥillī, al-Ḥasan ibn Yūsuf, 1250-1325‏</persName>
                                 <persName xml:lang="ara-Latn-x-lc" type="alt">Ḥillī, ʿAllāmah Jamāl al-Dīn Abū Manṣūr Ḥasan ibn Sadīd al-Dīn Yūsuf ibn ʿAlī, 648-726 AH/1251-1326‏</persName>
                                 <persName xml:lang="ara" type="standard">ابن المطهر الحلی، الحسن ابن یوسف، ۱۲۵۰-۱۳۲۵</persName>
@@ -308,7 +306,13 @@
                 </keywords>
             </textClass>
         </profileDesc>
-        <revisionDesc>          <change when="2019-08-06"> Binding information updated.             <persName>Mohammad Emami</persName>          </change>
+        <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>          <change when="2019-08-06"> Binding information updated.             <persName>Mohammad Emami</persName>          </change>
             <change when="2018-05-14">
                 <persName>Mohammad Emami</persName>
             </change>

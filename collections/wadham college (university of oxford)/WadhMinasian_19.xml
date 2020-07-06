@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_13089">
@@ -45,11 +45,11 @@
                     </msIdentifier>
                     <msContents>
                         <summary>
-                            <ref target="https://www.fihrist.org.uk/catalog/work_4277">al-Shamsīyah fī al-Qawāʾid al-Manṭiqīyah</ref> is a work on logic written by <persName key="person_7716905">Najm al-Dīn ʿUmar ibn ʿUmar Katibī Qazvīnī (died 693 AH/1294)</persName>.
+                            <ref target="https://www.fihrist.org.uk/catalog/work_4277">al-Shamsīyah fī al-Qawāʾid al-Manṭiqīyah</ref> is a work on logic written by <persName key="person_7716905" role="ant" change="#role-assignment">Najm al-Dīn ʿUmar ibn ʿUmar Katibī Qazvīnī (died 693 AH/1294)</persName>.
                             There have been numerous commentaries written on this work, the most well-known of which being "Taḥrīr al-Qawāʿid al-Manṭiqīyah fī Sharḥ al-Risālat al-Shamsīyah" written by Quṭb al-Dīn Muḥammad ibn Muḥammad Rāzī Buvayhī", known as "Quṭb-i Rāzī" (694-766 AH, 1294-1364).
                             On this work itself, two famous glosses have been written: first, a brief gloss on the introduction and preface of Quṭb-i Rāzī's work, called "Ḥāshīyat al-Muqaddamah Taḥrīr al-Qawāʻid al-Manṭiqīyah fī Sharḥ Risālat al-Shamsīyah" written by Burhān al-Dīn Muḥammad ibn Kamāl al-Dīn Ḥamīd; 
-                            and second, a more comprehensive gloss on the full content of Quṭb-i Rāzī's work, called "al-Ḥāshīyat ʿalá Taḥrīr al-Qawāʻid al-Manṭiqīyah" written by <persName key="person_19930855">Mīr Sayyid Sharīf Jurjānī (740-816 AH/1339-1413)</persName>.
-                            During the same century (i.e. 9th Hijrī AH/15th), <persName key="person_73736345">ʿImād al-Dīn Muḥammad ibn Yaḥyá Fārisī</persName> wrote a supergloss on the work of Mīr Sayyid Sharīf Jurjānī and called it <ref target="https://www.fihrist.org.uk/catalog/work_5450">Ḥāshīyah Ḥāshīyah ʿalá Taḥrīr al-Qawāʻid al-Manṭiqīyah</ref>, known simply as "Ḥāshīyah-i ʿImād".
+                            and second, a more comprehensive gloss on the full content of Quṭb-i Rāzī's work, called "al-Ḥāshīyat ʿalá Taḥrīr al-Qawāʻid al-Manṭiqīyah" written by <persName key="person_19930855" role="oth" change="#role-assignment">Mīr Sayyid Sharīf Jurjānī (740-816 AH/1339-1413)</persName>.
+                            During the same century (i.e. 9th Hijrī AH/15th), <persName key="person_73736345" role="oth" change="#role-assignment">ʿImād al-Dīn Muḥammad ibn Yaḥyá Fārisī</persName> wrote a supergloss on the work of Mīr Sayyid Sharīf Jurjānī and called it <ref target="https://www.fihrist.org.uk/catalog/work_5450">Ḥāshīyah Ḥāshīyah ʿalá Taḥrīr al-Qawāʻid al-Manṭiqīyah</ref>, known simply as "Ḥāshīyah-i ʿImād".
                             The current copy is "Taḥrīr al-Qawāʿid al-Manṭiqīyah fī Sharḥ al-Risālat al-Shamsīyah" written by Quṭb-i Rāzī. 
                         </summary>
                         <msItem>
@@ -59,7 +59,7 @@
                             <title xml:lang="per" key="work_3899">تحرير القواعد المنطقية فی شرح الرسالة الشمسیه</title>
                             <title xml:lang="per-Latn-x-lc" key="work_3899" type="alt">Sharḥ-i Shamsīyah-i Quṭbī</title>
                             <title xml:lang="per" key="work_3899" type="alt">شرح شمسیه قطبی</title>
-                            <author key="person_90046369">
+                            <author key="person_90046369" role="aut" change="#role-assignment">
                                 <persName xml:lang="ara-Latn-x-lc">Quṭb al-Taḥtānī, Muḥammad ibn Muḥammad, 1294 or 1295-1364 or 1365</persName>
                                 <persName xml:lang="ara-Latn-x-lc" type="alt">Quṭb Rāzī, Quṭb al-Dīn Muḥammad ibn Muḥammad Rāzī Buvayhī, 694-766 AH, 1294-1364</persName>
                                 <persName xml:lang="ara">قطب التحتانی، محمد بن محمد</persName>
@@ -192,7 +192,10 @@
                 </keywords>
             </textClass>
         </profileDesc>
-        <revisionDesc>          <change when="2019-08-06"> Binding information updated.             <persName>Mohammad Emami</persName>          </change>
+        <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>          <change when="2019-08-06"> Binding information updated.             <persName>Mohammad Emami</persName>          </change>
             <change when="2019-04-29">
                 <persName>Mohammad Emami</persName>
             </change>

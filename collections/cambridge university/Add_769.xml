@@ -47,7 +47,7 @@
                      2 works by 2 authors on the subject of Arabic language
                   </summary>
                   <msItem xml:id="Add_769-item1" n="1">
-                     <author key="person_29665940" ref="http://viaf.org/viaf/29665940/">
+                     <author key="person_29665940" ref="http://viaf.org/viaf/29665940/" role="aut" change="#role-assignment">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn al-Ḥājib, ʻUthmān ibn ʻUmar, 1175-1249</persName>
                         <persName xml:lang="ar">ابن الحاجب، عثمان ابن عمر</persName>
                      </author>
@@ -68,12 +68,12 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="Add_769-item2" n="2" class="#commentary">
-                     <author key="person_56395703" ref="http://viaf.org/viaf/56395703/">
+                     <author key="person_56395703" ref="http://viaf.org/viaf/56395703/" role="aut" change="#role-assignment">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">Jārabardī, Aḥmad ibn al-Ḥusayn, d. 1346</persName>
                         <persName xml:lang="ar">جاربردي، احمد بن الحسين</persName>
                      </author>
-                     <title xml:lang="ar-Latn-x-lc" key="work_281">Sharḥ al-Shāfīyah</title>
-                     <title xml:lang="ar" key="work_281">شرح الشافية</title>
+                     <title xml:lang="ar-Latn-x-lc" key="work_20351" change="#ids-cleanup">Sharḥ al-Shāfīyah</title>
+                     <title xml:lang="ar" key="work_20351" change="#ids-cleanup">شرح الشافية</title>
                      <incipit xml:lang="ar"/>
                      <explicit xml:lang="ar" defective="true"/>
                      <note>
@@ -84,7 +84,7 @@
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/view.php?id=68">no. 603</ref>
                         </bibl>
                         <bibl type="text-relations">Commentary on the <title xml:lang="ar-Latn-x-lc">al-Shāfīyah fī ʿilm al-taṣrīf <foreign xml:lang="ar">الشافية في علم التصريف</foreign>
-                           </title> by <author key="person_29665940" ref="http://viaf.org/viaf/29665940/">
+                           </title> by <author key="person_29665940" ref="http://viaf.org/viaf/29665940/" role="ant" change="#role-assignment">
                               <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn al-Ḥājib, ʻUthmān ibn ʻUmar, 1175-1249</persName>
                               <persName xml:lang="ar">ابن الحاجب، عثمان ابن عمر</persName>
                            </author>
@@ -116,7 +116,7 @@
                      <origDate notBefore="1688" notAfter="1689" calendar="#Hijri-qamari">1100</origDate>
                      <origDate calendar="#Gregorian" when="1688">1688</origDate>
                   </origin>
-                  <acquisition>Bequest of <persName key="person_f3517">Reverand Professor H.G. Williams (d. 1870)</persName> in <date calendar="#Gregorian">1870</date>.</acquisition>
+                  <acquisition>Bequest of <persName key="person_f3517" role="fmo" change="#role-assignment">Reverand Professor H.G. Williams (d. 1870)</persName> in <date calendar="#Gregorian">1870</date>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
@@ -171,6 +171,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>

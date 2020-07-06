@@ -41,15 +41,15 @@
                   <idno>Persian MS 832</idno>
                </msIdentifier>
                <msContents>
-                  <summary>The Life of <persName ref="http://viaf.org/viaf/38323081/" key="person_38323081">Jesus Christ</persName> by Pādrī Yārūnīmū Shāvīr executed by order of the <persName key="person_3264079" ref="http://viaf.org/viaf/3264079/">Akbar, Emperor of Hindustan, 1542-1605</persName> and rendered into Persian with the assistance of <persName key="person_24373682" ref="http://viaf.org/viaf/24373682" xml:lang="ar-Latn-x-lc">Mullā ʻAbd al-Sattār</persName> at <name key="subject_n50055095" ref="http://viaf.org/viaf/153574610/" type="place">Agra (India)</name> in <date calendar="#Gregorian" when="1602">1602</date>.</summary>
+                  <summary>The Life of <persName ref="http://viaf.org/viaf/38323081/" key="person_38323081" role="dpc" change="#role-assignment">Jesus Christ</persName> by Pādrī Yārūnīmū Shāvīr executed by order of the <persName key="person_3264079" ref="http://viaf.org/viaf/3264079/" role="pat" change="#role-assignment">Akbar, Emperor of Hindustan, 1542-1605</persName> and rendered into Persian with the assistance of <persName key="person_119852017" ref="http://viaf.org/viaf/119852017" xml:lang="ar-Latn-x-lc" role="edt" change="#role-assignment #ids-cleanup">Mullā ʻAbd al-Sattār</persName> at <name key="subject_n50055095" ref="http://viaf.org/viaf/153574610/" type="place">Agra (India)</name> in <date calendar="#Gregorian" when="1602">1602</date>.</summary>
                   <msItem xml:id="Persian_MS_832-item1">
-                     <author key="person_51096485" ref="http://viaf.org/viaf/51096485">
+                     <author key="person_51096485" ref="http://viaf.org/viaf/51096485" role="aut" change="#role-assignment">
                         <persName type="standard">Javier, Jerónimo, 1549-1617</persName>
                         <persName type="alt">Geronimo Xavier</persName>
                         <persName type="alt">Pādrī Yārūnīmū Shāvīr</persName>
                      </author>
-                     <editor role="edt" key="person_24373682">
-                        <persName ref="http://viaf.org/viaf/24373682" xml:lang="ar-Latn-x-lc">Lāhūrī, ʻAbd al-Sattār ibn Qāsim</persName>
+                     <editor role="edt" key="person_119852017" change="#ids-cleanup">
+                        <persName ref="http://viaf.org/viaf/119852017" xml:lang="ar-Latn-x-lc" change="#ids-cleanup">Lāhūrī, ʻAbd al-Sattār ibn Qāsim</persName>
                         <persName xml:lang="fa-Latn-x-lc" type="alt">Mullā ʻAbd al-Sattār</persName>
                         <persName xml:lang="ar">مولانا عبد الستّار بن قاسم اللاهوري</persName>
                      </editor>
@@ -83,14 +83,14 @@
                   <origin>rendered in to Persian in <origDate calendar="#Gregorian" when="1602">1602</origDate>
                   </origin>
                   <acquisition>
-                     <p>Purchased by Enriqueta Rylands, on behalf of the John Rylands Library, in <date calendar="#Gregorian" when="1901">1901</date> from <persName type="standard" ref="http://viaf.org/viaf/9985420/#Crawford,_James_Ludovic_Lindsay,_Earl_of,_1847-1913" key="person_9985420">James Ludovic Lindsay, 26th Earl of Crawford</persName>.</p>
+                     <p>Purchased by Enriqueta Rylands, on behalf of the John Rylands Library, in <date calendar="#Gregorian" when="1901">1901</date> from <persName type="standard" ref="http://viaf.org/viaf/9985420/#Crawford,_James_Ludovic_Lindsay,_Earl_of,_1847-1913" key="person_9985420" role="fmo" change="#role-assignment">James Ludovic Lindsay, 26th Earl of Crawford</persName>.</p>
                   </acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
                         <source>
-                           <p>Bibliographical description based on an index created by <persName key="person_f3520">Reza Navabpour</persName> circa <date calendar="#Gregorian" notBefore="1992" notAfter="1994">1993</date>. Identification of provenance based on manuscript catalogue by Michael Kerney, <date calendar="#Gregorian" notAfter="1901" notBefore="1868">circa 1890s.</date>
+                           <p>Bibliographical description based on an index created by <persName key="person_56454583" role="cataloguer" change="#role-assignment #ids-cleanup">Reza Navabpour</persName> circa <date calendar="#Gregorian" notBefore="1992" notAfter="1994">1993</date>. Identification of provenance based on manuscript catalogue by Michael Kerney, <date calendar="#Gregorian" notAfter="1901" notBefore="1868">circa 1890s.</date>
                            </p>
                         </source>
                      </recordHist>
@@ -123,6 +123,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-27">
             <persName>Andrew Morrison</persName> Normalized roles using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/normalize-roles.xsl">normalize-roles.xsl</ref>
          </change>

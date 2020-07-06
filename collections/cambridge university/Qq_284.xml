@@ -43,10 +43,10 @@
                   <idno>Qq. 284</idno>
                </msIdentifier>
                <msContents>
-                  <summary>The manuscript contains an anonymous poem on the Caliphs with the commentary of <persName xml:lang="ar-Latn-x-lc" type="supplied" key="person_f4803">ʻAlī ibn al-Qāḍī lʻAlā' al-Dīn ibn Shams al-Dīn Muḥammad</persName>, <persName xml:lang="ar" key="person_f5196">علي بن القاضي علاء الدين بن شمس الدين محمد</persName>
+                  <summary>The manuscript contains an anonymous poem on the Caliphs with the commentary of <persName xml:lang="ar-Latn-x-lc" type="supplied" key="person_f4803" role="cmm" change="#role-assignment">ʻAlī ibn al-Qāḍī lʻAlā' al-Dīn ibn Shams al-Dīn Muḥammad</persName>, <persName xml:lang="ar" key="person_f4803" role="cmm" change="#role-assignment #ids-cleanup">علي بن القاضي علاء الدين بن شمس الدين محمد</persName>
                   </summary>
                   <msItem xml:id="Qq_284-item1" n="1">
-                     <author key="person_f4580">
+                     <author key="person_f407" change="#ids-cleanup #role-assignment" role="aut">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">anonymous</persName>
                         <persName xml:lang="ar-Latn-x-lc" type="standard">anonymous</persName>
                      </author>
@@ -66,7 +66,7 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="Qq_284-item2" n="2" class="#commentary">
-                     <author key="person_f4580">
+                     <author key="person_f407" change="#ids-cleanup #role-assignment" role="aut">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">anonymous</persName>
                         <persName xml:lang="ar-Latn-x-lc" type="supplied">ʻAlī ibn al-Qāḍī ʻAlā' al-Dīn ibn Shams al-Dīn Muḥammad</persName>
                         <persName xml:lang="ar">علي بن القاضي علاء الدين بن شمس الدين محمد</persName>
@@ -105,7 +105,7 @@
                </physDesc>
                <history>
                   <origin change="#fix-dates">undated</origin>
-                  <acquisition>Bequest of <persName key="person_f1655">J.L. Burckhardt (1784-1817)</persName> in <date calendar="#Gregorian">1819</date>.</acquisition>
+                  <acquisition>Bequest of <persName key="person_59176329" role="fmo" change="#role-assignment #ids-cleanup">J.L. Burckhardt (1784-1817)</persName> in <date calendar="#Gregorian">1819</date>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
@@ -161,6 +161,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>

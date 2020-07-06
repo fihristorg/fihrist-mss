@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_13063">
@@ -53,7 +53,7 @@
                             <note type="content-genre">Fiction</note>
                             <title xml:lang="per-Latn-x-lc" key="work_1151">Bahār-i dānish</title>
                             <title xml:lang="per" key="work_1151">بهار دانش</title>
-                            <author key="person_17950016">
+                            <author key="person_17950016" role="aut" change="#role-assignment">
                                 <persName xml:lang="per-Latn-x-lc" type="standard">ʿInāyat Allāh, -approximately 1671‏‏</persName>
                                 <persName xml:lang="per">عنایت الله</persName>
                                 <persName xml:lang="per-Latn-x-lc" type="alt">Kanbūh Lāhūrī, ʿInāyat Allāh, 1608-1671</persName>
@@ -108,7 +108,7 @@
                                     </dimensions>
                                 </extent>
                                 <condition>
-                                    <p></p>
+                                    <p/>
                                 </condition>
                             </supportDesc>
                             <layoutDesc>
@@ -151,7 +151,7 @@
                                 <p>Entry to the Library is permitted upon presentation of
                                     a valid university ID card (for admissions procedures, please visit <ref target="https://www.wadham.ox.ac.uk/about-wadham/library/persian-studies-section">
                                     Wadham College Library, Persian Studies Section</ref>). Please Contact <email>persian.library@wadham.ox.ac.uk</email> 
-                                    for further information on the availability of this manuscript.</p><p></p>
+                                    for further information on the availability of this manuscript.</p><p/>
                             </availability>
                             <note><hi rend="bold">Key to bibliographical abbreviations of alternative versions:</hi>
                                 <p><hi rend="bold">Libraries:</hi></p><p>
@@ -210,7 +210,10 @@
                 </keywords>
             </textClass>
         </profileDesc>
-        <revisionDesc>          <change when="2019-08-06"> Binding information updated.             <persName>Mohammad Emami</persName>          </change>
+        <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>          <change when="2019-08-06"> Binding information updated.             <persName>Mohammad Emami</persName>          </change>
             <change when="2018-11-25">
                 <persName>Mohammad Emami</persName>
             </change>

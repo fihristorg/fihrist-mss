@@ -45,7 +45,7 @@
                <msContents class="#multipleWorks">
                   <summary>Photostats of Skrine manuscript.</summary>
                   <msItem xml:id="Or_1672-item1" n="1">
-                     <author key="person_98930150" ref="http://viaf.org/viaf/98930150/">
+                     <author key="person_98930150" ref="http://viaf.org/viaf/98930150/" role="aut" change="#role-assignment">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Jalāl al-Dīn Rūmī, Maulana, 1207-1273</persName>
                         <persName xml:lang="fa">جلال الدين رومى</persName>
                      </author>
@@ -65,7 +65,7 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                   <msItem xml:id="Or_1672-item2" n="2">
-                     <author key="person_38224074" ref="http://viaf.org/viaf/38224074/">
+                     <author key="person_121710001" ref="http://viaf.org/viaf/121710001/" change="#ids-cleanup #role-assignment" role="aut">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Mīr Ḥusaynī Haravī, Ḥusayn ibn ʻĀlim, 1272 or 3-ca. 1317</persName>
                         <persName xml:lang="fa">فخر السادات ركن الدين حسين بن عالم حسيني</persName>
                      </author>
@@ -108,7 +108,7 @@
                      <origDate calendar="#Hijri-qamari" from="0800" to="0900">9th/15th century<!-- Please review date attributes, see https://git.io/fihrist-dates --></origDate>
                      <origDate calendar="#Gregorian" from="1397" to="1494">Gregorian<!-- Please review date text, see https://git.io/fihrist-dates --></origDate>
                   </origin>
-                  <acquisition>Bequest of <persName xml:lang="en" key="person_64055571" ref="http://viaf.org/viaf/64055571/">R. A. Nicholson</persName>.</acquisition>
+                  <acquisition>Bequest of <persName xml:lang="en" key="person_64055571" ref="http://viaf.org/viaf/64055571/" role="fmo" change="#role-assignment">R. A. Nicholson</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
@@ -175,6 +175,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>

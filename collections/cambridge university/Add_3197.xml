@@ -48,7 +48,7 @@
                   </summary>
                   <msItem xml:id="Add_3197-item1" n="1">
                      <locus from="1" to="1">f. 1</locus>
-                     <author key="person_f4580">
+                     <author key="person_f407" change="#ids-cleanup #role-assignment" role="aut">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">anonymous</persName>
                      </author>
                      <title xml:lang="en" type="desc" key="work_105">Page from a Turkish epistolary manual containing two letters</title>
@@ -69,7 +69,7 @@
                   </msItem>
                   <msItem xml:id="Add_3197-item2" n="2">
                      <locus from="2" to="5">f. 2-5</locus>
-                     <author key="person_f4580">
+                     <author key="person_f407" change="#ids-cleanup #role-assignment" role="aut">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">anonymous</persName>
                      </author>
                      <title xml:lang="en" type="desc" key="work_106">Fragments from Turkish mas̲navī poetry</title>
@@ -90,10 +90,10 @@
                   </msItem>
                   <msItem xml:id="Add_3197-item3" n="3">
                      <locus from="6a" to="10a">f. 6a-10a</locus>
-                     <author key="person_f4580">
+                     <author key="person_f407" change="#ids-cleanup #role-assignment" role="aut">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">anonymous</persName>
                      </author>
-                     <title xml:lang="en" type="desc" key="work_107">Fragments from a Persian work on Indian history dealing with <persName xml:lang="fa-Latn-x-lc" key="person_f4016">Shāh ʻĀlam</persName> and <persName xml:lang="fa-Latn-x-lc" key="person_f781">Bīdār Bakht</persName>
+                     <title xml:lang="en" type="desc" key="work_107">Fragments from a Persian work on Indian history dealing with <persName xml:lang="fa-Latn-x-lc" key="person_f4016" role="dpc" change="#role-assignment">Shāh ʻĀlam</persName> and <persName xml:lang="fa-Latn-x-lc" key="person_f781" role="dpc" change="#role-assignment">Bīdār Bakht</persName>
                      </title>
                      <incipit xml:lang="ar"/>
                      <explicit xml:lang="ar" defective="true"/>
@@ -112,7 +112,7 @@
                   </msItem>
                   <msItem xml:id="Add_3197-item4" n="4">
                      <locus from="13" to="15">f. 13-15</locus>
-                     <author key="person_f4580">
+                     <author key="person_f407" change="#ids-cleanup #role-assignment" role="aut">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">anonymous</persName>
                      </author>
                      <title xml:lang="en" type="desc" key="work_108">Fragments from a Persian work on Indian history</title>
@@ -133,12 +133,12 @@
                   </msItem>
                   <msItem xml:id="Add_3197-item5" n="5">
                      <locus from="16b" to="118a">ff. 16b-118a</locus>
-                     <author key="person_100206721" ref="http://viaf.org/viaf/100206721/">
+                     <author key="person_100206721" ref="http://viaf.org/viaf/100206721/" role="aut" change="#role-assignment">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Saʻdī</persName>
                         <persName xml:lang="fa">سعدی</persName>
                      </author>
-                     <title xml:lang="fa-Latn-x-lc" key="work_77">Gulistān-i Saʻdī</title>
-                     <title xml:lang="fa" key="work_77">گلستان سعدی</title>
+                     <title xml:lang="fa-Latn-x-lc" key="work_20962" change="#ids-cleanup">Gulistān-i Saʻdī</title>
+                     <title xml:lang="fa" key="work_20962" change="#ids-cleanup">گلستان سعدی</title>
                      <incipit xml:lang="ar"/>
                      <explicit xml:lang="ar" defective="true"/>
                      <note>
@@ -175,7 +175,7 @@
                   <handDesc>
                      <handNote scope="major" script="unknown">
                         <ref target="#a5">
-                           <persName xml:lang="fa-Latn-x-lc" key="person_f3263">Nūr al-Dīn <foreign xml:lang="fa">نور الدين</foreign>
+                           <persName xml:lang="fa-Latn-x-lc" key="person_f3263" role="scr" change="#role-assignment">Nūr al-Dīn <foreign xml:lang="fa">نور الدين</foreign>
                            </persName>
                         </ref>
                      </handNote>
@@ -192,7 +192,7 @@
                         
                      </ref>
                   </origin>
-                  <acquisition>Bequest of <persName key="person_f3467">R.L. Bensly (1831-1893)</persName> in <date calendar="#Gregorian">1895</date>.</acquisition>
+                  <acquisition>Bequest of <persName key="person_77105626" role="fmo" change="#role-assignment #ids-cleanup">R.L. Bensly (1831-1893)</persName> in <date calendar="#Gregorian">1895</date>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
@@ -276,6 +276,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>

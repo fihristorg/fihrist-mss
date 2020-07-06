@@ -48,7 +48,7 @@
                   </summary>
                   <msItem xml:id="Qq_89-item1" n="1">
                      <locus from="2a" to="11a">ff. 2a-11a</locus>
-                     <author key="person_f4580">
+                     <author key="person_f407" change="#ids-cleanup #role-assignment" role="aut">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">anonymous</persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc" key="work_2938">Fihrist asmāʼ muʼallafāt al-Suyūṭī</title>
@@ -62,17 +62,17 @@
                         <bibl>
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/view.php?id=85">no. 746</ref>
                         </bibl>
-                        <bibl>List of the works of <author key="person_90051632" ref="http://viaf.org/viaf/90051632/">
+                        <bibl>List of the works of <author key="person_90051632" ref="http://viaf.org/viaf/90051632/" role="ant" change="#role-assignment">
                               <persName xml:lang="ar-Latn-x-lc" type="standard">Sūyūtī, 1445-1505</persName>
                            </author>
-                           <persName xml:lang="ar" key="person_f5052">السيوطي</persName>
+                           <persName xml:lang="ar" key="person_90051632" role="ant" change="#role-assignment #ids-cleanup">السيوطي</persName>
                         </bibl>
                      </listBibl>
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="Qq_89-item2" n="2">
                      <locus from="12b" to="28b">ff. 12b-28b</locus>
-                     <author key="person_89736851" ref="http://viaf.org/viaf/89736851/">
+                     <author key="person_31996761" ref="http://viaf.org/viaf/31996761/" change="#ids-cleanup #role-assignment" role="aut">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">Ghazzālī, 1058-1111</persName>
                         <persName xml:lang="ar">الغزالي، محمد بن محمد بن احمد <addName xml:lang="ar" type="kunyah">ابو حامد</addName>
                         </persName>
@@ -93,7 +93,7 @@
                   </msItem>
                   <msItem xml:id="Qq_89-item3" n="3">
                      <locus from="29" to="36">ff. 29-36</locus>
-                     <author key="person_95223177" ref="http://viaf.org/viaf/95223177/">
+                     <author key="person_95223177" ref="http://viaf.org/viaf/95223177/" role="aut" change="#role-assignment">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn al-ʻArabī, 1165-1240</persName>
                         <persName xml:lang="ar">ابن عربي، محيى الدين محمد</persName>
                      </author>
@@ -128,7 +128,7 @@
                   </objectDesc>
                   <handDesc>
                      <handNote scope="major" script="unknown">
-                        <persName xml:lang="ar-Latn-x-lc" key="person_f5512">Ḥājī Ḥasan ibn Ibrāhīm <foreign xml:lang="ar">حاجي حسن بن ابراهيم</foreign>
+                        <persName xml:lang="ar-Latn-x-lc" key="person_f5512" role="scr" change="#role-assignment">Ḥājī Ḥasan ibn Ibrāhīm <foreign xml:lang="ar">حاجي حسن بن ابراهيم</foreign>
                         </persName>
                      </handNote>
                   </handDesc>
@@ -138,7 +138,7 @@
                      <origDate notBefore="1767" notAfter="1768" calendar="#Hijri-qamari">1181</origDate>
                      <origDate calendar="#Gregorian" when="1768">1768</origDate>
                   </origin>
-                  <acquisition>Bequest of <persName key="person_f1655">J.L. Burckhardt (1784-1817)</persName> in <date calendar="#Gregorian">1819</date>.</acquisition>
+                  <acquisition>Bequest of <persName key="person_59176329" role="fmo" change="#role-assignment #ids-cleanup">J.L. Burckhardt (1784-1817)</persName> in <date calendar="#Gregorian">1819</date>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
@@ -206,6 +206,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>

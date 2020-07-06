@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7846">
@@ -80,9 +80,9 @@
                             <locus from="1a" to="421a">ff. 1a-421a</locus>
                             <textLang mainLang="fa">Arabic</textLang>
                             <note type="content-genre">Islamic jurisprudence</note>
-                            <title xml:lang="ar-Latn-x-lc" key="work_2994">Man lā yaḥz̤uruh al-faqīh</title>
-                            <title xml:lang="ar" key="work_2994">من لا یحضره الفقیه</title>
-                            <author key="person_90043815">
+                            <title xml:lang="ar-Latn-x-lc" key="work_1112" change="#ids-cleanup">Man lā yaḥz̤uruh al-faqīh</title>
+                            <title xml:lang="ar" key="work_1112" change="#ids-cleanup">من لا یحضره الفقیه</title>
+                            <author key="person_90043815" role="aut" change="#role-assignment">
                                 <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn Bābawayh al-Qummī, Muḥammad ibn ʻAlī, 918 or 919-991 or 992‏</persName>
                                 <persName xml:lang="ar-Latn-x-lc" type="alt">Ibn Bābawayh, Muḥammad ibn ʻAlī (311-381 AH/923-991)‏‏</persName>
                                 <persName xml:lang="ar">ابن بابویه القمی، محمد بن علی</persName>
@@ -149,8 +149,8 @@
                         <handDesc>
                             <handNote scope="major" script="naskh" medium="blackink">
                                 <desc>Calligraphic Naskh, one hand, regular hand</desc>
-                                <persName xml:lang="ar-Latn-x-lc" key="person_f5470">Ḥusaynī, Muḥammad Shafīʿ</persName>
-                                <persName xml:lang="ar" key="person_f5470">حسینی، محمد شفیع</persName>
+                                <persName xml:lang="ar-Latn-x-lc" key="person_f5470" role="scr" change="#role-assignment">Ḥusaynī, Muḥammad Shafīʿ</persName>
+                                <persName xml:lang="ar" key="person_f5470" role="scr" change="#role-assignment">حسینی، محمد شفیع</persName>
                             </handNote>
                         </handDesc>
                         <additions>
@@ -180,7 +180,7 @@
                             <locus from="421b" to="439a">ff. 421b-439a</locus>
                             <textLang mainLang="ar">Arabic</textLang>
                             <note type="content-genre">Rijāl (Biographical evaluation)</note>
-                            <author key="person_90043815">
+                            <author key="person_90043815" role="aut" change="#role-assignment">
                                 <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn Bābawayh al-Qummī, Muḥammad ibn ʻAlī, 918 or 919-991 or 992‏</persName>
                                 <persName xml:lang="ar-Latn-x-lc" type="alt">Ibn Bābawayh, Muḥammad ibn ʻAlī (311-381 AH/923-991)‏‏</persName>
                                 <persName xml:lang="ar">ابن بابویه القمی، محمد بن علی</persName>
@@ -259,8 +259,8 @@
                             <handDesc>
                                 <handNote scope="major" script="naskh" medium="blackink">
                                     <desc>Cursive, gracefull Naskh, one hand, regular hand. Annotated, Nastaʿalīq, Shikastah Nastaʿalīq.</desc>
-                                    <persName xml:lang="ar-Latn-x-lc" key="person_f5470">Ḥusaynī, Muḥammad Shafīʿ</persName>
-                                    <persName xml:lang="ar" key="person_f5470">حسینی، محمد شفیع</persName>
+                                    <persName xml:lang="ar-Latn-x-lc" key="person_f5470" role="scr" change="#role-assignment">Ḥusaynī, Muḥammad Shafīʿ</persName>
+                                    <persName xml:lang="ar" key="person_f5470" role="scr" change="#role-assignment">حسینی، محمد شفیع</persName>
                                 </handNote>
                             </handDesc>
                             <additions>
@@ -315,6 +315,12 @@
             </textClass>
         </profileDesc>
         <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
             <change when="2019-08-14"> Revamped according to the new template for mult part items.
                 <persName>Mohammad Emami</persName>          
             </change>

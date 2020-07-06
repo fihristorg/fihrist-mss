@@ -48,7 +48,7 @@
                   </summary>
                   <msItem xml:id="MS_Arab_e_2-item1" n="1">
                      <locus from="1" to="7">ff. 1v-7r</locus>
-                     <author key="person_f407">Anonymous</author>
+                     <author key="person_f407" role="aut" change="#role-assignment">Anonymous</author>
                      <title key="work_6821">A perpetual Arabic calendar, beginning with Jumādá II and ending with Jumādá I</title>
                      <listBibl>
                         <bibl>Appendix Calendar</bibl>
@@ -58,12 +58,12 @@
                   </msItem>
                   <msItem xml:id="MS_Arab_e_2-item2" n="2" class="#translation">
                      <locus from="8" to="13">ff. 8v-13v</locus>
-                     <author key="person_51545226" ref="http://www.viaf.org/viaf/51545226/">
+                     <author key="person_51545226" ref="http://www.viaf.org/viaf/51545226/" role="aut" change="#role-assignment">
                         <persName type="standard" xml:lang="ar-Latn-x-lc">Athīr al-Dīn al-Abharī, al-Mufaḍḍal ibn ʻUmar, d. <date calendar="#Gregorian" when="1265">1265</date>
                         </persName>
                      </author>
-                     <title xml:lang="ar-Latn-x-lc" key="work_3272">Kitāb al-Īsāghūjī</title>
-                     <note>A paraphrase of the <title xml:lang="grc">εἰσαγωγή</title> of <persName key="person_f3319">Porphyrius</persName>
+                     <title xml:lang="ar-Latn-x-lc" key="work_21161" change="#ids-cleanup">Kitāb al-Īsāghūjī</title>
+                     <note>A paraphrase of the <title xml:lang="grc">εἰσαγωγή</title> of <persName key="person_64016141" role="ant" change="#role-assignment #ids-cleanup">Porphyrius</persName>
                      </note>
                      <listBibl>
                         <bibl>GAL I 464</bibl>
@@ -184,6 +184,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>

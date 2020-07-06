@@ -48,7 +48,7 @@
                   </summary>
                   <msItem xml:id="Or_1521-item1" n="1">
                      <locus from="1" to="108">ff. 1-108</locus>
-                     <author key="person_95223177" ref="http://viaf.org/viaf/95223177/">
+                     <author key="person_95223177" ref="http://viaf.org/viaf/95223177/" role="aut" change="#role-assignment">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn al-ʻArabī, 1165-1240</persName>
                         <persName xml:lang="ar">ابن عربي</persName>
                      </author>
@@ -69,10 +69,10 @@
                   </msItem>
                   <msItem xml:id="Or_1521-item2" n="2" class="#commentary">
                      <locus from="110" to="135">ff. 110-135</locus>
-                     <author key="person_f4580">
+                     <author key="person_f407" change="#ids-cleanup #role-assignment" role="aut">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">anonymous</persName>
                      </author>
-                     <title xml:lang="en" type="desc" key="work_2315">Commentary on the Uṣūl al-ḥikam</title>
+                     <title xml:lang="en" type="desc" key="work_2000" change="#ids-cleanup">Commentary on the Uṣūl al-ḥikam</title>
                      <incipit xml:lang="ar"/>
                      <explicit xml:lang="ar" defective="true"/>
                      <note>
@@ -83,7 +83,7 @@
                            <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/arberry/view.php?id=29">no. 310</ref>
                         </bibl>
                         <bibl type="text-relations">Commentary on the <title xml:lang="ar-Latn-x-lc">Uṣūl al-ḥikam fī niẓām al-ʻālam <foreign xml:lang="ar">اصول الحكم في نظام العالم</foreign>
-                           </title> of <author key="person_15018150" ref="http://viaf.org/viaf/15018150/">
+                           </title> of <author key="person_15018150" ref="http://viaf.org/viaf/15018150/" role="ant" change="#role-assignment">
                               <persName xml:lang="ar-Latn-x-lc">Āqḥiṣārī, Ḥasan Kāfī, 1544-1616</persName>
                               <persName xml:lang="ar">آقحصارى، جسن كافي</persName>
                            </author>.</bibl>
@@ -92,7 +92,7 @@
                   </msItem>
                   <msItem xml:id="Or_1521-item3" n="3">
                      <locus from="138" to="242">ff. 138-242</locus>
-                     <author key="person_f4580">
+                     <author key="person_f407" change="#ids-cleanup #role-assignment" role="aut">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">anonymous</persName>
                      </author>
                      <title xml:lang="en" type="desc" key="work_2316">Work on Muslim religion and ethics</title>
@@ -133,7 +133,7 @@
                      <origDate calendar="#Hijri-qamari" from="1100" to="1200">Undated, 12th/18th century<!-- Please review date attributes, see https://git.io/fihrist-dates --></origDate>
                      <origDate calendar="#Gregorian" from="1688" to="1785">Gregorian<!-- Please review date text, see https://git.io/fihrist-dates --></origDate>
                   </origin>
-                  <acquisition>Bequest of <persName xml:lang="en" key="person_64055571" ref="http://viaf.org/viaf/64055571/">R. A. Nicholson</persName>.</acquisition>
+                  <acquisition>Bequest of <persName xml:lang="en" key="person_64055571" ref="http://viaf.org/viaf/64055571/" role="fmo" change="#role-assignment">R. A. Nicholson</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
@@ -202,6 +202,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>

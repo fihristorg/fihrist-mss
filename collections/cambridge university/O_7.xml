@@ -48,7 +48,7 @@
                   </summary>
                   <msItem xml:id="O_7-item1" n="1">
                      <locus from="2" to="68">pp. 2-68</locus>
-                     <author key="person_f2752">
+                     <author key="person_f2752" role="aut" change="#role-assignment">
                         <persName xml:lang="ar-Latn-x-lc" type="supplied">Muḥammad ibn Rāḍī al-Najāfī</persName>
                         <persName xml:lang="ar">محمد بن راضي النجافي</persName>
                      </author>
@@ -63,7 +63,7 @@
                   </msItem>
                   <msItem xml:id="O_7-item2" n="2">
                      <locus from="68" to="98">pp. 68-98</locus>
-                     <author key="person_f4580">
+                     <author key="person_f407" change="#ids-cleanup #role-assignment" role="aut">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">anonymous</persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc" key="work_1325">Risālah fī maʻrifat manāzil al-nujūm</title>
@@ -99,7 +99,7 @@
                      <origDate from="1790" to="1888" calendar="#Hijri-qamari">1205 or 1305</origDate>
                      <origDate calendar="#Gregorian" from="1791" to="1888">1791 or 1888</origDate>
                   </origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/">E. G. Browne</persName>.</acquisition>
+                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
@@ -161,6 +161,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>

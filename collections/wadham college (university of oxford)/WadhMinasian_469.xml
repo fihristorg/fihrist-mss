@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_13119">
@@ -55,14 +55,14 @@
                         <msItem>
                             <textLang mainLang="per">Persian</textLang>
                             <note type="content-genre">Biography</note>                            
-                            <author key="person_120724759">
+                            <author key="person_120724759" role="aut" change="#role-assignment">
                                 <persName xml:lang="per-Latn-x-lc" type="standard">ʿAṭṭār, Farīd al-Dīn, -approximately 1230</persName>
                                 <persName xml:lang="per" type="standard">عطار، فریدالدین</persName>
                                 <persName xml:lang="per-Latn-x-lc" type="alt">ʿAṭṭār Nayshābūrī, Farīd al-Dīn, -627 AH/1230</persName>
                                 <persName xml:lang="per" type="alt">عطار نیشابوری، فریدالدین، -۶۲۷ق/۱۲۳۰</persName>
                             </author>
-                            <title xml:lang="ara-Latn-x-lc" key="work_7825">Taz̲kirat al-awliyāʾ</title>
-                            <title xml:lang="ara" key="work_7825">تذکرة الاولیا</title>
+                            <title xml:lang="ara-Latn-x-lc" key="work_21126" change="#ids-cleanup">Taz̲kirat al-awliyāʾ</title>
+                            <title xml:lang="ara" key="work_21126" change="#ids-cleanup">تذکرة الاولیا</title>
                             <incipit xml:lang="per" defective="true">
                                 … گردان که کار تو بعلت نیست و من قسمی دیگر را طاقت ندارم میگویم که باشد که مستجاب…
                                 و دیگر باعث آن بود که تا فردای قیامت نظر شفاعتی در کار این عاجز کند…
@@ -171,13 +171,19 @@
                             <term key="subject_sh85089345">Mysticism</term>
                         </item>
                         <item>
-                            <term  key="subject_sh2010103024">Mystics--Biography</term>
+                            <term key="subject_sh2010103024">Mystics--Biography</term>
                         </item>
                     </list>
                 </keywords>
             </textClass>
         </profileDesc>
-        <revisionDesc>          <change when="2019-08-06"> Binding information updated.             <persName>Mohammad Emami</persName>          </change>
+        <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>          <change when="2019-08-06"> Binding information updated.             <persName>Mohammad Emami</persName>          </change>
             <change when="2019-05-23">
                 <persName>Mohammad Emami</persName>
             </change>

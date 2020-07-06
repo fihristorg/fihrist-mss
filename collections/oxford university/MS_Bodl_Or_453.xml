@@ -48,7 +48,7 @@
                   </summary>
                   <msItem xml:id="MS_Bodl_Or_453-item1" n="1">
                      <locus from="1" to="1">f. 1r</locus>
-                     <author key="person_f407">Anonymous</author>
+                     <author key="person_f407" role="aut" change="#role-assignment">Anonymous</author>
                      <title key="work_5345">Various astronomical notes [fawāʼid]</title>
                      <listBibl>
                         <bibl>Appendix Astronomy</bibl>
@@ -58,7 +58,7 @@
                   </msItem>
                   <msItem xml:id="MS_Bodl_Or_453-item2" n="2">
                      <locus from="2" to="11">fols. 2v-11r</locus>
-                     <author key="person_f5574">
+                     <author key="person_f5573" change="#ids-cleanup #role-assignment" role="aut">
                         <persName xml:lang="ar-Latn-x-lc">Ṣāliḥī, Zayn al-Dīn ʻAbd al-Raḥmān</persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc" key="work_3573">al-Durr al-naẓīm fī tashīl al-taqwīm</title>
@@ -71,11 +71,11 @@
                   </msItem>
                   <msItem xml:id="MS_Bodl_Or_453-item3" n="3" class="#supplement">
                      <locus from="11" to="15">fols. 11v-15v</locus>
-                     <author key="person_f5592">
+                     <author key="person_f5592" role="aut" change="#role-assignment">
                         <persName xml:lang="ar-Latn-x-lc">Ṭarābulusī, ʻAlā al-Dīn ibn Nāṣir al-Dīn, <date calendar="#Gregorian" notAfter="1600">late 16th cent.</date>
                         </persName>
                      </author>
-                     <title key="work_5346">A supplement to <persName xml:lang="ar-Latn-x-lc" key="person_f5575">Ṣāliḥī</persName> ʼs work <title xml:lang="ar-Latn-x-lc">al-Durr al-naẓīm fī tashīl al-taqwīm</title>, with tables.</title>
+                     <title key="work_5346">A supplement to <persName xml:lang="ar-Latn-x-lc" key="person_f5573" role="ant" change="#role-assignment #ids-cleanup">Ṣāliḥī</persName> ʼs work <title xml:lang="ar-Latn-x-lc">al-Durr al-naẓīm fī tashīl al-taqwīm</title>, with tables.</title>
                      <listBibl>
                         <bibl>GAL II 213</bibl>
                         <bibl>[NAM. 288 (3)]</bibl>
@@ -84,7 +84,7 @@
                   </msItem>
                   <msItem xml:id="MS_Bodl_Or_453-item4" n="4">
                      <locus from="16" to="123">ff. 16r-123r</locus>
-                     <author key="person_f5574">
+                     <author key="person_f5573" change="#ids-cleanup #role-assignment" role="aut">
                         <persName xml:lang="ar-Latn-x-lc">Ṣāliḥī, Zayn al-Dīn ʻAbd al-Raḥmān</persName>
                      </author>
                      <title key="work_5347">Three series of supplementary tables to his work <title xml:lang="ar-Latn-x-lc">al-Durr al-naẓīm fī tashīl al-taqwīm</title>
@@ -97,7 +97,7 @@
                   </msItem>
                   <msItem xml:id="MS_Bodl_Or_453-item5" n="5">
                      <locus from="124" to="135">ff. 124r-135v</locus>
-                     <author key="person_f407">Anonymous</author>
+                     <author key="person_f407" role="aut" change="#role-assignment">Anonymous</author>
                      <title key="work_5348">Various astronomical tables.</title>
                      <listBibl>
                         <bibl>Appendix Astronomy</bibl>
@@ -235,6 +235,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>

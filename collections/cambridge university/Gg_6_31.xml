@@ -48,7 +48,7 @@
                   </summary>
                   <msItem xml:id="Gg_6_31-item1" n="1">
                      <locus from="2b" to="40a">ff. 2b-40a</locus>
-                     <author key="person_f4406">
+                     <author key="person_f4406" role="aut" change="#role-assignment">
                         <persName xml:lang="ar-Latn-x-lc" type="supplied">Yūsuf al-Shaykh</persName>
                         <persName xml:lang="ar">يوسف الشيخ</persName>
                      </author>
@@ -74,7 +74,7 @@
                   </msItem>
                   <msItem xml:id="Gg_6_31-item2" n="2">
                      <locus from="42b" to="69b">ff. 42b-69b</locus>
-                     <author key="person_f2865">
+                     <author key="person_f2865" role="aut" change="#role-assignment">
                         <persName xml:lang="ar-Latn-x-lc" type="supplied">Muḥammad Ḥājī Ilyās</persName>
                         <persName xml:lang="ar">محمد حاجی الياس</persName>
                      </author>
@@ -104,12 +104,12 @@
                   </msItem>
                   <msItem xml:id="Gg_6_31-item3" n="3">
                      <locus from="72b" to="131b">ff. 72b-131b</locus>
-                     <author key="person_97004962" ref="http://viaf.org/viaf/97004962/">
+                     <author key="person_97004962" ref="http://viaf.org/viaf/97004962/" role="aut" change="#role-assignment">
                         <persName xml:lang="fa-Latn-x-lc" type="supplied">Muḥammad ibn Hindūshāh Nakhjavānī, fl 1328-1358</persName>
                         <persName xml:lang="fa">محمد هندوشاه نخجوانی</persName>
                      </author>
-                     <title xml:lang="ar-Latn-x-lc" key="work_2444">Ṣiḥāḥ al-ʻajamīyah</title>
-                     <title xml:lang="ar" key="work_2444">صحاح العجمية</title>
+                     <title xml:lang="ar-Latn-x-lc" key="work_20319" change="#ids-cleanup">Ṣiḥāḥ al-ʻajamīyah</title>
+                     <title xml:lang="ar" key="work_20319" change="#ids-cleanup">صحاح العجمية</title>
                      <incipit xml:lang="ar"/>
                      <explicit xml:lang="ar" defective="true"/>
                      <note>
@@ -149,7 +149,7 @@
                </physDesc>
                <history>
                   <origin change="#fix-dates">undated</origin>
-                  <acquisition>Donated by <persName key="person_f3096">N. Hobart</persName> in <date calendar="#Gregorian">1655</date>.</acquisition>
+                  <acquisition>Donated by <persName key="person_f3096" role="fmo" change="#role-assignment">N. Hobart</persName> in <date calendar="#Gregorian">1655</date>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
@@ -207,6 +207,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>

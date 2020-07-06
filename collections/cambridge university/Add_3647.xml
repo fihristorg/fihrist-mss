@@ -47,7 +47,7 @@
                      3 works by 3 authors on the subjects of Arabic language and Didactic poetry
                   </summary>
                   <msItem xml:id="Add_3647-item1" n="1">
-                     <author key="person_12537163" ref="http://viaf.org/viaf/12537163/">
+                     <author key="person_12537163" ref="http://viaf.org/viaf/12537163/" role="aut" change="#role-assignment">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn Mālik, Muḥammad ibn ʻAbd Allāh, d. 1274</persName>
                         <persName xml:lang="ar">جمال الدين محمد بن عبد الله إبن مالك</persName>
                      </author>
@@ -66,7 +66,7 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="Add_3647-item2" n="2" class="commentary">
-                     <author key="person_f605">
+                     <author key="person_f605" role="aut" change="#role-assignment">
                         <persName xml:lang="ar-Latn-x-lc" type="supplied">Badr al-dīn Ibn Muḥammad Ibn Mālik</persName>
                         <persName xml:lang="ar">بدرالدين إبن محمد إبن مالك</persName>
                      </author>
@@ -84,7 +84,7 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="Add_3647-item3" n="3" class="super-commentary">
-                     <author key="person_100328821" ref="http://viaf.org/viaf/100328821/">
+                     <author key="person_100328821" ref="http://viaf.org/viaf/100328821/" role="aut" change="#role-assignment">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">Anṣārī, Zakarīyā ibn Muḥammad, ca. 1423-ca. 1520</persName>
                         <persName xml:lang="ar">شيح زين الدين ابو يحي زكريا الأنصاري</persName>
                      </author>
@@ -118,8 +118,8 @@
                   </objectDesc>
                   <handDesc>
                      <handNote scope="major" script="unknown">
-                        <persName xml:lang="ar-Latn-x-lc" key="person_f4634">ʻAbd Al-Raḥmān Ibn Ḥājj Bakr</persName>
-                        <persName xml:lang="ar" key="person_f5174">عبد الرحمان بن حاج بكر</persName>
+                        <persName xml:lang="ar-Latn-x-lc" key="person_f4634" role="scr" change="#role-assignment">ʻAbd Al-Raḥmān Ibn Ḥājj Bakr</persName>
+                        <persName xml:lang="ar" key="person_f4634" role="scr" change="#role-assignment #ids-cleanup">عبد الرحمان بن حاج بكر</persName>
                      </handNote>
                   </handDesc>
                </physDesc>
@@ -128,7 +128,7 @@
                      <origDate calendar="#Hijri">1175</origDate>
                      <origDate when="1761" calendar="#Gregorian">1761</origDate>
                   </origin>
-                  <acquisition>Bought from <persName key="person_f924">Dr Sethian</persName> in <date calendar="#Gregorian">1900</date>.</acquisition>
+                  <acquisition>Bought from <persName key="person_f924" role="fmo" change="#role-assignment">Dr Sethian</persName> in <date calendar="#Gregorian">1900</date>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
@@ -167,6 +167,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>
