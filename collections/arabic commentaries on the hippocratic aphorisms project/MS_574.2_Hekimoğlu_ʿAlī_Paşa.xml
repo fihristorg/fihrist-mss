@@ -10,7 +10,7 @@
             <principal>Professor Peter E Pormann</principal>
             <respStmt>
                <resp ref="http://id.loc.gov/vocabulary/relators/com.html">Compiled by</resp>
-               <persName ref="http://viaf.org/viaf/209145003314961300916" key="person_209145003314961300916">Taro Mimura</persName>
+               <persName ref="http://viaf.org/viaf/209145003314961300916" key="person_209145003314961300916" role="cataloguer" change="#role-assignment">Taro Mimura</persName>
             </respStmt>
          </titleStmt>
          <publicationStmt><!--First publisher-->
@@ -40,14 +40,14 @@
                   <idno>MS 574/2 (Hekimoğlu ʿAlī Paşa)</idno>
                </msIdentifier>
                <msContents class="lemmatic">
-                  <summary>This manuscript contains commentary on the book of Aphorisms attributed to <persName type="standard" ref="http://viaf.org/viaf/287984736" key="person_287984736">Hippocrates</persName>.</summary>
+                  <summary>This manuscript contains commentary on the book of Aphorisms attributed to <persName type="standard" ref="http://viaf.org/viaf/287984736" key="person_287984736" role="ant" change="#role-assignment">Hippocrates</persName>.</summary>
                   <msItem xml:id="MS_574.2_Hekimoğlu_ʿAlī_Paşa-item1">
-                     <author key="person_f3161">
+                     <author key="person_f3161" role="aut" change="#role-assignment">
                         <persName type="supplied" subtype="aut">Naǧm al-Dīn ʾAḥmad ibn al-Minfāḫنجم الدين أحمد بن المنفاخ</persName>
                      </author>
-                     <title xml:lang="en" type="desc" key="work_7775">Epistle Refuting the Objections against the Book of Aphorisms</title>
-                     <title xml:lang="ar" key="work_7775">رسالة في رد الاعتراضات على كتاب الفصول</title>
-                     <title xml:lang="en" type="alt" key="work_7775">Risaāla fī radd al-iʿtirāḍāt ʿalā kitāb al-Fuṣūl</title>
+                     <title xml:lang="en" type="desc" key="work_7780" change="#ids-cleanup">Epistle Refuting the Objections against the Book of Aphorisms</title>
+                     <title xml:lang="ar" key="work_7780" change="#ids-cleanup">رسالة في رد الاعتراضات على كتاب الفصول</title>
+                     <title xml:lang="en" type="alt" key="work_7780" change="#ids-cleanup">Risaāla fī radd al-iʿtirāḍāt ʿalā kitāb al-Fuṣūl</title>
                      <note>Original manuscript in Süleymaniye Mosque.</note>
                      <note>This is a lemmatically arranged commentary (note that he only commented on a part of the lemmata). The introduction begins on <locus>f. 125b</locus>; the beginning of each Book is as follows: Bk1: 125b; Bk 2: 136a; Bk 3: 149a; Bk 4: 151a; Bk 5: 154a; Bk 6: 154b; Bk 7: 155a.</note>
                      <textLang mainLang="ar">Arabic</textLang>
@@ -74,7 +74,7 @@
                </physDesc>
                <history>
                   <origin change="#fix-dates">
-                     <note>The copy was completed by <persName type="supplied" key="person_f2165">Maʼmūn b. Muḥammad b. Kamāl al-Isṭabānī al-Ījī</persName> on <origDate notBefore="1270" notAfter="1271" calendar="#Hijri-qamari">Thursday night (i.e. Wednesday) on the 15th (muntaṣaf) of Ṣafar 669AH</origDate>
+                     <note>The copy was completed by <persName type="supplied" key="person_f2165" role="scr" change="#role-assignment">Maʼmūn b. Muḥammad b. Kamāl al-Isṭabānī al-Ījī</persName> on <origDate notBefore="1270" notAfter="1271" calendar="#Hijri-qamari">Thursday night (i.e. Wednesday) on the 15th (muntaṣaf) of Ṣafar 669AH</origDate>
                         <origDate calendar="#Gregorian" notBefore="1270" notAfter="1270">[1270 CE]</origDate>.</note>
                   </origin>
                </history>
@@ -112,6 +112,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         </change>
+         <change when="2020-07-06" xml:id="ids-cleanup">
+            <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+         </change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>
@@ -122,7 +128,7 @@
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2017">
-            <persName type="standard" ref="http://viaf.org/viaf/305441725" key="person_305441725">Hammood Obaid</persName>
+            <persName type="standard" ref="http://viaf.org/viaf/305441725" key="person_305441725" role="dtm" change="#role-assignment">Hammood Obaid</persName>
          </change>
       </revisionDesc>
    </teiHeader>
