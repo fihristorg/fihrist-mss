@@ -230,6 +230,31 @@ declare variable $allinstances :=
                     return
                     <field name="link_manuscripts_smni">{ $link }</field>
                 }
+                {
+                (: Filter on which external authorities, if any, this person has been identified in :)
+                let $majorextauths := ('VIAF', 'LC', 'ISNI')
+                return
+                (
+                for $majorextauth in $majorextauths
+                    return
+                    (
+                    if (some $extauth in $extauths satisfies $extauth eq $majorextauth) then
+                        <field name="extauth_sm">{ $majorextauth }</field>
+                    else
+                        <field name="extauth_sm">Not{$majorextauth}</field>
+                    )
+                ,
+                if (some $extauth in $extauths satisfies not($extauth = $majorextauths)) then
+                    <field name="extauth_sm">Other</field>
+                else
+                    ()
+                ,
+                if (count($extauths) eq 0) then
+                    <field name="extauth_sm">None</field>
+                else
+                    ()
+                )
+                }
             </doc>
         else
             (
