@@ -38,13 +38,13 @@ declare variable $allinstances :=
             if ($authorsinworksauthority) then () else 
                 for $authorid in ($instance/ancestor::tei:msItem[tei:author][1]/tei:author/@key/data(), $instance/parent::*/(tei:author|tei:persName[@role=('author','aut')])/@key/data())
                     return <author>{ $authorid }</author>
-                ,
-                for $translatorid in $instance/parent::*//*[@role=('trl','translator','Translator')]/@key/data()
-                    return <translator>{ $translatorid }</translator>
             }
             {
-            for $subjectid in $instance/parent::tei:msItem/tei:title//tei:persName/@key/data()
-                return <personintitle>{ $subjectid }</personintitle>
+            for $contributor in $instance/parent::*//(tei:author|tei:editor|tei:persName)[@role and not(@role=('aut','author')) and not(ancestor::tei:bibl or ancestor::tei:biblStruct)]
+                let $contribid := $contributor/@key/data()
+                return
+                for $role in distinct-values(tokenize(normalize-space($contributor/@role), ' ')[not(.=('aut','author'))])
+                    return <contributor role="{ $role }">{ $contribid }</contributor>
             }
             { for $instanceid in $instance/parent::tei:msItem/@xml:id return <instanceid>{ $instanceid }</instanceid> }
             <shelfmark>{ $shelfmark }</shelfmark>
@@ -155,11 +155,11 @@ declare variable $allinstances :=
                 let $relatedids := tokenize(translate(string-join(($work/@corresp, $work/@sameAs), ' '), '#', ''), '\s+')[string-length() gt 0]
                 for $relatedid in distinct-values($relatedids)
                     let $url := concat("/catalog/", $relatedid)
-                    let $linktext := ($authorityentries[@xml:id = $relatedid]/tei:title[@type = 'uniform'][1])[1]
+                    let $linktext := replace(normalize-space(($authorityentries[@xml:id = $relatedid]/tei:title[@type = 'uniform'][1])[1]/string()), '\|' , '&#8739;')
                     order by lower-case($linktext)
                     return
                     if (exists($linktext) and $allinstances[key = $relatedid]) then
-                        let $link := concat($url, "|", normalize-space($linktext/string()))
+                        let $link := concat($url, "|", $linktext)
                         return
                         <field name="link_related_smni">{ $link }</field>
                     else
@@ -172,47 +172,31 @@ declare variable $allinstances :=
                     else distinct-values(($instances/author/text(), $work/tei:author[not(@role)]/@key/data()))
                 for $authorid in $authorids
                     let $url := concat("/catalog/", $authorid)
-                    let $linktext := ($personauthority[@xml:id = $authorid]/tei:persName[@type = 'display'][1])[1]
+                    let $linktext := replace(normalize-space(($personauthority[@xml:id = $authorid]/tei:persName[@type = 'display'][1])[1]/string()), '\|' , '&#8739;')
                     order by lower-case($linktext)
                     return
                     if (exists($linktext)) then
-                        let $link := concat($url, "|", normalize-space($linktext/string()))
+                        let $link := concat($url, "|", $linktext)
                         return
                         <field name="link_author_smni">{ $link }</field>
                     else
                         bod:logging('info', 'Cannot create link from work to author', ($id, $authorid))
                 }
                 {
-                (: Links to the translators of the work :)
-                let $translatorids := 
-                    if ($authorsinworksauthority) then distinct-values($work/tei:author[@role=('translator','trl')]/@key/data())
-                    else distinct-values(($instances/translator/text(), $work/tei:author[@role=('translator','trl')]/@key/data()))
-                for $translatorid in $translatorids
-                    let $url := concat("/catalog/", $translatorid)
-                    let $linktext := ($personauthority[@xml:id = $translatorid]/tei:persName[@type = 'display'][1])[1]
+                (: Links to other kinds of contributors (translators, biographical antecedents, etc) :)
+                for $contribid in distinct-values($instances/contributor/text())
+                    let $url := concat("/catalog/", $contribid)
+                    let $rolecodes := distinct-values($instances/contributor[text()=$contribid]/@role/data())
+                    let $roles := for $role in $rolecodes return bod:personRoleLookup($role)
+                    let $linktext := replace(normalize-space(($personauthority[@xml:id = $contribid]/tei:persName[@type = 'display'][1])[1]/string()), '\|' , '&#8739;')
                     order by lower-case($linktext)
                     return
                     if (exists($linktext)) then
-                        let $link := concat($url, "|", normalize-space($linktext/string()))
+                        let $link := concat($url, "|", $linktext, '|', string-join($roles, ', '))
                         return
-                        <field name="link_translator_smni">{ $link }</field>
+                        <field name="link_contributor_smni">{ $link }</field>
                     else
-                        bod:logging('info', 'Cannot create link from work to translator', ($id, $translatorid))
-                }
-                {
-                (: Links to people who are subjects of the work (based on their name being tagged inside the title) :)
-                let $subjectids := distinct-values($instances/personintitle/text())
-                for $subjectid in $subjectids
-                    let $url := concat("/catalog/", $subjectid)
-                    let $linktext := ($personauthority[@xml:id = $subjectid]/tei:persName[@type = 'display'][1])[1]
-                    order by lower-case($linktext)
-                    return
-                    if (exists($linktext)) then
-                        let $link := concat($url, "|", normalize-space($linktext/string()))
-                        return
-                        <field name="link_subject_smni">{ $link }</field>
-                    else
-                        bod:logging('info', 'Cannot create link from work to subject of the work', ($id, $subjectid))
+                        bod:logging('info', 'Cannot create link from work to contributor', ($id, $contribid))
                 }
                 {
                 (: Shelfmarks (indexed in special non-tokenized field) :)
