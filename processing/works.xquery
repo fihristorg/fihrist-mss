@@ -5,6 +5,9 @@ declare option saxon:output "indent=yes";
 (: Read authority file :)
 declare variable $authorityentries := doc("../authority/works.xml")/tei:TEI/tei:text/tei:body/tei:listBibl/tei:bibl[@xml:id];
 declare variable $authorsinworksauthority := false();
+
+(: Set options :)
+declare variable $nonworkroles := ('ann','art','asn','bnd','cataloguer','crr','dpc','drt','dte','dtm','fmo','own','pat','ppm','reviser','scr','scribe','spn','trc');
 declare variable $personauthority := doc("../authority/persons.xml")/tei:TEI/tei:text/tei:body/tei:listPerson/tei:person[@xml:id];
 
 (: Find instances in manuscript description files, building in-memory data 
@@ -36,15 +39,31 @@ declare variable $allinstances :=
             }</link>
             {
             if ($authorsinworksauthority) then () else 
-                for $authorid in ($instance/ancestor::tei:msItem[tei:author][1]/tei:author/@key/data(), $instance/parent::*/(tei:author|tei:persName[@role=('author','aut')])/@key/data())
-                    return <author>{ $authorid }</author>
+                for $author in $instance/parent::tei:msItem//(tei:author|tei:persName[@role=('author','aut')])
+                    return
+                    if (not($author/ancestor::tei:bibl or $author/ancestor::tei:biblStruct)) then
+                        <author>{ $author/@key/data() }</author>
+                    else
+                        ()
             }
             {
-            for $contributor in $instance/parent::*//(tei:author|tei:editor|tei:persName)[@role and not(@role=('aut','author')) and not(ancestor::tei:bibl or ancestor::tei:biblStruct)]
+            for $contributor in ($instance/parent::tei:msItem//(tei:editor|tei:persName)[@key], $instance/parent::tei:msItem//tei:author[@key and @role and not(@role=('aut','author'))])
                 let $contribid := $contributor/@key/data()
+                let $roles := distinct-values(tokenize(normalize-space($contributor/@role), ' '))
+                let $contributors := 
+                    for $role in $roles[not(. = ('author','aut',$nonworkroles))]
+                        return
+                        if ($role eq 'oth') then
+                            <contributor>{ $contribid }</contributor>
+                        else
+                            <contributor role="{ $role }">{ $contribid }</contributor>
                 return
-                for $role in distinct-values(tokenize(normalize-space($contributor/@role), ' ')[not(.=('aut','author'))])
-                    return <contributor role="{ $role }">{ $contribid }</contributor>
+                if (count($contributors) gt 0) then
+                    $contributors
+                else if (count($roles) eq 0) then
+                    <contributor>{ $contribid }</contributor>
+                else
+                   ()
             }
             { for $instanceid in $instance/parent::tei:msItem/@xml:id return <instanceid>{ $instanceid }</instanceid> }
             <shelfmark>{ $shelfmark }</shelfmark>
@@ -187,12 +206,12 @@ declare variable $allinstances :=
                 for $contribid in distinct-values($instances/contributor/text())
                     let $url := concat("/catalog/", $contribid)
                     let $rolecodes := distinct-values($instances/contributor[text()=$contribid]/@role/data())
-                    let $roles := for $role in $rolecodes return bod:personRoleLookup($role)
+                    let $roles := distinct-values(for $role in $rolecodes return bod:personRoleLookup($role))
                     let $linktext := replace(normalize-space(($personauthority[@xml:id = $contribid]/tei:persName[@type = 'display'][1])[1]/string()), '\|' , '&#8739;')
                     order by lower-case($linktext)
                     return
                     if (exists($linktext)) then
-                        let $link := concat($url, "|", $linktext, '|', string-join($roles, ', '))
+                        let $link := concat($url, "|", $linktext, '|', string-join(for $role in $roles order by $role return $role, '; '))
                         return
                         <field name="link_contributor_smni">{ $link }</field>
                     else
