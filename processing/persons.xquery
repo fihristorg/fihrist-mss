@@ -96,7 +96,7 @@ declare variable $allinstances :=
         let $roles := distinct-values(for $role in distinct-values($instances/role/text()) return bod:personRoleLookup2($role))
         let $rolessorted := for $role in $roles order by $role return $role
         let $isauthor := some $role in $instances/role/text() satisfies $role = ('author','aut')
-        let $iscontributor := some $role in $instances/role/text() satisfies not($role = ('author','aut'))
+        let $iscontributor := some $role in $instances/role/text() satisfies not($role = ('author','aut',$nonworkroles))
 
         (: Output a Solr doc element :)
         return if (count($instances) gt 0) then
@@ -109,9 +109,12 @@ declare variable $allinstances :=
                 {
                 (: Roles (e.g. author, translator, scribe) for search filter :)
                 if (count($roles) gt 0) then
-                    for $role in $roles
-                        order by $role
+                    (
+                    for $role in $rolessorted
                         return <field name="pp_roles_sm">{ $role }</field>
+                    ,
+                    <field name="roles_smni">{ string-join($rolessorted[not(. = 'Other')], ', ') }</field>
+                    )
                 else
                     <field name="pp_roles_sm">Not specified</field>
                 }
