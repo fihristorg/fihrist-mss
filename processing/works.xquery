@@ -206,7 +206,7 @@ declare variable $allinstances :=
                 for $contribid in distinct-values($instances/contributor/text())
                     let $url := concat("/catalog/", $contribid)
                     let $rolecodes := distinct-values($instances/contributor[text()=$contribid]/@role/data())
-                    let $roles := distinct-values(for $role in $rolecodes return bod:personRoleLookup($role))
+                    let $roles := distinct-values(for $role in $rolecodes return bod:personRoleLookup2($role))
                     let $linktext := replace(normalize-space(($personauthority[@xml:id = $contribid]/tei:persName[@type = 'display'][1])[1]/string()), '\|' , '&#8739;')
                     order by lower-case($linktext)
                     return

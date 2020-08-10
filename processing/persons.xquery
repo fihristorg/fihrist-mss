@@ -93,7 +93,8 @@ declare variable $allinstances :=
         
         (: Get info in all the instances in the manuscript description files :)
         let $instances := $allinstances[key = $id]
-        let $roles := distinct-values(for $role in distinct-values($instances/role/text()) return bod:personRoleLookup($role))
+        let $roles := distinct-values(for $role in distinct-values($instances/role/text()) return bod:personRoleLookup2($role))
+        let $rolessorted := for $role in $roles order by $role return $role
         let $isauthor := some $role in $instances/role/text() satisfies $role = ('author','aut')
         let $iscontributor := some $role in $instances/role/text() satisfies not($role = ('author','aut'))
 
@@ -189,12 +190,12 @@ declare variable $allinstances :=
                     for $workid in $workids
                         let $url := concat("/catalog/", $workid)
                         let $rolecodes := distinct-values($instances/contributed[text()=$workid]/@role/data())
-                        let $rolelabels := distinct-values(for $role in $rolecodes return bod:personRoleLookup($role))
+                        let $rolelabels := distinct-values(for $role in $rolecodes return bod:personRoleLookup2($role))
                         let $linktext := replace(normalize-space(($worksauthority[@xml:id = $workid]/tei:title[@type = 'uniform'][1])[1]/string()), '\|' , '&#8739;')
                         order by lower-case($linktext)
                         return
                         if (exists($linktext)) then
-                            let $link := concat($url, "|", $linktext, '|', string-join(for $role in $rolelabels order by $role return $role, '; '))
+                            let $link := concat($url, "|", $linktext, '|', string-join(for $role in $rolelabels order by $role return $role, ', '))
                             return
                             <field name="link_contributions_smni">{ $link }</field>
                         else
@@ -214,8 +215,8 @@ declare variable $allinstances :=
                 for $url in distinct-values($instances/manuscript/@path/data())
                     let $linktext := ($instances/manuscript[@path=$url]/text())[1]
                     let $rolecodes := distinct-values($instances/nonworkrole[@path=$url]/text())
-                    let $roles := for $role in $rolecodes return bod:personRoleLookup($role)
-                    let $link := concat($url, "|", $linktext, '|', string-join(for $role in $roles order by $role return $role, '; '))
+                    let $roles := for $role in $rolecodes return bod:personRoleLookup2($role)
+                    let $link := concat($url, "|", $linktext, '|', string-join(for $role in $roles order by $role return $role, ', '))
                     order by $linktext
                     return
                     <field name="link_manuscripts_smni">{ $link }</field>
