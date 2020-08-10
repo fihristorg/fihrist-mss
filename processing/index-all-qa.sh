@@ -28,7 +28,7 @@ if [ "$1" == "reuse" ]; then
         done
     fi
     # Send the files to Solr
-    printf "manuscript\nwork\nperson\nplace" | xargs -I {} -P 2 ./generate-solr-document.sh "{}s.xquery" "{}s_index.xml" {} $SERVER $1
+    printf "manuscript\nwork\nperson\nsubject" | xargs -I {} -P 2 ./generate-solr-document.sh "{}s.xquery" "{}s_index.xml" {} $SERVER $1
 
 else
 
