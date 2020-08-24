@@ -115,8 +115,8 @@
                   <handDesc>
                      <handNote scope="major" script="naskh" medium="blackink">
                         <desc>Cursive calligraphic Naskh, fairly large hand, two hands. Marginalia in Nastaʿalīq; annotated.</desc>
-                        <persName xml:lang="fa-Latn-x-lc" key="person_f732">Bunah'dār, Muḥammad Sharīf</persName>
-                        <persName xml:lang="fa" key="person_f5088">بنه‌دار، محمد شریف</persName>
+                        <persName xml:lang="fa-Latn-x-lc" key="person_f732" role="scr" change="#role-assignment">Bunah'dār, Muḥammad Sharīf</persName>
+                        <persName xml:lang="fa" key="person_f732" role="scr" change="#role-assignment #ids-cleanup">بنه‌دار، محمد شریف</persName>
                      </handNote>
                   </handDesc>
                   <additions>
@@ -217,7 +217,13 @@
             </keywords>
          </textClass>
       </profileDesc>
-      <revisionDesc>          <change when="2019-08-06"> Binding information updated.             <persName>Mohammad Emami</persName>          </change>
+      <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>          <change when="2019-08-06"> Binding information updated.             <persName>Mohammad Emami</persName>          </change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>

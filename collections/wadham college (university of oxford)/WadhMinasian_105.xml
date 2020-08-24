@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7801">
@@ -126,8 +126,8 @@
                         <handDesc>
                             <handNote scope="major" script="naskh" medium="blackink">
                                 <desc>Graceful Naskh, large hand, one hand. Rubricated line above some expressions.</desc>
-                                <persName xml:lang="fa-Latn-x-lc" key="person_f4937">ʿAlī Riz̤ā</persName>
-                                <persName xml:lang="fa" key="person_f5203">علی رضا</persName>
+                                <persName xml:lang="fa-Latn-x-lc" key="person_f4937" role="scr" change="#role-assignment">ʿAlī Riz̤ā</persName>
+                                <persName xml:lang="fa" key="person_f4937" role="scr" change="#role-assignment #ids-cleanup">علی رضا</persName>
                             </handNote>
                         </handDesc>
                         <additions>
@@ -300,10 +300,10 @@
                                     <persName xml:lang="fa">دوانی، محمد ابن اسعد</persName>
                                     <persName xml:lang="fa" type="alt">دوانی، جلال‌الدین محمد بن سعدالدین اسعد (۸۳۰-۹۰۸ق/۱۴۲۷-۱۵۰۲م)‏</persName>
                                 </author>
-                                <title xml:lang="ar-Latn-x-lc" key="work_3025">Lavāmiʿ al-ishrāq fī makārim al-akhlāq</title>
-                                <title xml:lang="ar" key="work_3025">لوامع الاشراق فی مکارم الاخلاق</title>
-                                <title xml:lang="fa-Latn-x-lc" type="alt" key="work_3025">Akhlāq-i Jalālī</title>
-                                <title xml:lang="fa" type="alt" key="work_3025">اخلاق جلالی</title>
+                                <title xml:lang="ar-Latn-x-lc" key="work_885" change="#ids-cleanup">Lavāmiʿ al-ishrāq fī makārim al-akhlāq</title>
+                                <title xml:lang="ar" key="work_885" change="#ids-cleanup">لوامع الاشراق فی مکارم الاخلاق</title>
+                                <title xml:lang="fa-Latn-x-lc" type="alt" key="work_885" change="#ids-cleanup">Akhlāq-i Jalālī</title>
+                                <title xml:lang="fa" type="alt" key="work_885" change="#ids-cleanup">اخلاق جلالی</title>
                                 <incipit xml:lang="fa" defective="true">… و ملکه کیفیتی است راسخ در نفس و در حکمت نظری معلوم شده که کیفیت نفسانی اگر…</incipit>
                                 <explicit xml:lang="fa" defective="true">… خلق ملکه‌ایست نفس را که مقتضی سهولت صدور فعلی باشد ازو بی احتیاج بفکر و رویت</explicit>
                                 <listBibl>
@@ -524,14 +524,14 @@
                                 <locus from="239a" to="303b">ff. 239a-303b</locus>
                                 <textLang mainLang="fa">Persian</textLang>
                                 <note type="content-genre">Poetry</note>
-                                <author key="person_56731778">
+                                <author key="person_259934160" change="#ids-cleanup">
                                     <persName xml:lang="fa-Latn-x-lc" type="standard">Ḥāfiẓ active 14th century</persName>
                                     <persName xml:lang="fa-Latn-x-lc" type="alt">Ḥāfiẓ, Shams al-Dīn Muḥammad (died 792 AH/1390)</persName>
                                     <persName xml:lang="fa">حافظ</persName>
                                     <persName xml:lang="fa" type="alt">حافظ، شمس‌الدین محمد (د: ۷۹۲ق/۱۳۹۰م)‏</persName>
                                 </author>
-                                <title xml:lang="fa-Latn-x-lc" key="work_72">Dīvān-i Ḥāfiẓ</title>
-                                <title xml:lang="fa" key="work_72">دیوان حافظ</title>
+                                <title xml:lang="fa-Latn-x-lc" key="work_20666" change="#ids-cleanup">Dīvān-i Ḥāfiẓ</title>
+                                <title xml:lang="fa" key="work_20666" change="#ids-cleanup">دیوان حافظ</title>
                                 <incipit xml:lang="fa" defective="true">… خمها همه در جوش و خروشند و مستی / وان می که در آنجاست حقیقت بمجاز است</incipit>
                                 <explicit xml:lang="fa" defective="true">…ندیم و مطرب و ساقی همه اوست / خیال آب و گل در ره بهانه</explicit>
                                 <listBibl>
@@ -848,6 +848,12 @@
             </textClass>
         </profileDesc>
         <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
             <change when="2019-08-19"> Revamped according to the new template for multi work items.
                 <persName>Mohammad Emami</persName>
             </change>

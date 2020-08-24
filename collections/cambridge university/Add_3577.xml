@@ -47,7 +47,7 @@
                      1 copy of Al-Adʻīyah al-sharīfah
                   </summary>
                   <msItem xml:id="Add_3577-item1">
-                     <author key="person_f4580">
+                     <author key="person_f407" change="#ids-cleanup">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">anonymous</persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc" key="work_2666">Al-Adʻīyah al-sharīfah</title>
@@ -59,7 +59,7 @@
                      </note>
                      <listBibl>
                         <bibl>
-                           <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/view.php?id=170">no. 1345</ref>
+                           <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00034-00001/157">no. 1345</ref>
                         </bibl>
                      </listBibl>
                      <textLang mainLang="ar" otherLangs="fa">Arabic, Persian</textLang>
@@ -81,8 +81,8 @@
                   </objectDesc>
                   <handDesc>
                      <handNote scope="major" script="unknown">
-                        <persName xml:lang="ar-Latn-x-lc" key="person_f5385">Ḥasan al-Khwānsārī</persName>
-                        <persName xml:lang="ar" key="person_f5104">حسن الخونساري</persName>
+                        <persName xml:lang="ar-Latn-x-lc" key="person_f5385" role="scr" change="#role-assignment">Ḥasan al-Khwānsārī</persName>
+                        <persName xml:lang="ar" key="person_f5385" role="scr" change="#role-assignment #ids-cleanup">حسن الخونساري</persName>
                      </handNote>
                   </handDesc>
                </physDesc>
@@ -91,7 +91,7 @@
                      <origDate notBefore="1817" notAfter="1818" calendar="#Hijri-qamari">1233</origDate>
                      <origDate when="1818" calendar="#Gregorian">1818</origDate>
                   </origin>
-                  <acquisition>Bought from <persName key="person_f1302">Hayder Kenn</persName> in <date calendar="#Gregorian">1899</date>.</acquisition>
+                  <acquisition>Bought from <persName key="person_f1302" role="fmo" change="#role-assignment">Hayder Kenn</persName> in <date calendar="#Gregorian">1899</date>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
@@ -134,6 +134,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>

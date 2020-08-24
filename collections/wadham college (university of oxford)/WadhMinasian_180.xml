@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_13046">
@@ -49,10 +49,10 @@
                         <msItem>
                             <textLang mainLang="ar">Arabic</textLang>
                             <note type="content-genre">Qurʼan--Criticism, interpretation</note>
-                            <title xml:lang="ara-Latn-x-lc" key="work_1692">Anwār al-Tanzīl wa Asrār al-Taʾwīl</title>
-                            <title xml:lang="ara" key="work_1692">انوار التنزیل و اسرار التأویل</title>
-                            <title xml:lang="ara-Latn-x-lc" type="alt" key="work_1692">Tafsīr-i Bayz̤āvī</title>
-                            <title xml:lang="ara" type="alt" key="work_1692">تفسیر بیضاوی</title>
+                            <title xml:lang="ara-Latn-x-lc" key="work_311" change="#ids-cleanup">Anwār al-Tanzīl wa Asrār al-Taʾwīl</title>
+                            <title xml:lang="ara" key="work_311" change="#ids-cleanup">انوار التنزیل و اسرار التأویل</title>
+                            <title xml:lang="ara-Latn-x-lc" type="alt" key="work_311" change="#ids-cleanup">Tafsīr-i Bayz̤āvī</title>
+                            <title xml:lang="ara" type="alt" key="work_311" change="#ids-cleanup">تفسیر بیضاوی</title>
                             <author key="person_44541329">
                                 <persName xml:lang="ara-Latn-x-lc">Bayḍāwī, ʻAbd Allāh ibn ʻUmar, -1286?</persName>
                                 <persName xml:lang="ara-Latn-x-lc" type="alt">Bayz̤āwī, Qāz̤ī Nāṣir al-Dīn Abū Saʿīd ʿUbayd Allāh ibn ʻUmar, -685 or 692 AH/1286 or 1293</persName>
@@ -223,7 +223,10 @@
                 </keywords>
             </textClass>
         </profileDesc>
-        <revisionDesc>          <change when="2019-08-06"> Binding information updated.             <persName>Mohammad Emami</persName>          </change>
+        <revisionDesc>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>          <change when="2019-08-06"> Binding information updated.             <persName>Mohammad Emami</persName>          </change>
             <change when="2019-08-01"> Binding information updated.
                 <persName>Mohammad Emami</persName>
             </change>

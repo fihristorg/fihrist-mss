@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7819">
@@ -146,8 +146,8 @@
                         <handDesc>
                             <handNote scope="major" script="nasta_aliq" medium="blackink">
                                 <desc>Shikastah Nastaʿaliq, one hand, regular.</desc>
-                                <persName xml:lang="fa-Latn-x-lc" key="person_f3721">Sayyid Ḥusayn bin Mīr Mahdī</persName>
-                                <persName xml:lang="fa" key="person_f5148">سید حسین بن میرمهدی</persName>
+                                <persName xml:lang="fa-Latn-x-lc" key="person_f3721" role="scr" change="#role-assignment">Sayyid Ḥusayn bin Mīr Mahdī</persName>
+                                <persName xml:lang="fa" key="person_f3721" role="scr" change="#role-assignment #ids-cleanup">سید حسین بن میرمهدی</persName>
                             </handNote>
                         </handDesc>
                         <additions>
@@ -239,8 +239,8 @@
                             <locus from="19b" to="64b">ff. 19b-64b</locus>
                             <textLang mainLang="fa">Persian</textLang>
                             <note type="content-genre">Astronomy</note>
-                            <title xml:lang="fa-Latn-x-lc" type="main" key="work_2974">[Risālah dar Hayʾat]</title>
-                            <title xml:lang="fa" type="main" key="work_2974">[رساله در هیئت]</title>
+                            <title xml:lang="fa-Latn-x-lc" type="main" key="work_4319" change="#ids-cleanup">[Risālah dar Hayʾat]</title>
+                            <title xml:lang="fa" type="main" key="work_4319" change="#ids-cleanup">[رساله در هیئت]</title>
                             <author key="person_90047204">
                                 <persName xml:lang="fa-Latn-x-lc" type="standard">Qūshjī, ʻAlī ibn Muḥammad -1474 or 1475</persName>
                                 <persName xml:lang="fa-Latn-x-lc" type="org">Qūshchī, ʻAlī ibn Muḥammad, died 879 AH/1474</persName>
@@ -343,6 +343,12 @@
             </textClass>
         </profileDesc>
         <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
             <change when="2019-08-20"> Revamped according to the new template for multi part items.
                 <persName>Mohammad Emami</persName>
             </change>

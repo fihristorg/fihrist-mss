@@ -50,7 +50,7 @@
                      <textLang mainLang="ar">Arabic</textLang>
                      <note type="content-genre">Arabic language--Grammar</note>
                      <author key="person_f407">
-                        <persName xml:lang="en">Anonymous</persName>
+                        <persName xml:lang="en" role="aut scr" change="#role-assignment">Anonymous</persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc" key="work_2975">[Ṣarf va Naḥv]</title>
                      <title xml:lang="ar" key="work_2975">[صرف و نحو]</title>
@@ -90,7 +90,7 @@
                   <handDesc>
                      <handNote scope="major" script="naskh" medium="blackink">
                         <desc>Cursive Naskh, regular hand, several hands.</desc>
-                        <persName xml:lang="en" key="person_f4280">Unknown</persName>
+                        <persName xml:lang="en" key="person_f407" role="aut scr" change="#role-assignment #ids-cleanup">Unknown</persName>
                      </handNote>
                   </handDesc>
                   <additions>
@@ -167,7 +167,13 @@
             </keywords>
          </textClass>
       </profileDesc>
-      <revisionDesc>          <change when="2019-08-06"> Binding information updated.             <persName>Mohammad Emami</persName>          </change>
+      <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>          <change when="2019-08-06"> Binding information updated.             <persName>Mohammad Emami</persName>          </change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>

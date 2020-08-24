@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_15204">
     <teiHeader xmlns="http://www.tei-c.org/ns/1.0">
@@ -70,7 +70,7 @@
                     </physDesc>
                     <history>
                         <origin/>
-                        <provenance>Acquired for the SPCK by <persName key="person_37056995">George Percy
+                        <provenance>Acquired for the SPCK by <persName key="person_37056995" role="fmo" change="#role-assignment">George Percy
                                 Badger</persName> and presented to the Library in 1887. </provenance>
 
                         <acquisition/>
@@ -116,8 +116,11 @@
             </textClass>
         </profileDesc>
         <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
             <change when="2019">
-                <persName key="person_32017775">J. F. Coakley</persName></change>
+                <persName key="person_32017775" role="dtm" change="#role-assignment">J. F. Coakley</persName></change>
 
         </revisionDesc>
     </teiHeader>

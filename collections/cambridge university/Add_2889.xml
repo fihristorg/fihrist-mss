@@ -44,12 +44,12 @@
                <msContents>
                   <summary>Historical work in Arabic (Karshuni)</summary>
                   <msItem xml:id="Add_2889-item1">
-                     <author key="person_f4593">
+                     <author key="person_f407" change="#ids-cleanup">
                         <persName xml:lang="ar-Latn-x-lc" type="unknown">unknown</persName>
                      </author>
                      <editor role="com">
-                        <persName xml:lang="syr-Latn-x-lc" type="standard" key="person_309620190">
-                              <persName ref="http://viaf.org/viaf/309620190/">The priest Ṣalībā Ibn-Yūḥannā ca. Mitte 14. Jh</persName>
+                        <persName xml:lang="syr-Latn-x-lc" type="standard" key="person_49162734" change="#ids-cleanup">
+                              <persName ref="http://viaf.org/viaf/49162734/" change="#ids-cleanup">The priest Ṣalībā Ibn-Yūḥannā ca. Mitte 14. Jh</persName>
                            </persName>
                      </editor>
                      <title xml:lang="ar-Latn-x-lc" key="work_2851">Kītāb al-tavārīkh</title>
@@ -91,7 +91,7 @@
                   </objectDesc>
                   <handDesc>
                      <handNote scope="sole" script="unknown">Written in neat, regular, Nestorian, fully pointed <date calendar="#Gregorian" to="1730" from="1730">A.D. 1730</date>
-                        <persName type="supplied" key="person_f888">Deacon Johannan, son of the deacon Hormizd, son the deacon Gabriel, of Alkosh</persName>
+                        <persName type="supplied" key="person_f888" role="scr" change="#role-assignment">Deacon Johannan, son of the deacon Hormizd, son the deacon Gabriel, of Alkosh</persName>
                      </handNote>
                   </handDesc>
                   <decoDesc>
@@ -146,6 +146,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-27">
             <persName>Andrew Morrison</persName> Normalized roles using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/normalize-roles.xsl">normalize-roles.xsl</ref>
          </change>

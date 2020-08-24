@@ -49,7 +49,7 @@
                   <msItem xml:id="Or_8106-item1" n="1" class="http://lccn.loc.gov/sh85100075">
                      <locus from="6v" to="11r">6v-11r ff</locus>
                      <title xml:lang="en" type="desc" key="work_2014">Preface</title>
-                     <note>Dedicated to <persName xml:lang="fa-Latn-x-lc" type="standard" ref="http://viaf.org/viaf/77382759" key="person_77382759">Abū al-Ghāzī Ḥusayn Bayqarā <foreign xml:lang="fa">ابو الغازی حسین بیقرا</foreign>
+                     <note>Dedicated to <persName xml:lang="fa-Latn-x-lc" type="standard" ref="http://viaf.org/viaf/77382759" key="person_77382759" role="dte" change="#role-assignment">Abū al-Ghāzī Ḥusayn Bayqarā <foreign xml:lang="fa">ابو الغازی حسین بیقرا</foreign>
                         </persName>
                      </note>
                      <listBibl>
@@ -59,11 +59,11 @@
                   </msItem>
                   <msItem xml:id="Or_8106-item2" n="2" class="http://lccn.loc.gov/sh85100084">
                      <locus from="11v" to="31v">11v-31v ff</locus>
-                     <author ref="http://viaf.org/viaf/56731778" key="person_56731778">
+                     <author ref="http://viaf.org/viaf/259934160" key="person_259934160" change="#ids-cleanup">
                         <persName xml:lang="fa">الحافظ الشيرازي، محمد شمس الدين</persName>
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Al-Ḥāfiẓ al-Shīrāzī, Muḥammad Shams al-Dīn</persName>
                      </author>
-                     <title xml:lang="en" type="desc" key="work_5914">Poems</title>
+                     <title xml:lang="en" type="desc" key="work_21162" change="#ids-cleanup">Poems</title>
                      <note>Preceded by a short preface</note>
                      <listBibl>
                         <bibl>For a more detailed description see Glyn Meredith-Owens: Handlist of Persian Manuscripts, 1895-1966. [London]: Trustees of the British Museum, 1968, p.94.</bibl>
@@ -84,8 +84,8 @@
                         <persName xml:lang="fa">حسین وائظ کاشی</persName>
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Kāshifī, Ḥusayn Vāʻiẓ, -1504 or 1505</persName>
                      </author>
-                     <title xml:lang="fa-Latn-x-lc" key="work_7184">Rawz̤at al-Shuhadā’</title>
-                     <title xml:lang="fa" key="work_7184">روضة الشهداء</title>
+                     <title xml:lang="fa-Latn-x-lc" key="work_1605" change="#ids-cleanup">Rawz̤at al-Shuhadā’</title>
+                     <title xml:lang="fa" key="work_1605" change="#ids-cleanup">روضة الشهداء</title>
                      <note>Dated <date calendar="#Hijri-qamari" notBefore="1727" notAfter="1728">1140</date>
                      </note>
                      <listBibl>
@@ -164,7 +164,7 @@
                      <locus from="340v" to="513v">340v-513v ff</locus>
                      <title xml:lang="fa-Latn-x-lc" key="work_7990">Shajarat al-Atrāk</title>
                      <title xml:lang="fa" key="work_7990">شجرة الاتراک</title>
-                     <note>An anonymous history of <persName type="standard" xml:lang="en" ref="http://viaf.org/viaf/100172770" key="person_100172770">Genghis Khan, 1162-1227 <foreign xml:lang="fa">چنگیز خان</foreign>
+                     <note>An anonymous history of <persName type="standard" xml:lang="en" ref="http://viaf.org/viaf/100172770" key="person_100172770" role="subject" change="#role-assignment">Genghis Khan, 1162-1227 <foreign xml:lang="fa">چنگیز خان</foreign>
                         </persName>
                      </note>
                      <note>Preceded by an Arabic tract, some Urdu poems, and two short Persian religious tracts all on folios <locus from="331r" to="339v">331r-339v</locus>
@@ -375,6 +375,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-27">
             <persName>Andrew Morrison</persName> Normalized roles using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/normalize-roles.xsl">normalize-roles.xsl</ref>
          </change>

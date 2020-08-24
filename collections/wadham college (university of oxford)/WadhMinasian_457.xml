@@ -51,7 +51,7 @@
                      <textLang mainLang="fa">Persian and Arabic</textLang>
                      <note type="content-genre">Prayers</note>
                      <author key="person_f407">
-                        <persName xml:lang="en">Anonymous</persName>
+                        <persName xml:lang="en" role="scr" change="#role-assignment">Anonymous</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_2976">[Adʿīyah]</title>
                      <title xml:lang="fa" key="work_2976">[ادعیه]</title>
@@ -73,8 +73,8 @@
                         <persName xml:lang="fa" cert="low">جعفر الصادق</persName>
                         <persName xml:lang="fa" type="alt" cert="low">منسوب به امام جعفر صادق</persName>
                      </author>
-                     <title xml:lang="fa-Latn-x-lc" key="work_3002">Fālnāmah-'i Imām Jaʿfar Ṣādiq</title>
-                     <title xml:lang="fa" key="work_3002">فالنامهٔ امام جعفر صادق</title>
+                     <title xml:lang="fa-Latn-x-lc" key="work_20945" change="#ids-cleanup">Fālnāmah-'i Imām Jaʿfar Ṣādiq</title>
+                     <title xml:lang="fa" key="work_20945" change="#ids-cleanup">فالنامهٔ امام جعفر صادق</title>
                      <note xml:lang="en">This is a work on divinatory methods for Quran, along with some circles and tables describing how to achieve your needs from different Surahs.</note>
                      <incipit xml:lang="fa">چنین گوید ترجمهٔ این رساله علی ابن محمد عفی الله که حضرت امام رضا بجهت مامون بعربی تضمین فرمود بود آنچنان…</incipit>
                      <explicit xml:lang="fa">… در بنا کردن عمارت صبر کن / ار سلطان عرب باشی انشاءالله</explicit>
@@ -156,7 +156,7 @@
                            <desc>Shikastah Nastaʿlīq, one hand, regular hand.</desc>
                         </ref>
                         <ref target="#a1 #a2">
-                           <persName xml:lang="en" key="person_f407">Anonymous</persName>
+                           <persName xml:lang="en" key="person_f407" role="scr" change="#role-assignment">Anonymous</persName>
                         </ref>
                      </handNote>
                   </handDesc>
@@ -278,7 +278,13 @@
             </keywords>
          </textClass>
       </profileDesc>
-      <revisionDesc>          <change when="2019-08-06"> Binding information updated.             <persName>Mohammad Emami</persName>          </change>
+      <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>          <change when="2019-08-06"> Binding information updated.             <persName>Mohammad Emami</persName>          </change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>

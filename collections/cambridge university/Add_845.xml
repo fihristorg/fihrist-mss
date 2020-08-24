@@ -51,8 +51,8 @@
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Jalāl al-Dīn Rūmī, Maulana, 1207-1273</persName>
                         <persName xml:lang="fa">جلال الدين رومى</persName>
                      </author>
-                     <title xml:lang="fa-Latn-x-lc" key="work_200">Mas̲navī-i maʻnavī</title>
-                     <title xml:lang="fa" key="work_200">مثنوی معنوی</title>
+                     <title xml:lang="fa-Latn-x-lc" key="work_20506" change="#ids-cleanup">Mas̲navī-i maʻnavī</title>
+                     <title xml:lang="fa" key="work_20506" change="#ids-cleanup">مثنوی معنوی</title>
                      <incipit xml:lang="ar"/>
                      <explicit xml:lang="ar" defective="true"/>
                      <note>
@@ -61,7 +61,7 @@
                      <listBibl>
                         <bibl>
                            <ref xml:id="b1">
-                              <ref target="http://www.lib.cam.ac.uk/arabic_catalogues/browne/view.php?id=118">no. 1003</ref>
+                              <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00034-00001/110">no. 1003</ref>
                            </ref>
                         </bibl>
                         <bibl type="text-relations"/>
@@ -85,7 +85,7 @@
                   </objectDesc>
                   <handDesc>
                      <handNote scope="major" script="unknown">
-                        <persName xml:lang="fa-Latn-x-lc" key="person_f1187">Ghulām Muḥyī al-Dīn <foreign xml:lang="fa">غلام محيی الدين</foreign>
+                        <persName xml:lang="fa-Latn-x-lc" key="person_f1187" role="scr" change="#role-assignment">Ghulām Muḥyī al-Dīn <foreign xml:lang="fa">غلام محيی الدين</foreign>
                         </persName>
                      </handNote>
                   </handDesc>
@@ -95,7 +95,7 @@
                      <origDate notBefore="1806" notAfter="1807" calendar="#Hijri-qamari">1221</origDate>
                      <origDate calendar="#Gregorian" when="1806">1806</origDate>
                   </origin>
-                  <acquisition>Bequest of <persName key="person_f3517">Reverand Professor H.G. Williams (d. 1870)</persName> in <date calendar="#Gregorian">1870</date>.</acquisition>
+                  <acquisition>Bequest of <persName key="person_f3517" role="fmo" change="#role-assignment">Reverand Professor H.G. Williams (d. 1870)</persName> in <date calendar="#Gregorian">1870</date>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
@@ -138,6 +138,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>

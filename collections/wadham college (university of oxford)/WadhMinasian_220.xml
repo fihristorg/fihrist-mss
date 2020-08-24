@@ -107,8 +107,8 @@
                   <handDesc>
                      <handNote scope="major" script="nasta_liq" medium="blackink">
                         <desc>Graceful Nastaʿaliq and cursive Naskh, two hands, regular hand. Titles are blank.</desc>
-                        <persName xml:lang="en" key="person_f1800">Kadkanī, Muḥammad</persName>
-                        <persName xml:lang="fa" key="person_f5326">کدکنی، محمد</persName>
+                        <persName xml:lang="en" key="person_f1800" role="scr" change="#role-assignment">Kadkanī, Muḥammad</persName>
+                        <persName xml:lang="fa" key="person_f1800" role="scr" change="#role-assignment #ids-cleanup">کدکنی، محمد</persName>
                         <note>Muḥammad Kadkanī is the scribe of the copy's second part, but there is no name of the first part's scribe. The first part is older.</note>
                      </handNote>
                   </handDesc>
@@ -208,7 +208,13 @@
             </keywords>
          </textClass>
       </profileDesc>
-      <revisionDesc>          <change when="2019-08-06"> Binding information updated.             <persName>Mohammad Emami</persName>          </change>
+      <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>          <change when="2019-08-06"> Binding information updated.             <persName>Mohammad Emami</persName>          </change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>

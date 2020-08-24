@@ -92,8 +92,8 @@
                   <handDesc>
                      <handNote scope="major" script="naskh" medium="blackink">
                         <desc>Cursive Naskh, several hands, fairly small hand.</desc>
-                        <persName xml:lang="fa-Latn-x-lc" key="person_f448">Asad Allāh ibn ʿAbd Allāh</persName>
-                        <persName xml:lang="fa" key="person_f5030">اسدالله بن عبدالله</persName>
+                        <persName xml:lang="fa-Latn-x-lc" key="person_f448" role="scr" change="#role-assignment">Asad Allāh ibn ʿAbd Allāh</persName>
+                        <persName xml:lang="fa" key="person_f448" role="scr" change="#role-assignment #ids-cleanup">اسدالله بن عبدالله</persName>
                      </handNote>
                   </handDesc>
                   <bindingDesc>
@@ -171,7 +171,13 @@
             </keywords>
          </textClass>
       </profileDesc>
-      <revisionDesc>          <change when="2019-08-06"> Binding information updated.             <persName>Mohammad Emami</persName>          </change>
+      <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>          <change when="2019-08-06"> Binding information updated.             <persName>Mohammad Emami</persName>          </change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>

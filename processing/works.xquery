@@ -5,6 +5,9 @@ declare option saxon:output "indent=yes";
 (: Read authority file :)
 declare variable $authorityentries := doc("../authority/works.xml")/tei:TEI/tei:text/tei:body/tei:listBibl/tei:bibl[@xml:id];
 declare variable $authorsinworksauthority := false();
+
+(: Set options :)
+declare variable $nonworkroles := ('ann','art','asn','bnd','cataloguer','crr','dpc','drt','dte','dtm','fmo','own','pat','ppm','reviser','scr','scribe','spn','trc');
 declare variable $personauthority := doc("../authority/persons.xml")/tei:TEI/tei:text/tei:body/tei:listPerson/tei:person[@xml:id];
 
 (: Find instances in manuscript description files, building in-memory data 
@@ -36,15 +39,31 @@ declare variable $allinstances :=
             }</link>
             {
             if ($authorsinworksauthority) then () else 
-                for $authorid in ($instance/ancestor::tei:msItem[tei:author][1]/tei:author/@key/data(), $instance/parent::*/(tei:author|tei:persName[@role=('author','aut')])/@key/data())
-                    return <author>{ $authorid }</author>
-                ,
-                for $translatorid in $instance/parent::*//*[@role=('trl','translator','Translator')]/@key/data()
-                    return <translator>{ $translatorid }</translator>
+                for $author in $instance/parent::tei:msItem//(tei:author|tei:persName[@role=('author','aut')])
+                    return
+                    if (not($author/ancestor::tei:bibl or $author/ancestor::tei:biblStruct)) then
+                        <author>{ $author/@key/data() }</author>
+                    else
+                        ()
             }
             {
-            for $subjectid in $instance/parent::tei:msItem/tei:title//tei:persName/@key/data()
-                return <personintitle>{ $subjectid }</personintitle>
+            for $contributor in ($instance/parent::tei:msItem//(tei:editor|tei:persName)[@key], $instance/parent::tei:msItem//tei:author[@key and @role and not(@role=('aut','author'))])
+                let $contribid := $contributor/@key/data()
+                let $roles := distinct-values(tokenize(normalize-space($contributor/@role), ' '))
+                let $contributors := 
+                    for $role in $roles[not(. = ('author','aut',$nonworkroles))]
+                        return
+                        if ($role eq 'oth') then
+                            <contributor>{ $contribid }</contributor>
+                        else
+                            <contributor role="{ $role }">{ $contribid }</contributor>
+                return
+                if (count($contributors) gt 0) then
+                    $contributors
+                else if (count($roles) eq 0) then
+                    <contributor>{ $contribid }</contributor>
+                else
+                   ()
             }
             { for $instanceid in $instance/parent::tei:msItem/@xml:id return <instanceid>{ $instanceid }</instanceid> }
             <shelfmark>{ $shelfmark }</shelfmark>
@@ -155,11 +174,11 @@ declare variable $allinstances :=
                 let $relatedids := tokenize(translate(string-join(($work/@corresp, $work/@sameAs), ' '), '#', ''), '\s+')[string-length() gt 0]
                 for $relatedid in distinct-values($relatedids)
                     let $url := concat("/catalog/", $relatedid)
-                    let $linktext := ($authorityentries[@xml:id = $relatedid]/tei:title[@type = 'uniform'][1])[1]
+                    let $linktext := replace(normalize-space(($authorityentries[@xml:id = $relatedid]/tei:title[@type = 'uniform'][1])[1]/string()), '\|' , '&#8739;')
                     order by lower-case($linktext)
                     return
                     if (exists($linktext) and $allinstances[key = $relatedid]) then
-                        let $link := concat($url, "|", normalize-space($linktext/string()))
+                        let $link := concat($url, "|", $linktext)
                         return
                         <field name="link_related_smni">{ $link }</field>
                     else
@@ -172,47 +191,31 @@ declare variable $allinstances :=
                     else distinct-values(($instances/author/text(), $work/tei:author[not(@role)]/@key/data()))
                 for $authorid in $authorids
                     let $url := concat("/catalog/", $authorid)
-                    let $linktext := ($personauthority[@xml:id = $authorid]/tei:persName[@type = 'display'][1])[1]
+                    let $linktext := replace(normalize-space(($personauthority[@xml:id = $authorid]/tei:persName[@type = 'display'][1])[1]/string()), '\|' , '&#8739;')
                     order by lower-case($linktext)
                     return
                     if (exists($linktext)) then
-                        let $link := concat($url, "|", normalize-space($linktext/string()))
+                        let $link := concat($url, "|", $linktext)
                         return
                         <field name="link_author_smni">{ $link }</field>
                     else
                         bod:logging('info', 'Cannot create link from work to author', ($id, $authorid))
                 }
                 {
-                (: Links to the translators of the work :)
-                let $translatorids := 
-                    if ($authorsinworksauthority) then distinct-values($work/tei:author[@role=('translator','trl')]/@key/data())
-                    else distinct-values(($instances/translator/text(), $work/tei:author[@role=('translator','trl')]/@key/data()))
-                for $translatorid in $translatorids
-                    let $url := concat("/catalog/", $translatorid)
-                    let $linktext := ($personauthority[@xml:id = $translatorid]/tei:persName[@type = 'display'][1])[1]
+                (: Links to other kinds of contributors (translators, biographical antecedents, etc) :)
+                for $contribid in distinct-values($instances/contributor/text())
+                    let $url := concat("/catalog/", $contribid)
+                    let $rolecodes := distinct-values($instances/contributor[text()=$contribid]/@role/data())
+                    let $roles := distinct-values(for $role in $rolecodes return bod:personRoleLookup2($role))
+                    let $linktext := replace(normalize-space(($personauthority[@xml:id = $contribid]/tei:persName[@type = 'display'][1])[1]/string()), '\|' , '&#8739;')
                     order by lower-case($linktext)
                     return
                     if (exists($linktext)) then
-                        let $link := concat($url, "|", normalize-space($linktext/string()))
+                        let $link := concat($url, "|", $linktext, '|', string-join(for $role in $roles order by $role return $role, '; '))
                         return
-                        <field name="link_translator_smni">{ $link }</field>
+                        <field name="link_contributor_smni">{ $link }</field>
                     else
-                        bod:logging('info', 'Cannot create link from work to translator', ($id, $translatorid))
-                }
-                {
-                (: Links to people who are subjects of the work (based on their name being tagged inside the title) :)
-                let $subjectids := distinct-values($instances/personintitle/text())
-                for $subjectid in $subjectids
-                    let $url := concat("/catalog/", $subjectid)
-                    let $linktext := ($personauthority[@xml:id = $subjectid]/tei:persName[@type = 'display'][1])[1]
-                    order by lower-case($linktext)
-                    return
-                    if (exists($linktext)) then
-                        let $link := concat($url, "|", normalize-space($linktext/string()))
-                        return
-                        <field name="link_subject_smni">{ $link }</field>
-                    else
-                        bod:logging('info', 'Cannot create link from work to subject of the work', ($id, $subjectid))
+                        bod:logging('info', 'Cannot create link from work to contributor', ($id, $contribid))
                 }
                 {
                 (: Shelfmarks (indexed in special non-tokenized field) :)

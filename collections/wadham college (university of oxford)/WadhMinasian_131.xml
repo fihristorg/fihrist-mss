@@ -49,8 +49,8 @@
                   <msItem xml:id="WadhMinasian_131-item1">
                      <textLang mainLang="ar">Arabic</textLang>
                      <note type="content-genre">Arabic language--Syntax</note>
-                     <title xml:lang="ar-Latn-x-lc" key="work_2268">ʾAlfīyah</title>
-                     <title xml:lang="ar" key="work_2268">الفیه</title>
+                     <title xml:lang="ar-Latn-x-lc" key="work_48" change="#ids-cleanup">ʾAlfīyah</title>
+                     <title xml:lang="ar" key="work_48" change="#ids-cleanup">الفیه</title>
                      <author key="person_12537163" ref=" http://viaf.org/viaf/12537163">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">‎Ibn Mālik, Muḥammad ibn ʻAbd Allāh, -1274‏</persName>
                         <persName xml:lang="ar" type="standard">ابن مالک، محمد بن عبدالله، -۱۲۷۴</persName>
@@ -115,7 +115,7 @@
                   <handDesc>
                      <handNote scope="major" script="naskh" medium="blackink">
                         <desc>Graceful Naskh, several hands, large hand. Marginalia in Nastaʿalīq and Shikastah. Half of the titles are unwritten..</desc>
-                        <persName xml:lang="en" key="person_f407">Anonymous</persName>
+                        <persName xml:lang="en" key="person_f407" role="scr" change="#role-assignment">Anonymous</persName>
                      </handNote>
                   </handDesc>
                   <additions>
@@ -215,7 +215,13 @@
             </keywords>
          </textClass>
       </profileDesc>
-      <revisionDesc>          <change when="2019-08-06"> Binding information updated.             <persName>Mohammad Emami</persName>          </change>
+      <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>          <change when="2019-08-06"> Binding information updated.             <persName>Mohammad Emami</persName>          </change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>

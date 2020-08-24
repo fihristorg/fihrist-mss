@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7835">
@@ -78,10 +78,10 @@
                                 <locus from="1a" to="104a">ff. 1b-129b</locus>
                                 <textLang mainLang="ar">Arabic</textLang>
                                 <note type="content-genre">Arabic language--Syntax</note>
-                                <title xml:lang="ar-Latn-x-lc" key="work_2268">ʾAlfīyah</title>
-                                <title xml:lang="ar" key="work_2268">الفیه</title>
-                                <title xml:lang="ar-Latn-x-lc" type="alt" key="work_2268">Arjūzah</title>
-                                <title xml:lang="ar" type="alt" key="work_2268">ارجوزه</title>
+                                <title xml:lang="ar-Latn-x-lc" key="work_48" change="#ids-cleanup">ʾAlfīyah</title>
+                                <title xml:lang="ar" key="work_48" change="#ids-cleanup">الفیه</title>
+                                <title xml:lang="ar-Latn-x-lc" type="alt" key="work_48" change="#ids-cleanup">Arjūzah</title>
+                                <title xml:lang="ar" type="alt" key="work_48" change="#ids-cleanup">ارجوزه</title>
                                 <author key="person_12537163">
                                     <persName xml:lang="ar-Latn-x-lc" type="standard">‎Ibn Mālik, Muḥammad ibn ʻAbd Allāh, -1274‏</persName>
                                     <persName xml:lang="ar" type="standard">ابن مالک، محمد بن عبدالله، -۱۲۷۴</persName>
@@ -278,7 +278,10 @@
                 </keywords>
             </textClass>
         </profileDesc>
-        <revisionDesc>          <change when="2019-08-06"> Binding information updated.             <persName>Mohammad Emami</persName>          </change>
+        <revisionDesc>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>          <change when="2019-08-06"> Binding information updated.             <persName>Mohammad Emami</persName>          </change>
             <change when="2019-07-20">
                 <persName>Mohammad Emami</persName> Revamped according to the new template for multi-part items.
             </change>

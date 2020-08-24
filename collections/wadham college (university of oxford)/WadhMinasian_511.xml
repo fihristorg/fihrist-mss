@@ -114,8 +114,8 @@
                   <handDesc>
                      <handNote scope="major" script="naskh" medium="blackink">
                         <desc>Cursive, graceful Naskh, regular hand, three hands. Marginalia in Nastaʿalīq and Shikastah Nastaʿalīq; annotated.</desc>
-                        <persName xml:lang="fa-Latn-x-lc" key="person_f1993">Kūshluvān Fūman, Muḥammad Taqī ibn Āqā Mīrzāy</persName>
-                        <persName xml:lang="fa" key="person_f5330">کوشلوان فومن، محمد تقی بن آقا میرزای</persName>
+                        <persName xml:lang="fa-Latn-x-lc" key="person_f1993" role="scr" change="#role-assignment">Kūshluvān Fūman, Muḥammad Taqī ibn Āqā Mīrzāy</persName>
+                        <persName xml:lang="fa" key="person_f1993" role="scr" change="#role-assignment #ids-cleanup">کوشلوان فومن، محمد تقی بن آقا میرزای</persName>
                      </handNote>
                   </handDesc>
                   <additions>
@@ -200,7 +200,13 @@
             </keywords>
          </textClass>
       </profileDesc>
-      <revisionDesc>          <change when="2019-08-06"> Binding information updated.             <persName>Mohammad Emami</persName>          </change>
+      <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>          <change when="2019-08-06"> Binding information updated.             <persName>Mohammad Emami</persName>          </change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>

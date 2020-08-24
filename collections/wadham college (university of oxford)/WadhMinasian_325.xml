@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7827">
@@ -86,7 +86,7 @@
                             <title xml:lang="ar" type="alt" key="work_3039">التصریف العزی</title>
                             <title xml:lang="ar-Latn-x-lc" type="main" key="work_3039">al-Taṣrīf</title>
                             <title xml:lang="ar" type="main" key="work_3039">التصریف</title>
-                            <author key="person_54036055" ref="http://viaf.org/viaf/54036055">
+                            <author key="person_3308154329459426970006" ref="http://viaf.org/viaf/3308154329459426970006" change="#ids-cleanup">
                                 <persName xml:lang="ar-Latn-x-lc" type="standard">Zanjānī, Ibrāhīm ibn ʿAbd al-Wahhāb,‏ ‎active 13th century‏</persName>
                                 <persName xml:lang="ar">زنجانی، ابراهیم بن عبدالوهاب</persName>
                                 <persName xml:lang="ar-Latn-x-lc" type="alt">Zanjānī, ʿIzz al-Dīn Ibrāhīm ibn ʿAbd al-Wahhāb,‏ ‎after 655 AH/1257‏</persName>
@@ -153,8 +153,8 @@
                         <handDesc>
                             <handNote scope="major" script="naskh" medium="blackink">
                                 <desc>Graceful Naskh, large hand, one hand</desc>
-                                <persName xml:lang="fa-Latn-x-lc" key="person_f3064">Mīrzā Muḥammad ibn Mīrzā Iskandar</persName>
-                                <persName xml:lang="fa" key="person_f3064">میرزا محمد بن میرزا اسکندر</persName>
+                                <persName xml:lang="fa-Latn-x-lc" key="person_f3064" role="scr" change="#role-assignment">Mīrzā Muḥammad ibn Mīrzā Iskandar</persName>
+                                <persName xml:lang="fa" key="person_f3064" role="scr" change="#role-assignment">میرزا محمد بن میرزا اسکندر</persName>
                                 <note>The scribe's name is given in the second work within the same manuscript which is written with the same handwriting.</note>
                             </handNote>
                         </handDesc>
@@ -231,8 +231,8 @@
                             <handDesc>
                                 <handNote scope="major" script="naskh" medium="blackink">                                   
                                     <desc>Graceful Naskh, fairly large hand, one hand</desc>
-                                    <persName xml:lang="fa-Latn-x-lc" key="person_f3064">Mīrzā Muḥammad ibn Mīrzā Iskandar</persName>
-                                    <persName xml:lang="fa" key="person_f3064">میرزا محمد بن میرزا اسکندر</persName>
+                                    <persName xml:lang="fa-Latn-x-lc" key="person_f3064" role="scr" change="#role-assignment">Mīrzā Muḥammad ibn Mīrzā Iskandar</persName>
+                                    <persName xml:lang="fa" key="person_f3064" role="scr" change="#role-assignment">میرزا محمد بن میرزا اسکندر</persName>
                                 </handNote>
                             </handDesc>
                             <additions>
@@ -264,7 +264,7 @@
                                 <note type="content-genre">Arabic language--Syntax</note>
                                 <title xml:lang="ar-Latn-x-lc" key="work_3040">Sharḥ al-ʿawāmil al-māʾat fī al-naḥv</title>
                                 <title xml:lang="ar" key="work_3040">شرح العوامل المائة فی النحو</title>
-                                <author key="person_f4278">
+                                <author key="person_f407" change="#ids-cleanup">
                                     <persName xml:lang="en" type="standard">Unknown.</persName>
                                 </author>
                                 <incipit xml:lang="ar">بسمله نحمدک یا علیم علیما الهمتنا علیه من الطریق المستقیم و نشکرک یا کریم… و بعد قال المؤلف رحمة‌الله علیه و رضی عنه العوامل جمع العامل و العوامل ما یرفع او ینصب…‏</incipit>
@@ -645,8 +645,8 @@
                                 <locus from="143b" to="148b">ff. 143b-148b</locus>
                                 <textLang mainLang="fa">Persian</textLang>
                                 <note type="content-genre">Poetry</note>
-                                <title xml:lang="fa-Latn-x-lc" key="work_3044">Munājāt'nāmah</title>
-                                <title xml:lang="fa" key="work_3044">مناجات‌نامه</title>
+                                <title xml:lang="fa-Latn-x-lc" key="work_20400" change="#ids-cleanup">Munājāt'nāmah</title>
+                                <title xml:lang="fa" key="work_20400" change="#ids-cleanup">مناجات‌نامه</title>
                                 <author key="person_306066767" ref="http://viaf.org/viaf/306066767">
                                     <persName xml:lang="fa-Latn-x-lc" type="standard">Ghazālī Mashhadī, 1526-1572‏</persName>
                                     <persName xml:lang="fa-Latn-x-lc" type="alt">Ghazālī Mashhadī (936-980 AH/1529-1573)</persName>
@@ -761,6 +761,12 @@
             </textClass>
         </profileDesc>
         <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
             <change when="2019-08-16"> Revamped according to the new template for multi part items.             
                 <persName>Mohammad Emami</persName>
             </change>

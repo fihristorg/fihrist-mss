@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7866">
@@ -149,8 +149,8 @@
                         <handDesc>
                             <handNote scope="major" script="nasta_aliq" medium="blackink">
                                 <desc>Naskh, regular, one hand.</desc>
-                                <persName xml:lang="ar-Latn-x-lc" key="person_f2545">Muḥammad Jaʿfar bin ʿAlī Akbar</persName>
-                                <persName xml:lang="ar" key="person_f2545">محمد جعفر بن علی اکبر</persName>
+                                <persName xml:lang="ar-Latn-x-lc" key="person_f2545" role="scr" change="#role-assignment">Muḥammad Jaʿfar bin ʿAlī Akbar</persName>
+                                <persName xml:lang="ar" key="person_f2545" role="scr" change="#role-assignment">محمد جعفر بن علی اکبر</persName>
                             </handNote>
                         </handDesc>
                         <additions>
@@ -223,8 +223,8 @@
                             <handDesc>
                                 <handNote scope="major" script="naskh" medium="blackink">                                   
                                     <desc>Graceful naskh, regular, one hand.</desc>
-                                    <persName xml:lang="ar-Latn-x-lc" key="person_f5468">Ḥusaynī, Jaʿfar bin ʿAlī Akbar</persName>
-                                    <persName xml:lang="fa" key="person_f5468">حسینی، جعفر بن علی اکبر</persName>
+                                    <persName xml:lang="ar-Latn-x-lc" key="person_f5468" role="scr" change="#role-assignment">Ḥusaynī, Jaʿfar bin ʿAlī Akbar</persName>
+                                    <persName xml:lang="fa" key="person_f5468" role="scr" change="#role-assignment">حسینی، جعفر بن علی اکبر</persName>
                                 </handNote>
                             </handDesc>
                         </physDesc>
@@ -315,8 +315,8 @@
                             <handDesc>
                                 <handNote scope="major" script="naskh" medium="blackink">                                   
                                     <desc>Graceful naskh, regular, one hand.</desc>
-                                    <persName xml:lang="ar-Latn-x-lc" key="person_f5468">Ḥusaynī, Jaʿfar bin ʿAlī Akbar</persName>
-                                    <persName xml:lang="fa" key="person_f5468">حسینی، جعفر بن علی اکبر</persName>
+                                    <persName xml:lang="ar-Latn-x-lc" key="person_f5468" role="scr" change="#role-assignment">Ḥusaynī, Jaʿfar bin ʿAlī Akbar</persName>
+                                    <persName xml:lang="fa" key="person_f5468" role="scr" change="#role-assignment">حسینی، جعفر بن علی اکبر</persName>
                                 </handNote>
                             </handDesc>
                         </physDesc>
@@ -431,6 +431,9 @@
             </textClass>
         </profileDesc>
         <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
             <change when="2019-08-20"> Revamped according to the new template for multi part items.
                 <persName>Mohammad Emami</persName>
             </change>

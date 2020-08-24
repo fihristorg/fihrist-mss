@@ -52,9 +52,9 @@
                      <editor role="trl">
                         <persName xml:lang="ar-Latn-x-lc" type="supplied" key="person_f4382">Yuhanna ibn Jarīr al-Zirbābī</persName>
                      </editor>
-                     <title xml:lang="ar-Latn-x-lc" key="work_2614">Kitāb al-Hadāyā</title>
-                     <title xml:lang="en" type="alt" key="work_2614">Nomocanon</title>
-                     <title xml:lang="syr" key="work_2614">ܟܬܒܐ ܕܗ̈ܘܕܕܳܝܶܐ</title>
+                     <title xml:lang="ar-Latn-x-lc" key="work_20380" change="#ids-cleanup">Kitāb al-Hadāyā</title>
+                     <title xml:lang="en" type="alt" key="work_20380" change="#ids-cleanup">Nomocanon</title>
+                     <title xml:lang="syr" key="work_20380" change="#ids-cleanup">ܟܬܒܐ ܕܗ̈ܘܕܕܳܝܶܐ</title>
                      <note>transated into Arabic by Yohanna ibn Jarir az-Zirbabi</note>
                      <incipit xml:lang="ar"/>
                      <explicit xml:lang="ar" defective="true"/>
@@ -84,7 +84,7 @@
                   </objectDesc>
                   <handDesc>
                      <handNote scope="sole" script="unknown">Written in a good, regular Jacobite serta <date calendar="#Gregorian" to="1701" from="1800">XVIIIth Cent.</date>
-                        <persName type="supplied" key="person_f3759">Scribe</persName>
+                        <persName type="supplied" key="person_f3759" role="scr" change="#role-assignment">Scribe</persName>
                         <watermark>Watermark 3 crescent</watermark>
                      </handNote>
                   </handDesc>
@@ -134,6 +134,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-27">
             <persName>Andrew Morrison</persName> Normalized roles using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/normalize-roles.xsl">normalize-roles.xsl</ref>
          </change>

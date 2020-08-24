@@ -10,7 +10,7 @@
             <principal>Professor Peter E Pormann</principal>
             <respStmt>
                <resp ref="http://id.loc.gov/vocabulary/relators/com.html">Compiled by</resp>
-               <persName key="person_305306812" ref="http://viaf.org/viaf/305306812">Hinrich Biesterfeldt</persName>
+               <persName key="person_305306812" ref="http://viaf.org/viaf/305306812" role="oth" change="#role-assignment">Hinrich Biesterfeldt</persName>
             </respStmt>
          </titleStmt>
          <publicationStmt><!--First publisher-->
@@ -40,7 +40,7 @@
                   <idno>MS 5</idno>
                </msIdentifier>
                <msContents class="lemmatic">
-                  <summary>This manuscript contains commentary on the book of Aphorisms attributed to <persName type="standard" ref="http://viaf.org/viaf/287984736" key="person_287984736">Hippocrates</persName>.</summary>
+                  <summary>This manuscript contains commentary on the book of Aphorisms attributed to <persName type="standard" ref="http://viaf.org/viaf/287984736" key="person_287984736" role="ant" change="#role-assignment">Hippocrates</persName>.</summary>
                   <msItem xml:id="MS_5-item1">
                      <author key="person_f3341">
                         <persName type="supplied" subtype="aut">Psuedo Palladiusمنسوب إلى فلاذيوس</persName>
@@ -48,10 +48,10 @@
                      <title xml:lang="en" key="work_7755">Commentary on the Hippocratic Aphorisms</title>
                      <title xml:lang="ar" key="work_7755">شرح فصول أبقراط المنسوب إلى فلاذيوس</title>
                      <note>Original manuscript in Maʿhad al-turāṯ alʿilmī al-ʿarābī.</note>
-                     <note>The front matter attributes the text to <persName type="Standard" ref="http://viaf.org/viaf/40170779" key="person_40170779">Palladius (fl. C. <date calendar="#Gregorian" notBefore="0500" notAfter="0599" cert="medium">6th century</date>)</persName> although recent scholarship contests that (see Pormann et al, 2018). It contains commentaries on the following aphorisms:: 1, 4, 9, 11, 12, 14, 16 and 17; <seg n="2">II</seg>: 1 and 2, 9, 15, 19.</note>
+                     <note>The front matter attributes the text to <persName type="Standard" ref="http://viaf.org/viaf/223712473" key="person_223712473" role="att" change="#role-assignment #ids-cleanup">Palladius (fl. C. <date calendar="#Gregorian" notBefore="0500" notAfter="0599" cert="medium">6th century</date>)</persName> although recent scholarship contests that (see Pormann et al, 2018). It contains commentaries on the following aphorisms:: 1, 4, 9, 11, 12, 14, 16 and 17; <seg n="2">II</seg>: 1 and 2, 9, 15, 19.</note>
                      <listBibl>
                         <bibl>
-                           <persName key="person_305306812" ref="http://viaf.org/viaf/305306812">Biesterfeldt, Hinrich</persName>, <title level="a">Palladius on the Hippocratic Aphorisms</title>, <title level="m">The Libraries of the Neoplatonists</title>
+                           <persName key="person_305306812" ref="http://viaf.org/viaf/305306812" role="oth" change="#role-assignment">Biesterfeldt, Hinrich</persName>, <title level="a">Palladius on the Hippocratic Aphorisms</title>, <title level="m">The Libraries of the Neoplatonists</title>
                            <date calendar="#Gregorian" notBefore="2007" notAfter="2007">2007</date>, <biblScope unit="pages">pp. 385-397</biblScope>
                         </bibl>
                      </listBibl>
@@ -76,13 +76,13 @@
                </physDesc>
                <history>
                   <origin change="#fix-dates">The copy is undated</origin>
-                  <provenance>The provenance of the manuscript is unknown. Lebanese physician and historian of medicine <persName key="person_64218974" ref="http://viaf.org/viaf/64218974">Sami Haddad</persName> purchased it in <date calendar="#Gregorian" when="1935" cert="high">1935</date>.</provenance>
+                  <provenance>The provenance of the manuscript is unknown. Lebanese physician and historian of medicine <persName key="person_64218974" ref="http://viaf.org/viaf/64218974" role="fmo" change="#role-assignment">Sami Haddad</persName> purchased it in <date calendar="#Gregorian" when="1935" cert="high">1935</date>.</provenance>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
                         <source>
-                           <persName key="person_305306812" ref="http://viaf.org/viaf/305306812">Biesterfeldt, Hinrich</persName>, <title level="a">Palladius on the Hippocratic Aphorisms</title>, <title level="m">The Libraries of the Neoplatonists</title>
+                           <persName key="person_305306812" ref="http://viaf.org/viaf/305306812" role="oth" change="#role-assignment">Biesterfeldt, Hinrich</persName>, <title level="a">Palladius on the Hippocratic Aphorisms</title>, <title level="m">The Libraries of the Neoplatonists</title>
                            <date calendar="#Gregorian" notBefore="2007" notAfter="2007">2007</date>,</source>
                      </recordHist>
                      <availability status="unknown">
@@ -117,6 +117,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		</change>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>
@@ -127,7 +133,7 @@
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2017">
-            <persName type="standard" ref="http://viaf.org/viaf/305441725" key="person_305441725">Hammood Obaid</persName>
+            <persName type="standard" ref="http://viaf.org/viaf/305441725" key="person_305441725" role="dtm" change="#role-assignment">Hammood Obaid</persName>
          </change>
       </revisionDesc>
    </teiHeader>
