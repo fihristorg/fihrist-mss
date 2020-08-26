@@ -170,18 +170,21 @@ declare variable $allinstances :=
                     let $workids :=
                         if ($authorsinworksauthority) then distinct-values($worksauthority[tei:author[not(@role)]/@key = $id]/@xml:id)
                         else distinct-values(($instances/authored/text(), $worksauthority[tei:author[not(@role)]/@key = $id]/@xml:id))
-                    return 
-                    for $workid in $workids
-                        let $url := concat("/catalog/", $workid)
-                        let $linktext := replace(normalize-space(($worksauthority[@xml:id = $workid]/tei:title[@type = 'uniform'][1])[1]/string()), '\|' , '&#8739;')
-                        order by lower-case(bod:stripLeadingStopWords(($linktext, '')[1]))
-                        return
-                        if (exists($linktext)) then
-                            let $link := concat($url, "|", $linktext)
+                    return
+                    if (count($workids) eq 0) then
+                        bod:logging('info', "Cannot create link from author to any of their works", ($id))
+                    else
+                        for $workid in $workids
+                            let $url := concat("/catalog/", $workid)
+                            let $linktext := replace(normalize-space(($worksauthority[@xml:id = $workid]/tei:title[@type = 'uniform'][1])[1]/string()), '\|' , '&#8739;')
+                            order by lower-case(bod:stripLeadingStopWords(($linktext, '')[1]))
                             return
-                            <field name="link_works_smni">{ $link }</field>
-                        else
-                            bod:logging('info', 'Cannot create link from author to work', ($id, $workid))
+                            if (exists($linktext)) then
+                                let $link := concat($url, "|", $linktext)
+                                return
+                                <field name="link_works_smni">{ $link }</field>
+                            else
+                                bod:logging('info', 'Cannot create link from author to work', ($id, $workid))
                 else
                     ()
                 }

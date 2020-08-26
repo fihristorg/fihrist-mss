@@ -39,7 +39,7 @@ declare variable $allinstances :=
             }</link>
             {
             if ($authorsinworksauthority) then () else 
-                for $author in $instance/parent::tei:msItem//(tei:author|tei:persName[@role=('author','aut')])
+                for $author in $instance/parent::tei:msItem//(tei:author[@key]|tei:persName[@key and (@role=('author','aut') or parent::tei:author[not(@key)])])
                     return
                     if (not($author/ancestor::tei:bibl or $author/ancestor::tei:biblStruct)) then
                         <author>{ $author/@key/data() }</author>
@@ -47,9 +47,9 @@ declare variable $allinstances :=
                         ()
             }
             {
-            for $contributor in ($instance/parent::tei:msItem//(tei:editor|tei:persName)[@key], $instance/parent::tei:msItem//tei:author[@key and @role and not(@role=('aut','author'))])
+            for $contributor in ($instance/parent::tei:msItem//(tei:editor|tei:persName)[@key and not(parent::tei:author)], $instance/parent::tei:msItem//tei:author[@key and @role and not(@role=('aut','author'))])
                 let $contribid := $contributor/@key/data()
-                let $roles := distinct-values(tokenize(normalize-space($contributor/@role), ' '))
+                let $roles := distinct-values((tokenize(normalize-space($contributor/@role), ' '), tokenize(normalize-space($contributor/parent::tei:editor/@role), ' ')))
                 let $contributors := 
                     for $role in $roles[not(. = ('author','aut',$nonworkroles))]
                         return
