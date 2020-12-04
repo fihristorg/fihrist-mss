@@ -60,7 +60,7 @@
             </span>
             <xsl:choose>
                 <xsl:when test="@key and not(@key='')">
-                    <a class="author">
+                    <a class="author" style="font-variant:normal ! important;"><!-- Override small-caps in stylesheet because of Safari bug -->
                         <xsl:attribute name="href">
                             <xsl:value-of select="$website-url"/>
                             <xsl:text>/catalog/</xsl:text>
