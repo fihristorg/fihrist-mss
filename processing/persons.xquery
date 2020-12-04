@@ -35,7 +35,7 @@ declare variable $allinstances :=
             { for $role in $roles return <role>{ $role }</role> }
             {
             if ($authorsinworksauthority) then () else
-                if (some $role in $roles satisfies $role = ('author','aut') and not($instance/ancestor::tei:bibl or $instance/ancestor::tei:biblStruct)) then 
+                if (some $role in $roles satisfies $role = ('author','aut') and not($instance/ancestor::tei:bibl[not(@type='text-relations')] or $instance/ancestor::tei:biblStruct)) then 
                     for $workid in distinct-values($instance/ancestor::tei:msItem[tei:title/@key][1]/tei:title/@key/tokenize(data(), '\s+')[string-length() gt 0])
                         return <authored>{ $workid }</authored>
                 else
