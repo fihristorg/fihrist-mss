@@ -41,7 +41,7 @@ declare variable $allinstances :=
             if ($authorsinworksauthority) then () else 
                 for $author in $instance/parent::tei:msItem//(tei:author[@key]|tei:persName[@key and (@role=('author','aut') or parent::tei:author[not(@key)])])
                     return
-                    if (not($author/ancestor::tei:bibl or $author/ancestor::tei:biblStruct)) then
+                    if (not($author/ancestor::tei:bibl[not(@type='text-relations')] or $author/ancestor::tei:biblStruct)) then
                         <author>{ $author/@key/data() }</author>
                     else
                         ()
