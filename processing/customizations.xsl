@@ -91,7 +91,7 @@
                         <xsl:attribute name="href">
                             <xsl:value-of select="$website-url"/>
                             <xsl:text>/catalog/</xsl:text>
-                            <xsl:value-of select="@key"/>
+                            <xsl:value-of select="tokenize(@key, ' ')[string-length() gt 0][1]"/>
                         </xsl:attribute>
                         <xsl:copy-of select="bod:direction(.)"/>
                         <xsl:apply-templates/>
