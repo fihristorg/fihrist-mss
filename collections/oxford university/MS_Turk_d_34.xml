@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_12907">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_22914">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -29,59 +29,76 @@
                </address>
             </pubPlace>
             <idno>FIHRIST</idno>
-            <idno type="msID">MS_Elliott_25</idno>
+            <idno type="msID">MS_Turk_d_34</idno>
             <idno type="catalogue">Fihrist</idno>
          </publicationStmt>
          <sourceDesc>
-            <msDesc xml:id="MS_Elliott_25" xml:lang="en">
+            <msDesc xml:id="MS_Turk_d_34" xml:lang="en">
                <msIdentifier>
                   <country>United Kingdom</country>
                   <region type="county">Oxfordshire</region>
                   <settlement>Oxford</settlement>
                   <institution>Oxford University</institution>
                   <repository>Bodleian Library</repository>
-                  <collection type="main">Oriental Manuscripts Elliott Collection</collection>
-                  <idno>MS. Elliott 25</idno>
+                  <collection type="main">Oriental Manuscripts</collection>
+                  <idno>MS. Turk. d. 34</idno>
                   <altIdentifier>
                      <idno/>
                   </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <summary>A copy of Saʻdī's Būstān.</summary>
-                  <msItem xml:id="MS_Elliott_25-item1">
-                     <author key="person_100206721" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Saʻdī</persName>
-                        <persName xml:lang="fa">سعدى شيرازی</persName>
-                     </author>
-                     <title xml:lang="fa-Latn-x-lc" key="work_240" change="#ids-cleanup"
-                        >Būstān</title>
-                     <title xml:lang="fa" key="work_240" change="#ids-cleanup">بوستان</title>
+                  <summary>Persian ghazals and the Dīvān of Nesīmī.</summary>
+                  <msItem xml:id="MS_Turk_d_34-item1">
+                     <locus from="1" to="16">fols. 1b-16b</locus>
+                     <title xml:lang="fa-Latn-x-lc" key="work_">Persian ghazals</title>
+                     <title xml:lang="fa" key="">غزليات</title>
+                     <incipit xml:lang="fa"/>
                      <textLang mainLang="fa">Persian</textLang>
                      <listBibl>
-                        <bibl>
-                           <ref
-                              target="https://archive.org/stream/catalogueofpersi01bodluoft#page/274/mode/2up"
-                              >Ethé 737</ref>
-                        </bibl>
+                        <bibl>Kut no. 177, p. 122-23.</bibl>
+                     </listBibl>
+                  </msItem>
+                  <msItem xml:id="MS_Turk_d_34-item2">
+                     <locus from="19" to="190">fols. 19b-190a</locus>
+                     <author key="person_45732466">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Näsimi, approximately
+                           1369-approximately 1418</persName>
+                        <persName xml:lang="ar-Latn-x-lc" type="alt">Seyyid Imāde'd-dīn
+                           Nesīmī</persName>
+                        <persName xml:lang="ota">سيد عماد الدين نسيمى</persName>
+                     </author>
+                     <title xml:lang="ota-Latn-x-lc" key="">Dīvān-i Nesīmī</title>
+                     <title xml:lang="ota" key="">ديوان نسيمى</title>
+                     <incipit xml:lang="fa"/>
+                     <textLang mainLang="ota">Ottoman Turkish</textLang>
+                     <listBibl>
+                        <bibl>Kut no. 177, p. 122-23.</bibl>
                      </listBibl>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>ff. 143<dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="in"/>
+                        <extent>ff. 172<dimensions type="leaf" unit="cm">
+                              <height>21.8</height>
+                              <width>13.5</width>
+                           </dimensions>
+                           <dimensions type="written" unit="cm">
+                              <height>15</height>
+                              <width>78</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="2" ruledLines="15" n="mistara"> </layout>
+                        <layout columns="2" ruledLines="15" n="mistara">
+                           <dimensions type="line-height" unit="mm"/>
+                        </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="nasta_liq">
-                        <desc><label>Script: </label>Small, but very clear
-                           Nastaʻlīq. <label>Scribe: </label><persName key="person_96566676" role="scr"
-                           change="#role-assignment">Mīr ʻAlī [?]</persName></desc>
+                     <handNote scope="major" script="ta_liq">
+                        <desc><label>Script: </label>Taʻlīq. <label>Scribe: </label><persName key=""
+                              role="scr">Meḥmed Şīrāzī</persName></desc>
                      </handNote>
                   </handDesc>
                   <bindingDesc>
@@ -89,7 +106,11 @@
                   </bindingDesc>
                </physDesc>
                <history>
-                  <origin>Undated.</origin>
+                  <origin>
+                     <origPlace/>
+                     <origDate calendar="#Hijri-qamari" when="1537">943</origDate>
+                     <origDate calendar="#Gregorian" when="1537">1536-37</origDate>
+                  </origin>
                   <provenance/>
                   <acquisition/>
                </history>
@@ -176,19 +197,17 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh85100085">Persian poetry--747-1500</term>
+                     <term key="subject_sh85100085" ref="#MS_Turk_d_34-item1">Persian poetry--747-1500</term>
+                  </item>
+                  <item>
+                     <term key="subject_sh85138898" ref="#MS_Turk_d_34-item2">Turkish poetry</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2020-07-06" xml:id="role-assignment">
-            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist
-            data cleanup project). </change>
-         <change when="2020-07-06" xml:id="ids-cleanup">
-            <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup
-            project). </change>
+         <change when="2021-02-25"><persName>Alasdair Watson</persName> created this record</change>
          <change when="2018-08-01"><persName>Alasdair Watson</persName> created template based on
             this file</change>
          <change when="2018-06-08">
