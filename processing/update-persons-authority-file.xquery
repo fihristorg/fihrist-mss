@@ -154,18 +154,18 @@ processing-instruction xml-model {'href="authority-schematron.sch" type="applica
             <person>
                 { $p/@* }
                 { $p/* }
-                { for $n in $p/persName return <norm>{ local:normalize4Crossrefing($n/text()) }</norm> }
+                { for $n in $p/persName[text()] return <norm>{ local:normalize4Crossrefing($n/text()) }</norm> }
                 { $p/comment() }                
             </person>
     )
     
-    let $localpeopleinbase := (
-        for $p in $base[starts-with(@xml:id, 'person_f')]
+    let $peopleinbase := (
+        for $p in $base
             return
             <person>
                 { $p/@* }
                 { $p/* }
-                { for $n in $p/persName return <norm>{ local:normalize4Crossrefing($n/text()) }</norm> }
+                { for $n in $p/persName[text()] return <norm>{ local:normalize4Crossrefing($n/text()) }</norm> }
                 { $p/comment() }                
             </person>
     )
@@ -176,13 +176,12 @@ processing-instruction xml-model {'href="authority-schematron.sch" type="applica
             if (some $v in $n/norm/text() satisfies $v = $localpeoplefrompreviousrun/norm/text()) then
                 (: This is a duplicate of an entry created by a previous running of this script, so skip it :)
                 ()
-            else if (some $v in $n/norm/text() satisfies $v = $localpeopleinbase/norm/text()) then
-                (: This is a duplicate of an entry in the base file, so skip it :)
-                ()
             else if (some $v in $n/norm/text() satisfies $v = $newlocalpeople[position() lt $pos]/norm/text()) then
                 (: This is a duplicate of another new entry already processed in this for-loop, so skip it :)
                 ()
             else
+                let $possibleduplicatesinbase := $peopleinbase[some $v in ./norm/text() satisfies $v = $n/norm/text()]
+                let $possibleduplicatesinbasecomments := for $pd in $possibleduplicatesinbase return comment{concat(' POSSIBLE DUPLICATE OF: persons_base.xml#', $pd/@xml:id/data(), ' ')}
                 let $duplicates := $newlocalpeople[position() gt $pos and (some $v in ./norm/text() satisfies $v = $n/norm/text())]
                 return
                 if (count($duplicates) gt 0) then
@@ -203,9 +202,14 @@ processing-instruction xml-model {'href="authority-schematron.sch" type="applica
                             order by $c
                             return comment{ $c }
                         }
+                        { $possibleduplicatesinbasecomments }
                     </person>
                 else
-                    $n
+                    <person>
+                        { $n/* }
+                        { $n/comment() }
+                        { $possibleduplicatesinbasecomments }
+                    </person>
     )
     
     let $localpeoplefrompreviousrunwithnewvariants := (
