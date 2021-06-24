@@ -116,13 +116,12 @@ processing-instruction xml-model {'href="authority-schematron.sch" type="applica
             if (some $v in $w/norm/text() satisfies $v = $worksfrompreviousrun/norm/text()) then
                 (: This is a duplicate of an entry created by a previous running of this script, so skip it :)
                 ()
-            else if (some $v in $w/norm/text() satisfies $v = $worksinbase/norm/text()) then
-                (: This is a duplicate of an entry in the base file, so skip it :)
-                ()
             else if (some $v in $w/norm/text() satisfies $v = $newworks[position() lt $pos]/norm/text()) then
                 (: This is a duplicate of another new entry already processed in this for-loop, so skip it :)
                 ()
             else
+                let $possibleduplicatesinbase := $worksinbase[some $v in ./norm/text() satisfies $v = $w/norm/text()]
+                let $possibleduplicatesinbasecomments := for $pd in $possibleduplicatesinbase return comment{concat(' POSSIBLE DUPLICATE OF: works_base.xml#', $pd/@xml:id/data(), ' ')}
                 let $duplicates := $newworks[position() gt $pos and (some $v in ./norm/text() satisfies $v = $w/norm/text())]
                 return
                 if (count($duplicates) gt 0) then
@@ -143,9 +142,14 @@ processing-instruction xml-model {'href="authority-schematron.sch" type="applica
                             order by $c
                             return comment{ $c }
                         }
+                        { $possibleduplicatesinbasecomments }
                     </bibl>
                 else
-                    $w
+                    <bibl>
+                        { $w/* }
+                        { $w/comment() }
+                        { $possibleduplicatesinbasecomments }
+                    </bibl>
     )
     
     let $worksfrompreviousrunwithnewvariants := (
