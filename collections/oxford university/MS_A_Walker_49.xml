@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4095">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_23013">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>MS. A. Walker 221</title>
+            <title>FIHRIST</title>
             <funder>JISC</funder>
             <principal>Gillian Evison</principal>
          </titleStmt>
@@ -28,12 +28,12 @@
                   </addrLine>
                </address>
             </pubPlace>
-            <idno>OCIMCO</idno>
-            <idno type="msID">MS_A_Walker_221</idno>
+            <idno>FIHRIST</idno>
+            <idno type="msID">MS_A_Walker_49</idno>
             <idno type="catalogue">Fihrist</idno>
          </publicationStmt>
          <sourceDesc>
-            <msDesc xml:id="MS_A_Walker_221" xml:lang="en">
+            <msDesc xml:id="MS_A_Walker_49" xml:lang="en">
                <msIdentifier>
                   <country>United Kingdom</country>
                   <region type="county">Oxfordshire</region>
@@ -41,46 +41,57 @@
                   <institution>Oxford University</institution>
                   <repository>Bodleian Library</repository>
                   <collection type="main">Oriental Manuscripts A. Walker Collection</collection>
-                  <idno>MS. A. Walker 221</idno>
+                  <idno>MS. A. Walker 49</idno>
+                  <altIdentifier>
+                     <idno/>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <summary change="#add-summary"> 1 copy of al-Risālah al-Rashīdīyah by Jawnfūrī,
-                     ʻAbd al-Rashīd ibn Muṣṭafá, d. 1672 or 3 </summary>
-                  <msItem xml:id="MS_A_Walker_221-item1" class="#commentary">
-                     <author key="person_36787525" ref="http://viaf.org/viaf/36787525/">
-                        <persName type="standard" xml:lang="ar-Latn-x-lc">Jawnfūrī, ʻAbd
-                           al-Rashīd ibn Muṣṭafá, <date calendar="#Gregorian" when="1673">d.
-                              1672 or 3</date>
-                        </persName>
-                        <persName xml:lang="ar">الجونفوري، عبد الرشيد بن مصطفى، ت. 1083
-                           هـ</persName>
+                  <summary>A copy of Hātifī's Laylī u Majnūn.</summary>
+                  <msItem xml:id="MS_A_Walker_35-item1">
+                     <author key="person_79269545">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Hātifī</persName>
+                        <persName xml:lang="fa">هاتفى</persName>
                      </author>
-                     <title xml:lang="ar-Latn-x-lc" key="work_4406">al-Risālah al-Rashīdīyah</title>
-                     <title xml:lang="ar" key="work_4406">الرسالة الرشيدية</title>
-                     <note>A commentary on <title xml:lang="ar-Latn-x-lc">al-Risālah al-Sharīfīyah
-                           fī qawāʻid al-baḥth</title> of <persName xml:lang="ar-Latn-x-lc"
-                           key="person_19930855" ref="http://www.viaf.org/viaf/19930855/"
-                           type="standard" role="ant" change="#role-assignment">Jurjānī, ʻAlī ibn
-                           Muḥammad, al-Sayyid al-Sharīf, <date calendar="#Gregorian"
-                              >1340-1413</date>
-                        </persName>
-                     </note>
-                     <note>Part 1 only</note>
+                     <title xml:lang="fa-Latn-x-lc" key="work_20434">Laylā u Majnūn</title>
+                     <title xml:lang="fa" key="work_20434">ليلى و مجنون</title>
+                     <textLang mainLang="fa">Persian</textLang>
                      <listBibl>
-                        <bibl>GAL II 216</bibl>
+                        <bibl>
+                           <ref
+                              target="https://archive.org/stream/catalogueofpersi01bodluoft#page/322/mode/2up"
+                              >Ethé 1000</ref>
+                        </bibl>
                      </listBibl>
-                     <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>58 ff.</extent>
+                        <extent>ff. 65</extent>
                      </supportDesc>
+                     <layoutDesc>
+                        <layout columns="2" ruledLines="16" n="mistara"/>
+                     </layoutDesc>
                   </objectDesc>
+                  <handDesc>
+                     <handNote scope="major" script="nasta_liq">
+                        <desc><label>Script: </label>Nastaʻlīq.</desc>
+                     </handNote>
+                  </handDesc>
+                  <decoDesc>
+                     <decoNote/>
+                  </decoDesc>
+                  <bindingDesc>
+                     <p/>
+                  </bindingDesc>
                </physDesc>
                <history>
-                  <origin change="#fix-dates">n.d.</origin>
+                  <origin>
+                     <origDate calendar="#Hijri-qamari" when="1666-12-07">9th Jumādā II
+                        1077</origDate>
+                     <origDate calendar="#Gregorian" when="1666-12-07">7th December 1666</origDate>
+                  </origin>
                   <provenance>The collections of <persName key="person_6270294" role="fmo"
                         >Brigadier-General Alexander Walker, d. 1831</persName>.</provenance>
                   <acquisition>Presented to the Bodleian Library by <persName key="person_f6483"
@@ -90,9 +101,10 @@
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>Manuscript description based on the Bodleian Library's public card
-                           index of Arabic manuscripts with additional enhancements by the OCIMCO
-                           project team.</source>
+                        <source>Manuscript description based on: Beeston, A. F. L. (Alfred Felix
+                           Landon); Ethé, Hermann, 1844-1917.; Sachau, Eduard, 1845-1930; Catalogue
+                           of the Persian, Turkish, Hindûstânî, and Pushtû manuscripts in the
+                           Bodleian Library, Oxford; at the Clarendon Press 1889-1953</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid
@@ -121,6 +133,9 @@
                </category>
                <category xml:id="supercommentary">
                   <catDesc>Supercommentary</catDesc>
+               </category>
+               <category xml:id="indices">
+                  <catDesc>Indices</catDesc>
                </category>
                <category xml:id="translation">
                   <catDesc>Translation</catDesc>
@@ -169,18 +184,18 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh85036124"
-                        target="http://id.loc.gov/authorities/sh85036124#concept">Debates and
-                        debating</term>
+                     <term key="subject_sh85100085">Persian poetry--747-1500</term>
+                  </item>
+                  <item>
+                     <term key="subject_sh89005046">Persian poetry--1500-1796</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2020-07-06" xml:id="role-assignment">
-            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist
-            data cleanup project). </change>
+         <change when="2018-08-01"><persName>Alasdair Watson</persName> created template based on
+            this file</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref
                target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl"
@@ -192,8 +207,8 @@
                >add-summaries.xsl</ref>
          </change>
          <change when="2018-03-02" xml:id="fix-dates">
-            <persName>Andrew Morrison</persName> Removed origDate tags around something which is not
-            a date using <ref
+            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements
+            using <ref
                target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl"
                >fix-dates.xsl</ref>
          </change>
@@ -202,7 +217,8 @@
                target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl"
                >https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
-         <change when="2009-05-14">created this file</change>
+         <change when="2017-09-12">
+            <persName>Alasdair Watson</persName> created this file.</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

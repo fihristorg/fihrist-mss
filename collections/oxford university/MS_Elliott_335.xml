@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_22987">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_23005">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -29,11 +29,11 @@
                </address>
             </pubPlace>
             <idno>FIHRIST</idno>
-            <idno type="msID">MS_Elliott_284</idno>
+            <idno type="msID">MS_Elliott_335</idno>
             <idno type="catalogue">Fihrist</idno>
          </publicationStmt>
          <sourceDesc>
-            <msDesc xml:id="MS_Elliott_284" xml:lang="en">
+            <msDesc xml:id="MS_Elliott_335" xml:lang="en">
                <msIdentifier>
                   <country>United Kingdom</country>
                   <region type="county">Oxfordshire</region>
@@ -41,28 +41,50 @@
                   <institution>Oxford University</institution>
                   <repository>Bodleian Library</repository>
                   <collection type="main">Oriental Manuscripts Elliott Collection</collection>
-                  <idno>MS. Elliott 284</idno>
+                  <idno>MS. Elliott 335</idno>
                   <altIdentifier>
                      <idno/>
                   </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <summary>A copy of Jāmī's Nafaḥāt al-uns.</summary>
-                  <msItem xml:id="MS_Elliott_284-item1">
-                     <author key="person_90042997">
-                        <persName xml:lang="ar-Latn-x-lc" type="standard">Jāmī, 1414-1492</persName>
-                        <persName xml:lang="fa">جامى</persName>
+                  <summary>Two mathnawīs by Qāḍī Ikhtiyār and Hilālī respectively.</summary>
+                  <msItem xml:id="MS_Elliott_335-item1">
+                     <locus from="1" to="100">ff. 1-100</locus>
+                     <author key="">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Qāḍī Ikhtiyār
+                           Turbatī</persName>
+                        <persName xml:lang="ar-Latn-x-lc" type="alt"/>
+                        <persName xml:lang="fa">قاضى اختيار تربتى</persName>
+                        <persName xml:lang="fa" type="alt"/>
                      </author>
-                     <title xml:lang="ar-Latn-x-lc" key="work_20616">Nafaḥāt al-uns</title>
-
-                     <title xml:lang="ar" key="work_20616">نفحات الأنس</title>
+                     <title xml:lang="fa-Latn-x-lc" key="">ʻAdl u jawr</title>
+                     <title xml:lang="fa" key="">عدل و جور</title>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note/>
                      <listBibl>
                         <bibl>
                            <ref
-                              target="https://archive.org/stream/catalogueofpersi01bodluoft#page/316/mode/2up"
-                              >Ethé 957</ref>
+                              target="https://archive.org/stream/catalogueofpersi01bodluoft#page/320/mode/2up"
+                              >Ethé 985</ref>
+                        </bibl>
+                     </listBibl>
+                  </msItem>
+                  <msItem xml:id="MS_Elliott_335-item2">
+                     <locus from="101" to="121">ff. 101-121</locus>
+                     <author key="person_22546363">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Hilālī, Badr al-Dīn, d.
+                           1528 or 9</persName>
+                        <persName xml:lang="ar-Latn-x-lc" type="alt"/>
+                        <persName xml:lang="fa">بدر الدين هلالى</persName>
+                        <persName xml:lang="fa" type="alt"/>
+                     </author>
+                     <title xml:lang="fa-Latn-x-lc" key="work_1405">Ṣifāt al-ʻāshiqīn</title>
+                     <title xml:lang="fa" key="work_1405">صفات العاشقين</title>
+                     <textLang mainLang="fa">Persian</textLang>
+                     <listBibl>
+                        <bibl>
+                           <ref
+                              target="https://archive.org/stream/catalogueofpersi01bodluoft#page/324/mode/2up"
+                              >Ethé 1026</ref>
                         </bibl>
                      </listBibl>
                   </msItem>
@@ -70,17 +92,15 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>ff. 301</extent>
+                        <extent>ff. 121</extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1" ruledLines="23" n="mistara"/>
+                        <layout columns="1" ruledLines="14" n="mistara"/>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="naskh">
-                        <desc><label>Script: </label>Naskh.<label>Scribe: </label><persName
-                              key="person_f6508" role="scr">Dūst Muḥammad ibn Yār Muḥammad ibn
-                              Darvīsh Muḥammad</persName>.</desc>
+                     <handNote scope="major" script="nasta_liq">
+                        <desc><label>Script: </label>Nastaʻlīq.</desc>
                      </handNote>
                   </handDesc>
                   <decoDesc>
@@ -91,7 +111,8 @@
                   </bindingDesc>
                </physDesc>
                <history>
-                  <origin>Undated.</origin>
+                  <origin><origDate calendar="#Hijri-qamari" when="1560">967</origDate>
+                     <origDate calendar="#Gregorian" when="1560">1559-60</origDate></origin>
                   <provenance>The collections of <persName key="person_f6443" role="fmo">John Bardoe
                         Elliott</persName>.</provenance>
                   <acquisition>Presented to the Bodleian Library by <persName key="person_f6443"
@@ -184,6 +205,9 @@
                <list>
                   <item>
                      <term key="subject_sh85100085">Persian poetry--747-1500</term>
+                  </item>
+                  <item>
+                     <term key="subject_sh89005046">Persian poetry--1500-1796</term>
                   </item>
                </list>
             </keywords>
