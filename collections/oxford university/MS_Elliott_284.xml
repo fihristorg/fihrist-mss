@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4120">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_22987">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>MS. A. Walker 921</title>
+            <title>FIHRIST</title>
             <funder>JISC</funder>
             <principal>Gillian Evison</principal>
          </titleStmt>
@@ -28,64 +28,82 @@
                   </addrLine>
                </address>
             </pubPlace>
-            <idno>OCIMCO</idno>
-            <idno type="msID">MS_A_Walker_921</idno>
+            <idno>FIHRIST</idno>
+            <idno type="msID">MS_Elliott_284</idno>
             <idno type="catalogue">Fihrist</idno>
          </publicationStmt>
          <sourceDesc>
-            <msDesc xml:id="MS_A_Walker_921" xml:lang="en">
+            <msDesc xml:id="MS_Elliott_284" xml:lang="en">
                <msIdentifier>
                   <country>United Kingdom</country>
                   <region type="county">Oxfordshire</region>
                   <settlement>Oxford</settlement>
                   <institution>Oxford University</institution>
                   <repository>Bodleian Library</repository>
-                  <collection type="main">Oriental Manuscripts A. Walker Collection</collection>
-                  <idno>MS. A. Walker 921</idno>
+                  <collection type="main">Oriental Manuscripts Elliott Collection</collection>
+                  <idno>MS. Elliott 284</idno>
+                  <altIdentifier>
+                     <idno/>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <summary change="#add-summary"> 1 copy of نصير الدين الطوسي، محمد بن محمد، 597-672
-                     هـ by Ṭūsī, Naṣīr al-Dīn Muḥammad ibn Muḥammad, 1201-1274 </summary>
-                  <msItem xml:id="MS_A_Walker_921-item1">
-                     <author key="person_12392936" ref="http://www.viaf.org/viaf/12392936/">
-                        <persName type="standard" xml:lang="ar-Latn-x-lc">Ṭūsī, Naṣīr al-Dīn
-                           Muḥammad ibn Muḥammad, <date calendar="#Gregorian" from="1201"
-                              to="1274">1201-1274</date>
-                        </persName>
+                  <summary>A copy of Jāmī's Nafaḥāt al-uns.</summary>
+                  <msItem xml:id="MS_Elliott_284-item1">
+                     <author key="person_90042997">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Jāmī, 1414-1492</persName>
+                        <persName xml:lang="fa">جامى</persName>
                      </author>
-                     <title xml:lang="fa-Latn-x-lc" key="work_312" change="#ids-cleanup">Akhlāq-i
-                        Naṣīrī</title>
-                     <title xml:lang="fa" key="work_312" change="#ids-cleanup">اخلاق نصیری</title>
+                     <title xml:lang="ar-Latn-x-lc" key="work_20616">Nafaḥāt al-uns</title>
+
+                     <title xml:lang="ar" key="work_20616">نفحات الأنس</title>
+                     <textLang mainLang="fa">Persian</textLang>
+                     <note/>
                      <listBibl>
-                        <bibl>GAL I 510</bibl>
-                        <bibl>[Ethé 1436]</bibl>
+                        <bibl>
+                           <ref
+                              target="https://archive.org/stream/catalogueofpersi01bodluoft#page/316/mode/2up"
+                              >Ethé 957</ref>
+                        </bibl>
                      </listBibl>
-                     <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>331 ff.</extent>
+                        <extent>ff. 301</extent>
                      </supportDesc>
+                     <layoutDesc>
+                        <layout columns="1" ruledLines="23" n="mistara"/>
+                     </layoutDesc>
                   </objectDesc>
+                  <handDesc>
+                     <handNote scope="major" script="naskh">
+                        <desc><label>Script: </label>Naskh.<label>Scribe: </label><persName
+                              key="person_f6508" role="scr">Dūst Muḥammad ibn Yār Muḥammad ibn
+                              Darvīsh Muḥammad</persName>.</desc>
+                     </handNote>
+                  </handDesc>
+                  <decoDesc>
+                     <decoNote/>
+                  </decoDesc>
+                  <bindingDesc>
+                     <p/>
+                  </bindingDesc>
                </physDesc>
                <history>
-                  <origin change="#fix-dates">
-                     <origDate when="1648" calendar="#Gregorian">1648</origDate>
-                  </origin>
-                  <provenance>The collections of <persName key="person_6270294" role="fmo"
-                        >Brigadier-General Alexander Walker, d. 1831</persName>.</provenance>
-                  <acquisition>Presented to the Bodleian Library by <persName key="person_f6483"
-                        role="dnr">Sir William Walker</persName> in <date calendar="#Gregorian"
-                        when="1845">1845</date>.</acquisition>
+                  <origin>Undated.</origin>
+                  <provenance>The collections of <persName key="person_f6443" role="fmo">John Bardoe
+                        Elliott</persName>.</provenance>
+                  <acquisition>Presented to the Bodleian Library by <persName key="person_f6443"
+                        role="dnr">J.B. Elliott</persName>, in 1859.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>Manuscript description based on the Bodleian Library's public card
-                           index of Arabic manuscripts with additional enhancements by the OCIMCO
-                           project team.</source>
+                        <source>Manuscript description based on: Beeston, A. F. L. (Alfred Felix
+                           Landon); Ethé, Hermann, 1844-1917.; Sachau, Eduard, 1845-1930; Catalogue
+                           of the Persian, Turkish, Hindûstânî, and Pushtû manuscripts in the
+                           Bodleian Library, Oxford; at the Clarendon Press 1889-1953</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid
@@ -114,6 +132,9 @@
                </category>
                <category xml:id="supercommentary">
                   <catDesc>Supercommentary</catDesc>
+               </category>
+               <category xml:id="indices">
+                  <catDesc>Indices</catDesc>
                </category>
                <category xml:id="translation">
                   <catDesc>Translation</catDesc>
@@ -162,17 +183,15 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh85045096"
-                        target="http://id.loc.gov/authorities/sh85045096#concept">Ethics</term>
+                     <term key="subject_sh85100085">Persian poetry--747-1500</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2020-07-06" xml:id="ids-cleanup">
-            <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup
-            project). </change>
+         <change when="2018-08-01"><persName>Alasdair Watson</persName> created template based on
+            this file</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref
                target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl"
@@ -194,7 +213,8 @@
                target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl"
                >https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
-         <change when="2009-05-14">created this file</change>
+         <change when="2017-09-12">
+            <persName>Alasdair Watson</persName> created this file.</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
