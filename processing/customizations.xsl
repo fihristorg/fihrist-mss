@@ -60,7 +60,7 @@
             </span>
             <xsl:choose>
                 <xsl:when test="@key and not(@key='')">
-                    <a class="author" style="font-variant:normal ! important;"><!-- Override small-caps in stylesheet because of Safari bug -->
+                    <a class="author">
                         <xsl:attribute name="href">
                             <xsl:value-of select="$website-url"/>
                             <xsl:text>/catalog/</xsl:text>
@@ -251,6 +251,17 @@
 
     <!-- Prevent facs attributes from being displayed. Move to msdesc2html.xsl? -->
     <xsl:template match="@facs"/>
+    
+    
+    <!-- Do not display places as hyperlinks if the key is not a subject -->
+    <xsl:template match="placeName[not(starts-with(@key, 'subject_'))] | name[@type='place'][not(starts-with(@key, 'subject_'))]">
+        <span>
+            <xsl:attribute name="class">
+                <xsl:value-of select="string-join((name(), @role), ' ')"/>
+            </xsl:attribute>
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
         
     
 </xsl:stylesheet>

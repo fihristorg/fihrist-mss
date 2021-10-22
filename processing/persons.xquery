@@ -14,7 +14,7 @@ declare variable $authorsinworksauthority := false();
 declare variable $allinstances :=
     for $instance in collection('../collections?select=*.xml;recurse=yes')//tei:msDesc//(tei:author|tei:editor|tei:persName[not(parent::tei:author or parent::tei:editor)])
         let $roottei := $instance/ancestor::tei:TEI
-        let $shelfmark := ($roottei/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:idno)[1]/string()
+        let $shelfmark := normalize-space(($roottei/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:idno)[1]/string())
         let $roles := distinct-values(
             for $role in (
                 tokenize($instance/@role/data(), '\s+')[string-length() gt 0],
