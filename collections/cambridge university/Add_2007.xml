@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_15334">
     <teiHeader xmlns="http://www.tei-c.org/ns/1.0">
@@ -81,7 +82,7 @@
                     </physDesc>
                     <history>
                         <origin/>
-                        <provenance>Acquired for the SPCK by <persName key="person_37056995" role="fmo" change="#role-assignment">George
+                        <provenance>Acquired for the <persName key="person_f4217" role="fmo" change="#prov-markup">SPCK</persName> by <persName key="person_37056995" role="fmo" change="#role-assignment">George
                                 Percy Badger</persName> and presented to the Library in 1887. </provenance>
                         <acquisition/>
                     </history>
@@ -120,7 +121,6 @@
             <textClass>
                 <keywords scheme="#LCSH">
                     <list>
-
                         <item><ref target="	https://lccn.loc.gov/sh85025619">Church history--early
                                 works to 1800. </ref>
                         </item>
@@ -129,6 +129,9 @@
             </textClass>
         </profileDesc>
         <revisionDesc>
+         <change when="2021-10-23" xml:id="prov-markup">
+            <persName>Julian Cook</persName> Marked up with persName elements free-format names related to provenance.
+         </change>
 		<change when="2020-07-06" xml:id="role-assignment">
 			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
