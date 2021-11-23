@@ -113,7 +113,10 @@ declare variable $allinstances :=
                     for $role in $rolessorted
                         return <field name="pp_roles_sm">{ $role }</field>
                     ,
-                    <field name="roles_smni">{ string-join($rolessorted[not(. = 'Other')], ', ') }</field>
+                    if (count($rolessorted[not(. = 'Other')]) gt 0) then
+                        <field name="roles_smni">{ string-join($rolessorted[not(. = 'Other')], ', ') }</field>
+                    else
+                        ()
                     )
                 else
                     <field name="pp_roles_sm">Not specified</field>
