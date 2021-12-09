@@ -160,7 +160,8 @@ declare variable $allinstances :=
                 {
                 (: Languages in TEI files :)
                 for $langcode in distinct-values($instances/lang/text())
-                    return <field name="lang_sm">{ bod:languageCodeLookup($langcode) }</field>
+                    for $lang in bod:languageCodeLookup($langcode)
+                        return <field name="lang_sm">{ $lang }</field>
                 }
                 {
                 (: Subjects (Medieval only)
