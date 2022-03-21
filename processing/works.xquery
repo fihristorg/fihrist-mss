@@ -19,8 +19,8 @@ declare variable $allinstances :=
         let $datesoforigin := bod:summarizeDates($roottei//tei:origin//tei:origDate)
         let $placesoforigin := distinct-values($roottei//tei:origin//tei:origPlace/normalize-space()[string-length(.) gt 0])
         let $langcodes := tokenize(string-join($instance/ancestor::*[tei:textLang][1]/tei:textLang/(@mainLang|@otherLangs), ' '), '\s+')[string-length() gt 0]
-        let $institution := $roottei//tei:msDesc/tei:msIdentifier/tei:institution/string()
-        let $repository := $roottei//tei:msDesc/tei:msIdentifier/tei:repository[1]/string()
+        let $institution := normalize-space(($roottei//tei:msDesc/tei:msIdentifier/tei:institution)[1]/string())
+        let $repository := normalize-space(($roottei//tei:msDesc/tei:msIdentifier/tei:repository)[1]/string())
         return
         <instance>
             { for $key in distinct-values(tokenize(string-join(($instance/@key, $instance/parent::tei:msItem/tei:title/@key), ' '), '\s+')[string-length() gt 0]) return <key>{ $key }</key> }
