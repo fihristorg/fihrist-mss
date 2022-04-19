@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5795">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Or. 15661</title>
+            <funder>BL</funder>
+            <principal>Ursula Sims-Williams</principal>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>British Library</publisher>
+            <date calendar="#Gregorian">Gregorian</date>
+            <idno type="msID">Uk_Or_15661</idno>
+            <idno type="catalogue">Fihrist</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="Uk_Or_15661" xml:lang="en" rend="all">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <settlement>London</settlement>
+                  <institution>British Library</institution>
+                  <repository>St. Pancras</repository>
+                  <collection>Oriental Manuscripts</collection>
+                  <idno>Or. 15661</idno>
+               </msIdentifier>
+               <head>Zad al-musafirin</head>
+               <msContents>
+                  <summary change="#add-summary">
+                     1 copy of Zād al-musāfirīn by Muḥammad Mahdī ibn ‘Alī Naqī
+                  </summary>
+                  <msItem xml:id="Uk_Or_15661-item1" class="http://lccn.loc.gov/sh85083116 http://lccn.loc.gov/sh85083158">
+                     <author key="person_220924367" change="#ids-cleanup">
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied" key="Persian_0074">Muḥammad Mahdī ibn ‘Alī Naqī</persName>
+                        <persName xml:lang="fa" key="Persian_0074" type="supplied">محمد مهدی بن علی نقی</persName>
+                     </author>
+                     <title xml:lang="fa-Latn-x-lc" key="work_20103" change="#ids-cleanup">Zād al-musāfirīn</title>
+                     <title xml:lang="fa" key="work_20103" change="#ids-cleanup">زاد المسافرين</title>
+                     <note>
+                        <p>A guide to preservation of health and self-treatment for travellers, by Muḥammad Mahdī ibn ‘Alī Naqī. The work was completed at Isfahan in 1141/1728, during the Afghan invasion, for <persName xml:lang="fa-Latn-x-lc" key="person_f3058" role="pat">Mīrzā Muḥammad Ismā‘īl</persName>.</p>
+                        <p>It comprises two parts (maṭlab): on preventive health and hygiene, and on the treatment of certain ailments treatable without the aid of a physician.</p>
+                        <p>The present manuscript is slightly incomplete at the end.</p>
+                     </note>
+                     <textLang mainLang="fa">Persian</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="chart">
+                        <extent>134 ff (plus 43 blank and blank endpapers). <dimensions type="leaf" unit="mm">
+                              <height>204</height>
+                              <width>118</width>
+                           </dimensions>
+                           <dimensions type="written"/>
+                        </extent>
+                        <foliation>
+                           <p>Original foliation on versos, reaching 136</p>
+                        </foliation>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout columns="1" writtenLines="9">
+                           <p>9 lines per page</p>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <summary>Small <term xml:lang="fa-Latn-x-lc">nastaʻlīq.</term>
+                     </summary>
+                     <handNote script="Arabic" scope="major"/>
+                  </handDesc>
+                  <decoDesc>
+                     <summary>Black overlining; catchwords on versos; brief heading indicating the subject of the current section, top left of rectos.</summary>
+                     <decoNote type="border"/>
+                  </decoDesc>
+                  <bindingDesc>
+                     <p>European-style black morocco binding, rounded at the corners, with gilt lettering on spine and border lines, naming the author as ‘Latif Ali Naki’ and estimating the date of copying as ca. 1800.</p>
+                  </bindingDesc>
+               </physDesc>
+               <history>
+                  <origin period="Gregorian" calendar="#Hijri-qamari" notBefore="1750" notAfter="1849">
+                     <origPlace>India</origPlace>
+                  </origin>
+                  <acquisition>
+                     <date>2000-10-11</date>
+                     <p>Acquired from Bonhams sale 11 October 2000, part of Lot 128.</p>
+                  </acquisition>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>Based on unpublished description in M.I. Waley, Catalogue of Persian Manuscripts acquired 2000-2014.</source>
+                     </recordHist>
+                     <availability status="free">
+                        <p>unrestricted</p>
+                     </availability>
+                  </adminInfo>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
+         <change when="2018-06-08">
+            <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
+         </change>
+         <change when="2018-03-15" xml:id="add-summary">
+            <persName>Andrew Morrison</persName> Added summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl">add-summaries.xsl</ref>
+         </change>
+         <change when="2017-11-07">
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
+         </change>
+         <change when="2015-01-30">
+            <persName>Ursula Sims-Williams</persName>
+         </change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p><!--Body paragraph provided for validation and future transcription--></p>
+      </body>
+   </text>
+</TEI>
