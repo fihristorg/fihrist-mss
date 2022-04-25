@@ -1,48 +1,67 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml version="1.0" encoding="utf-8"?>
+
+<?altova_sps ..\Enrich_new.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5795">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Or. 15661</title>
+            <title>Or 15661</title>
             <funder>BL</funder>
             <principal>Ursula Sims-Williams</principal>
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">Gregorian</date>
+            <date calendar="#Gregorian">2022-04-21</date>
+            <pubPlace>
+               <address>
+                  <addrLine>Asian and African Studies</addrLine>
+                  <addrLine>British Library</addrLine>
+                  <street>96 Euston Road</street>
+                  <settlement>London</settlement>
+                  <postCode>NW1 2DB</postCode>
+                  <addrLine>
+                     <ref target="http://www.bl.uk">British Library</ref>
+                  </addrLine>
+                  <addrLine>
+                     <email>apac-enquiries@bl.uk</email>
+                  </addrLine>
+               </address>
+            </pubPlace>
+            <idno>BL</idno>
             <idno type="msID">Uk_Or_15661</idno>
             <idno type="catalogue">Fihrist</idno>
          </publicationStmt>
          <sourceDesc>
-            <msDesc xml:id="Uk_Or_15661" xml:lang="en" rend="all">
+            <msDesc xml:id="Uk_Or_15661" xml:lang="en">
                <msIdentifier>
                   <country>United Kingdom</country>
                   <settlement>London</settlement>
                   <institution>British Library</institution>
                   <repository>St. Pancras</repository>
                   <collection>Oriental Manuscripts</collection>
-                  <idno>Or. 15661</idno>
+                  <idno>Or 15661</idno>
+                  <altIdentifier type="other">
+                     <idno />
+                  </altIdentifier>
                </msIdentifier>
                <head>Zad al-musafirin</head>
                <msContents>
-                  <summary change="#add-summary">
-                     1 copy of Zād al-musāfirīn by Muḥammad Mahdī ibn ‘Alī Naqī
-                  </summary>
-                  <msItem xml:id="Uk_Or_15661-item1" class="http://lccn.loc.gov/sh85083116 http://lccn.loc.gov/sh85083158">
-                     <author key="person_220924367" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="supplied" key="Persian_0074">Muḥammad Mahdī ibn ‘Alī Naqī</persName>
-                        <persName xml:lang="fa" key="Persian_0074" type="supplied">محمد مهدی بن علی نقی</persName>
+                  <summary>1 copy of Zād al-musāfirīn by Muḥammad Mahdī ibn ‘Alī Naqī</summary>
+                  <msItem class="http://lccn.loc.gov/sh85083116 http://lccn.loc.gov/sh85083158" n="1" xml:id="Uk_Or_15661-item1">
+                     <author>
+                        <persName xml:lang="per-Latn-x-lc" type="supplied" key="person_220924367">Muḥammad Mahdī ibn ‘Alī Naqī</persName>
+                        <persName xml:lang="per" key="person_220924367" type="supplied">محمد مهدی بن علی نقی</persName>
                      </author>
-                     <title xml:lang="fa-Latn-x-lc" key="work_20103" change="#ids-cleanup">Zād al-musāfirīn</title>
-                     <title xml:lang="fa" key="work_20103" change="#ids-cleanup">زاد المسافرين</title>
+                     <title xml:lang="per-Latn-x-lc" key="work_20103">Zād al-musāfirīn</title>
+                     <title xml:lang="per" key="work_20103">زاد المسافرين</title>
                      <note>
-                        <p>A guide to preservation of health and self-treatment for travellers, by Muḥammad Mahdī ibn ‘Alī Naqī. The work was completed at Isfahan in 1141/1728, during the Afghan invasion, for <persName xml:lang="fa-Latn-x-lc" key="person_f3058" role="pat">Mīrzā Muḥammad Ismā‘īl</persName>.</p>
-                        <p>It comprises two parts (maṭlab): on preventive health and hygiene, and on the treatment of certain ailments treatable without the aid of a physician.</p>
-                        <p>The present manuscript is slightly incomplete at the end.</p>
+                        <p>A guide to preservation of health and self-treatment for travellers, by Muḥammad Mahdī ibn ‘Alī Naqī. The work was completed at Isfahan in 1141/1728, during the Afghan invasion, for <persName xml:lang="per-Latn-x-lc" key="person_f7707" role="pat">Mīrzā Muḥammad Ismā‘īl</persName>. 
+                        </p>
+                        <p>It comprises two parts (maṭlab): on preventive health and hygiene, and on the treatment of certain ailments treatable without the aid of a physician. </p>
+                        <p>The present manuscript is slightly incomplete at the end. </p>
                      </note>
-                     <textLang mainLang="fa">Persian</textLang>
+                     <textLang mainLang="per">Persian</textLang>
+                     <filiation />
                   </msItem>
                </msContents>
                <physDesc>
@@ -52,7 +71,7 @@
                               <height>204</height>
                               <width>118</width>
                            </dimensions>
-                           <dimensions type="written"/>
+                           <dimensions type="written" />
                         </extent>
                         <foliation>
                            <p>Original foliation on versos, reaching 136</p>
@@ -65,61 +84,74 @@
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <summary>Small <term xml:lang="fa-Latn-x-lc">nastaʻlīq.</term>
+                     <summary>Small <term xml:lang="per-Latn-x-lc">nastaʻlīq. </term>
                      </summary>
-                     <handNote script="Arabic" scope="major"/>
+                     <handNote script="Arabic" scope="major" />
                   </handDesc>
                   <decoDesc>
-                     <summary>Black overlining; catchwords on versos; brief heading indicating the subject of the current section, top left of rectos.</summary>
-                     <decoNote type="border"/>
+                     <summary>Black overlining; catchwords on versos; brief heading indicating the subject of the current section, top left of rectos. </summary>
+                     <decoNote type="border" />
                   </decoDesc>
+                  <additions> </additions>
                   <bindingDesc>
-                     <p>European-style black morocco binding, rounded at the corners, with gilt lettering on spine and border lines, naming the author as ‘Latif Ali Naki’ and estimating the date of copying as ca. 1800.</p>
+                     <p>European-style black morocco binding, rounded at the corners, with gilt lettering on spine and border lines, naming the author as ‘Latif Ali Naki’ and estimating the date of copying as ca. 1800.
+							</p>
                   </bindingDesc>
                </physDesc>
                <history>
-                  <origin period="Gregorian" calendar="#Hijri-qamari" notBefore="1750" notAfter="1849">
+                  <origin calendar="#Hijri-qamari" notBefore="1750" notAfter="1849">
+                     <origDate calendar="#Gregorian" notBefore="1750" notAfter="1849">1750 - 1849</origDate>
                      <origPlace>India</origPlace>
                   </origin>
+                  <provenance />
                   <acquisition>
                      <date>2000-10-11</date>
-                     <p>Acquired from Bonhams sale 11 October 2000, part of Lot 128.</p>
+                     <p>Acquired from Bonhams sale 11 October 2000, part of Lot 128. </p>
                   </acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>Based on unpublished description in M.I. Waley, Catalogue of Persian Manuscripts acquired 2000-2014.</source>
+                        <source>Based on unpublished description in M.I. Waley, Catalogue of Persian Manuscripts acquired 2000-2014. </source>
                      </recordHist>
                      <availability status="free">
-                        <p>unrestricted</p>
+                        <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.bl.uk/reshelp/inrrooms/stp/register/stpregister.html/">British Library, Registering for a Reader Pass</ref>. Contact <email>apac-enquiries@bl.uk</email> for further information on the availability of this manuscript. For information on catalogues and ordering manuscripts see <ref target="https://www.bl.uk/help/find-persian-manuscripts#">Finding and ordering Persian manuscripts in the British Library</ref>.
+                        </p>
                      </availability>
                   </adminInfo>
                </additional>
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="LCSH">
+               <bibl>
+                  <ref target="http://id.loc.gov/authorities/about.html#lcsh">Library of Congress Subject Headings</ref>
+               </bibl>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+			</textClass>
+      </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="ids-cleanup">
-			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
-		</change>
-         <change when="2018-06-08">
-            <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
-         </change>
-         <change when="2018-03-15" xml:id="add-summary">
-            <persName>Andrew Morrison</persName> Added summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl">add-summaries.xsl</ref>
-         </change>
-         <change when="2017-11-07">
-            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
+         <change when="2022-04-21">
+            <persName>Julian Cook</persName>
+              850 BL Persian mss prepared for initial publication in FIHRIST (plus 18 replacements)
+            
          </change>
          <change when="2015-01-30">
-            <persName>Ursula Sims-Williams</persName>
+            <persName key="person_32019063" role="cataloguer">Ursula Sims-Williams</persName>
          </change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
-         <p><!--Body paragraph provided for validation and future transcription--></p>
+         <p>
+            <!-- Body paragraph provided for validation and future transcription -->
+         </p>
       </body>
    </text>
 </TEI>
