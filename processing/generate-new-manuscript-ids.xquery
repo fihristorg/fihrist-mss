@@ -40,8 +40,8 @@ declare variable $inuseidnums as xs:integer* := for $id in $inuseids return repl
 (: Read all the text files containing previously-allocated manuscript IDs for each member institution :)
 declare variable $alreadyallocated := map:merge(
     for $inst in $allinstitutions
-        let $ids as xs:string* := tokenize(unparsed-text(concat('../identifiers/', $inst, '.txt'), 'utf-8'), '\r*\n')
-        let $idnums as xs:integer* := for $id in $ids[matches(., 'manuscript_\d+')] return replace($id, '\D', '') cast as xs:integer
+        let $lines as xs:string* := tokenize(unparsed-text(concat('../identifiers/', $inst, '.txt'), 'utf-8'), '\r*\n')
+        let $idnums as xs:integer* := for $line in $lines[matches(., 'manuscript_\d+')] return tokenize($line, '\D+')[2] cast as xs:integer
         return map{$inst : $idnums}
 );
 
