@@ -23,10 +23,10 @@
         <span class="{name()}">
             <xsl:apply-templates/>
             <xsl:choose>
-                <xsl:when test="@calendar = '#Hijri-qamari' and not(matches(string-join(.//text(), ''), '[\d\s](H|AH|A\.H|Hijri)'))">
+                <xsl:when test="@calendar = ('#Hijri-qamari', 'Hijri-qamari') and not(matches(string-join(.//text(), ''), '[\d\s](H|AH|A\.H|Hijri)'))">
                     <xsl:text> AH</xsl:text>
                 </xsl:when>
-                <xsl:when test="@calendar = '#Gregorian' and not(matches(string-join(.//text(), ''), '[\d\s](CE|AD|C\.E|A\.D|Gregorian)'))">
+                <xsl:when test="@calendar = ('#Gregorian', 'Gregorian') and not(matches(string-join(.//text(), ''), '[\d\s](CE|AD|C\.E|A\.D|Gregorian)'))">
                     <xsl:text> CE</xsl:text>
                 </xsl:when>
             </xsl:choose>
@@ -46,11 +46,52 @@
     <xsl:template match="name[@key]/persName | author[@key]/persName | editor[@key]/persName">
         <xsl:apply-templates/>
     </xsl:template>
+    
+    
+    
+    <!-- When the persName (or name) has a @key, and is not inside something else with a @key, display it as a link. This is standard 
+         behaviour, but this template has been added to treat the BL's viaf_1234 key values as if they were person_1234. The same change 
+         has also been made to the msItem/author and msItem/editor templates below as well. -->
+    <xsl:template match="(persName|name)[@key and not(ancestor::*/@key)]">
+        <span>
+            <xsl:attribute name="class">
+                <xsl:value-of select="string-join((name(), @role), ' ')"/>
+            </xsl:attribute>
+            <xsl:variable name="key" select="tokenize(@key, '\s+')[string-length(.) gt 0][1]"/>
+            <xsl:choose>
+                <xsl:when test="starts-with($key, 'person_') or starts-with($key, 'viaf_')">
+                    <a>
+                        <xsl:attribute name="href">
+                            <xsl:value-of select="$website-url"/>
+                            <xsl:text>/catalog/</xsl:text>
+                            <xsl:value-of select="if (starts-with($key, 'viaf_')) then concat('person_', substring-after($key, '_')) else $key"/>
+                        </xsl:attribute>
+                        <xsl:apply-templates/>
+                    </a>
+                </xsl:when>
+                <xsl:when test="self::name and starts-with($key, 'subject_')">
+                    <a>
+                        <xsl:attribute name="href">
+                            <xsl:value-of select="$website-url"/>
+                            <xsl:text>/catalog/</xsl:text>
+                            <xsl:value-of select="$key"/>
+                        </xsl:attribute>
+                        <xsl:apply-templates/>
+                    </a>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:apply-templates/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </span>
+    </xsl:template>
 
 
 
-    <!-- The next three templates override the default by putting authors, editors and titles on separate lines, because in Fihirst there are often multiple
-         titles in different languages, and versions of the author name in different languages, which gets confusing all on one line -->
+    <!-- The next three templates override the default by putting authors, editors and titles on separate lines, because in Fihirst 
+         there are often multiple titles in different languages, and versions of the author name in different languages, which gets 
+         confusing all on one line. Also added is a customization for BL, to treat their "viaf_1234" key values as if they were 
+         "person_1234" in author and editor elements. -->
     <xsl:template match="msItem/author">
         <xsl:variable name="rolelabel" as="xs:string" select="if(@role) then bod:personRoleLookup(concat('aut ', @role)) else 'Author'"/>
         <div class="tei-author">
@@ -58,13 +99,14 @@
                 <xsl:value-of select="$rolelabel"/>
                 <xsl:text>: </xsl:text>
             </span>
+            <xsl:variable name="key" select="tokenize(@key, '\s+')[string-length(.) gt 0][1]"/>
             <xsl:choose>
-                <xsl:when test="@key and not(@key='')">
+                <xsl:when test="starts-with($key, 'person_') or starts-with($key, 'viaf_')">
                     <a class="author">
                         <xsl:attribute name="href">
                             <xsl:value-of select="$website-url"/>
                             <xsl:text>/catalog/</xsl:text>
-                            <xsl:value-of select="@key"/>
+                            <xsl:value-of select="if (starts-with($key, 'viaf_')) then concat('person_', substring-after($key, '_')) else $key"/>
                         </xsl:attribute>
                         <xsl:apply-templates/>
                     </a>
@@ -117,13 +159,14 @@
                 <xsl:value-of select="$rolelabel"/>
                 <xsl:text>: </xsl:text>
             </span>
+            <xsl:variable name="key" select="tokenize(@key, '\s+')[string-length(.) gt 0][1]"/>
             <xsl:choose>
-                <xsl:when test="@key and not(@key='')">
+                <xsl:when test="starts-with($key, 'person_') or starts-with($key, 'viaf_')">
                     <a>
                         <xsl:attribute name="href">
                             <xsl:value-of select="$website-url"/>
                             <xsl:text>/catalog/</xsl:text>
-                            <xsl:value-of select="@key"/>
+                            <xsl:value-of select="if (starts-with($key, 'viaf_')) then concat('person_', substring-after($key, '_')) else $key"/>
                         </xsl:attribute>
                         <xsl:apply-templates/>
                     </a>
@@ -193,7 +236,6 @@
         </xsl:if>
     </xsl:template>
     
-    
   
     
     <!-- These really should be fixed in the source TEI - pointless single-item lists in the source 
@@ -251,7 +293,8 @@
 
     <!-- Prevent facs attributes from being displayed. Move to msdesc2html.xsl? -->
     <xsl:template match="@facs"/>
-    
+
+
     
     <!-- Do not display places as hyperlinks if the key is not a subject -->
     <xsl:template match="placeName[not(starts-with(@key, 'subject_'))] | name[@type='place'][not(starts-with(@key, 'subject_'))]">
@@ -262,6 +305,12 @@
             <xsl:apply-templates/>
         </span>
     </xsl:template>
-        
+    
+    
+    
+    <!-- Another BL customization, hiding their internal IDs and ARKs -->
+    <xsl:template match="altIdentifier[@type = ('IAMS-ID', 'MDARK')]"/>
+
+
     
 </xsl:stylesheet>

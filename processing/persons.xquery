@@ -29,7 +29,16 @@ declare variable $allinstances :=
         let $repository := $roottei//tei:msDesc/tei:msIdentifier/tei:repository[1]/string()
         return
         <instance>
-            { for $key in tokenize(($instance/@key, $instance/tei:persName[@key][1]/@key)[1], '\s+')[string-length() gt 0] return <key>{ $key }</key> }
+            {
+            for $key in tokenize(($instance/@key, $instance/tei:persName[@key][1]/@key)[1], '\s+')[string-length() gt 0]
+                return
+                if (starts-with($key, 'person_')) then
+                    <key>{ $key }</key>
+                else if (starts-with($key, 'viaf_')) then
+                    <key>person_{ substring-after($key, '_') }</key>
+                else
+                    ()
+            }
             <name>{ normalize-space($instance/string()) }</name>
             <manuscript path="/catalog/{ $roottei/@xml:id/data() }">{ $shelfmark } ({ $repository }{ if ($repository ne $institution) then concat(', ', translate(replace($institution, ' \(', ', '), ')', ''), ')') else ')' }</manuscript>
             { for $role in $roles return <role>{ $role }</role> }

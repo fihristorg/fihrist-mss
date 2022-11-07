@@ -42,26 +42,44 @@ declare variable $allinstances :=
                 for $author in $instance/parent::tei:msItem//(tei:author[@key]|tei:persName[@key and (@role=('author','aut') or parent::tei:author[not(@key)])])
                     return
                     if (not($author/ancestor::tei:bibl[not(@type='text-relations')] or $author/ancestor::tei:biblStruct)) then
-                        <author>{ $author/@key/data() }</author>
+                        for $key in tokenize($author/@key/data(), '\s+')[string-length(.) gt 0]
+                            return
+                            if (starts-with($key, 'person_')) then
+                                <author>{ $key }</author>
+                            else if (starts-with($key, 'viaf_')) then
+                                <author>person_{ substring-after($key, '_') }</author>
+                            else
+                                ()
                     else
                         ()
             }
             {
             for $contributor in ($instance/parent::tei:msItem//(tei:editor|tei:persName)[@key and not(parent::tei:author)], $instance/parent::tei:msItem//tei:author[@key and @role and not(@role=('aut','author'))])
-                let $contribid := $contributor/@key/data()
+                let $contribids := distinct-values(for $key in tokenize($contributor/@key/data(), '\s+')[string-length(.) gt 0]
+                    return
+                    if (starts-with($key, 'person_')) then
+                        $key
+                    else if (starts-with($key, 'viaf_')) then
+                        concat('person_', substring-after($key, '_'))
+                    else
+                        ()
+                    )
                 let $roles := distinct-values((tokenize(normalize-space($contributor/@role), ' '), tokenize(normalize-space($contributor/parent::tei:editor/@role), ' ')))
                 let $contributors := 
-                    for $role in $roles[not(. = ('author','aut',$nonworkroles))]
-                        return
-                        if ($role eq 'oth') then
-                            <contributor>{ $contribid }</contributor>
-                        else
-                            <contributor role="{ $role }">{ $contribid }</contributor>
+                    for $contribid in $contribids
+                        for $role in $roles[not(. = ('author','aut',$nonworkroles))]
+                            return
+                            if ($role eq 'oth') then
+                                <contributor>{ $contribid }</contributor>
+                            else
+                                <contributor role="{ $role }">{ $contribid }</contributor>
                 return
                 if (count($contributors) gt 0) then
                     $contributors
                 else if (count($roles) eq 0) then
-                    <contributor>{ $contribid }</contributor>
+                    for $contribid in $contribids
+                        return
+                        <contributor>{ $contribid }</contributor>
                 else
                    ()
             }

@@ -63,7 +63,17 @@ processing-instruction xml-model {'href="authority-schematron.sch" type="applica
             <listPerson>
 {
     let $newviafpeople := (      
-        for $p in $collection/tei:TEI[@xml:id]//(tei:author|tei:editor|tei:persName[not(ancestor::tei:author/@key or ancestor::tei:editor/@key)]|tei:name[tei:persName])[matches(@key, 'person_\d+') and not(tokenize(@key, '\s+') = $currentkeys) and string-length(normalize-space(string())) gt 1]
+        for $p in $collection/tei:TEI[@xml:id]//(tei:author|tei:editor|tei:persName[not(ancestor::tei:author/@key or ancestor::tei:editor/@key)]|tei:name[tei:persName])[matches(@key, 'person_\d+') or matches(@key, 'viaf_\d+')]
+            let $keys := (distinct-values(
+                for $key in tokenize($p/@key, '\s+')
+                    return
+                    if (starts-with($key, 'person_')) then
+                        $key
+                    else if (starts-with($key, 'viaf_')) then
+                        concat('person_', substring-after($key, '_'))
+                    else
+                        ()
+                ))[not(. = $currentkeys)][matches(., '^person_\d+$')]
             let $names := 
                 if ($p/tei:persName) then
                     for $n in $p/tei:persName
@@ -71,21 +81,24 @@ processing-instruction xml-model {'href="authority-schematron.sch" type="applica
                         normalize-space(string-join($n//text(), ' '))
                 else
                     normalize-space(string-join($p//text(), ' '))
-            return 
-            <person xml:id="{ $p/@key }">
-                {
-                for $n at $pos in distinct-values($names)
-                    return 
-                    if ($pos eq 1) then
-                        <persName type="display">{ $n }</persName>
-                    else
-                        <persName type="variant">{ $n }</persName>
-                    
-                }
-                {
-                comment{concat(' ../collections/', local:percentEncode(substring-after(base-uri($p), 'collections/')), '#', local:percentEncode($p/ancestor::*[@xml:id][1]/@xml:id), ' ')}
-                }
-            </person>       
+            return
+            if (count($keys) gt 0) then
+                <person xml:id="{ $keys[1] }">
+                    {
+                    for $n at $pos in distinct-values($names)
+                        return 
+                        if ($pos eq 1) then
+                            <persName type="display">{ $n }</persName>
+                        else
+                            <persName type="variant">{ $n }</persName>
+                        
+                    }
+                    {
+                    comment{concat(' ../collections/', local:percentEncode(substring-after(base-uri($p), 'collections/')), '#', local:percentEncode($p/ancestor::*[@xml:id][1]/@xml:id), ' ')}
+                    }
+                </person>
+            else
+                ()
     )
     
     let $dedupednewviafpeople := (

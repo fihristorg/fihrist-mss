@@ -64,9 +64,9 @@ declare variable $collection := collection('../collections/?select=*.xml;recurse
                     { bod:digitized($ms//tei:sourceDesc//tei:surrogates/tei:bibl, 'ms_digitized_s') }
                     { bod:languages($ms//tei:sourceDesc//tei:textLang, 'lang_sm') }
                     { bod:centuries(
-                        $ms//tei:origin//tei:origDate[@calendar = ('#Gregorian', '#Hijri-qamari', '#Hindu')], 
+                        $ms//tei:origin//tei:origDate[@calendar = ('#Gregorian', '#Hijri-qamari', '#Hindu', 'Gregorian', 'Hijri-qamari', 'Hindu')], 
                         'ms_date_sm', 
-                        if ($ms//tei:origin//tei:origDate[@calendar = ('#Gregorian', '#Hijri-qamari', '#Hindu')]) 
+                        if ($ms//tei:origin//tei:origDate[@calendar = ('#Gregorian', '#Hijri-qamari', '#Hindu', 'Gregorian', 'Hijri-qamari', 'Hindu')]) 
                             then 'Date not machine-readable' 
                         else if ($ms//tei:origin//tei:origDate) 
                             then 'Date in unsupported calendar' 
