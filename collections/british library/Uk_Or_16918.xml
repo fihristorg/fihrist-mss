@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_18482">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -43,6 +45,12 @@
                   <altIdentifier type="other">
                      <idno />
                   </altIdentifier>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343552</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239456.0x0000f6</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>Afghan legislation, 1303 AS/1924-1925</head>
                <msContents>
@@ -58,13 +66,12 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>
+                        <extent>folios 
                            <dimensions type="leaf" unit="mm">
                               <height>300</height>
                               <width>200</width>
                            </dimensions>
-                           <dimensions type="written" unit="mm">
-									</dimensions>
+                           <dimensions type="written" unit="mm" />
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -73,8 +80,8 @@
                   </handDesc>
                </physDesc>
                <history>
-                  <origin calendar="#Hijri-qamari" notBefore="1924-03-21" notAfter="1925-03-20" when-custom="1303">
-                     <origDate calendar="#Hijri-qamari" notBefore="1924-03-21" notAfter="1925-03-20">1303 (21 March 1924 - 20 March 1925)</origDate>
+                  <origin calendar="Hijri qamari" notBefore="1924-03-21" notAfter="1925-03-20" when-custom="1303">
+                     <origDate calendar="Hijri qamari" notBefore="1924-03-21" notAfter="1925-03-20">1303 (21 March 1924 - 20 March 1925)</origDate>
                      <origPlace>Afghanistan</origPlace>
                   </origin>
                </history>
@@ -102,8 +109,7 @@
          </classDecl>
       </encodingDesc>
       <profileDesc>
-         <textClass>
-			</textClass>
+         <textClass />
       </profileDesc>
       <revisionDesc>
          <change when="2022-04-21">

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3219">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>Delhi Persian 36</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004341341</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163233709.0x000002</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="#multipleWorks">
                   <summary change="#add-summary2">
@@ -60,19 +68,18 @@
                         <bibl>For a more detailed description see Persian III, .</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                   <msItem xml:id="Uk_Delhi_Persian_36-item2" n="2" class="http://lccn.loc.gov/sh2010108653 http://lccn.loc.gov/sh85088285">
                      <locus from="32v" to="127r">ff. 32v-127r</locus>
-                     <author key="person_90042997" ref="http://viaf.org/viaf/90042997/">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Jāmī, 1414-1492</persName>
-                        <persName xml:lang="ar">جامى، نور الدين عبد الرحمن</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_90042997">Jāmī, 1414-1492</persName>
+                        <persName xml:lang="ar" key="viaf_90042997">جامى، نور الدين عبد الرحمن</persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc" key="work_713" change="#ids-cleanup">Shavāhid al-nubūvah li-taqvīyah yaqīn ahl al-futūvah</title>
                      <title xml:lang="ar" key="work_713" change="#ids-cleanup">شواهد النبوة لتقویة یقین اهل الفتوة</title>
                      <note>Evidence of Muḥammad’s prophetship in his own life and in that of his companions and their successors</note>
-                     <note>Written in <date calendar="#Hijri-qamari" when="1480">885</date>
+                     <note>Written in <date calendar="Hijri qamari" when="1480">885</date>
                      </note>
                      <incipit xml:lang="ar" />
                      <explicit xml:lang="ar" defective="true" />
@@ -80,8 +87,7 @@
                         <bibl>For a more detailed description see Persian III, .</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -109,7 +115,7 @@
                <history>
                   <origin>
                      <origPlace>India</origPlace>
-                     <origDate calendar="#Hijri-qamari" notBefore="1571" notAfter="1572">979</origDate>
+                     <origDate calendar="Hijri qamari" notBefore="1571" notAfter="1572">979</origDate>
                   </origin>
                </history>
                <additional>

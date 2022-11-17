@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5783">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,17 +42,23 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 15385</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343786</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163240411.0x0000c3</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85006317 http://lccn.loc.gov/sh85101920 http://lccn.loc.gov/n82164962">
                   <summary change="#add-summary">
                      1 copy of Maqāmāt al-Ḥarīrī by Ḥarīrī, 1054-1122
                   </summary>
                   <msItem xml:id="Uk_Or_15385-item1">
-                     <author ref="http://viaf.org/viaf/9907600/" key="person_9907600">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Ḥarīrī, 1054-1122</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">al-Qāsim ibn ʻAlī al-Ḥarīrī, d. 516/1122</persName>
-                        <persName xml:lang="ar" type="alt">القاسم بن علي الحريري</persName>
-                        <persName xml:lang="fa">حريري</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_9907600">Ḥarīrī, 1054-1122</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_9907600">al-Qāsim ibn ʻAlī al-Ḥarīrī, d. 516/1122</persName>
+                        <persName xml:lang="ar" type="alt" key="viaf_9907600">القاسم بن علي الحريري</persName>
+                        <persName xml:lang="fa" key="viaf_9907600">حريري</persName>
                      </author>
                      <editor role="trl" key="person_f2153">Translator <persName xml:lang="fa-Latn-x-lc" type="supplied">Mawlavī, Shams al-Dīn</persName>
                         <persName xml:lang="fa">مولوی، شمس الدین</persName>
@@ -58,7 +66,7 @@
                      <title xml:lang="fa-Latn-x-lc" key="work_21228" change="#ids-cleanup">Maqāmāt al-Ḥarīrī</title>
                      <title xml:lang="fa" key="work_21228" change="#ids-cleanup">مقامات الحریری</title>
                      <note>A treatise on prosody and rhyme</note>
-                     <note>Completed in <date calendar="#Hijri-qamari" notBefore="1835" notAfter="1836">1251</date>
+                     <note>Completed in <date calendar="Hijri qamari" notBefore="1835" notAfter="1836">1251</date>
                      </note>
                      <incipit xml:lang="fa" />
                      <explicit xml:lang="fa" defective="true" />
@@ -66,8 +74,7 @@
                         <bibl>For a more detailed description see Waley 1998, page 66.</bibl>
                      </listBibl>
                      <textLang mainLang="ar">Arabic and Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -84,7 +91,7 @@
                <history>
                   <origin>
                      <origPlace>Southwest India</origPlace>
-                     <origDate calendar="#Gregorian" when="1855">1855</origDate>
+                     <origDate calendar="Gregorian" when="1855">1855</origDate>
                   </origin>
                </history>
                <additional>

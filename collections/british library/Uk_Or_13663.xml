@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5571">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011.08.17</date>
+            <date calendar="Gregorian">2011.08.17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -41,14 +43,20 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 13663</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343269</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239034.0x0000f1</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="#multipleWorks">
                   <summary>Two historical works</summary>
                   <msItem xml:id="Uk_Or_13663-item1" n="1" class="ttp://lccn.loc.gov/n 50015000 http://lccn.loc.gov/sh2010102321">
                      <locus from="1v" to="71v">ff 1v-71v</locus>
-                     <author key="person_95224252" ref="http://viaf.org/viaf/95224252/">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Sharaf al-Dīn ʻAlī Yazdī, d. 1454</persName>
-                        <persName xml:lang="fa">شرف الدين على يزدى</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_95224252">Sharaf al-Dīn ʻAlī Yazdī, d. 1454</persName>
+                        <persName xml:lang="fa" key="viaf_95224252">شرف الدين على يزدى</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" type="supplied" key="work_20531" change="#ids-cleanup">Muqaddimah</title>
                      <title xml:lang="fa" type="supplied" key="work_20531" change="#ids-cleanup">مقدمه</title>
@@ -59,14 +67,13 @@
                         <bibl>For a more detailed description see Waley 1998, page 17.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                   <msItem xml:id="Uk_Or_13663-item2" n="2" class="ttp://lccn.loc.gov/n 50015000 http://lccn.loc.gov/sh2010102321">
                      <locus from="72v" to="328r">ff 72v-328r</locus>
-                     <author key="person_95224252" ref="http://viaf.org/viaf/95224252/">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Sharaf al-Dīn ʻAlī Yazdī, d. 1454</persName>
-                        <persName xml:lang="fa">شرف الدين على يزدى</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_95224252">Sharaf al-Dīn ʻAlī Yazdī, d. 1454</persName>
+                        <persName xml:lang="fa" key="viaf_95224252">شرف الدين على يزدى</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20110" change="#ids-cleanup">Ẓafarnāmah</title>
                      <title xml:lang="fa" key="work_20110" change="#ids-cleanup">ظفرنامه</title>
@@ -76,8 +83,7 @@
                         <bibl>For a more detailed description see Waley 1998, page 17.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -93,7 +99,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" when="1587">995</origDate>
+                     <origDate calendar="Hijri qamari" when="1587">995</origDate>
                      <origPlace>Probably Iran</origPlace>
                   </origin>
                </history>

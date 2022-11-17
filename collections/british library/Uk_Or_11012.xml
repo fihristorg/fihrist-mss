@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5274">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,15 +42,21 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 11012</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343095</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239034.0x000044</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85076229">
                   <summary change="#add-summary">
                      1 copy of Nāmah-’i nāmī by Khvāndamīr
                   </summary>
                   <msItem xml:id="Uk_Or_11012-item1">
-                     <author ref="http://viaf.org/viaf/45109504" key="person_45109504" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Khvāndamīr</persName>
-                        <persName xml:lang="fa">خواندمیر</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied" key="viaf_45109504">Khvāndamīr</persName>
+                        <persName xml:lang="fa" key="viaf_45109504">خواندمیر</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_7804">Nāmah-’i nāmī</title>
                      <title xml:lang="fa" key="work_7804">نامۀ نامی</title>
@@ -56,8 +64,7 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 78.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -73,7 +80,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1500" notAfter="1599">16th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1500" notAfter="1599">16th century</origDate>
                   </origin>
                </history>
                <additional>

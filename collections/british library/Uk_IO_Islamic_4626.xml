@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3322">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,32 +42,37 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>IO Islamic 4626</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342062</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237333.0x00000f</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh2009114917 http://lccn.loc.gov/sh85121432 http://lccn.loc.gov/sh2008104964">
                   <summary change="#add-summary">
                      1 copy of Zīnat al-majālis by Majd al-Dīn Muḥammad Ḥusainī
                   </summary>
                   <msItem xml:id="Uk_IO_Islamic_4626-item1">
-                     <author key="person_299886945" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Majd al-Dīn Muḥammad Ḥusainī</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Majdī</persName>
-                        <persName xml:lang="fa" type="alt">مجدی</persName>
-                        <persName xml:lang="fa">مجد الدین محمد حسینی</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied" key="viaf_299886945">Majd al-Dīn Muḥammad Ḥusainī</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_299886945">Majdī</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_299886945">مجدی</persName>
+                        <persName xml:lang="fa" key="viaf_299886945">مجد الدین محمد حسینی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_2243">Zīnat al-majālis</title>
                      <title xml:lang="fa" key="work_2243">زینة المجالس</title>
                      <incipit xml:lang="fa" />
                      <explicit xml:lang="ar" defective="true" />
-                     <note>An excellent copy of the author's collection of anecdotes completed in <date calendar="#Hijri-qamari" when="1595">1004</date>
+                     <note>An excellent copy of the author's collection of anecdotes completed in <date calendar="Hijri qamari" when="1595">1004</date>
                      </note>
-                     <note>The text was lithographed at Tehran in <date calendar="#Hijri-qamari" when="1846 ">1246</date> ]
+                     <note>The text was lithographed at Tehran in <date calendar="Hijri qamari" when="1846 ">1246</date> ]
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Arberry 1939, page 390.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -104,7 +111,7 @@
                   </sealDesc>
                </physDesc>
                <history>
-                  <origin>Dated <origDate calendar="#Hijri-qamari" when="1675">20 Rabīʻ i 1086</origDate>
+                  <origin>Dated <origDate calendar="Hijri qamari" when="1675">20 Rabīʻ i 1086</origDate>
                   </origin>
                </history>
                <additional>

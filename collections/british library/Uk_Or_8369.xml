@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6369">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,15 +42,21 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 8369</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342894</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237685.0x0000c0</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85100084">
                   <summary change="#add-summary">
                      1 copy of Ḥamlah-’i Ḥaydarī by Bamūn ‘Alī Rājī Kirmānī
                   </summary>
                   <msItem xml:id="Uk_Or_8369-item1">
-                     <author ref="http://viaf.org/viaf/66385382" key="person_66385382" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Bamūn ‘Alī Rājī Kirmānī</persName>
-                        <persName xml:lang="fa">بمون علی راجی کرمانی</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied" key="viaf_66385382">Bamūn ‘Alī Rājī Kirmānī</persName>
+                        <persName xml:lang="fa" key="viaf_66385382">بمون علی راجی کرمانی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20003" change="#ids-cleanup">Ḥamlah-’i Ḥaydarī</title>
                      <title xml:lang="fa-Latn-x-lc" type="alt" key="work_20003" change="#ids-cleanup">Vaqā’ī‘</title>
@@ -59,8 +67,7 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 69.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -76,7 +83,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1846" notAfter="1847">1263</origDate>
+                     <origDate calendar="Gregorian" notBefore="1846" notAfter="1847">1263</origDate>
                   </origin>
                </history>
                <additional>

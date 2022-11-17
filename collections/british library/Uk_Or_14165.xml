@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5649">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011.08.17</date>
+            <date calendar="Gregorian">2011.08.17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -41,15 +43,21 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 14165</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343327</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239456.0x000015</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85083116 http://lccn.loc.gov/sh85142634">
                   <summary change="#add-summary">
                      1 copy of Risālah-ʼi Ātashak by ʻImād al-Dīn Shīrāzī, Maḥmūd ibn Masʻūd, 16th cent.
                   </summary>
                   <msItem xml:id="Uk_Or_14165-item1">
-                     <author key="person_162982447" ref="http://viaf.org/viaf/162982447/">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">ʻImād al-Dīn Shīrāzī, Maḥmūd ibn Masʻūd, 16th cent.</persName>
-                        <persName xml:lang="fa">عماد الدىن شىرازى، محمود بن مسعود</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="ark:/81055/vdc_100164656392.0x000001 viaf_162982447">ʻImād al-Dīn Shīrāzī, Maḥmūd ibn Masʻūd, 16th cent.</persName>
+                        <persName xml:lang="fa" key="viaf_162982447">عماد الدىن شىرازى، محمود بن مسعود</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_9329">Risālah-ʼi Ātashak</title>
                      <title xml:lang="fa" key="work_9329">رسالۀ آتشک</title>
@@ -60,8 +68,7 @@
                         <bibl>For a more detailed description see Waley 1998, page 32.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -77,7 +84,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1800" notAfter="1899">Early or mid 13th century<!-- Please review date attributes, see https://git.io/fihrist-dates -->
+                     <origDate calendar="Hijri qamari" notBefore="1800" notAfter="1899">Early or mid 13th century<!-- Please review date attributes, see https://git.io/fihrist-dates -->
                      </origDate>
                      <origPlace>India</origPlace>
                   </origin>

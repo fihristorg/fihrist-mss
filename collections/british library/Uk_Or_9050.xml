@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6446">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,27 +42,32 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 9050</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342947</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237685.0x0000f4</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85100077">
                   <summary change="#add-summary">
                      Dīvān by Mīrzā Rāz̤ī-i Artīmānī
                   </summary>
                   <msItem xml:id="Uk_Or_9050-item1">
-                     <author key="person_268573100" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Mīrzā Rāz̤ī-i Artīmānī</persName>
-                        <persName xml:lang="fa">میرزا راضی ارتیمانی</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied" key="viaf_268573100">Mīrzā Rāz̤ī-i Artīmānī</persName>
+                        <persName xml:lang="fa" key="viaf_268573100">میرزا راضی ارتیمانی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20643" change="#ids-cleanup">Dīvān</title>
                      <title xml:lang="fa" key="work_20643" change="#ids-cleanup">دیوان</title>
-                     <note>A poet who flourished in the time of <persName xml:lang="fa-Latn-x-lc" type="standard" ref="http://viaf.org/viaf/77109363" key="person_77109363" role="oth" change="#role-assignment">‘Abbas I <foreign xml:lang="fa">شاه عبّاس</foreign>
+                     <note>A poet who flourished in the time of <persName xml:lang="fa-Latn-x-lc" type="standard" ref="http://viaf.org/viaf/77109363" key="viaf_77109363" role="oth" change="#role-assignment">‘Abbas I <foreign xml:lang="fa">شاه عبّاس</foreign>
                         </persName>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 56.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -76,7 +83,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1666" notAfter="1667">1077</origDate>
+                     <origDate calendar="Hijri qamari" notBefore="1666" notAfter="1667">1077</origDate>
                   </origin>
                </history>
                <additional>

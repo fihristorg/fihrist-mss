@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3488">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,16 +42,22 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>IO Islamic 4768</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342227</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237514.0x000006</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85064905 http://lccn.loc.gov/sh85006527">
                   <summary change="#add-summary">
                      1 copy of Ārāʼish-i maḥfīl by Mīr Sher ʻAlī Afsos
                   </summary>
                   <msItem xml:id="Uk_IO_Islamic_4768-item1">
-                     <author ref="http://viaf.org/viaf/295486379" key="person_295486379" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Mīr Sher ʻAlī Afsos</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Afsūs, Šīr ʿAlī Ǧaʿfarī</persName>
-                        <persName xml:lang="fa">میر شر علی افسس</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied" key="viaf_295486379">Mīr Sher ʻAlī Afsos</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_295486379">Afsūs, Šīr ʿAlī Ǧaʿfarī</persName>
+                        <persName xml:lang="fa" key="viaf_295486379">میر شر علی افسس</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8142">Ārāʼish-i maḥfīl</title>
                      <title xml:lang="ur" key="work_8142">آرايش محفل</title>
@@ -61,8 +69,7 @@
                         <bibl>For a more detailed description see Sims-Williams 1986, page 19.</bibl>
                      </listBibl>
                      <textLang mainLang="ur" otherLangs="fa">Urdu and Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -81,7 +88,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1883" notAfter="1884">1805</origDate>
+                     <origDate calendar="Gregorian" notBefore="1883" notAfter="1884">1805</origDate>
                   </origin>
                </history>
                <additional>

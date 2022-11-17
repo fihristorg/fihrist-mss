@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6000">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 5741</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343723</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163240411.0x000085</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>Two historical works</head>
                <msContents class="#multipleWorks">
@@ -48,9 +56,9 @@
                   </summary>
                   <msItem xml:id="Uk_Or_5741-item1" n="1" class="http://lccn.loc.gov/sh85064905 http://lccn.loc.gov/n50038449">
                      <locus from="1v" to="63v">ff 1v-63v</locus>
-                     <author key="person_71827117" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Muʻtamad Khān</persName>
-                        <persName xml:lang="fa">معتمد خان</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied" key="viaf_71827117">Muʻtamad Khān</persName>
+                        <persName xml:lang="fa" key="viaf_71827117">معتمد خان</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20926" change="#ids-cleanup">Iqbālnamah-ʼi Jahāngīrī</title>
                      <title xml:lang="ar" key="work_20926" change="#ids-cleanup">اقبالنامۀ جهانگیری</title>
@@ -61,8 +69,7 @@
                         <ref target="Meredith-Owens_1968" type="page">Meredith-Owens 1968, page 17.</ref>
                      </bibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                   <msItem xml:id="Uk_Or_5741-item2" n="2" class="http://lccn.loc.gov/sh85064905 http://lccn.loc.gov/n50038449">
                      <locus from="64r" to="126v">ff 64r-126v</locus>
@@ -78,8 +85,7 @@
                         <ref target="Meredith-Owens_1968" type="page">Meredith-Owens 1968, page 17.</ref>
                      </bibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -92,8 +98,7 @@
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                        </layout>
+                        <layout columns="0" ruledLines="00" n="mistara" />
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
@@ -103,7 +108,7 @@
                <history>
                   <origin>
                      <origPlace>Anatolia</origPlace>
-                     <origDate calendar="#Gregorian" notBefore="1700" notAfter="1799">17th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1700" notAfter="1799">17th century</origDate>
                   </origin>
                </history>
                <additional>

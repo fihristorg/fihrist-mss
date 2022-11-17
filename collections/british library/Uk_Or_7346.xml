@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6222">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,31 +42,36 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 7346</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342801</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237685.0x000063</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh2011003391">
                   <summary change="#add-summary">
                      1 copy of Zīj-i Ūlūgh Bīk by Ulugh Beg, 1394-1449
                   </summary>
                   <msItem xml:id="Uk_Or_7346-item1">
-                     <author ref="http://viaf.org/viaf/66844656" key="person_66844656">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Ulugh Beg, 1394-1449</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Ūlūgh Bīk</persName>
-                        <persName xml:lang="fa">اولوغ بيك</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_66844656">Ulugh Beg, 1394-1449</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_66844656">Ūlūgh Bīk</persName>
+                        <persName xml:lang="fa" key="viaf_66844656">اولوغ بيك</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_1296" change="#ids-cleanup">Zīj-i Ūlūgh Bīk</title>
                      <title xml:lang="fa" key="work_1296" change="#ids-cleanup">زيج اولوغ بيك</title>
                      <incipit xml:lang="fa" />
                      <explicit xml:lang="fa" defective="true" />
-                     <note>With revised tables compiled with the assistance of <persName xml:lang="fa-Latn-x-lc" type="supplied" ref="http://viaf.org/viaf/73701246" key="person_73701246" role="edt" change="#role-assignment #ids-cleanup">Qāẓīzādah-’i Rūmī <foreign xml:lang="fa">قاضی زادۀ رومی</foreign>
-                        </persName> and <persName xml:lang="fa-Latn-x-lc" type="standard" ref="http://viaf.org/viaf/90047204" key="person_90047204" role="edt" change="#role-assignment">Alī ibn Muḥammad Qūshjī, d. 1474 or 5 <foreign xml:lang="fa">علي بن محمد قوشجي</foreign>
+                     <note>With revised tables compiled with the assistance of <persName xml:lang="fa-Latn-x-lc" type="supplied" ref="http://viaf.org/viaf/73701246" key="viaf_73701246" role="edt" change="#role-assignment #ids-cleanup">Qāẓīzādah-’i Rūmī <foreign xml:lang="fa">قاضی زادۀ رومی</foreign>
+                        </persName> and <persName xml:lang="fa-Latn-x-lc" type="standard" ref="http://viaf.org/viaf/90047204" key="viaf_90047204" role="edt" change="#role-assignment">Alī ibn Muḥammad Qūshjī, d. 1474 or 5 <foreign xml:lang="fa">علي بن محمد قوشجي</foreign>
                         </persName>
                      </note>
                      <listBibl>
                         <bibl>Meredith-Owens 1968, page 24.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -80,7 +87,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1700" notAfter="1799">18th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1700" notAfter="1799">18th century</origDate>
                   </origin>
                </history>
                <additional>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3490">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,15 +42,21 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>IO Islamic 4770</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342229</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237514.0x000008</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
                   <summary change="#add-summary">
                      1 copy of Letter to Maharajah Raghūjī Bhūnslah by Wellesley, Richard Wellesley, Marquess, 1760-1842
                   </summary>
                   <msItem xml:id="Uk_IO_Islamic_4770-item1" class="http://lccn.loc.gov/sh85100074">
-                     <author ref="http://viaf.org/viaf/62284378" key="person_62284378">
-                        <persName xml:lang="en" type="standard">Wellesley, Richard Wellesley, Marquess, 1760-1842</persName>
-                        <persName xml:lang="en" type="desc">Governor General Marquis Wellesley</persName>
+                     <author>
+                        <persName xml:lang="en" type="standard" key="viaf_62284378">Wellesley, Richard Wellesley, Marquess, 1760-1842</persName>
+                        <persName xml:lang="en" type="desc" key="viaf_62284378">Governor General Marquis Wellesley</persName>
                      </author>
                      <title xml:lang="en" key="work_8499">Letter to Maharajah Raghūjī Bhūnslah</title>
                      <incipit xml:lang="ar" />
@@ -57,8 +65,7 @@
                         <bibl>For a more detailed description see Sims-Williams 1986, page 19.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -77,7 +84,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" when="1803">7 Sept. 1803</origDate>
+                     <origDate calendar="Gregorian" when="1803">7 Sept. 1803</origDate>
                   </origin>
                </history>
                <additional>

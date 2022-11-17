@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5673">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,21 +42,27 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 14340</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343343</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239456.0x000025</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85100085 http://lccn.loc.gov/sh85103707 http://lccn.loc.gov/sh89002521">
                   <summary change="#add-summary">
                      1 copy of Gulistān by Saʻdī
                   </summary>
                   <msItem xml:id="Uk_Or_14340-item1">
-                     <author key="person_100206721" ref="http://viaf.org/viaf/100206721/">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Saʻdī</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Saʼdī, d. 691/1292</persName>
-                        <persName xml:lang="fa">سعدی <addName xml:lang="ar" type="nisbah">شيرازی</addName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_100206721">Saʻdī</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_100206721">Saʼdī, d. 691/1292</persName>
+                        <persName xml:lang="fa" key="viaf_100206721">سعدی <addName xml:lang="ar" type="nisbah">شيرازی</addName>
                         </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20962" change="#ids-cleanup">Gulistān</title>
                      <title xml:lang="fa" key="work_20962" change="#ids-cleanup">گلستان</title>
-                     <note>The classic in mixed prose and verse by <persName xml:lang="fa-Latn-x-lc" type="alt" key="person_100206721" role="aut" change="#role-assignment #ids-cleanup">Saʼdī, d. 691/1292</persName>
+                     <note>The classic in mixed prose and verse by <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_100206721" role="aut" change="#role-assignment #ids-cleanup">Saʼdī, d. 691/1292</persName>
                      </note>
                      <note>Calligraphic copy</note>
                      <incipit xml:lang="fa" />
@@ -63,8 +71,7 @@
                         <bibl>For a more detailed description see Waley 1998, page 67.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -81,7 +88,7 @@
                <history>
                   <origin>
                      <origPlace>Khurasan</origPlace>
-                     <origDate calendar="#Hijri-qamari" notBefore="1400" notAfter="1599">9th or 10th century<!-- Please review date attributes, see https://git.io/fihrist-dates -->
+                     <origDate calendar="Hijri qamari" notBefore="1400" notAfter="1599">9th or 10th century<!-- Please review date attributes, see https://git.io/fihrist-dates -->
                      </origDate>
                   </origin>
                </history>

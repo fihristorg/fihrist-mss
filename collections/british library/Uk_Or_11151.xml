@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5296">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,15 +42,21 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 11151</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343108</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239034.0x000051</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85100084">
                   <summary change="#add-summary">
                      1 copy of Muẕakkir-i Aḥbāb by Nis̲ārī Bukhārī, Bahāʼ al-Dīn Ḥasan, active 1566
                   </summary>
                   <msItem xml:id="Uk_Or_11151-item1">
-                     <author ref="http://viaf.org/viaf/46339987" key="person_46339987">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Nis̲ārī Bukhārī, Bahāʼ al-Dīn Ḥasan, active 1566</persName>
-                        <persName xml:lang="fa">بهاء الدین حسن نثاری بخاری</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_46339987">Nis̲ārī Bukhārī, Bahāʼ al-Dīn Ḥasan, active 1566</persName>
+                        <persName xml:lang="fa" key="viaf_46339987">بهاء الدین حسن نثاری بخاری</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_9017">Muẕakkir-i Aḥbāb</title>
                      <title xml:lang="fa" key="work_9017">مذکر احباب</title>
@@ -57,8 +65,7 @@
                         <bibl>For a more detailed description see Glyn Meredith-Owens: Handlist of Persian Manuscripts, 1895-1966. [London]: Trustees of the British Museum, 1968, p.82.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -74,7 +81,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1579" notAfter="1580">987</origDate>
+                     <origDate calendar="Hijri qamari" notBefore="1579" notAfter="1580">987</origDate>
                   </origin>
                </history>
                <additional>

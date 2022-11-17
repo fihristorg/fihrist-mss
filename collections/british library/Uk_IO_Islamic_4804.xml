@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3524">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,15 +42,21 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>IO Islamic 4804</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343705</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163240411.0x000074</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh2005008719 http://lccn.loc.gov/sh85141355  http://lccn.loc.gov/sh2008001541">
                   <summary change="#add-summary">
                      1 copy of Qiṣṣah-’i Lailá o Majnūn by Hātifī, d. 1520 or 21
                   </summary>
                   <msItem xml:id="Uk_IO_Islamic_4804-item1" defective="unknown">
-                     <author ref="http://viaf.org/viaf/79269545" key="person_79269545">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Hātifī, d. 1520 or 21</persName>
-                        <persName xml:lang="fa">هاتفى</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_79269545">Hātifī, d. 1520 or 21</persName>
+                        <persName xml:lang="fa" key="viaf_79269545">هاتفى</persName>
                      </author>
                      <editor role="trl" key="person_f61">translator <persName xml:lang="fa-Latn-x-lc" type="supplied">>ʻAjiz</persName>
                      </editor>
@@ -56,14 +64,13 @@
                      <title xml:lang="fa" key="work_20435" change="#ids-cleanup">قصۀ ليلى و مجنون</title>
                      <incipit xml:lang="ar" />
                      <explicit xml:lang="ar" defective="true" />
-                     <note>Hātifī’s Persian version of the famous romance translated into Dakkani verse by the poet ʻAjiz in <date calendar="#Gregorian" when="1636">1636</date>
+                     <note>Hātifī’s Persian version of the famous romance translated into Dakkani verse by the poet ʻAjiz in <date calendar="Gregorian" when="1636">1636</date>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Sims-Williams 1986, page 23.</bibl>
                      </listBibl>
                      <textLang mainLang="ur">Urdu</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -82,7 +89,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1700" notAfter="1799">18th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1700" notAfter="1799">18th century</origDate>
                   </origin>
                </history>
                <additional>

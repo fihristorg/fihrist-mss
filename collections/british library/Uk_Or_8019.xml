@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6317">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,15 +42,21 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 8019</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342859</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237685.0x00009d</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh2010115027">
                   <summary change="#add-summary">
                      1 copy of Discourses on theology and Sufism by Nasafī, ʻAzīz al-Dīn ibn Muḥammad, 13th cent.
                   </summary>
                   <msItem xml:id="Uk_Or_8019-item1">
-                     <author ref="http://viaf.org/viaf/84084776" key="person_84084776">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Nasafī, ʻAzīz al-Dīn ibn Muḥammad, 13th cent.</persName>
-                        <persName xml:lang="fa">نسفى، عزيز الدين بن محمد</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_84084776">Nasafī, ʻAzīz al-Dīn ibn Muḥammad, 13th cent.</persName>
+                        <persName xml:lang="fa" key="viaf_84084776">نسفى، عزيز الدين بن محمد</persName>
                      </author>
                      <title xml:lang="en" type="desc" key="work_8755">Discourses on theology and Sufism</title>
                      <incipit xml:lang="fa" />
@@ -57,8 +65,7 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 5.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -74,7 +81,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1582" notAfter="1583">990</origDate>
+                     <origDate calendar="Hijri qamari" notBefore="1582" notAfter="1583">990</origDate>
                   </origin>
                </history>
                <additional>

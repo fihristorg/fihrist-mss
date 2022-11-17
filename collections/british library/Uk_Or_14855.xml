@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5717">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011.08.17</date>
+            <date calendar="Gregorian">2011.08.17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -41,27 +43,32 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 14855</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343377</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239456.0x000047</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85100085">
                   <summary change="#add-summary">
                      1 copy of Dīvān-i Maghribī
                   </summary>
                   <msItem xml:id="Uk_Or_14855-item1">
-                     <author ref="http://viaf.org/viaf/12221201/" key="person_12221201">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Shams Maghribī, Muḥammad Shīrīn, 1349?-1406 or 7</persName>
-                        <persName xml:lang="fa">شمس مغربى ، محمد شيرين</persName>
-                        <persName xml:lang="tr-Latn-x-lc" type="alt">Muḥammad Shīrīn Maghribī, d. 809/146-7</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="ark:/81055/vdc_100164656345.0x000001 viaf_12221201">Shams Maghribī, Muḥammad Shīrīn, 1349?-1406 or 7</persName>
+                        <persName xml:lang="fa" key="viaf_12221201">شمس مغربى ، محمد شيرين</persName>
+                        <persName xml:lang="tr-Latn-x-lc" type="alt" key="viaf_12221201">Muḥammad Shīrīn Maghribī, d. 809/146-7</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20622" change="#ids-cleanup">Dīvān-i Maghribī</title>
                      <title xml:lang="fa" key="work_20622" change="#ids-cleanup">دیوان مغربی</title>
-                     <note>Collected lyric poems of <persName xml:lang="tr-Latn-x-lc" type="alt" key="person_12221201" role="aut" change="#role-assignment #ids-cleanup">Muḥammad Shīrīn Maghribī, d. 809/146-7</persName>
+                     <note>Collected lyric poems of <persName xml:lang="tr-Latn-x-lc" type="alt" key="viaf_12221201" role="aut" change="#role-assignment #ids-cleanup">Muḥammad Shīrīn Maghribī, d. 809/146-7</persName>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Waley 1998, page 41.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -77,7 +84,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" when="1868">1284</origDate>
+                     <origDate calendar="Hijri qamari" when="1868">1284</origDate>
                      <origPlace>Iran</origPlace>
                   </origin>
                </history>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3467">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011.08.17</date>
+            <date calendar="Gregorian">2011.08.17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -41,49 +43,53 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>IO Islamic 4749</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342207</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237459.0x000033</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head type="desc" />
                <msContents class="#multipleWorks">
                   <summary>Volume of papers from Richard Johnson’s collection</summary>
                   <msItem xml:id="Uk_IO_Islamic_4749-item1" n="1" class="http://lccn.loc.gov/sh85064939">
                      <locus from="3" to="17">ff. 3-17</locus>
-                     <author ref="http://viaf.org/viaf/239176400/" key="person_239176400" change="#ids-cleanup">
-                        <persName xml:lang="en" type="standard">East India Company</persName>
-                        <persName xml:lang="fa">کمپنى هند شرقى</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="en" type="standard" key="viaf_239176400">East India Company</persName>
+                        <persName xml:lang="fa" key="viaf_239176400">کمپنى هند شرقى</persName>
                      </author>
-                     <author ref="http://viaf.org/viaf/7368495/" key="person_7368495">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Tipu Sultan, Fath ʻAli, Nawab of Mysore, 1753-1799</persName>
-                        <persName xml:lang="fa">طيپو سلطان، فتح على، نواب ميسور</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_7368495">Tipu Sultan, Fath ʻAli, Nawab of Mysore, 1753-1799</persName>
+                        <persName xml:lang="fa" key="viaf_7368495">طيپو سلطان، فتح على، نواب ميسور</persName>
                      </author>
                      <title xml:lang="en" type="desc" key="work_9378">Copies of articles from Persian versions of treaties</title>
                      <incipit xml:lang="fa" />
                      <explicit xml:lang="ar" defective="true" />
-                     <note>Concluded between the East India Company and <persName ref="http://viaf.org/viaf/7368495/" key="person_7368495" xml:lang="fa-Latn-x-lc" type="alt" role="aut" change="#role-assignment">Ṭīpū Sulṭān</persName> in <date calendar="#Gregorian" when="1784">1784</date>, and with the Nawad of the Carnatic and the Soubah of the Deccan in <date calendar="#Gregorian" when="1768">1768</date>
+                     <note>Concluded between the East India Company and <persName ref="http://viaf.org/viaf/7368495/" key="viaf_7368495" xml:lang="fa-Latn-x-lc" type="alt" role="aut" change="#role-assignment">Ṭīpū Sulṭān</persName> in <date calendar="Gregorian" when="1784">1784</date>, and with the Nawad of the Carnatic and the Soubah of the Deccan in <date calendar="Gregorian" when="1768">1768</date>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Sims-Williams 1986, page 17. 27-34, 228-232 (vol 9)</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                   <msItem xml:id="Uk_IO_Islamic_4749-item2" n="2" class="http://lccn.loc.gov/sh85064939">
                      <locus n="15">f. 15</locus>
-                     <author ref="http://viaf.org/viaf/161923592/" key="person_161923592" change="#ids-cleanup">
-                        <persName xml:lang="en" type="desc">Unknown</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="en" type="desc" key="viaf_161923592">Unknown</persName>
                      </author>
                      <title xml:lang="en" type="desc" key="work_9379">Copy of a Sanad</title>
                      <incipit xml:lang="fa" />
                      <explicit xml:lang="ar" defective="true" />
-                     <note>Dated <date calendar="#Hijri-qamari" when="1780">4 Rab. I 1194</date> RY 21, granting Richard Johnson a manṣab of 6000 z̲āt and savār and the title <title xml:lang="fa-Latn-x-lc">Mufakhar al-Mulk Mumtāz al-Dawlah Bahādur Ḥusām Jang (<foreign xml:lang="fa">مفخر الملک ممتاز الدوله بهادر حسام جنگ</foreign>)
+                     <note>Dated <date calendar="Hijri qamari" when="1780">4 Rab. I 1194</date> RY 21, granting Richard Johnson a manṣab of 6000 z̲āt and savār and the title <title xml:lang="fa-Latn-x-lc">Mufakhar al-Mulk Mumtāz al-Dawlah Bahādur Ḥusām Jang (<foreign xml:lang="fa">مفخر الملک ممتاز الدوله بهادر حسام جنگ</foreign>)
                         </title>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Sims-Williams 1986, page 17.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -102,7 +108,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1750" notAfter="1799">Late 18th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1750" notAfter="1799">Late 18th century</origDate>
                   </origin>
                </history>
                <additional>

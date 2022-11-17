@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5787">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,22 +42,28 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 15408</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343438</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239456.0x000084</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
                   <summary change="#add-summary">
                      1 copy of Mas̲navī-i maʻnavī by Jalāl al-Dīn Rūmī, Maulana, 1207-1273
                   </summary>
                   <msItem xml:id="Uk_Or_15408-item1">
-                     <author key="person_98930150" ref="http://viaf.org/viaf/98930150/">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Jalāl al-Dīn Rūmī, Maulana, 1207-1273</persName>
-                        <persName xml:lang="fa">جلال الدين رومى</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_98930150">Jalāl al-Dīn Rūmī, Maulana, 1207-1273</persName>
+                        <persName xml:lang="fa" key="viaf_98930150">جلال الدين رومى</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20506" change="#ids-cleanup">Mas̲navī-i maʻnavī</title>
                      <title xml:lang="fa" key="work_20506" change="#ids-cleanup">مثنوی معنوی</title>
                      <incipit xml:lang="ar" />
                      <explicit xml:lang="ar" defective="true" />
                      <note>Didactic poem on Islamic wisdom and spirituality</note>
-                     <note>Miniature copy from the late Zand period, <date calendar="#Gregorian" notBefore="1750" notAfter="1794">1750–1794</date>
+                     <note>Miniature copy from the late Zand period, <date calendar="Gregorian" notBefore="1750" notAfter="1794">1750–1794</date>
                      </note>
                      <note>Lacking 8 folios</note>
                      <note>Title has been supplied by <ref target="Waley_1998" type="page">Waley 1998, page 50.</ref>
@@ -64,8 +72,7 @@
                         <bibl>For a more detailed description see Waley 1998, page 50.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -84,7 +91,7 @@
                <history>
                   <origin>
                      <origPlace>Shiraz</origPlace>
-                     <origDate calendar="#Hijri-qamari" notBefore="1780" notAfter="1780">1195-6</origDate>
+                     <origDate calendar="Hijri qamari" notBefore="1780" notAfter="1780">1195-6</origDate>
                   </origin>
                </history>
                <additional>

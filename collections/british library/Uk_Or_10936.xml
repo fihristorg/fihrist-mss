@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5231">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,15 +42,21 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 10936</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343059</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239034.0x000020</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85100084">
                   <summary change="#add-summary">
                      Dīvān by ʻUnṣurī, Abū al-Qāsim Ḥasan, fl. 1009-1041
                   </summary>
                   <msItem xml:id="Uk_Or_10936-item1">
-                     <author ref="http://viaf.org/viaf/45665479" key="person_45665479">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">ʻUnṣurī, Abū al-Qāsim Ḥasan, fl. 1009-1041</persName>
-                        <persName xml:lang="fa">عنصری, ابو القاسم حسن</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_45665479">ʻUnṣurī, Abū al-Qāsim Ḥasan, fl. 1009-1041</persName>
+                        <persName xml:lang="fa" key="viaf_45665479">عنصری, ابو القاسم حسن</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20658" change="#ids-cleanup">Dīvān</title>
                      <title xml:lang="fa" key="work_20658" change="#ids-cleanup">دیوان</title>
@@ -56,8 +64,7 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 61.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -73,7 +80,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1859" notAfter="1860">1276</origDate>
+                     <origDate calendar="Hijri qamari" notBefore="1859" notAfter="1860">1276</origDate>
                   </origin>
                </history>
                <additional>

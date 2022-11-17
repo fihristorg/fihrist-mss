@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5363">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,15 +42,21 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 11662</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343150</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239034.0x00007b</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85100084">
                   <summary change="#add-summary">
                      Dīvān by Ṣādiq Mullā Rajab
                   </summary>
                   <msItem xml:id="Uk_Or_11662-item1">
-                     <author ref="http://viaf.org/viaf/68685026" key="person_68685026">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Ṣādiq Mullā Rajab</persName>
-                        <persName xml:lang="fa">صادق ملا رجب</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_68685026">Ṣādiq Mullā Rajab</persName>
+                        <persName xml:lang="fa" key="viaf_68685026">صادق ملا رجب</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20676" change="#ids-cleanup">Dīvān</title>
                      <title xml:lang="fa" key="work_20676" change="#ids-cleanup">دیوان</title>
@@ -56,8 +64,7 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 63.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -73,7 +80,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1800" notAfter="1899">19th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1800" notAfter="1899">19th century</origDate>
                   </origin>
                </history>
                <additional>

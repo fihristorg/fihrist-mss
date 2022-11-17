@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3288">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,21 +42,27 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>IO Islamic 4578</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342038</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163236087.0x000035</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85100085">
                   <summary change="#add-summary">
                      1 copy of Kullīyāt-i Jāmī by Jāmī, 1414-1492
                   </summary>
                   <msItem xml:id="Uk_IO_Islamic_4578-item1">
-                     <author ref="http://viaf.org/viaf/90042997" key="person_90042997">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Jāmī, 1414-1492</persName>
-                        <persName xml:lang="fa">حامى</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_90042997">Jāmī, 1414-1492</persName>
+                        <persName xml:lang="fa" key="viaf_90042997">حامى</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_1690">Kullīyāt-i Jāmī</title>
                      <title xml:lang="fa" key="work_1690">کلیات جامی</title>
                      <incipit xml:lang="ar" />
                      <explicit xml:lang="ar" defective="true" />
-                     <note>A fine manuscript of selected works of the celebrated <persName xml:lang="fa-Latn-x-lc" type="alt" ref="http://viaf.org/viaf/90042997" key="person_90042997" role="aut" change="#role-assignment">Jamī (d. 898/1492)</persName>, written only eight years after the poet's death
+                     <note>A fine manuscript of selected works of the celebrated <persName xml:lang="fa-Latn-x-lc" type="alt" ref="http://viaf.org/viaf/90042997" key="viaf_90042997" role="aut" change="#role-assignment">Jamī (d. 898/1492)</persName>, written only eight years after the poet's death
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Arberry 1939, page 369.</bibl>
@@ -131,7 +139,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" when="1500">Jumada II, 906</origDate>
+                     <origDate calendar="Hijri qamari" when="1500">Jumada II, 906</origDate>
                   </origin>
                </history>
                <additional>

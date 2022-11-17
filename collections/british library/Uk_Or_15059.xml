@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5771">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011.08.17</date>
+            <date calendar="Gregorian">2011.08.17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -41,6 +43,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 15059</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343426</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239456.0x000078</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="#multipleWorks">
                   <summary>Volume containing several works</summary>
@@ -55,20 +63,19 @@
                      <incipit xml:lang="ar" />
                      <explicit xml:lang="ar" defective="true" />
                      <note>A cosmographical treatise, attributed to a certain Aqṭār</note>
-                     <note>Completed after <date calendar="#Hijri-qamari" notBefore="0959" notAfter="1250">after Muḥarram 959</date> / <date calendar="#Gregorian" notBefore="1586" notAfter="1800">Dec. 1586-Jan. 1587</date>
+                     <note>Completed after <date calendar="Hijri qamari" notBefore="0959" notAfter="1250">after Muḥarram 959</date> / <date calendar="Gregorian" notBefore="1586" notAfter="1800">Dec. 1586-Jan. 1587</date>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Waley 1998, page 31.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                   <msItem xml:id="Uk_Or_15059-item2" n="2" class="http://lccn.loc.gov/sh85100085 http://lccn.loc.gov/n91122665">
                      <locus from="121v" to="152v">ff 121v-152v</locus>
-                     <author ref="http://viaf.org/viaf/2474895/" key="person_2474895">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Niẓāmī Ganjavī, 1140 or 41-1202 or 3</persName>
-                        <persName xml:lang="fa">نظامى گنجوى</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_2474895">Niẓāmī Ganjavī, 1140 or 41-1202 or 3</persName>
+                        <persName xml:lang="fa" key="viaf_2474895">نظامى گنجوى</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20153" change="#ids-cleanup">Khusraw va Shīrīn</title>
                      <title xml:lang="fa" key="work_20153" change="#ids-cleanup">خسرو و شيرين</title>
@@ -79,8 +86,7 @@
                         <bibl>For a more detailed description see Waley 1998, page 49.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -99,7 +105,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1800" notAfter="1800">13th century<!-- Please review date attributes, see https://git.io/fihrist-dates -->
+                     <origDate calendar="Hijri qamari" notBefore="1800" notAfter="1800">13th century<!-- Please review date attributes, see https://git.io/fihrist-dates -->
                      </origDate>
                      <origPlace>Iran</origPlace>
                   </origin>

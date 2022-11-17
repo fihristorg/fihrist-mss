@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6454">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,18 +42,24 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 9215</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342952</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237685.0x0000f9</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85100077 http://lccn.loc.gov/sh85100077">
                   <summary change="#add-summary">
                      Dīvān by Maylī of Herat
                   </summary>
                   <msItem xml:id="Uk_Or_9215-item1">
-                     <author ref="http://viaf.org/viaf/14254294" key="person_14254294">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Maylī of Herat</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Mīrzā Qulī</persName>
-                        <persName xml:lang="fa">میلی هرات</persName>
-                        <persName xml:lang="fa" type="alt">میرزا قلی</persName>
-                        <note>Died ca. <date calendar="#Hijri-qamari" notBefore="1591" notAfter="1592">1000</date>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_14254294">Maylī of Herat</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_14254294">Mīrzā Qulī</persName>
+                        <persName xml:lang="fa" key="viaf_14254294">میلی هرات</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_14254294">میرزا قلی</persName>
+                        <note>Died ca. <date calendar="Hijri qamari" notBefore="1591" notAfter="1592">1000</date>
                         </note>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20626" change="#ids-cleanup">Dīvān</title>
@@ -60,8 +68,7 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 56.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -77,7 +84,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1772" notAfter="1773">1186</origDate>
+                     <origDate calendar="Hijri qamari" notBefore="1772" notAfter="1773">1186</origDate>
                   </origin>
                </history>
                <additional>

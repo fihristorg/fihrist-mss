@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3305">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>IO Islamic 4604</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343696</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163240411.0x00006d</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh2008107341">
                   <summary change="#add-summary">
@@ -51,21 +59,20 @@
                      <title xml:lang="en" type="desc" key="work_9025">A hand-list of the Arabic manuscripts of the Delhi Collection</title>
                      <incipit xml:lang="ota" />
                      <explicit xml:lang="ar" defective="true" />
-                     <note>This hand-list was presumably compiled at Calcutta under the supervision of <persName xml:lang="en" ref="http://viaf.org/viaf/20485992" key="person_20485992" type="alt" role="com" change="#role-assignment">H. Blochmann</persName> some time after <date calendar="#Gregorian" notBefore="1869">1869</date>
+                     <note>This hand-list was presumably compiled at Calcutta under the supervision of <persName xml:lang="en" ref="http://viaf.org/viaf/20485992" key="viaf_20485992" type="alt" role="com" change="#role-assignment">H. Blochmann</persName> some time after <date calendar="Gregorian" notBefore="1869">1869</date>
                      </note>
                      <note>This work is extremely slight, and not particularly accurate</note>
                      <listBibl>
                         <bibl>For a more detailed description see Arberry 1939, page 381.</bibl>
                      </listBibl>
                      <textLang mainLang="ar">Arabic</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>
+                        <extent>folios 
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -76,10 +83,10 @@
                <history>
                   <origin>
                      <origPlace>Calcutta (India)</origPlace>
-                     <origDate calendar="#Hijri-qamari" when="1823">Hijri-qamari<!-- Please review date text, see https://git.io/fihrist-dates -->
+                     <origDate calendar="Hijri qamari" when="1823">Hijri-qamari<!-- Please review date text, see https://git.io/fihrist-dates -->
                      </origDate>
                   </origin>
-                  <acquisition>This volume was accessioned in <date calendar="#Gregorian" when="1938">1938</date>
+                  <acquisition>This volume was accessioned in <date calendar="Gregorian" when="1938">1938</date>
                   </acquisition>
                </history>
                <additional>

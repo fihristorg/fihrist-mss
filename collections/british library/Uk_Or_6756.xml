@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5169">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,15 +42,21 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 6756</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342756</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237685.0x000036</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://id.loc.gov/authorities/sh85109233">
                   <summary change="#add-summary">
                      1 copy of Dīwān-i Mukhliṣ
                   </summary>
                   <msItem xml:id="Uk_Or_6756-item1">
-                     <author key="person_24264616" ref="http://viaf.org/viaf/24264616/">
-                        <persName xml:lang="pus-Latn-x-lc" type="standard">Mukhliṣ, ʻAlī Muḥammad, approximately 1580-approximately 1660</persName>
-                        <persName xml:lang="ps">مخلص، علي محمد</persName>
+                     <author>
+                        <persName xml:lang="pus-Latn-x-lc" type="standard" key="viaf_24264616">Mukhliṣ, ʻAlī Muḥammad, approximately 1580-approximately 1660</persName>
+                        <persName xml:lang="ps" key="viaf_24264616">مخلص، علي محمد</persName>
                      </author>
                      <title xml:lang="pus-Latn-x-lc" key="work_9427">Dīwān-i Mukhliṣ</title>
                      <title xml:lang="ps" key="work_9427">دیوان مخلص</title>
@@ -59,8 +67,7 @@
                         </bibl>
                      </listBibl>
                      <textLang mainLang="ps">Pushto</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -79,7 +86,7 @@
                </physDesc>
                <history>
                   <origin change="#fix-dates">
-                     <origDate notBefore="1700" notAfter="1800" calendar="#Gregorian">18th century</origDate>
+                     <origDate notBefore="1700" notAfter="1800" calendar="Gregorian">18th century</origDate>
                   </origin>
                </history>
                <additional>

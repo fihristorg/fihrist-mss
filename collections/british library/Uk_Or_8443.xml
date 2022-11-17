@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6395">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,14 +42,20 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 8443</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342915</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237685.0x0000d5</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85060932 http://lccn.loc.gov/sh2008105634 http://lccn.loc.gov/n2007024725 http://lccn.loc.gov/sh2008114017">
                   <summary change="#add-summary">
                      1 copy of Jōg-bāshishth by Abhinanda
                   </summary>
                   <msItem xml:id="Uk_Or_8443-item1">
-                     <author ref="http://viaf.org/viaf/67343597" key="person_67343597">
-                        <persName xml:lang="en" type="standard">Abhinanda</persName>
+                     <author>
+                        <persName xml:lang="en" type="standard" key="viaf_67343597">Abhinanda</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8868">Jōg-bāshishth</title>
                      <incipit xml:lang="fa" />
@@ -57,8 +65,7 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 37.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -77,7 +84,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1822" notAfter="1822">1238</origDate>
+                     <origDate calendar="Hijri qamari" notBefore="1822" notAfter="1822">1238</origDate>
                   </origin>
                </history>
                <additional>

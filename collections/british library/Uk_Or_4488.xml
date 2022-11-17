@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5149">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,17 +42,23 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 4488</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342318</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237592.0x000038</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://id.loc.gov/authorities/sh96011772 http://id.loc.gov/authorities/sh90002018 http://id.loc.gov/authorities/sh85149528 http://id.loc.gov/authorities/sh2007003173">
                   <summary change="#add-summary">
                      1 copy of Tavārīkh-i Ḥāfiẓ Raḥmat Khānī by Muʿaẓẓam Shāh
                   </summary>
                   <msItem xml:id="Uk_Or_4488-item1">
-                     <author key="person_309641093" ref="http://viaf.org/viaf/309641093">
-                        <persName xml:lang="pus-Latn-x-lc" type="standard">Muʿaẓẓam Shāh</persName>
-                        <persName xml:lang="ps" type="alt">Pīr Muʿaẓẓam Shāh</persName>
-                        <persName xml:lang="ps" type="alt">پیر معزم شاه</persName>
-                        <persName xml:lang="ps">معزم شاه</persName>
+                     <author>
+                        <persName xml:lang="pus-Latn-x-lc" type="standard" key="viaf_309641093">Muʿaẓẓam Shāh</persName>
+                        <persName xml:lang="ps" type="alt" key="viaf_309641093">Pīr Muʿaẓẓam Shāh</persName>
+                        <persName xml:lang="ps" type="alt" key="viaf_309641093">پیر معزم شاه</persName>
+                        <persName xml:lang="ps" key="viaf_309641093">معزم شاه</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8742">Tavārīkh-i Ḥāfiẓ Raḥmat Khānī</title>
                      <title xml:lang="pus-Latn-x-lc" type="alt" key="work_8742">Tawārīkh-i Ḥāfiẓ Raḥmat Khānī</title>
@@ -64,8 +72,7 @@
                         </bibl>
                      </listBibl>
                      <textLang mainLang="ps">Pushto</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -84,7 +91,7 @@
                </physDesc>
                <history>
                   <origin change="#fix-dates">
-                     <origDate when="1864" calendar="#Gregorian">1864</origDate>
+                     <origDate when="1864" calendar="Gregorian">1864</origDate>
                   </origin>
                </history>
                <additional>

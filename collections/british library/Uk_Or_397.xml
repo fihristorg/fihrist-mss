@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5135">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,17 +42,23 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 397</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342293</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237592.0x00001f</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://id.loc.gov/authorities/sh85109233 http://lccn.loc.gov/sh85068396">
                   <summary change="#add-summary">
                      1 copy of Kitāb-i Bābū Jān by Jān, Bābo
                   </summary>
                   <msItem xml:id="Uk_Or_397-item1">
-                     <author key="person_313485392" ref="http://viaf.org/viaf/313485392/">
-                        <persName xml:lang="pus-Latn-x-lc" type="standard">Jān, Bābo</persName>
-                        <persName xml:lang="pus-Latn-x-lc" type="alt">Bābū Jān</persName>
-                        <persName xml:lang="ps">جان، بابو</persName>
-                        <persName xml:lang="ps" type="alt">بابو جان</persName>
+                     <author>
+                        <persName xml:lang="pus-Latn-x-lc" type="standard" key="viaf_313485392">Jān, Bābo</persName>
+                        <persName xml:lang="pus-Latn-x-lc" type="alt" key="viaf_313485392">Bābū Jān</persName>
+                        <persName xml:lang="ps" key="viaf_313485392">جان، بابو</persName>
+                        <persName xml:lang="ps" type="alt" key="viaf_313485392">بابو جان</persName>
                      </author>
                      <title xml:lang="pus-Latn-x-lc" key="work_8127">Kitāb-i Bābū Jān</title>
                      <title xml:lang="ps" key="work_8127">کتاب بابو جان</title>
@@ -62,8 +70,7 @@
                         </bibl>
                      </listBibl>
                      <textLang mainLang="ps">Pashto</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -82,7 +89,7 @@
                </physDesc>
                <history>
                   <origin change="#fix-dates">
-                     <origDate notBefore="1700" notAfter="1800" calendar="#Gregorian">18th century</origDate>
+                     <origDate notBefore="1700" notAfter="1800" calendar="Gregorian">18th century</origDate>
                   </origin>
                </history>
                <additional>

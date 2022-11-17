@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5327">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,17 +42,23 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 11330</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343126</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239034.0x000063</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85100084">
                   <summary change="#add-summary">
                      1 copy of Gul u Nawrūz by Jalāl al-Dīn Aḥmad
                   </summary>
                   <msItem xml:id="Uk_Or_11330-item1">
-                     <author key="person_303733071" ref="http://viaf.org/viaf/303733071" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Jalāl al-Dīn Aḥmad</persName>
-                        <persName xml:lang="fa">جلال الدین احمد</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Jalāl-i Ṭabīb</persName>
-                        <persName xml:lang="fa" type="alt">جلال طبیب</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_303733071">Jalāl al-Dīn Aḥmad</persName>
+                        <persName xml:lang="fa" key="viaf_303733071">جلال الدین احمد</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_303733071">Jalāl-i Ṭabīb</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_303733071">جلال طبیب</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8219">Gul u Nawrūz</title>
                      <title xml:lang="fa" key="work_8219">گل و نوروز</title>
@@ -58,8 +66,7 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 72.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -75,7 +82,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1500" notAfter="1599">16th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1500" notAfter="1599">16th century</origDate>
                   </origin>
                </history>
                <additional>

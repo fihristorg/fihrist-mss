@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5378">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,17 +42,23 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 11700</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343164</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239034.0x000089</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85100084">
                   <summary change="#add-summary">
                      1 copy of Shāh rāh-i najāt by Majẕūb-i Tabrīzī
                   </summary>
                   <msItem xml:id="Uk_Or_11700-item1">
-                     <author key="person_101482030">
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Majẕūb-i Tabrīzī</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="standard" ref="http://viaf.org/viaf/101482030">Muḥammad ibn Muḥammad Riz̤ā Majz̲ūb Tabrīzī</persName>
-                        <persName xml:lang="fa" type="alt">مجزوب تبریزی</persName>
-                        <persName xml:lang="fa">محمد ابن محمد رضی مجذوب تبریزی</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_101482030">Majẕūb-i Tabrīzī</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" ref="http://viaf.org/viaf/101482030" key="viaf_101482030">Muḥammad ibn Muḥammad Riz̤ā Majz̲ūb Tabrīzī</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_101482030">مجزوب تبریزی</persName>
+                        <persName xml:lang="fa" key="viaf_101482030">محمد ابن محمد رضی مجذوب تبریزی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_9096">Shāh rāh-i najāt</title>
                      <title xml:lang="fa" key="work_9096">شاه راه نجات</title>
@@ -59,8 +67,7 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 73.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -76,7 +83,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1600" notAfter="1799">17th-18th century<!-- Please review date attributes, see https://git.io/fihrist-dates -->
+                     <origDate calendar="Hijri qamari" notBefore="1600" notAfter="1799">17th-18th century<!-- Please review date attributes, see https://git.io/fihrist-dates -->
                      </origDate>
                   </origin>
                </history>

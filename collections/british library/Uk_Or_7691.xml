@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6263">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,15 +42,21 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 7691</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342827</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237685.0x00007d</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh2010115027">
                   <summary change="#add-summary">
                      1 copy of Kanz al-sālikīn by Anṣārī al-Harawī, ʻAbd Allāh ibn Muḥammad, 1006-1089
                   </summary>
                   <msItem xml:id="Uk_Or_7691-item1">
-                     <author key="person_19703891" ref="http://viaf.org/viaf/19703891/">
-                        <persName xml:lang="ar-Latn-x-lc" type="standard">Anṣārī al-Harawī, ʻAbd Allāh ibn Muḥammad, 1006-1089</persName>
-                        <persName xml:lang="fa">انصارى الهروى، عبد الله بن محمد</persName>
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="standard" key="viaf_19703891">Anṣārī al-Harawī, ʻAbd Allāh ibn Muḥammad, 1006-1089</persName>
+                        <persName xml:lang="fa" key="viaf_19703891">انصارى الهروى، عبد الله بن محمد</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_422">Kanz al-sālikīn</title>
                      <title xml:lang="fa" key="work_422">کنز السالکین</title>
@@ -58,8 +66,7 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 4.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -75,7 +82,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1708" notAfter="1709">1120</origDate>
+                     <origDate calendar="Hijri qamari" notBefore="1708" notAfter="1709">1120</origDate>
                   </origin>
                </history>
                <additional>

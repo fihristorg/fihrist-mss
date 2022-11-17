@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6099">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,17 +42,23 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 6477</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342740</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237685.0x000026</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85125700 http://lccn.loc.gov/sh85086835 http://lccn.loc.gov/no2007011345">
                   <summary change="#add-summary">
                      1 copy of Tārīkh-i Rashīdī by Ḥaydar Mīrzā, 1499 or 1500-1551
                   </summary>
                   <msItem xml:id="Uk_Or_6477-item1">
-                     <author ref="http://viaf.org/viaf/60027758" key="person_60027758">
-                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Ḥaydar Mīrzā, 1499 or 1500-1551</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Mirzā Ḥaydar Dūghlāt</persName>
-                        <persName xml:lang="fa" type="alt">ميرزا حيدر دوغلات</persName>
-                        <persName xml:lang="fa">حيدر ميرزا</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied" key="viaf_60027758">Ḥaydar Mīrzā, 1499 or 1500-1551</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_60027758">Mirzā Ḥaydar Dūghlāt</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_60027758">ميرزا حيدر دوغلات</persName>
+                        <persName xml:lang="fa" key="viaf_60027758">حيدر ميرزا</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_1164">Tārīkh-i Rashīdī</title>
                      <title xml:lang="fa" key="work_1164">تاریخ رشیدی</title>
@@ -61,8 +69,7 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 15.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -77,8 +84,8 @@
                   </objectDesc>
                </physDesc>
                <history>
-                  <origin>
-                     <origDate calendar="#Gregorian" notBefore="1600" notAfter="1699">17th century</origDate> (restored in <origDate calendar="#Hijri-qamari" notBefore="1897" notAfter="1898">1315</origDate>)
+                  <origin calendar="Gregorian" notBefore="1600" notAfter="1699">
+                     <origDate calendar="Gregorian" notBefore="1600" notAfter="1699">17th century</origDate> (restored in <origDate calendar="Hijri qamari" notBefore="1897" notAfter="1898">1315</origDate>)
                   </origin>
                </history>
                <additional>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6297">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,15 +42,21 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 7935</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343734</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163240411.0x000090</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85014152 http://lccn.loc.gov/sh85089073 http://lccn.loc.gov/sh85109389">
                   <summary change="#add-summary">
                      1 copy of Khulāṣat al-mafākhir by Yāfiʻī, ʻAbd Allāh ibn Asʻad, d. 1367
                   </summary>
                   <msItem xml:id="Uk_Or_7935-item1">
-                     <author ref="http://viaf.org/viaf/102404336" key="person_102404336">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Yāfiʻī, ʻAbd Allāh ibn Asʻad, d. 1367</persName>
-                        <persName xml:lang="fa">يافعی، عبد الله بن أسعد</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_102404336">Yāfiʻī, ʻAbd Allāh ibn Asʻad, d. 1367</persName>
+                        <persName xml:lang="fa" key="viaf_102404336">يافعی، عبد الله بن أسعد</persName>
                      </author>
                      <editor role="trl" key="person_f407">
                         <persName xml:lang="en" type="desc">Anonymous</persName>
@@ -56,15 +64,14 @@
                      <title xml:lang="fa-Latn-x-lc" key="work_8010">Khulāṣat al-mafākhir</title>
                      <title xml:lang="fa" key="work_8010">رخلاصة المفاخر</title>
                      <note>A translation of this work by an anonymous disciple of <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f1684" role="oth" change="#role-assignment">Jalāl al-Dīn Bukhārī, <foreign xml:lang="fa">جلال الدین بخاری</foreign>
-                        </persName>, containing biographical anecdotes, largely about <persName xml:lang="fa-Latn-x-lc" type="alt" ref="http://viaf.org/viaf/71359982" key="person_71359982" role="subject" change="#role-assignment">ʻAbd al-Qādir Jilānī, <foreign xml:lang="fa">عبد القادر جلانى</foreign>
+                        </persName>, containing biographical anecdotes, largely about <persName xml:lang="fa-Latn-x-lc" type="alt" ref="http://viaf.org/viaf/71359982" key="viaf_71359982" role="subject" change="#role-assignment">ʻAbd al-Qādir Jilānī, <foreign xml:lang="fa">عبد القادر جلانى</foreign>
                         </persName>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 21.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -80,7 +87,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1700" notAfter="1799">18th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1700" notAfter="1799">18th century</origDate>
                   </origin>
                </history>
                <additional>

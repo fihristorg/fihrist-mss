@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5301">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 11184</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343112</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239034.0x000055</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="#multipleWorks">
                   <summary change="#add-summary">
@@ -57,14 +65,13 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 62.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                   <msItem xml:id="Uk_Or_11184-item2" n="2" class="http://lccn.loc.gov/sh85100084">
                      <locus from="3r" to="15r">ff 3r-15r</locus>
-                     <author key="person_56731778" ref="http://viaf.org/viaf/56731778" change="#ids-cleanup">
-                        <persName xml:lang="fa" type="standard">Ḥāfiẓ</persName>
-                        <persName xml:lang="fa">حافظ</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="fa" type="standard" key="viaf_56731778">Ḥāfiẓ</persName>
+                        <persName xml:lang="fa" key="viaf_56731778">حافظ</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20666" change="#ids-cleanup">Dīvān</title>
                      <title xml:lang="fa" key="work_20666" change="#ids-cleanup">دیوان</title>
@@ -73,8 +80,7 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 62.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -90,7 +96,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1600" notAfter="1699">17th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1600" notAfter="1699">17th century</origDate>
                   </origin>
                </history>
                <additional>

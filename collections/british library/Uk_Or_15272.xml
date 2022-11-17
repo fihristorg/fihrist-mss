@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5781">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-18</date>
+            <date calendar="Gregorian">2011-08-18</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,14 +42,20 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 15272</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343434</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239456.0x000080</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/2007377475 http://lccn.loc.gov/2003052329 http://lccn.loc.gov/sh 85067899  http://lccn.loc.gov/n96041809 http://lccn.loc.gov/n88001229">
                   <summary change="#add-summary">
                      1 copy of Vaqfnāmah by ʻḤusayn I, Shah of Iran, 1668-1726
                   </summary>
                   <msItem xml:id="Uk_Or_15272-item1">
-                     <author key="person_24194881">
-                        <persName ref="http://lccn.loc.gov/no 96041809" type="standard" xml:lang="ar-Latn-x-lc">ʻḤusayn I, Shah of Iran, 1668-1726</persName>
+                     <author>
+                        <persName ref="http://lccn.loc.gov/no 96041809" type="standard" xml:lang="ar-Latn-x-lc" key="ark:/81055/vdc_100164656506.0x000001 viaf_24194881">ʻḤusayn I, Shah of Iran, 1668-1726</persName>
                         <foreign xml:lang="fa">شاه سلطان حسىن صفوى</foreign>
                      </author>
                      <title xml:lang="ar-Latn-x-lc" key="work_7851">Vaqfnāmah</title>
@@ -61,8 +69,7 @@
                         <bibl>For a more detailed description see Waley 1998, page 25.</bibl>
                      </listBibl>
                      <textLang mainLang="fa" otherLangs="ar">Mostly in Persian but for Arabic at the beginning and end of the text</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -79,7 +86,7 @@
                <history>
                   <origin>
                      <origPlace>Iran</origPlace>
-                     <origDate calendar="#Hijri-qamari" when="1706">1118</origDate>
+                     <origDate calendar="Hijri qamari" when="1706">1118</origDate>
                   </origin>
                </history>
                <additional>

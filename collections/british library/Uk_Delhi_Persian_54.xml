@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3242">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,17 +42,23 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>Delhi Persian 54</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004341357</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163233709.0x000012</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85129649">
                   <summary change="#add-summary">
                      1 copy of Sirāj al-Qulūb by Ghaznavī, Abū Manṣūr Saʻīd ibn Muḥammad Qaṭṭān
                   </summary>
                   <msItem xml:id="Uk_Delhi_Persian_54-item1">
-                     <author ref="http://viaf.org/viaf/73620183" key="person_73620183">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Ghaznavī, Abū Manṣūr Saʻīd ibn Muḥammad Qaṭṭān</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Khvāja Imām Abū Naṣr ibn Sa‘d ibn Muḥammad al-Qaṭṭān al-Ṣarfūnī</persName>
-                        <persName xml:lang="fa">غزنوی, ابو منصور سعید ابن محمد قطان</persName>
-                        <persName xml:lang="fa" type="alt">خواجه امام ابو نصر ابن سعد ابن محمد القطان الصرفونی</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_73620183">Ghaznavī, Abū Manṣūr Saʻīd ibn Muḥammad Qaṭṭān</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_73620183">Khvāja Imām Abū Naṣr ibn Sa‘d ibn Muḥammad al-Qaṭṭān al-Ṣarfūnī</persName>
+                        <persName xml:lang="fa" key="viaf_73620183">غزنوی, ابو منصور سعید ابن محمد قطان</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_73620183">خواجه امام ابو نصر ابن سعد ابن محمد القطان الصرفونی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_7906">Sirāj al-Qulūb</title>
                      <title xml:lang="fa" key="work_7906">سراج القلوب</title>
@@ -58,8 +66,7 @@
                         <bibl>For a more detailed description see C.A. Storey, R. Levy, and A.J. Arberry. Catalogue of the Persian Manuscripts in the Library of the India Office. Vol. 3. Unpublished, n.d.</bibl>
                      </listBibl>
                      <textLang mainLang="fa" otherLangs="ar">Persian and Arabic</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -78,7 +85,7 @@
                <history>
                   <origin>
                      <origPlace>India</origPlace>
-                     <origDate calendar="#Gregorian" notBefore="1800" notAfter="1899">19th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1800" notAfter="1899">19th century</origDate>
                   </origin>
                </history>
                <additional>

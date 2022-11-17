@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5757">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-18</date>
+            <date calendar="Gregorian">2011-08-18</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,19 +42,25 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 14982/37</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343418</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239456.0x000070</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/n 2007024725 http://lccn.loc.gov/n 50002518">
                   <summary change="#add-summary">
                      1 copy of Ḥukmnāmah by 2 authors
                   </summary>
                   <msItem xml:id="Uk_Or_14982.37-item1">
-                     <author key="person_70169499">
-                        <persName ref="http://viaf.org/viaf/70169499/" type="standard" xml:lang="ar-Latn-x-lc">Shāh ʻĀlam, Emperor of Hindustan, 1728-1806</persName>
+                     <author>
+                        <persName ref="http://viaf.org/viaf/70169499/" type="standard" xml:lang="ar-Latn-x-lc" key="viaf_70169499">Shāh ʻĀlam, Emperor of Hindustan, 1728-1806</persName>
                         <foreign xml:lang="fa">شاه عالم ۲، بادشاه هندوستان‏</foreign>
                      </author>
                      <title xml:lang="ar-Latn-x-lc" key="work_20991" change="#ids-cleanup">Ḥukmnāmah</title>
                      <title xml:lang="fa" key="work_20991" change="#ids-cleanup">حكمنانه</title>
-                     <note>Decree of <persName key="person_70169499" ref="http://viaf.org/viaf/70169499/" type="standard" xml:lang="ar-Latn-x-lc" role="aut" change="#role-assignment">Shāh ʻĀlam, Emperor of Hindustan, 1728-1806</persName>, concerning appointments to, and dismissals from, the office of qānūngū at Budhana, in the region of Saharanpur
+                     <note>Decree of <persName key="viaf_70169499" ref="http://viaf.org/viaf/70169499/" type="standard" xml:lang="ar-Latn-x-lc" role="aut" change="#role-assignment">Shāh ʻĀlam, Emperor of Hindustan, 1728-1806</persName>, concerning appointments to, and dismissals from, the office of qānūngū at Budhana, in the region of Saharanpur
                      </note>
                      <note>Title does not apear in the manuscript and has been supplied by <ref target="Waley_1998" type="page">Waley 1998, page 25.</ref>
                      </note>
@@ -60,8 +68,7 @@
                         <bibl>For a more detailed description see Waley 1998, page 25.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5464">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,23 +42,29 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 12083</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343217</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239034.0x0000be</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85067888 http://lccn.loc.gov/n2005050569">
                   <summary change="#add-summary">
                      1 copy of Rumūz al-siyāḥah by Najaf Qulī ibn Ḥusayn Qulī Mīrzā
                   </summary>
                   <msItem xml:id="Uk_Or_12083-item1">
-                     <author key="person_6086154801955256310004" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Najaf Qulī ibn Ḥusayn Qulī Mīrzā</persName>
-                        <persName xml:lang="en" type="desc">The son of Prince Farmān-farmā</persName>
-                        <persName xml:lang="fa">‏‏‏ابو الفضل الله حسينی قزوينی</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied" key="viaf_6086154801955256310004">Najaf Qulī ibn Ḥusayn Qulī Mīrzā</persName>
+                        <persName xml:lang="en" type="desc" key="viaf_6086154801955256310004">The son of Prince Farmān-farmā</persName>
+                        <persName xml:lang="fa" key="viaf_6086154801955256310004">‏‏‏ابو الفضل الله حسينی قزوينی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8275">Rumūz al-siyāḥah</title>
                      <title xml:lang="fa" key="work_8275">رموز السیاحه</title>
                      <incipit xml:lang="fa" />
                      <explicit xml:lang="fa" defective="true" />
-                     <note>An account of the events after the death of <persName ref="http://viaf.org/viaf/51026511" key="person_51026511" xml:lang="fa-Latn-x-lc" type="atl" role="subject" change="#role-assignment">Fatḥ ‘Alī Shāh, <foreign xml:lang="fa">فتح على شاه</foreign>
-                        </persName>, and the journey of <persName ref="http://viaf.org/viaf/60664883" key="person_60664883" xml:lang="fa-Latn-x-lc" type="alt" role="subject" change="#role-assignment">Riz̤ā Qulī Mīrzā, <foreign xml:lang="fa">رضا قلى ميرزا</foreign>
+                     <note>An account of the events after the death of <persName ref="http://viaf.org/viaf/51026511" key="viaf_51026511" xml:lang="fa-Latn-x-lc" type="atl" role="subject" change="#role-assignment">Fatḥ ‘Alī Shāh, <foreign xml:lang="fa">فتح على شاه</foreign>
+                        </persName>, and the journey of <persName ref="http://viaf.org/viaf/60664883" key="viaf_60664883" xml:lang="fa-Latn-x-lc" type="alt" role="subject" change="#role-assignment">Riz̤ā Qulī Mīrzā, <foreign xml:lang="fa">رضا قلى ميرزا</foreign>
                         </persName> to Europe
                      </note>
                      <note>This work is similar to <title xml:lang="fa-Latn-x-lc">Vaqā’i‘-i vafāt-i Fatḥ Alī Shāh va Safarnāmah-’i Riz̤ā Qulī Mīrzā (<foreign xml:lang="fa">وقايع وفات فتح على شاه و ‏‏سفرنامۀ رضا قلى ميرزا</foreign>)
@@ -66,8 +74,7 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 16.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -86,7 +93,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1848" notAfter="1849">1265</origDate>
+                     <origDate calendar="Hijri qamari" notBefore="1848" notAfter="1849">1265</origDate>
                   </origin>
                </history>
                <additional>

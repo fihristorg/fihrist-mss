@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3557">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,15 +42,21 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>IO Islamic 3398</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004341608</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163233916.0x000012</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://id.loc.gov/authorities/sh85109233">
                   <summary change="#add-summary2">
                      3 works by 3 authors on the subject of Pushto poetry
                   </summary>
                   <msItem xml:id="Uk_IO_Islamic_3398-item1" n="1">
-                     <author key="person_164144647700909794596" ref="http://viaf.org/viaf/164144647700909794596">
-                        <persName xml:lang="pus-Latn-x-lc" type="standard">Khaṭak, Kamgār Khān, -1751 or 1752</persName>
-                        <persName xml:lang="ps">خټک، کامگار خان</persName>
+                     <author>
+                        <persName xml:lang="pus-Latn-x-lc" type="standard" key="viaf_164144647700909794596">Khaṭak, Kamgār Khān, -1751 or 1752</persName>
+                        <persName xml:lang="ps" key="viaf_164144647700909794596">خټک، کامگار خان</persName>
                      </author>
                      <title xml:lang="pus-Latn-x-lc" key="work_7796">Dīwān-i Kāmgār Khān</title>
                      <title xml:lang="ps" key="work_7796">دیوان کامگار خان</title>
@@ -61,13 +69,12 @@
                         </bibl>
                      </listBibl>
                      <textLang mainLang="ps">Pushto</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                   <msItem xml:id="Uk_IO_Islamic_3398-item2" n="2">
-                     <author key="person_78222566" ref="http://viaf.org/viaf/78222566/">
-                        <persName xml:lang="ps" type="standard">Shaydā, Kāẓim Khān, active 1727-1777</persName>
-                        <persName xml:lang="ps">شیدا، کاظم خان</persName>
+                     <author>
+                        <persName xml:lang="ps" type="standard" key="viaf_78222566">Shaydā, Kāẓim Khān, active 1727-1777</persName>
+                        <persName xml:lang="ps" key="viaf_78222566">شیدا، کاظم خان</persName>
                      </author>
                      <title xml:lang="pus-Latn-x-lc" key="work_7795">Dīwān-i Shaydā</title>
                      <title xml:lang="ps" key="work_7795">دیوان شیدا</title>
@@ -80,13 +87,12 @@
                         </bibl>
                      </listBibl>
                      <textLang mainLang="ps">Pushto</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                   <msItem xml:id="Uk_IO_Islamic_3398-item3" n="3">
-                     <author key="person_34115013" ref="http://viaf.org/viaf/34115013/">
-                        <persName xml:lang="pus-Latn-x-lc" type="standard">Mīrzā Khān Anṣārī, -1630 or 1631</persName>
-                        <persName xml:lang="ps">میرزا خان انصاري</persName>
+                     <author>
+                        <persName xml:lang="pus-Latn-x-lc" type="standard" key="viaf_34115013">Mīrzā Khān Anṣārī, -1630 or 1631</persName>
+                        <persName xml:lang="ps" key="viaf_34115013">میرزا خان انصاري</persName>
                      </author>
                      <title xml:lang="pus-Latn-x-lc" key="work_7850">Dīwān-i Mīrzā</title>
                      <title xml:lang="ps" key="work_7850">دیوان میرزا</title>
@@ -99,14 +105,13 @@
                         </bibl>
                      </listBibl>
                      <textLang mainLang="ps">Pushto</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>
+                        <extent>folios 
                            <ref target="a1">1-52 f.</ref>
                            <ref target="a2">53-198 f.</ref>
                            <ref target="a3">199-316 f.</ref>
@@ -123,7 +128,7 @@
                </physDesc>
                <history>
                   <origin change="#fix-dates">
-                     <origDate when="1876" calendar="#Gregorian">1876</origDate>
+                     <origDate when="1876" calendar="Gregorian">1876</origDate>
                   </origin>
                </history>
                <additional>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6482">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,31 +42,36 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 9494</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342971</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237685.0x00010c</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85100084">
                   <summary change="#add-summary">
                      Dīvān by Mijmar, Ḥusayn Ṭabāṭabāʼī, b. 1776 or 7
                   </summary>
                   <msItem xml:id="Uk_Or_9494-item1">
-                     <author ref="http://viaf.org/viaf/28485836" key="person_28485836">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Mijmar, Ḥusayn Ṭabāṭabāʼī, b. 1776 or 7</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Mijmar</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Sayyid Ḥusayn</persName>
-                        <persName xml:lang="fa">حسین طباطبائی مجمر</persName>
-                        <persName xml:lang="fa" type="alt">مجمر</persName>
-                        <persName xml:lang="fa" type="alt">سید حسین</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_28485836">Mijmar, Ḥusayn Ṭabāṭabāʼī, b. 1776 or 7</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_28485836">Mijmar</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_28485836">Sayyid Ḥusayn</persName>
+                        <persName xml:lang="fa" key="viaf_28485836">حسین طباطبائی مجمر</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_28485836">مجمر</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_28485836">سید حسین</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20644" change="#ids-cleanup">Dīvān</title>
                      <title xml:lang="fa" key="work_20644" change="#ids-cleanup">دیوان</title>
-                     <note>Chiefly in praise of <persName xml:lang="fa-Latn-x-lc" type="standard" ref="http://viaf.org/viaf/51026511" key="person_51026511" role="subject" change="#role-assignment">Fatḥ ‘Alī Shāh <foreign xml:lang="fa">فتح علی شاه</foreign>
+                     <note>Chiefly in praise of <persName xml:lang="fa-Latn-x-lc" type="standard" ref="http://viaf.org/viaf/51026511" key="viaf_51026511" role="subject" change="#role-assignment">Fatḥ ‘Alī Shāh <foreign xml:lang="fa">فتح علی شاه</foreign>
                         </persName>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 57.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -80,7 +87,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1812" notAfter="1813">1227</origDate>
+                     <origDate calendar="Hijri qamari" notBefore="1812" notAfter="1813">1227</origDate>
                   </origin>
                </history>
                <additional>

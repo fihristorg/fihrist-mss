@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6226">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,15 +42,21 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 7370</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342803</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237685.0x000065</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85142883 http://lccn.loc.gov/sh85100084 http://lccn.loc.gov/sh87001470">
                   <summary change="#add-summary">
                      1 copy of Ḥadā’iq al-Siḥr by Rashīd-i Vaṭvāṭ
                   </summary>
                   <msItem xml:id="Uk_Or_7370-item1">
-                     <author ref="http://viaf.org/viaf/13748246" key="person_13748246">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Rashīd-i Vaṭvāṭ</persName>
-                        <persName xml:lang="fa">رشید وطواط</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_13748246">Rashīd-i Vaṭvāṭ</persName>
+                        <persName xml:lang="fa" key="viaf_13748246">رشید وطواط</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_444" change="#ids-cleanup">Ḥadā’iq al-Siḥr</title>
                      <title xml:lang="fa" key="work_444" change="#ids-cleanup">حدائق السحر</title>
@@ -59,8 +67,7 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 80.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -76,7 +83,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1558" notAfter="1559">966</origDate>
+                     <origDate calendar="Hijri qamari" notBefore="1558" notAfter="1559">966</origDate>
                   </origin>
                </history>
                <additional>

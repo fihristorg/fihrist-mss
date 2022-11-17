@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
+<?altova_sps ..\Enrich_new.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3523">
    <teiHeader>
       <fileDesc>
@@ -11,7 +14,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +43,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>IO Islamic 4803</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004319162</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100161697092.0x000001</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>A collection of three Persian works</head>
                <msContents class="#multipleWorks http://lccn.loc.gov/sh85100085 http://lccn.loc.gov/sh85129656">
@@ -85,13 +94,13 @@
                   <msContents>
                      <msItem xml:id="Uk_IO_Islamic_4803-part1-item1" n="1" class="http://lccn.loc.gov/sh85100085 http://lccn.loc.gov/sh85129656">
                         <locus from="1v" to="72r">ff. 1v-72r</locus>
-                        <author ref="http://viaf.org/viaf/17093307" key="person_17093307">
-                           <persName xml:lang="fa-Latn-x-lc" type="standard">Aḥmad Jām, 1049 or 50-1141 or 2</persName>
-                           <persName xml:lang="fa-Latn-x-lc" type="atl">Shaykh al-Islām Aḥmad ibn Abī al-Ḥasan Jāmī, c. 1049 - c.1142</persName>
-                           <persName xml:lang="fa-Latn-x-lc" type="atl">Zhandah Pīl</persName>
-                           <persName xml:lang="fa" type="alt">شیخ الاسلام احمد بن ابی الحسن جامی</persName>
-                           <persName xml:lang="fa" type="alt">ژنده پيل</persName>
-                           <persName xml:lang="fa">احمد جام</persName>
+                        <author>
+                           <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_17093307 http://viaf.org/viaf/17093307">Aḥmad Jām, 1049 or 50-1141 or 2</persName>
+                           <persName xml:lang="fa-Latn-x-lc" type="atl" key="viaf_17093307 http://viaf.org/viaf/17093307">Shaykh al-Islām Aḥmad ibn Abī al-Ḥasan Jāmī, c. 1049 - c.1142</persName>
+                           <persName xml:lang="fa-Latn-x-lc" type="atl" key="viaf_17093307 http://viaf.org/viaf/17093307">Zhandah Pīl</persName>
+                           <persName xml:lang="fa" type="alt" key="viaf_17093307 http://viaf.org/viaf/17093307">شیخ الاسلام احمد بن ابی الحسن جامی</persName>
+                           <persName xml:lang="fa" type="alt" key="viaf_17093307 http://viaf.org/viaf/17093307">ژنده پيل</persName>
+                           <persName xml:lang="fa" key="viaf_17093307 http://viaf.org/viaf/17093307">احمد جام</persName>
                         </author>
                         <title xml:lang="fa-Latn-x-lc" key="work_20633" change="#ids-cleanup">Dīvān-i Aḥmad Jāmī</title>
                         <title xml:lang="fa" key="work_20633" change="#ids-cleanup">دیوان احمد حامی</title>
@@ -102,13 +111,12 @@
                            <bibl>For a more detailed description see Sims-Williams 1986, page 23.</bibl>
                         </listBibl>
                         <textLang mainLang="fa">Persian</textLang>
-                        <note>
-                     </note>
+                        <note />
                      </msItem>
                   </msContents>
                   <history>
                      <origin>
-                        <origDate calendar="#Hijri-qamari" when="1689">22 Rab. I 1100</origDate>
+                        <origDate calendar="Hijri qamari" when="1689">22 Rab. I 1100</origDate>
                      </origin>
                   </history>
                </msPart>
@@ -121,11 +129,11 @@
                   <msContents>
                      <msItem xml:id="Uk_IO_Islamic_4803-part2-item1" n="2" class="http://lccn.loc.gov/sh85100085 http://lccn.loc.gov/sh85129656">
                         <locus from="74v" to="84r">ff. 74v-84r</locus>
-                        <author ref="http://viaf.org/viaf/19703891" key="person_19703891">
-                           <persName xml:lang="fa-Latn-x-lc" type="standard">Anṣārī al-Harawī, ʻAbd Allāh ibn Muḥammad, 1006-1089</persName>
-                           <persName xml:lang="fa-Latn-x-lc" type="alt">ʻAbd Allāh Anṣarī, d. 481/1088</persName>
-                           <persName xml:lang="fa" type="alt">عبد الله انصارى</persName>
-                           <persName xml:lang="fa">انصارى الهروى، عبدالله بن محمد</persName>
+                        <author>
+                           <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_19703891 http://viaf.org/viaf/19703891">Anṣārī al-Harawī, ʻAbd Allāh ibn Muḥammad, 1006-1089</persName>
+                           <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_19703891 http://viaf.org/viaf/19703891">ʻAbd Allāh Anṣarī, d. 481/1088</persName>
+                           <persName xml:lang="fa" type="alt" key="viaf_19703891 http://viaf.org/viaf/19703891">عبد الله انصارى</persName>
+                           <persName xml:lang="fa" key="viaf_19703891 http://viaf.org/viaf/19703891">انصارى الهروى، عبدالله بن محمد</persName>
                         </author>
                         <title xml:lang="fa-Latn-x-lc" key="work_20399" change="#ids-cleanup">Munājāt</title>
                         <title xml:lang="fa" key="work_20399" change="#ids-cleanup">مناجات</title>
@@ -138,13 +146,12 @@
                            <bibl>For a more detailed description see Sims-Williams 1986, page 23.</bibl>
                         </listBibl>
                         <textLang mainLang="fa">Persian</textLang>
-                        <note>
-                     </note>
+                        <note />
                      </msItem>
                   </msContents>
                   <history>
                      <origin>
-                        <origDate calendar="#Hijri-qamari" when="1688">2 Muh. 1100</origDate>
+                        <origDate calendar="Hijri qamari" when="1688">2 Muh. 1100</origDate>
                      </origin>
                   </history>
                </msPart>
@@ -167,13 +174,12 @@
                            <bibl>For a more detailed description see Sims-Williams 1986, page 23.</bibl>
                         </listBibl>
                         <textLang mainLang="fa">Persian</textLang>
-                        <note>
-                     </note>
+                        <note />
                      </msItem>
                   </msContents>
                   <history>
                      <origin>
-                        <origDate calendar="#Hijri-qamari" when="1688">Hijri-qamari<!-- Please review date text, see https://git.io/fihrist-dates -->
+                        <origDate calendar="Hijri qamari" when="1688">Hijri-qamari<!-- Please review date text, see https://git.io/fihrist-dates -->
                         </origDate>
                      </origin>
                   </history>
@@ -210,7 +216,7 @@
       </profileDesc>
       <revisionDesc>
          <change when="2022-04-21">
-            <persName>Julian Cook</persName>
+            <persName>Lulu Paul</persName>
               850 BL Persian mss prepared for initial publication in FIHRIST (plus 18 replacements)
          </change>
          <change when="2020-07-06" xml:id="role-assignment">

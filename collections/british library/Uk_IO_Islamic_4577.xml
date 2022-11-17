@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3287">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,17 +42,23 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>IO Islamic 4577</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342037</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163236087.0x000034</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh2008104964">
                   <summary change="#add-summary">
                      1 copy of Abvāb al-jinān by Vāʻiẓ Qazvīnī, Muḥammad Rafīʻ, 1617 or 18-1678 or 9
                   </summary>
                   <msItem xml:id="Uk_IO_Islamic_4577-item1">
-                     <author ref="http://viaf.org/viaf/315087128" key="person_315087128" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Vāʻiẓ Qazvīnī, Muḥammad Rafīʻ, 1617 or 18-1678 or 9</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Muḥammad Rafīʻ Waʻiẓ Qazwīnī, d. circa 1105/1694</persName>
-                        <persName xml:lang="fa" type="alt">محمد رفىع واعظ قزوىنى</persName>
-                        <persName xml:lang="fa">واعظ قزوىنى، محمد رفىع</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_315087128">Vāʻiẓ Qazvīnī, Muḥammad Rafīʻ, 1617 or 18-1678 or 9</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_315087128">Muḥammad Rafīʻ Waʻiẓ Qazwīnī, d. circa 1105/1694</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_315087128">محمد رفىع واعظ قزوىنى</persName>
+                        <persName xml:lang="fa" key="viaf_315087128">واعظ قزوىنى، محمد رفىع</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_1299">Abvāb al-jinān</title>
                      <title xml:lang="fa" key="work_1299">ابوان الجنان</title>
@@ -59,14 +67,13 @@
                      <note>A well-written copy of the first 656 of the well-known ethical compendium, planned in eight abwāb of which only two have survived</note>
                      <note>This part of the work has been lithographed in <name type="place" key="subject_n79039880">Persia</name> and <name type="place" key="subject_n80125948">India</name> [ <ref target="Edwards_1922" type="pages">405-6</ref>; <ref target="Arberry_1937_a" type="page">Arberry 1937 a, page 16.</ref> ]
                      </note>
-                     <note>The following note is pasted on the inside back cover: "Prince Jamh 0 Deen's compliments to <persName xml:lang="en" ref="http://viaf.org/viaf/32006795" type="alt" key="person_32006795" role="oth" change="#role-assignment #ids-cleanup">Lady Seymour</persName> and he has the pleasure of sending the accompanying Manuscript, which is a curiosity written in the time of <persName xml:lang="en" type="supplied" key="person_f2257" role="oth" change="#role-assignment">Mohammud Shaw Amprah</persName> [sic] of India, in the city of Delhi nearly two century [sic] ago and, he hopes she will kindly accept the same. 20 No[vem]ber/37." This statement is, of course, quite inaccurate. The <title xml:lang="fa-Latn-x-lc">Abvāb al-jinān</title> is dedicated to <persName xml:lang="fa-Latn-x-lc" ref="http://viaf.org/viaf/268954445" key="person_268954445" type="alt" role="dte" change="#role-assignment #ids-cleanup">Shah 'Abbas II of Persia (d. 1077/1667)</persName>: <persName xml:lang="fa-Latn-x-lc" ref="http://viaf.org/viaf/45680638" key="person_45680638" type="alt" role="dte" change="#role-assignment">Muḥammad Shāh</persName> was Emperor at Delhi from <date calendar="#Hijri-qamari" when="1719">1131</date> to <date calendar="#Hijri-qamari" when="1748">1161</date>
+                     <note>The following note is pasted on the inside back cover: "Prince Jamh 0 Deen's compliments to <persName xml:lang="en" ref="http://viaf.org/viaf/32006795" type="alt" key="viaf_32006795" role="oth" change="#role-assignment #ids-cleanup">Lady Seymour</persName> and he has the pleasure of sending the accompanying Manuscript, which is a curiosity written in the time of <persName xml:lang="en" type="supplied" key="person_f2257" role="oth" change="#role-assignment">Mohammud Shaw Amprah</persName> [sic] of India, in the city of Delhi nearly two century [sic] ago and, he hopes she will kindly accept the same. 20 No[vem]ber/37." This statement is, of course, quite inaccurate. The <title xml:lang="fa-Latn-x-lc">Abvāb al-jinān</title> is dedicated to <persName xml:lang="fa-Latn-x-lc" ref="http://viaf.org/viaf/268954445" key="viaf_268954445" type="alt" role="dte" change="#role-assignment #ids-cleanup">Shah 'Abbas II of Persia (d. 1077/1667)</persName>: <persName xml:lang="fa-Latn-x-lc" ref="http://viaf.org/viaf/45680638" key="viaf_45680638" type="alt" role="dte" change="#role-assignment">Muḥammad Shāh</persName> was Emperor at Delhi from <date calendar="Hijri qamari" when="1719">1131</date> to <date calendar="Hijri qamari" when="1748">1161</date>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Arberry 1939, pages 368-9.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -99,7 +106,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1700" notAfter="1799">18th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1700" notAfter="1799">18th century</origDate>
                   </origin>
                </history>
                <additional>

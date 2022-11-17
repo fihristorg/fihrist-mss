@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5297">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 11152</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343109</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239034.0x000052</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="#multipleWorks">
                   <summary change="#add-summary2">
@@ -47,23 +55,22 @@
                   </summary>
                   <msItem xml:id="Uk_Or_11152-item1" n="1" class="http://lccn.loc.gov/sh85100084">
                      <locus from="1r " to="17v">1r-17v ff</locus>
-                     <author key="person_24509051" ref="http://viaf.org/viaf/24509051/">
-                        <persName xml:lang="ota-Latn-x-lc" type="standard">Şahidî İbrahim Dede, 1470-1550</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Shāhidī Mughlavī</persName>
-                        <persName xml:lang="fa" type="alt">شاهدی مغلوی</persName>
+                     <author>
+                        <persName xml:lang="ota-Latn-x-lc" type="standard" key="viaf_24509051">Şahidî İbrahim Dede, 1470-1550</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_24509051">Shāhidī Mughlavī</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_24509051">شاهدی مغلوی</persName>
                      </author>
                      <note>Mughlavī is the compiler of the work</note>
                      <title xml:lang="fa-Latn-x-lc" key="work_21112" change="#ids-cleanup">Intikhāb-i mas̲navī</title>
                      <title xml:lang="fa" key="work_21112" change="#ids-cleanup">انتخاب مثنوی</title>
-                     <note>Selected verses from the mas̲navī of <persName ref="http://viaf.org/viaf/98930150" key="person_98930150" xml:lang="fa-Latn-x-lc" type="standard" role="ant" change="#role-assignment">Jalāl al-Dīn Rūmī, <foreign>جلال الدین رومی</foreign>
+                     <note>Selected verses from the mas̲navī of <persName ref="http://viaf.org/viaf/98930150" key="viaf_98930150" xml:lang="fa-Latn-x-lc" type="standard" role="ant" change="#role-assignment">Jalāl al-Dīn Rūmī, <foreign>جلال الدین رومی</foreign>
                         </persName>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 72.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                   <msItem xml:id="Uk_Or_11152-item2" n="2" class="http://lccn.loc.gov/sh85100084">
                      <locus from="18r" to="44v">18r-44v ff</locus>
@@ -71,7 +78,7 @@
                         <persName xml:lang="fa-Latn-x-lc" type="supplied">Khalīlī</persName>
                         <persName xml:lang="fa">خلیلی</persName>
                      </author>
-                     <note>A mystical mas̲navī attributed to al-Ghazālī but really written by Khalīlī in <date calendar="#Hijri-qamari" notBefore="1475" notAfter="1476">880</date>
+                     <note>A mystical mas̲navī attributed to al-Ghazālī but really written by Khalīlī in <date calendar="Hijri qamari" notBefore="1475" notAfter="1476">880</date>
                      </note>
                      <title xml:lang="fa-Latn-x-lc" key="work_8626">Tuḥfat al-‘ushshāq</title>
                      <title xml:lang="fa" key="work_8626">تحفة العشاق</title>
@@ -79,8 +86,7 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 72.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -96,7 +102,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1565" notAfter="1567">973</origDate>
+                     <origDate calendar="Hijri qamari" notBefore="1565" notAfter="1567">973</origDate>
                   </origin>
                </history>
                <additional>

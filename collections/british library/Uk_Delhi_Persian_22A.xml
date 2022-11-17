@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3203">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,17 +42,23 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>Delhi Persian 22A</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004341330</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163233603.0x000006</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85072967 http://lccn.loc.gov/n2007204421">
                   <summary change="#add-summary">
                      1 copy of Tafsīr-i Fatḥ al-ʻAzīz by Dihlawī, ʻAbd al-ʻAzīz ibn Aḥmad, 1746 or 7-1823 or 4
                   </summary>
                   <msItem xml:id="Uk_Delhi_Persian_22A-item1">
-                     <author ref="http://viaf.org/viaf/53999017" key="person_53999017">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Dihlawī, ʻAbd al-ʻAzīz ibn Aḥmad, 1746 or 7-1823 or 4</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Shāh ʻAbd al-ʻAzīz ibn Valī Allāh Dihlavī (1159-1239/1746-1824)</persName>
-                        <persName xml:lang="fa" type="alt">شاه عبد العزيز بن ولی الله دهلوی</persName>
-                        <persName xml:lang="ar">دهلوی، عبد العزيز بن أحمد</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_53999017">Dihlawī, ʻAbd al-ʻAzīz ibn Aḥmad, 1746 or 7-1823 or 4</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_53999017">Shāh ʻAbd al-ʻAzīz ibn Valī Allāh Dihlavī (1159-1239/1746-1824)</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_53999017">شاه عبد العزيز بن ولی الله دهلوی</persName>
+                        <persName xml:lang="ar" key="viaf_53999017">دهلوی، عبد العزيز بن أحمد</persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc" key="work_7863">Tafsīr-i Fatḥ al-ʻAzīz</title>
                      <title xml:lang="ar" key="work_7863">تفسير فتح العزیز</title>
@@ -64,8 +72,7 @@
                         <bibl>For a more detailed description see Persian III, .</bibl>
                      </listBibl>
                      <textLang mainLang="fa" otherLangs="ar">Persian and Arabic</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -88,14 +95,14 @@
                      <p>Half leather 20th century European binding</p>
                   </bindingDesc>
                   <sealDesc>
-                     <p>Seal of <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f1361" role="asn" change="#role-assignment #ids-cleanup">Ḥāfiẓ Barakat Allāh</persName>, <date calendar="#Hijri-qamari" when="1817">1233</date>
+                     <p>Seal of <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f1361" role="asn" change="#role-assignment #ids-cleanup">Ḥāfiẓ Barakat Allāh</persName>, <date calendar="Hijri qamari" when="1817">1233</date>
                      </p>
                   </sealDesc>
                </physDesc>
                <history>
                   <origin>
                      <origPlace>India</origPlace>
-                     <origDate calendar="#Gregorian" notAfter="1817">early 19th century</origDate>
+                     <origDate calendar="Gregorian" notAfter="1817">early 19th century</origDate>
                   </origin>
                </history>
                <additional>

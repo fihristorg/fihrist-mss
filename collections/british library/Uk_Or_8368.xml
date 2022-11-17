@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6368">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,17 +42,23 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 8368</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342893</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237685.0x0000bf</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85100084">
                   <summary change="#add-summary">
                      Dīvān by Shams al-Dīn Muḥammad Lāhījī
                   </summary>
                   <msItem xml:id="Uk_Or_8368-item1">
-                     <author key="person_2528171" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Shams al-Dīn Muḥammad Lāhījī</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Asīrī</persName>
-                        <persName xml:lang="fa">شمس الدین محمد لاهیجی</persName>
-                        <persName xml:lang="fa" type="alt">اسیری</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied" key="viaf_2528171">Shams al-Dīn Muḥammad Lāhījī</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_2528171">Asīrī</persName>
+                        <persName xml:lang="fa" key="viaf_2528171">شمس الدین محمد لاهیجی</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_2528171">اسیری</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20640" change="#ids-cleanup">Dīvān</title>
                      <title xml:lang="fa" key="work_20640" change="#ids-cleanup">دیوان</title>
@@ -60,8 +68,7 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 55.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -77,7 +84,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1600" notAfter="1799">17th-18th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1600" notAfter="1799">17th-18th century</origDate>
                   </origin>
                </history>
                <additional>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6003">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 5744</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342669</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237592.0x000071</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>A miscellany</head>
                <msContents class="#multipleWorks">
@@ -48,11 +56,11 @@
                   </summary>
                   <msItem xml:id="Uk_Or_5744-item1" n="1" class="http://lccn.loc.gov/sh85053987 http://lccn.loc.gov/sh85064914">
                      <locus from="1v" to="81r">1v-81r ff</locus>
-                     <author ref="http://viaf.org/viaf/297981831" key="person_297981831">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Bilgrāmī, Murtaz̤á Ḥusayn, active 1776</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Ilāhyār Bilgrāmī</persName>
-                        <persName xml:lang="fa">بلگرامى، مرتضى حسين</persName>
-                        <persName xml:lang="fa" type="alt">الآهیار بلگرامی</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_297981831">Bilgrāmī, Murtaz̤á Ḥusayn, active 1776</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_297981831">Ilāhyār Bilgrāmī</persName>
+                        <persName xml:lang="fa" key="viaf_297981831">بلگرامى، مرتضى حسين</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_297981831">الآهیار بلگرامی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_5410" change="#ids-cleanup">Ḥadīqat al-Aqālīm</title>
                      <title xml:lang="fa" key="work_5410" change="#ids-cleanup">حدیقة الاقالیم</title>
@@ -61,33 +69,30 @@
                         <bibl>For a more detailed description see Glyn Meredith-Owens: Handlist of Persian Manuscripts, 1895-1966. [London]: Trustees of the British Museum, 1968, p.90.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                   <msItem xml:id="Uk_Or_5744-item2" n="2" class="http://lccn.loc.gov/sh85064905 http://lccn.loc.gov/sh2009117611">
                      <locus from="82v" to="142r">82v-142r ff</locus>
                      <title xml:lang="en" type="desc" key="work_9275">A brief chronology of India</title>
-                     <note>Chronology extends to ca. AD <date calendar="#Gregorian" notBefore="1585" notAfter="1585">1585</date> written for <persName type="supplied" xml:lang="fa-Latn-x-lc" key="person_f1220" role="pat" change="#role-assignment">Gore Ṣāḥib</persName>
+                     <note>Chronology extends to ca. AD <date calendar="Gregorian" notBefore="1585" notAfter="1585">1585</date> written for <persName type="supplied" xml:lang="fa-Latn-x-lc" key="person_f1220" role="pat" change="#role-assignment">Gore Ṣāḥib</persName>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Glyn Meredith-Owens: Handlist of Persian Manuscripts, 1895-1966. [London]: Trustees of the British Museum, 1968, p.90.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                   <msItem xml:id="Uk_Or_5744-item3" n="3" class="http://lccn.loc.gov/sh85064905">
                      <locus from="144v" to="203v">144v-203v ff</locus>
                      <title xml:lang="fa-Latn-x-lc" key="work_9276">Muntakhab-i Hindnāmah</title>
                      <title xml:lang="fa" key="work_9276">منتخب هندنامه</title>
-                     <note>A short history of India to ca. AD <date calendar="#Gregorian" notBefore="1772" notAfter="1772">1772</date>
+                     <note>A short history of India to ca. AD <date calendar="Gregorian" notBefore="1772" notAfter="1772">1772</date>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Glyn Meredith-Owens: Handlist of Persian Manuscripts, 1895-1966. [London]: Trustees of the British Museum, 1968, p.90.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -103,7 +108,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1750" notAfter="1799">Late 18th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1750" notAfter="1799">Late 18th century</origDate>
                   </origin>
                </history>
                <additional>

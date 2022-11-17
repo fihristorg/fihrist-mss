@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5124">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 2827</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342300</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237592.0x000026</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://id.loc.gov/authorities/sh85109233 http://lccn.loc.gov/sh85109389">
                   <summary change="#add-summary2">
@@ -65,14 +73,13 @@
                         </bibl>
                      </listBibl>
                      <textLang mainLang="ps" otherLangs="fa">Pushto and Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                   <msItem xml:id="Uk_Or_2827-item2" n="2">
-                     <author key="person_58482052" ref="http://viaf.org/viaf/58482052/">
-                        <persName xml:lang="pus-Latn-x-lc" type="standard">Aḥmad, Mawlawī of Tangi in Hashtnagar</persName>
-                        <persName xml:lang="ps">احمد، مولوي</persName>
-                        <persName xml:lang="ps" type="alt">مولوي احمد</persName>
+                     <author>
+                        <persName xml:lang="pus-Latn-x-lc" type="standard" key="viaf_58482052">Aḥmad, Mawlawī of Tangi in Hashtnagar</persName>
+                        <persName xml:lang="ps" key="viaf_58482052">احمد، مولوي</persName>
+                        <persName xml:lang="ps" type="alt" key="viaf_58482052">مولوي احمد</persName>
                      </author>
                      <title xml:lang="pus-Latn-x-lc" key="work_7904">Ghal Qāz̤ī</title>
                      <title xml:lang="ps" key="work_7904">غل قاضي</title>
@@ -86,14 +93,13 @@
                         </bibl>
                      </listBibl>
                      <textLang mainLang="ps">Pushto</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>
+                        <extent>folios 
                            <ref target="a1">1-80 f.</ref>
                            <ref target="a2">81-113 f.</ref>
                            <dimensions type="leaf" unit="cm">
@@ -110,10 +116,10 @@
                <history>
                   <origin change="#fix-dates" notBefore="1871" notAfter="1872">
                      <ref target="a1">
-                        <origDate when="1872" calendar="#Gregorian">1872</origDate>
+                        <origDate when="1872" calendar="Gregorian">1872</origDate>
                      </ref>
                      <ref target="a2">
-                        <origDate when="1871" calendar="#Gregorian">1871</origDate>
+                        <origDate when="1871" calendar="Gregorian">1871</origDate>
                      </ref>
                   </origin>
                </history>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3463">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011.08.17</date>
+            <date calendar="Gregorian">2011.08.17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -41,17 +43,23 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>IO Islamic 4745</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342203</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237459.0x00002f</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head type="desc" />
                <msContents class="#multipleWorks">
                   <summary>Volume of papers from Richard Johnson’s collection containing two separate manuscripts bound together</summary>
                   <msItem xml:id="Uk_IO_Islamic_4745-item1" n="1" class="http://lccn.loc.gov/sh85100074 http://lccn.loc.gov/sh2008111231 http://lccn.loc.gov/sh2008108146">
                      <locus from="1r" to="12v">ff. 1r-12v</locus>
-                     <author ref="http://viaf.org/viaf/161923592/" key="person_161923592" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Dihlavī, Shaikh Jamālī</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Ḥāmid ibn Faz̤l Jamālī Dihlavī</persName>
-                        <persName xml:lang="fa" type="alt">حامد بن فضل جمالی دهلوی</persName>
-                        <persName xml:lang="fa">دهلوی، شیخ جمالی</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_161923592">Dihlavī, Shaikh Jamālī</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_161923592">Ḥāmid ibn Faz̤l Jamālī Dihlavī</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_161923592">حامد بن فضل جمالی دهلوی</persName>
+                        <persName xml:lang="fa" key="viaf_161923592">دهلوی، شیخ جمالی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_6957">Siyar al-ʻārifīn</title>
                      <title xml:lang="fa" key="work_6957">سیر العارفین</title>
@@ -66,8 +74,7 @@
                         <bibl>For a more detailed description see Sims-Williams 1986, page 16.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                   <msItem xml:id="Uk_IO_Islamic_4745-item2" n="2" class="http://lccn.loc.gov/sh85100074 http://lccn.loc.gov/sh85064939 http://lccn.loc.gov/sh86007183">
                      <locus from="13r" to="21v">ff. 13r-21v</locus>
@@ -77,14 +84,13 @@
                      <title xml:lang="en" type="desc" key="work_21063" change="#ids-cleanup">Part of a letter book</title>
                      <incipit xml:lang="fa" />
                      <explicit xml:lang="ar" defective="true" />
-                     <note>Containing copies of correspondence <date calendar="#Gregorian" when="1787">1787</date>, continued by <ref type="no" target="Uk">I.O. Islamic 4747a (British Library).</ref> below
+                     <note>Containing copies of correspondence <date calendar="Gregorian" when="1787">1787</date>, continued by <ref type="no" target="Uk">I.O. Islamic 4747a (British Library).</ref> below
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Sims-Williams 1986, page 16-17.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -103,7 +109,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1750" notAfter="1799">Late 18th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1750" notAfter="1799">Late 18th century</origDate>
                   </origin>
                </history>
                <additional>

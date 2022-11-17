@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5699">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,33 +42,38 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 14624</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343362</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239456.0x000038</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85100084 http://lccn.loc.gov/sh2002005579 http://lccn.loc.gov/n50039100 http://lccn.loc.gov/sh85018927">
                   <summary change="#add-summary">
                      1 copy of Ḥamlahʼi Ḥaydarī by Rājī Kirmānī,‏ ‎d 19th cent.‏
                   </summary>
                   <msItem xml:id="Uk_Or_14624-item1">
-                     <author key="person_66385382" ref="http://viaf.org/viaf/66385382/">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Rājī Kirmānī,‏ ‎d 19th cent.‏</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Mullā Bāmūn ʻAlī</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Mullā Bāmān ʻAlī</persName>
-                        <persName xml:lang="fa" type="alt">ملا بامان على</persName>
-                        <persName xml:lang="fa" type="alt">ملا بامون على</persName>
-                        <persName xml:lang="fa">راجى کرمانى</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_66385382">Rājī Kirmānī,‏ ‎d 19th cent.‏</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_66385382">Mullā Bāmūn ʻAlī</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_66385382">Mullā Bāmān ʻAlī</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_66385382">ملا بامان على</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_66385382">ملا بامون على</persName>
+                        <persName xml:lang="fa" key="viaf_66385382">راجى کرمانى</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20003" change="#ids-cleanup">Ḥamlahʼi Ḥaydarī</title>
                      <title xml:lang="fa" key="work_20003" change="#ids-cleanup">حملۀ حیدری</title>
                      <incipit xml:lang="ar" />
                      <explicit xml:lang="ar" defective="true" />
                      <note>A Mas̲navī on the life and virtues of the Caliphs and Imam ʼAlī</note>
-                     <note>Completed in <date calendar="#Hijri-qamari" notBefore="1805" notAfter="1806">1220</date>
+                     <note>Completed in <date calendar="Hijri qamari" notBefore="1805" notAfter="1806">1220</date>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Waley 1998, page 55.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -83,7 +90,7 @@
                <history>
                   <origin>
                      <origPlace>Iran</origPlace>
-                     <origDate calendar="#Hijri-qamari" when="1861">1278</origDate>
+                     <origDate calendar="Hijri qamari" when="1861">1278</origDate>
                   </origin>
                </history>
                <additional>

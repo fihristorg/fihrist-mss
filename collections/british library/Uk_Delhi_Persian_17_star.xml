@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3198">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>Delhi Persian 17*</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004341328</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163233603.0x000004</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>A devotional book containing different works</head>
                <msContents class="#multipleWorks">
@@ -57,14 +65,13 @@
                      <note>It includes instructions on how to read the Qur’ān in Persian in <locus from="64" to="66">f. 64-66</locus>
                      </note>
                      <textLang mainLang="ar" otherLangs="fa">Arabic and Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                   <msItem xml:id="Uk_Delhi_Persian_17-star-item2" n="2" class="http://lccn.loc.gov/sh85109395 http://lccn.loc.gov/n79130881">
                      <locus from="71v" to="91v">ff. 71v -91v</locus>
-                     <author ref="http://viaf.org/viaf/90042754" key="person_90042754">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Būṣīrī, Sharaf al-Dīn Muḥammad ibn Saʻīd, 1213?-1296?</persName>
-                        <persName xml:lang="ar">بوصيري، شرف‌الدين محمد بن سعيد</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_90042754">Būṣīrī, Sharaf al-Dīn Muḥammad ibn Saʻīd, 1213?-1296?</persName>
+                        <persName xml:lang="ar" key="viaf_90042754">بوصيري، شرف‌الدين محمد بن سعيد</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_21179" change="#ids-cleanup">Burdah</title>
                      <title xml:lang="fa" key="work_21179" change="#ids-cleanup">برده</title>
@@ -75,8 +82,7 @@
                      <note>Text in Arabic qith short notes in Persian in <locus n="71">f. 71</locus>
                      </note>
                      <textLang mainLang="ar" otherLangs="fa">Arabic and Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                   <msItem xml:id="Uk_Delhi_Persian_17-star-item3" n="3" class=" http://lccn.loc.gov/n79130881">
                      <locus from="92r" to="93v">ff. 92r -93v</locus>
@@ -90,14 +96,13 @@
                      <explicit xml:lang="fa" />
                      <note>The fist folio is in Arabic and the rest in Persian</note>
                      <textLang mainLang="fa" otherLangs="ar">Persian and Arabic</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                   <msItem xml:id="Uk_Delhi_Persian_17-star-item4" n="4" class="http://lccn.loc.gov/sh85109395 http://lccn.loc.gov/n79130881">
                      <locus from="94r" to="100v">ff. 94r -100v</locus>
-                     <author ref="http://viaf.org/viaf/90042754" key="person_90042754">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Būṣīrī, Sharaf al-Dīn Muḥammad ibn Saʻīd, 1213?-1296?</persName>
-                        <persName xml:lang="ar">بوصيري، شرف‌الدين محمد بن سعيد</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_90042754">Būṣīrī, Sharaf al-Dīn Muḥammad ibn Saʻīd, 1213?-1296?</persName>
+                        <persName xml:lang="ar" key="viaf_90042754">بوصيري، شرف‌الدين محمد بن سعيد</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_21179" change="#ids-cleanup">Burdah</title>
                      <title xml:lang="fa" key="work_21179" change="#ids-cleanup">برده</title>
@@ -106,8 +111,7 @@
                      <incipit xml:lang="fa" />
                      <explicit xml:lang="fa" />
                      <textLang mainLang="ar">Arabic</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                   <msItem xml:id="Uk_Delhi_Persian_17-star-item5" n="5" class=" http://lccn.loc.gov/n79130881 http://lccn.loc.gov/sh85100084">
                      <locus n="101r">f. 101r</locus>
@@ -119,11 +123,10 @@
                      <explicit xml:lang="fa" />
                      <incipit xml:lang="fa" />
                      <explicit xml:lang="fa" />
-                     <note>Work dated <date calendar="#Hijri-qamari" when="1831">21 Jum I 1247</date> correponding to <date calendar="#other" when="1831">RY 26 of Akbar II</date>
+                     <note>Work dated <date calendar="Hijri qamari" when="1831">21 Jum I 1247</date> correponding to <date calendar="#other" when="1831">RY 26 of Akbar II</date>
                      </note>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                   <msItem xml:id="Uk_Delhi_Persian_17-star-item6" n="6" class="http://lccn.loc.gov/sh85068403">
                      <locus from="101v" to="108r">f. 101v-108r</locus>
@@ -136,8 +139,7 @@
                      <incipit xml:lang="fa" />
                      <explicit xml:lang="fa" />
                      <textLang mainLang="ar">Arabic</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                   <msItem xml:id="Uk_Delhi_Persian_17-star-item7" n="7" class="http://lccn.loc.gov/sh85129656">
                      <locus from="108v" to="112v">f. 108v-112v</locus>
@@ -149,11 +151,10 @@
                      <explicit xml:lang="fa" />
                      <incipit xml:lang="fa" />
                      <explicit xml:lang="fa" />
-                     <note>Dated <date calendar="#Hijri-qamari" when="1831">1247</date> correponding to <date calendar="#other" when="1831">RY 26 of Akbar II</date>
+                     <note>Dated <date calendar="Hijri qamari" when="1831">1247</date> correponding to <date calendar="#other" when="1831">RY 26 of Akbar II</date>
                      </note>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                   <msItem xml:id="Uk_Delhi_Persian_17-star-item8" n="8" class="http://lccn.loc.gov/sh85068403">
                      <locus from="113r" to="119r">f. 113r-119r</locus>
@@ -169,8 +170,7 @@
                         <locus from="119v" to="122v">Ff. 119v-122v</locus> are blank
                      </note>
                      <textLang mainLang="fa" otherLangs="ar">Persian and Arabic</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                   <msItem xml:id="Uk_Delhi_Persian_17-star-item9" n="9" class="http://lccn.loc.gov/sh85068403 http://lccn.loc.gov/sh89003001">
                      <locus from="123r" to="140v">f. 123r-140vr</locus>
@@ -183,8 +183,7 @@
                      <incipit xml:lang="fa" />
                      <explicit xml:lang="fa" />
                      <textLang mainLang="fa" otherLangs="ar">Persian and Arabic</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                   <msItem xml:id="Uk_Delhi_Persian_17-star-item10" n="10" class="http://lccn.loc.gov/sh85068403 http://lccn.loc.gov/sh89003001">
                      <locus from="141r" to="145v">f. 141r-145v</locus>
@@ -197,8 +196,7 @@
                      <incipit xml:lang="fa" />
                      <explicit xml:lang="fa" />
                      <textLang mainLang="fa" otherLangs="ar">Persian and Arabic</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                   <msItem xml:id="Uk_Delhi_Persian_17-star-item11" n="11" class="http://lccn.loc.gov/sh89003001 http://lccn.loc.gov/sh85068482">
                      <locus from="146r" to="148v">f. 146r-148v</locus>
@@ -211,8 +209,7 @@
                      <incipit xml:lang="fa" />
                      <explicit xml:lang="fa" />
                      <textLang mainLang="fa" otherLangs="ar">Persian and Arabic</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                   <msItem xml:id="Uk_Delhi_Persian_17-star-item12" n="12" class="http://lccn.loc.gov/sh85068403">
                      <locus from="149r" to="152v">f. 149r-152v</locus>
@@ -225,8 +222,7 @@
                      <incipit xml:lang="fa" />
                      <explicit xml:lang="fa" />
                      <textLang mainLang="fa" otherLangs="ar">Persian and Arabic</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                   <msItem xml:id="Uk_Delhi_Persian_17-star-item13" n="13" class="http://lccn.loc.gov/sh85068403">
                      <locus from="153r" to="209r">f. 153r-209r</locus>
@@ -239,8 +235,7 @@
                      <incipit xml:lang="fa" />
                      <explicit xml:lang="fa" />
                      <textLang mainLang="fa" otherLangs="ar">Persian and Arabic</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -262,7 +257,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1800" notAfter="1899">19th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1800" notAfter="1899">19th century</origDate>
                   </origin>
                </history>
                <additional>

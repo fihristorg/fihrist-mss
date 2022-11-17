@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3543">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,15 +42,21 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>IO Islamic 2816</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004341590</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163233916.0x000005</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://id.loc.gov/authorities/sh85109233">
                   <summary change="#add-summary">
                      1 copy of Dīwān-i Karīmdād by Karīmdād, active 1646
                   </summary>
                   <msItem xml:id="Uk_IO_Islamic_2816-item1">
-                     <author key="person_46420754" ref="http://viaf.org/viaf/46420754/">
-                        <persName xml:lang="ps" type="standard">Karīmdād, active 1646</persName>
-                        <persName xml:lang="ps">خټک، کامگار خان</persName>
+                     <author>
+                        <persName xml:lang="ps" type="standard" key="viaf_46420754">Karīmdād, active 1646</persName>
+                        <persName xml:lang="ps" key="viaf_46420754">خټک، کامگار خان</persName>
                      </author>
                      <title xml:lang="pus-Latn-x-lc" key="work_8883">Dīwān-i Karīmdād</title>
                      <title xml:lang="ps" key="work_8883">دیوان کریمداد</title>
@@ -60,8 +68,7 @@
                         </bibl>
                      </listBibl>
                      <textLang mainLang="ps">Pushto</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -80,7 +87,7 @@
                </physDesc>
                <history>
                   <origin change="#fix-dates">
-                     <origDate notBefore="1700" notAfter="1800" calendar="#Gregorian">18th century</origDate>
+                     <origDate notBefore="1700" notAfter="1800" calendar="Gregorian">18th century</origDate>
                   </origin>
                </history>
                <additional>

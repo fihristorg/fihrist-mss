@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5685">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,20 +42,26 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 14403</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343354</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239456.0x000030</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85100084 http://lccn.loc.gov/sh85044293 http://lccn.loc.gov/n79093280">
                   <summary change="#add-summary">
                      1 copy of Shāhnāmah by Firdawsī
                   </summary>
                   <msItem xml:id="Uk_Or_14403-item1">
-                     <author key="person_101359236" ref="http://viaf.org/viaf/101359236/">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Firdawsī</persName>
-                        <persName xml:lang="fa">فردوسی <forename xml:lang="fa" />
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_101359236">Firdawsī</persName>
+                        <persName xml:lang="fa" key="viaf_101359236">فردوسی <forename xml:lang="fa" />
                         </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_2149" change="#ids-cleanup">Shāhnāmah</title>
                      <title xml:lang="fa" key="work_2149" change="#ids-cleanup">شاهنامه</title>
-                     <note>Illustrated copy of the epic poem of <persName xml:lang="fa-Latn-x-lc" key="person_101359236" ref="http://viaf.org/viaf/101359236/" type="alt" role="aut" change="#role-assignment">Firdawsī, d. 415/1025</persName>
+                     <note>Illustrated copy of the epic poem of <persName xml:lang="fa-Latn-x-lc" key="viaf_101359236" ref="http://viaf.org/viaf/101359236/" type="alt" role="aut" change="#role-assignment">Firdawsī, d. 415/1025</persName>
                      </note>
                      <incipit xml:lang="fa" />
                      <explicit xml:lang="fa" defective="true" />
@@ -61,8 +69,7 @@
                         <bibl>For a more detailed description see Waley 1998, page 47.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -82,7 +89,7 @@
                <history>
                   <origin>
                      <origPlace>Transoxiana (probably Bukhara)</origPlace>
-                     <origDate calendar="#Hijri-qamari" when="1600">about 910</origDate>
+                     <origDate calendar="Hijri qamari" when="1600">about 910</origDate>
                   </origin>
                </history>
                <additional>

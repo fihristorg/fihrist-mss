@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5719">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,27 +42,32 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 14857</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343379</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239456.0x000049</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85100085 http://lccn.loc.gov/sh85103707">
                   <summary change="#add-summary">
                      1 copy of Kullīyāt-i Salmān-i Sāvajī by Salmān Sāvajī, d. 1376
                   </summary>
                   <msItem xml:id="Uk_Or_14857-item1">
-                     <author key="person_36059765" ref="http://viaf.org/viaf/36059765/">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Salmān Sāvajī, d. 1376</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Salmān of Sāva, d. 778/1376</persName>
-                        <persName xml:lang="fa">سلمان ساوجى</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="ark:/81055/vdc_100164657184.0x000001 viaf_36059765">Salmān Sāvajī, d. 1376</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_36059765">Salmān of Sāva, d. 778/1376</persName>
+                        <persName xml:lang="fa" key="viaf_36059765">سلمان ساوجى</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20032" change="#ids-cleanup">Kullīyāt-i Salmān-i Sāvajī</title>
                      <title xml:lang="fa" key="work_20032" change="#ids-cleanup">كليات سلمان ساوجی</title>
-                     <note>Collected poetical works of <persName type="standard" xml:lang="fa-Latn-x-lc" key="person_36059765" ref="http://viaf.org/viaf/36059765/" role="aut" change="#role-assignment">Salmān of Sāva, d. 778/1376</persName>
+                     <note>Collected poetical works of <persName type="standard" xml:lang="fa-Latn-x-lc" key="viaf_36059765" ref="http://viaf.org/viaf/36059765/" role="aut" change="#role-assignment">Salmān of Sāva, d. 778/1376</persName>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Waley 1998, page 38.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -77,7 +84,7 @@
                <history>
                   <origin>
                      <origPlace>India</origPlace>
-                     <origDate calendar="#Hijri-qamari" notBefore="1800" notAfter="1899">13th century<!-- Please review date attributes, see https://git.io/fihrist-dates -->
+                     <origDate calendar="Hijri qamari" notBefore="1800" notAfter="1899">13th century<!-- Please review date attributes, see https://git.io/fihrist-dates -->
                      </origDate>
                   </origin>
                </history>

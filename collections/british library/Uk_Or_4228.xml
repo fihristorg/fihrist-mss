@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5138">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,15 +42,21 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 4228</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342307</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237592.0x00002d</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://id.loc.gov/authorities/sh85109233">
                   <summary change="#add-summary">
                      1 copy of Dīwān-i Mīrzā by Mīrzā Khān Anṣārī, -1630 or 1631
                   </summary>
                   <msItem xml:id="Uk_Or_4228-item1">
-                     <author key="person_34115013" ref="http://viaf.org/viaf/34115013/">
-                        <persName xml:lang="ps" type="standard">Mīrzā Khān Anṣārī, -1630 or 1631</persName>
-                        <persName xml:lang="ps">میرزا خان انصاري</persName>
+                     <author>
+                        <persName xml:lang="ps" type="standard" key="viaf_34115013">Mīrzā Khān Anṣārī, -1630 or 1631</persName>
+                        <persName xml:lang="ps" key="viaf_34115013">میرزا خان انصاري</persName>
                      </author>
                      <title xml:lang="pus-Latn-x-lc" key="work_7850">Dīwān-i Mīrzā</title>
                      <title xml:lang="ps" key="work_7850">دیوان میرزا</title>
@@ -61,8 +69,7 @@
                         </bibl>
                      </listBibl>
                      <textLang mainLang="ps">Pushto</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -81,8 +88,8 @@
                </physDesc>
                <history>
                   <origin change="#fix-dates">
-                     <origDate notBefore="1689" notAfter="1690" calendar="#Hijri-qamari">1101</origDate>
-                     <origDate when="1689" calendar="#Gregorian">1689</origDate>
+                     <origDate notBefore="1689" notAfter="1690" calendar="Hijri qamari">1101</origDate>
+                     <origDate when="1689" calendar="Gregorian">1689</origDate>
                   </origin>
                </history>
                <additional>

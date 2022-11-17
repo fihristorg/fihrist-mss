@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5782">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-18</date>
+            <date calendar="Gregorian">2011-08-18</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,33 +42,38 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 15379</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343435</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239456.0x000081</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh2010102321">
                   <summary change="#add-summary">
                      1 copy of Tārīkh-i Vaṣṣāf by Vaṣṣāf al-Ḥaz̤rat, ʻAbd Allāh ibn Faz̤l Allāh, 1264 or 5-1329?
                   </summary>
                   <msItem xml:id="Uk_Or_15379-item1">
-                     <author key="person_63890560" ref="http://viaf.org/viaf/63890560/">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Vaṣṣāf al-Ḥaz̤rat, ʻAbd Allāh ibn Faz̤l Allāh, 1264 or 5-1329?</persName>
-                        <persName xml:lang="fa">وصاف الحضرة، عبد الله بن فضل الله <addName xml:lang="ar" type="nisbah">شيرازی</addName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_63890560">Vaṣṣāf al-Ḥaz̤rat, ʻAbd Allāh ibn Faz̤l Allāh, 1264 or 5-1329?</persName>
+                        <persName xml:lang="fa" key="viaf_63890560">وصاف الحضرة، عبد الله بن فضل الله <addName xml:lang="ar" type="nisbah">شيرازی</addName>
                         </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_2026" change="#ids-cleanup">Tārīkh-i Vaṣṣāf</title>
                      <title xml:lang="ar-Latn-x-lc" type="alt" key="work_2026" change="#ids-cleanup">Tajzīyat al-amṣār va tazjīyat al-aʻṣār</title>
                      <title xml:lang="fa" key="work_2026" change="#ids-cleanup">تاريخ وصاف</title>
                      <title xml:lang="ar" type="alt" key="work_2026" change="#ids-cleanup">تجزية الامصار و تزجية الاعصار</title>
-                     <note>A History of the Ilkhāns from <date calendar="#Hijri-qamari" when="1258">656</date> to <date calendar="#Hijri-qamari" when="1313">712</date>, with a continuation to <date calendar="#Hijri-qamari" when="1382">728</date>
+                     <note>A History of the Ilkhāns from <date calendar="Hijri qamari" when="1258">656</date> to <date calendar="Hijri qamari" when="1313">712</date>, with a continuation to <date calendar="Hijri qamari" when="1382">728</date>
                      </note>
                      <note>Followed by a glossary of rare words</note>
-                     <note>Copied for <persName xml:lang="fa-Latn-x-lc" type="stamdard" ref="http://viaf.org/viaf/18032259/" key="person_18032259" role="pat" change="#role-assignment">Dōst Moḥammad Khān, Amir of Afghanistan (reg. 1242-55/1826-39 and 1259-79/1842-63), <foreign xml:lang="fa">دوست محمد خان، امیر افغانستان</foreign>
+                     <note>Copied for <persName xml:lang="fa-Latn-x-lc" type="stamdard" ref="http://viaf.org/viaf/18032259/" key="viaf_18032259" role="pat" change="#role-assignment">Dōst Moḥammad Khān, Amir of Afghanistan (reg. 1242-55/1826-39 and 1259-79/1842-63), <foreign xml:lang="fa">دوست محمد خان، امیر افغانستان</foreign>
                         </persName>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Waley 1998, page 16.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -83,7 +90,7 @@
                <history>
                   <origin>
                      <origPlace>Kabul</origPlace>
-                     <origDate calendar="#Hijri-qamari" when="1748">1161, probably in error for 1261</origDate>
+                     <origDate calendar="Hijri qamari" when="1748">1161, probably in error for 1261</origDate>
                   </origin>
                </history>
                <additional>

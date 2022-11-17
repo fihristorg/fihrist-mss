@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5985">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,28 +42,33 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 5614</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342658</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237592.0x000066</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh2009116122">
                   <summary change="#add-summary">
                      1 copy of Zīj-i Muḥammad Shāhī by Jai Singh II, Maharaja of Jaipur, 1686-1743
                   </summary>
                   <msItem xml:id="Uk_Or_5614-item1">
-                     <author ref="http://viaf.org/viaf/59884548" key="person_59884548">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Jai Singh II, Maharaja of Jaipur, 1686-1743</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Rājah Jai Singh Sawā’i</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_59884548">Jai Singh II, Maharaja of Jaipur, 1686-1743</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_59884548">Rājah Jai Singh Sawā’i</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_7395">Zīj-i Muḥammad Shāhī</title>
                      <title xml:lang="fa" key="work_7395">زیج محمد شاهی</title>
                      <incipit xml:lang="fa" />
                      <explicit xml:lang="fa" defective="true" />
-                     <note>Compiled in <date calendar="#Hijri-qamari" notBefore="1727" notAfter="1729">1140-1</date>
+                     <note>Compiled in <date calendar="Hijri qamari" notBefore="1727" notAfter="1729">1140-1</date>
                      </note>
                      <listBibl>
                         <bibl>Meredith-Owens 1968, page 23.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -77,7 +84,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1850" notAfter="1851">1267</origDate>
+                     <origDate calendar="Hijri qamari" notBefore="1850" notAfter="1851">1267</origDate>
                   </origin>
                </history>
                <additional>

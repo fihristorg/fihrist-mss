@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3318">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,29 +42,34 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>IO Islamic 4622</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342059</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237333.0x00000c</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85068451 http://lccn.loc.gov/n84707913">
                   <summary change="#add-summary">
                      1 copy of Anīs al-ʻāqilīn by Mullā Mīr Qārī Gīlānī
                   </summary>
                   <msItem xml:id="Uk_IO_Islamic_4622-item1">
-                     <author key="person_102145003296261301270" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Mullā Mīr Qārī Gīlānī</persName>
-                        <persName xml:lang="fa">ملا میر قاری گیلانی</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied" key="viaf_102145003296261301270">Mullā Mīr Qārī Gīlānī</persName>
+                        <persName xml:lang="fa" key="viaf_102145003296261301270">ملا میر قاری گیلانی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8938">Anīs al-ʻāqilīn</title>
                      <title xml:lang="fa" key="work_8938">انیس العاقلین</title>
                      <incipit xml:lang="fa">سبحان من تحیر فی ذاته سواه فهم و خرد بکنه کمالش نزده راه</incipit>
                      <explicit xml:lang="ar" defective="true" />
-                     <note>A collection of ethical and religious sayings and stories completed on <date calendar="#Hijri-qamari" when="1596">23 Muḥarram 1005</date>
+                     <note>A collection of ethical and religious sayings and stories completed on <date calendar="Hijri qamari" when="1596">23 Muḥarram 1005</date>
                      </note>
                      <note>This copy may be unique</note>
                      <listBibl>
                         <bibl>For a more detailed description see Arberry 1939, page 388.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -95,7 +102,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1600" notAfter="1699">17th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1600" notAfter="1699">17th century</origDate>
                   </origin>
                </history>
                <additional>

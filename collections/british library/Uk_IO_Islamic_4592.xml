@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3295">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,15 +42,21 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>IO Islamic 4592</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342043</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163236087.0x00003a</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh2008112367 http://lccn.loc.gov/sh2006003807">
                   <summary change="#add-summary">
                      1 copy of Nuzhat al-arvāḥ by Mīr Fakhr al-Sādāt Ḥusainī, d. after 720/1320
                   </summary>
                   <msItem xml:id="Uk_IO_Islamic_4592-item1">
-                     <author key="person_121710001" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Mīr Fakhr al-Sādāt Ḥusainī, d. after 720/1320</persName>
-                        <persName xml:lang="fa">میر فخر السادات حسینی</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied" key="viaf_121710001">Mīr Fakhr al-Sādāt Ḥusainī, d. after 720/1320</persName>
+                        <persName xml:lang="fa" key="viaf_121710001">میر فخر السادات حسینی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_1465" change="#ids-cleanup">Nuzhat al-arvāḥ</title>
                      <title xml:lang="fa" key="work_1465" change="#ids-cleanup">نزهة الارواح</title>
@@ -62,8 +70,7 @@
                         <bibl>For a more detailed description see Arberry 1939, page 376.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -89,9 +96,9 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1700" notAfter="1799">18th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1700" notAfter="1799">18th century</origDate>
                   </origin>
-                  <acquisition>Apparently from the Delhi Collection: accessioned in <date calendar="#Gregorian" when="1937">1937</date>
+                  <acquisition>Apparently from the Delhi Collection: accessioned in <date calendar="Gregorian" when="1937">1937</date>
                   </acquisition>
                </history>
                <additional>

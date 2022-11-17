@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3375">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,16 +42,22 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>IO Islamic 4711</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342115</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237333.0x000044</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
                   <summary change="#add-summary">
                      1 copy of Rawz̤at al-ṣafāʼ by Mīrkhwānd, Muḥammad ibn Khāvandshāh, 1433-1498
                   </summary>
                   <msItem xml:id="Uk_IO_Islamic_4711-item1" defective="unknown" class="http://lccn.loc.gov/sh85068446 http://lccn.loc.gov/sh85148202">
-                     <author key="person_175393012" ref="http://viaf.org/viaf/175393012/">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Mīrkhwānd, Muḥammad ibn Khāvandshāh, 1433-1498</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Muḥammad ibn Khāvand Shāh Mīr Khvānd, 1433-98</persName>
-                        <persName xml:lang="fa">مير خواند، محمد بن خواندشاه</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_175393012">Mīrkhwānd, Muḥammad ibn Khāvandshāh, 1433-1498</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_175393012">Muḥammad ibn Khāvand Shāh Mīr Khvānd, 1433-98</persName>
+                        <persName xml:lang="fa" key="viaf_175393012">مير خواند، محمد بن خواندشاه</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_273" change="#ids-cleanup">Rawz̤at al-ṣafāʼ</title>
                      <title xml:lang="ar" key="work_273" change="#ids-cleanup">روضه الصفاء</title>
@@ -64,8 +72,7 @@
                         <bibl>For a more detailed description see Sims-Williams 1986, page 8.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -89,7 +96,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" when="1800">15 Feb 1800</origDate>
+                     <origDate calendar="Gregorian" when="1800">15 Feb 1800</origDate>
                   </origin>
                </history>
                <additional>

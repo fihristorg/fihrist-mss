@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3332">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,29 +42,34 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>IO Islamic 4665</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342076</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237333.0x00001d</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
                   <summary change="#add-summary">
                      1 copy of Javāhir al-asrār by Āz̲arī Isfarāyinī, Ḥamzah ibn ʻAlī, 1382-1462
                   </summary>
                   <msItem xml:id="Uk_IO_Islamic_4665-item1">
-                     <author ref="http://viaf.org/viaf/176790283/" key="person_176790283">
-                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Āz̲arī Isfarāyinī, Ḥamzah ibn ʻAlī, 1382-1462</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">ʻAlī Ḥamzah ibn ʻAlī Malik Isfārāʼinī Āz̲arī</persName>
-                        <persName xml:lang="fa">‏آذرى اسفراينى، حمزه بن على</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied" key="viaf_176790283">Āz̲arī Isfarāyinī, Ḥamzah ibn ʻAlī, 1382-1462</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_176790283">ʻAlī Ḥamzah ibn ʻAlī Malik Isfārāʼinī Āz̲arī</persName>
+                        <persName xml:lang="fa" key="viaf_176790283">‏آذرى اسفراينى، حمزه بن على</persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc" key="work_8417">Javāhir al-asrār</title>
                      <title xml:lang="ar" key="work_8417">جواهر الاسرار</title>
                      <incipit xml:lang="ar" />
                      <explicit xml:lang="ar" defective="true" />
-                     <note type="text-relations">A Sufi work on the interpretation of certain Qurʼanic verses etc., written in <date calendar="#Hijri-qamari" when="1436">840</date>
+                     <note type="text-relations">A Sufi work on the interpretation of certain Qurʼanic verses etc., written in <date calendar="Hijri qamari" when="1436">840</date>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Sims-Williams 1986, page 3.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -78,7 +85,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" when="1466">6 Zuʼl-H. 849</origDate>
+                     <origDate calendar="Hijri qamari" when="1466">6 Zuʼl-H. 849</origDate>
                   </origin>
                </history>
                <additional>

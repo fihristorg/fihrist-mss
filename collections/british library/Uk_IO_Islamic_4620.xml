@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3316">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,31 +42,36 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>IO Islamic 4620</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342057</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237333.0x00000a</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh86006866 http://lccn.loc.gov/sh95007201 http://lccn.loc.gov/sh2008104302 ">
                   <summary change="#add-summary">
                      1 copy of Yakhchālīyah by Muḥammad ʻAlī ibn Abī Ṭālib “Bahār”
                   </summary>
                   <msItem xml:id="Uk_IO_Islamic_4620-item1">
-                     <author key="person_56527153" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Muḥammad ʻAlī ibn Abī Ṭālib “Bahār”</persName>
-                        <persName xml:lang="fa">محمد علی بن ابی طالب بهار</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied" key="viaf_56527153">Muḥammad ʻAlī ibn Abī Ṭālib “Bahār”</persName>
+                        <persName xml:lang="fa" key="viaf_56527153">محمد علی بن ابی طالب بهار</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8830">Yakhchālīyah</title>
                      <title xml:lang="fa" key="work_8830">یخچالیه</title>
                      <incipit xml:lang="fa">انسب کلامی که از شهام روایح آن دماغ جان عالی نسبان صوامع قدس معٌطر گردد . . . اما بعد چون معرفت انسب عبوجب حدیث و کتاب امری مهم است الخ</incipit>
                      <explicit xml:lang="ar" defective="true" />
-                     <note>Satirical biographies and facetious tales in prose and verse written in the reign of <persName ref="http://viaf.org/viaf/70798539" key="person_70798539" xml:lang="fa-Latn-x-lc" type="alt" role="oth" change="#role-assignment">Muḥammad Shāh (d. 1264/1848)</persName>
+                     <note>Satirical biographies and facetious tales in prose and verse written in the reign of <persName ref="http://viaf.org/viaf/70798539" key="viaf_70798539" xml:lang="fa-Latn-x-lc" type="alt" role="oth" change="#role-assignment">Muḥammad Shāh (d. 1264/1848)</persName>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Arberry 1939, page 387.</bibl>
-                        <bibl>This work was lithographed in Persia in <date calendar="#Hijri-qamari" when="1873">1290</date> with a preface by <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f2854" role="oth" change="#role-assignment">Muḥammad Ḥusain "Adīb", <foreign xml:lang="fa">محمد حسین ادیب</foreign>
-                           </persName>, and without a preface in <date calendar="#Hijri-qamari" when="1881">1290</date> [For a more detailed description see Edwards 1922, paes 448-9.]. The present manuscript ends rather differently from the published text
+                        <bibl>This work was lithographed in Persia in <date calendar="Hijri qamari" when="1873">1290</date> with a preface by <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f2854" role="oth" change="#role-assignment">Muḥammad Ḥusain "Adīb", <foreign xml:lang="fa">محمد حسین ادیب</foreign>
+                           </persName>, and without a preface in <date calendar="Hijri qamari" when="1881">1290</date> [For a more detailed description see Edwards 1922, paes 448-9.]. The present manuscript ends rather differently from the published text
                         </bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -95,7 +102,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1800" notAfter="1899">19th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1800" notAfter="1899">19th century</origDate>
                   </origin>
                </history>
                <additional>

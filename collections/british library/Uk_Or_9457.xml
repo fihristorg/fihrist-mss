@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6467">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 9457</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342959</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237685.0x000100</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="#multipleWorks">
                   <summary change="#add-summary2">
@@ -47,9 +55,9 @@
                   </summary>
                   <msItem xml:id="Uk_Or_9457-item1" n="1" class="http://lccn.loc.gov/sh85129656 http://lccn.loc.gov/sh85006333 http://lccn.loc.gov/sh85129660">
                      <locus from="1v" to="65v">1v-65v ff</locus>
-                     <author ref="http://viaf.org/viaf/95223177" key="person_95223177">
-                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn al-‘Arabī</persName>
-                        <persName xml:lang="ar">ابن العربی</persName>
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="standard" key="viaf_95223177">Ibn al-‘Arabī</persName>
+                        <persName xml:lang="ar" key="viaf_95223177">ابن العربی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_5250" change="#ids-cleanup">Risālah-’i Ghaws̲īyah</title>
                      <title xml:lang="fa" key="work_5250" change="#ids-cleanup">رسالۀ غوثیه</title>
@@ -58,27 +66,25 @@
                         <bibl>For a more detailed description see Glyn Meredith-Owens: Handlist of Persian Manuscripts, 1895-1966. [London]: Trustees of the British Museum, 1968, p.92.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                   <msItem xml:id="Uk_Or_9457-item2" n="2" class="http://lccn.loc.gov/sh85129660 http://lccn.loc.gov/sh85129656">
                      <locus from="66v" to="297r">66v-297r ff</locus>
-                     <author key="person_2528171" change="#ids-cleanup">
-                        <persName xml:lang="ar-Latn-x-lc" type="supplied">Muḥammad ibn Yaḥyā Nūrbakhshī</persName>
-                        <persName xml:lang="ar">محمد ابن یحیا نوربخشی</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="ar-Latn-x-lc" type="supplied" key="viaf_2528171">Muḥammad ibn Yaḥyā Nūrbakhshī</persName>
+                        <persName xml:lang="ar" key="viaf_2528171">محمد ابن یحیا نوربخشی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8605" change="#ids-cleanup">Mafātīḥ al-I‘jāz</title>
                      <title xml:lang="fa" key="work_8605" change="#ids-cleanup">مفاتیح العجاز</title>
                      <note>A commentary on the <title xml:lang="fa-Latn-x-lc">Gulshan-i Rāz <foreign xml:lang="fa">گلشن راز</foreign>
-                        </title> of <persName xml:lang="fa-Latn-x-lc" type="standard" ref="http://viaf.org/viaf/107030610" key="person_107030610" role="ant" change="#role-assignment">Shabistarī, Maḥmūd ibn ʻAbd al-Karīm, -approximately 1320 <foreign xml:lang="fa">شبستری</foreign>
+                        </title> of <persName xml:lang="fa-Latn-x-lc" type="standard" ref="http://viaf.org/viaf/107030610" key="viaf_107030610" role="ant" change="#role-assignment">Shabistarī, Maḥmūd ibn ʻAbd al-Karīm, -approximately 1320 <foreign xml:lang="fa">شبستری</foreign>
                         </persName>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Glyn Meredith-Owens: Handlist of Persian Manuscripts, 1895-1966. [London]: Trustees of the British Museum, 1968, p.95.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -94,7 +100,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1700" notAfter="1899">18th-19th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1700" notAfter="1899">18th-19th century</origDate>
                   </origin>
                </history>
                <additional>

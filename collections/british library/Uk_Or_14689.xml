@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5706">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011.08.17</date>
+            <date calendar="Gregorian">2011.08.17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -41,17 +43,23 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 14689</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343368</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239456.0x00003e</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="#multipleWorks">
                   <summary>Two poems of the <title xml:lang="fa-Latn-x-lc">Khamsah (<foreign>خمسه</foreign>)
-                     </title> of <persName key="person_2474895" ref="http://viaf.org/viaf/2474895/" xml:lang="fa-Latn-x-lc" type="standard" role="aut" change="#role-assignment">Niẓāmī Ganjavī, 1140 or 41-1202 or 3, <foreign xml:lang="fa">نظامى گنجوى</foreign>
+                     </title> of <persName key="viaf_2474895" ref="http://viaf.org/viaf/2474895/" xml:lang="fa-Latn-x-lc" type="standard" role="aut" change="#role-assignment">Niẓāmī Ganjavī, 1140 or 41-1202 or 3, <foreign xml:lang="fa">نظامى گنجوى</foreign>
                      </persName>
                   </summary>
                   <msItem xml:id="Uk_Or_14689-item1" n="1" class="http://lccn.loc.gov/sh85100085 http://lccn.loc.gov/sh2002005579">
                      <locus from="1v" to="40v">f 1v-40v</locus>
-                     <author key="person_2474895" ref="http://viaf.org/viaf/2474895/">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard" role="aut" change="#role-assignment">Niẓāmī Ganjavī, 1140 or 41-1202 or 3</persName>
-                        <persName xml:lang="fa" role="aut" change="#role-assignment">نظامى گنجوى</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" role="aut" change="#role-assignment" key="viaf_2474895">Niẓāmī Ganjavī, 1140 or 41-1202 or 3</persName>
+                        <persName xml:lang="fa" role="aut" change="#role-assignment" key="viaf_2474895">نظامى گنجوى</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20432" change="#ids-cleanup">Laylà va Majnūn</title>
                      <title xml:lang="fa" key="work_20432" change="#ids-cleanup">لىلى و مجنون</title>
@@ -59,14 +67,13 @@
                         <bibl>For a more detailed description see Waley 1998, page 49.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                   <msItem xml:id="Uk_Or_14689-item2" n="2" defective="unknown" class="http://lccn.loc.gov/sh85100085 http://lccn.loc.gov/sh2002005579">
                      <locus from="41v" to="85r">f 41v-85r</locus>
-                     <author key="person_2474895" ref="http://viaf.org/viaf/2474895/">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard" role="aut" change="#role-assignment">Niẓāmī Ganjavī, 1140 or 41-1202 or 3</persName>
-                        <persName xml:lang="fa" role="aut" change="#role-assignment">نظامى گنجوى</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" role="aut" change="#role-assignment" key="viaf_2474895">Niẓāmī Ganjavī, 1140 or 41-1202 or 3</persName>
+                        <persName xml:lang="fa" role="aut" change="#role-assignment" key="viaf_2474895">نظامى گنجوى</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_4361">Haft paykar</title>
                      <title xml:lang="fa" key="work_4361">هفت پيكر</title>
@@ -76,8 +83,7 @@
                         <bibl>For a more detailed description see Waley 1998, page 49.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -96,7 +102,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" when="1599">1007</origDate>
+                     <origDate calendar="Hijri qamari" when="1599">1007</origDate>
                      <origPlace>Iran</origPlace>
                   </origin>
                </history>

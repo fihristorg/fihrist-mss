@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5986">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,15 +42,21 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 5628</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342659</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237592.0x000067</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh2009116580 http://lccn.loc.gov/sh91002692">
                   <summary change="#add-summary">
                      1 copy of Ash‘ār by Ṣubḥ-i Azal
                   </summary>
                   <msItem xml:id="Uk_Or_5628-item1">
-                     <author ref="http://viaf.org/viaf/266910202" key="person_266910202" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Ṣubḥ-i Azal</persName>
-                        <persName xml:lang="fa">صبح ازل</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_266910202">Ṣubḥ-i Azal</persName>
+                        <persName xml:lang="fa" key="viaf_266910202">صبح ازل</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8375">Ash‘ār</title>
                      <title xml:lang="fa" key="work_8375">اشعار</title>
@@ -59,8 +67,7 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 34.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -76,7 +83,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1899" notAfter="1899">1899</origDate>
+                     <origDate calendar="Gregorian" notBefore="1899" notAfter="1899">1899</origDate>
                   </origin>
                </history>
                <additional>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5646">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,15 +42,21 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 14144</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343324</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239456.0x000012</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
                   <summary change="#add-summary">
                      1 copy of Afsānah-hā-yi dihātī by Ghaws̲, Ghulām
                   </summary>
                   <msItem xml:id="Uk_Or_14144-item1">
-                     <author ref="http://lccn.loc.gov/n2005017862" key="person_48630959">
-                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ghaws̲, Ghulām</persName>
-                        <persName xml:lang="ar">غوث، غلام</persName>
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="standard" key="viaf_48630959">Ghaws̲, Ghulām</persName>
+                        <persName xml:lang="ar" key="viaf_48630959">غوث، غلام</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_9034">Afsānah-hā-yi dihātī</title>
                      <title xml:lang="fa" key="work_9034">افسانه های دهاتی</title>
@@ -60,8 +68,7 @@
                         <bibl>For a more detailed description see Waley 1998, page 68.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -81,7 +88,7 @@
                <history>
                   <origin>
                      <origPlace>Kabul</origPlace>
-                     <origDate calendar="#Hijri-qamari" notBefore="1977" notAfter="1978">1356</origDate>
+                     <origDate calendar="Hijri qamari" notBefore="1977" notAfter="1978">1356</origDate>
                   </origin>
                </history>
                <additional>

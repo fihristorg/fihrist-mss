@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?altova_sps ..\msdesc.sps?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3344">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,29 +42,34 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>IO Islamic 4680</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342086</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237333.0x000027</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
                   <summary change="#add-summary">
                      1 copy of Maʻārij al-nubūvah by Muʻīn al-Dīn Farāhī, d. 1501 or 2
                   </summary>
                   <msItem xml:id="Uk_IO_Islamic_4680-item1" class="http://id.loc.gov/authorities/subjects/sh91004954">
-                     <author ref="http://viaf.org/viaf/51672236/" key="person_51672236" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Muʻīn al-Dīn Farāhī, d. 1501 or 2</persName>
-                        <persName xml:lang="fa">معين الدين فراهى</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_51672236">Muʻīn al-Dīn Farāhī, d. 1501 or 2</persName>
+                        <persName xml:lang="fa" key="viaf_51672236">معين الدين فراهى</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_3240" change="#ids-cleanup">Maʻārij al-nubūvah</title>
                      <title xml:lang="fa" key="work_3240" change="#ids-cleanup">معارج النبوه</title>
                      <incipit xml:lang="ar" />
                      <explicit xml:lang="ar" defective="true" />
-                     <note>A life of <persName ref="http://viaf.org/viaf/97245226/" key="person_97245226" xml:lang="fa-Latn-x-lc" type="standard" role="subject" change="#role-assignment">Muḥammad, Prophet, d. 632</persName>
+                     <note>A life of <persName ref="http://viaf.org/viaf/97245226/" key="viaf_97245226" xml:lang="fa-Latn-x-lc" type="standard" role="subject" change="#role-assignment">Muḥammad, Prophet, d. 632</persName>
                      </note>
                      <note>Illuminated opening</note>
                      <listBibl>
                         <bibl>For a more detailed description see Sims-Williams 1986, page 5.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note />
                   </msItem>
                </msContents>
                <physDesc>
@@ -81,7 +88,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" when="1634">1044</origDate>
+                     <origDate calendar="Hijri qamari" when="1634">1044</origDate>
                   </origin>
                </history>
                <additional>
