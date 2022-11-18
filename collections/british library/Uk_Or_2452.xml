@@ -1,28 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?altova_sps ..\msdesc.sps?>
-
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5896">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Hebrew Manuscripts Catalogue</title>
-            <principal>Ilana Tahan</principal>
+            <title>Or 2452</title>
             <funder>BL</funder>
-            <sponsor>The Polonsky Foundation Catalogue of Digitised Hebrew Manuscripts</sponsor>
-            <author>
-               <orgName key="he">Hebrew Project</orgName>
-            </author>
+            <principal>Ursula Sims-Williams</principal>
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <pubPlace />
-            <date calendar="Gregorian">2013-11-08</date>
-            <idno>Uk</idno>
-            <availability status="free">
-               <p />
-            </availability>
+            <date calendar="#Gregorian">2011-08-17</date>
+            <pubPlace>
+               <address>
+                  <addrLine>Asian and African Studies</addrLine>
+                  <addrLine>British Library</addrLine>
+                  <street>96 Euston Road</street>
+                  <settlement>London</settlement>
+                  <postCode>NW1 2DB</postCode>
+                  <addrLine>
+                     <ref target="http://www.bl.uk">British Library</ref>
+                  </addrLine>
+                  <addrLine>
+                     <email>apac-enquiries@bl.uk</email>
+                  </addrLine>
+               </address>
+            </pubPlace>
+            <idno>BL</idno>
+            <idno type="msID">Uk_Or_2452</idno>
+            <idno type="catalogue">Fihrist</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc xml:id="Uk_Or_2452" xml:lang="en">
@@ -31,128 +38,100 @@
                   <settlement>London</settlement>
                   <institution>British Library</institution>
                   <repository>Oriental Manuscripts</repository>
-                  <collection>Hebrew Manuscripts Digitisation Project</collection>
+                  <collection>Oriental Manuscripts</collection>
                   <idno>Or 2452</idno>
-                  <altIdentifier type="IAMS-ID">
-                     <idno>032-003375132</idno>
-                  </altIdentifier>
-                  <altIdentifier type="MDARK">
-                     <idno>ark:/81055/vdc_100043045661.0x00001b</idno>
-                  </altIdentifier>
                </msIdentifier>
-               <head>Book of Psalms</head>
-               <msContents class="lccn.loc.gov/n79056804">
-                  <summary>The Psalms, not punctuated.</summary>
-                  <textLang mainLang="jpr-Hebr">Judeo-Persian</textLang>
-                  <msItem n="0" class="lccn.loc.gov/n79056804">
-                     <locus from="1r" to="54v" />
-                     <title xml:lang="he-Latn-x-lc">Tehilim</title>
-                     <title xml:lang="he">תהילים</title>
-                     <msItem>
-                        <locus from="1r" to="7v" />
-                        <title xml:lang="en">A grammatical introduction</title>
-                        <note>
-                           <p>Concerns the servile letters, vowels and accents.</p>
-                           <p>Missing about half of the text.</p>
-                        </note>
-                     </msItem>
-                     <msItem>
-                        <locus from="7v" to="54v" />
-                        <title xml:lang="en">Psalms</title>
-                        <note>
-                           <p>Psalms in Persian translation by <name type="person" role="author">Bābā ibn Nuriel</name> of Isfahan.
-                           </p>
-                           <p>Preserves the usual division into 5 parts.</p>
-                           <p>Breaks off near the end of Ps. 132.</p>
-                        </note>
-                        <author>
-                           <persName xml:lang="he-Latn-x-lc">Bābā ibn Nuriel</persName>
-                        </author>
-                     </msItem>
+               <msContents class="http://lccn.loc.gov/sh85070893 http://lccn.loc.gov/sh85056259">
+                  <summary change="#add-summary">
+                     1 copy of Tafsīr Tehilim by Bābā ben Nūri’ēl
+                  </summary>
+                  <msItem xml:id="Uk_Or_2452-item1">
+                     <author key="person_f766">
+                        <persName xml:lang="jpr-Latn" type="supplied">Bābā ben Nūri’ēl</persName>
+                     </author>
+                     <title xml:lang="jpr-Latn" key="work_9225">Tafsīr Tehilim</title>
+                     <note>A Judaeo-Persian translation of the Psalms, made at <name type="place" key="subject_n82083647" xml:lang="fa-Latn-x-lc">Iṣfahān <foreign xml:lang="fa">اصفهان</foreign>
+                        </name> ca. <date calendar="#Gregorian" notBefore="1740" notAfter="1741">1740</date> under the orders of <persName xml:lang="fa-Latn-x-lc" type="supplied" ref="http://viaf.org/viaf/16017634" key="person_16017634" role="pat" change="#role-assignment">Nādir Shāh <foreign xml:lang="fa">نادر شاه</foreign>
+                        </persName> and the general supervision of <persName xml:lang="jpr-Latn" type="supplied" key="person_f3051" role="trl" change="#role-assignment">Mīrzā Maḥtī ‘Aqīlī <foreign xml:lang="fa">میرزا محتی عقیلی</foreign>
+                        </persName>, preceded by a grammatical introduction
+                     </note>
+                     <note>Imperfect</note>
+                     <note>A large part of the introduction is missing and the translation breaks off near the end of Psalm cxxxii</note>
+                     <note>For a complete copy of the same translation see Or. 4729</note>
+                     <listBibl>
+                        <bibl>For a more detailed description see Meredith-Owens 1968, page 38.</bibl>
+                     </listBibl>
+                     <textLang mainLang="jpr">Judaeo-Persian</textLang>
+                     <note>
+                  </note>
                   </msItem>
                </msContents>
                <physDesc>
-                  <p>Paper codex of 18th-19th century.</p>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <support />
-                        <extent>54 folios<dimensions unit="mm" type="leaf">
-                              <height>230</height>
-                              <width>155</width>
-                           </dimensions>
-                           <dimensions type="written" unit="mm">
-                              <height>170</height>
-                              <width>147</width>
+                        <extent>54 ff <dimensions type="leaf" unit="cm">
+                              <height>22.3</height>
+                              <width>15</width>
                            </dimensions>
                         </extent>
-                        <foliation>
-                           <p>54 folios (+ 1 unfoliated paper flyleaf at the beginning and at the end).</p>
-                        </foliation>
-                        <condition>
-                           <p>Several pages water-damaged or mutilated.</p>
-                        </condition>
                      </supportDesc>
-                     <layoutDesc>
-                        <layout columns="1" ruledLines="25 26" writtenLines="25 26">
-                           <p>Uniform layout.</p>
-                           <p>Written on oriental paper.</p>
-                           <p>Catchwords on every verso.</p>
-                        </layout>
-                     </layoutDesc>
                   </objectDesc>
-                  <handDesc hands="1">
-                     <summary>Persian cursive script of 18th to 19th century.</summary>
-                     <handNote script="Hebrew" scope="major" />
-                  </handDesc>
-                  <bindingDesc>
-                     <binding>
-                        <p>BM in-house.</p>
-                     </binding>
-                  </bindingDesc>
                </physDesc>
                <history>
-                  <origin notBefore="1700" notAfter="1849">
-                     <date>18th century - 1st half of the 19th century</date>
-                     <origPlace>Iran</origPlace>
+                  <origin>
+                     <origDate calendar="#Gregorian" notBefore="1700" notAfter="1899">18th-19th century</origDate>
                   </origin>
-                  <provenance />
-                  <acquisition>
-                     <date>1882-06-24</date>
-                     <p>
-                        <name type="person" role="owner">Adolf Neubauer</name> (b. 1832, d. 1907), Hebrew scholar born in Hungary: purchased by the British Museum from him on <date calendar="Gregorian">24 June 1882</date>: inscribed, [55v].
-                     </p>
-                  </acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>Manuscript description based on Margoliouth, G.: Catalogue of the Hebrew and Samaritan Manuscripts in the British Museum, London 1965.</source>
+                        <source>Manuscript description based on G. M. Meredith-Owens: Handlist of Persian manuscripts 1895-1966. London, 1968, with additional enhancements.</source>
                      </recordHist>
-                     <availability status="free">
-                        <p />
+                     <availability status="restricted">
+                        <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.bl.uk/reshelp/inrrooms/stp/register/stpregister.html/">British Library, Registering for a Reader Pass</ref>. Contact <email>apac-enquiries@bl.uk</email> for further information on the availability of this manuscript. For information on catalogues and ordering manuscripts see <ref target="https://www.bl.uk/help/find-persian-manuscripts">Finding and ordering Persian manuscripts in the British Library</ref>.
+                        </p>
                      </availability>
-                     <note />
                   </adminInfo>
-                  <surrogates>
-                     <bibl>
-                        <ref type="digital" target="http://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Or_2452" />
-                     </bibl>
-                  </surrogates>
-                  <listBibl>
-                     <bibl>George Margoliouth, Catalogue of the Hebrew and Samaritan Manuscripts in the British Museum, 4 vols (London: British Museum, 1899-1935; vols I-III repr. 1965); IV, Introduction, Indexes, ed. by Jacob Leveen (London: British Museum, 1977), no. 160.</bibl>
-                  </listBibl>
                </additional>
             </msDesc>
          </sourceDesc>
       </fileDesc>
-      <profileDesc />
-      <revisionDesc status="submitted">
-         <change when="2013-11-08">Agata Paluch</change>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="LCSH">
+               <bibl>
+                  <ref target="http://id.loc.gov/authorities/">Library of Congress Subject Headings</ref>
+               </bibl>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change when="2022-04-21">
+            <persName>Julian Cook</persName>
+              850 BL Persian mss prepared for initial publication in FIHRIST (plus 18 replacements)
+         </change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         </change>
+         <change when="2018-06-08">
+            <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
+         </change>
+         <change when="2018-03-15" xml:id="add-summary">
+            <persName>Andrew Morrison</persName> Added summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl">add-summaries.xsl</ref>
+         </change>
+         <change when="2017-11-07">
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
+         </change>
+         <change when="2012-11-13">
+            <persName>Nur Sobers-Khan</persName>
+         </change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
-         <div />
+         <p>
+            <!--Body paragraph provided for validation and future transcription-->
+         </p>
       </body>
    </text>
 </TEI>
