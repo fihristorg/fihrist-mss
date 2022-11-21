@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5927">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -50,7 +52,7 @@
                         <persName xml:lang="jpr-Latn" type="supplied">Khvājah Bukhārā’ī</persName>
                      </author>
                      <title xml:lang="jpr-Latn" key="work_8818">Dāniyālnāmah</title>
-                     <note>A Judaeo-Persian <title xml:lang="en" type="desc">Apocalypse of Daniel</title> in mas̲navī verse in A.GR. 1918, AD <date calendar="#Gregorian" notBefore="1607" notAfter="1608">1607</date> and edited by <persName xml:lang="jpr-Latn" type="standard" ref="http://viaf.org/viaf/76246240" key="person_76246240" role="edt" change="#role-assignment">Benjamin ben Mishael, known as Amīnā</persName> in A. GR. 2016, AD <date calendar="#Gregorian" notBefore="1705" notAfter="1706">1705</date>
+                     <note>A Judaeo-Persian <title xml:lang="en" type="desc">Apocalypse of Daniel</title> in mas̲navī verse in A.GR. 1918, AD <date calendar="Gregorian" notBefore="1607" notAfter="1608">1607</date> and edited by <persName xml:lang="jpr-Latn" type="standard" ref="http://viaf.org/viaf/76246240" key="person_76246240" role="edt" change="#role-assignment">Benjamin ben Mishael, known as Amīnā</persName> in A. GR. 2016, AD <date calendar="Gregorian" notBefore="1705" notAfter="1706">1705</date>
                      </note>
                      <note>See Jewish Studies in Memory of G. A. Kohut, New York, 1935, pp. 423 ff</note>
                      <listBibl>
@@ -74,8 +76,8 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1816" notAfter="1816">1816</origDate>
-                     <origDate calendar="#AM" notBefore="1816" notAfter="1816">5576</origDate>
+                     <origDate calendar="Gregorian" notBefore="1816" notAfter="1816">1816</origDate>
+                     <origDate calendar="AM" notBefore="1816" notAfter="1816">5576</origDate>
                   </origin>
                </history>
                <additional>

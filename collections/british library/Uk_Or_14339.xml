@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5672">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -53,8 +55,8 @@
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_3265" change="#ids-cleanup">Naqd al-nuṣūṣ fī sharḥ Naqsh al-fuṣūṣ</title>
                      <title xml:lang="fa" key="work_3265" change="#ids-cleanup">نقد النصوص في شرح نقش الفصوص</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <note type="text-relations">Commentary by <persName xml:lang="fa-Latn-x-lc" type="standard" ref="http://lccn.loc.gov/n79068673" key="person_90042997" role="aut" change="#role-assignment">Jāmī, 1414-1492 <foreign xml:lang="fa">جامى، عبد الرحمن</foreign>
                         </persName> on <title xml:lang="ar-Latn-x-lc">Naqsh al-Fuṣūṣ, <foreign xml:lang="ar">نقش الفصوص</foreign>
                         </title>, a summary in Arabic by <persName xml:lang="fa-Latn-x-lc" ref="http://lccn.loc.gov/n50082069" type="standard" key="person_95223177" role="ant" change="#role-assignment">ʻIbn al-ʻArabī, 1165-1240, <foreign xml:lang="fa">ابن عربي، محيى الدين</foreign>
@@ -79,8 +81,8 @@
                      </editor>
                      <title xml:lang="fa-Latn-x-lc" key="work_20353" change="#ids-cleanup">Ashiʻʻat al-Lamaʻāt</title>
                      <title xml:lang="fa" key="work_20353" change="#ids-cleanup">اشعة اللمعات</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <note type="text-relations">Commentary on <title xml:lang="ar-Latn-x-lc">Lamaʻāt (<foreign xml:lang="ar">لمعات</foreign>)
                         </title> of <persName key="person_18170293" ref="http://viaf.org/viaf/18170293/" xml:lang="fa-Latn-x-lc" type="standard" role="ant" change="#role-assignment">ʻIrāqī, Fakhr al-Dīn Ibrāhīm, d. 1289?, <foreign xml:lang="fa">عراقى، فخر الدىن</foreign>
                         </persName>
@@ -108,7 +110,7 @@
                <history>
                   <origin>
                      <origPlace>Iran or Asia Minor</origPlace>
-                     <origDate calendar="#Hijri-qamari" notBefore="1400" notAfter="1599">9th or 10th century<!-- Please review date attributes, see https://git.io/fihrist-dates -->
+                     <origDate calendar="Hijri-qamari" notBefore="1400" notAfter="1599">9th or 10th century<!-- Please review date attributes, see https://git.io/fihrist-dates -->
                      </origDate>
                   </origin>
                </history>

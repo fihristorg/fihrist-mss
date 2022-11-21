@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3273">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -54,11 +56,11 @@
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8180">Tafsīr al-Sūrābādī</title>
                      <title xml:lang="fa" key="work_8180">تفسير سورآبادى</title>
-                     <incipit xml:lang="ar" />
-                     <explicit xml:lang="ar" defective="true" />
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>
                         <p>The second volume of the commentary on the Qurʼān, containing Sūrahs 7-14.37 (presumably this volume when complete contained the whole of the second quarter, i.e. Sūrahs 7-18</p>
-                        <p>Together with <ref type="no" target="Uk">I.O. Islamic 3838 (British Library).</ref> form the first two volumes of a copy divided into quarters and written, at any rate partly, in <date calendar="#Hijri-qamari" when="1330">730</date>
+                        <p>Together with <ref type="no" target="Uk">I.O. Islamic 3838 (British Library).</ref> form the first two volumes of a copy divided into quarters and written, at any rate partly, in <date calendar="Hijri-qamari" when="1330">730</date>
                         </p>
                         <p>This volume is incomplete</p>
                      </note>

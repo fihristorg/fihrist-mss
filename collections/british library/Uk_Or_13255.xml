@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5555">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011.08.17</date>
+            <date calendar="Gregorian">2011.08.17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -52,8 +54,8 @@
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8595">Risālah-ʼi Kursīnāmah-ʼi Mahāvutgarī</title>
                      <title xml:lang="fa" key="work_8595">رسالۀ کرسینامۀ مهاوتگری</title>
-                     <incipit xml:lang="ar" />
-                     <explicit xml:lang="ar" defective="true" />
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>Lore concerning elephants and mahouts, in the form of questions and answers</note>
                      <note>The text is only attributed to the author, who according to the text was a mahout during the time of the Prophet <persName ref="http://lccn.loc.gov/n82052547" type="standard" key="person_11187922" role="oth" change="#role-assignment #ids-cleanup">Noah (Biblical figure)</persName>
                      </note>
@@ -72,8 +74,8 @@
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8596">Risālah-ʼi muʻāljāt-i afyāl</title>
                      <title xml:lang="fa" key="work_8596">رسالۀ معالجات أفیال</title>
-                     <incipit xml:lang="ar" />
-                     <explicit xml:lang="ar" defective="true" />
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>Remedies for various aliments and diseases in elephants</note>
                      <listBibl>
                         <bibl>For a more detailed description see Waley 1998, page 33.</bibl>
@@ -89,8 +91,8 @@
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8597">Fihrist</title>
                      <title xml:lang="fa" key="work_8597">فهرست</title>
-                     <incipit xml:lang="ar" />
-                     <explicit xml:lang="ar" defective="true" />
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>Arabic-Persian glossary of veterinary terms, intended as an index for the whole MS</note>
                      <note>Illustrated</note>
                      <listBibl>
@@ -117,7 +119,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1700" notAfter="1899">12th or 13th cenury</origDate>
+                     <origDate calendar="Hijri-qamari" notBefore="1700" notAfter="1899">12th or 13th cenury</origDate>
                      <origPlace>Kashmir</origPlace>
                   </origin>
                </history>
@@ -143,23 +145,23 @@
                </bibl>
             </taxonomy>
             <taxonomy xml:id="local_class">
-               <category xml:id="commentary" />
-               <category xml:id="supercommentary" />
-               <category xml:id="translation" />
+               <category xml:id="commentary"/>
+               <category xml:id="supercommentary"/>
+               <category xml:id="translation"/>
                <category xml:id="multipleWorks">
                   <catDesc>multiple works</catDesc>
                </category>
-               <category xml:id="abridgement" />
-               <category xml:id="papers" />
-               <category xml:id="documents" />
-               <category xml:id="extract" />
-               <category xml:id="gloss" />
-               <category xml:id="selection" />
-               <category xml:id="diagrams" />
-               <category xml:id="notes" />
-               <category xml:id="letters" />
-               <category xml:id="palimpsest" />
-               <category xml:id="supplement" />
+               <category xml:id="abridgement"/>
+               <category xml:id="papers"/>
+               <category xml:id="documents"/>
+               <category xml:id="extract"/>
+               <category xml:id="gloss"/>
+               <category xml:id="selection"/>
+               <category xml:id="diagrams"/>
+               <category xml:id="notes"/>
+               <category xml:id="letters"/>
+               <category xml:id="palimpsest"/>
+               <category xml:id="supplement"/>
             </taxonomy>
          </classDecl>
       </encodingDesc>

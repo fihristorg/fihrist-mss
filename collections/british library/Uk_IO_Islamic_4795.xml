@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3515">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -53,9 +55,9 @@
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20352" change="#ids-cleanup">Ashiʻʻat al-lamaʻāt fi Sharḥ al-Mishkāt</title>
                      <title xml:lang="fa" key="work_20352" change="#ids-cleanup">اشعة اللمعات فی مشکات</title>
-                     <incipit xml:lang="ar" />
-                     <explicit xml:lang="ar" defective="true" />
-                     <note type="text-relations">Vol. 3 of a Persian translation and commentary completed in <date calendar="#Gregorian" when="1616">1616</date>, of <title xml:lang="fa-Latn-x-lc">Mishkāt al-maṣābīḥ (<foreign xml:lang="fa">مشکات المصابیح</foreign>)
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note type="text-relations">Vol. 3 of a Persian translation and commentary completed in <date calendar="Gregorian" when="1616">1616</date>, of <title xml:lang="fa-Latn-x-lc">Mishkāt al-maṣābīḥ (<foreign xml:lang="fa">مشکات المصابیح</foreign>)
                         </title> by <persName ref="http://viaf.org/viaf/90082387" xml:lang="fa-Latn-x-lc" key="person_90082387" type="alt" role="ant" change="#role-assignment">Muḥammad ibn ʻAbd Allāh al-Khaṭīb al-Tabrizi, <foreign xml:lang="ar">محمد بن عبد الله خطيب التبريزي</foreign>
                         </persName>
                      </note>
@@ -85,12 +87,12 @@
                      </handNote>
                   </handDesc>
                   <decoDesc>
-                     <decoNote type="other" />
+                     <decoNote type="other"/>
                   </decoDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" when="1697">29 Zuʼl-Q. 1108</origDate>
+                     <origDate calendar="Hijri-qamari" when="1697">29 Zuʼl-Q. 1108</origDate>
                   </origin>
                </history>
                <additional>
