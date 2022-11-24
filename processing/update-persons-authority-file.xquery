@@ -134,7 +134,7 @@ processing-instruction xml-model {'href="authority-schematron.sch" type="applica
     let $viafpeoplefrompreviousrun := $additions[matches(@xml:id, 'person_\d+')]
     
     let $newlocalpeople := (
-        for $p in $collection/tei:TEI[@xml:id]//(tei:author|tei:editor|tei:persName[not(ancestor::tei:author/@key or ancestor::tei:editor/@key)]|tei:name[tei:persName])[@key = ''  and string-length(normalize-space(string())) gt 1]
+        for $p in $collection/tei:TEI[@xml:id]//(tei:author|tei:editor|tei:persName[not(ancestor::tei:author/@key or ancestor::tei:editor/@key)]|tei:name[tei:persName])[@key and (@key = '' or not(some $k in tokenize(@key, '\s+') satisfies (starts-with($k, 'person_') or starts-with($k, 'viaf_')))) and string-length(normalize-space(string())) gt 1]
             let $names := 
                 if ($p/tei:persName) then
                     for $n in $p/tei:persName

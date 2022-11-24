@@ -52,15 +52,20 @@
     <!-- When the persName (or name) has a @key, and is not inside something else with a @key, display it as a link. This is standard 
          behaviour, but this template has been added to treat the BL's viaf_1234 key values as if they were person_1234. The same change 
          has also been made to the msItem/author and msItem/editor templates below as well. -->
-    <xsl:template match="(persName|name)[@key and not(ancestor::*/@key)]">
+    <xsl:template match="(persName|name)[@key]">
         <span>
             <xsl:attribute name="class">
                 <xsl:value-of select="string-join((name(), @role), ' ')"/>
             </xsl:attribute>
-            <xsl:variable name="key" select="tokenize(@key, '\s+')[string-length(.) gt 0][1]"/>
+            <xsl:variable name="keys" select="tokenize(@key, '\s+')[string-length(.) gt 0]"/>
             <xsl:choose>
-                <xsl:when test="starts-with($key, 'person_') or starts-with($key, 'viaf_')">
+                <xsl:when test="ancestor::author/@key or ancestor::editor/@key">
+                    <xsl:apply-templates/>
+                </xsl:when>
+                <xsl:when test="some $key in $keys satisfies (starts-with($key, 'person_') or starts-with($key, 'viaf_'))">
+                    <xsl:variable name="key" select="$keys[starts-with(., 'person_') or starts-with(., 'viaf_')][1]"/>
                     <a>
+                        <xsl:if test="ancestor::author"><xsl:attribute name="class">author</xsl:attribute></xsl:if>
                         <xsl:attribute name="href">
                             <xsl:value-of select="$website-url"/>
                             <xsl:text>/catalog/</xsl:text>
@@ -69,8 +74,10 @@
                         <xsl:apply-templates/>
                     </a>
                 </xsl:when>
-                <xsl:when test="self::name and starts-with($key, 'subject_')">
+                <xsl:when test="self::name and (some $key in $keys satisfies starts-with($key, 'subject_'))">
+                    <xsl:variable name="key" select="$keys[starts-with(., 'subject_')][1]"/>
                     <a>
+                        <xsl:if test="ancestor::author"><xsl:attribute name="class">author</xsl:attribute></xsl:if>
                         <xsl:attribute name="href">
                             <xsl:value-of select="$website-url"/>
                             <xsl:text>/catalog/</xsl:text>
@@ -99,9 +106,10 @@
                 <xsl:value-of select="$rolelabel"/>
                 <xsl:text>: </xsl:text>
             </span>
-            <xsl:variable name="key" select="tokenize(@key, '\s+')[string-length(.) gt 0][1]"/>
+            <xsl:variable name="keys" select="tokenize(@key, '\s+')[string-length(.) gt 0]"/>
             <xsl:choose>
-                <xsl:when test="starts-with($key, 'person_') or starts-with($key, 'viaf_')">
+                <xsl:when test="some $key in $keys satisfies (starts-with($key, 'person_') or starts-with($key, 'viaf_'))">
+                    <xsl:variable name="key" select="$keys[starts-with(., 'person_') or starts-with(., 'viaf_')][1]"/>
                     <a class="author">
                         <xsl:attribute name="href">
                             <xsl:value-of select="$website-url"/>
@@ -124,8 +132,10 @@
                 <xsl:copy-of select="bod:standardText('Title:')"/>
                 <xsl:text> </xsl:text>
             </span>
+            <xsl:variable name="keys" select="tokenize(@key, '\s+')[string-length(.) gt 0]"/>
             <xsl:choose>
-                <xsl:when test="@key and not(@key='')">
+                <xsl:when test="some $key in $keys satisfies starts-with($key, 'work_')">
+                    <xsl:variable name="key" select="$keys[starts-with(., 'work_')][1]"/>
                     <a>
                         <xsl:if test="not(@type = 'desc')">
                             <xsl:attribute name="class" select="'italic'"/>
@@ -133,7 +143,7 @@
                         <xsl:attribute name="href">
                             <xsl:value-of select="$website-url"/>
                             <xsl:text>/catalog/</xsl:text>
-                            <xsl:value-of select="tokenize(@key, ' ')[string-length() gt 0][1]"/>
+                            <xsl:value-of select="$key"/>
                         </xsl:attribute>
                         <xsl:copy-of select="bod:direction(.)"/>
                         <xsl:apply-templates/>
@@ -159,9 +169,10 @@
                 <xsl:value-of select="$rolelabel"/>
                 <xsl:text>: </xsl:text>
             </span>
-            <xsl:variable name="key" select="tokenize(@key, '\s+')[string-length(.) gt 0][1]"/>
+            <xsl:variable name="keys" select="tokenize(@key, '\s+')[string-length(.) gt 0]"/>
             <xsl:choose>
-                <xsl:when test="starts-with($key, 'person_') or starts-with($key, 'viaf_')">
+                <xsl:when test="some $key in $keys satisfies (starts-with($key, 'person_') or starts-with($key, 'viaf_'))">
+                    <xsl:variable name="key" select="$keys[starts-with(., 'person_') or starts-with(., 'viaf_')][1]"/>
                     <a>
                         <xsl:attribute name="href">
                             <xsl:value-of select="$website-url"/>
