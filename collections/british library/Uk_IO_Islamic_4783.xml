@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3503">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011.08.17</date>
+            <date calendar="Gregorian">2011.08.17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -41,8 +43,14 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>IO Islamic 4783</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342242</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237514.0x000015</idno>
+                  </altIdentifier>
                </msIdentifier>
-               <head type="desc" />
+               <head type="desc"/>
                <msContents class="#multipleWorks">
                   <summary>Miscellaneous papers comprising:</summary>
                </msContents>
@@ -54,12 +62,12 @@
                      </supportDesc>
                   </objectDesc>
                   <decoDesc>
-                     <decoNote type="other" />
+                     <decoNote type="other"/>
                   </decoDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1800" notAfter="1899">19th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1800" notAfter="1899">19th century</origDate>
                   </origin>
                </history>
                <additional>
@@ -85,16 +93,15 @@
                            <persName xml:lang="en" type="desc">Unknwon</persName>
                         </author>
                         <title xml:lang="en" type="desc" key="work_9316">A scrapbook</title>
-                        <incipit xml:lang="fa" />
-                        <explicit xml:lang="ar" defective="true" />
+                        <incipit xml:lang="fa"/>
+                        <explicit xml:lang="ar" defective="true"/>
                         <note>Including copy of the Persian <title xml:lang="fa-Latn-x-lc">Dīvān of Girāmī (1856-1927)</title> (<locus from="23" to="51">ff. 23-51</locus>), made from a copy in the <name type="place" ref="http://lccn.loc.gov/n50000519" key="subject_n50000519" xml:lang="en">Osmania University</name>, Hyderabad
                         </note>
                         <listBibl>
                            <bibl>For a more detailed description see Sims-Williams 1986, page 20.</bibl>
                         </listBibl>
                         <textLang mainLang="fa" otherLangs="ur">Persian and Urdu</textLang>
-                        <note>
-                     </note>
+                        <note/>
                      </msItem>
                   </msContents>
                </msPart>
@@ -111,18 +118,17 @@
                            <persName xml:lang="fa">یاسین علی خان</persName>
                         </author>
                         <title xml:lang="en" type="desc" key="work_20365" change="#ids-cleanup">Miscellaneous notes</title>
-                        <incipit xml:lang="fa" />
-                        <explicit xml:lang="ar" defective="true" />
+                        <incipit xml:lang="fa"/>
+                        <explicit xml:lang="ar" defective="true"/>
                         <note>Including copies of 8 letters to <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f2368" role="aut" change="#role-assignment">Mukharram al-Dawlah, <foreign>مخرم الدوله</foreign>
-                           </persName> written by <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_59953547" role="aut" change="#role-assignment #ids-cleanup">Nawab Sir Sālār Jang, 1823-83, <foreign xml:lang="fa">سالار جنگ</foreign>
-                           </persName> during his first visit to London and Europe in <date calendar="#Gregorian" when="1876">1876</date>
+                           </persName> written by <persName xml:lang="fa-Latn-x-lc" type="supplied" key="viaf_59953547" role="aut" change="#role-assignment #ids-cleanup">Nawab Sir Sālār Jang, 1823-83, <foreign xml:lang="fa">سالار جنگ</foreign>
+                           </persName> during his first visit to London and Europe in <date calendar="Gregorian" when="1876">1876</date>
                         </note>
                         <listBibl>
                            <bibl>For a more detailed description see Sims-Williams 1986, page 20-21.</bibl>
                         </listBibl>
                         <textLang mainLang="fa" otherLangs="ur">Persian and Urdu</textLang>
-                        <note>
-                     </note>
+                        <note/>
                      </msItem>
                   </msContents>
                </msPart>
@@ -137,23 +143,23 @@
                </bibl>
             </taxonomy>
             <taxonomy xml:id="local_class">
-               <category xml:id="commentary" />
-               <category xml:id="supercommentary" />
-               <category xml:id="translation" />
+               <category xml:id="commentary"/>
+               <category xml:id="supercommentary"/>
+               <category xml:id="translation"/>
                <category xml:id="multipleWorks">
                   <catDesc>multiple works</catDesc>
                </category>
-               <category xml:id="abridgement" />
-               <category xml:id="papers" />
-               <category xml:id="documents" />
-               <category xml:id="extract" />
-               <category xml:id="gloss" />
-               <category xml:id="selection" />
-               <category xml:id="diagrams" />
-               <category xml:id="notes" />
-               <category xml:id="letters" />
-               <category xml:id="palimpsest" />
-               <category xml:id="supplement" />
+               <category xml:id="abridgement"/>
+               <category xml:id="papers"/>
+               <category xml:id="documents"/>
+               <category xml:id="extract"/>
+               <category xml:id="gloss"/>
+               <category xml:id="selection"/>
+               <category xml:id="diagrams"/>
+               <category xml:id="notes"/>
+               <category xml:id="letters"/>
+               <category xml:id="palimpsest"/>
+               <category xml:id="supplement"/>
             </taxonomy>
          </classDecl>
       </encodingDesc>

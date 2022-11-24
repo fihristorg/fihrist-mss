@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3511">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,28 +42,33 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>IO Islamic 4791</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342250</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237514.0x00001d</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/n88028497 http://lccn.loc.gov/n80025804">
                   <summary change="#add-summary">
                      1 copy of Document by Vālājāh
                   </summary>
                   <msItem xml:id="Uk_IO_Islamic_4791-item1">
-                     <author key="person_24160324" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Vālājāh</persName>
-                        <persName xml:lang="en" type="alt">Nawad of Carnatic 1749-95</persName>
-                        <persName xml:lang="fa">والاجاه</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied" key="ark:/81055/vdc_100164656505.0x000001 viaf_24160324">Vālājāh</persName>
+                        <persName xml:lang="en" type="alt" key="ark:/81055/vdc_100164656505.0x000001 viaf_24160324">Nawad of Carnatic 1749-95</persName>
+                        <persName xml:lang="fa" key="viaf_24160324">والاجاه</persName>
                      </author>
                      <title xml:lang="en" type="desc" key="work_5472">Document</title>
-                     <incipit xml:lang="ar" />
-                     <explicit xml:lang="ar" defective="true" />
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>Document granting a commission to <persName xml:lang="en" type="supplied" key="person_f1139" role="rcp" change="#role-assignment">George Buck</persName> as Colonel of Infantry in his service
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Sims-Williams 1986, page 21.</bibl>
                      </listBibl>
                      <textLang mainLang="fa" otherLangs="en">Persian and English</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -75,12 +82,12 @@
                      </supportDesc>
                   </objectDesc>
                   <decoDesc>
-                     <decoNote type="other" />
+                     <decoNote type="other"/>
                   </decoDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" when="1779">3 June 1779</origDate>
+                     <origDate calendar="Gregorian" when="1779">3 June 1779</origDate>
                   </origin>
                </history>
                <additional>

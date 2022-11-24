@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5620">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 13953</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343305</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239034.0x000115</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85144057 http://lccn.loc.gov/sh85100070 http://lccn.loc.gov/no99011164">
                   <summary change="#add-summary">
@@ -53,14 +61,13 @@
                      <title xml:lang="fa" key="work_9193">لغت السنۀ فرانسه اینگلیسی نمسا فرسی</title>
                      <title xml:lang="fr" type="desc" key="work_9193">Dictionaire des langues Française, Anglaise, Allemande, Persan (sic)</title>
                      <note>A French-English-German-Persian vocabulary, arranged by subject</note>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <listBibl>
                         <bibl>For a more detailed description see Waley 1998, page 37.</bibl>
                      </listBibl>
                      <textLang mainLang="fa" otherLangs="en fr de">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -74,13 +81,13 @@
                      </supportDesc>
                   </objectDesc>
                   <decoDesc>
-                     <decoNote type="illustration" />
+                     <decoNote type="illustration"/>
                   </decoDesc>
                </physDesc>
                <history>
                   <origin>
                      <origPlace>Iran, Probably Tehran</origPlace>
-                     <origDate calendar="#Hijri-qamari" notBefore="1895" notAfter="1896">1312</origDate>
+                     <origDate calendar="Hijri-qamari" notBefore="1895" notAfter="1896">1312</origDate>
                   </origin>
                </history>
                <additional>

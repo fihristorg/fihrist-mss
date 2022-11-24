@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5797">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -41,7 +43,13 @@
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 15759</idno>
                   <altIdentifier type="other">
-                     <idno />
+                     <idno/>
+                  </altIdentifier>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343470</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239456.0x0000a4</idno>
                   </altIdentifier>
                </msIdentifier>
                <head>Risalah dar hay'at</head>
@@ -52,18 +60,18 @@
                      <title xml:lang="per" key="work_4319">رساله در هيئة</title>
                      <note>
                         <p>An untitled treatise on the basics of astronomy and geometry comprising a muqaddimah, two maqālahs, and (unannounced in the author’s preface) a khātimah. </p>
-                        <p>This work is not identifiable as one in published catalogues. Its plan and incipit, however, resemble those of the treatise by <persName xml:lang="per-Latn-x-lc" key="person_90047204" ref="http://lccn.loc.gov/nr90029107" role="aut">‘Alā’ al-Dīn ‘Alī ibn Muḥammad Qūshchī</persName> (d. 879/1474) generally known as <title>Risālah-’i hay’at</title>, from which it may in part be derived. 
+                        <p>This work is not identifiable as one in published catalogues. Its plan and incipit, however, resemble those of the treatise by <persName xml:lang="per-Latn-x-lc" key="viaf_90047204" ref="http://lccn.loc.gov/nr90029107" role="aut">‘Alā’ al-Dīn ‘Alī ibn Muḥammad Qūshchī</persName> (d. 879/1474) generally known as <title>Risālah-’i hay’at</title>, from which it may in part be derived. 
                         </p>
                         <p>Contents: Maqālah 1 (f. 6v-33v): Dar bayān-i ajrām-i ‘ulvī; on the heavenly bodies. Maqālah 2 (33v-59r): Dar bayān-i hay’at-i zamīn va qismat-i ū bi-aqālīm; on the composition of the Earth, and its division into climes. Khātimah (57v-59r): Dar ma‘rifat-i ab‘ād va ajrām; on determining dimensions and mass. </p>
-                        <p>Other contents: f. 1r, apparently a brief exercise in naskhī calligraphy; 1v, verses in praise of ‘Alī, in shikastah, and an Arabic prayer for healing, both introduced in Persian; 3r, verses by <addName />
-                           <persName xml:lang="per-Latn-x-lc" key="person_50413291" ref="http://id.loc.gov/authorities/names/n90674546" role="aut">ʻUrfī</persName> (b. 963/1555-6) and others, including a mnemonic poem on the zodiac sign names of the months, a definition in Arabic of al-falak al-a‘ẓam, and a note dated 1237/1821; 32v, a doodle; 59r, description of the astrolabe; 59v, quotations from works on geometry, lines of verses blessing the Prophet, and others concerning Ibn Sīnā; 60r, an extract from a treatise concerning astrolabes; 60v, ruba'is attributed to the Sufi master <persName xml:lang="per-Latn-x-lc" key="person_5721767" ref="http://id.loc.gov/authorities/names/n88155215" role="aut">Abū Sa‘īd ibn Abī l-Khayr</persName> (d. 440/1049), and other verses in Arabic. 
+                        <p>Other contents: f. 1r, apparently a brief exercise in naskhī calligraphy; 1v, verses in praise of ‘Alī, in shikastah, and an Arabic prayer for healing, both introduced in Persian; 3r, verses by <addName/>
+                           <persName xml:lang="per-Latn-x-lc" key="viaf_50413291" ref="http://id.loc.gov/authorities/names/n90674546" role="aut">ʻUrfī</persName> (b. 963/1555-6) and others, including a mnemonic poem on the zodiac sign names of the months, a definition in Arabic of al-falak al-a‘ẓam, and a note dated 1237/1821; 32v, a doodle; 59r, description of the astrolabe; 59v, quotations from works on geometry, lines of verses blessing the Prophet, and others concerning Ibn Sīnā; 60r, an extract from a treatise concerning astrolabes; 60v, ruba'is attributed to the Sufi master <persName xml:lang="per-Latn-x-lc" key="viaf_5721767" ref="http://id.loc.gov/authorities/names/n88155215" role="aut">Abū Sa‘īd ibn Abī l-Khayr</persName> (d. 440/1049), and other verses in Arabic. 
                         </p>
                         <p>The present manuscript contains copious marginal notes, most of which are in Arabic, throughout. </p>
                         <p>Ownership seals on f. 3r, 28r, 54v, 59r. </p>
                         <p>Title supplied. </p>
                      </note>
                      <textLang mainLang="per" otherLangs="ara">Persian with marginal notes mostly in Arabic</textLang>
-                     <filiation />
+                     <filiation/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -85,11 +93,11 @@
                   <handDesc>
                      <summary>Cursive <term xml:lang="per-Latn-x-lc">naskhī</term>. 
                      </summary>
-                     <handNote script="Arabic" scope="major" />
+                     <handNote script="Arabic" scope="major"/>
                   </handDesc>
                   <decoDesc>
                      <summary>Headings in red. Numerous diagrams, mostly in black and red. </summary>
-                     <decoNote />
+                     <decoNote/>
                   </decoDesc>
                   <additions>
                      <p>Copious marginal notes throughout. </p>
@@ -100,7 +108,7 @@
                </physDesc>
                <history>
                   <origin notBefore="1600" notAfter="1699">
-                     <origDate calendar="#Gregorian" notBefore="1600" notAfter="1699">17th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1600" notAfter="1699">17th century</origDate>
                      <origPlace>India (?)</origPlace>
                   </origin>
                   <acquisition>
@@ -132,8 +140,7 @@
          </classDecl>
       </encodingDesc>
       <profileDesc>
-         <textClass>
-			</textClass>
+         <textClass/>
       </profileDesc>
       <revisionDesc>
          <change when="2022-04-21">
@@ -141,7 +148,7 @@
               850 BL Persian mss prepared for initial publication in FIHRIST (plus 18 replacements)
          </change>
          <change when="2015-01-30">
-            <persName key="person_32019063" role="cataloguer">Ursula Sims-Williams</persName>
+            <persName key="viaf_32019063" role="cataloguer">Ursula Sims-Williams</persName>
          </change>
       </revisionDesc>
    </teiHeader>

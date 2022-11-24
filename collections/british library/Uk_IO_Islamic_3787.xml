@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_17915">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Anderson Collection</collection>
                   <idno>IO Islamic 3787</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004341695</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163233992.0x00000e</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>Astrolabes and astronomy</head>
                <msContents class="http://lccn.loc.gov/sh2009116092 http://lccn.loc.gov/sh2001000141">
@@ -56,28 +64,27 @@
                   <msItem class="http://lccn.loc.gov/sh2009116092" n="2" xml:id="Uk_IO_Islamic_3786-item2">
                      <locus from="23v" to="29r">ff. 23v-29r</locus>
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" type="supplied" key="person_7603024">Birjandī, ʿAbd al-ʿAlī</persName>
-                        <persName xml:lang="per" type="supplied" key="person_7603024">بيرجندى، عبد العلى</persName>
+                        <persName xml:lang="per-Latn-x-lc" type="supplied" key="viaf_7603024">Birjandī, ʿAbd al-ʿAlī</persName>
+                        <persName xml:lang="per" type="supplied" key="viaf_7603024">بيرجندى، عبد العلى</persName>
                      </author>
                      <title xml:lang="per-Latn-x-lc" key="work_20970">Sharḥ-i Bīst bāb dar maʿrifat-i uṣṭurlāb</title>
                      <title xml:lang="per" key="work_20970">شرح بيست باب در معرفت اصطرلاب</title>
                      <note>
-                        <p>Commentary on <persName xml:lang="per-Latn-x-lc" key="person_12392936" ref="http://lccn.loc.gov/n82136884" role="ant">Nasir al-Din Tusi</persName>'s treatise on the astrolabe, the <title>Bīst bāb</title>
+                        <p>Commentary on <persName xml:lang="per-Latn-x-lc" key="viaf_12392936" ref="http://lccn.loc.gov/n82136884" role="ant">Nasir al-Din Tusi</persName>'s treatise on the astrolabe, the <title>Bīst bāb</title>
                         </p>
                      </note>
                      <textLang mainLang="per">Persian</textLang>
-                     <note>
-						</note>
+                     <note/>
                   </msItem>
                   <msItem class="http://lccn.loc.gov/sh2001000141" n="3" xml:id="Uk_IO_Islamic_3786-item3">
                      <locus from="118" to="132">ff. 118-132</locus>
                      <author>
-                        <placeName />
+                        <placeName/>
                      </author>
                      <title xml:lang="per">‏</title>
                      <note>
                         <p>Treatise on astrology, beginning abruptly without preface, and not stating the title or author's name </p>
-                        <p>Dated <date calendar="#Hijri-qamari">Jum. II 1107</date>/<date calendar="#Gregorian">1696</date>
+                        <p>Dated <date calendar="Hijri-qamari">Jum. II 1107</date>/<date calendar="Gregorian">1696</date>
                         </p>
                      </note>
                      <textLang mainLang="per">Persian</textLang>
@@ -90,18 +97,17 @@
                               <height>206</height>
                               <width>120</width>
                            </dimensions>
-                           <dimensions type="written" unit="mm">
-									</dimensions>
+                           <dimensions type="written" unit="mm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote script="Arabic" scope="major" />
+                     <handNote script="Arabic" scope="major"/>
                   </handDesc>
                </physDesc>
                <history>
-                  <origin calendar="#Hijri-qamari" notBefore="1696" notAfter="1799">
-                     <origDate calendar="#Gregorian" notBefore="1696" notAfter="1799">17th-18th centuries</origDate>
+                  <origin calendar="Hijri-qamari" notBefore="1696" notAfter="1799">
+                     <origDate calendar="Gregorian" notBefore="1696" notAfter="1799">17th-18th centuries</origDate>
                      <origPlace>India</origPlace>
                   </origin>
                </history>

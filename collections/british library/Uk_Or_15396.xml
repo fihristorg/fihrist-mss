@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5785">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011.08.17</date>
+            <date calendar="Gregorian">2011.08.17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -41,6 +43,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 15396</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343787</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163240411.0x0000c4</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85083095 http://lccn.loc.gov/sh85083116">
                   <summary change="#add-summary">
@@ -52,21 +60,20 @@
                      </editor>
                      <title xml:lang="fa-Latn-x-lc" key="work_8095">Tarjumah-ʼi Taqvīm al-abdān</title>
                      <title xml:lang="fa" key="work_8095">ترجمۀ تقویم الابدان</title>
-                     <incipit xml:lang="ar" />
-                     <explicit xml:lang="ar" defective="true" />
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note type="text-relations">Persian translation of <title xml:lang="fa-Latn-x-lc">Taqvīm al-abdān fī tadbīr al-insān (<foreign xml:lang="fa">تقویم الابدان فی تدبیر الانسان</foreign>)
-                        </title>, table of diseases with their causes, symptoms and treatment compiled in Arabic by <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_93768036" role="ant" change="#role-assignment #ids-cleanup">Yaḥyà ibn ʻĪsà ibn Jazla, d. 493/1100, <foreign xml:lang="fa">يحيى ابن عيسى بن جزله</foreign>
+                        </title>, table of diseases with their causes, symptoms and treatment compiled in Arabic by <persName xml:lang="fa-Latn-x-lc" type="supplied" key="viaf_93768036" role="ant" change="#role-assignment #ids-cleanup">Yaḥyà ibn ʻĪsà ibn Jazla, d. 493/1100, <foreign xml:lang="fa">يحيى ابن عيسى بن جزله</foreign>
                         </persName>,
                      </note>
-                     <note>This text was made for <persName ref="http://lccn.loc.gov/n85056988" xml:lang="fa-Latn-x-lc" type="standard" key="person_232859004" role="pat" change="#role-assignment">Sulaymān I, Shah of Iran, 1658 or 9-1694</persName>
+                     <note>This text was made for <persName ref="http://lccn.loc.gov/n85056988" xml:lang="fa-Latn-x-lc" type="standard" key="viaf_232859004" role="pat" change="#role-assignment">Sulaymān I, Shah of Iran, 1658 or 9-1694</persName>
                      </note>
                      <note>Illustrated</note>
                      <listBibl>
                         <bibl>For a more detailed description see Waley 1998, page 33.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -85,7 +92,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1800" notAfter="1800">13th century<!-- Please review date attributes, see https://git.io/fihrist-dates -->
+                     <origDate calendar="Hijri-qamari" notBefore="1800" notAfter="1800">13th century<!-- Please review date attributes, see https://git.io/fihrist-dates -->
                      </origDate>
                      <origPlace>Iran</origPlace>
                   </origin>

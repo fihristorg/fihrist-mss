@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_18346">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -41,7 +43,13 @@
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 15588</idno>
                   <altIdentifier type="other">
-                     <idno />
+                     <idno/>
+                  </altIdentifier>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343449</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239456.0x00008f</idno>
                   </altIdentifier>
                </msIdentifier>
                <head>Mavahib-i ʻAliyah</head>
@@ -49,8 +57,8 @@
                   <summary>1 copy of Mavāhib-i ʻalīyah by Ḥusayn ibn ʻAlī Vāʻiẓ Kāshifī</summary>
                   <msItem class="http://lccn.loc.gov/sh85072967 http://lccn.loc.gov/n2007204421" n="1" xml:id="Uk_Or_15584-item1">
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" type="supplied" key="person_90770167">Ḥusayn ibn ʻAlī Vāʻiẓ Kāshifī</persName>
-                        <persName xml:lang="per" key="person_90770167" type="supplied">حسين بن علی واعظ کاشفى</persName>
+                        <persName xml:lang="per-Latn-x-lc" type="supplied" key="viaf_90770167">Ḥusayn ibn ʻAlī Vāʻiẓ Kāshifī</persName>
+                        <persName xml:lang="per" key="viaf_90770167" type="supplied">حسين بن علی واعظ کاشفى</persName>
                      </author>
                      <title xml:lang="per-Latn-x-lc" key="work_253">Mavāhib-i ʻalīyah</title>
                      <title xml:lang="per" key="work_253">مواهب علية</title>
@@ -60,11 +68,11 @@
                         <p>Begins with the opening of <title>Sūrat Maryam</title> (XIX). 
                         </p>
                         <p>Other contents: f. 1r, owner’s inscription praising God and blessing the Prophet; f. 335r, three small number squares in margin, probably talismanic; f. 335v, two circular seal impressions, both almost completely obscured. </p>
-                        <p>Copied at Herat by <persName xml:lang="per-Latn-x-lc" key="person_f7689" role="scr">Khvājah Jān ibn Khvājah Khvurd</persName>. The passage containing the year of copying has been partly lost and then re-written, but the date is almost certainly <date calendar="#Hijri-qamari">5 Zū l-Ḥijja 953</date>/<date calendar="#Gregorian">27 January 1547</date>. 
+                        <p>Copied at Herat by <persName xml:lang="per-Latn-x-lc" key="person_f7689" role="scr">Khvājah Jān ibn Khvājah Khvurd</persName>. The passage containing the year of copying has been partly lost and then re-written, but the date is almost certainly <date calendar="Hijri-qamari">5 Zū l-Ḥijja 953</date>/<date calendar="Gregorian">27 January 1547</date>. 
                         </p>
                      </note>
                      <textLang mainLang="per" xml:lang="per" otherLangs="ara">Persian</textLang>
-                     <filiation />
+                     <filiation/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -80,27 +88,26 @@
                   <handDesc>
                      <summary>Good small <term xml:lang="per-Latn-x-lc">naskhī</term>. Scribe: <persName xml:lang="per-Latn-x-lc" key="person_f7689" role="scr">Khvājah Jān ibn Khvājah Khvurd</persName>
                      </summary>
-                     <handNote script="Arabic" scope="major" />
+                     <handNote script="Arabic" scope="major"/>
                   </handDesc>
                   <decoDesc>
                      <summary>Arabic vocalised and overlined in red; Surah headings in large red naskhī. Text frames: black, gold, black, black, black, gold,  	black, black, blue. Fine quarter-page gold and polychrome illuminated heading, f. 1v, with heading in white. </summary>
-                     <decoNote type="border" />
+                     <decoNote type="border"/>
                   </decoDesc>
-                  <additions> </additions>
+                  <additions/>
                   <bindingDesc>
                      <p>Modern binding in green leather with blind ornamentation. </p>
                   </bindingDesc>
                </physDesc>
                <history>
-                  <origin calendar="#Hijri-qamari" when="1547-01-27" when-custom="5 Zū'l-Ḥijja 953">
-                     <origDate calendar="#Hijri-qamari" when="1547-01-27">5 Zū'l-Ḥijja 953</origDate>
-                     <origDate calendar="#Gregorian" when="1547-01-27">27 January 1547</origDate>
+                  <origin calendar="Hijri-qamari" when="1547-01-27" when-custom="5 Zū'l-Ḥijja 953">
+                     <origDate calendar="Hijri-qamari" when="1547-01-27">5 Zū'l-Ḥijja 953</origDate>
+                     <origDate calendar="Gregorian" when="1547-01-27">27 January 1547</origDate>
                      <origPlace>Herat</origPlace>
                   </origin>
                   <provenance>
-                     <p>
-							</p>
-                     <p />
+                     <p/>
+                     <p/>
                   </provenance>
                   <acquisition>
                      <date>2000-02</date>
@@ -119,7 +126,7 @@
                   </adminInfo>
                   <listBibl>
                      <bibl>
-                        <ref target="Waley_2014" type="number" />
+                        <ref target="Waley_2014" type="number"/>
                      </bibl>
                   </listBibl>
                </additional>
@@ -136,8 +143,7 @@
          </classDecl>
       </encodingDesc>
       <profileDesc>
-         <textClass>
-			</textClass>
+         <textClass/>
       </profileDesc>
       <revisionDesc>
          <change when="2022-04-21">

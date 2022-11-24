@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6228">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 7465</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343729</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163240411.0x00008b</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>Miscellany</head>
                <msContents class="#multipleWorks">
@@ -58,28 +66,26 @@
                      <note>Dedicated to <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f3954" role="dte" change="#role-assignment">Shihāb al-Dīn Amīr Aḥmad <foreign xml:lang="fa">شهاب الدین امیر احمد</foreign>
                         </persName>
                      </note>
-                     <note>Dated <date calendar="#Hijri-qamari" notBefore="1329" notAfter="1330">730</date>
+                     <note>Dated <date calendar="Hijri-qamari" notBefore="1329" notAfter="1330">730</date>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Glyn Meredith-Owens: Handlist of Persian Manuscripts, 1895-1966. [London]: Trustees of the British Museum, 1968, p.92.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_7465-item2" n="2" class="http://lccn.loc.gov/sh85100084 http://lccn.loc.gov/sh92004927">
                      <locus from="9v" to="37r">9v-37r ff</locus>
                      <title xml:lang="fa-Latn-x-lc" key="work_8392">Ta‘bīrnāmah-’i Manẓūm</title>
                      <title xml:lang="fa" key="work_8392">تعبیرنامۀ منظوم</title>
                      <note>A work on dream interpretation in verse</note>
-                     <note>Dated <date calendar="#Hijri-qamari" notBefore="1489" notAfter="1490">895</date>
+                     <note>Dated <date calendar="Hijri-qamari" notBefore="1489" notAfter="1490">895</date>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Glyn Meredith-Owens: Handlist of Persian Manuscripts, 1895-1966. [London]: Trustees of the British Museum, 1968, p.92.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_7465-item3" n="3" class="http://lccn.loc.gov/sh85100084 http://lccn.loc.gov/sh92004927">
                      <locus from="38v" to="49v">38v-49v ff</locus>
@@ -91,31 +97,29 @@
                      <title xml:lang="fa" key="work_8393">جوهر سیمی</title>
                      <note>A tract on the art of the <foreign xml:lang="fa-Latn-x-lc">munshī</foreign>
                      </note>
-                     <note>The date <date calendar="#Hijri-qamari" notBefore="1552" notAfter="1553">960</date> at the end is not the actual date of transcription
+                     <note>The date <date calendar="Hijri-qamari" notBefore="1552" notAfter="1553">960</date> at the end is not the actual date of transcription
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Glyn Meredith-Owens: Handlist of Persian Manuscripts, 1895-1966. [London]: Trustees of the British Museum, 1968, p.92.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_7465-item4" n="4" class="http://lccn.loc.gov/sh85129660 http://lccn.loc.gov/sh85100075 http://lccn.loc.gov/sh85100084">
                      <locus from="51v" to="91v">51v-91v ff</locus>
-                     <author ref="http://viaf.org/viaf/107030610" key="person_107030610">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Shabistarī, Maḥmūd ibn ʻAbd al-Karīm, -approximately 1320</persName>
-                        <persName xml:lang="fa">شبستری</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="ark:/81055/vdc_100164656305.0x000001 viaf_107030610">Shabistarī, Maḥmūd ibn ʻAbd al-Karīm, -approximately 1320</persName>
+                        <persName xml:lang="fa" key="ark:/81055/vdc_100164656305.0x000001 viaf_107030610">شبستری</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_1364">Gulshan-i Rāz</title>
                      <title xml:lang="fa" key="work_1364">گلشن راز</title>
-                     <note>With some quatrains of <persName xml:lang="fa-Latn-x-lc" type="standard" ref=" http://viaf.org/viaf/89770781" key="person_89770781" role="oth" change="#role-assignment">Ibn Sīnā, 980?-1037</persName> and others in the margin
+                     <note>With some quatrains of <persName xml:lang="fa-Latn-x-lc" type="standard" ref=" http://viaf.org/viaf/89770781" key="viaf_89770781" role="oth" change="#role-assignment">Ibn Sīnā, 980?-1037</persName> and others in the margin
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Glyn Meredith-Owens: Handlist of Persian Manuscripts, 1895-1966. [London]: Trustees of the British Museum, 1968, p.92.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -131,7 +135,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1500" notAfter="1699">16th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1500" notAfter="1699">16th century</origDate>
                   </origin>
                </history>
                <additional>

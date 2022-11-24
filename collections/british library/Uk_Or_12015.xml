@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5454">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,27 +42,32 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 12015</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343762</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163240411.0x0000ab</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85136960 http://lccn.loc.gov/sh97008661 http://lccn.loc.gov/sh2007002370 http://lccn.loc.gov/sh96009249 http://lccn.loc.gov/sh85006309">
                   <summary change="#add-summary">
                      1 copy of Gharā’ib al-Lughāt by Ārzū, Sirāj al-Dīn ʻAlī Khān, approximately 1689-1756
                   </summary>
                   <msItem xml:id="Uk_Or_12015-item1">
-                     <author ref="http://viaf.org/viaf/65143027" key="person_65143027">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Ārzū, Sirāj al-Dīn ʻAlī Khān, approximately 1689-1756</persName>
-                        <persName xml:lang="fa">سراج الدین علی خان آرزو</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_65143027">Ārzū, Sirāj al-Dīn ʻAlī Khān, approximately 1689-1756</persName>
+                        <persName xml:lang="fa" key="viaf_65143027">سراج الدین علی خان آرزو</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8423">Gharā’ib al-Lughāt</title>
                      <title xml:lang="fa" key="work_8423">غرائب اللغات</title>
-                     <note>A corrected version of <persName type="standard" xml:lang="fa-Latn-x-lc" ref="http://viaf.org/viaf/118045836" key="person_118045836" role="ant" change="#role-assignment #ids-cleanup">‘Abd al-Vāsi‘ Hānsavī’s <foreign xml:lang="fa">عبد الواصع هانسوی</foreign>
+                     <note>A corrected version of <persName type="standard" xml:lang="fa-Latn-x-lc" ref="http://viaf.org/viaf/118045836" key="viaf_118045836" role="ant" change="#role-assignment #ids-cleanup">‘Abd al-Vāsi‘ Hānsavī’s <foreign xml:lang="fa">عبد الواصع هانسوی</foreign>
                         </persName> glossary of Hindi words explained in Persian, Arabic, and Turkish
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Glyn Meredith-Owens: Handlist of Persian Manuscripts, 1895-1966. [London]: Trustees of the British Museum, 1968, p.88.</bibl>
                      </listBibl>
-                     <textLang mainLang="hi" otherLangs="fa ar chg">Hindi, Persian, Arabic, Turkish</textLang>
-                     <note>
-                  </note>
+                     <textLang mainLang="hi" otherLangs="fa ar chg-Zzzz">Hindi, Persian, Arabic, Turkish</textLang>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -76,7 +83,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1809" notAfter="1810">1224</origDate>
+                     <origDate calendar="Hijri-qamari" notBefore="1809" notAfter="1810">1224</origDate>
                   </origin>
                </history>
                <additional>

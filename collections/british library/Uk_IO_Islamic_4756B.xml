@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3475">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>IO Islamic 4756B</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342215</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237459.0x00003b</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85064939 http://lccn.loc.gov/sh85053112">
                   <summary>The second of five volumes of miscellaneous papers from the collection of
@@ -49,20 +57,19 @@
                         <persName xml:lang="en" type="desc">Unknown</persName>
                      </author>
                      <title xml:lang="en" type="desc" key="work_8650">Accounts</title>
-                     <incipit xml:lang="ar" />
-                     <explicit xml:lang="ar" defective="true" />
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>A list of trees in Johnson’s garden at Ras Paklā?; lists of grants; a
-                        list of flowers; copies of treaties signed between <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_36047908" role="oth" change="#role-assignment">Shujā’ al-Dawlah</persName>, <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_40969779" role="oth" change="#role-assignment #ids-cleanup">Nawab Wazir of Oudh</persName>,
-                        and the <persName xml:lang="en" type="standard" ref="http://viaf.org/viaf/239176400/" key="person_239176400" role="oth" change="#role-assignment #ids-cleanup">East India Company</persName> in
-                           <date calendar="#Gregorian" when="1775">1775</date> and <date calendar="#Gregorian" when="1778">1778</date>
+                        list of flowers; copies of treaties signed between <persName xml:lang="fa-Latn-x-lc" type="supplied" key="viaf_36047908" role="oth" change="#role-assignment">Shujā’ al-Dawlah</persName>, <persName xml:lang="fa-Latn-x-lc" type="supplied" key="viaf_40969779" role="oth" change="#role-assignment #ids-cleanup">Nawab Wazir of Oudh</persName>,
+                        and the <persName xml:lang="en" type="standard" ref="http://viaf.org/viaf/239176400/" key="viaf_239176400" role="oth" change="#role-assignment #ids-cleanup">East India Company</persName> in
+                           <date calendar="Gregorian" when="1775">1775</date> and <date calendar="Gregorian" when="1778">1778</date>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Sims-Williams 1986, page
                            18.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -73,12 +80,12 @@
                      </supportDesc>
                   </objectDesc>
                   <decoDesc>
-                     <decoNote type="illustration" />
+                     <decoNote type="illustration"/>
                   </decoDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1750" notAfter="1799">Late 18th
+                     <origDate calendar="Gregorian" notBefore="1750" notAfter="1799">Late 18th
                         century</origDate>
                   </origin>
                </history>

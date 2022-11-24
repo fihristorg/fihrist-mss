@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5970">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,28 +42,33 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 5486</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342650</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237592.0x00005e</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85010741 http://lccn.loc.gov/sh2009116580">
                   <summary change="#add-summary">
                      1 copy of Aḥkām-i Bayān by Bāb, ʻAlī Muḥammad Shīrāzī, 1819-1850
                   </summary>
                   <msItem xml:id="Uk_Or_5486-item1">
-                     <author ref="http://viaf.org/viaf/9878408" key="person_9878408">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Bāb, ʻAlī Muḥammad Shīrāzī, 1819-1850</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">‘Alī Muḥammad Shīrāzī, the Bāb</persName>
-                        <persName xml:lang="fa">على محمد شيرازى، الباب</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_9878408">Bāb, ʻAlī Muḥammad Shīrāzī, 1819-1850</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_9878408">‘Alī Muḥammad Shīrāzī, the Bāb</persName>
+                        <persName xml:lang="fa" key="viaf_9878408">على محمد شيرازى، الباب</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8105">Aḥkām-i Bayān</title>
                      <title xml:lang="fa" key="work_8105">احکام بیان</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <note>Vāḥīd 9-11</note>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 34.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -77,7 +84,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1899" notAfter="1899">1899</origDate>
+                     <origDate calendar="Gregorian" notBefore="1899" notAfter="1899">1899</origDate>
                   </origin>
                </history>
                <additional>

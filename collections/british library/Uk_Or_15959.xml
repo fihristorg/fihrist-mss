@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_18381">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -41,7 +43,13 @@
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 15959</idno>
                   <altIdentifier type="other">
-                     <idno />
+                     <idno/>
+                  </altIdentifier>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343479</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239456.0x0000ad</idno>
                   </altIdentifier>
                </msIdentifier>
                <head>Kulliyat-i Sa‘di</head>
@@ -60,17 +68,17 @@
                         <p>While 184 manuscripts of Sa‘dī’s Kulliyyāt are listed in Munzavī, FNKhF III, p. 1861-70, the number of extant copies is probably much greater since there must be many in private hands. Other copies in the BL: Add. 5601, Add. 7741, Add. 7742, Add. 7743, Add. 16764, Add. 17961, Add. 24944, Or. 2194, Or. 2948, Or. 2743, Or. 4779, Or. 8680, Or. 8753, Or. 9567, Or. 9870, Or. 10908, Or. 11348, Or. 13949, Or. 14158.</p>
                      </note>
                      <textLang mainLang="per" otherLangs="ara">Persian and Arabic</textLang>
-                     <filiation />
+                     <filiation/>
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" type="supplied" key="person_73859635">Saʻdī</persName>
-                        <persName xml:lang="per" type="supplied" key="person_73859635">سعدى</persName>
+                        <persName xml:lang="per-Latn-x-lc" type="supplied" key="viaf_73859635">Saʻdī</persName>
+                        <persName xml:lang="per" type="supplied" key="viaf_73859635">سعدى</persName>
                      </author>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <support />
+                        <support/>
                         <extent>299 ff.<dimensions type="leaf" unit="mm">
                               <height>243 </height>
                               <width>151 </width>
@@ -91,30 +99,30 @@
                      <summary>
                         <term xml:lang="per-Latn-x-lc">Shikasta-nasta‘līq </term>. Calligrapher ‘Abd al-Ḥusayn Iṣfahānī
                      </summary>
-                     <handNote script="Arabic" scope="major" />
+                     <handNote script="Arabic" scope="major"/>
                   </handDesc>
                   <decoDesc>
                      <summary>Fine illuminated headings, with ornate margin illumination on facing pages, on f. 1v, 20v, 61v, 161v, 223v; smaller illuminated headings on f. 123v, 129r, 146v (outer panel), 149v (outer panel), 156v, 251v, 261v, 266v, 281v, 291r, 297r, etc. </summary>
-                     <decoNote />
+                     <decoNote/>
                   </decoDesc>
                   <additions>
-                     <p />
+                     <p/>
                   </additions>
                   <bindingDesc>
                      <p>Lacquered painted binding of good quality: floral sprays on a sparkled brown ground, with smaller sprays reserved in panels in the borders; doublures with floral sprays in panels and simple scrolls with flowers on a sparkled orange-brown ground.</p>
                   </bindingDesc>
                   <sealDesc>
-                     <summary>Seal impression Yā Raḥīm, dated 1255/1829 <locus n="f. 299r" />
+                     <summary>Seal impression Yā Raḥīm, dated 1255/1829 <locus n="f. 299r"/>
                      </summary>
                      <seal>
-                        <decoNote />
+                        <decoNote/>
                      </seal>
                   </sealDesc>
                </physDesc>
                <history>
-                  <origin calendar="#Hijri-qamari" when="1829" when-custom="1255">
-                     <origDate calendar="#Hijri-qamari" when="1829">1255</origDate>
-                     <origDate calendar="#Gregorian" when="1829">1829</origDate>
+                  <origin calendar="Hijri-qamari" when="1829" when-custom="1255">
+                     <origDate calendar="Hijri-qamari" when="1829">1255</origDate>
+                     <origDate calendar="Gregorian" when="1829">1829</origDate>
                      <origPlace>Iran</origPlace>.
                   </origin>
                   <provenance>
@@ -149,8 +157,7 @@
          </classDecl>
       </encodingDesc>
       <profileDesc>
-         <textClass>
-			</textClass>
+         <textClass/>
       </profileDesc>
       <revisionDesc>
          <change when="2022-04-21">
@@ -158,7 +165,7 @@
               850 BL Persian mss prepared for initial publication in FIHRIST (plus 18 replacements)
          </change>
          <change when="2015-06-22">
-            <persName key="person_32019063" role="cataloguer">Ursula Sims-Williams</persName>
+            <persName key="viaf_32019063" role="cataloguer">Ursula Sims-Williams</persName>
          </change>
       </revisionDesc>
    </teiHeader>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5282">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -52,8 +54,8 @@
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8997">Taskhīr al-kavākib</title>
                      <title xml:lang="fa" key="work_8997">تسخیر الکواکب</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <note>A compilation on talismanic magic</note>
                      <listBibl>
                         <bibl>Meredith-Owens 1968, page 29.</bibl>
@@ -64,15 +66,15 @@
                   </msItem>
                   <msItem xml:id="Uk_Or_11041-item2" n="2" class="http://lccn.loc.gov/sh85093823 http://lccn.loc.gov/sh85079615 http://lccn.loc.gov/sh85132095">
                      <locus from="86r" to="116r">ff 86r-116r</locus>
-                     <author key="person_61532835" ref="http://viaf.org/viaf/61532835/">
+                     <author key="viaf_61532835" ref="http://viaf.org/viaf/61532835/">
                         <persName type="standard" xml:lang="ar-Latn-x-lc">Sakkākī, Yūsuf ibn Abī Bakr, b. 1160</persName>
                         <persName xml:lang="fa" type="alt">سراج الدین السکاکی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_21129" change="#ids-cleanup">Sirr al-asrār</title>
                      <title xml:lang="fa" key="work_21129" change="#ids-cleanup">سر الاسرار</title>
                      <note>A work on talismanic magic</note>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <listBibl>
                         <bibl>Meredith-Owens 1968, page 29.</bibl>
                      </listBibl>
@@ -97,7 +99,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1700" notAfter="1799">18th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1700" notAfter="1799">18th century</origDate>
                   </origin>
                </history>
                <additional>

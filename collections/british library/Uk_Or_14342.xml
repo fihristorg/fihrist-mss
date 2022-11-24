@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5675">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-18</date>
+            <date calendar="Gregorian">2011-08-18</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,19 +42,25 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 14342</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343345</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239456.0x000027</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85064913 http://lccn.loc.gov/sh2008115921 http://lccn.loc.gov/sh2008115920 http://lccn.loc.gov/n84143316">
                   <summary change="#add-summary">
                      1 copy of Iqbālnāmah-ʼi Jahāngīrī by Muʻtamad Khān, Muḥammad Sharīf, d. 1639 or 40
                   </summary>
                   <msItem xml:id="Uk_Or_14342-item1">
-                     <author key="person_71827117" ref="http://viaf.org/viaf/71827117/">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Muʻtamad Khān, Muḥammad Sharīf, d. 1639 or 40</persName>
-                        <persName xml:lang="fa">معتمد خان، محمد شريف</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_71827117">Muʻtamad Khān, Muḥammad Sharīf, d. 1639 or 40</persName>
+                        <persName xml:lang="fa" key="viaf_71827117">معتمد خان، محمد شريف</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20926" change="#ids-cleanup">Iqbālnāmah-ʼi Jahāngīrī</title>
                      <title xml:lang="fa" key="work_20926" change="#ids-cleanup">اقبالنامۀ جهانگيری</title>
-                     <note>History of <persName type="standard" key="person_38320916" ref="http://viaf.org/viaf/38320916/" xml:lang="ar-Latn-x-lc" role="subject" change="#role-assignment">Jahangir, Emperor of Hindustan, 1569-1627, <foreign xml:lang="fa">جهانگير، شهنشاه هندوستان</foreign>
+                     <note>History of <persName type="standard" key="ark:/81055/vdc_100164657204.0x000001 viaf_38320916" ref="http://viaf.org/viaf/38320916/" xml:lang="ar-Latn-x-lc" role="subject" change="#role-assignment">Jahangir, Emperor of Hindustan, 1569-1627, <foreign xml:lang="fa">جهانگير، شهنشاه هندوستان</foreign>
                         </persName> and his successors
                      </note>
                      <note>Part 3, on Jahāngīr's reign (1014-37/1605-27), only</note>
@@ -60,8 +68,7 @@
                         <bibl>For a more detailed description see Waley 1998, page 17.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -83,7 +90,7 @@
                <history>
                   <origin>
                      <origPlace>Lahore</origPlace>
-                     <origDate calendar="#Gregorian" when="1896">1896</origDate>
+                     <origDate calendar="Gregorian" when="1896">1896</origDate>
                   </origin>
                </history>
                <additional>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5208">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,15 +42,21 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 10913</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343037</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239034.0x00000a</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85100084">
                   <summary change="#add-summary">
                      1 copy of Jām-i Jam by Awḥadī, Rukn al-Dīn, 1271 or 2-1337 or 8
                   </summary>
                   <msItem xml:id="Uk_Or_10913-item1">
-                     <author ref="http://viaf.org/viaf/256108725" key="person_256108725">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Awḥadī, Rukn al-Dīn, 1271 or 2-1337 or 8</persName>
-                        <persName xml:lang="fa">اوحدی, رکن الدین</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="ark:/81055/vdc_100164656927.0x000001 viaf_256108725">Awḥadī, Rukn al-Dīn, 1271 or 2-1337 or 8</persName>
+                        <persName xml:lang="fa" key="ark:/81055/vdc_100164656927.0x000001 viaf_256108725">اوحدی, رکن الدین</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20075" change="#ids-cleanup">Jām-i Jam</title>
                      <title xml:lang="fa" key="work_20075" change="#ids-cleanup">جام جم</title>
@@ -58,8 +66,7 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 71.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -75,7 +82,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1887" notAfter="1887">1887</origDate>
+                     <origDate calendar="Gregorian" notBefore="1887" notAfter="1887">1887</origDate>
                   </origin>
                </history>
                <additional>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5562">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,16 +42,22 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 13492</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343264</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239034.0x0000ed</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85072953 http://lccn.loc.gov/sh85072967 http://lccn.loc.gov/n84748509">
                   <summary change="#add-summary">
                      1 copy of Fatḥ al-ʻAzīz by Dihlawī, ʻAbd al-ʻAzīz ibn Aḥmad, 1746 or 7-1823 or 4
                   </summary>
                   <msItem xml:id="Uk_Or_13492-item1" class="commentary">
-                     <author key="person_53999017" ref="http://viaf.org/viaf/53999017/">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Dihlawī, ʻAbd al-ʻAzīz ibn Aḥmad, 1746 or 7-1823 or 4</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Shāh ʻAbd al-ʻAzīz ibn Valī Allāh Dihlavī</persName>
-                        <persName xml:lang="fa">شاه دهلوي، عبد العزيز بن ولی الله</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_53999017">Dihlawī, ʻAbd al-ʻAzīz ibn Aḥmad, 1746 or 7-1823 or 4</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_53999017">Shāh ʻAbd al-ʻAzīz ibn Valī Allāh Dihlavī</persName>
+                        <persName xml:lang="fa" key="viaf_53999017">شاه دهلوي، عبد العزيز بن ولی الله</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20986" change="#ids-cleanup">Fatḥ al-ʻAzīz</title>
                      <title xml:lang="fa-Latn-x-lc" type="alt" key="work_20986" change="#ids-cleanup">Tafsīr-i ʻAzīzī</title>
@@ -59,17 +67,14 @@
                      <note>This manuscript has only Sūras 1:1 – 2:184</note>
                      <note>Title has been supplied by <ref target="Waley_1998" type="page">Waley 1998, page 1.</ref>
                      </note>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
-                     <note>
-                        <foreign xml:lang="fa" />
-                     </note>
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
+                     <note/>
                      <listBibl>
                         <bibl>For a more detailed description see Waley 1998, page 1.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -86,7 +91,7 @@
                <history>
                   <origin>
                      <origPlace>India</origPlace>
-                     <origDate calendar="#Hijri-qamari" notBefore="1800" notAfter="1899">13th century<!-- Please review date attributes, see https://git.io/fihrist-dates -->
+                     <origDate calendar="Hijri-qamari" notBefore="1800" notAfter="1899">13th century<!-- Please review date attributes, see https://git.io/fihrist-dates -->
                      </origDate>
                   </origin>
                </history>

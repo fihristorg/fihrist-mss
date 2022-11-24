@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6380">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,23 +42,29 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 8380</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343740</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163240411.0x000096</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh2007101189 http://lccn.loc.gov/sh85144057">
                   <summary change="#add-summary">
                      1 copy of Fuṣūl-i mansūb by Abū ‘Abd Allāh Muḥammad ibn al-Nu‘mān al-Baghdādī al-Mufīd
                   </summary>
                   <msItem xml:id="Uk_Or_8380-item1">
-                     <author key="person_93264821" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Abū ‘Abd Allāh Muḥammad ibn al-Nu‘mān al-Baghdādī al-Mufīd</persName>
-                        <persName xml:lang="fa">ابو عبد الله محمد بن النعمان البغدادی المفید</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied" key="viaf_93264821">Abū ‘Abd Allāh Muḥammad ibn al-Nu‘mān al-Baghdādī al-Mufīd</persName>
+                        <persName xml:lang="fa" key="viaf_93264821">ابو عبد الله محمد بن النعمان البغدادی المفید</persName>
                      </author>
-                     <editor role="trl" key="person_117158606" change="#ids-cleanup">
+                     <editor role="trl" key="viaf_117158606" change="#ids-cleanup">
                         <persName xml:lang="fa-Latn-x-lc" type="supplied">Jamāl al-Dīn Muḥammad ibn al-Ḥusayn al-Khvānsārī</persName>
                      </editor>
                      <title xml:lang="fa-Latn-x-lc" key="work_9280">Fuṣūl-i mansūb</title>
                      <title xml:lang="fa" key="work_9280">فصول منصوب</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <note>A collection of aphorisms (majālis)</note>
                      <note>On the margins of <locus from="3v" to="51r">f. 3v-51r</locus> there is an Arabic-Persian vocabulary entitled <title xml:lang="fa-Latn-x-lc">Javāhir-i kunūz-i lughāt (<foreign xml:lang="fa">جواهر کنوز لغات</foreign>
                         </title> by <persName key="person_f5638" role="oth" change="#role-assignment">‘Abd al-Khāliq ibn Ma‘rūf</persName>. It appears an abbreviation of <title>Kanz al-lughāt (<foreign xml:lang="ar">كنزاللغات</foreign>)
@@ -66,8 +74,7 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page p. 6.</bibl>
                      </listBibl>
                      <textLang mainLang="fa" otherLangs="ar">Persian and Arabic</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -83,7 +90,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1700" notAfter="1799">18th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1700" notAfter="1799">18th century</origDate>
                   </origin>
                </history>
                <additional>

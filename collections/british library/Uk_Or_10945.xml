@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5240">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,31 +42,36 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 10945</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343067</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239034.0x000028</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85046763 http://lccn.loc.gov/sh85100077">
                   <summary change="#add-summary">
                      1 copy of Laṭā’if al-ẓarā’if by Fakhr al-Dīn ‘Alī ibn Ḥusayn Vā’iẓ al-Kāshifī
                   </summary>
                   <msItem xml:id="Uk_Or_10945-item1">
-                     <author key="person_90077852" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Fakhr al-Dīn ‘Alī ibn Ḥusayn Vā’iẓ al-Kāshifī</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Ṣāfī</persName>
-                        <persName xml:lang="fa">فخر الدین علی ابن حسین واعظ الکاشفی</persName>
-                        <persName xml:lang="fa" type="alt">صافی</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied" key="ark:/81055/vdc_100164658925.0x000001 viaf_90077852">Fakhr al-Dīn ‘Alī ibn Ḥusayn Vā’iẓ al-Kāshifī</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="ark:/81055/vdc_100164658925.0x000001 viaf_90077852">Ṣāfī</persName>
+                        <persName xml:lang="fa" key="viaf_90077852">فخر الدین علی ابن حسین واعظ الکاشفی</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_90077852">صافی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_1243">Laṭā’if al-ẓarā’if</title>
                      <title xml:lang="fa-Latn-x-lc" type="alt" key="work_1243">Laṭā’if al-ṭavā’if</title>
                      <title xml:lang="fa" key="work_1243">لطائف الظرائف</title>
                      <title xml:lang="fa" type="alt" key="work_1243">لطائف الطوائف</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <note>Witty stories</note>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 46.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -80,7 +87,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1756" notAfter="1757">1170</origDate>
+                     <origDate calendar="Hijri-qamari" notBefore="1756" notAfter="1757">1170</origDate>
                   </origin>
                </history>
                <additional>

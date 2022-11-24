@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6106">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -71,7 +73,7 @@
                   </msItem>
                   <msItem xml:id="Uk_Or_6572-item3" n="3" class="http://lccn.loc.gov/sh85125354">
                      <locus from="29v" to="33v">29v-33v ff</locus>
-                     <author ref=" http://viaf.org/viaf/89770781" key="person_89770781">
+                     <author ref=" http://viaf.org/viaf/89770781" key="viaf_89770781">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Ibn Sīnā, 980?-1037</persName>
                         <persName xml:lang="fa">ابن سینا</persName>
                      </author>
@@ -213,7 +215,7 @@
                   </msItem>
                   <msItem xml:id="Uk_Or_6572-item15" n="15" class="http://lccn.loc.gov/sh85100934">
                      <locus from="42v" to="43r">42v-43r ff</locus>
-                     <author ref=" http://viaf.org/viaf/89770781" key="person_89770781">
+                     <author ref=" http://viaf.org/viaf/89770781" key="viaf_89770781">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Ibn Sīnā, 980?-1037</persName>
                         <persName xml:lang="fa">ابن سینا</persName>
                      </author>
@@ -253,7 +255,7 @@
                   </msItem>
                   <msItem xml:id="Uk_Or_6572-item18" n="18" class="http://lccn.loc.gov/sh85062074">
                      <locus from="73v" to="90v">73v-90v ff</locus>
-                     <author ref="http://viaf.org/viaf/90042555" key="person_90042555">
+                     <author ref="http://viaf.org/viaf/90042555" key="viaf_90042555">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Rāzī, Fakhr al-Dīn Muḥammad ibn ʻUmar, 1149 or 50-1210</persName>
                         <persName xml:lang="fa-Latn-x-lc" type="alt">Fakhr al-Dīn Rāzī</persName>
                         <persName xml:lang="fa">فخر الدین رازی</persName>
@@ -284,7 +286,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1400" notAfter="1499">15th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1400" notAfter="1499">15th century</origDate>
                   </origin>
                </history>
                <additional>

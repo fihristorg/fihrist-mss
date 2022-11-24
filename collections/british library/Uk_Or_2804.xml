@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5121">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,64 +42,64 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 2804</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343709</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163240411.0x000078</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85109233">
                   <summary change="#add-summary2">
                      2 works by 2 authors on the subject of Pushto poetry
                   </summary>
                   <msItem xml:id="Uk_Or_2804-item1" n="1">
-                     <author key="person_242128896" ref="http://viaf.org/viaf/242128896/">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Ghanīmat, Muḥammad Akram, fl. 1685-1696</persName>
-                        <persName xml:lang="fa">غنيمت، محمد اكرم</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="ark:/81055/vdc_100164656899.0x000001 viaf_242128896">Ghanīmat, Muḥammad Akram, fl. 1685-1696</persName>
+                        <persName xml:lang="fa" key="ark:/81055/vdc_100164656899.0x000001 viaf_242128896">غنيمت، محمد اكرم</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_21097" change="#ids-cleanup">Nayrang-i ʻishq</title>
                      <title xml:lang="fa" key="work_21097" change="#ids-cleanup">نيرنگی عشق</title>
-                     <editor role="trl" key="person_70715705">Translated into Pashto by <persName ref="http://viaf.org/viaf/70715705" xml:lang="pus-Latn-x-lc" type="standard">Momand, ʻAbd al-Ḥamīd, active 18th century</persName>
+                     <editor role="trl" key="viaf_70715705">Translated into Pashto by <persName ref="http://viaf.org/viaf/70715705" xml:lang="pus-Latn-x-lc" type="standard">Momand, ʻAbd al-Ḥamīd, active 18th century</persName>
                         <persName xml:lang="ps">مهمند، عبد الحميد</persName>
                      </editor>
                      <note>A Pushto translation of Ghanimat's romance of Shahid and Aziz</note>
                      <incipit>پس لحمده لدروده واي دا دا پدر د ښکلي مخ ولاږ کدا</incipit>
-                     <note>
-                        <foreign xml:lang="ar" />
-                     </note>
+                     <note/>
                      <listBibl>
                         <bibl>
                            <ref target="https://digital.soas.ac.uk/LOAC000067/00001/115x">Mackenzie no.130</ref>
                         </bibl>
                      </listBibl>
                      <textLang mainLang="ps">Pushto</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_2804-item2" n="2">
-                     <author key="person_22546363" ref="http://viaf.org/viaf/22546363/">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Hilālī, Badr al-Dīn, d. 1528 or 9</persName>
-                        <persName xml:lang="fa">هلالي، بدر الدين</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_22546363">Hilālī, Badr al-Dīn, d. 1528 or 9</persName>
+                        <persName xml:lang="fa" key="viaf_22546363">هلالي، بدر الدين</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_21137" change="#ids-cleanup">Shāh u gadā</title>
                      <title xml:lang="fa" key="work_21137" change="#ids-cleanup">شاه و گدا</title>
-                     <editor role="trl" key="person_70715705">Translated into Pashto by <persName ref="http://viaf.org/viaf/70715705" xml:lang="pus-Latn-x-lc" type="standard">Momand, ʻAbd al-Ḥamīd, active 18th century</persName>
+                     <editor role="trl" key="viaf_70715705">Translated into Pashto by <persName ref="http://viaf.org/viaf/70715705" xml:lang="pus-Latn-x-lc" type="standard">Momand, ʻAbd al-Ḥamīd, active 18th century</persName>
                         <persName xml:lang="ps">مهمند، عبد الحميد</persName>
                      </editor>
                      <note>A Pushto translation of Hilali's story of the King and the Darvish</note>
                      <incipit>دا اغاز مي پنامه د هغه خداي دي چئي نوم کره کشاي د شاه کداي دي</incipit>
-                     <note>
-                        <foreign xml:lang="ar" />
-                     </note>
+                     <note/>
                      <listBibl>
                         <bibl>
                            <ref target="https://digital.soas.ac.uk/LOAC000067/00001/115x">Mackenzie no.130</ref>
                         </bibl>
                      </listBibl>
                      <textLang mainLang="ps">Pushto</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>
+                        <extent>folios 
                            <ref target="a1">1b-61 f.</ref>
                            <ref target="a2">62-117 f.</ref>
                            <height>28</height>
@@ -106,16 +108,16 @@
                      </supportDesc>
                   </objectDesc>
                   <decoDesc>
-                     <decoNote type="other" />
+                     <decoNote type="other"/>
                   </decoDesc>
                </physDesc>
                <history>
                   <origin change="#fix-dates" notBefore="1871" notAfter="1872">
                      <ref target="a1">
-                        <origDate when="1871" calendar="#Gregorian">1871</origDate>
+                        <origDate when="1871" calendar="Gregorian">1871</origDate>
                      </ref>
                      <ref target="a1">
-                        <origDate when="1872" calendar="#Gregorian">1872</origDate>
+                        <origDate when="1872" calendar="Gregorian">1872</origDate>
                      </ref>
                   </origin>
                </history>

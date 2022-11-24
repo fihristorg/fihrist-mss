@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_17932">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,14 +42,20 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>IO Islamic 3868</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004341712</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163233992.0x00001e</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>Treatise on sufism by Gisudaraz</head>
                <msContents>
                   <summary>1 copy of Khātimah by Muḥammad ibn Yūsuf Ḥusaynī</summary>
                   <msItem class="http://lccn.loc.gov/sh2006003807 http://lccn.loc.gov/sh85114211" n="1" xml:id="Uk_IO_Islamic_3868-item1">
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" type="supplied" key="person_47602285">Muḥammad ibn Yūsuf Ḥusaynī</persName>
-                        <persName xml:lang="per" type="supplied" key="person_47602285">محمد ابن یوسف حسینی</persName>
+                        <persName xml:lang="per-Latn-x-lc" type="supplied" key="viaf_47602285">Muḥammad ibn Yūsuf Ḥusaynī</persName>
+                        <persName xml:lang="per" type="supplied" key="viaf_47602285">محمد ابن یوسف حسینی</persName>
                      </author>
                      <title xml:lang="per-Latn-x-lc" key="work_21897">Khātimah</title>
                      <title xml:lang="per" key="work_21897">خاتمه</title>
@@ -58,8 +66,7 @@
                         </p>
                      </note>
                      <textLang mainLang="per" otherLangs="ara">Persian &amp; Arabic</textLang>
-                     <note>
-						</note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -69,18 +76,17 @@
                               <height>235</height>
                               <width>127</width>
                            </dimensions>
-                           <dimensions type="written" unit="mm">
-									</dimensions>
+                           <dimensions type="written" unit="mm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote script="Arabic" scope="major" />
+                     <handNote script="Arabic" scope="major"/>
                   </handDesc>
                </physDesc>
                <history>
-                  <origin calendar="#Hijri-qamari" notBefore="1700" notAfter="1799">
-                     <origDate calendar="#Gregorian" notBefore="1700" notAfter="1799">18th century</origDate>
+                  <origin calendar="Hijri-qamari" notBefore="1700" notAfter="1799">
+                     <origDate calendar="Gregorian" notBefore="1700" notAfter="1799">18th century</origDate>
                      <origPlace>India</origPlace>
                   </origin>
                </history>
@@ -114,8 +120,7 @@
          </classDecl>
       </encodingDesc>
       <profileDesc>
-         <textClass>
-			</textClass>
+         <textClass/>
       </profileDesc>
       <revisionDesc>
          <change when="2022-04-21">

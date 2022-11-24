@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5469">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 12104</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343221</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239034.0x0000c2</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>Two poems of Jāmī</head>
                <msContents class="#multipleWorks">
@@ -48,9 +56,9 @@
                   </summary>
                   <msItem xml:id="Uk_Or_12104-item1" n="1" class="http://lccn.loc.gov/sh85100084">
                      <locus from="1v" to="91r">1v-91r ff</locus>
-                     <author key="person_90042997" ref="http://viaf.org/viaf/90042997">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Jāmī</persName>
-                        <persName xml:lang="fa">جامی</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_90042997">Jāmī</persName>
+                        <persName xml:lang="fa" key="viaf_90042997">جامی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_414">Subḥat al-abrār</title>
                      <title xml:lang="fa" key="work_414">سبحة الابرار</title>
@@ -58,14 +66,13 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 75.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_12104-item2" n="2" class="http://lccn.loc.gov/sh85100084">
                      <locus from="92v" to="138v">92v-138v ff</locus>
-                     <author key="person_90042997" ref="http://viaf.org/viaf/90042997">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Jāmī</persName>
-                        <persName xml:lang="fa">جامی</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_90042997">Jāmī</persName>
+                        <persName xml:lang="fa" key="viaf_90042997">جامی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_202">Tuḥfat al-aḥrār</title>
                      <title xml:lang="fa" key="work_202">تحفة الاحرار</title>
@@ -73,8 +80,7 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 75.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -93,7 +99,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1579" notAfter="1580">987</origDate>
+                     <origDate calendar="Hijri-qamari" notBefore="1579" notAfter="1580">987</origDate>
                   </origin>
                </history>
                <additional>

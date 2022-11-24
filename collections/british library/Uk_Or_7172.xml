@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6191">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011.08.17</date>
+            <date calendar="Gregorian">2011.08.17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -47,14 +49,14 @@
                      1 copy of Dīvān-i Najātī
                   </summary>
                   <msItem xml:id="Uk_Or_7172-item1">
-                     <author ref="http://viaf.org/viaf/261750298/" key="person_261750298" change="#ids-cleanup">
+                     <author ref="http://viaf.org/viaf/261750298/" key="viaf_261750298" change="#ids-cleanup">
                         <persName xml:lang="tr-Latn-x-lc" type="standard">Necâtı̂ Bey, d. 1509</persName>
                         <persName xml:lang="fa-Latn-x-lc" type="alt">ʻĪsà Najātī, d. 914/1509</persName>
                         <persName xml:lang="fa">‏عيسى نجاتی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8084">Dīvān-i Najātī</title>
                      <title xml:lang="fa" key="work_8084">دیوان نجاتی</title>
-                     <note>Collected poems, in Turkish, of <persName ref="http://viaf.org/viaf/261750298/" key="person_261750298" xml:lang="fa-Latn-x-lc" type="alt" role="aut" change="#role-assignment #ids-cleanup">ʻĪsà Najātī, d. 914/1509</persName>
+                     <note>Collected poems, in Turkish, of <persName ref="http://viaf.org/viaf/261750298/" key="viaf_261750298" xml:lang="fa-Latn-x-lc" type="alt" role="aut" change="#role-assignment #ids-cleanup">ʻĪsà Najātī, d. 914/1509</persName>
                      </note>
                      <note>Includes four ghazals in Persian, <locus from="48r" to="49v">ff. 48r-49v</locus>
                      </note>
@@ -81,7 +83,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1600" notAfter="1600">11th century<!-- Please review date attributes, see https://git.io/fihrist-dates -->
+                     <origDate calendar="Hijri-qamari" notBefore="1600" notAfter="1600">11th century<!-- Please review date attributes, see https://git.io/fihrist-dates -->
                      </origDate>
                      <origPlace>Ottoman Empire</origPlace>
                   </origin>

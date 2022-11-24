@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5387">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 11839</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343171</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239034.0x000090</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85007710 http://lccn.loc.gov/sh85018960 http://lccn.loc.gov/sh89002521">
                   <summary change="#add-summary">
@@ -50,18 +58,17 @@
                         <persName xml:lang="en" type="desc">Various calligraphers</persName>
                      </author>
                      <title xml:lang="en" type="desc" key="work_7971">Specimens of calligraphy</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
-                     <note>Specimens of calligraphy in the hands of <persName type="supplied" xml:lang="fa-Latn-x-lc" ref="http://viaf.org/viaf/96545602" key="person_96545602" role="scr" change="#role-assignment">Sulṭān Muḥammad Nūr</persName>, <persName type="supplied" xml:lang="fa-Latn-x-lc" key="person_f5666" role="scr" change="#role-assignment">‘Alī Riẓā</persName>, <persName type="supplied" xml:lang="fa-Latn-x-lc" key="person_f4139" role="scr" change="#role-assignment">Sulṭān Muḥammad Khandān</persName>
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
+                     <note>Specimens of calligraphy in the hands of <persName type="supplied" xml:lang="fa-Latn-x-lc" ref="http://viaf.org/viaf/96545602" key="viaf_96545602" role="scr" change="#role-assignment">Sulṭān Muḥammad Nūr</persName>, <persName type="supplied" xml:lang="fa-Latn-x-lc" key="person_f5666" role="scr" change="#role-assignment">‘Alī Riẓā</persName>, <persName type="supplied" xml:lang="fa-Latn-x-lc" key="person_f4139" role="scr" change="#role-assignment">Sulṭān Muḥammad Khandān</persName>
                      </note>
-                     <note>Some items are dated <date calendar="#Hijri-qamari" notBefore="1519" notAfter="1520">925</date>, <date calendar="#Hijri-qamari" notBefore="1535" notAfter="1536">942</date>, <date calendar="#Hijri-qamari" notBefore="1554" notAfter="1555">962</date>, and <date calendar="#Hijri-qamari" notBefore="1569" notAfter="1570">977</date>
+                     <note>Some items are dated <date calendar="Hijri-qamari" notBefore="1519" notAfter="1520">925</date>, <date calendar="Hijri-qamari" notBefore="1535" notAfter="1536">942</date>, <date calendar="Hijri-qamari" notBefore="1554" notAfter="1555">962</date>, and <date calendar="Hijri-qamari" notBefore="1569" notAfter="1570">977</date>
                      </note>
                      <listBibl>
                         <bibl>Meredith-Owens 1968, page 31.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -77,7 +84,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1500" notAfter="1699">16th-17th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1500" notAfter="1699">16th-17th century</origDate>
                   </origin>
                </history>
                <additional>

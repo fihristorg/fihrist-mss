@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6347">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -47,7 +49,7 @@
                   </summary>
                   <msItem xml:id="Uk_Or_8172-item1" n="1" class="http://lccn.loc.gov/sh86000279 http://lccn.loc.gov/sh2009115202 http://lccn.loc.gov/sh2010105554">
                      <locus from="2v" to="57v">2v-57v ff</locus>
-                     <author ref="http://viaf.org/viaf/3308154329459426970006" key="person_3308154329459426970006" change="#ids-cleanup">
+                     <author ref="http://viaf.org/viaf/3308154329459426970006" key="viaf_3308154329459426970006" change="#ids-cleanup">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">Zanjānī, ʻAbd al-Wahhāb ibn Ibrāhīm, active 1257</persName>
                         <persName xml:lang="fa-Latn-x-lc" type="alt">‘Abd al-Vahhāb Zanjānī</persName>
                         <persName xml:lang="fa">سید شریف جرجانی</persName>
@@ -78,7 +80,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1792" notAfter="1793">1207</origDate>
+                     <origDate calendar="Hijri-qamari" notBefore="1792" notAfter="1793">1207</origDate>
                   </origin>
                </history>
                <additional>

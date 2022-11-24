@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_18353">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -41,12 +43,18 @@
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 15602</idno>
                   <altIdentifier type="other">
-                     <idno />
+                     <idno/>
+                  </altIdentifier>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343454</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239456.0x000094</idno>
                   </altIdentifier>
                </msIdentifier>
                <head>Popular paintings</head>
                <msContents>
-                  <summary />
+                  <summary/>
                   <msItem class="http://lccn.loc.gov/sh2009126749" n="1" xml:id="Uk_Or_15602-item1">
                      <note>
                         <p>A bound collection of eight archaistic modern coloured and gilt drawings on card, chiefly illustrating scenes and persons of renown from Persian history and literature. </p>
@@ -54,7 +62,7 @@
                         <p>The subjects of the ‘tableaux’ (majlis) are as follows. 1 (f.1v): Manūchihr. 2 (2r): Yūsuf (the Prophet Joseph) with ‘the King of Egypt’ (Pharaoh). 3 (2v): Shāh ‘Abbās. 4 (3r): Yūsuf and Zulaykhā. 5 (3v): Dārā (the Emperor Darius). 6 (4r): A newly wed couple sitting together. 7 (4v): King Kay-Kāvūs. 8 (5r): King Jamshīd. Folio 1r, the front cover, is blank but for a few scribbled words and numbers; 5v, the back cover, is blank. </p>
                      </note>
                      <textLang mainLang="per">Persian</textLang>
-                     <filiation />
+                     <filiation/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -67,7 +75,7 @@
                            </dimensions>
                         </extent>
                         <condition>
-                           <p />
+                           <p/>
                         </condition>
                      </supportDesc>
                   </objectDesc>
@@ -76,24 +84,24 @@
                         <term xml:lang="per-Latn-x-lc">Naskhī</term>
                      </summary>
                      <handNote script="Arabic" scope="major">
-                        <p />
+                        <p/>
                      </handNote>
                   </handDesc>
                   <typeDesc>
-                     <p />
+                     <p/>
                   </typeDesc>
                   <decoDesc>
                      <summary>Red overlinings. 11 lines. Text frames: black, gold, black; black, gold (wide), gold; blue; black, gold, black. Illuminated heading, f. 1v; interlinear gilding (floral scroll), 1v-2r. </summary>
-                     <decoNote />
+                     <decoNote/>
                   </decoDesc>
-                  <additions />
+                  <additions/>
                   <bindingDesc>
                      <p>The folios are held together with hinges of canvas. </p>
                   </bindingDesc>
                </physDesc>
                <history>
-                  <origin calendar="#Hijri-qamari" notBefore="1900" notAfter="1999">
-                     <origDate calendar="#Gregorian" notBefore="1900" notAfter="1999">20th century</origDate>
+                  <origin calendar="Hijri-qamari" notBefore="1900" notAfter="1999">
+                     <origDate calendar="Gregorian" notBefore="1900" notAfter="1999">20th century</origDate>
                      <origPlace>Iran</origPlace>
                   </origin>
                   <acquisition>
@@ -125,8 +133,7 @@
          </classDecl>
       </encodingDesc>
       <profileDesc>
-         <textClass>
-			</textClass>
+         <textClass/>
       </profileDesc>
       <revisionDesc>
          <change when="2022-04-21">
@@ -134,7 +141,7 @@
               850 BL Persian mss prepared for initial publication in FIHRIST (plus 18 replacements)
          </change>
          <change when="2015-01-30">
-            <persName key="person_32019063" role="cataloguer">Ursula Sims-Williams</persName>
+            <persName key="viaf_32019063" role="cataloguer">Ursula Sims-Williams</persName>
          </change>
          <!-- Your revisionDesc should include information concerning 
 major changes to the electronic file.Replace the above 

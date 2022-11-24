@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6463">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -46,7 +48,7 @@
                      1 copy of Muqaddimat al-adab by Zamakhsharī, Maḥmūd ibn ʻUmar, 1075-1144
                   </summary>
                   <msItem xml:id="Uk_Or_9347-item1">
-                     <author ref="http://viaf.org/viaf/90071384" key="person_90071384">
+                     <author ref="http://viaf.org/viaf/90071384" key="viaf_90071384">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Zamakhsharī, Maḥmūd ibn ʻUmar, 1075-1144</persName>
                         <persName xml:lang="fa">محمود ابن عمر الزمخشری</persName>
                      </author>
@@ -77,7 +79,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1440" notAfter="1441">844</origDate>
+                     <origDate calendar="Hijri-qamari" notBefore="1440" notAfter="1441">844</origDate>
                   </origin>
                </history>
                <additional>

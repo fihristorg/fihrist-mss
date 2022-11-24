@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5414">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,27 +42,32 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 11944</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343183</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239034.0x00009c</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85014152 http://lccn.loc.gov/sh91004954 http://lccn.loc.gov/sh95008266 http://lccn.loc.gov/nr2001041767 http://lccn.loc.gov/sh85064480">
                   <summary change="#add-summary">
                      1 copy of Jilā al-ʻuyūn by Majlisī, Muḥammad Bāqir ibn Muḥammad Taqī, 1627 or 8-ca. 1699
                   </summary>
                   <msItem xml:id="Uk_Or_11944-item1">
-                     <author ref="http://viaf.org/viaf/90076153" key="person_90076153">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Majlisī, Muḥammad Bāqir ibn Muḥammad Taqī, 1627 or 8-ca. 1699</persName>
-                        <persName xml:lang="fa">مجلسى ، محمد باقر بن محمد تقى</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="ark:/81055/vdc_100164658924.0x000001 viaf_90076153">Majlisī, Muḥammad Bāqir ibn Muḥammad Taqī, 1627 or 8-ca. 1699</persName>
+                        <persName xml:lang="fa" key="ark:/81055/vdc_100164658924.0x000001 viaf_90076153">مجلسى ، محمد باقر بن محمد تقى</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_5911" change="#ids-cleanup">Jilā al-ʻuyūn</title>
                      <title xml:lang="fa" key="work_5911" change="#ids-cleanup">جلا العیون</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <note>Lives of the Prophet, Faṭimah, ʻAlī and the Imāms</note>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 20.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -76,7 +83,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1817" notAfter="1818">1233</origDate>
+                     <origDate calendar="Hijri-qamari" notBefore="1817" notAfter="1818">1233</origDate>
                   </origin>
                </history>
                <additional>

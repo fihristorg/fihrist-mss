@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6374">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,24 +42,30 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 8374</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342899</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237685.0x0000c5</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class=" http://lccn.loc.gov/sh2011003391 http://lccn.loc.gov/sh2009116092">
                   <summary change="#add-summary">
                      1 copy of Sharḥ-i bīst bāb by Birjandī, ʻAbd al-ʻAlī ibn Muḥammad ibn Ḥusayn, 16th cent
                   </summary>
                   <msItem xml:id="Uk_Or_8374-item1">
-                     <author ref="http://viaf.org/viaf/7603024" key="person_7603024">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Birjandī, ʻAbd al-ʻAlī ibn Muḥammad ibn Ḥusayn, 16th cent</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">‘Abd al-‘Alī Birjandī</persName>
-                        <persName xml:lang="fa" type="alt">عبد العلی برجندی</persName>
-                        <persName xml:lang="fa">عبد العلی ابن محمد ابن حسین البرجندی</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_7603024">Birjandī, ʻAbd al-ʻAlī ibn Muḥammad ibn Ḥusayn, 16th cent</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_7603024">‘Abd al-‘Alī Birjandī</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_7603024">عبد العلی برجندی</persName>
+                        <persName xml:lang="fa" key="viaf_7603024">عبد العلی ابن محمد ابن حسین البرجندی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20970" change="#ids-cleanup">Sharḥ-i bīst bāb</title>
                      <title xml:lang="fa" key="work_20970" change="#ids-cleanup">شرح بیست باب</title>
                      <title xml:lang="en" type="desc" key="work_20970" change="#ids-cleanup">Commentary on Naṣīr al-Dīn Ṭūsī’s Bīst Bāb</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
-                     <note>A commentary on <persName xml:lang="fa-Latn-x-lc" type="standard" ref="http://viaf.org/viaf/12392936" key="person_12392936" role="ant" change="#role-assignment">Naṣīr al-Dīn Muḥammad ibn Muḥammad Ṭūsī’s</persName>
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
+                     <note>A commentary on <persName xml:lang="fa-Latn-x-lc" type="standard" ref="http://viaf.org/viaf/12392936" key="viaf_12392936" role="ant" change="#role-assignment">Naṣīr al-Dīn Muḥammad ibn Muḥammad Ṭūsī’s</persName>
                         <title>Bīst Bāb</title>, a treatise on the astrolabe, also known as <title>Bīst bāb dar maʻrifat-i asṭurlāb</title>
                      </note>
                      <note>Autograph</note>
@@ -65,8 +73,7 @@
                         <bibl>Meredith-Owens 1968, page 25.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -82,7 +89,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1506" notAfter="1507">912</origDate>
+                     <origDate calendar="Hijri-qamari" notBefore="1506" notAfter="1507">912</origDate>
                   </origin>
                </history>
                <additional>

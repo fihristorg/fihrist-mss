@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5193">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 10888</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343028</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239034.0x000001</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85100084">
                   <summary change="#add-summary">
@@ -54,15 +62,14 @@
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8973">Ṣan‘ān u Tarsā</title>
                      <title xml:lang="fa" key="work_8973">صنعان و ترسا</title>
-                     <note>Dedicated to <persName xml:lang="ota-Latn-x" type="standard" ref="http://viaf.org/viaf/35254696" key="person_35254696" role="dte" change="#role-assignment">Sulṭān ‘Abd al-Majīd <foreign xml:lang="ota">سلطان عبد المجید</foreign>
+                     <note>Dedicated to <persName xml:lang="ota-Latn-x" type="standard" ref="http://viaf.org/viaf/35254696" key="viaf_35254696" role="dte" change="#role-assignment">Sulṭān ‘Abd al-Majīd <foreign xml:lang="ota">سلطان عبد المجید</foreign>
                         </persName>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 70.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -78,7 +85,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1800" notAfter="1899">19th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1800" notAfter="1899">19th century</origDate>
                   </origin>
                </history>
                <additional>

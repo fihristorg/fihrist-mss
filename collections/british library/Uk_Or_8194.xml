@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6348">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,33 +42,36 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 8194</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342878</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237685.0x0000b0</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh87000152 http://lccn.loc.gov/sh2008104964">
                   <summary change="#add-summary">
                      1 copy of Translation of Iḥyā al-‘ulūm by Jājarmī, al-Muʼayyad ibn Muḥammad
                   </summary>
                   <msItem xml:id="Uk_Or_8194-item1">
-                     <author ref="http://viaf.org/viaf/4592726" key="person_4592726">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Jājarmī, al-Muʼayyad ibn Muḥammad</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Majd al-Dīn Abū’l-Ma‘ālī Mu’ayyad ibn Muḥammad Jājarmī</persName>
-                        <persName xml:lang="fa" type="alt">مجد الدین ابو المعالی مؤيد بن محمد جاجرمی</persName>
-                        <persName xml:lang="fa">جاجرمی، المؤيد بن محمد</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_4592726">Jājarmī, al-Muʼayyad ibn Muḥammad</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_4592726">Majd al-Dīn Abū’l-Ma‘ālī Mu’ayyad ibn Muḥammad Jājarmī</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_4592726">مجد الدین ابو المعالی مؤيد بن محمد جاجرمی</persName>
+                        <persName xml:lang="fa" key="viaf_4592726">جاجرمی، المؤيد بن محمد</persName>
                      </author>
                      <title xml:lang="en" type="desc" key="work_8486">Translation of Iḥyā al-‘ulūm</title>
                      <note>A Persian translation of <title xml:lang="ar-Latn-x-lc">Iḥyā al-‘ulūm (<foreign xml:lang="ar">احياء العلوم</foreign>)
-                        </title> of <persName xml:lang="fa-Latn-x-lc" ref="http://viaf.org/viaf/31996761" key="person_31996761" type="standard" role="ant" change="#role-assignment">Ghazzālī, 1058-1111,</persName> made in <date calendar="#Hijri-qamari" when="1223">620</date> in the reign of <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f4133" role="oth" change="#role-assignment">Sulṭān Iletmish</persName> for his vizier <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f4504" role="pat" change="#role-assignment">al-Junaydī</persName>
+                        </title> of <persName xml:lang="fa-Latn-x-lc" ref="http://viaf.org/viaf/31996761" key="viaf_31996761" type="standard" role="ant" change="#role-assignment">Ghazzālī, 1058-1111,</persName> made in <date calendar="Hijri-qamari" when="1223">620</date> in the reign of <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f4133" role="oth" change="#role-assignment">Sulṭān Iletmish</persName> for his vizier <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f4504" role="pat" change="#role-assignment">al-Junaydī</persName>
                      </note>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
-                     <note>
-                        <foreign xml:lang="fa" />
-                     </note>
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
+                     <note/>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page pp. 5-6.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -82,7 +87,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1200" notAfter="1399">13th – 14th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1200" notAfter="1399">13th – 14th century</origDate>
                   </origin>
                </history>
                <additional>

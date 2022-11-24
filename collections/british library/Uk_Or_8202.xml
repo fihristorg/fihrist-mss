@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6352">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,31 +42,36 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 8202</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342882</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237685.0x0000b4</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85100084 http://lccn.loc.gov/sh85067900 http://lccn.loc.gov/sh2008109077">
                   <summary change="#add-summary">
                      1 copy of Taz̲kirah-’i Dilgushā by Navvāb Shīrāzī, ʻAlī Akbar, d. 1846 or 7
                   </summary>
                   <msItem xml:id="Uk_Or_8202-item1">
-                     <author ref="http://viaf.org/viaf/306133787" key="person_306133787" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Navvāb Shīrāzī, ʻAlī Akbar, d. 1846 or 7</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">‘Alī Akbar Shīrāzī</persName>
-                        <persName xml:lang="fa" type="alt">علی اکبر شیرازی</persName>
-                        <persName xml:lang="fa">علی اکبر نواب شیرازی</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_306133787">Navvāb Shīrāzī, ʻAlī Akbar, d. 1846 or 7</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_306133787">‘Alī Akbar Shīrāzī</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_306133787">علی اکبر شیرازی</persName>
+                        <persName xml:lang="fa" key="viaf_306133787">علی اکبر نواب شیرازی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_34" change="#ids-cleanup">Taz̲kirah-’i Dilgushā</title>
                      <title xml:lang="fa" key="work_34" change="#ids-cleanup">تذکرۀ دلگشا</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
-                     <note>On the poets of the reign of <persName xml:lang="fa-Latn-x-lc" type="standard" ref="http://viaf.org/viaf/51026511" key="person_51026511" role="oth" change="#role-assignment">Fatḥ ‘Alī Shāh, d. 1834 <foreign xml:lang="fa">فتح علی شاه</foreign>
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
+                     <note>On the poets of the reign of <persName xml:lang="fa-Latn-x-lc" type="standard" ref="http://viaf.org/viaf/51026511" key="viaf_51026511" role="oth" change="#role-assignment">Fatḥ ‘Alī Shāh, d. 1834 <foreign xml:lang="fa">فتح علی شاه</foreign>
                         </persName>
                      </note>
                      <listBibl>
                         <bibl>Meredith-Owens 1968, page 22.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -80,7 +87,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1838" notAfter="1839">1254</origDate>
+                     <origDate calendar="Hijri-qamari" notBefore="1838" notAfter="1839">1254</origDate>
                   </origin>
                </history>
                <additional>

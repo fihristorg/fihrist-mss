@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5270">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,22 +42,28 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 11003</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343092</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239034.0x000041</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh2001000141 http://lccn.loc.gov/sh2011003391">
                   <summary change="#add-summary">
                      1 copy of Tanbīhāt al-munajjimīn by Gunābādī, Muẓaffar ibn Muḥammad Qāsim, -1621 or 1622
                   </summary>
                   <msItem xml:id="Uk_Or_11003-item1">
-                     <author ref="http://viaf.org/viaf/292509212" key="person_292509212">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Gunābādī, Muẓaffar ibn Muḥammad Qāsim, -1621 or 1622</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Muẓaffar ibn Muḥammad Qāsim Jūnābādī</persName>
-                        <persName xml:lang="fa">مظفر ابن محمد قاسم جونابادی</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="ark:/81055/vdc_100164656984.0x000001 viaf_292509212">Gunābādī, Muẓaffar ibn Muḥammad Qāsim, -1621 or 1622</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="ark:/81055/vdc_100164656984.0x000001 viaf_292509212">Muẓaffar ibn Muḥammad Qāsim Jūnābādī</persName>
+                        <persName xml:lang="fa" key="viaf_292509212">مظفر ابن محمد قاسم جونابادی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_9079">Tanbīhāt al-munajjimīn</title>
                      <title xml:lang="fa" key="work_9079">تنبیهات المنجمین</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
-                     <note>A work on astrology that is dedicated to <persName xml:lang="fa-Latn-x-lc" type="standard" ref="http://viaf.org/viaf/77109363" key="person_77109363" role="dte" change="#role-assignment">‘Abbās I <foreign xml:lang="fa">شاه عباس</foreign>
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
+                     <note>A work on astrology that is dedicated to <persName xml:lang="fa-Latn-x-lc" type="standard" ref="http://viaf.org/viaf/77109363" key="viaf_77109363" role="dte" change="#role-assignment">‘Abbās I <foreign xml:lang="fa">شاه عباس</foreign>
                         </persName>
                      </note>
                      <note>Imperfect at the end</note>
@@ -63,8 +71,7 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 26.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -80,7 +87,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1700" notAfter="1799">18th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1700" notAfter="1799">18th century</origDate>
                   </origin>
                </history>
                <additional>

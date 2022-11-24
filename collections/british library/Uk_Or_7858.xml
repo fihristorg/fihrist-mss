@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6286">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 7858</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342836</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237685.0x000086</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>A volume of astronomical and astrological tracts</head>
                <msContents class="#multipleWorks">
@@ -48,20 +56,19 @@
                   </summary>
                   <msItem xml:id="Uk_Or_7858-item1" n="1" class="http://lccn.loc.gov/sh2011003391 http://lccn.loc.gov/sh2001000141">
                      <locus from="1r" to="32r">ff 1r-32r</locus>
-                     <author ref="http://viaf.org/viaf/12392936" key="person_12392936">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Ṭūsī, Naṣīr al-Dīn Muḥammad ibn Muḥammad, 1201-1274</persName>
-                        <persName xml:lang="fa">محمد بن محمد نصير الدين الطوسی</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_12392936">Ṭūsī, Naṣīr al-Dīn Muḥammad ibn Muḥammad, 1201-1274</persName>
+                        <persName xml:lang="fa" key="viaf_12392936">محمد بن محمد نصير الدين الطوسی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8070">Sharḥ-i sī faṣl</title>
                      <title xml:lang="fa" key="work_8070">شرح سی فصل</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <listBibl>
                         <bibl>Meredith-Owens 1968, page 24.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_7858-item2" n="2" class="http://lccn.loc.gov/sh2011003391 http://lccn.loc.gov/sh2001000141">
                      <locus from="34r" to="46v">ff 34r-46v</locus>
@@ -72,20 +79,19 @@
                      <title xml:lang="fa" key="work_8071">مدخل منظوم فی النجوم</title>
                      <note>Anonymous mas̲navī on astrology dedicated to <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f1704" role="dte" change="#role-assignment">Jamāl al-Dīn Abū al-Maḥāmid Muḥammad ibn Aḥmad Ghūrī</persName>
                      </note>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <listBibl>
                         <bibl>Meredith-Owens 1968, page 24.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_7858-item3" n="3" class="http://lccn.loc.gov/sh2011003391 http://lccn.loc.gov/sh2001000141">
                      <locus from="46r" to="47r ">ff 46r-47r</locus>
-                     <author ref="http://viaf.org/viaf/12392936" key="person_12392936">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Ṭūsī, Naṣīr al-Dīn Muḥammad ibn Muḥammad, 1201-1274</persName>
-                        <persName xml:lang="fa">محمد بن محمد نصير الدين الطوسی</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_12392936">Ṭūsī, Naṣīr al-Dīn Muḥammad ibn Muḥammad, 1201-1274</persName>
+                        <persName xml:lang="fa" key="viaf_12392936">محمد بن محمد نصير الدين الطوسی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8072">Manẓūmah fī al-ikhtiyārāt ‘alà burj al-qamar</title>
                      <title xml:lang="fa" key="work_8072">منظومة فی الاختیارات علی برج القمر</title>
@@ -94,8 +100,7 @@
                         <bibl>Meredith-Owens 1968, page 24.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_7858-item4" n="4" class="http://lccn.loc.gov/sh2011003391 http://lccn.loc.gov/sh2001000141">
                      <locus from="47r" to="49v">ff 47r-49v</locus>
@@ -106,14 +111,13 @@
                      <title xml:lang="fa" key="work_8073">اختیارات از قول امیر المؤمنین علی</title>
                      <note>Beginning with some verses</note>
                      <note>
-                        <title>Ru’yat al-hilāl</title> written at the bottom of <locus n="49v">49v</locus> 49v and <locus from="50v" to="52r" /> 50v-52r
+                        <title>Ru’yat al-hilāl</title> written at the bottom of <locus n="49v">49v</locus> 49v and <locus from="50v" to="52r"/> 50v-52r
                      </note>
                      <listBibl>
                         <bibl>Meredith-Owens 1968, page 24.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_7858-item5" n="5" class="http://lccn.loc.gov/sh2011003391 http://lccn.loc.gov/sh2001000141">
                      <locus from="49r" to="50v">ff 49r-50v</locus>
@@ -127,8 +131,7 @@
                         <bibl>Meredith-Owens 1968, page 24.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_7858-item6" n="6" class="http://lccn.loc.gov/sh2011003391 http://lccn.loc.gov/sh2001000141">
                      <locus from="53r" to="72r ">ff 53r-72r</locus>
@@ -142,8 +145,7 @@
                         <bibl>Meredith-Owens 1968, page 24.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_7858-item7" n="7" class="http://lccn.loc.gov/sh2011003391 http://lccn.loc.gov/sh2001000141">
                      <locus from="73v" to="73v">ff 73v</locus>
@@ -156,8 +158,7 @@
                         <bibl>Meredith-Owens 1968, page 24.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_7858-item8" n="8" class="http://lccn.loc.gov/sh2011003391 http://lccn.loc.gov/sh2001000141">
                      <locus from="73r" to="74v ">ff 73r-74v</locus>
@@ -170,8 +171,7 @@
                         <bibl>Meredith-Owens 1968, page 24.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_7858-item9" n="9" class="http://lccn.loc.gov/sh2011003391 http://lccn.loc.gov/sh2001000141">
                      <locus from="74r" to="99r ">ff 74r-99r</locus>
@@ -180,14 +180,13 @@
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8078">Risālat al-irshād fī al-uṣturlāb</title>
                      <title xml:lang="fa" key="work_8078">رسالة الارشاد فی الاصترلاب</title>
-                     <note>Composed probably at Iṣfahān in <date calendar="#Hijri-qamari" notBefore="1297" notAfter="1298">697</date> by <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f3176" role="aut" change="#role-assignment">Naṣīr al-Dīn Shīrāzī</persName>
+                     <note>Composed probably at Iṣfahān in <date calendar="Hijri-qamari" notBefore="1297" notAfter="1298">697</date> by <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f3176" role="aut" change="#role-assignment">Naṣīr al-Dīn Shīrāzī</persName>
                      </note>
                      <listBibl>
                         <bibl>Meredith-Owens 1968, page 24.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -206,7 +205,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1327" notAfter="1328">728</origDate>
+                     <origDate calendar="Hijri-qamari" notBefore="1327" notAfter="1328">728</origDate>
                   </origin>
                </history>
                <additional>

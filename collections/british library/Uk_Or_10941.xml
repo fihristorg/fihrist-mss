@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5236">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 10941</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343064</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239034.0x000025</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="#multipleWorks">
                   <summary change="#add-summary2">
@@ -47,11 +55,11 @@
                   </summary>
                   <msItem xml:id="Uk_Or_10941-item1" n="1" class="http://lccn.loc.gov/sh85100084">
                      <locus from="1v" to="67r">1v-67r ff</locus>
-                     <author key="person_56260243" ref="http://viaf.org/viaf/56260243">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Āqil Khān Rāzī</persName>
-                        <persName xml:lang="fa">عاقل خان رازی</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Mīr ‘Alī ‘Askarī ibn Muḥammad Taqī ibn Muḥammad Qāsim al-Khvāfī</persName>
-                        <persName xml:lang="fa" type="alt">میر علی عسکری ابن محمد تقی ابن محمد قاسم الخوافی</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_56260243">Āqil Khān Rāzī</persName>
+                        <persName xml:lang="fa" key="viaf_56260243">عاقل خان رازی</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_56260243">Mīr ‘Alī ‘Askarī ibn Muḥammad Taqī ibn Muḥammad Qāsim al-Khvāfī</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_56260243">میر علی عسکری ابن محمد تقی ابن محمد قاسم الخوافی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20471" change="#ids-cleanup">Mihr u Māh</title>
                      <title xml:lang="fa" key="work_20471" change="#ids-cleanup">مهر و ماه</title>
@@ -59,16 +67,15 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 72.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_10941-item2" n="2" class="http://lccn.loc.gov/sh85100084">
                      <locus from="68v" to="148r">68v-148r ff</locus>
-                     <author key="person_56260243" ref="http://viaf.org/viaf/56260243">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Āqil Khān Rāzī</persName>
-                        <persName xml:lang="fa">عاقل خان رازی</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Mīr ‘Alī ‘Askarī ibn Muḥammad Taqī ibn Muḥammad Qāsim al-Khvāfī</persName>
-                        <persName xml:lang="fa" type="alt">میر علی عسکری ابن محمد تقی ابن محمد قاسم الخوافی</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_56260243">Āqil Khān Rāzī</persName>
+                        <persName xml:lang="fa" key="viaf_56260243">عاقل خان رازی</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_56260243">Mīr ‘Alī ‘Askarī ibn Muḥammad Taqī ibn Muḥammad Qāsim al-Khvāfī</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_56260243">میر علی عسکری ابن محمد تقی ابن محمد قاسم الخوافی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_21095" change="#ids-cleanup">Sham‘ u parvānah</title>
                      <title xml:lang="fa" key="work_21095" change="#ids-cleanup">شمع و پروانه</title>
@@ -76,8 +83,7 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 72.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -93,7 +99,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1887" notAfter="1887">1887</origDate>
+                     <origDate calendar="Gregorian" notBefore="1887" notAfter="1887">1887</origDate>
                   </origin>
                </history>
                <additional>

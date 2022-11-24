@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5394">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -46,14 +48,14 @@
                      Dīvān by Ḥāfiẓ Sa‘d
                   </summary>
                   <msItem xml:id="Uk_Or_11846-item1">
-                     <author key="person_56731778" change="#ids-cleanup">
+                     <author key="viaf_56731778" change="#ids-cleanup">
                         <persName xml:lang="fa-Latn-x-lc" type="supplied">Ḥāfiẓ Sa‘d</persName>
                         <persName xml:lang="fa">حافظ سعد</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20666" change="#ids-cleanup">Dīvān</title>
                      <title xml:lang="fa" key="work_20666" change="#ids-cleanup">دیوان</title>
                      <note>Copied for the library of <persName type="supplied" xml:lang="fa-Latn-x-lc" key="person_f3348" role="pat" change="#role-assignment">Pīr Būdāq <foreign xml:lang="fa">پیر بوداق</foreign>
-                        </persName>, son of <persName type="supplied" xml:lang="fa-Latn-x-lc" key="person_43402797" role="oth" change="#role-assignment #ids-cleanup">Jahānshāh Qaraqoyunlu <foreign xml:lang="fa">جهانشاه قرا قویونلو</foreign>
+                        </persName>, son of <persName type="supplied" xml:lang="fa-Latn-x-lc" key="viaf_43402797" role="oth" change="#role-assignment #ids-cleanup">Jahānshāh Qaraqoyunlu <foreign xml:lang="fa">جهانشاه قرا قویونلو</foreign>
                         </persName>
                      </note>
                      <listBibl>
@@ -77,15 +79,15 @@
                   <decoDesc>
                      <decoNote type="miniature">1 miniature</decoNote>
                      <decoNote type="miniature">
-                        <locus n="148r" />
+                        <locus n="148r"/>
                         <ref target="http://www.bl.uk/manuscripts/Viewer.aspx?ref=or_11846_f148r">f. 148r</ref>
-                        <persName key="person_f3348" role="fmo pat" change="#role-assignment #ids-cleanup">Pīr Būdāḳ</persName>, son of <persName key="person_43402797" role="oth" change="#role-assignment #ids-cleanup">Jahānshāh Ḳarāḳoyunlu</persName>, reclining in a garden listening to a lute player.
+                        <persName key="person_f3348" role="fmo pat" change="#role-assignment #ids-cleanup">Pīr Būdāḳ</persName>, son of <persName key="viaf_43402797" role="oth" change="#role-assignment #ids-cleanup">Jahānshāh Ḳarāḳoyunlu</persName>, reclining in a garden listening to a lute player.
                      </decoNote>
                   </decoDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1459" notAfter="1460">864</origDate>
+                     <origDate calendar="Hijri-qamari" notBefore="1459" notAfter="1460">864</origDate>
                   </origin>
                </history>
                <additional>

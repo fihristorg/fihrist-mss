@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_17821">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>Delhi Persian 985</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004341478</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163233796.0x000006</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>Work on Sufism</head>
                <msContents>
@@ -68,8 +76,7 @@
 </p>
                      </note>
                      <textLang mainLang="per">Persian</textLang>
-                     <note>
-						</note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -79,18 +86,17 @@
                               <height>203</height>
                               <width>140</width>
                            </dimensions>
-                           <dimensions type="written" unit="mm">
-									</dimensions>
+                           <dimensions type="written" unit="mm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote script="Arabic" scope="major" />
+                     <handNote script="Arabic" scope="major"/>
                   </handDesc>
                </physDesc>
                <history>
-                  <origin calendar="#Hijri-qamari" notBefore="1795" notAfter="1796" when-custom="1210">
-                     <origDate calendar="#Hijri-qamari" notBefore="1795" notAfter="1796">1210 (1795 - 1796)</origDate>
+                  <origin calendar="Hijri-qamari" notBefore="1795" notAfter="1796" when-custom="1210">
+                     <origDate calendar="Hijri-qamari" notBefore="1795" notAfter="1796">1210 (1795 - 1796)</origDate>
                      <origPlace>India</origPlace>
                   </origin>
                </history>
@@ -124,8 +130,7 @@
          </classDecl>
       </encodingDesc>
       <profileDesc>
-         <textClass>
-			</textClass>
+         <textClass/>
       </profileDesc>
       <revisionDesc>
          <change when="2022-04-21">

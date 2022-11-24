@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5596">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -46,17 +48,17 @@
                      1 copy of Faṣl al-khiṭāb by Muḥammad Pārsā, d. 822/1410
                   </summary>
                   <msItem xml:id="Uk_Or_13759-item1">
-                     <author key="person_65292796" change="#ids-cleanup">
+                     <author key="viaf_65292796" change="#ids-cleanup">
                         <persName xml:lang="fa-Latn-x-lc" type="supplied">Muḥammad Pārsā, d. 822/1410</persName>
                         <persName xml:lang="fa">محمد پارسا</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8662">Faṣl al-khiṭāb</title>
                      <title xml:lang="fa" key="work_8662">فصل الخطاب</title>
                      <note>A collection of extracts from many Persian and Arabic texts on Sufism</note>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <note>
-                        <foreign xml:lang="fa" />
+                        <foreign xml:lang="fa"/>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Waley 1998, page 9.</bibl>
@@ -80,7 +82,7 @@
                <history>
                   <origin>
                      <origPlace>Istanbul</origPlace>
-                     <origDate calendar="#Hijri-qamari" when="1588">996</origDate>
+                     <origDate calendar="Hijri-qamari" when="1588">996</origDate>
                   </origin>
                </history>
                <additional>

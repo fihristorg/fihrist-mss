@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_17787">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>Delhi Persian 71</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343591</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163240411.0x000007</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>Miscellaneous works</head>
                <msContents class="https://lccn.loc.gov/sh85058192 http://lccn.loc.gov/sh2012000503">
@@ -48,15 +56,15 @@
                </msContents>
                <physDesc>
                   <objectDesc form="codex">
-                     <supportDesc material="chart" />
+                     <supportDesc material="chart"/>
                   </objectDesc>
                   <handDesc>
-                     <handNote script="Arabic" scope="major" />
+                     <handNote script="Arabic" scope="major"/>
                   </handDesc>
                </physDesc>
                <history>
-                  <origin calendar="#Hijri-qamari" notBefore="1580" notAfter="1840">
-                     <origDate calendar="#Gregorian" notBefore="1580" notAfter="1840">16th-19th centuries</origDate>
+                  <origin calendar="Hijri-qamari" notBefore="1580" notAfter="1840">
+                     <origDate calendar="Gregorian" notBefore="1580" notAfter="1840">16th-19th centuries</origDate>
                      <origPlace>India</origPlace>
                   </origin>
                </history>
@@ -69,7 +77,7 @@
                   </adminInfo>
                </additional>
                <msPart xml:id="Uk_Delhi_Persian_71-part1">
-                  <msIdentifier xmlns="http://www.tei-c.org/ns/1.0">
+                  <msIdentifier>
                      <altIdentifier type="other">
                         <idno>a</idno>
                      </altIdentifier>
@@ -99,15 +107,15 @@
                      </objectDesc>
                   </physDesc>
                   <history>
-                     <origin calendar="#Hijri-qamari" when="1803-10-25" when-custom="9 Rajab in regnal year 43">
-                        <origDate calendar="#Hijri-qamari" when="1803-10-25">9 Rajab in regnal year 43</origDate>
-                        <origDate calendar="#Gregorian" when="1803-10-25">25 October 1803</origDate>
+                     <origin calendar="Hijri-qamari" when="1803-10-25" when-custom="9 Rajab in regnal year 43">
+                        <origDate calendar="Hijri-qamari" when="1803-10-25">9 Rajab in regnal year 43</origDate>
+                        <origDate calendar="Gregorian" when="1803-10-25">25 October 1803</origDate>
                         <origPlace>India</origPlace>
                      </origin>
                   </history>
                </msPart>
                <msPart xml:id="Uk_Delhi_Persian_71-part2">
-                  <msIdentifier xmlns="http://www.tei-c.org/ns/1.0">
+                  <msIdentifier>
                      <altIdentifier type="other">
                         <idno>b</idno>
                      </altIdentifier>
@@ -146,14 +154,14 @@
                      </objectDesc>
                   </physDesc>
                   <history>
-                     <origin calendar="#Hijri-qamari" notBefore="1750" notAfter="1840">
-                        <origDate calendar="#Gregorian" notBefore="1750" notAfter="1840">1750 - 1840</origDate>
+                     <origin calendar="Hijri-qamari" notBefore="1750" notAfter="1840">
+                        <origDate calendar="Gregorian" notBefore="1750" notAfter="1840">1750 - 1840</origDate>
                         <origPlace>India</origPlace>
                      </origin>
                   </history>
                </msPart>
                <msPart xml:id="Uk_Delhi_Persian_71-part3">
-                  <msIdentifier xmlns="http://www.tei-c.org/ns/1.0">
+                  <msIdentifier>
                      <altIdentifier type="other">
                         <idno>c</idno>
                      </altIdentifier>
@@ -162,7 +170,7 @@
                      <msItem class="http://lccn.loc.gov/sh89005784" n="3" xml:id="Uk_Delhi_Persian_71-part3-item1">
                         <locus from="124v" to="187v">ff. 124v-187v</locus>
                         <note>
-                           <p>Untitled biography of the prominent Sunnī theologian and jurist often referred to by the epithet Imām-i Aʿẓam, <persName key="person_88126052" role="subject">Abū Ḥanīfah Nuʿmān ibn S̲ābit al-Kūfī</persName>, endorsed as the <title>Manāqib al-Ḥanīfah</title>, ascribed to <persName key="person_f7579" role="att">Shaykh Abū Saʿīd Abīvirdī</persName>
+                           <p>Untitled biography of the prominent Sunnī theologian and jurist often referred to by the epithet Imām-i Aʿẓam, <persName key="viaf_88126052" role="subject">Abū Ḥanīfah Nuʿmān ibn S̲ābit al-Kūfī</persName>, endorsed as the <title>Manāqib al-Ḥanīfah</title>, ascribed to <persName key="person_f7579" role="att">Shaykh Abū Saʿīd Abīvirdī</persName>
                            </p>
                            <p>The work is divided into twelve maqṣad
 </p>
@@ -192,13 +200,13 @@ Erased seal at beginning
                   </physDesc>
                   <history>
                      <origin notBefore="1580" notAfter="1650">
-                        <origDate calendar="#Gregorian" notBefore="1580" notAfter="1650">1580 - 1650</origDate>
+                        <origDate calendar="Gregorian" notBefore="1580" notAfter="1650">1580 - 1650</origDate>
                         <origPlace>India or Central Asia</origPlace>
                      </origin>
                   </history>
                </msPart>
                <msPart xml:id="Uk_Delhi_Persian_71-part4">
-                  <msIdentifier xmlns="http://www.tei-c.org/ns/1.0">
+                  <msIdentifier>
                      <altIdentifier type="other">
                         <idno>d</idno>
                      </altIdentifier>
@@ -207,7 +215,7 @@ Erased seal at beginning
                      <msItem class="http://lccn.loc.gov/sh2012000503 http://lccn.loc.gov/sh2010112931" n="4" xml:id="Uk_Delhi_Persian_71-part4-item1">
                         <locus from="188r" to="192v">ff. 188r-192v</locus>
                         <note>
-                           <p>Unidentified Sunnī polemic written in response to a particular attack on the reputation of the prominent Sunnī theologian and jurist often referred to by the epithet <persName key="person_88126052" role="subject">Imām-i Aʿẓam</persName>, <persName key="person_88126052" role="subject">Abū Ḥanīfah Nuʿmān ibn S̲ābit al-Kūfī</persName>, in 15 Ramaz̤ān 1241/23 April 1826 
+                           <p>Unidentified Sunnī polemic written in response to a particular attack on the reputation of the prominent Sunnī theologian and jurist often referred to by the epithet <persName key="viaf_88126052" role="subject">Imām-i Aʿẓam</persName>, <persName key="viaf_88126052" role="subject">Abū Ḥanīfah Nuʿmān ibn S̲ābit al-Kūfī</persName>, in 15 Ramaz̤ān 1241/23 April 1826 
                            </p>
                            <p>Defective at end
 </p>
@@ -230,13 +238,13 @@ Erased seal at beginning
                   </physDesc>
                   <history>
                      <origin notBefore="1826-04-23 " notAfter="1840">
-                        <origDate calendar="#Gregorian" notBefore="1826-04-23 " notAfter="1840">23 April 1826 - 1840</origDate>
+                        <origDate calendar="Gregorian" notBefore="1826-04-23 " notAfter="1840">23 April 1826 - 1840</origDate>
                         <origPlace>India</origPlace>
                      </origin>
                   </history>
                </msPart>
                <msPart xml:id="Uk_Delhi_Persian_71-part5">
-                  <msIdentifier xmlns="http://www.tei-c.org/ns/1.0">
+                  <msIdentifier>
                      <altIdentifier type="other">
                         <idno>e</idno>
                      </altIdentifier>
@@ -247,7 +255,7 @@ Erased seal at beginning
                         <note>
                            <p>Mas̲navī based on a translation of the Sanskrit sex manual, the <title>Kokashastra</title>, possibly by the poet <persName key="person_f7505" role="att trl">Rawshan Z̤amīr</persName>, recasting the work in unaffected Persian verse in 1192/1778. This is a rare and early copy 
                            </p>
-                           <p>Containing contemporary references and passages praising Bengal, <persName key="person_4638161696247516120008" role="subject">Navvāb Āṣaf al-Dawlah</persName>, <persName key="person_f7244" role="pat">Laṭāfat ʿAlī Khān</persName> (patron?), and the accession of the throne of the Timurud or Mughal <persName key="person_70169499" role="subject">Emperor Shāh ʿĀlam</persName>
+                           <p>Containing contemporary references and passages praising Bengal, <persName key="viaf_4638161696247516120008" role="subject">Navvāb Āṣaf al-Dawlah</persName>, <persName key="person_f7244" role="pat">Laṭāfat ʿAlī Khān</persName> (patron?), and the accession of the throne of the Timurud or Mughal <persName key="viaf_70169499" role="subject">Emperor Shāh ʿĀlam</persName>
                            </p>
                            <p>Defective at beginning
 </p>
@@ -272,9 +280,9 @@ Erased seal at beginning
                      </objectDesc>
                   </physDesc>
                   <history>
-                     <origin calendar="#Hijri-qamari" when="1783-01-20" when-custom="15 Ṣafar regnal year 24 of Shāh ʿĀlam, 1197">
-                        <origDate calendar="#Hijri-qamari" when="1783-01-20">15 Ṣafar regnal year 24 of Shāh ʿĀlam, 1197</origDate>
-                        <origDate calendar="#Gregorian" when="1783-01-20">20 January 1783</origDate>
+                     <origin calendar="Hijri-qamari" when="1783-01-20" when-custom="15 Ṣafar regnal year 24 of Shāh ʿĀlam, 1197">
+                        <origDate calendar="Hijri-qamari" when="1783-01-20">15 Ṣafar regnal year 24 of Shāh ʿĀlam, 1197</origDate>
+                        <origDate calendar="Gregorian" when="1783-01-20">20 January 1783</origDate>
                         <origPlace>India</origPlace>
                      </origin>
                   </history>

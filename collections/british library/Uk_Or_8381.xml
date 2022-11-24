@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6381">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,28 +42,33 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 8381</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342904</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237685.0x0000ca</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh2008111616 http://lccn.loc.gov/sh2010112937">
                   <summary change="#add-summary">
                      1 copy of Ansāb al-navāṣib by ‘Alī ibn Dā’ūd Astarābādī
                   </summary>
                   <msItem xml:id="Uk_Or_8381-item1">
-                     <author key="person_297340102" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="supplied">‘Alī ibn Dā’ūd Astarābādī</persName>
-                        <persName xml:lang="fa">علی بن دائود استرابادی</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied" key="viaf_297340102">‘Alī ibn Dā’ūd Astarābādī</persName>
+                        <persName xml:lang="fa" key="viaf_297340102">علی بن دائود استرابادی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_9191">Ansāb al-navāṣib</title>
                      <title xml:lang="fa" key="work_9191">انساب النواصب</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
-                     <note>A polemic in defence of <persName ref="http://viaf.org/viaf/34436377" key="person_34436377" type="standard" xml:lang="fa-Latn-x-lc" role="ant" change="#role-assignment #ids-cleanup">ʻAlī ibn Abī Ṭālib, Caliph, ca. 600-661</persName>
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
+                     <note>A polemic in defence of <persName ref="http://viaf.org/viaf/34436377" key="viaf_34436377" type="standard" xml:lang="fa-Latn-x-lc" role="ant" change="#role-assignment #ids-cleanup">ʻAlī ibn Abī Ṭālib, Caliph, ca. 600-661</persName>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page p. 6.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -77,7 +84,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1852" notAfter="1853">1269</origDate>
+                     <origDate calendar="Hijri-qamari" notBefore="1852" notAfter="1853">1269</origDate>
                   </origin>
                </history>
                <additional>

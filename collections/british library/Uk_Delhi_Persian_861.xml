@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_18565">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>Delhi Persian 861</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004341449</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163233768.0x000039</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>Miscellaneous works on alchemy, medicine, and genealogy, 8 items (a-h)</head>
                <msContents class="https://lccn.loc.gov/sh2010101370 https://lccn.loc.gov/sh2007100968 https://lccn.loc.gov/sh85083158 https://lccn.loc.gov/sh2010100939">
@@ -48,7 +56,7 @@
                      <locus from="1r" to="9r">ff. 1r-9r</locus>
                      <note>
                         <p>Item a. </p>
-                        <p>Untitled Persian translation, conventionally entitled <title>Ṭibb-i Maḥmūd</title>, by <persName key="person_8298251" role="trl">Maḥmūd ibn Ilyās</persName>, based on an Arabic compendium of theoretical and practical medicine attributed to <persName key="person_89770781" role="ant">Ibn Sīnā</persName>, itself derived from a work by <persName key="person_7524651" role="ant">Aristotle</persName>. 
+                        <p>Untitled Persian translation, conventionally entitled <title>Ṭibb-i Maḥmūd</title>, by <persName key="viaf_8298251" role="trl">Maḥmūd ibn Ilyās</persName>, based on an Arabic compendium of theoretical and practical medicine attributed to <persName key="viaf_89770781" role="ant">Ibn Sīnā</persName>, itself derived from a work by <persName key="viaf_7524651" role="ant">Aristotle</persName>. 
                         </p>
                         <p>The work consists of four maqālah and a total of eighteen bāb. </p>
                         <p>Contents of work is given on the flyleaf preceding (f. 1Cr), in the same hand at the work itself. </p>
@@ -57,8 +65,8 @@
                      </note>
                      <textLang mainLang="per" otherLangs="ara">Persian and Arabic</textLang>
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" type="supplied" key="person_8298251">Maḥmūd ibn Ilyās</persName>
-                        <persName xml:lang="per" type="supplied" key="person_8298251">محمود ابن الياس</persName>
+                        <persName xml:lang="per-Latn-x-lc" type="supplied" key="viaf_8298251">Maḥmūd ibn Ilyās</persName>
+                        <persName xml:lang="per" type="supplied" key="viaf_8298251">محمود ابن الياس</persName>
                      </author>
                   </msItem>
                   <msItem n="2" xml:id="Uk_Delhi_Persian_861-item2">
@@ -91,11 +99,11 @@
                      <locus from="40v" to="42v">ff. 40v-42v</locus>
                      <note>
                         <p>Item c. </p>
-                        <p>Rare fragment from an untitled tabulated genealogy of the <orgName>Timurid Dynasty</orgName> based on official regnal chronicles by a certain <persName key="person_f7031" role="aut">ʿAbd al-Raḥmān</persName>, written at the order issued in regnal year 31 (circa 1203/1789) by the Timurid or Mughal <persName key="person_314901452" role="pat">Emperor Shāh ʿĀlam Bahādur</persName> (d. 1221/1806). 
+                        <p>Rare fragment from an untitled tabulated genealogy of the <orgName>Timurid Dynasty</orgName> based on official regnal chronicles by a certain <persName key="person_f7031" role="aut">ʿAbd al-Raḥmān</persName>, written at the order issued in regnal year 31 (circa 1203/1789) by the Timurid or Mughal <persName key="viaf_314901452" role="pat">Emperor Shāh ʿĀlam Bahādur</persName> (d. 1221/1806). 
                         </p>
-                        <p>The work is defective at end, having lost all folios subsequent to the account of <persName key="person_48143049" role="subject">Emperor Farrukh Siyar</persName>. 
+                        <p>The work is defective at end, having lost all folios subsequent to the account of <persName key="viaf_48143049" role="subject">Emperor Farrukh Siyar</persName>. 
                         </p>
-                        <p>The work proceeds with the author’s brief preface and genealogy of <persName key="person_63984707" role="subject">Amīr Tīmūr the Ṣāḥib Qirān</persName> traced to <persName key="person_308180317" role="subject">Ādam</persName> via the <persName key="person_3982148814301845330008" role="subject">Prophet Nūḥ (Noah)</persName>. Subsequent entries are made in tabular form. 
+                        <p>The work proceeds with the author’s brief preface and genealogy of <persName key="viaf_63984707" role="subject">Amīr Tīmūr the Ṣāḥib Qirān</persName> traced to <persName key="viaf_308180317" role="subject">Ādam</persName> via the <persName key="viaf_3982148814301845330008" role="subject">Prophet Nūḥ (Noah)</persName>. Subsequent entries are made in tabular form. 
                         </p>
                         <p>This may be the author’s draft, with occasional emendations, transcribed in neat disciplined nastaʿlīq. 
 </p>
@@ -163,7 +171,7 @@
                      <textLang mainLang="per" otherLangs="ara">Persian and Arabic</textLang>
                      <note>
                         <p>Item g. </p>
-                        <p>Treatise on practical medicine by the poet and general Amān Allāh Khānazād Khān, later entitled Khān Zamān Khān the Fīrūzjang (d. 1046/1636-7), son of the infamous and despised general of the Timurid or Mughal <persName key="person_38320916" role="oth">Emperor Jahāngīr</persName>, <persName key="person_f7213" role="oth">Mahābat Khān</persName>, later entitled Khānkhānān with the status of sipāhsālār under <persName key="person_13108102" role="oth">Emperor Shāh Jahān I</persName>. 
+                        <p>Treatise on practical medicine by the poet and general Amān Allāh Khānazād Khān, later entitled Khān Zamān Khān the Fīrūzjang (d. 1046/1636-7), son of the infamous and despised general of the Timurid or Mughal <persName key="viaf_38320916" role="oth">Emperor Jahāngīr</persName>, <persName key="person_f7213" role="oth">Mahābat Khān</persName>, later entitled Khānkhānān with the status of sipāhsālār under <persName key="viaf_13108102" role="oth">Emperor Shāh Jahān I</persName>. 
                         </p>
                         <p>The work was completed in 1036/1626-7 and dedicated to Emperor Jahāngīr. The addition of titles accrued under Emperor Shāh Jahān indicates the work underwent further revision subsequently. 
 </p>
@@ -176,8 +184,8 @@
                      <title xml:lang="per-Latn-x-lc" key="work_22258">Umm al-ʿilāj</title>
                      <title xml:lang="per" key="work_22258">امّ العلاج</title>
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" key="person_170588717" type="supplied">Amān Allāh Khānazād Khān</persName>
-                        <persName xml:lang="per" key="person_170588717" type="supplied">امان الله خانه زاد خان</persName>
+                        <persName xml:lang="per-Latn-x-lc" key="viaf_170588717" type="supplied">Amān Allāh Khānazād Khān</persName>
+                        <persName xml:lang="per" key="viaf_170588717" type="supplied">امان الله خانه زاد خان</persName>
                      </author>
                   </msItem>
                   <msItem n="8" xml:id="Uk_Delhi_Persian_861-item8">
@@ -185,7 +193,7 @@
                      <textLang mainLang="per" otherLangs="ara">Persian and Arabic</textLang>
                      <note>
                         <p>Item h. </p>
-                        <p>Incomplete copy of an excerpt from the Arabic alchemical treatise, entitled <title>Durrat al-ghavvāṣṣ [va kanz al-ikhtiṣāṣ fī maʿrifat ʿilm al-khavāṣṣ]</title> by <persName xml:lang="per-Latn-x-lc" key="person_311788594" ref="https://lccn.loc.gov/n88636116" role="aut">Aydamar ibn ʿAlī al-Jildakī</persName> (d. circa 762/1361), dealing with magical healing and the talismanic properties of various animal and mineral substances, here supplied with an interlinear Persian translation by an unnamed translator. 
+                        <p>Incomplete copy of an excerpt from the Arabic alchemical treatise, entitled <title>Durrat al-ghavvāṣṣ [va kanz al-ikhtiṣāṣ fī maʿrifat ʿilm al-khavāṣṣ]</title> by <persName xml:lang="per-Latn-x-lc" key="viaf_311788594" ref="https://lccn.loc.gov/n88636116" role="aut">Aydamar ibn ʿAlī al-Jildakī</persName> (d. circa 762/1361), dealing with magical healing and the talismanic properties of various animal and mineral substances, here supplied with an interlinear Persian translation by an unnamed translator. 
                         </p>
                         <p>The text terminates abruptly without conclusion. 
 </p>
@@ -198,7 +206,7 @@
                      <title xml:lang="per-Latn-x-lc" key="work_1588">Durrat al-ghavvāṣṣ</title>
                      <title xml:lang="per" key="work_1588">درّة الغوّاصّ</title>
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" key="person_311788594">Aydamar ibn ʿAlī al-Jildakī</persName>
+                        <persName xml:lang="per-Latn-x-lc" key="viaf_311788594">Aydamar ibn ʿAlī al-Jildakī</persName>
                      </author>
                   </msItem>
                </msContents>
@@ -209,18 +217,17 @@
                               <height>260</height>
                               <width>162</width>
                            </dimensions>
-                           <dimensions type="written" unit="mm">
-									</dimensions>
+                           <dimensions type="written" unit="mm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote script="Arabic" scope="major" />
+                     <handNote script="Arabic" scope="major"/>
                   </handDesc>
                </physDesc>
                <history>
-                  <origin calendar="#Hijri-qamari" notBefore="1769-01-28" notAfter="1831-10-09" when-custom="20 Ramazān 1182-(2 Jum. I 1247)">
-                     <origDate calendar="#Hijri-qamari" notBefore="1769-01-28" notAfter="1831-10-09">20 Ramaz̤ān 1182-(2 Jum. I 1247) (28 January 1769 - 9 October 1831)</origDate>
+                  <origin calendar="Hijri-qamari" notBefore="1769-01-28" notAfter="1831-10-09" when-custom="20 Ramazān 1182-(2 Jum. I 1247)">
+                     <origDate calendar="Hijri-qamari" notBefore="1769-01-28" notAfter="1831-10-09">20 Ramaz̤ān 1182-(2 Jum. I 1247) (28 January 1769 - 9 October 1831)</origDate>
                      <origPlace>India, Meerut</origPlace>
                   </origin>
                </history>

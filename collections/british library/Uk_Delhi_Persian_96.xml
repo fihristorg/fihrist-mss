@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_16711">
    <teiHeader>
       <fileDesc>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>Delhi Persian 96</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004341402</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163233768.0x00000b</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>Miscellaneous works on Sufism, 3 items (a-c)</head>
                <msContents class="http://lccn.loc.gov/sh2006003807 https://lccn.loc.gov/gf2015026087">
@@ -60,7 +68,7 @@
                         Treatise on litany, invocations, and remembrances for meditation
 									in Sufi ritual by an author identifying himself simply as
 									Jaʿfarī, inspired by the author’s master, 
-									<persName key="person_90062645" role="oth" change="#role-assignment">Hamadhānī, `Alī ibn Muhammad 1314-1385</persName>. 
+									<persName key="viaf_90062645" role="oth" change="#role-assignment">Hamadhānī, `Alī ibn Muhammad 1314-1385</persName>. 
                         </p>
                         <p>Defective at end. </p>
                         <p>Not dated on end.</p>
@@ -115,7 +123,7 @@
                      </supportDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote script="Arabic" scope="sole" />
+                     <handNote script="Arabic" scope="sole"/>
                   </handDesc>
                </physDesc>
                <history>
@@ -175,7 +183,7 @@
               850 BL Persian mss prepared for initial publication in FIHRIST (plus 18 replacements)
          </change>
          <change when="2018-09-28">
-            <persName>Sâqib Bâburî</persName>
+            <persName>Sāqib Bāburī</persName>
          </change>
          <change when="2020-07-06" xml:id="role-assignment">
             <persName>Julian Cook</persName>Assigned role(s) to every person having an id (Fihrist data cleanup project).

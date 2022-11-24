@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5704">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-18</date>
+            <date calendar="Gregorian">2011-08-18</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 14686</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343366</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239456.0x00003c</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85067895 http://lccn.loc.gov/sh92001065">
                   <summary change="#add-summary">
@@ -55,15 +63,14 @@
                      <note type="text-relations">Abridgement of <title xml:lang="fa-Latn-x-lc">Khulāṣat al-tavārīkh (<foreign xml:lang="fa">خلاصة التواریخ</foreign>)
                         </title>
                      </note>
-                     <note>Abridgement of an outline of dynasties and rulers of Iran, from the Pīshdādīs to <persName xml:lang="fa-Latn-x-lc" ref="http://viaf.org/viaf/32788894/" key="person_32788894" type="standard" role="subject" change="#role-assignment">Nāṣir al-Dīn Shāh, Shah of Iran, 1831-1896, <foreign xml:lang="fa">ناصر الدين شاه، شاه ايران</foreign>
+                     <note>Abridgement of an outline of dynasties and rulers of Iran, from the Pīshdādīs to <persName xml:lang="fa-Latn-x-lc" ref="http://viaf.org/viaf/32788894/" key="ark:/81055/vdc_100164657161.0x000001 viaf_32788894" type="standard" role="subject" change="#role-assignment">Nāṣir al-Dīn Shāh, Shah of Iran, 1831-1896, <foreign xml:lang="fa">ناصر الدين شاه، شاه ايران</foreign>
                         </persName>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Waley 1998, page 16.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -80,7 +87,7 @@
                <history>
                   <origin>
                      <origPlace>Iran</origPlace>
-                     <origDate calendar="#Hijri-qamari" when="1855">1272</origDate>
+                     <origDate calendar="Hijri-qamari" when="1855">1272</origDate>
                   </origin>
                </history>
                <additional>

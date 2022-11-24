@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_18045">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -44,10 +46,16 @@
                      <idno>428</idno>
                      <note>William Irvine</note>
                   </altIdentifier>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004341820</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163233992.0x000080</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>Deeds of jagir</head>
                <msContents>
-                  <summary />
+                  <summary/>
                   <msItem class="http://lccn.loc.gov/sh85064914 http://lccn.loc.gov/n83158321 http://lccn.loc.gov/n82017475 http://lccn.loc.gov/sh85074335" n="1" xml:id="Uk_IO_Islamic_4005-item1">
                      <note>
                         <p>Untitled collection</p>
@@ -75,19 +83,19 @@
                      </summary>
                      <handNote script="Arabic" scope="major"> in watery ink</handNote>
                   </handDesc>
-                  <additions />
+                  <additions/>
                   <bindingDesc>
-                     <p />
+                     <p/>
                   </bindingDesc>
                </physDesc>
                <history>
-                  <origin calendar="#Hijri-qamari" notAfter="1906-04" notBefore="1900">
-                     <origDate calendar="#Gregorian" notAfter="1906-04" notBefore="1900">20th century</origDate>
+                  <origin calendar="Hijri-qamari" notAfter="1906-04" notBefore="1900">
+                     <origDate calendar="Gregorian" notAfter="1906-04" notBefore="1900">20th century</origDate>
  Benares (Varanasi, UP) <origPlace>India</origPlace>
                   </origin>
                   <provenance>
                      <p>
-                        <persName xml:lang="per-Latn-x-lc" key="person_8170991" role="fmo">William Irvine</persName>
+                        <persName xml:lang="per-Latn-x-lc" key="viaf_8170991" role="fmo">William Irvine</persName>
                      </p>
                      <p>Muḥammad ʿAbd al-ʿAzīz of Bhitrī</p>
                   </provenance>
@@ -129,8 +137,7 @@
          </classDecl>
       </encodingDesc>
       <profileDesc>
-         <textClass>
-			</textClass>
+         <textClass/>
       </profileDesc>
       <revisionDesc>
          <change when="2022-04-21">

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5547">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -46,7 +48,7 @@
                      1 copy of Yūsuf va Zulaykhā by Shahin, 14th cent.
                   </summary>
                   <msItem xml:id="Uk_Or_13190-item1">
-                     <author ref="http://viaf.org/viaf/7725158070657208780001/" key="person_7725158070657208780001" change="#ids-cleanup">
+                     <author ref="http://viaf.org/viaf/7725158070657208780001/" key="viaf_7725158070657208780001" change="#ids-cleanup">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Shahin, 14th cent.</persName>
                         <persName xml:lang="fa-Latn-x-lc" type="alt">Shāhīn Shīrāzī, fl. early 8th/14th century</persName>
                         <persName xml:lang="fa" type="alt">شاهين‏، شیرازی</persName>
@@ -80,7 +82,7 @@
                <history>
                   <origin>
                      <origPlace>Iran(?)</origPlace>
-                     <origDate calendar="#other" when="1912">5672</origDate>
+                     <origDate calendar="Other" when="1912">5672</origDate>
                   </origin>
                </history>
                <additional>

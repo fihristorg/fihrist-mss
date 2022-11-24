@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3300">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>IO Islamic 4599</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342048</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237333.0x000001</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>A volume containing ten dīvāns of Persian poets</head>
                <msContents class="#multipleWorks">
@@ -48,84 +56,81 @@
                   </summary>
                   <msItem xml:id="Uk_IO_Islamic_4599-item1" n="1" class="http://lccn.loc.gov/sh85100084">
                      <locus from="1" to="90">ff. 1-90</locus>
-                     <author ref="http://viaf.org/viaf/81469365" key="person_81469365" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Muʻizzī, Amīr ʻAbd Allāh Muḥammad, b. 1048 or 9</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Muḥammad b. ʻAbd al-Malik Burhānī “Muʻizzī”, d. 542/1147-8</persName>
-                        <persName xml:lang="fa" type="alt">محمد بن عید الملک برهانی معزى</persName>
-                        <persName xml:lang="fa">معزى، امير عبد الله محمد</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_81469365">Muʻizzī, Amīr ʻAbd Allāh Muḥammad, b. 1048 or 9</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_81469365">Muḥammad b. ʻAbd al-Malik Burhānī “Muʻizzī”, d. 542/1147-8</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_81469365">محمد بن عید الملک برهانی معزى</persName>
+                        <persName xml:lang="fa" key="viaf_81469365">معزى، امير عبد الله محمد</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_2859" change="#ids-cleanup">Intikhāb-i dīvān-i Muʻizzī</title>
                      <title xml:lang="fa" key="work_2859" change="#ids-cleanup">انتخاب دیوان معزٌی</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" />
-                     <note>Selections from the poetical works <persName xml:lang="fa-Latn-x-lc" type="alt" ref="http://viaf.org/viaf/81469365" key="person_81469365" role="aut" change="#role-assignment #ids-cleanup">Muḥammad b. ʻAbd al-Malik Burhānī “Muʻizzī”, d. 542/1147-8</persName>
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa"/>
+                     <note>Selections from the poetical works <persName xml:lang="fa-Latn-x-lc" type="alt" ref="http://viaf.org/viaf/81469365" key="viaf_81469365" role="aut" change="#role-assignment #ids-cleanup">Muḥammad b. ʻAbd al-Malik Burhānī “Muʻizzī”, d. 542/1147-8</persName>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Arberry 1939, page 379.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_IO_Islamic_4599-item2" n="2" class="http://lccn.loc.gov/sh85100084">
                      <locus from="91" to="117">ff. 91-117</locus>
-                     <author key="person_73765606" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Majd al-Dīn Hibat Allāh Shīrāzī, d. 686/1287</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Majd-i Hamgar</persName>
-                        <persName xml:lang="fa" type="alt">مجد همگر</persName>
-                        <persName xml:lang="fa">مجد الدین هبت الله شیرازی</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied" key="viaf_73765606">Majd al-Dīn Hibat Allāh Shīrāzī, d. 686/1287</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_73765606">Majd-i Hamgar</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_73765606">مجد همگر</persName>
+                        <persName xml:lang="fa" key="viaf_73765606">مجد الدین هبت الله شیرازی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_3433" change="#ids-cleanup">Intikhāb-i dīvān-I Majd-i Hamgar</title>
                      <title xml:lang="fa" key="work_3433" change="#ids-cleanup">انتخاب دیوان مجد همگر</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="ar" defective="true" />
-                     <note>Selections from the poetical works of <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_73765606" role="aut" change="#role-assignment #ids-cleanup">Majd al-Dīn Hibat Allāh Shīrāzī, d. 686/1287</persName>
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>Selections from the poetical works of <persName xml:lang="fa-Latn-x-lc" type="supplied" key="viaf_73765606" role="aut" change="#role-assignment #ids-cleanup">Majd al-Dīn Hibat Allāh Shīrāzī, d. 686/1287</persName>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Arberry 1939, page 379.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_IO_Islamic_4599-item3" n="3" class="http://lccn.loc.gov/sh85100084">
                      <locus from="117" to="126a">ff. 118-126a</locus>
-                     <author ref="http://viaf.org/viaf/314816916" key="person_314816916" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Qaṭrān Tabrīzī</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Qaṭrān b. Manṣūr Tabrīzī, d. 465/1072</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Qaṭrān</persName>
-                        <persName xml:lang="fa" type="alt">قطران بن منصور تبریزی</persName>
-                        <persName xml:lang="fa" type="alt">قطران</persName>
-                        <persName xml:lang="fa">قطران تبريزى</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="ark:/81055/vdc_100164657140.0x000001 viaf_314816916">Qaṭrān Tabrīzī</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="ark:/81055/vdc_100164657140.0x000001 viaf_314816916">Qaṭrān b. Manṣūr Tabrīzī, d. 465/1072</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_314816916">Qaṭrān</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_314816916">قطران بن منصور تبریزی</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_314816916">قطران</persName>
+                        <persName xml:lang="fa" key="viaf_314816916">قطران تبريزى</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_889" change="#ids-cleanup">Intikhāb-i dīvān-i Qaṭrān</title>
                      <title xml:lang="fa" key="work_889" change="#ids-cleanup">انتخاب دیوان قطران</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="ar" defective="true" />
-                     <note>Selections from the poetical works of <persName ref="http://viaf.org/viaf/314816916" key="person_314816916" xml:lang="fa-Latn-x-lc" type="alt" role="aut" change="#role-assignment #ids-cleanup">Qaṭrān b. Manṣūr Tabrīzī, d. 465/1072</persName>
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>Selections from the poetical works of <persName ref="http://viaf.org/viaf/314816916" key="viaf_314816916" xml:lang="fa-Latn-x-lc" type="alt" role="aut" change="#role-assignment #ids-cleanup">Qaṭrān b. Manṣūr Tabrīzī, d. 465/1072</persName>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Arberry 1939, page 379.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_IO_Islamic_4599-item4" n="4" class="http://lccn.loc.gov/sh85100084">
                      <locus from="126b" to="130">ff. 126b-130</locus>
-                     <author ref="http://viaf.org/viaf/33593535" key="person_33593535">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">ʻAmʻaq Bukhārī, d. ca. 1148</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Shihāb al-Dīn Bukhārī, d. 544/1149</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">ʻAmʻaq</persName>
-                        <persName xml:lang="fa" type="alt">شهاب الدين بخارايى</persName>
-                        <persName xml:lang="fa" type="alt">عمعق</persName>
-                        <persName xml:lang="fa">عمعق بخارى</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="ark:/81055/vdc_100164657167.0x000001 viaf_33593535">ʻAmʻaq Bukhārī, d. ca. 1148</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="ark:/81055/vdc_100164657167.0x000001 viaf_33593535">Shihāb al-Dīn Bukhārī, d. 544/1149</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_33593535">ʻAmʻaq</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_33593535">شهاب الدين بخارايى</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_33593535">عمعق</persName>
+                        <persName xml:lang="fa" key="viaf_33593535">عمعق بخارى</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8943">Intikhāb-i dīvān-i ‘Am‘aq</title>
                      <title xml:lang="fa" key="work_8943">انتخاب دیوان عمعق</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="ar" defective="true" />
-                     <note>Selections from the poetical works of <persName xml:lang="fa-Latn-x-lc" ref="http://viaf.org/viaf/33593535" key="person_33593535" type="alt" role="aut" change="#role-assignment">Shihāb al-Dīn Bukhārī, d. 544/1149</persName>
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>Selections from the poetical works of <persName xml:lang="fa-Latn-x-lc" ref="http://viaf.org/viaf/33593535" key="viaf_33593535" type="alt" role="aut" change="#role-assignment">Shihāb al-Dīn Bukhārī, d. 544/1149</persName>
                      </note>
                      <note>The dīvān does not appear to have survived, and his poetry is only known from extracts quoted in taz̲kirah (تذكره) works [ <ref target="Ethe_1903-1937" type="no">Ethe 1903-1937, no 724.</ref>; <ref target="Rieu_1895" type="no">Rieu 1895, no 105.</ref> ]
                      </note>
@@ -133,45 +138,43 @@
                         <bibl>For a more detailed description see Arberry 1939, page 379.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_IO_Islamic_4599-item5" n="5" class="http://lccn.loc.gov/sh85100084">
                      <locus from="131" to="138">ff. 131-138</locus>
-                     <author ref="http://viaf.org/viaf/81975768" key="person_81975768">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Iṣfahānī, ʻAbd al-Muʼmin ibn Hibat Allāh, d. 1203 or 4</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Sharaf al-Dīn Muḥamad Faz̤l Allāh Iṣfahānī Shufurvah, d. circa 600/1203-4</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Sharaf</persName>
-                        <persName xml:lang="fa" type="alt">شرف الدین محمد فضل الله اصفهاني سفروه</persName>
-                        <persName xml:lang="fa" type="alt">شرف</persName>
-                        <persName xml:lang="ar">اصفهاني، عبد المؤمن بن هبة الله</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_81975768">Iṣfahānī, ʻAbd al-Muʼmin ibn Hibat Allāh, d. 1203 or 4</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_81975768">Sharaf al-Dīn Muḥamad Faz̤l Allāh Iṣfahānī Shufurvah, d. circa 600/1203-4</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_81975768">Sharaf</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_81975768">شرف الدین محمد فضل الله اصفهاني سفروه</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_81975768">شرف</persName>
+                        <persName xml:lang="ar" key="viaf_81975768">اصفهاني، عبد المؤمن بن هبة الله</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8944">Dīvān-i Shufurvah</title>
                      <title xml:lang="fa" key="work_8944">دیوان سفروه</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="ar" defective="true" />
-                     <note>A small selection of the poetical works of <persName ref="http://viaf.org/viaf/81975768" key="person_81975768" xml:lang="fa-Latn-x-lc" type="alt" role="aut" change="#role-assignment">Sharaf al-Dīn Muḥamad Faz̤l Allāh Iṣfahānī Shufurvah, d. circa 600/1203-4</persName>
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>A small selection of the poetical works of <persName ref="http://viaf.org/viaf/81975768" key="viaf_81975768" xml:lang="fa-Latn-x-lc" type="alt" role="aut" change="#role-assignment">Sharaf al-Dīn Muḥamad Faz̤l Allāh Iṣfahānī Shufurvah, d. circa 600/1203-4</persName>
                      </note>
                      <note>The dīvān is very rare</note>
                      <listBibl>
                         <bibl>For a more detailed description see Arberry 1939, page 379.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_IO_Islamic_4599-item6" n="6" class="http://lccn.loc.gov/sh85100084">
                      <locus from="139" to="140a">ff. 139-140a</locus>
-                     <author ref="http://viaf.org/viaf/1588251" key="person_1588251">
-                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Masʻūd Saʻd Salmān, 1046 or 7-1121 or 2</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Mas‘ūd-i Sa‘d-i Salmān, d. circa 520/1126</persName>
-                        <persName xml:lang="ar">مسعود سعد سامان</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied" key="ark:/81055/vdc_100164656386.0x000001 viaf_1588251">Masʻūd Saʻd Salmān, 1046 or 7-1121 or 2</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="ark:/81055/vdc_100164656386.0x000001 viaf_1588251">Mas‘ūd-i Sa‘d-i Salmān, d. circa 520/1126</persName>
+                        <persName xml:lang="ar" key="viaf_1588251">مسعود سعد سامان</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20630" change="#ids-cleanup">Dīvān-i Mas‘ūd-i Sa‘d-i Salmān</title>
                      <title xml:lang="fa" key="work_20630" change="#ids-cleanup">دیوان مسعود سعد سامان</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="ar" defective="true" />
-                     <note>A few extracts from the poetical works of <persName xml:lang="fa-Latn-x-lc" type="alt" ref="http://viaf.org/viaf/1588251" key="person_1588251" role="aut" change="#role-assignment">Mas‘ūd-i Sa‘d-i Salmān, d. circa 520/1126</persName>
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>A few extracts from the poetical works of <persName xml:lang="fa-Latn-x-lc" type="alt" ref="http://viaf.org/viaf/1588251" key="viaf_1588251" role="aut" change="#role-assignment">Mas‘ūd-i Sa‘d-i Salmān, d. circa 520/1126</persName>
                      </note>
                      <note>See [ <ref target="Ethe_1903-1937" type="no">Ethe 1903-1937, no 908.</ref>, with references]
                      </note>
@@ -179,8 +182,7 @@
                         <bibl>For a more detailed description see Arberry 1939, page 380.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_IO_Islamic_4599-item7" n="7" class="http://lccn.loc.gov/sh85100084">
                      <locus from="140b" to="147">ff. 140b-147</locus>
@@ -190,8 +192,8 @@
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8946">Dīvān-i Amīn al-Dīn Kāzarūnī</title>
                      <title xml:lang="fa" key="work_8946">دیوان امین الدین کازرونی</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="ar" defective="true" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>A few extracts from the poetical works of <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f371" role="aut" change="#role-assignment">Amīn al-Dīn Kāzarūnī</persName>, presumably to be identified with the vazīr of <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f472" role="att" change="#role-assignment">Atabeq Taklah b. Zangī, <foreign xml:lang="fa">اتبق تکله بن زنگی</foreign>
                         </persName>
                      </note>
@@ -201,20 +203,19 @@
                         <bibl>For a more detailed description see Arberry 1939, page 380.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_IO_Islamic_4599-item8" n="8" class="http://lccn.loc.gov/sh85100084">
                      <locus from="140b" to="147">ff. 140b-147</locus>
-                     <author key="person_66334858" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Auḥad al-Dīn Kirmānī, d. 697/1297-8</persName>
-                        <persName xml:lang="ar">اوحد الدین کرمانی</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied" key="viaf_66334858">Auḥad al-Dīn Kirmānī, d. 697/1297-8</persName>
+                        <persName xml:lang="ar" key="viaf_66334858">اوحد الدین کرمانی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8947">Rubā‘īyāt-i Auḥad al-Dīn Kirmānī</title>
                      <title xml:lang="fa" key="work_8947">رباعیات اوحد الدین کرمانی</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="ar" defective="true" />
-                     <note>The quatrains of <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_66334858" role="aut" change="#role-assignment #ids-cleanup">Auḥad al-Dīn Kirmānī</persName>, the teacher of <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_66334858" role="aut" change="#role-assignment #ids-cleanup">Auḥadī, d. 697/1297-8, <foreign xml:lang="fa">اوحدی</foreign>
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>The quatrains of <persName xml:lang="fa-Latn-x-lc" type="supplied" key="viaf_66334858" role="aut" change="#role-assignment #ids-cleanup">Auḥad al-Dīn Kirmānī</persName>, the teacher of <persName xml:lang="fa-Latn-x-lc" type="supplied" key="viaf_66334858" role="aut" change="#role-assignment #ids-cleanup">Auḥadī, d. 697/1297-8, <foreign xml:lang="fa">اوحدی</foreign>
                         </persName>
                      </note>
                      <note>See [ <ref target="Ethe_1903-1937" type="no">Ethe 1903-1937, no 1747.</ref>, <locus n="37b">foll 37b</locus>; <ref target="Rieu_1895" type="no">Rieu 1895, no 140.</ref>, <locus n="371b">foll 371b</locus>
@@ -226,22 +227,21 @@
                         <bibl>For a more detailed description see Arberry 1939, page 380.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_IO_Islamic_4599-item9" n="9" class="http://lccn.loc.gov/sh85100084 http://lccn.loc.gov/sh85109396">
                      <locus from="149" to="190">ff. 149-190</locus>
-                     <author ref="http://viaf.org/viaf/314807933" key="person_314807933" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Qāʼimʹmaqām, Abū al-Qāsim ibn ʻĪsá, 1779 or 80-1835</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Abū al-Qāsim Qāʼimʹmaqām Farāhānī</persName>
-                        <persName xml:lang="fa" type="alt">ابو القاسم قائم‌مقام فراهانی</persName>
-                        <persName xml:lang="ar">قائم مقام، ابو القاسم بن عيسى</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="ark:/81055/vdc_100164657133.0x000001 viaf_314807933">Qāʼimʹmaqām, Abū al-Qāsim ibn ʻĪsá, 1779 or 80-1835</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="ark:/81055/vdc_100164657133.0x000001 viaf_314807933">Abū al-Qāsim Qāʼimʹmaqām Farāhānī</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_314807933">ابو القاسم قائم‌مقام فراهانی</persName>
+                        <persName xml:lang="ar" key="viaf_314807933">قائم مقام، ابو القاسم بن عيسى</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8948">Dīvān-i Qā’im-maqām</title>
                      <title xml:lang="fa" key="work_8948">دیوان قائم مقام</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="ar" defective="true" />
-                     <note>A collection of qaṣīdah poems by <persName ref="http://viaf.org/viaf/314807933" key="person_314807933" xml:lang="fa-Latn-x-lc" type="alt" role="aut" change="#role-assignment #ids-cleanup">Abū al-Qāsim Qāʼimʹmaqām Farāhānī</persName>, the prime minister of <persName xml:lang="fa-Latn-x-lc" type="alt" ref=" http://viaf.org/viaf/70798539" key="person_70798539" role="oth" change="#role-assignment">Muḥammad Shāh Qājār, reigned 1250/1834-1264/1848</persName>
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>A collection of qaṣīdah poems by <persName ref="http://viaf.org/viaf/314807933" key="viaf_314807933" xml:lang="fa-Latn-x-lc" type="alt" role="aut" change="#role-assignment #ids-cleanup">Abū al-Qāsim Qāʼimʹmaqām Farāhānī</persName>, the prime minister of <persName xml:lang="fa-Latn-x-lc" type="alt" ref=" http://viaf.org/viaf/70798539" key="viaf_70798539" role="oth" change="#role-assignment">Muḥammad Shāh Qājār, reigned 1250/1834-1264/1848</persName>
                      </note>
                      <note>See [ <ref target="Browne_1914" type="page">Browne 1914, page 38.</ref>
                      </note>
@@ -252,29 +252,27 @@
                         <bibl>For a more detailed description see Arberry 1939, page 380.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_IO_Islamic_4599-item10" n="10" class="http://lccn.loc.gov/sh85100084">
                      <locus from="192" to="287">ff. 192-287</locus>
-                     <author ref="http://viaf.org/viaf/82895970" key="person_82895970">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Kamāl al-Dīn Ismāʻīl Iṣfahānī, ca. 1172-1237</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Kamāl al-Dīn Ismāʻīl b. Muḥammad Iṣfahānī, d. 635/1237-8</persName>
-                        <persName xml:lang="fa" type="alt">کمال الدين اسماعيل بن محمد اصفهانى</persName>
-                        <persName xml:lang="ar">کمال الدين اسماعيل اصفهانى</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_82895970">Kamāl al-Dīn Ismāʻīl Iṣfahānī, ca. 1172-1237</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_82895970">Kamāl al-Dīn Ismāʻīl b. Muḥammad Iṣfahānī, d. 635/1237-8</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_82895970">کمال الدين اسماعيل بن محمد اصفهانى</persName>
+                        <persName xml:lang="ar" key="viaf_82895970">کمال الدين اسماعيل اصفهانى</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20414" change="#ids-cleanup">Intikhāb-i Dīvān-i Kamāl al-Dīn Ismā‘īl</title>
                      <title xml:lang="fa" key="work_20414" change="#ids-cleanup">انتخاب دیوان کمال الدین اسمعیل</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="ar" defective="true" />
-                     <note>Selection from poetical works of <persName xml:lang="fa-Latn-x-lc" type="alt" key="person_82895970" role="aut" change="#role-assignment #ids-cleanup">Kamāl al-Dīn Ismāʻīl b. Muḥammad Iṣfahānī, d. 635/1237-8</persName>
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>Selection from poetical works of <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_82895970" role="aut" change="#role-assignment #ids-cleanup">Kamāl al-Dīn Ismāʻīl b. Muḥammad Iṣfahānī, d. 635/1237-8</persName>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Arberry 1939, page 380.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -291,7 +289,7 @@
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1" ruledLines="16" />
+                        <layout columns="1" ruledLines="16"/>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
@@ -307,7 +305,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1800" notAfter="1899">19th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1800" notAfter="1899">19th century</origDate>
                   </origin>
                </history>
                <additional>

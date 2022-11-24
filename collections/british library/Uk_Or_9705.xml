@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6506">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,29 +42,34 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 9705</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342987</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237685.0x00011c</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85067900">
                   <summary change="#add-summary">
                      1 copy of Tārīkh-i naw by Jahāngīr, Mīrzā, 1807 or 8-1852 or 3
                   </summary>
                   <msItem xml:id="Uk_Or_9705-item1">
-                     <author ref="http://viaf.org/viaf/73299990" key="person_73299990">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Jahāngīr, Mīrzā, 1807 or 8-1852 or 3</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Jahāngīr Mīrzā ibn ‘Abbās Mīrzā</persName>
-                        <persName xml:lang="fa">جهانگير، ميرزا</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_73299990">Jahāngīr, Mīrzā, 1807 or 8-1852 or 3</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_73299990">Jahāngīr Mīrzā ibn ‘Abbās Mīrzā</persName>
+                        <persName xml:lang="fa" key="viaf_73299990">جهانگير، ميرزا</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_7938">Tārīkh-i naw</title>
                      <title xml:lang="fa" key="work_7938">تارىخ نو</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
-                     <note>A history of the years <date calendar="#Hijri-qamari" notBefore="1824" notAfter="1849">1240-65</date>
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
+                     <note>A history of the years <date calendar="Hijri-qamari" notBefore="1824" notAfter="1849">1240-65</date>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 16.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -76,12 +83,12 @@
                      </supportDesc>
                   </objectDesc>
                   <decoDesc>
-                     <decoNote type="miniature" />
+                     <decoNote type="miniature"/>
                   </decoDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1800" notAfter="1899">19th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1800" notAfter="1899">19th century</origDate>
                   </origin>
                </history>
                <additional>

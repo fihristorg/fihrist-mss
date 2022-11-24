@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6383">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,27 +42,32 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 8383</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342906</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237685.0x0000cc</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85138799 http://lccn.loc.gov/sh85138802">
                   <summary change="#add-summary">
                      1 copy of Silsilah-’i Salāṭīn-i ʻUs̲mānīyah by Hayrullah Efendi, 1820-1866
                   </summary>
                   <msItem xml:id="Uk_Or_8383-item1">
-                     <author ref="http://viaf.org/viaf/25719958" key="person_25719958">
-                        <persName xml:lang="en" type="standard">Hayrullah Efendi, 1820-1866</persName>
-                        <persName xml:lang="fa">خيرالله افندى</persName>
+                     <author>
+                        <persName xml:lang="en" type="standard" key="viaf_25719958">Hayrullah Efendi, 1820-1866</persName>
+                        <persName xml:lang="fa" key="viaf_25719958">خيرالله افندى</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_7956">Silsilah-’i Salāṭīn-i ʻUs̲mānīyah</title>
                      <title xml:lang="fa" key="work_7956">سلسلۀ سلاطن عثمانيه</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <note>A history of the Ottoman Dynasty</note>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 19.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -76,7 +83,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1800" notAfter="1899">19th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1800" notAfter="1899">19th century</origDate>
                   </origin>
                </history>
                <additional>

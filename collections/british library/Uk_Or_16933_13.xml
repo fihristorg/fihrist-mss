@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_18487">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 16933/13</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343565</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239456.0x000103</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>Petition</head>
                <msContents>
@@ -49,17 +57,16 @@
                      <title xml:lang="per" key="work_21853">عرضه داشت</title>
                      <note>
                         <p>Petition to unnamed royal addressee (with chatr) commenting on reports that Mīrzā Najaf Khān Bahādur's request for approximately 6,000 rupees on loan from Colonel Clease/Gillis (karnīl KLYS), according to the latter's report. Requests that the amount be drawn from the accounts of Bengal, and that the said Colonel will supply details, as well as noting it in governmental accounts, so that the said amount can be drawn in the Mīrzā's presence </p>
-                        <p>Signed in English (below text panel, left): <persName xml:lang="per-Latn-x-lc" key="person_284518087" ref="http://lccn.loc.gov/nr93017165" role="aut">John Cartier</persName>
+                        <p>Signed in English (below text panel, left): <persName xml:lang="per-Latn-x-lc" key="ark:/81055/vdc_100164656965.0x000001 viaf_284518087" ref="http://lccn.loc.gov/nr93017165" role="aut">John Cartier</persName>
                         </p>
                         <p>Not dated </p>
                         <p>Narrow text panel and and 2 upper cartouches (invocation and title) of zar afshānī or gold spray over a lightly tinted ground; sar lawḥ above text panel in shape of low arch, filled with symmetrical scrolling floral ornament; painted gold floral motifs in diaper arrangement on plain paper ground; painted and dimpled chatr above title cartouche; narrow outer border; angled corner (bottom right)</p>
                         <p>Bonhams, Knightsbridge, Sale 22524 (5 Nov 2014, 10:30), Lot 18</p>
                      </note>
                      <textLang mainLang="per" otherLangs="eng">Persian &amp; English</textLang>
-                     <note>
-						</note>
+                     <note/>
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" key="person_284518087">John Cartier</persName>
+                        <persName xml:lang="per-Latn-x-lc" key="ark:/81055/vdc_100164656965.0x000001 viaf_284518087">John Cartier</persName>
                      </author>
                   </msItem>
                </msContents>
@@ -71,18 +78,17 @@
                               <height>496</height>
                               <width>196</width>
                            </dimensions>
-                           <dimensions type="written" unit="mm">
-									</dimensions>
+                           <dimensions type="written" unit="mm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote script="Arabic" scope="major" />
+                     <handNote script="Arabic" scope="major"/>
                   </handDesc>
                </physDesc>
                <history>
-                  <origin calendar="#Hijri-qamari" notBefore="1750" notAfter="1775">
-                     <origDate calendar="#Gregorian" notBefore="1750" notAfter="1775">18th century</origDate>
+                  <origin calendar="Hijri-qamari" notBefore="1750" notAfter="1775">
+                     <origDate calendar="Gregorian" notBefore="1750" notAfter="1775">18th century</origDate>
                      <origPlace>India</origPlace>
                   </origin>
                </history>
@@ -107,8 +113,7 @@
          </classDecl>
       </encodingDesc>
       <profileDesc>
-         <textClass>
-			</textClass>
+         <textClass/>
       </profileDesc>
       <revisionDesc>
          <change when="2022-04-21">

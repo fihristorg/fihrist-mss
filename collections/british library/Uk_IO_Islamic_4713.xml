@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3377">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,30 +42,35 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>IO Islamic 4713</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342117</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237333.0x000046</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
                   <summary change="#add-summary">
                      1 copy of Būstān by Saʻdī
                   </summary>
                   <msItem xml:id="Uk_IO_Islamic_4713-item1" class="http://lccn.loc.gov/sh89005046 http://lccn.loc.gov/sh85037731 http://lccn.loc.gov/sh85054793">
-                     <author key="person_100206721" ref="http://viaf.org/viaf/100206721/">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Saʻdī</persName>
-                        <persName xml:lang="fa">سعدى</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_100206721">Saʻdī</persName>
+                        <persName xml:lang="fa" key="viaf_100206721">سعدى</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_240" change="#ids-cleanup">Būstān</title>
                      <title xml:lang="fa" key="work_240" change="#ids-cleanup">بوستان</title>
-                     <incipit xml:lang="ar" />
-                     <explicit xml:lang="ar" defective="true" />
-                     <incipit xml:lang="ar" />
-                     <explicit xml:lang="ar" defective="true" />
-                     <note>A copy of <persName xml:lang="ar-Latn-x-lc" key="person_100206721" ref="http://viaf.org/viaf/100206721/" type="alt" role="aut" change="#role-assignment">Saʻdī</persName>'s <title xml:lang="fa-Latn-x-lc">Būstān</title>, followed <locus n="143v">f 143v</locus> by several ghazals
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>A copy of <persName xml:lang="ar-Latn-x-lc" key="viaf_100206721" ref="http://viaf.org/viaf/100206721/" type="alt" role="aut" change="#role-assignment">Saʻdī</persName>'s <title xml:lang="fa-Latn-x-lc">Būstān</title>, followed <locus n="143v">f 143v</locus> by several ghazals
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Sims-Williams 1986, page 9.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -80,13 +87,13 @@
                      <decoNote type="other">Illuminated ʻunvān and decorated margins</decoNote>
                   </decoDesc>
                   <sealDesc>
-                     <p>Seals dated <date calendar="#Hijri-qamari" when="1758 ">1172</date> and <date calendar="#Hijri-qamari" when="1773">1187</date>
+                     <p>Seals dated <date calendar="Hijri-qamari" when="1758 ">1172</date> and <date calendar="Hijri-qamari" when="1773">1187</date>
                      </p>
                   </sealDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notAfter="1758 ">Not after 1172</origDate>
+                     <origDate calendar="Hijri-qamari" notAfter="1758 ">Not after 1172</origDate>
                   </origin>
                </history>
                <additional>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5605">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,30 +42,35 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 13854</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343295</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239034.0x00010b</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85100075 http://lccn.loc.gov/n82123496">
                   <summary change="#add-summary">
                      1 copy of Qiṣṣah-ʼi Ḥātim-i Ṭāʼī by Ḥātim al-Ṭāʼī
                   </summary>
                   <msItem xml:id="Uk_Or_13854-item1">
-                     <author ref="http://viaf.org/viaf/95193993/" key="person_95193993">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Ḥātim al-Ṭāʼī</persName>
-                        <persName xml:lang="ar">حاتم الطائي</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_95193993">Ḥātim al-Ṭāʼī</persName>
+                        <persName xml:lang="ar" key="viaf_95193993">حاتم الطائي</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_9059">Qiṣṣah-ʼi Ḥātim-i Ṭāʼī</title>
                      <title xml:lang="fa" key="work_9059">قصۀ جاتم طائى</title>
-                     <note>The legend of the journeys of <persName xml:lang="fa-Latn-x-lc" ref="http://viaf.org/viaf/95193993/" key="person_95193993" type="standard" role="aut" change="#role-assignment">Ḥātim al-Ṭāʼī</persName> in prose
+                     <note>The legend of the journeys of <persName xml:lang="fa-Latn-x-lc" ref="http://viaf.org/viaf/95193993/" key="viaf_95193993" type="standard" role="aut" change="#role-assignment">Ḥātim al-Ṭāʼī</persName> in prose
                      </note>
                      <note>Main title has been supplied by <ref target="Waley_1998" type="page">Waley 1998, page 68.</ref>
                      </note>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <listBibl>
                         <bibl>For a more detailed description see Waley 1998, page 68.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -80,7 +87,7 @@
                <history>
                   <origin>
                      <origPlace>Bengal</origPlace>
-                     <origDate calendar="#Hijri-qamari" when="1796">1211</origDate>
+                     <origDate calendar="Hijri-qamari" when="1796">1211</origDate>
                   </origin>
                </history>
                <additional>

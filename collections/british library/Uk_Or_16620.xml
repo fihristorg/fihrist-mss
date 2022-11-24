@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_18460">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -56,15 +58,15 @@
                      <textLang mainLang="per" otherLangs="ara">Persian &amp; Arabic</textLang>
                      <title xml:lang="per-Latn-x-lc" key="work_22149">Fātiḥ al-abyāt</title>
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" type="supplied" key="person_12596257">İsmail Ankaravî, -1631 or 1632 </persName>
-                        <persName xml:lang="per" type="supplied" key="person_12596257">اسماعيل انقروی</persName>
+                        <persName xml:lang="per-Latn-x-lc" type="supplied" key="viaf_12596257">İsmail Ankaravî, -1631 or 1632 </persName>
+                        <persName xml:lang="per" type="supplied" key="viaf_12596257">اسماعيل انقروی</persName>
                      </author>
                   </msItem>
                   <msItem class="http://lccn.loc.gov/sh91002492 http://lccn.loc.gov/sh85103852" n="2" xml:id="Uk_Or_16620-item2">
                      <locus from="38v" to="138r">ff. 38v-138r</locus>
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" type="supplied" key="person_120064571">Sipahsālār, Farīdūn ibn Aḥmad, d. 712/1312</persName>
-                        <persName xml:lang="per" type="supplied" key="person_120064571">سپهسالار، فريدون بن احمد</persName>
+                        <persName xml:lang="per-Latn-x-lc" type="supplied" key="viaf_120064571">Sipahsālār, Farīdūn ibn Aḥmad, d. 712/1312</persName>
+                        <persName xml:lang="per" type="supplied" key="viaf_120064571">سپهسالار، فريدون بن احمد</persName>
                      </author>
                      <note>
                         <p>One of the earliest and most detailed accounts of the life and virtues of Jalāl al-Dīn Rūmī, <title>Risālah-'i Sipahsālār</title>. By Farīdūn ibn Aḥmad Sipahsālār, who claims to have been his disciple for forty years. 
@@ -88,13 +90,13 @@
                      </supportDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote script="Arabic" scope="major" />
+                     <handNote script="Arabic" scope="major"/>
                   </handDesc>
                </physDesc>
                <history>
-                  <origin calendar="#Hijri-qamari" when="1623-05-17" when-custom="17 Rajab 1032">
-                     <origDate calendar="#Hijri-qamari" when="1623-05-17">17 Rajab 1032</origDate>
-                     <origDate calendar="#Gregorian" when="1623-05-17">17 May 1623</origDate>
+                  <origin calendar="Hijri-qamari" when="1623-05-17" when-custom="17 Rajab 1032">
+                     <origDate calendar="Hijri-qamari" when="1623-05-17">17 Rajab 1032</origDate>
+                     <origDate calendar="Gregorian" when="1623-05-17">17 May 1623</origDate>
  Ottoman Empire <origPlace>Anatolia</origPlace>
                   </origin>
                </history>

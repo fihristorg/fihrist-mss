@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_17714">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>Delhi Persian 1152</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004341538</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163233796.0x000042</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>Miscellaneous works on Sufism, 13 works (a-m)</head>
                <msContents class="http://lccn.loc.gov/sh2008112367 http://lccn.loc.gov/sh2006003807">
@@ -48,7 +56,7 @@
                      <locus from="1v" to="23r">ff. 1v-23r</locus>
                      <note>
                         <p>Item a. </p>
-                        <p>Arabic treatise entitled <title>Tuḥfat al-mursilah</title> on religious doctrine and traditions of the Prophet <persName key="person_97245226" role="ant">Muḥammad</persName>, by <persName key="person_1744148632967330630003" role="aut">Shaykh Muḥammad ibn Shaykh Faz̤l Allāh al-Hindī al-Burhānpūrī</persName> (d. 1029/1620). 
+                        <p>Arabic treatise entitled <title>Tuḥfat al-mursilah</title> on religious doctrine and traditions of the Prophet <persName key="viaf_97245226" role="ant">Muḥammad</persName>, by <persName key="ark:/81055/vdc_100164656423.0x000001 viaf_1744148632967330630003" role="aut">Shaykh Muḥammad ibn Shaykh Faz̤l Allāh al-Hindī al-Burhānpūrī</persName> (d. 1029/1620). 
                         </p>
                         <p>Not dated at end. 
 </p>
@@ -61,8 +69,8 @@
                      <title xml:lang="per-Latn-x-lc" key="work_21663">Tuḥfat al-mursilah</title>
                      <title xml:lang="per" key="work_21663">تحفة المرسله</title>
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" type="supplied" key="person_1744148632967330630003">Shaykh Muḥammad ibn Shaykh Faz̤l Allāh al-Hindī al-Burhānpūrī</persName>
-                        <persName xml:lang="per" type="supplied" key="person_1744148632967330630003">شيخ محمّد ابن شيخ فضل الله الهندى البرهانپورى</persName>
+                        <persName xml:lang="per-Latn-x-lc" type="supplied" key="ark:/81055/vdc_100164656423.0x000001 viaf_1744148632967330630003">Shaykh Muḥammad ibn Shaykh Faz̤l Allāh al-Hindī al-Burhānpūrī</persName>
+                        <persName xml:lang="per" type="supplied" key="viaf_1744148632967330630003">شيخ محمّد ابن شيخ فضل الله الهندى البرهانپورى</persName>
                      </author>
                   </msItem>
                   <msItem n="2" xml:id="Uk_Delhi_Persian_1152-item2">
@@ -96,7 +104,7 @@
                      <textLang mainLang="per">Persian </textLang>
                      <note>
                         <p>Item d. </p>
-                        <p>Brief extract from the <title>Manṭiq al-ṭayr</title> of <persName key="person_120724759" role="aut">Shaykh Farīd al-Dīn ʿAṭṭār Nayshāpūrī</persName> (d. circa 627/1230). 
+                        <p>Brief extract from the <title>Manṭiq al-ṭayr</title> of <persName key="ark:/81055/vdc_100000000818.0x000215 viaf_120724759" role="aut">Shaykh Farīd al-Dīn ʿAṭṭār Nayshāpūrī</persName> (d. circa 627/1230). 
                         </p>
                         <p>Not dated at end. 
 </p>
@@ -106,8 +114,8 @@
                      <title xml:lang="per-Latn-x-lc" key="work_27">Manṭiq al-ṭayr</title>
                      <title xml:lang="per" key="work_27">منطق الطّير</title>
                      <author>
-                        <persName key="person_120724759" xml:lang="per-Latn-x-lc">ʻAṭṭār, Farīd al-Dīn, -approximately 1230</persName>
-                        <persName xml:lang="per" key="person_120724759">شيخ فريد الدين محمد عطار نيشابورى</persName>
+                        <persName key="ark:/81055/vdc_100000000818.0x000215 viaf_120724759" xml:lang="per-Latn-x-lc">ʻAṭṭār, Farīd al-Dīn, -approximately 1230</persName>
+                        <persName xml:lang="per" key="viaf_120724759">شيخ فريد الدين محمد عطار نيشابورى</persName>
                      </author>
                   </msItem>
                   <msItem n="5" xml:id="Uk_Delhi_Persian_1152-item5">
@@ -115,7 +123,7 @@
                      <textLang mainLang="per">Persian </textLang>
                      <note>
                         <p>Item e. </p>
-                        <p>Untitled bio-bibliographical notice for the Naqshbandī Ṣūfī and saint, <persName key="person_90042997" role="subject">ʿAbd al-Raḥmān Jāmī</persName>, by his student, <persName key="person_78148995935359751416" role="aut">Raz̤ī al-Dīn ʿAbd al-Ghafūr Lārī</persName> (d. 5 Shaʿbān 912/1506), possibly intended as a supplement to the <title>Nafaḥāt al-uns</title>. 
+                        <p>Untitled bio-bibliographical notice for the Naqshbandī Ṣūfī and saint, <persName key="viaf_90042997" role="subject">ʿAbd al-Raḥmān Jāmī</persName>, by his student, <persName key="viaf_78148995935359751416" role="aut">Raz̤ī al-Dīn ʿAbd al-Ghafūr Lārī</persName> (d. 5 Shaʿbān 912/1506), possibly intended as a supplement to the <title>Nafaḥāt al-uns</title>. 
                         </p>
                         <p>The author’s name does not appear in the text, however. 
 </p>
@@ -129,8 +137,8 @@
 </p>
                      </note>
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" key="person_78148995935359751416">Raz̤ī al-Dīn ʿAbd al-Ghafūr Lārī, -1506</persName>
-                        <persName xml:lang="per" key="person_78148995935359751416">رضى الدّين عبد الغفور لارى</persName>
+                        <persName xml:lang="per-Latn-x-lc" key="viaf_78148995935359751416">Raz̤ī al-Dīn ʿAbd al-Ghafūr Lārī, -1506</persName>
+                        <persName xml:lang="per" key="viaf_78148995935359751416">رضى الدّين عبد الغفور لارى</persName>
                      </author>
                   </msItem>
                   <msItem n="6" xml:id="Uk_Delhi_Persian_1152-item6">
@@ -138,7 +146,7 @@
                      <textLang mainLang="ara" otherLangs="per">Arabic and Persian</textLang>
                      <note>
                         <p>Item f. </p>
-                        <p>Arabic work on Sufism entitled <title>Ḥilyat al-abdāl [va mā yaẓhar fīhā min al-maʿārif va al-aḥvāl]</title> ascribed to <persName key="person_95223177" role="aut">Ibn ʿArabī</persName> (d. 638/1240). 
+                        <p>Arabic work on Sufism entitled <title>Ḥilyat al-abdāl [va mā yaẓhar fīhā min al-maʿārif va al-aḥvāl]</title> ascribed to <persName key="viaf_95223177" role="aut">Ibn ʿArabī</persName> (d. 638/1240). 
                         </p>
                         <p>Dated colophon in Persian (f. 107r, margin): completed opposite the <placeName>Kaʿbah</placeName> in <placeName>Makkah</placeName>, 947/1541-2. 
                         </p>
@@ -150,8 +158,8 @@
                      <title xml:lang="per-Latn-x-lc" key="work_5011">Ḥilyat al-abdāl</title>
                      <title xml:lang="per" key="work_5011">حلية الابدال</title>
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" key="person_95223177" type="supplied">Ibn al-ʿArabī, 1165-1240</persName>
-                        <persName xml:lang="per" key="person_95223177" type="supplied">محيى الدين بن عربي</persName>
+                        <persName xml:lang="per-Latn-x-lc" key="viaf_95223177" type="supplied">Ibn al-ʿArabī, 1165-1240</persName>
+                        <persName xml:lang="per" key="viaf_95223177" type="supplied">محيى الدين بن عربي</persName>
                      </author>
                   </msItem>
                   <msItem n="7" xml:id="Uk_Delhi_Persian_1152-item7">
@@ -159,7 +167,7 @@
                      <textLang mainLang="per" otherLangs="ara">Persian and Arabic</textLang>
                      <note>
                         <p>Item g. </p>
-                        <p>Untitled excerpt (ff. 107v-108r) from a collection of the dicta or fiqarāt ascribed to the Ṣūfī saint, <persName key="person_485149294387580522619" role="ant">Khvājah ʿUbayd Allāh Aḥrār</persName> (d. circa 895/1490). 
+                        <p>Untitled excerpt (ff. 107v-108r) from a collection of the dicta or fiqarāt ascribed to the Ṣūfī saint, <persName key="viaf_485149294387580522619" role="ant">Khvājah ʿUbayd Allāh Aḥrār</persName> (d. circa 895/1490). 
 Not dated at end.
                         </p>
                         <p>Commentary on passages from the Qurʾān (ff. 108v-115v) collected by an unnamed author from the works of <persName key="person_f7269" role="ant">Mawlānā Ismāʿīl al-Shīrvānī</persName>. 
@@ -170,8 +178,8 @@ Not dated at end.
 </p>
                      </note>
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" key="person_485149294387580522619" type="supplied">Aḥrār, ʿUbayd Allāh ibn Maḥmūd, 1403 or 1404-1489 or 1490</persName>
-                        <persName xml:lang="per" key="person_485149294387580522619" type="supplied">خواجه عبيد الله احرار</persName>
+                        <persName xml:lang="per-Latn-x-lc" key="viaf_485149294387580522619" type="supplied">Aḥrār, ʿUbayd Allāh ibn Maḥmūd, 1403 or 1404-1489 or 1490</persName>
+                        <persName xml:lang="per" key="viaf_485149294387580522619" type="supplied">خواجه عبيد الله احرار</persName>
                      </author>
                   </msItem>
                   <msItem n="8" xml:id="Uk_Delhi_Persian_1152-item8">
@@ -179,7 +187,7 @@ Not dated at end.
                      <textLang mainLang="per" otherLangs="ara">Persian and Arabic</textLang>
                      <note>
                         <p>Item h. </p>
-                        <p>Rare untitled collection of Ṣūfī aphorisms and prayers appropriate to the time of day and occasion by <persName key="person_f7220" role="aut">Khvājah Abū Naṣr Pārsā</persName>, son of the famous Ṣūfī, <persName key="person_65292796" role="oth">Muḥammad ibn Muḥammad ibn Maḥmūd Bukhārī</persName>, known as <persName key="person_65292796" role="oth">Khvājah Muḥammad Pārsā</persName> (d. 865/1460-1). The work is referred to reverentially as <title>Kalimāt-i qudsīyah</title> by the scribe, although this may not be the formal title. 
+                        <p>Rare untitled collection of Ṣūfī aphorisms and prayers appropriate to the time of day and occasion by <persName key="person_f7220" role="aut">Khvājah Abū Naṣr Pārsā</persName>, son of the famous Ṣūfī, <persName key="viaf_65292796" role="oth">Muḥammad ibn Muḥammad ibn Maḥmūd Bukhārī</persName>, known as <persName key="viaf_65292796" role="oth">Khvājah Muḥammad Pārsā</persName> (d. 865/1460-1). The work is referred to reverentially as <title>Kalimāt-i qudsīyah</title> by the scribe, although this may not be the formal title. 
                         </p>
                         <p>This work claims to have been copied directly from the author’s autograph and is, thus, rare. 
 </p>
@@ -202,7 +210,7 @@ Not dated at end.
                      <textLang mainLang="per" otherLangs="ara">Persian and Arabic</textLang>
                      <note>
                         <p>Item i. </p>
-                        <p>Rare untitled treatise intended as a comprehensive guide to Ṣūfī principles and practices ascribed to the renowned mystic and writer, <persName key="person_103630065" role="att">Najm al-Dīn Aḥmad ibn ʿUmar al-Khīvaqī</persName>, called <persName key="person_103630065" role="att">Najm al-Dīn Kubrá</persName> (d. 10 Jum. II 618/1221). 
+                        <p>Rare untitled treatise intended as a comprehensive guide to Ṣūfī principles and practices ascribed to the renowned mystic and writer, <persName key="viaf_103630065" role="att">Najm al-Dīn Aḥmad ibn ʿUmar al-Khīvaqī</persName>, called <persName key="viaf_103630065" role="att">Najm al-Dīn Kubrá</persName> (d. 10 Jum. II 618/1221). 
                         </p>
                         <p>According to Levy, the work appears to be identical to the <title>Ṣifat al-ādāb</title> described by Charles Rieu.
                         </p>
@@ -218,15 +226,15 @@ Not dated at end.
                         </p>
                      </note>
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" key="person_103630065">Najm al-Dīn Kubrá</persName>
-                        <persName xml:lang="per" key="person_103630065">نجم الدين كبرى</persName>
+                        <persName xml:lang="per-Latn-x-lc" key="viaf_103630065">Najm al-Dīn Kubrá</persName>
+                        <persName xml:lang="per" key="viaf_103630065">نجم الدين كبرى</persName>
                      </author>
                   </msItem>
                   <msItem n="10" xml:id="Uk_Delhi_Persian_1152-item10">
                      <locus from="130v" to="133v">ff. 130v-133v</locus>
                      <note>
                         <p>Item j. </p>
-                        <p>Extract from the Ṣūfī mas̲navī conventionally titled <title>Zād al-musāfirīn</title> by <persName key="person_9681161763145322560004" role="aut">Fakhr al-Sādāt Ḥusayn ibn Ghānim</persName> (d. 720/1320), known as <persName key="person_9681161763145322560004" role="aut">Amīr Ḥusaynī</persName>, written in imitation of the <title>Ḥadīqat al-ḥaqīqah</title> of <persName key="person_197073975" role="ant">Sanāʾī Ghaznavī</persName> (d. 1150). 
+                        <p>Extract from the Ṣūfī mas̲navī conventionally titled <title>Zād al-musāfirīn</title> by <persName key="viaf_9681161763145322560004" role="aut">Fakhr al-Sādāt Ḥusayn ibn Ghānim</persName> (d. 720/1320), known as <persName key="viaf_9681161763145322560004" role="aut">Amīr Ḥusaynī</persName>, written in imitation of the <title>Ḥadīqat al-ḥaqīqah</title> of <persName key="viaf_197073975" role="ant">Sanāʾī Ghaznavī</persName> (d. 1150). 
                         </p>
                         <p>Not dated at end. 
 </p>
@@ -237,8 +245,8 @@ Not dated at end.
                      <title xml:lang="per-Latn-x-lc" key="work_20102">Zād al-musāfirīn</title>
                      <title xml:lang="per" key="work_20102">زاد المسافرين</title>
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" key="person_9681161763145322560004">Mīr Ḥusaynī Haravī, Ḥusayn ibn ʻĀlim, 1272 or 1273-approximately 1317</persName>
-                        <persName xml:lang="per" key="person_9681161763145322560004">مير حسينى هروى، حسين بن عالم</persName>
+                        <persName xml:lang="per-Latn-x-lc" key="viaf_9681161763145322560004">Mīr Ḥusaynī Haravī, Ḥusayn ibn ʻĀlim, 1272 or 1273-approximately 1317</persName>
+                        <persName xml:lang="per" key="viaf_9681161763145322560004">مير حسينى هروى، حسين بن عالم</persName>
                      </author>
                   </msItem>
                   <msItem n="11" xml:id="Uk_Delhi_Persian_1152-item11">
@@ -253,8 +261,8 @@ Not dated at end.
 </p>
                      </note>
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" type="supplied" key="person_95223177">Ibn ʿArabī</persName>
-                        <persName xml:lang="per" type="supplied" key="person_95223177">محيى الدين بن عربي</persName>
+                        <persName xml:lang="per-Latn-x-lc" type="supplied" key="viaf_95223177">Ibn ʿArabī</persName>
+                        <persName xml:lang="per" type="supplied" key="viaf_95223177">محيى الدين بن عربي</persName>
                      </author>
                   </msItem>
                   <msItem n="12" xml:id="Uk_Delhi_Persian_1152-item12">
@@ -262,7 +270,7 @@ Not dated at end.
                      <textLang mainLang="per" otherLangs="ara">Persian and Arabic</textLang>
                      <note>
                         <p>Item l. </p>
-                        <p>Brief untitled extract from a work on the first part of the tahlīl or kalimah-'i ṭayyibah by <persName key="person_90062645" role="aut">Sayyid ʿAlī Hamadānī</persName> (d. 786/1384). 
+                        <p>Brief untitled extract from a work on the first part of the tahlīl or kalimah-'i ṭayyibah by <persName key="ark:/81055/vdc_100164658919.0x000001 viaf_90062645" role="aut">Sayyid ʿAlī Hamadānī</persName> (d. 786/1384). 
                         </p>
                         <p>Not dated at end. 
 </p>
@@ -270,8 +278,8 @@ Not dated at end.
 </p>
                      </note>
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" key="person_90062645">Sayyid ʿAlī Hamadānī</persName>
-                        <persName xml:lang="per" key="person_90062645">مير سيّد على همدانى</persName>
+                        <persName xml:lang="per-Latn-x-lc" key="ark:/81055/vdc_100164658919.0x000001 viaf_90062645">Sayyid ʿAlī Hamadānī</persName>
+                        <persName xml:lang="per" key="viaf_90062645">مير سيّد على همدانى</persName>
                      </author>
                   </msItem>
                   <msItem n="13" xml:id="Uk_Delhi_Persian_1152-item13">
@@ -279,7 +287,7 @@ Not dated at end.
                      <textLang mainLang="per" otherLangs="ara">Persian and Arabic</textLang>
                      <note>
                         <p>Item m. </p>
-                        <p>Brief untitled extract from the <title>Manāzil al-sāʾirīn</title> by the renowned mystic and writer, <persName key="person_103630065" role="aut">Najm al-Dīn Aḥmad ibn ʿUmar al-Khīvaqī</persName>, called <persName key="person_103630065" role="aut">Najm al-Dīn Kubrá</persName> (d. 10 Jum. II 618/1221). 
+                        <p>Brief untitled extract from the <title>Manāzil al-sāʾirīn</title> by the renowned mystic and writer, <persName key="viaf_103630065" role="aut">Najm al-Dīn Aḥmad ibn ʿUmar al-Khīvaqī</persName>, called <persName key="viaf_103630065" role="aut">Najm al-Dīn Kubrá</persName> (d. 10 Jum. II 618/1221). 
                         </p>
                         <p>Dated colophon (f. 136v): completed in the <persName>
                               <placeName>Ḥaram al-Sharīf</placeName>
@@ -287,14 +295,14 @@ Not dated at end.
                         </p>
                         <p>Annotations partly in Persian and partly in Arabic in the margins related to <persName key="person_f7177" role="subject">Ibn Ḥajar</persName> and other collections of prophetic traditions. 
                         </p>
-                        <p>This work is followed (ff. 137r-145v) by an excerpt from the <title>Lavāʾiḥ</title> of <persName key="person_90042997" role="aut">Jāmī</persName>, comprising a large number of rubāʿīs, copied in scribal nastaʿlīq in faded red ink. Not dated. Included in the margins and other blank spaces are substantial annotations, including quotations from Jāmī’s Munājāt, references to <persName key="person_f7458" role="ant">Niẓām al-Dīn Badāvunī (Badayuni)</persName>, <persName key="person_100206721" role="ant">Saʿdī</persName>, <persName key="person_f7425" role="ant">Mullā Nāzuk</persName>, <persName key="person_211269318" role="ant">Khvājah Afz̤al Kāshī</persName>, <persName key="person_5721767" role="ant">Sulṭān Abū Saʿīd ibn Abū al-Khayr</persName>, medicinal recipes, and a numerological grid. 
+                        <p>This work is followed (ff. 137r-145v) by an excerpt from the <title>Lavāʾiḥ</title> of <persName key="viaf_90042997" role="aut">Jāmī</persName>, comprising a large number of rubāʿīs, copied in scribal nastaʿlīq in faded red ink. Not dated. Included in the margins and other blank spaces are substantial annotations, including quotations from Jāmī’s Munājāt, references to <persName key="person_f7458" role="ant">Niẓām al-Dīn Badāvunī (Badayuni)</persName>, <persName key="viaf_100206721" role="ant">Saʿdī</persName>, <persName key="person_f7425" role="ant">Mullā Nāzuk</persName>, <persName key="viaf_211269318" role="ant">Khvājah Afz̤al Kāshī</persName>, <persName key="viaf_5721767" role="ant">Sulṭān Abū Saʿīd ibn Abū al-Khayr</persName>, medicinal recipes, and a numerological grid. 
                         </p>
                      </note>
                      <title xml:lang="per-Latn-x-lc" key="work_21664">Manāzil al-sāʾirīn</title>
                      <title xml:lang="per" key="work_21664">منازل السائرين</title>
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" key="person_103630065">Najm al-Dīn Kubrá</persName>
-                        <persName xml:lang="per" key="person_103630065">نجم الدين كبرى</persName>
+                        <persName xml:lang="per-Latn-x-lc" key="viaf_103630065">Najm al-Dīn Kubrá</persName>
+                        <persName xml:lang="per" key="viaf_103630065">نجم الدين كبرى</persName>
                      </author>
                   </msItem>
                </msContents>
@@ -305,18 +313,17 @@ Not dated at end.
                               <height>193</height>
                               <width>178</width>
                            </dimensions>
-                           <dimensions type="written" unit="mm">
-									</dimensions>
+                           <dimensions type="written" unit="mm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote script="Arabic" scope="major" />
+                     <handNote script="Arabic" scope="major"/>
                   </handDesc>
                </physDesc>
                <history>
-                  <origin calendar="#Hijri-qamari" notBefore="1540-10-27" notAfter="1620" when-custom="15 Jumādá al-Sānī 947">
-                     <origDate calendar="#Hijri-qamari" notBefore="1540-10-27" notAfter="1620">15 Jumādá al-S̲ānī 947 (27 October 1540 - 1620)</origDate>
+                  <origin calendar="Hijri-qamari" notBefore="1540-10-27" notAfter="1620" when-custom="15 Jumādá al-Sānī 947">
+                     <origDate calendar="Hijri-qamari" notBefore="1540-10-27" notAfter="1620">15 Jumādá al-S̲ānī 947 (27 October 1540 - 1620)</origDate>
                      <placeName>Mecca</placeName> and <placeName>Medina</placeName>, <orgName>Ottoman</orgName>
                      <placeName>Arabia</placeName>, and <placeName>India</placeName>
                      <origPlace>India, Arabia </origPlace>

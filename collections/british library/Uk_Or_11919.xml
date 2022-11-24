@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5405">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,15 +42,21 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 11919</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343177</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239034.0x000096</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85100084">
                   <summary change="#add-summary">
                      1 copy of Makhzan al-asrār by Niẓāmī
                   </summary>
                   <msItem xml:id="Uk_Or_11919-item1">
-                     <author ref="http://viaf.org/viaf/2474895" key="person_2474895">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Niẓāmī</persName>
-                        <persName xml:lang="fa">نظامی</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_2474895">Niẓāmī</persName>
+                        <persName xml:lang="fa" key="viaf_2474895">نظامی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_3764">Makhzan al-asrār</title>
                      <title xml:lang="fa" key="work_3764">مخزن الاسرار</title>
@@ -56,8 +64,7 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 74.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -72,7 +79,7 @@
                   </objectDesc>
                   <sealDesc>
                      <seal n="1">
-                        <p>This copy bears the seal of <persName xml:lang="fa-Latn-x-lc" type="standard" ref="http://viaf.org/viaf/6178410" key="person_6178410" role="fmo" change="#role-assignment">Awrangzīb <foreign xml:lang="fa">اورنگزیب</foreign>
+                        <p>This copy bears the seal of <persName xml:lang="fa-Latn-x-lc" type="standard" ref="http://viaf.org/viaf/6178410" key="viaf_6178410" role="fmo" change="#role-assignment">Awrangzīb <foreign xml:lang="fa">اورنگزیب</foreign>
                            </persName>
                         </p>
                      </seal>
@@ -80,7 +87,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1434" notAfter="1435">838</origDate>
+                     <origDate calendar="Hijri-qamari" notBefore="1434" notAfter="1435">838</origDate>
                   </origin>
                </history>
                <additional>

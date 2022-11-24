@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5288">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -46,14 +48,14 @@
                      1 copy of Asrār al-tanzīl by Rāzī, Fakhr al-Dīn Muḥammad ibn ʻUmar, 1149 or 50-1210
                   </summary>
                   <msItem xml:id="Uk_Or_11077-item1">
-                     <author ref="http://viaf.org/viaf/90042555" key="person_90042555">
+                     <author ref="http://viaf.org/viaf/90042555" key="viaf_90042555">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Rāzī, Fakhr al-Dīn Muḥammad ibn ʻUmar, 1149 or 50-1210</persName>
                         <persName xml:lang="fa-Latn-x-lc" type="alt">Fakhr al-Dīn Rāzī</persName>
                         <persName xml:lang="fa">فخر الدین رازی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8125">Asrār al-tanzīl</title>
                      <title xml:lang="fa" key="work_8125">اسرار التنزیل</title>
-                     <note>Contains on the last folio <locus>292b</locus> seven quatrains by <persName type="standard" xml:lang="fa-Latn-x-lc" ref="http://viaf.org/viaf/120724759" key="person_120724759" role="oth" change="#role-assignment #ids-cleanup">‘Aṭṭār</persName>
+                     <note>Contains on the last folio <locus>292b</locus> seven quatrains by <persName type="standard" xml:lang="fa-Latn-x-lc" ref="http://viaf.org/viaf/120724759" key="viaf_120724759" role="oth" change="#role-assignment #ids-cleanup">‘Aṭṭār</persName>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 62.</bibl>
@@ -76,7 +78,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1800" notAfter="1899">13th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1800" notAfter="1899">13th century</origDate>
                   </origin>
                </history>
                <additional>

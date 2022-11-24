@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5505">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011.08.17</date>
+            <date calendar="Gregorian">2011.08.17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -48,7 +50,7 @@
                   </summary>
                   <msItem xml:id="Uk_Or_12733-item1" n="7" class="http://lccn.loc.gov/sh85100084 http://lccn.loc.gov/sh2002005579 http://lccn.loc.gov/sh85129656">
                      <locus from="21v" to="72v">f 21v-72v</locus>
-                     <author key="person_78699712" ref="http://viaf.org/viaf/78699712/">
+                     <author key="viaf_78699712" ref="http://viaf.org/viaf/78699712/">
                         <persName xml:lang="tr-Latn-x-lc" type="standard">Yusuf Sinaneddin Sineçak, d. 1546 or 7</persName>
                         <persName xml:lang="fa">يوسف سنان الدين سينه چاك</persName>
                         <persName xml:lang="fa-Latn-x-lc" type="alt">Sīnah chāk, Yūsuf, d. 941/1534-5</persName>
@@ -57,10 +59,10 @@
                      <title xml:lang="fa" key="work_8335">جزيرۀ مثنوی</title>
                      <title xml:lang="fa-Latn-x-lc" type="alt" key="work_8335">Hāẓā kitāb Jazīrah-ʼi Mas̲navī-ʼi sharīf</title>
                      <title xml:lang="fa" type="alt" key="work_8335">هاذا کتاب جزيرۀ مثنوی شریف</title>
-                     <incipit xml:lang="ar" />
-                     <explicit xml:lang="ar" defective="true" />
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note type="text-relations">A selection of verses from the <title xml:lang="fa-Latn-x-lc">Mas̲navī-i maʻnavī (<foreign xml:lang="fa">مثنوی معنوی</foreign>)
-                        </title> of <persName xml:lang="fa-Latn-x-lc" type="standard" key="person_98930150" role="ant" change="#role-assignment">Jalāl al-Dīn Rūmī, Maulana, 1207-1273, <foreign xml:lang="fa">جلال الدين رومى</foreign>
+                        </title> of <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_98930150" role="ant" change="#role-assignment">Jalāl al-Dīn Rūmī, Maulana, 1207-1273, <foreign xml:lang="fa">جلال الدين رومى</foreign>
                         </persName>, with explanations in Turkish
                      </note>
                      <note>Title has been supplied by <ref target="Waley_1998" type="page">Waley 1998, page 51.</ref>
@@ -86,7 +88,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1700" notAfter="1799">12th century<!-- Please review date attributes, see https://git.io/fihrist-dates -->
+                     <origDate calendar="Hijri-qamari" notBefore="1700" notAfter="1799">12th century<!-- Please review date attributes, see https://git.io/fihrist-dates -->
                      </origDate>
                      <origPlace>Ottoman Empire</origPlace>
                   </origin>
@@ -113,23 +115,23 @@
                </bibl>
             </taxonomy>
             <taxonomy xml:id="local_class">
-               <category xml:id="commentary" />
-               <category xml:id="supercommentary" />
-               <category xml:id="translation" />
+               <category xml:id="commentary"/>
+               <category xml:id="supercommentary"/>
+               <category xml:id="translation"/>
                <category xml:id="multipleWorks">
                   <catDesc>multiple works</catDesc>
                </category>
-               <category xml:id="abridgement" />
-               <category xml:id="papers" />
-               <category xml:id="documents" />
-               <category xml:id="extract" />
-               <category xml:id="gloss" />
-               <category xml:id="selection" />
-               <category xml:id="diagrams" />
-               <category xml:id="notes" />
-               <category xml:id="letters" />
-               <category xml:id="palimpsest" />
-               <category xml:id="supplement" />
+               <category xml:id="abridgement"/>
+               <category xml:id="papers"/>
+               <category xml:id="documents"/>
+               <category xml:id="extract"/>
+               <category xml:id="gloss"/>
+               <category xml:id="selection"/>
+               <category xml:id="diagrams"/>
+               <category xml:id="notes"/>
+               <category xml:id="letters"/>
+               <category xml:id="palimpsest"/>
+               <category xml:id="supplement"/>
             </taxonomy>
          </classDecl>
       </encodingDesc>

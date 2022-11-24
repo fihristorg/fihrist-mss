@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_18114">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -44,6 +46,12 @@
                      <idno>147</idno>
                      <note>William Irvine, acquired 24 Nov. 1893</note>
                   </altIdentifier>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004341884</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163235680.0x00002f</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>Tazkirat al-salatin-i Chaghata, vol 2</head>
                <msContents>
@@ -71,8 +79,8 @@
                      <title xml:lang="per-Latn-x-lc" key="work_9535">Taz̲kirat al-salāṭīn-i Chaghatā</title>
                      <title xml:lang="per" key="work_9535">تذكرۃ السّلاطين چغتا</title>
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" key="person_65267429">Muḥammad Hādī Kāmvar Khān Bahādur</persName>
-                        <persName xml:lang="per" key="person_65267429">محمّد هادى كامور خان بهادر</persName>
+                        <persName xml:lang="per-Latn-x-lc" key="viaf_65267429">Muḥammad Hādī Kāmvar Khān Bahādur</persName>
+                        <persName xml:lang="per" key="viaf_65267429">محمّد هادى كامور خان بهادر</persName>
                      </author>
                   </msItem>
                </msContents>
@@ -83,18 +91,17 @@
                               <height>242</height>
                               <width>145</width>
                            </dimensions>
-                           <dimensions type="written" unit="mm">
-									</dimensions>
+                           <dimensions type="written" unit="mm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote script="Arabic" scope="major" />
+                     <handNote script="Arabic" scope="major"/>
                   </handDesc>
                </physDesc>
                <history>
-                  <origin calendar="#Hijri-qamari" notBefore="1730" notAfter="1750">
-                     <origDate calendar="#Gregorian" notBefore="1730" notAfter="1750">18th century</origDate>
+                  <origin calendar="Hijri-qamari" notBefore="1730" notAfter="1750">
+                     <origDate calendar="Gregorian" notBefore="1730" notAfter="1750">18th century</origDate>
                      <origPlace>India</origPlace>
                   </origin>
                </history>
@@ -119,8 +126,7 @@
          </classDecl>
       </encodingDesc>
       <profileDesc>
-         <textClass>
-			</textClass>
+         <textClass/>
       </profileDesc>
       <revisionDesc>
          <change when="2022-04-21">

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5249">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,26 +42,31 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 10982</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343074</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239034.0x00002f</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85100075 http://lccn.loc.gov/sh2001000141 http://lccn.loc.gov/sh85083158">
                   <summary change="#add-summary">
                      1 copy of Chahār Maqālah by Niẓāmī-i ‘Arūz̤ī-i Samarqandī
                   </summary>
                   <msItem xml:id="Uk_Or_10982-item1">
-                     <author ref="http://viaf.org/viaf/90056222" key="person_90056222">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Niẓāmī-i ‘Arūz̤ī-i Samarqandī</persName>
-                        <persName xml:lang="fa">نظامی عروضی سمرقندی</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="ark:/81055/vdc_100164658914.0x000001 viaf_90056222">Niẓāmī-i ‘Arūz̤ī-i Samarqandī</persName>
+                        <persName xml:lang="fa" key="ark:/81055/vdc_100164658914.0x000001 viaf_90056222">نظامی عروضی سمرقندی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_7803">Chahār Maqālah</title>
                      <title xml:lang="fa" key="work_7803">چهار مقاله</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 33.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -75,7 +82,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1862" notAfter="1863">1279</origDate>
+                     <origDate calendar="Hijri-qamari" notBefore="1862" notAfter="1863">1279</origDate>
                   </origin>
                </history>
                <additional>

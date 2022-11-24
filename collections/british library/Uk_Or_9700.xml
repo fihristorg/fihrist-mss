@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6504">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011.08.17</date>
+            <date calendar="Gregorian">2011.08.17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -41,6 +43,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 9700</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342986</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237685.0x00011b</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="#multipleWorks">
                   <summary>Volume containing several works</summary>
@@ -50,8 +58,8 @@
                         <persName xml:lang="fa-Latn-x-lc" type="supplied">Anonymous</persName>
                      </author>
                      <title xml:lang="en" type="desc" key="work_9385">Miscellany of poetry</title>
-                     <incipit xml:lang="ar" />
-                     <explicit xml:lang="ar" defective="true" />
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>Unattributed poetry</note>
                      <note>Mostly in Urdu with Persian verses in <locus n="182r">f. 182r</locus> and <locus n="183v">f. 183v</locus>
                      </note>
@@ -59,8 +67,7 @@
                         <bibl>For a more detailed description see Waley 1998, page 61.</bibl>
                      </listBibl>
                      <textLang mainLang="ur" otherLangs="fa">Urdu and Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_9700-item2" n="4">
                      <locus n="184r">f. 184r</locus>
@@ -69,15 +76,14 @@
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_9386">Ruqʻa</title>
                      <title xml:lang="fa" key="work_9386">رقعة</title>
-                     <incipit xml:lang="ar" />
-                     <explicit xml:lang="ar" defective="true" />
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>An anecdote about a physician giving a “medicine” to the saint Bāyazīd Basṭāmī (d. 261/874 or 264/877-8) to ward off sins (cf. Or. 11310/29)</note>
                      <listBibl>
                         <bibl>For a more detailed description see Waley 1998, page 68.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_9700-item3" n="5">
                      <locus n="185">f. 185</locus>
@@ -86,8 +92,8 @@
                         <persName xml:lang="fa">زين الدين</persName>
                      </author>
                      <title xml:lang="en" type="desc" key="work_9387">Undated letter</title>
-                     <incipit xml:lang="ar" />
-                     <explicit xml:lang="ar" defective="true" />
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>A letter from Zayn al-Dīn to <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f3139" role="rcp" change="#role-assignment">Navvāb Iḥtishām al-Dawla</persName>, congratulating him on a recent military victory
                      </note>
                      <note>Document is undated</note>
@@ -95,8 +101,7 @@
                         <bibl>For a more detailed description see Waley 1998, page 26.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -112,7 +117,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1700" notAfter="1700">12th or 13th century<!-- Please review date attributes, see https://git.io/fihrist-dates -->
+                     <origDate calendar="Hijri-qamari" notBefore="1700" notAfter="1700">12th or 13th century<!-- Please review date attributes, see https://git.io/fihrist-dates -->
                      </origDate>
                      <origPlace>India</origPlace>
                   </origin>
@@ -139,23 +144,23 @@
                </bibl>
             </taxonomy>
             <taxonomy xml:id="local_class">
-               <category xml:id="commentary" />
-               <category xml:id="supercommentary" />
-               <category xml:id="translation" />
+               <category xml:id="commentary"/>
+               <category xml:id="supercommentary"/>
+               <category xml:id="translation"/>
                <category xml:id="multipleWorks">
                   <catDesc>multiple works</catDesc>
                </category>
-               <category xml:id="abridgement" />
-               <category xml:id="papers" />
-               <category xml:id="documents" />
-               <category xml:id="extract" />
-               <category xml:id="gloss" />
-               <category xml:id="selection" />
-               <category xml:id="diagrams" />
-               <category xml:id="notes" />
-               <category xml:id="letters" />
-               <category xml:id="palimpsest" />
-               <category xml:id="supplement" />
+               <category xml:id="abridgement"/>
+               <category xml:id="papers"/>
+               <category xml:id="documents"/>
+               <category xml:id="extract"/>
+               <category xml:id="gloss"/>
+               <category xml:id="selection"/>
+               <category xml:id="diagrams"/>
+               <category xml:id="notes"/>
+               <category xml:id="letters"/>
+               <category xml:id="palimpsest"/>
+               <category xml:id="supplement"/>
             </taxonomy>
          </classDecl>
       </encodingDesc>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_17990">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -44,6 +46,12 @@
                      <idno>121</idno>
                      <note>William Irvine</note>
                   </altIdentifier>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004341761</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163233992.0x00004d</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>Nasabnamah Chandhausi</head>
                <msContents>
@@ -58,7 +66,7 @@
                            <term xml:lang="per-Latn-x-lc">Fātiḥah</term> is recited
                         </p>
                         <p>Mention of the <name type="org">Suhravardī</name>
-                           <term xml:lang="per-Latn-x-lc">silsilah</term> of the saint <persName xml:lang="per-Latn-x-lc" key="person_74159218" role="subject">Shāh Sharaf al-Dīn Aḥmad ibn Yaḥyá Manīrī</persName> (Manerī, also Munyarī) and his student (<term xml:lang="per-Latn-x-lc">murīd</term>) <persName xml:lang="per-Latn-x-lc" key="person_101053660" role="subject">Shāh Z̤iyāʾ al-Dīn Ṣūfī al-Suhravardī</persName>
+                           <term xml:lang="per-Latn-x-lc">silsilah</term> of the saint <persName xml:lang="per-Latn-x-lc" key="viaf_74159218" role="subject">Shāh Sharaf al-Dīn Aḥmad ibn Yaḥyá Manīrī</persName> (Manerī, also Munyarī) and his student (<term xml:lang="per-Latn-x-lc">murīd</term>) <persName xml:lang="per-Latn-x-lc" key="ark:/81055/vdc_100164656095.0x000001 viaf_101053660" role="subject">Shāh Z̤iyāʾ al-Dīn Ṣūfī al-Suhravardī</persName>
                         </p>
                         <p>Preface and author's name lacking</p>
                         <p>Additional tractate at end, Ḥasb'nāmah, containing genealogical diagrams (ff. 27v-31v)</p>
@@ -84,19 +92,19 @@
                      </summary>
                      <handNote script="Arabic" scope="major"> with exaggerated flourishes and ligatures</handNote>
                   </handDesc>
-                  <additions />
+                  <additions/>
                   <bindingDesc>
-                     <p />
+                     <p/>
                   </bindingDesc>
                </physDesc>
                <history>
-                  <origin calendar="#Hijri-qamari" notBefore="1800" notAfter="1892-10">
-                     <origDate calendar="#Gregorian" notBefore="1800" notAfter="1892-10">1800 - October 1892</origDate>
+                  <origin calendar="Hijri-qamari" notBefore="1800" notAfter="1892-10">
+                     <origDate calendar="Gregorian" notBefore="1800" notAfter="1892-10">1800 - October 1892</origDate>
                      <origPlace>India</origPlace>
                   </origin>
                   <provenance>
                      <p>
-                        <persName xml:lang="per-Latn-x-lc" key="person_8170991" role="fmo">William Irvine</persName> According to note at beginning (f. 1r): "Purchased in Allahabad by Sheik Mahamed Abdul Aziz... in October 1892 fo G. J. Nicholls. Fatehgarh 10/12/92."
+                        <persName xml:lang="per-Latn-x-lc" key="viaf_8170991" role="fmo">William Irvine</persName> According to note at beginning (f. 1r): "Purchased in Allahabad by Sheik Mahamed Abdul Aziz... in October 1892 fo G. J. Nicholls. Fatehgarh 10/12/92."
                      </p>
                      <p>
                         <persName xml:lang="per-Latn-x-lc" key="person_f7663" role="fmo">George Jasper Nicholls</persName>. 
@@ -137,8 +145,7 @@
          </classDecl>
       </encodingDesc>
       <profileDesc>
-         <textClass>
-			</textClass>
+         <textClass/>
       </profileDesc>
       <revisionDesc>
          <change when="2022-04-21">
@@ -152,7 +159,7 @@
    </teiHeader>
    <text>
       <body>
-         <p />
+         <p/>
       </body>
    </text>
 </TEI>

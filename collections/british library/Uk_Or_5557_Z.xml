@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5973">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 5557 Z</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342652</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237592.0x000060</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85070893">
                   <summary change="#add-summary">
@@ -47,15 +55,14 @@
                   </summary>
                   <msItem xml:id="Uk_Or_5557_Z-item1">
                      <title xml:lang="en" type="desc" key="work_9355">Genizah fragments</title>
-                     <note>Fragments of devotional poems and prayers including <title xml:lang="jpr-Latn">Azharot</title> by <persName xml:lang="jpr-Latn" type="standard" ref="http://viaf.org/viaf/100186412" key="person_100186412" role="ant" change="#role-assignment">Solomon ben Judah Ibn Gabirol</persName> and other related fragments with Persian translations <locus from="1v" to="6r">1v-6r</locus>
+                     <note>Fragments of devotional poems and prayers including <title xml:lang="jpr-Latn">Azharot</title> by <persName xml:lang="jpr-Latn" type="standard" ref="http://viaf.org/viaf/100186412" key="viaf_100186412" role="ant" change="#role-assignment">Solomon ben Judah Ibn Gabirol</persName> and other related fragments with Persian translations <locus from="1v" to="6r">1v-6r</locus>
                      </note>
                      <note>Imperfect</note>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 41.</bibl>
                      </listBibl>
                      <textLang mainLang="jpr">Judaeo-Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -71,7 +78,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1300" notAfter="1499">14th-15th centuries</origDate>
+                     <origDate calendar="Gregorian" notBefore="1300" notAfter="1499">14th-15th centuries</origDate>
                   </origin>
                </history>
                <additional>

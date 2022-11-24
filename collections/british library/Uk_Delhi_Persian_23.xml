@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3205">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>Delhi Persian 23</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004341332</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163233603.0x000008</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85072967 http://lccn.loc.gov/n2007204421">
                   <summary change="#add-summary2">
@@ -50,15 +58,14 @@
                         <persName xml:lang="fa-Latn-x-lc" type="desc">Unknown</persName>
                      </author>
                      <title xml:lang="en" type="desc" key="work_8694">A work on the circumstances which led to the revelation of particular parts of the Qurʼān and on those verses which abrogate or are abrogated by others</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa"/>
                      <note>The author quotes only from the opening words of each sūrah (from the second onwards) and of each verse discussed</note>
                      <listBibl>
                         <bibl>For a more detailed description see Persian III, .</bibl>
                      </listBibl>
                      <textLang mainLang="fa" otherLangs="ar">Persian and Arabic</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -75,7 +82,7 @@
                      <handNote scope="major" script="nasta_liq">Nastaʻlīq</handNote>
                   </handDesc>
                   <decoDesc>
-                     <decoNote type="border" />
+                     <decoNote type="border"/>
                   </decoDesc>
                   <bindingDesc>
                      <p>Half leather 20th century European binding</p>
@@ -84,7 +91,7 @@
                <history>
                   <origin>
                      <origPlace>India</origPlace>
-                     <origDate calendar="#Gregorian" notBefore="1800" notAfter="1850">early 19th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1800" notAfter="1850">early 19th century</origDate>
                   </origin>
                </history>
                <additional>

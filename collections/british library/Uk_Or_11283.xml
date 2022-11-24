@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5316">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,23 +42,29 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 11283</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343120</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239034.0x00005d</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85093823 http://lccn.loc.gov/sh85079615 http://lccn.loc.gov/sh92004927">
                   <summary change="#add-summary">
                      1 copy of Kāmil al-ta‘bīr by Tiflīsī, Ḥubaysh ibn Ibrāhīm, d. ca. 1203
                   </summary>
                   <msItem xml:id="Uk_Or_11283-item1">
-                     <author ref="http://viaf.org/viaf/303702640" key="person_303702640" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Tiflīsī, Ḥubaysh ibn Ibrāhīm, d. ca. 1203</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Abū al-Faz̤l ibn Ḥusayn ibn Muḥammad al-Tiflīsī</persName>
-                        <persName xml:lang="fa" type="alt">تفليسى، حبيش ابن ابراهيم</persName>
-                        <persName xml:lang="fa" type="alt">ابو الفضل ابن حسین ابن محمد التفلیسی</persName>
-                        <persName xml:lang="fa">تفليسى، کمال الدين ابو الفضل حبيش</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="ark:/81055/vdc_100164657025.0x000001 viaf_303702640">Tiflīsī, Ḥubaysh ibn Ibrāhīm, d. ca. 1203</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="ark:/81055/vdc_100164657025.0x000001 viaf_303702640">Abū al-Faz̤l ibn Ḥusayn ibn Muḥammad al-Tiflīsī</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_303702640">تفليسى، حبيش ابن ابراهيم</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_303702640">ابو الفضل ابن حسین ابن محمد التفلیسی</persName>
+                        <persName xml:lang="fa" key="viaf_303702640">تفليسى، کمال الدين ابو الفضل حبيش</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_640">Kāmil al-ta‘bīr</title>
                      <title xml:lang="fa" key="work_640">کامل التعبیر</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <note>A treatise on dream interpretation composed for <persName type="supplied" xml:lang="fa-Latn-x-lc" key="person_f3392" role="dte" change="#role-assignment">Qilij Arslān ibn Mas‘ūd</persName>
                      </note>
                      <note>Imperfect at end</note>
@@ -64,8 +72,7 @@
                         <bibl>Meredith-Owens 1968, page 30.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -81,7 +88,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1500" notAfter="1599">16th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1500" notAfter="1599">16th century</origDate>
                   </origin>
                </history>
                <additional>

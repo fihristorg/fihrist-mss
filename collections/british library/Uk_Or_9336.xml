@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6460">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,32 +42,37 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 9336</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343744</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163240411.0x000099</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh2010100523 http://lccn.loc.gov/sh85054134 http://lccn.loc.gov/sh85082177">
                   <summary change="#add-summary">
                      1 copy of Taḥrīr al-uṣūl li-Uqlīdās by Euclid
                   </summary>
                   <msItem xml:id="Uk_Or_9336-item1">
-                     <author ref="http://viaf.org/viaf/176184097" key="person_176184097" change="#ids-cleanup">
-                        <persName xml:lang="en" type="standard">Euclid</persName>
-                        <persName xml:lang="fa" type="alt">اقلیداس</persName>
-                        <persName xml:lang="fa">إقليدس</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="en" type="standard" key="viaf_176184097">Euclid</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_176184097">اقلیداس</persName>
+                        <persName xml:lang="fa" key="viaf_176184097">إقليدس</persName>
                      </author>
-                     <editor role="trl" key="person_12392936">Translator: <persName ref="http://viaf.org/viaf/12392936" xml:lang="fa-Latn-x-lc" type="standard">Ṭūsī, Naṣīr al-Dīn Muḥammad ibn Muḥammad, 1201-1274 <foreign xml:lang="fa">محمد بن محمد نصير الدين الطوسي</foreign>
+                     <editor role="trl" key="viaf_12392936">Translator: <persName ref="http://viaf.org/viaf/12392936" xml:lang="fa-Latn-x-lc" type="standard">Ṭūsī, Naṣīr al-Dīn Muḥammad ibn Muḥammad, 1201-1274 <foreign xml:lang="fa">محمد بن محمد نصير الدين الطوسي</foreign>
                         </persName>
                      </editor>
                      <title xml:lang="fa-Latn-x-lc" key="work_9061">Taḥrīr al-uṣūl li-Uqlīdās</title>
                      <title xml:lang="fa" key="work_9061">تحریر الاصول لاقلیداس</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <note>A translation of Euclid’s <title>Geometry</title> by Naṣīr al-Dīn Ṭūṣī
                      </note>
                      <listBibl>
                         <bibl>Meredith-Owens 1968, page 29.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -84,7 +91,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1878" notAfter="1879">1295</origDate>
+                     <origDate calendar="Hijri-qamari" notBefore="1878" notAfter="1879">1295</origDate>
                   </origin>
                </history>
                <additional>

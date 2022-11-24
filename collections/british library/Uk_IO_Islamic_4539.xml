@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_18309">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -41,13 +43,19 @@
                   <collection>Raverty Collection</collection>
                   <idno>IO Islamic 4539</idno>
                   <altIdentifier type="other">
-                     <idno />
+                     <idno/>
                      <note>Raverty Collection</note>
+                  </altIdentifier>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342017</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163236087.0x000020</idno>
                   </altIdentifier>
                </msIdentifier>
                <head>Excerpts historical and literary</head>
                <msContents>
-                  <summary />
+                  <summary/>
                   <msItem class="http://lccn.loc.gov/sh85064912 http://lccn.loc.gov/sh91005420 http://lccn.loc.gov/sh87000556" n="1" xml:id="Uk_IO_Islamic_4539-item1">
                      <note>
                         <p>Collection of miscellaneous literary and historical excerpts, including ʿAmal-i Ṣāliḥ, Iqbālnāmah-'i Jahāngīrī, Akbarnāmah, Jahāngīrnāmah, Tārīkh-i Humāyūnī, ʿĀlamgīrnāmah, Riyāz̤ al-maḥabbat, Jāmiʿ al-tavārīkh, Tārīkh-i Ṭabarī, Maʾās̲ir-i ʿĀlamgīrī, Tārīkh-i Mīrzā Muḥammad Bakhsh, Muntakhab al-tavārīkh, Muntakhab al-Labāb, Tārīkh-i ansāb, Vāqiʿāt-i Mushtāqī, Ṭabaqāt-i Akbarī, Chachnāmah, and so on </p>
@@ -67,18 +75,17 @@
                               <height>300</height>
                               <width>230</width>
                            </dimensions>
-                           <dimensions type="written" unit="mm">
-									</dimensions>
+                           <dimensions type="written" unit="mm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote script="Arabic" scope="major" />
+                     <handNote script="Arabic" scope="major"/>
                   </handDesc>
                </physDesc>
                <history>
-                  <origin calendar="#Hijri-qamari" notBefore="1820" notAfter="1850">
-                     <origDate calendar="#Gregorian" notBefore="1820" notAfter="1850">19th century</origDate>
+                  <origin calendar="Hijri-qamari" notBefore="1820" notAfter="1850">
+                     <origDate calendar="Gregorian" notBefore="1820" notAfter="1850">19th century</origDate>
                      <origPlace>Afghanistan </origPlace>
                   </origin>
                </history>
@@ -103,8 +110,7 @@
          </classDecl>
       </encodingDesc>
       <profileDesc>
-         <textClass>
-			</textClass>
+         <textClass/>
       </profileDesc>
       <revisionDesc>
          <change when="2022-04-21">

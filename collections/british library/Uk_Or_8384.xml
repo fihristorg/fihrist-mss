@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6384">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 8384</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343741</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163240411.0x000097</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85068450 http://lccn.loc.gov/sh85135483">
                   <summary change="#add-summary">
@@ -52,21 +60,20 @@
                      <title xml:lang="fa-Latn-x-lc" type="alt" key="work_8807">Jahān-ārāy</title>
                      <title xml:lang="fa" key="work_8807">گلشن آری</title>
                      <title xml:lang="fa" type="alt" key="work_8807">جهان آرای</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <note>A recension of the <title xml:lang="fa-Latn-x-lc">Tārīkh-i Īlchī-i Niẓām Shāhī (<foreign xml:lang="fa">تاريخ ايلچى نظام شاهی</foreign>)
                         </title> or <title>Tārīkh-i Quṭbī (<foreign xml:lang="fa">تاريخ قطبی</foreign>)
-                        </title> by <persName xml:lang="fa-Latn-x-lc" ref="http://viaf.org/viaf/56317782" type="supplied" key="person_56317782" role="aut" change="#role-assignment #ids-cleanup">Khvurshāh ibn Qubād al-Ḥusaynī, d. 1565, <foreign xml:lang="fa">خورشاه بن قباد الحسينی</foreign>
+                        </title> by <persName xml:lang="fa-Latn-x-lc" ref="http://viaf.org/viaf/56317782" type="supplied" key="viaf_56317782" role="aut" change="#role-assignment #ids-cleanup">Khvurshāh ibn Qubād al-Ḥusaynī, d. 1565, <foreign xml:lang="fa">خورشاه بن قباد الحسينی</foreign>
                         </persName>
                      </note>
-                     <note>It breaks off in Guftār 4 of Maqālah 3, dealing with the accession of <persName xml:lang="fa-Latn-x-lc" ref="http://viaf.org/viaf/56317782" key="person_56317782" type="standard" role="aut" change="#role-assignment #ids-cleanup">Arghün, Ilkhan of Iran, 1250?-1291</persName>
+                     <note>It breaks off in Guftār 4 of Maqālah 3, dealing with the accession of <persName xml:lang="fa-Latn-x-lc" ref="http://viaf.org/viaf/56317782" key="viaf_56317782" type="standard" role="aut" change="#role-assignment #ids-cleanup">Arghün, Ilkhan of Iran, 1250?-1291</persName>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 14.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -82,7 +89,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1731" notAfter="1732">1144</origDate>
+                     <origDate calendar="Gregorian" notBefore="1731" notAfter="1732">1144</origDate>
                   </origin>
                </history>
                <additional>

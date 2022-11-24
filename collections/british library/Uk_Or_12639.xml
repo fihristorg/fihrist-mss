@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5501">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,29 +42,34 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 12639</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343234</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239034.0x0000cf</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh00001747  http://lccn.loc.gov/sh2002001761">
                   <summary change="#add-summary">
                      1 copy of Rūznāmah-’i safar-i Pitirbūrgh by Muṣṭafā Afshār ibn Naṣrullah
                   </summary>
                   <msItem xml:id="Uk_Or_12639-item1">
-                     <author key="person_307324563" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Muṣṭafā Afshār ibn Naṣrullah</persName>
-                        <persName xml:lang="fa">مصطفی افشار ابن نصر الله</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied" key="ark:/81055/vdc_100164657050.0x000001 viaf_307324563">Muṣṭafā Afshār ibn Naṣrullah</persName>
+                        <persName xml:lang="fa" key="ark:/81055/vdc_100164657050.0x000001 viaf_307324563">مصطفی افشار ابن نصر الله</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_9032">Rūznāmah-’i safar-i Pitirbūrgh</title>
                      <title xml:lang="fa" key="work_9032">روزنامۀ سفر پتربورغ</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <note>An account of the journey of <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f3050" role="subject" change="#role-assignment">Mīrzā Mas‘ūd <foreign xml:lang="fa">میرزا مسعود</foreign>
-                        </persName>, an Ambassador Extraordinary sent to St. Petersburg, following the murder of <persName xml:lang="en" type="standard" ref="http://viaf.org/viaf/41858406" key="person_41858406" role="oth" change="#role-assignment">Griboyedov, Aleksandr Sergeyevich</persName> in <date calendar="#Hijri-qamari" notBefore="1828" notAfter="1829">1244</date>, written by his secretary
+                        </persName>, an Ambassador Extraordinary sent to St. Petersburg, following the murder of <persName xml:lang="en" type="standard" ref="http://viaf.org/viaf/41858406" key="viaf_41858406" role="oth" change="#role-assignment">Griboyedov, Aleksandr Sergeyevich</persName> in <date calendar="Hijri-qamari" notBefore="1828" notAfter="1829">1244</date>, written by his secretary
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 49.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -78,7 +85,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1851" notAfter="1852">1268</origDate>
+                     <origDate calendar="Hijri-qamari" notBefore="1851" notAfter="1852">1268</origDate>
                   </origin>
                </history>
                <additional>

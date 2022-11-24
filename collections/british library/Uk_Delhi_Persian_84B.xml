@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3263">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,21 +42,27 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>Delhi Persian 84B</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004341399</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163233768.0x000008</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85072967">
                   <summary change="#add-summary">
                      1 copy of by Birjandī, ʻAbd al-ʻAlī ibn Muḥammad ibn Ḥusayn, 16th cent.
                   </summary>
                   <msItem xml:id="Uk_Delhi_Persian_84B-item1">
-                     <author ref="http://viaf.org/viaf/7603024" key="person_7603024">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Birjandī, ʻAbd al-ʻAlī ibn Muḥammad ibn Ḥusayn, 16th cent.</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">ʻAbd al-ʻAlī ibn Muḥammad ibn Ḥusayn al-Birjandī (d.c. 934/1527)</persName>
-                        <persName xml:lang="fa" type="alt">عبد العلی بن محمد بن حسين البرجنديی</persName>
-                        <persName xml:lang="fa">برجنديی عبد العلی بن محمد بن حسين</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_7603024">Birjandī, ʻAbd al-ʻAlī ibn Muḥammad ibn Ḥusayn, 16th cent.</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_7603024">ʻAbd al-ʻAlī ibn Muḥammad ibn Ḥusayn al-Birjandī (d.c. 934/1527)</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_7603024">عبد العلی بن محمد بن حسين البرجنديی</persName>
+                        <persName xml:lang="fa" key="viaf_7603024">برجنديی عبد العلی بن محمد بن حسين</persName>
                      </author>
                      <title key="work_10906">Untitled</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa"/>
                      <note>A work on the talismanic virtues of the Qurʼān compiled from unspecified Arabic sources</note>
                      <note>Extending as far as the beginning of the remarks on Sūrah 92 (<locus n="97r">f 97r</locus> of <ref type="no" target="Uk">Delhi Arabic 84A (British Library).</ref>)
                      </note>
@@ -64,8 +72,7 @@
                         <bibl>For a more detailed description see Persian III, .</bibl>
                      </listBibl>
                      <textLang mainLang="fa" otherLangs="ar">Persian and Arabic</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -84,20 +91,20 @@
                      </handNote>
                   </handDesc>
                   <decoDesc>
-                     <decoNote type="border" />
+                     <decoNote type="border"/>
                   </decoDesc>
                   <bindingDesc>
                      <p>20th century half leather red European binding, with original leather binding (blind stamped margins and central panel with medallion) preserved on inside binding</p>
                   </bindingDesc>
                   <sealDesc>
-                     <p>ʻArẓdīdahs on <locus n="1Cr">f 1Cr</locus> of <persName xml:lang="fa-Latn-x-lc" type="suplpied" key="person_f1674" role="asn" change="#role-assignment">Jahāndār Shāh</persName> dated <date calendar="#Hijri-qamari" when="1712">22 Raj [1124]</date> RY 1 and of <persName xml:lang="fa-Latn-x-lc" type="suplpied" key="person_48143049" role="fmo" change="#role-assignment #ids-cleanup">Farrukhsiyar</persName> dated <date calendar="#Hijri-qamari" when="1713">29 Jum I 1125</date>, RY 2. A third has been partially torn from the bottom of the page; Square seals of <persName xml:lang="fa-Latn-x-lc" type="suplpied" key="person_f2235" role="asn" change="#role-assignment">Mirzā Ghulām Muḥammad Bayg</persName>, dated <date calendar="#Hijri-qamari" when="1804">1219</date>, on ff <locus n="1v">1v</locus> and <locus n="2r">2r</locus>
+                     <p>ʻArẓdīdahs on <locus n="1Cr">f 1Cr</locus> of <persName xml:lang="fa-Latn-x-lc" type="suplpied" key="person_f1674" role="asn" change="#role-assignment">Jahāndār Shāh</persName> dated <date calendar="Hijri-qamari" when="1712">22 Raj [1124]</date> RY 1 and of <persName xml:lang="fa-Latn-x-lc" type="suplpied" key="viaf_48143049" role="fmo" change="#role-assignment #ids-cleanup">Farrukhsiyar</persName> dated <date calendar="Hijri-qamari" when="1713">29 Jum I 1125</date>, RY 2. A third has been partially torn from the bottom of the page; Square seals of <persName xml:lang="fa-Latn-x-lc" type="suplpied" key="person_f2235" role="asn" change="#role-assignment">Mirzā Ghulām Muḥammad Bayg</persName>, dated <date calendar="Hijri-qamari" when="1804">1219</date>, on ff <locus n="1v">1v</locus> and <locus n="2r">2r</locus>
                      </p>
                   </sealDesc>
                </physDesc>
                <history>
                   <origin>
                      <origPlace>India</origPlace>
-                     <origDate calendar="#Gregorian" notBefore="1700" notAfter="1799">18th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1700" notAfter="1799">18th century</origDate>
                   </origin>
                </history>
                <additional>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_18108">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -41,30 +43,36 @@
                   <collection>Irvine Collection</collection>
                   <idno>IO Islamic 4068</idno>
                   <altIdentifier type="other">
-                     <idno />
+                     <idno/>
                      <note>William Irvine</note>
+                  </altIdentifier>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004341881</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163235680.0x00002c</idno>
                   </altIdentifier>
                </msIdentifier>
                <head>Miscellany of verse and prose</head>
                <msContents>
-                  <summary />
+                  <summary/>
                   <msItem class="http://lccn.loc.gov/sh85100085 http://lccn.loc.gov/sh89005046" n="1" xml:id="Uk_IO_Islamic_4068-item1">
                      <note>
-                        <p>Untitled, illuminated <term xml:lang="per-Latn-x-lc">bayāz̤</term> or notebook of Persian and Arabic analecta assembled from the works of (but not limited to) "<persName xml:lang="per-Latn-x-lc" key="person_98930150" role="ant">Rūmī</persName>," "<persName xml:lang="per-Latn-x-lc" key="person_100210377" role="ant">Khayyām</persName>," "<persName xml:lang="per-Latn-x-lc" key="person_56731778" role="ant">Ḥāfiẓ</persName>," <persName xml:lang="per-Latn-x-lc" key="person_f288" role="ant">Ibrāhīm "Adham</persName>," "<persName xml:lang="per-Latn-x-lc" key="person_57523601" role="ant">Bīdil</persName>," "<persName xml:lang="per-Latn-x-lc" key="person_f7674" role="ant">Bihjat</persName>," "<persName xml:lang="per-Latn-x-lc" key="person_91000370" role="ant">Ṣāʾib</persName>," <persName xml:lang="per-Latn-x-lc" key="person_26833521" role="ant">Nāṣir ʿAlī "Nāṣir</persName>," <persName xml:lang="per-Latn-x-lc" key="person_f7719" role="ant">Muḥammad Qāsim</persName>, "<persName xml:lang="per-Latn-x-lc" key="person_f7743" role="ant">Shādmān</persName>," "<persName xml:lang="per-Latn-x-lc" key="person_14200302" role="ant">Āṣafī" ʿAjamī</persName>, <persName xml:lang="per-Latn-x-lc" key="person_f7709" role="ant">Mīrzā Nāṣir "Inṣāf</persName>," <persName xml:lang="per-Latn-x-lc" key="person_f7720" role="ant">Muḥammad Qāsim Mashhadī</persName>, in addition to some compositions by compilers / calligraphers
+                        <p>Untitled, illuminated <term xml:lang="per-Latn-x-lc">bayāz̤</term> or notebook of Persian and Arabic analecta assembled from the works of (but not limited to) "<persName xml:lang="per-Latn-x-lc" key="viaf_98930150" role="ant">Rūmī</persName>," "<persName xml:lang="per-Latn-x-lc" key="viaf_100210377" role="ant">Khayyām</persName>," "<persName xml:lang="per-Latn-x-lc" key="viaf_56731778" role="ant">Ḥāfiẓ</persName>," <persName xml:lang="per-Latn-x-lc" key="person_f288" role="ant">Ibrāhīm "Adham</persName>," "<persName xml:lang="per-Latn-x-lc" key="viaf_57523601" role="ant">Bīdil</persName>," "<persName xml:lang="per-Latn-x-lc" key="person_f7674" role="ant">Bihjat</persName>," "<persName xml:lang="per-Latn-x-lc" key="viaf_91000370" role="ant">Ṣāʾib</persName>," <persName xml:lang="per-Latn-x-lc" key="viaf_26833521" role="ant">Nāṣir ʿAlī "Nāṣir</persName>," <persName xml:lang="per-Latn-x-lc" key="person_f7719" role="ant">Muḥammad Qāsim</persName>, "<persName xml:lang="per-Latn-x-lc" key="person_f7743" role="ant">Shādmān</persName>," "<persName xml:lang="per-Latn-x-lc" key="viaf_14200302" role="ant">Āṣafī" ʿAjamī</persName>, <persName xml:lang="per-Latn-x-lc" key="person_f7709" role="ant">Mīrzā Nāṣir "Inṣāf</persName>," <persName xml:lang="per-Latn-x-lc" key="person_f7720" role="ant">Muḥammad Qāsim Mashhadī</persName>, in addition to some compositions by compilers / calligraphers
                         </p>
                         <p>Each folio or side is transcribed by different writers at different 1) dates and 2) places, at the request of a certain <persName xml:lang="per-Latn-x-lc" key="person_f7697" role="pat">Mawlānā Muḥammad Yūsuf</persName> (f. 27r), <persName xml:lang="per-Latn-x-lc" key="person_f7708" role="pat">Mīrzā Muḥammad Yūsuf</persName> (f. 35v), or <persName xml:lang="per-Latn-x-lc" key="person_f7672" role="pat">Āqā Muḥammad Yūsuf-jīv</persName> (f. 58r)
                         </p>
-                        <p>Dates range widely from the <term xml:lang="per-Latn-x-lc">ghurrah</term> or <date calendar="#Hijri-qamari">1 Ramaz̤ān of regnal year 43 (ʿĀlamgīr I)</date> at <name type="place">Fort Satara</name> (f. 27r) to <date calendar="#Hijri-qamari">Wednesday 23 Jumādá I 1087</date> / <date calendar="#Gregorian">1676</date> (f. 29v)
+                        <p>Dates range widely from the <term xml:lang="per-Latn-x-lc">ghurrah</term> or <date calendar="Hijri-qamari">1 Ramaz̤ān of regnal year 43 (ʿĀlamgīr I)</date> at <name type="place">Fort Satara</name> (f. 27r) to <date calendar="Hijri-qamari">Wednesday 23 Jumādá I 1087</date> / <date calendar="Gregorian">1676</date> (f. 29v)
                         </p>
-                        <p>The manuscript additionally preserves a rare letter (f. 64r) from the Timurid or Mughal Prince <persName xml:lang="per-Latn-x-lc" key="person_27879596" role="aut">Dārā Shukūh</persName> addressed to the itinerant Iranian Jewish mystic, <persName xml:lang="per-Latn-x-lc" key="person_297150869791122190002" role="rcp">Muḥammad Saʿīd Kāshānī "Sarmad"</persName> (see IO Islamic 4059 for his poems)
+                        <p>The manuscript additionally preserves a rare letter (f. 64r) from the Timurid or Mughal Prince <persName xml:lang="per-Latn-x-lc" key="ark:/81055/vdc_100164656959.0x000001 viaf_27879596" role="aut">Dārā Shukūh</persName> addressed to the itinerant Iranian Jewish mystic, <persName xml:lang="per-Latn-x-lc" key="viaf_297150869791122190002" role="rcp">Muḥammad Saʿīd Kāshānī "Sarmad"</persName> (see IO Islamic 4059 for his poems)
                         </p>
                         <p>Defective at beginning and end</p>
                         <p>Not dated</p>
                      </note>
-                     <textLang mainLang="per" otherLangs="arb" xml:lang="per">Persian and Arabic</textLang>
+                     <textLang mainLang="per" otherLangs="ara" xml:lang="per">Persian and Arabic</textLang>
                      <note>Copied from an original =-=-=-=-</note>
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" key="person_27879596">Dārā Shukūh</persName>
+                        <persName xml:lang="per-Latn-x-lc" key="ark:/81055/vdc_100164656959.0x000001 viaf_27879596">Dārā Shukūh</persName>
                      </author>
                   </msItem>
                </msContents>
@@ -88,20 +96,20 @@
                   <decoDesc>
                      <summary>Margins ruled, adorned with polychrome <term xml:lang="per-Latn-x-lc">abrī</term> or loose and combed marbling, and the contours picked out in gold. Original folios trimmed and remounted on apertures of plain paper
                      </summary>
-                     <decoNote />
+                     <decoNote/>
                   </decoDesc>
                   <bindingDesc>
-                     <p />
+                     <p/>
                   </bindingDesc>
                </physDesc>
                <history>
-                  <origin calendar="#Hijri-qamari" notBefore="1676" notAfter="1701">
-                     <origDate calendar="#Gregorian" notBefore="1676" notAfter="1701">17th-18th centuries</origDate>
+                  <origin calendar="Hijri-qamari" notBefore="1676" notAfter="1701">
+                     <origDate calendar="Gregorian" notBefore="1676" notAfter="1701">17th-18th centuries</origDate>
                      <origPlace>India</origPlace>
                   </origin>
                   <provenance>
                      <p>
-                        <persName xml:lang="per-Latn-x-lc" key="person_8170991" role="fmo">William Irvine</persName>
+                        <persName xml:lang="per-Latn-x-lc" key="viaf_8170991" role="fmo">William Irvine</persName>
                      </p>
                      <p>
                         <persName xml:lang="per-Latn-x-lc" key="person_f7697" role="fmo">Mawlānā Muḥammad Yūsuf</persName>
@@ -142,8 +150,7 @@
          </classDecl>
       </encodingDesc>
       <profileDesc>
-         <textClass>
-			</textClass>
+         <textClass/>
       </profileDesc>
       <revisionDesc>
          <change when="2022-04-21">

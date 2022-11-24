@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5707">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,35 +42,38 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 14742</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343782</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163240411.0x0000bf</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh91004161 http://lccn.loc.gov/sh2008121357">
                   <summary change="#add-summary">
                      1 copy of Tarjumah-ʼi Quṭbshāhī by ʻĀmilī, Bahāʼ al-Dīn Muḥammad ibn Ḥusayn, 1547-1621
                   </summary>
                   <msItem xml:id="Uk_Or_14742-item1">
-                     <author key="person_27052262" ref="http://viaf.org/viaf/27052262/">
-                        <persName xml:lang="ar-Latn-x-lc" type="standard">ʻĀmilī, Bahāʼ al-Dīn Muḥammad ibn Ḥusayn, 1547-1621</persName>
-                        <persName xml:lang="ar">آملى، بهاء الدين محد بن حسين</persName>
+                     <author>
+                        <persName xml:lang="ar-Latn-x-lc" type="standard" key="ark:/81055/vdc_100164656953.0x000001 viaf_27052262">ʻĀmilī, Bahāʼ al-Dīn Muḥammad ibn Ḥusayn, 1547-1621</persName>
+                        <persName xml:lang="ar" key="ark:/81055/vdc_100164656953.0x000001 viaf_27052262">آملى، بهاء الدين محد بن حسين</persName>
                      </author>
-                     <editor role="trl" key="person_807145857157122922834" change="#ids-cleanup">translator <persName xml:lang="fa-Latn-x-lc" type="supplied">Muḥammad ibn ʻAlī ibn Khātūn, d. 1059/1649 <foreign xml:lang="fa">محمد بن علی بن خاتون</foreign> ī
+                     <editor role="trl" key="viaf_807145857157122922834" change="#ids-cleanup">translator <persName xml:lang="fa-Latn-x-lc" type="supplied">Muḥammad ibn ʻAlī ibn Khātūn, d. 1059/1649 <foreign xml:lang="fa">محمد بن علی بن خاتون</foreign> ī
                         </persName>
                      </editor>
                      <title xml:lang="fa-Latn-x-lc" key="work_8179">Tarjumah-ʼi Quṭbshāhī</title>
                      <title xml:lang="fa" key="work_8179">ترجمۀ قطتشاهی</title>
                      <note>Translation and commentary in Persian on the work <title xml:lang="fa-Latn-x-lc">Arbaʻīn, (<foreign xml:lang="fa">أربعين</foreign>)
-                        </title>, the collection of forty Ḥadīs̲ made by <persName key="person_27052262" ref="http://viaf.org/viaf/27052262/" xml:lang="ar-Latn-x-lc" type="standard" role="aut" change="#role-assignment">Bahāʼ al-Dīn ʻĀmilī</persName>
+                        </title>, the collection of forty Ḥadīs̲ made by <persName key="viaf_27052262" ref="http://viaf.org/viaf/27052262/" xml:lang="ar-Latn-x-lc" type="standard" role="aut" change="#role-assignment">Bahāʼ al-Dīn ʻĀmilī</persName>
                      </note>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
-                     <note>
-                        <foreign xml:lang="fa" />
-                     </note>
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
+                     <note/>
                      <listBibl>
                         <bibl>For a more detailed description see Waley 1998, page 2.</bibl>
                      </listBibl>
                      <textLang mainLang="fa" otherLangs="ar">Persian translation</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -85,7 +90,7 @@
                <history>
                   <origin>
                      <origPlace>India</origPlace>
-                     <origDate calendar="#Hijri-qamari" when="1649">1059</origDate>
+                     <origDate calendar="Hijri-qamari" when="1649">1059</origDate>
                   </origin>
                </history>
                <additional>

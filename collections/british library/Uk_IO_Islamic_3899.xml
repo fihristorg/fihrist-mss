@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_17947">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -41,7 +43,13 @@
                   <collection>Irvine Collection</collection>
                   <idno>IO Islamic 3899</idno>
                   <altIdentifier type="former">
-                     <idno />
+                     <idno/>
+                  </altIdentifier>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004341725</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163233992.0x00002b</idno>
                   </altIdentifier>
                </msIdentifier>
                <head>Khazin al-Shu'ara'</head>
@@ -49,8 +57,8 @@
                   <summary>1 copy of Taz̲kirah-'i khāzin al-shuʿarāʾ by ʿAlī Kabīr Mīranjān Ilāhābādī</summary>
                   <msItem class="http://lccn.loc.gov/sh85014152 http://lccn.loc.gov/sh85100084" n="1" xml:id="Uk_IO_Islamic_3899-item1">
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" type="supplied" key="person_137972961">ʿAlī Kabīr Mīranjān Ilāhābādī</persName>
-                        <persName xml:lang="per" type="alt" key="person_137972961">على كبير ميرنجان اله آبادى </persName>
+                        <persName xml:lang="per-Latn-x-lc" type="supplied" key="ark:/81055/vdc_100164656364.0x000001 viaf_137972961">ʿAlī Kabīr Mīranjān Ilāhābādī</persName>
+                        <persName xml:lang="per" type="alt" key="ark:/81055/vdc_100164656364.0x000001 viaf_137972961">على كبير ميرنجان اله آبادى </persName>
                      </author>
                      <textLang mainLang="per">Persian</textLang>
                      <note>
@@ -83,32 +91,32 @@
                   <handDesc hands="2">
                      <summary>Rough and awkward <term xml:lang="per-Latn-x-lc">nastaʿlīq</term>; headings and koranic quotations in <term xml:lang="per-Latn-x-lc">naskh</term>. <term xml:lang="per-Latn-x-lc">Basmalah</term> in <term xml:lang="per-Latn-x-lc">sar lawḥ</term> above text (f. 1v) in mirrored <term xml:lang="per-Latn-x-lc">ṭughrā</term> design, incomplete. Scribe may be the same as the author.
                      </summary>
-                     <handNote scope="major" script="Arabic" />
+                     <handNote scope="major" script="Arabic"/>
                   </handDesc>
                   <decoDesc>
-                     <decoNote type="border" />
+                     <decoNote type="border"/>
                   </decoDesc>
-                  <additions />
+                  <additions/>
                   <bindingDesc>
-                     <p />
+                     <p/>
                   </bindingDesc>
                </physDesc>
                <history>
-                  <origin calendar="#Hijri-qamari" when="1855-03-16" when-custom="Sunday night, 27 Jum. II 1271">
-                     <origDate calendar="#Hijri-qamari" when="1855-03-16">Sunday night, 27 Jum. II 1271</origDate>
-                     <origDate calendar="#Gregorian" when="1855-03-16">16 March 1855</origDate>
+                  <origin calendar="Hijri-qamari" when="1855-03-16" when-custom="Sunday night, 27 Jum. II 1271">
+                     <origDate calendar="Hijri-qamari" when="1855-03-16">Sunday night, 27 Jum. II 1271</origDate>
+                     <origDate calendar="Gregorian" when="1855-03-16">16 March 1855</origDate>
  Patna, Bihar <origPlace>India</origPlace>
                   </origin>
                   <provenance>
                      <p>William Irvine, purchased from C. Rustumjee (?), 30 March 1908</p>
                      <p>Sayyid Muḥammad Bashīr, called Abū al-Qāsim Muḥammad</p>
                   </provenance>
-                  <acquisition />
+                  <acquisition/>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source />
+                        <source/>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.bl.uk/reshelp/inrrooms/stp/register/stpregister.html/">British Library, Registering for a Reader Pass</ref>. Contact <email>apac-enquiries@bl.uk</email> for further information on the availability of this manuscript. For information on catalogues and ordering manuscripts see <ref target="https://www.bl.uk/help/find-persian-manuscripts">Finding and ordering Persian manuscripts in the British Library</ref>.

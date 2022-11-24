@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5725">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 14978</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343383</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239456.0x00004d</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85129660 http://lccn.loc.gov/sh2009114919">
                   <summary change="#add-summary">
@@ -56,18 +64,17 @@
                      <title xml:lang="fa" key="work_7882">تحفت الصبرین</title>
                      <note>A small collection of anecdotes, mostly relating to Sufis</note>
                      <note>Selected from the <title xml:lang="fa-Latn-x-lc">Kashkūl (<foreign xml:lang="fa">کشکول</foreign>)
-                        </title>, a literary anthology by <persName xml:lang="fa-Latn-x-lc" type="standard" ref="http://viaf.org/viaf/27052262/" key="person_27052262" role="ant" change="#role-assignment">ʻĀmilī, Bahāʾ al-Dīn Muḥammad ibn Ḥusayn, 1547-1621, <foreign xml:lang="fa">عاملى، محمد بن الحسين، بهاء الدين</foreign>
-                        </persName>, also known as <persName xml:lang="fa-Latn-x-lc" type="alt" key="person_27052262" role="ant" change="#role-assignment #ids-cleanup">Shaykh Bahāʼī, <foreign xml:lang="fa">شیخ بهاء</foreign>
+                        </title>, a literary anthology by <persName xml:lang="fa-Latn-x-lc" type="standard" ref="http://viaf.org/viaf/27052262/" key="viaf_27052262" role="ant" change="#role-assignment">ʻĀmilī, Bahāʾ al-Dīn Muḥammad ibn Ḥusayn, 1547-1621, <foreign xml:lang="fa">عاملى، محمد بن الحسين، بهاء الدين</foreign>
+                        </persName>, also known as <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_27052262" role="ant" change="#role-assignment #ids-cleanup">Shaykh Bahāʼī, <foreign xml:lang="fa">شیخ بهاء</foreign>
                         </persName>,
                      </note>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <listBibl>
                         <bibl>For a more detailed description see Waley 1998, page 62.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -84,7 +91,7 @@
                <history>
                   <origin>
                      <origPlace>Iran</origPlace>
-                     <origDate calendar="#Hijri-qamari" notBefore="1839" notAfter="1840">about 1255</origDate>
+                     <origDate calendar="Hijri-qamari" notBefore="1839" notAfter="1840">about 1255</origDate>
                   </origin>
                </history>
                <additional>

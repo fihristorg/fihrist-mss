@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6351">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 8201</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342881</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237685.0x0000b3</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>Kullīyāt of Khvājū Kirmānī divided into several sections <foreign xml:lang="fa">کلّیات خواجو کرمانی</foreign>
                </head>
@@ -49,23 +57,22 @@
                   </summary>
                   <msItem xml:id="Uk_Or_8201-item1" n="1" class="http://lccn.loc.gov/sh85100087">
                      <locus from="6r" to="9v">ff 6r-9v</locus>
-                     <author key="person_17089446" ref="http://viaf.org/viaf/17089446">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Khvājū-yi Kirmānī, Maḥmūd ibn ʻAlī, 1290 or 91-1352</persName>
-                        <persName xml:lang="fa">خواجوى كرمانى، محمود بن على</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_17089446">Khvājū-yi Kirmānī, Maḥmūd ibn ʻAlī, 1290 or 91-1352</persName>
+                        <persName xml:lang="fa" key="viaf_17089446">خواجوى كرمانى، محمود بن على</persName>
                      </author>
                      <title xml:lang="en" type="desc" key="work_21079" change="#ids-cleanup">Prose introduction</title>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 54.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_8201-item2" n="2" class="http://lccn.loc.gov/sh91002715 ">
                      <locus from="9r" to="21v">ff 9r-21v</locus>
-                     <author key="person_17089446" ref="http://viaf.org/viaf/17089446">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Khvājū-yi Kirmānī, Maḥmūd ibn ʻAlī, 1290 or 91-1352</persName>
-                        <persName xml:lang="fa">خواجوى كرمانى، محمود بن على</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_17089446">Khvājū-yi Kirmānī, Maḥmūd ibn ʻAlī, 1290 or 91-1352</persName>
+                        <persName xml:lang="fa" key="viaf_17089446">خواجوى كرمانى، محمود بن على</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8798">Na‘t</title>
                      <title xml:lang="fa" key="work_8798">نعت</title>
@@ -73,14 +80,13 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 54.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_8201-item3" n="3" class="http://lccn.loc.gov/sh85100084">
                      <locus from="21r" to="169v">ff 21r-169v</locus>
-                     <author key="person_17089446" ref="http://viaf.org/viaf/17089446">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Khvājū-yi Kirmānī, Maḥmūd ibn ʻAlī, 1290 or 91-1352</persName>
-                        <persName xml:lang="fa">خواجوى كرمانى، محمود بن على</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_17089446">Khvājū-yi Kirmānī, Maḥmūd ibn ʻAlī, 1290 or 91-1352</persName>
+                        <persName xml:lang="fa" key="viaf_17089446">خواجوى كرمانى، محمود بن على</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20242" change="#ids-cleanup">Qaṣā’id</title>
                      <title xml:lang="fa" key="work_20242" change="#ids-cleanup">قصائد</title>
@@ -88,14 +94,13 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 54.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_8201-item4" n="4" class="http://lccn.loc.gov/sh85054793">
                      <locus from="170v" to="244r">ff 170v-244r</locus>
-                     <author key="person_17089446" ref="http://viaf.org/viaf/17089446">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Khvājū-yi Kirmānī, Maḥmūd ibn ʻAlī, 1290 or 91-1352</persName>
-                        <persName xml:lang="fa">خواجوى كرمانى، محمود بن على</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_17089446">Khvājū-yi Kirmānī, Maḥmūd ibn ʻAlī, 1290 or 91-1352</persName>
+                        <persName xml:lang="fa" key="viaf_17089446">خواجوى كرمانى، محمود بن على</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20015" change="#ids-cleanup">Ghazals</title>
                      <title xml:lang="fa" key="work_20015" change="#ids-cleanup">غزلها</title>
@@ -103,14 +108,13 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 54.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_8201-item5" n="5" class="http://lccn.loc.gov/sh85109764">
                      <locus from="245r" to="273r">ff 245r-273r</locus>
-                     <author key="person_17089446" ref="http://viaf.org/viaf/17089446">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Khvājū-yi Kirmānī, Maḥmūd ibn ʻAlī, 1290 or 91-1352</persName>
-                        <persName xml:lang="fa">خواجوى كرمانى، محمود بن على</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_17089446">Khvājū-yi Kirmānī, Maḥmūd ibn ʻAlī, 1290 or 91-1352</persName>
+                        <persName xml:lang="fa" key="viaf_17089446">خواجوى كرمانى، محمود بن على</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20233" change="#ids-cleanup">Rubā‘īyāt</title>
                      <title xml:lang="fa" key="work_20233" change="#ids-cleanup">رباعیات</title>
@@ -118,14 +122,13 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 54.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_8201-item6" n="6" class="http://lccn.loc.gov/sh2002005579">
                      <locus from="274r" to="511r">ff 274r-511r</locus>
-                     <author key="person_17089446" ref="http://viaf.org/viaf/17089446">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Khvājū-yi Kirmānī, Maḥmūd ibn ʻAlī, 1290 or 91-1352</persName>
-                        <persName xml:lang="fa">خواجوى كرمانى، محمود بن على</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_17089446">Khvājū-yi Kirmānī, Maḥmūd ibn ʻAlī, 1290 or 91-1352</persName>
+                        <persName xml:lang="fa" key="viaf_17089446">خواجوى كرمانى، محمود بن على</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8799">Mas̲navīs</title>
                      <title xml:lang="fa" key="work_8799">مثناوی ها</title>
@@ -137,8 +140,7 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 54.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -154,7 +156,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1562" notAfter="1563">970</origDate>
+                     <origDate calendar="Hijri-qamari" notBefore="1562" notAfter="1563">970</origDate>
                   </origin>
                </history>
                <additional>

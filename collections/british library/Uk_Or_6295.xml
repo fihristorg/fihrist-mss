@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6072">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -48,7 +50,7 @@
                   </summary>
                   <msItem xml:id="Uk_Or_6295-item1" n="2" class="http://lccn.loc.gov/sh85063200 http://lccn.loc.gov/sh85054793">
                      <locus from="48v" to="83r ">ff 48v-83r</locus>
-                     <author key="person_98930150" ref="http://viaf.org/viaf/98930150/">
+                     <author key="viaf_98930150" ref="http://viaf.org/viaf/98930150/">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Jalāl al-Dīn Rūmī, Maulana, 1207-1273</persName>
                         <persName xml:lang="fa">
                            <surname>رومي</surname>
@@ -61,10 +63,10 @@
                         </persName>
                      </editor>
                      <title xml:lang="en" type="desc" key="work_8426">The ghazal rhyming in yāftam</title>
-                     <note>With a Turkish commentary by Ṣalāḥī Efendī composed in <date calendar="#Hijri-qamari" notBefore="1761" notAfter="1762">1175</date>
+                     <note>With a Turkish commentary by Ṣalāḥī Efendī composed in <date calendar="Hijri-qamari" notBefore="1761" notAfter="1762">1175</date>
                      </note>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <bibl>
                         <ref target="Meredith-Owens_1968" type="page">Meredith-Owens 1968, page 10.</ref>
                      </bibl>
@@ -80,8 +82,8 @@
                      </author>
                      <title xml:lang="ar-Latn-x-lc" key="work_8427">Risālah-’i Aṣḥāb-I Badr</title>
                      <title xml:lang="ar" key="work_8427">رسالۀ اصحاب بدر</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <note>A Ḥurūfī poem on those present at the Battle of Badr</note>
                      <bibl>
                         <ref target="Meredith-Owens_1968" type="page">Meredith-Owens 1968, page 10.</ref>
@@ -104,7 +106,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1800" notAfter="1899">19th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1800" notAfter="1899">19th century</origDate>
                   </origin>
                </history>
                <additional>

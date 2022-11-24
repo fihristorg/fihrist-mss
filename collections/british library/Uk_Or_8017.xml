@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6315">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 8017</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342858</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237685.0x00009c</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>A number of mystical works by Jāmī</head>
                <msContents class="#multipleWorks">
@@ -48,48 +56,46 @@
                   </summary>
                   <msItem xml:id="Uk_Or_8017-item1" n="1" class="http://lccn.loc.gov/sh2008112367">
                      <locus from="2v" to="64v">ff 2v-64v</locus>
-                     <author key="person_90042997" ref="http://viaf.org/viaf/90042997/">
-                        <persName xml:lang="fa" type="standard">Jāmī, 1414-1492</persName>
-                        <persName xml:lang="fa">جامی</persName>
+                     <author>
+                        <persName xml:lang="fa" type="standard" key="viaf_90042997">Jāmī, 1414-1492</persName>
+                        <persName xml:lang="fa" key="viaf_90042997">جامی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_7957">Sharḥ-i Fuṣūṣ al-ḥikam</title>
                      <title xml:lang="fa-Latn-x-lc" type="alt" key="work_7957">Naqd al-nuṣūṣ fī sharḥ Naqsh al-fuṣūṣ</title>
                      <title xml:lang="fa" key="work_7957">شرح فصوص الحكم</title>
                      <title xml:lang="fa" type="alt" key="work_7957">نقد النصوص في شرح نقش الفصوص</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
-                     <note>A commentary on the work by <persName xml:lang="fa-Latn-x-lc" type="alt" ref="http://viaf.org/viaf/95223177" key="person_95223177" role="ant" change="#role-assignment">Ibn al-‘Arabī, <foreign xml:lang="ar">ابن العربي</foreign>
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
+                     <note>A commentary on the work by <persName xml:lang="fa-Latn-x-lc" type="alt" ref="http://viaf.org/viaf/95223177" key="viaf_95223177" role="ant" change="#role-assignment">Ibn al-‘Arabī, <foreign xml:lang="ar">ابن العربي</foreign>
                         </persName>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 5.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_8017-item2" n="2" class="http://lccn.loc.gov/sh2008112367">
                      <locus from="65v" to="80v">ff 65v-80v</locus>
-                     <author key="person_90042997" ref="http://viaf.org/viaf/90042997/">
-                        <persName xml:lang="fa" type="standard">Jāmī, 1414-1492</persName>
-                        <persName xml:lang="fa">جامی</persName>
+                     <author>
+                        <persName xml:lang="fa" type="standard" key="viaf_90042997">Jāmī, 1414-1492</persName>
+                        <persName xml:lang="fa" key="viaf_90042997">جامی</persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc" key="work_7958">Is̲bāt-i vaḥdat al-vujūd</title>
                      <title xml:lang="fa" key="work_7958">اثبات وحدة الوجود</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 5.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_8017-item3" n="3" class="http://lccn.loc.gov/sh2008112367">
                      <locus from="81r" to="90r ">ff 81r-90r</locus>
-                     <author key="person_90042997" ref="http://viaf.org/viaf/90042997/">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Jāmī, 1414-1492</persName>
-                        <persName xml:lang="fa">حامى</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_90042997">Jāmī, 1414-1492</persName>
+                        <persName xml:lang="fa" key="viaf_90042997">حامى</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20830" change="#ids-cleanup">Lavāʼiḥ</title>
                      <title xml:lang="fa" key="work_20830" change="#ids-cleanup">لوايح</title>
@@ -98,52 +104,49 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 5.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_8017-item4" n="4" class="http://lccn.loc.gov/sh2008112367">
                      <locus from="90v" to="111r">ff 90v-111r</locus>
-                     <author key="person_90042997" ref="http://viaf.org/viaf/90042997/">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Jāmī, 1414-1492</persName>
-                        <persName xml:lang="fa">حامى</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_90042997">Jāmī, 1414-1492</persName>
+                        <persName xml:lang="fa" key="viaf_90042997">حامى</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_21198" change="#ids-cleanup">Sharḥ-i Qaṣīdah-’i Khamrīyah</title>
                      <title xml:lang="ar-Latn-x-lc" type="alt" key="work_21198" change="#ids-cleanup">Lavāmiʻ</title>
                      <title xml:lang="fa" key="work_21198" change="#ids-cleanup">شرح قصيده خمريه</title>
                      <title xml:lang="ar" type="alt" key="work_21198" change="#ids-cleanup">لوامع</title>
-                     <note>Commentary on poems by <persName xml:lang="fa-Latn-x-lc" type="alt" ref="http://viaf.org/viaf/118486738" key="person_118486738" role="ant" change="#role-assignment">Ibn al-Fāriz̤, <foreign>ابن الفارض</foreign>
+                     <note>Commentary on poems by <persName xml:lang="fa-Latn-x-lc" type="alt" ref="http://viaf.org/viaf/118486738" key="viaf_118486738" role="ant" change="#role-assignment">Ibn al-Fāriz̤, <foreign>ابن الفارض</foreign>
                         </persName>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 5.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_8017-item5" n="5" class="http://lccn.loc.gov/sh2008112367">
                      <locus from="111v" to="117v ">ff 111v-117v</locus>
-                     <author key="person_90042997" ref="http://viaf.org/viaf/90042997/">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Jāmī, 1414-1492</persName>
-                        <persName xml:lang="fa">حامى</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_90042997">Jāmī, 1414-1492</persName>
+                        <persName xml:lang="fa" key="viaf_90042997">حامى</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20527" change="#ids-cleanup">Sharḥ-i Qaṣīdah-’i Ṭā’īyah</title>
                      <title xml:lang="fa" key="work_20527" change="#ids-cleanup">شرح قصيدۀ تائيه</title>
-                     <note>Commentary on poems by <persName xml:lang="fa-Latn-x-lc" type="alt" ref="http://viaf.org/viaf/118486738" key="person_118486738" role="ant" change="#role-assignment">Ibn al-Fāriz̤, <foreign>ابن الفارض</foreign>
+                     <note>Commentary on poems by <persName xml:lang="fa-Latn-x-lc" type="alt" ref="http://viaf.org/viaf/118486738" key="viaf_118486738" role="ant" change="#role-assignment">Ibn al-Fāriz̤, <foreign>ابن الفارض</foreign>
                         </persName>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 5.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_8017-item6" n="6" class="http://lccn.loc.gov/sh2008112367 http://lccn.loc.gov/n82084155">
                      <locus from="117v" to="165v  ">ff 117v-165v</locus>
-                     <author key="person_90042997" ref="http://viaf.org/viaf/90042997/">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Jāmī, 1414-1492</persName>
-                        <persName xml:lang="fa">حامى</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_90042997">Jāmī, 1414-1492</persName>
+                        <persName xml:lang="fa" key="viaf_90042997">حامى</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_7961">Sharḥ-i Lama‘āt-i ‘Irāqī</title>
                      <title xml:lang="ar-Latn-x-lc" type="alt" key="work_7961">Ashi‘at al- Lama‘āt</title>
@@ -154,8 +157,7 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 5.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -171,7 +173,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1605" notAfter="1606">1014</origDate>
+                     <origDate calendar="Hijri-qamari" notBefore="1605" notAfter="1606">1014</origDate>
                   </origin>
                </history>
                <additional>

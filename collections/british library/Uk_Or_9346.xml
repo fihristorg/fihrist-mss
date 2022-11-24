@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6462">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -47,14 +49,14 @@
                   </summary>
                   <msItem xml:id="Uk_Or_9346-item1" n="1" class="http://lccn.loc.gov/sh85100084 http://lccn.loc.gov/sh2002005579">
                      <locus from="1r" to="45r">1r-45r ff</locus>
-                     <author ref="http://viaf.org/viaf/24350267" key="person_24350267">
+                     <author ref="http://viaf.org/viaf/24350267" key="viaf_24350267">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Ḥalīmī, Luṭf Allāh ibn Yūsuf, -1494 or 1495</persName>
                         <persName xml:lang="fa">لطف الله ابن ابی یوسف الحلیمی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8327">Nis̲ār al-Mulūk</title>
                      <title xml:lang="fa" key="work_8327">نثار الملوک</title>
                      <note>A collection of rare Persian words glossed in Turkish</note>
-                     <note>Compiled by in the time of <persName type="standard" xml:lang="ota-Latn-x-lc" ref="http://viaf.org/viaf/280144782720203542620" key="person_280144782720203542620" role="oth" change="#role-assignment #ids-cleanup">Bāyazīd II, 1447 or 1448-1512</persName>
+                     <note>Compiled by in the time of <persName type="standard" xml:lang="ota-Latn-x-lc" ref="http://viaf.org/viaf/280144782720203542620" key="viaf_280144782720203542620" role="oth" change="#role-assignment #ids-cleanup">Bāyazīd II, 1447 or 1448-1512</persName>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Glyn Meredith-Owens: Handlist of Persian Manuscripts, 1895-1966. [London]: Trustees of the British Museum, 1968, p.86.</bibl>
@@ -152,7 +154,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1574" notAfter="1575">982</origDate>
+                     <origDate calendar="Hijri-qamari" notBefore="1574" notAfter="1575">982</origDate>
                   </origin>
                </history>
                <additional>

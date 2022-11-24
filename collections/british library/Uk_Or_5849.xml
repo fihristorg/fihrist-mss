@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6020">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,15 +42,21 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 5849</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343724</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163240411.0x000086</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh2010101325 http://lccn.loc.gov/sh85083158 http://lccn.loc.gov/sh2008111292 http://lccn.loc.gov/sh85100601">
                   <summary change="#add-summary">
                      1 copy of Kitāb-i Ṣaydanah by Al-Bīrūnī, Muḥammad ibn Aḥmad, 973-1048
                   </summary>
                   <msItem xml:id="Uk_Or_5849-item1">
-                     <author ref="http://viaf.org/viaf/100174240" key="person_100174240">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Al-Bīrūnī, Muḥammad ibn Aḥmad, 973-1048</persName>
-                        <persName xml:lang="fa">محمد بن احمد البيرونی</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="ark:/81055/vdc_100164656086.0x000001 viaf_100174240">Al-Bīrūnī, Muḥammad ibn Aḥmad, 973-1048</persName>
+                        <persName xml:lang="fa" key="ark:/81055/vdc_100164656086.0x000001 viaf_100174240">محمد بن احمد البيرونی</persName>
                      </author>
                      <editor role="trl" key="person_f138">Translator: <persName xml:lang="fa-Latn-x-lc" type="supplied">Abū Bakr ibn ‘Alī ibn ‘Us̲mān Asfar al-Kāshānī <foreign xml:lang="fa">ابو بکر ابن علی ابن عثمان اسفر الکاشانی</foreign>
                         </persName>
@@ -57,8 +65,8 @@
                      <title xml:lang="fa-Latn-x-lc" type="alt" key="work_9095">Ṣaydanah-’i Abū Rayḥān Bīrūnī</title>
                      <title xml:lang="fa" key="work_9095">کتاب صیدنه</title>
                      <title xml:lang="fa" type="alt" key="work_9095">صیدنۀ ابو ریحان بیرونی</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <note>On the nature and properties of plants</note>
                      <note>Translated into Persian during the reign of Sultan Iletmish</note>
                      <note>It bears the stamp of the Kings of Oudh</note>
@@ -66,8 +74,7 @@
                         <bibl>Meredith-Owens 1968, page 27.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -83,7 +90,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1776" notAfter="1777">1190</origDate>
+                     <origDate calendar="Hijri-qamari" notBefore="1776" notAfter="1777">1190</origDate>
                   </origin>
                </history>
                <additional>

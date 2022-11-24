@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5611">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-18</date>
+            <date calendar="Gregorian">2011-08-18</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,19 +42,25 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 13908</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343298</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239034.0x00010e</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh2009118159 http://lccn.loc.gov/sh85054014 http://lccn.loc.gov/sh85149989">
                   <summary change="#add-summary">
                      1 copy of ʻAjāyib al-makhlūqāt va gharāʼib al-mawjūdāt by Qazwīnī, Zakarīyā ibn Muḥammad, ca. 1203-1283
                   </summary>
                   <msItem xml:id="Uk_Or_13908-item1">
-                     <author ref="http://viaf.org/viaf/74086465/" key="person_74086465" change="#ids-cleanup">
-                        <persName xml:lang="ar-Latn-x-lc" type="standard">Qazwīnī, Zakarīyā ibn Muḥammad, ca. 1203-1283</persName>
-                        <persName xml:lang="fa">قزوينی، زكريا بن محمد</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard" key="viaf_74086465">Qazwīnī, Zakarīyā ibn Muḥammad, ca. 1203-1283</persName>
+                        <persName xml:lang="fa" key="viaf_74086465">قزوينی، زكريا بن محمد</persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc" key="work_21033" change="#ids-cleanup">ʻAjāyib al-makhlūqāt va gharāʼib al-mawjūdāt</title>
                      <title xml:lang="fa" key="work_21033" change="#ids-cleanup">عجايب المخلوقات و غرائب الموجودات</title>
-                     <note>The Persian version of the cosmographical treatise by <persName xml:lang="fa-Latn-x-lc" type="alt" ref="http://viaf.org/viaf/74086465/" key="person_74086465" role="aut" change="#role-assignment #ids-cleanup">Zakarīyā ibn Muḥammad Qazwīnī</persName>
+                     <note>The Persian version of the cosmographical treatise by <persName xml:lang="fa-Latn-x-lc" type="alt" ref="http://viaf.org/viaf/74086465/" key="viaf_74086465" role="aut" change="#role-assignment #ids-cleanup">Zakarīyā ibn Muḥammad Qazwīnī</persName>
                      </note>
                      <note>Defective, with numerous lacunae</note>
                      <note>Illustrated</note>
@@ -60,8 +68,7 @@
                         <bibl>For a more detailed description see Waley 1998, page 31.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -82,7 +89,7 @@
                <history>
                   <origin>
                      <origPlace>Ottoman Empire</origPlace>
-                     <origDate calendar="#Hijri-qamari" notBefore="1600" notAfter="1699">11th century<!-- Please review date attributes, see https://git.io/fihrist-dates -->
+                     <origDate calendar="Hijri-qamari" notBefore="1600" notAfter="1699">11th century<!-- Please review date attributes, see https://git.io/fihrist-dates -->
                      </origDate>
                   </origin>
                </history>

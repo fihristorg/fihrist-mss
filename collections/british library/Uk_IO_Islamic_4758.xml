@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3480">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -50,8 +52,8 @@
                         <persName xml:lang="en" type="desc">Various authors</persName>
                      </author>
                      <title xml:lang="en" type="desc" key="work_8777">A collection of miscellaneous works on Islam</title>
-                     <incipit xml:lang="ar" />
-                     <explicit xml:lang="ar" defective="true" />
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>These include sermons, prayers, treatise, and excerpts in Panjabi from works by <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f2145" role="ant" change="#role-assignment">Maulavī ʻAbdullāh ʻAbdī, <foreign xml:lang="fa">مولوی عبدالله عابدی</foreign>
                         </persName>, <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f856" role="ant" change="#role-assignment">Darvesh Muḥammad Lāhorī, <foreign xml:lang="fa">دروش محمد لاهری</foreign>
                         </persName> (ff. <locus from="148" to="152">148-52</locus>; <locus from="169" to="197">169-97</locus>)
@@ -83,12 +85,12 @@
                      </handNote>
                   </handDesc>
                   <decoDesc>
-                     <decoNote type="illustration" />
+                     <decoNote type="illustration"/>
                   </decoDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1672" notAfter="1675">Dated between 1083 and 1086</origDate>
+                     <origDate calendar="Hijri-qamari" notBefore="1672" notAfter="1675">Dated between 1083 and 1086</origDate>
                   </origin>
                </history>
                <additional>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6075">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,17 +42,23 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 6313</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342725</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237685.0x000017</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85100084">
                   <summary change="#add-summary">
                      1 copy of Khazā’in al-favā’id by Sharaf al-Dīn Muḥammad ibn Muḥammad Riz̤ā Tabrīzī
                   </summary>
                   <msItem xml:id="Uk_Or_6313-item1">
-                     <author ref="http://viaf.org/viaf/49132874" key="person_49132874">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Sharaf al-Dīn Muḥammad ibn Muḥammad Riz̤ā Tabrīzī</persName>
-                        <persName xml:lang="fa" type="standard">شرف الدین محمد ابن محمد رضی تبریزی</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Majẕūb</persName>
-                        <persName xml:lang="fa" type="alt">مجذوب</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_49132874">Sharaf al-Dīn Muḥammad ibn Muḥammad Riz̤ā Tabrīzī</persName>
+                        <persName xml:lang="fa" type="standard" key="viaf_49132874">شرف الدین محمد ابن محمد رضی تبریزی</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_49132874">Majẕūb</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_49132874">مجذوب</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8699">Khazā’in al-favā’id</title>
                      <title xml:lang="fa" key="work_8699">خزائن الفوائد</title>
@@ -60,8 +68,7 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 66.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -77,7 +84,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1667" notAfter="1668">1078</origDate>
+                     <origDate calendar="Hijri-qamari" notBefore="1667" notAfter="1668">1078</origDate>
                   </origin>
                </history>
                <additional>

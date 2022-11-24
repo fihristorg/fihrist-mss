@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5764">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-23</date>
+            <date calendar="Gregorian">2011-08-23</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,19 +42,25 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 14982/9</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343392</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239456.0x000056</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/n 2007024725 http://lccn.loc.gov/n 80002413">
                   <summary change="#add-summary">
                      1 copy of Farmān-i Jalāl al-Dīn Muḥammad Akbar Pādshāh Ghāzī by 2 authors
                   </summary>
                   <msItem xml:id="Uk_Or_14982.9-item1">
-                     <author key="person_3264079">
-                        <persName type="standard" ref="http://lccn.loc.gov/n 80002413 " xml:lang="ar-Latn-x-lc">Akbar, Emperor of Hindustan, 1542-1605</persName>
-                        <persName xml:lang="fa">اکبر، پادشاه هندوستان</persName>
+                     <author>
+                        <persName type="standard" ref="http://lccn.loc.gov/n 80002413 " xml:lang="ar-Latn-x-lc" key="ark:/81055/vdc_100164657160.0x000001 viaf_3264079">Akbar, Emperor of Hindustan, 1542-1605</persName>
+                        <persName xml:lang="fa" key="ark:/81055/vdc_100164657160.0x000001 viaf_3264079">اکبر، پادشاه هندوستان</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_7974">Farmān-i Jalāl al-Dīn Muḥammad Akbar Pādshāh Ghāzī</title>
                      <title xml:lang="fa" key="work_7974">فرمان جلال الدین محمد اکبر پادشاه غازی</title>
-                     <note>Decree of <persName type="standard" ref="http://lccn.loc.gov/n 80002413 " xml:lang="ar-Latn-x-lc" key="person_3264079" role="aut" change="#role-assignment">Akbar, Emperor of Hindustan, 1542-1605, <foreign xml:lang="fa">اکبر، پادشاه هندوستان</foreign>
+                     <note>Decree of <persName type="standard" ref="http://lccn.loc.gov/n 80002413 " xml:lang="ar-Latn-x-lc" key="viaf_3264079" role="aut" change="#role-assignment">Akbar, Emperor of Hindustan, 1542-1605, <foreign xml:lang="fa">اکبر، پادشاه هندوستان</foreign>
                         </persName>, assigning the control of some properties to Ḥajjū and Sulṭān, to be administered in accordance with sacred law
                      </note>
                      <note>Part of the text, including the date, is wanting</note>
@@ -60,8 +68,7 @@
                         <bibl>For a more detailed description see Waley 1998, page 20.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -78,7 +85,7 @@
                <history>
                   <origin>
                      <origPlace>India</origPlace>
-                     <origDate calendar="#Hijri-qamari" when="1560">Probably about 974</origDate>
+                     <origDate calendar="Hijri-qamari" when="1560">Probably about 974</origDate>
                   </origin>
                </history>
                <additional>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6551">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 9873</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343022</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237685.0x00013f</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>Kullīyāt of ‘Urfī Shīrāzī <foreign xml:lang="fa">کلیات عرفی شیرازی</foreign>
                </head>
@@ -49,23 +57,22 @@
                   </summary>
                   <msItem xml:id="Uk_Or_9873-item1" n="1" class="http://lccn.loc.gov/sh85100085">
                      <locus from="1r" to="6r">ff 1r-6r</locus>
-                     <author key="person_50413291" ref="http://viaf.org/viaf/50413291">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">‘Urfī Shīrāzī</persName>
-                        <persName xml:lang="fa">عرفی شیرازی</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_50413291">‘Urfī Shīrāzī</persName>
+                        <persName xml:lang="fa" key="viaf_50413291">عرفی شیرازی</persName>
                      </author>
                      <title xml:lang="en" type="desc" key="work_21080" change="#ids-cleanup">Prose Introduction</title>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 59.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_9873-item2" n="2" class="http://lccn.loc.gov/sh85100085">
                      <locus from="7r" to="17r">ff 7r-17r</locus>
-                     <author key="person_50413291" ref="http://viaf.org/viaf/50413291">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">‘Urfī Shīrāzī</persName>
-                        <persName xml:lang="fa">عرفی شیرازی</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_50413291">‘Urfī Shīrāzī</persName>
+                        <persName xml:lang="fa" key="viaf_50413291">عرفی شیرازی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20085" change="#ids-cleanup">Sāqī nāmah</title>
                      <title xml:lang="fa" key="work_20085" change="#ids-cleanup">ساقی نامه</title>
@@ -73,14 +80,13 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 59.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_9873-item3" n="3" class="http://lccn.loc.gov/sh85100085">
                      <locus from="18r" to="236v">ff 18r-236v</locus>
-                     <author key="person_50413291" ref="http://viaf.org/viaf/50413291">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">‘Urfī Shīrāzī</persName>
-                        <persName xml:lang="fa">عرفی شیرازی</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_50413291">‘Urfī Shīrāzī</persName>
+                        <persName xml:lang="fa" key="viaf_50413291">عرفی شیرازی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20019" change="#ids-cleanup">Ghazals</title>
                      <title xml:lang="fa" key="work_20019" change="#ids-cleanup">غزلها</title>
@@ -88,14 +94,13 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 59.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_9873-item4" n="4" class="http://lccn.loc.gov/sh85100085">
                      <locus from="4r" to="104r">ff 236r-268r</locus>
-                     <author key="person_50413291" ref="http://viaf.org/viaf/50413291">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">‘Urfī Shīrāzī</persName>
-                        <persName xml:lang="fa">عرفی شیرازی</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_50413291">‘Urfī Shīrāzī</persName>
+                        <persName xml:lang="fa" key="viaf_50413291">عرفی شیرازی</persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc" key="work_8371">Abyāt-i ghazalhā-i nā-tamām</title>
                      <title xml:lang="ar" key="work_8371">ابیات غزلهای نا تمام</title>
@@ -104,14 +109,13 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 59.</bibl>
                      </listBibl>
                      <textLang mainLang="ar" otherLangs="fa">Arabic and Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_9873-item5" n="5" class="http://lccn.loc.gov/sh85100085">
                      <locus from="269r" to="390r">ff 269r-390r</locus>
-                     <author key="person_50413291" ref="http://viaf.org/viaf/50413291">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">‘Urfī Shīrāzī</persName>
-                        <persName xml:lang="fa">عرفی شیرازی</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_50413291">‘Urfī Shīrāzī</persName>
+                        <persName xml:lang="fa" key="viaf_50413291">عرفی شیرازی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20245" change="#ids-cleanup">Qaṣīdahs</title>
                      <title xml:lang="fa" key="work_20245" change="#ids-cleanup">قصیده ها</title>
@@ -119,14 +123,13 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 59.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_9873-item6" n="6" class="http://lccn.loc.gov/sh85100085">
                      <locus from="391v" to="421r">ff 391v-421r</locus>
-                     <author key="person_50413291" ref="http://viaf.org/viaf/50413291">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">‘Urfī Shīrāzī</persName>
-                        <persName xml:lang="fa">عرفی شیرازی</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_50413291">‘Urfī Shīrāzī</persName>
+                        <persName xml:lang="fa" key="viaf_50413291">عرفی شیرازی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8372">Tarjī‘-bands</title>
                      <title xml:lang="fa" key="work_8372">ترجیع بندها</title>
@@ -134,14 +137,13 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 59.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_9873-item7" n="7" class="http://lccn.loc.gov/sh85100085">
                      <locus from="422r" to="471v">ff 422r-471v</locus>
-                     <author key="person_50413291" ref="http://viaf.org/viaf/50413291">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">‘Urfī Shīrāzī</persName>
-                        <persName xml:lang="fa">عرفی شیرازی</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_50413291">‘Urfī Shīrāzī</persName>
+                        <persName xml:lang="fa" key="viaf_50413291">عرفی شیرازی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_2580">Majma‘ al-abkār</title>
                      <title xml:lang="fa" key="work_2580">مجمع الابکار</title>
@@ -149,14 +151,13 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 59.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_9873-item8" n="8" class="http://lccn.loc.gov/sh85100085">
                      <locus from="471r" to="486v">ff 471r-486v</locus>
-                     <author key="person_90042997" ref="http://viaf.org/viaf/90042997">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Jāmī</persName>
-                        <persName xml:lang="fa">جامی</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_90042997">Jāmī</persName>
+                        <persName xml:lang="fa" key="viaf_90042997">جامی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20323" change="#ids-cleanup">Farhād u Shīrīn</title>
                      <title xml:lang="fa" key="work_20323" change="#ids-cleanup">فرهاد و شیرین</title>
@@ -164,14 +165,13 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 59.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_9873-item9" n="9" class="http://lccn.loc.gov/sh85100085">
                      <locus from="487r" to="525v">ff 487r-525v</locus>
-                     <author key="person_50413291" ref="http://viaf.org/viaf/50413291">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">‘Urfī Shīrāzī</persName>
-                        <persName xml:lang="fa">عرفی شیرازی</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_50413291">‘Urfī Shīrāzī</persName>
+                        <persName xml:lang="fa" key="viaf_50413291">عرفی شیرازی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20235" change="#ids-cleanup">Rubā‘īyāt</title>
                      <title xml:lang="fa" key="work_20235" change="#ids-cleanup">رباعیات</title>
@@ -179,8 +179,7 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 59.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -196,7 +195,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1629" notAfter="1630">1039</origDate>
+                     <origDate calendar="Hijri-qamari" notBefore="1629" notAfter="1630">1039</origDate>
                   </origin>
                </history>
                <additional>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3213">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>Delhi Persian 31</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004341337</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163233603.0x00000d</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85072967 http://lccn.loc.gov/n2007204421">
                   <summary change="#add-summary">
@@ -52,16 +60,15 @@
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8814">Vasīlat al-qabūl ilá Ḥaz̤rat al-Rasūl</title>
                      <title xml:lang="fa" key="work_8814">وسیلة القبول الی حضرة الرسول</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa"/>
                      <note>A copious Persian commentary on the Istiʻādhah , the Basmalah, and the first Sūrah of the Qurʼān</note>
                      <note>The work is divided into a large number of sections, and the present manuscript breaks off before the conclusion of the ninety-second</note>
                      <listBibl>
                         <bibl>For a more detailed description see Persian III, .</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -78,7 +85,7 @@
                      <handNote scope="major" script="nasta_liq">Small fairly clear but inelegant nastaʼlīq</handNote>
                   </handDesc>
                   <decoDesc>
-                     <decoNote type="border" />
+                     <decoNote type="border"/>
                   </decoDesc>
                   <bindingDesc>
                      <p>half leather European 20th century binding, with tooled decorations from earlier binding preserved on ff <locus n="1Br">1Br</locus> and <locus n="1Fr">1Fr</locus>
@@ -88,7 +95,7 @@
                <history>
                   <origin>
                      <origPlace>India</origPlace>
-                     <origDate calendar="#Gregorian" notBefore="1700" notAfter="1799">18th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1700" notAfter="1799">18th century</origDate>
                   </origin>
                </history>
                <additional>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5529">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 13000</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343247</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239034.0x0000dc</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh89004044 http://lccn.loc.gov/sh85046763">
                   <summary change="#add-summary">
@@ -48,16 +56,15 @@
                   <msItem xml:id="Uk_Or_13000-item1">
                      <title xml:lang="fa-Latn-x-lc" key="work_8394" change="#ids-cleanup">Kitāb-i ams̲āl va ḥikāyāt</title>
                      <title xml:lang="fa" key="work_8394" change="#ids-cleanup">کتاب امثال و الحکایات</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <note>A collection of proverbs and apposite stories, arranged according to subject and divided into 3 qism</note>
                      <note>Title is uncertain as the work is defective at the beginning</note>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 47.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -73,7 +80,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1400" notAfter="1499">15th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1400" notAfter="1499">15th century</origDate>
                   </origin>
                </history>
                <additional>

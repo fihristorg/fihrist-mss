@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5183">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -59,11 +61,11 @@
                   </msItem>
                   <msItem xml:id="Uk_Or_10444-item2" n="2" class="http://lccn.loc.gov/sh85070893 http://lccn.loc.gov/sh85070285">
                      <locus from="25r" to="48r">ff 25r-48r</locus>
-                     <author ref="http://viaf.org/viaf/51941634" key="person_51941634">
+                     <author ref="http://viaf.org/viaf/51941634" key="viaf_51941634">
                         <persName xml:lang="jpr-Latn">Israel ben Moses Najāra</persName>
                      </author>
                      <title xml:lang="he-Latn-x-lc" key="work_8515">Zemirot</title>
-                     <note>A collection of hymns and songs, in Hebrew with Judaeo-Persian translations, composed for the most part by Israel ben Moses Najāra, including also a song by <persName ref="http://viaf.org/viaf/100186412" key="person_100186412" type="standard" xml:lang="heb-Latn" role="aut" change="#role-assignment">Solomon ben Judah ibn Gabirol</persName>
+                     <note>A collection of hymns and songs, in Hebrew with Judaeo-Persian translations, composed for the most part by Israel ben Moses Najāra, including also a song by <persName ref="http://viaf.org/viaf/100186412" key="viaf_100186412" type="standard" xml:lang="heb-Latn" role="aut" change="#role-assignment">Solomon ben Judah ibn Gabirol</persName>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 43.</bibl>
@@ -86,7 +88,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1700" notAfter="1799">18th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1700" notAfter="1799">18th century</origDate>
                   </origin>
                </history>
                <additional>

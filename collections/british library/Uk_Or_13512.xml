@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5566">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011.08.17</date>
+            <date calendar="Gregorian">2011.08.17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -41,6 +43,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 13512</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343267</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239034.0x0000f0</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="#multipleWorks">
                   <summary change="#add-summary">
@@ -48,22 +56,21 @@
                   </summary>
                   <msItem xml:id="Uk_Or_13512-item1" n="1" class="http://lccn.loc.gov/n89283556 http://lccn.loc.gov/sh85100074">
                      <locus from="1" to="7">ff 1-7</locus>
-                     <author key="person_81383266" change="#ids-cleanup #role-assignment" role="scr">
-                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Khan, Mir Laiq Ali, 1861-1889</persName>
-                        <persName xml:lang="fa">خان، مير لايق على</persName>
+                     <author change="#ids-cleanup #role-assignment" role="scr">
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied" key="viaf_81383266">Khan, Mir Laiq Ali, 1861-1889</persName>
+                        <persName xml:lang="fa" key="viaf_81383266">خان، مير لايق على</persName>
                      </author>
                      <title xml:lang="en" type="desc" key="work_8697">Letters from Mīr Lāʼiq Khān</title>
-                     <incipit xml:lang="ar" />
-                     <explicit xml:lang="ar" defective="true" />
-                     <note>Autograph letters from Mīr <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_81383266" role="aut scr" change="#role-assignment #ids-cleanup">Mir Laiq Ali Khan, 1861-1889</persName>, <persName xml:lang="fa-Latn-x-lc" type="alt" key="person_81383266" role="aut scr" change="#role-assignment #ids-cleanup">Navāb Sālār Jang II, d. 1306 or 1307/ 1889</persName> to <persName type="supplied" xml:lang="fa-Latn-x-lc" key="person_77517859" role="rcp" change="#role-assignment #ids-cleanup">Munīr Navāz Jang Navāb Muḥsin al-Mulk, d. 1325/1907</persName>
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>Autograph letters from Mīr <persName xml:lang="fa-Latn-x-lc" type="supplied" key="viaf_81383266" role="aut scr" change="#role-assignment #ids-cleanup">Mir Laiq Ali Khan, 1861-1889</persName>, <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_81383266" role="aut scr" change="#role-assignment #ids-cleanup">Navāb Sālār Jang II, d. 1306 or 1307/ 1889</persName> to <persName type="supplied" xml:lang="fa-Latn-x-lc" key="viaf_77517859" role="rcp" change="#role-assignment #ids-cleanup">Munīr Navāz Jang Navāb Muḥsin al-Mulk, d. 1325/1907</persName>
                      </note>
                      <note>Title has been supplied</note>
                      <listBibl>
                         <bibl>For a more detailed description see Waley 1998, page 26.</bibl>
                      </listBibl>
                      <textLang mainLang="fa" otherLangs="ur">Persian and Urdu</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -79,7 +86,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1884" notAfter="1885">1884-5</origDate>
+                     <origDate calendar="Gregorian" notBefore="1884" notAfter="1885">1884-5</origDate>
                      <origPlace>India</origPlace>
                   </origin>
                </history>
@@ -105,23 +112,23 @@
                </bibl>
             </taxonomy>
             <taxonomy xml:id="local_class">
-               <category xml:id="commentary" />
-               <category xml:id="supercommentary" />
-               <category xml:id="translation" />
+               <category xml:id="commentary"/>
+               <category xml:id="supercommentary"/>
+               <category xml:id="translation"/>
                <category xml:id="multipleWorks">
                   <catDesc>multiple works</catDesc>
                </category>
-               <category xml:id="abridgement" />
-               <category xml:id="papers" />
-               <category xml:id="documents" />
-               <category xml:id="extract" />
-               <category xml:id="gloss" />
-               <category xml:id="selection" />
-               <category xml:id="diagrams" />
-               <category xml:id="notes" />
-               <category xml:id="letters" />
-               <category xml:id="palimpsest" />
-               <category xml:id="supplement" />
+               <category xml:id="abridgement"/>
+               <category xml:id="papers"/>
+               <category xml:id="documents"/>
+               <category xml:id="extract"/>
+               <category xml:id="gloss"/>
+               <category xml:id="selection"/>
+               <category xml:id="diagrams"/>
+               <category xml:id="notes"/>
+               <category xml:id="letters"/>
+               <category xml:id="palimpsest"/>
+               <category xml:id="supplement"/>
             </taxonomy>
          </classDecl>
       </encodingDesc>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_18366">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -41,7 +43,13 @@
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 15666</idno>
                   <altIdentifier type="other">
-                     <idno />
+                     <idno/>
+                  </altIdentifier>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343466</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239456.0x0000a0</idno>
                   </altIdentifier>
                </msIdentifier>
                <head>Manuscript containing two works</head>
@@ -60,13 +68,13 @@
                         <p>Title supplied. </p>
                      </note>
                      <textLang mainLang="per">Persian</textLang>
-                     <filiation />
+                     <filiation/>
                   </msItem>
                   <msItem n="2" class="http://lccn.loc.gov/sh85100076" xml:id="Uk_Or_15666-item2">
                      <locus from="32v" to="79v">ff 32v-79v</locus>
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" type="supplied" key="person_73859635">Saʻdī</persName>
-                        <persName xml:lang="per" key="person_73859635" type="supplied">سعدی</persName>
+                        <persName xml:lang="per-Latn-x-lc" type="supplied" key="viaf_73859635">Saʻdī</persName>
+                        <persName xml:lang="per" key="viaf_73859635" type="supplied">سعدی</persName>
                      </author>
                      <title xml:lang="per-Latn-x-lc" key="work_20962">Gulistān</title>
                      <title xml:lang="per" key="work_20962">گلستان</title>
@@ -74,7 +82,7 @@
                         <p>Part of the classic work by Sa‘dī, here evidently intended to serve as an introduction to Persian literary prose style. Included in this manuscript are Bāb 1 and most of Bāb 2.</p>
                      </note>
                      <textLang mainLang="per" otherLangs="ara">Persian with quotations in Arabic. </textLang>
-                     <filiation />
+                     <filiation/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -91,22 +99,22 @@
                            </dimensions>
                         </extent>
                         <condition>
-                           <p> </p>
+                           <p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" writtenLines="13">
-                           <p />
+                           <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
                      <summary>Excellent <term xml:lang="per-Latn-x-lc">nasta‘līq</term>; Arabic passages in <term xml:lang="per-Latn-x-lc">naskhī</term>. 
                      </summary>
-                     <handNote script="Arabic" scope="major" />
+                     <handNote script="Arabic" scope="major"/>
                   </handDesc>
                   <additions>
-                     <p />
+                     <p/>
                   </additions>
                   <bindingDesc>
                      <p>Plain red morocco binding. </p>
@@ -114,7 +122,7 @@
                </physDesc>
                <history>
                   <origin notBefore="1750" notAfter="1796">
-                     <origDate calendar="#Gregorian" notBefore="1750" notAfter="1796">1750 - 1796</origDate>
+                     <origDate calendar="Gregorian" notBefore="1750" notAfter="1796">1750 - 1796</origDate>
                      <origPlace>India</origPlace>
                   </origin>
                   <provenance>
@@ -149,8 +157,7 @@
          </classDecl>
       </encodingDesc>
       <profileDesc>
-         <textClass>
-			</textClass>
+         <textClass/>
       </profileDesc>
       <revisionDesc>
          <change when="2022-04-21">
@@ -158,13 +165,13 @@
               850 BL Persian mss prepared for initial publication in FIHRIST (plus 18 replacements)
          </change>
          <change when="2015-02-28">
-            <persName key="person_32019063" role="cataloguer">Ursula Sims-Williams</persName>
+            <persName key="viaf_32019063" role="cataloguer">Ursula Sims-Williams</persName>
          </change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
-         <p />
+         <p/>
       </body>
    </text>
 </TEI>

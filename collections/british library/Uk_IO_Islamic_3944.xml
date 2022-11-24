@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_17984">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -44,15 +46,19 @@
                      <idno>118</idno>
                      <note>William Irvine</note>
                   </altIdentifier>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004341755</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163233992.0x000047</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>Chahar Gulshan</head>
                <msContents>
                   <summary>1 copy of Chahār gulshan by Chandarbhān</summary>
-                  <msItem class="http://lccn.loc.gov/sh85064905" n="1"
-                     xml:id="Uk_IO_Islamic_3944-item1">
+                  <msItem class="http://lccn.loc.gov/sh85064905" n="1" xml:id="Uk_IO_Islamic_3944-item1">
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" type="Persian_0019" key="person_f7651"
-                           >Chandarbhān</persName>
+                        <persName xml:lang="per-Latn-x-lc" type="Persian_0019" key="person_f7651">Chandarbhān</persName>
                         <persName xml:lang="per" key="person_f7651">چندربهان</persName>
                      </author>
                      <title xml:lang="per-Latn-x-lc" key="work_4469">Chahār gulshan</title>
@@ -61,18 +67,14 @@
                         <p> General history of India by grandson of original author, Rāy Chaturman
                            Saksenā Kāyasth</p>
                         <p>
-                           <persName xml:lang="per-Latn-x-lc" key="person_8170991" role="fmo ann"
-                              >William Irvine</persName>'s note on flyleaf: "<persName
-                              xml:lang="per-Latn-x-lc" key="person_95224782" role="oth">[Henry
+                           <persName xml:lang="per-Latn-x-lc" key="viaf_8170991" role="fmo ann">William Irvine</persName>'s note on flyleaf: "<persName xml:lang="per-Latn-x-lc" key="viaf_95224782" role="oth">[Henry
                               Miers] Elliott</persName> [sic] says history too brief to be of value.
                            But acc[oun]t of Saints, <term xml:lang="en">Fakir</term>s (Hindu),
-                           Itineraries &amp; Statistical Tables are of some value" </p>
+                           Itineraries &amp; Statistical Tables are of some value" 
+                        </p>
                      </note>
                      <textLang mainLang="per" xml:lang="per">Persian</textLang>
-                     <note>Transcribed by order of <persName xml:lang="per-Latn-x-lc"
-                           key="person_f7663" role="fmo">G. J. Nicholls</persName>, Judge at <name
-                           type="place">Farrukhabad</name>, from a manuscript obtained from <name
-                           type="place">Agra</name>
+                     <note>Transcribed by order of <persName xml:lang="per-Latn-x-lc" key="person_f7663" role="fmo">G. J. Nicholls</persName>, Judge at <name type="place">Farrukhabad</name>, from a manuscript obtained from <name type="place">Agra</name>
                      </note>
                   </msItem>
                </msContents>
@@ -96,9 +98,8 @@
                   </handDesc>
                   <additions>
                      <p>
-                        <term xml:lang="en">Signature</term> at end by <persName
-                           xml:lang="per-Latn-x-lc" key="person_8170991" role="fmo">William
-                           Irvine</persName> dated <date calendar="#Gregorian">Jan. 16, 1893</date>
+                        <term xml:lang="en">Signature</term> at end by <persName xml:lang="per-Latn-x-lc" key="viaf_8170991" role="fmo">William
+                           Irvine</persName> dated <date calendar="Gregorian">Jan. 16, 1893</date>
                      </p>
                   </additions>
                   <bindingDesc>
@@ -106,16 +107,15 @@
                   </bindingDesc>
                </physDesc>
                <history>
-                  <origin calendar="#Hijri-qamari" when="1807"
-                     when-custom="22 Zū al-Ḥijjah 1221, regnal year 1 of Muḥammad Akbar Pādshāh Ghāzī">
-                     <origDate calendar="#Hijri-qamari" when="1807">22 Z̲ū al-Ḥijjah 1221, regnal
+                  <origin calendar="Hijri-qamari" when="1807" when-custom="22 Zū al-Ḥijjah 1221, regnal year 1 of Muḥammad Akbar Pādshāh Ghāzī">
+                     <origDate calendar="Hijri-qamari" when="1807">22 Z̲ū al-Ḥijjah 1221, regnal
                         year 1 of Muḥammad Akbar Pādshāh Ghāzī</origDate>
-                     <origDate calendar="#Gregorian" when="1807">1807</origDate>
+                     <origDate calendar="Gregorian" when="1807">1807</origDate>
                      <origPlace>India</origPlace>
                   </origin>
                   <provenance>
                      <p>
-                        <persName xml:lang="per-Latn-x-lc" key="person_8170991" role="fmo">William
+                        <persName xml:lang="per-Latn-x-lc" key="viaf_8170991" role="fmo">William
                            Irvine</persName>
                      </p>
                      <p>
@@ -132,28 +132,22 @@
                      <recordHist>
                         <source>Based on unpublished description in Catalogue of Persian Manuscripts
                            in the India Office Library, vol. 3. Available on British Library
-                           Digitised Manuscripts, manuscript number: <ref
-                              target="http://www.bl.uk/manuscripts/Viewer.aspx?ref=mss_eur_e207!6_f014r"
-                              >MSS Eur E207/6_f014r</ref>
+                           Digitised Manuscripts, manuscript number: <ref target="http://www.bl.uk/manuscripts/Viewer.aspx?ref=mss_eur_e207!6_f014r">MSS Eur E207/6_f014r</ref>
                         </source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid
-                           reader's card for admissions procedures contact <ref
-                              target="http://www.bl.uk/reshelp/inrrooms/stp/register/stpregister.html/"
-                              >British Library, Registering for a Reader Pass</ref>. Contact
+                           reader's card for admissions procedures contact <ref target="http://www.bl.uk/reshelp/inrrooms/stp/register/stpregister.html/">British Library, Registering for a Reader Pass</ref>. Contact
                               <email>apac-enquiries@bl.uk</email> for further information on the
                            availability of this manuscript. For information on catalogues and
-                           ordering manuscripts see <ref
-                              target="https://www.bl.uk/help/find-persian-manuscripts">Finding and
-                              ordering Persian manuscripts in the British Library</ref>. </p>
+                           ordering manuscripts see <ref target="https://www.bl.uk/help/find-persian-manuscripts">Finding and
+                              ordering Persian manuscripts in the British Library</ref>. 
+                        </p>
                      </availability>
                   </adminInfo>
                   <listBibl>
                      <bibl>
-                        <ref
-                           target="http://www.bl.uk/manuscripts/Viewer.aspx?ref=mss_eur_e207!6_f014r"
-                           >MSS Eur E207/6_f.14r</ref>
+                        <ref target="http://www.bl.uk/manuscripts/Viewer.aspx?ref=mss_eur_e207!6_f014r">MSS Eur E207/6_f.14r</ref>
                      </bibl>
                   </listBibl>
                </additional>
@@ -171,12 +165,13 @@
          </classDecl>
       </encodingDesc>
       <profileDesc>
-         <textClass> </textClass>
+         <textClass/>
       </profileDesc>
       <revisionDesc>
          <change when="2022-04-21">
             <persName>Julian Cook</persName> 850 BL Persian mss prepared for initial publication in
-            FIHRIST (plus 18 replacements) </change>
+            FIHRIST (plus 18 replacements) 
+         </change>
          <change when="2014-12-27">
             <persName key="person_f7748" role="cataloguer">Sāqib Bāburī</persName>
          </change>

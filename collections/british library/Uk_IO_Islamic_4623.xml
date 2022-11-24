@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3319">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>IO Islamic 4623</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343699</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163240411.0x000070</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>A volume containing two separate works</head>
                <msContents class="#multipleWorks">
@@ -57,7 +65,7 @@
                      </supportDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="nasta_liq" />
+                     <handNote scope="major" script="nasta_liq"/>
                   </handDesc>
                </physDesc>
                <additional>
@@ -88,22 +96,21 @@
                         <title xml:lang="fa" key="work_21115" change="#ids-cleanup">کنز الاطائف</title>
                         <title xml:lang="fa-Latn-x-lc" type="alt" key="work_21115" change="#ids-cleanup">Kanz al-balāghah</title>
                         <title xml:lang="fa" type="alt" key="work_21115" change="#ids-cleanup">کنز بلاغه</title>
-                        <incipit xml:lang="fa" />
-                        <explicit xml:lang="fa" />
+                        <incipit xml:lang="fa"/>
+                        <explicit xml:lang="fa"/>
                         <note>A collection of model letters—probably fifty: this copy has a heading of the 49th on <locus n="62a">fol. 62a</locus>, and there is a lacuna after that folio
                         </note>
                         <listBibl>
                            <bibl>For a more detailed description see Arberry 1939, page 388.</bibl>
                         </listBibl>
                         <textLang mainLang="fa">Persian</textLang>
-                        <note>
-                     </note>
+                        <note/>
                      </msItem>
                   </msContents>
                   <physDesc>
                      <objectDesc form="codex">
                         <supportDesc material="chart">
-                           <extent>
+                           <extent>folios 
                               <dimensions type="written" unit="in">
                                  <height>5.5</height>
                                  <width>3.8</width>
@@ -114,7 +121,7 @@
                            </condition>
                         </supportDesc>
                         <layoutDesc>
-                           <layout columns="1" ruledLines="10" n="mistara" />
+                           <layout columns="1" ruledLines="10" n="mistara"/>
                         </layoutDesc>
                      </objectDesc>
                      <handDesc>
@@ -133,7 +140,7 @@
                   </physDesc>
                   <history>
                      <origin>
-                        <origDate calendar="#Gregorian" notBefore="1600" notAfter="1699">17th century</origDate>
+                        <origDate calendar="Gregorian" notBefore="1600" notAfter="1699">17th century</origDate>
                      </origin>
                   </history>
                </msPart>
@@ -146,39 +153,38 @@
                   <msContents>
                      <msItem xml:id="Uk_IO_Islamic_4623-part2-item1" n="2" class="http://lccn.loc.gov/sh85068403 http://lccn.loc.gov/sh85107528">
                         <locus from="64" to="88">ff. 64-88</locus>
-                        <author ref="http://viaf.org/viaf/90770167" key="person_90770167">
-                           <persName xml:lang="fa-Latn-x-lc" type="standard">Kāshifī, Ḥusayn Vāʻiẓ, d. 1504 or 5Library of Congress/NACO</persName>
-                           <persName xml:lang="fa-Latn-x-lc" type="alt">Ḥusain Vāʻiẓ Kāshifī</persName>
-                           <persName xml:lang="fa" type="alt">حسين واعظ كاشفي</persName>
-                           <persName xml:lang="fa">كاشفي، حسين واعظ</persName>
+                        <author>
+                           <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_90770167">Kāshifī, Ḥusayn Vāʻiẓ, d. 1504 or 5Library of Congress/NACO</persName>
+                           <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_90770167">Ḥusain Vāʻiẓ Kāshifī</persName>
+                           <persName xml:lang="fa" type="alt" key="viaf_90770167">حسين واعظ كاشفي</persName>
+                           <persName xml:lang="fa" key="viaf_90770167">كاشفي، حسين واعظ</persName>
                         </author>
                         <title xml:lang="fa-Latn-x-lc" key="work_9153">Intikhāb Tuḥfat al-ṣalavāt</title>
                         <title xml:lang="fa" key="work_9153">انتخاب تحفة الصلوات</title>
-                        <incipit xml:lang="fa" />
-                        <explicit xml:lang="ar" defective="true" />
+                        <incipit xml:lang="fa"/>
+                        <explicit xml:lang="ar" defective="true"/>
                         <note>An epitome, apparently made by the author himself, of a treatise on the cult of the Prophet, and prayer</note>
                         <note>It is stated in the preface that the epitome was made at the request of <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f4129" role="pat" change="#role-assignment">Sulṭān Abū ʼ1-Ghāzī, <foreign xml:lang="fa">سلطان ابو الغازی</foreign>
-                           </persName> [Mīrzā Baiqarā of Herat], who reigned <date calendar="#Hijri-qamari" notBefore="1468" notAfter="1505">873-911</date>
+                           </persName> [Mīrzā Baiqarā of Herat], who reigned <date calendar="Hijri-qamari" notBefore="1468" notAfter="1505">873-911</date>
                         </note>
                         <listBibl>
                            <bibl>For a more detailed description see Arberry 1939, pages 388-9.</bibl>
                         </listBibl>
                         <textLang mainLang="fa">Persian</textLang>
-                        <note>
-                     </note>
+                        <note/>
                      </msItem>
                   </msContents>
                   <physDesc>
                      <objectDesc form="codex">
                         <supportDesc material="chart">
-                           <extent>
+                           <extent>folios 
                               <dimensions type="written" unit="in">
                                  <width>3.3</width>
                               </dimensions>
                            </extent>
                         </supportDesc>
                         <layoutDesc>
-                           <layout columns="1" ruledLines="19" n="mistara" />
+                           <layout columns="1" ruledLines="19" n="mistara"/>
                         </layoutDesc>
                      </objectDesc>
                      <handDesc>
@@ -187,7 +193,7 @@
                   </physDesc>
                   <history>
                      <origin>
-                        <origDate calendar="#Gregorian" notBefore="1700" notAfter="1799">18th century</origDate>
+                        <origDate calendar="Gregorian" notBefore="1700" notAfter="1799">18th century</origDate>
                      </origin>
                   </history>
                </msPart>

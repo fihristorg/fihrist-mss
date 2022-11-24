@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5960">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,31 +42,36 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 5410</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343721</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163240411.0x000083</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh2010101326">
                   <summary change="#add-summary">
                      1 copy of Tarjumah-’i tārīkh al-ḥukamā by Shahrazūrī, Shams al-Dīn Muḥammad ibn Maḥmūd, 13th cent.
                   </summary>
                   <msItem xml:id="Uk_Or_5410-item1">
-                     <author ref="http://viaf.org/viaf/60673344" key="person_60673344">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Shahrazūrī, Shams al-Dīn Muḥammad ibn Maḥmūd, 13th cent.</persName>
-                        <persName xml:lang="fa">شهرزورى، شمس الدين محمد بن محمود</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_60673344">Shahrazūrī, Shams al-Dīn Muḥammad ibn Maḥmūd, 13th cent.</persName>
+                        <persName xml:lang="fa" key="viaf_60673344">شهرزورى، شمس الدين محمد بن محمود</persName>
                      </author>
-                     <editor role="trl" key="person_6540615">Translator: <persName ref="http://viaf.org/viaf/6540615" xml:lang="fa-Latn-x-lc" type="standard">Tabrīzī, Maqṣūd ʻAlī, fl. 1605, <foreign xml:lang="fa">مقصود على تبرىزى</foreign>
+                     <editor role="trl" key="viaf_6540615">Translator: <persName ref="http://viaf.org/viaf/6540615" xml:lang="fa-Latn-x-lc" type="standard">Tabrīzī, Maqṣūd ʻAlī, fl. 1605, <foreign xml:lang="fa">مقصود على تبرىزى</foreign>
                         </persName>
                      </editor>
                      <title xml:lang="fa-Latn-x-lc" key="work_4418">Tarjumah-’i tārīkh al-ḥukamā</title>
                      <title xml:lang="fa" key="work_4418">ترجۀ تاريخ الحكماء</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
-                     <note>A Persian translation of the <title>History of the Philosophers</title> of Shahrazūrī made for Prince Salīm, afterwards the <persName key="person_38320916" ref="http://viaf.org/viaf/38320916" type="alt" xml:lang="fa-Latn-x-lc" role="oth" change="#role-assignment">Emperor Jahāngīr</persName>
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
+                     <note>A Persian translation of the <title>History of the Philosophers</title> of Shahrazūrī made for Prince Salīm, afterwards the <persName key="viaf_38320916" ref="http://viaf.org/viaf/38320916" type="alt" xml:lang="fa-Latn-x-lc" role="oth" change="#role-assignment">Emperor Jahāngīr</persName>
                      </note>
                      <listBibl>
                         <bibl>Meredith-Owens 1968, page 21.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -80,7 +87,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1700" notAfter="1799">18th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1700" notAfter="1799">18th century</origDate>
                   </origin>
                </history>
                <additional>

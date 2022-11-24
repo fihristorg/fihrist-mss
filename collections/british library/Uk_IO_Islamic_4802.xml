@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3522">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,38 +42,43 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>IO Islamic 4802</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342257</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237514.0x000024</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="#multipleWorks">
                   <summary>The poetical works of the poet Khvājah Ḥusayn Sanāʼī, d. 996/1587</summary>
                   <msItem xml:id="Uk_IO_Islamic_4802-item1" n="1" class="http://lccn.loc.gov/sh89005046">
                      <locus from="5r" to="121v">ff. 5r-121v</locus>
-                     <author key="person_7152199212114281139" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Khvājah Ḥusayn Sanāʼī, d. 996/1587</persName>
-                        <persName xml:lang="fa">خواجه حسین سنايى</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied" key="viaf_7152199212114281139">Khvājah Ḥusayn Sanāʼī, d. 996/1587</persName>
+                        <persName xml:lang="fa" key="viaf_7152199212114281139">خواجه حسین سنايى</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20678" change="#ids-cleanup">Dīvān-i Sanāʼī</title>
                      <title xml:lang="fa" key="work_20678" change="#ids-cleanup">دیوان سنائى</title>
-                     <incipit xml:lang="ar" />
-                     <explicit xml:lang="ar" defective="true" />
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>Containing qaṣīdahs, ghazals, qiṭahs and rubāʻis as in <ref type="no" target="Uk">I.O. Islamic 206 (British Library).</ref> and <ref type="no" target="Uk">I.O. Islamic 2185 (British Library).</ref>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Sims-Williams 1986, page 22.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_IO_Islamic_4802-item2" n="2" class="http://lccn.loc.gov/sh89005046 http://lccn.loc.gov/sh85061199">
                      <locus from="122r" to="157r">ff. 122r-157r</locus>
-                     <author key="person_7152199212114281139" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Khvājah Ḥusayn Sanāʼī, d. 996/1587</persName>
-                        <persName xml:lang="fa">خواجه حسین سنايى</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied" key="viaf_7152199212114281139">Khvājah Ḥusayn Sanāʼī, d. 996/1587</persName>
+                        <persName xml:lang="fa" key="viaf_7152199212114281139">خواجه حسین سنايى</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8108">Mas̲navī-‘i Sanāʼī</title>
                      <title xml:lang="fa" key="work_8108">مثنوی سنائى</title>
-                     <incipit xml:lang="ar" />
-                     <explicit xml:lang="ar" defective="true" />
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>A poetical history of Alexander elsewhere called <title xml:lang="fa-Latn-x-lc">Iskandarnāmah (<foreign xml:lang="fa">اسکندرنامه</foreign>)
                         </title> and <title xml:lang="fa-Latn-x-lc">Sadd-i Iskandar (<foreign xml:lang="fa">سد اسکندر</foreign>)
                         </title>
@@ -80,8 +87,7 @@
                         <bibl>For a more detailed description see Sims-Williams 1986, page 22.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -95,12 +101,12 @@
                      </supportDesc>
                   </objectDesc>
                   <decoDesc>
-                     <decoNote type="other" />
+                     <decoNote type="other"/>
                   </decoDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1700" notAfter="1799">18th century?</origDate>
+                     <origDate calendar="Gregorian" notBefore="1700" notAfter="1799">18th century?</origDate>
                   </origin>
                </history>
                <additional>

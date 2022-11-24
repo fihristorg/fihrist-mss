@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_17946">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -41,7 +43,13 @@
                   <collection>Irvine Collection</collection>
                   <idno>IO Islamic 3890</idno>
                   <altIdentifier type="other">
-                     <idno />
+                     <idno/>
+                  </altIdentifier>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004341724</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163233992.0x00002a</idno>
                   </altIdentifier>
                </msIdentifier>
                <head>Tarikh-i Muhammadi, vol. 2</head>
@@ -49,13 +57,13 @@
                   <summary>1 copy of Tārīkh-i Muḥammadī by Muḥammad ibn Rustam Muʿtamad Khān ibn Qubād</summary>
                   <msItem class="http://lccn.loc.gov/sh85061212  http://lccn.loc.gov/sh2008104967" n="1" xml:id="Uk_IO_Islamic_3890-item1">
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" type="supplied" key="person_296309781">Muḥammad ibn Rustam Muʿtamad Khān ibn Qubād</persName>
-                        <persName xml:lang="per" type="supplied" key="person_296309781">محمّد ابن رستم معتمد خان ابن قباد</persName>
+                        <persName xml:lang="per-Latn-x-lc" type="supplied" key="ark:/81055/vdc_100164657003.0x000001 viaf_296309781">Muḥammad ibn Rustam Muʿtamad Khān ibn Qubād</persName>
+                        <persName xml:lang="per" type="supplied" key="ark:/81055/vdc_100164657003.0x000001 viaf_296309781">محمّد ابن رستم معتمد خان ابن قباد</persName>
                      </author>
                      <textLang mainLang="per">Persian</textLang>
                      <note>
                         <p>
-                           <term xml:lang="en">Preface</term>, <term xml:lang="en">prolegomenon</term> (<term xml:lang="per-Latn-x-lc">muqaddimah</term>), and <term xml:lang="en">necrology</term> from the chronicle of <term xml:lang="en">general history</term>, starting with the first year of the <term xml:lang="per-Latn-x-lc">Hijrī</term> era, begun in <date calendar="#Hijri-qamari">1124</date> / <date calendar="#Gregorian">1712</date>.
+                           <term xml:lang="en">Preface</term>, <term xml:lang="en">prolegomenon</term> (<term xml:lang="per-Latn-x-lc">muqaddimah</term>), and <term xml:lang="en">necrology</term> from the chronicle of <term xml:lang="en">general history</term>, starting with the first year of the <term xml:lang="per-Latn-x-lc">Hijrī</term> era, begun in <date calendar="Hijri-qamari">1124</date> / <date calendar="Gregorian">1712</date>.
                         </p>
                         <p>Volume 2, see I.O.Islamic 3889 for volume 1</p>
                      </note>
@@ -80,16 +88,16 @@
                      </handNote>
                   </handDesc>
                   <decoDesc>
-                     <decoNote type="border" />
+                     <decoNote type="border"/>
                   </decoDesc>
-                  <additions />
+                  <additions/>
                   <bindingDesc>
-                     <p />
+                     <p/>
                   </bindingDesc>
                </physDesc>
                <history>
                   <origin when="1903-06-15">
-                     <origDate calendar="#Gregorian" when="1903-06-15">15 June 1903</origDate>
+                     <origDate calendar="Gregorian" when="1903-06-15">15 June 1903</origDate>
                      <origPlace>India</origPlace>
                   </origin>
                   <provenance>

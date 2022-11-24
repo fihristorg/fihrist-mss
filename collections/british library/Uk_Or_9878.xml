@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6556">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 9878</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343027</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237685.0x000144</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/n2008060724 http://lccn.loc.gov/sh85135483">
                   <summary change="#add-summary">
@@ -52,18 +60,17 @@
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20870" change="#ids-cleanup">Tūzuk-i Tīmūrī</title>
                      <title xml:lang="fa" key="work_20870" change="#ids-cleanup">توزک تیموری</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
-                     <note>An anonymous and unfinished English translation of the memoirs of <persName xml:lang="fa-Latn-x-lc" type="standard" ref="http://viaf.org/viaf/63984707" key="person_63984707" role="ant" change="#role-assignment">Timur, 1336-1405</persName>, the Tūzuk-i Tīmūrī, with some Latin notes on Syriac versions of the New Testament, etc
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
+                     <note>An anonymous and unfinished English translation of the memoirs of <persName xml:lang="fa-Latn-x-lc" type="standard" ref="http://viaf.org/viaf/63984707" key="viaf_63984707" role="ant" change="#role-assignment">Timur, 1336-1405</persName>, the Tūzuk-i Tīmūrī, with some Latin notes on Syriac versions of the New Testament, etc
                      </note>
-                     <note>At the end there is a note 'Finished September 17th <date calendar="#Gregorian" notBefore="1780" notAfter="1781">1780</date>
+                     <note>At the end there is a note 'Finished September 17th <date calendar="Gregorian" notBefore="1780" notAfter="1781">1780</date>
                      </note>
                      <listBibl>
                         <bibl>Meredith-Owens 1968, page 22.</bibl>
                      </listBibl>
                      <textLang mainLang="en">English</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -79,7 +86,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1780" notAfter="1781">1780</origDate>
+                     <origDate calendar="Gregorian" notBefore="1780" notAfter="1781">1780</origDate>
                   </origin>
                </history>
                <additional>

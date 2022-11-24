@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5652">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011.08.17</date>
+            <date calendar="Gregorian">2011.08.17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -41,6 +43,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 14170</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343774</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163240411.0x0000b7</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85083116">
                   <summary change="#add-summary">
@@ -53,16 +61,15 @@
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_1154" change="#ids-cleanup">Kifāyah-ʼi Mujāhidīya</title>
                      <title xml:lang="fa" key="work_1154" change="#ids-cleanup">کفایۀ مجاهدیة</title>
-                     <incipit xml:lang="ar" />
-                     <explicit xml:lang="ar" defective="true" />
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>A medical manual composed fo <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f4124" role="dte" change="#role-assignment">Sultan Mujāhid al-Dīn Zayn al-‘Ābidīn, ruler of Fārs, 786-9/1384-7</persName>, <foreign xml:lang="fa">سلطان مجاهد الدین زين العابدين</foreign>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Waley 1998, page 31.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -78,7 +85,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" when="1479">884</origDate>
+                     <origDate calendar="Hijri-qamari" when="1479">884</origDate>
                      <origPlace>India</origPlace>
                   </origin>
                </history>

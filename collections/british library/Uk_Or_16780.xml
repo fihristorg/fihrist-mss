@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_18464">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -41,12 +43,18 @@
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 16780</idno>
                   <altIdentifier type="other">
-                     <idno />
+                     <idno/>
+                  </altIdentifier>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343534</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239456.0x0000e4</idno>
                   </altIdentifier>
                </msIdentifier>
                <head>Unidentified tafsir, Juz' 1-2, part</head>
                <msContents>
-                  <summary />
+                  <summary/>
                   <msItem class="http://lccn.loc.gov/sh85072967 http://lccn.loc.gov/n79046204 http://lccn.loc.gov/sh85072959" n="1" xml:id="Uk_Or_16780-item1">
                      <note>
                         <p>A commentary on Qur’ān Sūra 1, al-Fātiḥa, and on Sūra 2, al-Baqara, āyāt 1-222. No title or author’s name is given. The text is divided into two parts. There is a colophon at the end of Juz’ 1, followed by one blank folio; the commentary on Juz’ 2 commences with a preface. Persian speaking copyist; a note in Persian on f. 122r signals a lacuna (2:150-155) in the source text. </p>
@@ -64,19 +72,18 @@
                               <height>203</height>
                               <width>127</width>
                            </dimensions>
-                           <dimensions type="written" unit="mm">
-									</dimensions>
+                           <dimensions type="written" unit="mm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote script="Arabic" scope="major" />
+                     <handNote script="Arabic" scope="major"/>
                   </handDesc>
                </physDesc>
                <history>
-                  <origin calendar="#Hijri-qamari" when="1894-05-01" when-custom="25 Shavvāl 1311">
-                     <origDate calendar="#Hijri-qamari" when="1894-05-01">25 Shavvāl 1311</origDate>
-                     <origDate calendar="#Gregorian" when="1894-05-01">1 May 1894</origDate>
+                  <origin calendar="Hijri-qamari" when="1894-05-01" when-custom="25 Shavvāl 1311">
+                     <origDate calendar="Hijri-qamari" when="1894-05-01">25 Shavvāl 1311</origDate>
+                     <origDate calendar="Gregorian" when="1894-05-01">1 May 1894</origDate>
                      <origPlace>Iran or India</origPlace>
                   </origin>
                </history>
@@ -104,8 +111,7 @@
          </classDecl>
       </encodingDesc>
       <profileDesc>
-         <textClass>
-			</textClass>
+         <textClass/>
       </profileDesc>
       <revisionDesc>
          <change when="2022-04-21">

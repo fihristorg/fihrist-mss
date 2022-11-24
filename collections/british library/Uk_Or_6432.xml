@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6090">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -53,9 +55,9 @@
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_9085">Al-taqvīm al-kāmil</title>
                      <title xml:lang="fa" key="work_9085">التقویم الکامل</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
-                     <note>An astrological almanac compiled for <persName xml:lang="fa-Latn-x-lc" type="supplied" ref="http://viaf.org/viaf/280144782720203542620" key="person_280144782720203542620" role="pat" change="#role-assignment #ids-cleanup">Bāyezid II</persName>, compiled in <date calendar="#Hijri-qamari" notBefore="1507" notAfter="1508">913</date>
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
+                     <note>An astrological almanac compiled for <persName xml:lang="fa-Latn-x-lc" type="supplied" ref="http://viaf.org/viaf/280144782720203542620" key="viaf_280144782720203542620" role="pat" change="#role-assignment #ids-cleanup">Bāyezid II</persName>, compiled in <date calendar="Hijri-qamari" notBefore="1507" notAfter="1508">913</date>
                      </note>
                      <listBibl>
                         <bibl>Meredith-Owens 1968, page 24.</bibl>
@@ -78,7 +80,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1507" notAfter="1508">913</origDate>
+                     <origDate calendar="Hijri-qamari" notBefore="1507" notAfter="1508">913</origDate>
                   </origin>
                </history>
                <additional>

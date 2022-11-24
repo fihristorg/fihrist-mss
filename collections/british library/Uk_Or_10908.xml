@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5203">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 10908</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343035</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239034.0x000008</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>Kullīyāt of Sa‘dī <foreign xml:lang="fa">کلّیات سعدی</foreign>
                </head>
@@ -49,9 +57,9 @@
                   </summary>
                   <msItem xml:id="Uk_Or_10908-item1" n="1" class="http://lccn.loc.gov/sh85100085">
                      <locus from="1r" to="22r">ff 1r-22r</locus>
-                     <author key="person_100206721" ref="http://viaf.org/viaf/100206721">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Sa‘dī</persName>
-                        <persName xml:lang="fa">سعدی</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_100206721">Sa‘dī</persName>
+                        <persName xml:lang="fa" key="viaf_100206721">سعدی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_7787" change="#ids-cleanup">Preface and Majlis-i panjgānah</title>
                      <title xml:lang="fa" key="work_7787" change="#ids-cleanup">مجلس پنجگامه</title>
@@ -59,14 +67,13 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 59.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_10908-item2" n="2" class="http://lccn.loc.gov/sh85100085">
                      <locus from="23v" to="25v">ff 23v-25v</locus>
-                     <author key="person_100206721" ref="http://viaf.org/viaf/100206721">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Sa‘dī</persName>
-                        <persName xml:lang="fa">سعدی</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_100206721">Sa‘dī</persName>
+                        <persName xml:lang="fa" key="viaf_100206721">سعدی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_7416" change="#ids-cleanup">Risālah-’i ‘Aql u ‘Ishq</title>
                      <title xml:lang="fa" key="work_7416" change="#ids-cleanup">رسالۀ عقل و عشق</title>
@@ -74,14 +81,13 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 59.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_10908-item3" n="3" class="http://lccn.loc.gov/sh85100085">
                      <locus from="25r" to="111v">ff 25r-111v</locus>
-                     <author key="person_100206721" ref="http://viaf.org/viaf/100206721">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Sa‘dī</persName>
-                        <persName xml:lang="fa">سعدی</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_100206721">Sa‘dī</persName>
+                        <persName xml:lang="fa" key="viaf_100206721">سعدی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20962" change="#ids-cleanup">Gulistān</title>
                      <title xml:lang="fa" key="work_20962" change="#ids-cleanup">گلستان</title>
@@ -89,14 +95,13 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 59.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_10908-item4" n="4" class="http://lccn.loc.gov/sh85100085">
                      <locus from="111r" to="122v">ff 111r-122v</locus>
-                     <author key="person_100206721" ref="http://viaf.org/viaf/100206721">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Sa‘dī</persName>
-                        <persName xml:lang="fa">سعدی</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_100206721">Sa‘dī</persName>
+                        <persName xml:lang="fa" key="viaf_100206721">سعدی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_21081" change="#ids-cleanup">Naṣīḥāt al-mulūk</title>
                      <title xml:lang="fa" key="work_21081" change="#ids-cleanup">نصیحات الملوک</title>
@@ -104,14 +109,13 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 59.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_10908-item5" n="5" class="http://lccn.loc.gov/sh85100085">
                      <locus from="122r" to="223v">ff 122r-223v</locus>
-                     <author key="person_100206721" ref="http://viaf.org/viaf/100206721">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Sa‘dī</persName>
-                        <persName xml:lang="fa">سعدی</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_100206721">Sa‘dī</persName>
+                        <persName xml:lang="fa" key="viaf_100206721">سعدی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_240" change="#ids-cleanup">Būstān</title>
                      <title xml:lang="fa" key="work_240" change="#ids-cleanup">بوستان</title>
@@ -119,14 +123,13 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 59.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_10908-item6" n="6" class="http://lccn.loc.gov/sh85100085">
                      <locus from="223r" to="225v">ff 223r-225v</locus>
-                     <author key="person_100206721" ref="http://viaf.org/viaf/100206721">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Sa‘dī</persName>
-                        <persName xml:lang="fa">سعدی</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_100206721">Sa‘dī</persName>
+                        <persName xml:lang="fa" key="viaf_100206721">سعدی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20239" change="#ids-cleanup">Qaṣīdahs</title>
                      <title xml:lang="fa" key="work_20239" change="#ids-cleanup">قصائد</title>
@@ -134,14 +137,13 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 59.</bibl>
                      </listBibl>
                      <textLang mainLang="ar">Arabic</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_10908-item7" n="7" class="http://lccn.loc.gov/sh85100085">
                      <locus from="225r" to="263v">ff 225r-263v</locus>
-                     <author key="person_100206721" ref="http://viaf.org/viaf/100206721">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Sa‘dī</persName>
-                        <persName xml:lang="fa">سعدی</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_100206721">Sa‘dī</persName>
+                        <persName xml:lang="fa" key="viaf_100206721">سعدی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20239" change="#ids-cleanup">Qaṣīdahs</title>
                      <title xml:lang="fa" key="work_20239" change="#ids-cleanup">قصائد</title>
@@ -149,14 +151,13 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 59.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_10908-item8" n="8" class="http://lccn.loc.gov/sh85100085">
                      <locus from="263r" to="269v">ff 263r-269v</locus>
-                     <author key="person_100206721" ref="http://viaf.org/viaf/100206721">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Sa‘dī</persName>
-                        <persName xml:lang="fa">سعدی</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_100206721">Sa‘dī</persName>
+                        <persName xml:lang="fa" key="viaf_100206721">سعدی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_7977">Tarjī‘āt</title>
                      <title xml:lang="fa" key="work_7977">ترجیعات</title>
@@ -164,14 +165,13 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 59.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_10908-item9" n="9" class="http://lccn.loc.gov/sh85100085">
                      <locus from="269r" to="353v">ff 269r-353v</locus>
-                     <author key="person_100206721" ref="http://viaf.org/viaf/100206721">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Sa‘dī</persName>
-                        <persName xml:lang="fa">سعدی</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_100206721">Sa‘dī</persName>
+                        <persName xml:lang="fa" key="viaf_100206721">سعدی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8664">Ṭayyibāt</title>
                      <title xml:lang="fa" key="work_8664">طیبات</title>
@@ -179,14 +179,13 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 59.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_10908-item10" n="10" class="http://lccn.loc.gov/sh85100085">
                      <locus from="353r" to="385v">ff 353r-385v</locus>
-                     <author key="person_100206721" ref="http://viaf.org/viaf/100206721">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Sa‘dī</persName>
-                        <persName xml:lang="fa">سعدی</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_100206721">Sa‘dī</persName>
+                        <persName xml:lang="fa" key="viaf_100206721">سعدی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8354">Badā’i‘</title>
                      <title xml:lang="fa" key="work_8354">بدائع</title>
@@ -194,14 +193,13 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 59.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_10908-item11" n="11" class="http://lccn.loc.gov/sh85100085">
                      <locus from="385r" to="406v">ff 385r-406v</locus>
-                     <author key="person_100206721" ref="http://viaf.org/viaf/100206721">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Sa‘dī</persName>
-                        <persName xml:lang="fa">سعدی</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_100206721">Sa‘dī</persName>
+                        <persName xml:lang="fa" key="viaf_100206721">سعدی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8665">Ghazalīyāt-i qadīm</title>
                      <title xml:lang="fa" key="work_8665">غزلیات قدیم</title>
@@ -209,14 +207,13 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 59.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_10908-item12" n="12" class="http://lccn.loc.gov/sh85100085">
                      <locus from="406r" to="431v">ff 406r-431v</locus>
-                     <author key="person_100206721" ref="http://viaf.org/viaf/100206721">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Sa‘dī</persName>
-                        <persName xml:lang="fa">سعدی</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_100206721">Sa‘dī</persName>
+                        <persName xml:lang="fa" key="viaf_100206721">سعدی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_7978">Ṣāḥibīyah</title>
                      <title xml:lang="fa" key="work_7978">صاحبیه</title>
@@ -224,14 +221,13 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 59.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_10908-item13" n="13" class="http://lccn.loc.gov/sh85100085">
                      <locus from="431r" to="435v">ff 431r-435v</locus>
-                     <author key="person_100206721" ref="http://viaf.org/viaf/100206721">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Sa‘dī</persName>
-                        <persName xml:lang="fa">سعدی</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_100206721">Sa‘dī</persName>
+                        <persName xml:lang="fa" key="viaf_100206721">سعدی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_7979" change="#ids-cleanup">Mulamma‘āt</title>
                      <title xml:lang="fa" key="work_7979" change="#ids-cleanup">ملمّعات</title>
@@ -239,14 +235,13 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 59.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_10908-item14" n="14" class="http://lccn.loc.gov/sh85100085">
                      <locus from="435r" to="437v">ff 435r-437v</locus>
-                     <author key="person_100206721" ref="http://viaf.org/viaf/100206721">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Sa‘dī</persName>
-                        <persName xml:lang="fa">سعدی</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_100206721">Sa‘dī</persName>
+                        <persName xml:lang="fa" key="viaf_100206721">سعدی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_21038" change="#ids-cleanup">Muqaṭṭa‘āt</title>
                      <title xml:lang="fa" key="work_21038" change="#ids-cleanup">مقطعات</title>
@@ -254,14 +249,13 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 59.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_10908-item15" n="15" class="http://lccn.loc.gov/sh85100085">
                      <locus from="437r" to="439v">ff 437r-439v</locus>
-                     <author key="person_100206721" ref="http://viaf.org/viaf/100206721">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Sa‘dī</persName>
-                        <persName xml:lang="fa">سعدی</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_100206721">Sa‘dī</persName>
+                        <persName xml:lang="fa" key="viaf_100206721">سعدی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20229" change="#ids-cleanup">Rubā‘īyāt</title>
                      <title xml:lang="fa" key="work_20229" change="#ids-cleanup">رباعیات</title>
@@ -269,14 +263,13 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 59.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_10908-item16" n="16" class="http://lccn.loc.gov/sh85100085">
                      <locus from="439r" to="441v">ff 439r-441v</locus>
-                     <author key="person_100206721" ref="http://viaf.org/viaf/100206721">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Sa‘dī</persName>
-                        <persName xml:lang="fa">سعدی</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_100206721">Sa‘dī</persName>
+                        <persName xml:lang="fa" key="viaf_100206721">سعدی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_21042" change="#ids-cleanup">Mufradāt</title>
                      <title xml:lang="fa" key="work_21042" change="#ids-cleanup">مفردات</title>
@@ -284,14 +277,13 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 59.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_10908-item17" n="17" class="http://lccn.loc.gov/sh85100085">
                      <locus from="441r" to="448v">ff 441r-448v</locus>
-                     <author key="person_100206721" ref="http://viaf.org/viaf/100206721">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Sa‘dī</persName>
-                        <persName xml:lang="fa">سعدی</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_100206721">Sa‘dī</persName>
+                        <persName xml:lang="fa" key="viaf_100206721">سعدی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_4557" change="#ids-cleanup">Khabīs̲āt</title>
                      <title xml:lang="fa" key="work_4557" change="#ids-cleanup">خبیثات</title>
@@ -299,14 +291,13 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 59.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_10908-item18" n="18" class="http://lccn.loc.gov/sh85100085">
                      <locus from="448r" to="451r">ff 448r-451r</locus>
-                     <author key="person_100206721" ref="http://viaf.org/viaf/100206721">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Sa‘dī</persName>
-                        <persName xml:lang="fa">سعدی</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_100206721">Sa‘dī</persName>
+                        <persName xml:lang="fa" key="viaf_100206721">سعدی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_21040" change="#ids-cleanup">Hazalīyāt</title>
                      <title xml:lang="fa" key="work_21040" change="#ids-cleanup">هزلیات</title>
@@ -314,14 +305,13 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 59.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_10908-item19" n="19" class="http://lccn.loc.gov/sh85100085">
                      <locus from="452v" to="453v">ff 452v-453v</locus>
-                     <author key="person_100206721" ref="http://viaf.org/viaf/100206721">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Sa‘dī</persName>
-                        <persName xml:lang="fa">سعدی</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_100206721">Sa‘dī</persName>
+                        <persName xml:lang="fa" key="viaf_100206721">سعدی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8667">al-Majlis al-Hazal</title>
                      <title xml:lang="fa" key="work_8667">المجلس الهزل</title>
@@ -329,8 +319,7 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 59.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -346,7 +335,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1454" notAfter="1455">859</origDate>
+                     <origDate calendar="Gregorian" notBefore="1454" notAfter="1455">859</origDate>
                   </origin>
                </history>
                <additional>

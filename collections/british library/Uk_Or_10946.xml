@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5241">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 10946</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343068</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239034.0x000029</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85005966  http://lccn.loc.gov/sh85082368 http://lccn.loc.gov/sh85045106">
                   <summary change="#add-summary">
@@ -48,8 +56,8 @@
                   <msItem xml:id="Uk_Or_10946-item1">
                      <title xml:lang="fa-Latn-x-lc" key="work_6907">Tuḥfat al-vuzarā</title>
                      <title xml:lang="fa" key="work_6907">تحفة الوزراء</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <note>An anonymous tract containing maxims from princes and their councillors</note>
                      <note>Copied by <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f4002" role="scr" change="#role-assignment #ids-cleanup">Shāh Maḥmūd Nīshāpūrī <foreign xml:lang="fa">شاه محمود نیشاپوری</foreign>
                         </persName>
@@ -58,8 +66,7 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 47.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -75,7 +82,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1546" notAfter="1547">953</origDate>
+                     <origDate calendar="Hijri-qamari" notBefore="1546" notAfter="1547">953</origDate>
                   </origin>
                </history>
                <additional>

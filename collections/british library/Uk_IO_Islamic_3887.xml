@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_17943">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -44,18 +46,24 @@
                      <idno>469</idno>
                      <note>William Irvine</note>
                   </altIdentifier>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004341721</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163233992.0x000027</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>Ahkam-i 'Alamgiri, Part I</head>
                <msContents>
                   <summary>1 copy of Aḥkām-i ʿĀlamgīrī by ʿInāyat Allāh Khān ibn Mīrzā Shukr Allāh Khān</summary>
                   <msItem class="http://lccn.loc.gov/n50038449 http://lccn.loc.gov/sh85076240 http://lccn.loc.gov/sh85061227 http://lccn.loc.gov/n50038449 http://lccn.loc.gov/sh2008115921" n="1" xml:id="Uk_IO_Islamic_3887-item1">
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" type="supplied" key="person_17950016">ʿInāyat Allāh Khān ibn Mīrzā Shukr Allāh Khān</persName>
-                        <persName xml:lang="per" type="supplied" key="person_17950016">عنايت الله خان ابن ميرزا شكر الله خان</persName>
+                        <persName xml:lang="per-Latn-x-lc" type="supplied" key="ark:/81055/vdc_100164656431.0x000001 viaf_17950016">ʿInāyat Allāh Khān ibn Mīrzā Shukr Allāh Khān</persName>
+                        <persName xml:lang="per" type="supplied" key="ark:/81055/vdc_100164656431.0x000001 viaf_17950016">عنايت الله خان ابن ميرزا شكر الله خان</persName>
                      </author>
                      <textLang mainLang="per">Persian</textLang>
                      <note>
-                        <p>Collection of <term xml:lang="en">anecdotes</term> relating to orders (<term xml:lang="per-Latn-x-lc">aḥkām</term>) written by the Mughal Emperor  <persName xml:lang="per-Latn-x-lc" key="person_6178410" role="subject">Awrangzeb ʿAlamgir</persName>, as prince and emperor, on petitions and reports
+                        <p>Collection of <term xml:lang="en">anecdotes</term> relating to orders (<term xml:lang="per-Latn-x-lc">aḥkām</term>) written by the Mughal Emperor  <persName xml:lang="per-Latn-x-lc" key="viaf_6178410" role="subject">Awrangzeb ʿAlamgir</persName>, as prince and emperor, on petitions and reports
                         </p>
                         <p>Copied at the behest of <persName xml:lang="per-Latn-x-lc" key="person_f7685" role="pat">Jadunath Sarkar</persName> (bābū jadūnāth sarkār)
                         </p>
@@ -81,16 +89,16 @@
                      </handNote>
                   </handDesc>
                   <decoDesc>
-                     <decoNote />
+                     <decoNote/>
                   </decoDesc>
-                  <additions />
+                  <additions/>
                   <bindingDesc>
-                     <p />
+                     <p/>
                   </bindingDesc>
                </physDesc>
                <history>
                   <origin when="1909-06-23">
-                     <origDate calendar="#Gregorian" when="1909-06-23">23 June 1909</origDate>
+                     <origDate calendar="Gregorian" when="1909-06-23">23 June 1909</origDate>
                      <origPlace>India</origPlace>
                   </origin>
                   <provenance>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6165">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -46,13 +48,13 @@
                      1 copy of Salīm Khānnāmah by Luqmān
                   </summary>
                   <msItem xml:id="Uk_Or_7043-item1">
-                     <author ref="http://viaf.org/viaf/171317850" key="person_171317850" change="#ids-cleanup">
+                     <author ref="http://viaf.org/viaf/171317850" key="viaf_171317850" change="#ids-cleanup">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Luqmān</persName>
                         <persName xml:lang="fa">لقمان</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_7936">Salīm Khānnāmah</title>
                      <title xml:lang="fa" key="work_7936">سلیم خاننامه</title>
-                     <note>Poetical history of the reign of <persName ref="http://viaf.org/viaf/44058182" key="person_44058182" type="standard" xml:lang="ota-Latn-x-lc" role="subject" change="#role-assignment #ids-cleanup">Selim II</persName>
+                     <note>Poetical history of the reign of <persName ref="http://viaf.org/viaf/44058182" key="viaf_44058182" type="standard" xml:lang="ota-Latn-x-lc" role="subject" change="#role-assignment #ids-cleanup">Selim II</persName>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 67.</bibl>
@@ -78,7 +80,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1687" notAfter="1688">1099</origDate>
+                     <origDate calendar="Hijri-qamari" notBefore="1687" notAfter="1688">1099</origDate>
                   </origin>
                </history>
                <additional>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6085">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,29 +42,34 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 6390</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342730</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237685.0x00001c</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85083158 http://lccn.loc.gov/sh2010101325 http://lccn.loc.gov/sh2008111292">
                   <summary change="#add-summary">
                      1 copy of Ẕakhīrah-’i Khvārazmshāhī by Jurjānī, Ismāʻīl ibn Ḥasan, 1042 or 3-1136 or 7
                   </summary>
                   <msItem xml:id="Uk_Or_6390-item1">
-                     <author ref="http://viaf.org/viaf/47935028" key="person_47935028">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Jurjānī, Ismāʻīl ibn Ḥasan, 1042 or 3-1136 or 7</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Zayn al-Dīn Ismā‘īl al-Jurjānī</persName>
-                        <persName xml:lang="fa" type="alt">زین الدین اسماعیل الجرجانی</persName>
-                        <persName xml:lang="fa">إسماعيل بن الحسين الجرجانی</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_47935028">Jurjānī, Ismāʻīl ibn Ḥasan, 1042 or 3-1136 or 7</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_47935028">Zayn al-Dīn Ismā‘īl al-Jurjānī</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_47935028">زین الدین اسماعیل الجرجانی</persName>
+                        <persName xml:lang="fa" key="viaf_47935028">إسماعيل بن الحسين الجرجانی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_90" change="#ids-cleanup">Ẕakhīrah-’i Khvārazmshāhī</title>
                      <title xml:lang="fa" key="work_90" change="#ids-cleanup">ذخيرۀ خوارزمشاهى</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <note>Volume 10</note>
                      <listBibl>
                         <bibl>Meredith-Owens 1968, page 28.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -78,7 +85,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1215" notAfter="1216">612</origDate>
+                     <origDate calendar="Hijri-qamari" notBefore="1215" notAfter="1216">612</origDate>
                   </origin>
                </history>
                <additional>

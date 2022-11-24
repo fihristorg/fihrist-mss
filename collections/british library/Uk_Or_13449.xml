@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5560">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -46,7 +48,7 @@
                      1 copy of ʻAyn al-maʻānī fī tafsīr al-Sabʻ al-mas̲ānī
                   </summary>
                   <msItem xml:id="Uk_Or_13449-item1" class="commentary">
-                     <editor role="cmm" key="person_24494235">Commentator <persName xml:lang="fa-Latn-x-lc" type="standard" ref="http://viaf.org/viaf/24494235/">Ibn Ṭayfūr, Muḥammad, d. 1165 or 6</persName>
+                     <editor role="cmm" key="viaf_24494235">Commentator <persName xml:lang="fa-Latn-x-lc" type="standard" ref="http://viaf.org/viaf/24494235/">Ibn Ṭayfūr, Muḥammad, d. 1165 or 6</persName>
                         <persName xml:lang="fa-Latn-x-lc" type="alt">Muḥammad ibn Ṭayfūr al-Ghaznavī al-Sajāvandī</persName>
                         <persName xml:lang="fa" type="alt">محمد ابن طيفور الغزنوی السجاوندی</persName>
                         <persName xml:lang="fa">ابن طيفور، محمد</persName>
@@ -56,10 +58,10 @@
                      <note>An Arabic commentary on the Qurʼān. This manuscript contains the first half (Sūras 1-18)</note>
                      <note>Title has been supplied by <ref target="Waley_1998" type="page">Waley 1998, page 1.</ref>
                      </note>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <note>
-                        <foreign xml:lang="fa" />
+                        <foreign xml:lang="fa"/>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Waley 1998, page 1.</bibl>
@@ -83,7 +85,7 @@
                <history>
                   <origin>
                      <origPlace>Transoxiana</origPlace>
-                     <origDate calendar="#Hijri-qamari" when="1307">707</origDate>
+                     <origDate calendar="Hijri-qamari" when="1307">707</origDate>
                   </origin>
                </history>
                <additional>

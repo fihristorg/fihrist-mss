@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3476">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>IO Islamic 4756C</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342216</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237459.0x00003c</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85064939 http://lccn.loc.gov/sh85100074">
                   <summary>The third of five volumes of miscellaneous papers from the collection of Richard Johnson</summary>
@@ -48,16 +56,15 @@
                         <persName xml:lang="en" type="desc">Unknown</persName>
                      </author>
                      <title xml:lang="en" type="desc" key="work_7897">A letter book of Persian correspondence</title>
-                     <incipit xml:lang="ar" />
-                     <explicit xml:lang="ar" defective="true" />
-                     <note>With parallel English translations between <date calendar="#Gregorian" notBefore="1781" notAfter="1782">1781 and 1782</date>, of the <persName xml:lang="en" type="standard" ref="http://viaf.org/viaf/239176400/" key="person_239176400" role="aut" change="#role-assignment #ids-cleanup">East India Company</persName> ’s Residency at the court of <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f4614" role="oth" change="#role-assignment">Āṣaf al-Dawlah Wazir of Oudh</persName>
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>With parallel English translations between <date calendar="Gregorian" notBefore="1781" notAfter="1782">1781 and 1782</date>, of the <persName xml:lang="en" type="standard" ref="http://viaf.org/viaf/239176400/" key="viaf_239176400" role="aut" change="#role-assignment #ids-cleanup">East India Company</persName> ’s Residency at the court of <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f4614" role="oth" change="#role-assignment">Āṣaf al-Dawlah Wazir of Oudh</persName>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Sims-Williams 1986, page 18.</bibl>
                      </listBibl>
                      <textLang mainLang="fa" otherLangs="en">Persian and English</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -71,12 +78,12 @@
                      </supportDesc>
                   </objectDesc>
                   <decoDesc>
-                     <decoNote type="illustration" />
+                     <decoNote type="illustration"/>
                   </decoDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1750" notAfter="1799">Late 18th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1750" notAfter="1799">Late 18th century</origDate>
                   </origin>
                </history>
                <additional>

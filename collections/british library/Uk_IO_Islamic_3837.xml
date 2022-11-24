@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_17925">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>IO Islamic 3837</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004341705</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163233992.0x000017</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>Ramayan, rare translation</head>
                <msContents>
@@ -52,12 +60,11 @@
                      <title xml:lang="per-Latn-x-lc" key="work_21893">Rāmāyan</title>
                      <title xml:lang="per" key="work_21893">راماین</title>
                      <note>
-                        <p>Rare translation into Persian prose of <persName xml:lang="per-Latn-x-lc" key="person_7379118" ref="http://lccn.loc.gov/n80013143" role="ant">Tulsidas</persName>'s versified retelling in Avadhi Hindavi of the <title>Ramayana</title>, known as the <title>Ramacharitamanasa</title>
+                        <p>Rare translation into Persian prose of <persName xml:lang="per-Latn-x-lc" key="viaf_7379118" ref="http://lccn.loc.gov/n80013143" role="ant">Tulsidas</persName>'s versified retelling in Avadhi Hindavi of the <title>Ramayana</title>, known as the <title>Ramacharitamanasa</title>
                         </p>
                      </note>
                      <textLang mainLang="per">Persian</textLang>
-                     <note>
-						</note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -67,19 +74,18 @@
                               <height>257</height>
                               <width>156</width>
                            </dimensions>
-                           <dimensions type="written" unit="mm">
-									</dimensions>
+                           <dimensions type="written" unit="mm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote script="Arabic" scope="major" />
+                     <handNote script="Arabic" scope="major"/>
                   </handDesc>
                </physDesc>
                <history>
-                  <origin calendar="#Vikramaditya" when="1812" when-custom="1869">
-                     <origDate calendar="#Hijri-qamari" when="1812">1869</origDate>
-                     <origDate calendar="#Gregorian" when="1812">1812</origDate>
+                  <origin calendar="Vikrama" when="1812" when-custom="1869">
+                     <origDate calendar="Hijri-qamari" when="1812">1869</origDate>
+                     <origDate calendar="Gregorian" when="1812">1812</origDate>
                      <origPlace>India</origPlace>
                   </origin>
                </history>
@@ -113,8 +119,7 @@
          </classDecl>
       </encodingDesc>
       <profileDesc>
-         <textClass>
-			</textClass>
+         <textClass/>
       </profileDesc>
       <revisionDesc>
          <change when="2022-04-21">

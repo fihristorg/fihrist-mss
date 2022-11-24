@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3460">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,29 +42,34 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>IO Islamic 4742</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342200</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237459.0x00002c</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
                   <summary change="#add-summary">
                      1 copy of Tafsīr-i Yaʻqūb ibn ʻUs̲mān Charkhī by Charkhī, Yaʻqūb, d. 1447
                   </summary>
                   <msItem xml:id="Uk_IO_Islamic_4742-item1" class="http://lccn.loc.gov/n84748509 http://lccn.loc.gov/sh85072967">
-                     <author key="person_11716360" ref="http://viaf.org/viaf/11716360/">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Charkhī, Yaʻqūb, d. 1447</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Yaʻqūb ibn ʻUs̲mān Charkhī, d. 838/1434?</persName>
-                        <persName xml:lang="fa" type="alt">يعقوب بن عثمان چرخى</persName>
-                        <persName xml:lang="fa">چرخى، يعقوب</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="ark:/81055/vdc_100164656324.0x000001 viaf_11716360">Charkhī, Yaʻqūb, d. 1447</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="ark:/81055/vdc_100164656324.0x000001 viaf_11716360">Yaʻqūb ibn ʻUs̲mān Charkhī, d. 838/1434?</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_11716360">يعقوب بن عثمان چرخى</persName>
+                        <persName xml:lang="fa" key="viaf_11716360">چرخى، يعقوب</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8488" change="#ids-cleanup">Tafsīr-i Yaʻqūb ibn ʻUs̲mān Charkhī</title>
                      <title xml:lang="fa" key="work_8488" change="#ids-cleanup">تفسیر يعقوب چرخى</title>
-                     <incipit xml:lang="ar" />
-                     <explicit xml:lang="ar" defective="true" />
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>A concise commentary on Surahs 1 and 67 to 114 of the Qurʼān</note>
                      <listBibl>
                         <bibl>For a more detailed description see Sims-Williams 1986, page 16.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -81,12 +88,12 @@
                      </handNote>
                   </handDesc>
                   <decoDesc>
-                     <decoNote type="other" />
+                     <decoNote type="other"/>
                   </decoDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" when="1551">928</origDate>
+                     <origDate calendar="Hijri-qamari" when="1551">928</origDate>
                   </origin>
                </history>
                <additional>

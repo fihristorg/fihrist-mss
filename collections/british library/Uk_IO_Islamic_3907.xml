@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_17949">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -44,32 +46,37 @@
                      <idno>17</idno>
                      <note>William Irvine</note>
                   </altIdentifier>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343612</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163240411.0x00001c</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>'Amal-i Salih</head>
                <msContents>
                   <summary>1 copy of ʿAmal-i Ṣāliḥ by Muḥammad Ṣāliḥ Kanbū Lāhawrī</summary>
                   <msItem class="http://lccn.loc.gov/n50002533 http://lccn.loc.gov/sh2008115921 http://lccn.loc.gov/sh2008115920" n="1" xml:id="Uk_IO_Islamic_3907-item1">
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" type="supplied" key="person_270970434">Muḥammad Ṣāliḥ Kanbū Lāhawrī</persName>
-                        <persName xml:lang="per" key="person_270970434" type="supplied">محمّد صالح كنبو لاهورى</persName>
+                        <persName xml:lang="per-Latn-x-lc" type="supplied" key="ark:/81055/vdc_100164656954.0x000001 viaf_270970434">Muḥammad Ṣāliḥ Kanbū Lāhawrī</persName>
+                        <persName xml:lang="per" key="ark:/81055/vdc_100164656954.0x000001 viaf_270970434" type="supplied">محمّد صالح كنبو لاهورى</persName>
                      </author>
                      <title xml:lang="per-Latn-x-lc" key="work_7110">ʿAmal-i Ṣāliḥ</title>
                      <title xml:lang="per" key="work_7110">عمل صالح</title>
                      <note>
                         <p>Alternative title: <term xml:lang="per-Latn-x-lc">Shāhjahānnāmah</term>
                         </p>
-                        <p>An abridged <term xml:lang="en">history</term> of the genealogy, princehood, succession, and reign of the Mughal Emperor  <persName xml:lang="per-Latn-x-lc" key="person_13108102" role="subject">Shāh Jahān</persName> (d. <date calendar="#Gregorian">1666</date>).
+                        <p>An abridged <term xml:lang="en">history</term> of the genealogy, princehood, succession, and reign of the Mughal Emperor  <persName xml:lang="per-Latn-x-lc" key="ark:/81055/vdc_100164656355.0x000001 viaf_13108102" role="subject">Shāh Jahān</persName> (d. <date calendar="Gregorian">1666</date>).
                         </p>
-                        <p>Early portions of this account (up to year 11) are based on earlier (abrogated) official <term xml:lang="per-Latn-x-lc">Pādshāhnāmahs</term>, especially works by <persName xml:lang="per-Latn-x-lc" key="person_15147663108860552472" role="ant">Muḥammad Amīn Qazvīnī</persName> and <persName xml:lang="per-Latn-x-lc" key="person_2380388" role="ant">Mīrzā Jalāl al-Dīn Muḥammad Ṭabāṭabāʾī</persName>
+                        <p>Early portions of this account (up to year 11) are based on earlier (abrogated) official <term xml:lang="per-Latn-x-lc">Pādshāhnāmahs</term>, especially works by <persName xml:lang="per-Latn-x-lc" key="viaf_15147663108860552472" role="ant">Muḥammad Amīn Qazvīnī</persName> and <persName xml:lang="per-Latn-x-lc" key="viaf_2380388" role="ant">Mīrzā Jalāl al-Dīn Muḥammad Ṭabāṭabāʾī</persName>
                         </p>
-                        <p>Later portions of this account (years 11-31) are based on later official <term xml:lang="per-Latn-x-lc">Pādshāhnāmahs</term>, especially works by <persName xml:lang="per-Latn-x-lc" key="person_77040323" role="ant">Shaykh ʿAbd al-Ḥamīd Lāhawrī</persName> and <persName xml:lang="per-Latn-x-lc" key="person_f7722" role="ant">Muḥammad Vāris̲ Vāris̲ Khān</persName>
+                        <p>Later portions of this account (years 11-31) are based on later official <term xml:lang="per-Latn-x-lc">Pādshāhnāmahs</term>, especially works by <persName xml:lang="per-Latn-x-lc" key="viaf_77040323" role="ant">Shaykh ʿAbd al-Ḥamīd Lāhawrī</persName> and <persName xml:lang="per-Latn-x-lc" key="person_f7722" role="ant">Muḥammad Vāris̲ Vāris̲ Khān</persName>
                         </p>
-                        <p>The account concludes with important information of the emperor's overthrow by Prince <persName xml:lang="per-Latn-x-lc" key="person_6178410" role="pat">Awrangzīb</persName>, later <persName xml:lang="per-Latn-x-lc" key="person_6178410" role="pat">ʿĀlamgīr Pādshāh I</persName> (d. <date calendar="#Gregorian">1707</date>)
+                        <p>The account concludes with important information of the emperor's overthrow by Prince <persName xml:lang="per-Latn-x-lc" key="viaf_6178410" role="pat">Awrangzīb</persName>, later <persName xml:lang="per-Latn-x-lc" key="viaf_6178410" role="pat">ʿĀlamgīr Pādshāh I</persName> (d. <date calendar="Gregorian">1707</date>)
                         </p>
                      </note>
                      <textLang mainLang="per" xml:lang="per">Persian</textLang>
-                     <note>
-						</note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -85,18 +92,18 @@
                   <handDesc hands="1">
                      <summary>Fairly clear <term xml:lang="per-Latn-x-lc">nastaʿlīq</term>
                      </summary>
-                     <handNote script="Arabic" scope="sole" />
+                     <handNote script="Arabic" scope="sole"/>
                   </handDesc>
                   <additions>
                      <p>Marginal notes in W. Irvine's hand.</p>
                   </additions>
                   <bindingDesc>
-                     <p />
+                     <p/>
                   </bindingDesc>
                </physDesc>
                <history>
-                  <origin calendar="#Other" notBefore="1700" notAfter="1800">
-                     <origDate calendar="#Gregorian" notBefore="1700" notAfter="1800">1700 - 1800</origDate>
+                  <origin calendar="Gregorian" notBefore="1700" notAfter="1800">
+                     <origDate calendar="Gregorian" notBefore="1700" notAfter="1800">1700 - 1800</origDate>
                      <origPlace>India</origPlace>
                   </origin>
                   <provenance>
@@ -137,8 +144,7 @@
          </classDecl>
       </encodingDesc>
       <profileDesc>
-         <textClass>
-			</textClass>
+         <textClass/>
       </profileDesc>
       <revisionDesc>
          <change when="2022-04-21">

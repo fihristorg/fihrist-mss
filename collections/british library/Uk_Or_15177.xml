@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5775">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,15 +42,21 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 15177</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343429</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239456.0x00007b</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85072953 http://lccn.loc.gov/sh85121391 http://lccn.loc.gov/n84748509">
                   <summary change="#add-summary">
                      1 copy of Khulāṣat al-Manhaj by Kāshānī, Fatḥ Allāh ibn Shukr Allāh, d. 1570 or 71
                   </summary>
                   <msItem xml:id="Uk_Or_15177-item1" class="abridgement">
-                     <author key="person_7249959" ref="http://viaf.org/viaf/7249959/">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Kāshānī, Fatḥ Allāh ibn Shukr Allāh, d. 1570 or 71</persName>
-                        <persName xml:lang="fa">كاشاني، فتح الله بن شكر الله</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_7249959">Kāshānī, Fatḥ Allāh ibn Shukr Allāh, d. 1570 or 71</persName>
+                        <persName xml:lang="fa" key="viaf_7249959">كاشاني، فتح الله بن شكر الله</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8834">Khulāṣat al-Manhaj</title>
                      <title xml:lang="fa" key="work_8834">خلاصة المنهج</title>
@@ -56,17 +64,14 @@
                         </title>
                      </note>
                      <note>This copy contains Sūras 36 – 114</note>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
-                     <note>
-                        <foreign xml:lang="fa" />
-                     </note>
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
+                     <note/>
                      <listBibl>
                         <bibl>For a more detailed description see Waley 1998, page 2.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -83,7 +88,7 @@
                <history>
                   <origin>
                      <origPlace>Iran</origPlace>
-                     <origDate calendar="#Hijri-qamari" when="1830">1245</origDate>
+                     <origDate calendar="Hijri-qamari" when="1830">1245</origDate>
                   </origin>
                </history>
                <additional>

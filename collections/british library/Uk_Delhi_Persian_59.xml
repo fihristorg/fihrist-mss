@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_17765">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>Delhi Persian 59</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004341364</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163233736.0x000006</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>Hirz-e Matin, commentary on al-Jazari’s Hisn-e Hisin</head>
                <msContents>
@@ -52,19 +60,18 @@
                      <title xml:lang="per-Latn-x-lc" key="work_21777">Ḥirz-i matīn</title>
                      <title xml:lang="per" key="work_21777">حرز متين</title>
                      <note>
-                        <p>Rare translation and commentary on <persName xml:lang="per-Latn-x-lc" key="person_90074237" ref="https://lccn.loc.gov/n81008266" role="ant">Ibn al-Jazarī</persName>’s <title>ʿUddat al-Ḥiṣn al-ḥaṣīn min kalām sayyid al-mursalīn</title>, entitled <title>Ḥirz-i matīn</title>, by the author named in the work as <persName key="person_f7113" role="aut">Fakhr al-Dīn Muḥibb Allāh</persName>, but identified by two later owners, both relatives, as either <persName key="person_f7113" role="aut">Muḥammad Fakhr al-Dīn</persName> or <persName key="person_f7113" role="aut">Fakhr al-Dīn Muḥammad</persName>. The author claims descent from the great muḥaddis̲ of Delhi, <persName xml:lang="per-Latn-x-lc" key="person_45690112" ref="https://lccn.loc.gov/n83311926" role="oth">Shaykh ʿAbd al-Ḥaqq Dihlavī,</persName> described as Fakhr al-Dīn’s master and grandfather (sayyidī va jaddī) 
+                        <p>Rare translation and commentary on <persName xml:lang="per-Latn-x-lc" key="viaf_90074237" ref="https://lccn.loc.gov/n81008266" role="ant">Ibn al-Jazarī</persName>’s <title>ʿUddat al-Ḥiṣn al-ḥaṣīn min kalām sayyid al-mursalīn</title>, entitled <title>Ḥirz-i matīn</title>, by the author named in the work as <persName key="person_f7113" role="aut">Fakhr al-Dīn Muḥibb Allāh</persName>, but identified by two later owners, both relatives, as either <persName key="person_f7113" role="aut">Muḥammad Fakhr al-Dīn</persName> or <persName key="person_f7113" role="aut">Fakhr al-Dīn Muḥammad</persName>. The author claims descent from the great muḥaddis̲ of Delhi, <persName xml:lang="per-Latn-x-lc" key="viaf_45690112" ref="https://lccn.loc.gov/n83311926" role="oth">Shaykh ʿAbd al-Ḥaqq Dihlavī,</persName> described as Fakhr al-Dīn’s master and grandfather (sayyidī va jaddī) 
                         </p>
                         <p>Dated colophon (f. 287v): 7 Ṣafar [regnal] year 3, 1132/20 December 1719
 </p>
                         <p>An inscription at the end (f. 287v) states that the present volume was checked against the author’s holograph 
 </p>
-                        <p>Inscriptions from two later owners: 1) gift of <persName key="person_f7576" role="fmo">Shaykh ʿAbd al-Raḥīm al-Junaydī</persName> in julūsī year 11 of <persName key="person_45680638" role="oth">Emperor Muḥammad Shāh</persName>, 1141/1728-9; 2) <persName key="person_f7041" role="fmo">Abū al-Ḥayāt</persName> nephew of the Shaykh al-Muḥaddis̲ [ʿAbd al-Ḥaqq] al-Dihlavī’s nephew, 14 Ṣafar 1137/2 November 1724
+                        <p>Inscriptions from two later owners: 1) gift of <persName key="person_f7576" role="fmo">Shaykh ʿAbd al-Raḥīm al-Junaydī</persName> in julūsī year 11 of <persName key="viaf_45680638" role="oth">Emperor Muḥammad Shāh</persName>, 1141/1728-9; 2) <persName key="person_f7041" role="fmo">Abū al-Ḥayāt</persName> nephew of the Shaykh al-Muḥaddis̲ [ʿAbd al-Ḥaqq] al-Dihlavī’s nephew, 14 Ṣafar 1137/2 November 1724
                         </p>
                         <p>Rebound in IOL red half leather covers (1912); torn, wormholes; repaired with net overlay </p>
                      </note>
                      <textLang mainLang="per" otherLangs="ara">Persian &amp; Arabic</textLang>
-                     <note>
-						</note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -74,19 +81,18 @@
                               <height>270</height>
                               <width>180</width>
                            </dimensions>
-                           <dimensions type="written" unit="mm">
-									</dimensions>
+                           <dimensions type="written" unit="mm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote script="Arabic" scope="major" />
+                     <handNote script="Arabic" scope="major"/>
                   </handDesc>
                </physDesc>
                <history>
-                  <origin calendar="#Hijri-qamari" when="1719-12-20" when-custom="7 Ṣafar 1132">
-                     <origDate calendar="#Hijri-qamari" when="1719-12-20">7 Ṣafar 1132</origDate>
-                     <origDate calendar="#Gregorian" when="1719-12-20">20 December 1719</origDate>
+                  <origin calendar="Hijri-qamari" when="1719-12-20" when-custom="7 Ṣafar 1132">
+                     <origDate calendar="Hijri-qamari" when="1719-12-20">7 Ṣafar 1132</origDate>
+                     <origDate calendar="Gregorian" when="1719-12-20">20 December 1719</origDate>
  Delhi <origPlace>India</origPlace>
                   </origin>
                </history>
@@ -111,8 +117,7 @@
          </classDecl>
       </encodingDesc>
       <profileDesc>
-         <textClass>
-			</textClass>
+         <textClass/>
       </profileDesc>
       <revisionDesc>
          <change when="2022-04-21">

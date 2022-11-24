@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_17977">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -43,8 +45,14 @@
                   <altIdentifier type="other">
                      <idno>38</idno>
                      <note>
-                        <persName xml:lang="per-Latn-x-lc" key="person_8170991" role="fmo">William Irvine</persName>
+                        <persName xml:lang="per-Latn-x-lc" key="viaf_8170991" role="fmo">William Irvine</persName>
                      </note>
+                  </altIdentifier>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343616</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163240411.0x000020</idno>
                   </altIdentifier>
                </msIdentifier>
                <head>Indian and Iranian histories, 18th c.</head>
@@ -53,8 +61,8 @@
                   <msItem class="http://lccn.loc.gov/n50063254 http://lccn.loc.gov/sh85064914" n="1" xml:id="Uk_IO_Islamic_3934-item1">
                      <locus from="1" to="127">ff. 1-127</locus>
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" type="supplied" key="person_309698642">ʿAbd al-Karīm ibn ʿĀqibat Maḥmūd Kashmīrī</persName>
-                        <persName xml:lang="per" key="person_309698642" type="supplied">عبد الکریم ابن عاقبت محمود کشمیری</persName>
+                        <persName xml:lang="per-Latn-x-lc" type="supplied" key="viaf_309698642">ʿAbd al-Karīm ibn ʿĀqibat Maḥmūd Kashmīrī</persName>
+                        <persName xml:lang="per" key="viaf_309698642" type="supplied">عبد الکریم ابن عاقبت محمود کشمیری</persName>
                      </author>
                      <title xml:lang="per-Latn-x-lc" key="work_6697">Bayān-i vāqiʿ</title>
                      <title xml:lang="per" key="work_6697">بيان واقع</title>
@@ -80,22 +88,20 @@
                   <msItem class="http://lccn.loc.gov/n83158321 http://lccn.loc.gov/sh85064914" n="3" xml:id="Uk_IO_Islamic_3934-item3">
                      <locus from="213r" to="264v">ff. 213r-264v</locus>
                      <note>
-                        <p>Anonymous continuation of Muḥammad Qāsim Ḥusaynī's <title>ʿIbratnāmah</title>, down to the 14th regnal year (<date calendar="#Hijri-qamari">1144</date>/<date calendar="#Gregorian">1731-2</date>) of the Timurid or Mughal Emperor Muḥammad Shāh
+                        <p>Anonymous continuation of Muḥammad Qāsim Ḥusaynī's <title>ʿIbratnāmah</title>, down to the 14th regnal year (<date calendar="Hijri-qamari">1144</date>/<date calendar="Gregorian">1731-2</date>) of the Timurid or Mughal Emperor Muḥammad Shāh
                         </p>
                      </note>
                      <textLang mainLang="per">Persian</textLang>
-                     <note>
-						</note>
+                     <note/>
                   </msItem>
                   <msItem class="http://lccn.loc.gov/n83158321 http://lccn.loc.gov/sh85064914" n="4" xml:id="Uk_IO_Islamic_3934-item4">
-                     <locus from="264v" to="272v" />
+                     <locus from="264v" to="272v"/>
                      <note>
-                        <p>Anonymous continuation of Muḥammad Qāsim Ḥusaynī's <title>ʿIbratnāmah</title>, covering the reign of the Timurid or Mughal Emperor Muḥammad Shāh down to regnal year 25 (<date calendar="#Hijri-qamari">1157</date>)
+                        <p>Anonymous continuation of Muḥammad Qāsim Ḥusaynī's <title>ʿIbratnāmah</title>, covering the reign of the Timurid or Mughal Emperor Muḥammad Shāh down to regnal year 25 (<date calendar="Hijri-qamari">1157</date>)
                         </p>
                      </note>
                      <textLang mainLang="per">Persian</textLang>
-                     <note>
-						</note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -105,25 +111,24 @@
                               <height>250</height>
                               <width>155</width>
                            </dimensions>
-                           <dimensions type="written" unit="mm">
-									</dimensions>
+                           <dimensions type="written" unit="mm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote script="Arabic" scope="major" />
+                     <handNote script="Arabic" scope="major"/>
                   </handDesc>
                </physDesc>
                <history>
-                  <origin calendar="#Other" when="1873" when-custom="9 Jum. II 1290">
-                     <origDate calendar="#Hijri-qamari" when="1873">9 Jum. II 1290</origDate>
-                     <origDate calendar="#Gregorian" when="1873">1873</origDate>
+                  <origin calendar="Gregorian" when="1873" when-custom="9 Jum. II 1290">
+                     <origDate calendar="Hijri-qamari" when="1873">9 Jum. II 1290</origDate>
+                     <origDate calendar="Gregorian" when="1873">1873</origDate>
                      <origPlace>India</origPlace>
                   </origin>
                   <acquisition>
                      <date>1913-08-15</date>
                      <p>
-                        <persName xml:lang="per-Latn-x-lc" key="person_8170991" role="fmo">William Irvine</persName>
+                        <persName xml:lang="per-Latn-x-lc" key="viaf_8170991" role="fmo">William Irvine</persName>
                      </p>
                   </acquisition>
                </history>

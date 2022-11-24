@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5527">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -46,19 +48,19 @@
                      1 copy of ‘Ajā’ib al-buldān by Mīr Khvānd, Muhammad ibn Khāvandshāh
                   </summary>
                   <msItem xml:id="Uk_Or_12995-item1">
-                     <author ref="http://viaf.org/viaf/175393012" key="person_175393012" change="#ids-cleanup">
+                     <author ref="http://viaf.org/viaf/175393012" key="viaf_175393012" change="#ids-cleanup">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Mīr Khvānd, Muhammad ibn Khāvandshāh</persName>
                         <persName xml:lang="fa">مير خواند، محمد بن خاوند شاه</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20371" change="#ids-cleanup">‘Ajā’ib al-buldān</title>
                      <title xml:lang="fa" key="work_20371" change="#ids-cleanup">عجائب البلدان</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <note>Selected passages from the <title xml:lang="fa-Latn-x-lc">Rawz̤at al-ṣafā <foreign xml:lang="fa">روضة الصفاء</foreign>
                         </title> of Mīr Khvānd which deals with the marvels of creation compiled for the Vizier of Bisṭām, copied by <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f1410" role="scr" change="#role-assignment">Ibn Muḥammad Ghulām ‘Alī Shīrāzī <foreign xml:lang="fa">ابن محمد غلام علی شیرازی</foreign>
                         </persName>
                      </note>
-                     <note>Line drawings one of which bears the date <date calendar="#Hijri-qamari" notBefore="1873" notAfter="1874">1290</date>
+                     <note>Line drawings one of which bears the date <date calendar="Hijri-qamari" notBefore="1873" notAfter="1874">1290</date>
                      </note>
                      <note>This may well by the true date of transcription with a copy of the original colophon</note>
                      <listBibl>
@@ -85,7 +87,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1873" notAfter="1874">1290</origDate>
+                     <origDate calendar="Hijri-qamari" notBefore="1873" notAfter="1874">1290</origDate>
                   </origin>
                </history>
                <additional>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3207">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>Delhi Persian 25</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004341334</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163233603.0x00000a</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>A volume containing different works</head>
                <msContents class="#multipleWorks">
@@ -48,16 +56,16 @@
                   </summary>
                   <msItem xml:id="Uk_Delhi_Persian_25-item1" n="1" class="http://lccn.loc.gov/sh85072967 http://lccn.loc.gov/n2007204421">
                      <locus from="1Bv" to="38r">ff. 1Bv-38r</locus>
-                     <author ref="http://viaf.org/viaf/71535292" key="person_71535292">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Walī Allāh al-Dihlawī, 1702 or 3-1762 or 3</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Quṭb al-Dīn Aḥmad ibn ʻAbd al-Raḥīm Shāh Valī Allāh Dihlavī (1114-76/1703-62)</persName>
-                        <persName xml:lang="fa" type="alt">قطب الدين احمد بن عبد‌الرحيم شاه ولى الله دهلوي</persName>
-                        <persName xml:lang="ar">ولى الله دهلوى</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_71535292">Walī Allāh al-Dihlawī, 1702 or 3-1762 or 3</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_71535292">Quṭb al-Dīn Aḥmad ibn ʻAbd al-Raḥīm Shāh Valī Allāh Dihlavī (1114-76/1703-62)</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_71535292">قطب الدين احمد بن عبد‌الرحيم شاه ولى الله دهلوي</persName>
+                        <persName xml:lang="ar" key="viaf_71535292">ولى الله دهلوى</persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc" key="work_8505">al-Fawz al-kabīr fī uṣūl al-tafsīr</title>
                      <title xml:lang="ar" key="work_8505">الفوز الكبير في أصول التفسير</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa"/>
                      <note>A work on the principles of Qurʼānic exegesis</note>
                      <note>The fifth chapter (<locus from="21v" to="38r">ff 21v-38r</locus>) is in Arabic, and has the independent title <title xml:lang="ar-Latn-x-lc">Fatḥ al-khabīr bi-mā lā budd min ḥifẓih fī ʻilm al-tafsīr (<foreign xml:lang="ar">فتح الخبیر بما لا بد من حفظه فی علم التفسیر</foreign>)
                         </title>
@@ -68,8 +76,7 @@
                         <bibl>For a more detailed description see Persian III, .</bibl>
                      </listBibl>
                      <textLang mainLang="fa" otherLangs="ar">Persian and Arabic</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -88,20 +95,20 @@
                      </handNote>
                   </handDesc>
                   <decoDesc>
-                     <decoNote type="other" />
+                     <decoNote type="other"/>
                   </decoDesc>
                   <bindingDesc>
                      <p>Half leather 20th century European binding</p>
                   </bindingDesc>
                   <sealDesc>
-                     <p>Square seal of <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f5416" role="scr" change="#role-assignment #ids-cleanup">Ḥaṣūr Allāh</persName>, <date calendar="#Hijri-qamari" when="1768">1182</date>
+                     <p>Square seal of <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f5416" role="scr" change="#role-assignment #ids-cleanup">Ḥaṣūr Allāh</persName>, <date calendar="Hijri-qamari" when="1768">1182</date>
                      </p>
                   </sealDesc>
                </physDesc>
                <history>
                   <origin>
                      <origPlace>India</origPlace>
-                     <origDate calendar="#Hijri-qamari" when="1768">21 Saf 1182</origDate>
+                     <origDate calendar="Hijri-qamari" when="1768">21 Saf 1182</origDate>
                   </origin>
                </history>
                <additional>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5328">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -46,14 +48,14 @@
                      1 copy of Naqsh-i badī by Ghazālī Mashhadī
                   </summary>
                   <msItem xml:id="Uk_Or_11331-item1">
-                     <author key="person_306066767" ref="http://viaf.org/viaf/306066767" change="#ids-cleanup">
+                     <author key="viaf_306066767" ref="http://viaf.org/viaf/306066767" change="#ids-cleanup">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Ghazālī Mashhadī</persName>
                         <persName xml:lang="fa">غزالی مشهدی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_4282">Naqsh-i badī</title>
                      <title xml:lang="fa" key="work_4282">نقش بدیع</title>
                      <note>A poem imitating the <title xml:lang="fa-Latn-x-lc">Makhzan al-asrār <foreign xml:lang="fa">مخزن الاسرار</foreign>
-                        </title> with a panegyric addressed to <persName xml:lang="fa-Latn-x-lc" ref="http://viaf.org/viaf/306066767" key="person_306066767" type="standard" role="aut" change="#role-assignment #ids-cleanup">Shāh Ṭahmāsp <foreign xml:lang="fa">شاه طهمسپ</foreign>
+                        </title> with a panegyric addressed to <persName xml:lang="fa-Latn-x-lc" ref="http://viaf.org/viaf/306066767" key="viaf_306066767" type="standard" role="aut" change="#role-assignment #ids-cleanup">Shāh Ṭahmāsp <foreign xml:lang="fa">شاه طهمسپ</foreign>
                         </persName> and the poet’s patron, <persName type="supplied" xml:lang="fa-Latn-x-lc" key="person_f1946" role="oth" change="#role-assignment">Khān Zamān</persName>
                      </note>
                      <note>It begins with a short prose preface</note>
@@ -81,7 +83,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1500" notAfter="1599">16th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1500" notAfter="1599">16th century</origDate>
                   </origin>
                </history>
                <additional>

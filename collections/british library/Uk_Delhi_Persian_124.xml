@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3178">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>Delhi Persian 124</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004341405</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163233768.0x00000e</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85068454 http://lccn.loc.gov/sh85121428">
                   <summary change="#add-summary">
@@ -54,17 +62,16 @@
                      </author>
                      <title xml:lang="ar-Latn-x-lc" key="work_9239">Tarjumah-’i Asās al-Uṣūl</title>
                      <title xml:lang="ar" key="work_9239">ترجمۀ اساس الصول</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" />
-                     <note>A Persian translation of a work on he principles of shiʻah jurisprudence by <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_36805746" role="ant" change="#role-assignment #ids-cleanup">Dildār ʻAlī ibn Muḥammad Muʻin al-Naṣīrābādī, d. 1225/1819, <foreign xml:lang="fa">دلدار علی بن محمد معن النصیرابادی</foreign>
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa"/>
+                     <note>A Persian translation of a work on he principles of shiʻah jurisprudence by <persName xml:lang="fa-Latn-x-lc" type="supplied" key="viaf_36805746" role="ant" change="#role-assignment #ids-cleanup">Dildār ʻAlī ibn Muḥammad Muʻin al-Naṣīrābādī, d. 1225/1819, <foreign xml:lang="fa">دلدار علی بن محمد معن النصیرابادی</foreign>
                         </persName>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Persian III, .</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persianc</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -86,7 +93,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1800" notAfter="1899">19th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1800" notAfter="1899">19th century</origDate>
                   </origin>
                </history>
                <additional>

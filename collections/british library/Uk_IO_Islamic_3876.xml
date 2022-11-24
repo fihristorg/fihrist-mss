@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_17940">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,26 +42,32 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>IO Islamic 3876</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004341718</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163233992.0x000024</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>Tuzuk-i Taymuri</head>
                <msContents>
                   <summary>1 copy of Tūzuk-i Taymūrī by Mīr Ṭālib Ḥusaynī</summary>
                   <msItem class="http://lccn.loc.gov/sh85135483 http://lccn.loc.gov/sh2008115921 http://lccn.loc.gov/n2008060724" n="1" xml:id="Uk_IO_Islamic_3876-item1">
                      <note>
-                        <p>Illustrated manuscript of the Persian translation of a pseudo-autobiography of <persName key="person_63984707" role="subject">Timur</persName> in Chaghatay, supposedly discovered in Yemen and brought to the Timurid or Mughal court by Prince <persName key="person_6178410" role="oth">Aurangzeb</persName> and presented to Emperor <persName key="person_13108102" role="dte">Shahjahan</persName> I, who ordered its translation under the title Malfūẓāt-i Sāḥib'qirānī
+                        <p>Illustrated manuscript of the Persian translation of a pseudo-autobiography of <persName key="viaf_63984707" role="subject">Timur</persName> in Chaghatay, supposedly discovered in Yemen and brought to the Timurid or Mughal court by Prince <persName key="viaf_6178410" role="oth">Aurangzeb</persName> and presented to Emperor <persName key="viaf_13108102" role="dte">Shahjahan</persName> I, who ordered its translation under the title Malfūẓāt-i Sāḥib'qirānī
                         </p>
                         <p>Paintings in a simplified Sikh-era Panjabi style; double frontispiece of Timur enthroned (ff. 1v-2r); double finispiece of ladies conveying trays of food in a ḥaram (ff. 94v-95r); illustrations to the text: ff. 4r, 14v, 19r, 22r, 29r, 32r, 37r, 40r, 44r, 48r, 53r, 63r, 64r, 69v, 72r, 75v, 80r, 85v, 87r, 91r, 93v</p>
                         <p>Colophon (f. 94r): completed Friday, 25 Rajab 1258/1 September 1842, Malik Sayf al-Dīn Qādirī</p>
                         <p>Preceded by a brief summary of the contents and date of completion in Persian</p>
-                        <p />
+                        <p/>
                         <p>IOL stamp: 6 Jan 1917 </p>
                      </note>
                      <textLang mainLang="per">Persian</textLang>
                      <title xml:lang="per-Latn-x-lc" key="work_21901">Tūzuk-i Taymūrī</title>
                      <title xml:lang="per" key="work_21901">توزک تیموری</title>
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" key="person_32399758">Mīr Ṭālib Ḥusaynī</persName>
-                        <persName xml:lang="per" key="person_32399758">میر طالب حسینی</persName>
+                        <persName xml:lang="per-Latn-x-lc" key="ark:/81055/vdc_100164657159.0x000001 viaf_32399758">Mīr Ṭālib Ḥusaynī</persName>
+                        <persName xml:lang="per" key="ark:/81055/vdc_100164657159.0x000001 viaf_32399758">میر طالب حسینی</persName>
                      </author>
                   </msItem>
                </msContents>
@@ -70,17 +78,16 @@
                               <height>277</height>
                               <width>155</width>
                            </dimensions>
-                           <dimensions type="written" unit="mm">
-									</dimensions>
+                           <dimensions type="written" unit="mm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote script="Arabic" scope="major" />
+                     <handNote script="Arabic" scope="major"/>
                   </handDesc>
                </physDesc>
                <history>
-                  <origin calendar="#Hijri-qamari" notBefore="1842" notAfter="1842"> Punjab <origPlace>India</origPlace>
+                  <origin calendar="Hijri-qamari" notBefore="1842" notAfter="1842"> Punjab <origPlace>India</origPlace>
                   </origin>
                </history>
                <additional>
@@ -104,8 +111,7 @@
          </classDecl>
       </encodingDesc>
       <profileDesc>
-         <textClass>
-			</textClass>
+         <textClass/>
       </profileDesc>
       <revisionDesc>
          <change when="2022-04-21">

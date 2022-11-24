@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_18417">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -41,7 +43,7 @@
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 16219</idno>
                   <altIdentifier type="other">
-                     <idno />
+                     <idno/>
                   </altIdentifier>
                </msIdentifier>
                <head>Commentary in Ottoman on Divan-i Hafiz</head>
@@ -62,8 +64,8 @@
                      <title xml:lang="per-Latn-x-lc" key="work_8248">Sharḥ-i Dīvān-i Ḥāfiẓ</title>
                      <title xml:lang="per" key="work_8248">شرح دیوان حافظ </title>
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" key="person_176977314">Bosnavı̂ Sudi, -1596 or 1597</persName>
-                        <persName key="person_176977314" xml:lang="per">احمد سودى بوسنوى</persName>
+                        <persName xml:lang="per-Latn-x-lc" key="viaf_176977314">Bosnavı̂ Sudi, -1596 or 1597</persName>
+                        <persName key="viaf_176977314" xml:lang="per">احمد سودى بوسنوى</persName>
                      </author>
                   </msItem>
                </msContents>
@@ -80,12 +82,12 @@
                      </supportDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote script="Arabic" scope="major" />
+                     <handNote script="Arabic" scope="major"/>
                   </handDesc>
                </physDesc>
                <history>
-                  <origin calendar="#Hijri-shamsi" notBefore="1700" notAfter="1799">
-                     <origDate calendar="#Gregorian" notBefore="1700" notAfter="1799">18th century</origDate>
+                  <origin calendar="Hijri-shamsi" notBefore="1700" notAfter="1799">
+                     <origDate calendar="Gregorian" notBefore="1700" notAfter="1799">18th century</origDate>
  Ottoman Empire <origPlace>Anatolia or Balkans</origPlace>
                   </origin>
                </history>

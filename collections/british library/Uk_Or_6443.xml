@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6092">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 6443</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342735</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237685.0x000021</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>Miscellany</head>
                <msContents class="#multipleWorks">
@@ -53,16 +61,15 @@
                         <bibl>For a more detailed description see Glyn Meredith-Owens: Handlist of Persian Manuscripts, 1895-1966. [London]: Trustees of the British Museum, 1968, p.91.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_6443-item2" n="2" class="http://lccn.loc.gov/sh85129660 http://lccn.loc.gov/sh85014152">
                      <locus from="5v" to="195r">5v-195r ff</locus>
-                     <author ref="http://viaf.org/viaf/57523601" key="person_57523601">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Mīrzā ‘Abd al-Qādir</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Bīdil</persName>
-                        <persName xml:lang="fa">میرزا عبد القادر</persName>
-                        <persName xml:lang="fa" type="alt">بیدل</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_57523601">Mīrzā ‘Abd al-Qādir</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_57523601">Bīdil</persName>
+                        <persName xml:lang="fa" key="viaf_57523601">میرزا عبد القادر</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_57523601">بیدل</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_7372">Chahār ‘Unṣur</title>
                      <title xml:lang="fa" key="work_7372">چهار عنصر</title>
@@ -71,24 +78,22 @@
                         <bibl>For a more detailed description see Glyn Meredith-Owens: Handlist of Persian Manuscripts, 1895-1966. [London]: Trustees of the British Museum, 1968, p.91.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_6443-item3" n="3" class="http://lccn.loc.gov/sh85100084 http://lccn.loc.gov/sh85064980">
                      <locus from="196v" to="249v">196v-249v ff</locus>
-                     <author ref="http://viaf.org/viaf/57523601" key="person_57523601">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Mīrzā ‘Abd al-Qādir</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Bīdil</persName>
-                        <persName xml:lang="fa">میرزا عبد القادر</persName>
-                        <persName xml:lang="fa" type="alt">بیدل</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_57523601">Mīrzā ‘Abd al-Qādir</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_57523601">Bīdil</persName>
+                        <persName xml:lang="fa" key="viaf_57523601">میرزا عبد القادر</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_57523601">بیدل</persName>
                      </author>
                      <title xml:lang="en" type="desc" key="work_20821" change="#ids-cleanup">Poems</title>
                      <listBibl>
                         <bibl>For a more detailed description see Glyn Meredith-Owens: Handlist of Persian Manuscripts, 1895-1966. [London]: Trustees of the British Museum, 1968, p.91.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -104,7 +109,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1600" notAfter="1699">17th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1600" notAfter="1699">17th century</origDate>
                   </origin>
                </history>
                <additional>

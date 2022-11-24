@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_18416">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -41,7 +43,13 @@
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 16218</idno>
                   <altIdentifier type="other">
-                     <idno />
+                     <idno/>
+                  </altIdentifier>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343795</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163240411.0x0000cc</idno>
                   </altIdentifier>
                </msIdentifier>
                <head>Haidar Dughlat's Tarikh-e Rashidi</head>
@@ -65,8 +73,8 @@ ki ba-barakat-i īshān īndu‘ā ki dar man ast mustajāb shavad va shuda bās
                      <title xml:lang="per-Latn-x-lc" key="work_1164">Tārīkh-i Rashīdī</title>
                      <title xml:lang="per" key="work_1164">تاریخ رشیدی</title>
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" key="person_9878408">Ḥaydar Mīrzā, 1499 or 1500-1551</persName>
-                        <persName key="person_9878408" xml:lang="per">محمّد حيدر ميرزا</persName>
+                        <persName xml:lang="per-Latn-x-lc" key="viaf_9878408">Ḥaydar Mīrzā, 1499 or 1500-1551</persName>
+                        <persName key="viaf_9878408" xml:lang="per">محمّد حيدر ميرزا</persName>
                      </author>
                   </msItem>
                </msContents>
@@ -77,18 +85,17 @@ ki ba-barakat-i īshān īndu‘ā ki dar man ast mustajāb shavad va shuda bās
                               <height>275</height>
                               <width>163</width>
                            </dimensions>
-                           <dimensions type="written" unit="mm">
-									</dimensions>
+                           <dimensions type="written" unit="mm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote script="Arabic" scope="major" />
+                     <handNote script="Arabic" scope="major"/>
                   </handDesc>
                </physDesc>
                <history>
-                  <origin calendar="#Hijri-shamsi" notBefore="1887-12" notAfter="1888-01" when-custom="Rajab 1305">
-                     <origDate calendar="#Hijri-qamari" notBefore="1887-12" notAfter="1888-01">Rajab 1305 (December 1887 - January 1888)</origDate>
+                  <origin calendar="Hijri-shamsi" notBefore="1887-12" notAfter="1888-01" when-custom="Rajab 1305">
+                     <origDate calendar="Hijri-qamari" notBefore="1887-12" notAfter="1888-01">Rajab 1305 (December 1887 - January 1888)</origDate>
                      <origPlace>Indore, India</origPlace>
                   </origin>
                </history>
@@ -116,8 +123,7 @@ ki ba-barakat-i īshān īndu‘ā ki dar man ast mustajāb shavad va shuda bās
          </classDecl>
       </encodingDesc>
       <profileDesc>
-         <textClass>
-			</textClass>
+         <textClass/>
       </profileDesc>
       <revisionDesc>
          <change when="2022-04-21">

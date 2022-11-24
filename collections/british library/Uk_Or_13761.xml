@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5598">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,30 +42,33 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 13761</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343288</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239034.0x000104</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh2008112367 http://lccn.loc.gov/sh85100934">
                   <summary change="#add-summary">
                      1 copy of Munāẓarāt-i khams by Turkah Iṣfahānī, ʻAlī ibn Muḥammad, 1368 or 9-1431 or 2
                   </summary>
                   <msItem xml:id="Uk_Or_13761-item1">
-                     <author ref="http://viaf.org/viaf/45460576/" key="person_45460576">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Turkah Iṣfahānī, ʻAlī ibn Muḥammad, 1368 or 9-1431 or 2</persName>
-                        <persName xml:lang="fa">تركة اصفهاني، علي بن محمد</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_45460576">Turkah Iṣfahānī, ʻAlī ibn Muḥammad, 1368 or 9-1431 or 2</persName>
+                        <persName xml:lang="fa" key="viaf_45460576">تركة اصفهاني، علي بن محمد</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8021">Munāẓarāt-i khams</title>
                      <title xml:lang="fa" key="work_8021">مناظرات خمس</title>
                      <note>Five debates between allegorical personages: Reason v. Love; Fancy v. Reason; Fancy v. Imagination, Hearing v. Sight; Lover v. Beloved</note>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
-                     <note>
-                        <foreign xml:lang="fa" />
-                     </note>
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
+                     <note/>
                      <listBibl>
                         <bibl>For a more detailed description see Waley 1998, page 9.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -80,7 +85,7 @@
                <history>
                   <origin>
                      <origPlace>Samarkand</origPlace>
-                     <origDate calendar="#Hijri-qamari" when="1419">822</origDate>
+                     <origDate calendar="Hijri-qamari" when="1419">822</origDate>
                   </origin>
                </history>
                <additional>

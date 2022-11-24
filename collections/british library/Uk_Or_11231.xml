@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5310">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 11231</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343117</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239034.0x00005a</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>Kulliyāt of ‘Ubayd-i Zākānī <foreign xml:lang="fa">کلّیات عبید زاکانی</foreign>
                </head>
@@ -49,9 +57,9 @@
                   </summary>
                   <msItem xml:id="Uk_Or_11231-item1" n="1" class="http://lccn.loc.gov/sh85100085">
                      <locus from="1r" to="63v">ff 1r-63v</locus>
-                     <author ref="http://viaf.org/viaf/296215691" key="person_296215691" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Busḥāq</persName>
-                        <persName xml:lang="fa">بسحق</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied" key="ark:/81055/vdc_100164657002.0x000001 viaf_296215691">Busḥāq</persName>
+                        <persName xml:lang="fa" key="ark:/81055/vdc_100164657002.0x000001 viaf_296215691">بسحق</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" type="main" key="work_7797">Kanz al-ishtihā</title>
                      <title xml:lang="fa" type="main" key="work_7797">کنز الاشتهاء</title>
@@ -60,8 +68,7 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 62.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_11231-item2" n="2" class="http://lccn.loc.gov/sh85100085">
                      <locus from="64r" to="141v">ff 64r-141v</locus>
@@ -71,14 +78,13 @@
                      </author>
                      <title xml:lang="fa-Latn-x-lc" type="main" key="work_7798">Dīvān-i Aṭ‘imah</title>
                      <title xml:lang="fa" type="main" key="work_7798">دیوان اطعمه</title>
-                     <note>By an imitator named Niẓām al-Dīn with the takhalluṣ Aḥmad who died in <date calendar="#Hijri-qamari" notBefore="1446" notAfter="1447">850</date> according to a chronogram on <locus>66r</locus>
+                     <note>By an imitator named Niẓām al-Dīn with the takhalluṣ Aḥmad who died in <date calendar="Hijri-qamari" notBefore="1446" notAfter="1447">850</date> according to a chronogram on <locus>66r</locus>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 62.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -94,7 +100,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1803" notAfter="1804">1218</origDate>
+                     <origDate calendar="Hijri-qamari" notBefore="1803" notAfter="1804">1218</origDate>
                   </origin>
                </history>
                <additional>

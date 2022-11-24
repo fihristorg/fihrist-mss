@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5753">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-18</date>
+            <date calendar="Gregorian">2011-08-18</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,17 +42,23 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection type="main">Oriental Manuscripts</collection>
                   <idno>Or 14982/331</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343420</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239456.0x000072</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
                   <summary change="#add-summary">
                      1 copy of by 2 authors
                   </summary>
                   <msItem xml:id="Uk_Or_14982.331-item1">
-                     <author key="person_45680638">
-                        <persName ref="http://lccn.loc.gov/n 83158321" type="standard" xml:lang="ar-Latn-x-lc">Muhammad Shāh, Emperor of Delhi, 1702-1748</persName>
+                     <author>
+                        <persName ref="http://lccn.loc.gov/n 83158321" type="standard" xml:lang="ar-Latn-x-lc" key="viaf_45680638">Muhammad Shāh, Emperor of Delhi, 1702-1748</persName>
                         <foreign xml:lang="fa">محمد شاه، پدشاهً دهلی</foreign>
-                        <persName xml:lang="ar-Latn-x-lc">Farmān-i Muḥammad Shāh</persName>
-                        <persName xml:lang="fa" type="alt">فرمان محمد شاه</persName>
+                        <persName xml:lang="ar-Latn-x-lc" key="viaf_45680638">Farmān-i Muḥammad Shāh</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_45680638">فرمان محمد شاه</persName>
                      </author>
                      <title key="work_10905">Untitled</title>
                      <note>Decree of Muḥammad Shāh, setting out the terms of the land grant of Bakhtū and others, heirs of <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f3909" role="subject" change="#role-assignment">Shaykh Yūsuf</persName>, in the pargana of Gola (?), Kannauj region
@@ -60,8 +68,7 @@
                         <bibl>Waley, p. 24</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -74,19 +81,18 @@
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                        </layout>
+                        <layout columns="0" ruledLines="00" n="mistara"/>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown" />
+                     <handNote scope="major" script="unknown"/>
                   </handDesc>
                </physDesc>
                <history>
-                  <origin>
+                  <origin calendar="Gregorian" when="1722">
                      <origPlace>India</origPlace>
-                     <origDate calendar="#other" when="0004">Regnal year 4 (Muḥammad Shāh)</origDate>
-                     <origDate calendar="#Gregorian" when="1722">1722</origDate>
+                     <origDate calendar="Other" when="1722">Regnal year 4 (Muḥammad Shāh)</origDate>
+                     <origDate calendar="Gregorian" when="1722">1722</origDate>
                   </origin>
                </history>
                <additional>

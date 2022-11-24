@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5798">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-20</date>
+            <date calendar="Gregorian">2011-08-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -44,7 +46,7 @@
                <msContents>
                   <summary>Memoirs of the Mughal emporers Babur and Humayun up to AH 962/ AD 1554 by Humayun's sister Princess Gulbadan</summary>
                   <msItem xml:id="Uk_Or_166-item1">
-                     <author key="person_48090575" ref="http://viaf.org/viaf/48090575">
+                     <author key="viaf_48090575" ref="http://viaf.org/viaf/48090575">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Gulbadan, Begam, 1524-1603</persName>
                         <persName xml:lang="fa">گلبدن، بيگم</persName>
                      </author>
@@ -77,17 +79,17 @@
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown" />
+                     <handNote scope="major" script="unknown"/>
                   </handDesc>
                </physDesc>
                <history>
                   <origin change="#fix-dates">
                      <origPlace>India</origPlace>
-                     <origDate calendar="#Hijri-qamari" notBefore="1000" notAfter="1100">11th century</origDate>
-                     <origDate notBefore="1600" notAfter="1700" calendar="#Gregorian" period="17th century">17th century</origDate>
+                     <origDate calendar="Hijri-qamari" notBefore="1000" notAfter="1100">11th century</origDate>
+                     <origDate notBefore="1600" notAfter="1700" calendar="Gregorian" period="17th century">17th century</origDate>
                   </origin>
                   <acquisition>
-                     <p>Purchased from the widow of <persName key="person_f830" role="fmo" change="#role-assignment #ids-cleanup">Col. George W. Hamilton</persName> in <date calendar="#Gregorian" when="1868">April 1868</date>
+                     <p>Purchased from the widow of <persName key="person_f830" role="fmo" change="#role-assignment #ids-cleanup">Col. George W. Hamilton</persName> in <date calendar="Gregorian" when="1868">April 1868</date>
                      </p>
                   </acquisition>
                </history>

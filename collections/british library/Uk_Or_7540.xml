@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6244">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 7540</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342815</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237685.0x000071</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85100084">
                   <summary change="#add-summary">
@@ -47,11 +55,11 @@
                   </summary>
                   <msItem xml:id="Uk_Or_7540-item1">
                      <title xml:lang="en" type="desc" key="work_5708">An anthology of poems</title>
-                     <note>Including works by <persName type="supplied" xml:lang="fa-Latn-x-lc" key="person_51467595" role="aut" change="#role-assignment #ids-cleanup">Kātibī <foreign xml:lang="fa">کاتبی</foreign>
-                        </persName>, <persName type="supplied" xml:lang="fa-Latn-x-lc" ref="http://viaf.org/viaf/7582695" key="person_7582695" role="aut" change="#role-assignment #ids-cleanup">Kamāl-i Khujand <foreign xml:lang="fa">کمال خوجند</foreign>
-                        </persName>, <persName type="supplied" xml:lang="fa-Latn-x-lc" key="person_26536597" role="aut" change="#role-assignment #ids-cleanup">Shāhī <foreign xml:lang="fa">شاهی</foreign>
-                        </persName>, <persName type="standard" xml:lang="fa-Latn-x-lc" ref="http://viaf.org/viaf/30738316" key="person_30738316" role="aut" change="#role-assignment">Vaḥshī <foreign xml:lang="fa">وحشی</foreign>
-                        </persName>, <persName type="supplied" xml:lang="fa-Latn-x-lc" key="person_36817419" role="aut" change="#role-assignment #ids-cleanup">Ahlī <foreign xml:lang="fa">اهلی</foreign>
+                     <note>Including works by <persName type="supplied" xml:lang="fa-Latn-x-lc" key="viaf_51467595" role="aut" change="#role-assignment #ids-cleanup">Kātibī <foreign xml:lang="fa">کاتبی</foreign>
+                        </persName>, <persName type="supplied" xml:lang="fa-Latn-x-lc" ref="http://viaf.org/viaf/7582695" key="viaf_7582695" role="aut" change="#role-assignment #ids-cleanup">Kamāl-i Khujand <foreign xml:lang="fa">کمال خوجند</foreign>
+                        </persName>, <persName type="supplied" xml:lang="fa-Latn-x-lc" key="viaf_26536597" role="aut" change="#role-assignment #ids-cleanup">Shāhī <foreign xml:lang="fa">شاهی</foreign>
+                        </persName>, <persName type="standard" xml:lang="fa-Latn-x-lc" ref="http://viaf.org/viaf/30738316" key="viaf_30738316" role="aut" change="#role-assignment">Vaḥshī <foreign xml:lang="fa">وحشی</foreign>
+                        </persName>, <persName type="supplied" xml:lang="fa-Latn-x-lc" key="viaf_36817419" role="aut" change="#role-assignment #ids-cleanup">Ahlī <foreign xml:lang="fa">اهلی</foreign>
                         </persName>, <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f1080" role="aut" change="#role-assignment">Faṣīḥī of Qum <foreign xml:lang="fa">فصیحی قم</foreign>
                         </persName>, etcetera
                      </note>
@@ -59,8 +67,7 @@
                         <bibl>For a more detailed description see Glyn Meredith-Owens: Handlist of Persian Manuscripts, 1895-1966. [London]: Trustees of the British Museum, 1968, p.82.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -76,7 +83,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1600" notAfter="1799">17th-18th century century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1600" notAfter="1799">17th-18th century century</origDate>
                   </origin>
                </history>
                <additional>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5550">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -60,11 +62,11 @@
                      <title xml:lang="fa-Latn-x-lc" type="alt" key="work_7786">Hāẓā kitāb Qaṣīdah-ʼi Burdah</title>
                      <title xml:lang="fa" key="work_7786">شرح قصیدۀ برده</title>
                      <title xml:lang="fa" type="alt" key="work_7786">هاذا کتاب قصیدۀ برده</title>
-                     <incipit xml:lang="ar" />
-                     <explicit xml:lang="ar" defective="true" />
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>Turkish commentary, and Persian and Turkish translations by Sayyid Aḥmad ibn Muṣṭafà Laʼālī, d. 971/1563-4</note>
                      <note type="text-relations">The commentary on and translations of <title xml:lang="fa-Latn-x-lc">Qaṣīdat al-Burdah (<foreign xml:lang="fa">قصیدة البرده</foreign>)
-                        </title>, properly <title xml:lang="ar-Latn-x-lc">al-Kavākib al-durrīya</title> in praise of the Prophet by <persName key="person_90042754" ref="http://viaf.org/viaf/90042754/" xml:lang="fa-Latn-x-lc" type="standard" role="ant" change="#role-assignment">Būṣīrī, Sharaf al-Dīn Muḥammad ibn Saʻīd, 1213?-1296?, <foreign xml:lang="fa">بوصيری، شرف‌الدين محمد بن سعيد</foreign>
+                        </title>, properly <title xml:lang="ar-Latn-x-lc">al-Kavākib al-durrīya</title> in praise of the Prophet by <persName key="viaf_90042754" ref="http://viaf.org/viaf/90042754/" xml:lang="fa-Latn-x-lc" type="standard" role="ant" change="#role-assignment">Būṣīrī, Sharaf al-Dīn Muḥammad ibn Saʻīd, 1213?-1296?, <foreign xml:lang="fa">بوصيری، شرف‌الدين محمد بن سعيد</foreign>
                         </persName>
                      </note>
                      <note>Title has been supplied by <ref target="Waley_1998" type="page">Waley 1998, page 52.</ref>
@@ -91,7 +93,7 @@
                <history>
                   <origin>
                      <origPlace>Ottoman Empire</origPlace>
-                     <origDate calendar="#Hijri-qamari" notBefore="1800" notAfter="1899">13th century<!-- Please review date attributes, see https://git.io/fihrist-dates -->
+                     <origDate calendar="Hijri-qamari" notBefore="1800" notAfter="1899">13th century<!-- Please review date attributes, see https://git.io/fihrist-dates -->
                      </origDate>
                   </origin>
                </history>

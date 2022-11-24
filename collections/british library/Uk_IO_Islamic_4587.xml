@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3292">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,33 +42,38 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>IO Islamic 4587</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342040</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163236087.0x000037</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh89005046">
                   <summary change="#add-summary">
                      1 copy of Dīvān-i Makhfī
                   </summary>
                   <msItem xml:id="Uk_IO_Islamic_4587-item1">
-                     <author ref="http://viaf.org/viaf/31132651" key="person_31132651">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Zeb-un-Nissa, Princess, 17th cent.</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Princess Zīb al-Nisāʼ "Makhfī", d. 1114/1703</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Zīb-an-Nisāʾ</persName>
-                        <persName xml:lang="fa">زيب النساء</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="ark:/81055/vdc_100164657125.0x000001 viaf_31132651">Zeb-un-Nissa, Princess, 17th cent.</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="ark:/81055/vdc_100164657125.0x000001 viaf_31132651">Princess Zīb al-Nisāʼ "Makhfī", d. 1114/1703</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_31132651">Zīb-an-Nisāʾ</persName>
+                        <persName xml:lang="fa" key="viaf_31132651">زيب النساء</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_9354">Dīvān-i Makhfī</title>
                      <title xml:lang="fa" key="work_9354">دیوان مخفی</title>
-                     <incipit xml:lang="ar" />
-                     <explicit xml:lang="ar" defective="true" />
-                     <note>A transliteration and translation, with notes and index, of the complete poetical works of the <persName xml:lang="fa-Latn-x-lc" type="alt" ref="http://viaf.org/viaf/31132651" key="person_31132651" role="aut" change="#role-assignment">Princess Zīb al-Nisāʼ "Makhfī", d. 1114/1703</persName>
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>A transliteration and translation, with notes and index, of the complete poetical works of the <persName xml:lang="fa-Latn-x-lc" type="alt" ref="http://viaf.org/viaf/31132651" key="viaf_31132651" role="aut" change="#role-assignment">Princess Zīb al-Nisāʼ "Makhfī", d. 1114/1703</persName>
                      </note>
                      <note>This manuscript has the following title-page: "Divan-i Makhfi / or collected poems of the Princess Zebunnisa / daughter of the Emperor Aurangzeb, / transliterated into the Roman character with notes / and prose translations and a hundred English metrical / versions, a scheme of Persian metres and indices of / notable words and of persons and places mentioned in / the poems / by / P. Whalley M.A. / late Bengal Civil Service."</note>
                      <listBibl>
                         <bibl>For a more detailed description see Arberry 1939, pages 373-4.</bibl>
-                        <bibl>A selection of translated extracts from the <title xml:lang="fa-Latn-x-lc">Dīvān</title> by <persName xml:lang="en" type="supplied" key="person_f3286" role="oth" change="#role-assignment">P. Whalley</persName> was published at London in <date calendar="#Gregorian" when="1913">1913</date> [For a more detailed description see Edwards 1935, page 742.]
+                        <bibl>A selection of translated extracts from the <title xml:lang="fa-Latn-x-lc">Dīvān</title> by <persName xml:lang="en" type="supplied" key="person_f3286" role="oth" change="#role-assignment">P. Whalley</persName> was published at London in <date calendar="Gregorian" when="1913">1913</date> [For a more detailed description see Edwards 1935, page 742.]
                         </bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -79,7 +86,7 @@
                      </supportDesc>
                   </objectDesc>
                   <decoDesc>
-                     <decoNote type="other" />
+                     <decoNote type="other"/>
                   </decoDesc>
                   <additions>
                      <p>Lines varying; type written to fol. 904, remainder (index) in manuscript</p>
@@ -87,10 +94,10 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" when="1500">Hijri-qamari<!-- Please review date text, see https://git.io/fihrist-dates -->
+                     <origDate calendar="Hijri-qamari" when="1500">Hijri-qamari<!-- Please review date text, see https://git.io/fihrist-dates -->
                      </origDate>
                   </origin>
-                  <acquisition>This Manuscript was received into the Library in <date calendar="#Gregorian" when="1918">1918</date>, and was until <date calendar="#Gregorian" when="1937">1937</date> located as a printed book (306.32.E.19)
+                  <acquisition>This Manuscript was received into the Library in <date calendar="Gregorian" when="1918">1918</date>, and was until <date calendar="Gregorian" when="1937">1937</date> located as a printed book (306.32.E.19)
                   </acquisition>
                </history>
                <additional>

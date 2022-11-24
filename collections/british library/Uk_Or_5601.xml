@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5981">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -48,7 +50,7 @@
                   </summary>
                   <msItem xml:id="Uk_Or_5601-item1" n="1" class="http://lccn.loc.gov/sh85100084">
                      <locus from="1r" to="51v">1r-51v ff</locus>
-                     <author key="person_22546363" ref="http://viaf.org/viaf/22546363/">
+                     <author key="viaf_22546363" ref="http://viaf.org/viaf/22546363/">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Hilālī, Badr al-Dīn, d. 1528 or 9</persName>
                         <persName xml:lang="fa">هلالي، بدر الدين</persName>
                      </author>
@@ -63,7 +65,7 @@
                   </msItem>
                   <msItem xml:id="Uk_Or_5601-item2" n="2" class="http://lccn.loc.gov/sh85100084">
                      <locus from="52r" to="99v">52r-99v ff</locus>
-                     <author key="person_22546363" ref="http://viaf.org/viaf/22546363/">
+                     <author key="viaf_22546363" ref="http://viaf.org/viaf/22546363/">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Hilālī, Badr al-Dīn, d. 1528 or 9</persName>
                         <persName xml:lang="fa">هلالي، بدر الدين</persName>
                      </author>
@@ -78,7 +80,7 @@
                   </msItem>
                   <msItem xml:id="Uk_Or_5601-item3" n="3" class="http://lccn.loc.gov/sh85100084">
                      <locus from="100r" to="173v">100r-173v ff</locus>
-                     <author key="person_22546363" ref="http://viaf.org/viaf/22546363/">
+                     <author key="viaf_22546363" ref="http://viaf.org/viaf/22546363/">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Hilālī, Badr al-Dīn, d. 1528 or 9</persName>
                         <persName xml:lang="fa">هلالي، بدر الدين</persName>
                      </author>
@@ -108,7 +110,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1574" notAfter="1575">982</origDate>
+                     <origDate calendar="Hijri-qamari" notBefore="1574" notAfter="1575">982</origDate>
                   </origin>
                </history>
                <additional>

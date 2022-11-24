@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_18119">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -44,6 +46,12 @@
                      <idno>126</idno>
                      <note>William Irvine</note>
                   </altIdentifier>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004341889</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163235680.0x000034</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>Habib al-siyar, vols 3-4</head>
                <msContents>
@@ -60,7 +68,7 @@
 </p>
                         <p>Folios tinted pink and cream (ff. 19-309) 
 </p>
-                        <p>Acquired by <persName key="person_8170991" role="fmo">William Irvine</persName> 15/5/[18]95 
+                        <p>Acquired by <persName key="viaf_8170991" role="fmo">William Irvine</persName> 15/5/[18]95 
                         </p>
                         <p>Heavily damaged by wormholes </p>
                      </note>
@@ -68,8 +76,8 @@
                      <title xml:lang="per-Latn-x-lc" key="work_645">Ḥabīb al-siyar</title>
                      <title xml:lang="per" key="work_645">حبيب السير</title>
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" key="person_45109504">Khvānd Mīr, Ghiyās̲ al-Dīn ibn Humām al-Dīn</persName>
-                        <persName key="person_45109504" xml:lang="per">خواند مير، غياث الدين بن همام الدين</persName>
+                        <persName xml:lang="per-Latn-x-lc" key="ark:/81055/vdc_100164657805.0x000001 viaf_45109504">Khvānd Mīr, Ghiyās̲ al-Dīn ibn Humām al-Dīn</persName>
+                        <persName key="ark:/81055/vdc_100164657805.0x000001 viaf_45109504" xml:lang="per">خواند مير، غياث الدين بن همام الدين</persName>
                      </author>
                   </msItem>
                </msContents>
@@ -80,19 +88,18 @@
                               <height>255</height>
                               <width>180</width>
                            </dimensions>
-                           <dimensions type="written" unit="mm">
-									</dimensions>
+                           <dimensions type="written" unit="mm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote script="Arabic" scope="major" />
+                     <handNote script="Arabic" scope="major"/>
                   </handDesc>
                </physDesc>
                <history>
-                  <origin calendar="#Hijri-qamari" when="1752-07-29" when-custom="17 Ramazān 1165">
-                     <origDate calendar="#Hijri-qamari" when="1752-07-29">17 Ramaz̤ān 1165</origDate>
-                     <origDate calendar="#Gregorian" when="1752-07-29">29 July 1752</origDate>
+                  <origin calendar="Hijri-qamari" when="1752-07-29" when-custom="17 Ramazān 1165">
+                     <origDate calendar="Hijri-qamari" when="1752-07-29">17 Ramaz̤ān 1165</origDate>
+                     <origDate calendar="Gregorian" when="1752-07-29">29 July 1752</origDate>
                      <origPlace>India</origPlace>
                   </origin>
                </history>
@@ -117,8 +124,7 @@
          </classDecl>
       </encodingDesc>
       <profileDesc>
-         <textClass>
-			</textClass>
+         <textClass/>
       </profileDesc>
       <revisionDesc>
          <change when="2022-04-21">

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3169">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>Delhi Persian 109B</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004341403</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163233768.0x00000c</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>A volume containing different works</head>
                <msContents class="#multipleWorks">
@@ -56,8 +64,8 @@
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_9071">Sharḥ-i Durūd-i Akbar</title>
                      <title xml:lang="fa" key="work_9071">شرخ درود اکبر</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa"/>
                      <note>A commentary on a work known as <title xml:lang="fa-Latn-x-lc">Durūd-i Akbar (<foreign xml:lang="fa">درود اکبر</foreign>)
                         </title> by <persName xml:lang="fa-Latn-x-lc" key="person_f3894" role="ant" change="#role-assignment">Shaykh Raz̤ī ibn Ibrahīm Shuʻbī, <foreign xml:lang="fa">شیخ رضی بن ابرهیم شعبی</foreign>
                         </persName>
@@ -66,8 +74,7 @@
                         <bibl>For a more detailed description see Persian III, .</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Delhi_Persian_109B-item2" n="2" class="http://lccn.loc.gov/sh2010102954 http://lccn.loc.gov/sh85024485">
                      <locus from="25v" to="58v">ff. 25v, 58v</locus>
@@ -78,11 +85,11 @@
                      <title xml:lang="fa" key="work_9072">سواطع الانوار</title>
                      <title xml:lang="fa-Latn-x-lc" type="alt" key="work_9072">Iqtibās al-anvār</title>
                      <title xml:lang="fa" type="alt" key="work_9072">اقتباس الانوار</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" />
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" />
-                     <note>An account of <persName xml:lang="fa-Latn-x-lc" type="standard" ref="http://viaf.org/viaf/71359982" key="person_71359982" role="subject" change="#role-assignment">ʻAbd al-Qādir al-Jīlānī, d. 1166, <foreign xml:lang="fa">عبدالقادر جلانى</foreign>
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa"/>
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa"/>
+                     <note>An account of <persName xml:lang="fa-Latn-x-lc" type="standard" ref="http://viaf.org/viaf/71359982" key="viaf_71359982" role="subject" change="#role-assignment">ʻAbd al-Qādir al-Jīlānī, d. 1166, <foreign xml:lang="fa">عبدالقادر جلانى</foreign>
                         </persName>, extracted from the first iqtibās of the same work by an unnamed disciple of the author
                      </note>
                      <filiation>Other copies in the India Office Library: <ref type="no" target="Uk">Delhi Persian 667 (British Library).</ref>
@@ -91,8 +98,7 @@
                         <bibl>For a more detailed description see Persian III, .</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Delhi_Persian_109B-item3" n="3" class="http://lccn.loc.gov/sh91004954">
                      <locus from="59v" to="74r">ff. 59v-74r</locus>
@@ -101,25 +107,24 @@
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_9073">Vafātnāmah-ʼi Payghambar</title>
                      <title xml:lang="fa" key="work_9073">وفاتنامۀ پیغمبر</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" />
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa"/>
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa"/>
                      <filiation>Other copies in the India Office Library: <ref type="no" target="Uk">Delhi Persian 716 (British Library).</ref>
                      </filiation>
                      <note>An account of the Prophet’s death extracted by an anonymous writer from the <title xml:lang="fa-Latn-x-lc">Siyar-i Mullā Muʻīn (<foreign xml:lang="fa">سیرملا معین</foreign>)
                         </title>, presumably the <title xml:lang="fa-Latn-x-lc">Maʻārij al-Nubuvvah (<foreign xml:lang="fa">معارج النبوه</foreign>)
-                        </title> of <persName xml:lang="fa-Latn-x-lc" ref="http://viaf.org/viaf/51672236" key="person_51672236" type="standard" role="ant" change="#role-assignment #ids-cleanup">Muʻīn al-Dīn Farāhī, d. 1501 or 2, <foreign xml:lang="fa">معين الدين فراهى</foreign>
+                        </title> of <persName xml:lang="fa-Latn-x-lc" ref="http://viaf.org/viaf/51672236" key="viaf_51672236" type="standard" role="ant" change="#role-assignment #ids-cleanup">Muʻīn al-Dīn Farāhī, d. 1501 or 2, <foreign xml:lang="fa">معين الدين فراهى</foreign>
                         </persName>
                      </note>
-                     <note>This work is dated <date calendar="#Hijri-qamari" when="1787">24 Rabīʻ 1201</date>
+                     <note>This work is dated <date calendar="Hijri-qamari" when="1787">24 Rabīʻ 1201</date>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Persian III, .</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -139,12 +144,12 @@
                      </handNote>
                   </handDesc>
                   <decoDesc>
-                     <decoNote type="other" />
+                     <decoNote type="other"/>
                   </decoDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1800" notAfter="1899">19th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1800" notAfter="1899">19th century</origDate>
                   </origin>
                </history>
                <additional>

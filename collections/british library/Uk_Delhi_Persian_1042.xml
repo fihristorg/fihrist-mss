@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_18530">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>Delhi Persian 1042</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004341510</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163233796.0x000026</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>Commentary on Rumi’s Masnavi</head>
                <msContents>
@@ -53,9 +61,9 @@
                      <title xml:lang="per" key="work_22196">مفتاح المعانى</title>
                      <textLang mainLang="per" otherLangs="ara">Persian and Arabic</textLang>
                      <note>
-                        <p>Commentary on the <title>Mas̲navī-'i maʿnavī</title>of <persName key="person_98930150" role="ant">Jalāl al-Dīn Rūmī</persName> (d. 670/1271) by <persName key="person_f7166" role="aut">Hidāyat Allāh</persName> compiled from the research transmitted by his master, <persName key="person_f7522" role="ant">Sayyid ʿAbd al-Fattāḥ al-ʿAskarī al-Ḥusaynī al-Dihlavī</persName>, completed according to Levy circa 1049/1639-40 based on the authority of <persName key="person_68918448" role="cataloguer">Aloys Sprenger</persName>’s Oudh Catalogue (p. 492). 
+                        <p>Commentary on the <title>Mas̲navī-'i maʿnavī</title>of <persName key="viaf_98930150" role="ant">Jalāl al-Dīn Rūmī</persName> (d. 670/1271) by <persName key="person_f7166" role="aut">Hidāyat Allāh</persName> compiled from the research transmitted by his master, <persName key="person_f7522" role="ant">Sayyid ʿAbd al-Fattāḥ al-ʿAskarī al-Ḥusaynī al-Dihlavī</persName>, completed according to Levy circa 1049/1639-40 based on the authority of <persName key="viaf_68918448" role="cataloguer">Aloys Sprenger</persName>’s Oudh Catalogue (p. 492). 
                         </p>
-                        <p>Dated colophon to book 5 (f. 254v): completed at <placeName>Shāhjahānābād</placeName>, 10 Ramaz̤ān in RY 42 of <persName key="person_6178410" role="oth">Emperor ʿĀlamgīr I</persName>, (1111)/1 March 1700. 
+                        <p>Dated colophon to book 5 (f. 254v): completed at <placeName>Shāhjahānābād</placeName>, 10 Ramaz̤ān in RY 42 of <persName key="viaf_6178410" role="oth">Emperor ʿĀlamgīr I</persName>, (1111)/1 March 1700. 
                         </p>
                         <p>Dated colophon to book 6 defective (f. 316v): completed Friday, 4 Z̲[ī] al-Ḥijjah 11[0]3 (figures written in reverse order)/17 August 1692. </p>
                         <p>Tight scribal nastaʿlīq and shikastah āmīz. 
@@ -79,19 +87,18 @@ Binding damaged, spine intact (tooled reddish brown leather exterior embellished
                               <height>270</height>
                               <width>150</width>
                            </dimensions>
-                           <dimensions type="written" unit="mm">
-									</dimensions>
+                           <dimensions type="written" unit="mm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote script="Arabic" scope="major" />
+                     <handNote script="Arabic" scope="major"/>
                   </handDesc>
                </physDesc>
                <history>
-                  <origin calendar="#Hijri-qamari" when="1692-08-17" when-custom="4 Zī al-Ḥijjah 1103">
-                     <origDate calendar="#Hijri-qamari" when="1692-08-17">4 Z̲ī al-Ḥijjah 1103</origDate>
-                     <origDate calendar="#Gregorian" when="1692-08-17">17 August 1692</origDate>
+                  <origin calendar="Hijri-qamari" when="1692-08-17" when-custom="4 Zī al-Ḥijjah 1103">
+                     <origDate calendar="Hijri-qamari" when="1692-08-17">4 Z̲ī al-Ḥijjah 1103</origDate>
+                     <origDate calendar="Gregorian" when="1692-08-17">17 August 1692</origDate>
  Shāhjahānābād <origPlace>India, Delhi</origPlace>
                   </origin>
                </history>
@@ -125,8 +132,7 @@ Binding damaged, spine intact (tooled reddish brown leather exterior embellished
          </classDecl>
       </encodingDesc>
       <profileDesc>
-         <textClass>
-			</textClass>
+         <textClass/>
       </profileDesc>
       <revisionDesc>
          <change when="2022-04-21">

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5160">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 4499</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343712</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163240411.0x00007b</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://id.loc.gov/authorities/sh85109233">
                   <summary change="#add-summary2">
@@ -63,8 +71,7 @@
                         </bibl>
                      </listBibl>
                      <textLang mainLang="ps">Pushto</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_4499-item2" n="2">
                      <author key="person_f1065">
@@ -82,14 +89,13 @@
                         </bibl>
                      </listBibl>
                      <textLang mainLang="ps">Pushto</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>
+                        <extent>folios 
                            <ref target="a1">1-86 f.</ref>
                            <ref target="a2">87-112 f.</ref>
                            <dimensions type="leaf" unit="cm">
@@ -100,18 +106,18 @@
                      </supportDesc>
                   </objectDesc>
                   <decoDesc>
-                     <decoNote type="other" />
+                     <decoNote type="other"/>
                   </decoDesc>
                </physDesc>
                <history>
                   <origin change="#fix-dates" notBefore="1854" notAfter="1855">
                      <ref target="a1">
-                        <origDate notBefore="1854" notAfter="1855" calendar="#Hijri-qamari">1271</origDate>
-                        <origDate when="1855" calendar="#Gregorian">1855</origDate>
+                        <origDate notBefore="1854" notAfter="1855" calendar="Hijri-qamari">1271</origDate>
+                        <origDate when="1855" calendar="Gregorian">1855</origDate>
                      </ref>
                      <ref target="a2">
-                        <origDate notBefore="1854" notAfter="1855" calendar="#Hijri-qamari">1271</origDate>
-                        <origDate when="1854" calendar="#Gregorian">1854</origDate>
+                        <origDate notBefore="1854" notAfter="1855" calendar="Hijri-qamari">1271</origDate>
+                        <origDate when="1854" calendar="Gregorian">1854</origDate>
                      </ref>
                   </origin>
                </history>

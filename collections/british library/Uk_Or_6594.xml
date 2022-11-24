@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6108">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,26 +42,31 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 6594</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342745</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237685.0x00002b</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85109764">
                   <summary change="#add-summary">
                      1 copy of Rubā‘īyāt by ‘Abd al-Qādir Bīdil
                   </summary>
                   <msItem xml:id="Uk_Or_6594-item1">
-                     <author ref="http://viaf.org/viaf/57523601" key="person_57523601">
-                        <persName xml:lang="fa-Latn-x-lc" type="supplied">‘Abd al-Qādir Bīdil</persName>
-                        <persName xml:lang="fa">عبد القادر بیدل</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied" key="viaf_57523601">‘Abd al-Qādir Bīdil</persName>
+                        <persName xml:lang="fa" key="viaf_57523601">عبد القادر بیدل</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20809" change="#ids-cleanup">Rubā‘īyāt</title>
                      <incipit xml:lang="fa">رباعیات</incipit>
-                     <explicit xml:lang="fa" defective="true" />
+                     <explicit xml:lang="fa" defective="true"/>
                      <note>Collected poems, consisting entirely of rubā‘īyāt</note>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 50.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -75,7 +82,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1700" notAfter="1899">18th-19th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1700" notAfter="1899">18th-19th century</origDate>
                   </origin>
                </history>
                <additional>

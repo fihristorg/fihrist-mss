@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6254">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 7586</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342818</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237685.0x000074</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>Dīvāns pf Persian Poetry</head>
                <msContents class="#multipleWorks">
@@ -54,31 +62,29 @@
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8301">Dīvān of Hindī</title>
                      <title xml:lang="fa" key="work_8301">دیوان هندی</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 53.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_7586-item2" n="2" class="http://lccn.loc.gov/sh85100085 http://lccn.loc.gov/sh89005046">
                      <locus from="35r" to="75v">ff 35r-75v</locus>
-                     <author key="person_90041432" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Suhaylī</persName>
-                        <persName xml:lang="fa">سهیلی</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied" key="viaf_90041432">Suhaylī</persName>
+                        <persName xml:lang="fa" key="viaf_90041432">سهیلی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" type="main" key="work_8302">Dīvān of Suhaylī</title>
                      <title xml:lang="fa" type="main" key="work_8302">دیوان سهیلی</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 53.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_7586-item3" n="3" class="http://lccn.loc.gov/sh85100085 http://lccn.loc.gov/sh89005046">
                      <locus from="57r" to="86r">ff 57r-86r</locus>
@@ -88,33 +94,31 @@
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_10576" change="#ids-cleanup">Dīvān of Riyāz̤ī</title>
                      <title xml:lang="fa" key="work_10576" change="#ids-cleanup">دیوان ریاضی</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 53.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_7586-item4" n="4" class="http://lccn.loc.gov/sh85100085 http://lccn.loc.gov/sh89005046">
                      <locus from="69r" to="78r">ff 69r-78r</locus>
-                     <author ref="http://viaf.org/viaf/33595452" key="person_33595452">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Khvājah Ḥabībullāh Ḥubbī Nawshahrī, 1556-1618</persName>
-                        <persName xml:lang="fa">خواجه حبیب الله حبّی نوشهری</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Ḥubbī</persName>
-                        <persName xml:lang="fa" type="alt">حبّی</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_33595452">Khvājah Ḥabībullāh Ḥubbī Nawshahrī, 1556-1618</persName>
+                        <persName xml:lang="fa" key="viaf_33595452">خواجه حبیب الله حبّی نوشهری</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_33595452">Ḥubbī</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_33595452">حبّی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8304">Dīvān of Ḥubbī</title>
                      <title xml:lang="fa" key="work_8304">دیوان حبّی</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 53.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -130,7 +134,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1600" notAfter="1699">17th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1600" notAfter="1699">17th century</origDate>
                   </origin>
                </history>
                <additional>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5133">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,15 +42,21 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 395</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342291</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237592.0x00001d</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://id.loc.gov/authorities/sh85109233 http://lccn.loc.gov/sh85109389">
                   <summary change="#add-summary2">
                      2 works by Afrīdī, Qāsim ʻAlī Khān on the subject of Pushto poetry
                   </summary>
                   <msItem xml:id="Uk_Or_395-item1" n="1">
-                     <author key="person_1752145857148322922967" change="#ids-cleanup">
-                        <persName xml:lang="pus-Latn-x-lc" type="supplied">Afrīdī, Qāsim ʻAlī Khān</persName>
-                        <persName xml:lang="ps">افریدي، قاسم علي خان</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="pus-Latn-x-lc" type="supplied" key="ark:/81055/vdc_100164656424.0x000001 viaf_1752145857148322922967">Afrīdī, Qāsim ʻAlī Khān</persName>
+                        <persName xml:lang="ps" key="ark:/81055/vdc_100164656424.0x000001 viaf_1752145857148322922967">افریدي، قاسم علي خان</persName>
                      </author>
                      <title xml:lang="pus-Latn-x-lc" key="work_8238">Dīwān-i Afrīdī</title>
                      <title xml:lang="ps" key="work_8238">دیوان افریدي</title>
@@ -61,13 +69,12 @@
                         </bibl>
                      </listBibl>
                      <textLang mainLang="ps">Pushto</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_395-item2" n="2">
-                     <author key="person_1752145857148322922967" change="#ids-cleanup">
-                        <persName xml:lang="pus-Latn-x-lc" type="supplied">Afrīdī, Qāsim ʻAlī Khān</persName>
-                        <persName xml:lang="ps">افریدي، قاسم علي خان</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="pus-Latn-x-lc" type="supplied" key="viaf_1752145857148322922967">Afrīdī, Qāsim ʻAlī Khān</persName>
+                        <persName xml:lang="ps" key="viaf_1752145857148322922967">افریدي، قاسم علي خان</persName>
                      </author>
                      <title xml:lang="pus-Latn-x-lc" key="work_3362">Khwābnāmah</title>
                      <title xml:lang="ps" key="work_3362">خوابنامه</title>
@@ -81,14 +88,13 @@
                         </bibl>
                      </listBibl>
                      <textLang mainLang="ps">Pushto</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>
+                        <extent>folios 
                            <ref target="a1">1-142b f.</ref>
                            <ref target="a2">143-149 f.</ref>
                            <dimensions type="leaf" unit="cm">
@@ -99,13 +105,13 @@
                      </supportDesc>
                   </objectDesc>
                   <decoDesc>
-                     <decoNote type="other" />
+                     <decoNote type="other"/>
                   </decoDesc>
                </physDesc>
                <history>
                   <origin change="#fix-dates">
-                     <origDate notBefore="1815" notAfter="1816" calendar="#Hijri-qamari">1231</origDate>
-                     <origDate when="1816" calendar="#Gregorian">1816</origDate>
+                     <origDate notBefore="1815" notAfter="1816" calendar="Hijri-qamari">1231</origDate>
+                     <origDate when="1816" calendar="Gregorian">1816</origDate>
                   </origin>
                </history>
                <additional>

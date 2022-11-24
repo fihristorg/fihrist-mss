@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_17993">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -44,24 +46,30 @@
                      <idno>426</idno>
                      <note>William Irvine</note>
                   </altIdentifier>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004341764</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163233992.0x000050</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>Two collections of letters relating to the Nizam of Hydrabad and Maratha leaders</head>
                <msContents class="http://lccn.loc.gov/sh2005001641 http://lccn.loc.gov/sh85100074 http://lccn.loc.gov/sh85104368">
-                  <summary>Two collections of letters relating to the Nizam of Hydrabad, <persName key="person_26017465" role="pat">Āṣafjāh Niẓām ʿAlī Khān Bahādur</persName>, and Maratha leaders. Formerly belonged to J. O'Kinealy. Covers delaminating revealing inner matter containing names and dates (ʿAbd al-Razzāq ʿAlī 1243, Kanada or Telugu text). IOL stamp not dated. 
+                  <summary>Two collections of letters relating to the Nizam of Hydrabad, <persName key="viaf_26017465" role="pat">Āṣafjāh Niẓām ʿAlī Khān Bahādur</persName>, and Maratha leaders. Formerly belonged to J. O'Kinealy. Covers delaminating revealing inner matter containing names and dates (ʿAbd al-Razzāq ʿAlī 1243, Kanada or Telugu text). IOL stamp not dated. 
                   </summary>
                   <textLang mainLang="per">Persian</textLang>
                </msContents>
                <physDesc>
                   <objectDesc form="codex">
-                     <supportDesc material="chart" />
+                     <supportDesc material="chart"/>
                   </objectDesc>
                   <handDesc>
-                     <handNote script="Arabic" scope="major" />
+                     <handNote script="Arabic" scope="major"/>
                   </handDesc>
                </physDesc>
                <history>
-                  <origin calendar="#Hijri-qamari" notBefore="1819" notAfter="1827">
-                     <origDate calendar="#Gregorian" notBefore="1819" notAfter="1827">19th century</origDate>
+                  <origin calendar="Hijri-qamari" notBefore="1819" notAfter="1827">
+                     <origDate calendar="Gregorian" notBefore="1819" notAfter="1827">19th century</origDate>
                      <origPlace>India</origPlace>
                   </origin>
                </history>
@@ -74,7 +82,7 @@
                   </adminInfo>
                </additional>
                <msPart xml:id="Uk_IO_Islamic_3953-part1">
-                  <msIdentifier xmlns="http://www.tei-c.org/ns/1.0">
+                  <msIdentifier>
                      <altIdentifier type="other">
                         <idno>a</idno>
                      </altIdentifier>
@@ -111,15 +119,15 @@
                      </objectDesc>
                   </physDesc>
                   <history>
-                     <origin calendar="#Hijri-qamari" when="1819-04-07" when-custom="Wednesday, 11 Jum. II 1234">
-                        <origDate calendar="#Hijri-qamari" when="1819-04-07">Wednesday, 11 Jum. II 1234</origDate>
-                        <origDate calendar="#Gregorian" when="1819-04-07">7 April 1819</origDate>
+                     <origin calendar="Hijri-qamari" when="1819-04-07" when-custom="Wednesday, 11 Jum. II 1234">
+                        <origDate calendar="Hijri-qamari" when="1819-04-07">Wednesday, 11 Jum. II 1234</origDate>
+                        <origDate calendar="Gregorian" when="1819-04-07">7 April 1819</origDate>
  Arcot, Tamil Nadu <origPlace>India</origPlace>
                      </origin>
                   </history>
                </msPart>
                <msPart xml:id="Uk_IO_Islamic_3953-part2">
-                  <msIdentifier xmlns="http://www.tei-c.org/ns/1.0">
+                  <msIdentifier>
                      <altIdentifier type="other">
                         <idno>b</idno>
                      </altIdentifier>
@@ -148,8 +156,8 @@
                      </objectDesc>
                   </physDesc>
                   <history>
-                     <origin calendar="#Hijri-qamari" notBefore="1819" notAfter="1820">
-                        <origDate calendar="#Gregorian" notBefore="1819" notAfter="1820">1819 - 1820</origDate>
+                     <origin calendar="Hijri-qamari" notBefore="1819" notAfter="1820">
+                        <origDate calendar="Gregorian" notBefore="1819" notAfter="1820">1819 - 1820</origDate>
                         <origPlace>India</origPlace>
                      </origin>
                   </history>

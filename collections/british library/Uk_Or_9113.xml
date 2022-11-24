@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6448">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 9113</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342948</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237685.0x0000f5</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="#multipleWorks">
                   <summary change="#add-summary2">
@@ -59,8 +67,7 @@
                         <bibl>For a more detailed description see Glyn Meredith-Owens: Handlist of Persian Manuscripts, 1895-1966. [London]: Trustees of the British Museum, 1968, p.95.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_9113-item2" n="2" class="http://lccn.loc.gov/sh85100084">
                      <locus from="71r" to="95v">71r-95v ff</locus>
@@ -69,8 +76,7 @@
                         <bibl>For a more detailed description see Glyn Meredith-Owens: Handlist of Persian Manuscripts, 1895-1966. [London]: Trustees of the British Museum, 1968, p.95.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_9113-item3" n="3" class="http://lccn.loc.gov/sh85022323">
                      <locus from="93v" to="93v">93v ff</locus>
@@ -78,29 +84,27 @@
                      <listBibl>
                         <bibl>For a more detailed description see Glyn Meredith-Owens: Handlist of Persian Manuscripts, 1895-1966. [London]: Trustees of the British Museum, 1968, p.95.</bibl>
                      </listBibl>
-                     <textLang mainLang="chg">Chagatay</textLang>
-                     <note>
-                  </note>
+                     <textLang mainLang="chg-Zzzz">Chagatay</textLang>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_9113-item4" n="4" class="http://lccn.loc.gov/sh85100084 http://lccn.loc.gov/sh85129656">
                      <locus from="96v" to="107v">96v-107v ff</locus>
-                     <author key="person_90042997" ref="http://viaf.org/viaf/90042997">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Jāmī</persName>
-                        <persName xml:lang="fa">جامی</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_90042997">Jāmī</persName>
+                        <persName xml:lang="fa" key="viaf_90042997">جامی</persName>
                      </author>
                      <title xml:lang="en" type="desc" key="work_9269">Verses from Jāmī’s Third Dīvān</title>
                      <listBibl>
                         <bibl>For a more detailed description see Glyn Meredith-Owens: Handlist of Persian Manuscripts, 1895-1966. [London]: Trustees of the British Museum, 1968, p.95.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_9113-item5" n="5" class="http://lccn.loc.gov/sh85100084 http://lccn.loc.gov/sh85129656">
                      <locus from="96v" to="107v">96v-107v ff</locus>
-                     <author ref="http://viaf.org/viaf/19703891" key="person_19703891">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Anṣārī al-Harawī, ʻAbd Allāh ibn Muḥammad, 1006-1089</persName>
-                        <persName xml:lang="fa">الهروي انصاری، عبد الله بن محمد</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_19703891">Anṣārī al-Harawī, ʻAbd Allāh ibn Muḥammad, 1006-1089</persName>
+                        <persName xml:lang="fa" key="viaf_19703891">الهروي انصاری، عبد الله بن محمد</persName>
                      </author>
                      <title xml:lang="en" type="desc" key="work_20399" change="#ids-cleanup">A selection from the <title xml:lang="fa-Latn-x-lc">Munājāt <foreign xml:lang="fa">مناجات</foreign>
                         </title>
@@ -109,18 +113,17 @@
                         <bibl>For a more detailed description see Glyn Meredith-Owens: Handlist of Persian Manuscripts, 1895-1966. [London]: Trustees of the British Museum, 1968, p.95.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_9113-item6" n="6" class="http://lccn.loc.gov/sh85129656 http://lccn.loc.gov/sh85054793">
                      <locus from="108r" to="112r">108r-112r ff</locus>
-                     <author ref="http://viaf.org/viaf/98930150" key="person_98930150">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Jalāl al-Dīn Rūmī</persName>
-                        <persName xml:lang="fa">جلال الدین رومی</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_98930150">Jalāl al-Dīn Rūmī</persName>
+                        <persName xml:lang="fa" key="viaf_98930150">جلال الدین رومی</persName>
                      </author>
-                     <author ref="http://viaf.org/viaf/50413291" key="person_50413291">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">ʻUrfī Shīrāzī, Muḥammad, 1555 or 1556-1590 or 1591</persName>
-                        <persName xml:lang="fa">عرفی شیرازی, محمد</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_50413291">ʻUrfī Shīrāzī, Muḥammad, 1555 or 1556-1590 or 1591</persName>
+                        <persName xml:lang="fa" key="viaf_50413291">عرفی شیرازی, محمد</persName>
                      </author>
                      <title xml:lang="en" type="desc" key="work_9271">Selected ghazals and mukhammasāt</title>
                      <note>Includes the verses of others as well</note>
@@ -128,8 +131,7 @@
                         <bibl>For a more detailed description see Glyn Meredith-Owens: Handlist of Persian Manuscripts, 1895-1966. [London]: Trustees of the British Museum, 1968, p.95.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_9113-item7" n="7" class="http://lccn.loc.gov/sh85100084 http://lccn.loc.gov/sh2002005579">
                      <locus from="113v" to="144r">113v-144r ff</locus>
@@ -143,8 +145,7 @@
                         <bibl>For a more detailed description see Glyn Meredith-Owens: Handlist of Persian Manuscripts, 1895-1966. [London]: Trustees of the British Museum, 1968, p.95.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_9113-item8" n="8" class="http://lccn.loc.gov/sh85100084 http://lccn.loc.gov/sh2002005579">
                      <locus from="145v" to="156r">145v-156r ff</locus>
@@ -158,8 +159,7 @@
                         <bibl>For a more detailed description see Glyn Meredith-Owens: Handlist of Persian Manuscripts, 1895-1966. [London]: Trustees of the British Museum, 1968, p.95.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_9113-item9" n="9" class="http://lccn.loc.gov/sh85129660">
                      <locus from="156v" to="158r">156v-158r ff</locus>
@@ -174,8 +174,7 @@
                         <bibl>For a more detailed description see Glyn Meredith-Owens: Handlist of Persian Manuscripts, 1895-1966. [London]: Trustees of the British Museum, 1968, p.95.</bibl>
                      </listBibl>
                      <textLang mainLang="fa" otherLangs="ur ar">Persian, Urdu, and Arabic</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_9113-item10" n="10" class="http://lccn.loc.gov/sh85129660">
                      <locus from="160r" to="173r">160r-173r ff</locus>
@@ -185,8 +184,7 @@
                         <bibl>For a more detailed description see Glyn Meredith-Owens: Handlist of Persian Manuscripts, 1895-1966. [London]: Trustees of the British Museum, 1968, p.95.</bibl>
                      </listBibl>
                      <textLang mainLang="fa" otherLangs="ar">Persian and Arabic</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -202,7 +200,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1825" notAfter="1826">1241</origDate>
+                     <origDate calendar="Hijri-qamari" notBefore="1825" notAfter="1826">1241</origDate>
                   </origin>
                </history>
                <additional>

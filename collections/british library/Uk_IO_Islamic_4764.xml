@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3484">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,31 +42,36 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>IO Islamic 4764</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342223</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237514.0x000002</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh2008108146 http://lccn.loc.gov/sh2010113603">
                   <summary change="#add-summary">
                      1 copy of Akhbār al-akhyār fī asrār al-abrār by ʻAbd al-Ḥaqq ibn Sayf al-Dīn Dihlavī, 1551-1642
                   </summary>
                   <msItem xml:id="Uk_IO_Islamic_4764-item1">
-                     <author ref="http://viaf.org/viaf/45690112" key="person_45690112">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">ʻAbd al-Ḥaqq ibn Sayf al-Dīn Dihlavī, 1551-1642</persName>
-                        <persName xml:lang="fa">عبد الحق بن سيف الدين دهلوى</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_45690112">ʻAbd al-Ḥaqq ibn Sayf al-Dīn Dihlavī, 1551-1642</persName>
+                        <persName xml:lang="fa" key="viaf_45690112">عبد الحق بن سيف الدين دهلوى</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8204" change="#ids-cleanup">Akhbār al-akhyār fī asrār al-abrār</title>
                      <title xml:lang="fa" key="work_8204" change="#ids-cleanup">اخبار الاخيار فى اسرار الابرار</title>
-                     <incipit xml:lang="ar" />
-                     <explicit xml:lang="ar" defective="true" />
-                     <note>Lives of 255 Indian saints, preceded by an account of <persName ref="http://viaf.org/viaf/71359982" xml:lang="fa-Latn-x-lc" type="alt" key="person_71359982" role="oth" change="#role-assignment">ʻAbd al-Qādir Jīlānī, <foreign xml:lang="fa">عبد الفادر جيلاني</foreign>
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>Lives of 255 Indian saints, preceded by an account of <persName ref="http://viaf.org/viaf/71359982" xml:lang="fa-Latn-x-lc" type="alt" key="viaf_71359982" role="oth" change="#role-assignment">ʻAbd al-Qādir Jīlānī, <foreign xml:lang="fa">عبد الفادر جيلاني</foreign>
                         </persName>, and followed by a section on the author’s own life and ancestors
                      </note>
-                     <note>Completed in <date calendar="#Hijri-qamari" when="1590">999</date>
+                     <note>Completed in <date calendar="Hijri-qamari" when="1590">999</date>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Sims-Williams 1986, page 19.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -78,16 +85,16 @@
                      </supportDesc>
                   </objectDesc>
                   <decoDesc>
-                     <decoNote type="illustration" />
+                     <decoNote type="illustration"/>
                   </decoDesc>
                   <sealDesc>
-                     <p>Seal dated <date calendar="#Hijri-qamari" when="1796">1183</date>
+                     <p>Seal dated <date calendar="Hijri-qamari" when="1796">1183</date>
                      </p>
                   </sealDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1700" notAfter="1799">18th century?</origDate>
+                     <origDate calendar="Gregorian" notBefore="1700" notAfter="1799">18th century?</origDate>
                   </origin>
                </history>
                <additional>

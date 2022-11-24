@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_17770">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,19 +42,25 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>Delhi Persian 62B</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004341372</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163233736.0x00000e</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>Commentary on Kulayni’s Kafi</head>
                <msContents>
                   <summary>1 copy of Ṣāfī by Qazwīnī, Khalīl ibn al-Ghāzī, 1592 or 1593-1678 or 1679</summary>
                   <msItem class="http://lccn.loc.gov/sh2007003439 https://lccn.loc.gov/sh2008121357 https://lccn.loc.gov/sh2009127650 https://lccn.loc.gov/sh2009127646" n="1" xml:id="Uk_Delhi_Persian_62B-item1">
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" key="person_1632455">Qazwīnī, Khalīl ibn al-Ghāzī, 1592 or 1593-1678 or 1679</persName>
-                        <persName xml:lang="per" key="person_1632455">خلیل ابن الغازی القزوینی</persName>
+                        <persName xml:lang="per-Latn-x-lc" key="viaf_1632455">Qazwīnī, Khalīl ibn al-Ghāzī, 1592 or 1593-1678 or 1679</persName>
+                        <persName xml:lang="per" key="viaf_1632455">خلیل ابن الغازی القزوینی</persName>
                      </author>
                      <title xml:lang="per-Latn-x-lc" key="work_7289">Ṣāfī</title>
                      <title xml:lang="per" key="work_7289">صافی</title>
                      <note>
-                        <p>Translation and commentary on the <title>Usūl al-Kāfī</title> of the great scholar of Shīʿī fiqh, <persName key="person_60393215" role="ant">ʿAllāmah Kulaynī</persName> or <persName xml:lang="per-Latn-x-lc" key="person_60393215" ref="https://lccn.loc.gov/n80158377" role="ant">Abū Jaʿfar Muḥammad ibn Yaʿqūb ibn Isḥāq al-Rāzī al-Kulaynī</persName>, entitled <title>Ṣāfī</title> (written <title>Shāfī</title>), by <persName key="person_1632455" role="aut trl">Khalīl ibn al-Ghāzī al-Qazvīnī</persName> (1001-1089/1593-1678), written in Shaʿbān 1064/June 1654 at the order of <persName key="person_268954445" role="pat">Shāh ʿAbbās II Ṣafavī</persName>
+                        <p>Translation and commentary on the <title>Usūl al-Kāfī</title> of the great scholar of Shīʿī fiqh, <persName key="viaf_60393215" role="ant">ʿAllāmah Kulaynī</persName> or <persName xml:lang="per-Latn-x-lc" key="viaf_60393215" ref="https://lccn.loc.gov/n80158377" role="ant">Abū Jaʿfar Muḥammad ibn Yaʿqūb ibn Isḥāq al-Rāzī al-Kulaynī</persName>, entitled <title>Ṣāfī</title> (written <title>Shāfī</title>), by <persName key="viaf_1632455" role="aut trl">Khalīl ibn al-Ghāzī al-Qazvīnī</persName> (1001-1089/1593-1678), written in Shaʿbān 1064/June 1654 at the order of <persName key="viaf_268954445" role="pat">Shāh ʿAbbās II Ṣafavī</persName>
                         </p>
                         <p>Replacement folios (ff. 1-160, 367-573); earliest portion in naskh (ff. 161-366) datable to late 17th cent. </p>
                         <p>Not dated 
@@ -60,8 +68,7 @@
                         <p>Unbound; loose folios; boards of binding delaminating </p>
                      </note>
                      <textLang mainLang="per" otherLangs="ara">Persian &amp; Arabic</textLang>
-                     <note>
-						</note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -71,18 +78,17 @@
                               <height>270</height>
                               <width>175</width>
                            </dimensions>
-                           <dimensions type="written" unit="mm">
-									</dimensions>
+                           <dimensions type="written" unit="mm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote script="Arabic" scope="major" />
+                     <handNote script="Arabic" scope="major"/>
                   </handDesc>
                </physDesc>
                <history>
-                  <origin calendar="#Hijri-qamari" notBefore="1660" notAfter="1840">
-                     <origDate calendar="#Gregorian" notBefore="1660" notAfter="1840">17th-19th centuries</origDate>
+                  <origin calendar="Hijri-qamari" notBefore="1660" notAfter="1840">
+                     <origDate calendar="Gregorian" notBefore="1660" notAfter="1840">17th-19th centuries</origDate>
                      <origPlace>India and Iran</origPlace>
                   </origin>
                </history>
@@ -107,8 +113,7 @@
          </classDecl>
       </encodingDesc>
       <profileDesc>
-         <textClass>
-			</textClass>
+         <textClass/>
       </profileDesc>
       <revisionDesc>
          <change when="2022-04-21">

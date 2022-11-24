@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_18454">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -43,18 +45,22 @@
                   <altIdentifier type="other">
                      <idno/>
                   </altIdentifier>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343525</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239456.0x0000db</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>Description of Iran, translated from articles in The Times</head>
                <msContents>
                   <summary>1 copy of Suʾālāt-i Īrān</summary>
-                  <msItem
-                     class="http://lccn.loc.gov/sh2010116682 http://lccn.loc.gov/sh85067888 http://lccn.loc.gov/sh2002001761"
-                     n="1" xml:id="Uk_Or_16558-item1">
+                  <msItem class="http://lccn.loc.gov/sh2010116682 http://lccn.loc.gov/sh85067888 http://lccn.loc.gov/sh2002001761" n="1" xml:id="Uk_Or_16558-item1">
                      <note>
                         <p>A Persian translation of a British visitor’s informative account of his
                            travels and enquiries in Iran, in ten sections (faṣl). While the author’s
-                           name is not mentioned, the translator is named as <persName
-                              key="person_f7313" role="trl">Mīrzā Muḥammad Shākir</persName>. </p>
+                           name is not mentioned, the translator is named as <persName key="person_f7313" role="trl">Mīrzā Muḥammad Shākir</persName>. 
+                        </p>
                         <p>The author left London in September 1889 and travelled to Paris,
                            Istanbul, Tbilisi, the Caspian, Ashgabat, Qūchān, Mashhad, and Tehran.
                            Apart from the travel chapters, there are others devoted to Mashhad; to
@@ -98,7 +104,8 @@
                            mīshavand </p>
                         <p>Colophons, f. 326v and 327r. Translation completed on 1 Rajab 1311/9
                            January 1894. Copied by <persName key="person_f7005" role="scr">‘Alī
-                              Akbar ibn ‘Ālījāh Mīrzā ‘Abd Allā</persName>h. </p>
+                              Akbar ibn ‘Ālījāh Mīrzā ‘Abd Allā</persName>h. 
+                        </p>
                         <p>Good nasta‘līq. 14 lines. Text frames: black and gold. Fine illuminated
                            heading for second text, in gold, blue, green, and black, 47v.
                            Illuminated headings for each chapter of first text, in black and red,
@@ -106,8 +113,8 @@
                            sized. Substantial repairs to f. 167-170. Original pagination: 638 pp.,
                            633-638 being blank except for the ruled text frames. 330 folios. 22 x 14
                            cm. Black leather binding, with gilt ornamentation, all in European
-                           style. Notes and seal impression of <persName key="person_f7172"
-                              role="asn">Ḥusayn Qulī Ṣadr al-Salṭana</persName>, 1337/1918-19. </p>
+                           style. Notes and seal impression of <persName key="person_f7172" role="asn">Ḥusayn Qulī Ṣadr al-Salṭana</persName>, 1337/1918-19. 
+                        </p>
                         <p>Purchased from Bonhams (10 April 2008, lot 47). </p>
                      </note>
                      <textLang mainLang="per">Persian </textLang>
@@ -122,7 +129,7 @@
                               <height>220</height>
                               <width>140</width>
                            </dimensions>
-                           <dimensions type="written" unit="mm"> </dimensions>
+                           <dimensions type="written" unit="mm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
@@ -131,9 +138,9 @@
                   </handDesc>
                </physDesc>
                <history>
-                  <origin calendar="#Hijri-qamari" when="1894-01-09" when-custom="1 Rajab 1311">
-                     <origDate calendar="#Hijri-qamari" when="1894-01-09">1 Rajab 1311</origDate>
-                     <origDate calendar="#Gregorian" when="1894-01-09">9 January 1894</origDate>
+                  <origin calendar="Hijri-qamari" when="1894-01-09" when-custom="1 Rajab 1311">
+                     <origDate calendar="Hijri-qamari" when="1894-01-09">1 Rajab 1311</origDate>
+                     <origDate calendar="Gregorian" when="1894-01-09">9 January 1894</origDate>
                      <origPlace>Iran</origPlace>
                   </origin>
                </history>
@@ -145,14 +152,12 @@
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid
-                           reader's card for admissions procedures contact <ref
-                              target="http://www.bl.uk/reshelp/inrrooms/stp/register/stpregister.html/"
-                              >British Library, Registering for a Reader Pass</ref>. Contact
+                           reader's card for admissions procedures contact <ref target="http://www.bl.uk/reshelp/inrrooms/stp/register/stpregister.html/">British Library, Registering for a Reader Pass</ref>. Contact
                               <email>apac-enquiries@bl.uk</email> for further information on the
                            availability of this manuscript. For information on catalogues and
-                           ordering manuscripts see <ref
-                              target="https://www.bl.uk/help/find-persian-manuscripts">Finding and
-                              ordering Persian manuscripts in the British Library</ref>. </p>
+                           ordering manuscripts see <ref target="https://www.bl.uk/help/find-persian-manuscripts">Finding and
+                              ordering Persian manuscripts in the British Library</ref>. 
+                        </p>
                      </availability>
                   </adminInfo>
                </additional>
@@ -170,12 +175,13 @@
          </classDecl>
       </encodingDesc>
       <profileDesc>
-         <textClass> </textClass>
+         <textClass/>
       </profileDesc>
       <revisionDesc>
          <change when="2022-04-21">
             <persName>Julian Cook</persName> 850 BL Persian mss prepared for initial publication in
-            FIHRIST (plus 18 replacements) </change>
+            FIHRIST (plus 18 replacements) 
+         </change>
          <change when="2015-11-25">
             <persName key="person_f7748" role="cataloguer">Sāqib Bāburī</persName>
          </change>

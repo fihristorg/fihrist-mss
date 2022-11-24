@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3281">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>IO Islamic 4559</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342032</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163236087.0x00002f</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>A volume containing two separate works</head>
                <msContents class="#multipleWorks">
@@ -53,20 +61,19 @@
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8244">Farhang-i Briggsī</title>
                      <title xml:lang="fa" key="work_8244">فرهنگ برگزی</title>
-                     <incipit xml:lang="ar" />
-                     <explicit xml:lang="ar" defective="true" />
-                     <note>A glossary of obsolete words, occurring in the <title xml:lang="fa-Latn-x-lc">Gulshan-i Ibrāhīmī</title> (or <title xml:lang="fa-Latn-x-lc" type="alt">Tārikh-i Firishtah</title>) of <persName xml:lang="fa-Latn-x-lc" ref="http://viaf.org/viaf/95224795" key="person_95224795" type="alt" role="oth" change="#role-assignment #ids-cleanup">Muhammad Qāsim "Firishtah", <foreign xml:lang="fa">محمد قاسم فرشته</foreign>
-                        </persName>, who brought his narrative down to <date calendar="#Hijri-qamari" notBefore="1606" notAfter="1607">1015</date>
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>A glossary of obsolete words, occurring in the <title xml:lang="fa-Latn-x-lc">Gulshan-i Ibrāhīmī</title> (or <title xml:lang="fa-Latn-x-lc" type="alt">Tārikh-i Firishtah</title>) of <persName xml:lang="fa-Latn-x-lc" ref="http://viaf.org/viaf/95224795" key="viaf_95224795" type="alt" role="oth" change="#role-assignment #ids-cleanup">Muhammad Qāsim "Firishtah", <foreign xml:lang="fa">محمد قاسم فرشته</foreign>
+                        </persName>, who brought his narrative down to <date calendar="Hijri-qamari" notBefore="1606" notAfter="1607">1015</date>
                      </note>
-                     <note>This glossary was compiled for <persName ref="http://viaf.org/viaf/95315274" key="person_95315274" xml:lang="en" type="standard" role="pat" change="#role-assignment">John Briggs</persName>, the celebrated editor and translator of <title xml:lang="fa-Latn-x-lc">Ferishtah</title>, by <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f1858" role="oth" change="#role-assignment">Khairāt ʻAlī Khān “Mushtāq”, <foreign xml:lang="fa">خیرات علی خان مشتاق</foreign>
-                        </persName> in <date calendar="#Hijri-qamari" notBefore="1825" notAfter="1826">1241</date>
+                     <note>This glossary was compiled for <persName ref="http://viaf.org/viaf/95315274" key="viaf_95315274" xml:lang="en" type="standard" role="pat" change="#role-assignment">John Briggs</persName>, the celebrated editor and translator of <title xml:lang="fa-Latn-x-lc">Ferishtah</title>, by <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f1858" role="oth" change="#role-assignment">Khairāt ʻAlī Khān “Mushtāq”, <foreign xml:lang="fa">خیرات علی خان مشتاق</foreign>
+                        </persName> in <date calendar="Hijri-qamari" notBefore="1825" notAfter="1826">1241</date>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Arberry 1939, page 354.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_IO_Islamic_4559-item2" n="2" class="http://lccn.loc.gov/sh85064912">
                      <locus from="17" to="32">ff. 17-32</locus>
@@ -75,18 +82,17 @@
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_3073" change="#ids-cleanup">Tārikh-i Firishtah</title>
                      <title xml:lang="fa" key="work_3073" change="#ids-cleanup">تاریخ فرشته</title>
-                     <incipit xml:lang="ar" />
-                     <explicit xml:lang="ar" defective="true" />
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>In prose with some verse</note>
                      <note>A fragment of this work, corresponding with vol. i, pp. 339(8)-387(15) of the Bombay 1832 edition</note>
-                     <note>The margins are filled with notes of collation and interpretation, and it would appear from <persName ref="http://viaf.org/viaf/95315274" key="person_95315274" xml:lang="en" type="alt" role="pat" change="#role-assignment">Briggs</persName>'s remarks, quoted above, that these addenda are in <persName ref="http://viaf.org/viaf/95315274" key="person_95315274" xml:lang="en" type="alt" role="pat" change="#role-assignment">Briggs</persName>'s own hand
+                     <note>The margins are filled with notes of collation and interpretation, and it would appear from <persName ref="http://viaf.org/viaf/95315274" key="viaf_95315274" xml:lang="en" type="alt" role="pat" change="#role-assignment">Briggs</persName>'s remarks, quoted above, that these addenda are in <persName ref="http://viaf.org/viaf/95315274" key="viaf_95315274" xml:lang="en" type="alt" role="pat" change="#role-assignment">Briggs</persName>'s own hand
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Arberry 1939, pages 354-5.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -103,15 +109,15 @@
                      <handNote scope="major" script="nasta_liq">Clear Indian Nastaʻlīq</handNote>
                   </handDesc>
                   <decoDesc>
-                     <decoNote type="other" />
+                     <decoNote type="other"/>
                   </decoDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1800" notAfter="1850">Early 19th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1800" notAfter="1850">Early 19th century</origDate>
                   </origin>
                   <acquisition>
-                     <p>The manuscript was accessioned in <date calendar="#Gregorian" when="1936">1936</date>
+                     <p>The manuscript was accessioned in <date calendar="Gregorian" when="1936">1936</date>
                      </p>
                   </acquisition>
                </history>

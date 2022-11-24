@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5530">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -46,14 +48,14 @@
                      1 copy of Kullīyāt-i Ahlī-ʼi Shīrāzī by Ahlī Shīrāzī, Muḥammad ibn Yūsuf, 1454-1535 or 6
                   </summary>
                   <msItem xml:id="Uk_Or_13021-item1">
-                     <author key="person_36817419" ref="http://viaf.org/viaf/36817419/">
+                     <author key="viaf_36817419" ref="http://viaf.org/viaf/36817419/">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Ahlī Shīrāzī, Muḥammad ibn Yūsuf, 1454-1535 or 6</persName>
                         <persName xml:lang="ar-Latn-x-lc" type="alt">Muḥammad Ahlī of Shiraz</persName>
                         <persName xml:lang="fa">اهلی شیرازی، محمد بن يوسف</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_21262" change="#ids-cleanup">Kullīyāt-i Ahlī-ʼi Shīrāzī</title>
                      <title xml:lang="fa" key="work_21262" change="#ids-cleanup">كليات اهلی شیرازی</title>
-                     <note>Collected works of <persName xml:lang="fa-Latn-x-lc" key="person_36817419" ref="http://viaf.org/viaf/36817419/" type="alt" role="aut" change="#role-assignment">Muḥammad Ahlī of Shiraz</persName>
+                     <note>Collected works of <persName xml:lang="fa-Latn-x-lc" key="viaf_36817419" ref="http://viaf.org/viaf/36817419/" type="alt" role="aut" change="#role-assignment">Muḥammad Ahlī of Shiraz</persName>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Waley 1998, page 38.</bibl>
@@ -80,7 +82,7 @@
                <history>
                   <origin>
                      <origPlace>Iran</origPlace>
-                     <origDate calendar="#Hijri-qamari" notBefore="1500" notAfter="1599">late 10th century<!-- Please review date attributes, see https://git.io/fihrist-dates -->
+                     <origDate calendar="Hijri-qamari" notBefore="1500" notAfter="1599">late 10th century<!-- Please review date attributes, see https://git.io/fihrist-dates -->
                      </origDate>
                   </origin>
                </history>

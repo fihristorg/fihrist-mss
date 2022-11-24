@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6239">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,30 +42,35 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 7535</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342810</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237685.0x00006c</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh2010115027">
                   <summary change="#add-summary">
                      1 copy of Maktūbāt by Manīrī, Sharaf al-Dīn Aḥmad ibn Yaḥyá, d. 1380?
                   </summary>
                   <msItem xml:id="Uk_Or_7535-item1">
-                     <author ref="http://viaf.org/viaf/74159218" key="person_74159218">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Manīrī, Sharaf al-Dīn Aḥmad ibn Yaḥyá, d. 1380?</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Aḥmad ibn Yaḥyā Munyārī</persName>
-                        <persName xml:lang="fa" type="alt">احمد بن يحيى منيرى</persName>
-                        <persName xml:lang="fa">منيرى، شرف الدين احمد بن يحيى</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_74159218">Manīrī, Sharaf al-Dīn Aḥmad ibn Yaḥyá, d. 1380?</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_74159218">Aḥmad ibn Yaḥyā Munyārī</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_74159218">احمد بن يحيى منيرى</persName>
+                        <persName xml:lang="fa" key="viaf_74159218">منيرى، شرف الدين احمد بن يحيى</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20193" change="#ids-cleanup">Maktūbāt</title>
                      <title xml:lang="fa" key="work_20193" change="#ids-cleanup">مکتوبات</title>
-                     <note>A collection of 151 letters on mystical doctrine compiled by <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f4441" role="com" change="#role-assignment">Zain-i Badr-i ‘Arabī</persName> in <date calendar="#Hijri-qamari" notBefore="1367" notAfter="1368">769</date>
+                     <note>A collection of 151 letters on mystical doctrine compiled by <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f4441" role="com" change="#role-assignment">Zain-i Badr-i ‘Arabī</persName> in <date calendar="Hijri-qamari" notBefore="1367" notAfter="1368">769</date>
                      </note>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 4.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -79,7 +86,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1700" notAfter="1799">18th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1700" notAfter="1799">18th century</origDate>
                   </origin>
                </history>
                <additional>

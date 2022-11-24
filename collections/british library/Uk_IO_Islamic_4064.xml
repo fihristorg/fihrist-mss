@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_18104">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -44,14 +46,20 @@
                      <idno>471</idno>
                      <note>William Irvine</note>
                   </altIdentifier>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004341877</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163235680.0x000028</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>Kulliyyat-i Sa'di</head>
                <msContents>
                   <summary>1 copy of Kullīyāt-i Saʿdī by Shaykh Saʿdī Shīrāzī</summary>
                   <msItem class="http://lccn.loc.gov/sh85129656 http://lccn.loc.gov/sh85100085 http://lccn.loc.gov/sh85103852 http://lccn.loc.gov/sh85064361" n="1" xml:id="Uk_IO_Islamic_4064-item1">
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" type="alternative" key="person_73859635">Shaykh Saʿdī Shīrāzī</persName>
-                        <persName xml:lang="per" key="person_73859635" type="alternative">شيخ سعدى شيرازى</persName>
+                        <persName xml:lang="per-Latn-x-lc" type="alternative" key="viaf_73859635">Shaykh Saʿdī Shīrāzī</persName>
+                        <persName xml:lang="per" key="viaf_73859635" type="alternative">شيخ سعدى شيرازى</persName>
                      </author>
                      <title xml:lang="per-Latn-x-lc" key="work_20031">Kullīyāt-i Saʿdī</title>
                      <title xml:lang="per" key="work_20031">كلّيّات سعدى</title>
@@ -62,8 +70,7 @@
                         <p>Not dated</p>
                      </note>
                      <textLang mainLang="per" xml:lang="per">Persian</textLang>
-                     <note>
-						</note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -79,33 +86,33 @@
                   <handDesc>
                      <summary>Calligraphic <term xml:lang="per-Latn-x-lc">nastaʿlīq-i khafī</term>
                      </summary>
-                     <handNote script="Arabic" scope="major" />
+                     <handNote script="Arabic" scope="major"/>
                   </handDesc>
                   <decoDesc>
                      <summary>Illuminated sarlawḥ or headpiece, interlinear taḥrīr or cloud-shaped gilding filled with rudimentary polychrome scrolling ornament; illuminated margins in gold tashʿīrsāzī or line drawing, depicting birds, beasts, and plants; illuminated rectangular and triangular ʿunvān and decorative panels between cartouches; coloured ink jadāval</summary>
-                     <decoNote />
+                     <decoNote/>
                   </decoDesc>
                   <additions>
                      <p>Main text in ruled panels, with diagonal text of alternating orientation in margins</p>
                   </additions>
                   <bindingDesc>
-                     <p />
+                     <p/>
                   </bindingDesc>
                   <sealDesc>
                      <summary>Seals erased (ff. 246v, 247v)</summary>
                      <seal>
-                        <decoNote />
+                        <decoNote/>
                      </seal>
                   </sealDesc>
                </physDesc>
                <history>
-                  <origin calendar="#Hijri-qamari" notBefore="1570" notAfter="1630">
-                     <origDate calendar="#Gregorian" notBefore="1570" notAfter="1630">1570 - 1630</origDate>
+                  <origin calendar="Hijri-qamari" notBefore="1570" notAfter="1630">
+                     <origDate calendar="Gregorian" notBefore="1570" notAfter="1630">1570 - 1630</origDate>
  Shiraz, Fars Province <origPlace>Iran</origPlace>
                   </origin>
                   <provenance>
                      <p>
-                        <persName xml:lang="per-Latn-x-lc" key="person_8170991" role="fmo">William Irvine</persName>
+                        <persName xml:lang="per-Latn-x-lc" key="viaf_8170991" role="fmo">William Irvine</persName>
                      </p>
                      <p>Muḥammad ʿAbd al-ʿAzīz of Bhitrī</p>
                   </provenance>
@@ -144,8 +151,7 @@
          </classDecl>
       </encodingDesc>
       <profileDesc>
-         <textClass>
-			</textClass>
+         <textClass/>
       </profileDesc>
       <revisionDesc>
          <change when="2022-04-21">

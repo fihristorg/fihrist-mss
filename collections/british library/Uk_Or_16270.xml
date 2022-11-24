@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_18421">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -41,7 +43,13 @@
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 16270</idno>
                   <altIdentifier type="other">
-                     <idno />
+                     <idno/>
+                  </altIdentifier>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343510</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239456.0x0000cc</idno>
                   </altIdentifier>
                </msIdentifier>
                <head>Ten miscellaneous texts</head>
@@ -52,15 +60,15 @@
                      <title xml:lang="en" key="work_22121">Commentary on a metaphysical treatise</title>
                      <note>
                         <p>Commentary on a metaphysical treatise, both in Arabic.
-This is probably <title>Shawāriq al-ilhām</title>, a commentary on <persName xml:lang="per-Latn-x-lc" key="person_12392936" ref="http://id.loc.gov/authorities/names/n82136884" role="ant">Naṣīr al-Dīn Ṭūsī</persName>’s <title>Tajrīd al-i‘tiqād</title>. By <persName xml:lang="per-Latn-x-lc" key="person_16145304708378611094" ref="http://id.loc.gov/authorities/names/n86830767" role="aut">‘Abd al-Razzāq ‘Alī al-Lāhījī</persName> (d. 1072/1661), a student of Mullā Ṣadrā. See EI2 V, pp. 604-5. 
+This is probably <title>Shawāriq al-ilhām</title>, a commentary on <persName xml:lang="per-Latn-x-lc" key="ark:/81055/vdc_100164656347.0x000001 viaf_12392936" ref="http://id.loc.gov/authorities/names/n82136884" role="ant">Naṣīr al-Dīn Ṭūsī</persName>’s <title>Tajrīd al-i‘tiqād</title>. By <persName xml:lang="per-Latn-x-lc" key="ark:/81055/vdc_100164656389.0x000001 viaf_16145304708378611094" ref="http://id.loc.gov/authorities/names/n86830767" role="aut">‘Abd al-Razzāq ‘Alī al-Lāhījī</persName> (d. 1072/1661), a student of Mullā Ṣadrā. See EI2 V, pp. 604-5. 
                         </p>
                         <p>Undated.
 </p>
                      </note>
                      <textLang mainLang="ara">Arabic</textLang>
-                     <filiation />
+                     <filiation/>
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" key="person_16145304708378611094">‘Abd al-Razzāq ‘Alī al-Lāhījī</persName>
+                        <persName xml:lang="per-Latn-x-lc" key="ark:/81055/vdc_100164656389.0x000001 viaf_16145304708378611094">‘Abd al-Razzāq ‘Alī al-Lāhījī</persName>
                      </author>
                   </msItem>
                   <msItem class="http://lccn.loc.gov/sh85100085" n="2" xml:id="Uk_Or_16270-item2">
@@ -68,7 +76,7 @@ This is probably <title>Shawāriq al-ilhām</title>, a commentary on <persName x
                      <title xml:lang="per-Latn-x-lc" key="work_22122">Radd al-‘ayb ‘an Lisān al-Ghayb</title>
                      <title xml:lang="per" key="work_22122">رد العیب عن لسان الغیب</title>
                      <note>
-                        <p>A defence of the theological soundness of verses by the Sufi poet<persName xml:lang="per-Latn-x-lc" key="person_56731778" ref="http://lccn.loc.gov/n79086812" role="aut">Ḥāfiẓ</persName>. By Muḥammad ibn Muḥammad ibn Salīm al-Shīrāzī. Completed 1219/1804-5.
+                        <p>A defence of the theological soundness of verses by the Sufi poet<persName xml:lang="per-Latn-x-lc" key="viaf_56731778" ref="http://lccn.loc.gov/n79086812" role="aut">Ḥāfiẓ</persName>. By Muḥammad ibn Muḥammad ibn Salīm al-Shīrāzī. Completed 1219/1804-5.
                         </p>
                         <p>This work is extremely rare: only one other copy is recorded in reference sources. </p>
                         <p>Manuscript dated 1228/1813.
@@ -89,8 +97,7 @@ This is probably <title>Shawāriq al-ilhām</title>, a commentary on <persName x
 </p>
                      </note>
                      <textLang mainLang="per">Persian</textLang>
-                     <note>
-						</note>
+                     <note/>
                   </msItem>
                   <msItem class="http://lccn.loc.gov/sh85100849" n="4" xml:id="Uk_Or_16270-item4">
                      <locus from="138v" to="152v">ff. 138v-152v</locus>
@@ -100,8 +107,7 @@ This is probably <title>Shawāriq al-ilhām</title>, a commentary on <persName x
 </p>
                      </note>
                      <textLang mainLang="per">Persian</textLang>
-                     <note>
-						</note>
+                     <note/>
                   </msItem>
                   <msItem class="http://lccn.loc.gov/sh85072735" n="5" xml:id="Uk_Or_16270-item5">
                      <locus from="152v" to="154v">ff. 152v-154v</locus>
@@ -111,8 +117,7 @@ This is probably <title>Shawāriq al-ilhām</title>, a commentary on <persName x
 </p>
                      </note>
                      <textLang mainLang="per">Persian</textLang>
-                     <note>
-						</note>
+                     <note/>
                   </msItem>
                   <msItem class="http://lccn.loc.gov/sh85025414" n="6" xml:id="Uk_Or_16270-item6">
                      <locus from="155v" to="168v">ff. 155v-168v</locus>
@@ -123,15 +128,14 @@ the well-known treatise on astronomy and chronology, in 3 faṣls, by Naṣīr a
 </p>
                      </note>
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" type="supplied" key="person_12392936">Ṭūsī, Naṣīr al-Dīn Muḥammad ibn Muḥammad, 1201-1274</persName>
-                        <persName xml:lang="per" type="supplied" key="person_12392936">طوسي، نصير الدين محمد بن مجمد</persName>
+                        <persName xml:lang="per-Latn-x-lc" type="supplied" key="ark:/81055/vdc_100164656347.0x000001 viaf_12392936">Ṭūsī, Naṣīr al-Dīn Muḥammad ibn Muḥammad, 1201-1274</persName>
+                        <persName xml:lang="per" type="supplied" key="viaf_12392936">طوسي، نصير الدين محمد بن مجمد</persName>
                      </author>
                      <title xml:lang="per-Latn-x-lc" key="work_5032">Mukhtaṣar dar maʼrifat-i taqvīm</title>
                      <title xml:lang="per" key="work_5032">
 مختصر در معرفت تقویم</title>
                      <textLang mainLang="per">Persian. </textLang>
-                     <note>
-						</note>
+                     <note/>
                   </msItem>
                   <msItem class="http://lccn.loc.gov/sh85072983 http://lccn.loc.gov/sh85072984" n="7" xml:id="Uk_Or_16270-item7">
                      <locus from="169v" to="195v">ff. 169v-195v</locus>
@@ -143,8 +147,7 @@ the well-known treatise on astronomy and chronology, in 3 faṣls, by Naṣīr a
                      <title xml:lang="per-Latn-x-lc" key="work_22123">Kitāb-i tajvīd</title>
                      <title xml:lang="per" key="work_22123">کتاب التجوید</title>
                      <textLang mainLang="per">Persian</textLang>
-                     <note>
-						</note>
+                     <note/>
                   </msItem>
                   <msItem class="http://lccn.loc.gov/sh86000279" n="8" xml:id="Uk_Or_16270-item8">
                      <locus from="196r" to="201r">ff. 196r-201r</locus>
@@ -169,18 +172,17 @@ Tract on number tables and figures and their occult properties (khavāṣṣ).
                   <msItem class="http://lccn.loc.gov/sh93009493" n="10" xml:id="Uk_Or_16270-item10">
                      <locus from="214v" to="240r">ff.  214v-240r</locus>
                      <note>
-                        <p>Collection of texts: this mainly comprises, on f. 214v-234r, <title>Anvār-i ḥikmat</title>, on ethics and Sufism, by <persName xml:lang="per-Latn-x-lc" key="person_59391721" ref="http://lccn.loc.gov/nr92027650" role="aut">Yūsufī</persName> (FNKhF II/1, pp. 1545-6); also three poems concerned with medical matters and one concerning miserliness.
+                        <p>Collection of texts: this mainly comprises, on f. 214v-234r, <title>Anvār-i ḥikmat</title>, on ethics and Sufism, by <persName xml:lang="per-Latn-x-lc" key="viaf_59391721" ref="http://lccn.loc.gov/nr92027650" role="aut">Yūsufī</persName> (FNKhF II/1, pp. 1545-6); also three poems concerned with medical matters and one concerning miserliness.
                         </p>
                      </note>
                      <title xml:lang="per-Latn-x-lc" key="work_22126">Majmū‘ah dar ṭibb va ghayr-i ān</title>
                      <title xml:lang="per" key="work_22126">مجموعه در طب و غیر آن</title>
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" type="supplied" key="person_59391721">Harawī, Muḥammad ibn Yūsuf, active 16th century</persName>
-                        <persName xml:lang="per" type="supplied" key="person_59391721">هروي، محمد بن يوسف</persName>
+                        <persName xml:lang="per-Latn-x-lc" type="supplied" key="viaf_59391721">Harawī, Muḥammad ibn Yūsuf, active 16th century</persName>
+                        <persName xml:lang="per" type="supplied" key="viaf_59391721">هروي، محمد بن يوسف</persName>
                      </author>
                      <textLang mainLang="per">Persian</textLang>
-                     <note>
-						</note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -193,7 +195,7 @@ Tract on number tables and figures and their occult properties (khavāṣṣ).
                            </dimensions>
                         </extent>
                         <condition>
-                           <p />
+                           <p/>
                         </condition>
                      </supportDesc>
                   </objectDesc>
@@ -201,12 +203,12 @@ Tract on number tables and figures and their occult properties (khavāṣṣ).
                      <summary>Several hands; mainly in small <term xml:lang="per-Latn-x-lc">nastaʻlīq</term> of poor quality. 
                      </summary>
                      <handNote script="Arabic" scope="major">
-                        <p />
+                        <p/>
                      </handNote>
                   </handDesc>
                   <decoDesc>
                      <summary>Gold-sprinkled endpapers.</summary>
-                     <decoNote />
+                     <decoNote/>
                   </decoDesc>
                   <additions>
                      <p>Additions: ff. 104r, 138r, 155r, 169r.  </p>
@@ -217,7 +219,7 @@ Tract on number tables and figures and their occult properties (khavāṣṣ).
                </physDesc>
                <history>
                   <origin notBefore="1800" notAfter="1850">
-                     <origDate calendar="#Gregorian" notBefore="1800" notAfter="1850">1800 - 1850</origDate>
+                     <origDate calendar="Gregorian" notBefore="1800" notAfter="1850">1800 - 1850</origDate>
                      <origPlace>Iran</origPlace>.  Early 13th/19th century. 
                   </origin>
                   <acquisition>
@@ -249,8 +251,7 @@ Tract on number tables and figures and their occult properties (khavāṣṣ).
          </classDecl>
       </encodingDesc>
       <profileDesc>
-         <textClass>
-			</textClass>
+         <textClass/>
       </profileDesc>
       <revisionDesc>
          <change when="2022-04-21">
@@ -258,7 +259,7 @@ Tract on number tables and figures and their occult properties (khavāṣṣ).
               850 BL Persian mss prepared for initial publication in FIHRIST (plus 18 replacements)
          </change>
          <change when="2015-06-27">
-            <persName key="person_32019063" role="cataloguer">Ursula Sims-Williams</persName>
+            <persName key="viaf_32019063" role="cataloguer">Ursula Sims-Williams</persName>
          </change>
       </revisionDesc>
    </teiHeader>

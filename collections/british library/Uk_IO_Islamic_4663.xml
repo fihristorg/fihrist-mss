@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3330">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,30 +42,35 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>IO Islamic 4663</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342074</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237333.0x00001b</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
                   <summary change="#add-summary">
                      1 copy of Sharḥ-i Gulshan-i rāz by Dihdār Shīrāzī, Muḥammad ibn Maḥmūd, 1540 or 41-1607 or 8
                   </summary>
                   <msItem xml:id="Uk_IO_Islamic_4663-item1" class="#commentary">
-                     <author ref="http://viaf.org/viaf/11844492/" key="person_11844492">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Dihdār Shīrāzī, Muḥammad ibn Maḥmūd, 1540 or 41-1607 or 8</persName>
-                        <persName xml:lang="fa">‏دهدار شيرازى، محمد بن محمود</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="ark:/81055/vdc_100164656330.0x000001 viaf_11844492">Dihdār Shīrāzī, Muḥammad ibn Maḥmūd, 1540 or 41-1607 or 8</persName>
+                        <persName xml:lang="fa" key="ark:/81055/vdc_100164656330.0x000001 viaf_11844492">‏دهدار شيرازى، محمد بن محمود</persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc" key="work_20980" change="#ids-cleanup">Sharḥ-i Gulshan-i rāz</title>
                      <title xml:lang="ar" key="work_20980" change="#ids-cleanup">شرح گلشن راز</title>
-                     <incipit xml:lang="ar" />
-                     <explicit xml:lang="ar" defective="true" />
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note type="text-relations">A commentary on the <title xml:lang="fa-Latn-x-lc">Gulshan-i rāz (<foreign xml:lang="fa">گلشن راز</foreign>)
-                        </title> by <persName xml:lang="fa-Latn-x-lc" ref="http://viaf.org/viaf/107030610/" key="person_107030610" type="alt" role="ant" change="#role-assignment">Maḥmūd ibn ʻAbd al-Karīm Shabistarī, d. ca. 1320, <foreign xml:lang="fa">محمود بن عبدالكريم شبسترى</foreign>
+                        </title> by <persName xml:lang="fa-Latn-x-lc" ref="http://viaf.org/viaf/107030610/" key="viaf_107030610" type="alt" role="ant" change="#role-assignment">Maḥmūd ibn ʻAbd al-Karīm Shabistarī, d. ca. 1320, <foreign xml:lang="fa">محمود بن عبدالكريم شبسترى</foreign>
                         </persName>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Sims-Williams 1986, page 3.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -79,7 +86,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1825" notAfter="1875">Mid 19th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1825" notAfter="1875">Mid 19th century</origDate>
                   </origin>
                </history>
                <additional>

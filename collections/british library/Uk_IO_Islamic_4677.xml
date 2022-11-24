@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3340">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -46,7 +48,7 @@
                      1 copy of Tarjumah-ʼi Miftāḥ al-falāḥ by Khvānsārī, Jamāl al-Dīn, d. 1713?
                   </summary>
                   <msItem xml:id="Uk_IO_Islamic_4677-item1" class="http://lccn.loc.gov/sh2008104961 http://lccn.loc.gov/sh86008165 http://lccn.loc.gov/sh2010108002">
-                     <author ref="http://viaf.org/viaf/117158606/" key="person_117158606">
+                     <author ref="http://viaf.org/viaf/117158606/" key="viaf_117158606">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Khvānsārī, Jamāl al-Dīn, d. 1713?</persName>
                         <persName xml:lang="fa-Latn-x-lc" type="alt">Jamāl al-Dīn Muḥammad ibn Ḥusayn Khvānsārī, d. 1714</persName>
                         <persName xml:lang="fa" type="alt">جمال الدين محمد بن حسین خوانسارى</persName>
@@ -54,10 +56,10 @@
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_1294" change="#ids-cleanup">Tarjumah-ʼi Miftāḥ al-falāḥ</title>
                      <title xml:lang="ar" key="work_1294" change="#ids-cleanup">ترجمۀ مفتاح الفلاح</title>
-                     <incipit xml:lang="ar" />
-                     <explicit xml:lang="ar" defective="true" />
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note type="text-relations">A translation into Persian with notes and the original text of <title xml:lang="ar-Latn-x-lc">Miftāḥ al-falāḥ (<foreign xml:lang="ar">مفتاح الفلاح</foreign>)
-                        </title>, a collection of Arabic prayers by <persName xml:lang="fa-Latn-x-lc" type="standard" ref="http://viaf.org/viaf/27052262/" key="person_27052262" role="ant" change="#role-assignment">Bahāʼ al-Dīn Muḥammad ibn Ḥusayn al-ʻĀmilī, 1547-1621, <foreign xml:lang="ar">بهاء الدين محمد بن حسين العاملي</foreign>
+                        </title>, a collection of Arabic prayers by <persName xml:lang="fa-Latn-x-lc" type="standard" ref="http://viaf.org/viaf/27052262/" key="viaf_27052262" role="ant" change="#role-assignment">Bahāʼ al-Dīn Muḥammad ibn Ḥusayn al-ʻĀmilī, 1547-1621, <foreign xml:lang="ar">بهاء الدين محمد بن حسين العاملي</foreign>
                         </persName>
                      </note>
                      <note>Illuminated ʻunvān and opening</note>
@@ -82,7 +84,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1714">Not before 1714</origDate>
+                     <origDate calendar="Gregorian" notBefore="1714">Not before 1714</origDate>
                   </origin>
                </history>
                <additional>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_17781">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,14 +42,20 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>Delhi Persian 66*</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004341383</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163233737.0x000009</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>Ghazzali's Kimiya us-sa'adah</head>
                <msContents>
                   <summary>1 copy of Kīmiyā-yi saʿādat by Abū Ḥāmid Muḥammad ibn Muḥammad ibn Aḥmad al-Ghazzālī, 1058-1111</summary>
                   <msItem class="http://lccn.loc.gov/sh85089353 http://lccn.loc.gov/sh2006003807 " n="1" xml:id="Uk_Delhi_Persian_66x-item1">
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" key="person_31996761">Abū Ḥāmid Muḥammad ibn Muḥammad ibn Aḥmad al-Ghazzālī, 1058-1111</persName>
-                        <persName xml:lang="per" key="person_31996761">ابو حامد محمد غزالى طوسى</persName>
+                        <persName xml:lang="per-Latn-x-lc" key="ark:/81055/vdc_100000000565.0x000205 viaf_31996761">Abū Ḥāmid Muḥammad ibn Muḥammad ibn Aḥmad al-Ghazzālī, 1058-1111</persName>
+                        <persName xml:lang="per" key="ark:/81055/vdc_100000000565.0x000205 viaf_31996761">ابو حامد محمد غزالى طوسى</persName>
                      </author>
                      <title xml:lang="per-Latn-x-lc" key="work_20476">Kīmiyā-yi saʿādat</title>
                      <title xml:lang="per" key="work_20476">كيمياى سعادت</title>
@@ -56,7 +64,7 @@
 al-Ṭūsī</p>
                         <p>Defective at beginning
 </p>
-                        <p>Not dated, but reproduces the colophon of the original source, dated (f. 51v): Wednesday, 5 Rabīʿ al-Avval 1099/9 January 1688 or regnal year 32 of Emperor <persName key="person_6178410" role="oth">ʿĀlamgīr I</persName>
+                        <p>Not dated, but reproduces the colophon of the original source, dated (f. 51v): Wednesday, 5 Rabīʿ al-Avval 1099/9 January 1688 or regnal year 32 of Emperor <persName key="viaf_6178410" role="oth">ʿĀlamgīr I</persName>
                         </p>
                         <p>Annotations of later owner’s: 1) <persName key="person_f7277" role="fmo  ann">Mawlavī Muḥammad Aʿẓam Kashmīrī</persName> in dār al-khilāfah <placeName>Shāhjahānābād</placeName>; 2) <persName key="person_f7227" role="fmo ann">Khvājah ʿĪd/ʿAnbar</persName>
                         </p>
@@ -64,8 +72,7 @@ al-Ṭūsī</p>
 </p>
                      </note>
                      <textLang mainLang="per">Persian </textLang>
-                     <note>
-						</note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -75,18 +82,17 @@ al-Ṭūsī</p>
                               <height>255</height>
                               <width>165</width>
                            </dimensions>
-                           <dimensions type="written" unit="mm">
-									</dimensions>
+                           <dimensions type="written" unit="mm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote script="Arabic" scope="major" />
+                     <handNote script="Arabic" scope="major"/>
                   </handDesc>
                </physDesc>
                <history>
-                  <origin calendar="#Hijri-qamari" notBefore="1750" notAfter="1825">
-                     <origDate calendar="#Gregorian" notBefore="1750" notAfter="1825">18th-19th centuries</origDate>
+                  <origin calendar="Hijri-qamari" notBefore="1750" notAfter="1825">
+                     <origDate calendar="Gregorian" notBefore="1750" notAfter="1825">18th-19th centuries</origDate>
                      <origPlace>India</origPlace>
                   </origin>
                </history>
@@ -111,8 +117,7 @@ al-Ṭūsī</p>
          </classDecl>
       </encodingDesc>
       <profileDesc>
-         <textClass>
-			</textClass>
+         <textClass/>
       </profileDesc>
       <revisionDesc>
          <change when="2022-04-21">

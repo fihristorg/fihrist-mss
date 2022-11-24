@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5533">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -46,7 +48,7 @@
                      1 copy of Ṣad kalimah by ʻAlī ibn Abī Ṭālib, Caliph, ca. 600-661
                   </summary>
                   <msItem xml:id="Uk_Or_13046-item1">
-                     <author key="person_34436377" ref="http://viaf.org/viaf/34436377/" change="#ids-cleanup">
+                     <author key="viaf_34436377" ref="http://viaf.org/viaf/34436377/" change="#ids-cleanup">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">ʻAlī ibn Abī Ṭālib, Caliph, ca. 600-661</persName>
                         <note>Wrong attribution</note>
                      </author>
@@ -55,10 +57,10 @@
                      <note>Sayings attributed to the Caliph and Imam ʻAlī ibn Abī Ṭalib</note>
                      <note>Include verses <locus from="1v" to="2r">(ff. 1v-2r)</locus> from a mas̲navī in praise of ʻAlī ibn Abī Ṭalib
                      </note>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <note>
-                        <foreign xml:lang="fa" />
+                        <foreign xml:lang="fa"/>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Waley 1998, page 3.</bibl>
@@ -82,7 +84,7 @@
                <history>
                   <origin>
                      <origPlace>Iran (?)</origPlace>
-                     <origDate calendar="#Hijri-qamari" notBefore="1400" notAfter="1499">Probably 9th century<!-- Please review date attributes, see https://git.io/fihrist-dates -->
+                     <origDate calendar="Hijri-qamari" notBefore="1400" notAfter="1499">Probably 9th century<!-- Please review date attributes, see https://git.io/fihrist-dates -->
                      </origDate>
                   </origin>
                </history>

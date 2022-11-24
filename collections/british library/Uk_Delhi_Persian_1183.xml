@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3174">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>Delhi Persian 1183</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004341563</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163233796.0x00005b</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>Miscellaneous works on Sufism, 29 works (a-cc)</head>
                <msContents class="http://lccn.loc.gov/sh2008112367 http://lccn.loc.gov/sh2006003807">
@@ -70,14 +78,14 @@
                   <msItem n="2" xml:id="Uk_Delhi_Persian_1183-item2">
                      <locus from="8r" to="11r">ff. 8r-11r</locus>
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" type="supplied" key="person_90062645">Hamadhānī, ʿAlī ibn Muḥammad, 1314-1385</persName>
-                        <persName xml:lang="per" type="supplied" key="person_90062645">سيّد على همدانى</persName>
+                        <persName xml:lang="per-Latn-x-lc" type="supplied" key="ark:/81055/vdc_100164658919.0x000001 viaf_90062645">Hamadhānī, ʿAlī ibn Muḥammad, 1314-1385</persName>
+                        <persName xml:lang="per" type="supplied" key="ark:/81055/vdc_100164658919.0x000001 viaf_90062645">سيّد على همدانى</persName>
                      </author>
                      <title xml:lang="per-Latn-x-lc" key="work_21738">Dah qāʿidah</title>
                      <title xml:lang="per" key="work_21738">ده قائده</title>
                      <note>
                         <p>Item b. </p>
-                        <p>Treatise setting out ten virtues in the life of a Ṣūfī by the Kubrāvī Ṣūfī, poet and scholar, <persName key="person_90062645" role="aut">Sayyid ʿAlī ibn Shihāb al-Dīn al-Hamadānī</persName>, known as <persName key="person_90062645" role="aut">Amīr al-Kabīr</persName> (d. 786/1385). According to Levy, the work maybe a translation of a similar Arabic treatise, <title>al-Uṣūl al-ʿasharat al-Najmīyah</title>, by <persName key="person_103630065" role="ant">Najm al-Dīn Kubrá</persName>. 
+                        <p>Treatise setting out ten virtues in the life of a Ṣūfī by the Kubrāvī Ṣūfī, poet and scholar, <persName key="viaf_90062645" role="aut">Sayyid ʿAlī ibn Shihāb al-Dīn al-Hamadānī</persName>, known as <persName key="viaf_90062645" role="aut">Amīr al-Kabīr</persName> (d. 786/1385). According to Levy, the work maybe a translation of a similar Arabic treatise, <title>al-Uṣūl al-ʿasharat al-Najmīyah</title>, by <persName key="viaf_103630065" role="ant">Najm al-Dīn Kubrá</persName>. 
                         </p>
                         <p>Dated colophon (f. 11r): completed on Friday, 22 Jumādá al-S̲ānī 1095/6 June 1684. Space for the regnal year has been left blank. 
 </p>
@@ -102,8 +110,8 @@
                      </note>
                      <textLang mainLang="per" otherLangs="ara">Persian and Arabic</textLang>
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" key="person_90062645" type="supplied">Hamadhānī, ʿAlī ibn Muḥammad, 1314-1385</persName>
-                        <persName xml:lang="per" key="person_90062645" type="supplied">سيّد على همدانى</persName>
+                        <persName xml:lang="per-Latn-x-lc" key="viaf_90062645" type="supplied">Hamadhānī, ʿAlī ibn Muḥammad, 1314-1385</persName>
+                        <persName xml:lang="per" key="viaf_90062645" type="supplied">سيّد على همدانى</persName>
                      </author>
                      <title xml:lang="per-Latn-x-lc" key="work_21739">Risālah-'i darvīshīyah</title>
                      <title xml:lang="per" key="work_21739">رسالهٴ درويشيّه</title>
@@ -126,7 +134,7 @@
                      <textLang mainLang="per">Persian </textLang>
                      <note>
                         <p>Item e. </p>
-                        <p>Rare treatise on the tenets of the Naqshbandi school of Sufism by <persName key="person_84349020" role="aut">Sayyid Naṣīr al-Dīn ʿUbayd Allāh Aḥrār Ghijduvānī, known as Khvājah Aḥrār (d. 895/1490)</persName>, conventionally thought to be lost, and later translated into Chaghatay Turkic by the Timurid or Mughal ruler, <persName key="person_97090468" role="trl">Emperor Ẓahīr al-Dīn Muḥammad Bābur</persName> (d. 937/1530). 
+                        <p>Rare treatise on the tenets of the Naqshbandi school of Sufism by <persName key="viaf_84349020" role="aut">Sayyid Naṣīr al-Dīn ʿUbayd Allāh Aḥrār Ghijduvānī, known as Khvājah Aḥrār (d. 895/1490)</persName>, conventionally thought to be lost, and later translated into Chaghatay Turkic by the Timurid or Mughal ruler, <persName key="viaf_97090468" role="trl">Emperor Ẓahīr al-Dīn Muḥammad Bābur</persName> (d. 937/1530). 
                         </p>
                         <p>The work was written at the request of the author’s father, hence the title. 
 </p>
@@ -138,8 +146,8 @@ See IOL microfilm 1302.
                      <title xml:lang="per-Latn-x-lc" key="work_11389">Risālat vālidīyah</title>
                      <title xml:lang="per" key="work_11389">رسالة والديّه</title>
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" type="supplied" key="person_485149294387580522619">Aḥrār, ʿUbayd Allāh ibn Maḥmūd, 1403 or 1404-1489 or 1490</persName>
-                        <persName xml:lang="per" type="supplied" key="person_485149294387580522619">خواجه احرار</persName>
+                        <persName xml:lang="per-Latn-x-lc" type="supplied" key="viaf_485149294387580522619">Aḥrār, ʿUbayd Allāh ibn Maḥmūd, 1403 or 1404-1489 or 1490</persName>
+                        <persName xml:lang="per" type="supplied" key="viaf_485149294387580522619">خواجه احرار</persName>
                      </author>
                   </msItem>
                   <msItem n="6" xml:id="Uk_Delhi_Persian_1183-item6">
@@ -148,9 +156,9 @@ See IOL microfilm 1302.
                      <note>
                         <p>Item f. 
 </p>
-                        <p>Treatise collecting the teachings and thoughts of the saint and founder of the Naqshbandī Ṣūfī order, <persName key="person_6835087" role="ant">Bahāʾ al-Dīn Muḥammad Bukhārī the Naqshband</persName> (d. 791/1388), compiled by his disciple, the theologian and author of a tafsīr of the <title>Qurʾān</title>, Yaʿqūb ibn ʿUs̲mān ibn Maḥmūd Ghaznavī Charkhī (d. 838/1434-5). 
+                        <p>Treatise collecting the teachings and thoughts of the saint and founder of the Naqshbandī Ṣūfī order, <persName key="viaf_6835087" role="ant">Bahāʾ al-Dīn Muḥammad Bukhārī the Naqshband</persName> (d. 791/1388), compiled by his disciple, the theologian and author of a tafsīr of the <title>Qurʾān</title>, Yaʿqūb ibn ʿUs̲mān ibn Maḥmūd Ghaznavī Charkhī (d. 838/1434-5). 
                         </p>
-                        <p>Dated colophon (f. 40v): completed by <persName key="person_f7600" role="scr">Shaykh Rajab Allāh</persName> (?) in RY 27 [of <persName key="person_6178410" role="oth">Emperor ʿĀlamgīr I</persName>], 1[0]93/1682. 
+                        <p>Dated colophon (f. 40v): completed by <persName key="person_f7600" role="scr">Shaykh Rajab Allāh</persName> (?) in RY 27 [of <persName key="viaf_6178410" role="oth">Emperor ʿĀlamgīr I</persName>], 1[0]93/1682. 
                         </p>
                         <p>Neat nastaʿlīq-i khafī. 
 </p>
@@ -160,8 +168,8 @@ See IOL microfilm 1302.
                      <title xml:lang="per-Latn-x-lc" key="work_21749">Risālah-'i unsīyah</title>
                      <title xml:lang="per" key="work_21749">رسالهٴ انسيّه</title>
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" key="person_11716360" type="supplied">Yaʿqūb ibn ʿUs̲mān ibn Maḥmūd Ghaznavī Charkhī (d. 838/1434-5)</persName>
-                        <persName xml:lang="per" key="person_11716360" type="supplied">يعقوب چرخى</persName>
+                        <persName xml:lang="per-Latn-x-lc" key="ark:/81055/vdc_100164656324.0x000001 viaf_11716360" type="supplied">Yaʿqūb ibn ʿUs̲mān ibn Maḥmūd Ghaznavī Charkhī (d. 838/1434-5)</persName>
+                        <persName xml:lang="per" key="ark:/81055/vdc_100164656324.0x000001 viaf_11716360" type="supplied">يعقوب چرخى</persName>
                      </author>
                   </msItem>
                   <msItem n="7" xml:id="Uk_Delhi_Persian_1183-item7">
@@ -215,8 +223,8 @@ See IOL microfilm 1302.
                      <title xml:lang="per-Latn-x-lc" key="work_20152">Pand'nāmah </title>
                      <title xml:lang="per" key="work_20152">پند نامه</title>
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" key="person_120724759" type="supplied">Farīd al-Dīn ʿAṭṭār</persName>
-                        <persName xml:lang="per" key="person_120724759" type="supplied">شيخ فريدالدين محمد عطار نيشابورى‏</persName>
+                        <persName xml:lang="per-Latn-x-lc" key="ark:/81055/vdc_100000000818.0x000215 viaf_120724759" type="supplied">Farīd al-Dīn ʿAṭṭār</persName>
+                        <persName xml:lang="per" key="ark:/81055/vdc_100000000818.0x000215 viaf_120724759" type="supplied">شيخ فريدالدين محمد عطار نيشابورى‏</persName>
                      </author>
                   </msItem>
                   <msItem n="10" xml:id="Uk_Delhi_Persian_1183-item10">
@@ -225,7 +233,7 @@ See IOL microfilm 1302.
                      <note>
                         <p>Item j. 
 </p>
-                        <p>Didactic treatise comprised of questions and answers on moral subjects supposedly asked by the Persian minister <persName key="person_14650184" role="ant">Buzurjmihr</persName> of the Greek philosopher <persName key="person_7524651" role="ant">Aristotle</persName>, the latter defined here as the master. The work does not mention an author, compiler, or chain of transmission. 
+                        <p>Didactic treatise comprised of questions and answers on moral subjects supposedly asked by the Persian minister <persName key="viaf_14650184" role="ant">Buzurjmihr</persName> of the Greek philosopher <persName key="viaf_7524651" role="ant">Aristotle</persName>, the latter defined here as the master. The work does not mention an author, compiler, or chain of transmission. 
                         </p>
                         <p>Not dated at end. 
 </p>
@@ -252,7 +260,7 @@ See IOL microfilm 1302.
                         <p>See IOL microfilm 1303. 
 </p>
                      </note>
-                     <author />
+                     <author/>
                   </msItem>
                   <msItem n="12" xml:id="Uk_Delhi_Persian_1183-item12">
                      <locus from="54r" to="54v">ff. 54r-54v</locus>
@@ -269,7 +277,7 @@ See IOL microfilm 1302.
                         <p>See IOL microfilm 1303. 
 </p>
                      </note>
-                     <author />
+                     <author/>
                   </msItem>
                   <msItem n="13" xml:id="Uk_Delhi_Persian_1183-item13">
                      <locus from="54v" to="56r">ff. 54v-56r</locus>
@@ -345,7 +353,7 @@ See IOL microfilm 1302.
                      <note>
                         <p>Item p. 
 </p>
-                        <p>Untitled collection of eighteen Persian murāsalāt or letters ascribed to the great Qādirī Ṣūfī master, Shaykh ʿAbd al-Qādir Gīlānī (Jīlānī), <persName key="person_71359982" role="att">Muḥyī al-Dīn Abū Muḥammad ibn Abī Ṣāliḥ Zangīdūst</persName> (d. 561/1166). 
+                        <p>Untitled collection of eighteen Persian murāsalāt or letters ascribed to the great Qādirī Ṣūfī master, Shaykh ʿAbd al-Qādir Gīlānī (Jīlānī), <persName key="viaf_71359982" role="att">Muḥyī al-Dīn Abū Muḥammad ibn Abī Ṣāliḥ Zangīdūst</persName> (d. 561/1166). 
                         </p>
                         <p>The work is followed by several other works, including a collection of Ṣūfī anecdotes, the treatise <title>Risālah-'i murīdīyah</title>, followed by another collection of Ṣūfī comments. 
                         </p>
@@ -359,8 +367,8 @@ See IOL microfilm 1302.
 </p>
                      </note>
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" type="supplied" key="person_71359982">Shaykh ʿAbd al-Qādir Gīlānī</persName>
-                        <persName xml:lang="per" type="supplied" key="person_71359982">شيخ عبد القادر گيلانى</persName>
+                        <persName xml:lang="per-Latn-x-lc" type="supplied" key="viaf_71359982">Shaykh ʿAbd al-Qādir Gīlānī</persName>
+                        <persName xml:lang="per" type="supplied" key="viaf_71359982">شيخ عبد القادر گيلانى</persName>
                      </author>
                   </msItem>
                   <msItem n="17" xml:id="Uk_Delhi_Persian_1183-item17">
@@ -369,7 +377,7 @@ See IOL microfilm 1302.
                      <note>
                         <p>Item q. 
 </p>
-                        <p>Untitled commentary on the mystical rubāʿīyāt of <persName key="person_314814912" role="ant">Khvājah Muḥammad Bāqī Naqshbandī</persName> (d. 1012/1603-4) by an unnamed author. 
+                        <p>Untitled commentary on the mystical rubāʿīyāt of <persName key="viaf_314814912" role="ant">Khvājah Muḥammad Bāqī Naqshbandī</persName> (d. 1012/1603-4) by an unnamed author. 
                         </p>
                         <p>Not dated at end. 
 </p>
@@ -387,9 +395,9 @@ See IOL microfilm 1302.
                      <note>
                         <p>Item r. 
 </p>
-                        <p>Untitled commentary on the mystical rubāʿīyāt of by an unnamed author. It is possible this work continues the contents of the previous work (item q), according <persName key="person_79056967" role="cataloguer">Arberry</persName>. 
+                        <p>Untitled commentary on the mystical rubāʿīyāt of by an unnamed author. It is possible this work continues the contents of the previous work (item q), according <persName key="viaf_79056967" role="cataloguer">Arberry</persName>. 
                         </p>
-                        <p>Dated colophon (f. 107v): completed by <persName key="person_f7159" role="scr">Ḥaqq al-Yaqīn</persName> for <persName key="person_f7223" role="pat">Khvājah Bahāʾū al-Dīn (sic, read Bahāʾ al-Dīn)</persName>, an afternoon (date not specified), in RY 1 of <persName key="person_45680638" role="oth">Emperor Muḥammad Shāh</persName>, (1131-2)/1719-20. 
+                        <p>Dated colophon (f. 107v): completed by <persName key="person_f7159" role="scr">Ḥaqq al-Yaqīn</persName> for <persName key="person_f7223" role="pat">Khvājah Bahāʾū al-Dīn (sic, read Bahāʾ al-Dīn)</persName>, an afternoon (date not specified), in RY 1 of <persName key="viaf_45680638" role="oth">Emperor Muḥammad Shāh</persName>, (1131-2)/1719-20. 
                         </p>
                         <p>Large and distinct scribal nastaʿlīq, with naskh for Arabic. 
 </p>
@@ -433,8 +441,8 @@ See IOL microfilm 1302.
                      <title xml:lang="per-Latn-x-lc" key="work_21742">Sharḥ-i Āmantu bi-Allāh</title>
                      <title xml:lang="per" key="work_21742">شرح آمنت بالله </title>
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" type="alternative" key="person_305037808">Shaykh Burhān al-Dīn ibn Kabīr Muḥammad Burhānpūrī</persName>
-                        <persName xml:lang="per" type="alternative" key="person_305037808">شيخ برهان الدّين برهانپورى</persName>
+                        <persName xml:lang="per-Latn-x-lc" type="alternative" key="ark:/81055/vdc_100164657029.0x000001 viaf_305037808">Shaykh Burhān al-Dīn ibn Kabīr Muḥammad Burhānpūrī</persName>
+                        <persName xml:lang="per" type="alternative" key="ark:/81055/vdc_100164657029.0x000001 viaf_305037808">شيخ برهان الدّين برهانپورى</persName>
                      </author>
                   </msItem>
                   <msItem n="21" xml:id="Uk_Delhi_Persian_1183-item21">
@@ -465,7 +473,7 @@ See IOL microfilm 1302.
                      <note>
                         <p>Item v. 
 </p>
-                        <p>Treatise compiling esoteric Ṣūfī prayers, aphorisms, anecdotes, selected quotations from the <title>Qurʾān</title> and <title>Ḥadīs̲</title>, as well as poems by one ʿAbd al-Jalīl, who according to <persName key="person_79056967" role="cataloguer">Arberry</persName> may be the same as <persName key="person_19217849" role="att">ʿAbd al-Jalīl Bilgrāmī</persName> (d. 138/1726). 
+                        <p>Treatise compiling esoteric Ṣūfī prayers, aphorisms, anecdotes, selected quotations from the <title>Qurʾān</title> and <title>Ḥadīs̲</title>, as well as poems by one ʿAbd al-Jalīl, who according to <persName key="viaf_79056967" role="cataloguer">Arberry</persName> may be the same as <persName key="viaf_19217849" role="att">ʿAbd al-Jalīl Bilgrāmī</persName> (d. 138/1726). 
                         </p>
                         <p>Colophon not dated (f. 157r): completed by (stylised monogram) <persName key="person_f7082" role="scr">Bābā Kishan</persName> (?). 
                         </p>
@@ -537,7 +545,7 @@ See IOL microfilm 1302.
                      <note>
                         <p>Item y. 
 </p>
-                        <p>Untitled Persian translation of an unidentified commentary on the <title>Munājāt</title> or private utterances and prayers ascribed to <persName key="person_34436377" role="ant">Imām and Caliph ʿAlī</persName>, by one Sayyid Raḥmat Allāh ibn Shāh ʿAzīz Allāh. 
+                        <p>Untitled Persian translation of an unidentified commentary on the <title>Munājāt</title> or private utterances and prayers ascribed to <persName key="viaf_34436377" role="ant">Imām and Caliph ʿAlī</persName>, by one Sayyid Raḥmat Allāh ibn Shāh ʿAzīz Allāh. 
                         </p>
                         <p>Colophon (f. 204v): completed 25 Ramaz̤ān (year not mentioned). 
 </p>
@@ -591,8 +599,8 @@ See IOL microfilm 1302.
                      <title xml:lang="per-Latn-x-lc" key="work_21748">Bī sar'nāmah</title>
                      <title xml:lang="per" key="work_21748">بى سر نامه</title>
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" type="supplied" key="person_120724759">ʿAṭṭār</persName>
-                        <persName xml:lang="per" type="supplied" key="person_120724759">عطّار</persName>
+                        <persName xml:lang="per-Latn-x-lc" type="supplied" key="viaf_120724759">ʿAṭṭār</persName>
+                        <persName xml:lang="per" type="supplied" key="viaf_120724759">عطّار</persName>
                      </author>
                   </msItem>
                   <msItem n="28" xml:id="Uk_Delhi_Persian_1183-item28">
@@ -601,9 +609,9 @@ See IOL microfilm 1302.
                      <note>
                         <p>Item bb. 
 </p>
-                        <p>Untitled Persian paraphrase based on an Arabic commentary on a Shaṭṭārīyah Ṣūfī treatise of <persName key="person_103630065" role="ant">Aḥmad ibn ʿUmar al-Khīvaqī, known as Abū al-Janāb Najm al-Dīn Kubrá</persName> (d. 618/1221), by an unnamed translator. 
+                        <p>Untitled Persian paraphrase based on an Arabic commentary on a Shaṭṭārīyah Ṣūfī treatise of <persName key="viaf_103630065" role="ant">Aḥmad ibn ʿUmar al-Khīvaqī, known as Abū al-Janāb Najm al-Dīn Kubrá</persName> (d. 618/1221), by an unnamed translator. 
                         </p>
-                        <p>Dated colophon (f. 235v): completed 8 Shavvāl in RY 5 (in raqm) of <persName key="person_45680638" role="oth">Emperor Muḥammad Shāh</persName>, 1140/18 May 1728. 
+                        <p>Dated colophon (f. 235v): completed 8 Shavvāl in RY 5 (in raqm) of <persName key="viaf_45680638" role="oth">Emperor Muḥammad Shāh</persName>, 1140/18 May 1728. 
                         </p>
                         <p>Awkward scribal nastaʿlīq hand with bold naskh for Arabic passages. </p>
                         <p>Concluding passages have been crammed into the lower margin, along with the dated colophon. 
@@ -611,7 +619,7 @@ See IOL microfilm 1302.
                         <p>See IOL microfilm 1305. 
 </p>
                      </note>
-                     <author />
+                     <author/>
                   </msItem>
                   <msItem n="29" xml:id="Uk_Delhi_Persian_1183-item29">
                      <locus from="236v" to="266v">ff. 236v-266v</locus>
@@ -641,18 +649,17 @@ See IOL microfilm 1302.
                               <height>203</height>
                               <width>140</width>
                            </dimensions>
-                           <dimensions type="written" unit="mm">
-									</dimensions>
+                           <dimensions type="written" unit="mm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote script="Arabic" scope="major" />
+                     <handNote script="Arabic" scope="major"/>
                   </handDesc>
                </physDesc>
                <history>
-                  <origin calendar="#Hijri-qamari" notBefore="1651" notAfter="1728-05-18" when-custom="1061-8 Shavvāl 1140">
-                     <origDate calendar="#Hijri-qamari" notBefore="1651" notAfter="1728-05-18">1061-8 Shavvāl 1140 (1651 - 18 May 1728)</origDate>
+                  <origin calendar="Hijri-qamari" notBefore="1651" notAfter="1728-05-18" when-custom="1061-8 Shavvāl 1140">
+                     <origDate calendar="Hijri-qamari" notBefore="1651" notAfter="1728-05-18">1061-8 Shavvāl 1140 (1651 - 18 May 1728)</origDate>
  Jahangirnagar, Dhaka <origPlace>India, Bangladesh</origPlace>
                   </origin>
                </history>

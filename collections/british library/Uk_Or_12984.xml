@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5523">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,20 +42,26 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 12984</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343244</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239034.0x0000d9</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85100084 http://lccn.loc.gov/sh2002005579">
                   <summary change="#add-summary">
                      1 copy of Kunūz al-ḥaqā’iq fī rumūz al-daqā’iq by Kamāl al-Dīn Ḥusayn ibn Ḥasan-i Khvārazmī
                   </summary>
                   <msItem xml:id="Uk_Or_12984-item1">
-                     <author key="person_8794798" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Kamāl al-Dīn Ḥusayn ibn Ḥasan-i Khvārazmī</persName>
-                        <persName xml:lang="fa">کمال الدین حسین ابن حسن خوارزمی</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied" key="viaf_8794798">Kamāl al-Dīn Ḥusayn ibn Ḥasan-i Khvārazmī</persName>
+                        <persName xml:lang="fa" key="viaf_8794798">کمال الدین حسین ابن حسن خوارزمی</persName>
                         <note>Kamāl al-Dīn Ḥusayn ibn Ḥasan-i Khvārazmī is the compiler of the text</note>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_7907">Kunūz al-ḥaqā’iq fī rumūz al-daqā’iq</title>
                      <title xml:lang="fa" key="work_7907">کنوز الحقائق فی رموز الدقائق</title>
-                     <note>A collection of discources on the mas̲navī of <persName xml:lang="fa-Latn-x-lc" type="standard" ref="http://viaf.org/viaf/98930150" key="person_98930150" role="ant" change="#role-assignment">Jalāl al-Dīn Rūmī <foreign xml:lang="fa">جلال الدین رومی</foreign>
+                     <note>A collection of discources on the mas̲navī of <persName xml:lang="fa-Latn-x-lc" type="standard" ref="http://viaf.org/viaf/98930150" key="viaf_98930150" role="ant" change="#role-assignment">Jalāl al-Dīn Rūmī <foreign xml:lang="fa">جلال الدین رومی</foreign>
                         </persName> in verse, beginning with a prose preface
                      </note>
                      <note>At the end come three ghazals by the author who uses the takhalluṣ of <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f5464" role="oth" change="#role-assignment">Ḥusayn</persName>
@@ -62,8 +70,7 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 74.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -77,7 +84,7 @@
                      </supportDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="ta_liq">Ta‘līq <p>Copied by <persName xml:lang="fa-Latn-x-lc" type="standard" ref="http://viaf.org/viaf/70819144" key="person_70819144" role="scr" change="#role-assignment">Sulṭān ‘Alī Mashhadī <foreign xml:lang="fa">سلطان علی مشهدی</foreign>
+                     <handNote scope="major" script="ta_liq">Ta‘līq <p>Copied by <persName xml:lang="fa-Latn-x-lc" type="standard" ref="http://viaf.org/viaf/70819144" key="viaf_70819144" role="scr" change="#role-assignment">Sulṭān ‘Alī Mashhadī <foreign xml:lang="fa">سلطان علی مشهدی</foreign>
                            </persName> at the beginning of the 16th century
                         </p>
                      </handNote>
@@ -85,7 +92,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1500" notAfter="1550">Beginning of the 16th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1500" notAfter="1550">Beginning of the 16th century</origDate>
                   </origin>
                </history>
                <additional>

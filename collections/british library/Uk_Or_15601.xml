@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_18352">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -41,7 +43,13 @@
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 15601</idno>
                   <altIdentifier type="other">
-                     <idno />
+                     <idno/>
+                  </altIdentifier>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343453</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239456.0x000093</idno>
                   </altIdentifier>
                </msIdentifier>
                <head>Javahir-i khams</head>
@@ -49,13 +57,13 @@
                   <summary>1 copy of Javāhir-i khams by Ibn Khaṭīr al-Dīn, Muḥammad, d. 1562 or 3</summary>
                   <msItem class="http://lccn.loc.gov/sh2008112367" n="1" xml:id="Uk_Or_15601-item1">
                      <author>
-                        <persName type="supplied" xml:lang="ara-Latn-x-lc" key="person_19540626">Ibn Khaṭīr al-Dīn, Muḥammad, d. 1562 or 3</persName>
-                        <persName xml:lang="ara" key="person_19540626" type="supplied">ابن خطير الدين، محمد</persName>
+                        <persName type="supplied" xml:lang="ara-Latn-x-lc" key="ark:/81055/vdc_100164656451.0x000001 viaf_19540626">Ibn Khaṭīr al-Dīn, Muḥammad, d. 1562 or 3</persName>
+                        <persName xml:lang="ara" key="ark:/81055/vdc_100164656451.0x000001 viaf_19540626" type="supplied">ابن خطير الدين، محمد</persName>
                      </author>
                      <title xml:lang="per-Latn-x-lc" key="work_21953">Javāhir-i khams</title>
                      <title xml:lang="per" key="work_21953">جواهر خمس</title>
                      <note>
-                        <p>Part of the first of five sections of a rare treatise concerned chiefly with practical aspects of Sufism, especially prayer and invocations by Abū l-Mu’ayyid Muḥammad ibn Khaṭīr al-Dīn (or Quṭb al-Dīn), known as <persName xml:lang="per-Latn-x-lc" key="person_19540626" ref="http://lccn.loc.gov/nr92009844" role="aut">Muḥammad Ghaws̲ Gvāliyārī</persName> (d. 970/1562-3) who claimed to be descended from Farīd al-Dīn ‘Aṭṭār. 
+                        <p>Part of the first of five sections of a rare treatise concerned chiefly with practical aspects of Sufism, especially prayer and invocations by Abū l-Mu’ayyid Muḥammad ibn Khaṭīr al-Dīn (or Quṭb al-Dīn), known as <persName xml:lang="per-Latn-x-lc" key="viaf_19540626" ref="http://lccn.loc.gov/nr92009844" role="aut">Muḥammad Ghaws̲ Gvāliyārī</persName> (d. 970/1562-3) who claimed to be descended from Farīd al-Dīn ‘Aṭṭār. 
                         </p>
                         <p>The author explains in his preface that the work was composed during years of living in solitary retreat and was completed in 956/1549-50, when he was fifty years of age. </p>
                         <p>The subjects of the five jawhar are listed on f. 3v-4r: worship (Dar ‘ibādat-i ‘ābidān va ṭarīq-i ān), asceticism (Dar zuhd-i zāhidān va ṭarīq-i ān), prayer (Dar da‘vat-i dā‘iyān va ṭarīq-i ān), invocations and similar exercises (Dar az̲kār va ashghāl), and on inheritance of the Truth, the work of the spiritually realised (varās̲at al-Ḥaqq ‘amal-i muḥaqqiqān va ṭarīq-i ān). </p>
@@ -63,8 +71,7 @@
                         <p>Other contents: front endpaper, inscription naming the work as Javāhir-i khamsah and describing its subject matter as dar ‘ilm-i awrād va ad‘īyah; a few explanatory marginalia, giving the full form of formulae referred to in the text, e.g. Āyat al-Kursī on f. 41v; old seal impressions, f. 1r, 14r, 48v.</p>
                      </note>
                      <textLang mainLang="per" xml:lang="per" otherLangs="ara">Persian</textLang>
-                     <note>
-						</note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -86,24 +93,24 @@
 vocalised <term xml:lang="per-Latn-x-lc">s̲uls̲</term>
                      </summary>
                      <handNote script="Arabic" scope="major">
-                        <p />
+                        <p/>
                      </handNote>
                   </handDesc>
                   <typeDesc>
-                     <p />
+                     <p/>
                   </typeDesc>
                   <decoDesc>
                      <summary>Red overlinings. 11 lines. Text frames: black, gold, black; black, gold (wide), gold; blue; black, gold, black. Illuminated heading, f. 1v; interlinear gilding (floral scroll), 1v-2r. </summary>
-                     <decoNote type="other" />
+                     <decoNote type="other"/>
                   </decoDesc>
-                  <additions> </additions>
+                  <additions/>
                   <bindingDesc>
                      <p>Red morocco binding, with blind impressed medallions, pendants and border lines. </p>
                   </bindingDesc>
                </physDesc>
                <history>
-                  <origin calendar="#Hijri-qamari" notBefore="1700" notAfter="1799">
-                     <origDate calendar="#Gregorian" notBefore="1700" notAfter="1799">18th century</origDate>
+                  <origin calendar="Hijri-qamari" notBefore="1700" notAfter="1799">
+                     <origDate calendar="Gregorian" notBefore="1700" notAfter="1799">18th century</origDate>
                      <origPlace>India</origPlace>
                   </origin>
                   <acquisition>
@@ -135,8 +142,7 @@ vocalised <term xml:lang="per-Latn-x-lc">s̲uls̲</term>
          </classDecl>
       </encodingDesc>
       <profileDesc>
-         <textClass>
-			</textClass>
+         <textClass/>
       </profileDesc>
       <revisionDesc>
          <change when="2022-04-21">
@@ -144,7 +150,7 @@ vocalised <term xml:lang="per-Latn-x-lc">s̲uls̲</term>
               850 BL Persian mss prepared for initial publication in FIHRIST (plus 18 replacements)
          </change>
          <change when="2015-01-30">
-            <persName key="person_32019063" role="cataloguer">Ursula Sims-Williams</persName>
+            <persName key="viaf_32019063" role="cataloguer">Ursula Sims-Williams</persName>
          </change>
       </revisionDesc>
    </teiHeader>

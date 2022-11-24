@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_17816">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,22 +42,27 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>Delhi Persian 978</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004341472</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163233768.0x000050</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>Work on Sufism</head>
                <msContents>
-                  <summary />
+                  <summary/>
                   <msItem class="http://lccn.loc.gov/sh2006003807" n="1" xml:id="Uk_Delhi_Persian_978-item1">
                      <note>
-                        <p>Untitled lengthy treatise by an unnamed author on the principles of Sufism and the magical significance of letters, attributed at the end to <persName key="person_65292796" role="att">Khvājah Muḥammad Pārsā</persName> (d. 822/1420). The work is endorsed as the <title>Taḥqīqāt</title>. 
+                        <p>Untitled lengthy treatise by an unnamed author on the principles of Sufism and the magical significance of letters, attributed at the end to <persName key="viaf_65292796" role="att">Khvājah Muḥammad Pārsā</persName> (d. 822/1420). The work is endorsed as the <title>Taḥqīqāt</title>. 
                         </p>
-                        <p>Dated colophon (f. 304v): completed by <persName key="person_f7332" role="scr">Muḥammad Afz̤al Khān</persName> for <persName key="person_f7339" role="pat">Muḥammad Ashraf ṣāḥib</persName>, morning of Thursday, 19 Jumādá al-S̲ānī year 27 of Emperor <persName key="person_45680638" role="oth">Muḥammad Shāh</persName>’s reign (1158/19 July 1745). 
+                        <p>Dated colophon (f. 304v): completed by <persName key="person_f7332" role="scr">Muḥammad Afz̤al Khān</persName> for <persName key="person_f7339" role="pat">Muḥammad Ashraf ṣāḥib</persName>, morning of Thursday, 19 Jumādá al-S̲ānī year 27 of Emperor <persName key="viaf_45680638" role="oth">Muḥammad Shāh</persName>’s reign (1158/19 July 1745). 
                         </p>
                         <p>Unbound; disintegrated outer leather matter of binding, lacking internal boards; wormholes; fragile. 
 </p>
                      </note>
                      <textLang mainLang="per">Persian</textLang>
-                     <note>
-						</note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -65,19 +72,18 @@
                               <height>238</height>
                               <width>153</width>
                            </dimensions>
-                           <dimensions type="written" unit="mm">
-									</dimensions>
+                           <dimensions type="written" unit="mm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote script="Arabic" scope="major" />
+                     <handNote script="Arabic" scope="major"/>
                   </handDesc>
                </physDesc>
                <history>
-                  <origin calendar="#Hijri-qamari" when="1745-07-19" when-custom="19 Jumādá al-Sānī RY 27 of Muḥammad Shāh, 1158">
-                     <origDate calendar="#Hijri-qamari" when="1745-07-19">19 Jumādá al-S̲ānī RY 27 of Muḥammad Shāh, 1158</origDate>
-                     <origDate calendar="#Gregorian" when="1745-07-19">19 July 1745</origDate>
+                  <origin calendar="Hijri-qamari" when="1745-07-19" when-custom="19 Jumādá al-Sānī RY 27 of Muḥammad Shāh, 1158">
+                     <origDate calendar="Hijri-qamari" when="1745-07-19">19 Jumādá al-S̲ānī RY 27 of Muḥammad Shāh, 1158</origDate>
+                     <origDate calendar="Gregorian" when="1745-07-19">19 July 1745</origDate>
                      <origPlace>India</origPlace>
                   </origin>
                </history>
@@ -111,8 +117,7 @@
          </classDecl>
       </encodingDesc>
       <profileDesc>
-         <textClass>
-			</textClass>
+         <textClass/>
       </profileDesc>
       <revisionDesc>
          <change when="2022-04-21">

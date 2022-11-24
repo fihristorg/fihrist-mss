@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6372">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,15 +42,21 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 8372</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342897</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237685.0x0000c3</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85042997 http://lccn.loc.gov/sh85043024 http://lccn.loc.gov/sh85043000 http://lccn.loc.gov/sh85100934 http://lccn.loc.gov/sh85100935">
                   <summary change="#add-summary">
                      1 copy of Mujmal al-ḥikmat by Ikhwān al-Ṣafā
                   </summary>
                   <msItem xml:id="Uk_Or_8372-item1">
-                     <author ref="http://viaf.org/viaf/149871335" key="person_149871335" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Ikhwān al-Ṣafā</persName>
-                        <persName xml:lang="fa">اخوان الصفاء</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_149871335">Ikhwān al-Ṣafā</persName>
+                        <persName xml:lang="fa" key="viaf_149871335">اخوان الصفاء</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_4433">Mujmal al-ḥikmat</title>
                      <title xml:lang="fa" key="work_4433">مجمل الحکمت</title>
@@ -57,8 +65,7 @@
                         <bibl>For a more detailed description see Glyn Meredith-Owens: Handlist of Persian Manuscripts, 1895-1966. [London]: Trustees of the British Museum, 1968, p.88.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -74,7 +81,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1603" notAfter="1604">1012</origDate>
+                     <origDate calendar="Hijri-qamari" notBefore="1603" notAfter="1604">1012</origDate>
                   </origin>
                </history>
                <additional>

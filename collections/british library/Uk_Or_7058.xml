@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6179">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 7058</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342794</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237685.0x00005c</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="#multipleWorks">
                   <summary change="#add-summary">
@@ -47,45 +55,42 @@
                   </summary>
                   <msItem xml:id="Uk_Or_7058-item1" n="1" class="http://lccn.loc.gov/sh85100084">
                      <locus from="2v" to="15v">2v-15v ff</locus>
-                     <author ref="http://viaf.org/viaf/56731778" key="person_56731778" change="#ids-cleanup">
-                        <persName xml:lang="fa">الحافظ الشيرازي، محمد شمس الدين</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Al-Ḥāfiẓ al-Shīrāzī, Muḥammad Shams al-Dīn</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="fa" key="viaf_56731778">الحافظ الشيرازي، محمد شمس الدين</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_56731778">Al-Ḥāfiẓ al-Shīrāzī, Muḥammad Shams al-Dīn</persName>
                      </author>
                      <title xml:lang="en" type="desc" key="work_21162" change="#ids-cleanup">Selected poems</title>
                      <listBibl>
                         <bibl>For a more detailed description see Glyn Meredith-Owens: Handlist of Persian Manuscripts, 1895-1966. [London]: Trustees of the British Museum, 1968, p.82.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_7058-item2" n="2" class="http://lccn.loc.gov/sh85100084">
                      <locus from="16v" to="23v">16v-23v ff</locus>
-                     <author ref="http://viaf.org/viaf/76503034" key="person_76503034">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Amīr Khusraw Dihlavī, ca 1253-1325</persName>
-                        <persName xml:lang="fa">امیر خسرو دهلوی</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_76503034">Amīr Khusraw Dihlavī, ca 1253-1325</persName>
+                        <persName xml:lang="fa" key="viaf_76503034">امیر خسرو دهلوی</persName>
                      </author>
                      <title xml:lang="en" type="desc" key="work_21047" change="#ids-cleanup">Selected poems</title>
                      <listBibl>
                         <bibl>For a more detailed description see Glyn Meredith-Owens: Handlist of Persian Manuscripts, 1895-1966. [London]: Trustees of the British Museum, 1968, p.82.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_7058-item3" n="3" class="http://lccn.loc.gov/sh85100084">
                      <locus from="24v" to="31v">24v-31v ff</locus>
-                     <author key="person_51467595" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Kātibī</persName>
-                        <persName xml:lang="fa">کاتبی</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied" key="viaf_51467595">Kātibī</persName>
+                        <persName xml:lang="fa" key="viaf_51467595">کاتبی</persName>
                      </author>
                      <title xml:lang="en" type="desc" key="work_21045" change="#ids-cleanup">Selected poems</title>
                      <listBibl>
                         <bibl>For a more detailed description see Glyn Meredith-Owens: Handlist of Persian Manuscripts, 1895-1966. [London]: Trustees of the British Museum, 1968, p.82.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -101,7 +106,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1600" notAfter="1799">17th-18th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1600" notAfter="1799">17th-18th century</origDate>
                   </origin>
                </history>
                <additional>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3312">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,25 +42,31 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>IO Islamic 4615</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342054</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237333.0x000007</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85067895 http://lccn.loc.gov/n84741628 http://lccn.loc.gov/sh2008111234 http://lccn.loc.gov/n80066882">
                   <summary change="#add-summary">
                      1 copy of Shīrāznāmah by Zarkūb Shīrāzī, Aḥmad ibn Abī al-Khayr, 1282?-1387
                   </summary>
                   <msItem xml:id="Uk_IO_Islamic_4615-item1">
-                     <author ref="http://viaf.org/viaf/186863826" key="person_186863826">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Zarkūb Shīrāzī, Aḥmad ibn Abī al-Khayr, 1282?-1387</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Abū al-ʼAbbās Aḥmad b. Abī al-Khayr b. Shaikh Zarkūb al- Shīrāzī</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Muʻin</persName>
-                        <persName xml:lang="fa" type="alt">ابو العباس احمد بن ابى الخير بن شیخ زرکوب الشیرازی</persName>
-                        <persName xml:lang="fa" type="alt">معن</persName>
-                        <persName xml:lang="fa">زرکوب شيرازى، احمد بن ابى الخير</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="ark:/81055/vdc_100164656443.0x000001 viaf_186863826">Zarkūb Shīrāzī, Aḥmad ibn Abī al-Khayr, 1282?-1387</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="ark:/81055/vdc_100164656443.0x000001 viaf_186863826">Abū al-ʼAbbās Aḥmad b. Abī al-Khayr b. Shaikh Zarkūb al- Shīrāzī</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_186863826">Muʻin</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_186863826">ابو العباس احمد بن ابى الخير بن شیخ زرکوب الشیرازی</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_186863826">معن</persName>
+                        <persName xml:lang="fa" key="viaf_186863826">زرکوب شيرازى، احمد بن ابى الخير</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8385">Shīrāznāmah</title>
                      <title xml:lang="fa" key="work_8385">شیرازنامه</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="ar" defective="true" />
-                     <note>A history of <name type="place" key="subject_n80066882">Shīrāz</name>, with biographies of the rulers of <name type="place" key="subject_n80098857">Fārs</name> and the famous Shaikhs and Imams of <name type="place" key="subject_n80066882">Shīrāz</name>, down to the year <date calendar="#Hijri-qamari" when="1343">744</date>
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>A history of <name type="place" key="subject_n80066882">Shīrāz</name>, with biographies of the rulers of <name type="place" key="subject_n80098857">Fārs</name> and the famous Shaikhs and Imams of <name type="place" key="subject_n80066882">Shīrāz</name>, down to the year <date calendar="Hijri-qamari" when="1343">744</date>
                      </note>
                      <note>This copy lacks the first folio, and the text ends on <locus n="141b">141b</locus>
                      </note>
@@ -97,7 +105,7 @@
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1" ruledLines="12" />
+                        <layout columns="1" ruledLines="12"/>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
@@ -105,7 +113,7 @@
                   </handDesc>
                   <decoDesc>
                      <decoNote type="publishmark">Water-stained</decoNote>
-                     <decoNote type="marginal" />
+                     <decoNote type="marginal"/>
                   </decoDesc>
                   <additions>
                      <p>Some folios torn</p>
@@ -113,7 +121,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" when="1665">Ramadan 1075</origDate>
+                     <origDate calendar="Hijri-qamari" when="1665">Ramadan 1075</origDate>
                   </origin>
                </history>
                <additional>

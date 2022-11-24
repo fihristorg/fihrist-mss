@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_18002">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -44,20 +46,26 @@
                      <idno>90</idno>
                      <note>William Irvine</note>
                   </altIdentifier>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004341770</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163233992.0x000056</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>Habib al-siyar</head>
                <msContents>
                   <summary>1 copy of Ḥabīb al-siyar by Khvānd Amīr</summary>
                   <msItem class="http://lccn.loc.gov/sh85148201 http://lccn.loc.gov/sh87000556" n="1" xml:id="Uk_IO_Islamic_3962-item1">
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" type="alt" key="person_45109504">Khvānd Amīr</persName>
-                        <persName xml:lang="per" key="person_45109504" type="alt">خواند امير</persName>
+                        <persName xml:lang="per-Latn-x-lc" type="alt" key="ark:/81055/vdc_100164657805.0x000001 viaf_45109504">Khvānd Amīr</persName>
+                        <persName xml:lang="per" key="ark:/81055/vdc_100164657805.0x000001 viaf_45109504" type="alt">خواند امير</persName>
                      </author>
                      <title xml:lang="per-Latn-x-lc" key="work_645">Ḥabīb al-siyar</title>
                      <title xml:lang="per" key="work_645">حبيب السّير</title>
                      <note>
                         <p>
-								Universal history expanding and extending <persName xml:lang="per-Latn-x-lc" key="person_21020332" role="ant">Mīr Khvānd</persName>'s <term xml:lang="per-Latn-x-lc">Rawz̤at al-ṣafāʾ</term>
+								Universal history expanding and extending <persName xml:lang="per-Latn-x-lc" key="viaf_21020332" role="ant">Mīr Khvānd</persName>'s <term xml:lang="per-Latn-x-lc">Rawz̤at al-ṣafāʾ</term>
                         </p>
                         <p>Consisting of volume 3, including <term xml:lang="per-Latn-x-lc">ikhtitām</term>
                         </p>
@@ -89,23 +97,23 @@
                   </handDesc>
                   <decoDesc>
                      <summary>Poor illuminated sarlawḥ (ff. 1v, 121v, 186v, 345v), possibly added later; interlinear gilding; illuminated margins (f. 1v-2r), probably added in 19th century India</summary>
-                     <decoNote />
+                     <decoNote/>
                   </decoDesc>
                   <additions>
                      <p>Contemporary and later annotations and corrections (for example, f. 437v)</p>
                   </additions>
                   <bindingDesc>
-                     <p />
+                     <p/>
                   </bindingDesc>
                </physDesc>
                <history>
-                  <origin calendar="#Hijri-qamari" notBefore="1570" notAfter="1630">
-                     <origDate calendar="#Gregorian" notBefore="1570" notAfter="1630">1570 - 1630</origDate>
+                  <origin calendar="Hijri-qamari" notBefore="1570" notAfter="1630">
+                     <origDate calendar="Gregorian" notBefore="1570" notAfter="1630">1570 - 1630</origDate>
                      <origPlace>Iran</origPlace>
                   </origin>
                   <provenance>
                      <p>
-                        <persName xml:lang="per-Latn-x-lc" key="person_8170991" role="fmo">William Irvine</persName>
+                        <persName xml:lang="per-Latn-x-lc" key="viaf_8170991" role="fmo">William Irvine</persName>
                      </p>
                   </provenance>
                   <acquisition>
@@ -143,8 +151,7 @@
          </classDecl>
       </encodingDesc>
       <profileDesc>
-         <textClass>
-			</textClass>
+         <textClass/>
       </profileDesc>
       <revisionDesc>
          <change when="2022-04-21">
@@ -158,7 +165,7 @@
    </teiHeader>
    <text>
       <body>
-         <p />
+         <p/>
       </body>
    </text>
 </TEI>

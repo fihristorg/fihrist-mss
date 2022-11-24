@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3282">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,24 +42,30 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>IO Islamic 4561</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342033</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163236087.0x000030</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85100084 http://lccn.loc.gov/sh85054793">
                   <summary change="#add-summary">
                      1 copy of Kullīyāt-i Ibn-i Yamīn by Fakhr al-Dīn Maḥmūd b. Yamīn al-Dīn Muḥammad Mustaufī, d. 769/1368
                   </summary>
                   <msItem xml:id="Uk_IO_Islamic_4561-item1">
-                     <author key="person_4194571" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Fakhr al-Dīn Maḥmūd b. Yamīn al-Dīn Muḥammad Mustaufī, d. 769/1368</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Ibn-i Yamīn</persName>
-                        <persName xml:lang="fa" type="alt">ابن یمین</persName>
-                        <persName xml:lang="fa">فخرالدين محمود بن یمین الدین محمد مستوفى</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied" key="ark:/81055/vdc_100164657217.0x000001 viaf_4194571">Fakhr al-Dīn Maḥmūd b. Yamīn al-Dīn Muḥammad Mustaufī, d. 769/1368</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="ark:/81055/vdc_100164657217.0x000001 viaf_4194571">Ibn-i Yamīn</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_4194571">ابن یمین</persName>
+                        <persName xml:lang="fa" key="viaf_4194571">فخرالدين محمود بن یمین الدین محمد مستوفى</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8939">Kullīyāt-i Ibn-i Yamīn</title>
                      <title xml:lang="fa" key="work_8939">کلیات ابن یمین</title>
-                     <incipit xml:lang="ar" />
-                     <explicit xml:lang="ar" defective="true" />
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>A superb copy of the complete poetical writings of the author</note>
-                     <note>This manuscript contains some 14.000 verses, and therefore greatly exceeds the laborious compilation of 8.000 couplets made by <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_172622701" role="oth" change="#role-assignment #ids-cleanup">Mīrzā, Akbar ʻAlī Khān "Dihkhudā"</persName> (see <ref target="Sarfaraz_1935" type="pages">’54-60</ref>); it is doubtless the oldest and most complete copy of Ibn-i Yamīn's poems in existence
+                     <note>This manuscript contains some 14.000 verses, and therefore greatly exceeds the laborious compilation of 8.000 couplets made by <persName xml:lang="fa-Latn-x-lc" type="supplied" key="viaf_172622701" role="oth" change="#role-assignment #ids-cleanup">Mīrzā, Akbar ʻAlī Khān "Dihkhudā"</persName> (see <ref target="Sarfaraz_1935" type="pages">’54-60</ref>); it is doubtless the oldest and most complete copy of Ibn-i Yamīn's poems in existence
                      </note>
                      <note>The poems, which are divided into groups - the Mnqaṭṭaʼāt begin on <locus n="103">fol. 103</locus>, the Ghazalīyāt on <locus n="208">fol. 208</locus>, the Rubā'īyāt on <locus n="295">fol. 295</locus> - are followed (<locus n="373b">fol. 373b</locus>) by a collection of Munshʼāt or letters, some dated, likewise by Ibn-i Yamīn
                      </note>
@@ -65,8 +73,7 @@
                         <bibl>For a more detailed description see Arberry 1939, page 355.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -95,7 +102,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1400" notAfter="1499">15th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1400" notAfter="1499">15th century</origDate>
                   </origin>
                </history>
                <additional>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6079">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,26 +42,31 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 6374</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342726</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237685.0x000018</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh89005046">
                   <summary change="#add-summary">
                      1 copy of Dīvān of Shāh Shujā‘ al-Mulk, Amīr of Afghanistan
                   </summary>
                   <msItem xml:id="Uk_Or_6374-item1">
-                     <author ref="http://viaf.org/viaf/36380443" key="person_36380443">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Shāh Shujā‘ al-Mulk, Amīr of Afghanistan</persName>
-                        <persName xml:lang="fa">شاه شجاع الملک امیر افغانستان</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="ark:/81055/vdc_100164657188.0x000001 viaf_36380443">Shāh Shujā‘ al-Mulk, Amīr of Afghanistan</persName>
+                        <persName xml:lang="fa" key="ark:/81055/vdc_100164657188.0x000001 viaf_36380443">شاه شجاع الملک امیر افغانستان</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_9446">Dīvān of Shāh Shujā‘ al-Mulk, Amīr of Afghanistan</title>
                      <title xml:lang="fa" key="work_9446">دیوان شاه شجاع الملک امیر افغانستان</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 50.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -75,7 +82,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1824" notAfter="1825">1240</origDate>
+                     <origDate calendar="Hijri-qamari" notBefore="1824" notAfter="1825">1240</origDate>
                   </origin>
                </history>
                <additional>

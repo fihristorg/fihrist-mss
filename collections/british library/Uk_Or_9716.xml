@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6507">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 9716</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342988</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237685.0x00011d</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>Kullīyāt of Salmān Sāvajī <foreign xml:lang="fa">کلّیات سلمان ساوجی</foreign>
                </head>
@@ -49,9 +57,9 @@
                   </summary>
                   <msItem xml:id="Uk_Or_9716-item1" n="1" class="http://lccn.loc.gov/sh85100085">
                      <locus from="1r" to="218v">ff 1r-218v</locus>
-                     <author key="person_36059765" ref="http://viaf.org/viaf/36059765" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Salmān Sāvajī, d. 1376</persName>
-                        <persName xml:lang="fa">سلمان ساوجی</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_36059765">Salmān Sāvajī, d. 1376</persName>
+                        <persName xml:lang="fa" key="viaf_36059765">سلمان ساوجی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8418">Qaṣīdahs and tarjī‘-bands</title>
                      <title xml:lang="fa" key="work_8418">قصیده ها و ترجیع بندها</title>
@@ -59,14 +67,13 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 57.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_9716-item2" n="2" class="http://lccn.loc.gov/sh85100085">
                      <locus from="218r" to="341v">ff 218r-341v</locus>
-                     <author key="person_36059765" ref="http://viaf.org/viaf/36059765" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Salmān Sāvajī, d. 1376</persName>
-                        <persName xml:lang="fa">سلمان ساوجی</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_36059765">Salmān Sāvajī, d. 1376</persName>
+                        <persName xml:lang="fa" key="viaf_36059765">سلمان ساوجی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20016" change="#ids-cleanup">Ghazals</title>
                      <title xml:lang="fa" key="work_20016" change="#ids-cleanup">غزلها</title>
@@ -74,14 +81,13 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 57.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_9716-item3" n="3" class="http://lccn.loc.gov/sh85100085">
                      <locus from="341r" to="357v">ff 341r-357v</locus>
-                     <author key="person_36059765" ref="http://viaf.org/viaf/36059765" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Salmān Sāvajī, d. 1376</persName>
-                        <persName xml:lang="fa">سلمان ساوجی</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_36059765">Salmān Sāvajī, d. 1376</persName>
+                        <persName xml:lang="fa" key="viaf_36059765">سلمان ساوجی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20234" change="#ids-cleanup">Rubā‘īyāt</title>
                      <title xml:lang="fa" key="work_20234" change="#ids-cleanup">رباعیات</title>
@@ -89,14 +95,13 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 57.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_9716-item4" n="4" class="http://lccn.loc.gov/sh85100085">
                      <locus from="358r" to="461v">ff 358r-461v</locus>
-                     <author key="person_36059765" ref="http://viaf.org/viaf/36059765" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Salmān Sāvajī, d. 1376</persName>
-                        <persName xml:lang="fa">سلمان ساوجی</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_36059765">Salmān Sāvajī, d. 1376</persName>
+                        <persName xml:lang="fa" key="viaf_36059765">سلمان ساوجی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8419">Jamshīd u Khūrshīd</title>
                      <title xml:lang="fa" key="work_8419">جمشید و خورشید</title>
@@ -105,14 +110,13 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 57.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_9716-item5" n="5" class="http://lccn.loc.gov/sh85100085">
                      <locus from="461r" to="496v">ff 461r-496v</locus>
-                     <author key="person_36059765" ref="http://viaf.org/viaf/36059765" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Salmān Sāvajī, d. 1376</persName>
-                        <persName xml:lang="fa">سلمان ساوجی</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_36059765">Salmān Sāvajī, d. 1376</persName>
+                        <persName xml:lang="fa" key="viaf_36059765">سلمان ساوجی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_21089" change="#ids-cleanup">Firāqnāmah</title>
                      <title xml:lang="fa" key="work_21089" change="#ids-cleanup">فراقنامه</title>
@@ -120,22 +124,20 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 57.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_9716-item6" n="6" class="http://lccn.loc.gov/sh85100085">
                      <locus from="496r" to="523v">ff 496r-523v</locus>
-                     <author key="person_36059765" ref="http://viaf.org/viaf/36059765" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Salmān Sāvajī, d. 1376</persName>
-                        <persName xml:lang="fa">سلمان ساوجی</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_36059765">Salmān Sāvajī, d. 1376</persName>
+                        <persName xml:lang="fa" key="viaf_36059765">سلمان ساوجی</persName>
                      </author>
                      <title xml:lang="en" type="desc" key="work_8421">Muqaṭṭa‘āt and an ornate qaṣīdah</title>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 57.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -151,7 +153,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1400" notAfter="1499">15th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1400" notAfter="1499">15th century</origDate>
                   </origin>
                </history>
                <additional>

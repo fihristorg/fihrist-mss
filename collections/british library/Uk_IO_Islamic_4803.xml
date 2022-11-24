@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3523">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -62,7 +64,7 @@
                      </handNote>
                   </handDesc>
                   <decoDesc>
-                     <decoNote type="other" />
+                     <decoNote type="other"/>
                   </decoDesc>
                </physDesc>
                <additional>
@@ -85,7 +87,7 @@
                   <msContents>
                      <msItem xml:id="Uk_IO_Islamic_4803-part1-item1" n="1" class="http://lccn.loc.gov/sh85100085 http://lccn.loc.gov/sh85129656">
                         <locus from="1v" to="72r">ff. 1v-72r</locus>
-                        <author ref="http://viaf.org/viaf/17093307" key="person_17093307">
+                        <author ref="http://viaf.org/viaf/17093307" key="viaf_17093307">
                            <persName xml:lang="fa-Latn-x-lc" type="standard">Aḥmad Jām, 1049 or 50-1141 or 2</persName>
                            <persName xml:lang="fa-Latn-x-lc" type="atl">Shaykh al-Islām Aḥmad ibn Abī al-Ḥasan Jāmī, c. 1049 - c.1142</persName>
                            <persName xml:lang="fa-Latn-x-lc" type="atl">Zhandah Pīl</persName>
@@ -95,8 +97,8 @@
                         </author>
                         <title xml:lang="fa-Latn-x-lc" key="work_20633" change="#ids-cleanup">Dīvān-i Aḥmad Jāmī</title>
                         <title xml:lang="fa" key="work_20633" change="#ids-cleanup">دیوان احمد حامی</title>
-                        <incipit xml:lang="ar" />
-                        <explicit xml:lang="ar" defective="true" />
+                        <incipit xml:lang="ar"/>
+                        <explicit xml:lang="ar" defective="true"/>
                         <note>The poems of Shaykh al-Islām Aḥmad ibn Abī al-Ḥasan Jāmī called Zhandah Pīl (c. 1049 - c.1142)</note>
                         <listBibl>
                            <bibl>For a more detailed description see Sims-Williams 1986, page 23.</bibl>
@@ -108,7 +110,7 @@
                   </msContents>
                   <history>
                      <origin>
-                        <origDate calendar="#Hijri-qamari" when="1689">22 Rab. I 1100</origDate>
+                        <origDate calendar="Hijri-qamari" when="1689">22 Rab. I 1100</origDate>
                      </origin>
                   </history>
                </msPart>
@@ -121,7 +123,7 @@
                   <msContents>
                      <msItem xml:id="Uk_IO_Islamic_4803-part2-item1" n="2" class="http://lccn.loc.gov/sh85100085 http://lccn.loc.gov/sh85129656">
                         <locus from="74v" to="84r">ff. 74v-84r</locus>
-                        <author ref="http://viaf.org/viaf/19703891" key="person_19703891">
+                        <author ref="http://viaf.org/viaf/19703891" key="viaf_19703891">
                            <persName xml:lang="fa-Latn-x-lc" type="standard">Anṣārī al-Harawī, ʻAbd Allāh ibn Muḥammad, 1006-1089</persName>
                            <persName xml:lang="fa-Latn-x-lc" type="alt">ʻAbd Allāh Anṣarī, d. 481/1088</persName>
                            <persName xml:lang="fa" type="alt">عبد الله انصارى</persName>
@@ -129,8 +131,8 @@
                         </author>
                         <title xml:lang="fa-Latn-x-lc" key="work_20399" change="#ids-cleanup">Munājāt</title>
                         <title xml:lang="fa" key="work_20399" change="#ids-cleanup">مناجات</title>
-                        <incipit xml:lang="ar" />
-                        <explicit xml:lang="ar" defective="true" />
+                        <incipit xml:lang="ar"/>
+                        <explicit xml:lang="ar" defective="true"/>
                         <note>The well known collection of invocations in mixed prose and verse (see <ref target="#Uk_IO_Islamic_2339">I.O. Islamic 2339</ref>), here called <title>Risālah-ʼi ʻAbd Allāh Anṣārī (<foreign xml:lang="fa">رسالهٌ عبد الله انصاری</foreign>)
                            </title>
                         </note>
@@ -144,7 +146,7 @@
                   </msContents>
                   <history>
                      <origin>
-                        <origDate calendar="#Hijri-qamari" when="1688">2 Muh. 1100</origDate>
+                        <origDate calendar="Hijri-qamari" when="1688">2 Muh. 1100</origDate>
                      </origin>
                   </history>
                </msPart>
@@ -161,8 +163,8 @@
                            <persName xml:lang="en" type="desc">Unknown</persName>
                         </author>
                         <title xml:lang="en" type="desc" key="work_8857">Fragment of Munājāt and miscellaneous poems</title>
-                        <incipit xml:lang="ar" />
-                        <explicit xml:lang="ar" defective="true" />
+                        <incipit xml:lang="ar"/>
+                        <explicit xml:lang="ar" defective="true"/>
                         <listBibl>
                            <bibl>For a more detailed description see Sims-Williams 1986, page 23.</bibl>
                         </listBibl>
@@ -173,7 +175,7 @@
                   </msContents>
                   <history>
                      <origin>
-                        <origDate calendar="#Hijri-qamari" when="1688">Hijri-qamari<!-- Please review date text, see https://git.io/fihrist-dates -->
+                        <origDate calendar="Hijri-qamari" when="1688">Hijri-qamari<!-- Please review date text, see https://git.io/fihrist-dates -->
                         </origDate>
                      </origin>
                   </history>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3499">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>IO Islamic 4779</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342238</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237514.0x000011</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85100074 http://lccn.loc.gov/n50052021 http://lccn.loc.gov/n80025804">
                   <summary change="#add-summary">
@@ -50,18 +58,17 @@
                         <persName xml:lang="en" type="desc">Various authors</persName>
                      </author>
                      <title xml:lang="en" type="desc" key="work_8181">Copies of letters from Ṭīpū Sulṭān’s agents</title>
-                     <incipit xml:lang="ar" />
-                     <explicit xml:lang="ar" defective="true" />
-                     <note>Correspondence mostly from <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f2054" role="aut" change="#role-assignment">Madīnah Ṣāḥib</persName>, Ṭīpū Sulṭān’s agent at Hyderabad <date calendar="#Gregorian" notBefore="1793" notAfter="1798">1793-98</date>
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>Correspondence mostly from <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f2054" role="aut" change="#role-assignment">Madīnah Ṣāḥib</persName>, Ṭīpū Sulṭān’s agent at Hyderabad <date calendar="Gregorian" notBefore="1793" notAfter="1798">1793-98</date>
                      </note>
-                     <note>Annotations by <persName ref="http://viaf.org/viaf/76424710" xml:lang="fa-Latn-x-lc" type="alt" key="person_76424710" role="ann" change="#role-assignment">William Kirkpatrick</persName>
+                     <note>Annotations by <persName ref="http://viaf.org/viaf/76424710" xml:lang="fa-Latn-x-lc" type="alt" key="viaf_76424710" role="ann" change="#role-assignment">William Kirkpatrick</persName>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Sims-Williams 1986, page 20.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -75,12 +82,12 @@
                      </supportDesc>
                   </objectDesc>
                   <decoDesc>
-                     <decoNote type="other" />
+                     <decoNote type="other"/>
                   </decoDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notAfter="1799">Copied mostly before 1799</origDate>
+                     <origDate calendar="Gregorian" notAfter="1799">Copied mostly before 1799</origDate>
                   </origin>
                </history>
                <additional>

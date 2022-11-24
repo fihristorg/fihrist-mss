@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5538">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011.08.17</date>
+            <date calendar="Gregorian">2011.08.17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -41,6 +43,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 13096</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343765</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163240411.0x0000ae</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="#multipleWorks">
                   <summary change="#add-summary">
@@ -48,7 +56,7 @@
                   </summary>
                   <msItem xml:id="Uk_Or_13096-item1" n="22" class="http://lccn.loc.gov/sh85100084 http://lccn.loc.gov/n79130881 http://lccn.loc.gov/sh85025404">
                      <locus from="221v" to="223v">ff 221v-223v</locus>
-                     <editor role="cmm" key="person_24511135">
+                     <editor role="cmm" key="viaf_24511135">
                         <persName xml:lang="tr-Latn-x-lc" type="standard" ref="http://viaf.org/viaf/24511135/">Abdullah Salahattin Uşşakı̂, d. 1782</persName>
                         <persName xml:lang="fa">عبد الله صلاح الدین عشاقی</persName>
                         <persName xml:lang="fa-Latn-x-lc" type="alt">ʻAbd Allāh Ṣalāḥ al-Dīn ʻUshshāqī, d. 1196/1782</persName>
@@ -57,8 +65,8 @@
                      </editor>
                      <title xml:lang="tr-Latn-x-lc" key="work_8297">Tavārīkh</title>
                      <title xml:lang="fa" key="work_8297">تواریخ</title>
-                     <incipit xml:lang="ar" />
-                     <explicit xml:lang="ar" defective="true" />
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>Chronograms, including Persian verses by 16 different authors</note>
                      <note type="text-relations">The completion date of the MS is that of <title xml:lang="fa-Latn-x-lc">Shuqqah-ʼi fayz̤ (<foreign xml:lang="fa">شقة فیض</foreign>)
                         </title>, a prose treatise in Urdu on Islamic doctrine and Sufism by <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f5602" role="oth" change="#role-assignment">Ṭālib Ḥusayn Ḥusaynī Qādirī</persName>, <foreign xml:lang="fa">طالب حسین حسینی قادری</foreign>
@@ -69,8 +77,7 @@
                         <bibl>For a more detailed description see Waley 1998, page 62.</bibl>
                      </listBibl>
                      <textLang mainLang="ur" otherLangs="fa">Urdu and Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -86,7 +93,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" when="1878">1295</origDate>
+                     <origDate calendar="Hijri-qamari" when="1878">1295</origDate>
                      <origPlace>India</origPlace>
                   </origin>
                </history>
@@ -112,23 +119,23 @@
                </bibl>
             </taxonomy>
             <taxonomy xml:id="local_class">
-               <category xml:id="commentary" />
-               <category xml:id="supercommentary" />
-               <category xml:id="translation" />
+               <category xml:id="commentary"/>
+               <category xml:id="supercommentary"/>
+               <category xml:id="translation"/>
                <category xml:id="multipleWorks">
                   <catDesc>multiple works</catDesc>
                </category>
-               <category xml:id="abridgement" />
-               <category xml:id="papers" />
-               <category xml:id="documents" />
-               <category xml:id="extract" />
-               <category xml:id="gloss" />
-               <category xml:id="selection" />
-               <category xml:id="diagrams" />
-               <category xml:id="notes" />
-               <category xml:id="letters" />
-               <category xml:id="palimpsest" />
-               <category xml:id="supplement" />
+               <category xml:id="abridgement"/>
+               <category xml:id="papers"/>
+               <category xml:id="documents"/>
+               <category xml:id="extract"/>
+               <category xml:id="gloss"/>
+               <category xml:id="selection"/>
+               <category xml:id="diagrams"/>
+               <category xml:id="notes"/>
+               <category xml:id="letters"/>
+               <category xml:id="palimpsest"/>
+               <category xml:id="supplement"/>
             </taxonomy>
          </classDecl>
       </encodingDesc>

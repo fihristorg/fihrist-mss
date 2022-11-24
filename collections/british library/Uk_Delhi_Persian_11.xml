@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3170">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>Delhi Persian 11</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004341323</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163232931.0x000010</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>A volume containing ten dīvāns of Persian poets</head>
                <msContents class="#multipleWorks">
@@ -53,8 +61,8 @@
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8891">Tafsīr-i Sūrah-i Yā-Sīn</title>
                      <title xml:lang="fa" key="work_8891">تفسیر سورۀ یاسین</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa"/>
                      <note>An anonymous Shīʻi commentary on Sūrah 36 (Yā-Sīn )</note>
                      <note>The author speaks first of the importance of the sūrah and of the meaning of the name Yā-Sīn. He then comments on the Qurʼānic text piece by piece. It is his practice to prefix a Persian paraphrase to his comments on each passage. He explains at some length the asbāb al-nuzūl and the historical allusions. No previous commentators or commentaries seem to be mentioned by name. The manuscript begins abruptly and would appear to have been copied from one which had lost the beginning. The title is written on <locus n="1Ar">f 1Ar</locus> in a later hand
                      </note>
@@ -62,29 +70,27 @@
                         <bibl>For a more detailed description see Persian III, .</bibl>
                      </listBibl>
                      <textLang mainLang="fa" otherLangs="ar">Persian and Arabic</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Delhi_Persian_11-item2" n="2" class="http://lccn.loc.gov/sh85072967 http://lccn.loc.gov/n2007204421 http://lccn.loc.gov/sh2008111616">
                      <locus from="26r" to="59r">ff. ff 26r-59r</locus>
-                     <author key="person_73765606" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Majd al-Dīn Hibat Allāh Shīrāzī, d. 686/1287</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Majd-i Hamgar</persName>
-                        <persName xml:lang="fa" type="alt">مجد همگر</persName>
-                        <persName xml:lang="fa">مجد الدین هبت الله شیرازی</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied" key="viaf_73765606">Majd al-Dīn Hibat Allāh Shīrāzī, d. 686/1287</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_73765606">Majd-i Hamgar</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_73765606">مجد همگر</persName>
+                        <persName xml:lang="fa" key="viaf_73765606">مجد الدین هبت الله شیرازی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8892">Tafsīr-i Sūrah-i Mulk</title>
                      <title xml:lang="fa" key="work_8892">انتخاب دیوان مجد همگر</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="ar" defective="true" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>An anonymous Shīʻi commentary on Sūrah 67 (al-Mulk )</note>
                      <note>The commentary is similar to the preceding work on Sūrah 36, but a number of earlier authorities are mentioned by name. Numerous anecdotes of the prophets and early mystics are introduced, especially at the beginning</note>
                      <listBibl>
                         <bibl>For a more detailed description see Persian III, .</bibl>
                      </listBibl>
                      <textLang mainLang="fa" otherLangs="ar">Persian and Arabic</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -101,8 +107,8 @@
                      <handNote scope="major" script="naskh_nasta_liq">Qurʼānic text in naskhī, commentary in nastaʻlīq</handNote>
                   </handDesc>
                   <decoDesc>
-                     <decoNote type="other" />
-                     <decoNote type="marginal" />
+                     <decoNote type="other"/>
+                     <decoNote type="marginal"/>
                   </decoDesc>
                   <bindingDesc>
                      <p>Half leather 20th century European binding</p>
@@ -111,7 +117,7 @@
                <history>
                   <origin>
                      <origPlace>India</origPlace>
-                     <origDate calendar="#Gregorian" notBefore="1600" notAfter="1699">17th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1600" notAfter="1699">17th century</origDate>
                   </origin>
                </history>
                <additional>

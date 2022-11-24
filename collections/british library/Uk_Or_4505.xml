@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5165">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,20 +42,26 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 4505</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343716</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163240411.0x00007f</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://id.loc.gov/authorities/sh85109233">
                   <summary change="#add-summary">
                      1 copy of Gulistān by Sa‘dī
                   </summary>
                   <msItem xml:id="Uk_Or_4505-item1">
-                     <author key="person_100206721" ref="http://viaf.org/viaf/100206721">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Sa‘dī</persName>
-                        <persName xml:lang="fa">سعدی</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_100206721">Sa‘dī</persName>
+                        <persName xml:lang="fa" key="viaf_100206721">سعدی</persName>
                      </author>
                      <title xml:lang="pus-Latn-x-lc" key="work_20963" change="#ids-cleanup">Gulistān</title>
                      <title xml:lang="ps" key="work_20963" change="#ids-cleanup">گلستان</title>
                      <note>A Pushto translation of Sa'di's Gulistan</note>
-                     <editor role="trl" key="person_306094748" change="#ids-cleanup">Translated into Pashto by <persName ref="http://viaf.org/viaf/306094748" xml:lang="pus-Latn-x-lc" type="standard" change="#ids-cleanup">Anṣārī, Mīr Muḥammad</persName>
+                     <editor role="trl" key="viaf_306094748" change="#ids-cleanup">Translated into Pashto by <persName ref="http://viaf.org/viaf/306094748" xml:lang="pus-Latn-x-lc" type="standard" change="#ids-cleanup">Anṣārī, Mīr Muḥammad</persName>
                         <persName xml:lang="ps">انصاري، میر محمد</persName>
                      </editor>
                      <incipit>همه واړه ثنا و صفت او کل احسان و منت هغه لوي قادر څښتن تعالي لره چه طاعت ئي سبب د قربت دي</incipit>
@@ -64,8 +72,7 @@
                         </bibl>
                      </listBibl>
                      <textLang mainLang="ps">Pushto</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -79,13 +86,13 @@
                      </supportDesc>
                   </objectDesc>
                   <decoDesc>
-                     <decoNote type="other" />
+                     <decoNote type="other"/>
                   </decoDesc>
                </physDesc>
                <history>
                   <origin change="#fix-dates">
-                     <origDate notBefore="1812" notAfter="1813" calendar="#Hijri-qamari">1227</origDate>
-                     <origDate when="1812" calendar="#Gregorian">1812</origDate>
+                     <origDate notBefore="1812" notAfter="1813" calendar="Hijri-qamari">1227</origDate>
+                     <origDate when="1812" calendar="Gregorian">1812</origDate>
                   </origin>
                </history>
                <additional>

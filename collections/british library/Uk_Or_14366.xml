@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5679">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 14366</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343349</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239456.0x00002b</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85044293">
                   <summary change="#add-summary">
@@ -53,19 +61,18 @@
                      <title xml:lang="fa-Latn-x-lc" key="work_8267">Shāhnāmah-ʼi nas̲r</title>
                      <title xml:lang="fa" key="work_8267">شاهنامۀ مثر</title>
                      <note>An abridgement in prose of the content of the <title xml:lang="fa-Latn-x-lc">Shāhnāmah (<foreign xml:lang="fa">شاهنامه</foreign>)
-                        </title>, of <persName key="person_101359236" ref="http://viaf.org/viaf/101359236/" xml:lang="fa-Latn-x-lc" type="standard" role="ant" change="#role-assignment">Firdawsī, <foreign xml:lang="fa">فردوسي</foreign>
+                        </title>, of <persName key="viaf_101359236" ref="http://viaf.org/viaf/101359236/" xml:lang="fa-Latn-x-lc" type="standard" role="ant" change="#role-assignment">Firdawsī, <foreign xml:lang="fa">فردوسي</foreign>
                         </persName>
                      </note>
                      <note>Transcribed from a copy written by <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f1929" role="aut" change="#role-assignment">Khwurshīd ibn Isfandiyār of Nawsārī</persName>
                      </note>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <listBibl>
                         <bibl>For a more detailed description see Waley 1998, page 68.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -82,7 +89,7 @@
                <history>
                   <origin>
                      <origPlace>England</origPlace>
-                     <origDate calendar="#Gregorian" when="1797">1797</origDate>
+                     <origDate calendar="Gregorian" when="1797">1797</origDate>
                   </origin>
                </history>
                <additional>

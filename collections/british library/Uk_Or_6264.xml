@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6066">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 6264</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342717</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237685.0x00000f</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85072953 http://lccn.loc.gov/sh85072967 http://lccn.loc.gov/n84748509">
                   <summary change="#add-summary">
@@ -53,17 +61,14 @@
                      <title xml:lang="fa-Latn-x-lc" key="work_8613">Bahr-i mavvāj</title>
                      <title xml:lang="ar" key="work_8613">بهر مواج</title>
                      <note>A commentary on the Qur’an. This volume includes Sūras I-VI</note>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
-                     <note>
-                        <foreign xml:lang="fa" />
-                     </note>
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
+                     <note/>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 1.</bibl>
                      </listBibl>
                      <textLang mainLang="ar" otherLangs="fa">Arabic and Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -78,10 +83,10 @@
                   </objectDesc>
                </physDesc>
                <history>
-                  <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1000" notAfter="1099">10th century<!-- Please review date attributes, see https://git.io/fihrist-dates -->
+                  <origin calendar="Gregorian" notBefore="1600" notAfter="1699">
+                     <origDate calendar="Hijri-qamari" notBefore="1000" notAfter="1099">10th century<!-- Please review date attributes, see https://git.io/fihrist-dates -->
                      </origDate>
-                     <origDate calendar="#Gregorian" notBefore="1600" notAfter="1699">17th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1600" notAfter="1699">17th century</origDate>
                   </origin>
                </history>
                <additional>

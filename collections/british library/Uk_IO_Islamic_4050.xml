@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_18090">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Irvine Collection</collection>
                   <idno>IO Islamic 4050</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004341865</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163235680.0x00001c</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>Three works on esoteric and occult science</head>
                <msContents class="http://lccn.loc.gov/sh89004629 http://lccn.loc.gov/sh2009123573">
@@ -48,15 +56,15 @@
                </msContents>
                <physDesc>
                   <objectDesc form="codex">
-                     <supportDesc material="chart" />
+                     <supportDesc material="chart"/>
                   </objectDesc>
                   <handDesc>
-                     <handNote script="Arabic" scope="major" />
+                     <handNote script="Arabic" scope="major"/>
                   </handDesc>
                </physDesc>
                <history>
-                  <origin calendar="#Hijri-qamari" notBefore="1800" notAfter="1900">
-                     <origDate calendar="#Gregorian" notBefore="1800" notAfter="1900">19th century</origDate>
+                  <origin calendar="Hijri-qamari" notBefore="1800" notAfter="1900">
+                     <origDate calendar="Gregorian" notBefore="1800" notAfter="1900">19th century</origDate>
                      <origPlace>India</origPlace>
                   </origin>
                </history>
@@ -69,7 +77,7 @@
                   </adminInfo>
                </additional>
                <msPart xml:id="Uk_IO_Islamic_4050-part1">
-                  <msIdentifier xmlns="http://www.tei-c.org/ns/1.0">
+                  <msIdentifier>
                      <altIdentifier type="other">
                         <idno>a</idno>
                      </altIdentifier>
@@ -88,7 +96,7 @@
 </p>
                            <p>Not dated and lacking a colophon
 </p>
-                           <p>Identified on title page (f. 370v) as the work of <persName key="person_61532835" role="att">Sirāj al-Dīn Yaʿqūb al-Sakkākī</persName>, possibly by <persName key="person_8170991" role="cataloguer">William Irvine</persName>
+                           <p>Identified on title page (f. 370v) as the work of <persName key="viaf_61532835" role="att">Sirāj al-Dīn Yaʿqūb al-Sakkākī</persName>, possibly by <persName key="viaf_8170991" role="cataloguer">William Irvine</persName>
                            </p>
                         </note>
                         <textLang mainLang="per">Persian</textLang>
@@ -108,14 +116,14 @@
                      </objectDesc>
                   </physDesc>
                   <history>
-                     <origin calendar="#Hijri-qamari" notBefore="1800" notAfter="1900">
-                        <origDate calendar="#Gregorian" notBefore="1800" notAfter="1900">19th century</origDate>
+                     <origin calendar="Hijri-qamari" notBefore="1800" notAfter="1900">
+                        <origDate calendar="Gregorian" notBefore="1800" notAfter="1900">19th century</origDate>
                         <origPlace>India</origPlace>
                      </origin>
                   </history>
                </msPart>
                <msPart xml:id="Uk_IO_Islamic_4050-part2">
-                  <msIdentifier xmlns="http://www.tei-c.org/ns/1.0">
+                  <msIdentifier>
                      <altIdentifier type="other">
                         <idno>b</idno>
                      </altIdentifier>
@@ -154,14 +162,14 @@
                      </objectDesc>
                   </physDesc>
                   <history>
-                     <origin calendar="#Hijri-qamari" notBefore="1800" notAfter="1900">
-                        <origDate calendar="#Gregorian" notBefore="1800" notAfter="1900">19th century</origDate>
+                     <origin calendar="Hijri-qamari" notBefore="1800" notAfter="1900">
+                        <origDate calendar="Gregorian" notBefore="1800" notAfter="1900">19th century</origDate>
                         <origPlace>India</origPlace>
                      </origin>
                   </history>
                </msPart>
                <msPart xml:id="Uk_IO_Islamic_4050-part3">
-                  <msIdentifier xmlns="http://www.tei-c.org/ns/1.0">
+                  <msIdentifier>
                      <altIdentifier type="other">
                         <idno>c</idno>
                      </altIdentifier>
@@ -180,8 +188,7 @@
 </p>
                         </note>
                         <textLang mainLang="per">Persian</textLang>
-                        <note>
-							</note>
+                        <note/>
                      </msItem>
                   </msContents>
                   <physDesc>
@@ -196,8 +203,8 @@
                      </objectDesc>
                   </physDesc>
                   <history>
-                     <origin calendar="#Bengali-Fasli" notBefore="1800" notAfter="1900" when-custom="22 Jum. II 1250 faṣlī ">
-                        <origDate calendar="#Hijri-qamari" notBefore="1800" notAfter="1900">22 Jum. II 1250 faṣlī  (1800 - 1900)</origDate>
+                     <origin calendar="Bengali-fasli" notBefore="1800" notAfter="1900" when-custom="22 Jum. II 1250 faṣlī ">
+                        <origDate calendar="Hijri-qamari" notBefore="1800" notAfter="1900">22 Jum. II 1250 faṣlī  (1800 - 1900)</origDate>
                         <origPlace>India</origPlace>
                      </origin>
                   </history>

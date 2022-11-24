@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3275">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -43,8 +45,14 @@
                   <altIdentifier type="other">
                      <idno>27-27b</idno>
                      <note>
-                        <persName xml:lang="per-Latn-x-lc" key="person_8170991" role="fmo">William Irvine</persName>
+                        <persName xml:lang="per-Latn-x-lc" key="viaf_8170991" role="fmo">William Irvine</persName>
                      </note>
+                  </altIdentifier>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343613</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163240411.0x00001d</idno>
                   </altIdentifier>
                </msIdentifier>
                <head>'Usmani and Bilgrami genealogy</head>
@@ -59,7 +67,7 @@
                      <title xml:lang="per-Latn-x-lc" key="work_8681">Sharāʾif-i ʿUs̲mānī</title>
                      <title xml:lang="per" key="work_8681">شرائف عثمانى</title>
                      <note>
-                        <p>History of the ʿUs̲mānī family, intended to correct portions of <persName xml:lang="per-Latn-x-lc" key="person_90779326" ref="http://lccn.loc.gov/n89275211" role="ant">Āzād Bilgrāmī</persName>'s <title>Maʾās̲ir al-kirām</title>
+                        <p>History of the ʿUs̲mānī family, intended to correct portions of <persName xml:lang="per-Latn-x-lc" key="viaf_90779326" ref="http://lccn.loc.gov/n89275211" role="ant">Āzād Bilgrāmī</persName>'s <title>Maʾās̲ir al-kirām</title>
                         </p>
                      </note>
                      <textLang mainLang="per">Persian</textLang>
@@ -73,7 +81,7 @@
                      <title xml:lang="per-Latn-x-lc" key="work_8682">Musajjalāt fī tārīkh al-quz̤āt</title>
                      <title xml:lang="per" key="work_8682">مسجّلات فى تٲريخ القضات</title>
                      <note>
-                        <p>History of the ʿUs̲mānī family, including many qāz̲īs of <name key="http://lccn.loc.gov/n89234318" type="place">Bilgram</name>, intended to correct portions of <persName xml:lang="per-Latn-x-lc" key="person_90779326" ref="http://lccn.loc.gov/n89275211" role="aut">Āzād Bilgrāmī</persName>'s <title>Maʾās̲ir al-kirām</title>
+                        <p>History of the ʿUs̲mānī family, including many qāz̲īs of <name key="http://lccn.loc.gov/n89234318" type="place">Bilgram</name>, intended to correct portions of <persName xml:lang="per-Latn-x-lc" key="viaf_90779326" ref="http://lccn.loc.gov/n89275211" role="aut">Āzād Bilgrāmī</persName>'s <title>Maʾās̲ir al-kirām</title>
                         </p>
                      </note>
                      <textLang mainLang="per">Persian</textLang>
@@ -87,32 +95,31 @@
                               <height>318</height>
                               <width>210</width>
                            </dimensions>
-                           <dimensions type="written" unit="mm">
-									</dimensions>
+                           <dimensions type="written" unit="mm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
                   <handDesc>
                      <summary>Fair <term xml:lang="per-Latn-x-lc">nastaʿlīq</term>. Scribe: <persName xml:lang="per-Latn-x-lc" key="person_f7764" role="scr">Aḥmad ʿAlī Khān Farrukh'ābādī</persName>
                      </summary>
-                     <handNote script="Arabic" scope="major" />
+                     <handNote script="Arabic" scope="major"/>
                   </handDesc>
                </physDesc>
                <history>
-                  <origin calendar="#Other" when="1878-10-10">
-                     <origDate calendar="#Gregorian" when="1878-10-10">10 October 1878</origDate>
+                  <origin calendar="Gregorian" when="1878-10-10">
+                     <origDate calendar="Gregorian" when="1878-10-10">10 October 1878</origDate>
  10 October 1800
 							<origPlace>Farrukhabad, India</origPlace>
                   </origin>
                   <provenance>
                      <p>
-                        <persName xml:lang="per-Latn-x-lc" key="person_8170991" role="fmo">William Irvine</persName>
+                        <persName xml:lang="per-Latn-x-lc" key="viaf_8170991" role="fmo">William Irvine</persName>
                      </p>
                   </provenance>
                   <acquisition>
                      <date>1913-08-15</date>
                      <p>
-                        <persName xml:lang="per-Latn-x-lc" key="person_8170991" role="fmo">William Irvine</persName>
+                        <persName xml:lang="per-Latn-x-lc" key="viaf_8170991" role="fmo">William Irvine</persName>
                      </p>
                   </acquisition>
                </history>

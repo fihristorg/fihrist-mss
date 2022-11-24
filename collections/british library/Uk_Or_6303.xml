@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6073">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 6303</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342723</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237685.0x000015</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>Kulliyāt of ‘Urfī <foreign xml:lang="fa">کلّیات عرفی</foreign>
                </head>
@@ -49,23 +57,22 @@
                   </summary>
                   <msItem xml:id="Uk_Or_6303-item1" n="1" class="http://lccn.loc.gov/sh89005046">
                      <locus from="1v" to="12r">ff 1v-12r</locus>
-                     <author ref="http://viaf.org/viaf/50413291" key="person_50413291">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">ʻUrfī Shīrāzī, Muḥammad</persName>
-                        <persName xml:lang="fa">عرفی شیرازی ,محمد</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_50413291">ʻUrfī Shīrāzī, Muḥammad</persName>
+                        <persName xml:lang="fa" key="viaf_50413291">عرفی شیرازی ,محمد</persName>
                      </author>
                      <title xml:lang="en" type="desc" key="work_8975">A short prose preface</title>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 52.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_6303-item2" n="2" class="http://lccn.loc.gov/sh85100085">
                      <locus from="12r" to="60r">ff 12r-60r</locus>
-                     <author ref="http://viaf.org/viaf/50413291" key="person_50413291">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">ʻUrfī Shīrāzī, Muḥammad</persName>
-                        <persName xml:lang="fa">عرفی شیرازی ,محمد</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_50413291">ʻUrfī Shīrāzī, Muḥammad</persName>
+                        <persName xml:lang="fa" key="viaf_50413291">عرفی شیرازی ,محمد</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" type="main" key="work_2580" change="#ids-cleanup">Majma‘ al-Abkār</title>
                      <title xml:lang="fa" type="main" key="work_2580" change="#ids-cleanup">مجمع الابکار</title>
@@ -73,14 +80,13 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 52.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_6303-item3" n="3" class="http://lccn.loc.gov/sh85100085">
                      <locus from="60v" to="75r">ff 60v-75r</locus>
-                     <author ref="http://viaf.org/viaf/50413291" key="person_50413291">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">ʻUrfī Shīrāzī, Muḥammad</persName>
-                        <persName xml:lang="fa">عرفی شیرازی ,محمد</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_50413291">ʻUrfī Shīrāzī, Muḥammad</persName>
+                        <persName xml:lang="fa" key="viaf_50413291">عرفی شیرازی ,محمد</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20322" change="#ids-cleanup">Farhād u Shīrīn</title>
                      <title xml:lang="fa" key="work_20322" change="#ids-cleanup">فرهاد و شیرین</title>
@@ -89,8 +95,7 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 52.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -107,13 +112,13 @@
                      <p>Contemporary binding</p>
                   </bindingDesc>
                   <sealDesc>
-                     <p>Manuscript bears the seal of <persName type="standard" xml:lang="fa-Latn-x-lc" ref="http://viaf.org/viaf/6178410" key="person_6178410" role="fmo" change="#role-assignment">Awrangzīb</persName>
+                     <p>Manuscript bears the seal of <persName type="standard" xml:lang="fa-Latn-x-lc" ref="http://viaf.org/viaf/6178410" key="viaf_6178410" role="fmo" change="#role-assignment">Awrangzīb</persName>
                      </p>
                   </sealDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1645" notAfter="1646">1055</origDate>
+                     <origDate calendar="Hijri-qamari" notBefore="1645" notAfter="1646">1055</origDate>
                   </origin>
                </history>
                <additional>

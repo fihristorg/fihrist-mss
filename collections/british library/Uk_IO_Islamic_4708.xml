@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3372">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,29 +42,34 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>IO Islamic 4708</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342112</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237333.0x000041</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
                   <summary change="#add-summary">
                      1 copy of Khizānah-ʼi ʻāmirah by Bilgrāmī, Sayyid G̲h̲ulām ʻAlī Āzād, 1704-1786
                   </summary>
                   <msItem xml:id="Uk_IO_Islamic_4708-item1" class="http://lccn.loc.gov/n80025804  http://lccn.loc.gov/sh2010106697">
-                     <author ref="http://viaf.org/viaf/90779326/" key="person_90779326">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Bilgrāmī, Sayyid G̲h̲ulām ʻAlī Āzād, 1704-1786</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Ghulām ʻAlī Āzād Bilgrāmī</persName>
-                        <persName xml:lang="fa">‏بلگرامی، سيد غلام علي آزاد</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="ark:/81055/vdc_100164658929.0x000001 viaf_90779326">Bilgrāmī, Sayyid G̲h̲ulām ʻAlī Āzād, 1704-1786</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="ark:/81055/vdc_100164658929.0x000001 viaf_90779326">Ghulām ʻAlī Āzād Bilgrāmī</persName>
+                        <persName xml:lang="fa" key="viaf_90779326">‏بلگرامی، سيد غلام علي آزاد</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_890">Khizānah-ʼi ʻāmirah</title>
                      <title xml:lang="ar" key="work_890">خزانۀ عامره</title>
-                     <incipit xml:lang="ar" />
-                     <explicit xml:lang="ar" defective="true" />
-                     <note>A biographical dictionary of poets written in <date calendar="#Hijri-qamari" when="1762">1176</date>
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>A biographical dictionary of poets written in <date calendar="Hijri-qamari" when="1762">1176</date>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Sims-Williams 1986, page 8.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -83,7 +90,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" when="1793">14 Ram. 1207?</origDate>
+                     <origDate calendar="Hijri-qamari" when="1793">14 Ram. 1207?</origDate>
                   </origin>
                </history>
                <additional>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5180">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -47,12 +49,12 @@
                   </summary>
                   <msItem xml:id="Uk_Or_10196-item1" n="1" class="http://lccn.loc.gov/sh85070893">
                      <locus from="1v" to="144v">ff 1v-144v</locus>
-                     <author ref="http://viaf.org/viaf/49160204" key="person_49160204">
+                     <author ref="http://viaf.org/viaf/49160204" key="viaf_49160204">
                         <persName xml:lang="jpr-Latn" type="standard">Elisha ben Samuel</persName>
                         <persName xml:lang="jpr-Latn" type="alt">Rāghib</persName>
                      </author>
                      <title xml:lang="jpr-Latn" key="work_8123">Shāhzādah u Ṣūfī</title>
-                     <note>The story of Barlaam and Josaphat in a Judaeo-Persian metrical version, based on <title xml:lang="he-Latn-x-lc">Ben ha-melekh veha-nazir</title> of <persName xml:lang="heb-Latn" type="standard" ref="http://viaf.org/viaf/310501954" key="person_310501954" role="ant" change="#role-assignment #ids-cleanup">Abraham ben Samuel ibn Hasdai</persName>
+                     <note>The story of Barlaam and Josaphat in a Judaeo-Persian metrical version, based on <title xml:lang="he-Latn-x-lc">Ben ha-melekh veha-nazir</title> of <persName xml:lang="heb-Latn" type="standard" ref="http://viaf.org/viaf/310501954" key="viaf_310501954" role="ant" change="#role-assignment #ids-cleanup">Abraham ben Samuel ibn Hasdai</persName>
                      </note>
                      <note>See also Or. 4731, item 9; Or. 4744, item 2; Or. 10711</note>
                      <listBibl>
@@ -89,7 +91,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1700" notAfter="1799">18th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1700" notAfter="1799">18th century</origDate>
                   </origin>
                </history>
                <additional>

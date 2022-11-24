@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3196">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,23 +42,29 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>Delhi Persian 15</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004341325</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163233603.0x000001</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85072967 http://lccn.loc.gov/n2007204421">
                   <summary change="#add-summary">
                      1 copy of Fatḥ al-Raḥmān bi-tarjamat al-Qurʼān by Walī Allāh al-Dihlawī, 1702 or 3-1762 or 3
                   </summary>
                   <msItem xml:id="Uk_Delhi_Persian_15-item1">
-                     <author ref="http://viaf.org/viaf/71535292" key="person_71535292">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Walī Allāh al-Dihlawī, 1702 or 3-1762 or 3</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Quṭb al-Dīn Aḥmad ibn ʻAbd al-Raḥīm Shāh Valī Allāh Dihlavī (1114-76/1703-62)</persName>
-                        <persName xml:lang="fa" type="alt">قطب الدين احمد بن عبد‌الرحيم شاه ولى الله دهلوي</persName>
-                        <persName xml:lang="ar">ولى الله دهلوى</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_71535292">Walī Allāh al-Dihlawī, 1702 or 3-1762 or 3</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_71535292">Quṭb al-Dīn Aḥmad ibn ʻAbd al-Raḥīm Shāh Valī Allāh Dihlavī (1114-76/1703-62)</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_71535292">قطب الدين احمد بن عبد‌الرحيم شاه ولى الله دهلوي</persName>
+                        <persName xml:lang="ar" key="viaf_71535292">ولى الله دهلوى</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_9341">Fatḥ al-Raḥmān bi-tarjamat al-Qurʼān</title>
                      <title xml:lang="fa" key="work_9341">فتح الرحمان بترحمة القران</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" />
-                     <note>The text of the Qurʼān with an annotated translation of the Qurʼan completed in <date calendar="#Hijri-qamari" when="1738">1151</date>
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa"/>
+                     <note>The text of the Qurʼān with an annotated translation of the Qurʼan completed in <date calendar="Hijri-qamari" when="1738">1151</date>
                      </note>
                      <note>In the preface, the author speaks at considerable length about the scope of his translation, which, he claims, is literal without being unidiomatic</note>
                      <filiation>Other copies in the India Office Library: <ref type="no" target="Uk">Delhi Arabic 9 (British Library).</ref>, <ref type="no" target="Uk">Delhi Arabic 64a (British Library).</ref>
@@ -65,8 +73,7 @@
                         <bibl>For a more detailed description see Persian III, .</bibl>
                      </listBibl>
                      <textLang mainLang="fa" otherLangs="ar">Persian and Arabic</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -85,7 +92,7 @@
                      </handNote>
                   </handDesc>
                   <decoDesc>
-                     <decoNote type="border" />
+                     <decoNote type="border"/>
                   </decoDesc>
                   <bindingDesc>
                      <p>Half leather 20th century European binding, impression of earlier binding with tooled decorations on <locus n="f 1E">f 1E</locus>
@@ -95,7 +102,7 @@
                <history>
                   <origin>
                      <origPlace>India</origPlace>
-                     <origDate calendar="#Gregorian" notBefore="1700" notAfter="1799">18th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1700" notAfter="1799">18th century</origDate>
                   </origin>
                </history>
                <additional>

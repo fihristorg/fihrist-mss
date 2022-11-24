@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_18099">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -44,14 +46,20 @@
                      <idno>248</idno>
                      <note>William Irvine</note>
                   </altIdentifier>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004341873</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163235680.0x000024</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>Sarmad, ruba'iyat</head>
                <msContents>
                   <summary>1 copy of Rubāʿīyāt-i Sarmad by Muḥammad Saʿīd Kāshānī "Sarmad"</summary>
                   <msItem class="http://lccn.loc.gov/sh85109764 http://lccn.loc.gov/sh85129656 http://lccn.loc.gov/sh2006003812 http://lccn.loc.gov/sh89005046 http://lccn.loc.gov/sh2013000323" n="1" xml:id="Uk_IO_Islamic_4059-item1">
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" type="alternative" key="person_297150869791122190002">Muḥammad Saʿīd Kāshānī "Sarmad"</persName>
-                        <persName xml:lang="per" key="person_297150869791122190002" type="alternative">محمّد سعيد كاشانى سرمد</persName>
+                        <persName xml:lang="per-Latn-x-lc" type="alternative" key="ark:/81055/vdc_100164657008.0x000001 viaf_297150869791122190002">Muḥammad Saʿīd Kāshānī "Sarmad"</persName>
+                        <persName xml:lang="per" key="ark:/81055/vdc_100164657008.0x000001 viaf_297150869791122190002" type="alternative">محمّد سعيد كاشانى سرمد</persName>
                      </author>
                      <title xml:lang="per-Latn-x-lc" key="work_21973">Rubāʿīyāt-i Sarmad</title>
                      <title xml:lang="per" key="work_21973">رباعيّات سرمد</title>
@@ -60,8 +68,7 @@
                         <p>Not dated</p>
                      </note>
                      <textLang mainLang="per" xml:lang="per">Persian</textLang>
-                     <note>
-						</note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -79,19 +86,19 @@
                      </summary>
                      <handNote script="Arabic" scope="major">. Scribe: Muḥammad ʿAbd al-ʿAzīz of Bhitrī</handNote>
                   </handDesc>
-                  <additions />
+                  <additions/>
                   <bindingDesc>
-                     <p />
+                     <p/>
                   </bindingDesc>
                </physDesc>
                <history>
-                  <origin calendar="#Hijri-qamari" notBefore="1896" notAfter="1897-10">
-                     <origDate calendar="#Gregorian" notBefore="1896" notAfter="1897-10">1896 - October 1897</origDate>
+                  <origin calendar="Hijri-qamari" notBefore="1896" notAfter="1897-10">
+                     <origDate calendar="Gregorian" notBefore="1896" notAfter="1897-10">1896 - October 1897</origDate>
                      <origPlace>India</origPlace>
                   </origin>
                   <provenance>
                      <p>
-                        <persName xml:lang="per-Latn-x-lc" key="person_8170991" role="fmo">William Irvine</persName>
+                        <persName xml:lang="per-Latn-x-lc" key="viaf_8170991" role="fmo">William Irvine</persName>
                      </p>
                      <p>Muḥammad ʿAbd al-ʿAzīz of Bhitrī</p>
                   </provenance>
@@ -130,8 +137,7 @@
          </classDecl>
       </encodingDesc>
       <profileDesc>
-         <textClass>
-			</textClass>
+         <textClass/>
       </profileDesc>
       <revisionDesc>
          <change when="2022-04-21">

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6398">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -48,13 +50,13 @@
                   </summary>
                   <msItem xml:id="Uk_Or_8503-item1" n="1" class="http://lccn.loc.gov/sh85129656 http://lccn.loc.gov/sh85109764">
                      <locus from="114r" to="115v">114r-115v ff</locus>
-                     <author ref="http://viaf.org/viaf/5721767" key="person_5721767">
+                     <author ref="http://viaf.org/viaf/5721767" key="viaf_5721767">
                         <persName xml:lang="fa">ابو سعید ابن ابی الخیر</persName>
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Abū Saʻīd ibn Abī al-Khayr, 967-1049</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20808" change="#ids-cleanup">Rubā‘īyāt</title>
                      <title xml:lang="fa" key="work_20808" change="#ids-cleanup">رباعیات</title>
-                     <note>Dated <date calendar="#Hijri-qamari" notBefore="1693" notAfter="1694">1105</date>
+                     <note>Dated <date calendar="Hijri-qamari" notBefore="1693" notAfter="1694">1105</date>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Glyn Meredith-Owens: Handlist of Persian Manuscripts, 1895-1966. [London]: Trustees of the British Museum, 1968, p.94.</bibl>
@@ -65,7 +67,7 @@
                   </msItem>
                   <msItem xml:id="Uk_Or_8503-item2" n="2" class="http://lccn.loc.gov/sh85072967">
                      <locus from="141r" to="143r">Margins of 141r-143r ff</locus>
-                     <author ref="http://viaf.org/viaf/90770167" key="person_90770167">
+                     <author ref="http://viaf.org/viaf/90770167" key="viaf_90770167">
                         <persName xml:lang="fa">حسین وائظ کاشی</persName>
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Kāshifī, Ḥusayn Vāʻiẓ, -1504 or 1505</persName>
                      </author>
@@ -132,8 +134,8 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1581" notAfter="1582">989</origDate>
-                     <origDate calendar="#Gregorian" notBefore="1700" notAfter="1799">18th century</origDate>
+                     <origDate calendar="Hijri-qamari" notBefore="1581" notAfter="1582">989</origDate>
+                     <origDate calendar="Gregorian" notBefore="1700" notAfter="1799">18th century</origDate>
                      Most tracts are 18th century, but one is dated AH 989
                   </origin>
                </history>

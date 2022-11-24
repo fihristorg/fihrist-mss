@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5568">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -46,14 +48,14 @@
                      1 copy of Sharafnāmah by Niẓāmī Ganjavī, 1140 or 41-1202 or 3
                   </summary>
                   <msItem xml:id="Uk_Or_13529-item1" defective="unknown">
-                     <author key="person_2474895" ref="http://viaf.org/viaf/2474895/">
+                     <author key="viaf_2474895" ref="http://viaf.org/viaf/2474895/">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Niẓāmī Ganjavī, 1140 or 41-1202 or 3</persName>
                         <persName xml:lang="fa">نظامى گنجوى</persName>
                      </author>
                      <title n="1" xml:lang="fa-Latn-x-lc" key="work_20309" change="#ids-cleanup">Sharafnāmah</title>
                      <title xml:lang="fa" key="work_20309" change="#ids-cleanup">شرفنامه</title>
                      <note>The first part of the <title xml:lang="fa-Latn-x-lc">Iskandarnāmah (<foreign xml:lang="fa">اسکندرنامه</foreign>)
-                        </title> of <persName xml:lang="fa-Latn-x-lc" type="standard" key="person_2474895" ref="http://viaf.org/viaf/2474895/" role="aut" change="#role-assignment">Niẓāmī Ganjavī, 1140 or 41-1202 or 3</persName>
+                        </title> of <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_2474895" ref="http://viaf.org/viaf/2474895/" role="aut" change="#role-assignment">Niẓāmī Ganjavī, 1140 or 41-1202 or 3</persName>
                      </note>
                      <note>This MS. is the earliest illustrated copy of Niẓāmī's work</note>
                      <note>Defective copy</note>
@@ -69,7 +71,7 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>43 ff. (surviving folios) plus 12 ff (in fragments) and 156 ff (additional text supplied in <date calendar="#Hijri-qamari" when="1827">1242</date>
+                        <extent>43 ff. (surviving folios) plus 12 ff (in fragments) and 156 ff (additional text supplied in <date calendar="Hijri-qamari" when="1827">1242</date>
                            <dimensions type="leaf" unit="cm">
                               <height>11</height>
                            </dimensions>
@@ -83,7 +85,7 @@
                <history>
                   <origin>
                      <origPlace>Southern Iran</origPlace>
-                     <origDate calendar="#Hijri-qamari" when="1405">about 807</origDate>
+                     <origDate calendar="Hijri-qamari" when="1405">about 807</origDate>
                   </origin>
                </history>
                <additional>

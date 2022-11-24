@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5217">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,17 +42,23 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 10922</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343045</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239034.0x000012</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85100084">
                   <summary change="#add-summary">
                      Dīvān by Khāqānī, Afz̤al al-Dīn Shirvānī, ca. 1126-1198 or 9
                   </summary>
                   <msItem xml:id="Uk_Or_10922-item1">
-                     <author ref="http://viaf.org/viaf/5823159248553004870007" key="person_5823159248553004870007" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Khāqānī, Afz̤al al-Dīn Shirvānī, ca. 1126-1198 or 9</persName>
-                        <persName xml:lang="fa">خاقانى شيروانى، ابراهيم بن على، افضل الدين</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="salt">Khāqānī</persName>
-                        <persName xml:lang="fa" type="alt">خاقانی</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_5823159248553004870007">Khāqānī, Afz̤al al-Dīn Shirvānī, ca. 1126-1198 or 9</persName>
+                        <persName xml:lang="fa" key="viaf_5823159248553004870007">خاقانى شيروانى، ابراهيم بن على، افضل الدين</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="salt" key="viaf_5823159248553004870007">Khāqānī</persName>
+                        <persName xml:lang="fa" type="alt" key="viaf_5823159248553004870007">خاقانی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20628" change="#ids-cleanup">Dīvān</title>
                      <title xml:lang="fa" key="work_20628" change="#ids-cleanup">دیوان</title>
@@ -58,8 +66,7 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 60.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -75,7 +82,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1600" notAfter="1699">17th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1600" notAfter="1699">17th century</origDate>
                   </origin>
                </history>
                <additional>

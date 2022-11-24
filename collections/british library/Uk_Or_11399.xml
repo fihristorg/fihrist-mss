@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5339">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -58,7 +60,7 @@
                   <msItem xml:id="Uk_Or_11399-item2" n="2" class="http://lccn.loc.gov/sh85100084">
                      <locus from="36v" to="44r">36v-44r ff</locus>
                      <title xml:lang="en" type="desc" key="work_9358">Other short poems</title>
-                     <note>Compiled for <persName xml:lang="fa-Latn-x-lc" type="supplied" ref="http://viaf.org/viaf/22154800140356190497" key="person_22154800140356190497" role="pat" change="#role-assignment #ids-cleanup">‘Abbās Qulī ibn Ḥasan Shāmlū <foreign xml:lang="fa">عباس قلی ابن حسن شاملو</foreign>
+                     <note>Compiled for <persName xml:lang="fa-Latn-x-lc" type="supplied" ref="http://viaf.org/viaf/22154800140356190497" key="viaf_22154800140356190497" role="pat" change="#role-assignment #ids-cleanup">‘Abbās Qulī ibn Ḥasan Shāmlū <foreign xml:lang="fa">عباس قلی ابن حسن شاملو</foreign>
                         </persName>, Beglarbegi of <placeName ref="http://lccn.loc.gov/n81108322">Herat <foreign xml:lang="fa">هرات</foreign>
                         </placeName>
                      </note>
@@ -86,7 +88,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1600" notAfter="1699">17th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1600" notAfter="1699">17th century</origDate>
                   </origin>
                </history>
                <additional>

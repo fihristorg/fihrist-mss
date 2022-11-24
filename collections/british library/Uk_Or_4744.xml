@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5928">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -47,12 +49,12 @@
                   </summary>
                   <msItem xml:id="Uk_Or_4744-item1" n="1" class="http://lccn.loc.gov/sh85070893 http://lccn.loc.gov/sh95003071">
                      <locus from="2r" to="63r">ff 2r-63r</locus>
-                     <author ref="http://viaf.org/viaf/49160204" key="person_49160204">
+                     <author ref="http://viaf.org/viaf/49160204" key="viaf_49160204">
                         <persName xml:lang="jpr-Latn" type="standard">Elisha ben Samuel</persName>
                         <persName xml:lang="jpr-Latn" type="alt">Rāghib</persName>
                      </author>
                      <title xml:lang="jpr-Latn" key="work_8123">Shāhzādah u Ṣūfī</title>
-                     <note>The story of Barlaam and Josaphat in a Judaeo-Persian metrical version, based on <title xml:lang="he-Latn-x-lc">Ben ha-melekh veha-nazir</title> of <persName xml:lang="heb-Latn" type="standard" ref="http://viaf.org/viaf/310501954" key="person_310501954" role="ant" change="#role-assignment #ids-cleanup">Abraham ben Samuel ibn Hasdai</persName>
+                     <note>The story of Barlaam and Josaphat in a Judaeo-Persian metrical version, based on <title xml:lang="he-Latn-x-lc">Ben ha-melekh veha-nazir</title> of <persName xml:lang="heb-Latn" type="standard" ref="http://viaf.org/viaf/310501954" key="viaf_310501954" role="ant" change="#role-assignment #ids-cleanup">Abraham ben Samuel ibn Hasdai</persName>
                      </note>
                      <note>See also, Or. 4731 item 8, Or. 4732, Or. 10196, Or. 10711</note>
                      <listBibl>
@@ -78,7 +80,7 @@
                   </msItem>
                   <msItem xml:id="Uk_Or_4744-item3" n="3" class="http://lccn.loc.gov/sh85070893 http://lccn.loc.gov/sh95003071">
                      <locus from="67r" to="68r ">ff 67r-68r</locus>
-                     <author ref="http://viaf.org/viaf/76246240" key="person_76246240">
+                     <author ref="http://viaf.org/viaf/76246240" key="viaf_76246240">
                         <persName xml:lang="jpr-Latn" type="standard">Benjamin ben Mishael</persName>
                         <persName xml:lang="jpr-Latn" type="alt">Amīnā</persName>
                      </author>
@@ -99,7 +101,7 @@
                      </author>
                      <title xml:lang="jpr-Latn" key="work_8735">Shīrāh</title>
                      <note>A metrical composition</note>
-                     <note>Followed by a Hebrew poem of <persName xml:lang="jpr-Latn" type="standard" ref="http://viaf.org/viaf/51941634" key="person_51941634" role="oth" change="#role-assignment">Israel ben Moses Najāra</persName>
+                     <note>Followed by a Hebrew poem of <persName xml:lang="jpr-Latn" type="standard" ref="http://viaf.org/viaf/51941634" key="viaf_51941634" role="oth" change="#role-assignment">Israel ben Moses Najāra</persName>
                         <locus from="70r" to="70r">70r</locus>
                      </note>
                      <listBibl>
@@ -112,7 +114,7 @@
                   <msItem xml:id="Uk_Or_4744-item5" n="5" class="http://lccn.loc.gov/sh85070893 http://lccn.loc.gov/sh95003071">
                      <locus from="71v" to="73r">ff 71v-73r</locus>
                      <title xml:lang="jpr-Latn" key="work_8736">Seder lel ilanot</title>
-                     <note>A ritual, in Hebrew with Judaeo-Persian directions, for the festival of the New Year for Trees, see <title xml:lang="heb-Latn">Sefer peri’es hadar</title> by <persName type="standard" xml:lang="heb-Latn" ref="http://viaf.org/viaf/2363327" key="person_2363327" role="oth" change="#role-assignment">Nathan of Gaza</persName>, followed by an explanation in Persian of the order of service in the Passover Haggada, and a ritual for the eve fo the New Year festival
+                     <note>A ritual, in Hebrew with Judaeo-Persian directions, for the festival of the New Year for Trees, see <title xml:lang="heb-Latn">Sefer peri’es hadar</title> by <persName type="standard" xml:lang="heb-Latn" ref="http://viaf.org/viaf/2363327" key="viaf_2363327" role="oth" change="#role-assignment">Nathan of Gaza</persName>, followed by an explanation in Persian of the order of service in the Passover Haggada, and a ritual for the eve fo the New Year festival
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 40-41.</bibl>
@@ -135,8 +137,8 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1812" notAfter="1812">1812</origDate>
-                     <origDate calendar="#AM" notBefore="1812" notAfter="1812">5572</origDate>
+                     <origDate calendar="Gregorian" notBefore="1812" notAfter="1812">1812</origDate>
+                     <origDate calendar="AM" notBefore="1812" notAfter="1812">5572</origDate>
                   </origin>
                </history>
                <additional>

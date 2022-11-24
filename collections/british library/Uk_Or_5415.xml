@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5964">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 5415</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342646</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237592.0x00005a</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>A miscellany, consisting mainly of fragments</head>
                <msContents class="#multipleWorks">
@@ -54,13 +62,12 @@
                         <bibl>For a more detailed description see Glyn Meredith-Owens: Handlist of Persian Manuscripts, 1895-1966. [London]: Trustees of the British Museum, 1968, p.90.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_5415-item2" n="2" class="http://lccn.loc.gov/n2007024725 http://lccn.loc.gov/sh2002005579 http://lccn.loc.gov/sh85064913">
                      <locus from="6v" to="34v">6v-34v ff</locus>
                      <title xml:lang="en" type="desc" key="work_9360">Part of a mas̲navī</title>
-                     <note>On the history of the reign of <persName xml:lang="fa-Latn-x-lc" type="standard" ref="http://viaf.org/viaf/13108102" key="person_13108102" role="subject" change="#role-assignment #ids-cleanup">Shāh Jahān, approximately 1592-1666 <foreign xml:lang="fa">شاه جهان</foreign>
+                     <note>On the history of the reign of <persName xml:lang="fa-Latn-x-lc" type="standard" ref="http://viaf.org/viaf/13108102" key="ark:/81055/vdc_100164656355.0x000001 viaf_13108102" role="subject" change="#role-assignment #ids-cleanup">Shāh Jahān, approximately 1592-1666 <foreign xml:lang="fa">شاه جهان</foreign>
                         </persName>, beginning with his accession and ending with the birth of Prince <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f4012" role="subject" change="#role-assignment">Shāh Shujā‘ <foreign xml:lang="fa">شاه شجاع</foreign>
                         </persName>
                      </note>
@@ -68,8 +75,7 @@
                         <bibl>For a more detailed description see Glyn Meredith-Owens: Handlist of Persian Manuscripts, 1895-1966. [London]: Trustees of the British Museum, 1968, p.90.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_5415-item3" n="3" class="http://lccn.loc.gov/sh85054793">
                      <locus from="35r" to="53v">35r-53v ff</locus>
@@ -82,14 +88,13 @@
                         <bibl>For a more detailed description see Glyn Meredith-Owens: Handlist of Persian Manuscripts, 1895-1966. [London]: Trustees of the British Museum, 1968, p.90.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_5415-item4" n="4" class="http://lccn.loc.gov/sh2002005579 http://lccn.loc.gov/sh85129656">
                      <locus from="54v" to="65v">54v-65v ff</locus>
-                     <author ref="http://viaf.org/viaf/120724759" key="person_120724759" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">ʻAṭṭār, Farīd al-Dīn, -approximately 1230</persName>
-                        <persName xml:lang="fa">فرید الدین عطّار</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="ark:/81055/vdc_100000000818.0x000215 viaf_120724759">ʻAṭṭār, Farīd al-Dīn, -approximately 1230</persName>
+                        <persName xml:lang="fa" key="ark:/81055/vdc_100000000818.0x000215 viaf_120724759">فرید الدین عطّار</persName>
                         <note>Ascribed to ‘Aṭṭār</note>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_1078" change="#ids-cleanup">Vaṣlatnāmah</title>
@@ -99,8 +104,7 @@
                         <bibl>For a more detailed description see Glyn Meredith-Owens: Handlist of Persian Manuscripts, 1895-1966. [London]: Trustees of the British Museum, 1968, p.90.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_5415-item5" n="5" class="http://lccn.loc.gov/sh85100075  http://lccn.loc.gov/sh85046763">
                      <locus from="67v" to="71v">67v-71v ff</locus>
@@ -117,14 +121,13 @@
                         <bibl>For a more detailed description see Glyn Meredith-Owens: Handlist of Persian Manuscripts, 1895-1966. [London]: Trustees of the British Museum, 1968, p.90.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_5415-item6" n="6" class="http://lccn.loc.gov/sh85129656">
                      <locus from="54v" to="65v">54v-65v ff</locus>
-                     <author ref="http://viaf.org/viaf/120724759" key="person_120724759" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">ʻAṭṭār, Farīd al-Dīn, -approximately 1230</persName>
-                        <persName xml:lang="fa">فرید الدین عطّار</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_120724759">ʻAṭṭār, Farīd al-Dīn, -approximately 1230</persName>
+                        <persName xml:lang="fa" key="viaf_120724759">فرید الدین عطّار</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_27" change="#ids-cleanup">A portion of the Manṭiq al-Ṭayr</title>
                      <title xml:lang="fa" key="work_27" change="#ids-cleanup">منطق الطیر</title>
@@ -132,8 +135,7 @@
                         <bibl>For a more detailed description see Glyn Meredith-Owens: Handlist of Persian Manuscripts, 1895-1966. [London]: Trustees of the British Museum, 1968, p.90.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -149,7 +151,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1500" notAfter="1699">16th-17th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1500" notAfter="1699">16th-17th century</origDate>
                   </origin>
                </history>
                <additional>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_18112">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -43,13 +45,19 @@
                   <altIdentifier type="other">
                      <idno>318</idno>
                      <note>
-                        <persName xml:lang="per-Latn-x-lc" key="person_8170991" role="fmo">William Irvine</persName>
+                        <persName xml:lang="per-Latn-x-lc" key="viaf_8170991" role="fmo">William Irvine</persName>
                      </note>
+                  </altIdentifier>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004341883</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163235680.0x00002e</idno>
                   </altIdentifier>
                </msIdentifier>
                <head>Miscellany, prose and poetry</head>
                <msContents>
-                  <summary />
+                  <summary/>
                   <msItem class="http://lccn.loc.gov/sh85100084 http://lccn.loc.gov/sh85100087 http://lccn.loc.gov/sh85060956 http://lccn.loc.gov/sh85018984" n="1" xml:id="Uk_IO_Islamic_4072-item1">
                      <note>
                         <p>Alternative title written in English on octagonal label on front flap: Majmooa dast(a)wezat wo gazal aur noskhezat wogaira</p>
@@ -74,24 +82,24 @@
                   <handDesc hands="2">
                      <summary>Rough and crude <term xml:lang="per-Latn-x-lc">nastaʿlīq</term>, Indian <term xml:lang="per-Latn-x-lc">taʿlīq</term>, and <term xml:lang="per-Latn-x-lc">shikastah āmīz</term>; <term xml:lang="en">Devanagari</term>
                      </summary>
-                     <handNote script="Arabic" scope="major" />
-                     <handNote script="other" scope="minor" />
+                     <handNote script="Arabic" scope="major"/>
+                     <handNote script="other" scope="minor"/>
                   </handDesc>
                </physDesc>
                <history>
-                  <origin calendar="#Hijri-qamari" notBefore="1820" notAfter="1850">
-                     <origDate calendar="#Gregorian" notBefore="1820" notAfter="1850">19th century</origDate>
+                  <origin calendar="Hijri-qamari" notBefore="1820" notAfter="1850">
+                     <origDate calendar="Gregorian" notBefore="1820" notAfter="1850">19th century</origDate>
                      <origPlace>India</origPlace>
                   </origin>
                   <provenance>
                      <p>
-                        <persName xml:lang="per-Latn-x-lc" key="person_8170991" role="fmo">William Irvine</persName>
+                        <persName xml:lang="per-Latn-x-lc" key="viaf_8170991" role="fmo">William Irvine</persName>
                      </p>
                   </provenance>
                   <acquisition>
                      <date>1913-08-15</date>
                      <p>
-                        <persName xml:lang="per-Latn-x-lc" key="person_8170991" role="fmo">William Irvine</persName>
+                        <persName xml:lang="per-Latn-x-lc" key="viaf_8170991" role="fmo">William Irvine</persName>
                      </p>
                   </acquisition>
                </history>
@@ -116,8 +124,7 @@
          </classDecl>
       </encodingDesc>
       <profileDesc>
-         <textClass>
-			</textClass>
+         <textClass/>
       </profileDesc>
       <revisionDesc>
          <change when="2022-04-21">

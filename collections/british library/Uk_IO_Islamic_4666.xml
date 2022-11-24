@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3333">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>IO Islamic 4666</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342077</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237333.0x00001e</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
                   <summary change="#add-summary">
@@ -52,8 +60,8 @@
                      </author>
                      <title xml:lang="ar-Latn-x-lc" key="work_7883">Hidāyat al-mukhliṣīn</title>
                      <title xml:lang="ar" key="work_7883">هدایت المخلصین</title>
-                     <incipit xml:lang="ar" />
-                     <explicit xml:lang="ar" defective="true" />
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note type="text-relations">The biography of the Kashmiri saint <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f3928" role="subject" change="#role-assignment #ids-cleanup">Shaykh Ḥamzah Kashmīrī, d. 1576, <foreign xml:lang="fa">شیخ حمزه کشمیری</foreign>
                         </persName>, followed by his descent (shajarah) and several verses
                      </note>
@@ -61,8 +69,7 @@
                         <bibl>For a more detailed description see Sims-Williams 1986, page 3.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -77,9 +84,9 @@
                   </objectDesc>
                </physDesc>
                <history>
-                  <origin>
-                     <origDate calendar="#Hijri-qamari" when="1862">1278</origDate>
-                     <origDate calendar="#Hindu" when="1862">13 Chaitra 1919</origDate>
+                  <origin calendar="Hijri-qamari" when="1862" when-custom="1278">
+                     <origDate calendar="Hijri-qamari" when="1862">1278</origDate>
+                     <origDate calendar="Hindu" when="1862">13 Chaitra 1919</origDate>
                   </origin>
                </history>
                <additional>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_18401">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -41,7 +43,13 @@
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 16170</idno>
                   <altIdentifier type="other">
-                     <idno />
+                     <idno/>
+                  </altIdentifier>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343497</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239456.0x0000bf</idno>
                   </altIdentifier>
                </msIdentifier>
                <head>Masnavi-yi ma'navi, daftars iv-vi</head>
@@ -71,8 +79,8 @@
                      <title xml:lang="per-Latn-x-lc" key="work_20506">Mas̲navī-'i maʿnavī</title>
                      <title xml:lang="per" key="work_20506">مثنوی معنوی</title>
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" key="person_98930150">Jalāl al-Dīn Rūmī, Maulana, 1207-1273 </persName>
-                        <persName key="person_98930150" xml:lang="per">جلال الدين محمد بلخى رومى</persName>
+                        <persName xml:lang="per-Latn-x-lc" key="viaf_98930150">Jalāl al-Dīn Rūmī, Maulana, 1207-1273 </persName>
+                        <persName key="viaf_98930150" xml:lang="per">جلال الدين محمد بلخى رومى</persName>
                      </author>
                   </msItem>
                </msContents>
@@ -83,18 +91,17 @@
                               <height>295</height>
                               <width>258</width>
                            </dimensions>
-                           <dimensions type="written" unit="mm">
-									</dimensions>
+                           <dimensions type="written" unit="mm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote script="Arabic" scope="major" />
+                     <handNote script="Arabic" scope="major"/>
                   </handDesc>
                </physDesc>
                <history>
-                  <origin calendar="#Hijri-qamari" notBefore="1687-02-14" notAfter="1687-06-18" when-custom="1 Rabīʿ al-sānī 1098-7 Shaʿbān 1098">
-                     <origDate calendar="#Hijri-qamari" notBefore="1687-02-14" notAfter="1687-06-18">1 Rabīʿ al-sānī 1098-7 Shaʿbān 1098 (14 February 1687 - 18 June 1687)</origDate>
+                  <origin calendar="Hijri-qamari" notBefore="1687-02-14" notAfter="1687-06-18" when-custom="1 Rabīʿ al-sānī 1098-7 Shaʿbān 1098">
+                     <origDate calendar="Hijri-qamari" notBefore="1687-02-14" notAfter="1687-06-18">1 Rabīʿ al-sānī 1098-7 Shaʿbān 1098 (14 February 1687 - 18 June 1687)</origDate>
  Thatta, Sindh, Pakistan <origPlace>India</origPlace>
                   </origin>
                </history>
@@ -122,8 +129,7 @@
          </classDecl>
       </encodingDesc>
       <profileDesc>
-         <textClass>
-			</textClass>
+         <textClass/>
       </profileDesc>
       <revisionDesc>
          <change when="2022-04-21">

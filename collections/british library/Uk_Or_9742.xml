@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6511">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 9742</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343746</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163240411.0x00009b</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="#multipleWorks">
                   <summary change="#add-summary2">
@@ -47,9 +55,9 @@
                   </summary>
                   <msItem xml:id="Uk_Or_9742-item1" n="1" class="http://lccn.loc.gov/sh85100084">
                      <locus from="2v" to="38r">2v–38r ff</locus>
-                     <author ref="http://viaf.org/viaf/36817419" key="person_36817419">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Ahlī Shīrāzī, Muḥammad ibn Yūsuf, 1454-1535 or 1536</persName>
-                        <persName xml:lang="fa">اهلی شیرازی, محمد ابن یوسف</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_36817419">Ahlī Shīrāzī, Muḥammad ibn Yūsuf, 1454-1535 or 1536</persName>
+                        <persName xml:lang="fa" key="viaf_36817419">اهلی شیرازی, محمد ابن یوسف</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20652" change="#ids-cleanup">Dīvān</title>
                      <title xml:lang="fa" key="work_20652" change="#ids-cleanup">دیوان</title>
@@ -57,19 +65,18 @@
                         <bibl>For a more detailed description see Glyn Meredith-Owens: Handlist of Persian Manuscripts, 1895-1966. [London]: Trustees of the British Museum, 1968, p.95-96.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Or_9742-item2" n="2" class="http://lccn.loc.gov/n2007024725 http://lccn.loc.gov/sh85064913">
                      <locus from="39v" to="95r">39v-95r ff</locus>
-                     <author ref="http://viaf.org/viaf/45890612" key="person_45890612">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Naʻmat Khān-i-ʻĀlī, -approximately 1710</persName>
-                        <persName xml:lang="fa-Latn-x-lc" type="alt">Ni‘mat Khān ‘Alī</persName>
-                        <persName xml:lang="fa">نعمت خان علی</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_45890612">Naʻmat Khān-i-ʻĀlī, -approximately 1710</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_45890612">Ni‘mat Khān ‘Alī</persName>
+                        <persName xml:lang="fa" key="viaf_45890612">نعمت خان علی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_21074" change="#ids-cleanup">Jangnāmah-’i Ni‘mat Khān ‘Alī</title>
                      <title xml:lang="fa" key="work_21074" change="#ids-cleanup">جنگنامۀ نعمت خان علی</title>
-                     <note>An account of <persName xml:lang="fa-Latn-x-lc" type="standard" ref="http://viaf.org/viaf/6178410" key="person_6178410" role="subject" change="#role-assignment">Aurangzeb’s</persName> operations against the <foreign xml:lang="fa-Latn-x-lc">Mahārāna</foreign> of <name type="place" key="subject_n83138475">Udaypūr</name> and the civil war between <persName type="supplied" xml:lang="fa-Latn-x-lc" key="person_f624" role="subject" change="#role-assignment">Bahādur Shāh <foreign xml:lang="fa">بهادر شاه</foreign>
+                     <note>An account of <persName xml:lang="fa-Latn-x-lc" type="standard" ref="http://viaf.org/viaf/6178410" key="viaf_6178410" role="subject" change="#role-assignment">Aurangzeb’s</persName> operations against the <foreign xml:lang="fa-Latn-x-lc">Mahārāna</foreign> of <name type="place" key="subject_n83138475">Udaypūr</name> and the civil war between <persName type="supplied" xml:lang="fa-Latn-x-lc" key="person_f624" role="subject" change="#role-assignment">Bahādur Shāh <foreign xml:lang="fa">بهادر شاه</foreign>
                         </persName> and <persName type="supplied" xml:lang="fa-Latn-x-lc" key="person_f2498" role="subject" change="#role-assignment">Muḥammad A‘ẓam Shāh <foreign xml:lang="fa">محمد عظم خان</foreign>
                         </persName>
                      </note>
@@ -77,8 +84,7 @@
                         <bibl>For a more detailed description see Glyn Meredith-Owens: Handlist of Persian Manuscripts, 1895-1966. [London]: Trustees of the British Museum, 1968, p.95-96.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -94,7 +100,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1831" notAfter="1832">1247</origDate>
+                     <origDate calendar="Hijri-qamari" notBefore="1831" notAfter="1832">1247</origDate>
                   </origin>
                </history>
                <additional>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3265">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>Delhi Persian 91A</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004341400</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163233768.0x000009</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
                   <summary change="#add-summary2">
@@ -47,42 +55,40 @@
                   </summary>
                   <msItem xml:id="Uk_Delhi_Persian_91A-item1" n="1" class="http://lccn.loc.gov/sh2008112367 http://lccn.loc.gov/sh85129656">
                      <locus from="1v" to="6r">ff. 1v-6r</locus>
-                     <author ref="http://viaf.org/viaf/19703891" key="person_19703891">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Anṣārī al-Harawī, ʻAbd Allāh ibn Muḥammad, 1006-1089</persName>
-                        <persName xml:lang="fa">انصارى الهروى، عبدالله بن محمد</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_19703891">Anṣārī al-Harawī, ʻAbd Allāh ibn Muḥammad, 1006-1089</persName>
+                        <persName xml:lang="fa" key="viaf_19703891">انصارى الهروى، عبدالله بن محمد</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8859">Risālah-ʼi ʻAbd Allāh Anṣārī</title>
                      <title xml:lang="fa" key="work_8859">رساله عبد الله انصاری</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa"/>
                      <note>A collection of Munājāt</note>
-                     <note>Dated in Kashmīr on <date calendar="#Hijri-qamari" when="1598">9 Ṣafar 1007</date>
+                     <note>Dated in Kashmīr on <date calendar="Hijri-qamari" when="1598">9 Ṣafar 1007</date>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Persian III, .</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                   <msItem xml:id="Uk_Delhi_Persian_91A-item2" n="2" class="http://lccn.loc.gov/sh2008112367 http://lccn.loc.gov/sh85129656">
                      <locus from="6r" to="7v">ff. 6r-7r</locus>
-                     <author ref="http://viaf.org/viaf/64253834" key="person_64253834">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Luqmān, the Sage</persName>
-                        <persName xml:lang="fa">لقمان، الحكيم</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_64253834">Luqmān, the Sage</persName>
+                        <persName xml:lang="fa" key="viaf_64253834">لقمان، الحكيم</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8860">Ṣad pand-i Luqmān</title>
                      <title xml:lang="fa" key="work_8860">صد پند لقمان</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" />
-                     <note>Dated in the colophon on <date calendar="#Hijri-qamari" when="1595">22 Ṣafar 1004</date>
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa"/>
+                     <note>Dated in the colophon on <date calendar="Hijri-qamari" when="1595">22 Ṣafar 1004</date>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Persian III, .</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -99,13 +105,13 @@
                      <handNote scope="major" script="nasta_liq">Kashmīrī nastaʼlīq</handNote>
                   </handDesc>
                   <decoDesc>
-                     <decoNote type="other" />
+                     <decoNote type="other"/>
                      <decoNote type="marginal">Margins ruled in gold, black and blue</decoNote>
                   </decoDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1600" notAfter="1699">17th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1600" notAfter="1699">17th century</origDate>
                   </origin>
                </history>
                <additional>

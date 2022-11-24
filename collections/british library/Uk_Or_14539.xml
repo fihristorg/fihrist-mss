@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5689">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-18</date>
+            <date calendar="Gregorian">2011-08-18</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,29 +42,34 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 14539</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343779</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163240411.0x0000bc</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85103851 http://lccn.loc.gov/sh94006066">
                   <summary change="#add-summary">
                      1 copy of Atish Kedeh -- List for use by Āz̲ar Baygdilī, Luṭf ʻAlī ibn Āqā Khān, 1721 or 2-1780 or 81
                   </summary>
                   <msItem xml:id="Uk_Or_14539-item1">
-                     <author key="person_118523950" change="#ids-cleanup">
-                        <persName ref="http://viaf.org/viaf/118523950/" type="standard" change="#ids-cleanup">Āz̲ar Baygdilī, Luṭf ʻAlī ibn Āqā Khān, 1721 or 2-1780 or 81</persName>
+                     <author change="#ids-cleanup">
+                        <persName ref="http://viaf.org/viaf/118523950/" type="standard" change="#ids-cleanup" key="ark:/81055/vdc_100164656332.0x000001 viaf_118523950">Āz̲ar Baygdilī, Luṭf ʻAlī ibn Āqā Khān, 1721 or 2-1780 or 81</persName>
                         <foreign xml:lang="fa">آذر بيگدلى، لطف على بن آقا خان</foreign>
                      </author>
-                     <editor role="com" key="person_20108923" change="#ids-cleanup">
+                     <editor role="com" key="viaf_20108923" change="#ids-cleanup">
                         <persName ref="http://viaf.org/viaf/20108923/" type="standard" change="#ids-cleanup">Bland, Nathaniel, d. 1760</persName>
                      </editor>
                      <title xml:lang="ar-Latn-x-lc" key="work_7824">Atish Kedeh -- List for use</title>
                      <note>A tabular list, in romanized Persian and English, of the contents of Ātashkada, the taẕkirah of Persian poets</note>
-                     <note>Annotations added by <persName ref="http://lccn.loc.gov/nr91025331" type="standard" key="person_10017206" role="ann" change="#role-assignment">Charles Rieu</persName>
+                     <note>Annotations added by <persName ref="http://lccn.loc.gov/nr91025331" type="standard" key="viaf_10017206" role="ann" change="#role-assignment">Charles Rieu</persName>
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Waley 1998, page 29.</bibl>
                      </listBibl>
                      <textLang mainLang="fa" otherLangs="en">Persian and English</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -79,8 +86,8 @@
                <history>
                   <origin>
                      <origPlace>England</origPlace>
-                     <origDate calendar="#Gregorian" when="1843">Main text from around 1843</origDate>
-                     <origDate calendar="#Gregorian" notBefore="1860" notAfter="1880">Additions from 1860 to 1880</origDate>
+                     <origDate calendar="Gregorian" when="1843">Main text from around 1843</origDate>
+                     <origDate calendar="Gregorian" notBefore="1860" notAfter="1880">Additions from 1860 to 1880</origDate>
                   </origin>
                </history>
                <additional>

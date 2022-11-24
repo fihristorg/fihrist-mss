@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3347">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011.08.17</date>
+            <date calendar="Gregorian">2011.08.17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -41,9 +43,15 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>IO Islamic 4683</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343701</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163240411.0x000071</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="#multipleWorks">
-                  <summary>A volume containing fifteen separate documents, mostly orders (ḥukmnāmah) and consultations of <persName xml:lang="fa-Latn-x-lc" type="alt" ref="http://viaf.org/viaf/7368495/" key="person_7368495" role="aut" change="#role-assignment">Ṭīpū Sulṭān</persName>. Several are in Ṭīpū’s hand, and almost every one contains annotations by Col. <persName ref="http://viaf.org/viaf/76424710/" key="person_76424710" xml:lang="en" type="standard" role="ann" change="#role-assignment #ids-cleanup">William Kirkpatrick</persName> into whose hands they passed after the fall of <name type="place" ref="http://lccn.loc.gov/n89234194" key="subject_n89234194">Śrīraṅgapaṭṭaṇa (India)</name> in <date calendar="#Gregorian" when="1799">1799</date>. The documents comprise:
+                  <summary>A volume containing fifteen separate documents, mostly orders (ḥukmnāmah) and consultations of <persName xml:lang="fa-Latn-x-lc" type="alt" ref="http://viaf.org/viaf/7368495/" key="viaf_7368495" role="aut" change="#role-assignment">Ṭīpū Sulṭān</persName>. Several are in Ṭīpū’s hand, and almost every one contains annotations by Col. <persName ref="http://viaf.org/viaf/76424710/" key="viaf_76424710" xml:lang="en" type="standard" role="ann" change="#role-assignment #ids-cleanup">William Kirkpatrick</persName> into whose hands they passed after the fall of <name type="place" ref="http://lccn.loc.gov/n89234194" key="subject_n89234194">Śrīraṅgapaṭṭaṇa (India)</name> in <date calendar="Gregorian" when="1799">1799</date>. The documents comprise:
                   </summary>
                </msContents>
                <physDesc>
@@ -59,7 +67,7 @@
                      </handNote>
                   </handDesc>
                   <decoDesc>
-                     <decoNote type="illustration" />
+                     <decoNote type="illustration"/>
                   </decoDesc>
                </physDesc>
                <history>
@@ -85,22 +93,21 @@
                   <msContents>
                      <msItem xml:id="Uk_IO_Islamic_4683-part1-item1" n="1" class="http://lccn.loc.gov/n80087663">
                         <locus from="2v" to="8v">ff 2v-8v</locus>
-                        <author ref="http://viaf.org/viaf/7368495/" key="person_7368495">
-                           <persName xml:lang="fa-Latn-x-lc" type="standard" role="aut" change="#role-assignment">Tipu Sultan, Fath ʻAli, Nawab of Mysore, 1753-1799</persName>
-                           <persName xml:lang="fa" role="aut" change="#role-assignment">طيپو سلطان، فتح على، نواب ميسور</persName>
+                        <author>
+                           <persName xml:lang="fa-Latn-x-lc" type="standard" role="aut" change="#role-assignment" key="viaf_7368495">Tipu Sultan, Fath ʻAli, Nawab of Mysore, 1753-1799</persName>
+                           <persName xml:lang="fa" role="aut" change="#role-assignment" key="viaf_7368495">طيپو سلطان، فتح على، نواب ميسور</persName>
                         </author>
                         <title xml:lang="fa-Latn-x-lc" key="work_8573">Ḥukmnāmah ba-nām-i ʻāmilān va sarishtahdārān-i ḥāl va istiqbāl-i taʻalliqah-ʼi Sīlam</title>
                         <title xml:lang="fa" key="work_8573">حكمنانه بنام ‏عاملان و سرشتهداران حال و استقبال تعلقۀ سیلم</title>
-                        <incipit xml:lang="ar" />
-                        <explicit xml:lang="ar" defective="true" />
-                        <note>Contains the seal of <persName xml:lang="fa-Latn-x-lc" type="alt" ref="http://viaf.org/viaf/7368495/" key="person_7368495" role="aut" change="#role-assignment">Ṭīpū Sulṭān</persName>
+                        <incipit xml:lang="ar"/>
+                        <explicit xml:lang="ar" defective="true"/>
+                        <note>Contains the seal of <persName xml:lang="fa-Latn-x-lc" type="alt" ref="http://viaf.org/viaf/7368495/" key="viaf_7368495" role="aut" change="#role-assignment">Ṭīpū Sulṭān</persName>
                         </note>
                         <listBibl>
                            <bibl>For a more detailed description see Sims-Williams 1986, page 5.</bibl>
                         </listBibl>
                         <textLang mainLang="fa">Persian</textLang>
-                        <note>
-                     </note>
+                        <note/>
                      </msItem>
                   </msContents>
                   <physDesc>
@@ -115,14 +122,14 @@
                      </objectDesc>
                      <sealDesc>
                         <seal n="1" type="pendant" subtype="cauda_duplex">
-                           <p>Seal of <persName xml:lang="fa-Latn-x-lc" type="alt" ref="http://viaf.org/viaf/7368495/" key="person_7368495" role="aut" change="#role-assignment">Ṭīpū Sulṭān of Mysore</persName>
+                           <p>Seal of <persName xml:lang="fa-Latn-x-lc" type="alt" ref="http://viaf.org/viaf/7368495/" key="viaf_7368495" role="aut" change="#role-assignment">Ṭīpū Sulṭān of Mysore</persName>
                            </p>
                         </seal>
                      </sealDesc>
                   </physDesc>
                   <history>
-                     <origin>
-                        <origDate calendar="#Other" when="1783">17 Zuʼl-Q. 1197</origDate>
+                     <origin calendar="Gregorian" when="1783">
+                        <origDate calendar="Hijri-qamari" when="1783">17 Zuʼl-Q. 1197</origDate>
                      </origin>
                   </history>
                </msPart>
@@ -135,24 +142,23 @@
                   <msContents>
                      <msItem xml:id="Uk_IO_Islamic_4683-part2-item1" n="2" class="http://lccn.loc.gov/n80087663">
                         <locus from="10v" to="23Av">ff 10v-23Av</locus>
-                        <author ref="http://viaf.org/viaf/7368495/" key="person_7368495">
-                           <persName xml:lang="fa-Latn-x-lc" type="standard" role="aut" change="#role-assignment">Tipu Sultan, Fath ʻAli, Nawab of Mysore, 1753-1799</persName>
-                           <persName xml:lang="fa" role="aut" change="#role-assignment">طيپو سلطان، فتح على، نواب ميسور</persName>
+                        <author>
+                           <persName xml:lang="fa-Latn-x-lc" type="standard" role="aut" change="#role-assignment" key="viaf_7368495">Tipu Sultan, Fath ʻAli, Nawab of Mysore, 1753-1799</persName>
+                           <persName xml:lang="fa" role="aut" change="#role-assignment" key="viaf_7368495">طيپو سلطان، فتح على، نواب ميسور</persName>
                         </author>
                         <title xml:lang="fa-Latn-x-lc" key="work_20992" change="#ids-cleanup">Ḥukmnāmah</title>
                         <title xml:lang="fa" key="work_20992" change="#ids-cleanup">حكمنانه</title>
-                        <incipit xml:lang="ar" />
-                        <explicit xml:lang="ar" defective="true" />
+                        <incipit xml:lang="ar"/>
+                        <explicit xml:lang="ar" defective="true"/>
                         <note>Addressed to the ʻāmils and sarishtahdārs of <name type="place">Zaffarabad</name>
                         </note>
-                        <note>Contains the seal of <persName xml:lang="fa-Latn-x-lc" type="alt" ref="http://viaf.org/viaf/7368495/" key="person_7368495" role="aut" change="#role-assignment">Ṭīpū Sulṭān</persName>
+                        <note>Contains the seal of <persName xml:lang="fa-Latn-x-lc" type="alt" ref="http://viaf.org/viaf/7368495/" key="viaf_7368495" role="aut" change="#role-assignment">Ṭīpū Sulṭān</persName>
                         </note>
                         <listBibl>
                            <bibl>For a more detailed description see Sims-Williams 1986, page 5.</bibl>
                         </listBibl>
                         <textLang mainLang="fa">Persian</textLang>
-                        <note>
-                     </note>
+                        <note/>
                      </msItem>
                   </msContents>
                   <physDesc>
@@ -167,14 +173,14 @@
                      </objectDesc>
                      <sealDesc>
                         <seal n="2" type="pendant" subtype="cauda_duplex">
-                           <p>Seal of <persName xml:lang="fa-Latn-x-lc" type="alt" ref="http://viaf.org/viaf/7368495/" key="person_7368495" role="aut" change="#role-assignment">Ṭīpū Sulṭān of Mysore</persName>
+                           <p>Seal of <persName xml:lang="fa-Latn-x-lc" type="alt" ref="http://viaf.org/viaf/7368495/" key="viaf_7368495" role="aut" change="#role-assignment">Ṭīpū Sulṭān of Mysore</persName>
                            </p>
                         </seal>
                      </sealDesc>
                   </physDesc>
                   <history>
-                     <origin>
-                        <origDate calendar="#Other" when="1784">15 Jaʻfari, Azal, 1198</origDate>
+                     <origin calendar="Gregorian" when="1784">
+                        <origDate calendar="Gregorian" when="1784">15 Jaʻfari, Azal, 1198</origDate>
                      </origin>
                   </history>
                </msPart>
@@ -187,23 +193,22 @@
                   <msContents>
                      <msItem xml:id="Uk_IO_Islamic_4683-part3-item1" n="3" class="http://lccn.loc.gov/n80087663">
                         <locus from="24r" to="25v">ff 24r-25v</locus>
-                        <author ref="http://viaf.org/viaf/7368495/" key="person_7368495">
-                           <persName xml:lang="fa-Latn-x-lc" type="standard" role="aut" change="#role-assignment">Tipu Sultan, Fath ʻAli, Nawab of Mysore, 1753-1799</persName>
-                           <persName xml:lang="fa" role="aut" change="#role-assignment">طيپو سلطان، فتح على، نواب ميسور</persName>
+                        <author>
+                           <persName xml:lang="fa-Latn-x-lc" type="standard" role="aut" change="#role-assignment" key="viaf_7368495">Tipu Sultan, Fath ʻAli, Nawab of Mysore, 1753-1799</persName>
+                           <persName xml:lang="fa" role="aut" change="#role-assignment" key="viaf_7368495">طيپو سلطان، فتح على، نواب ميسور</persName>
                         </author>
                         <title xml:lang="fa-Latn-x-lc" key="work_8574">Qāʼidahhā-yi sar dādan-i tūphā-yi kushī…</title>
                         <title xml:lang="fa" key="work_8574">قائدههای سر دادن توپهای کشی</title>
-                        <incipit xml:lang="ar" />
-                        <explicit xml:lang="ar" defective="true" />
-                        <note>Regulations of <persName xml:lang="fa-Latn-x-lc" type="alt" ref="http://viaf.org/viaf/7368495/" key="person_7368495" role="aut" change="#role-assignment">Ṭīpū Sulṭān of Mysore, <foreign xml:lang="fa">طيپو سلطان ميسوری</foreign>
+                        <incipit xml:lang="ar"/>
+                        <explicit xml:lang="ar" defective="true"/>
+                        <note>Regulations of <persName xml:lang="fa-Latn-x-lc" type="alt" ref="http://viaf.org/viaf/7368495/" key="viaf_7368495" role="aut" change="#role-assignment">Ṭīpū Sulṭān of Mysore, <foreign xml:lang="fa">طيپو سلطان ميسوری</foreign>
                            </persName> for the different salutes to the fired on ceremonial occasions
                         </note>
                         <listBibl>
                            <bibl>For a more detailed description see Sims-Williams 1986, page 5.</bibl>
                         </listBibl>
                         <textLang mainLang="fa">Persian</textLang>
-                        <note>
-                     </note>
+                        <note/>
                      </msItem>
                   </msContents>
                   <physDesc>
@@ -218,9 +223,9 @@
                      </objectDesc>
                   </physDesc>
                   <history>
-                     <origin>
+                     <origin calendar="Gregorian" when="1785">
                         <origPlace>Zaffarabad</origPlace>
-                        <origDate calendar="#Other" when="1785">Hydary, Jalaw, 1199</origDate>
+                        <origDate calendar="Gregorian" when="1785">Hydary, Jalaw, 1199</origDate>
                      </origin>
                   </history>
                </msPart>
@@ -233,24 +238,23 @@
                   <msContents>
                      <msItem xml:id="Uk_IO_Islamic_4683-part4-item1" n="4" class="http://lccn.loc.gov/n80087663 http://lccn.loc.gov/n89234194">
                         <locus from="27r" to="50r">ff 27r-50r</locus>
-                        <author ref="http://viaf.org/viaf/7368495/" key="person_7368495">
-                           <persName xml:lang="fa-Latn-x-lc" type="standard" role="aut" change="#role-assignment">Tipu Sultan, Fath ʻAli, Nawab of Mysore, 1753-1799</persName>
-                           <persName xml:lang="fa" role="aut" change="#role-assignment">طيپو سلطان، فتح على، نواب ميسور</persName>
+                        <author>
+                           <persName xml:lang="fa-Latn-x-lc" type="standard" role="aut" change="#role-assignment" key="viaf_7368495">Tipu Sultan, Fath ʻAli, Nawab of Mysore, 1753-1799</persName>
+                           <persName xml:lang="fa" role="aut" change="#role-assignment" key="viaf_7368495">طيپو سلطان، فتح على، نواب ميسور</persName>
                         </author>
                         <title xml:lang="fa-Latn-x-lc" key="work_20992" change="#ids-cleanup">Ḥukmnāmah</title>
                         <title xml:lang="fa" key="work_20992" change="#ids-cleanup">حكمنانه</title>
-                        <incipit xml:lang="ar" />
-                        <explicit xml:lang="ar" defective="true" />
+                        <incipit xml:lang="ar"/>
+                        <explicit xml:lang="ar" defective="true"/>
                         <note>Addressed to the ʻāmils and sarishtahdārs of <name type="place">Gulshanabad (Seringapatam)</name>
                         </note>
-                        <note>Contains the seal of <persName xml:lang="fa-Latn-x-lc" type="alt" ref="http://viaf.org/viaf/7368495/" key="person_7368495" role="aut" change="#role-assignment">Ṭīpū Sulṭān</persName>
+                        <note>Contains the seal of <persName xml:lang="fa-Latn-x-lc" type="alt" ref="http://viaf.org/viaf/7368495/" key="viaf_7368495" role="aut" change="#role-assignment">Ṭīpū Sulṭān</persName>
                         </note>
                         <listBibl>
                            <bibl>For a more detailed description see Sims-Williams 1986, page 5.</bibl>
                         </listBibl>
                         <textLang mainLang="fa">Persian</textLang>
-                        <note>
-                     </note>
+                        <note/>
                      </msItem>
                   </msContents>
                   <physDesc>
@@ -265,14 +269,14 @@
                      </objectDesc>
                      <sealDesc>
                         <seal n="3" type="pendant" subtype="cauda_duplex">
-                           <p>Seal of <persName xml:lang="fa-Latn-x-lc" type="alt" ref="http://viaf.org/viaf/7368495/" key="person_7368495" role="aut" change="#role-assignment">Ṭīpū Sulṭān of Mysore</persName>
+                           <p>Seal of <persName xml:lang="fa-Latn-x-lc" type="alt" ref="http://viaf.org/viaf/7368495/" key="viaf_7368495" role="aut" change="#role-assignment">Ṭīpū Sulṭān of Mysore</persName>
                            </p>
                         </seal>
                      </sealDesc>
                   </physDesc>
                   <history>
-                     <origin>
-                        <origDate calendar="#Other" when="1785">1 Ahmadi, Dalv, 1200</origDate>
+                     <origin calendar="Gregorian" when="1785">
+                        <origDate calendar="Gregorian" when="1785">1 Ahmadi, Dalv, 1200</origDate>
                      </origin>
                   </history>
                </msPart>
@@ -285,23 +289,22 @@
                   <msContents>
                      <msItem xml:id="Uk_IO_Islamic_4683-part5-item1" n="5" class="http://lccn.loc.gov/n80087663">
                         <locus from="51r" to="74v">ff 71r-74v</locus>
-                        <author ref="http://viaf.org/viaf/7368495/" key="person_7368495">
-                           <persName xml:lang="fa-Latn-x-lc" type="standard" role="aut" change="#role-assignment">Tipu Sultan, Fath ʻAli, Nawab of Mysore, 1753-1799</persName>
-                           <persName xml:lang="fa" role="aut" change="#role-assignment">طيپو سلطان، فتح على، نواب ميسور</persName>
+                        <author>
+                           <persName xml:lang="fa-Latn-x-lc" type="standard" role="aut" change="#role-assignment" key="viaf_7368495">Tipu Sultan, Fath ʻAli, Nawab of Mysore, 1753-1799</persName>
+                           <persName xml:lang="fa" role="aut" change="#role-assignment" key="viaf_7368495">طيپو سلطان، فتح على، نواب ميسور</persName>
                         </author>
                         <title xml:lang="fa-Latn-x-lc" key="work_20992" change="#ids-cleanup">Ḥukmnāmah</title>
                         <title xml:lang="fa" key="work_20992" change="#ids-cleanup">حكمنانه</title>
-                        <incipit xml:lang="ar" />
-                        <explicit xml:lang="ar" defective="true" />
+                        <incipit xml:lang="ar"/>
+                        <explicit xml:lang="ar" defective="true"/>
                         <note>Addressed to the ʻāmils and sarishtahdārs of Hukoth? (Suklur?)</note>
-                        <note>Contains the seal of <persName xml:lang="fa-Latn-x-lc" type="alt" ref="http://viaf.org/viaf/7368495/" key="person_7368495" role="aut" change="#role-assignment">Ṭīpū Sulṭān</persName>
+                        <note>Contains the seal of <persName xml:lang="fa-Latn-x-lc" type="alt" ref="http://viaf.org/viaf/7368495/" key="viaf_7368495" role="aut" change="#role-assignment">Ṭīpū Sulṭān</persName>
                         </note>
                         <listBibl>
                            <bibl>For a more detailed description see Sims-Williams 1986, page 5.</bibl>
                         </listBibl>
                         <textLang mainLang="fa">Persian</textLang>
-                        <note>
-                     </note>
+                        <note/>
                      </msItem>
                   </msContents>
                   <physDesc>
@@ -316,14 +319,14 @@
                      </objectDesc>
                      <sealDesc>
                         <seal n="4" type="pendant" subtype="cauda_duplex">
-                           <p>Seal of <persName xml:lang="fa-Latn-x-lc" type="alt" ref="http://viaf.org/viaf/7368495/" key="person_7368495" role="aut" change="#role-assignment">Ṭīpū Sulṭān of Mysore</persName>
+                           <p>Seal of <persName xml:lang="fa-Latn-x-lc" type="alt" ref="http://viaf.org/viaf/7368495/" key="viaf_7368495" role="aut" change="#role-assignment">Ṭīpū Sulṭān of Mysore</persName>
                            </p>
                         </seal>
                      </sealDesc>
                   </physDesc>
                   <history>
-                     <origin>
-                        <origDate calendar="#Other" when="1785">1 Ahmadi, Dalv, 1200</origDate>
+                     <origin calendar="Gregorian" when="1785">
+                        <origDate calendar="Gregorian" when="1785">1 Ahmadi, Dalv, 1200</origDate>
                      </origin>
                   </history>
                </msPart>
@@ -336,23 +339,22 @@
                   <msContents>
                      <msItem xml:id="Uk_IO_Islamic_4683-part6-item1" n="6" class="http://lccn.loc.gov/n80087663">
                         <locus from="75r" to="101v">ff 75r-101v</locus>
-                        <author ref="http://viaf.org/viaf/7368495/" key="person_7368495">
-                           <persName xml:lang="fa-Latn-x-lc" type="standard" role="aut" change="#role-assignment">Tipu Sultan, Fath ʻAli, Nawab of Mysore, 1753-1799</persName>
-                           <persName xml:lang="fa" role="aut" change="#role-assignment">طيپو سلطان، فتح على، نواب ميسور</persName>
+                        <author>
+                           <persName xml:lang="fa-Latn-x-lc" type="standard" role="aut" change="#role-assignment" key="viaf_7368495">Tipu Sultan, Fath ʻAli, Nawab of Mysore, 1753-1799</persName>
+                           <persName xml:lang="fa" role="aut" change="#role-assignment" key="viaf_7368495">طيپو سلطان، فتح على، نواب ميسور</persName>
                         </author>
                         <title xml:lang="fa-Latn-x-lc" key="work_20992" change="#ids-cleanup">Ḥukmnāmah</title>
                         <title xml:lang="fa" key="work_20992" change="#ids-cleanup">حكمنانه</title>
-                        <incipit xml:lang="ar" />
-                        <explicit xml:lang="ar" defective="true" />
+                        <incipit xml:lang="ar"/>
+                        <explicit xml:lang="ar" defective="true"/>
                         <note>Addressed to the ʻāmils and sarishtahdārs of Hukoth? (Suklur?)</note>
-                        <note>Contains the seal of <persName xml:lang="fa-Latn-x-lc" type="alt" ref="http://viaf.org/viaf/7368495/" key="person_7368495" role="aut" change="#role-assignment">Ṭīpū Sulṭān</persName>
+                        <note>Contains the seal of <persName xml:lang="fa-Latn-x-lc" type="alt" ref="http://viaf.org/viaf/7368495/" key="viaf_7368495" role="aut" change="#role-assignment">Ṭīpū Sulṭān</persName>
                         </note>
                         <listBibl>
                            <bibl>For a more detailed description see Sims-Williams 1986, page 5.</bibl>
                         </listBibl>
                         <textLang mainLang="fa">Persian</textLang>
-                        <note>
-                     </note>
+                        <note/>
                      </msItem>
                   </msContents>
                   <physDesc>
@@ -367,14 +369,14 @@
                      </objectDesc>
                      <sealDesc>
                         <seal n="5" type="pendant" subtype="cauda_duplex">
-                           <p>Seal of <persName xml:lang="fa-Latn-x-lc" type="alt" ref="http://viaf.org/viaf/7368495/" key="person_7368495" role="aut" change="#role-assignment">Ṭīpū Sulṭān of Mysore</persName>
+                           <p>Seal of <persName xml:lang="fa-Latn-x-lc" type="alt" ref="http://viaf.org/viaf/7368495/" key="viaf_7368495" role="aut" change="#role-assignment">Ṭīpū Sulṭān of Mysore</persName>
                            </p>
                         </seal>
                      </sealDesc>
                   </physDesc>
                   <history>
-                     <origin>
-                        <origDate calendar="#Other" when="1785">1 Ahmadi, Dalv, 1200</origDate>
+                     <origin calendar="Gregorian" when="1785">
+                        <origDate calendar="Gregorian" when="1785">1 Ahmadi, Dalv, 1200</origDate>
                      </origin>
                   </history>
                </msPart>
@@ -387,21 +389,20 @@
                   <msContents>
                      <msItem xml:id="Uk_IO_Islamic_4683-part7-item1" n="7" class="http://lccn.loc.gov/n80087663">
                         <locus from="102r" to="107v">ff 102r-107v</locus>
-                        <author ref="http://viaf.org/viaf/7368495/" key="person_7368495">
-                           <persName xml:lang="fa-Latn-x-lc" type="standard" role="aut" change="#role-assignment">Tipu Sultan, Fath ʻAli, Nawab of Mysore, 1753-1799</persName>
-                           <persName xml:lang="fa" role="aut" change="#role-assignment">طيپو سلطان، فتح على، نواب ميسور</persName>
+                        <author>
+                           <persName xml:lang="fa-Latn-x-lc" type="standard" role="aut" change="#role-assignment" key="viaf_7368495">Tipu Sultan, Fath ʻAli, Nawab of Mysore, 1753-1799</persName>
+                           <persName xml:lang="fa" role="aut" change="#role-assignment" key="viaf_7368495">طيپو سلطان، فتح على، نواب ميسور</persName>
                         </author>
                         <title xml:lang="fa-Latn-x-lc" key="work_20992" change="#ids-cleanup">Ḥukmnāmah</title>
                         <title xml:lang="fa" key="work_20992" change="#ids-cleanup">حكمنانه</title>
-                        <incipit xml:lang="ar" />
-                        <explicit xml:lang="ar" defective="true" />
+                        <incipit xml:lang="ar"/>
+                        <explicit xml:lang="ar" defective="true"/>
                         <note>Addressed to the dārūghahs and mutaṣaddīyan for a survey of the country</note>
                         <listBibl>
                            <bibl>For a more detailed description see Sims-Williams 1986, page 5.</bibl>
                         </listBibl>
                         <textLang mainLang="fa">Persian</textLang>
-                        <note>
-                     </note>
+                        <note/>
                      </msItem>
                   </msContents>
                   <physDesc>
@@ -416,8 +417,8 @@
                      </objectDesc>
                   </physDesc>
                   <history>
-                     <origin>
-                        <origDate calendar="#Other" when="1789">12 Khusravi, Sarab. 1217</origDate>
+                     <origin calendar="Gregorian" when="1789">
+                        <origDate calendar="Gregorian" when="1789">12 Khusravi, Sarab. 1217</origDate>
                      </origin>
                   </history>
                </msPart>
@@ -430,22 +431,21 @@
                   <msContents>
                      <msItem xml:id="Uk_IO_Islamic_4683-part8-item1" n="8" class="http://lccn.loc.gov/n80087663 http://lccn.loc.gov/n89234194 http://lccn.loc.gov/sh85050938">
                         <locus from="108r" to="112r">ff 108r-112r</locus>
-                        <author ref="http://viaf.org/viaf/7368495/" key="person_7368495">
-                           <persName xml:lang="fa-Latn-x-lc" type="standard" role="aut" change="#role-assignment">Tipu Sultan, Fath ʻAli, Nawab of Mysore, 1753-1799</persName>
-                           <persName xml:lang="fa" role="aut" change="#role-assignment">طيپو سلطان، فتح على، نواب ميسور</persName>
+                        <author>
+                           <persName xml:lang="fa-Latn-x-lc" type="standard" role="aut" change="#role-assignment" key="viaf_7368495">Tipu Sultan, Fath ʻAli, Nawab of Mysore, 1753-1799</persName>
+                           <persName xml:lang="fa" role="aut" change="#role-assignment" key="viaf_7368495">طيپو سلطان، فتح على، نواب ميسور</persName>
                         </author>
                         <title xml:lang="fa-Latn-x-lc" key="work_20992" change="#ids-cleanup">Ḥukmnāmah</title>
                         <title xml:lang="fa" key="work_20992" change="#ids-cleanup">حكمنانه</title>
-                        <incipit xml:lang="ar" />
-                        <explicit xml:lang="ar" defective="true" />
+                        <incipit xml:lang="ar"/>
+                        <explicit xml:lang="ar" defective="true"/>
                         <note>Addressed to the officer superintending the fortifications of <name type="place" ref="http://lccn.loc.gov/n89234194" key="subject_n89234194">Seringapatam</name>
                         </note>
                         <listBibl>
                            <bibl>For a more detailed description see Sims-Williams 1986, page 5.</bibl>
                         </listBibl>
                         <textLang mainLang="fa">Persian</textLang>
-                        <note>
-                     </note>
+                        <note/>
                      </msItem>
                   </msContents>
                   <physDesc>
@@ -460,9 +460,9 @@
                      </objectDesc>
                   </physDesc>
                   <history>
-                     <origin>
-                        <origDate calendar="#Other" when="1792">14 Jaʻfari, Sahar, 1220</origDate>
-                        <origDate calendar="#Other" when="1792">with supplements of 16 Haydari and 13 Razi, 1220</origDate>
+                     <origin calendar="Gregorian" when="1792">
+                        <origDate calendar="Gregorian" when="1792">14 Jaʻfari, Sahar, 1220</origDate>
+                        <origDate calendar="Gregorian" when="1792">with supplements of 16 Haydari and 13 Razi, 1220</origDate>
                      </origin>
                   </history>
                </msPart>
@@ -475,21 +475,20 @@
                   <msContents>
                      <msItem xml:id="Uk_IO_Islamic_4683-part9-item1" n="9" class="http://lccn.loc.gov/n80087663 ">
                         <locus from="115r" to="125v">ff 115r-125v</locus>
-                        <author ref="http://viaf.org/viaf/7368495/" key="person_7368495" role="scr" change="#role-assignment">
-                           <persName xml:lang="fa-Latn-x-lc" type="standard">Tipu Sultan, Fath ʻAli, Nawab of Mysore, 1753-1799</persName>
-                           <persName xml:lang="fa">طيپو سلطان، فتح على، نواب ميسور</persName>
+                        <author role="scr" change="#role-assignment">
+                           <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_7368495">Tipu Sultan, Fath ʻAli, Nawab of Mysore, 1753-1799</persName>
+                           <persName xml:lang="fa" key="viaf_7368495">طيپو سلطان، فتح على، نواب ميسور</persName>
                         </author>
                         <title xml:lang="en" type="desc" key="work_8400">Memorandum</title>
-                        <incipit xml:lang="ar" />
-                        <explicit xml:lang="ar" defective="true" />
-                        <note>Memorandum possibly partly by the hand of <persName xml:lang="fa-Latn-x-lc" type="alt" key="person_7368495" role="aut scr" change="#role-assignment #ids-cleanup">Ṭīpū Sulṭān of Mysore</persName> concerning his military and other establishments
+                        <incipit xml:lang="ar"/>
+                        <explicit xml:lang="ar" defective="true"/>
+                        <note>Memorandum possibly partly by the hand of <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_7368495" role="aut scr" change="#role-assignment #ids-cleanup">Ṭīpū Sulṭān of Mysore</persName> concerning his military and other establishments
                         </note>
                         <listBibl>
                            <bibl>For a more detailed description see Sims-Williams 1986, page 5.</bibl>
                         </listBibl>
                         <textLang mainLang="fa">Persian</textLang>
-                        <note>
-                     </note>
+                        <note/>
                      </msItem>
                   </msContents>
                   <physDesc>
@@ -516,21 +515,20 @@
                   <msContents>
                      <msItem xml:id="Uk_IO_Islamic_4683-part10-item1" n="10" class="http://lccn.loc.gov/n80087663  http://lccn.loc.gov/n92083080">
                         <locus from="127r" to="129r">ff 127r-129r</locus>
-                        <author ref="http://viaf.org/viaf/7368495/" key="person_7368495" role="scr" change="#role-assignment">
-                           <persName xml:lang="fa-Latn-x-lc" type="standard">Tipu Sultan, Fath ʻAli, Nawab of Mysore, 1753-1799</persName>
-                           <persName xml:lang="fa">طيپو سلطان، فتح على، نواب ميسور</persName>
+                        <author role="scr" change="#role-assignment">
+                           <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_7368495">Tipu Sultan, Fath ʻAli, Nawab of Mysore, 1753-1799</persName>
+                           <persName xml:lang="fa" key="viaf_7368495">طيپو سلطان، فتح على، نواب ميسور</persName>
                         </author>
                         <title xml:lang="en" type="desc" key="work_8400">Memorandum</title>
-                        <incipit xml:lang="ar" />
-                        <explicit xml:lang="ar" defective="true" />
-                        <note>Memorandum probably by the hand of <persName xml:lang="fa-Latn-x-lc" type="alt" key="person_7368495" role="aut scr" change="#role-assignment #ids-cleanup">Ṭīpū Sulṭān of Mysore</persName> concerning his cavalry establishments
+                        <incipit xml:lang="ar"/>
+                        <explicit xml:lang="ar" defective="true"/>
+                        <note>Memorandum probably by the hand of <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_7368495" role="aut scr" change="#role-assignment #ids-cleanup">Ṭīpū Sulṭān of Mysore</persName> concerning his cavalry establishments
                         </note>
                         <listBibl>
                            <bibl>For a more detailed description see Sims-Williams 1986, page 5.</bibl>
                         </listBibl>
                         <textLang mainLang="fa">Persian</textLang>
-                        <note>
-                     </note>
+                        <note/>
                      </msItem>
                   </msContents>
                   <physDesc>
@@ -545,8 +543,8 @@
                      </objectDesc>
                   </physDesc>
                   <history>
-                     <origin>
-                        <origDate calendar="#Other" when="1793">16? Jaʼfari 1221</origDate>
+                     <origin calendar="Gregorian" when="1793">
+                        <origDate calendar="Gregorian" when="1793">16? Jaʼfari 1221</origDate>
                      </origin>
                   </history>
                </msPart>
@@ -559,21 +557,20 @@
                   <msContents>
                      <msItem xml:id="Uk_IO_Islamic_4683-part11-item1" n="11" class="http://lccn.loc.gov/n80087663">
                         <locus from="131r" to="148v">ff 131r-148v</locus>
-                        <author ref="http://viaf.org/viaf/7368495/" key="person_7368495" role="scr" change="#role-assignment">
-                           <persName xml:lang="fa-Latn-x-lc" type="standard">Tipu Sultan, Fath ʻAli, Nawab of Mysore, 1753-1799</persName>
-                           <persName xml:lang="fa">طيپو سلطان، فتح على، نواب ميسور</persName>
+                        <author role="scr" change="#role-assignment">
+                           <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_7368495">Tipu Sultan, Fath ʻAli, Nawab of Mysore, 1753-1799</persName>
+                           <persName xml:lang="fa" key="viaf_7368495">طيپو سلطان، فتح على، نواب ميسور</persName>
                         </author>
                         <title xml:lang="en" type="desc" key="work_8575">Consultations</title>
-                        <incipit xml:lang="ar" />
-                        <explicit xml:lang="ar" defective="true" />
-                        <note>Consultations, partly in his own hand, of <persName xml:lang="fa-Latn-x-lc" type="alt" key="person_7368495" role="aut scr" change="#role-assignment #ids-cleanup">Ṭīpū Sulṭān of Mysore</persName> with his ministers on Babr Jang’s jāgīr, the return of his two sons taken hostages, a proposed tour, the Mahdavis, and Shūndījī Vāgh
+                        <incipit xml:lang="ar"/>
+                        <explicit xml:lang="ar" defective="true"/>
+                        <note>Consultations, partly in his own hand, of <persName xml:lang="fa-Latn-x-lc" type="alt" key="viaf_7368495" role="aut scr" change="#role-assignment #ids-cleanup">Ṭīpū Sulṭān of Mysore</persName> with his ministers on Babr Jang’s jāgīr, the return of his two sons taken hostages, a proposed tour, the Mahdavis, and Shūndījī Vāgh
                         </note>
                         <listBibl>
                            <bibl>For a more detailed description see Sims-Williams 1986, page 5-6.</bibl>
                         </listBibl>
                         <textLang mainLang="fa">Persian</textLang>
-                        <note>
-                     </note>
+                        <note/>
                      </msItem>
                   </msContents>
                   <physDesc>
@@ -588,8 +585,8 @@
                      </objectDesc>
                   </physDesc>
                   <history>
-                     <origin>
-                        <origDate calendar="#Other" when="1793">14? Haydari, Sahir, 1221</origDate> and <origDate calendar="#Other" when="1794">16 Ahmadi, Rasikh, 1222</origDate>
+                     <origin calendar="Gregorian" when="1793">
+                        <origDate calendar="Gregorian" when="1793">14? Haydari, Sahir, 1221</origDate> and <origDate calendar="Gregorian" when="1794">16 Ahmadi, Rasikh, 1222</origDate>
                      </origin>
                   </history>
                </msPart>
@@ -602,22 +599,21 @@
                   <msContents>
                      <msItem xml:id="Uk_IO_Islamic_4683-part12-item1" n="12" class="http://lccn.loc.gov/n80087663 http://lccn.loc.gov/n89234194">
                         <locus from="151r" to="158r">ff 151r-158r</locus>
-                        <author ref="http://viaf.org/viaf/7368495/" key="person_7368495">
-                           <persName xml:lang="fa-Latn-x-lc" type="standard" role="aut" change="#role-assignment">Tipu Sultan, Fath ʻAli, Nawab of Mysore, 1753-1799</persName>
-                           <persName xml:lang="fa" role="aut" change="#role-assignment">طيپو سلطان، فتح على، نواب ميسور</persName>
+                        <author>
+                           <persName xml:lang="fa-Latn-x-lc" type="standard" role="aut" change="#role-assignment" key="viaf_7368495">Tipu Sultan, Fath ʻAli, Nawab of Mysore, 1753-1799</persName>
+                           <persName xml:lang="fa" role="aut" change="#role-assignment" key="viaf_7368495">طيپو سلطان، فتح على، نواب ميسور</persName>
                         </author>
                         <title xml:lang="fa-Latn-x-lc" key="work_8576">Lavāzim-i gurūh-ʼi jāt-i kāmgārī-ʼi qalʻah-ʼi Dār al-Salṭanat Pattan</title>
                         <title xml:lang="fa" key="work_8576">لوازم گروۀ جات کامگاری قلعۀ دار السلطنت پنن</title>
-                        <incipit xml:lang="ar" />
-                        <explicit xml:lang="ar" defective="true" />
+                        <incipit xml:lang="ar"/>
+                        <explicit xml:lang="ar" defective="true"/>
                         <note>Statements of labourers and workmen employed on the fortifications of <name type="place" ref="http://lccn.loc.gov/n89234194" key="subject_n89234194">Seringapatam</name>
                         </note>
                         <listBibl>
                            <bibl>For a more detailed description see Sims-Williams 1986, page 6.</bibl>
                         </listBibl>
                         <textLang mainLang="fa">Persian</textLang>
-                        <note>
-                     </note>
+                        <note/>
                      </msItem>
                   </msContents>
                   <physDesc>
@@ -632,8 +628,8 @@
                      </objectDesc>
                   </physDesc>
                   <history>
-                     <origin>
-                        <origDate calendar="#Other" when="1798">17 Jaʻfari, Shadab, 1226</origDate>
+                     <origin calendar="Gregorian" when="1798">
+                        <origDate calendar="Gregorian" when="1798">17 Jaʻfari, Shadab, 1226</origDate>
                      </origin>
                   </history>
                </msPart>
@@ -651,15 +647,14 @@
                         </author>
                         <title xml:lang="fa-Latn-x-lc" key="work_8577">Kitāb-i taqarrur dar māyah-i ʻalaqah-ʼi haft firqah-ʼi riyāsat…</title>
                         <title xml:lang="fa" key="work_8577">کتاب تقرر در مایۀ علقۀ هفت فرقۀ ریاست</title>
-                        <incipit xml:lang="ar" />
-                        <explicit xml:lang="ar" defective="true" />
+                        <incipit xml:lang="ar"/>
+                        <explicit xml:lang="ar" defective="true"/>
                         <note>Names, salaries and qualifications of officers in the seven branches of government</note>
                         <listBibl>
                            <bibl>For a more detailed description see Sims-Williams 1986, page 6.</bibl>
                         </listBibl>
                         <textLang mainLang="fa">Persian</textLang>
-                        <note>
-                     </note>
+                        <note/>
                      </msItem>
                   </msContents>
                   <physDesc>
@@ -674,8 +669,8 @@
                      </objectDesc>
                   </physDesc>
                   <history>
-                     <origin>
-                        <origDate calendar="#Other" when="1798">22 Haydari, Shadab, 1226</origDate>
+                     <origin calendar="Gregorian" when="1798">
+                        <origDate calendar="Gregorian" when="1798">22 Haydari, Shadab, 1226</origDate>
                      </origin>
                   </history>
                </msPart>
@@ -688,17 +683,17 @@
                   <msContents>
                      <msItem xml:id="Uk_IO_Islamic_4683-part14-item1" n="14" class="http://lccn.loc.gov/n80087663">
                         <locus from="172v-" to="184v">ff 172v-184v</locus>
-                        <author ref="http://viaf.org/viaf/7368495/" key="person_7368495">
-                           <persName xml:lang="fa-Latn-x-lc" type="standard" role="aut" change="#role-assignment">Tipu Sultan, Fath ʻAli, Nawab of Mysore, 1753-1799</persName>
-                           <persName xml:lang="fa" role="aut" change="#role-assignment">طيپو سلطان، فتح على، نواب ميسور</persName>
+                        <author>
+                           <persName xml:lang="fa-Latn-x-lc" type="standard" role="aut" change="#role-assignment" key="viaf_7368495">Tipu Sultan, Fath ʻAli, Nawab of Mysore, 1753-1799</persName>
+                           <persName xml:lang="fa" role="aut" change="#role-assignment" key="viaf_7368495">طيپو سلطان، فتح على، نواب ميسور</persName>
                         </author>
                         <title xml:lang="fa-Latn-x-lc" key="work_20972" change="#ids-cleanup">Iqrārnāmāh</title>
                         <title xml:lang="fa" key="work_20972" change="#ids-cleanup">اقرارنامه</title>
-                        <incipit xml:lang="ar" />
-                        <explicit xml:lang="ar" defective="true" />
-                        <note>A collection of documents concerned with contracts (iqrārnāmāh) of <persName xml:lang="fa-Latn-x-lc" type="alt" ref="http://viaf.org/viaf/7368495/" key="person_7368495" role="aut" change="#role-assignment">Ṭīpū Sulṭān</persName>
+                        <incipit xml:lang="ar"/>
+                        <explicit xml:lang="ar" defective="true"/>
+                        <note>A collection of documents concerned with contracts (iqrārnāmāh) of <persName xml:lang="fa-Latn-x-lc" type="alt" ref="http://viaf.org/viaf/7368495/" key="viaf_7368495" role="aut" change="#role-assignment">Ṭīpū Sulṭān</persName>
                         </note>
-                        <note>Contains the seal of <persName xml:lang="fa-Latn-x-lc" type="alt" ref="http://viaf.org/viaf/7368495/" key="person_7368495" role="aut" change="#role-assignment">Ṭīpū Sulṭān</persName>, dated <date calendar="#Other" when="1795">1223</date>
+                        <note>Contains the seal of <persName xml:lang="fa-Latn-x-lc" type="alt" ref="http://viaf.org/viaf/7368495/" key="viaf_7368495" role="aut" change="#role-assignment">Ṭīpū Sulṭān</persName>, dated <date calendar="Gregorian" when="1795">1223</date>
                         </note>
                         <note>Copyst <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f2848" role="scr" change="#role-assignment">Muḥammad Ḥabīb Allāh, <foreign xml:lang="fa">محمدحبيب الله</foreign>
                            </persName>
@@ -707,8 +702,7 @@
                            <bibl>For a more detailed description see Sims-Williams 1986, page 6.</bibl>
                         </listBibl>
                         <textLang mainLang="fa">Persian</textLang>
-                        <note>
-                     </note>
+                        <note/>
                      </msItem>
                   </msContents>
                   <physDesc>
@@ -728,13 +722,13 @@
                      </handDesc>
                      <sealDesc>
                         <seal n="6" type="pendant" subtype="cauda_duplex">
-                           <p>Seal of <persName xml:lang="fa-Latn-x-lc" type="alt" ref="http://viaf.org/viaf/7368495/" key="person_7368495" role="aut" change="#role-assignment">Ṭīpū Sulṭān</persName>
+                           <p>Seal of <persName xml:lang="fa-Latn-x-lc" type="alt" ref="http://viaf.org/viaf/7368495/" key="viaf_7368495" role="aut" change="#role-assignment">Ṭīpū Sulṭān</persName>
                            </p>
                         </seal>
                      </sealDesc>
                   </physDesc>
                   <history>
-                     <origin>Two documents dated <origDate calendar="#Other" when="1798">15 Ahmadi, Shadab, 1226</origDate>
+                     <origin calendar="Gregorian" when="1798">Two documents dated <origDate calendar="Gregorian" when="1798">15 Ahmadi, Shadab, 1226</origDate>
                      </origin>
                   </history>
                </msPart>
@@ -751,16 +745,15 @@
                            <persName xml:lang="fa-Latn-x-lc" type="supplied">Nunjia</persName>
                         </author>
                         <title xml:lang="en" type="desc" key="work_8578">A history of Mysore</title>
-                        <incipit xml:lang="ar" />
-                        <explicit xml:lang="ar" defective="true" />
-                        <note>A history of Mysore from <date calendar="#Other" notBefore="1748" notAfter="1799">1162-1214</date> ascribed in an English note to <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f3219" role="aut" change="#role-assignment">Nunjia</persName> son of <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f4089" role="oth" change="#role-assignment">Subidur Veerana</persName>
+                        <incipit xml:lang="ar"/>
+                        <explicit xml:lang="ar" defective="true"/>
+                        <note>A history of Mysore from <date calendar="Gregorian" notBefore="1748" notAfter="1799">1162-1214</date> ascribed in an English note to <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f3219" role="aut" change="#role-assignment">Nunjia</persName> son of <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f4089" role="oth" change="#role-assignment">Subidur Veerana</persName>
                         </note>
                         <listBibl>
                            <bibl>For a more detailed description see Sims-Williams 1986, page 6.</bibl>
                         </listBibl>
                         <textLang mainLang="fa">Persian</textLang>
-                        <note>
-                     </note>
+                        <note/>
                      </msItem>
                   </msContents>
                   <physDesc>
@@ -775,8 +768,8 @@
                      </objectDesc>
                   </physDesc>
                   <history>
-                     <origin>
-                        <origDate calendar="#Gregorian" when="1799">about 1799</origDate>
+                     <origin calendar="Gregorian" when="1799">
+                        <origDate calendar="Gregorian" when="1799">about 1799</origDate>
                      </origin>
                   </history>
                </msPart>
@@ -791,23 +784,23 @@
                </bibl>
             </taxonomy>
             <taxonomy xml:id="local_class">
-               <category xml:id="commentary" />
-               <category xml:id="supercommentary" />
-               <category xml:id="translation" />
+               <category xml:id="commentary"/>
+               <category xml:id="supercommentary"/>
+               <category xml:id="translation"/>
                <category xml:id="multipleWorks">
                   <catDesc>multiple works</catDesc>
                </category>
-               <category xml:id="abridgement" />
-               <category xml:id="papers" />
-               <category xml:id="documents" />
-               <category xml:id="extract" />
-               <category xml:id="gloss" />
-               <category xml:id="selection" />
-               <category xml:id="diagrams" />
-               <category xml:id="notes" />
-               <category xml:id="letters" />
-               <category xml:id="palimpsest" />
-               <category xml:id="supplement" />
+               <category xml:id="abridgement"/>
+               <category xml:id="papers"/>
+               <category xml:id="documents"/>
+               <category xml:id="extract"/>
+               <category xml:id="gloss"/>
+               <category xml:id="selection"/>
+               <category xml:id="diagrams"/>
+               <category xml:id="notes"/>
+               <category xml:id="letters"/>
+               <category xml:id="palimpsest"/>
+               <category xml:id="supplement"/>
             </taxonomy>
          </classDecl>
       </encodingDesc>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5375">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,13 +42,19 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 11697</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343161</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239034.0x000086</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85064913 http://lccn.loc.gov/sh2005001641">
                   <summary change="#add-summary2">
                      1 work on the subjects of India and Diplomatics
                   </summary>
                   <msItem xml:id="Uk_Or_11697-item1">
-                     <title xml:lang="en" type="desc" key="work_8764">A farmān (<foreign xml:lang="fa">فرمان</foreign>) of <persName xml:lang="fa-Latn-x-lc" type="standard" ref="http://viaf.org/viaf/13108102" key="person_13108102" role="oth" change="#role-assignment">Shāh Jahān <foreign xml:lang="fa">شاه جهان</foreign>
+                     <title xml:lang="en" type="desc" key="work_8764">A farmān (<foreign xml:lang="fa">فرمان</foreign>) of <persName xml:lang="fa-Latn-x-lc" type="standard" ref="http://viaf.org/viaf/13108102" key="viaf_13108102" role="oth" change="#role-assignment">Shāh Jahān <foreign xml:lang="fa">شاه جهان</foreign>
                         </persName> conferring the post of Qāz̤ī of the parganah of Malānwāh in the district of Lucknow upon the son of <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f3448" role="aut" change="#role-assignment">Qāz̤ī Nāzīd <foreign xml:lang="fa">قاضی نازید</foreign>
                         </persName>
                      </title>
@@ -54,8 +62,7 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 79.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -71,7 +78,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1629" notAfter="1630">Regnal year 2 = 1629</origDate>
+                     <origDate calendar="Gregorian" notBefore="1629" notAfter="1630">Regnal year 2 = 1629</origDate>
                   </origin>
                </history>
                <additional>

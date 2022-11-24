@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_17964">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -44,6 +46,12 @@
                      <idno>58</idno>
                      <note>William Irvine</note>
                   </altIdentifier>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004341737</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163233992.0x000037</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>Ruznamchah-yi Shah 'Alam, volume 1</head>
                <msContents>
@@ -53,17 +61,16 @@
                      <title xml:lang="per" key="work_21908">روز نامچهٴ شاه عالم</title>
                      <note>
                         <p>
-                           <term xml:lang="en">Court records</term> for the reign of <persName xml:lang="per-Latn-x-lc" key="person_70169499" role="oth">Shāh ʿĀlam</persName>, beginning regnal year 31 (<date calendar="#Hijri-qamari">1 Jumādá I 1173</date> / <date calendar="#Gregorian">28 January 1759</date>) to the ruler's death in regnal year 49 (<date calendar="#Hijri-qamari">7 Ramaz̤ān 1221</date> / <date calendar="#Gregorian">19 November 1806</date>)
+                           <term xml:lang="en">Court records</term> for the reign of <persName xml:lang="per-Latn-x-lc" key="viaf_70169499" role="oth">Shāh ʿĀlam</persName>, beginning regnal year 31 (<date calendar="Hijri-qamari">1 Jumādá I 1173</date> / <date calendar="Gregorian">28 January 1759</date>) to the ruler's death in regnal year 49 (<date calendar="Hijri-qamari">7 Ramaz̤ān 1221</date> / <date calendar="Gregorian">19 November 1806</date>)
                         </p>
                         <p>
-                           <term xml:lang="en">Compilation</term> from the <term xml:lang="en">letters</term> of <persName xml:lang="per-Latn-x-lc" key="person_310606358" role="aut">Rāy Tīkchand Bahār</persName> (<persName xml:lang="per-Latn-x-lc" key="person_310606358" role="aut">Ray Tekchand Bahar</persName>), <term xml:lang="per-Latn-x-lc">akhbārnivīs</term> or (court) <term xml:lang="en">chronicler</term> for the <name type="org">East India Company</name>
+                           <term xml:lang="en">Compilation</term> from the <term xml:lang="en">letters</term> of <persName xml:lang="per-Latn-x-lc" key="ark:/81055/vdc_100164657121.0x000001 viaf_310606358" role="aut">Rāy Tīkchand Bahār</persName> (<persName xml:lang="per-Latn-x-lc" key="ark:/81055/vdc_100164657121.0x000001 viaf_310606358" role="aut">Ray Tekchand Bahar</persName>), <term xml:lang="per-Latn-x-lc">akhbārnivīs</term> or (court) <term xml:lang="en">chronicler</term> for the <name type="org">East India Company</name>
                         </p>
                      </note>
                      <textLang mainLang="per" xml:lang="per">Persian</textLang>
-                     <note>
-						</note>
+                     <note/>
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" key="person_310606358">Rāy Tīkchand Bahār</persName>
+                        <persName xml:lang="per-Latn-x-lc" key="viaf_310606358">Rāy Tīkchand Bahār</persName>
                      </author>
                   </msItem>
                </msContents>
@@ -80,16 +87,16 @@
                   <handDesc>
                      <summary>Nastaʿlīq <term xml:lang="per-Latn-x-lc">nastaʿlīq</term> inclining to <term xml:lang="per-Latn-x-lc">shikastah</term>. Scribe: <persName xml:lang="per-Latn-x-lc" key="person_f7783" role="scr">Muḥammad Riz̤āʾ</persName>
                      </summary>
-                     <handNote script="Arabic" scope="major" />
+                     <handNote script="Arabic" scope="major"/>
                   </handDesc>
-                  <additions />
+                  <additions/>
                   <bindingDesc>
-                     <p />
+                     <p/>
                   </bindingDesc>
                </physDesc>
                <history>
                   <origin when="1885-07-15">
-                     <origDate calendar="#Gregorian" when="1885-07-15">15 July 1885</origDate>
+                     <origDate calendar="Gregorian" when="1885-07-15">15 July 1885</origDate>
                      <origPlace>India</origPlace>
                   </origin>
                   <provenance>
@@ -130,8 +137,7 @@
          </classDecl>
       </encodingDesc>
       <profileDesc>
-         <textClass>
-			</textClass>
+         <textClass/>
       </profileDesc>
       <revisionDesc>
          <change when="2022-04-21">

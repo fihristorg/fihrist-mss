@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3297">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,6 +42,12 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>IO Islamic 4594</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342045</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163236087.0x00003c</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85072984 http://lccn.loc.gov/sh85072983">
                   <summary change="#add-summary">
@@ -53,7 +61,7 @@
                      <title xml:lang="fa-Latn-x-lc" key="work_8012">Minhāj al-nashr fī qirāʼāt al-ʻashr</title>
                      <title xml:lang="fa" key="work_8012">منهاج النشر فی قرآات العشر</title>
                      <incipit xml:lang="fa">الحمد الله الکریم علی انزال القران العظیم . . . کتابی فارسی بطریق نشر در قراات عشر را نصب العین خود ساخت الخ</incipit>
-                     <explicit xml:lang="ar" defective="true" />
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>A treatise on the recitation of the Qurʼān (tajwīd) and the variant readings</note>
                      <note>This work is not mentioned in <ref target="Storey_1927" type="pages">39-50</ref>, and appears to be unknown
                      </note>
@@ -61,8 +69,7 @@
                         <bibl>For a more detailed description see Arberry 1939, pages 376-7.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -79,7 +86,7 @@
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1" ruledLines="21" />
+                        <layout columns="1" ruledLines="21"/>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
@@ -92,15 +99,15 @@
                      <p>Damaged by ants and rodents, last folio torn</p>
                   </additions>
                   <sealDesc>
-                     <p>On <locus n="2a">fol. 2a</locus> a seal of <persName key="person_6178410" type="alt" ref="http://viaf.org/viaf/6178410" xml:lang="fa-Latn-x-lc" role="fmo" change="#role-assignment">ʻĀlamgīr</persName> dated <date calendar="#Hijri-qamari" when="1686">1097</date>
+                     <p>On <locus n="2a">fol. 2a</locus> a seal of <persName key="viaf_6178410" type="alt" ref="http://viaf.org/viaf/6178410" xml:lang="fa-Latn-x-lc" role="fmo" change="#role-assignment">ʻĀlamgīr</persName> dated <date calendar="Hijri-qamari" when="1686">1097</date>
                      </p>
                   </sealDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1600" notAfter="1699">17th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1600" notAfter="1699">17th century</origDate>
                   </origin>
-                  <acquisition>Apparently from the Delhi Collection: accessioned in <date calendar="#Gregorian" when="1937">1937</date>
+                  <acquisition>Apparently from the Delhi Collection: accessioned in <date calendar="Gregorian" when="1937">1937</date>
                   </acquisition>
                </history>
                <additional>

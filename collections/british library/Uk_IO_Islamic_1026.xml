@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3525">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-18</date>
+            <date calendar="Gregorian">2011-08-18</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -46,7 +48,7 @@
                      1 copy of Tarjūmah-i al-masālik wa al-mamālik by Abū Isḥāq Ibrāhīm b. Muḥammad al-Fārisī
                   </summary>
                   <msItem xml:id="Uk_IO_Islamic_1026-item1">
-                     <author ref="http://viaf.org/viaf/47155092" key="person_47155092" change="#ids-cleanup">
+                     <author ref="http://viaf.org/viaf/47155092" key="viaf_47155092" change="#ids-cleanup">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Abū Isḥāq Ibrāhīm b. Muḥammad al-Fārisī</persName>
                         <persName xml:lang="fa">ابو اسحاق ابراهیم ابن محمد الفارسی</persName>
                         <persName xml:lang="fa-Latn-x-lc" type="alt">Al-Iṣṭakhrī</persName>
@@ -54,8 +56,8 @@
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_7789">Tarjūmah-i al-masālik wa al-mamālik</title>
                      <title xml:lang="fa" key="work_7789">ترجومۀ المسالک و الممالک</title>
-                     <note>The same Persian adaptation of the famous geographical work, probably completed in AH <date calendar="#Hijri-qamari" notBefore="0951" notAfter="0952">340</date>, which is AD 951-952, as a revised an enlarged edition of <persName xml:lang="fa-Latn-x-lc" type="supplied" ref="http://viaf.org/viaf/15093539" key="person_15093539" role="ant" change="#role-assignment">Abū Zayd Aḥmad b. Sahl al-Balkhī’s <foreign xml:lang="fa">ابو زید احمد ابن سهل البلخی</foreign>
-                        </persName>, d. AH <date calendar="#Hijri-qamari" notBefore="0934" notAfter="0935">322</date>, which is AD 934
+                     <note>The same Persian adaptation of the famous geographical work, probably completed in AH <date calendar="Hijri-qamari" notBefore="0951" notAfter="0952">340</date>, which is AD 951-952, as a revised an enlarged edition of <persName xml:lang="fa-Latn-x-lc" type="supplied" ref="http://viaf.org/viaf/15093539" key="viaf_15093539" role="ant" change="#role-assignment">Abū Zayd Aḥmad b. Sahl al-Balkhī’s <foreign xml:lang="fa">ابو زید احمد ابن سهل البلخی</foreign>
+                        </persName>, d. AH <date calendar="Hijri-qamari" notBefore="0934" notAfter="0935">322</date>, which is AD 934
                      </note>
                      <listBibl>
                         <bibl>For a more detailed description see Ethe 1903-1937, no 707.</bibl>
@@ -63,117 +65,117 @@
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
                      <decoNote type="map">
-                        <locus n="3v" />'The Western Region', i.e. <name key="subject_sh85054865" type="place">The Straits of Gibraltar</name>, southern <name key="subject_n79006971" type="place">Spain</name> (right) and <name key="subject_sh85001631" type="place">North Africa</name> (left). The sea is blue: town are circles of various colours and mountains are roughly triangular. <dimensions type="written" unit="cm">
+                        <locus n="3v"/>'The Western Region', i.e. <name key="subject_sh85054865" type="place">The Straits of Gibraltar</name>, southern <name key="subject_n79006971" type="place">Spain</name> (right) and <name key="subject_sh85001631" type="place">North Africa</name> (left). The sea is blue: town are circles of various colours and mountains are roughly triangular. <dimensions type="written" unit="cm">
                            <height>20</height>
                            <width>12</width>
                         </dimensions>.
                      </decoNote>
                      <decoNote type="map">
-                        <locus n="8v" />
+                        <locus n="8v"/>
                         <name key="subject_n80061791" type="place">Egypt</name>, showing the lower reaches and mouth of the <name key="subject_sh85091951" type="place">Nile</name>, <name key="subject_n80067694" type="place">Alexandria</name> in the ower right hand corner. <dimensions type="written" unit="cm">
                            <height>20</height>
                            <width>12</width>
                         </dimensions>.
                      </decoNote>
                      <decoNote type="map">
-                        <locus n="11v" />
+                        <locus n="11v"/>
                         <name key="subject_n80061798" type="place">Syria</name> (Sham) showing the coast of <name key="subject_n80009667" type="place">Palestine</name>, the Mountains of <name key="subject_n79090014" type="place">Lebanon</name>, and the head of the <name key="subject_sh85112090" type="place">Red Sea</name>. The <name key="subject_sh85036040" type="place">Dead Sea</name> and the <name key="subject_sh85135213" type="place">Sea of Galilee</name> appear as blue circles near the top. <dimensions type="written" unit="cm">
                            <height>20</height>
                            <width>12.5</width>
                         </dimensions>.
                      </decoNote>
                      <decoNote type="map">
-                        <locus n="17r" /> The <name key="subject_sh85083236" type="place">Sea of Rum, i.e. The Mediterranean</name>. On the left, the <name key="subject_sh91001179" type="place">Nile Delta</name> and <name key="subject_n80009667" type="place">Palestine</name>; on the right, the southern coast of <name key="subject_n80070818" type="place">Asia Minor</name> and <name key="subject_n80046090" type="place">Greece</name>. The three islands in the middle are <name key="subject_n79018703" type="place">Sicily</name>, <name key="subject_n79150324" type="place">Crete</name> and <name key="subject_n79055857" type="place">Cyprus</name>, and the <name key="subject_sh85054865" type="place">Straits of Gibraltar</name> are at the top. <dimensions type="written" unit="cm">
+                        <locus n="17r"/> The <name key="subject_sh85083236" type="place">Sea of Rum, i.e. The Mediterranean</name>. On the left, the <name key="subject_sh91001179" type="place">Nile Delta</name> and <name key="subject_n80009667" type="place">Palestine</name>; on the right, the southern coast of <name key="subject_n80070818" type="place">Asia Minor</name> and <name key="subject_n80046090" type="place">Greece</name>. The three islands in the middle are <name key="subject_n79018703" type="place">Sicily</name>, <name key="subject_n79150324" type="place">Crete</name> and <name key="subject_n79055857" type="place">Cyprus</name>, and the <name key="subject_sh85054865" type="place">Straits of Gibraltar</name> are at the top. <dimensions type="written" unit="cm">
                            <height>20</height>
                            <width>12</width>
                         </dimensions>.
                      </decoNote>
                      <decoNote type="map">
-                        <locus n="19r" /> The region of <name key="subject_sh87000215" type="place">Jazira</name>, that is, <name key="subject_sh97001366" type="place">Mesopotamia</name>, with <name key="subject_n87137832" type="place">Kufa</name> in the top right hand corner and <name key="subject_n79111504" type="place">Armenia</name> lower left. <dimensions type="written" unit="cm">
+                        <locus n="19r"/> The region of <name key="subject_sh87000215" type="place">Jazira</name>, that is, <name key="subject_sh97001366" type="place">Mesopotamia</name>, with <name key="subject_n87137832" type="place">Kufa</name> in the top right hand corner and <name key="subject_n79111504" type="place">Armenia</name> lower left. <dimensions type="written" unit="cm">
                            <height>20</height>
                            <width>12</width>
                         </dimensions>.
                      </decoNote>
                      <decoNote type="map">
-                        <locus n="22r" /> Arab <name key="subject_n79077342" type="place">'Iraq</name>, with the <name key="subject_sh91002115" type="place">Mouth of the Euphrates</name> and the <name key="subject_sh85100065" type="place">Persian Gulf (Darya i Fars)</name> at the bottom. <dimensions type="written" unit="cm">
+                        <locus n="22r"/> Arab <name key="subject_n79077342" type="place">'Iraq</name>, with the <name key="subject_sh91002115" type="place">Mouth of the Euphrates</name> and the <name key="subject_sh85100065" type="place">Persian Gulf (Darya i Fars)</name> at the bottom. <dimensions type="written" unit="cm">
                            <height>20</height>
                            <width>12</width>
                         </dimensions>.
                      </decoNote>
                      <decoNote type="map">
-                        <locus n="25v" />
+                        <locus n="25v"/>
                         <name key="subject_n80034193" type="place">Khuzistan</name>, with <name key="subject_n81097924" type="place">'Abadan</name> top left on the coast of the <name key="subject_sh85100065" type="place">Persian Gulf</name>. <dimensions type="written" unit="cm">
                            <height>20</height>
                            <width>12</width>
                         </dimensions>.
                      </decoNote>
                      <decoNote type="map">
-                        <locus n="28v" />
+                        <locus n="28v"/>
                         <name key="subject_sh85100065" type="place">Fars, the Persian Gulf</name> shown at the top: <name key="subject_n80066882" type="place">Shiraz</name> and <name key="subject_n82083647" type="place">Isfahan</name> are red circles, the former near the middle, and the latter in the lower right hand corner. <dimensions type="written" unit="cm">
                            <height>20</height>
                            <width>12</width>
                         </dimensions>.
                      </decoNote>
                      <decoNote type="map">
-                        <locus n="43r" /> The District of <name key="subject_n83204070" type="place">Kerman</name>, the <name key="subject_sh85100065" type="place">Persian Gulf</name> at the top, and the road to <name key="subject_sh92000145" type="place">Marw</name> and <name type="place">Balkh</name> issuing from the bottom left hand corner. <dimensions type="written" unit="cm">
+                        <locus n="43r"/> The District of <name key="subject_n83204070" type="place">Kerman</name>, the <name key="subject_sh85100065" type="place">Persian Gulf</name> at the top, and the road to <name key="subject_sh92000145" type="place">Marw</name> and <name type="place">Balkh</name> issuing from the bottom left hand corner. <dimensions type="written" unit="cm">
                            <height>20</height>
                            <width>12</width>
                         </dimensions>.
                      </decoNote>
                      <decoNote type="map">
-                        <locus n="46r" />
+                        <locus n="46r"/>
                         <name key="subject_n80014884" type="place">Sind</name> and part of <name key="subject_n80125948" type="place">India</name>, the <name key="subject_sh85100065" type="place">Persian Gulf</name> at the top, into which flows the <name key="subject_sh85065819" type="place">River Indus</name>. <dimensions type="written" unit="cm">
                            <height>20</height>
                            <width>12</width>
                         </dimensions>.
                      </decoNote>
                      <decoNote type="map">
-                        <locus n="49v" />
+                        <locus n="49v"/>
                         <name key="subject_n92057129" type="place">Armenia</name> and <name key="subject_n92000010" type="place">Azarbayjan</name>. <name key="subject_n88249472" type="place">Darband</name> on the <name key="subject_sh85020611" type="place">Caspian</name> in the top right hand corner and <name key="subject_n82216949" type="place">Ardabil</name> slightly right of centre at the junction of three roads. <dimensions type="written" unit="cm">
                            <height>20</height>
                            <width>12</width>
                         </dimensions>.
                      </decoNote>
                      <decoNote type="map">
-                        <locus n="53r" /> Persian <name key="subject_n79077342" type="place">'Iraq</name>, the <name key="subject_sh85021434" type="place">Caucasus</name> at the top. <name key="subject_n81132527" type="place">Hamadan</name> is shown just above and to the right of centre at the junction of roads, and <name key="subject_sh2009001618" type="place">Mt Damawand</name> lower left. The <name key="subject_sh85020611" type="place">Caspian Sea</name> at the bottom. <dimensions type="written" unit="cm">
+                        <locus n="53r"/> Persian <name key="subject_n79077342" type="place">'Iraq</name>, the <name key="subject_sh85021434" type="place">Caucasus</name> at the top. <name key="subject_n81132527" type="place">Hamadan</name> is shown just above and to the right of centre at the junction of roads, and <name key="subject_sh2009001618" type="place">Mt Damawand</name> lower left. The <name key="subject_sh85020611" type="place">Caspian Sea</name> at the bottom. <dimensions type="written" unit="cm">
                            <height>20</height>
                            <width>12</width>
                         </dimensions>.
                      </decoNote>
                      <decoNote type="map">
-                        <locus n="55v" /> The Caspian provinces. The <name key="subject_sh85020611" type="place">Caspian Sea</name> on the right with <name key="subject_n88249472" type="place">Darband</name> in the upper right hand corner. The <name key="subject_sh85041538" type="place">Alburz Mountains (Kuh i Daylam)</name> cross the map in a curve from top to bottom, with <name key="subject_sh2009001618" type="place">Mt Damawand</name> to the left. <dimensions type="written" unit="cm">
+                        <locus n="55v"/> The Caspian provinces. The <name key="subject_sh85020611" type="place">Caspian Sea</name> on the right with <name key="subject_n88249472" type="place">Darband</name> in the upper right hand corner. The <name key="subject_sh85041538" type="place">Alburz Mountains (Kuh i Daylam)</name> cross the map in a curve from top to bottom, with <name key="subject_sh2009001618" type="place">Mt Damawand</name> to the left. <dimensions type="written" unit="cm">
                            <height>20</height>
                            <width>12</width>
                         </dimensions>.
                      </decoNote>
                      <decoNote type="map">
-                        <locus n="59r" /> The <name key="subject_sh85020611" type="place">Caspian Sea</name>, depicted as circular, <name key="subject_sh2009001618" type="place">Mt Damawand</name> above, and the <name key="subject_sh85041538" type="place">Alburz range (Kuh-hai Daylam)</name> below. <name key="subject_n88249472" type="place">Darband</name> is the green circle to the left and <name key="subject_no00015442" type="place">Amul</name> is near the right hand edge. <dimensions type="written" unit="cm">
+                        <locus n="59r"/> The <name key="subject_sh85020611" type="place">Caspian Sea</name>, depicted as circular, <name key="subject_sh2009001618" type="place">Mt Damawand</name> above, and the <name key="subject_sh85041538" type="place">Alburz range (Kuh-hai Daylam)</name> below. <name key="subject_n88249472" type="place">Darband</name> is the green circle to the left and <name key="subject_no00015442" type="place">Amul</name> is near the right hand edge. <dimensions type="written" unit="cm">
                            <height>20</height>
                            <width>12</width>
                         </dimensions>.
                      </decoNote>
                      <decoNote type="map">
-                        <locus n="62v" /> The area between <name key="subject_n80098857" type="place">Fars</name> and <name key="subject_n79112323" type="place">Khurasan</name>: <name key="subject_n91047914" type="place">Damghan</name> is a red circle near the lower left hand corner and <name key="subject_n82083647" type="place">Isfahan</name> another at the bottom edge towards the right. The <name type="place">Sistan lake</name> appears upper left. <dimensions type="written" unit="cm">
+                        <locus n="62v"/> The area between <name key="subject_n80098857" type="place">Fars</name> and <name key="subject_n79112323" type="place">Khurasan</name>: <name key="subject_n91047914" type="place">Damghan</name> is a red circle near the lower left hand corner and <name key="subject_n82083647" type="place">Isfahan</name> another at the bottom edge towards the right. The <name type="place">Sistan lake</name> appears upper left. <dimensions type="written" unit="cm">
                            <height>20</height>
                            <width>12</width>
                         </dimensions>.
                      </decoNote>
                      <decoNote type="map">
-                        <locus n="65v" />
+                        <locus n="65v"/>
                         <name key="subject_sh87001435" type="place">Sistan</name>. The star-shaped form towards the top is <name type="place">Mt Ghur</name>, with <name key="subject_n81108322" type="place">Herat</name> as a red circle above and to the left of it. The borders of <name key="subject_n80125948" type="place">Hindustan</name> are at the bottom and right. <dimensions type="written" unit="cm">
                            <height>20</height>
                            <width>12</width>
                         </dimensions>.
                      </decoNote>
                      <decoNote type="map">
-                        <locus from="70v" to="71r" />
+                        <locus from="70v" to="71r"/>
                         <name key="subject_n79112323" type="place">Khurasan</name>. The right hand half of this map larfely duplicates the preceding: the <name key="subject_sh85004683" type="place">river Jihun (Oxus)</name> crosses the top of the map. <name key="subject_n81144037" type="place">Nishapur</name> and <name key="subject_sh92000145" type="place">Marw</name> (both shown as green circles) are among the most important places on f71r. Each <dimensions type="written" unit="cm">
                            <height>20</height>
                            <width>12</width>
                         </dimensions>.
                      </decoNote>
                      <decoNote type="map">
-                        <locus from="78v" to="79r" />
+                        <locus from="78v" to="79r"/>
                         <name key="subject_sh85008625" type="place">Central Asia</name>: the <name key="subject_sh85006402" type="place">Sea of Khwarazm</name> lower right of f78v, and <name key="subject_n80113871" type="place">Samarqand</name> a red circle, left of centre, below the blue-coloured 'Mountains of <name key="subject_n82115501" type="place">Bukhara</name>'. Along the lower river on f79r is written: 'Territories of ' <persName key="person_f87" role="oth" change="#role-assignment">Abdallah b. Hamid</persName>', Each <dimensions type="written" unit="cm">
                            <height>20</height>
                            <width>12</width>
@@ -204,7 +206,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1300" notAfter="1399">14th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1300" notAfter="1399">14th century</origDate>
                   </origin>
                </history>
                <additional>

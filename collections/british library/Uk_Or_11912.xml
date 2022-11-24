@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5398">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -50,11 +52,11 @@
                         <persName xml:lang="en" type="desc">Various calligraphers</persName>
                      </author>
                      <title xml:lang="en" type="desc" key="work_7971" change="#ids-cleanup">Specimens of calligraphy by celebrated masters</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <note>These calligraphic specimens include the practice models, i.e., mashq of <persName type="supplied" xml:lang="fa-Latn-x-lc" key="person_f2932" role="scr" change="#role-assignment">Muṣṭafá Khān</persName>, <persName type="supplied" xml:lang="fa-Latn-x-lc" key="person_f5668" role="scr" change="#role-assignment">‘Alī al-Kātib</persName>, <persName type="supplied" xml:lang="fa-Latn-x-lc" key="person_f3727" role="scr" change="#role-assignment">Sayyid ‘Alī</persName>, <persName type="supplied" xml:lang="fa-Latn-x-lc" key="person_f5635" role="scr" change="#role-assignment">‘Abd al-Ghanī</persName>, <persName type="supplied" xml:lang="fa-Latn-x-lc" key="person_f3030" role="scr" change="#role-assignment">Mīr ‘Alī</persName>, <persName type="supplied" xml:lang="fa-Latn-x-lc" key="person_f5654" role="scr" change="#role-assignment">‘Abd al-Ḥamīd</persName>
                      </note>
-                     <note>Some are dated <date calendar="#Hijri-qamari" notBefore="1754" notAfter="1755">1168</date> at Awrangābād, such as that of <persName type="supplied" xml:lang="fa-Latn-x-lc" key="person_f2542" role="scr" change="#role-assignment">Muḥammad Ismā‘īl</persName> and those of <persName type="supplied" xml:lang="fa-Latn-x-lc" key="person_f2864" role="scr" change="#role-assignment">Muḥammad Ḥusayn</persName> are dated <date calendar="#Hijri-qamari" notBefore="1767" notAfter="1768">1181</date>, <date calendar="#Hijri-qamari" notBefore="1768" notAfter="1769">1182</date>, and <date calendar="#Hijri-qamari" notBefore="1777" notAfter="1778">1191</date>
+                     <note>Some are dated <date calendar="Hijri-qamari" notBefore="1754" notAfter="1755">1168</date> at Awrangābād, such as that of <persName type="supplied" xml:lang="fa-Latn-x-lc" key="person_f2542" role="scr" change="#role-assignment">Muḥammad Ismā‘īl</persName> and those of <persName type="supplied" xml:lang="fa-Latn-x-lc" key="person_f2864" role="scr" change="#role-assignment">Muḥammad Ḥusayn</persName> are dated <date calendar="Hijri-qamari" notBefore="1767" notAfter="1768">1181</date>, <date calendar="Hijri-qamari" notBefore="1768" notAfter="1769">1182</date>, and <date calendar="Hijri-qamari" notBefore="1777" notAfter="1778">1191</date>
                      </note>
                      <listBibl>
                         <bibl>Meredith-Owens 1968, page 31.</bibl>
@@ -77,7 +79,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1700" notAfter="1799">18th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1700" notAfter="1799">18th century</origDate>
                   </origin>
                </history>
                <additional>

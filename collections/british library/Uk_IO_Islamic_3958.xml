@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3276">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -43,8 +45,14 @@
                   <altIdentifier type="other">
                      <idno>113</idno>
                      <note>
-                        <persName xml:lang="per-Latn-x-lc" key="person_8170991" role="fmo">William Irvine</persName>
+                        <persName xml:lang="per-Latn-x-lc" key="viaf_8170991" role="fmo">William Irvine</persName>
                      </note>
+                  </altIdentifier>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343619</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163240411.0x000023</idno>
                   </altIdentifier>
                </msIdentifier>
                <head>Insha collections and histories</head>
@@ -53,32 +61,31 @@
                   <msItem class="http://lccn.loc.gov/sh85135483 http://lccn.loc.gov/sh85100074" n="1" xml:id="Uk_IO_Islamic_3958-item1">
                      <locus from="1" to="33">ff. 1-33</locus>
                      <note>
-                        <p>Untitled and unattributed, but substantial portion of the Timurid collection of private and official courtly letters, the <title>Inshāʾ-i Mīram</title> of <persName xml:lang="per-Latn-x-lc" key="person_300745012" ref="http://lccn.loc.gov/no2013058016" role="aut">Mīram Siyāh</persName>
+                        <p>Untitled and unattributed, but substantial portion of the Timurid collection of private and official courtly letters, the <title>Inshāʾ-i Mīram</title> of <persName xml:lang="per-Latn-x-lc" key="viaf_300745012" ref="http://lccn.loc.gov/no2013058016" role="aut">Mīram Siyāh</persName>
                         </p>
-                        <p>Signed and dated at end (Tuesday, <date calendar="#Hijri-qamari">12 Ṣafar 1198</date>/<date calendar="#Gregorian">1784</date>)
+                        <p>Signed and dated at end (Tuesday, <date calendar="Hijri-qamari">12 Ṣafar 1198</date>/<date calendar="Gregorian">1784</date>)
                         </p>
                      </note>
                      <textLang mainLang="per">Persian</textLang>
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" key="person_300745012">Mīram Siyāh</persName>
+                        <persName xml:lang="per-Latn-x-lc" key="viaf_300745012">Mīram Siyāh</persName>
                      </author>
                   </msItem>
                   <msItem class="http://lccn.loc.gov/sh85135483 http://lccn.loc.gov/sh85100074" n="2" xml:id="Uk_IO_Islamic_3958-item2">
                      <locus from="34" to="138">ff. 34-138</locus>
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" type="supplied" key="person_284869794">Marvārīd, ʿAbd Allāh</persName>
-                        <persName xml:lang="per" type="supplied" key="person_284869794">عبد الله مروارىد</persName>
+                        <persName xml:lang="per-Latn-x-lc" type="supplied" key="viaf_284869794">Marvārīd, ʿAbd Allāh</persName>
+                        <persName xml:lang="per" type="supplied" key="viaf_284869794">عبد الله مروارىد</persName>
                      </author>
                      <title xml:lang="per-Latn-x-lc" key="work_10232">Inshāʾ-i Murvārīd</title>
                      <title xml:lang="per" key="work_10232">انشأ مرواريد</title>
                      <note>
                         <p>Timurid collection of private and official courtly letters</p>
-                        <p>Dated at end (Lucknow, <date calendar="#Hijri-qamari">15 Rabīʿ I 1198</date>/<date calendar="#Gregorian">1784</date>)
+                        <p>Dated at end (Lucknow, <date calendar="Hijri-qamari">15 Rabīʿ I 1198</date>/<date calendar="Gregorian">1784</date>)
                         </p>
                      </note>
                      <textLang mainLang="per">Persian</textLang>
-                     <note>
-						</note>
+                     <note/>
                   </msItem>
                   <msItem class="http://lccn.loc.gov/sh2008115920 http://lccn.loc.gov/n84226939 http://lccn.loc.gov/sh85097443" n="3" xml:id="Uk_IO_Islamic_3958-item3">
                      <locus from="139" to="166">ff. 139-166</locus>
@@ -87,13 +94,12 @@
                         <persName key="person_f7753" xml:lang="per" type="supplied">غلام حسن ثمين</persName>
                      </author>
                      <note>
-                        <p>Untitled account of Aḥmad Shāh Abdālī following the third battle of Panipat (<date calendar="#Gregorian">1761</date>), written at the request of Captain Jonathan Scott in <date calendar="#Hijri-qamari">1169</date>
+                        <p>Untitled account of Aḥmad Shāh Abdālī following the third battle of Panipat (<date calendar="Gregorian">1761</date>), written at the request of Captain Jonathan Scott in <date calendar="Hijri-qamari">1169</date>
                         </p>
                         <p>Not dated</p>
                      </note>
                      <textLang mainLang="per">Persian</textLang>
-                     <note>
-						</note>
+                     <note/>
                   </msItem>
                   <msItem class="http://lccn.loc.gov/n8315832 http://lccn.loc.gov/sh2008115921" n="4" xml:id="Uk_IO_Islamic_3958-item4">
                      <locus from="167" to="210">ff. 167-210</locus>
@@ -108,8 +114,7 @@
                         <p>Not dated</p>
                      </note>
                      <textLang mainLang="per">Persian</textLang>
-                     <note>
-						</note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -119,24 +124,23 @@
                               <height>227</height>
                               <width>205</width>
                            </dimensions>
-                           <dimensions type="written" unit="mm">
-									</dimensions>
+                           <dimensions type="written" unit="mm"/>
                         </extent>
                      </supportDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote script="Arabic" scope="major" />
+                     <handNote script="Arabic" scope="major"/>
                   </handDesc>
                </physDesc>
                <history>
-                  <origin calendar="#Other" notBefore="1784" notAfter="1799">
-                     <origDate calendar="#Gregorian" notBefore="1784" notAfter="1799">18th century</origDate>
+                  <origin calendar="Gregorian" notBefore="1784" notAfter="1799">
+                     <origDate calendar="Gregorian" notBefore="1784" notAfter="1799">18th century</origDate>
  Lucknow <origPlace>India</origPlace>
                   </origin>
                   <acquisition>
                      <date>1913-08-15</date>
                      <p>
-                        <persName xml:lang="per-Latn-x-lc" key="person_8170991" role="fmo">William Irvine</persName>
+                        <persName xml:lang="per-Latn-x-lc" key="viaf_8170991" role="fmo">William Irvine</persName>
                      </p>
                   </acquisition>
                </history>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3442">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,10 +42,16 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>IO Islamic 4720/63</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342185</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237459.0x00001d</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
                   <summary>One of the 70 Mughal documents including farmāns, ḥukmnāmah, iqrārnāmah, chaknāmah etc. relating to the family of <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f1694" role="oth" change="#role-assignment">Jalāl al-Dīn, <foreign xml:lang="fa">جلال الدین</foreign>
-                     </persName>, Qāz̤ī of the pargana Batala, Punjab, and his escendents dated <date calendar="#Gregorian" from="1527" to="1757">from 1527 to 1757</date>
+                     </persName>, Qāz̤ī of the pargana Batala, Punjab, and his escendents dated <date calendar="Gregorian" from="1527" to="1757">from 1527 to 1757</date>
                   </summary>
                   <msItem xml:id="Uk_IO_Islamic_4720.63-item1" defective="unknown" class="http://lccn.loc.gov/sh2008115922">
                      <author key="person_f3682">
@@ -54,8 +62,8 @@
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_21008" change="#ids-cleanup">Ḥukmnāmah</title>
                      <title xml:lang="fa" key="work_21008" change="#ids-cleanup">حکمنامه</title>
-                     <incipit xml:lang="ar" />
-                     <explicit xml:lang="ar" defective="true" />
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>Renewing the grant of 20 bīghah of land in Batala pargana assigned as as madad-i maʻāsh to <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f5412" role="oth" change="#role-assignment">Ḥayāt Bībī, <foreign xml:lang="fa">حیات بیبی</foreign>
                         </persName>, and others
                      </note>
@@ -64,8 +72,7 @@
                         <bibl>For a more detailed description see Sims-Williams 1986, page 14.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -79,13 +86,13 @@
                      </supportDesc>
                   </objectDesc>
                   <decoDesc>
-                     <decoNote type="other" />
+                     <decoNote type="other"/>
                   </decoDesc>
                </physDesc>
                <history>
-                  <origin>
-                     <origDate calendar="#Hijri-qamari" when="1743">16 Rab. I 1156</origDate>
-                     <origDate calendar="#other" when="1743">RY 25 of Muḥammad Shāh</origDate>
+                  <origin calendar="Hijri-qamari" when="1743" when-custom="16 Rab. I 1156">
+                     <origDate calendar="Hijri-qamari" when="1743">16 Rab. I 1156</origDate>
+                     <origDate calendar="Other" when="1743">RY 25 of Muḥammad Shāh</origDate>
                   </origin>
                </history>
                <additional>

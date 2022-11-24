@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6275">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -47,7 +49,7 @@
                   </summary>
                   <msItem xml:id="Uk_Or_7789-item1" n="1" class="http://lccn.loc.gov/sh85072971 http://lccn.loc.gov/sh85072967 http://lccn.loc.gov/sh2009115202 http://lccn.loc.gov/sh2010105554">
                      <locus from="1v" to="32r">1v-32r ff</locus>
-                     <author key="person_19930855" ref="http://www.viaf.org/viaf/19930855/">
+                     <author key="viaf_19930855" ref="http://www.viaf.org/viaf/19930855/">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">Jurjānī, ʻAlī ibn Muḥammad, al-Sayyid al-Sharīf, 1340-1413</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20200" change="#ids-cleanup">Tarjumān-i Qur’ān</title>
@@ -75,7 +77,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1600" notAfter="1699">17th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1600" notAfter="1699">17th century</origDate>
                   </origin>
                </history>
                <additional>

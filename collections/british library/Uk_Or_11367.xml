@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5335">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,15 +42,21 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 11367</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004343130</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163239034.0x000067</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh2008104964">
                   <summary change="#add-summary">
                      1 copy of Akhlāq-i Nāṣirī by Ṭūsī, Naṣīr al-Dīn Muḥammad ibn Muḥammad, 1201-1274
                   </summary>
                   <msItem xml:id="Uk_Or_11367-item1">
-                     <author ref="http://viaf.org/viaf/12392936" key="person_12392936">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Ṭūsī, Naṣīr al-Dīn Muḥammad ibn Muḥammad, 1201-1274</persName>
-                        <persName xml:lang="fa">طوسىى، نصير الدين محمد ابن محمد</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="ark:/81055/vdc_100164656347.0x000001 viaf_12392936">Ṭūsī, Naṣīr al-Dīn Muḥammad ibn Muḥammad, 1201-1274</persName>
+                        <persName xml:lang="fa" key="ark:/81055/vdc_100164656347.0x000001 viaf_12392936">طوسىى، نصير الدين محمد ابن محمد</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_312" change="#ids-cleanup">Akhlāq-i Nāṣirī</title>
                      <title xml:lang="ar" key="work_312" change="#ids-cleanup">اخلاق ناصری</title>
@@ -56,8 +64,7 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page p. 13.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -71,12 +78,12 @@
                      </supportDesc>
                   </objectDesc>
                   <decoDesc>
-                     <decoNote type="miniature" />
+                     <decoNote type="miniature"/>
                   </decoDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1800" notAfter="1899">19th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1800" notAfter="1899">19th century</origDate>
                   </origin>
                </history>
                <additional>

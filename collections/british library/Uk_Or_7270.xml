@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6206">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -46,14 +48,14 @@
                      1 copy of Dīvān of Imām ‘Alī ibn Abī Ṭālib
                   </summary>
                   <msItem xml:id="Uk_Or_7270-item1">
-                     <author ref="http://viaf.org/viaf/34436377" key="person_34436377" change="#ids-cleanup">
+                     <author ref="http://viaf.org/viaf/34436377" key="viaf_34436377" change="#ids-cleanup">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Imām ‘Alī ibn Abī Ṭālib</persName>
                         <persName xml:lang="fa">إمام علی ابی طالب</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_1102" change="#ids-cleanup">Dīvān of Imām ‘Alī ibn Abī Ṭālib</title>
                      <title xml:lang="fa" key="work_1102" change="#ids-cleanup">دیوان إمام علی ابن ابی طالب</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <note>The Arabic text is finely written in gold with an interlinear Persian translation in verse</note>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 52.</bibl>
@@ -76,7 +78,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1500" notAfter="1699">16th-17th century<!-- Please review date attributes, see https://git.io/fihrist-dates -->
+                     <origDate calendar="Hijri-qamari" notBefore="1500" notAfter="1699">16th-17th century<!-- Please review date attributes, see https://git.io/fihrist-dates -->
                      </origDate>
                   </origin>
                </history>

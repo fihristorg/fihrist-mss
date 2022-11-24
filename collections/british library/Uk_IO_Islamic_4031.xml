@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_18071">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2022-04-21</date>
+            <date calendar="Gregorian">2022-04-21</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -44,26 +46,32 @@
                      <idno>95</idno>
                      <note>William Irvine</note>
                   </altIdentifier>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004341846</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163235680.0x000009</idno>
+                  </altIdentifier>
                </msIdentifier>
                <head>Ta'rikh-i Iradat Khan</head>
                <msContents>
                   <summary>1 copy of Tārīkh-i Irādat Khān by Mubārak Allāh Vāz̤iḥ</summary>
                   <msItem class="http://lccn.loc.gov/sh2008115921 http://lccn.loc.gov/sh2008115920" n="1" xml:id="Uk_IO_Islamic_4031-item1">
                      <author>
-                        <persName xml:lang="per-Latn-x-lc" type="alternative" key="person_29887897">Mubārak Allāh Vāz̤iḥ</persName>
-                        <persName xml:lang="per" key="person_29887897" type="alternative">مبارك الله واضح</persName>
+                        <persName xml:lang="per-Latn-x-lc" type="alternative" key="ark:/81055/vdc_100164657016.0x000001 viaf_29887897">Mubārak Allāh Vāz̤iḥ</persName>
+                        <persName xml:lang="per" key="ark:/81055/vdc_100164657016.0x000001 viaf_29887897" type="alternative">مبارك الله واضح</persName>
                      </author>
                      <title xml:lang="per-Latn-x-lc" key="work_21958">Tārīkh-i Irādat Khān</title>
                      <title xml:lang="per" key="work_21958">تاريخ ارادت خان</title>
                      <note>
-                        <p>Author entitled <persName xml:lang="per-Latn-x-lc" key="person_29887897" role="aut">Irādat Khān</persName>, with the <term xml:lang="per-Latn-x-lc">takhalluṣ</term> or pseudonym <persName xml:lang="per-Latn-x-lc" key="person_29887897" role="aut">Vāz̤iḥ</persName>
+                        <p>Author entitled <persName xml:lang="per-Latn-x-lc" key="viaf_29887897" role="aut">Irādat Khān</persName>, with the <term xml:lang="per-Latn-x-lc">takhalluṣ</term> or pseudonym <persName xml:lang="per-Latn-x-lc" key="viaf_29887897" role="aut">Vāz̤iḥ</persName>
                         </p>
-                        <p>Autobiography relating events from the death of Aurangzeb as Timurid or Mughal Emperor <persName xml:lang="per-Latn-x-lc" key="person_6178410" role="subject">ʿĀlamgīr I</persName> (d. 1118 / 1707) to Emperor <persName xml:lang="per-Latn-x-lc" key="person_48143049" role="subject">Farrukh Siyar</persName>'s entry into <name type="place">Shāhjahānābād</name> (Delhi) 7 years later, in <date calendar="#Hijri-qamari">Muḥarram 1125</date> / <date calendar="#Gregorian">1713</date>. The account thus covers the <term xml:lang="en">wars of succession</term> and reigns of <persName xml:lang="per-Latn-x-lc" key="person_314901452" role="subject">Bahādur Shāh</persName>, <persName xml:lang="per-Latn-x-lc" key="person_75439929" role="subject">Jahāndār Shāh</persName>, and <persName xml:lang="per-Latn-x-lc" key="person_48143049" role="subject">Farrukh Siyar</persName>
+                        <p>Autobiography relating events from the death of Aurangzeb as Timurid or Mughal Emperor <persName xml:lang="per-Latn-x-lc" key="viaf_6178410" role="subject">ʿĀlamgīr I</persName> (d. 1118 / 1707) to Emperor <persName xml:lang="per-Latn-x-lc" key="viaf_48143049" role="subject">Farrukh Siyar</persName>'s entry into <name type="place">Shāhjahānābād</name> (Delhi) 7 years later, in <date calendar="Hijri-qamari">Muḥarram 1125</date> / <date calendar="Gregorian">1713</date>. The account thus covers the <term xml:lang="en">wars of succession</term> and reigns of <persName xml:lang="per-Latn-x-lc" key="ark:/81055/vdc_100164657143.0x000001 viaf_314901452" role="subject">Bahādur Shāh</persName>, <persName xml:lang="per-Latn-x-lc" key="viaf_75439929" role="subject">Jahāndār Shāh</persName>, and <persName xml:lang="per-Latn-x-lc" key="viaf_48143049" role="subject">Farrukh Siyar</persName>
                         </p>
-                        <p>Work completed by author in <date calendar="#Hijri-qamari">1126</date> / <date calendar="#Gregorian">1714</date>
+                        <p>Work completed by author in <date calendar="Hijri-qamari">1126</date> / <date calendar="Gregorian">1714</date>
                         </p>
                         <p>Account comprises a little over half of the narrative</p>
-                        <p>Bound between the opening leaves of the <term xml:lang="per-Latn-x-lc">ʿIbratnāmah</term> of <persName xml:lang="per-Latn-x-lc" key="person_296309781" role="oth">Muḥammad ibn Muʿtamad Khān</persName>
+                        <p>Bound between the opening leaves of the <term xml:lang="per-Latn-x-lc">ʿIbratnāmah</term> of <persName xml:lang="per-Latn-x-lc" key="viaf_296309781" role="oth">Muḥammad ibn Muʿtamad Khān</persName>
                         </p>
                         <p>Not dated</p>
                      </note>
@@ -84,23 +92,23 @@
                   <handDesc>
                      <summary>Clear <term xml:lang="per-Latn-x-lc">nastaʿlīq</term>. Scribe: <persName xml:lang="per-Latn-x-lc" key="person_f7716" role="scr">Muḥammad ʿAbd al-ʿAzīz</persName>
                      </summary>
-                     <handNote script="Arabic" scope="major" />
+                     <handNote script="Arabic" scope="major"/>
                   </handDesc>
                   <additions>
                      <p>Copious notes by William Irvine attached at beginning and end of volume</p>
                   </additions>
                   <bindingDesc>
-                     <p />
+                     <p/>
                   </bindingDesc>
                </physDesc>
                <history>
-                  <origin calendar="#Hijri-qamari" notBefore="1800" notAfter="1891-09">
-                     <origDate calendar="#Gregorian" notBefore="1800" notAfter="1891-09">19th century</origDate>
+                  <origin calendar="Hijri-qamari" notBefore="1800" notAfter="1891-09">
+                     <origDate calendar="Gregorian" notBefore="1800" notAfter="1891-09">19th century</origDate>
                      <origPlace>India</origPlace>
                   </origin>
                   <provenance>
                      <p>
-                        <persName xml:lang="per-Latn-x-lc" key="person_8170991" role="fmo">William Irvine</persName>
+                        <persName xml:lang="per-Latn-x-lc" key="viaf_8170991" role="fmo">William Irvine</persName>
                      </p>
                      <p>
                         <persName xml:lang="per-Latn-x-lc" key="person_f7663" role="fmo">George Jasper Nicholls</persName>
@@ -141,8 +149,7 @@
          </classDecl>
       </encodingDesc>
       <profileDesc>
-         <textClass>
-			</textClass>
+         <textClass/>
       </profileDesc>
       <revisionDesc>
          <change when="2022-04-21">

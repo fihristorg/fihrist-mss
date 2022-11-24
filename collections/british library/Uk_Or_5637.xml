@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5987">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -46,15 +48,15 @@
                      1 copy of Muʼnis al-arvāḥ by Jahanara, Begum, 1614-1680
                   </summary>
                   <msItem xml:id="Uk_Or_5637-item1">
-                     <author ref="http://viaf.org/viaf/57711033" key="person_57711033">
+                     <author ref="http://viaf.org/viaf/57711033" key="viaf_57711033">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Jahanara, Begum, 1614-1680</persName>
                         <persName xml:lang="ar-Latn-x-lc" type="alt">Princess Jahān Ārā Begam</persName>
                         <persName xml:lang="fa">جهاں آرا بيگم</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_6702" change="#ids-cleanup">Muʼnis al-arvāḥ</title>
                      <title xml:lang="fa" key="work_6702" change="#ids-cleanup">مئنس الارواح</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <note>Biographies of Chishtī saints</note>
                      <listBibl>
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 20.</bibl>
@@ -77,7 +79,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1600" notAfter="1799">17th or 18th centuey</origDate>
+                     <origDate calendar="Gregorian" notBefore="1600" notAfter="1799">17th or 18th centuey</origDate>
                   </origin>
                </history>
                <additional>

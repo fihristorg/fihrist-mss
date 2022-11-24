@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3264">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,22 +42,28 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>India Office Library</collection>
                   <idno>Delhi Persian 91*</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004341401</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163233768.0x00000a</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh2008109196 http://lccn.loc.gov/sh2008109212">
                   <summary change="#add-summary">
                      1 copy of Khulāṣaḥ al-ḥayāḥ by Aḥmad ibn Naṣr Allāh al-Tattavī
                   </summary>
                   <msItem xml:id="Uk_Delhi_Persian_91-star-item1">
-                     <author key="person_61243125" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Aḥmad ibn Naṣr Allāh al-Tattavī</persName>
-                        <persName xml:lang="fa">احمد بن نصر الله التتوی</persName>
+                     <author change="#ids-cleanup">
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied" key="viaf_61243125">Aḥmad ibn Naṣr Allāh al-Tattavī</persName>
+                        <persName xml:lang="fa" key="viaf_61243125">احمد بن نصر الله التتوی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_6617" change="#ids-cleanup">Khulāṣaḥ al-ḥayāḥ</title>
                      <title xml:lang="fa" key="work_6617" change="#ids-cleanup">خلاصة الحیاح</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" />
-                     <note>The fatiḥah, or introduction, and the apparently unfinished Maqṣad I of the notices of philosophers written at the suggestion of <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_170558691" role="dte" change="#role-assignment #ids-cleanup">Ḥakīm Abrū’l-fatḥ ibn ʻAbd al-Razzāq Jīlānī, d. 1589 <foreign xml:lang="fa">حکیم ابرو الفتح بن عبد الرزاق جلانى</foreign>
-                        </persName>, a physician of <persName xml:lang="fa-Latn-x-lc" ref="http://viaf.org/viaf/3264079" key="person_3264079" type="alt" role="oth" change="#role-assignment">Akbar</persName> ’s time
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa"/>
+                     <note>The fatiḥah, or introduction, and the apparently unfinished Maqṣad I of the notices of philosophers written at the suggestion of <persName xml:lang="fa-Latn-x-lc" type="supplied" key="viaf_170558691" role="dte" change="#role-assignment #ids-cleanup">Ḥakīm Abrū’l-fatḥ ibn ʻAbd al-Razzāq Jīlānī, d. 1589 <foreign xml:lang="fa">حکیم ابرو الفتح بن عبد الرزاق جلانى</foreign>
+                        </persName>, a physician of <persName xml:lang="fa-Latn-x-lc" ref="http://viaf.org/viaf/3264079" key="viaf_3264079" type="alt" role="oth" change="#role-assignment">Akbar</persName> ’s time
                      </note>
                      <note>Other copies see <ref target="#Uk_delhi_persian_639">Delhi Persian 639</ref>
                      </note>
@@ -63,8 +71,7 @@
                         <bibl>For a more detailed description see Persian III, .</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -91,7 +98,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1600" notAfter="1699">17th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1600" notAfter="1699">17th century</origDate>
                   </origin>
                </history>
                <additional>

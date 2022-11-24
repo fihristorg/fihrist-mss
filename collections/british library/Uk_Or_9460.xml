@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6470">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,15 +42,21 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 9460</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342962</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237685.0x000103</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh85100085">
                   <summary change="#add-summary">
                      Dīvān by Khvājū-yi Kirmānī, Maḥmūd ibn ʻAlī, 1290 or 91-1352
                   </summary>
                   <msItem xml:id="Uk_Or_9460-item1">
-                     <author key="person_17089446" ref="http://viaf.org/viaf/17089446">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Khvājū-yi Kirmānī, Maḥmūd ibn ʻAlī, 1290 or 91-1352</persName>
-                        <persName xml:lang="fa">خواجوى كرمانى، محمود بن على</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_17089446">Khvājū-yi Kirmānī, Maḥmūd ibn ʻAlī, 1290 or 91-1352</persName>
+                        <persName xml:lang="fa" key="viaf_17089446">خواجوى كرمانى، محمود بن على</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20632" change="#ids-cleanup">Dīvān</title>
                      <title xml:lang="fa" key="work_20632" change="#ids-cleanup">دیوان</title>
@@ -56,8 +64,7 @@
                         <bibl>For a more detailed description see Meredith-Owens 1968, page 56.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -73,7 +80,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notBefore="1553" notAfter="1554">961</origDate>
+                     <origDate calendar="Hijri-qamari" notBefore="1553" notAfter="1554">961</origDate>
                   </origin>
                </history>
                <additional>

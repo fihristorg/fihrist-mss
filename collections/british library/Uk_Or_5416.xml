@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5965">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -40,27 +42,32 @@
                   <repository>Oriental Manuscripts</repository>
                   <collection>Oriental Manuscripts</collection>
                   <idno>Or 5416</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004342647</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100163237592.0x00005b</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="http://lccn.loc.gov/sh2009116093">
                   <summary change="#add-summary">
                      1 copy of Hay’at al-aflāk by Sakkākī, Yūsuf ibn Abī Bakr Abū Yaʿqūb al- 1160-1229
                   </summary>
                   <msItem xml:id="Uk_Or_5416-item1">
-                     <author ref="http://viaf.org/viaf/61532835" key="person_61532835">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Sakkākī, Yūsuf ibn Abī Bakr Abū Yaʿqūb al- 1160-1229</persName>
-                        <persName xml:lang="fa">السكاكی، يوسف بن أبي بكر</persName>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard" key="viaf_61532835">Sakkākī, Yūsuf ibn Abī Bakr Abū Yaʿqūb al- 1160-1229</persName>
+                        <persName xml:lang="fa" key="viaf_61532835">السكاكی، يوسف بن أبي بكر</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20756" change="#ids-cleanup">Hay’at al-aflāk</title>
                      <title xml:lang="fa" key="work_20756" change="#ids-cleanup">هيئة الأفلاك</title>
-                     <incipit xml:lang="fa" />
-                     <explicit xml:lang="fa" defective="true" />
+                     <incipit xml:lang="fa"/>
+                     <explicit xml:lang="fa" defective="true"/>
                      <note>A series of astronomical diagrams with an introduction by al-Sakkākī (probably Yūsuf ibn Abī Bakr)</note>
                      <listBibl>
                         <bibl>Meredith-Owens 1968, page 23.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>
-                  </note>
+                     <note/>
                   </msItem>
                </msContents>
                <physDesc>
@@ -76,7 +83,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1600" notAfter="1699">17th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1600" notAfter="1699">17th century</origDate>
                   </origin>
                </history>
                <additional>

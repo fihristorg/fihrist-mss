@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3272">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-06-20</date>
+            <date calendar="Gregorian">2011-06-20</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -46,7 +48,7 @@
                      1 copy of Tafsīr al-Sūrābādī by Sūrābādī, ʻAtīq ibn Muḥammad, d. 1100 or 1101
                   </summary>
                   <msItem xml:id="Uk_IO_Islamic_3838-item1">
-                     <author ref="http://viaf.org/viaf/52991598" key="person_52991598">
+                     <author ref="http://viaf.org/viaf/52991598" key="viaf_52991598">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Sūrābādī, ʻAtīq ibn Muḥammad, d. 1100 or 1101</persName>
                         <persName xml:lang="fa-Latn-x-lc" type="alt">Abū Bakr ʻAtīq ibn Muḥammad Sūrābādī</persName>
                         <persName xml:lang="fa" type="alt">ابوبکر عتيق بن محمد سور آبادى</persName>
@@ -54,10 +56,10 @@
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_8180">Tafsīr al-Sūrābādī</title>
                      <title xml:lang="fa" key="work_8180">تفسير سورآبادى</title>
-                     <incipit xml:lang="ar" />
-                     <explicit xml:lang="ar" defective="true" />
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note>The first volume of the commentary on the Qurʼān, containing the first quarter i.e. Sūrahs 1-6</note>
-                     <note>Togheter with <ref type="no" target="Uk">I.O. Islamic 3839 (British Library).</ref> form the first two volumes of a copy divided into quarters and written, at any rate partly, in <date calendar="#Hijri-qamari" when="1330">730</date>
+                     <note>Togheter with <ref type="no" target="Uk">I.O. Islamic 3839 (British Library).</ref> form the first two volumes of a copy divided into quarters and written, at any rate partly, in <date calendar="Hijri-qamari" when="1330">730</date>
                      </note>
                      <filiation>Other copies in the India Office Library: <ref type="no" target="Uk">I.O. Islamic 3840 (British Library).</ref>
                      </filiation>
@@ -91,7 +93,7 @@
                <history>
                   <origin>
                      <origPlace>Dabīr</origPlace>
-                     <origDate calendar="#Hijri-qamari" when="1330">8 Zuʼl-Q 730</origDate>
+                     <origDate calendar="Hijri-qamari" when="1330">8 Zuʼl-Q 730</origDate>
                   </origin>
                </history>
                <additional>

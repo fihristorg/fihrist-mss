@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5694">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011.08.17</date>
+            <date calendar="Gregorian">2011.08.17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -50,8 +52,8 @@
                         <persName xml:lang="en" type="desc">Unknown</persName>
                      </editor>
                      <title xml:lang="en" type="desc" key="work_8027">Poem with alternating strophes in Hebrew and Judaeo-Persian</title>
-                     <incipit xml:lang="ar" />
-                     <explicit xml:lang="ar" defective="true" />
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <listBibl>
                         <bibl>For a more detailed description see Waley 1998, page 64.</bibl>
                      </listBibl>
@@ -78,8 +80,8 @@
                         <persName xml:lang="he-Latn-x-lc" type="supplied">Yosef ben Yiṣhaq ben Mūsà</persName>
                      </author>
                      <title xml:lang="he-Latn-x-lc" key="work_8029">Kitāb-i Antiochus</title>
-                     <incipit xml:lang="ar" />
-                     <explicit xml:lang="ar" defective="true" />
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <note type="text-relations">Apparently a copy of the version of the Hasmonean story, better known as <title xml:lang="fa-Latn-x-lc">Antiochusnāmah</title>
                      </note>
                      <listBibl>
@@ -95,8 +97,8 @@
                         <persName xml:lang="en" type="desc">Unknown</persName>
                      </author>
                      <title xml:lang="en" type="desc" key="work_8030">A piyyut in honour of Purim, with alternating strophes in Hebrew and Judaeo-Persian</title>
-                     <incipit xml:lang="ar" />
-                     <explicit xml:lang="ar" defective="true" />
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
                      <listBibl>
                         <bibl>For a more detailed description see Waley 1998, page 64.</bibl>
                      </listBibl>
@@ -118,7 +120,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#other" when="1903">about 5663</origDate>
+                     <origDate calendar="Other" when="1903">about 5663</origDate>
                      <origPlace>Central Asia (?)</origPlace>
                   </origin>
                </history>
@@ -144,23 +146,23 @@
                </bibl>
             </taxonomy>
             <taxonomy xml:id="local_class">
-               <category xml:id="commentary" />
-               <category xml:id="supercommentary" />
-               <category xml:id="translation" />
+               <category xml:id="commentary"/>
+               <category xml:id="supercommentary"/>
+               <category xml:id="translation"/>
                <category xml:id="multipleWorks">
                   <catDesc>multiple works</catDesc>
                </category>
-               <category xml:id="abridgement" />
-               <category xml:id="papers" />
-               <category xml:id="documents" />
-               <category xml:id="extract" />
-               <category xml:id="gloss" />
-               <category xml:id="selection" />
-               <category xml:id="diagrams" />
-               <category xml:id="notes" />
-               <category xml:id="letters" />
-               <category xml:id="palimpsest" />
-               <category xml:id="supplement" />
+               <category xml:id="abridgement"/>
+               <category xml:id="papers"/>
+               <category xml:id="documents"/>
+               <category xml:id="extract"/>
+               <category xml:id="gloss"/>
+               <category xml:id="selection"/>
+               <category xml:id="diagrams"/>
+               <category xml:id="notes"/>
+               <category xml:id="letters"/>
+               <category xml:id="palimpsest"/>
+               <category xml:id="supplement"/>
             </taxonomy>
          </classDecl>
       </encodingDesc>

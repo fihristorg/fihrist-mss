@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5205">
    <teiHeader>
       <fileDesc>
@@ -11,7 +13,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>British Library</publisher>
-            <date calendar="#Gregorian">2011-08-17</date>
+            <date calendar="Gregorian">2011-08-17</date>
             <pubPlace>
                <address>
                   <addrLine>Asian and African Studies</addrLine>
@@ -46,14 +48,14 @@
                      1 copy of Dīvān of Ḥāfiẓ
                   </summary>
                   <msItem xml:id="Uk_Or_10910-item1">
-                     <author ref="http://viaf.org/viaf/56731778" key="person_56731778" change="#ids-cleanup">
+                     <author ref="http://viaf.org/viaf/56731778" key="viaf_56731778" change="#ids-cleanup">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">الحافظ الشيرازي، محمد شمس الدين</persName>
                         <persName xml:lang="fa">Al-Ḥāfiẓ al-Shīrāzī, Muḥammad Shams al-Dīn</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20666" change="#ids-cleanup">Dīvān of Ḥāfiẓ</title>
                      <title xml:lang="fa" key="work_20666" change="#ids-cleanup">دیوان حافظ</title>
                      <note>With <title xml:lang="fa-Latn-x-lc">Rubā‘īyāt <foreign xml:lang="fa">رباعیات</foreign>
-                        </title> of <persName xml:lang="fa-Latn-x-lc" type="standard" ref="http://viaf.org/viaf/100210377" key="person_100210377" role="oth" change="#role-assignment #ids-cleanup">‘Umar Khayyām <foreign xml:lang="fa">عمر خیّام</foreign>
+                        </title> of <persName xml:lang="fa-Latn-x-lc" type="standard" ref="http://viaf.org/viaf/100210377" key="viaf_100210377" role="oth" change="#role-assignment #ids-cleanup">‘Umar Khayyām <foreign xml:lang="fa">عمر خیّام</foreign>
                         </persName> written in the illuminated headings
                      </note>
                      <listBibl>
@@ -80,7 +82,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Gregorian" notBefore="1500" notAfter="1599">16th century</origDate>
+                     <origDate calendar="Gregorian" notBefore="1500" notAfter="1599">16th century</origDate>
                   </origin>
                </history>
                <additional>
