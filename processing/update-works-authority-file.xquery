@@ -19,7 +19,7 @@ declare function local:logging($level, $msg, $values)
 
 declare function local:normalize4Crossrefing($name as xs:string*) as xs:string
 {
-    let $normalized1 := replace(normalize-unicode($name, 'NFKD'), '^(the|a|an|al-|el-) ', '', 'i')
+    let $normalized1 := normalize-space(replace(normalize-unicode($name, 'NFKD'), '(^|\s)(the |a |an |al-|el-)', ' ', 'i'))
     let $normalized2 := 
         translate(
             translate(
