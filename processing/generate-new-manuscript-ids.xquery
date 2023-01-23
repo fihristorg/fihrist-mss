@@ -4,8 +4,8 @@ declare namespace map="http://www.w3.org/2005/xpath-functions/map";
 declare option saxon:output "indent=yes";
 declare option saxon:output "method=text";
 
-(: Set this variable to one of the institution as list below to update its list of allocated manuscript IDs :)
-declare variable $institution as xs:string := '____';
+(: Set this variable to one of the institution listed below to update its list of allocated manuscript IDs :)
+declare variable $institution as xs:string := '';
 
 (: List of Fihrist member institutions. If adding new ones in the future, create a blank file in the identifiers folder with the same name, ending with .txt :)
 declare variable $allinstitutions as xs:string* := (
@@ -16,7 +16,8 @@ declare variable $allinstitutions as xs:string* := (
     'jesus_college_cambridge',
     'kings_college_cambridge',
     'new_college_oxford',
-    'oxford_university',
+    'oxford_university_1',
+    'oxford_university_2',
     'royal_asiatic_society_of_great_britain_and_ireland',
     'school_of_oriental_and_african_studies',
     'st_antonys_college_oxford',
