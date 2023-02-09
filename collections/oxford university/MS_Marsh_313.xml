@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_23113">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_23114">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -29,11 +29,11 @@
                     </address>
                 </pubPlace>
                 <idno>FIHRIST</idno>
-                <idno type="msID">MS_Rawlinson_Or_5</idno>
+                <idno type="msID">MS_Marsh_313</idno>
                 <idno type="catalogue">Fihrist</idno>
             </publicationStmt>
             <sourceDesc>
-                <msDesc xml:id="MS_Rawlinson_Or_5" xml:lang="en">
+                <msDesc xml:id="MS_Marsh_313" xml:lang="en">
                     <msIdentifier>
                         <country>United Kingdom</country>
                         <region type="county">Oxfordshire</region>
@@ -41,25 +41,24 @@
                         <institution>Oxford University</institution>
                         <repository>Bodleian Library</repository>
                         <collection type="main">Oriental Manuscripts</collection>
-                        <idno>MS. Rawlinson Or. 5</idno>
+                        <idno>MS. Marsh 313</idno>
                         <altIdentifier>
                             <idno/>
                         </altIdentifier>
                     </msIdentifier>
                     <msContents>
-                        <summary>An incomplete history of the Ottoman state beginning with the riegn of Sulṭān ʻOs̱mān I Ġāzī and ending during the reign of Sulṭān Muḥammed II (a.k.a. Meḥmed II, Fātiḥ Sulṭān Meḥmed).</summary>
-                        <msItem xml:id="MS_Rawlinson_Or_5-item1">
+                        <summary>An anonymous chronicle of the reigns of the first eight Ottoman Sulṭāns dedicated to Sulṭān Bāyezīd II.</summary>
+                        <msItem xml:id="MS_Marsh_313-item1">
                             <author key="person_f407">
                                 Anonymous
                             </author>
-                            <title xml:lang="ota-Latn-x-lc" key="">Tevārīḫ-i Nesl-i Āl-i ʻOs̱mān Ġāzī</title>
-                            <title xml:lang="ota" key="">تواریخ نسل آل عثمان غازی</title>
+                            <title key="">Chronicle of the reigns of the first eight Ottoman Sulṭān</title>
                             <textLang mainLang="ota">Ottoman Turkish</textLang>
                             <listBibl>
                                 <bibl>
                                     <ref
                                         target="https://menadoc.bibliothek.uni-halle.de/ssg/content/pageview/775150"
-                                        >Ethé 2050</ref>
+                                        >Ethé 2051</ref>
                                 </bibl>
                             </listBibl>
                         </msItem>
@@ -67,20 +66,20 @@
                     <physDesc>
                         <objectDesc form="codex">
                             <supportDesc material="chart">
-                                <extent>ff. 61
+                                <extent>ff. 167
                                     <dimensions type="leaf" unit="cm">
-                                        <height>18.7</height>
-                                        <width>14.3</width>
+                                        <height>25.4</height>
+                                        <width>17.2</width>
                                     </dimensions>
                                 </extent>
                             </supportDesc>
                             <layoutDesc>
-                                <layout columns="1" ruledLines="16" n="mistara">Single column of 16 lines per page.</layout>
+                                <layout columns="1" ruledLines="13" n="mistara">Single column of 13 lines per page.</layout>
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
-                            <handNote scope="major" script="european">
-                                <desc><label>Script: </label>"European handwriting" according to Ethé; a sort of clear Naskh written with a nibbed pen at a 45 degree angle.</desc>
+                            <handNote scope="major" script="naskh">
+                                <desc><label>Script: </label>Large and clear Naskh.</desc>
                             </handNote>
                         </handDesc>
                         <!--
@@ -93,7 +92,17 @@
                         -->
                     </physDesc>
                     <history>
-                        <provenance>The collections of <persName key="person_47563478" role="fmo">Richard Rawlinson, d. 1755</persName>.</provenance><acquisition>The Rawlinson bequest entered the Bodleian Library in <date calendar="#Gregorian" when="1756">1756</date>.</acquisition>
+                        <origin>
+                            Written some time during the reign of Sulṭān Bāyezīd II but after the latest date referenced in the work, i.e. 
+                            <origDate calendar="#Hijri-qamari" notBefore="1484" notAfter="1512">889-917</origDate>
+                            <origDate calendar="#Gregorian" notBefore="1484" notAfter="1512">1484-1512</origDate>.
+                        </origin>
+                        <provenance>The collections of <persName key="person_10605557" role="fmo">Jacob
+                            Golius</persName> [see Golius Sale Catalogue,].</provenance>
+                        <provenance>The Library of <persName key="person_22965285" role="fmo">Archbishop
+                            Narcissus Marsh, d. 1713</persName>.</provenance>
+                        <acquisition>The Marsh bequest entered the Bodleian Library in
+                            1714.</acquisition>
                     </history>
                     <additional>
                         <adminInfo>
@@ -180,9 +189,7 @@
             <textClass>
                 <keywords scheme="#LCSH">
                     <list>
-                        <item>
-                            <term key="subject_sh85138802">Turkey--History--Ottoman Empire, 1288-1918</term>
-                        </item>
+                        <item><term key="subject_sh85138802">Turkey--History--Ottoman Empire, 1288-1918</term></item>
                     </list>
                 </keywords>
             </textClass>
