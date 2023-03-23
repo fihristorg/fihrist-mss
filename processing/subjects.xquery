@@ -114,7 +114,7 @@ declare variable $allinstances :=
                 }
                 {
                 (: See also links to other entries in the same authority file :)
-                let $relatedids := tokenize(translate(string-join(($subject/@corresp, $subject/@sameAs), ' '), '#', ''), '\s+')[string-length() gt 0]
+                let $relatedids := tokenize(replace(string-join(($subject/@corresp, $subject/@sameAs), ' '), '\S*#', ''), '\s+')[string-length() gt 0]
                 for $relatedid in distinct-values($relatedids)
                     let $url := concat("/catalog/", $relatedid)
                     let $linktext := ($authorityentries[@xml:id = $relatedid]/tei:term[@type = 'display'][1])[1]
