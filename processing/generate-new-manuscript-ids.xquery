@@ -18,6 +18,7 @@ declare variable $allinstitutions as xs:string* := (
     'new_college_oxford',
     'oxford_university_1',
     'oxford_university_2',
+    'queens_college_cambridge',
     'royal_asiatic_society_of_great_britain_and_ireland',
     'school_of_oriental_and_african_studies',
     'st_antonys_college_oxford',
