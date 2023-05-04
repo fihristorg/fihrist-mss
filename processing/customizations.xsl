@@ -52,7 +52,7 @@
     <!-- When the persName (or name) has a @key, and is not inside something else with a @key, display it as a link. This is standard 
          behaviour, but this template has been added to treat the BL's viaf_1234 key values as if they were person_1234. The same change 
          has also been made to the msItem/author and msItem/editor templates below as well. -->
-    <xsl:template match="(persName|name)[@key]">
+    <xsl:template match="persName[@key] | name[@key]">
         <span>
             <xsl:attribute name="class">
                 <xsl:value-of select="string-join((name(), @role), ' ')"/>
