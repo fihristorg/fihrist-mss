@@ -32,6 +32,8 @@ declare variable $allinstitutions as xs:string* := (
     'wellcome_trust'
 );
 
+declare variable $retiredidnums as xs:integer* := (399, 401, 402, 4234, 5063, 7264, 17968);
+
 declare variable $newline as xs:string := '&#10;';
 declare variable $maxallocation as xs:integer external := 1000;
 
@@ -48,7 +50,7 @@ declare variable $alreadyallocated := map:merge(
 );
 
 (: Join together lists of all in-use and already-pre-allocated manuscript IDs :)
-declare variable $alloldids as xs:integer* := ($inuseidnums, (for $inst in $allinstitutions return map:get($alreadyallocated, $inst)));
+declare variable $alloldids as xs:integer* := ($retiredidnums, $inuseidnums, (for $inst in $allinstitutions return map:get($alreadyallocated, $inst)));
 
 (: Extract the manuscript IDs already allocated to the institution this  :)
 
