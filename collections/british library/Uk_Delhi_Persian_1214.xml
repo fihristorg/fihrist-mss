@@ -1,6 +1,153 @@
-<?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><!--  This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd)  --><?altova_sps ..\msdesc.sps?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_32308"><teiHeader><fileDesc><titleStmt><title>Delhi Persian 1214</title><author><orgName key="fa">Persian Project</orgName></author><funder>BL</funder><principal>Ursula Sims-Williams</principal></titleStmt><publicationStmt><publisher>British Library</publisher><date calendar="Gregorian">2022-04-21</date><pubPlace><address><addrLine>Asian and African Studies</addrLine><addrLine>British Library</addrLine><street>96 Euston Road</street><settlement>London</settlement><postCode>NW1 2DB</postCode><addrLine><ref target="http://www.bl.uk">British Library</ref></addrLine><addrLine><email>apac-enquiries@bl.uk</email></addrLine></address></pubPlace><idno>BL</idno><idno type="msID">Uk_Delhi_Persian_1214</idno><idno type="catalogue">Fihrist</idno></publicationStmt><sourceDesc><msDesc xml:id="Uk_Delhi_Persian_1214" xml:lang="en"><msIdentifier><country>United Kingdom</country><settlement>London</settlement><institution>British Library</institution><repository>Oriental Manuscripts</repository><collection>India Office Library</collection><idno>Delhi Persian 1214</idno><altIdentifier type="IAMS-ID"><idno>032-003391149</idno></altIdentifier><altIdentifier type="MDARK"><idno>ark:/81055/vdc_100052297750.0x000006</idno></altIdentifier></msIdentifier><msContents><summary>1 copy of Jamʻ-i mukhtaṣar by Vaḥīd Tabrīzī, fl. 1417</summary><msItem class="http://id.loc.gov/authorities/sh2008109073 http://id.loc.gov/authorities/sh85142883" n="1" xml:id="Uk_Delhi_Persian_1214-item1"><textLang mainLang="fa">Persian</textLang><note><p>On the rules of prosody, in Persian verse, with explanations of technical terms, by Vaḥīd Tabrīzī.</p><p>ff. 26; unfinished; 14 lines to a page; nastaʻliq; rubrications; diagrams (ff. 9v-11r); 19th century.</p></note><author><persName xml:lang="fa-Latn-x-lc" key="ark:/81055/vdc_100166919803.0x000001 viaf_56470918">Vaḥīd Tabrīzī, fl. 1417</persName><persName xml:lang="fa" key="viaf_56470918">وحيد تبريزي</persName></author><title xml:lang="fa-Latn-x-lc" key="work_1880">Jamʻ-i mukhtaṣar</title><title xml:lang="fa" key="work_1880">جمع مختصر</title></msItem></msContents><physDesc><objectDesc form="codex"><supportDesc material="chart"><extent>ff. ii+26+i
-                <dimensions type="leaf" unit="mm"><height>220</height><width>140</width></dimensions></extent></supportDesc></objectDesc><handDesc><handNote script="Arabic" scope="sole" /></handDesc><decoDesc><decoNote /></decoDesc><additions /><bindingDesc><p>Marbled board binding.</p></bindingDesc></physDesc><history><origin><origDate calendar="Gregorian" notBefore="1800" notAfter="1857">early 19th century</origDate><origPlace>India?</origPlace></origin><provenance><p>Purchased by the Government of India at sale organised by Delhi Prize Agents, 1859; administrative deposit India Office Library, 1876.</p></provenance><acquisition><date>1876</date><p>Government of India</p></acquisition></history><additional><adminInfo><recordHist><source>Based on description in Catalogue of Persian Manuscripts in the India Office Library, vol. 3. Available on British Library Digitised Manuscripts, manuscript number: <ref target="http://www.bl.uk/manuscripts/Viewer.aspx?ref=mss_eur_e207!17_f042r">MSS Eur E207/17_f042r</ref>, f. 42r.
-                        </source></recordHist><availability status="free"><p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.bl.uk/reshelp/inrrooms/stp/register/stpregister.html/">British Library, Registering for a Reader Pass</ref>. Contact <email>apac-enquiries@bl.uk</email> for further information on the availability of this manuscript. For information on catalogues and ordering manuscripts see <ref target="https://www.bl.uk/help/find-persian-manuscripts">Finding and ordering Persian manuscripts in the British Library</ref>.
-                        </p></availability></adminInfo><listBibl><bibl><ref target="http://www.bl.uk/manuscripts/Viewer.aspx?ref=mss_eur_e207!17_f042r">MSS Eur E207/17_f042r</ref></bibl></listBibl></additional></msDesc></sourceDesc></fileDesc><encodingDesc><classDecl><taxonomy xml:id="LCSH"><bibl><ref target="http://id.loc.gov/authorities/about.html#lcsh">Library of Congress Subject Headings</ref></bibl></taxonomy></classDecl></encodingDesc><profileDesc><textClass /></profileDesc><revisionDesc><change when="2022-04-21"><persName>Julian Cook</persName>
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_32308">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Delhi Persian 1214</title>
+            <author>
+               <orgName key="fa">Persian Project</orgName>
+            </author>
+            <funder>BL</funder>
+            <principal>Ursula Sims-Williams</principal>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>British Library</publisher>
+            <date calendar="Gregorian">2022-04-21</date>
+            <pubPlace>
+               <address>
+                  <addrLine>Asian and African Studies</addrLine>
+                  <addrLine>British Library</addrLine>
+                  <street>96 Euston Road</street>
+                  <settlement>London</settlement>
+                  <postCode>NW1 2DB</postCode>
+                  <addrLine>
+                     <ref target="http://www.bl.uk">British Library</ref>
+                  </addrLine>
+                  <addrLine>
+                     <email>apac-enquiries@bl.uk</email>
+                  </addrLine>
+               </address>
+            </pubPlace>
+            <idno>BL</idno>
+            <idno type="msID">Uk_Delhi_Persian_1214</idno>
+            <idno type="catalogue">Fihrist</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="Uk_Delhi_Persian_1214" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <settlement>London</settlement>
+                  <institution>British Library</institution>
+                  <repository>Oriental Manuscripts</repository>
+                  <collection>India Office Library</collection>
+                  <idno>Delhi Persian 1214</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-003391149</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100052297750.0x000006</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <summary>1 copy of Jamʻ-i mukhtaṣar by Vaḥīd Tabrīzī, fl. 1417</summary>
+                  <msItem class="http://id.loc.gov/authorities/sh2008109073 http://id.loc.gov/authorities/sh85142883" n="1" xml:id="Uk_Delhi_Persian_1214-item1">
+                     <textLang mainLang="fa">Persian</textLang>
+                     <note>
+                        <p>On the rules of prosody, in Persian verse, with explanations of technical terms, by Vaḥīd Tabrīzī.</p>
+                        <p>ff. 26; unfinished; 14 lines to a page; nastaʻliq; rubrications; diagrams (ff. 9v-11r); 19th century.</p>
+                     </note>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" key="ark:/81055/vdc_100166919803.0x000001 viaf_56470918">Vaḥīd Tabrīzī, fl. 1417</persName>
+                        <persName xml:lang="fa" key="viaf_56470918">وحيد تبريزي</persName>
+                     </author>
+                     <title xml:lang="fa-Latn-x-lc" key="work_1880">Jamʻ-i mukhtaṣar</title>
+                     <title xml:lang="fa" key="work_1880">جمع مختصر</title>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="chart">
+                        <extent>ff. ii+26+i
+                <dimensions type="leaf" unit="mm">
+                              <height>220</height>
+                              <width>140</width>
+                           </dimensions>
+                        </extent>
+                     </supportDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote script="Arabic" scope="sole"/>
+                  </handDesc>
+                  <decoDesc>
+                     <decoNote/>
+                  </decoDesc>
+                  <additions/>
+                  <bindingDesc>
+                     <p>Marbled board binding.</p>
+                  </bindingDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian" notBefore="1800" notAfter="1857">early 19th century</origDate>
+                     <origPlace>India?</origPlace>
+                  </origin>
+                  <provenance>
+                     <p>Purchased by the Government of India at sale organised by Delhi Prize Agents, 1859; administrative deposit India Office Library, 1876.</p>
+                  </provenance>
+                  <acquisition>
+                     <date>1876</date>
+                     <p>Government of India</p>
+                  </acquisition>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>Based on description in Catalogue of Persian Manuscripts in the India Office Library, vol. 3. Available on British Library Digitised Manuscripts, manuscript number: <ref target="http://www.bl.uk/manuscripts/Viewer.aspx?ref=mss_eur_e207!17_f042r">MSS Eur E207/17_f042r</ref>, f. 42r.
+                        </source>
+                     </recordHist>
+                     <availability status="free">
+                        <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.bl.uk/reshelp/inrrooms/stp/register/stpregister.html/">British Library, Registering for a Reader Pass</ref>. Contact <email>apac-enquiries@bl.uk</email> for further information on the availability of this manuscript. For information on catalogues and ordering manuscripts see <ref target="https://www.bl.uk/help/find-persian-manuscripts">Finding and ordering Persian manuscripts in the British Library</ref>.
+                        </p>
+                     </availability>
+                  </adminInfo>
+                  <listBibl>
+                     <bibl>
+                        <ref target="http://www.bl.uk/manuscripts/Viewer.aspx?ref=mss_eur_e207!17_f042r">MSS Eur E207/17_f042r</ref>
+                     </bibl>
+                  </listBibl>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="LCSH">
+               <bibl>
+                  <ref target="http://id.loc.gov/authorities/about.html#lcsh">Library of Congress Subject Headings</ref>
+               </bibl>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass/>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-04-21">
+            <persName>Julian Cook</persName>
               850 BL Persian mss prepared for initial publication in FIHRIST (plus 18 replacements)
-         </change><change when="2017-12-10">Ursula Sims-Williams</change></revisionDesc></teiHeader><text><body><p><!-- Body paragraph provided for validation and future transcription --></p></body></text></TEI>
+         </change>
+         <change when="2017-12-10">Ursula Sims-Williams</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p>
+            <!-- Body paragraph provided for validation and future transcription -->
+         </p>
+      </body>
+   </text>
+</TEI>

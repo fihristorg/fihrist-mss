@@ -1,13 +1,151 @@
-<?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><!--  This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd)  --><?altova_sps ..\msdesc.sps?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_32641"><teiHeader><fileDesc><titleStmt><title>Delhi Persian 607</title><author><orgName key="fa">Persian Project</orgName></author><funder>BL</funder><principal>Ursula Sims-Williams</principal></titleStmt><publicationStmt><publisher>British Library</publisher><date calendar="Gregorian">2022-04-21</date><pubPlace><address><addrLine>Asian and African Studies</addrLine><addrLine>British Library</addrLine><street>96 Euston Road</street><settlement>London</settlement><postCode>NW1 2DB</postCode><addrLine><ref target="http://www.bl.uk">British Library</ref></addrLine><addrLine><email>apac-enquiries@bl.uk</email></addrLine></address></pubPlace><idno>BL</idno><idno type="msID">Uk_Delhi_Persian_607</idno><idno type="catalogue">Fihrist</idno></publicationStmt><sourceDesc><msDesc xml:id="Uk_Delhi_Persian_607" xml:lang="en"><msIdentifier><country>United Kingdom</country><settlement>London</settlement><institution>British Library</institution><repository>Oriental Manuscripts</repository><collection>India Office Library</collection><idno>Delhi Persian 607</idno><altIdentifier type="IAMS-ID"><idno>032-004378050</idno></altIdentifier><altIdentifier type="MDARK"><idno>ark:/81055/vdc_100169703494.0x00000b</idno></altIdentifier></msIdentifier><msContents><summary>1 copy of Bayān-i vaqāʾiʿ by Khvājah ʿAbd al-Karīm Kashmīrī</summary><msItem class="http://lccn.loc.gov/sh85064938 http://lccn.loc.gov/n50063254 http://lccn.loc.gov/sh2008115922" n="1" xml:id="Uk_Delhi_Persian_607-item1"><textLang mainLang="fa" otherLangs="ar">Persian and Arabic </textLang><note><p>Private historical account by Khvājah ʿAbd al-Karīm ibn ʿĀqibat Maḥmūd ibn Muḥammad Būlāqī ibn Muḥammad Riz̤āʾ Kashmīrī, covering the invasion of Timurid (Mughal) India by Nādir Shāh Afshār, as well as the author’s later travels in the wider Middle East en route home from the ḥajj pilgrimage to Makkah. </p><p>The author joined the service of Nādir Shāh’s chief physician or ḥakīm bāshī, Sayyid ʿAlavī Khān (d. 1162/1749), in 1151/1738, with whom he initially left Delhi, travelling to Qazvīn, where he arrived in 1154/1741, before embarking on his extended travels. 
-</p><p>The author deliberately wrote his account in simple prose for the ease of readers. 
-</p><p>The work comprises an introduction, five chapters termed bāb with further subdivisions termed faṣl, a conclusion, followed by two epilogues according to description (not included here). 
-</p><p>Defective and injured at beginning. 
-</p><p>Not date at end; datable to the late eighteenth century. 
-</p><p>Large nastaʿlīq. 
-</p><p>Lacking original binding. 
-</p><p>Condition fragile. 
-</p></note><title xml:lang="fa-Latn-x-lc" key="work_6697">Bayān-i vaqāʾiʿ</title><title xml:lang="fa" key="work_6697">بيان وقائع</title><author><persName xml:lang="fa-Latn-x-lc" key="viaf_235421630">Khvājah ʿAbd al-Karīm Kashmīrī</persName><persName xml:lang="fa" key="viaf_235421630">خواجه عبد الكريم كشميرى</persName></author></msItem></msContents><physDesc><objectDesc form="codex"><supportDesc material="chart"><extent>256 ff. <dimensions type="leaf" unit="mm"><height>206</height><width>132</width></dimensions></extent></supportDesc></objectDesc><handDesc><handNote script="Arabic" scope="major" /></handDesc></physDesc><history><origin calendar="Hijri-qamari" notBefore="1780" notAfter="1820"><origPlace>India</origPlace></origin><provenance><p>Purchased by the Government of India at sale organised by Delhi Prize Agents, 1859; administrative deposit India Office Library, 1876 
-</p></provenance><acquisition><date>1876</date><p>Government of India</p></acquisition></history><additional><adminInfo><availability status="free"><p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.bl.uk/reshelp/inrrooms/stp/register/stpregister.html/">British Library, Registering for a Reader Pass</ref>. Contact <email>apac-enquiries@bl.uk</email> for further information on the availability of this manuscript. For information on catalogues and ordering manuscripts see <ref target="https://www.bl.uk/help/find-persian-manuscripts">Finding and ordering Persian manuscripts in the British Library</ref>.
-                        </p></availability></adminInfo></additional></msDesc></sourceDesc></fileDesc><encodingDesc><classDecl><taxonomy xml:id="LCSH"><bibl><ref target="http://id.loc.gov/authorities/about.html#lcsh">Library of Congress Subject Headings</ref></bibl></taxonomy></classDecl></encodingDesc><profileDesc><textClass /></profileDesc><revisionDesc><change when="2022-04-21"><persName>Julian Cook</persName>
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
+<?altova_sps ..\msdesc.sps?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_32641">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Delhi Persian 607</title>
+            <author>
+               <orgName key="fa">Persian Project</orgName>
+            </author>
+            <funder>BL</funder>
+            <principal>Ursula Sims-Williams</principal>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>British Library</publisher>
+            <date calendar="Gregorian">2022-04-21</date>
+            <pubPlace>
+               <address>
+                  <addrLine>Asian and African Studies</addrLine>
+                  <addrLine>British Library</addrLine>
+                  <street>96 Euston Road</street>
+                  <settlement>London</settlement>
+                  <postCode>NW1 2DB</postCode>
+                  <addrLine>
+                     <ref target="http://www.bl.uk">British Library</ref>
+                  </addrLine>
+                  <addrLine>
+                     <email>apac-enquiries@bl.uk</email>
+                  </addrLine>
+               </address>
+            </pubPlace>
+            <idno>BL</idno>
+            <idno type="msID">Uk_Delhi_Persian_607</idno>
+            <idno type="catalogue">Fihrist</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="Uk_Delhi_Persian_607" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <settlement>London</settlement>
+                  <institution>British Library</institution>
+                  <repository>Oriental Manuscripts</repository>
+                  <collection>India Office Library</collection>
+                  <idno>Delhi Persian 607</idno>
+                  <altIdentifier type="IAMS-ID">
+                     <idno>032-004378050</idno>
+                  </altIdentifier>
+                  <altIdentifier type="MDARK">
+                     <idno>ark:/81055/vdc_100169703494.0x00000b</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <summary>1 copy of Bayān-i vaqāʾiʿ by Khvājah ʿAbd al-Karīm Kashmīrī</summary>
+                  <msItem class="http://lccn.loc.gov/sh85064938 http://lccn.loc.gov/n50063254 http://lccn.loc.gov/sh2008115922" n="1" xml:id="Uk_Delhi_Persian_607-item1">
+                     <textLang mainLang="fa" otherLangs="ar">Persian and Arabic </textLang>
+                     <note>
+                        <p>Private historical account by Khvājah ʿAbd al-Karīm ibn ʿĀqibat Maḥmūd ibn Muḥammad Būlāqī ibn Muḥammad Riz̤āʾ Kashmīrī, covering the invasion of Timurid (Mughal) India by Nādir Shāh Afshār, as well as the author’s later travels in the wider Middle East en route home from the ḥajj pilgrimage to Makkah. </p>
+                        <p>The author joined the service of Nādir Shāh’s chief physician or ḥakīm bāshī, Sayyid ʿAlavī Khān (d. 1162/1749), in 1151/1738, with whom he initially left Delhi, travelling to Qazvīn, where he arrived in 1154/1741, before embarking on his extended travels. 
+</p>
+                        <p>The author deliberately wrote his account in simple prose for the ease of readers. 
+</p>
+                        <p>The work comprises an introduction, five chapters termed bāb with further subdivisions termed faṣl, a conclusion, followed by two epilogues according to description (not included here). 
+</p>
+                        <p>Defective and injured at beginning. 
+</p>
+                        <p>Not date at end; datable to the late eighteenth century. 
+</p>
+                        <p>Large nastaʿlīq. 
+</p>
+                        <p>Lacking original binding. 
+</p>
+                        <p>Condition fragile. 
+</p>
+                     </note>
+                     <title xml:lang="fa-Latn-x-lc" key="work_6697">Bayān-i vaqāʾiʿ</title>
+                     <title xml:lang="fa" key="work_6697">بيان وقائع</title>
+                     <author>
+                        <persName xml:lang="fa-Latn-x-lc" key="viaf_235421630">Khvājah ʿAbd al-Karīm Kashmīrī</persName>
+                        <persName xml:lang="fa" key="viaf_235421630">خواجه عبد الكريم كشميرى</persName>
+                     </author>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="chart">
+                        <extent>256 ff. <dimensions type="leaf" unit="mm">
+                              <height>206</height>
+                              <width>132</width>
+                           </dimensions>
+                        </extent>
+                     </supportDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote script="Arabic" scope="major"/>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin calendar="Hijri-qamari" notBefore="1780" notAfter="1820">
+                     <origPlace>India</origPlace>
+                  </origin>
+                  <provenance>
+                     <p>Purchased by the Government of India at sale organised by Delhi Prize Agents, 1859; administrative deposit India Office Library, 1876 
+</p>
+                  </provenance>
+                  <acquisition>
+                     <date>1876</date>
+                     <p>Government of India</p>
+                  </acquisition>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <availability status="free">
+                        <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.bl.uk/reshelp/inrrooms/stp/register/stpregister.html/">British Library, Registering for a Reader Pass</ref>. Contact <email>apac-enquiries@bl.uk</email> for further information on the availability of this manuscript. For information on catalogues and ordering manuscripts see <ref target="https://www.bl.uk/help/find-persian-manuscripts">Finding and ordering Persian manuscripts in the British Library</ref>.
+                        </p>
+                     </availability>
+                  </adminInfo>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="LCSH">
+               <bibl>
+                  <ref target="http://id.loc.gov/authorities/about.html#lcsh">Library of Congress Subject Headings</ref>
+               </bibl>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass/>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-04-21">
+            <persName>Julian Cook</persName>
               850 BL Persian mss prepared for initial publication in FIHRIST (plus 18 replacements)
-         </change><change when="2018-03-28">Sāqib Bāburī</change></revisionDesc></teiHeader><text><body><p><!-- Body paragraph provided for validation and future transcription --></p></body></text></TEI>
+         </change>
+         <change when="2018-03-28">Sāqib Bāburī</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p>
+            <!-- Body paragraph provided for validation and future transcription -->
+         </p>
+      </body>
+   </text>
+</TEI>
