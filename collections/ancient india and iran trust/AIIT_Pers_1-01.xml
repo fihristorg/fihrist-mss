@@ -3,6 +3,7 @@
 <?xml-model href="https://raw.githubusercontent.com/msdesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!-- This record is intended for use in both FIHRIST and IAMS-TEI. The xml-model declarations indicate validation for FIHRIST (msdesc.rng) while the Altova XPS file indicates validation for IAMS-TEI (msdesc.sps which uses msdesc.xsd) -->
 <?altova_sps ..\msdesc.sps?>
+<!-- Should we delete lines 4-5 as this record is not intended for BL IAMS?? -->
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_11855">
     <teiHeader>
         <fileDesc>
@@ -32,7 +33,8 @@
                     </address>
                 </pubPlace>
                 <idno>UkCbIIT</idno>
-                <idno type="msID">AIIT_Pers_1_01</idno>
+                <idno type="msID"
+                    >AIIT_Pers_1-01</idno>
                 <idno type="catalogue">Fihrist</idno>
             </publicationStmt>
             <sourceDesc>
@@ -45,55 +47,70 @@
                         <repository>Library</repository>
                         <collection>Oriental Manuscripts</collection>
                         <idno>AIIT Pers. 1.01</idno>
-                        <altIdentifier type="former">
-                            <idno><!-- St Augustine's College 31 --></idno>
-                        </altIdentifier>
                     </msIdentifier>
                     <head>Rawz̤at al-Ṣafāʼ by Mīr Khvānd, daftar 4-7 and epilogue</head>
                     <msContents>
-                        <summary>Volumes (<foreign>daftar</foreign>) 4-7 and the epilogue
-                                (<foreign>khāṭimah</foreign>), also known as the eighth volume of the
-                                <title>Rawz̤at al-Ṣafāʼ</title>, a general history from the creation
-                            of the world to the time of the author, by Muḥammad ibn Khāvandshāh
-                            (1433–1498), known as Mīr Khvānd. Daftar 7 and the epilogue were
-                            completed by his grandson, <persName role="aut" key="person_45109504"
-                                >Khvānd Amīr</persName>. </summary>
+                        <summary>Volumes
+                                (<foreign>daftars</foreign>)
+                            4-7 and the epilogue (<foreign>khāṭimah</foreign>), also known as the
+                            eighth volume of the <title>Rawz̤at al-Ṣafāʼ</title>, a general history
+                            from the creation of the world to the time of the author, by Muḥammad
+                            ibn Khāvandshāh (1433–1498), known as Mīr Khvānd. Daftar 7 and the
+                            epilogue were completed by his grandson, <persName role="aut"
+                                key="person_45109504">Khvānd Amīr</persName>. </summary>
                         <msItem xml:id="AIIT_Pers_1_01-item1">
                             <author key="person_175393012">
                                 <persName xml:lang="fa-Latn-x-lc">Muḥammad ibn Khāvandshāh Mīr
                                     Khvānd, 1433–1498 </persName>
-                                <persName xml:lang="fa"/>
+                                <persName xml:lang="fa">مير خواند، محمد بن خاوند شاه</persName>
                             </author>
                             <title xml:lang="fa-Latn-x-lc" key="work_273">Rawz̤at al-Ṣafāʼ</title>
-                            <title xml:lang="fa" key="work_273">روضة الصفاء</title> <!--please make sure you include the key in all instances of encoded titles-->
-        
+                            <title xml:lang="fa" key="work_273">روضة الصفاء</title>
                             <note>
                                 <p>The colophons are dated between 1689 and 1691 but were not
                                     completed in chronological order, reflecting the fact that they
                                     were formerly separate fascicles, perhaps of multiple copies,
                                     which are now bound together. </p>
-                                
-                                <!--<p><locus from="1v" to="253v">ff. 1v-253v:
-                                        </locus><title>daftar</title> 4. Colophon dated 5 Safar 1103
-                                    (28 Oct 1691)</p> these are nested msItems! please follow the model below -->
-                                <p><locus from="254v" to="445v">ff. 254v-445v:
-                                        </locus><term>dafter</term> 5 Colophon dated 9 Rajab 1100
-                                    (29 April 1689)</p>
-                                <p><locus from="446v" to="766v">ff. 446v-766v:
-                                        </locus><term>daftar</term> 6 Colophon 12 Zu 'l-Ḥijjah 1101
-                                    (16 Sept 1690) at Thattah?</p>
-                                <p><locus from="767v" to="890v">ff. 767v-890v:
-                                        </locus><term>daftar</term> 7 Colophon dated 11 Jumādā I
-                                    1101 (20 Feb 1690)</p>
-                                <p><locus from="891v" to="930r">ff. 891v-930r:
-                                        </locus><term>khātimah</term> Colophon dated 17 Muḥarram
-                                    1102 (21 Oct 1690)</p>
                             </note>
-                            <msItem xml:id="AIIT_Pers_1_01-item1-1"><locus from="1v" to="253v">ff. 1v-253v:
-                            </locus><title xml:lang="fa-Latn-x-lc">daftar 4</title> <note>Colophon dated 5 Safar 1103
-                                (28 Oct 1691)</note></msItem>
-    
                             <textLang mainLang="fa">Persian</textLang>
+                            <msItem xml:id="AIIT_Pers_1-01-item1-item1" n="1">
+                                <locus from="1v" to="253v">ff. 1v-253v</locus>
+                                <title xml:lang="fa-Latn-x-lc">Daftar-i chahārum</title>
+                                <title xml:lang="fa">دفتر چهادم</title>
+                                <note>Colophon dated 5 Safar 1103
+                                    (28 Oct 1691)</note>
+                            </msItem>
+                            <msItem xml:id="AIIT_Pers_1-01-item1-item2" n="2">
+                                <locus from="254v" to="445v">ff. 254v-445v</locus>
+                                <title xml:lang="fa-Latn-x-lc">Daftar-i panjum</title>
+                                <title xml:lang="fa">دفتر پنجم</title>
+                                <note>Colophon dated 9 Rajab 1100
+                                    (29 April 1689)</note>
+                            </msItem>
+                            <msItem xml:id="AIIT_Pers_1-01-item1-item3" n="3">
+                                <locus from="446v" to="766v">ff. 446v-766v:
+                                </locus>
+                                <title xml:lang="fa-Latn-x-lc">Daftar-i shishum</title>
+                                <title xml:lang="fa">دفتر شیشم</title>
+                                <note>Colophon 12 Zu 'l-Ḥijjah 1101
+                                    (16 Sept 1690) at Thattah?</note>
+                            </msItem>
+                            <msItem xml:id="AIIT_Pers_1-01-item1-item4" n="4">
+                                <locus from="767v" to="890v">ff. 767v-890v
+                                </locus>
+                                <title xml:lang="fa-Latn-x-lc">Daftar-i haftum</title>
+                                <title xml:lang="fa">دفترهفتم </title>
+                                <note>Colophon dated 11 Jumādā I
+                                    1101 (20 Feb 1690)</note>
+                            </msItem>
+                            <msItem xml:id="AIIT_Pers_1-01-item1-item5" n="5">
+                                <locus from="891v" to="930r">ff. 891v-930r
+                                </locus>
+                                <title xml:lang="fa-Latn-x-lc">Khātimah</title>
+                                <title xml:lang="fa">خاتمه</title>
+                                <note>Colophon dated 17 Muḥarram
+                                    1102 (21 Oct 1690)</note>
+                            </msItem>
                         </msItem>
                     </msContents>
                     <physDesc>
@@ -109,21 +126,17 @@
                                     </dimensions>
                                 </extent>
                                 <foliation>
-                                    <p>Every 10th leaf foliated in pencil. Each <term>dafter</term>
+                                    <p>Every 10th leaf foliated in pencil. Each <foreign>daftar</foreign>
                                         is foliated separately in Persian: pp. 505, 383, 636 (with a
-                                        gap between pp. 264 to 267), 247, and the
-                                        <title xml:id="AIIT_Pers_1_01-item1-5">khātimah</title> is foliated separately in pencil:
-                                        ff. 40.</p>
+                                        gap between pp. 264 to 267), 247, and the <title
+                                            xml:id="AIIT_Pers_1-01-item1-5">khātimah</title> is
+                                        foliated separately in pencil: ff. 40.</p>
                                 </foliation>
-                                <collation><catchwords> Catchwords</catchwords>
-                                    <!--<p>Catchwords. </p> please follow model above!-->
+                                <collation><p>Catchwords. </p>
                                 </collation>
-                                <condition>
-                                    <p>S</p> <!--what do you mean by "S" ?-->
-                                </condition>
-                            </supportDesc>
+                                </supportDesc>
                             <layoutDesc>
-                                <layout columns="2" writtenLines="15">
+                                <layout columns="1" writtenLines="25">
                                     <p>25 lines per page.</p>
                                 </layout>
                             </layoutDesc>
@@ -136,13 +149,14 @@
                         </handDesc>
                         <additions>
                             <p>Includes some marginal comments. </p>
-                            <p><locus>f. 1r</locus> includes a scrubbed out seal and several damaged inscriptions,
-                                one dated 1139 (1726/27). </p><!--I have encoded the page number with <locus></locus>-->
+                            <p><locus>f. 1r</locus> includes a scrubbed out seal and several damaged
+                                inscriptions, one dated 1139 (1726/27). </p>
                             <p>Occasional marginal comments in English in what appears to be
-                                <persName role="fmo">Robinson</persName>'s hand. <!--I have encoded the name--></p>
+                                    <persName role="fmo">Robinson</persName>'s hand.</p>
                             <p>Pastedown containing Robinson's signature 'Revd. T. Robinson' and
                                 bookplate 'Collegii Sti. Augustini apud Cantuarienses Liber'. Marked
-                                'Librarian's room 31. </p>/> <p>Flyleaf with label: "Presented to
+                                'Librarian's room 31. </p>
+                            <p>Flyleaf with label: "Presented to
                                 St. Augustine's College Library by the Rev. Thomas Robinson, D.D.,
                                 late Archdeacon of Madras." </p>
                         </additions>
@@ -156,33 +170,35 @@
                             <seal subtype="rectangular" type="stamp">
                                 <p>Rectangular seal of former owner <persName role="fmo" key=""
                                         >Mutavassil Khān Bahādur</persName>, dated 1133 (1720/21)
-                                    (ff. 1r, 254r, 446r, 767r, 891r). </p> <!--would you liketo encode the folio numbers? in case you have images in future and wanted to linked these up?-->
+                                    (ff. 1r, 254r, 446r, 767r, 891r). </p>
+                                <!--would you liketo encode the folio numbers? in case you have images in future and wanted to linked these up?-->
                             </seal>
                         </sealDesc>
                     </physDesc>
                     <history>
                         <origin>
-                            <!--<origDate calendar="Hijri-qamari" when="1829-03-03">Copied between 1100
-                                and 1103 AH (1689-1691)</origDate> Please follow practice below!--> <!--these dates don't match!-->
-                            <origDate calendar="Hijri-qamari"  notBefore="1689" notAfter="1691">Copied between 1100
-                                and 1103 AH (1689-1691)</origDate>
+                            <origDate calendar="Hijri-qamari" notBefore="1689" notAfter="1691"
+                                >Copied between 1100 and 1103 AH (1689-1691)</origDate>
                             <origPlace>Thatta, Pakistan</origPlace>
                         </origin>
                         <provenance>
                             <p>Belonged to Mutavassil Khān Bahādur in the 18th century. </p>
                             <p>Acquired by <persName role="fmo" key="">Thomas Robinson, Archdeacon
-                                    of Madras</persName> and presented by him to St. Augustine's
-                                College Canterbury<!-- when? -->. </p>
+                                of Madras</persName> and presented by him to <orgName role="fmo" key="person_153752518">St. Augustine's
+                                College Canterbury</orgName>. </p>
                         </provenance>
                         <acquisition>
-                            <p>Purchased by Sir Harold Walter Bailey <date><!-- after 1928 --></date><!--Plesae encode the name!--></p>
+                            <p>Purchased by Sir <persName role="fmo" key="person_79044686">Harold Walter Bailey</persName> (1899-1996). 
+                                    <date><!-- after 1928 --></date></p>
                         </acquisition>
                     </history>
                     <additional>
                         <adminInfo>
                             <recordHist>
                                 <source>
-                                    <p>Based on <persName role="cataloguer" key="person_105712">Maria Szuppe</persName>'s draft catalogue descriptions with modifications by Ursula Sims-Williams. </p>
+                                    <p>Based on <persName role="cataloguer" key="person_105712"
+                                            >Maria Szuppe</persName>'s draft catalogue descriptions
+                                        with modifications by Ursula Sims-Williams. </p>
                                 </source>
                             </recordHist>
                             <availability status="restricted">
@@ -193,9 +209,10 @@
                             </availability>
                         </adminInfo>
                         <listBibl>
-                            <bibl>Maria Szuppe, <title level="a">A Preliminary Account of the Persian
-                                Manuscripts in the Collection of the Late Sir Harold W.
-                                Bailey</title>, <title level="j">Iran</title><biblScope>, vol. 30 (1997): 93-101</biblScope></bibl>
+                            <bibl>Maria Szuppe, <title level="a">A Preliminary Account of the
+                                    Persian Manuscripts in the Collection of the Late Sir Harold W.
+                                    Bailey</title>, <title level="j">Iran</title><biblScope>, vol.
+                                    30 (1997): 93-101</biblScope></bibl>
                         </listBibl>
                     </additional>
                 </msDesc>
@@ -217,7 +234,8 @@
                     <list>
                         <item>
                             <term key="subject_sh85068446"
-                                target="http://id.loc.gov/authorities/sh85068446">Islamic Empire--History</term>
+                                target="http://id.loc.gov/authorities/sh85068446">Islamic
+                                Empire--History</term>
                         </item>
                         <item>
                             <term key="subject_sh85148202"
@@ -229,7 +247,7 @@
             </textClass>
         </profileDesc>
         <revisionDesc>
-            <change when="2023-04-21">
+            <change when="2023-09-19">
                 <persName>Ursula Sims-Williams</persName>
             </change>
         </revisionDesc>
