@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+        <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_26553">
     <teiHeader>
@@ -53,61 +53,105 @@
                         <altIdentifier type="former">
                             <idno>Bland 519</idno>
                         </altIdentifier>
+                        <altIdentifier type="former">
+                            <idno>Lindesiana shelfmark 4/K</idno>
+                        </altIdentifier>
                     </msIdentifier>
                     <msContents>
-                        <!-- Check Mingana catalogue -->
-                        <summary>An undated and unsigned copy of the <title key="work_22383">Aẓhār al-Haqq</title> (Apogee of Truth), a Persian commentary by one <persName key="person_f8323">Sayyid Muḥammad Valī</persName> on Arabic odes (<hi rend="italic">qaṣīdah</hi>) ascribed to <persName>‘Alī ibn Abī
-                            Ṭālib</persName>.</summary>
+                        <summary>An undated and unsigned copy of the <title key="work_22383">Aẓhār
+                                al-Haqq</title> (Apogee of Truth), a Persian commentary by one
+                                <persName>Sayyid Muḥammad Valī</persName> on Arabic odes (<hi
+                                rend="italic">qaṣīdah</hi>) ascribed to Caliph and Shī‘ī Imām
+                                <persName role="ant subject" key="person_34436377
+                                    ">‘Alī ibn Abī Ṭālib (b. ca.
+                                598, r. 656–661)</persName>.</summary>
                         <msItem xml:id="Persian_MS_953-item1">
-                            <author key="person_f8323">
+                            <author role="ant" key="person_34436377"
+                                ref="http://viaf.org/viaf/34436377">
+                                <persName xml:lang="fa-Latn-x-lc">‘Alī ibn Abī Ṭālib, b. ca. 598, r.
+                                    656–661</persName>; <lb/>
+                                <persName xml:lang="ar">علي بن أبي طالب، الخليفة، ۲۳ ق.هـ.-۴۰
+                                    ه</persName>
+                            </author>
+                            <author role="cmm" key="person_f8323">
                                 <persName xml:lang="fa-Latn-x-lc">Sayyid Muḥammad Valī</persName>; <lb/>
                                 <persName xml:lang="ar">سيد محمد ولي</persName>
                             </author>
-                            <title xml:lang="fa-Latn-x-lc" type="standard" key="work_22383">Aẓhār al-Haqq</title>
+                            <title xml:lang="fa-Latn-x-lc" type="standard" key="work_22383">Aẓhār
+                                al-Haqq</title>
                             <title xml:lang="fa" type="standard" key="work_22383">اظهار الحق</title>
-                            <incipit>
-                                ثـناء لا احصاء و لخالق لایق که بی‌بود‌ را‌ از‌ کمال جود بوجود آورده نامشهود را از حسن احسان بـر اوج نمود برده مشتینی‌ خـاک‌ از افـلاک گذراندیه مسجود املاک گردانید...
-                            </incipit>
-                            <explicit>
-                                بر من مصیبتها[ریخته شد]اگر بدرستی‌ آن‌ مصیبتها‌ ریخته شدی بر روزها کشتندی آن روزها شبها فالحمد لله علی احسانه...و المامول من الفحول‌ دعاء‌ الخیر‌ تمام‌ شد.
-                            </explicit>
+                            <title type="sub" key="work_22383">Sharḥ Qaṣīdah Abū Ṭālib</title>
+                            <title type="sub" key="work_22383">شرح قصیده</title>
+                            <incipit xml:lang="fa" type="beginning"><locus from="1b" to="1b"> برگ ۱پ
+                                    (folio 1b):</locus> ثـناء لا احصاء و بخالق لائن که بی‌بود‌ را‌
+                                از‌ کمال جود بوجود آورده * نامشهور را از حسن احسان بـر اوج نمود برده
+                                * مشتینی‌ خـاک‌ از افـلاک گذراندیه * مسجود املاک گردانیده * قطرهٔ آت
+                                بهوای خویش خوانره اذ سمک تا سماک رسانیده... </incipit>
+                            <explicit><locus from="125b" to="125b"> برگ ۱۲۵پ (folio 125b):</locus>
+                                بر من مصیبتها اگر بدرستی‌ آن‌ مصیبتها‌ ریخته شدی بر روزها کشتندی آن
+                                روزها شبها... فالحمد لله علی احسانه قد وقع الفراغ من اظهار الحق و
+                                بيانه و الصلوة على محمد و اعوانه و السلام على عمه و اخوانه... و
+                                المامول من الفحول‌ دعاء‌ الخیر.‌ تمام‌ شد ٩. </explicit>
                             <colophon>No colophon.</colophon>
                             <textLang mainLang="fa">Persian</textLang>
-                            <note>While several works under this same title survive, none appear to comport with this work.</note>
+                            <note>While several works under this same title, or variations thereof,
+                                survive, none comport with this work. The author may possibly be
+                                    <persName key="person_289979078"
+                                    ref="https://viaf.org/viaf/289979078/">Muḥammad Ḥasan Qatīl (ca.
+                                    1755–1818)</persName>; however, this attribution awaits
+                                confirmation. For another collection of poetry ascribed to <persName
+                                    role="ant subject" key="person_34436377
+                                    ">‘Alī ibn Abī
+                                    Ṭālib</persName> held in the Rylands, see <ref
+                                    target="https://www.fihrist.org.uk/catalog/manuscript_13707"
+                                        ><idno>Arabic MS 7</idno></ref> and <ref
+                                    target="https://www.fihrist.org.uk/catalog/manuscript_13708"
+                                    >8</ref>.</note>
                         </msItem>
                     </msContents>
                     <physDesc>
                         <objectDesc form="codex">
                             <supportDesc material="chart">
                                 <extent>
-                                    <!-- <measure unit="folio" quantity="0">0 folios, 2 flyleaves (ff. i + 0 + i)</measure>.                               <dimensions type="leaf" unit="mm">
-                              <height>228</height>
-                              <width>135</width>
+                                    <measure unit="folio" quantity="125">125 folios, 2 flyleaves
+                                        (ff. i + 125 + i)</measure>.
+                                    <!--  <dimensions type="leaf" unit="mm">
+                              <height/>
+                              <width/>
                            </dimensions>
                            <dimensions type="written" unit="mm">
-                              <height>0</height>
-                              <width>0</width>
-                           </dimensions> -->
+                              <height/>
+                              <width/>
+                           </dimensions>-->
                                 </extent>
                             </supportDesc>
                             <layoutDesc>
-                                <layout columns="2" ruledLines="20" n="mistara"> Written in 2 columns with 20 lines per page. Ruled with a <hi rend="italic">misṭarah</hi> hand guide.</layout>                  
+                                <layout columns="1 2" ruledLines="16" n="mistara"> Written in 1 to 2
+                                    columns with 16 lines per page. Ruled with a <hi rend="italic"
+                                        >misṭarah</hi> hand guide.</layout>
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
-                            <handNote scope="major" script="nasta_liq naskh" medium="ink"> Written in
-                                hasty, dense <material>black</material> nasta‘līq with
-                                    shikastah ligatures, with Arabic passages in a hasty naskh, and <material>red</material> markings. </handNote>
+                            <handNote scope="major" script="nasta_liq naskh" medium="ink"> Written
+                                in hasty, dense <material>black</material> nasta‘līq with shikastah
+                                ligatures, with Arabic passages in a hasty naskh, and
+                                    <material>red</material> markings. </handNote>
                         </handDesc>
                         <additions><lb/>
-                            <label>Bookplates:</label>
-                            <locus from="Inner_back_cover" to="Inner_back_cover">Left
-                                pastedown</locus>: <q xml:lang="en">Bibliotheca
-                            Lindesiana</q><!-- with pencilled shelfmark <q xml:lang="en">2/K</q> -->,
+                            <label>Bookplates and Pasted items:</label><lb/>
+                            <locus from="Front_cover" to="Front_cover">Right
+                                board exterior</locus>, top bears a paper label inscribed 
+                            <locus from="Inner_front_cover" to="Inner_front_cover">Right
+                                pastedown</locus>:<list>
+                                    <item></item>
+                                    <item></item>
+                                    <item>Inverted <q xml:lang="en">Bibliotheca
+                            Lindesiana</q> with pencilled shelfmark <q xml:lang="en">4/K</q>,
                             with <q xml:lang="en"><hi rend="strikethrough">Bland</hi> MSS No. <hi
                                     rend="strikethrough">519</hi></q>, with the name and number
                             crossed out and and class mark <q xml:lang="en">Arabic</q> and <q
-                                xml:lang="en">89</q> written aside. </additions>
+                                xml:lang="en">89</q> written aside.</item>
+                                </list> </additions>
                         <!--  <bindingDesc>
                      CHECK<binding notBefore="1775" notAfter="1838"><p></p>
                         <decoNote type="binding"></decoNote>
@@ -122,16 +166,25 @@
 
                     </physDesc>
                     <history>
-                        <origin/>
+                        <origin>Probably completed in the <origPlace
+                                ref="http://vocab.getty.edu/page/tgn/7000208" key="place_7000208"
+                                >Indian subcontinent</origPlace> undated, but probably <origDate
+                                cert="medium" calendar="#Gregorian" notBefore="1700" notAfter="1800"
+                                >18th century CE</origDate>.</origin>
                         <provenance>
-                            <p>The circumstances under which this volume arrived in Britain remain
-                                unclear, but <placeName ref="http://vocab.getty.edu/page/tgn/7011781"
-                                    key="place_7011781">London</placeName> booksellers <orgName>Howell and Stewart</orgName> evidently aquired then sold it to scholar <persName role="fmo"
+                            <p>While the circumstances under which this volume arrived in Britain
+                                remain unclear, <placeName
+                                    ref="http://vocab.getty.edu/page/tgn/7011781"
+                                    key="place_7011781">London</placeName> booksellers
+                                    <orgName>Howell and Stewart</orgName> evidently aquired then
+                                sold it to scholar <persName role="fmo"
                                     ref="http://viaf.org/viaf/20108923/" key="person_20108923"
-                                    >Nathaniel Bland (1803–1865)</persName> for the latter's library at Randalls Park, <placeName
+                                    >Nathaniel Bland (1803–1865)</persName> for the latter's library
+                                at Randalls Park, <placeName
                                     ref="http://vocab.getty.edu/page/tgn/7011735"
-                                    key="place_7011735">Leatherhead</placeName>. After Bland's death,
-                                    <placeName ref="http://vocab.getty.edu/page/tgn/7011781"
+                                    key="place_7011735">Leatherhead</placeName>.</p></provenance>
+                        <provenance><p>After Bland's death, <placeName
+                                    ref="http://vocab.getty.edu/page/tgn/7011781"
                                     key="place_7011781">London</placeName> bookseller <persName
                                     role="bsl" ref="http://viaf.org/viaf/5679225/"
                                     key="person_5679225">Bernard Quaritch (1819–1899)</persName>
@@ -164,32 +217,17 @@
                         <adminInfo>
                             <recordHist>
                                 <source>
-                                    <p>Bibliographical description based on an index created by
-                                            <persName ref="http://viaf.org/viaf/56454583/"
-                                            key="person_56454583" role="cataloguer"
-                                            change="#role-assignment">Reza Navabpour</persName>
-                                        circa <date calendar="#Gregorian" notBefore="1992"
-                                            notAfter="1994">1993</date>, derived from a manuscript
-                                        catalogue by <persName role="cataloguer"
-                                            ref="http://viaf.org/viaf/3970228" key="person_3970228"
-                                            >Michael Kerney</persName>, <date calendar="#Gregorian"
-                                            notAfter="1901" notBefore="1868">circa 1890s</date>,
-                                        concisely published as <title>Bibliotheca Lindesiana,
-                                            Hand-list of Oriental Manuscripts: Arabic, Persian,
-                                            Turkish</title>, <date calendar="#Gregorian" when="1898"
-                                            >1898</date>.</p>
                                     <p change="2022">Manuscript description by <persName
                                             type="standard" role="cataloguer"
                                             ref="http://viaf.org/viaf/22161693743415930845"
                                             key="person_22161693743415930845">Jake Benson</persName>
                                         in <date calendar="#Gregorian" when="2023">2023</date>, with
-                                        reference to the manuscript<!--  in hand-->, an unpublished
+                                        reference to the volume<!--  in hand-->, an unpublished
                                         handlist, accession registers, and a Persian description of
                                         the volume published by <persName role="cataloguer"
                                             ref="http://viaf.org/viaf/70506082"
                                             key="person_70506082">Tawfiq Subhani</persName> in <date
-                                                calendar="#Gregorian" when="1993"
-                                                >1993</date>.</p>
+                                            calendar="#Gregorian" when="1993">1993</date>.</p>
                                 </source>
                             </recordHist>
                             <availability status="restricted">
@@ -211,14 +249,14 @@
                         </surrogates> -->
                         <listBibl>
                             <bibl>Tawfīq Subḥānī, 'Kitāb'hā-yi khaṭṭī-i Fārsī fihrist nashudah dar
-                                Kitābkhānah Jān Rāylāndz, Manchistir' <title level="s">Majallah-'i
+                                Kitābkhānah Jān Rāylāndz, Manchistir' <title level="j">Majallah-'i
                                     Dānishkadah-i Adabiyāt va ‘Ulūm-i Insānī</title> n.s., Vol. 1,
                                 Nos. 2-3 (<date calendar="#Hijri-shamsi" when="1993">1372 SH [1993
                                     CE]</date>): <biblScope><ref
                                         target="https://www.eliteraturebook.com/books/pdf/9398/کتابهای+خطی+فارسی+فهرست+نشده+در+کتابخانه+جان+رایلاندز+منچستر"
                                         >pp. 170–171, no. 12</ref></biblScope>. </bibl>
                         </listBibl>
-                        
+
                     </additional>
                 </msDesc>
             </sourceDesc>
@@ -233,32 +271,58 @@
                 </taxonomy>
             </classDecl>
         </encodingDesc>
-        <!--  <profileDesc>
+        <profileDesc>
             <textClass>
                 <keywords scheme="#LCSH">
                     <list>
                         <item>
-                            <term key="subject_sh85121918"
-                                target="http://id.loc.gov/authorities/sh85121918#concept">Short stories,
-                                Persian</term>
+                            <term key="subject_n50039100"
+                                target="http://id.loc.gov/authorities/n50039100">ʻAlī ibn Abī Ṭālib,
+                                Caliph, ca. 600-661</term>
                         </item>
                         <item>
-                            <term key="subject_sh85078595"
-                                target="http://id.loc.gov/authorities/sh85078595#concept">Love
-                                stories</term>
+                            <term key="subject_sh85006333"
+                                target="http://id.loc.gov/authorities/sh85006333">Arabic
+                                poetry</term>
                         </item>
                         <item>
-                            <term key="subject_sh85132085"
-                                target="http://id.loc.gov/authorities/sh85132085#concept">Tales</term>
+                            <term key="subject_sh85006335"
+                                target="http://id.loc.gov/authorities/sh85006335">Arabic
+                                poetry--622-750</term>
                         </item>
+                        <item>
+                            <term key="subject_sh2007101256"
+                                target="http://id.loc.gov/authorities/sh2007101256">Arabic
+                                poetry--622-750--History and criticism</term>
+                        </item>
+                        <item>
+                            <term key="subject_sh98003813"
+                                target="http://id.loc.gov/authorities/sh98003813">
+                                Devotional poetry, Arabic</term>
+                        </item>
+                        <item>
+                            <term key="subject_sh85068468"
+                                target="http://id.loc.gov/authorities/sh85068468">Islamic poetry</term>
+                        </item>
+                        <item>
+                            <term key="subject_sh85068469"
+                                target="http://id.loc.gov/authorities/sh85068469">Islamic poetry, Arabic</term>
+                        </item>
+                        <item>
+                            <term key="subject_sh00001764"
+                                target="http://id.loc.gov/authorities/sh00001764">Poetry--Arab
+                                authors</term>
+                        </item>
+
                     </list>
                 </keywords>
             </textClass>
-        </profileDesc>-->
+        </profileDesc>
         <revisionDesc>
+            <change when="2023-08-02">
+                <persName>Jake Benson</persName> Corrections, expanded bibliography and subject headings. </change>
             <change when="2023-07-20">
-                <persName>Jake Benson</persName> Updated record with reference to Subḥānī.
-            </change>
+                <persName>Jake Benson</persName> Updated record with reference to Subḥānī. </change>
             <change when="2023-03-16">
                 <persName>Jake Benson</persName> Created preliminary record derived from an
                 unpublished handlist. </change>

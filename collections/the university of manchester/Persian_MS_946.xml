@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+           <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_26546">
    <teiHeader>
@@ -79,7 +79,7 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <!-- <support>Textblock of cross-grained, externally sized and polished,
+                       <support>Textblock of cross-grained, externally sized and polished,
                            ivoury-coloured <material>paper</material> probably handmade in the
                               <placeName type="empire" cert="high"
                               ref="http://vocab.getty.edu/page/tgn/6005089" key="place_6005089"
@@ -95,19 +95,19 @@
                               <height>0</height>
                               <width>0</width>
                            </dimensions>
-                        </extent> -->
+                        </extent>
                      </supportDesc>
-                     <!-- <layoutDesc>
-                        <layout columns="1" ruledLines="20" n="mistara"/>
-                     </layoutDesc> -->
+                     <layoutDesc>
+                        <layout columns="2" ruledLines="20" n="mistara"> Written in 2 columns with 20 lines per page. Ruled with a <hi rend="italic">misṭarah</hi> hand guide.</layout>                  
+                     </layoutDesc>
                   </objectDesc>
-                  <!--  <handDesc>
+                  <handDesc>
                      <handNote scope="major" script="nasta_liq" medium="ink">Copied in clear black
                         nasta‘līq with red subheaders.</handNote>
                   </handDesc>
                   <bindingDesc>
-                     <binding notBefore="1775" notAfter="1838">
-                        <p/>
+                     <binding notBefore="1775" notAfter="1838"><p>lacquer binding features elder mystical teachers (<hi>murshid</hi>) with younger murids. Spine rebacks in red goatskin leather.</p>  
+                        <p>Blue and white endbands(?) headcaps in the European manner. Painted lacquer doublures. </p>
                         <decoNote type="binding"/>
                         <p><dimensions type="binding" unit="mm">
                               <height/>
@@ -116,8 +116,7 @@
                            </dimensions></p>
                         <condition/>
                      </binding>
-                  </bindingDesc>-->
-               </physDesc>
+                  </bindingDesc>               </physDesc>
                <history>
                   <origin/>
                   <provenance><p>The circumstances under which this volume arrived in Britain remain
@@ -137,15 +136,19 @@
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>
-                           <p>Bibliographical description derived from an unpublished hand-list of
-                              additional Persian manuscripts.</p>
-                           <p change="2023">Manuscript description by <persName type="standard"
-                                 role="cataloguer" ref="http://viaf.org/viaf/22161693743415930845"
-                                 key="person_22161693743415930845">Jake Benson</persName> in <date
-                                 calendar="#Gregorian" when="2023">2023</date>
-                              <!-- with reference to the
-                              volume in hand -->.</p></source>
+                     <source>
+                        <p>Bibliographical description derived from B. W. Robinson,
+                           <title>Persian Paintings in the John Rylands Library: A Descriptive
+                              Catalogue</title>, published in <date calendar="#Gregorian"
+                                 when="1980">1980</date>, and a <date calendar="#Gregorian"
+                                    when="1993">1993</date> essay published by <persName
+                                       role="cataloguer" ref="http://viaf.org/viaf/70506082"
+                                       key="person_70506082">Tawfiq Subhani</persName>.</p>
+                        <p change="2023">Manuscript description by <persName type="standard"
+                           role="cataloguer" ref="http://viaf.org/viaf/22161693743415930845"
+                           key="person_22161693743415930845">Jake Benson</persName> in <date
+                              calendar="#Gregorian" when="2023">2023</date>, with reference to
+                           the volume<!--  in hand-->.</p></source>
                      </recordHist>
                      <availability status="restricted">
                         <p>To book an in-person or online appointment to consult the manuscript,
@@ -192,13 +195,21 @@
                            >1962</date>), <biblScope><ref
                               target="http://archive.org/stream/MughalsInIndiaABibliographicalSurveymarshall#page/n185/"
                               >p. 168, no. 561</ref></biblScope>. </bibl>
-                     <bibl> C. Rieu, <title level="s">Catalogue of the Persian manuscripts in the
+                     <bibl> C. Rieu, <title level="m">Catalogue of the Persian manuscripts in the
                            British Museum</title>, Vol. II (<pubPlace>London</pubPlace>:
                            <publisher>British Museum</publisher><date calendar="#Gregorian"
                            when="1881">1881</date>), <biblScope><ref
                               target="http://archive.org/stream/catalogueofpersi02brituoft#page/627/mode/2up"
                               >pp. 627–632</ref> [British Library Add. 7759, &amp;c]</biblScope>. </bibl>
-                     <bibl> E. Sachau and H. Ethé, <title level="s">Catalogue of the Persian,
+                     <bibl><persName type="standard" role="cataloguer"
+                        ref="http://viaf.org/viaf/122167091">B. W. Robinson</persName>, <title
+                           level="m">Persian Paintings in the John Rylands Library: A Descriptive
+                           Catalogue</title> (<pubPlace>London</pubPlace>: <publisher>Sotheby Parke
+                              Bennet</publisher>, <date calendar="#Gregorian" when="1980">1980</date>),
+                        <biblScope><ref
+                           target="https://archive.org/details/dli.ministry.26631/page/348/mode/1up"
+                           >pp. 348–349, nos. 1583–1584</ref></biblScope>. </bibl>
+                     <bibl> E. Sachau and H. Ethé, <title level="m">Catalogue of the Persian,
                            Turkish, Hindûstani, and Pushtû manuscripts in the Bodleian
                            Library</title>, Vol. I (<pubPlace>Oxford</pubPlace>:
                            <publisher>Clarendon Press</publisher>, <date calendar="#Gregorian"
@@ -206,6 +217,14 @@
                               target="http://archive.org/stream/catalogueofpersi01bodluoft#page/271/mode/2up"
                               >cols. 578–592</ref>, nos. 815–853 [Bodleian MS Ouseley 148,
                            &amp;c.]</biblScope>. </bibl>
+                     <bibl>Tawfīq Subḥānī, 'Kitāb'hā-yi khaṭṭī-i Fārsī fihrist nashudah dar
+                        Kitābkhānah Jān Rāylāndz, Manchistir' <title level="j">Majallah-'i
+                           Dānishkadah-i Adabiyāt va ‘Ulūm-i Insānī</title> n.s., Vol. 1,
+                        Nos. 2-3 (<date calendar="#Hijri-shamsi" when="1993">1372 SH [1993
+                           CE]</date>): <biblScope><ref
+                              target="https://www.eliteraturebook.com/books/pdf/9398/کتابهای+خطی+فارسی+فهرست+نشده+در+کتابخانه+جان+رایلاندز+منچستر"
+                              >pp. 165–166, no. 5</ref></biblScope>. 
+                     </bibl>
                      <bibl> E. Yarsharter et al, 'Hafez', <title level="s">Encyclopædia
                            Iranica</title>, Vol. XI, Fasc. 5 (<date calendar="#Gregorian"
                            when="2002">2002</date>), <biblScope><ref
@@ -242,6 +261,11 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-08-04">
+            <persName>Jake Benson</persName> Corrections, augmented
+            bibliography and subject headings. </change>
+         <change when="2023-07-20">
+            <persName>Jake Benson</persName> Updated record with reference to Subḥānī and Robinson. </change>
          <change when="2023-03-29">
             <persName>Jake Benson</persName> Completed preliminary ms description derived from an
             unpublished handlist. </change>
