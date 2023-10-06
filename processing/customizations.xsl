@@ -50,8 +50,7 @@
     
     
     <!-- When the persName (or name) has a @key, and is not inside something else with a @key, display it as a link. This is standard 
-         behaviour, but this template has been added to treat the BL's viaf_1234 key values as if they were person_1234. The same change 
-         has also been made to the msItem/author and msItem/editor templates below as well. -->
+         behaviour, but this template has been added to treat the BL's "viaf_123" or "Viaf_123" key values as if they were "person_123". -->
     <xsl:template match="persName[@key] | name[@key]">
         <span>
             <xsl:attribute name="class">
@@ -62,14 +61,14 @@
                 <xsl:when test="ancestor::author/@key or ancestor::editor/@key">
                     <xsl:apply-templates/>
                 </xsl:when>
-                <xsl:when test="some $key in $keys satisfies (starts-with($key, 'person_') or starts-with($key, 'viaf_'))">
-                    <xsl:variable name="key" select="$keys[starts-with(., 'person_') or starts-with(., 'viaf_')][1]"/>
+                <xsl:when test="some $key in $keys satisfies (starts-with($key, 'person_') or starts-with(lower-case($key), 'viaf_'))">
+                    <xsl:variable name="key" select="$keys[starts-with(., 'person_') or starts-with(lower-case(.), 'viaf_')][1]"/>
                     <a>
                         <xsl:if test="ancestor::author"><xsl:attribute name="class">author</xsl:attribute></xsl:if>
                         <xsl:attribute name="href">
                             <xsl:value-of select="$website-url"/>
                             <xsl:text>/catalog/</xsl:text>
-                            <xsl:value-of select="if (starts-with($key, 'viaf_')) then concat('person_', substring-after($key, '_')) else $key"/>
+                            <xsl:value-of select="if (starts-with(lower-case($key), 'viaf_')) then concat('person_', substring-after($key, '_')) else $key"/>
                         </xsl:attribute>
                         <xsl:apply-templates/>
                     </a>
@@ -97,8 +96,8 @@
 
     <!-- The next three templates override the default by putting authors, editors and titles on separate lines, because in Fihirst 
          there are often multiple titles in different languages, and versions of the author name in different languages, which gets 
-         confusing all on one line. Also added is a customization for BL, to treat their "viaf_1234" key values as if they were 
-         "person_1234" in author and editor elements. -->
+         confusing all on one line. Also added is a customization for BL, to treat their "viaf_123" or "Viaf_123" key values as if 
+         they were "person_123" in author and editor elements. -->
     <xsl:template match="msItem/author">
         <xsl:variable name="rolelabel" as="xs:string" select="if(@role) then bod:personRoleLookup(concat('aut ', @role)) else 'Author'"/>
         <div class="tei-author">
@@ -108,13 +107,13 @@
             </span>
             <xsl:variable name="keys" select="tokenize(@key, '\s+')[string-length(.) gt 0]"/>
             <xsl:choose>
-                <xsl:when test="some $key in $keys satisfies (starts-with($key, 'person_') or starts-with($key, 'viaf_'))">
-                    <xsl:variable name="key" select="$keys[starts-with(., 'person_') or starts-with(., 'viaf_')][1]"/>
+                <xsl:when test="some $key in $keys satisfies (starts-with($key, 'person_') or starts-with(lower-case($key), 'viaf_'))">
+                    <xsl:variable name="key" select="$keys[starts-with(., 'person_') or starts-with(lower-case(.), 'viaf_')][1]"/>
                     <a class="author">
                         <xsl:attribute name="href">
                             <xsl:value-of select="$website-url"/>
                             <xsl:text>/catalog/</xsl:text>
-                            <xsl:value-of select="if (starts-with($key, 'viaf_')) then concat('person_', substring-after($key, '_')) else $key"/>
+                            <xsl:value-of select="if (starts-with(lower-case($key), 'viaf_')) then concat('person_', substring-after($key, '_')) else $key"/>
                         </xsl:attribute>
                         <xsl:apply-templates/>
                     </a>
@@ -171,13 +170,13 @@
             </span>
             <xsl:variable name="keys" select="tokenize(@key, '\s+')[string-length(.) gt 0]"/>
             <xsl:choose>
-                <xsl:when test="some $key in $keys satisfies (starts-with($key, 'person_') or starts-with($key, 'viaf_'))">
-                    <xsl:variable name="key" select="$keys[starts-with(., 'person_') or starts-with(., 'viaf_')][1]"/>
+                <xsl:when test="some $key in $keys satisfies (starts-with($key, 'person_') or starts-with(lower-case($key), 'viaf_'))">
+                    <xsl:variable name="key" select="$keys[starts-with(., 'person_') or starts-with(lower-case(.), 'viaf_')][1]"/>
                     <a>
                         <xsl:attribute name="href">
                             <xsl:value-of select="$website-url"/>
                             <xsl:text>/catalog/</xsl:text>
-                            <xsl:value-of select="if (starts-with($key, 'viaf_')) then concat('person_', substring-after($key, '_')) else $key"/>
+                            <xsl:value-of select="if (starts-with(lower-case($key), 'viaf_')) then concat('person_', substring-after($key, '_')) else $key"/>
                         </xsl:attribute>
                         <xsl:apply-templates/>
                     </a>

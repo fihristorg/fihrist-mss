@@ -34,7 +34,8 @@ declare variable $allinstances :=
                 return
                 if (starts-with($key, 'person_')) then
                     <key>{ $key }</key>
-                else if (starts-with($key, 'viaf_')) then
+                else if (starts-with(lower-case($key), 'viaf_')) then
+                    (: The BL's IAMS system uses "viaf_123" or "Viaf_123" instead of "person_123" for VIAF-based person IDs :)
                     <key>person_{ substring-after($key, '_') }</key>
                 else
                     ()
