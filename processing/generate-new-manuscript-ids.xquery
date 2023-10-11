@@ -9,6 +9,7 @@ declare variable $institution as xs:string := '';
 
 (: List of Fihrist member institutions. If adding new ones in the future, create a blank file in the identifiers folder with the same name, ending with .txt :)
 declare variable $allinstitutions as xs:string* := (
+    'ancient_india_and_iran_trust',
     'arabic_commentaries_on_the_hippocratic_aphorisms_project',
     'british_library',
     'cambridge_university',
