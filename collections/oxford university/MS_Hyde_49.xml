@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4515">
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4515">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -42,7 +39,7 @@
                   <repository>Bodleian Library</repository>
                   <collection type="main">Oriental Manuscripts Hyde Collection</collection>
                   <idno>MS. Hyde 49</idno>
-               </msIdentifier>
+               <idno type="ieArk">ark:29072/x05425kb63sv</idno><idno type="crArk">ark:29072/x05138jf80g0</idno></msIdentifier>
                <msContents>
                   <summary change="#add-summary"> 1 copy of Shāhnāmah-ʼi Firdawsī by Firdawsī </summary>
                   <msItem xml:id="MS_Hyde_49-item1">
@@ -55,9 +52,7 @@
                      <listBibl>
                         <bibl>Ethé 496</bibl>
                         <bibl>
-                           <ref
-                              target="http://archive.org/stream/catalogueofpersi01bodluoft#page/224/mode/2up"
-                              >no. 496</ref>
+                           <ref target="http://archive.org/stream/catalogueofpersi01bodluoft#page/224/mode/2up">no. 496</ref>
                         </bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
@@ -83,15 +78,12 @@
                </physDesc>
                <history>
                   <origin change="#fix-dates">
-                     <origDate notBefore="1613" notAfter="1614" calendar="#Hijri-qamari"
-                        >1022</origDate>
+                     <origDate notBefore="1613" notAfter="1614" calendar="#Hijri-qamari">1022</origDate>
                      <origDate calendar="#Gregorian" when="1613">1613</origDate>
                   </origin>
                   <provenance>The collections of <persName key="person_37848733" role="fmo">Thomas
-                        Hyde, d. <date calendar="#Gregorian" when="1703"
-                     >1703</date></persName>.</provenance>
-                  <acquisition>Purchased by the Bodleian Library in <date calendar="#Gregorian"
-                        when="1692">1692</date>.</acquisition>
+                        Hyde, d. <date calendar="#Gregorian" when="1703">1703</date></persName>.</provenance>
+                  <acquisition>Purchased by the Bodleian Library in <date calendar="#Gregorian" when="1692">1692</date>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
@@ -103,8 +95,7 @@
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid
-                           reader's card (for admissions procedures contact <ref
-                              target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian
+                           reader's card (for admissions procedures contact <ref target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian
                               Admissions</ref>).</p>
                      </availability>
                   </adminInfo>
@@ -177,13 +168,11 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh85044286"
-                        target="http://id.loc.gov/authorities/sh85044286#concept">Epic literature,
+                     <term key="subject_sh85044286" target="http://id.loc.gov/authorities/sh85044286#concept">Epic literature,
                         Iranian</term>
                   </item>
                   <item>
-                     <term key="subject_sh85100085"
-                        target="http://id.loc.gov/authorities/sh85100085">Persian
+                     <term key="subject_sh85100085" target="http://id.loc.gov/authorities/sh85100085">Persian
                         poetry--747-1500</term>
                   </item>
                </list>
@@ -192,25 +181,17 @@
       </profileDesc>
       <revisionDesc>
          <change when="2018-06-08">
-            <persName>Andrew Morrison</persName> Updated key attributes using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl"
-               >update-keys.xsl</ref>
+            <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>
          <change when="2018-03-15" xml:id="add-summary">
-            <persName>Andrew Morrison</persName> Added summary using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl"
-               >add-summaries.xsl</ref>
+            <persName>Andrew Morrison</persName> Added summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl">add-summaries.xsl</ref>
          </change>
          <change when="2018-03-02" xml:id="fix-dates">
             <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements
-            using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl"
-               >fix-dates.xsl</ref>
+            using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
          </change>
          <change when="2017-11-07">
-            <persName>James Cummings</persName> Up-converted the markup using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl"
-               >https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-03-05">
             <persName>Alasdair Watson</persName> created this file</change>

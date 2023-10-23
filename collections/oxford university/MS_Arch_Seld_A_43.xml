@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4146">
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4146">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -42,23 +39,20 @@
                   <repository>Bodleian Library</repository>
                   <collection type="main">Oriental Manuscripts Selden Collection</collection>
                   <idno>MS. Arch. Seld. A. 43</idno>
-               </msIdentifier>
+               <idno type="ieArk">ark:29072/x0mc87pq03fq</idno><idno type="crArk">ark:29072/x0j3860710vb</idno></msIdentifier>
                <msContents>
                   <summary change="#add-summary"> 1 copy of al-Akhtarī by Akhtarī, Muṣṭafá ibn
                      Aḥmad, d. 1560 or 61 </summary>
                   <msItem xml:id="MS_Arch_Seld_A_43-item1" n="1">
-                     <author key="person_230145003298761300111"
-                        ref="http://viaf.org/viaf/230145003298761300111/" change="#ids-cleanup">
+                     <author key="person_230145003298761300111" ref="http://viaf.org/viaf/230145003298761300111/" change="#ids-cleanup">
                         <persName type="standard" xml:lang="ar-Latn-x-lc">Akhtarī, Muṣṭafá ibn
                            Aḥmad, d. <date calendar="#Gregorian" when="1561">1560 or 61</date>
                         </persName>
                         <persName xml:lang="ar">الأختري، مصطفى بن أحمد</persName>
                      </author>
-                     <title xml:lang="ar-Latn-x-lc" key="work_10149" change="#ids-cleanup"
-                        >al-Akhtarī</title>
+                     <title xml:lang="ar-Latn-x-lc" key="work_10149" change="#ids-cleanup">al-Akhtarī</title>
                      <title xml:lang="ar" key="work_10149" change="#ids-cleanup">الأختري</title>
-                     <note>An Arabic-Turkish dictionary, composed <date calendar="#Gregorian"
-                           when="1545">1545</date>
+                     <note>An Arabic-Turkish dictionary, composed <date calendar="#Gregorian" when="1545">1545</date>
                      </note>
                      <listBibl>
                         <bibl>GAL II 423</bibl>
@@ -78,8 +72,7 @@
                   <origin change="#fix-dates">n.d.</origin>
                   <provenance>The collections of <persName key="person_51728429" role="fmo">John
                         Selden</persName>.</provenance>
-                  <acquisition>Presented to the Bodleian Library by Selden's estate in <date
-                        calendar="#Gregorian" when="1659">1659</date>.</acquisition>
+                  <acquisition>Presented to the Bodleian Library by Selden's estate in <date calendar="#Gregorian" when="1659">1659</date>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
@@ -90,8 +83,7 @@
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid
-                           reader's card (for admissions procedures contact <ref
-                              target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian
+                           reader's card (for admissions procedures contact <ref target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian
                               Admissions</ref>).</p>
                      </availability>
                   </adminInfo>
@@ -114,8 +106,7 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh2009115203"
-                        target="http://id.loc.gov/authorities/sh2009115203#concept">Arabic
+                     <term key="subject_sh2009115203" target="http://id.loc.gov/authorities/sh2009115203#concept">Arabic
                         language--Dictionaries--Polyglot</term>
                   </item>
                </list>
@@ -127,25 +118,17 @@
             <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup
             project). </change>
          <change when="2018-06-08">
-            <persName>Andrew Morrison</persName> Updated key attributes using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl"
-               >update-keys.xsl</ref>
+            <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>
          <change when="2018-03-15" xml:id="add-summary">
-            <persName>Andrew Morrison</persName> Added summary using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl"
-               >add-summaries.xsl</ref>
+            <persName>Andrew Morrison</persName> Added summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl">add-summaries.xsl</ref>
          </change>
          <change when="2018-03-02" xml:id="fix-dates">
             <persName>Andrew Morrison</persName> Removed origDate tags around something which is not
-            a date using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl"
-               >fix-dates.xsl</ref>
+            a date using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
          </change>
          <change when="2017-11-07">
-            <persName>James Cummings</persName> Up-converted the markup using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl"
-               >https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">created this file</change>
       </revisionDesc>

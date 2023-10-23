@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1819">
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1819">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -42,7 +39,7 @@
                   <repository>Bodleian Library</repository>
                   <collection type="main">Oriental Manuscripts Thurston Collection</collection>
                   <idno>MS. Thurston 6</idno>
-               </msIdentifier>
+               <idno type="ieArk">ark:29072/x0n583xt9499</idno><idno type="crArk">ark:29072/x0n296wz110m</idno></msIdentifier>
                <msContents class="#multipleWorks">
                   <summary change="#add-summary2"> 2 works by 2 authors on the subjects of Arabic
                      poetry and Islam </summary>
@@ -62,23 +59,13 @@
                      <locus from="79" to="253">ff. 79v-253v</locus>
                      <author key="person_19543056" ref="http://viaf.org/viaf/19543056/">
                         <persName type="standard" xml:lang="ar-Latn-x-lc">Ibn Abī Sharīf,
-                           Muḥammad ibn Muḥammad, <date calendar="#Gregorian" from="1419"
-                              to="1501">1419 or 20-1500 or 1501</date>
+                           Muḥammad ibn Muḥammad, <date calendar="#Gregorian" from="1419" to="1501">1419 or 20-1500 or 1501</date>
                         </persName>
                      </author>
-                     <title xml:lang="ar-Latn-x-lc" key="work_20175" change="#ids-cleanup"
-                        >al-Musāmarāt</title>
+                     <title xml:lang="ar-Latn-x-lc" key="work_20175" change="#ids-cleanup">al-Musāmarāt</title>
                      <note>Commentary on <title xml:lang="ar-Latn-x-lc">al-Musāyarāt fī al-ʻaqāʼid
-                           al-munjiyah fī al-ākhirah</title> of <persName xml:lang="ar-Latn-x-lc"
-                           type="standard" key="person_81959334"
-                           ref="http://viaf.org/viaf/81959334/" role="ant" change="#role-assignment"
-                           >Ibn al-Humām, Muḥammad ibn ʻAbd al-Wāḥid, <date
-                              calendar="#Gregorian" from="1388" to="1460">1388-1459 or 60</date>
-                        </persName>, itself an abridgment of <persName type="standard"
-                           xml:lang="ar-Latn-x-lc" key="person_31996761"
-                           ref="http://www.viaf.org/viaf/31996761/" role="ant"
-                           change="#role-assignment #ids-cleanup">Ghazzālī, <date
-                              calendar="#Gregorian" from="1058" to="1111">1058-1111</date>
+                           al-munjiyah fī al-ākhirah</title> of <persName xml:lang="ar-Latn-x-lc" type="standard" key="person_81959334" ref="http://viaf.org/viaf/81959334/" role="ant" change="#role-assignment">Ibn al-Humām, Muḥammad ibn ʻAbd al-Wāḥid, <date calendar="#Gregorian" from="1388" to="1460">1388-1459 or 60</date>
+                        </persName>, itself an abridgment of <persName type="standard" xml:lang="ar-Latn-x-lc" key="person_31996761" ref="http://www.viaf.org/viaf/31996761/" role="ant" change="#role-assignment #ids-cleanup">Ghazzālī, <date calendar="#Gregorian" from="1058" to="1111">1058-1111</date>
                         </persName> ʼs <title xml:lang="ar-Latn-x-lc">al-Risālah al-Qudsīyah</title>
                      </note>
                      <listBibl>
@@ -115,8 +102,7 @@
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid
-                           reader's card (for admissions procedures contact <ref
-                              target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian
+                           reader's card (for admissions procedures contact <ref target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian
                               Admissions</ref>).</p>
                      </availability>
                   </adminInfo>
@@ -190,16 +176,13 @@
                <list>
                   <item>
                      <ref target="#a1">
-                        <term key="subject_sh85006333"
-                           target="http://id.loc.gov/authorities/sh85006333#concept">Arabic
+                        <term key="subject_sh85006333" target="http://id.loc.gov/authorities/sh85006333#concept">Arabic
                            poetry</term>
                      </ref>
                   </item>
                   <item>
                      <ref target="#a2">
-                        <term key="subject_sh85068396"
-                           target="http://id.loc.gov/authorities/sh85068396#concept"
-                           >Islam--Doctrines</term>
+                        <term key="subject_sh85068396" target="http://id.loc.gov/authorities/sh85068396#concept">Islam--Doctrines</term>
                      </ref>
                   </item>
                </list>
@@ -217,30 +200,20 @@
             <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup
             project). </change>
          <change when="2018-06-08">
-            <persName>Andrew Morrison</persName> Updated key attributes using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl"
-               >update-keys.xsl</ref>
+            <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>
          <change when="2018-03-28" xml:id="add-summary2">
-            <persName>Andrew Morrison</persName> Adjusted summary using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries2.xsl"
-               >add-summaries2.xsl</ref>
+            <persName>Andrew Morrison</persName> Adjusted summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries2.xsl">add-summaries2.xsl</ref>
          </change>
          <change when="2018-03-15" xml:id="add-summary">
-            <persName>Andrew Morrison</persName> Added summary using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl"
-               >add-summaries.xsl</ref>
+            <persName>Andrew Morrison</persName> Added summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl">add-summaries.xsl</ref>
          </change>
          <change when="2018-03-02" xml:id="fix-dates">
             <persName>Andrew Morrison</persName> Removed origDate tags around something which is not
-            a date using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl"
-               >fix-dates.xsl</ref>
+            a date using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
          </change>
          <change when="2017-11-07">
-            <persName>James Cummings</persName> Up-converted the markup using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl"
-               >https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">created this file</change>
       </revisionDesc>

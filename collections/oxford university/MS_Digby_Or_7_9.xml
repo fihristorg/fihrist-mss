@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_10908">
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_10908">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -43,7 +40,7 @@
                   <collection type="main">Oriental Manuscripts Digby Oriental
                      Collection</collection>
                   <idno>MS. Digby Or.7, 9</idno>
-               </msIdentifier>
+               <idno type="ieArk">ark:29072/x0w089294214</idno><idno type="crArk">ark:29072/x0vx021d58qg</idno></msIdentifier>
                <msContents>
                   <summary change="#add-summary"> 1 copy of al-Kawākib al-darārī fī sharḥ al-Bukhārī
                      by Kirmānī, Muḥammad ibn Yūsuf, 1317 or 8-1384 or 5 </summary>
@@ -55,10 +52,8 @@
                      <title xml:lang="ar-Latn-x-lc" ref="#m2" key="work_3876">al-Kawākib al-darārī
                         fī sharḥ al-Bukhārī</title>
                      <note>commentary on <title xml:lang="ar-Latn-x-lc">al-Jāmiʻ al-ṣaḥīḥ</title> of
-                           <persName type="standard" xml:lang="ar-Latn-x-lc" xml:id="m2"
-                           key="person_154679127" role="ant" change="#role-assignment">Bukhārī,
-                           Muḥammad ibn Ismāʻīl, <date calendar="#Gregorian" from="0810"
-                              to="0870">810-870</date>
+                           <persName type="standard" xml:lang="ar-Latn-x-lc" xml:id="m2" key="person_154679127" role="ant" change="#role-assignment">Bukhārī,
+                           Muḥammad ibn Ismāʻīl, <date calendar="#Gregorian" from="0810" to="0870">810-870</date>
                         </persName>, vols. 1 and 4.</note>
                      <listBibl>
                         <bibl>GAL I 158</bibl>
@@ -81,8 +76,7 @@
                   </origin>
                   <provenance>The collections of <persName key="person_49357645" role="fmo">Sir
                         Kenelm Digby, 1603-1665</persName>.</provenance>
-                  <acquisition>Presented to the Bodleian Library in <date calendar="#Gregorian"
-                        when="1640">1640</date> along with the Laudian Collections.</acquisition>
+                  <acquisition>Presented to the Bodleian Library in <date calendar="#Gregorian" when="1640">1640</date> along with the Laudian Collections.</acquisition>
                </history>
                <additional>
                   <adminInfo>
@@ -93,8 +87,7 @@
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid
-                           reader's card (for admissions procedures contact <ref
-                              target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian
+                           reader's card (for admissions procedures contact <ref target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian
                               Admissions</ref>).</p>
                      </availability>
                   </adminInfo>
@@ -125,14 +118,10 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh91004161"
-                        target="http://id.loc.gov/authorities/sh91004161#concept"
-                        >Hadith--Collections</term>
+                     <term key="subject_sh91004161" target="http://id.loc.gov/authorities/sh91004161#concept">Hadith--Collections</term>
                   </item>
                   <item>
-                     <term key="subject_sh91004145"
-                        target="http://id.loc.gov/authorities/sh91004145#concept"
-                        >Hadith--Commentaries</term>
+                     <term key="subject_sh91004145" target="http://id.loc.gov/authorities/sh91004145#concept">Hadith--Commentaries</term>
                   </item>
                </list>
             </keywords>
@@ -143,19 +132,13 @@
             <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist
             data cleanup project). </change>
          <change when="2018-06-08">
-            <persName>Andrew Morrison</persName> Updated key attributes using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl"
-               >update-keys.xsl</ref>
+            <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>
          <change when="2018-03-15" xml:id="add-summary">
-            <persName>Andrew Morrison</persName> Added summary using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl"
-               >add-summaries.xsl</ref>
+            <persName>Andrew Morrison</persName> Added summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl">add-summaries.xsl</ref>
          </change>
          <change when="2017-11-07">
-            <persName>James Cummings</persName> Up-converted the markup using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl"
-               >https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">created this file</change>
       </revisionDesc>

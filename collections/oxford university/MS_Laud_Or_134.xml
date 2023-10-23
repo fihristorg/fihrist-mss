@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4586">
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4586">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -20,8 +17,7 @@
                   <settlement>Oxford</settlement>
                   <postCode>OX1 3BG</postCode>
                   <addrLine>
-                     <ref target="http://www.bodleian.ox.ac.uk/subjects-and-libraries/collections"
-                        >Bodleian Library</ref>
+                     <ref target="http://www.bodleian.ox.ac.uk/subjects-and-libraries/collections">Bodleian Library</ref>
                   </addrLine>
                   <addrLine>
                      <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
@@ -42,7 +38,7 @@
                   <repository>Bodleian Library</repository>
                   <collection type="main">Oriental Manuscripts Laud Oriental Collection</collection>
                   <idno>MS. Laud Or. 134</idno>
-               </msIdentifier>
+               <idno type="ieArk">ark:29072/x03j333306q5</idno><idno type="crArk">ark:29072/x02514nm64h9</idno></msIdentifier>
                <msContents>
                   <summary change="#add-summary">A copy of Jāmī's Silsilat al-dhahab.</summary>
                   <msItem xml:id="MS_Laud_Or_134-item1">
@@ -54,9 +50,7 @@
                      <title xml:lang="ar" key="work_20951" change="#ids-cleanup">سلسلة الذهب</title>
                      <listBibl>
                         <bibl>
-                           <ref
-                              target="http://archive.org/stream/catalogueofpersi01bodluoft#page/312/mode/2up"
-                              >Ethé 930</ref>
+                           <ref target="http://archive.org/stream/catalogueofpersi01bodluoft#page/312/mode/2up">Ethé 930</ref>
                         </bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
@@ -84,8 +78,7 @@
                   <origin change="#fix-dates">n.d.</origin>
                   <provenance>The Library of <persName key="person_54940373" role="fmo">Archbishop
                         William Laud, d. 1645</persName>.</provenance>
-                  <acquisition>Donated to the Bodleian Library by <persName key="person_54940373"
-                        role="dnr">Archbishop William Laud</persName>, between
+                  <acquisition>Donated to the Bodleian Library by <persName key="person_54940373" role="dnr">Archbishop William Laud</persName>, between
                      1635-41.</acquisition>
                </history>
                <additional>
@@ -98,15 +91,13 @@
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid
-                           reader's card (for admissions procedures contact <ref
-                              target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian
+                           reader's card (for admissions procedures contact <ref target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian
                               Admissions</ref>).</p>
                      </availability>
                   </adminInfo>
                   <surrogates>
                      <bibl type="digital-facsimile" subtype="full">
-                        <ref
-                           target="https://digital.bodleian.ox.ac.uk/objects/17114572-bc88-42fa-8aee-eb261d68d84d/">
+                        <ref target="https://digital.bodleian.ox.ac.uk/objects/17114572-bc88-42fa-8aee-eb261d68d84d/">
                            <title>Digital Bodleian</title></ref>
                         <note>(full digital facsimile)</note>
                      </bibl>
@@ -180,8 +171,7 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh85100085"
-                        target="http://id.loc.gov/authorities/sh85100085">Persian
+                     <term key="subject_sh85100085" target="http://id.loc.gov/authorities/sh85100085">Persian
                         poetry--747-1500</term>
                   </item>
                </list>
@@ -193,25 +183,17 @@
             <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup
             project). </change>
          <change when="2018-06-08">
-            <persName>Andrew Morrison</persName> Updated key attributes using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl"
-               >update-keys.xsl</ref>
+            <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>
          <change when="2018-03-15" xml:id="add-summary">
-            <persName>Andrew Morrison</persName> Added summary using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl"
-               >add-summaries.xsl</ref>
+            <persName>Andrew Morrison</persName> Added summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl">add-summaries.xsl</ref>
          </change>
          <change when="2018-03-02" xml:id="fix-dates">
             <persName>Andrew Morrison</persName> Removed origDate tags around something which is not
-            a date using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl"
-               >fix-dates.xsl</ref>
+            a date using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
          </change>
          <change when="2017-11-07">
-            <persName>James Cummings</persName> Up-converted the markup using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl"
-               >https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2016-09-05">
             <persName>Alasdair Watson</persName> created this file.</change>

@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4439">
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4439">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -42,7 +39,7 @@
                   <repository>Bodleian Library</repository>
                   <collection type="main">Oriental Manuscripts Fraser Collection</collection>
                   <idno>MS. Fraser 101</idno>
-               </msIdentifier>
+               <idno type="ieArk">ark:29072/x0f7623c9533</idno><idno type="crArk">ark:29072/x0f4752h11s2</idno></msIdentifier>
                <msContents class="#multipleWorks">
                   <summary change="#add-summary2"> 2 works by 2 authors on the subjects of Tales,
                      Sufi poetry, and Persian poetry </summary>
@@ -58,9 +55,7 @@
                      <listBibl>
                         <bibl>Ethé 485</bibl>
                         <bibl>
-                           <ref
-                              target="http://archive.org/stream/catalogueofpersi01bodluoft#page/222/mode/2up"
-                              >no. 485</ref>
+                           <ref target="http://archive.org/stream/catalogueofpersi01bodluoft#page/222/mode/2up">no. 485</ref>
                         </bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
@@ -80,9 +75,7 @@
                      <listBibl>
                         <bibl>Ethé 1085</bibl>
                         <bibl>
-                           <ref
-                              target="http://archive.org/stream/catalogueofpersi01bodluoft#page/338/mode/2up"
-                              >no. 1085</ref>
+                           <ref target="http://archive.org/stream/catalogueofpersi01bodluoft#page/338/mode/2up">no. 1085</ref>
                         </bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
@@ -124,8 +117,7 @@
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid
-                           reader's card (for admissions procedures contact <ref
-                              target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian
+                           reader's card (for admissions procedures contact <ref target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian
                               Admissions</ref>).</p>
                      </availability>
                   </adminInfo>
@@ -199,21 +191,18 @@
                <list>
                   <item>
                      <ref target="#a1">
-                        <term key="subject_sh85132085"
-                           target="http://id.loc.gov/authorities/sh85132085#concept">Tales</term>
+                        <term key="subject_sh85132085" target="http://id.loc.gov/authorities/sh85132085#concept">Tales</term>
                      </ref>
                   </item>
                   <item>
                      <ref target="#a2">
-                        <term key="subject_sh85129656"
-                           target="http://id.loc.gov/authorities/sh85129656#concept">Sufi poetry,
+                        <term key="subject_sh85129656" target="http://id.loc.gov/authorities/sh85129656#concept">Sufi poetry,
                            Persian</term>
                      </ref>
                   </item>
                   <item>
                      <ref target="#a2">
-                        <term key="subject_sh89005046"
-                           target="http://id.loc.gov/authorities/sh89005046#concept">Persian
+                        <term key="subject_sh89005046" target="http://id.loc.gov/authorities/sh89005046#concept">Persian
                            poetry--1500-1796</term>
                      </ref>
                   </item>
@@ -226,30 +215,20 @@
             <persName>Julian Cook</persName> Marked up with persName elements free-format names related to provenance.
          </change>
          <change when="2018-06-08">
-            <persName>Andrew Morrison</persName> Updated key attributes using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl"
-               >update-keys.xsl</ref>
+            <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>
          <change when="2018-03-28" xml:id="add-summary2">
-            <persName>Andrew Morrison</persName> Adjusted summary using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries2.xsl"
-               >add-summaries2.xsl</ref>
+            <persName>Andrew Morrison</persName> Adjusted summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries2.xsl">add-summaries2.xsl</ref>
          </change>
          <change when="2018-03-15" xml:id="add-summary">
-            <persName>Andrew Morrison</persName> Added summary using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl"
-               >add-summaries.xsl</ref>
+            <persName>Andrew Morrison</persName> Added summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl">add-summaries.xsl</ref>
          </change>
          <change when="2018-03-02" xml:id="fix-dates">
             <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements
-            using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl"
-               >fix-dates.xsl</ref>
+            using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
          </change>
          <change when="2017-11-07">
-            <persName>James Cummings</persName> Up-converted the markup using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl"
-               >https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-03-04">
             <persName>Alasdair Watson</persName>

@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4444">
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4444">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -42,7 +39,7 @@
                   <repository>Bodleian Library</repository>
                   <collection type="main">Oriental Manuscripts Fraser Collection</collection>
                   <idno>MS. Fraser 114</idno>
-               </msIdentifier>
+               <idno type="ieArk">ark:29072/x0gm80hv61fw</idno><idno type="crArk">ark:29072/x0gh93gz7845</idno></msIdentifier>
                <msContents class="#multipleWorks">
                   <summary change="#add-summary2"> 3 works by 3 authors on the subjects of Universal
                      history, Islamic sects, and Islamic eschatology </summary>
@@ -63,8 +60,7 @@
                      <locus from="73" to="269">ff. 73-269</locus>
                      <author key="person_79207794" ref="http://viaf.org/viaf/79207794/">
                         <persName type="standard" xml:lang="ar-Latn-x-lc">Sharīf al-Murtaḍá,
-                           ʻAlam al-Hudá ʻAlī ibn al-Ḥusayn, <date calendar="#Gregorian"
-                              from="0966" to="1044">966-1044 or 5</date>
+                           ʻAlam al-Hudá ʻAlī ibn al-Ḥusayn, <date calendar="#Gregorian" from="0966" to="1044">966-1044 or 5</date>
                         </persName>
                         <persName xml:lang="ar">الشريف المرتضى، علي بن الحسين، 355-436 هـ</persName>
                      </author>
@@ -132,8 +128,7 @@
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid
-                           reader's card (for admissions procedures contact <ref
-                              target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian
+                           reader's card (for admissions procedures contact <ref target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian
                               Admissions</ref>).</p>
                      </availability>
                   </adminInfo>
@@ -207,22 +202,19 @@
                <list>
                   <item>
                      <ref target="#a1">
-                        <term key="subject_sh85148201"
-                           target="http://id.loc.gov/authorities/sh85148201#concept">Universal
+                        <term key="subject_sh85148201" target="http://id.loc.gov/authorities/sh85148201#concept">Universal
                            history</term>
                      </ref>
                   </item>
                   <item>
                      <ref target="#a2">
-                        <term key="subject_sh85068480"
-                           target="http://id.loc.gov/authorities/sh85068480#concept">Islamic
+                        <term key="subject_sh85068480" target="http://id.loc.gov/authorities/sh85068480#concept">Islamic
                            sects</term>
                      </ref>
                   </item>
                   <item>
                      <ref target="#a3">
-                        <term key="subject_sh85044792"
-                           target="http://id.loc.gov/authorities/sh85044792#concept">Islamic
+                        <term key="subject_sh85044792" target="http://id.loc.gov/authorities/sh85044792#concept">Islamic
                            eschatology</term>
                      </ref>
                   </item>
@@ -235,30 +227,20 @@
             <persName>Julian Cook</persName> Marked up with persName elements free-format names related to provenance.
          </change>
          <change when="2018-06-08">
-            <persName>Andrew Morrison</persName> Updated key attributes using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl"
-               >update-keys.xsl</ref>
+            <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>
          <change when="2018-03-28" xml:id="add-summary2">
-            <persName>Andrew Morrison</persName> Adjusted summary using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries2.xsl"
-               >add-summaries2.xsl</ref>
+            <persName>Andrew Morrison</persName> Adjusted summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries2.xsl">add-summaries2.xsl</ref>
          </change>
          <change when="2018-03-15" xml:id="add-summary">
-            <persName>Andrew Morrison</persName> Added summary using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl"
-               >add-summaries.xsl</ref>
+            <persName>Andrew Morrison</persName> Added summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl">add-summaries.xsl</ref>
          </change>
          <change when="2018-03-02" xml:id="fix-dates">
             <persName>Andrew Morrison</persName> Removed origDate tags around something which is not
-            a date using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl"
-               >fix-dates.xsl</ref>
+            a date using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
          </change>
          <change when="2017-11-07">
-            <persName>James Cummings</persName> Up-converted the markup using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl"
-               >https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-07-03">
             <persName>Alasdair Watson</persName> created this file.</change>

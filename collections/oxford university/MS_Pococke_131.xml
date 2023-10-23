@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1376">
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1376">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -42,15 +39,13 @@
                   <repository>Bodleian Library</repository>
                   <collection type="main">Oriental Manuscripts Pococke Collection</collection>
                   <idno>MS. Pococke 131</idno>
-               </msIdentifier>
+               <idno type="ieArk">ark:29072/x07p88ch3052</idno><idno type="crArk">ark:29072/x07m01bm46vh</idno></msIdentifier>
                <msContents>
                   <summary change="#add-summary">Book 1 of al-Qānūn fī al-ṭibb by Avicenna,
                      980-1037</summary>
                   <msItem xml:id="MS_Pococke_131-item1">
-                     <author key="person_89770781" ref="http://viaf.org/viaf/89770781/"
-                        change="#ids-cleanup">
-                        <persName type="standard">Avicenna, <date calendar="#Gregorian" from="0980"
-                              to="1037">980-1037</date>
+                     <author key="person_89770781" ref="http://viaf.org/viaf/89770781/" change="#ids-cleanup">
+                        <persName type="standard">Avicenna, <date calendar="#Gregorian" from="0980" to="1037">980-1037</date>
                         </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc" key="work_1009" change="#ids-cleanup">al-Qānūn
@@ -97,8 +92,7 @@
                   </origin>
                   <provenance>The collections of <persName key="person_41849535" role="fmo">Edward
                         Pococke, d. 1691</persName>.</provenance>
-                  <acquisition>Purchased by the Bodleian Library in <date calendar="#Gregorian"
-                        when="1692">1692</date>.</acquisition>
+                  <acquisition>Purchased by the Bodleian Library in <date calendar="#Gregorian" when="1692">1692</date>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
@@ -109,22 +103,19 @@
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid
-                           reader's card (for admissions procedures contact <ref
-                              target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian
+                           reader's card (for admissions procedures contact <ref target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian
                               Admissions</ref>).</p>
                      </availability>
                   </adminInfo>
                   <surrogates>
                      <bibl type="digital-facsimile" subtype="partial">
-                        <ref
-                           target="https://digital.bodleian.ox.ac.uk/objects/a7be4e8a-14b6-4374-ab71-a771c6e07b6e/">
+                        <ref target="https://digital.bodleian.ox.ac.uk/objects/a7be4e8a-14b6-4374-ab71-a771c6e07b6e/">
                            <title>Digital Bodleian</title>
                         </ref>
                         <note>(2 selected images only)</note>
                      </bibl>
                      <bibl type="digital-facsimile" subtype="partial">
-                        <ref
-                           target="https://digital.bodleian.ox.ac.uk/objects/595e29cd-c1bd-4094-a4c5-2cfc84731ea4/">
+                        <ref target="https://digital.bodleian.ox.ac.uk/objects/595e29cd-c1bd-4094-a4c5-2cfc84731ea4/">
                            <title>Digital Bodleian</title>
                         </ref>
                         <note>(single sample image)</note>
@@ -149,8 +140,7 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh85083064"
-                        target="http://id.loc.gov/authorities/sh85083064#concept">Medicine</term>
+                     <term key="subject_sh85083064" target="http://id.loc.gov/authorities/sh85083064#concept">Medicine</term>
                   </item>
                </list>
             </keywords>
@@ -161,25 +151,17 @@
             <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup
             project). </change>
          <change when="2018-06-08">
-            <persName>Andrew Morrison</persName> Updated key attributes using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl"
-               >update-keys.xsl</ref>
+            <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>
          <change when="2018-03-15" xml:id="add-summary">
-            <persName>Andrew Morrison</persName> Added summary using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl"
-               >add-summaries.xsl</ref>
+            <persName>Andrew Morrison</persName> Added summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl">add-summaries.xsl</ref>
          </change>
          <change when="2018-03-02" xml:id="fix-dates">
             <persName>Andrew Morrison</persName> Removed origDate tags around something which is not
-            a date using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl"
-               >fix-dates.xsl</ref>
+            a date using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
          </change>
          <change when="2017-11-07">
-            <persName>James Cummings</persName> Up-converted the markup using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl"
-               >https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">created this file</change>
       </revisionDesc>

@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1244">
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1244">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -43,7 +40,7 @@
                   <collection type="main">Oriental Manuscripts Marshall Oriental
                      Collection</collection>
                   <idno>MS. Marshall Or. 139</idno>
-               </msIdentifier>
+               <idno type="ieArk">ark:29072/x0bc386j55qr</idno><idno type="crArk">ark:29072/x0rx913p59p5</idno></msIdentifier>
                <msContents>
                   <summary change="#add-summary"> 1 copy of Taʼrīkh by Joseph ben Gorion, ha-Kohen </summary>
                   <msItem xml:id="MS_Marshall_Or_139-item1">
@@ -51,15 +48,11 @@
                      <author key="person_88058618" ref="http://viaf.org/viaf/88058618/">
                         <persName type="standard">Joseph ben Gorion, ha-Kohen</persName>
                      </author>
-                     <title xml:lang="ar-Latn-x-lc" key="work_20205" change="#ids-cleanup"
-                        >Taʼrīkh</title>
-                     <note>a history of the Jews from Adam to A. D. <date calendar="#Gregorian"
-                           when="0070">70.</date> With title <title xml:lang="ar-Latn-x-lc">Akhbār
+                     <title xml:lang="ar-Latn-x-lc" key="work_20205" change="#ids-cleanup">Taʼrīkh</title>
+                     <note>a history of the Jews from Adam to A. D. <date calendar="#Gregorian" when="0070">70.</date> With title <title xml:lang="ar-Latn-x-lc">Akhbār
                            al-yahūd fī al-bayt al-thānī</title>
                      </note>
-                     <note>SALJ 71, p. 114: Trans. from the Hebrew by <persName
-                           xml:lang="ar-Latn-x-lc" key="person_f4442" role="trl"
-                           change="#role-assignment">Zakarīyā ibn Saʻīd al-Yamanī (10th-13th
+                     <note>SALJ 71, p. 114: Trans. from the Hebrew by <persName xml:lang="ar-Latn-x-lc" key="person_f4442" role="trl" change="#role-assignment">Zakarīyā ibn Saʻīd al-Yamanī (10th-13th
                            c.?)</persName>
                      </note>
                      <note>only partial ?</note>
@@ -82,8 +75,7 @@
                      <origDate when="1610" calendar="#Gregorian">1610</origDate>
                   </origin>
                   <provenance>The collections of <persName key="person_138999790" role="fmo">Thomas Marshall, d.
-                           <date calendar="#Gregorian" when="1685"
-                     >1685</date></persName>.</provenance>
+                           <date calendar="#Gregorian" when="1685">1685</date></persName>.</provenance>
                   <acquisition>The Marshall bequest entered the Bodleian Library in
                      1689-90.</acquisition>
                </history>
@@ -96,8 +88,7 @@
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid
-                           reader's card (for admissions procedures contact <ref
-                              target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian
+                           reader's card (for admissions procedures contact <ref target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian
                               Admissions</ref>).</p>
                      </availability>
                   </adminInfo>
@@ -120,8 +111,7 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh85070397"
-                        target="http://id.loc.gov/authorities/sh85070397#concept">Jews--History--To
+                     <term key="subject_sh85070397" target="http://id.loc.gov/authorities/sh85070397#concept">Jews--History--To
                         70 A.D.</term>
                   </item>
                </list>
@@ -136,25 +126,17 @@
             <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup
             project). </change>
          <change when="2018-06-08">
-            <persName>Andrew Morrison</persName> Updated key attributes using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl"
-               >update-keys.xsl</ref>
+            <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>
          <change when="2018-03-15" xml:id="add-summary">
-            <persName>Andrew Morrison</persName> Added summary using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl"
-               >add-summaries.xsl</ref>
+            <persName>Andrew Morrison</persName> Added summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl">add-summaries.xsl</ref>
          </change>
          <change when="2018-03-02" xml:id="fix-dates">
             <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements
-            using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl"
-               >fix-dates.xsl</ref>
+            using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
          </change>
          <change when="2017-11-07">
-            <persName>James Cummings</persName> Up-converted the markup using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl"
-               >https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">created this file</change>
       </revisionDesc>

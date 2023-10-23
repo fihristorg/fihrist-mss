@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1810">
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1810">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -42,7 +39,7 @@
                   <repository>Bodleian Library</repository>
                   <collection type="main">Oriental Manuscripts Thurston Collection</collection>
                   <idno>MS. Thurston 33</idno>
-               </msIdentifier>
+               <idno type="ieArk">ark:29072/x0kd17cs94q3</idno><idno type="crArk">ark:29072/x0k930bx11dh</idno></msIdentifier>
                <msContents class="#multipleWorks">
                   <summary change="#add-summary2"> 3 works by 3 authors on the subject of Arabic
                      language </summary>
@@ -50,8 +47,7 @@
                      <locus from="1" to="60">ff. 1-60</locus>
                      <author key="person_29665940" ref="http://www.viaf.org/viaf/29665940/">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn al-Ḥājib, ʻUthmān
-                           ibn ʻUmar, <date calendar="#Gregorian" from="1175" to="1249"
-                              >1175-1249</date>
+                           ibn ʻUmar, <date calendar="#Gregorian" from="1175" to="1249">1175-1249</date>
                         </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc" key="work_2023">al-Kāfiyah</title>
@@ -66,8 +62,7 @@
                      <locus from="68" to="106">ff. 68-106</locus>
                      <author key="person_90040229" ref="http://www.viaf.org/viaf/90040229/">
                         <persName type="standard" xml:lang="ar-Latn-x-lc">Muṭarrizī, Nāṣir ibn
-                           ʻAbd al-Sayyid, <date calendar="#Gregorian" from="1144" to="1213"
-                              >1144-1213</date>
+                           ʻAbd al-Sayyid, <date calendar="#Gregorian" from="1144" to="1213">1144-1213</date>
                         </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc" key="work_2024" change="#ids-cleanup">Kitāb
@@ -82,13 +77,11 @@
                      <locus from="108" to="122">ff. 108-122</locus>
                      <author key="person_9918029" ref="http://www.viaf.org/viaf/9918029/">
                         <persName type="standard" xml:lang="ar-Latn-x-lc">Jurjānī, ʻAbd al-Qāhir
-                           ibn ʻAbd al-Raḥmān, d. <date calendar="#Gregorian" when="1078"
-                              cert="unknown">1078</date>?</persName>
+                           ibn ʻAbd al-Raḥmān, d. <date calendar="#Gregorian" when="1078" cert="unknown">1078</date>?</persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc" key="work_5758" change="#ids-cleanup">Kitāb
                         al-ʻAwāmil al-miʼah</title>
-                     <title type="alt" xml:lang="ar-Latn-x-lc" key="work_5758" change="#ids-cleanup"
-                        >Miʼat ʻāmil</title>
+                     <title type="alt" xml:lang="ar-Latn-x-lc" key="work_5758" change="#ids-cleanup">Miʼat ʻāmil</title>
                      <listBibl>
                         <bibl>GAL I 287</bibl>
                         <bibl>[UAM. 1179 (3)]</bibl>
@@ -131,8 +124,7 @@
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid
-                           reader's card (for admissions procedures contact <ref
-                              target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian
+                           reader's card (for admissions procedures contact <ref target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian
                               Admissions</ref>).</p>
                      </availability>
                   </adminInfo>
@@ -206,8 +198,7 @@
                <list>
                   <item>
                      <ref target="#a1 #a2 #a3">
-                        <term key="subject_sh86000284"
-                           target="http://id.loc.gov/authorities/sh86000284#concept">Arabic
+                        <term key="subject_sh86000284" target="http://id.loc.gov/authorities/sh86000284#concept">Arabic
                            language--Grammar--Early works to 1800</term>
                      </ref>
                   </item>
@@ -220,24 +211,16 @@
             <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup
             project). </change>
          <change when="2018-06-08">
-            <persName>Andrew Morrison</persName> Updated key attributes using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl"
-               >update-keys.xsl</ref>
+            <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>
          <change when="2018-03-28" xml:id="add-summary2">
-            <persName>Andrew Morrison</persName> Adjusted summary using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries2.xsl"
-               >add-summaries2.xsl</ref>
+            <persName>Andrew Morrison</persName> Adjusted summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries2.xsl">add-summaries2.xsl</ref>
          </change>
          <change when="2018-03-15" xml:id="add-summary">
-            <persName>Andrew Morrison</persName> Added summary using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl"
-               >add-summaries.xsl</ref>
+            <persName>Andrew Morrison</persName> Added summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl">add-summaries.xsl</ref>
          </change>
          <change when="2017-11-07">
-            <persName>James Cummings</persName> Up-converted the markup using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl"
-               >https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">created this file</change>
       </revisionDesc>

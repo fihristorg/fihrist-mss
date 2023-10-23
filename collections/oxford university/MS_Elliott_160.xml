@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4271">
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4271">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -42,13 +39,12 @@
                   <repository>Bodleian Library</repository>
                   <collection type="main">Oriental Manuscripts Elliott Collection</collection>
                   <idno>MS. Elliott 160</idno>
-               </msIdentifier>
+               <idno type="ieArk">ark:29072/x09p290995v9</idno><idno type="crArk">ark:29072/x09k41zf12jh</idno></msIdentifier>
                <msContents>
                   <summary change="#add-summary"> 1 copy of Haft iqlīm by Amīn Aḥmad, al-Rāzī,
                      fl. 1593-1619 </summary>
                   <msItem xml:id="MS_Elliott_160-item1">
-                     <author key="person_232008283" ref="http://viaf.org/viaf/232008283"
-                        change="#ids-cleanup">
+                     <author key="person_232008283" ref="http://viaf.org/viaf/232008283" change="#ids-cleanup">
                         <persName xml:lang="ar-Latn-x-lc" type="supplied">Amīn Aḥmad, al-Rāzī,
                            fl. 1593-1619</persName>
                         <persName xml:lang="ar">امين احمد رازي</persName>
@@ -58,9 +54,7 @@
                      <listBibl>
                         <bibl>Ethé 420</bibl>
                         <bibl>
-                           <ref
-                              target="http://archive.org/stream/catalogueofpersi01bodluoft#page/206/mode/2up"
-                              >no. 420</ref>
+                           <ref target="http://archive.org/stream/catalogueofpersi01bodluoft#page/206/mode/2up">no. 420</ref>
                         </bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
@@ -89,8 +83,7 @@
                   <origin change="#fix-dates">n.d.</origin>
                   <provenance>The collections of <persName key="person_f6443" role="fmo">John Bardoe
                         Elliott</persName>.</provenance>
-                  <acquisition>Presented to the Bodleian Library by <persName key="person_f6443"
-                        role="dnr">J.B. Elliott</persName>, in 1859.</acquisition>
+                  <acquisition>Presented to the Bodleian Library by <persName key="person_f6443" role="dnr">J.B. Elliott</persName>, in 1859.</acquisition>
                </history>
                <additional>
                   <adminInfo>
@@ -102,8 +95,7 @@
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid
-                           reader's card (for admissions procedures contact <ref
-                              target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian
+                           reader's card (for admissions procedures contact <ref target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian
                               Admissions</ref>).</p>
                      </availability>
                   </adminInfo>
@@ -176,13 +168,10 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh2008115481"
-                        target="http://id.loc.gov/authorities/sh2008115481#concept"
-                        >Iran--Description and travel--Early works to 1800</term>
+                     <term key="subject_sh2008115481" target="http://id.loc.gov/authorities/sh2008115481#concept">Iran--Description and travel--Early works to 1800</term>
                   </item>
                   <item>
-                     <term key="subject_sh85054023"
-                        target="http://id.loc.gov/authorities/sh85054023#concept">Geography,
+                     <term key="subject_sh85054023" target="http://id.loc.gov/authorities/sh85054023#concept">Geography,
                         Medieval</term>
                   </item>
                </list>
@@ -194,25 +183,17 @@
             <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup
             project). </change>
          <change when="2018-06-08">
-            <persName>Andrew Morrison</persName> Updated key attributes using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl"
-               >update-keys.xsl</ref>
+            <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>
          <change when="2018-03-15" xml:id="add-summary">
-            <persName>Andrew Morrison</persName> Added summary using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl"
-               >add-summaries.xsl</ref>
+            <persName>Andrew Morrison</persName> Added summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl">add-summaries.xsl</ref>
          </change>
          <change when="2018-03-02" xml:id="fix-dates">
             <persName>Andrew Morrison</persName> Removed origDate tags around something which is not
-            a date using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl"
-               >fix-dates.xsl</ref>
+            a date using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
          </change>
          <change when="2017-11-07">
-            <persName>James Cummings</persName> Up-converted the markup using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl"
-               >https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-10-16">
             <persName>Alasdair Watson</persName> created this file.</change>

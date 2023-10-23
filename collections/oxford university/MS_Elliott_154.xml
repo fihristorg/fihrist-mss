@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4266">
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4266">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -42,14 +39,13 @@
                   <repository>Bodleian Library</repository>
                   <collection type="main">Oriental Manuscripts Elliott Collection</collection>
                   <idno>MS. Elliott 154</idno>
-               </msIdentifier>
+               <idno type="ieArk">ark:29072/x08p58pd62r2</idno><idno type="crArk">ark:29072/x08k71nh79ff</idno></msIdentifier>
                <msContents>
                   <summary change="#add-summary"> 1 copy of Ḥadīqat al-ḥaqīqah wa-sharīʻat
                      al-ṭarīqah by Sanāʼī al-Ghaznavī, Abū al-Majd Majdūd ibn Ādam, d. ca.
                      1150 </summary>
                   <msItem xml:id="MS_Elliott_154-item1">
-                     <author key="person_197073975" ref="http://viaf.org/viaf/197073975"
-                        change="#ids-cleanup">
+                     <author key="person_197073975" ref="http://viaf.org/viaf/197073975" change="#ids-cleanup">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Sanāʼī al-Ghaznavī,
                            Abū al-Majd Majdūd ibn Ādam, d. ca. 1150</persName>
                         <persName xml:lang="fa">حكيم سنائى غزنوى، ابو المجد مجدود بن آدم</persName>
@@ -61,9 +57,7 @@
                      <listBibl>
                         <bibl>Ethé 532</bibl>
                         <bibl>
-                           <ref
-                              target="http://archive.org/stream/catalogueofpersi01bodluoft#page/232/mode/2up"
-                              >no. 532</ref>
+                           <ref target="http://archive.org/stream/catalogueofpersi01bodluoft#page/232/mode/2up">no. 532</ref>
                         </bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
@@ -85,8 +79,7 @@
                   <origin change="#fix-dates">n.d.</origin>
                   <provenance>The collections of <persName key="person_f6443" role="fmo">John Bardoe
                         Elliott</persName>.</provenance>
-                  <acquisition>Presented to the Bodleian Library by <persName key="person_f6443"
-                        role="dnr">J.B. Elliott</persName>, in 1859.</acquisition>
+                  <acquisition>Presented to the Bodleian Library by <persName key="person_f6443" role="dnr">J.B. Elliott</persName>, in 1859.</acquisition>
                </history>
                <additional>
                   <adminInfo>
@@ -98,8 +91,7 @@
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid
-                           reader's card (for admissions procedures contact <ref
-                              target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian
+                           reader's card (for admissions procedures contact <ref target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian
                               Admissions</ref>).</p>
                      </availability>
                   </adminInfo>
@@ -172,13 +164,11 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh85100085"
-                        target="http://id.loc.gov/authorities/sh85100085">Persian
+                     <term key="subject_sh85100085" target="http://id.loc.gov/authorities/sh85100085">Persian
                         poetry--747-1500</term>
                   </item>
                   <item>
-                     <term key="subject_sh85129656"
-                        target="http://id.loc.gov/authorities/sh85129656#concept">Sufi poetry,
+                     <term key="subject_sh85129656" target="http://id.loc.gov/authorities/sh85129656#concept">Sufi poetry,
                         Persian</term>
                   </item>
                </list>
@@ -190,25 +180,17 @@
             <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup
             project). </change>
          <change when="2018-06-08">
-            <persName>Andrew Morrison</persName> Updated key attributes using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl"
-               >update-keys.xsl</ref>
+            <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>
          <change when="2018-03-15" xml:id="add-summary">
-            <persName>Andrew Morrison</persName> Added summary using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl"
-               >add-summaries.xsl</ref>
+            <persName>Andrew Morrison</persName> Added summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl">add-summaries.xsl</ref>
          </change>
          <change when="2018-03-02" xml:id="fix-dates">
             <persName>Andrew Morrison</persName> Removed origDate tags around something which is not
-            a date using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl"
-               >fix-dates.xsl</ref>
+            a date using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
          </change>
          <change when="2017-11-07">
-            <persName>James Cummings</persName> Up-converted the markup using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl"
-               >https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2013-03-12">
             <persName>Alasdair Watson</persName>

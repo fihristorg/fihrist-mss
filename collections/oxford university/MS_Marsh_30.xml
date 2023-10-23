@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1089">
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1089">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -42,7 +39,7 @@
                   <repository>Bodleian Library</repository>
                   <collection type="main">Oriental Manuscripts Marsh Collection</collection>
                   <idno>MS. Marsh 30</idno>
-               </msIdentifier>
+               <idno type="ieArk">ark:29072/x01n79h54813</idno><idno type="crArk">ark:29072/x01j92g864q0</idno></msIdentifier>
                <msContents class="#multipleWorks">
                   <summary change="#add-summary2"> 4 works by anonymous authors on the subjects of
                      Koran and Islam </summary>
@@ -110,10 +107,8 @@
                         Golius</persName> [see Golius Sale Catalogue, Libri M.S. Incompacti in
                      quarto &amp;c, no. 25].</provenance>
                   <provenance>The Library of <persName key="person_22965285" role="fmo">Archbishop
-                        Narcissus Marsh, d. <date calendar="#Gregorian" when="1713"
-                        >1713</date></persName>.</provenance>
-                  <acquisition>The Marsh bequest entered the Bodleian Library in <date
-                        calendar="#Gregorian" when="1714">1714</date>.</acquisition>
+                        Narcissus Marsh, d. <date calendar="#Gregorian" when="1713">1713</date></persName>.</provenance>
+                  <acquisition>The Marsh bequest entered the Bodleian Library in <date calendar="#Gregorian" when="1714">1714</date>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
@@ -124,8 +119,7 @@
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid
-                           reader's card (for admissions procedures contact <ref
-                              target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian
+                           reader's card (for admissions procedures contact <ref target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian
                               Admissions</ref>).</p>
                      </availability>
                   </adminInfo>
@@ -199,15 +193,12 @@
                <list>
                   <item>
                      <ref target="#a1 #a4">
-                        <term key="subject_sh85072972"
-                           target="http://id.loc.gov/authorities/sh85072972#concept"
-                           >Qurʼan--Manuscripts</term>
+                        <term key="subject_sh85072972" target="http://id.loc.gov/authorities/sh85072972#concept">Qurʼan--Manuscripts</term>
                      </ref>
                   </item>
                   <item>
                      <ref target="#a2 #a3">
-                        <term key="subject_sh85068403"
-                           target="http://id.loc.gov/authorities/sh85068403#concept">Islam--Prayers
+                        <term key="subject_sh85068403" target="http://id.loc.gov/authorities/sh85068403#concept">Islam--Prayers
                            and devotions</term>
                      </ref>
                   </item>
@@ -217,30 +208,20 @@
       </profileDesc>
       <revisionDesc>
          <change when="2018-06-08">
-            <persName>Andrew Morrison</persName> Updated key attributes using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl"
-               >update-keys.xsl</ref>
+            <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>
          <change when="2018-03-28" xml:id="add-summary2">
-            <persName>Andrew Morrison</persName> Adjusted summary using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries2.xsl"
-               >add-summaries2.xsl</ref>
+            <persName>Andrew Morrison</persName> Adjusted summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries2.xsl">add-summaries2.xsl</ref>
          </change>
          <change when="2018-03-15" xml:id="add-summary">
-            <persName>Andrew Morrison</persName> Added summary using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl"
-               >add-summaries.xsl</ref>
+            <persName>Andrew Morrison</persName> Added summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl">add-summaries.xsl</ref>
          </change>
          <change when="2018-03-02" xml:id="fix-dates">
             <persName>Andrew Morrison</persName> Removed origDate tags around something which is not
-            a date using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl"
-               >fix-dates.xsl</ref>
+            a date using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
          </change>
          <change when="2017-11-07">
-            <persName>James Cummings</persName> Up-converted the markup using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl"
-               >https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">created this file</change>
       </revisionDesc>
