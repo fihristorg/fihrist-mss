@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4340">
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4340">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -42,7 +39,7 @@
                   <repository>Bodleian Library</repository>
                   <collection type="main">Oriental Manuscripts Elliott Collection</collection>
                   <idno>MS. Elliott 318</idno>
-               </msIdentifier>
+               <idno type="ieArk">ark:29072/x04m90dw472v</idno><idno type="crArk">ark:29072/x04j03d063r9</idno></msIdentifier>
                <msContents>
                   <summary change="#add-summary"> 1 copy of Sabʻah Sayyārah by Alisher Navoiĭ,
                      1441-1501 </summary>
@@ -83,8 +80,7 @@
                   </objectDesc>
                   <handDesc>
                      <handNote scope="major" script="nasta_liq">
-                        <desc>Small Nastaʻlīq. Copied by <persName xml:lang="fa-Latn-x-lc"
-                              key="person_f1983" role="scr" change="#role-assignment">Kātib Muḥammad
+                        <desc>Small Nastaʻlīq. Copied by <persName xml:lang="fa-Latn-x-lc" key="person_f1983" role="scr" change="#role-assignment">Kātib Muḥammad
                               ʻAlī</persName>
                         </desc>
                      </handNote>
@@ -93,16 +89,14 @@
                <history>
                   <origin change="#fix-dates">
                      <origPlace>Bukhārá</origPlace>
-                     <origDate notBefore="1552" notAfter="1553" calendar="#Hijri-qamari"
-                        >960</origDate>
+                     <origDate notBefore="1552" notAfter="1553" calendar="#Hijri-qamari">960</origDate>
                      <origDate calendar="#Gregorian" when="1553">1553</origDate>
                   </origin>
                   <provenance>The collections of <persName key="person_44733962" role="fmo">Sir Gore
                         Ouseley</persName>.</provenance>
                   <provenance>The collections of <persName key="person_f6443" role="fmo">John Bardoe
                         Elliott</persName>.</provenance>
-                  <acquisition>Presented to the Bodleian Library by <persName key="person_f6443"
-                        role="dnr">J.B. Elliott</persName>, in 1859.</acquisition>
+                  <acquisition>Presented to the Bodleian Library by <persName key="person_f6443" role="dnr">J.B. Elliott</persName>, in 1859.</acquisition>
                </history>
                <additional>
                   <adminInfo>
@@ -123,13 +117,10 @@
                            you have already consulted. Your application will then be considered by
                            our curatorial staff. Entry to read in the Library is permitted only on
                            presentation of a valid reader's card (for admissions procedures contact
-                              <ref target="http://www.bodleian.ox.ac.uk/services/admissions/"
-                              >Bodleian Admissions</ref>).</p>
+                              <ref target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian Admissions</ref>).</p>
                      </availability>
                   </adminInfo>
-                  <surrogates><bibl type="digital-facsimile" subtype="full"><ref
-                           target="https://digital.bodleian.ox.ac.uk/objects/af26c97f-2ee6-402e-aeb3-7df95b7eb36f/"
-                              ><title>Digital Bodleian</title></ref>
+                  <surrogates><bibl type="digital-facsimile" subtype="full"><ref target="https://digital.bodleian.ox.ac.uk/objects/af26c97f-2ee6-402e-aeb3-7df95b7eb36f/"><title>Digital Bodleian</title></ref>
                         <note>(full digital facsimile)</note></bibl></surrogates>
                </additional>
             </msDesc>
@@ -200,8 +191,7 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh85022323"
-                        target="http://id.loc.gov/authorities/sh85022323#concept">Chagatai
+                     <term key="subject_sh85022323" target="http://id.loc.gov/authorities/sh85022323#concept">Chagatai
                         poetry</term>
                   </item>
                </list>
@@ -213,25 +203,17 @@
             <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist
             data cleanup project). </change>
          <change when="2018-06-08">
-            <persName>Andrew Morrison</persName> Updated key attributes using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl"
-               >update-keys.xsl</ref>
+            <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>
          <change when="2018-03-15" xml:id="add-summary">
-            <persName>Andrew Morrison</persName> Added summary using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl"
-               >add-summaries.xsl</ref>
+            <persName>Andrew Morrison</persName> Added summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl">add-summaries.xsl</ref>
          </change>
          <change when="2018-03-02" xml:id="fix-dates">
             <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements
-            using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl"
-               >fix-dates.xsl</ref>
+            using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
          </change>
          <change when="2017-11-07">
-            <persName>James Cummings</persName> Up-converted the markup using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl"
-               >https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-01-25">
             <persName>Alasdair Watson</persName> created this file</change>

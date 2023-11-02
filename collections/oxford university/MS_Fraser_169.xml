@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_953">
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_953">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -42,14 +39,13 @@
                   <repository>Bodleian Library</repository>
                   <collection type="main">Oriental Manuscripts Fraser Collection</collection>
                   <idno>MS. Fraser 169</idno>
-               </msIdentifier>
+               <idno type="ieArk">ark:29072/x0sb397792rh</idno><idno type="crArk">ark:29072/x0s7526c09f2</idno></msIdentifier>
                <msContents class="#multipleWorks">
                   <summary change="#add-summary2"> 2 works by 2 authors on the subjects of Gematria,
                      Arabic poetry, Arabic alphabet, and Mysticism </summary>
                   <msItem xml:id="MS_Fraser_169-item1" n="1">
                      <locus from="7" to="33">ff. 7r-33v*</locus>
-                     <author key="person_108159964" ref="http://viaf.org/viaf/108159964/"
-                        change="#ids-cleanup">
+                     <author key="person_108159964" ref="http://viaf.org/viaf/108159964/" change="#ids-cleanup">
                         <persName type="standard">Plato</persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc" key="work_6837">Khāfīyah</title>
@@ -67,8 +63,7 @@
                      <author key="person_f407">Anonymous</author>
                      <title key="work_6838">A poem in 23 [unnumbered] sections rhyming in -lā on the
                         mystical properties of the Arabic letters</title>
-                     <note>Section 1, after the introduction, is entitled <title
-                           xml:lang="ar-Latn-x-lc">Taksīr al-ḥurūf</title>
+                     <note>Section 1, after the introduction, is entitled <title xml:lang="ar-Latn-x-lc">Taksīr al-ḥurūf</title>
                      </note>
                      <note>*ff. 40-50 blank or negligible</note>
                      <listBibl>
@@ -109,8 +104,7 @@
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid
-                           reader's card (for admissions procedures contact <ref
-                              target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian
+                           reader's card (for admissions procedures contact <ref target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian
                               Admissions</ref>).</p>
                      </availability>
                   </adminInfo>
@@ -184,29 +178,24 @@
                <list>
                   <item>
                      <ref target="#a1">
-                        <term key="subject_sh85053705"
-                           target="http://id.loc.gov/authorities/sh85053705#concept">Gematria</term>
+                        <term key="subject_sh85053705" target="http://id.loc.gov/authorities/sh85053705#concept">Gematria</term>
                      </ref>
                   </item>
                   <item>
                      <ref target="#a2">
-                        <term key="subject_sh85006333"
-                           target="http://id.loc.gov/authorities/sh85006333#concept">Arabic
+                        <term key="subject_sh85006333" target="http://id.loc.gov/authorities/sh85006333#concept">Arabic
                            poetry</term>
                      </ref>
                   </item>
                   <item>
                      <ref target="#a2">
-                        <term key="subject_sh85006297"
-                           target="http://id.loc.gov/authorities/sh85006297#concept">Arabic
+                        <term key="subject_sh85006297" target="http://id.loc.gov/authorities/sh85006297#concept">Arabic
                            alphabet</term>
                      </ref>
                   </item>
                   <item>
                      <ref target="#a2">
-                        <term key="subject_sh85089345"
-                           target="http://id.loc.gov/authorities/sh85089345#concept"
-                           >Mysticism</term>
+                        <term key="subject_sh85089345" target="http://id.loc.gov/authorities/sh85089345#concept">Mysticism</term>
                      </ref>
                   </item>
                </list>
@@ -221,30 +210,20 @@
             <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup
             project). </change>
          <change when="2018-06-08">
-            <persName>Andrew Morrison</persName> Updated key attributes using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl"
-               >update-keys.xsl</ref>
+            <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>
          <change when="2018-03-28" xml:id="add-summary2">
-            <persName>Andrew Morrison</persName> Adjusted summary using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries2.xsl"
-               >add-summaries2.xsl</ref>
+            <persName>Andrew Morrison</persName> Adjusted summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries2.xsl">add-summaries2.xsl</ref>
          </change>
          <change when="2018-03-15" xml:id="add-summary">
-            <persName>Andrew Morrison</persName> Added summary using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl"
-               >add-summaries.xsl</ref>
+            <persName>Andrew Morrison</persName> Added summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl">add-summaries.xsl</ref>
          </change>
          <change when="2018-03-02" xml:id="fix-dates">
             <persName>Andrew Morrison</persName> Removed origDate tags around something which is not
-            a date using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl"
-               >fix-dates.xsl</ref>
+            a date using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
          </change>
          <change when="2017-11-07">
-            <persName>James Cummings</persName> Up-converted the markup using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl"
-               >https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">created this file</change>
       </revisionDesc>

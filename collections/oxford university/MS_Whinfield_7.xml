@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5101">
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_5101">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -42,15 +39,14 @@
                   <repository>Bodleian Library</repository>
                   <collection type="main">Oriental Manuscripts Whinfield Collection</collection>
                   <idno>MS. Whinfield 7</idno>
-               </msIdentifier>
+               <idno type="ieArk">ark:29072/x06d56zx479k</idno><idno type="crArk">ark:29072/x06969z1640z</idno></msIdentifier>
                <msContents>
                   <summary change="#add-summary2"> 4 works by Farāhī, Barkhvurdār ibn Maḥmūd,
                      16th cent on the subjects of Epic literature, Persian folk tales, and Persian
                      prose literature </summary>
                   <msItem xml:id="MS_Whinfield_7-item1" n="1">
                      <locus from="1" to="177">ff. 1-177</locus>
-                     <author key="person_183164622" ref="http://viaf.org/viaf/183164622"
-                        change="#ids-cleanup">
+                     <author key="person_183164622" ref="http://viaf.org/viaf/183164622" change="#ids-cleanup">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Farāhī, Barkhvurdār ibn
                            Maḥmūd, 16th cent.</persName>
                         <persName xml:lang="fa">برخوردار بن محمود ترکمان فراهی</persName>
@@ -66,8 +62,7 @@
                   </msItem>
                   <msItem xml:id="MS_Whinfield_7-item2" n="2">
                      <locus from="178" to="331">ff. 178-331</locus>
-                     <author key="person_183164622" ref="http://viaf.org/viaf/183164622"
-                        change="#ids-cleanup">
+                     <author key="person_183164622" ref="http://viaf.org/viaf/183164622" change="#ids-cleanup">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Farāhī, Barkhvurdār ibn
                            Maḥmūd, 16th cent.</persName>
                         <persName xml:lang="fa">برخوردار بن محمود ترکمان فراهی</persName>
@@ -83,8 +78,7 @@
                   </msItem>
                   <msItem xml:id="MS_Whinfield_7-item3" n="3">
                      <locus from="332" to="389">ff. 332-389</locus>
-                     <author key="person_183164622" ref="http://viaf.org/viaf/183164622"
-                        change="#ids-cleanup">
+                     <author key="person_183164622" ref="http://viaf.org/viaf/183164622" change="#ids-cleanup">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Farāhī, Barkhvurdār ibn
                            Maḥmūd, 16th cent.</persName>
                         <persName xml:lang="fa">برخوردار بن محمود ترکمان فراهی</persName>
@@ -143,8 +137,7 @@
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid
-                           reader's card (for admissions procedures contact <ref
-                              target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian
+                           reader's card (for admissions procedures contact <ref target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian
                               Admissions</ref>).</p>
                      </availability>
                   </adminInfo>
@@ -240,30 +233,20 @@
             <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup
             project). </change>
          <change when="2018-06-08">
-            <persName>Andrew Morrison</persName> Updated key attributes using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl"
-               >update-keys.xsl</ref>
+            <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>
          <change when="2018-03-28" xml:id="add-summary2">
-            <persName>Andrew Morrison</persName> Adjusted summary using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries2.xsl"
-               >add-summaries2.xsl</ref>
+            <persName>Andrew Morrison</persName> Adjusted summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries2.xsl">add-summaries2.xsl</ref>
          </change>
          <change when="2018-03-15" xml:id="add-summary">
-            <persName>Andrew Morrison</persName> Added summary using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl"
-               >add-summaries.xsl</ref>
+            <persName>Andrew Morrison</persName> Added summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl">add-summaries.xsl</ref>
          </change>
          <change when="2018-03-02" xml:id="fix-dates">
             <persName>Andrew Morrison</persName> Removed origDate tags around something which is not
-            a date using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl"
-               >fix-dates.xsl</ref>
+            a date using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
          </change>
          <change when="2017-11-07">
-            <persName>James Cummings</persName> Up-converted the markup using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl"
-               >https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-07-02">
             <persName>Alasdair Watson</persName> created this file.</change>
