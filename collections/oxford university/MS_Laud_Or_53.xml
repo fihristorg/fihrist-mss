@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_11462">
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_11462">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -42,15 +39,14 @@
                   <repository>Bodleian Library</repository>
                   <collection type="main">Oriental Manuscripts Laud Oriental Collection</collection>
                   <idno>MS. Laud Or. 53</idno>
-               </msIdentifier>
+               <idno type="ieArk">ark:29072/x03x816n39xh</idno><idno type="crArk">ark:29072/x0kh04dp77md</idno></msIdentifier>
                <msContents>
                   <summary change="#add-summary"> 1 copy of Qaṣīdat al-Burdah by Būṣīrī, Sharaf
                      al-Dīn Muḥammad ibn Saʻīd, 1213?-1296? </summary>
                   <msItem xml:id="MS_Laud_Or_53-item1">
                      <author key="person_90042754" ref="http://www.viaf.org/viaf/90042754/">
                         <persName type="standard" xml:lang="ar-Latn-x-lc">Būṣīrī, Sharaf al-Dīn
-                           Muḥammad ibn Saʻīd, <date calendar="#Gregorian" from="1213" to="1296"
-                              >1213?-1296</date>?</persName>
+                           Muḥammad ibn Saʻīd, <date calendar="#Gregorian" from="1213" to="1296">1213?-1296</date>?</persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc" key="work_21179" change="#ids-cleanup">Qaṣīdat
                         al-Burdah</title>
@@ -72,8 +68,7 @@
                   <origin change="#fix-dates">n.d.</origin>
                   <provenance>The Library of <persName key="person_54940373" role="fmo">Archbishop
                         William Laud, d. 1645</persName>.</provenance>
-                  <acquisition>Donated to the Bodleian Library by <persName key="person_54940373"
-                        role="dnr">Archbishop William Laud</persName>, between
+                  <acquisition>Donated to the Bodleian Library by <persName key="person_54940373" role="dnr">Archbishop William Laud</persName>, between
                      1635-41.</acquisition>
                </history>
                <additional>
@@ -85,8 +80,7 @@
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid
-                           reader's card (for admissions procedures contact <ref
-                              target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian
+                           reader's card (for admissions procedures contact <ref target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian
                               Admissions</ref>).</p>
                      </availability>
                   </adminInfo>
@@ -109,8 +103,7 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh85109395"
-                        target="http://id.loc.gov/authorities/sh85109395#concept">Qasidas</term>
+                     <term key="subject_sh85109395" target="http://id.loc.gov/authorities/sh85109395#concept">Qasidas</term>
                   </item>
                   <item>Muhammad, Prophet, d. 632--Poetry</item>
                </list>
@@ -122,25 +115,17 @@
             <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup
             project). </change>
          <change when="2018-06-08">
-            <persName>Andrew Morrison</persName> Updated key attributes using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl"
-               >update-keys.xsl</ref>
+            <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>
          <change when="2018-03-15" xml:id="add-summary">
-            <persName>Andrew Morrison</persName> Added summary using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl"
-               >add-summaries.xsl</ref>
+            <persName>Andrew Morrison</persName> Added summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl">add-summaries.xsl</ref>
          </change>
          <change when="2018-03-02" xml:id="fix-dates">
             <persName>Andrew Morrison</persName> Removed origDate tags around something which is not
-            a date using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl"
-               >fix-dates.xsl</ref>
+            a date using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
          </change>
          <change when="2017-11-07">
-            <persName>James Cummings</persName> Up-converted the markup using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl"
-               >https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">created this file</change>
       </revisionDesc>
