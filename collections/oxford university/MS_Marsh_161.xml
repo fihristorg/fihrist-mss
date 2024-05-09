@@ -1,4 +1,5 @@
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1074">
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1074">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -39,17 +40,34 @@
                   <repository>Bodleian Library</repository>
                   <collection type="main">Oriental Manuscripts Marsh Collection</collection>
                   <idno>MS. Marsh 161</idno>
-               <idno type="ieArk">ark:29072/x07d278t8004</idno><idno type="crArk">ark:29072/x079407x96p5</idno></msIdentifier>
+                  <idno type="ieArk">ark:29072/x07d278t8004</idno>
+                  <idno type="crArk">ark:29072/x079407x96p5</idno>
+               </msIdentifier>
                <msContents>
-                  <summary change="#add-summary"> 0 copy of al-Qurʼān </summary>
+                  <summary>One copy of the <title key="work_6569">Kitāb
+                        al-musīqī</title> (a section of <persName key="person_89770781"
+                        >Avicenna</persName>'s <title key="work_1594">Kitāb al-najāt</title>) and
+                     one copy of <persName key="person_44541329">Bayḍāwī</persName>'s <title key="work_5215">Niẓām al-tavārīkh</title></summary>
                   <msItem xml:id="MS_Marsh_161-item1">
+                     <author key="person_89770781">
+                        <persName>Avicenna</persName>
+                     </author>
+                     <title key="work_1594" type="main">Kitāb al-najāt</title>
+                     <title key="work_6569" type="sub">Kitāb al-musīqī</title>
+                     <textLang mainLang="ara">Arabic</textLang>
+                  </msItem>
+                  <msItem xml:id="MS_Marsh_161-item2">
+                     <author key="person_44541329">
+                        <persName>Bayḍāwī, ʻAbd Allāh ibn ʻUmar, d. ca. 1286</persName>
+                     </author>
+                     <title key="work_5215">Niẓām al-tavārīkh</title>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>ff.</extent>
+                        <extent>210 folios</extent>
                      </supportDesc>
                   </objectDesc>
                   <handDesc>
@@ -61,8 +79,10 @@
                <history>
                   <origin change="#fix-dates">n.d.</origin>
                   <provenance>The Library of <persName key="person_22965285" role="fmo">Archbishop
-                        Narcissus Marsh, d. <date calendar="#Gregorian" when="1713">1713</date></persName>.</provenance>
-                  <acquisition>The Marsh bequest entered the Bodleian Library in <date calendar="#Gregorian" when="1714">1714</date>.</acquisition>
+                        Narcissus Marsh, d. <date calendar="#Gregorian" when="1713"
+                        >1713</date></persName>.</provenance>
+                  <acquisition>The Marsh bequest entered the Bodleian Library in <date
+                        calendar="#Gregorian" when="1714">1714</date>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
@@ -74,7 +94,8 @@
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid
-                           reader's card (for admissions procedures contact <ref target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian
+                           reader's card (for admissions procedures contact <ref
+                              target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian
                               Admissions</ref>).</p>
                      </availability>
                   </adminInfo>
@@ -144,14 +165,20 @@
       </encodingDesc>
       <revisionDesc>
          <change when="2018-03-15" xml:id="add-summary">
-            <persName>Andrew Morrison</persName> Added summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl">add-summaries.xsl</ref>
+            <persName>Andrew Morrison</persName> Added summary using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl"
+               >add-summaries.xsl</ref>
          </change>
          <change when="2018-03-02" xml:id="fix-dates">
             <persName>Andrew Morrison</persName> Removed origDate tags around something which is not
-            a date using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+            a date using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl"
+               >fix-dates.xsl</ref>
          </change>
          <change when="2017-11-07">
-            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
+            <persName>James Cummings</persName> Up-converted the markup using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl"
+               >https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-10-11">
             <persName>Alasdair Watson</persName>
