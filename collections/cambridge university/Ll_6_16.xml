@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_9450">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_9478">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Gg. 5.33</title>
+            <title>Ll. 6.16</title>
             <funder>JISC</funder>
             <principal>Gillian Evison</principal>
          </titleStmt>
@@ -28,26 +28,31 @@
                </address>
             </pubPlace>
             <idno>OCIMCO</idno>
-            <idno type="msID">Gg_5.33</idno>
+            <idno type="msID">Ll_6.16</idno>
             <idno type="catalogue">Fihrist</idno>
          </publicationStmt>
          <sourceDesc>
-            <msDesc xml:id="Gg_5.33" xml:lang="en">
+            <msDesc xml:id="Ll_6.16" xml:lang="en">
                <msIdentifier>
                   <country>United Kingdom</country>
                   <region type="county">Cambridgeshire</region>
                   <settlement>Cambridge</settlement>
                   <institution>Cambridge University</institution>
                   <repository>University Library</repository>
-                  <collection>Oriental Manuscripts</collection>
-                  <idno>Gg. 5.33</idno>
+                  <collection>Erpenius Collection</collection>
+                  <idno>Ll. 6.16</idno>
                </msIdentifier>
                <msContents>
-                  <summary change="#add-summary">
-                     1 copy of The four Gospels
+                  <summary change="#add-summary2">
+                     2 works by anonymous authors on the subject of Geomancy
                   </summary>
-                  <msItem xml:id="Gg_5.33-item1">
-                     <title xml:lang="en" type="desc" key="work_165">The four Gospels</title>
+                  <msItem xml:id="Ll_6.16-item1" n="1">
+                     <locus from="1" to="38a">ff. 1-38a</locus>
+                     <author key="person_f407" change="#ids-cleanup">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">anonymous</persName>
+                     </author>
+                     <title xml:lang="ar-Latn-x-lc" key="work_2396">Kitāb Zayarjāsabtī</title>
+                     <title xml:lang="ar" key="work_2396">كتاب زيرجاسبتي</title>
                      <incipit xml:lang="ar"/>
                      <explicit xml:lang="ar" defective="true"/>
                      <note>
@@ -55,7 +60,25 @@
                      </note>
                      <listBibl>
                         <bibl>
-                           <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00034-00001/18">no. 68</ref>
+                           <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00034-00001/169">no. 1396</ref>
+                        </bibl>
+                     </listBibl>
+                     <textLang mainLang="ar">Arabic</textLang>
+                  </msItem>
+                  <msItem xml:id="Ll_6.16-item2" n="2">
+                     <locus from="38b" to="70">ff. 38b-70</locus>
+                     <author key="person_f407" change="#ids-cleanup">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">anonymous</persName>
+                     </author>
+                     <title xml:lang="en" type="desc" key="work_2038">Treatise on geomancy</title>
+                     <incipit xml:lang="ar"/>
+                     <explicit xml:lang="ar" defective="true"/>
+                     <note>
+                        <foreign xml:lang="ar"/>
+                     </note>
+                     <listBibl>
+                        <bibl>
+                           <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00034-00001/169">no. 1395</ref>
                         </bibl>
                      </listBibl>
                      <textLang mainLang="ar">Arabic</textLang>
@@ -80,9 +103,9 @@
                   </handDesc>
                </physDesc>
                <history>
-                  <origin>
-                     <origDate calendar="#Coptic-EoM">988</origDate>
-                     <origDate calendar="#Gregorian" when="1272">1272</origDate>
+                  <origin change="#fix-dates">
+                     <origDate notBefore="1496" notAfter="1497" calendar="#Hijri-qamari">902</origDate>
+                     <origDate calendar="#Gregorian" when="1497">1497</origDate>
                   </origin>
                </history>
                <additional>
@@ -112,23 +135,32 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh85072983" target="http://id.loc.gov/authorities/sh85072983#concept">Bible. N.T.</term>
+                     <term key="subject_sh85054121" target="http://id.loc.gov/authorities/sh85054121#concept">Geomancy</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+		<change when="2020-07-06" xml:id="ids-cleanup">
+			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
+         </change>
+         <change when="2018-03-28" xml:id="add-summary2">
+            <persName>Andrew Morrison</persName> Adjusted summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries2.xsl">add-summaries2.xsl</ref>
          </change>
          <change when="2018-03-15" xml:id="add-summary">
             <persName>Andrew Morrison</persName> Added summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl">add-summaries.xsl</ref>
          </change>
+         <change when="2018-03-02" xml:id="fix-dates">
+            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+         </change>
          <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
-         <change when="2010-06-15">
+         <change when="2010-06-16">
             <persName>Ignacio Sanchez</persName>
          </change>
       </revisionDesc>
