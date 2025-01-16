@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_14388">
   <teiHeader xmlns="http://www.tei-c.org/ns/1.0">
     <fileDesc>
@@ -9,7 +12,7 @@
       </titleStmt>
       <publicationStmt>
         <publisher>The University of Manchester Library</publisher>
-        <date calendar="gregorian">2025</date>
+        <date calendar="Gregorian">2025</date>
         <pubPlace>
           <address>
             <addrLine>The John Rylands Research Institute and Library</addrLine>
@@ -24,6 +27,9 @@
             </addrLine>
           </address>
         </pubPlace>
+        <idno>UkMaJRU</idno>         
+        <idno type="msID">Arabic_MS_688</idno>        
+        <idno type="catalogue">Fihrist</idno> 
         <availability status="restricted" xml:id="displayImageRights">
           <p>Zooming image © University of Manchester Library. All rights reserved.</p>
         </availability>
@@ -198,11 +204,11 @@
             <decoDesc>
               <decoNote><locus from="7a" to="7a">Folio 7a</locus>: arabesque gold ornament.</decoNote>
               <decoNote>The points of separation of verses are marked by small arabesques of golden strokes.</decoNote>
-              <decoNote>The points which mark larger divisions are represented by various ornaments of gold letters: folios 3a, 4b, 8a, 11a, 13a, 16a, 19a, 23b, </decoNote>
+              <decoNote>The points which mark larger divisions are represented by various ornaments of gold letters: folios 3a, 4b, 8a, 11a, 13a, 16a, 19a, 23b.</decoNote>
             </decoDesc>
           </physDesc>
           <history>
-            <origin><origDate calendar="gregorian" notBefore="0801" notAfter="0900">9th century</origDate>
+            <origin><origDate calendar="Gregorian" notBefore="0801" notAfter="0900">9th century</origDate>
             </origin>
             <provenance>Folios <locus from="1a" to="1a">1a</locus>, <locus from="2b" to="2b">2b</locus> and <locus from="4a" to="4a">4a</locus> are marked with inscriptions dated AH 1115 (1703 CE) and
               AH 1128 (1715 CE) by a certain <persName role="fmo">Rajab ʿAlī</persName>, the owner of the manuscript, and with his official seal.</provenance>
@@ -211,7 +217,7 @@
             <provenance><p>Purchased by <persName type="person" role="dnr" key="person_f6379">Enriqueta Rylands (1843–1908)</persName> in <date calendar="gregorian" when="1901">1901</date> from
                   <persName type="person" role="fmo" key="person_9985420">James Ludovic Lindsay, 26th Earl of Crawford (1847–1913)</persName> .</p></provenance>
             <acquisition when="1908">
-              <p>Bequeathed by Enriqueta Rylands (1843–1908) in <date calendar="gregorian" when="1908">1908</date> to <name key="org_v152274029" role="own"><orgName type="display">The John Rylands
+              <p>Bequeathed by Enriqueta Rylands (1843–1908) in <date calendar="Gregorian" when="1908">1908</date> to <name key="org_v152274029" role="own"><orgName type="display">The John Rylands
                     Library</orgName></name>.</p>
             </acquisition>
           </history>
@@ -229,9 +235,13 @@
                 <p>For further information on the availability of the item, please contact the <ref target="uml.special-collections@manchester.ac.uk">Special Collections Reader Services</ref>.</p>
               </availability>
             </adminInfo>
-            <listBibl>
-              <bibl/>
-            </listBibl>
+            <surrogates>
+              <bibl subtype="full" type="digital-facsimile">
+                <ref
+                  target="https://www.librarysearch.manchester.ac.uk/permalink/44MAN_INST/bofker/alma992986477601501631">
+                  <title>Library Digital Collections</title></ref>
+                <note>(full digital facsimile)</note>. </bibl>
+            </surrogates>
           </additional>
         </msDesc>
       </sourceDesc>
