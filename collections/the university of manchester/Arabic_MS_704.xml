@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_14404">
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_14404" xml:lang="eng">
   <teiHeader xmlns="http://www.tei-c.org/ns/1.0">
     <fileDesc>
       <titleStmt>
         <title>Arabic MS 704</title>
         <funder/>
-        <principal>Zsófia Buda</principal>      
+        <respStmt>
+          <resp>Curator (Global Manuscripts)</resp>
+          <resp>TEI-XML editing and encoding</resp>
+          <name>Zsófia Buda</name>
+        </respStmt>      
       </titleStmt>
       <publicationStmt>
         <publisher>The University of Manchester Library</publisher>
@@ -24,6 +30,9 @@
             </addrLine>
           </address>
         </pubPlace>
+        <idno>UkMaJRU</idno>         
+        <idno type="msID">Arabic_MS_704</idno>        
+        <idno type="catalogue">Fihrist</idno> 
         <availability status="restricted" xml:id="displayImageRights">
           <p>Zooming image © University of Manchester Library. All rights reserved.</p>
         </availability>
@@ -86,7 +95,7 @@
                 </msItem>
                 <msItem>
                   <locus from="2a" to="39b">2a-39b</locus>
-                  <title xml:lang="ara-Latn-x-lc">Sūrat al-Baḳarah </title>
+                  <title xml:lang="ara-Latn-x-lc">Sūrat al-Baqarah</title>
                   <title xml:lang="ara">سورة البقرة </title>
                   <note>
                     <p>Surah 2.</p>
@@ -663,7 +672,7 @@
             </bindingDesc>
           </physDesc>
           <history>
-            <origin>Produced in <origPlace key="place_g7016833">Egypt</origPlace> in the <origDate calendar="gregorian" notBefore="1351" notAfter="1400">2nd half of the 14th century</origDate>;.</origin>
+            <origin>Produced in <origPlace key="place_g7016833">Egypt</origPlace> in the <origDate calendar="gregorian" notBefore="1351" notAfter="1400">2nd half of the 14th century</origDate>.</origin>
 
             <provenance>Round seal on <locus from="1a" to="1a">folio 1a</locus>.</provenance>
             <provenance> According to D'Avennes, it was exhibited in the Exposition Universelle of 1867 in Paris (the cataloguer did not find the item in the <ref
@@ -696,6 +705,13 @@
                 <p>For further information on the availability of the item, please contact the <ref target="uml.special-collections@manchester.ac.uk">Special Collections Reader Services</ref>.</p>
               </availability>
             </adminInfo>
+            <surrogates>
+              <bibl subtype="full" type="digital-facsimile">
+                <ref
+                  target="https://www.librarysearch.manchester.ac.uk/permalink/44MAN_INST/bofker/alma992986477600001631">
+                  <title>Library Digital Collections</title></ref>
+                <note>(full digital facsimile)</note>. </bibl>
+            </surrogates>
             <listBibl>
               <bibl><ref target="https://gallica.bnf.fr/ark:/12148/bpt6k9688960b/f370.item">Prisse d'Avennes, Émile. <title>L'art arabe d'après les monuments du Kaire depuis le VIIe siècle jusqu'à la
                     fin du XVIIIe</title> (Paris: J. Savoy &amp; Cie editeurs, 1877), page 286.</ref></bibl>
@@ -742,8 +758,8 @@
         <keywords scheme="#LCSH">
           <list>
             <item>
-              <term key="subject_sh85072953" target="http://id.loc.gov/authorities/subjects/shsh85072953">Qurʾan</term>
-              <term key="subject_sh85080687" target="http://id.loc.gov/authorities/subjects/sh85080687">Manuscripts, Arabic</term>
+              <term key="subject_sh85072953">Qurʾan</term>
+              <term key="subject_sh85080687">Manuscripts, Arabic</term>
             </item>
           </list>
         </keywords>

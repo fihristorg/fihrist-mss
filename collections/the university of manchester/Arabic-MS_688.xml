@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_14388">
   <teiHeader xmlns="http://www.tei-c.org/ns/1.0">
     <fileDesc>
       <titleStmt>
         <title>Arabic MS 688</title>
         <funder/>
-        <principal>Zsófia Buda</principal>       
+        <respStmt>
+          <resp>Curator (Global Manuscripts)</resp>
+          <resp>TEI-XML editing and encoding</resp>
+          <name>Zsófia Buda</name>
+        </respStmt>       
       </titleStmt>
       <publicationStmt>
         <publisher>The University of Manchester Library</publisher>
@@ -24,6 +31,9 @@
             </addrLine>
           </address>
         </pubPlace>
+        <idno>UkMaJRU</idno>         
+        <idno type="msID">Arabic_MS_688</idno>        
+        <idno type="catalogue">Fihrist</idno> 
         <availability status="restricted" xml:id="displayImageRights">
           <p>Zooming image © University of Manchester Library. All rights reserved.</p>
         </availability>
@@ -33,9 +43,6 @@
         <availability status="restricted" xml:id="metadataRights">
           <licence>Metadata made available for download is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0).</licence>
         </availability>
-        <idno>UkMaJRU</idno>
-        <idno type="msID">Arabic MS 688</idno>
-        <idno type="catalogue">MDC</idno>
       </publicationStmt>
       <sourceDesc>
         <msDesc xml:lang="en">
@@ -198,7 +205,7 @@
             <decoDesc>
               <decoNote><locus from="7a" to="7a">Folio 7a</locus>: arabesque gold ornament.</decoNote>
               <decoNote>The points of separation of verses are marked by small arabesques of golden strokes.</decoNote>
-              <decoNote>The points which mark larger divisions are represented by various ornaments of gold letters: folios 3a, 4b, 8a, 11a, 13a, 16a, 19a, 23b, </decoNote>
+              <decoNote>The points which mark larger divisions are represented by various ornaments of gold letters: folios 3a, 4b, 8a, 11a, 13a, 16a, 19a, 23b.</decoNote>
             </decoDesc>
           </physDesc>
           <history>
@@ -229,9 +236,13 @@
                 <p>For further information on the availability of the item, please contact the <ref target="uml.special-collections@manchester.ac.uk">Special Collections Reader Services</ref>.</p>
               </availability>
             </adminInfo>
-            <listBibl>
-              <bibl/>
-            </listBibl>
+            <surrogates>
+              <bibl subtype="full" type="digital-facsimile">
+                <ref
+                  target="https://www.librarysearch.manchester.ac.uk/permalink/44MAN_INST/bofker/alma992986477601501631">
+                  <title>Library Digital Collections</title></ref>
+                <note>(full digital facsimile)</note>. </bibl>
+            </surrogates>
           </additional>
         </msDesc>
       </sourceDesc>
@@ -263,8 +274,8 @@
         <keywords scheme="#LCSH">
           <list>
             <item>
-              <term key="subject_sh85072953" target="http://id.loc.gov/authorities/subjects/sh85072953">Qurʾan</term>
-              <term key="subject_sh85080687" target="http://id.loc.gov/authorities/subjects/sh85080687">Manuscripts, Arabic</term>
+              <term key="subject_sh85072953">Qurʾan</term>
+              <term key="subject_sh85080687">Manuscripts, Arabic</term>
             </item>
           </list>
         </keywords>
