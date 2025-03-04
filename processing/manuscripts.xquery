@@ -15,7 +15,7 @@ declare variable $collection := collection('../collections/?select=*.xml;recurse
         return bod:logging('error', 'There are multiple manuscripts with the same xml:id in their root TEI elements', $duplicateids)
         
     else
-        for $ms in $collection
+        for $ms in $collection                                    
             let $msid := $ms/tei:TEI/@xml:id/string()
             order by $msid
             return
@@ -77,8 +77,8 @@ declare variable $collection := collection('../collections/?select=*.xml;recurse
                     { bod:indexHTML($htmldoc, 'ms_textcontent_tni') }
                     { bod:displayHTML($htmldoc, 'display') }
                 </doc>
-
-            else
-                bod:logging('warn', 'Cannot process manuscript without @xml:id for root TEI element', base-uri($ms))
+              
+            else                
+                bod:logging('warn', 'Cannot process manuscript without @xml:id for root TEI element', (fn:substring-after(base-uri($ms), "-mss")) )
 }
 </add>
