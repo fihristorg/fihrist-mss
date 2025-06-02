@@ -33,6 +33,7 @@ declare variable $allinstances :=
             }</link>
             <shelfmark>{ $shelfmark }</shelfmark>
             <type>{ if ($instance/self::tei:placeName or $instance/self::tei:name) then 'place' else 'term' }</type>
+            <file>{ substring-after(base-uri($instance), '-mss') }</file>
         </instance>;
 
 <add>
@@ -43,7 +44,7 @@ declare variable $allinstances :=
     (: Log instances with key attributes not in the authority file :)
     for $key in distinct-values($allinstances/key)
         return if (not(some $entryid in $authorityentries/@xml:id/data() satisfies $entryid eq $key)) then
-            bod:logging('warn', 'Key attribute not found in authority file: will create broken link', ($key, $allinstances[key = $key]/name))
+            bod:logging('warn', 'Key attribute not found in authority file: will create broken link', ($key, $allinstances[key = $key]/name, distinct-values($allinstances[key = $key]/file), distinct-values($allinstances[key = $key]/link)))
         else
             ()
 }
