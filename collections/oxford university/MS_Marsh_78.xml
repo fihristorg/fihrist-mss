@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1238">
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1238">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -42,7 +39,7 @@
                   <repository>Bodleian Library</repository>
                   <collection type="main">Oriental Manuscripts Marsh Collection</collection>
                   <idno>MS. Marsh 78</idno>
-               </msIdentifier>
+               <idno type="ieArk">ark:29072/x0pr76f3270g</idno><idno type="crArk">ark:29072/x0pn89d643p8</idno></msIdentifier>
                <msContents class="#multipleWorks">
                   <summary change="#add-summary2"> 2 works by 2 authors on the subjects of
                      Terminology and Arabic language </summary>
@@ -50,12 +47,10 @@
                      <locus from="1" to="83">fols. 1v-83r</locus>
                      <author key="person_19930855" ref="http://www.viaf.org/viaf/19930855/">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">Jurjānī, ʻAlī ibn
-                           Muḥammad, al-Sayyid al-Sharīf, <date calendar="#Gregorian"
-                              >1340-1413</date>
+                           Muḥammad, al-Sayyid al-Sharīf, <date calendar="#Gregorian">1340-1413</date>
                         </persName>
                      </author>
-                     <title xml:lang="ar-Latn-x-lc" key="work_225" change="#ids-cleanup"
-                        >Taʻrīfāt</title>
+                     <title xml:lang="ar-Latn-x-lc" key="work_225" change="#ids-cleanup">Taʻrīfāt</title>
                      <listBibl>
                         <bibl>GAL II 216</bibl>
                         <bibl>[NAM. 230 (1)]</bibl>
@@ -103,10 +98,8 @@
                         Golius</persName> [see Golius Sale Catalogue, Libri Miscellanei M.S. in
                      quarto &amp;c, no. 69].</provenance>
                   <provenance>The Library of <persName key="person_22965285" role="fmo">Archbishop
-                        Narcissus Marsh, d. <date calendar="#Gregorian" when="1713"
-                        >1713</date></persName>.</provenance>
-                  <acquisition>The Marsh bequest entered the Bodleian Library in <date
-                        calendar="#Gregorian" when="1714">1714</date>.</acquisition>
+                        Narcissus Marsh, d. <date calendar="#Gregorian" when="1713">1713</date></persName>.</provenance>
+                  <acquisition>The Marsh bequest entered the Bodleian Library in <date calendar="#Gregorian" when="1714">1714</date>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
@@ -117,8 +110,7 @@
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid
-                           reader's card (for admissions procedures contact <ref
-                              target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian
+                           reader's card (for admissions procedures contact <ref target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian
                               Admissions</ref>).</p>
                      </availability>
                   </adminInfo>
@@ -192,22 +184,18 @@
                <list>
                   <item>
                      <ref target="#a1">
-                        <term key="subject_sh85134029"
-                           target="http://id.loc.gov/authorities/sh85134029#concept"
-                           >Terminology</term>
+                        <term key="subject_sh85134029" target="http://id.loc.gov/authorities/sh85134029#concept">Terminology</term>
                      </ref>
                   </item>
                   <item>
                      <ref target="#a1">
-                        <term key="subject_sh85006309"
-                           target="http://id.loc.gov/authorities/sh85006309#concept">Arabic
+                        <term key="subject_sh85006309" target="http://id.loc.gov/authorities/sh85006309#concept">Arabic
                            language--Dictionaries</term>
                      </ref>
                   </item>
                   <item>
                      <ref target="#a2">
-                        <term key="subject_sh2008117602"
-                           target="http://id.loc.gov/authorities/sh2008117602#concept">Arabic
+                        <term key="subject_sh2008117602" target="http://id.loc.gov/authorities/sh2008117602#concept">Arabic
                            language--Verb</term>
                      </ref>
                   </item>
@@ -220,24 +208,16 @@
             <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup
             project). </change>
          <change when="2018-06-08">
-            <persName>Andrew Morrison</persName> Updated key attributes using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl"
-               >update-keys.xsl</ref>
+            <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>
          <change when="2018-03-28" xml:id="add-summary2">
-            <persName>Andrew Morrison</persName> Adjusted summary using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries2.xsl"
-               >add-summaries2.xsl</ref>
+            <persName>Andrew Morrison</persName> Adjusted summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries2.xsl">add-summaries2.xsl</ref>
          </change>
          <change when="2018-03-15" xml:id="add-summary">
-            <persName>Andrew Morrison</persName> Added summary using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl"
-               >add-summaries.xsl</ref>
+            <persName>Andrew Morrison</persName> Added summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl">add-summaries.xsl</ref>
          </change>
          <change when="2017-11-07">
-            <persName>James Cummings</persName> Up-converted the markup using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl"
-               >https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">created this file</change>
       </revisionDesc>

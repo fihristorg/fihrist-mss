@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+                 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_26549">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Persian MS 949</title>
-            <respStmt><resp>Cataloguer</resp>                <name role="cataloguer" ref="http://viaf.org/viaf/22161693743415930845"                   key="person_22161693743415930845">Jake Benson</name>             </respStmt>
+            <respStmt>
+               <resp>Cataloguer</resp>
+               <name role="cataloguer" ref="http://viaf.org/viaf/22161693743415930845"
+                  key="person_22161693743415930845">Jake Benson</name>
+            </respStmt>
             <funder>The John Rylands Research Institute and Library</funder>
          </titleStmt>
          <publicationStmt>
@@ -14,13 +18,13 @@
             <date calendar="#Gregorian">2023-02-17</date>
             <pubPlace>
                <address>
-                  <addrLine>The John Rylands Library</addrLine>
+                  <addrLine>The John Rylands Research Institute and Library</addrLine>
                   <street>150 Deansgate</street>
                   <settlement>Manchester</settlement>
                   <postCode>M3 3EH</postCode>
                   <addrLine>
-                     <ref target="https://www.library.manchester.ac.uk/rylands/special-collections/">The John
-                        Rylands Library</ref>
+                     <ref target="https://www.library.manchester.ac.uk/rylands/special-collections/"
+                        >The John Rylands Research Institute and Library</ref>
                   </addrLine>
                   <addrLine>
                      <email>uml.special-collections@manchester.ac.uk</email>
@@ -37,14 +41,16 @@
                   <country>United Kingdom</country>
                   <settlement>Manchester</settlement>
                   <institution>The University of Manchester</institution>
-                  <repository>The John Rylands Library</repository>
+                  <repository>The John Rylands Research Institute and Library</repository>
                   <collection>Persian Manuscripts</collection>
                   <idno>Persian MS 949</idno>
                </msIdentifier>
                <msContents>
                   <summary>An unillustrated copy of the <title>Haft Awrang</title> (Seven Thrones)
-                     by the late Timurid-era poet Jāmī (d. 1492), so named for the collection of
-                     seven poetical works therein.</summary>
+                     by the late Timurid-era poet <persName key="person_90042997"
+                        ref="http://viaf.org/viaf/90042997/">‘Abd al-Raḥman Jāmī
+                        (1414–1492)</persName>, so named for the collection of seven poetical works
+                     therein.</summary>
 
                   <msItem xml:id="Persian_MS_949-item1">
                      <author key="person_90042997" ref="http://viaf.org/viaf/90042997/">
@@ -65,9 +71,8 @@
                          -->
 
                      <textLang mainLang="fa">Persian</textLang>
-                     <note>In addition to many inidividual volumes of the seven works therein, another copy of the complete <title>Haft Awrang</title> appears in a <title>Kullīyāt</title> (Complete Works) of the author held in the Rylands, 
-                        <ref target="https://www.fihrist.org.uk/catalog/manuscript_manuscript_7102"
-                           >Persian MS 601</ref>.</note> 
+                     <note>The Rylands also holds multiple copies of the seven works.
+                        </note>
                   </msItem>
                </msContents>
                <physDesc>
@@ -105,61 +110,120 @@
                   <acquisition>
                      <p>Purchased by the <orgName type="corporation" role="rps"
                            ref="http://viaf.org/viaf/312795145/">John Rylands Library</orgName> in
-                           <date calendar="#Gregorian" when="1923">1923</date> from <persName
-                              role="fmo" key="person_f7918">Mrs. Marshall</persName>.</p>
+                           <date calendar="#Gregorian" when="1923">1923</date> from on <q
+                           xml:lang="en"><persName role="fmo" key="person_f7918">Mrs.
+                              Marshall</persName></q>.</p>
                   </acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
                         <source>
-                           <p>Bibliographical description derived from an unpublished hand-list of
-                              additional Persian manuscripts.</p>
                            <p change="2023">Manuscript description by <persName type="standard"
                                  role="cataloguer" ref="http://viaf.org/viaf/22161693743415930845"
                                  key="person_22161693743415930845">Jake Benson</persName> in <date
-                                 calendar="#Gregorian" when="2023">2023</date> with reference to the
-                              volume in hand.</p></source>
+                                 calendar="#Gregorian" when="2023">2023</date>, with reference to
+                              the volume<!--  in hand-->, an unpublished handlist, accession
+                              registers, and a Persian description of the volume published by
+                                 <persName role="cataloguer" ref="http://viaf.org/viaf/70506082"
+                                 key="person_70506082">Tawfiq Subhani</persName> in <date
+                                 calendar="#Gregorian" when="1993">1993</date>.</p></source>
                      </recordHist>
                      <availability status="restricted">
-                        <p>To book an in-person or online appointment to consult the manuscript, visit <ref
-                           target="http://www.library.manchester.ac.uk/">Using the Reading Rooms</ref>. For any other enquiries please email
-                           <email>uml.special-collections@manchester.ac.uk</email>.</p>
+                        <p>To book an in-person or online appointment to consult the manuscript, visit <ref target="https://www.library.manchester.ac.uk/rylands/special-collections/using-the-reading-rooms/">Using the Special Collections Reading Rooms</ref>. For any other enquiries please email
+                              <email>uml.special-collections@manchester.ac.uk</email>.</p>
                      </availability>
                   </adminInfo>
                   <!-- Activate after future MDC upload: <surrogates>
                             <bibl subtype="full"
                                 type="digital-facsimile">
-                                <ref target="https://www.digitalcollections.manchester.ac.uk/view/MS-PERSIAN-00944/">
+                                <ref target="https://www.digitalcollections.manchester.ac.uk/view/MS-PERSIAN-00949/">
                                     <title>Manchester Digital Collections</title>
                                 </ref>
                                 <note>(full digital facsimile)</note>
                             </bibl>
                         </surrogates> -->
                   <listBibl>
-                     <bibl> H. Ethé, <title level="s">Catalogue of Persian manuscripts in the
-                           library of the India Office</title>, Vol. 1 (<pubPlace>London</pubPlace>:
-                           <publisher>Printed for the India Office by H. Hart</publisher>, <date
+                     <bibl> H. Ethé, <title level="m">Catalogue of Persian manuscripts in the
+                        library of the India Office</title>, Vol. 1 (<pubPlace>London</pubPlace>:
+                        <publisher>Printed for the India Office by H. Hart</publisher>, <date
                            calendar="#Gregorian" when="1903">1903</date>), <biblScope><ref
                               target="http://archive.org/stream/catalogueofpersi01greauoft#page/n404/"
                               >cols. 754–755, nos. 1317–1318</ref> [British Library IO Islamic 3141
-                           and 1317]</biblScope>. </bibl>
-                     <bibl> C. Rieu, <title level="s">Catalogue of the Persian manuscripts in the
-                           British Museum</title>, Vol. II (<pubPlace>London</pubPlace>:
-                           <publisher>British Museum</publisher><date calendar="#Gregorian"
+                              and 1317]</biblScope>. </bibl>
+                     
+                     <bibl>D. Forbes, <title level="m">Catalogue of Oriental Manuscripts, Chiefly
+                        Persian, Collected Within the Last Five and Thirty years</title>
+                        (<pubPlace>London</pubPlace>: <publisher>W. H. Allen.</publisher>, <date
+                           calendar="#Gregorian" when="1866">1866</date>), <biblScope><ref
+                              target="https://www.google.co.uk/books/edition/Catalogue_of_oriental_manuscripts_chiefl/6h0CAAAAQAAJ?hl=en&amp;gbpv=1&amp;pg=PA78"
+                              >pp. 78–79, no. 244</ref></biblScope> [Rylands Persian MS 851]. </bibl>
+                     <bibl>T. d'Hubert and A. Papas, <ref
+                        target="https://worldcat.org/en/title/1096238222"><title>Jāmī In Regional
+                           Contexts: The Reception of ʻAbd al-Raḥmān Jāmī's Works in the
+                           Islamicate World, ca. 9th/15th-14th/20th century</title></ref>.
+                        <pubPlace>Leiden</pubPlace>: <publisher>Brill</publisher>, <date
+                           calendar="#Gregorian" when="2019">2019</date>.
+                     </bibl>
+                     <bibl type="edition">
+                        <persName role="aut" key="person_90042997"
+                           ref="http://viaf.org/viaf/90042997/">Jāmī</persName>
+                        <title type="main">Classic Selections From Some of the Most Esteemed Persian
+                           Writers</title>, Vol. 2: <title type="sub">Subhutool Abraur</title>
+                        <pubPlace>Calcutta</pubPlace>: <publisher>Asiatic Lithographic Company
+                           Press</publisher>
+                        <date calendar="#Gregorian" when="1828">1828</date>: <biblScope><ref
+                           target="https://books.google.com/books?id=sj9KAAAAcAAJ&amp;pg=PA151"
+                           >pp. 1–75</ref></biblScope>
+                     </bibl>
+                     <bibl type="edition">
+                        <persName role="aut" key="person_90042997"
+                           ref="http://viaf.org/viaf/90042997/">Jāmī</persName>, <ref
+                              target="https://books.google.com/books?id=LotHAAAAYAAJ"><title>Subḥat
+                                 al-Abrār</title></ref>. <pubPlace>Lucknow</pubPlace>: <publisher>Nawal
+                                    Kishore</publisher>, <date calendar="#Hijri-qamari" when="1888-11">Rabī‘
+                                       I 1306 (Nov. 1888 CE)</date>. </bibl>
+                     <bibl type="edition">
+                        <persName role="aut" key="person_90042997"
+                           ref="http://viaf.org/viaf/90042997/">Jāmī</persName>, <title type="main"
+                              >Mas̲navī-i Haft Awrang</title> Vol. 1, No. 4: <title type="sub">Subḥat
+                                 al-Abrār</title>. Edited by Ḥusayn Aḥmad Tarbiyat
+                        (<pubPlace>Tehran</pubPlace>: <publisher>Mīrās-i Maktūb</publisher>,
+                        <date calendar="#Gregorian" when="1999">1378 SH [1999 CE]</date>):
+                        <biblScope><ref
+                           target="https://search.worldcat.org/en/title/1153167978">pp.
+                           551–700</ref></biblScope>
+                     </bibl>
+                     <bibl>
+                        P. Losensky, 'Jāmi i. Life and Works’', <title level="s">Encyclopædia
+                           Iranica</title>, Vol. XIV, Fasc. 5 (<date calendar="#Gregorian"
+                              when="2008">2008</date>), <biblScope><ref
+                                 target="http://dx.doi.org/10.1163/2330-4804_EIRO_COM_3899">pp. 469-475
+                              </ref></biblScope>.
+                     </bibl>
+                     <bibl> C. Rieu, <title level="m">Catalogue of the Persian manuscripts in the
+                        British Museum</title>, Vol. II (<pubPlace>London</pubPlace>:
+                        <publisher>British Museum</publisher>, <date calendar="#Gregorian"
                            when="1881">1881</date>), <biblScope><ref
                               target="http://archive.org/stream/catalogueofpersi02brituoft#page/645/"
                               >pp. 644–646</ref> [British Library Add. 7770/3, &amp;c.]</biblScope>. </bibl>
-                     <bibl> E. Sachau and H. Ethé, <title level="s">Catalogue of the Persian,
-                           Turkish, Hindûstani, and Pushtû manuscripts in the Bodleian
-                           Library</title>, Vol. I (<pubPlace>Oxford</pubPlace>:
-                           <publisher>Clarendon Press</publisher>, <date calendar="#Gregorian"
+                     <bibl> E. Sachau and H. Ethé, <title level="m">Catalogue of the Persian,
+                        Turkish, Hindûstani, and Pushtû manuscripts in the Bodleian
+                        Library</title>, Vol. I (<pubPlace>Oxford</pubPlace>:
+                        <publisher>Clarendon Press</publisher>, <date calendar="#Gregorian"
                            when="1889">1889</date>), <biblScope><ref
                               target="https://archive.org/details/catalogueofpersi01bodluoft/page/309/"
                               >cols. 618–619, nos. 897–889</ref> [Bodleian Ouseley 290/5,
-                           &amp;c.]</biblScope>. </bibl>
-
+                              &amp;c.]</biblScope>. </bibl>
+                     <bibl>Tawfīq Subḥānī, 'Kitāb'hā-yi khaṭṭī-i Fārsī fihrist nashudah dar
+                        Kitābkhānah Jān Rāylāndz, Manchistir' <title level="j">Majallah-'i
+                           Dānishkadah-i Adabiyāt va ‘Ulūm-i Insānī</title> n.s., Vol. 1, Nos. 2-3
+                        (<date calendar="#Hijri-shamsi" when="1993">1372 SH [1993 CE]</date>):
+                        <biblScope><ref
+                           target="https://www.eliteraturebook.com/books/pdf/9398/کتابهای+خطی+فارسی+فهرست+نشده+در+کتابخانه+جان+رایلاندز+منچستر"
+                           >p. 168, no. 8</ref></biblScope>.</bibl>
                   </listBibl>
+
                </additional>
             </msDesc>
          </sourceDesc>
@@ -179,15 +243,74 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
+                     <term key="subject_sh85068468"
+                        target="http://id.loc.gov/authorities/sh85068468">Islamic poetry</term>
+                  </item>
+
+                  <item>
+                     <term key="subject_sh91002715"
+                        target="http://id.loc.gov/authorities/sh91002715">Islamic poetry,
+                        Persian</term>
+                  </item>
+                  <item>
+                     <term key="subject_sh85081826"
+                        target="http://id.loc.gov/authorities/sh85081826">Masnavis</term>
+                  </item>
+                  <item>
+                     <term key="subject_sh2002005579"
+                        target="http://id.loc.gov/authorities/sh2002005579">Masnavis, Persian</term>
+                  </item>
+                  <item>
+                     <term key="subject_sh85100084"
+                        target="http://id.loc.gov/authorities/sh85100084">Persian poetry</term>
+                  </item>
+                  <item>
                      <term key="subject_sh85100085"
-                        target="http://id.loc.gov/authorities/sh85100085#concept">Persian
+                        target="http://id.loc.gov/authorities/sh85100085">Persian
                         poetry--747-1500</term>
                   </item>
+                  <item>
+                     <term key="subject_sh85103704"
+                        target="http://id.loc.gov/authorities/sh85103704">Poetry</term>
+                  </item>
+                  <item>
+                     <term key="subject_sh85103707"
+                        target="http://id.loc.gov/authorities/sh85103707">Poetry--Collections</term>
+                  </item>
+                  <item>
+                     <term key="subject_sh2008109417"
+                        target="http://id.loc.gov/authorities/sh2008109417">Poetry--Early works to
+                        1800</term>
+                  </item>
+                  <item>
+                     <term key="subject_sh85129649"
+                        target="http://id.loc.gov/authorities/sh85129649">Sufi literature</term>
+                  </item>
+                  <item>
+                     <term key="subject_sh2006003807"
+                        target="http://id.loc.gov/authorities/sh2006003807">Sufi literature,
+                        Persian</term>
+                  </item>
+                  <item>
+                     <term key="subject_sh85129652"
+                        target="http://id.loc.gov/authorities/sh85129652">Sufi poetry</term>
+                  </item>
+                  <item>
+                     <term key="subject_sh85129656"
+                        target="http://id.loc.gov/authorities/sh85129656">Sufi poetry,
+                        Persian</term>
+                  </item>
                </list>
+
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-08-03">
+            <persName>Jake Benson</persName> Corrections, augmented
+            bibliography and subject headings. </change>
+         <change when="2023-07-20">
+            <persName>Jake Benson</persName> Updated record with reference to Subḥānī. </change>
          <change when="2023-02-17">
             <persName>Jake Benson</persName> Created preliminary record derived unpublished
             handlist. </change>

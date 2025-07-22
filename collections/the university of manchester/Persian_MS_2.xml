@@ -13,13 +13,13 @@
                 <date calendar="#Gregorian">2014-MM-DD</date>
                 <pubPlace>
                     <address>
-                        <addrLine>The John Rylands Library</addrLine>
+                        <addrLine>The John Rylands Research Institute and Library</addrLine>
                         <street>150 Deansgate</street>
                         <settlement>Manchester</settlement>
                         <postCode>M3 3EH</postCode>
                         <addrLine>
                             <ref target="http://www.library.manchester.ac.uk/rylands/specialcollections/"
-                                >The John Rylands Library</ref>
+                                >The John Rylands Research Institute and Library</ref>
                         </addrLine>
                         <addrLine>
                             <email>uml.special-collections@manchester.ac.uk</email>
@@ -36,7 +36,7 @@
                         <country>United Kingdom</country>
                         <settlement>Manchester</settlement>
                         <institution>The University of Manchester</institution>
-                        <repository>The John Rylands Library</repository>
+                        <repository>The John Rylands Research Institute and Library</repository>
                         <collection>Persian Manuscripts</collection>
                         <idno>Persian MS 2</idno>
                         <altIdentifier type="former"><idno>Bland 12</idno></altIdentifier>
@@ -45,43 +45,59 @@
                         <summary>Persian illustrated copy of Qazwini's <title>Wonders of Creation</title>, an
                             important Arabic cosmography.</summary>
                         <msItem xml:id="Persian_MS_2-item1">
-                            <author ref="http://viaf.org/viaf/74086465" key="person_74086465">
+                            <author role="ant" ref="http://viaf.org/viaf/74086465" key="person_74086465">
                                 <persName xml:lang="ar-Latn-x-lc" type="standard">Qazwīnī, Zakarīyā
-                                    ibn Muḥammad, ca. 1203-1283</persName>
-                                <persName xml:lang="fa">قزوينی، زكريا بن محمد</persName>
+                                    ibn Muḥammad, ca. 1203–1283 <lb/>
+                                    <foreign xml:lang="fa">قزوينی، زكريا بن محمد</foreign> </persName>
                             </author>
-                            <title xml:lang="fa-Latn-x-lc" key="work_21033" change="#ids-cleanup">ʻAjāyib
-                                al-makhlūqāt</title>
+
+                            <author role="trl" key="person_f407">
+                                <persName xml:lang="ar-Latn-x-lc" type="standard">Anonymous</persName>
+                            </author>
+                            <title xml:lang="fa-Latn-x-lc" key="work_21033" type="main" change="#ids-cleanup">ʻAjāyib
+                                al-makhlūqāt<lb/> <foreign xml:id="fa">عجايب المخلوقات</foreign></title>
                             <title xml:lang="fa" key="work_21033" change="#ids-cleanup">عجايب المخلوقات</title>
                             <title xml:lang="fa" type="alt" key="work_21033" change="#ids-cleanup">عجايب المخلوقات و غرائب
                                 الموجودات</title>
                             <title xml:lang="fa-Latn-x-lc" type="alt" key="work_21033" change="#ids-cleanup">ʻAjā’ib
-                                al-makhlūqāt va gharāʼib al-mawjūdāt</title>
+                                al-Makhlūqāt va Gharāʼib al-Mawjūdāt</title>
                             <title xml:lang="fa-Latn-x-lc" type="alt" key="work_21033" change="#ids-cleanup">ʻAjā’ib
                                 al-makhlūqāt wa-gharāʼib al-mawjūdāt</title>
                                                        <textLang mainLang="fa">Persian</textLang>
+                            <note>For other copies of this work held in the Rylands, see <ref
+                                target="https://www.fihrist.org.uk/catalog/manuscript_6574"><idno>Persian
+                                    MS 1</idno></ref>, <ref
+                                        target="https://www.fihrist.org.uk/catalog/manuscript_6790"
+                                        >3</ref>, <ref
+                                            target="https://www.fihrist.org.uk/catalog/manuscript_6896">4</ref>, <ref
+                                                target="https://www.fihrist.org.uk/catalog/manuscript_6868">37</ref>, and
+                                <ref target="https://www.fihrist.org.uk/catalog/manuscript_6872"
+                                    >374</ref>.</note>
+                            
                         </msItem>
-                    </msContents>
+                                            </msContents>
                     <physDesc>
                         <objectDesc form="codex">
                             <supportDesc material="chart">
-                                <extent> 221 folios <dimensions type="leaf" unit="cm">
-                                        <height>24.7</height>
-                                        <width>17.2</width>
+                                <extent> 221 folios <dimensions type="leaf" unit="mm">
+                                        <height>247</height>
+                                        <width>172</width>
                                     </dimensions>
-                                    <dimensions type="written" unit="cm">
-                                        <height>17.8</height>
-                                        <width>10.2</width>
+                                    <dimensions type="written" unit="mm">
+                                        <height>178</height>
+                                        <width>102</width>
                                     </dimensions>
                                 </extent>
                             </supportDesc>
                             <layoutDesc>
-                                <layout columns="1" ruledLines="19" n="mistara"/>
+                                <layout columns="1" ruledLines="19" n="mistara">Written in 1 column, with 19
+                                    lines per page. Ruled with a <hi rend="italic">misṭarah</hi> hand
+                                    guide.</layout>
                             </layoutDesc>
                         </objectDesc>
                      <handDesc>
                             <handNote scope="major" script="nasta_liq" medium="ink">Copied by
-                                    <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f3530" role="scr" change="#role-assignment">Riz̤ā Ibn Khājah ‘Abd Muḥammad <foreign xml:id="per"/>
+                                    <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f3530" role="scr" change="#role-assignment">Riz̤ā ibn Khvājah ‘Abd Muḥammad Dizfūlī<foreign xml:id="per"/>
                                 </persName>
                             </handNote>
                      </handDesc>   
@@ -102,8 +118,8 @@
                         </bindingDesc>
                     </physDesc>
                     <history>
-                        <origin>Dated
-                            <origDate calendar="#Hijri-qamari" when="1619"> 5 Muharram 1029 (1609 CE)</origDate>
+                        <origin>Completed by <persName xml:lang="fa-Latn-x-lc" type="supplied" key="person_f3530" role="scr" change="#role-assignment">Riz̤ā ibn Khvājah ‘Abd Muḥammad</persName> 
+                            <origDate calendar="#Hijri-qamari" when="1619"> 5 Muharram 1029 (12 Dec. 1619 CE)</origDate>
                         </origin>
                         <provenance>
                             <p>Colophon on folio <locus from="221a" to="221a">221a</locus>.</p>
@@ -134,7 +150,7 @@
                                 </source>
                             </recordHist>
                             <availability status="restricted">
-                                <p>To book an in-person or online appointment to consult the manuscript, visit <ref target="http://www.library.manchester.ac.uk/">Using the Reading Rooms</ref>. For any other enquiries please email <email>uml.special-collections@manchester.ac.uk</email>.</p>
+                                <p>To book an in-person or online appointment to consult the manuscript, visit <ref target="https://www.library.manchester.ac.uk/rylands/special-collections/using-the-reading-rooms/">Using the Special Collections Reading Rooms</ref>. For any other enquiries please email <email>uml.special-collections@manchester.ac.uk</email>.</p>
                             </availability>
                         </adminInfo>
                     </additional>

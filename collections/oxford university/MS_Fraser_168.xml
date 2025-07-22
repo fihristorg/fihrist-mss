@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_952">
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_952">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -42,7 +39,7 @@
                   <repository>Bodleian Library</repository>
                   <collection type="main">Oriental Manuscripts Fraser Collection</collection>
                   <idno>MS. Fraser 168</idno>
-               </msIdentifier>
+               <idno type="ieArk">ark:29072/x0s4655g2646</idno><idno type="crArk">ark:29072/x0s1784k42t0</idno></msIdentifier>
                <msContents class="#multipleWorks">
                   <summary change="#add-summary2"> 2 works by 2 authors on the subjects of
                      Astrolabes, Astronomical instruments, and Arithmetic </summary>
@@ -50,8 +47,7 @@
                      <locus from="1" to="21">ff. 1-21</locus>
                      <author key="person_12392936" ref="http://www.viaf.org/viaf/12392936/">
                         <persName type="standard" xml:lang="ar-Latn-x-lc">Ṭūsī, Naṣīr al-Dīn
-                           Muḥammad ibn Muḥammad, <date calendar="#Gregorian" from="1201"
-                              to="1274">1201-1274</date>
+                           Muḥammad ibn Muḥammad, <date calendar="#Gregorian" from="1201" to="1274">1201-1274</date>
                         </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_7164" change="#ids-cleanup">Bīst bāb
@@ -64,8 +60,7 @@
                   </msItem>
                   <msItem xml:id="MS_Fraser_168-item2" n="2" class="#abridgement">
                      <locus from="105" to="126">ff. 105r-126r</locus>
-                     <author key="person_78769310" ref="http://viaf.org/viaf/78769310/"
-                        change="#ids-cleanup">
+                     <author key="person_78769310" ref="http://viaf.org/viaf/78769310/" change="#ids-cleanup">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">Kāshī, Jamshīd ibn
                            Masʻūd, <date calendar="#Gregorian" when="1436">d. ca. 1436</date>
                         </persName>
@@ -117,8 +112,7 @@
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid
-                           reader's card (for admissions procedures contact <ref
-                              target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian
+                           reader's card (for admissions procedures contact <ref target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian
                               Admissions</ref>).</p>
                      </availability>
                   </adminInfo>
@@ -192,23 +186,18 @@
                <list>
                   <item>
                      <ref target="#a1">
-                        <term key="subject_sh2009116092"
-                           target="http://id.loc.gov/authorities/sh2009116092#concept"
-                           >Astrolabes</term>
+                        <term key="subject_sh2009116092" target="http://id.loc.gov/authorities/sh2009116092#concept">Astrolabes</term>
                      </ref>
                   </item>
                   <item>
                      <ref target="#a1">
-                        <term key="subject_sh85008996"
-                           target="http://id.loc.gov/authorities/sh85008996#concept">Astronomical
+                        <term key="subject_sh85008996" target="http://id.loc.gov/authorities/sh85008996#concept">Astronomical
                            instruments</term>
                      </ref>
                   </item>
                   <item>
                      <ref target="#a2">
-                        <term key="subject_sh85007163"
-                           target="http://id.loc.gov/authorities/sh85007163#concept"
-                           >Arithmetic</term>
+                        <term key="subject_sh85007163" target="http://id.loc.gov/authorities/sh85007163#concept">Arithmetic</term>
                      </ref>
                   </item>
                </list>
@@ -223,24 +212,16 @@
             <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup
             project). </change>
          <change when="2018-06-08">
-            <persName>Andrew Morrison</persName> Updated key attributes using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl"
-               >update-keys.xsl</ref>
+            <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>
          <change when="2018-03-28" xml:id="add-summary2">
-            <persName>Andrew Morrison</persName> Adjusted summary using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries2.xsl"
-               >add-summaries2.xsl</ref>
+            <persName>Andrew Morrison</persName> Adjusted summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries2.xsl">add-summaries2.xsl</ref>
          </change>
          <change when="2018-03-15" xml:id="add-summary">
-            <persName>Andrew Morrison</persName> Added summary using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl"
-               >add-summaries.xsl</ref>
+            <persName>Andrew Morrison</persName> Added summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl">add-summaries.xsl</ref>
          </change>
          <change when="2017-11-07">
-            <persName>James Cummings</persName> Up-converted the markup using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl"
-               >https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">created this file</change>
       </revisionDesc>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+           <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_26565">
    <teiHeader>
@@ -13,19 +13,20 @@
             </respStmt>
             <funder>The John Rylands Research Institute and Library</funder>
             <funder when="2023"><orgName ref="http://soudavar.org/">The Soudavar Memorial
-               Foundation</orgName></funder>         </titleStmt>
+                  Foundation</orgName></funder>
+         </titleStmt>
          <publicationStmt>
             <publisher>The University of Manchester Library</publisher>
             <date calendar="#Gregorian">2023-03-31</date>
             <pubPlace>
                <address>
-                  <addrLine>The John Rylands Library</addrLine>
+                  <addrLine>The John Rylands Research Institute and Library</addrLine>
                   <street>150 Deansgate</street>
                   <settlement>Manchester</settlement>
                   <postCode>M3 3EH</postCode>
                   <addrLine>
                      <ref target="https://www.library.manchester.ac.uk/rylands/special-collections/"
-                        >The John Rylands Library</ref>
+                        >The John Rylands Research Institute and Library</ref>
                   </addrLine>
                   <addrLine>
                      <email>uml.special-collections@manchester.ac.uk</email>
@@ -42,56 +43,140 @@
                   <country>United Kingdom</country>
                   <settlement>Manchester</settlement>
                   <institution>The University of Manchester</institution>
-                  <repository>The John Rylands Library</repository>
+                  <repository>The John Rylands Research Institute and Library</repository>
                   <collection>Persian Manuscripts</collection>
                   <idno>Persian MS 965</idno>
                </msIdentifier>
                <msContents>
-                  <summary change="#add-summary">Ẓafarnāmah by Sharaf al-Dīn ʻAlī Yazdī, d. 1454 </summary>
+                  <summary>An unillustrated copy of the <title>Fatḥ′nāmah-ʼi Ṣāḥibqirānī</title>
+                     (Book of Conquest by the Lord of the Conjunction), composed by historian
+                        <persName key="person_95224252" role="aut"
+                        ref="http://viaf.org/viaf/95224252/">Sharaf al-Dīn ʻAlī Yazdī (d.
+                        1454)</persName> as an abridgement that omits passages of poetry from his
+                     longer work, <title>Ẓafarnāmah</title> (Book of Victory). He completed both
+                     works on behalf of the Timurid prince and bibliophile, <persName
+                        role="pat subject dte" key="person_f1545">Ibrāhīm Sulṭān b. Shāh Rukh
+                        (1394–1435)</persName> in order to chronicle the life and exploits of his
+                     patron's grandfather, Central Asian ruler <persName role="subject"
+                        key="person_63984707" ref="http://viaf.org/viaf/63984707">Tīmūr (b. 1336, r.
+                        1370–1405)</persName>, founder of the Timurid dynasty (1370–1507), and his
+                     son and successor <persName role="subject" ref="http://viaf.org/viaf/24010955"
+                        key="person_24010955">Shāh Rukh Mīrzā (b. 1337, r. 1405–1447)</persName>.
+                     The author derived the first part of his work from an earlier history completed
+                     by Baghdad resident <persName role="ant" key="person_191145542438696641182"
+                        ref="http://viaf.org/viaf/191145542438696641182">Niẓām al-Dīn Shāmī (fl. ca.
+                        1392–1402)</persName> in an ornate style at Timur's request in 1402. A
+                     scribe named <persName role="scr" xml:lang="ar-Latn-x-lc">‘Abd Allāh b.
+                        Ādam</persName> completed this volume on <date calendar="#Hrijri-qamari"
+                        when="1501-05-25">26 Shavvāl 906 AH (15 May 1501 [Julian/25 May 1501
+                        CE])</date>, hence the earliest of nine copies of this work held in the
+                     Rylands.</summary>
 
                   <msItem xml:id="Persian_MS_965-item1">
                      <author key="person_95224252" ref="http://viaf.org/viaf/95224252/">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Sharaf al-Dīn ʻAlī Yazdī,
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Sharaf al-Dīn ʻAlī Yazdī,
                            d. 1454</persName>; <lb/>
                         <persName xml:lang="fa">شرف الدين على يزدى</persName>
                      </author>
-                     <title xml:lang="fa-Latn-x-lc" key="work_20110" change="#ids-cleanup"
-                        >Ẓafarnāmah</title>
-                     <title xml:lang="fa" key="work_20110" change="#ids-cleanup">ظفرنامه</title>
-                     <incipit xml:lang="ar" type="basmalla"/>
-                     <explicit xml:lang="ar"/>
+                     <author role="ant" key="person_191145542438696641182"
+                        ref="http://viaf.org/viaf/191145542438696641182"><persName
+                           xml:lang="ar-Latn-x-lc">Niẓām al-Dīn Shāmī (fl. ca.
+                        1392–1402)</persName>; <lb/><persName xml:lang="ar-Latn-x-lc">نظام الدین
+                           شامی</persName></author>
+                     <editor role="scr"><persName xml:lang="ar-Latn-x-lc">‘Abd Allāh b.
+                           Ādam</persName>; <lb/>
+                        <persName xml:lang="ar">عبد الله بن آدم</persName></editor>
+                     <title xml:lang="fa-Latn-x-lc" key="work_5002" change="#ids-cleanup"
+                        >Fatḥ′nāmah-ʼi Ṣāḥibqirānī</title>
+                     <title xml:lang="fa" key="work_5002" change="#ids-cleanup">فتح‌نامه
+                        صاحبقرانی</title>
+                     <incipit xml:lang="fa" type="basmalla"><locus from="1b" to="1b"> برگ ۱پ (folio
+                           1b):</locus> اللهم کـما انـعمت نعمة الشروع فتممها بتوفیق التتمیم حمد و
+                        سـپاس بـی‌قیاس که از فتح‌نامه ... </incipit>
+                     <explicit xml:lang="fa"><locus from="442a" to="442a"> برگ ۴۴۲ر (folio 442a):</locus> بعدلش جهان یکسر آراسته‌ ز کیهان رسوم بـدی کـاسته </explicit>
+                     <colophon xml:lang="fa"><locus from="442a" to="442a"> برگ ۴۴۲ر (folio 442a):</locus>تمام شد کتابت این فتح‌نامه...و التقصیر‌ عبد‌ الله‌ بن
+                        آدم تاریخ کتابت ۲۶ شوال سنه ۹۰۶ هجری .</colophon>
+                     <colophon>Completed by <persName role="scr" xml:lang="ar-Latn-x-lc">‘Abd Allāh
+                           b. Ādam</persName> on <date calendar="#Hrijri-qamari" when="1501-05-25"
+                           >26 Shavvāl 906 AH (15 May 1501 [Julian/25 May 1501
+                        CE])</date>.</colophon>
                      <textLang mainLang="fa">Persian</textLang>
+                     <note>For other copies of the Yazdī's <title>Ẓafarnāmah</title> held in the Rylands, see <ref
+                           target="https://www.fihrist.org.uk/catalog/manuscript_6648"><idno>Persian
+                              MS 166</idno></ref>, <ref
+                           target="https://www.fihrist.org.uk/catalog/manuscript_6649">167</ref>,
+                           <ref target="https://www.fihrist.org.uk/catalog/manuscript_6709"
+                           >226</ref>, <ref
+                           target="https://www.fihrist.org.uk/catalog/manuscript_6870">372</ref>,
+                           <ref target="https://www.fihrist.org.uk/catalog/manuscript_7335"
+                           >828</ref>, <ref
+                           target="https://www.fihrist.org.uk/catalog/manuscript_7336">829</ref>,
+                           <ref target="https://www.fihrist.org.uk/catalog/manuscript_7338"
+                           >830</ref>, and <ref
+                           target="https://www.fihrist.org.uk/catalog/manuscript_7409"
+                        >899</ref>.</note>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc material="chart">
-                        <extent>
+                        <support>Textblock of cross-grained, externally sized and polished,
+                           ivoury-coloured <material>paper</material> probably handmade in the
+                           <placeName cert="medium" type="empire"
+                              ref="http://vocab.getty.edu/page/tgn/8711845" key="place_8711845">Timurid
+                              Empire</placeName><!--  with ~8 laid lines
+                           per cm and no discernible chain lines-->.</support>
+                        <extent><!-- check and complete <measure unit="folio" quantity="442">442 folios (ff. 442)</measure>-->
                            <dimensions type="leaf" unit="cm"/>
                            <dimensions type="written" unit="cm"/>
                         </extent>
+                        <!--  <foliation xml:id="modern">Pencilled Arabic numerals added to the upper-left
+                           corners of the a sides when catalogued.</foliation>-->
+                        <collation> Undetermined. <catchwords>Catchwords throughout most of the
+                              lower-left corners of the b sides.</catchwords></collation>
+                        <condition>Manuscript in very poor
+                           condition. Folio 126 protrudes at the fore-edge. Extensively remargined oversen</condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1" ruledLines="20" n="mistara"/>
+                        <layout columns="1" ruledLines="21" n="mistara"> Written in 1 column with 21
+                           lines per page. Ruled with a <hi rend="italic">misṭarah</hi> hand
+                           guide.</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="naskh" medium="ink"/>
+                     <handNote scope="major" script="naskh" medium="ink"> Written in clear
+                           <material>black</material> naskh with <material>red</material> subheaders
+                        by <persName role="scr" xml:lang="ar-Latn-x-lc">‘Abd Allāh b.
+                           Ādam</persName>. </handNote>
                   </handDesc>
                   <bindingDesc>
-                     <decoNote type="illustration"/>
+                     <binding notBefore="1775" notAfter="1838">
+                        <p><p>Rebbound in Britain. Stripe blue and white cloth headbands.</p></p>
+                        <decoNote type="binding"/>
+                        <p><dimensions type="binding" unit="mm">
+                              <height/>
+                              <width/>
+                              <depth/>
+                           </dimensions></p>
+                        <condition/>
+                     </binding>
                   </bindingDesc>
                </physDesc>
                <history>
-                  <origin><origDate calendar="#Hijri-qamari" when="1553">960 AH (1553
-                     CE)</origDate></origin>
+                  <origin>Completed by <persName role="scr" xml:lang="ar-Latn-x-lc">‘Abd Allāh b.
+                        Adam</persName>, possibly in <origPlace cert="medium" type="empire"
+                        ref="http://vocab.getty.edu/page/tgn/8711845" key="place_8711845">Timurid
+                        Empire</origPlace>
+                     <origDate calendar="#Hijri-qamari" when="1553">
+                        <date calendar="#Hrijri-qamari" when="1501-05-25">26 Shavvāl 906 AH (15 May
+                           1501 [Julian, 25 May 1501 CE])</date>)</origDate></origin>
                   <provenance><p>The circumstances under which this volume arrived in Britain remain
-                        unclear, but subsequently acquired by one <q xml:lang="en">L. G. Lawrie of
-                              <placeName ref="http://vocab.getty.edu/page/tgn/1030078"
-                              key="place_1030078">Mobberley, Cheshire</placeName></q>, possibly
-                           <persName cert="medium" role="fmo" ref="http://viaf.org/viaf/30926285"
-                           key="person_30926285">Leslie Gordon Lawrie (1891–1959)</persName>, a
-                        graduate of Manchester College of Technology (1910) who specialized in
+                        unclear, but one <q xml:lang="en">L. G. Lawrie of <placeName
+                              ref="http://vocab.getty.edu/page/tgn/1030078" key="place_1030078"
+                              >Mobberley, Cheshire</placeName></q>, possibly <persName cert="medium"
+                           role="fmo" ref="http://viaf.org/viaf/30926285" key="person_30926285"
+                           >Leslie Gordon Lawrie (1891–1959)</persName>, subsequently acquired it. A
+                        graduate of Manchester College of Technology (1910) Lawrie specialized in
                         textile chemistry, and worked for British Dyestuffs Corporation, (later
                         Imperial Chemical Industries. Ltd.), which operated in <placeName
                            key="place_7024975" ref="http://vocab.getty.edu/page/tgn/7024975"
@@ -110,14 +195,15 @@
                            <p change="2023">Manuscript description by <persName type="standard"
                                  role="cataloguer" ref="http://viaf.org/viaf/22161693743415930845"
                                  key="person_22161693743415930845">Jake Benson</persName> in <date
-                                 calendar="#Gregorian" when="2023">2023</date>
-                              <!-- with
-                                        reference to the volume in hand -->.</p></source>
+                                    calendar="#Gregorian" when="2023">2023</date>, with reference to the volume<!--  in hand-->, 
+                              an unpublished handlist, accession registers, and a Persian description of the volume published by
+                              <persName role="cataloguer"
+                                 ref="http://viaf.org/viaf/70506082"
+                                 key="person_70506082">Tawfiq Subhani</persName> in <date
+                                    calendar="#Gregorian" when="1993">1993</date>.</p></source>
                      </recordHist>
                      <availability status="restricted">
-                        <p>To book an in-person or online appointment to consult the manuscript,
-                           visit <ref target="http://www.library.manchester.ac.uk/">Using the
-                              Reading Rooms</ref>. For any other enquiries please email
+                        <p>To book an in-person or online appointment to consult the manuscript, visit <ref target="https://www.library.manchester.ac.uk/rylands/special-collections/using-the-reading-rooms/">Using the Special Collections Reading Rooms</ref>. For any other enquiries please email
                               <email>uml.special-collections@manchester.ac.uk</email>.</p>
                      </availability>
                   </adminInfo>
@@ -131,13 +217,20 @@
                      </bibl>
                   </surrogates> -->
                   <listBibl>
+                     <bibl> M. Dirāyatī and M. Dirāyatī, <title level="s">Fihristgān: Nuskhahʹhā-yi
+                           Khaṭṭī-i Īrān (FANKHĀ)</title> [Manuscript Union Catalogue of Iran], Vol.
+                        22 (<pubPlace>Tehran</pubPlace>: <publisher>Sāzmān-i Asnād va Kitābkhānah-i
+                           Millī-i Jumhūrī-i Islāmī-i Īrān</publisher>, <date
+                           calendar="#Hijri-shamsi" from="2013" to="2014">1392 SH [2013–14
+                              CE]</date>), <biblScope><ref target="https://worldcat.org/en/title/809251502">pp. 251–</ref></biblScope> [Mar‘ashi Library
+                        no. 1/12549, &amp;c.]. </bibl>
                      <bibl> H. M. Elliot and John Dowson, <title level="s">The History of India, As
                            Told by Its Own Historians: The Muhammadan Period,</title> Vol. III
                            (<pubPlace>London</pubPlace>: <publisher>Trübner &amp; Co.</publisher>,
                            <date calendar="#Gregorian" when="1867">1867</date>), <biblScope><ref
                               target="https://archive.org/details/cu31924073036737/page/479/mode/2up"
                               >pp. 478–522, no. XIX</ref></biblScope>. </bibl>
-                     <bibl> H. Ethé, <title level="s">Catalogue of Persian manuscripts in the
+                     <bibl> H. Ethé, <title level="m">Catalogue of Persian manuscripts in the
                            library of the India Office</title>, Vol. 1 (<pubPlace>London</pubPlace>:
                            <publisher>Printed for the India Office by H. Hart</publisher>, <date
                            calendar="#Gregorian" when="1903">1903</date>), <biblScope><ref
@@ -150,26 +243,35 @@
                               target="http://archive.org/stream/MughalsInIndiaABibliographicalSurveymarshall#page/n458/"
                               >p. 441, no. 681 (i)</ref></biblScope>. </bibl>
 
-                     <bibl> C. Rieu, <title level="s">Catalogue of the Persian manuscripts in the
+                     <bibl> C. Rieu, <title level="m">Catalogue of the Persian manuscripts in the
                            British Museum</title>, Vol. I (<pubPlace>London</pubPlace>:
                            <publisher>British Museum</publisher>, <date calendar="#Gregorian"
                            when="1879">1879</date>), <biblScope><ref
-                              target="http://archive.org/stream/catalogueofpersi01brituoft#page/173/mode/2up"
+                              target="http://archive.org/stream/catalogueofpersi01brituoft#page/173/"
                               >p. 173</ref> [British Library Add. 25024]</biblScope>. </bibl>
-                     <bibl> E. Sachau and H. Ethé, <title level="s">Catalogue of the Persian,
+                     <bibl>E. Sachau and H. Ethé, <title level="m">Catalogue of the Persian,
                            Turkish, Hindûstani, and Pushtû manuscripts in the Bodleian
                            Library</title>, Vol. I (<pubPlace>Oxford</pubPlace>:
                            <publisher>Clarendon Press</publisher>, <date calendar="#Gregorian"
                            when="1889">1889</date>), <biblScope><ref
                               target="http://archive.org/stream/catalogueofpersi01bodluoft#page/44/"
-                              >col. 87, no. 153</ref> [Bodleian Ouseley 263, &amp;c.]</biblScope>
+                              >cols. 87, 89–90, nos. 153, 160</ref> [Bodleian Ouseley 3, 4,
+                           &amp;c.]</biblScope>
                      </bibl>
                      <bibl> C. A. Storey <title>Persian Literature: A Bio-bibliographical
                            Survey</title>, Vol. I, Sect II, Fasc. 2 (<pubPlace>London</pubPlace>:
-                           <publisher>Luzac &amp; Co.</publisher><date calendar="#Gregorian"
+                           <publisher>Luzac &amp; Co.</publisher>, <date calendar="#Gregorian"
                            when="1936">1936</date>), <biblScope><ref
                               target="http://dx.doi.org/10.1163/2772-7696_SPLO_COM_10203070#V1-0356-001"
-                              >p. 285 (no. 356 (i)</ref></biblScope>. </bibl>
+                              >pp. 278–279, 284–287 (nos. 354 and 356 (1 and Abridgments
+                           1)</ref></biblScope>. </bibl>
+                     <bibl>Tawfīq Subḥānī, 'Kitāb'hā-yi khaṭṭī-i Fārsī fihrist nashudah dar
+                        Kitābkhānah Jān Rāylāndz, Manchistir' <title level="j">Majallah-'i
+                           Dānishkadah-i Adabiyāt va ‘Ulūm-i Insānī</title> n.s., Vol. 1, Nos. 2-3
+                           (<date calendar="#Hijri-shamsi" when="1993">1372 SH [1993 CE]</date>):
+                              <biblScope><ref
+                              target="https://www.eliteraturebook.com/books/pdf/9398/کتابهای+خطی+فارسی+فهرست+نشده+در+کتابخانه+جان+رایلاندز+منچستر"
+                              >p. 178, no. 24</ref></biblScope>. </bibl>
                   </listBibl>
                </additional>
             </msDesc>
@@ -190,18 +292,31 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_n50015000" target="http://lccn.loc.gov/n50015000">Timur,
-                        1336-1405</term>
+                     <term key="subject_sh91005420"
+                        target="http://id.loc.gov/authorities/sh91005420#concept"
+                        >Iran--History--1256-1500</term>
                   </item>
                   <item>
                      <term key="subject_sh2010102321" target="http://lccn.loc.gov/sh2010102321"
                         >Mongols History To 1500</term>
                   </item>
+                  <item>
+                     <term key="subject_n50015000" target="http://lccn.loc.gov/n50015000">Timur,
+                        1336-1405</term>
+                  </item>
+                  <item>
+                     <term key="subject_sh85135483" target="http://lccn.loc.gov/sh85135483"
+                        >Timurids</term>
+                  </item>
+
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-07-20">
+            <persName>Jake Benson</persName> Updated record with reference to Subḥānī.
+         </change>
          <change when="2023-03-31">
             <persName>Jake Benson</persName> Completed preliminary ms description derived from an
             unpublished handlist. </change>

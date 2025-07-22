@@ -1,13 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4339">
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4339">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>OXFORD AND CAMBRIDGE ISLAMIC MANUSCRIPTS CATALOGUE ONLINE</title>
             <funder>JISC</funder>
             <principal>Gillian Evison</principal>
+            <respStmt>
+               <resp>Cataloguer</resp>
+               <persName>Alasdair Watson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Cataloguer</resp>
+               <persName>Nicholas Kontovas</persName>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <publisher>Bodleian Library</publisher>
@@ -40,9 +45,10 @@
                   <settlement>Oxford</settlement>
                   <institution>Oxford University</institution>
                   <repository>Bodleian Library</repository>
-                  <collection type="main">Oriental Manuscripts Elliott Collection</collection>
+                  <collection type="main">Oriental Manuscripts</collection>
+                  <collection type="sub">Elliott Collection</collection>
                   <idno>MS. Elliott 317</idno>
-               </msIdentifier>
+               <idno type="ieArk">ark:29072/x04f16c380ff</idno><idno type="crArk">ark:29072/x04b29b6974q</idno></msIdentifier>
                <msContents>
                   <summary change="#add-summary"> 1 copy of Sabʻah Sayyārah by Alisher Navoiĭ,
                      1441-1501 </summary>
@@ -62,7 +68,7 @@
                      <listBibl>
                         <bibl>Ethé 2118</bibl>
                      </listBibl>
-                     <textLang mainLang="chg" otherLangs="fa">Chagatai, Persian</textLang>
+                     <textLang mainLang="chg" otherLangs="fa">Chaghatay, Persian</textLang>
                      <note>The fourth mathnawī of Navāʼī's Khamsah. For the other three surviving
                         volumes of a five volume set copied by the same anonymous scribe, see: MS.
                         Elliott 287, MS. Elliott 408, and MS. Elliott 339</note>
@@ -90,17 +96,20 @@
                   </handDesc>
                </physDesc>
                <history>
-                  <origin change="#fix-dates">
+                  <origin change="#fix-dates"> Almost certainly completed in
+                        <origPlace>Herat</origPlace>
                      <origDate notBefore="1485" notAfter="1486" calendar="#Hijri-qamari"
                         >890</origDate>
-                     <origDate calendar="#Gregorian" when="1485">1485</origDate>
+                     <origDate calendar="#Gregorian" when="1485">1485</origDate> for the library of
+                     the Timurid prince <persName key="person_24169628155682860437">Badīʻ
+                        al-Zamān, Sultan of Khorasan, -approximately 1514</persName>.
+
                   </origin>
                   <provenance>The collections of <persName key="person_44733962" role="fmo">Sir Gore
                         Ouseley</persName>.</provenance>
                   <provenance>The collections of <persName key="person_f6443" role="fmo">John Bardoe
                         Elliott</persName>.</provenance>
-                  <acquisition>Presented to the Bodleian Library by <persName key="person_f6443"
-                        role="dnr">J.B. Elliott</persName>, in 1859.</acquisition>
+                  <acquisition>Presented to the Bodleian Library by <persName key="person_f6443" role="dnr">J.B. Elliott</persName>, in 1859.</acquisition>
                </history>
                <additional>
                   <adminInfo>
@@ -121,8 +130,7 @@
                            you have already consulted. Your application will then be considered by
                            our curatorial staff. Entry to read in the Library is permitted only on
                            presentation of a valid reader's card (for admissions procedures contact
-                              <ref target="http://www.bodleian.ox.ac.uk/services/admissions/"
-                              >Bodleian Admissions</ref>).</p>
+                              <ref target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian Admissions</ref>).</p>
                      </availability>
                   </adminInfo>
                </additional>
@@ -194,8 +202,7 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh85022323"
-                        target="http://id.loc.gov/authorities/sh85022323#concept">Chagatai
+                     <term key="subject_sh85022323" target="http://id.loc.gov/authorities/sh85022323#concept">Chagatai
                         poetry</term>
                   </item>
                </list>
@@ -204,25 +211,17 @@
       </profileDesc>
       <revisionDesc>
          <change when="2018-06-08">
-            <persName>Andrew Morrison</persName> Updated key attributes using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl"
-               >update-keys.xsl</ref>
+            <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>
          <change when="2018-03-15" xml:id="add-summary">
-            <persName>Andrew Morrison</persName> Added summary using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl"
-               >add-summaries.xsl</ref>
+            <persName>Andrew Morrison</persName> Added summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl">add-summaries.xsl</ref>
          </change>
          <change when="2018-03-02" xml:id="fix-dates">
             <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements
-            using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl"
-               >fix-dates.xsl</ref>
+            using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
          </change>
          <change when="2017-11-07">
-            <persName>James Cummings</persName> Up-converted the markup using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl"
-               >https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-01-25">
             <persName>Alasdair Watson</persName> created this file</change>

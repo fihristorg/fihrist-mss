@@ -63,13 +63,14 @@ processing-instruction xml-model {'href="authority-schematron.sch" type="applica
             <listPerson>
 {
     let $newviafpeople := (      
-        for $p in $collection/tei:TEI[@xml:id]//(tei:author|tei:editor|tei:persName[not(ancestor::tei:author/@key or ancestor::tei:editor/@key)]|tei:name[tei:persName])[matches(@key, 'person_\d+') or matches(@key, 'viaf_\d+')]
+        for $p in $collection/tei:TEI[@xml:id]//(tei:author|tei:editor|tei:persName[not(ancestor::tei:author/@key or ancestor::tei:editor/@key)]|tei:name[tei:persName])[matches(@key, 'person_\d+') or matches(@key/lower-case(data()), 'viaf_\d+')]
             let $keys := (distinct-values(
                 for $key in tokenize($p/@key, '\s+')
                     return
                     if (starts-with($key, 'person_')) then
                         $key
-                    else if (starts-with($key, 'viaf_')) then
+                    else if (starts-with(lower-case($key), 'viaf_')) then
+                        (: The BL's IAMS system uses "viaf_123" or "Viaf_123" instead of "person_123" for VIAF-based person IDs :)
                         concat('person_', substring-after($key, '_'))
                     else
                         ()
@@ -134,7 +135,7 @@ processing-instruction xml-model {'href="authority-schematron.sch" type="applica
     let $viafpeoplefrompreviousrun := $additions[matches(@xml:id, 'person_\d+')]
     
     let $newlocalpeople := (
-        for $p in $collection/tei:TEI[@xml:id]//(tei:author|tei:editor|tei:persName[not(ancestor::tei:author/@key or ancestor::tei:editor/@key)]|tei:name[tei:persName])[@key and (@key = '' or not(some $k in tokenize(@key, '\s+') satisfies (starts-with($k, 'person_') or starts-with($k, 'viaf_')))) and string-length(normalize-space(string())) gt 1]
+        for $p in $collection/tei:TEI[@xml:id]//(tei:author|tei:editor|tei:persName[not(ancestor::tei:author/@key or ancestor::tei:editor/@key)]|tei:name[tei:persName])[@key and (@key = '' or not(some $k in tokenize(@key, '\s+') satisfies (starts-with($k, 'person_') or starts-with(lower-case($k), 'viaf_')))) and string-length(normalize-space(string())) gt 1]
             let $names := 
                 if ($p/tei:persName) then
                     for $n in $p/tei:persName

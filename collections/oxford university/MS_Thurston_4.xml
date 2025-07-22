@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1816">
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1816">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -42,7 +39,7 @@
                   <repository>Bodleian Library</repository>
                   <collection type="main">Oriental Manuscripts Thurston Collection</collection>
                   <idno>MS. Thurston 4</idno>
-               </msIdentifier>
+               <idno type="ieArk">ark:29072/x0mk61rg94fn</idno><idno type="crArk">ark:29072/x0mg74qm114z</idno></msIdentifier>
                <msContents>
                   <summary change="#add-summary"> 1 copy of Kitāb al-Mawāqif by Niffarī, Muḥammad
                      ibn ʻAbd al-Jabbār, d. 965 </summary>
@@ -54,11 +51,8 @@
                      </author>
                      <title xml:lang="ar-Latn-x-lc" key="work_20465" change="#ids-cleanup">Kitāb
                         al-Mawāqif</title>
-                     <note>With commentary by <persName type="standard" xml:lang="ar-Latn-x-lc"
-                           key="person_57002160" ref="http://viaf.org/viaf/57002160/" role="cmm"
-                           change="#role-assignment #ids-cleanup">Tilimsānī, ʻAfīf al-Dīn
-                           Sulaymān ibn ʻAlī, d. <date calendar="#Gregorian" when="1291"
-                              >1291</date>
+                     <note>With commentary by <persName type="standard" xml:lang="ar-Latn-x-lc" key="person_57002160" ref="http://viaf.org/viaf/57002160/" role="cmm" change="#role-assignment #ids-cleanup">Tilimsānī, ʻAfīf al-Dīn
+                           Sulaymān ibn ʻAlī, d. <date calendar="#Gregorian" when="1291">1291</date>
                         </persName>
                      </note>
                      <listBibl>
@@ -89,8 +83,7 @@
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid
-                           reader's card (for admissions procedures contact <ref
-                              target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian
+                           reader's card (for admissions procedures contact <ref target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian
                               Admissions</ref>).</p>
                      </availability>
                   </adminInfo>
@@ -113,8 +106,7 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh85129653"
-                        target="http://id.loc.gov/authorities/sh85129653#concept">Sufi poetry,
+                     <term key="subject_sh85129653" target="http://id.loc.gov/authorities/sh85129653#concept">Sufi poetry,
                         Arabic</term>
                   </item>
                </list>
@@ -129,25 +121,17 @@
             <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup
             project). </change>
          <change when="2018-06-08">
-            <persName>Andrew Morrison</persName> Updated key attributes using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl"
-               >update-keys.xsl</ref>
+            <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>
          <change when="2018-03-15" xml:id="add-summary">
-            <persName>Andrew Morrison</persName> Added summary using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl"
-               >add-summaries.xsl</ref>
+            <persName>Andrew Morrison</persName> Added summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl">add-summaries.xsl</ref>
          </change>
          <change when="2018-03-02" xml:id="fix-dates">
             <persName>Andrew Morrison</persName> Removed origDate tags around something which is not
-            a date using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl"
-               >fix-dates.xsl</ref>
+            a date using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
          </change>
          <change when="2017-11-07">
-            <persName>James Cummings</persName> Up-converted the markup using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl"
-               >https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">created this file</change>
       </revisionDesc>

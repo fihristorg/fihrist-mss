@@ -4,11 +4,24 @@ declare namespace map="http://www.w3.org/2005/xpath-functions/map";
 declare option saxon:output "indent=yes";
 declare option saxon:output "method=text";
 
-(: Set this variable to one of the institution listed below to update its list of allocated manuscript IDs :)
-declare variable $institution as xs:string := '';
+(: 
+This script allocates manuscript IDs to Fihirst member institutions. It is up to each organization to manage 
+how they keep track usage of IDs within their allocation. See:
 
-(: List of Fihrist member institutions. If adding new ones in the future, create a blank file in the identifiers folder with the same name, ending with .txt :)
+https://github.com/fihristorg/fihrist-mss/blob/master/identifiers/README.md
+https://github.com/fihristorg/fihrist-mss/wiki/Last-Used-Manuscript-IDs
+
+To run this script, use a command such as the following (which will top-up the British Library's list):
+
+java -Xmx1G -cp "saxon/saxon9he.jar" net.sf.saxon.Query -q:generate-new-manuscript-ids.xquery -o:../identifiers/british_library.txt institution='british_library'
+:)
+
+(: Required parameter which must be set to one of the values of $allinstitutions below :)
+declare variable $institution as xs:string external;
+
+(: List of Fihrist member institutions. If adding a new member, create a blank file in the identifiers folder with the same name, ending with .txt :)
 declare variable $allinstitutions as xs:string* := (
+    'ancient_india_and_iran_trust',
     'arabic_commentaries_on_the_hippocratic_aphorisms_project',
     'british_library',
     'cambridge_university',
@@ -32,6 +45,8 @@ declare variable $allinstitutions as xs:string* := (
     'wellcome_trust'
 );
 
+declare variable $retiredidnums as xs:integer* := (399, 401, 402, 1878, 3127, 3165, 4049, 4095, 4112, 4120, 4234, 5063, 5112, 5174, 5753, 7264, 17968);
+
 declare variable $newline as xs:string := '&#10;';
 declare variable $maxallocation as xs:integer external := 1000;
 
@@ -48,7 +63,7 @@ declare variable $alreadyallocated := map:merge(
 );
 
 (: Join together lists of all in-use and already-pre-allocated manuscript IDs :)
-declare variable $alloldids as xs:integer* := ($inuseidnums, (for $inst in $allinstitutions return map:get($alreadyallocated, $inst)));
+declare variable $alloldids as xs:integer* := ($retiredidnums, $inuseidnums, (for $inst in $allinstitutions return map:get($alreadyallocated, $inst)));
 
 (: Extract the manuscript IDs already allocated to the institution this  :)
 

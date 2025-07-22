@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_943">
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_943">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -43,24 +40,20 @@
                   <collection type="main">Oriental Manuscripts E. D. Clarke Oriental
                      Collection</collection>
                   <idno>MS. E.D. Clarke Or. 14</idno>
-               </msIdentifier>
+               <idno type="ieArk">ark:29072/x06969z163cs</idno><idno type="crArk">ark:29072/x06682x48021</idno></msIdentifier>
                <msContents class="#multipleWorks">
                   <summary change="#add-summary2"> 2 works by 2 authors on the subjects of Natural
                      history, Geography, and Islamic eschatology </summary>
                   <msItem xml:id="MS_ED_Clarke_Or_14-item1" n="1">
                      <locus from="1" to="125">ff. 1v-125v</locus>
-                     <author ref="http://www.viaf.org/viaf/244642288/" key="person_244642288"
-                        change="#ids-cleanup">
+                     <author ref="http://www.viaf.org/viaf/244642288/" key="person_244642288" change="#ids-cleanup">
                         <persName xml:lang="ar-Latn-x-lc">Ibn al-Wardī, Sirāj al-Dīn Abū Ḥafṣ ʻUmar
-                           ibn al-Muẓaffar. fl. c. <date calendar="#Gregorian" when="1446"
-                              >1446</date>
+                           ibn al-Muẓaffar. fl. c. <date calendar="#Gregorian" when="1446">1446</date>
                         </persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc" key="work_2391" change="#ids-cleanup">Kharīdat
                         al-ʻajāʼib wa-farīdat al-ghāraʼib</title>
-                     <note>Also attributed to <persName type="standard" xml:lang="ar-Latn-x-lc"
-                           key="person_81959174" ref="http://www.viaf.org/viaf/81959174/" role="att"
-                           change="#role-assignment">Ibn al-Wardī, Zayn al-Dīn ʻUmar ibn
+                     <note>Also attributed to <persName type="standard" xml:lang="ar-Latn-x-lc" key="person_81959174" ref="http://www.viaf.org/viaf/81959174/" role="att" change="#role-assignment">Ibn al-Wardī, Zayn al-Dīn ʻUmar ibn
                            al-Muẓaffar, d. <date calendar="#Gregorian" when="1349">1349</date>
                         </persName>
                      </note>
@@ -107,8 +100,7 @@
                   </origin>
                   <provenance>The collections of <persName key="person_15552626" role="fmo">Edward
                         Daniel Clarke, d. 1822</persName>.</provenance>
-                  <acquisition>Purchased by the Bodleian Library in <date calendar="#Gregorian"
-                        when="1809">1809</date>.</acquisition>
+                  <acquisition>Purchased by the Bodleian Library in <date calendar="#Gregorian" when="1809">1809</date>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
@@ -119,8 +111,7 @@
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid
-                           reader's card (for admissions procedures contact <ref
-                              target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian
+                           reader's card (for admissions procedures contact <ref target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian
                               Admissions</ref>).</p>
                      </availability>
                   </adminInfo>
@@ -194,22 +185,19 @@
                <list>
                   <item>
                      <ref target="#a1">
-                        <term key="subject_sh85090222"
-                           target="http://id.loc.gov/authorities/sh85090222#concept">Natural
+                        <term key="subject_sh85090222" target="http://id.loc.gov/authorities/sh85090222#concept">Natural
                            history</term>
                      </ref>
                   </item>
                   <item>
                      <ref target="#a1">
-                        <term key="subject_sh85054014"
-                           target="http://id.loc.gov/authorities/sh85054014#concept">Geography,
+                        <term key="subject_sh85054014" target="http://id.loc.gov/authorities/sh85054014#concept">Geography,
                            Arab</term>
                      </ref>
                   </item>
                   <item>
                      <ref target="#a2">
-                        <term key="subject_sh85044792"
-                           target="http://id.loc.gov/authorities/sh85044792#concept">Islamic
+                        <term key="subject_sh85044792" target="http://id.loc.gov/authorities/sh85044792#concept">Islamic
                            eschatology</term>
                      </ref>
                   </item>
@@ -225,24 +213,16 @@
             <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup
             project). </change>
          <change when="2018-06-08">
-            <persName>Andrew Morrison</persName> Updated key attributes using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl"
-               >update-keys.xsl</ref>
+            <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
          </change>
          <change when="2018-03-28" xml:id="add-summary2">
-            <persName>Andrew Morrison</persName> Adjusted summary using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries2.xsl"
-               >add-summaries2.xsl</ref>
+            <persName>Andrew Morrison</persName> Adjusted summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries2.xsl">add-summaries2.xsl</ref>
          </change>
          <change when="2018-03-15" xml:id="add-summary">
-            <persName>Andrew Morrison</persName> Added summary using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl"
-               >add-summaries.xsl</ref>
+            <persName>Andrew Morrison</persName> Added summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl">add-summaries.xsl</ref>
          </change>
          <change when="2017-11-07">
-            <persName>James Cummings</persName> Up-converted the markup using <ref
-               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl"
-               >https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">created this file</change>
       </revisionDesc>

@@ -34,7 +34,8 @@ declare variable $allinstances :=
                 return
                 if (starts-with($key, 'person_')) then
                     <key>{ $key }</key>
-                else if (starts-with($key, 'viaf_')) then
+                else if (starts-with(lower-case($key), 'viaf_')) then
+                    (: The BL's IAMS system uses "viaf_123" or "Viaf_123" instead of "person_123" for VIAF-based person IDs :)
                     <key>person_{ substring-after($key, '_') }</key>
                 else
                     ()
@@ -73,6 +74,7 @@ declare variable $allinstances :=
             )
             }
             <shelfmark>{ $shelfmark }</shelfmark>
+            <file>{ substring-after(base-uri($instance), '-mss') }</file>
         </instance>;
 
 <add>
@@ -83,7 +85,7 @@ declare variable $allinstances :=
     (: Log instances with key attributes not in the authority file :)
     for $key in distinct-values($allinstances/key)
         return if (not(some $entryid in $authorityentries/@xml:id/data() satisfies $entryid eq $key)) then
-            bod:logging('warn', 'Key attribute not found in authority file: will create broken link', ($key, $allinstances[@k = $key]/name))
+            bod:logging('warn', 'Key attribute not found in authority file: will create broken link', ($key, $allinstances[key = $key]/name, distinct-values($allinstances[key = $key]/file), distinct-values($allinstances[key = $key]/manuscript/@path)))
         else
             ()
 }

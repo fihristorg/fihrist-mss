@@ -15,7 +15,7 @@ declare variable $collection := collection('../collections/?select=*.xml;recurse
         return bod:logging('error', 'There are multiple manuscripts with the same xml:id in their root TEI elements', $duplicateids)
         
     else
-        for $ms in $collection
+        for $ms in $collection                                    
             let $msid := $ms/tei:TEI/@xml:id/string()
             order by $msid
             return
@@ -71,13 +71,14 @@ declare variable $collection := collection('../collections/?select=*.xml;recurse
                         else if ($ms//tei:origin//tei:origDate) 
                             then 'Date in unsupported calendar' 
                         else 'Undated') }
+                    { bod:years($ms//tei:origin//tei:origDate[@calendar = ('#Gregorian', '#Hijri-qamari', '#Hindu', 'Gregorian', 'Hijri-qamari', 'Hindu')]) }
                     { bod:requesting($ms/tei:TEI) }
                     { bod:string2one(bod:shortenToNearestWord(string-join(($ms//tei:msDesc/tei:head, $ms//tei:msContents/tei:summary)[1]//text(), ' '), 128), 'ms_summary_s') }
                     { bod:indexHTML($htmldoc, 'ms_textcontent_tni') }
                     { bod:displayHTML($htmldoc, 'display') }
                 </doc>
-
-            else
-                bod:logging('warn', 'Cannot process manuscript without @xml:id for root TEI element', base-uri($ms))
+              
+            else                
+                bod:logging('warn', 'Cannot process manuscript without @xml:id for root TEI element', (fn:substring-after(base-uri($ms), "-mss")) )
 }
 </add>
