@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_728">
    <teiHeader>
       <fileDesc>
@@ -41,10 +41,17 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>J. 17</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>J. 17 (8)</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <summary change="#add-summary">
-                     1 copy of Riyāḍ al-shuʻarāʼ by Riyâzı̂ Mehmet, 1572-1644
+                  <summary change="#ai-catalogue">
+                     <p>رياض الشعراء رياضي</p>
+                     <p>The Riyadash-Shu'ard, a biography of Turkish poets completed after two <lb/> years' labour in Rajab, 1018/Oct. 1609, by Riyádí (b. 980/1572-3, d. 1054/1644-5), <lb/> and dedicated to Sultán Aḥmad I. See E. J. W. Gibb's History of Ottoman Poetry, <lb/> vol. 111, pp. 200-201 and 284-286.</p>
+                     <p>Begins:</p>
+                     <p>صد هزار سپاس و ثنا اول دیباجه پرداز ان هذه تذكرة جنابنه سزادر الخ</p>
+                     <p>Ff. 90 of 19'7 x 13'5 c. and 21 ll.; fair ta'liq with rubrications, dated Sha'bán, <lb/> 1102/May, 1691. Bought of J. J. Naaman in May, 1905, for £4.</p>
                   </summary>
                   <msItem xml:id="J_17-item1">
                      <author key="person_28270002" ref="http://viaf.org/viaf/28270002/">
@@ -61,22 +68,25 @@
                      <textLang mainLang="ota">Turkish</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 90
+                                    <dimensions unit="cm">
+                              <height>19.7</height>
+                              <width>13.5</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>21 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="taliq">Fair ta'liq with rubrications</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -84,12 +94,20 @@
                      <origDate notBefore="1690" notAfter="1691" calendar="#Hijri-qamari">1102</origDate>
                      <origDate calendar="#Gregorian" when="1691">1691</origDate>
                   </origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <provenance change="#ai-catalogue">Bought of <persName key="person_f1654" role="fmo">J. J. Naaman</persName> in May, 1905, for £4.</provenance>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -113,21 +131,25 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh87004681" target="http://id.loc.gov/authorities/sh87004681#concept">Poets, Turkish</term>
+                     <term key="subject_sh87004681"
+                           target="http://id.loc.gov/authorities/sh87004681#concept">Poets, Turkish</term>
                   </item>
                   <item>
-                     <term key="subject_sh2008113049" target="http://id.loc.gov/authorities/sh2008113049#concept">Turkish poetry--History and criticism</term>
+                     <term key="subject_sh2008113049"
+                           target="http://id.loc.gov/authorities/sh2008113049#concept">Turkish poetry--History and criticism</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025" xml:id="check-ai"><persName>Syed Gillani</persName></change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
-		<change when="2020-07-06" xml:id="ids-cleanup">
-			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+         <change when="2020-07-06" xml:id="ids-cleanup">
+            <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

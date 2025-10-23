@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_710">
    <teiHeader>
       <fileDesc>
@@ -41,10 +41,49 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>I. 2</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>I. 2 (9).</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <summary change="#add-summary">
-                     1 copy of Risālah-ʼi maḥāsin Iṣfahān by Ḥusayn ibn Muḥammad ibn Abī al-Riḍā al-Ḥusaynī al-ʻAlawī
+                  <summary change="#ai-catalogue">
+                     <p>رساله محاسن اصفهان (ترجمه فارسی).</p>
+                     <p>A MS. of the Persian version of the Mahasin-i-Isfahan made by Husayn ibn 
+                                Muḥammad ibn Abi'r-Ridá al-Husayní al-'Alawi in or about the year 729/1329. 
+                                Another MS. of this work belonging to the Royal Asiatic Society was fully described 
+                                by me in the Journal of that Society for 1901 (vol. xxxIII, pp. 411-446 and 661-704), 
+                                to which I added in a postscript some account of another MS. formerly belonging
+                                to M. Charles Schefer, and now preserved in the Bibliothèque Nationale under 
+                                the class-mark Suppl. Persan 1573. The translator has dealt very freely with his 
+                                original, both as regards rearrangement of matter and additions and suppressions, 
+                                but in most cases the parallel passages can be found. The translator divides his 
+                                work into eight chapters entitled dhikr as follows (f. 11):
+                            </p>
+                     <p>ذكر اول (170-12 (f) بر وصف اصفهان بر سبیل اجمال 
+                                ذكر دوم (170) (f) در تفصیل آن بر سایر بلدان بطريق تفصيل 
+                                ذكر سیم ( 30 ) در حدیث گاوخوانی و خواص و نوادر نواحی آن 
+                                ذکر چهارم (32) (R) در محاسن داخلی و خارجی از تعداد مقامات و اماکن و عمارات 
+                                و تعیین حقوق و متوجّهات قديم الايام و عصر مترجم
+                            </p>
+                     <p>ذكر پنجم (260 (IT) در فرمان برداری اصفهانیان حاكم را و قوت نفس و تأثیر همت ایشان 
+                                و آنکه هرکس قصد ایشان ببدی کرده زیانی مالی یا مضرتی نفسی بدو عاید گشته
+                            </p>
+                     <p>ذكر ششم ( (IT) در اسامی ملوک و فراعنه و اكاسره كـه منشأ و منجم ایشان آنجا بوده
+                                مضاف با بعضی نوادر و غرایب كلمات ضعفاء ناس مانند زنان و مجانین و مخنثين 
+                                ذكر هفتم (1484 در فصول اربعه و آثار و نتایج آن و کیفیت تنعم و تعيش اهل بقعه 
+                                ذکر هشتم ( 88 ) در وصف کوهچه و مصلی و اسماء الرّجال و فضلا و علما و فلاسفه 
+                                و فقها و مشايخ و اكابر متقدمان و متأخّران عصر صاحب محاسن و مترجم و بعضی قصاید و اشعار
+                            </p>
+                     <p>عربی و پارسی در وصف آن 
+                                ذيل كتاب 98106 ff
+                            </p>
+                     <p>This MS. formerly belonged to the Ihtishamu'd-Dawla, whose seal it bears on 
+                                the last page (f. 106"), and came to me from Sir A. Houtum-Schindler's library in 
+                                January, 1917. It comprises 108 ff. of 21.9 x 14.7 cm and 15 ll., and is written in 
+                                a good, clear ta'liq between gold and coloured borders with rubrications, but has no 
+                                colophon or date. For a detailed description of the work, see my article above-mentioned 
+                                in the J.R.A.S. for 1901.
+                            </p>
                   </summary>
                   <msItem xml:id="I_2-item1">
                      <author key="person_f5453" change="#ids-cleanup">
@@ -62,32 +101,43 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 108
+                                    <dimensions unit="cm">
+                              <height>21.9</height>
+                              <width>14.7</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>15 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="taliq">Written in a good, clear ta'liq between gold and coloured borders with rubrications.</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin change="#fix-dates">undated</origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <provenance change="#ai-catalogue">This MS. formerly belonged to the Ihtishamu'd-Dawla, whose seal it bears on the last page (f. 106"), and came to me from <persName key="person_76699624" role="fmo">Sir A. Houtum-Schindler</persName>'s library in January, 1917.</provenance>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -111,18 +161,21 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh91005419" target="http://id.loc.gov/authorities/sh91005419#concept">Iran--History--640-1256</term>
+                     <term key="subject_sh91005419"
+                           target="http://id.loc.gov/authorities/sh91005419#concept">Iran--History--640-1256</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025" xml:id="check-ai"><persName>Syed Gillani</persName></change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
-		<change when="2020-07-06" xml:id="ids-cleanup">
-			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+         <change when="2020-07-06" xml:id="ids-cleanup">
+            <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_667">
    <teiHeader>
       <fileDesc>
@@ -20,7 +20,8 @@
                   <settlement>Cambridge</settlement>
                   <postCode>CB3 9DR</postCode>
                   <addrLine>
-                     <ref target="http://www.lib.cam.ac.uk/deptserv/neareastern/">Cambridge University Library</ref>
+                     <ref target="http://www.lib.cam.ac.uk/deptserv/neareastern/">Cambridge
+                        University Library</ref>
                   </addrLine>
                   <addrLine>
                      <email>near_eastern@lib.cam.ac.uk</email>
@@ -41,18 +42,35 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>G. 6</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>G. 6 (10)</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <summary change="#add-summary">
-                     1 copy of Rawḍat ūlī al-albāb li-Fakhr al-Dīn al-Banākatī by Banākatī, Dāvūd ibn Muḥammad, d. 1329 or 30
+                  <summary change="#ai-catalogue">
+                     <p>روضة اولى الالباب لفخر الدين البناكتي</p>
+                     <p>The Rawdatu l-Albáb, a well-known historical manual composed in 717/1317
+                        <lb/>by Fakhru'd-Dín-i-Banákatí. See Rieu's Persian Catalogue, pp.
+                        79-80.</p>
+                     <p>This MS., which is defective both at beginning and end, formerly belonged to
+                        <lb/>Prince Bahman Mirza (died at Tihrán in Rabí II, 1277=Oct.-Nov. 1860)
+                        and <lb/>afterwards, in 1282/1866, to Prince Farhád Mirzá. It afterwards
+                        formed part of the <lb/>library of the late Sir A. Houtum-Schindler,
+                        purchased by me in January, 1917. It <lb/>is written in an ugly but legible
+                        ta'liq, and comprises 185 ff. of 23 × 15 c. and 21 ll., <lb/>and appears to
+                        have been transcribed in Shíráz in 1272/1855-6.</p>
                   </summary>
                   <msItem xml:id="G_6-item1">
-                     <author ref="http://viaf.org/viaf/310620654/" key="person_310620654" change="#ids-cleanup">
-                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Banākatī, Dāvūd ibn Muḥammad, d. 1329 or 30</persName>
+                     <author ref="http://viaf.org/viaf/310620654/" key="person_310620654"
+                        change="#ids-cleanup">
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Banākatī, Dāvūd ibn
+                           Muḥammad, d. 1329 or 30</persName>
                         <persName xml:lang="fa">داود بن محمد فخر الدين بناكتى</persName>
                      </author>
-                     <title xml:lang="ar-Latn-x-lc" key="work_2272">Rawḍat ūlī al-albāb li-Fakhr al-Dīn al-Banākatī</title>
-                     <title xml:lang="ar" key="work_2272">روضة اولي الالباب لفخر الدين البناكتي</title>
+                     <title xml:lang="ar-Latn-x-lc" key="work_2272">Rawḍat ūlī al-albāb li-Fakhr
+                        al-Dīn al-Banākatī</title>
+                     <title xml:lang="ar" key="work_2272">روضة اولي الالباب لفخر الدين
+                        البناكتي</title>
                      <incipit xml:lang="ar"/>
                      <explicit xml:lang="ar" defective="true"/>
                      <note>
@@ -61,43 +79,59 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 185 <dimensions unit="cm">
+                              <height>23</height>
+                              <width>15</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>21 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="taliq">Ugly but legible ta'liq</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin change="#fix-dates">
-                     <origDate notBefore="1855" notAfter="1856" calendar="#Hijri-qamari">1272</origDate>
+                     <origDate notBefore="1855" notAfter="1856" calendar="#Hijri-qamari"
+                        >1272</origDate>
                      <origDate calendar="#Gregorian" when="1855">1855-56</origDate>
                   </origin>
-                  <provenance change="#ai-catalogue">This MS.formerly belonged to <persName key="person_f8774" role="fmo">Prince Bahman
+                  <provenance change="#ai-catalogue">This MS., which is defective both at beginning
+                     and end, formerly belonged to <persName key="person_1717161763115822560008" role="fmo">Prince Bahman
                         Mirza</persName> (died at Tihrán in Rabí II, 1277=Oct.-Nov. 1860) and
-                     afterwards, in 1282/1866, to <persName key="person_f8775" role="fmo">Prince Farhád
+                     afterwards, in 1282/1866, to <persName key="person_298825362" role="fmo">Prince Farhád
                         Mirzá</persName>. It afterwards formed part of the library of the late
                      <persName key="person_76699624" role="fmo">Sir A. Houtum-Schindler</persName>,
-                     purchased by me in January, 1917.</provenance>                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                     purchased by me in January, 1917.</provenance>
+                  <acquisition>Bequest of <persName xml:lang="en" type="standard"
+                        key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo"
+                        change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref
+                              target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+                              Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental
+                                 MSS belonging to the late E.G. Browne</hi>. Cambridge,
+                           1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
-                        <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
+                        <p>Entry to read in the Library is permitted only on presentation of a valid
+                           reader's card for admissions procedures contact <ref
+                              target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge
+                              University Library Admissions</ref>). Contact
+                              <email>near_eastern@lib.cam.ac.uk</email> for further information on
+                           the availability of this manuscript</p>
                      </availability>
                   </adminInfo>
                </additional>
@@ -108,7 +142,8 @@
          <classDecl>
             <taxonomy xml:id="LCSH">
                <bibl>
-                  <ref target="http://id.loc.gov/authorities/about.html#lcsh">Library of Congress Subject Headings</ref>
+                  <ref target="http://id.loc.gov/authorities/about.html#lcsh">Library of Congress
+                     Subject Headings</ref>
                </bibl>
             </taxonomy>
          </classDecl>
@@ -118,33 +153,49 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh85068446" target="http://id.loc.gov/authorities/sh85068446#concept">Islamic Empire--History</term>
+                     <term key="subject_sh85068446"
+                        target="http://id.loc.gov/authorities/sh85068446#concept">Islamic
+                        Empire--History</term>
                   </item>
                   <item>
-                     <term key="subject_sh85148201" target="http://id.loc.gov/authorities/sh85148201#concept">World history</term>
+                     <term key="subject_sh85148201"
+                        target="http://id.loc.gov/authorities/sh85148201#concept">World
+                        history</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
-		</change>
-		<change when="2020-07-06" xml:id="ids-cleanup">
-			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
-		</change>
+         <change when="2025" xml:id="check-ai"><persName>Syed Gillani</persName></change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue
+            using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist
+            data cleanup project). </change>
+         <change when="2020-07-06" xml:id="ids-cleanup">
+            <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup
+            project). </change>
          <change when="2018-06-08">
-            <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
+            <persName>Andrew Morrison</persName> Updated key attributes using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl"
+               >update-keys.xsl</ref>
          </change>
          <change when="2018-03-15" xml:id="add-summary">
-            <persName>Andrew Morrison</persName> Added summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl">add-summaries.xsl</ref>
+            <persName>Andrew Morrison</persName> Added summary using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl"
+               >add-summaries.xsl</ref>
          </change>
          <change when="2018-03-02" xml:id="fix-dates">
-            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements
+            using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl"
+               >fix-dates.xsl</ref>
          </change>
          <change when="2017-11-07">
-            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
+            <persName>James Cummings</persName> Up-converted the markup using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl"
+               >https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-08-04">
             <persName>Ignacio Sanchez</persName>

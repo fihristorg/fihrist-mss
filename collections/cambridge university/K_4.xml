@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_747">
    <teiHeader>
       <fileDesc>
@@ -41,13 +41,20 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>K. 4</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>K. 4 (13)</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <summary change="#add-summary">
-                     1 copy of Haft iqlīm by Amīn Aḥmad, al-Rāzī, fl. 1593-1619
+                  <summary change="#ai-catalogue">
+                     <p>هفت اقلیم</p>
+                     <p>The Haft Iqlim ("Seven Climes") of Amín Ahmad-i-Rází, a valuable and well-known geographico-biographical dictionary compiled in 1002/1593-4. See Rieu's Persian Catalogue, pp. 335-337 and references there given, and Ethé's India Office Persian Catalogue, coll. 380-499. A printed edition by Khán Sabib Mawlawi 'Abdu'l-Muqtadir was begun at Calcutta in 1918, but apparently only one fasciculus (x+112 pp.) was published, and the work was then discontinued.</p>
+                     <p>This MS. belonged formerly to Colonel Raverty, and was bought from his widow by the Trustees of the "E. J. W. Gibb Memorial" in 1907 with two other MSS., the Mujmal of Fasihi of Khwáf (see G. 7 supra) and vol. II of the Jámi'i't-Tawarikh of Rashidu'd-Din Fadlu'lláh, for £30. Some other MSS. of his were bought by the India Office.</p>
                   </summary>
                   <msItem xml:id="K_4-item1">
-                     <author ref="http://viaf.org/viaf/232008283/" key="person_232008283" change="#ids-cleanup">
+                     <author ref="http://viaf.org/viaf/232008283/"
+                             key="person_232008283"
+                             change="#ids-cleanup">
                         <persName xml:lang="ar-Latn-x-lc" type="supplied">Amīn Aḥmad, al-Rāzī, fl. 1593-1619</persName>
                         <persName xml:lang="ar">امين احمد رازي</persName>
                      </author>
@@ -61,32 +68,45 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 525
+                  <dimensions unit="cm">
+                              <height>32.2</height>
+                              <width>16.8</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>23 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="taliq">legible but ungraceful ta'liq with rubrications</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin change="#fix-dates">undated</origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <provenance change="#ai-catalogue">
+                     <p>This MS. belonged formerly to Colonel Raverty, and was bought from his widow by the Trustees of the "E. J. W. Gibb Memorial" in 1907 with two other MSS., the Mujmal of Fasihi of Khwáf (see G. 7 supra) and vol. II of the Jámi'i't-Tawarikh of Rashidu'd-Din Fadlu'lláh, for £30. Some other MSS. of his were bought by the India Office.</p>
+                  </provenance>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -110,24 +130,29 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh2008115481" target="http://id.loc.gov/authorities/sh2008115481#concept">Iran--Description and travel--Early works to 1800</term>
+                     <term key="subject_sh2008115481"
+                           target="http://id.loc.gov/authorities/sh2008115481#concept">Iran--Description and travel--Early works to 1800</term>
                   </item>
                   <item>
-                     <term key="subject_sh85054023" target="http://id.loc.gov/authorities/sh85054023#concept">Geography, Medieval</term>
+                     <term key="subject_sh85054023"
+                           target="http://id.loc.gov/authorities/sh85054023#concept">Geography, Medieval</term>
                   </item>
                   <item>
-                     <term key="subject_sh2008109077" target="http://id.loc.gov/authorities/sh2008109077#concept">Poets, Persian--Biography</term>
+                     <term key="subject_sh2008109077"
+                           target="http://id.loc.gov/authorities/sh2008109077#concept">Poets, Persian--Biography</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025" xml:id="check-ai"><persName>Syed Gillani</persName></change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
-		<change when="2020-07-06" xml:id="ids-cleanup">
-			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+         <change when="2020-07-06" xml:id="ids-cleanup">
+            <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

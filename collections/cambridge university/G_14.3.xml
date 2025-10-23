@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_653">
    <teiHeader>
       <fileDesc>
@@ -41,14 +41,23 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>G. 14.3</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>G. 143 (15)</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <summary change="#add-summary">
-                     1 copy of Khuld-i barīn by Vālah Iṣfahānī, Muḥammad Yūsuf, b. 1580?
+                  <summary change="#ai-catalogue">
+                     <p>Ff. 310 of 34'8 x 21'2 c. and 31 ll.; copied in 1270/1854 by the same scribe and <lb/>in the same handwriting as the two preceding volumes.</p>
+                     <p>This volume contains Rawda v (ff. 1-134) and vi (ff. 135-291) and the <lb/>beginning of vii (ff. 292-310).</p>
+                     <p>Rawda v contains the history of the Mongols and kindred peoples. The <lb/>principal contents are: Ethnology of the Mongols and Turks, and ancestry and <lb/>birth of Chingiz Khán (f. 3-9): reign and conquests of Chingiz Khán (ff. 9-28"); <lb/>Jújí (ff. 28-29); Chaghatáy (ff. 29"-30"); Ogotáy (f. 30"); Túlí (f. 38"); Túrákíná <lb/>Khátún (f. 38); Kuyúk (f. 39); Mangú (f. 39); Qubiláy (f. 44°); Húlágú (f. 51"); <lb/>Conquest of Baghdad (f. 52); Abaqá (f. 62); Ahmad Khán Nikúdár ( 721 <lb/>Arghún (f. 75'); Gaykhátú (f. 78"); Gházán (f. 82b); Uljáytú (f. 92"); Abú Sa'id <lb/>(f. 104) Arpa (f. 118); Músà (f. 19); Tughá-timur (f. 120); Hasan-i-Kúchak <lb/>(E120); Malik-i-Ashraf (f. 124); Jánd Beg (f. 126); Sultán Uways (f. 127 <lb/>Husayn b. Uways (f. 129); Abmad b. Uways (f. 130). Dated (on f. 134). Rajab <lb/>4. 1270 (April 2, 1854).</p>
+                     <p>Rawda vi contains the history of Tímúr and his successors down to Muḥammad <lb/>Babur and Sultán Husayn b. Bayqará. The principal contents are: Genealogy and <lb/>birth of Timur (f. 136); beginning of his reign (f. 148): birth of Shahrukh. <lb/>(f. 153): massacre at Isfahan (f. 162); fate of the Muzaffarid princes (f. 173'): <lb/>war with the Ottoman Sultán Báyazid (f. 194"); death of Timúr (f. 213'); Khalil <lb/>Sultán (f. 216"); Tímúr's children (f. 216); Sháhrukh (f. 217); Ulugh Beg <lb/>(246) 'Abdu'l-Latif (f. 253'): Báysunghur (f. 254); 'Ala'u'd-Dawla (f. 255'); <lb/>Abul-Qasim Babur (f. 261'); Sultán Abú Sa'id (f. 271); Muhammad Babur <lb/>(f. 285): Sultán Husayn b. Bayqará (f. 287); Amir Ali Shir (f. 290).</p>
+                     <p>Rawda vii (f. 292-310) contains an account of the "Black Sheep" (Qará- <lb/>qoyunlu) and "White Sheep" (Aq-qoyunlú) Turkmán dynasties, the escape from <lb/>captivity of the Safawi princes (f. 305), and the Uzbek rulers (f. 309).</p>
                   </summary>
                   <msItem xml:id="G_14.3-item1">
                      <note>Vol. 3</note>
-                     <author key="person_237544465" ref="http://viaf.org/viaf/237544465/" change="#ids-cleanup">
+                     <author key="person_237544465"
+                             ref="http://viaf.org/viaf/237544465/"
+                             change="#ids-cleanup">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Vālah Iṣfahānī, Muḥammad Yūsuf, b. 1580?</persName>
                         <persName xml:lang="fa">واله اصفهاني، محمد يوسف</persName>
                      </author>
@@ -62,25 +71,25 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 310
+                                    <dimensions unit="cm">
+                              <height>34.8</height>
+                              <width>21.2</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>31 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown">
-                        <persName xml:lang="fa-Latn-x-lc" key="person_f4605" role="scr" change="#role-assignment">Āqā Bābā Shāhmīrzādī ibn Mullā Muḥammad Mahdī <foreign xml:lang="fa">آقا بابا شاهميرزادي بن ملا محمد مهدي</foreign>
-                        </persName>
-                     </handNote>
+                     <handNote script="naskh">copied in 1270/1854 by the same scribe and in the same handwriting as the two preceding volumes</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -88,12 +97,19 @@
                      <origDate notBefore="1854" notAfter="1855" calendar="#Hijri-qamari">1271</origDate>
                      <origDate calendar="#Gregorian" when="1854">1854</origDate>
                   </origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -120,18 +136,21 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh96007363" target="http://id.loc.gov/authorities/sh96007363#concept">Iran--History--Ṣafavid dynasty, 1501-1736</term>
+                     <term key="subject_sh96007363"
+                           target="http://id.loc.gov/authorities/sh96007363#concept">Iran--History--Ṣafavid dynasty, 1501-1736</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025" xml:id="check-ai"><persName>Syed Gillani</persName></change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
-		<change when="2020-07-06" xml:id="ids-cleanup">
-			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+         <change when="2020-07-06" xml:id="ids-cleanup">
+            <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

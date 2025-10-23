@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3033">
    <teiHeader>
       <fileDesc>
@@ -20,7 +20,8 @@
                   <settlement>Cambridge</settlement>
                   <postCode>CB3 9DR</postCode>
                   <addrLine>
-                     <ref target="http://www.lib.cam.ac.uk/deptserv/neareastern/">Cambridge University Library</ref>
+                     <ref target="http://www.lib.cam.ac.uk/deptserv/neareastern/">Cambridge
+                        University Library</ref>
                   </addrLine>
                   <addrLine>
                      <email>near_eastern@lib.cam.ac.uk</email>
@@ -41,30 +42,65 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>V. 35</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>V. 35 (7).</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <summary change="#add-summary2">
-                     3 works by 2 authors on the subject of Persian poetry
+                  <summary change="#ai-catalogue">
+                     <p>ديوان قاسم الأنوار وغيره من اثاره</p>
+                     <p>An excellent MS. of the Diwán of Qásimu'l-Anwár, transcribed in 861/1456-7,
+                        <lb/> only 24 years after the poet's death in 837/1433-4. See my Persian
+                        Literature <lb/> under Tartar Dominion, pp. 473-486.</p>
+                     <p>This MS., bought of J. J. Naaman in August, 1901, comprises 268 ff. of <lb/>
+                        16.3 x 12 c. and 15 ll., is written in a clear and beautiful nasta'liq
+                        between margins <lb/> ruled in gold, and was copied by Muhammad ibn Muhammad
+                        ibn Khurram-Pír of <lb/> Gilán, who completed it at the end of Ramadán,
+                        861/Aug. 21, 1457. The ghazals <lb/> extend to f. 204b, and are followed by
+                        a tarji'band (ff. 204-209), after which come <lb/> some poems in Turkish and
+                        in a Persian dialect (probably that of Gilán), fragments, <lb/> quatrains,
+                        etc., ending on f. 227b. Next follows (ff. 228b-251a), after a blank page,
+                        <lb/> a treatise entitled Anísu'l- Arifin in mathnawi verse, to which is
+                        prefixed a prose preface in which the author gives his full name as "Alí ibn
+                        Naşir ibn Hárún ibn <lb/> Abil-Qasim al-Husayni at Tabrizi, commonly known
+                        as Qasimi, which latter penname he uses alternatively with Qásim. The title
+                        of the poem is given in the <lb/> following verse (f. 235, l. 7):</p>
+                     <p>نسخه نامش انيس العارفين، <lb/> خوش نماید گر دهم ترتیب ازین</p>
+                     <p>The volume concludes with another treatise in prose interspersed with verse
+                        <lb/> entitled Anisu'l-'Ashiqin (ff. 252-266), and ends with the following
+                        colophon:</p>
+                     <p>قد فرغ من تحرير هذا الكتاب الشريف المبارك الميمون المنظوم العبد الفقير
+                        الحقير المحتاج الى <lb/> رحمة حضرة السبحاني محمد بن محمد بن خرّم پیر
+                        الجيلاني للبحر الزخار وسالك الاطوار <lb/> ومخزن الاسرار وسيد الاحرار وقطب
+                        الفلك الدوّار قاسم الانوار سلام الله عليه وعلى من اتبعه <lb/> الهدى فى اواخر
+                        شهر رمضان المبارك سنة احدى ستين وثمانمائة</p>
+                     <p>This colophon would seem to imply that the MS. was copied for Qásimul-Anwar
+                        <lb/> himself, but the chronological difficulties involved are obvious.</p>
                   </summary>
                   <msItem xml:id="V_35-item1" n="1">
                      <locus from="1" to="227b">ff. 1-227b</locus>
                      <author key="person_16602675" ref="http://viaf.org/viaf/16602675/">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Qāsim Anvār, ʻAlī ibn Naṣīr, 1356-1433</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Qāsim Anvār, ʻAlī ibn
+                           Naṣīr, 1356-1433</persName>
                         <persName xml:lang="fa">قاسم انوار</persName>
                      </author>
-                     <title xml:lang="fa-Latn-x-lc" key="work_20631" change="#ids-cleanup">Dīvān-i Qāsim al-Anvār</title>
-                     <title xml:lang="fa" key="work_20631" change="#ids-cleanup">ديوان قاسم الانوار</title>
+                     <title xml:lang="fa-Latn-x-lc" key="work_20631" change="#ids-cleanup">Dīvān-i
+                        Qāsim al-Anvār</title>
+                     <title xml:lang="fa" key="work_20631" change="#ids-cleanup">ديوان قاسم
+                        الانوار</title>
                      <incipit xml:lang="ar"/>
                      <explicit xml:lang="ar" defective="true"/>
                      <note>
                         <foreign xml:lang="ar"/>
                      </note>
-                     <textLang mainLang="fa" otherLangs="ota">Persian, with some poems in Turkish and Persian dialect</textLang>
+                     <textLang mainLang="fa" otherLangs="ota">Persian, with some poems in Turkish
+                        and Persian dialect</textLang>
                   </msItem>
                   <msItem xml:id="V_35-item2" n="2">
                      <locus from="228b" to="251a">ff. 228b-251a</locus>
                      <author key="person_16602675" ref="http://viaf.org/viaf/16602675/">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Qāsim Anvār, ʻAlī ibn Naṣīr, 1356-1433</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Qāsim Anvār, ʻAlī ibn
+                           Naṣīr, 1356-1433</persName>
                         <persName xml:lang="fa">قاسم انوار</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_2773">Anīs al-ʿārifīn</title>
@@ -90,38 +126,54 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 268 <dimensions unit="cm">
+                              <height>16.3</height>
+                              <width>12</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>15 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="nastaliq">nasta'liq</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin change="#fix-dates">
-                     <origDate notBefore="1456" notAfter="1457" calendar="#Hijri-qamari">861</origDate>
+                     <origDate notBefore="1456" notAfter="1457" calendar="#Hijri-qamari"
+                        >861</origDate>
                      <origDate calendar="#Gregorian" when="1456">1456-7</origDate>
                   </origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <provenance change="#ai-catalogue">Bought of <persName role="fmo"
+                        key="person_f1654">J. J. Naaman</persName>in August, 1901</provenance>
+                  <acquisition>Bequest of <persName xml:lang="en" type="standard"
+                        key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo"
+                        change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref
+                              target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+                              Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental
+                                 MSS belonging to the late E.G. Browne</hi>. Cambridge,
+                           1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
-                        <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
+                        <p>Entry to read in the Library is permitted only on presentation of a valid
+                           reader's card for admissions procedures contact <ref
+                              target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge
+                              University Library Admissions</ref>). Contact
+                              <email>near_eastern@lib.cam.ac.uk</email> for further information on
+                           the availability of this manuscript</p>
                      </availability>
                   </adminInfo>
                </additional>
@@ -132,7 +184,8 @@
          <classDecl>
             <taxonomy xml:id="LCSH">
                <bibl>
-                  <ref target="http://id.loc.gov/authorities/about.html#lcsh">Library of Congress Subject Headings</ref>
+                  <ref target="http://id.loc.gov/authorities/about.html#lcsh">Library of Congress
+                     Subject Headings</ref>
                </bibl>
             </taxonomy>
          </classDecl>
@@ -142,33 +195,49 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh85100085" target="http://id.loc.gov/authorities/sh85100085#concept">Persian poetry--747-1500</term>
+                     <term key="subject_sh85100085"
+                        target="http://id.loc.gov/authorities/sh85100085#concept">Persian
+                        poetry--747-1500</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
-		</change>
-		<change when="2020-07-06" xml:id="ids-cleanup">
-			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
-		</change>
+         <change when="2025" xml:id="check-ai">Values checked by Giorgia Maffioli Brigatti</change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue
+            using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist
+            data cleanup project). </change>
+         <change when="2020-07-06" xml:id="ids-cleanup">
+            <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup
+            project). </change>
          <change when="2018-06-08">
-            <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
+            <persName>Andrew Morrison</persName> Updated key attributes using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl"
+               >update-keys.xsl</ref>
          </change>
          <change when="2018-03-28" xml:id="add-summary2">
-            <persName>Andrew Morrison</persName> Adjusted summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries2.xsl">add-summaries2.xsl</ref>
+            <persName>Andrew Morrison</persName> Adjusted summary using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries2.xsl"
+               >add-summaries2.xsl</ref>
          </change>
          <change when="2018-03-15" xml:id="add-summary">
-            <persName>Andrew Morrison</persName> Added summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl">add-summaries.xsl</ref>
+            <persName>Andrew Morrison</persName> Added summary using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl"
+               >add-summaries.xsl</ref>
          </change>
          <change when="2018-03-02" xml:id="fix-dates">
-            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements
+            using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl"
+               >fix-dates.xsl</ref>
          </change>
          <change when="2017-11-07">
-            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
+            <persName>James Cummings</persName> Up-converted the markup using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl"
+               >https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-08-26">
             <persName>Ignacio Sanchez</persName>

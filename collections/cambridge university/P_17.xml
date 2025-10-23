@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_2563">
    <teiHeader>
       <fileDesc>
@@ -41,10 +41,40 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>P. 17</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>P. 17 (10).</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <summary change="#add-summary">
-                     1 copy of Dhakhīrah-ʼi khwarazmshāhī by Jurjānī, Ismāʻīl ibn Ḥasan, 1042 or 3-1136 or 7
+                  <summary change="#ai-catalogue">
+                     <p>A fine and ancient but acephalous and incomplete manuscript of most of Books <lb/>
+                                I-III of the above-mentioned Dhakhira-i-Khwárazmsháhí, beginning with the <lb/>
+                                words in the Preface:</p>
+                     <p>... اتفاقهاء نا موافق اندرین ولایت بسیارست یکی از آن جمله آنست کی هوای بدین درستی <lb/>
+                                و باكيزكى بسبب این بحار بليذها که اندر شهر هست هوای شهر ناخوش و زبان کار میشود الخ</p>
+                     <p>The full contents of the nine books (Kitáb) and of the subdivisions of Book I <lb/>
+                                occupy ff. 1-3, and the text breaks off in the middle of Book III, Bakhsh ii, <lb/>
+                                Guftári, Ju 3, chapter 18, on "Cheese-water" (Panir áb, or Má'u'l-Jubn). The <lb/>
+                                chief contents occupy the following portions of the volume:</p>
+                     <p>Book in six Discourses (Guftár) as follows: (i) f. 19'; (ii) f. 23"; (iii) f. 30: <lb/>
+                                (iv) in five parts beginning respectively on ff. 34": 45: 59; 63: and 67"; (v) f. 70": <lb/>
+                                (vi) f. 86".</p>
+                     <p>Book II in nine Discourses as follows: (i) L. 93: (ii) f. ror; (iii) f. 107"; <lb/>
+                                (iv) f. 121; (v) f. 123b; (vi) f. 142; (vii) f. 146"; (viii) f. 147"; (ix) in three parts, <lb/>
+                                beginning respectively on fl. 148; 156; and 161</p>
+                     <p>BOOK III in two divisions called Bakhsh, of which the first (f. 163") comprises <lb/>
+                                seven Discourses as follows: (i) f. 163; (ii) f. 175; (iii) in two parts beginning <lb/>
+                                respectively on ff. 180 and 186b; (iv) f. 213"; (v) f. 223ª; (vi) f. 225; (vii) f. 230". <lb/>
+                                The second Bakhsh (f. 235") should also comprise seven Discourses, of which part <lb/>
+                                of the first only is contained in this volume, viz. Part 1, f. 235"; Part II, f. 243"; and <lb/>
+                                Part III on f. 249". Of this last Part seventeen complete chapters occur, the last of <lb/>
+                                which (ff. 262-280") contains a list of the more important drugs and simples <lb/>
+                                arranged alphabetically. Ch. 18, as already mentioned, breaks off abruptly at the <lb/>
+                                bottom of f. 281b. There is, of course, no date or colophon.</p>
+                     <p>The MS., acquired with 46 others of the Belshah collection in January, 1920, <lb/>
+                                appears to be of the thirteenth or early fourteenth century of the Christian era, and <lb/>
+                                is written in a fine, large, archaic naskh. In its present condition it comprises <lb/>
+                                281 ff. of 23'6 x 15'8 and 25 ll. There are numerous marginal notes and glosses.</p>
                   </summary>
                   <msItem xml:id="P_17-item1">
                      <note>Contains the books I, II, and III of the work only.</note>
@@ -62,32 +92,45 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 281
+                                    <dimensions unit="cm">
+                              <height>23.6</height>
+                              <width>15.8</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>25 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="naskh">Fine, large, archaic naskh.</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin change="#fix-dates">undated</origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <provenance change="#ai-catalogue">
+                     Acquired with 46 others of the <persName key="person_f7815" role="fmo">Belshah</persName> collection in January, 1920.
+                        </provenance>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -111,21 +154,25 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh85083152" target="http://id.loc.gov/authorities/sh85083152#concept">Medicine, Medieval</term>
+                     <term key="subject_sh85083152"
+                           target="http://id.loc.gov/authorities/sh85083152#concept">Medicine, Medieval</term>
                   </item>
                   <item>
-                     <term key="subject_sh85100601" target="http://id.loc.gov/authorities/sh85100601#concept">Pharmacopoeias</term>
+                     <term key="subject_sh85100601"
+                           target="http://id.loc.gov/authorities/sh85100601#concept">Pharmacopoeias</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025" xml:id="check-ai"><persName>Syed Gillani</persName></change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
-		<change when="2020-07-06" xml:id="ids-cleanup">
-			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+         <change when="2020-07-06" xml:id="ids-cleanup">
+            <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_639">
    <teiHeader>
       <fileDesc>
@@ -41,10 +41,35 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>F. 7</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>F. 7 (9)</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <summary change="#add-summary">
-                     1 copy of Ṣaḥifah bayna al-Ḥaramayn by Bāb, ʻAlī Muḥammad Shīrāzī, 1819-1850
+                  <summary change="#ai-catalogue">
+                     <p>صحيفة بين الحرمين</p>
+                     <p>This Sahifat bayna' l-Haramayu, or "Tracs [revealed] between the two
+                                [Holy] <lb/>Shrines" is one of the earliest writings of Mírzá 'Ali
+                                Muhammad the Báb. It is in <lb/>Arabic, is addressed to Hájjí Sayyid
+                                Alí of Kirmán, and begins after the</p>
+                     <p>Bismillah:</p>
+                     <p>ان هذا كتاب قد نزل على الأرض المقدسة بين الحرمين من لدن على حكيم ثم
+                                فصلت على <lb/>يد الذكر هذا صراط الله في السموات والأرض على دعاء
+                                السائل الحاج سيد على الكرماني في سبع <lb/>آيات محكمات بإذن الله على
+                                قسطاس مبين، الخ</p>
+                     <p>The only other copy of this rare book which I have seen belongs to
+                                the Leyden <lb/>Library, bears the class-mark No. 241410, and was
+                                copied in Jumádà II, 1263/May, <lb/>1847, while the Báb was still
+                                living. The present copy was made in Cyprus by <lb/>Ridwán 'Alí
+                                ("Constantine the Persian"), the son of Mirzá Yahyà Subh-i-Azal, was
+                                <lb/>completed on December 26, 1905, and was given to me by the late
+                                Mr Claude <lb/>Delaval Cobham, formerly Commissioner of Larnaca in
+                                Cyprus. It comprises <lb/>128 pp. (5 or 6 of which are blank) of
+                        20x12'7 c. and 11 ll., written in clear naskh</p>
+                     <p>within red rules. At the end (unfortunately bound upside down) is a
+                                note in <lb/>Persian by Subh-i-Azal on the disposal of the Báb's
+                                remains, and a letter dated <lb/>July 10 ? 1907] from Mr Cobham to
+                                myself which accompanied the manuscript.</p>
                   </summary>
                   <msItem xml:id="F_7-item1">
                      <author key="person_9878408" ref="http://viaf.org/viaf/9878408/">
@@ -61,22 +86,25 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>128 pp. (5 or 6 of which are blank)
+                                    <dimensions unit="cm">
+                              <height>20</height>
+                              <width>12.7</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>11 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="naskh">Written in clear naskh</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -84,12 +112,21 @@
                      <origDate notBefore="1905" notAfter="1906" calendar="#Hijri-qamari">1323</origDate>
                      <origDate calendar="#Gregorian" when="1905">1905</origDate>
                   </origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <provenance change="#ai-catalogue">Given to me by the late <persName key="person_47143611" role="dnr">Mr Claude Delaval Cobham</persName>, formerly
+                            Commissioner of Larnaca in Cyprus</provenance>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -113,15 +150,18 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh2009116570" target="http://id.loc.gov/authorities/sh2009116570#concept">Babism--Controversial literature</term>
+                     <term key="subject_sh2009116570"
+                           target="http://id.loc.gov/authorities/sh2009116570#concept">Babism--Controversial literature</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025" xml:id="check-ai"><persName>Syed Gillani</persName></change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

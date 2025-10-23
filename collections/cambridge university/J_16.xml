@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_727">
    <teiHeader>
       <fileDesc>
@@ -20,7 +20,8 @@
                   <settlement>Cambridge</settlement>
                   <postCode>CB3 9DR</postCode>
                   <addrLine>
-                     <ref target="http://www.lib.cam.ac.uk/deptserv/neareastern/">Cambridge University Library</ref>
+                     <ref target="http://www.lib.cam.ac.uk/deptserv/neareastern/">Cambridge
+                        University Library</ref>
                   </addrLine>
                   <addrLine>
                      <email>near_eastern@lib.cam.ac.uk</email>
@@ -41,17 +42,42 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>J. 16</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>J. 16 (9)</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <summary change="#add-summary">
-                     1 copy of Tadhkirat al-awliyāʼ
+                  <summary change="#ai-catalogue">
+                     <p>الذكرة الاولياء (تركي)</p>
+                     <p>Lives of Prophets and Saints in Turki, without title or author's name,
+                        beginning:</p>
+                     <p>اعوذ بالله من الشيطان الرجيم بسم الله الرّحمن الرّحيم، ۱۸۴۹ ده خبرده بویله
+                        گلمشدور كم الله تعالى جهنمده ایکی خلق براندی بری اركك آرصلان صورتنده و بری
+                        دشی آرصلان صورتنده الخ</p>
+                     <p>The anecdotes range over the whole period between Adam and the Imám Husayn
+                        ibn 'Alí, and deal with nearly all the Patriarchs and Prophets. The</p>
+                     <p>colophon (f. 124) is dated April 11, 1849. Then follows (ff. 124-127) a
+                        Turki poem on the death of the Prophet's son Ibráhím, beginning:</p>
+                     <p>بر سوزوم وار هم صونکره بیان ایتالوم اول الله یادنی یاد ایتالوم</p>
+                     <p>This in turn is followed (ff. 128-137") by a short account of the Torment of
+                        the Tomb (e), in the colophon of which the scribe gives the date as April
+                        18, 1849, and his name as Muḥammad Khalaf ibn Mullá Sulaymán al-Marjání (?)
+                        al-Bulghárí. This is followed by two other short religious poems of 27 and 6
+                        verses respectively, and four lines of Arabic, written in red.</p>
+                     <p>The MS., which, according to a signed note by Dr E. H. Minns, was "bought of
+                        Muḥammad al-Ab al-Ab 'Abd-ul-Karím" on October 10/22, 1898, at Kazan,
+                        comprises 138 ff. of 20'5 x 16'5 c. and 17 ll., and is written in a clear
+                        but outlandish ta'liq with rubrications and marginal indications of
+                        contents.</p>
                   </summary>
                   <msItem xml:id="J_16-item1">
                      <author key="person_f407" change="#ids-cleanup">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">anonymous</persName>
                      </author>
-                     <title xml:lang="ar-Latn-x-lc" key="work_21127" change="#ids-cleanup">Tadhkirat al-awliyāʼ</title>
-                     <title xml:lang="ar" key="work_21127" change="#ids-cleanup">تذكرة الاولياء</title>
+                     <title xml:lang="ar-Latn-x-lc" key="work_21127" change="#ids-cleanup">Tadhkirat
+                        al-awliyāʼ</title>
+                     <title xml:lang="ar" key="work_21127" change="#ids-cleanup">تذكرة
+                        الاولياء</title>
                      <incipit xml:lang="ar"/>
                      <explicit xml:lang="ar" defective="true"/>
                      <note>
@@ -60,42 +86,57 @@
                      <textLang mainLang="ota">Turkish</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 138 <dimensions unit="cm">
+                              <height>20.5</height>
+                              <width>16.5</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>17 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="taliq">Written in a clear but outlandish ta'liq with
+                        rubrications and marginal indications of contents.</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin change="#fix-dates">
-                     <origDate notBefore="1848" notAfter="1849" calendar="#Hijri-qamari">1265</origDate>
+                     <origDate notBefore="1848" notAfter="1849" calendar="#Hijri-qamari"
+                        >1265</origDate>
                      <origDate calendar="#Gregorian" when="1849">1849</origDate>
                   </origin>
-
-                  <provenance>bought of <persName key=""
-                     role="fmo">Muḥammad al-Ab al-Ab 'Abd-ul-Karím</persName> on October 10/22,
+                  <provenance change="#ai-catalogue #added-content">bought of <persName key=""
+                        role="fmo">Muḥammad al-Ab al-Ab 'Abd-ul-Karím</persName> on October 10/22,
                      1898 by <persName key="person_f75" role="fmo">Dr Ellis H.
-                        Minns</persName> in Kazan</provenance>                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                     Minns</persName> in Kazan</provenance>
+                  <acquisition>Bequest of <persName xml:lang="en" type="standard"
+                        key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo"
+                        change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref
+                              target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+                              Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental
+                                 MSS belonging to the late E.G. Browne</hi>. Cambridge,
+                           1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
-                        <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
+                        <p>Entry to read in the Library is permitted only on presentation of a valid
+                           reader's card for admissions procedures contact <ref
+                              target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge
+                              University Library Admissions</ref>). Contact
+                              <email>near_eastern@lib.cam.ac.uk</email> for further information on
+                           the availability of this manuscript</p>
                      </availability>
                   </adminInfo>
                </additional>
@@ -106,7 +147,8 @@
          <classDecl>
             <taxonomy xml:id="LCSH">
                <bibl>
-                  <ref target="http://id.loc.gov/authorities/about.html#lcsh">Library of Congress Subject Headings</ref>
+                  <ref target="http://id.loc.gov/authorities/about.html#lcsh">Library of Congress
+                     Subject Headings</ref>
                </bibl>
             </taxonomy>
          </classDecl>
@@ -116,33 +158,51 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh2010102954" target="http://id.loc.gov/authorities/sh2010102954#concept">Muslim saints--Biography</term>
+                     <term key="subject_sh2010102954"
+                        target="http://id.loc.gov/authorities/sh2010102954#concept">Muslim
+                        saints--Biography</term>
                   </item>
                   <item>
-                     <term key="subject_sh85107529" target="http://id.loc.gov/authorities/sh85107529#concept">Prophets, Pre-Islamic</term>
+                     <term key="subject_sh85107529"
+                        target="http://id.loc.gov/authorities/sh85107529#concept">Prophets,
+                        Pre-Islamic</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
-		</change>
-		<change when="2020-07-06" xml:id="ids-cleanup">
-			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
-		</change>
+         <change when="2025" xml:id="added-content"><persName>Yasmin Faghihi</persName></change>
+
+         <change when="2025" xml:id="check-ai"><persName>Syed Gillani</persName></change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue
+            using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist
+            data cleanup project). </change>
+         <change when="2020-07-06" xml:id="ids-cleanup">
+            <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup
+            project). </change>
          <change when="2018-06-08">
-            <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
+            <persName>Andrew Morrison</persName> Updated key attributes using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl"
+               >update-keys.xsl</ref>
          </change>
          <change when="2018-03-15" xml:id="add-summary">
-            <persName>Andrew Morrison</persName> Added summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl">add-summaries.xsl</ref>
+            <persName>Andrew Morrison</persName> Added summary using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl"
+               >add-summaries.xsl</ref>
          </change>
          <change when="2018-03-02" xml:id="fix-dates">
-            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements
+            using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl"
+               >fix-dates.xsl</ref>
          </change>
          <change when="2017-11-07">
-            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
+            <persName>James Cummings</persName> Up-converted the markup using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl"
+               >https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-08-10">
             <persName>Ignacio Sanchez</persName>

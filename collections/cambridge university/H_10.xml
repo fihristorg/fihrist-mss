@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_685">
    <teiHeader>
       <fileDesc>
@@ -41,18 +41,38 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>H. 10</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>H. 10 (12)</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <summary change="#add-summary">
-                     1 copy of Sharafnāmah-ʼi Sharaf al-Dīn Bitlīsī by Bidlīsī, Sharaf Khān, b. 1543
+                  <summary change="#ai-catalogue">
+                     <p>شرفنامه شرف الدين بتلبسي</p>
+                     <p>A history of the Kurds and their chieftains, called by Sir A. Houtum-Schindler 
+                               Akrád-náma and described on the title-page in Persian as</p>
+                     <p>تأريخ مولانا اشرف الدين فى احوال امراء و خوانین و خصوصیات ایشان</p>
+                     <p>but properly entitled Sharaf-náma, by Sharafu'd-Dín of Bitlís. See Rieu's Persian 
+                               Catalogue, pp. 208-210, his Persian Supplement, Nos. 95 and 96. pp. 64-65, and 
+                               Ethé's Bodleian Persian Catalogue, Nos. 312-314. The text was published by 
+                               Veliaminof-Zernof at St Petersburg in 1860, and a French translation by F. B. 
+                               Charmoy at the same place in 1868-1875. Further bibliographical references are 
+                               given by Rieu.</p>
+                     <p>The history comes down to 1005/1596-7, and this MS. was transcribed in 
+                               1027/1618. The MS. comprises 184 ff. of 28.6 x 17'9 c. and 25 ll., and is written 
+                               in a fair ta'liq with rubrications.</p>
                   </summary>
                   <msItem xml:id="H_10-item1">
-                     <author key="person_5076502" ref="http://viaf.org/viaf/5076502/" change="#ids-cleanup">
+                     <author key="person_5076502"
+                             ref="http://viaf.org/viaf/5076502/"
+                             change="#ids-cleanup">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">Bidlīsī, Sharaf Khān, b. 1543</persName>
                         <persName xml:lang="ar">شرف الدين البتليسي</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_20310" change="#ids-cleanup">Sharafnāmah-ʼi Sharaf al-Dīn Bitlīsī</title>
-                     <title xml:lang="ar-Latn-x-lc" type="alt" key="work_20310" change="#ids-cleanup">Akradnāmah</title>
+                     <title xml:lang="ar-Latn-x-lc"
+                            type="alt"
+                            key="work_20310"
+                            change="#ids-cleanup">Akradnāmah</title>
                      <title xml:lang="fa" key="work_20310" change="#ids-cleanup">شرفنامۀ شرف الدين بتليسي</title>
                      <title xml:lang="ar" type="alt" key="work_20310" change="#ids-cleanup">اكردنامه</title>
                      <incipit xml:lang="ar"/>
@@ -61,26 +81,29 @@
                         <foreign xml:lang="ar"/>
                      </note>
                      <bibl type="related">
-                        <ref target="https://cudl.lib.cam.ac.uk/view/MS-H-00010/1"></ref> Digitised version of H. 10</bibl>
+                        <ref target="https://cudl.lib.cam.ac.uk/view/MS-H-00010/1"/> Digitised version of H. 10</bibl>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 184
+                                    <dimensions unit="cm">
+                              <height>28.6</height>
+                              <width>17.9</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>25 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="taliq">Written in a fair ta'liq with rubrications.</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -88,12 +111,19 @@
                      <origDate notBefore="1617" notAfter="1618" calendar="#Hijri-qamari">1027</origDate>
                      <origDate calendar="#Gregorian" when="1596">1596-7</origDate>
                   </origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -117,18 +147,21 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh2005000306" target="http://id.loc.gov/authorities/sh2005000306#concept">Kurds--History</term>
+                     <term key="subject_sh2005000306"
+                           target="http://id.loc.gov/authorities/sh2005000306#concept">Kurds--History</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025" xml:id="check-ai"><persName>Syed Gillani</persName></change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
-		<change when="2020-07-06" xml:id="ids-cleanup">
-			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+         <change when="2020-07-06" xml:id="ids-cleanup">
+            <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

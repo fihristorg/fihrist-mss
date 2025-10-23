@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_573">
    <teiHeader>
       <fileDesc>
@@ -41,9 +41,28 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>E. 7b</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>E. 7* (8)</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <summary>Copy of the first tract of the ms. E. 7 of the E. G. Browne Collection</summary>
+                  <summary change="#ai-catalogue">
+                     <p>A copy of the above-mentioned Qiyámat-náma labelled with the title of the <lb/>
+                                book and name of the author as above in the Arabic character, under which is <lb/>
+                                written in English "adequately copied from an old Manuscript by Dr Riza." On <lb/>
+                                the other cover the book is labelled in English, "Quotations (3rd Book) on <lb/>
+                                Ontological Questions." The book is an ordinary note-book of 20'2 x 16'6 c. and <lb/>
+                                18 ll., of which 62 leaves (about half the book) are written on, but on one side <lb/>
+                                only, so far as the poem is concerned, the opposite page being reserved for notes <lb/>
+                                and comments, which, however, have only been supplied in a few cases (e.g. on <lb/>
+                                p. 57). Shorter notes in Turkish are placed beside and beneath the text. The <lb/>
+                                book was given to me by Dr Ridá (Rizá) Tawfiq at the same time as E. 7, the <lb/>
+                                original from which it was evidently copied, as shown by the following calculation <lb/>
+                                of the time required for copying the poem:</p>
+                     <p>قيامتنامه هر گون بش صحيفه استنساخ ايدلمك و هفته ده درت كون مشغول اولمق شرطیله طقوز</p>
+                     <p>هفته ده اتمام ایدیله بیله جکدر</p>
+                     <p>This indicates an original of 180 pp., and this poem in E. 7 actually fills 186 pp.</p>
+                  </summary>
                   <msItem xml:id="E_7b-item1">
                      <author key="person_f1076">
                         <persName xml:lang="ar-Latn-x-lc" type="supplied">Faḍl Allāh Khalīfah al-ʻAlī al-Aʻlá</persName>
@@ -60,32 +79,43 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 62 
+                                    <dimensions unit="cm">
+                              <height>20.2</height>
+                              <width>16.6</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>18 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote>Copied by Dr Riza.</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin change="#fix-dates">undated</origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <provenance change="#ai-catalogue">The book was given to me by <persName key="person_30349297" role="dnr" ref="https://viaf.org/en/viaf/30349297">Rıza Tevfik, 1869?-1949</persName> at the same time as E. 7.</provenance>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -112,18 +142,22 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh85063200" target="http://id.loc.gov/authorities/sh85063200#concept">Hurufis</term>
+                     <term key="subject_sh85063200"
+                           target="http://id.loc.gov/authorities/sh85063200#concept">Hurufis</term>
                   </item>
                   <item>
-                     <term key="subject_sh85060381" target="http://id.loc.gov/authorities/sh85060381#concept">Islamic heresies</term>
+                     <term key="subject_sh85060381"
+                           target="http://id.loc.gov/authorities/sh85060381#concept">Islamic heresies</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025" xml:id="check-ai"><persName>Syed Gillani</persName></change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

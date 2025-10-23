@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_628">
    <teiHeader>
       <fileDesc>
@@ -41,10 +41,40 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>F. 57</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>F. 57 (9)</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="#multipleWorks">
-                  <summary change="#add-summary2">
-                     2 works by Sayyid Mahdī Dahajī on the subjects of Babism and Persian letters
+                  <summary change="#ai-catalogue">
+                     <p>رساله سید مهدی دهجی</p>
+                     <p>Some account of this remarkable tract will be found in my Materials for the <lb/>
+                                Study of the Bábí Religion (Cambridge, 1918), pp. 231-233 and 237. The author, <lb/>
+                                Sayyid Mahdi of Dahaj (near Shahr-i-Bábak), was eight years old at the time of <lb/>
+                                the Báb's "Manifestation" in 1844, and became a believer in him at the age of <lb/>
+                                thirteen. Though he never saw the Báb, he was acquainted with many of his chief <lb/>
+                                followers, such as Sayyid Yahyà of Dáráb, and in 1858 he went to Baghdad to visit <lb/>
+                                Subh-i-Azal, but was much more impressed by Bahá'u'lláh, whom he followed when <lb/>
+                                the schism came, and to whom he remained faithful for thirty-five years. When <lb/>
+                                Bahá'u'lláh died in 1892, the author, Sayyid Mahdi, espoused the cause of his son <lb/>
+                                Muhammad Ali, and repudiated the claims of 'Abbás Efendi 'Abdu'l-Bahá. His <lb/>
+                                long connection with the Bábí community from the earliest days renders his account <lb/>
+                                singularly full and detailed, and enables him to supply many interesting details not <lb/>
+                                to be found elsewhere. He was moved to write it by the perusal of the Persian <lb/>
+                                Introduction to my text of Hajji Mirza Jáni's Nagtatu'l-Kaf ("E. J. W. Gibb <lb/>
+                                Memorial" Series, vol. xv), which he desired to criticize in many details. Unfortu- <lb/>
+                                nately only the first half of his work reached me, and I do not know whether the <lb/>
+                                other half was actually written and not sent, or lost in the post, or whether old age <lb/>
+                                or illness prevented the fulfilment of his project.</p>
+                     <p>The MS., an autograph, comprises 291 pp. of 20'8 x 13 c. and 18 ll., and is <lb/>
+                                written in a clear nasta'liq, with long passages in red ink occurring at intervals. <lb/>
+                                From a passage on p. 254 it appears that it was composed in A.D. 1914. A letter <lb/>
+                                of seven closely written pages from the author is pasted in at the end. The text of <lb/>
+                                the book breaks off abruptly at the bottom of p. 291 after the account of the murder <lb/>
+                                of the Azalís, and in the middle of the account of the Iqán (see immediately below, <lb/>
+                                F. 58 and F. 59). My Introduction to the Nuqtatu'l-Kaf supplies the text to this <lb/>
+                                elaborate and valuable commentary, the loss of the second half of which is greatly <lb/>
+                                to be deplored.</p>
                   </summary>
                   <msItem xml:id="F_57-item1" n="1">
                      <note>The manuscript contains only the first part of this work.</note>
@@ -78,22 +108,25 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>291 pp.
+                                    <dimensions unit="cm">
+                              <height>20</height>
+                              <width>18</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>18 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="nastaliq">Written in a clear nasta'liq, with long passages in red ink occurring at intervals.</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -101,12 +134,19 @@
                      <origDate notBefore="1904" notAfter="1905" calendar="#Hijri-qamari">1322</origDate>
                      <origDate calendar="#Gregorian" when="1904">1904</origDate>
                   </origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -150,12 +190,14 @@
                <list>
                   <item>
                      <ref target="#a1">
-                        <term key="subject_sh85010741" target="http://id.loc.gov/authorities/sh85010741#concept">Babism</term>
+                        <term key="subject_sh85010741"
+                              target="http://id.loc.gov/authorities/sh85010741#concept">Babism</term>
                      </ref>
                   </item>
                   <item>
                      <ref target="#a1 #a2">
-                        <term key="subject_sh85100074" target="http://id.loc.gov/authorities/sh85100074#concept">Persian letters</term>
+                        <term key="subject_sh85100074"
+                              target="http://id.loc.gov/authorities/sh85100074#concept">Persian letters</term>
                      </ref>
                   </item>
                </list>
@@ -163,8 +205,10 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025" xml:id="check-ai"><persName>Syed Gillani</persName></change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

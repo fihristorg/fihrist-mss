@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_422">
    <teiHeader>
       <fileDesc>
@@ -41,10 +41,21 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>C. 7</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>C. 7 (8).</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <summary change="#add-summary">
-                     1 copy of al-Fuṣūl al-muhimmah fī maʻrifat al-aʼimmah by Ibn al-Ṣabbāgh, ʻAlī ibn Muḥammad, 1383-1451 or 2
+                  <summary change="#ai-catalogue">
+                     <p>الفصول المهمة في معرفة الأئمة</p>
+                     <p>Another work on the Twelve Imáms, entitled Al-Fuşúlu'l-muhimma fi ma'rifati- <lb/>
+                l-A'imma, defective at the beginning and consequently lacking the author's name <lb/>
+                which, however, as we learn from Brockelmann (11, 176) is Núru'd-Din 'Ali <lb/>
+                ibn Muhammad ibnu's-Sabbágh (d. 855/1451). For description of contents see <lb/>
+                Ahlwardt's Berlin Arabic Catalogue, vol. IX, pp. 212-213, Nos. 9671-2.</p>
+                     <p>Ff. 202 of 18.5 x 12 c. and 18 ll.; good naskh with rubrications, dated 9 Rabí 1, <lb/>
+                1178/Sept. 14, 1861; scribe, 'Abdu'l-Aziz ibn Sa'id [ibn] al-Hajj Ahmad an-Najjár. <lb/>
+                Bought on Nov. 12, 1920, from the Belshah collection.</p>
                   </summary>
                   <msItem xml:id="C_7-item1">
                      <author key="person_22006530" ref="http://viaf.org/viaf/22006530/">
@@ -61,22 +72,25 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 202
+                  <dimensions unit="cm">
+                              <height>18.5</height>
+                              <width>12</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>18 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="naskh">Good naskh with rubrications</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -84,12 +98,22 @@
                      <origDate notBefore="1764" notAfter="1765" calendar="#Hijri-qamari">1178</origDate>
                      <origDate calendar="#Gregorian" when="1861">1861</origDate>
                   </origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <provenance change="#ai-catalogue">
+                     Bought on Nov. 12, 1920, from the <persName key="person_f7815" role="fmo">Belshah</persName> collection.
+                  </provenance>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -113,15 +137,20 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh2008104277" target="http://id.loc.gov/authorities/sh2008104277#concept">Imams (Shiites)--Biography</term>
+                     <term key="subject_sh2008104277"
+                           target="http://id.loc.gov/authorities/sh2008104277#concept">Imams (Shiites)--Biography</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025-08-11" xml:id="check-ai">
+            <persName>Syed Gillani</persName>
+         </change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_541">
    <teiHeader>
       <fileDesc>
@@ -41,10 +41,39 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>D. 7</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>D. 7 (9).</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="#multipleWorks">
-                  <summary change="#add-summary2">
-                     2 works by Anṣārī al-Harawī, ʻAbd Allāh ibn Muḥammad, 1006-1089 on the subjects of Joseph, Prophets, Muslim saints, and Sufism
+                  <summary change="#ai-catalogue">
+                     <p>انا اليس المريدين انا كبد المالكيت <lb/>
+                            (۲) کنز</p>
+                     <p>(۱)</p>
+                     <p>Two Persian prose treatises, of religious and mystical contents, ascribed <note>[Mr R. Levy has shown (J.R.A.S. for January, 1929, pp. 103 et seqq.) that the Anisu'l-Muridin <lb/>
+                            was written after the death of Anşárí.]</note> to the <lb/>
+                            well-known Shaykh 'Abdu'llah Ansari of Herát (b. 396/1005-6; d. 481/1088-9)</p>
+                     <p>(1) The first treatise (f. 7b-121a) is entitled (f. 8a, l. 1) Anisul-Muridin <lb/>
+                            wa-Shamsu'l-Majális, and the author's name occurs immediately after the doxology <lb/>
+                            (f. 7b, ll. 3-4). It appears from the first page (f. 7b), which unfortunately presents <lb/>
+                            many lacunae caused by a defective original, that the author wrote this book, <lb/>
+                            containing the story of Joseph, at the request of certain friends. The basis of it is <lb/>
+                            supplied by the Siratu Yusuf in the Qur'an, of which the author first speaks, <lb/>
+                            describing the circumstances in which it was revealed, and the number of verses <lb/>
+                            (111), words (1887), and letters (766,000) which it contains. The Arabic text and <lb/>
+                            its Persian translation are interrupted by many digressions and anecdotes of <lb/>
+                            Prophets, Saints, etc.</p>
+                     <p>(2) The second treatise (ff. 121b-320b) is headed, in a different hand from the <lb/>
+                            text, "Kanzu's-Sálikin of Khwaja Anşárí," but this title does not seem to be <lb/>
+                            mentioned in the work itself, which begins:</p>
+                     <p>حمد بیحد اللهی را و درود بیعد پادشاهی را که بر داشت از دیدهٔ دلها رمد ورفع السماء بغير عمد الخ</p>
+                     <note>[Qur'an, XIII, 2.]</note>
+                     <p>In this seemingly unsystematic treatise there is no division into chapters; it is <lb/>
+                            written in a rather ornate style with numerous pieces of verse interspersed, and in <lb/>
+                            the latter part are a good many lacunae evidently arising from a defective original</p>
+                     <p>Ff. 322 of 20'5 x 15 c. and 17 ll.; clear, modern Persian naskh with rubrications; <lb/>
+                            no date or scribe's name. This was one of twenty MSS. which fell to my share at <lb/>
+                            the second division of the Belshah MSS. in the spring of 1920.</p>
                   </summary>
                   <msItem xml:id="D_7-item1" n="1">
                      <locus from="7b" to="121a">ff. 7b-121a</locus>
@@ -77,32 +106,41 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 322
+                                    <dimensions unit="cm">
+                              <height>20.5</height>
+                              <width>15</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>17 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="naskh">clear, modern Persian naskh with rubrications</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin change="#fix-dates">undated</origin>
-                  <acquisition>Bequest of <persName xml:lang="en" key="person_29651479" role="fmo" change="#role-assignment #ids-cleanup">E. G. Browne</persName>.</acquisition>
+                  <provenance change="#ai-catalogue">This was one of twenty MSS. which fell to my share at the second division of the <persName key="person_f7815" role="fmo">Belshah MSS</persName> in 1921.</provenance>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               key="person_29651479"
+                               role="fmo"
+                               change="#role-assignment #ids-cleanup">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -146,22 +184,26 @@
                <list>
                   <item>
                      <ref target="#a1">
-                        <term key="subject_sh86000392" target="http://id.loc.gov/authorities/sh86000392#concept">Joseph (Son of Jacob)--In the Koran</term>
+                        <term key="subject_sh86000392"
+                              target="http://id.loc.gov/authorities/sh86000392#concept">Joseph (Son of Jacob)--In the Koran</term>
                      </ref>
                   </item>
                   <item>
                      <ref target="#a1">
-                        <term key="subject_sh85107529" target="http://id.loc.gov/authorities/sh85107529#concept">Prophets, Pre-Islamic</term>
+                        <term key="subject_sh85107529"
+                              target="http://id.loc.gov/authorities/sh85107529#concept">Prophets, Pre-Islamic</term>
                      </ref>
                   </item>
                   <item>
                      <ref target="#a1">
-                        <term key="subject_sh85089073" target="http://id.loc.gov/authorities/sh85089073#concept">Muslim saints</term>
+                        <term key="subject_sh85089073"
+                              target="http://id.loc.gov/authorities/sh85089073#concept">Muslim saints</term>
                      </ref>
                   </item>
                   <item>
                      <ref target="#a1 #a2">
-                        <term key="subject_sh2008112367" target="http://id.loc.gov/authorities/sh2008112367#concept">Sufism--Early works to 1800</term>
+                        <term key="subject_sh2008112367"
+                              target="http://id.loc.gov/authorities/sh2008112367#concept">Sufism--Early works to 1800</term>
                      </ref>
                   </item>
                </list>
@@ -169,11 +211,13 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025" xml:id="check-ai"><persName>Syed Gillani</persName></change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
-		<change when="2020-07-06" xml:id="ids-cleanup">
-			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+         <change when="2020-07-06" xml:id="ids-cleanup">
+            <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

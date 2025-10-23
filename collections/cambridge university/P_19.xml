@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_2565">
    <teiHeader>
       <fileDesc>
@@ -41,10 +41,20 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>P. 19</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>P. 19 (11)</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <summary change="#add-summary">
-                     1 copy of Dhakhīrah-ʼi khwarazmshāhī by Jurjānī, Ismāʻīl ibn Ḥasan, 1042 or 3-1136 or 7
+                  <summary change="#ai-catalogue">
+                     <p>The latter part of Book vi (from Guftár xi, Juz' i, Báb I to Guftár xxi, Báb 5) of the same Dhakhira-i-Khwárazmsháhí, dealing with local diseases a capite ad calcem, beginning in this MS. with the liver, and ending with gout and sciatica.</p>
+                     <p>This MS. was also one of the forty-seven bought from the Belshah collection in January, 1920. It is not only acephalous and incomplete at the end, but the leaves have been bound in the wrong order and there are half a dozen dislocations. They are now numbered correctly, as far as possible, and stand in the following order:</p>
+                     <p>(4) Ff. 1-19. Guftar xi, i, 1-Guftar xi, ii, 1.</p>
+                     <p>(F) Ff. 246-256. Guftar xx, iii, 6-Guftar xxi, 3 (E) Ff. 224-245. Guftár xx, ii, 2-Guftár xx, iii, 5. (B) Ff. 20-28. Guftar xi, ii, 2-Guftar xi, iii, 2. (D) Ff. 48-223. Guftar xiii, ii, 1-Guftár xx, ii, 2. (C) Ff. 29-47. Guftár xi, iii, 2-Guftár xiii, ii, 1. (G) Ff. 257-262. Guftár xxi, 3-Guftár xxi, 5.</p>
+                     <p>There are also 26 ff. at the end on medicaments in which chapter-headings 2-8, 10, 12 and 15 occur. The chief preparations described fall under the following headings:</p>
+                     <p>(۱) مفرح (۲) معجون (۳) جوارش (۴) اطریفل (۵) مربا (٦) اشربه و ربوب (۷) لعوق (۸) سفوف (1) حبّ (۱۰) قرص ، (۱۱) شیاف (۱۲) دهن</p>
+                     <p>In this portion also there are several dislocations and lacunae.</p>
+                     <p>The MS. comprises 288 ff. of 23.8 x 16 c. and 19 ll., and is written throughout (except in the case of the last 26 ff., which are in a much more modern naskh hand) in a clear and archaic naskh, apparently of the fourteenth century of the Christian era. There are rubrications throughout.</p>
                   </summary>
                   <msItem xml:id="P_19-item1">
                      <note>Contains the latter part of book VI only.</note>
@@ -62,22 +72,24 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 288<dimensions unit="cm">
+                              <height>23.8</height>
+                              <width>16</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>19 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="naskh">This manuscript is written in a clear and archaic naskh, apparently of the fourteenth century of the Christian era. The last 26 folios are in a more modern naskh hand.</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -85,12 +97,20 @@
                      <origDate calendar="#Hijri-qamari" from="0699" to="0802">8th century<!-- Please review date attributes, see https://git.io/fihrist-dates --></origDate>
                      <origDate calendar="#Gregorian" from="1300" to="1400">14th century</origDate>
                   </origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <provenance change="#ai-catalogue">This MS. was one of the forty-seven bought from the <persName key="person_f7815" role="fmo">Belshah</persName> collection in January, 1920.</provenance>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -114,21 +134,25 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh85083152" target="http://id.loc.gov/authorities/sh85083152#concept">Medicine, Medieval</term>
+                     <term key="subject_sh85083152"
+                           target="http://id.loc.gov/authorities/sh85083152#concept">Medicine, Medieval</term>
                   </item>
                   <item>
-                     <term key="subject_sh85100601" target="http://id.loc.gov/authorities/sh85100601#concept">Pharmacopoeias</term>
+                     <term key="subject_sh85100601"
+                           target="http://id.loc.gov/authorities/sh85100601#concept">Pharmacopoeias</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025" xml:id="check-ai"><persName>Syed Gillani</persName></change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
-		<change when="2020-07-06" xml:id="ids-cleanup">
-			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+         <change when="2020-07-06" xml:id="ids-cleanup">
+            <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_525">
    <teiHeader>
       <fileDesc>
@@ -41,13 +41,41 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>D. 11</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>D. 11 (9)</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <summary change="#add-summary">
-                     1 copy of Zubdah al-ḥaqāʼiq li-ʻAyn al-Quḍāh al-Ḥamadānī by ʻAyn al-Quḍāh al-Hamadhānī, ʻAbd Allāh ibn Muḥammad, d. 1131
+                  <summary change="#ai-catalogue">
+                     <p>زبدة الحقايق لعين القضاة الهمداني</p>
+                     <p>The Zaldatu'l-Jagdig ("Cream of Verities") of 'Aynu'l-Qudát al-Hamadani <lb/>
+                                (d. 525/1131 or 533/1138/9), concerning whom see Rieu's Persian Catalogue, <lb/>
+                                pp. 411-412 and references there given <note>[This is the same work as that described by Ethé, I. O. Persian Catalogue, col. 980, No. 1793 <lb/>
+                                under the title Tamhidat-i 'Ain-alkudat; see also his Bodleian Persian Catalogue, No. 1247.]</note>. This work, written in Persian with <lb/>
+                                numerous Arabic citations (written in red) from the Qur'an and Traditions, appears <lb/>
+                                to be addressed to neophytes in the Súfi doctrine, and to have no division into <lb/>
+                                chapters. It begins after the usual brief doxology:
+                            </p>
+                     <p>اره</p>
+                     <p>... تمهید اصل اوّل بدانکه در حق صورت بینان و ظاهر جویان با مصطفی صلعم خطاب باین <lb/>
+                                آمد كه وتريم ينظرُونَ إِليكَ وهم لا يبصرون ای عزیز میگویم مگر این آیت در قرآن نخوانده یا <lb/>
+                                ندیده که قد جاءَكُمْ مِنَ اللهِ نُورٌ وكِتاب مبین محمد را نور میخواند و قرآن که کلام خدای
+                            </p>
+                     <p>است نور میخواند كه فَاتَّبِعُوا النُّورَ الَّذِى أُنْزِلَ مَعَهُ تو از قرآن حروف سیاه بینی بر کاغذ سفید <lb/>
+                                كاغذ و مداد و سطرها نور نیست پس القرآن كلام الله غير مخلوق کدامست <lb/>
+                                پس
+                            </p>
+                     <p>Ff. 148 of 20'9 x 14'5 c. and 15 ll.; large, clear naskh, the Arabic sentences <lb/>
+                                written in red and fully pointed, the Persian also fully pointed for the first few <lb/>
+                                pages. The scribe's name is not given, but his work was finished in the middle of <lb/>
+                                Rabi 1, 999/February, 1591. The MS. was bought for 3 from Naaman on <lb/>
+                                May 7, 1903.
+                            </p>
                   </summary>
                   <msItem xml:id="D_11-item1">
-                     <author key="person_96998098" ref="http://viaf.org/viaf/96998098/" change="#ids-cleanup">
+                     <author key="person_96998098"
+                             ref="http://viaf.org/viaf/96998098/"
+                             change="#ids-cleanup">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">ʻAyn al-Quḍāh al-Hamadhānī, ʻAbd Allāh ibn Muḥammad, d. 1131</persName>
                         <persName xml:lang="ar">عين القضاة <addName xml:lang="ar" type="nisbah">الهمداني</addName>
                         </persName>
@@ -62,22 +90,25 @@
                      <textLang mainLang="fa" otherLangs="ar">Persian with numerous Arabic quotations</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 148
+                                    <dimensions unit="cm">
+                              <height>20.9</height>
+                              <width>14.5</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>15 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="naskh">large, clear naskh, the Arabic sentences written in red and fully pointed, the Persian also fully pointed for the first few pages</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -85,12 +116,20 @@
                      <origDate notBefore="1590" notAfter="1591" calendar="#Hijri-qamari">999</origDate>
                      <origDate calendar="#Gregorian" when="1591">1591</origDate>
                   </origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <provenance change="#ai-catalogue">The MS. was bought for 3 from <persName key="person_f1654" role="fmo">Naaman</persName> on May 7, 1903.</provenance>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -114,21 +153,25 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh2008112367" target="http://id.loc.gov/authorities/sh2008112367#concept">Sufism--Early works to 1800</term>
+                     <term key="subject_sh2008112367"
+                           target="http://id.loc.gov/authorities/sh2008112367#concept">Sufism--Early works to 1800</term>
                   </item>
                   <item>
-                     <term key="subject_sh85072967" target="http://id.loc.gov/authorities/sh85072967#concept">Koran--Hermeneutics</term>
+                     <term key="subject_sh85072967"
+                           target="http://id.loc.gov/authorities/sh85072967#concept">Koran--Hermeneutics</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025" xml:id="check-ai"><persName>Syed Gillani</persName></change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
-		<change when="2020-07-06" xml:id="ids-cleanup">
-			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+         <change when="2020-07-06" xml:id="ids-cleanup">
+            <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

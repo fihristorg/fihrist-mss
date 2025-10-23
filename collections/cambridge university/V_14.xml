@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3010">
    <teiHeader>
       <fileDesc>
@@ -20,7 +20,8 @@
                   <settlement>Cambridge</settlement>
                   <postCode>CB3 9DR</postCode>
                   <addrLine>
-                     <ref target="http://www.lib.cam.ac.uk/deptserv/neareastern/">Cambridge University Library</ref>
+                     <ref target="http://www.lib.cam.ac.uk/deptserv/neareastern/">Cambridge
+                        University Library</ref>
                   </addrLine>
                   <addrLine>
                      <email>near_eastern@lib.cam.ac.uk</email>
@@ -41,15 +42,43 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>V. 14</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>V. 14 (7)</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="#multipleWorks">
-                  <summary change="#add-summary2">
-                     2 works by 2 authors on the subjects of Persian poetry, Sufi poetry, and Sufism
+                  <summary change="#ai-catalogue">
+                     <p>منتخبات مثنوی</p>
+                     <p>A small MS. volume containing (ff. 3-30) selections from the Mathnawi,
+                        compiled in 943/1536-7. At the end the compiler has added the five following
+                        verses of his own: </p>چونك كرد الطاف مولى فتح باب مفردات مثنوی شد
+                     انتخاب<p/>بر امید آنك آن سلطان عشق سازد این درمانده را درمان عشق<p/> این دل
+                     گمراه را ره بین کند غرق بحر عشق شمس الدين كند<p/>اختیارم می کند آن پاك ذات
+                     مثنوی شد انتخاب مفردات <p>بدين (?) تاریخ گزینش بشنوی هست لولوهای درج مثنوی
+                        </p><p> تاریخ سنه ثلث و اربعین و تسعمائه </p>
+                     <note>So corrected in pencil. Originally مفردات stood at the beginning instead
+                        of the end of the line.</note>
+                     <p>As the chronogram appears to give 901/1495-6, the date 943/1536-7 may
+                        indicate the date of transcription. </p><p>These extracts are followed (ff.
+                        31-40) by an anonymous Persian tract entitled Mir átal-Qulab, beginning,
+                        after the doxology: </p>
+                     <p>... اما بعد بدانای طالب علم یقین و ای کاشف اسرار دین که این فقیر چند کلمه از
+                        كنوز واردات غیبی در معنی حدیث نبوی صلعم ادا کرده تا سالكانرا مرات رؤیت
+                        گردد... و این رساله مشتمل است بسه دایره و این رساله را نام نهاده شد مرآت
+                        القلوب تا در میان اهل اشارت محبوب گردد والله الموفق والمعين قال رسول الله
+                        صلعم من أراد ان يجلس مع الله فليجلس مع اهل</p><p>التصوف الخ</p>
+                     <p>There are diagrams of the "three circles" to which allusion is made above,
+                        and at the end a qasida of some eighty verses beginning: </p> اشجار باغ راست
+                     از دیربای چین قبا<p>ازهار تاج وار ز مبدع شدش عطا </p>
+                     <p>The MS. was one of thirteen bought of J. J. Naaman for £25 in May, 1902. It
+                        comprises 40 ff. of 16'6 x 12'3 and 13-15 ll., and is written throughout in
+                        an ungraceful but legible ta'liq. </p>
                   </summary>
                   <msItem xml:id="V_14-item1" n="1" class="#selection">
                      <locus from="3b" to="30b">ff. 3b-30b</locus>
                      <author key="person_98930150" ref="http://viaf.org/viaf/98930150/">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Jalāl al-Dīn Rūmī, Maulana, 1207-1273</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Jalāl al-Dīn Rūmī,
+                           Maulana, 1207-1273</persName>
                         <persName xml:lang="fa">جلال الدين رومی</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_109">Muntakhabāt-i mas̲navī</title>
@@ -61,9 +90,12 @@
                      </note>
                      <listBibl>
                         <bibl>
-                           <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/253">Nicholson (1932), p.227</ref>
+                           <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/253"
+                              >Nicholson (1932), p.227</ref>
                         </bibl>
-                        <bibl type="text-relations">Selections from the <title xml:lang="fa-Latn-x-lc">Mas̲navī-i maʻnavī <foreign xml:lang="fa">مثنوی معنوی</foreign>
+                        <bibl type="text-relations">Selections from the <title
+                              xml:lang="fa-Latn-x-lc">Mas̲navī-i maʻnavī <foreign xml:lang="fa"
+                                 >مثنوی معنوی</foreign>
                            </title>.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
@@ -83,45 +115,55 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 40 <dimensions unit="cm">
+                              <height>16.6</height>
+                              <width>12.3</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>13-15 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="taliq">Ungraceful but legible ta'liq</handNote>
                   </handDesc>
-                  <additions>
-                     <ref target="#a2">
-                        <figure>
-                           <figDesc>The manuscript contains diagrams of the three circles mentioned in this work.</figDesc>
-                        </figure>
-                     </ref>
-                  </additions>
                </physDesc>
                <history>
                   <origin change="#fix-dates">
-                     <origDate notBefore="1536" notAfter="1537" calendar="#Hijri-qamari">943</origDate>
+                     <origDate notBefore="1536" notAfter="1537" calendar="#Hijri-qamari"
+                        >943</origDate>
                      <origDate calendar="#Gregorian" when="1536">1536-7</origDate>
                   </origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <provenance change="#ai-catalogue"> The MS. was one of thirteen bought of
+                        <persName role="fmo" key="person_f1654">J. J. Naaman</persName> for £25 in
+                     May, 1902. </provenance>
+                  <acquisition>Bequest of <persName xml:lang="en" type="standard"
+                        key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo"
+                        change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref
+                              target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+                              Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental
+                                 MSS belonging to the late E.G. Browne</hi>. Cambridge,
+                           1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
-                        <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
+                        <p>Entry to read in the Library is permitted only on presentation of a valid
+                           reader's card for admissions procedures contact <ref
+                              target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge
+                              University Library Admissions</ref>). Contact
+                              <email>near_eastern@lib.cam.ac.uk</email> for further information on
+                           the availability of this manuscript</p>
                      </availability>
                   </adminInfo>
                </additional>
@@ -132,7 +174,8 @@
          <classDecl>
             <taxonomy xml:id="LCSH">
                <bibl>
-                  <ref target="http://id.loc.gov/authorities/about.html#lcsh">Library of Congress Subject Headings</ref>
+                  <ref target="http://id.loc.gov/authorities/about.html#lcsh">Library of Congress
+                     Subject Headings</ref>
                </bibl>
             </taxonomy>
             <taxonomy xml:id="local_class">
@@ -164,17 +207,22 @@
                <list>
                   <item>
                      <ref target="#a1">
-                        <term key="subject_sh85100085" target="http://id.loc.gov/authorities/sh85100085#concept">Persian poetry--747-1500</term>
+                        <term key="subject_sh85100085"
+                           target="http://id.loc.gov/authorities/sh85100085#concept">Persian
+                           poetry--747-1500</term>
                      </ref>
                   </item>
                   <item>
                      <ref target="#a1">
-                        <term key="subject_sh85129656" target="http://id.loc.gov/authorities/sh85129656#concept">Sufi poetry, Persian</term>
+                        <term key="subject_sh85129656"
+                           target="http://id.loc.gov/authorities/sh85129656#concept">Sufi poetry,
+                           Persian</term>
                      </ref>
                   </item>
                   <item>
                      <ref target="#a1">
-                        <term key="subject_sh85129660" target="http://id.loc.gov/authorities/sh85129660#concept">Sufism</term>
+                        <term key="subject_sh85129660"
+                           target="http://id.loc.gov/authorities/sh85129660#concept">Sufism</term>
                      </ref>
                   </item>
                </list>
@@ -182,26 +230,40 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
-		</change>
-		<change when="2020-07-06" xml:id="ids-cleanup">
-			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
-		</change>
+         <change when="2025" xml:id="check-ai">Values checked by Giorgia Maffioli Brigatti</change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue
+            using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist
+            data cleanup project). </change>
+         <change when="2020-07-06" xml:id="ids-cleanup">
+            <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup
+            project). </change>
          <change when="2018-06-08">
-            <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
+            <persName>Andrew Morrison</persName> Updated key attributes using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl"
+               >update-keys.xsl</ref>
          </change>
          <change when="2018-03-28" xml:id="add-summary2">
-            <persName>Andrew Morrison</persName> Adjusted summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries2.xsl">add-summaries2.xsl</ref>
+            <persName>Andrew Morrison</persName> Adjusted summary using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries2.xsl"
+               >add-summaries2.xsl</ref>
          </change>
          <change when="2018-03-15" xml:id="add-summary">
-            <persName>Andrew Morrison</persName> Added summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl">add-summaries.xsl</ref>
+            <persName>Andrew Morrison</persName> Added summary using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl"
+               >add-summaries.xsl</ref>
          </change>
          <change when="2018-03-02" xml:id="fix-dates">
-            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements
+            using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl"
+               >fix-dates.xsl</ref>
          </change>
          <change when="2017-11-07">
-            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
+            <persName>James Cummings</persName> Up-converted the markup using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl"
+               >https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-08-24">
             <persName>Ignacio Sanchez</persName>

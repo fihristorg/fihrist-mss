@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_593">
    <teiHeader>
       <fileDesc>
@@ -41,10 +41,29 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>F. 24</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>F. 24 (9)</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <summary change="#add-summary">
-                     1 copy of Kitāb Mullā Rajab ʻAlī Qahīr by Mullā Rajab ʻAlī Qahīr
+                  <summary change="#ai-catalogue">
+                     <p>کتاب ملا رجبعلی قهیر</p>
+                     <p>Mulla Rajab Ali, called Qahir (the numerical equivalent of both names being <lb/>
+                            315) was a prominent follower of the Báb, and afterwards of Mírzá Yahyà Subh-i- <lb/>
+                            Azal. He is said to have been murdered by some of Bahá'u'lláh's followers at <lb/>
+                            Baghdad or Karbalá. See my Traveller's Narrative to illustrate the Episode of <lb/>
+                            the Báb, vol. II, pp. 356, 359, 363 and 371.</p>
+                     <p>This book, written partly in Arabic but chiefly in Persian, comprises four <lb/>
+                            chapters, beginning on ff. 7, 17, 31, and 66' respectively. It contains allusions to <lb/>
+                            Mírzá Yahyà Subh-i-Azal (e.g. f. 21'), the Dalá' il-i-sab'a or "Seven Proofs " <lb/>
+                            (f. 22: see F. 23 supra), Mírzá Asadu'lláh called Janáb-i-Dayyán (f. 44"), etc. The <lb/>
+                            Arabic exordium begins:</p>
+                     <p>بسمه الدائم القديم الباقى الذى كلّ له خاضعون</p>
+                     <p>تعالى من تجلّى عن افق الصفات بنور الذات على اقاليم اراضى المبدعات من الممكنات الخ</p>
+                     <p>Chapter 1 (f. 7), which is in Persian, begins:</p>
+                     <p>بدانید ای سالکان سبیل هدایت و سداد و طالبان طريق درایت و رشاد سقاكم الله ربكم الأعلى <lb/>
+                            من رحيق نوره فى كأس (7) (٢) ظهوره كه اعتقاد به نشأة اخرى و دار جزاء اول مایزی است بین</p>
+                     <p>مليين و غيرهم الخ</p>
                   </summary>
                   <msItem xml:id="F_24-item1">
                      <author key="person_130610360" change="#ids-cleanup">
@@ -61,32 +80,43 @@
                      <textLang mainLang="fa" otherLangs="ar">Persian and Arabic</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 82
+                                    <dimensions unit="cm">
+                                       <height>20.5</height><!--not mentioned in summary-->
+                                       <width>13.2</width><!--not mentioned in summary-->
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>17 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="naskh">Clear naskh, unpointed; no date or colophon.</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin change="#fix-dates">undated</origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <provenance change="#ai-catalogue">Received from <persName key="person_f3069" role="dnr">Mírzá Mustafà</persName>, Feb. 11, 1913.</provenance>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -110,18 +140,21 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh2009116570" target="http://id.loc.gov/authorities/sh2009116570#concept">Babism--Controversial literature</term>
+                     <term key="subject_sh2009116570"
+                           target="http://id.loc.gov/authorities/sh2009116570#concept">Babism--Controversial literature</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025" xml:id="check-ai"><persName>Syed Gillani</persName></change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
-		<change when="2020-07-06" xml:id="ids-cleanup">
-			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+         <change when="2020-07-06" xml:id="ids-cleanup">
+            <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

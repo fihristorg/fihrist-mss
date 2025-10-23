@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_770">
    <teiHeader>
       <fileDesc>
@@ -41,10 +41,81 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>M. 1</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>M. 1 (8)</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <summary change="#add-summary">
-                     1 copy of Dānish'nāmah-ʼi jāhan by Ḥusaynī Iṣfahānī, ʻAlī ibn ʻAlī Amīrān, active 15th century
+                  <summary change="#ai-catalogue">
+                     <p>دانش نامه جهان</p>
+                     <p>Dánish-náma-i-Jahán, a Persian manual of Natural Science by Ghiyáthu'd-Din <lb/>
+'Ali ibn 'Ali Amirán al-Husayní al-Isfahání, a writer who seems to have flourished <lb/>
+in the 7th or 8th century of the hijra (13th or 14th of the Christian era). See <lb/>
+Rieu's Persian Catalogue, pp. 439-440, and Ethé's Bodleian Catalogue, Nos. 1456, <lb/>
+2173 and 2174 (cols. 891-892 and 1186-1187). I bought the MS. for 7/6 on <lb/>
+March 30, 1899, at a shop in Farringdon Street.</p>
+                     <p>The book comprises ten sections (fast), twenty subsections (as), four "results" <lb/>
+(natija), and a conclusion (dtime), vis.</p>
+                     <p>Fasl I (f. 6º). The Universal Intelligence and the Universal Soul.</p>
+                     <p>Fasl II (f. 6). The Heavens.</p>
+                     <p>Fasl III (f. 7).</p>
+                     <p>Fasl IV (f. 9).</p>
+                     <p>The revolutions and cycles of the Heavens.</p>
+                     <p>The Elements.</p>
+                     <p>Fasl V (f. 9). The division of the Elements.</p>
+                     <p>Fasl VI (f. 10). Conditions inseparable from the Elements.</p>
+                     <p>Fasl VII (f. 12). Classes of the Elements.</p>
+                     <p>Fast VIII (f. 12). Shape of the Heavens and the Elements and how the earth</p>
+                     <p>subsists.</p>
+                     <p>Fast IX (14). The meaning and true nature of a body. <lb/>
+Fast X (f. 16). Division of simple and compound bodies. <lb/>
+Asl I (f. 19"). Metamorphosis of bodies.</p>
+                     <p>Asl II (f. 24).</p>
+                     <p>Asl III (f. 27).</p>
+                     <p>Asl IV (f. 30).</p>
+                     <p>Asl V (f. 31).</p>
+                     <p>Asl VI (f. 33).</p>
+                     <p>Asl VII (f. 34).</p>
+                     <p>Asl VIII (35)</p>
+                     <p>Asl IX (f. 36").</p>
+                     <p>How vapour and smoke are produced. <lb/>
+How wind is produced. <lb/>
+How clouds are produced. <lb/>
+How rain is produced. <lb/>
+How snow is produced. <lb/>
+How hail is produced.</p>
+                     <p>How mist and fog are produced. <lb/>
+How thunder is produced. <lb/>
+How lightning is produced. <lb/>
+How thunderbolts are produced. <lb/>
+How shooting stars are produced. <lb/>
+Indications of redness in the sky. <lb/>
+Mock suns. <lb/>
+Meteors. <lb/>
+Rainbows.</p>
+                     <p>Asl X (f. 37). <lb/>
+Asl XI (f. 39). <lb/>
+Asl XII ( 40). <lb/>
+Asl XIII (f. 41). <lb/>
+Asl XIV (f. 42). <lb/>
+Asl XV (f. 44). <lb/>
+Asl XVI (f. 45). <lb/>
+Asl XVII (f. 51).</p>
+                     <p>Asl XVIII (f. 56).</p>
+                     <p>Asl XIX (f. 57).</p>
+                     <p>Asl XX (f. 59).</p>
+                     <p>Natija I (f. 61).</p>
+                     <p>Natija II (f. 85").</p>
+                     <p>Natija III (f. 95").</p>
+                     <p>Cause of the halo.</p>
+                     <p>Earthquakes and their causation.</p>
+                     <p>On the issue from the earth of voices, winds and fire. <lb/>
+On springs, wells and underground water-courses. <lb/>
+Minerals, metals and mines.</p>
+                     <p>Plants and their virtues.</p>
+                     <p>Animals.</p>
+                     <p>Natija IV (f. 100'). Man.</p>
+                     <p>Khatima (f. 182) Human Anatomy, comprising a tabira and 3a walas.</p>
                   </summary>
                   <msItem xml:id="M_1-item1">
                      <author key="person_181760170" ref="http://viaf.org/viaf/181760170">
@@ -63,32 +134,43 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 235
+                                    <dimensions unit="cm">
+                              <height>17.9</height>
+                              <width>9.6</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>12 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="taliq">clear ta'liq with rubrications</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin change="#fix-dates">undated</origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <provenance change="#ai-catalogue">I bought the MS. for 7/6 on March 30, 1899, at a shop in Farringdon Street.</provenance>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -112,21 +194,26 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh2008111305" target="http://id.loc.gov/authorities/sh2008111305#concept">Science--Encyclopedias</term>
+                     <term key="subject_sh2008111305"
+                           target="http://id.loc.gov/authorities/sh2008111305#concept">Science--Encyclopedias</term>
                   </item>
                   <item>
-                     <term key="subject_sh85101653" target="http://id.loc.gov/authorities/sh85101653#concept">Natural philosophy</term>
+                     <term key="subject_sh85101653"
+                           target="http://id.loc.gov/authorities/sh85101653#concept">Natural philosophy</term>
                   </item>
                   <item>
-                     <term key="subject_sh98004494" target="http://id.loc.gov/authorities/sh98004494#concept">Philosophy, Iranian</term>
+                     <term key="subject_sh98004494"
+                           target="http://id.loc.gov/authorities/sh98004494#concept">Philosophy, Iranian</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025" xml:id="check-ai"><persName>Syed Gillani</persName></change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

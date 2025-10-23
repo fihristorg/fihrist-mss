@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_542">
    <teiHeader>
       <fileDesc>
@@ -41,10 +41,31 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>D. 8</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>D. 8 (6)</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <summary change="#add-summary">
-                     1 copy of Maqālāt-i Shaykh Rukn al-Dawlah ʻAlāʼ al-Dīn Simnānī by Simnānī, Aḥmad ibn Muḥammad, 1261-1336
+                  <summary change="#ai-catalogue">
+                     <p>مقالات شیم ركن الدين علاء الدوله سمنانی</p>
+                     <p>Discourses of Shaykh Ruknu'd-Din 'Ala'u'd-Dawla of Simnán (d. 736/1335-6),
+                                <lb/>beginning abruptly after a brief doxology:</p>
+                     <p>... وبعده بدانکه این فواید چندست که شیخ ركن الحق والدين علاء الدوله سمنانی قدس الله
+                                <lb/>سره میفرمود و امیر اقبال مینوشته اند و بعضی از آن اینست والسّلام على من اتبع الهدى</p>
+                     <p>Each discourse is preceded by the word Majlis, or Majlis-i-digar in red letters,
+                                <lb/>and the person to whom it was addressed is usually indicated, e.g.:</p>
+                     <p>قدس سره شیخ علی مصری را پیش خود نشانده بود و از هر نوع كلمات
+                                <lb/>و حضرت شیخ
+                                <lb/>میفرمود الخ</p>
+                     <p>In the second Majlis (ff. 2a-3a) mention is made of "Shaykh Şadru'd-Din who
+                                <lb/>is in Ardabil"; in another (f. 34a) of Shaykh Sa'du'd-Din Hamawi; in another
+                                <lb/>(f. 37a) of Shaykh Muhyi'd-Din Ibnu'l-'Arabí, etc. The discourses were collected
+                                <lb/>and reduced to writing by Iqbál Sháh of Sístán.</p>
+                     <p>The MS., which came from the library of the late Sir A. Houtum-Schindler,
+                                <lb/>formerly belonged to Prince Farhád Mirzá Mu'tamadu'd-Dawla, who bestowed it
+                                <lb/>in Rabé 11, 1286/July-Aug., 1869, on a certain Aqi Abdi. It comprises 98 ff. of
+                                <lb/>14'7 x 8 c. and 14 ll., and is written throughout in a small, neat, good and clear
+                                <lb/>ta'liq with rubrications; no date or colophon.</p>
                   </summary>
                   <msItem xml:id="D_8-item1">
                      <author key="person_17351669" ref="http://viaf.org/viaf/17351669/">
@@ -62,32 +83,45 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 98
+                                    <dimensions unit="cm">
+                              <height>14.7</height>
+                              <width>8</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>14 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="taliq">
+                        <p>written throughout in a small, neat, good and clear ta'liq with rubrications; no date or colophon.</p>
+                     </handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin change="#fix-dates">undated</origin>
-                  <acquisition>Bequest of <persName xml:lang="en" key="person_29651479" role="fmo" change="#role-assignment #ids-cleanup">E. G. Browne</persName>.</acquisition>
+                  <provenance change="#ai-catalogue">The MS., which came from the library of the late <persName key="person_76699624" role="fmo">Sir A. Houtum-Schindler</persName>,
+                     formerly belonged to <persName key="person_298825362" role="fmo">Prince Farhád Mirzá Mu'tamadu'd-Dawla</persName>, who bestowed it
+                            in Rabé 11, 1286/July-Aug., 1869, on a certain Aqi Abdi.</provenance>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               key="person_29651479"
+                               role="fmo"
+                               change="#role-assignment #ids-cleanup">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -111,18 +145,21 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh2008112367" target="http://id.loc.gov/authorities/sh2008112367#concept">Sufism--Early works to 1800</term>
+                     <term key="subject_sh2008112367"
+                           target="http://id.loc.gov/authorities/sh2008112367#concept">Sufism--Early works to 1800</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025" xml:id="check-ai"><persName>Syed Gillani</persName></change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
-		<change when="2020-07-06" xml:id="ids-cleanup">
-			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+         <change when="2020-07-06" xml:id="ids-cleanup">
+            <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

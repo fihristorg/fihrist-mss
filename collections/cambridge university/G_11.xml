@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_648">
    <teiHeader>
       <fileDesc>
@@ -41,14 +41,56 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>G. 11</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>G. 11 (12)</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="#multipleWorks">
-                  <summary change="#add-summary2">
-                     2 works by 2 authors on the subjects of Islamic Empire, Iran, Islamic countries, Geography, and Universal history
+                  <summary change="#ai-catalogue">
+                     <p>(۱) خاتمه روضة الصفاء (٢) عجائب الأشياء</p>
+                     <p>A manuscript of 72 ff. of 27'4 x 19'2 c. and 25 ll.; written in a clear modern <lb/>
+                            mashh with rubrications, and containing:</p>
+                     <p>(1) The Khatima or Conclusion (Book vi) of Mirkhwand's Rawdata's Safa <lb/>
+                            treating of geography and biography (ff. 3-44). See Rieu's Persian Catalogue, <lb/>
+                            P. 93.</p>
+                     <p>(2) The Ajaibu'l-Ashya (or-n'd Dunya), "Wonderful Things," or "Wonders <lb/>
+                            of the World," by Abu'l-Mu'ayyad Abú Muti al-Balkhi (ff. 44 72), who wrote it <lb/>
+                            for Abu'l-Qasim Núḥ ibn Mansúr the Sámáni (reigned over Khurásán from 366/ <lb/>
+                            976 until 387/996-7). The text before us must, however, be a much later transla- <lb/>
+                            tion of an Arabic or recension of a Persian original, for on f. 46, 1. 9, occurs the <lb/>
+                            following passage:</p>
+                     <p>حکایت در سنه ثلاث وعشر وستمائة كه من بنده در سفر حجاز بودم بکنار دریای مصر رسیدم <lb/>
+                            و از آن جماعت که آنجا مقیم اند پرسیدم که عجایب دریا چیست گفتند که سنگ این دریا شکل <lb/>
+                            خرچنگ دارد بزرك و كوچك چنانکه گویا خرچنگ بوده است که بسنگ شده و آنرا سرطان بحری <lb/>
+                            گویند و در داروهای چشم بکار برند و عظیم سودمند است،</p>
+                     <p>"Anecdote.-In the year 613/1216-7 when I was travelling to the Hijáz I arrived <lb/>
+                            at the shore of the Egyptian Sea, and enquired of the people who abode there what <lb/>
+                            were the marvels of the Sea. They answered, 'The stones of this sea have the <lb/>
+                            shape of crabs, great and small, so that one would say that they were crabs which <lb/>
+                            had become stone.' These they call marine crabs,' and they use them in eye- <lb/>
+                            salves, where they are mighty useful."</p>
+                     <p>The work consists entirely of short anecdotes like this, preceded by the follow- <lb/>
+                            ing brief introduction:</p>
+                     <p>رسالة عجايب الاشياء من كلام ابو مطيع البلخي رحمة الله عليه</p>
+                     <p>بسم الله الرّحمن الرّحيم وبه نستعين</p>
+                     <p>چنین گوید ابو المؤيد ابو مطيع بلخی رحمة الله علیه که مرا از طفلی هوس گردیدن عالم در سر <lb/>
+                            افتاده بود و از مردم تجار و اهل بحث عجايبها شنیدم و آنچه در کتب خواندم جمله بنوشتم و جمع <lb/>
+                            کردم و از بهر پادشاه جهان امیر خراسان ملك مشرف ابو القسم نوح بن منصور مولى امير المؤمنين <lb/>
+                            تا او را از آن مطالعه مؤانست بود و حق نعمت او را گذارده باشم که بر من و عالمیان واجب است <lb/>
+                            میسر باد، آغاز کتاب چنین گوید ابو مطیع بلخی که در هندوستان درختیست الخ</p>
+                     <p>The anecdotes refer to India, Andalusia, Rúm (Asia Minor), Syria, Tabaristán, <lb/>
+                            Bukhara, Turkistan, Yaman, Nubia, Daylam, Khurasan, Nihawand, Adharbayjan, <lb/>
+                            Samarqand, China, Egypt, Sístán, Kish (Persian Gulf), the China Sea, etc. It is <lb/>
+                            worth noting that on f. 68" occurs a quotation from the Firdawsu'l-Hikmat of 'Ali <lb/>
+                            b. Rabban at-Tabarí, of which the Arabic original has been found by Mr M. Z. <lb/>
+                            Siddiqi, formerly Government of India Research Student in the University of <lb/>
+                            Cambridge, on f. 241 of the British Museum MS. of this work.</p>
                   </summary>
                   <msItem xml:id="G_11-item1" n="1">
                      <locus from="3b" to="44a">ff. 3b-44a</locus>
-                     <author key="person_175393012" ref="http://viaf.org/viaf/175393012/" change="#ids-cleanup">
+                     <author key="person_175393012"
+                             ref="http://viaf.org/viaf/175393012/"
+                             change="#ids-cleanup">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Mīr Khvānd, Muḥammad ibn Khāvandshāh, 1433-1498</persName>
                         <persName xml:lang="fa">مير جواند، محمد بن جواندشاه</persName>
                      </author>
@@ -79,32 +121,44 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 72
+                                    <dimensions unit="cm">
+                              <height>27.4</height>
+                              <width>19.2</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>25 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="naskh">
+                                Written in a clear modern naskh with rubrications.
+                            </handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin change="#fix-dates">undated</origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -148,37 +202,44 @@
                <list>
                   <item>
                      <ref target="#a1">
-                        <term key="subject_sh85068447" target="http://id.loc.gov/authorities/sh85068447#concept">Islamic Empire--History--622-661</term>
+                        <term key="subject_sh85068447"
+                              target="http://id.loc.gov/authorities/sh85068447#concept">Islamic Empire--History--622-661</term>
                      </ref>
                   </item>
                   <item>
                      <ref target="#a1">
-                        <term key="subject_sh91005419" target="http://id.loc.gov/authorities/sh91005419#concept">Iran--History--640-1256</term>
+                        <term key="subject_sh91005419"
+                              target="http://id.loc.gov/authorities/sh91005419#concept">Iran--History--640-1256</term>
                      </ref>
                   </item>
                   <item>
                      <ref target="#a2">
-                        <term key="subject_sh2009127612" target="http://id.loc.gov/authorities/sh2009127612#concept">Islamic countries--Description and travel</term>
+                        <term key="subject_sh2009127612"
+                              target="http://id.loc.gov/authorities/sh2009127612#concept">Islamic countries--Description and travel</term>
                      </ref>
                   </item>
                   <item>
                      <ref target="#a2">
-                        <term key="subject_sh85053987" target="http://id.loc.gov/authorities/sh85053987#concept">Geography--Early works to 1800</term>
+                        <term key="subject_sh85053987"
+                              target="http://id.loc.gov/authorities/sh85053987#concept">Geography--Early works to 1800</term>
                      </ref>
                   </item>
                   <item>
-                     <term key="subject_sh85148201" target="http://id.loc.gov/authorities/sh85148201#concept">Universal history</term>
+                     <term key="subject_sh85148201"
+                           target="http://id.loc.gov/authorities/sh85148201#concept">Universal history</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025" xml:id="check-ai"><persName>Syed Gillani</persName></change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
-		<change when="2020-07-06" xml:id="ids-cleanup">
-			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+         <change when="2020-07-06" xml:id="ids-cleanup">
+            <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

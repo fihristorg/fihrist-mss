@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_413">
    <teiHeader>
       <fileDesc>
@@ -41,10 +41,17 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>C. 2</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>C. 2 (12)</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <summary change="#add-summary2">
-                     2 works by Āmidī, ʻAbd al-Wāḥid ibn Muḥammad, d. 1155 on the subjects of Quotations and Shiite literature
+                  <summary change="#ai-catalogue">
+                     <p>الكلم، <lb/>الحكم و درر <lb/>غرد</p>
+                     <p>Ghuraru'l-Hikam wa-Duraru'l-Kilam, another collection of sayings ascribed <lb/>to 'Ali ibn Abí Tálib and compiled by 'Abdu'l-Wahid ibn Muhammad ibn 'Abdi'l- <lb/>Wahid al-Amidi at-Tamimi (f. 2, ll. 8 and 9 from the bottom). See Brockelmann, <lb/>vol. 1, p. 44, and Ahlwardt, Nos. 8661-2 (vol. VII, p. 590). Written in a large naskh</p>
+                     <p>hand in the upper margin of ff. 3-66 is a smaller collection of 'Ali's sayings, <lb/>entitled Nathri-La'all, arranged alphabetically, ten sayings being assigned to</p>
+                     <p>each letter.</p>
+                     <p>Ff. 124 of 28'8 x 18'2 c. and 20 ll. to page: excellent modern Persian naskh, <lb/>fully pointed, with rubrications; transcribed by Ghulám-Ridá, poetically surnamed <lb/>Hayrán, and concluded 17 Rajab, 1254/6 October, 1838. One of the Belshah MSS. <lb/>acquired in the spring of 1920.</p>
                   </summary>
                   <msItem xml:id="C_2-item1" n="1">
                      <author key="person_2878804" ref="http://viaf.org/viaf/2878804/">
@@ -80,22 +87,25 @@
                      <textLang mainLang="fa">Arabic</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 124
+                                    <dimensions unit="cm">
+                              <height>28.8</height>
+                              <width>18.2</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>20 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="naskh">Written in a large naskh; excellent modern Persian naskh, fully pointed, with rubrications</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -103,12 +113,22 @@
                      <origDate notBefore="1838" notAfter="1839" calendar="#Hijri-qamari">1254</origDate>
                      <origDate calendar="#Gregorian" when="1838">1838</origDate>
                   </origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <provenance change="#added-content">
+                     One of the <persName key="person_f7815" role="fmo">Belshah</persName> MSS. 
+                  </provenance>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -132,18 +152,25 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh85110136" target="http://id.loc.gov/authorities/sh85110136#concept">Quotations, Arabic</term>
+                     <term key="subject_sh85110136"
+                           target="http://id.loc.gov/authorities/sh85110136#concept">Quotations, Arabic</term>
                   </item>
                   <item>
-                     <term key="subject_sh93006233" target="http://id.loc.gov/authorities/sh93006233#concept">Shiite literature, Arabic</term>
+                     <term key="subject_sh93006233"
+                           target="http://id.loc.gov/authorities/sh93006233#concept">Shiite literature, Arabic</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025" xml:id="added-content"><persName>Yasmin Faghihi</persName></change>
+         <change when="2025-07-24" xml:id="check-ai">
+            <persName>Sarim Gillani</persName> 
+         </change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

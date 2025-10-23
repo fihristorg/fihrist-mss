@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_2">
    <teiHeader>
       <fileDesc>
@@ -20,7 +20,8 @@
                   <settlement>Cambridge</settlement>
                   <postCode>CB3 9DR</postCode>
                   <addrLine>
-                     <ref target="http://www.lib.cam.ac.uk/deptserv/neareastern/">Cambridge University Library</ref>
+                     <ref target="http://www.lib.cam.ac.uk/deptserv/neareastern/">Cambridge
+                        University Library</ref>
                   </addrLine>
                   <addrLine>
                      <email>near_eastern@lib.cam.ac.uk</email>
@@ -41,16 +42,80 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>A. 2</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>A. 2 (10).</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <summary change="#add-summary">
-                     1 copy of Commentary of the Qurʼān, sūras xxxviii-xcv
+                  <summary change="#ai-catalogue">
+                     <p>A Persian commentary on the Qur'án, defective at beginning and end, of <lb/>
+                        unknown authorship, but probably composed in the eleventh and transcribed in
+                        the <lb/> thirteenth century of the Christian era. <lb/> It begins with súra
+                        XXXVIII, 20, and ends <lb/> with súra xcv. The margins of some of the pages,
+                        especially in the earlier part <lb/> of the volume, are filled with Turkish
+                        verses. There is one serious dislocation, <lb/> súra LV being omitted in its
+                        proper place and inserted after súra LXXXIX, where <lb/> there is a
+                        considerable lacuna and further dislocations, for súra XCVI follows, and
+                        <lb/> after that súras XCIV and xcv. As a specimen of the style, and for
+                        purposes of</p>
+                     <p>is (عَبَسَ وَتَوَلَّى) comparison, the commentary on the first ten verses of
+                        súra Lxxx</p>
+                     <p>here given from ff. 233-234. After the continuous text of these ten verses,
+                        <lb/> which it is unnecessary to reproduce here, the commentary proceeds
+                        thus:</p>
+                     <p>آورده اند که روزی عبد الله بن ام مکتوم و او را عبد الله بن شریح گفتندی مردی
+                        بود <lb/> مكفوف نابينا بنزديك رسول خذای آمد و صنادید قریش چون عتبه بن ربیعه
+                        و ابو جهل بن <lb/> هشام و عبّاس بن المطلب و غیر ایشان حاضر بودند رسول ع با
+                        ایشان سخن میگفت و از <lb/> سر حرص بر ایمان ایشان خود را بایشان داده بود و
+                        دعوة میکرد ابن ام مکتوم نمیدانست كه</p>
+                     <p>ایشان حاضراند و رسول با ایشان سخن میگوید روی برسول آورد و گفت یا رسول الله
+                        اقرانی <lb/> وعلمنى مما علمك الله از آنج خدای بتو آموخته است بر من خوان و
+                        مرا بیاموز و این سخن <lb/> مکرر گردانید رسول خدای روی از وی بگردانید کراهت
+                        آنرا که سخن قطع میبایست کردن <lb/> بآخر نا رسیده و نیز از برای آن تا کافران
+                        نگویند که اتباع محمد و مُجيبان دعوت او نابینایان <lb/> و سفله اند خدای تعالی
+                        این آیات فرستاد و گفت عَبَسَ وَتَوَلَّی پس از آن هرگاه که وی آمدی <lb/> رسول
+                        خدای ویرا گرامی داشتی و گفتی مرحبا ای آنکسی که خدای تع از برای وی با من
+                        <lb/> عتاب کرد و دو نوبت ویرا بر مدینه خلیفه گردانید و پس از آن در روی هیچ
+                        درویشی روی <lb/> ترش نکردانید و فراپیش هیچ توانگری نیامد جمعی مفسران چنین
+                        گفته اند که این عبوس از <lb/> رسول خدای بود و او بود که روی ترش کرد اما
+                        محققان گفته اند که رسول نبود که روی</p>
+                     <p>ترش کرد بلکه مردی بود اموى بنزديك رسول حاضر بود چون این مرد نابینا آنجا آمد
+                        وی <lb/> خود را فراهم گرفت و اعراض کرد و روی ترش گردانید عبوس و اعراضی که از
+                        جمله صفات <lb/> مذمومه است و منفر اگر در بعضی علما و فقها گویند منفر باشد
+                        فکیف در حق رسول و خدای <lb/> تعالى رسول را ازین جمله تنزیه کرده است و <lb/>
+                        گفته وَلَوْ كُنْتَ فَظًّا غَلِيظَ الْقَلْبِ لَانْفَضُّوا مِنْ <lb/> حولك و
+                        بحسن خلق و <lb/> كرم و طبع وصف كرده است وَإِنَّكَ عَلَى خُلُقٍ عَظِيمٍ تا در
+                        خبر آمده <lb/> است که رسول ع دست در دست غلام سیاه نهادی گريه الخلق و الرايحة
+                        از کرم روا نداشتی <lb/> f234) که دست خود از دست وی دور گرداند تا هم آن غلام
+                        آغاز کردی و دست از دست <lb/> رسول ببردی حق سبحانه و تعالی از آن مرد اُموی
+                        خبر داد و گفت وی روی ترش کرد و فراهم <lb/> کشید و اعراض کرد از آن سبب که
+                        نابینا یعنی ابن ام مکتوم بوی آمد آنکه التفات کرد با <lb/> رسول که روی بایشان
+                        آورده بود و با یکی ازیشان سخن میگفت از حرص آنك باشد که وی <lb/> ایمان آرد تا
+                        دیگران نیز ایمان آورند گفتای محمد تو چه دانی و ترا چه شناسا گردانید بحال این
+                        <lb/> كافر که وی ایمان خواهد آورد و باسلام پاکیزه خواهد گشت و مطموع تو حاصل
+                        خواهد آمد یا <lb/> خود وی پند خواهد گرفت و موعظت و پند تو ویرا سود خواهد کرد
+                        و گفتهاند معنی اینست که <lb/> چه چیز ترا بحال این نابینا عالم گردایند که
+                        باشد که وی تو آنج ویرا تلقین کنی و بیاموزی <lb/> از شریعت پاکیزه شود یا خود
+                        متّعظ گردد و پند تو قبول کند پس موعظت تو و پند تو ویرا سود <lb/> کند آنکه
+                        گفت أَمَّا مَنِ اسْتَغْنَى امّا آنکس که توانگر باشد تو فرا پیش وی روی و روی
+                        بوی آری <lb/> چون عتبه و شیبه يا عباس عبد المطلب و چه باشد بر تو اگر پاکیزه
+                        نشود و ایمان نیارد بر تو جز <lb/> از رسانیدن رسالت چیزی دیگر نیست و اما آن
+                        کس که پیش تو آید بشتاب در طلب خیر و <lb/> تعلم شرایع و او از خدای میترسد یا
+                        از کافران و ایذاء ایشان تو خود را از وی مشغول سازی </p>
+                     <p>Many of the early traditionists are cited, but few books. Amongst these few
+                        <lb/> the commentary of Abú Ishaq ibn Muhammad ath-Tha'labí (d. 427/1036)
+                        seems <lb/> to be one of the latest <note>See Brockelmann, vol. 1, p. 350.
+                           It is cited on f. 53b of the MS., third and fourth lines from the <lb/>
+                           bottom</note>. The authority of the Tafsiru Ahli'l-Bayt, or explanation
+                        <lb/> of the Imáms, is also occasionally invoked <note>E.g. on f. 55a, third
+                           line from the bottom.</note>.</p>
                   </summary>
                   <msItem xml:id="A_2-item1" class="#commentary">
                      <author key="person_f407" change="#ids-cleanup">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">anonymous</persName>
                      </author>
-                     <title xml:lang="en" type="desc" key="work_567">Commentary of the Qurʼān, sūras xxxviii-xcv</title>
+                     <title xml:lang="en" type="desc" key="work_567">Commentary of the Qurʼān, sūras
+                        xxxviii-xcv</title>
                      <incipit xml:lang="ar"/>
                      <explicit xml:lang="ar" defective="true"/>
                      <note>
@@ -59,38 +124,55 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 267 <dimensions unit="cm">
+                              <height>23.5</height>
+                              <width>16.4</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>23 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="naskh">fine old naskh, the Arabic text in a larger
+                        hand.</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" from="0597" to="0699">Undated, 7th/13th century<!-- Please review date attributes, see https://git.io/fihrist-dates --></origDate>
-                     <origDate calendar="#Gregorian" from="1200" to="1300">Gregorian<!-- Please review date text, see https://git.io/fihrist-dates --></origDate>
+                     <origDate calendar="#Hijri-qamari" from="0597" to="0699">Undated, 7th/13th
+                        century<!-- Please review date attributes, see https://git.io/fihrist-dates --></origDate>
+                     <origDate calendar="#Gregorian" from="1200" to="1300"
+                        >Gregorian<!-- Please review date text, see https://git.io/fihrist-dates --></origDate>
                   </origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <provenance>Bought by E. G. Browne from <persName key="person_f7815" role="fmo">Majid Belshah</persName> in London.</provenance>
+                  <acquisition>Bequest of <persName xml:lang="en" type="standard"
+                        key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo"
+                        change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref
+                              target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+                              Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental
+                                 MSS belonging to the late E.G. Browne</hi>. Cambridge,
+                           1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
-                        <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
+                        <p>Entry to read in the Library is permitted only on presentation of a valid
+                           reader's card for admissions procedures contact <ref
+                              target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge
+                              University Library Admissions</ref>). Contact
+                              <email>near_eastern@lib.cam.ac.uk</email> for further information on
+                           the availability of this manuscript</p>
                      </availability>
                   </adminInfo>
                </additional>
@@ -101,7 +183,8 @@
          <classDecl>
             <taxonomy xml:id="LCSH">
                <bibl>
-                  <ref target="http://id.loc.gov/authorities/about.html#lcsh">Library of Congress Subject Headings</ref>
+                  <ref target="http://id.loc.gov/authorities/about.html#lcsh">Library of Congress
+                     Subject Headings</ref>
                </bibl>
             </taxonomy>
             <taxonomy xml:id="local_class">
@@ -130,27 +213,40 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh85072967" target="http://id.loc.gov/authorities/sh85072967#concept">Koran--Hermeneutics</term>
+                     <term key="subject_sh85072967"
+                        target="http://id.loc.gov/authorities/sh85072967#concept"
+                        >Koran--Hermeneutics</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
-		</change>
-		<change when="2020-07-06" xml:id="ids-cleanup">
-			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
-		</change>
+         <change when="2025-07-12" xml:id="check-ai">Checked by Sarim Gillani for summary for sense,
+            verified physical description, added script attribute to handNote, and confirmed
+            provenance encoding.</change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue
+            using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist
+            data cleanup project). </change>
+         <change when="2020-07-06" xml:id="ids-cleanup">
+            <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup
+            project). </change>
          <change when="2018-06-08">
-            <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
+            <persName>Andrew Morrison</persName> Updated key attributes using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl"
+               >update-keys.xsl</ref>
          </change>
          <change when="2018-03-15" xml:id="add-summary">
-            <persName>Andrew Morrison</persName> Added summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl">add-summaries.xsl</ref>
+            <persName>Andrew Morrison</persName> Added summary using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl"
+               >add-summaries.xsl</ref>
          </change>
          <change when="2017-11-07">
-            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
+            <persName>James Cummings</persName> Up-converted the markup using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl"
+               >https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-07-22">
             <persName>Ignacio Sanchez</persName>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_391">
    <teiHeader>
       <fileDesc>
@@ -41,10 +41,23 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>B. 2</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>B. 2 (9).</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <summary change="#add-summary2">
-                     2 works by 2 authors on the subject of Islam
+                  <summary change="#ai-catalogue">
+                     <p>عقائد النسفي</p>
+                     <p>The 'Aga'id ("Beliefs" or "Doctrines") of Abú Hafs Najmud-Din Umar ibn <lb/>
+Muhammad ibn Ahmad an-Nasafi (b. 460/1068, d. 537/1142). See Brockelmann, <lb/>
+vol. 1, p. 427, No. 1; and Ahlwardt's Berlin Arabic Catalogue, vol. II, p. 404, <lb/>
+Nos. 1953-4. This well-known work occupies ff. 1b-97a of the MS., and is followed <lb/>
+(on ff. 98-121) by a similar but anonymous work, bearing the ungrammatical title <lb/>
+in red-01. I think that this MS. was one of several brought back <lb/>
+from Russia (Kazan) by Dr Ellis H. Minns.</p>
+                     <p>Ff. 121 of 21'2 x 16'2 c. and 15 ll.; fair nasta'liq written within margins ruled <lb/>
+in red, and transcribed, the first part in 1246/1830 and the second in A.D. 1827, by <lb/>
+Khalaf ibn Sulaymán al-Marjání, evidently somewhere in Turkistán or Asiatic Russia.</p>
                   </summary>
                   <msItem xml:id="B_2-item1" n="1">
                      <locus from="1b" to="97a">ff. 1b-97a</locus>
@@ -77,22 +90,24 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 121<dimensions unit="cm">
+                              <height>21.2</height>
+                              <width>16.2</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>15 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="nastaliq">fair nastaʿlīq</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -106,12 +121,23 @@
                         <origDate calendar="#Gregorian" when="1827">1827</origDate>
                      </ref>
                   </origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <provenance change="#ai-catalogue">
+                  This MS. was one of several brought back from Russia (Kazan) by 
+                  <persName key="person_f75" role="fmo" ref="https://www.fihrist.org.uk/catalog/person_f75">Dr Ellis H. Minns</persName>.
+                  </provenance>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -135,18 +161,21 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh87000152" target="http://id.loc.gov/authorities/sh87000152#concept">Islam--Doctrines--Early works to 1800</term>
+                     <term key="subject_sh87000152"
+                           target="http://id.loc.gov/authorities/sh87000152#concept">Islam--Doctrines--Early works to 1800</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025-07-14" xml:id="check-ai"> Corrected by Sarim Gillani </change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
-		<change when="2020-07-06" xml:id="ids-cleanup">
-			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+         <change when="2020-07-06" xml:id="ids-cleanup">
+            <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_632">
    <teiHeader>
       <fileDesc>
@@ -41,10 +41,24 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>F. 60</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>F. 60 (8).</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="#multipleWorks">
-                  <summary>Manuscript with the general title: <title xml:lang="ar-Latn-x-lc" type="main">Tanbīh al-nāʼimīn <foreign xml:lang="fa">تنبيه النائمين</foreign>
-                     </title>
+                  <summary change="#ai-catalogue">
+                     <p>تنبيه النائمين</p>
+                     <p>The Tanbihu'n-Náimín, or "Awakening of the Sleepers," is described in my 
+                            Materials, pp. 226-227. As there explained, it consists of three separate parts, viz. 
+                            (1) a letter from 'Abbás Efendi 'Abdu'l-Bahá to the Báb's aunt, called by the Bábís 
+                            Khánim-i-Buzurg ("the Great Lady"), who was still living in Tihrán in 1913, 
+                            inciting her to accept Bahá'u'lláh and abjure Subh-i-Azal; (2) her long and caustic 
+                            reply, which contains much valuable historical material; (3) a homily and refutation 
+                            by Shaykh Ahmad of Kirmán, the well-known and unfortunate Azali. This MS. 
+                            was received from Dr Sa'id Khán of Hasanábád near Țihrán on April 6, 1912. It 
+                            was transcribed by Mírzá Mustafà and completed on the 3rd of Rabi II, 1330/ 
+                            March 22, 1912. It comprises 266 pp. of 17'5 x 10'5 c. and 16 ll., and is written in 
+                            a clear naskh.</p>
                   </summary>
                   <msItem xml:id="F_60-item1" n="1" class="#letters">
                      <author key="person_96995970" ref="http://viaf.org/viaf/96995970/">
@@ -88,25 +102,25 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 266
+                                    <dimensions unit="cm">
+                              <height>17.5</height>
+                              <width>10.5</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>16 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown">
-                        <persName xml:lang="fa-Latn-x-lc" key="person_f3069" role="scr" change="#role-assignment">Mīrzā Muṣṭafá <foreign xml:lang="fa">ميرزا مصطفى</foreign>
-                        </persName>
-                     </handNote>
+                     <handNote script="naskh">Written in a clear naskh.</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -114,12 +128,20 @@
                      <origDate notBefore="1911" notAfter="1912" calendar="#Hijri-qamari">1330</origDate>
                      <origDate calendar="#Gregorian" when="1912">1912</origDate>
                   </origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <provenance change="#ai-catalogue">This MS. was received from <persName key="person_f6853" role="fmo">Dr Sa'id Khán of Hasanábád</persName> near Țihrán on April 6, 1912.</provenance>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -164,25 +186,29 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh85010741" target="http://id.loc.gov/authorities/sh85010741#concept">Babism</term>
+                     <term key="subject_sh85010741"
+                           target="http://id.loc.gov/authorities/sh85010741#concept">Babism</term>
                   </item>
                </list>
             </keywords>
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh2009116580" target="http://id.loc.gov/authorities/sh2009116580#concept">Bahai Faith--History</term>
+                     <term key="subject_sh2009116580"
+                           target="http://id.loc.gov/authorities/sh2009116580#concept">Bahai Faith--History</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025" xml:id="check-ai"><persName>Syed Gillani</persName></change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
-		<change when="2020-07-06" xml:id="ids-cleanup">
-			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+         <change when="2020-07-06" xml:id="ids-cleanup">
+            <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

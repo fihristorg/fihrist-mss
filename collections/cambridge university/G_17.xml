@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_659">
    <teiHeader>
       <fileDesc>
@@ -41,10 +41,17 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>G. 17</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>G. 17 (9)</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <summary change="#add-summary">
-                     1 copy of Shams al-tavārīkh by ʻAbd al-Wahhāb Chahār'maḥālī Qaṭra
+                  <summary change="#ai-catalogue">
+                     <p>شمس التواريخخ</p>
+                     <p>A general history of the Muhammadan dynasties down to the rise of the Qájár dynasty in Persia, with an Introduction (Mugaddama) on the Prophet Muhammad and his predecessors and successors, compiled in the reign of Muhammad Shah (A.D. 1834-1841) by 'Abdu'l-Wahháb of Chahár Maháll, poetically named Qatra, and entitled Shamsu't-Tawarikh ("the Sun of Histories"). A brief notice of the author is given in Ridá-qulí Khán's Majma'u'l-Fusahá, vol. II, pp. 422-424, with numerous citations from his poems.</p>
+                     <p>This history comprises, besides the above-mentioned Mayaddama (f. 3-13) and two Conclusions (Khatima), forty chapters, arranged as follows: (1) Umayyads:</p>
+                     <p>(2) Ancient Kings of Persia; (3) Kings of Yaman: (4) Arabian Kings; (5) Ismá'ílís, including the Fátimid Caliphs of Egypt and the West and the Assassins; (6) Tahirids; (7) Saffärids; (8) Sámánids; (9) Ghaznawis; (10) Saljúqs: (11) Khwarizmshahs; (12) Qará-Khita'is of Kirmán; (13) Muzaffarids; (14) the Injú dynasty in Fars: (15) Buwayhids: (16) Ziyárids: (17) Ghúrids: (18) Khiljis; (19) Kings of Nimráz or Sistán; (20) Kurts; (21) Sarbadárán: (22) Atábeks; (23) remnants of the dynasties 8-10 and 15 supra which survived in various parts of Persia; (24) Ayyúbids of Egypt: (25) Turkish dynasties of Egypt and Syria; (26) Circassian dynasties of Egypt and the West: (27) Chaláwi rulers of Tabaristán (28) rulers of Mázandarán; (29) rulers of Gilán; (30) Shírwánsháhs; (31) Dhul-Qadr dynasty: (32) the Almohade (Muwaḥḥidt) dynasty of N. Africa: (33) Chingiz Khan the Mongol and his descendants; (34) the Jala'ir or Ilkáni dynasty; (35) Tímúr and his descendants; (36) the Black Sheep" and "White Sheep" Turkmán dynasties: (37) the Safawis; (38) the Afgháns; (39) Nádir Shah; (40) the Zand dynasty. The Conclusion (Khátima) comprises two parts, of which the first treats of the Qájárs (ff. 192-197) and the second of the Ottoman Sultáns (ff. 198-210)</p>
+                     <p>The MS, comprises 210 ff. of 21.8 x 17.5 cm and 16 ll.; small, neat nasta'liq with rubrications. There are numerous marginal additions and corrections which suggest the idea that this was the author's autograph, an idea supported by an inscription at the end in a different hand by Lutfu'lláh the son of 'Abdu'l-Wahhab of Niháwand (presumably the author) dated Ramadán, 1256 (November, 1840).</p>
                   </summary>
                   <msItem xml:id="G_17-item1">
                      <author key="person_f4728">
@@ -64,22 +71,25 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 210
+                                    <dimensions unit="cm">
+                              <height>21.8</height>
+                              <width>17.5</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>16 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="nastaliq">Small, neat nasta'liq with rubrications</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -87,12 +97,20 @@
                      <origDate notBefore="1840" notAfter="1841" calendar="#Hijri-qamari">1256</origDate>
                      <origDate calendar="#Gregorian" when="1840">1840</origDate>
                   </origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <provenance change="#ai-catalogue">An inscription at the end in a different hand by <persName key="" role="scr">Lutfu'lláh the son of 'Abdu'l-Wahhab of Niháwand</persName></provenance>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -116,18 +134,22 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh85148201" target="http://id.loc.gov/authorities/sh85148201#concept">World history</term>
+                     <term key="subject_sh85148201"
+                           target="http://id.loc.gov/authorities/sh85148201#concept">World history</term>
                   </item>
                   <item>
-                     <term key="subject_sh85068446" target="http://id.loc.gov/authorities/sh85068446#concept">Islamic Empire--History</term>
+                     <term key="subject_sh85068446"
+                           target="http://id.loc.gov/authorities/sh85068446#concept">Islamic Empire--History</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025" xml:id="check-ai"><persName>Syed Gillani</persName></change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_751">
    <teiHeader>
       <fileDesc>
@@ -41,10 +41,32 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>K. 8</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>K. 8 (14)</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <summary change="#add-summary">
-                     1 copy of Modern geographical dictionary
+                  <summary change="#ai-catalogue">
+                     <p>A modern Persian gazetteer or geographical dictionary, without title, author's 
+                                name, preface or colophon, containing the names and brief particulars concerning 
+                                a number of towns and countries in all parts of the world, especially the Western 
+                                Hemisphere, arranged alphabetically and written in red with full vocalization. 
+                                Amongst the British towns and places mentioned are Aberdeen, Edinburgh, Oxford, 
+                                Exeter, Anglesea, Ailsa Crag, etc. The spelling of the Oriental (except the Persian) 
+                                names often indicates that they have been taken from European geographies. In 
+                                most cases the population, distance from the capital, and other particulars are given, 
+                                and some of the articles are of considerable length. The following account of 
+                                Cambridge (f. 105) may serve as a specimen:
+                            </p>
+                     <p>كمبريج شهریست در مملکت انگلیس دوازده فرسخ از شهر لندن دورست بسمت مشرق هفده مدرسه 
+                                خیلی بزرگ دارد و ابتدای این مدرسه ها هفتصد سال پیش ازین بوده کتابخانه ها که در اینجا 
+                                دارند بزرگترین کتابخانه های دنیاست چهار نفر وکیل از آنجا بپای تخت میفرستند جمعیتش بیست
+                            </p>
+                     <p>هزار نفرست</p>
+                     <p>This MS., which is curious rather than valuable, is from the Schindler library, 
+                                and comprises 166 ff. of 33 x 21 c. and 21 ll., written in a small, clear modern ta'liq 
+                                with rubrications.
+                            </p>
                   </summary>
                   <msItem xml:id="K_8-item1">
                      <author key="person_f407" change="#ids-cleanup">
@@ -59,32 +81,43 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 166
+                                    <dimensions unit="cm">
+                              <height>33</height>
+                              <width>21</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>21 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="taliq">Small, clear modern ta'liq with rubrications</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin change="#fix-dates">undated</origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <provenance change="#ai-catalogue">From the Schindler library</provenance>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -108,21 +141,25 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh85043024" target="http://id.loc.gov/authorities/sh85043024#concept">Encyclopedias and dictionaries, Persian</term>
+                     <term key="subject_sh85043024"
+                           target="http://id.loc.gov/authorities/sh85043024#concept">Encyclopedias and dictionaries, Persian</term>
                   </item>
                   <item>
-                     <term key="subject_sh85053990" target="http://id.loc.gov/authorities/sh85053990#concept">Geography--Dictionaries</term>
+                     <term key="subject_sh85053990"
+                           target="http://id.loc.gov/authorities/sh85053990#concept">Geography--Dictionaries</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025" xml:id="check-ai"><persName>Syed Gillani</persName></change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
-		<change when="2020-07-06" xml:id="ids-cleanup">
-			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+         <change when="2020-07-06" xml:id="ids-cleanup">
+            <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

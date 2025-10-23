@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1882">
    <teiHeader>
       <fileDesc>
@@ -41,10 +41,41 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>O. 3</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>O. 3 (7)</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="#multipleWorks">
-                  <summary change="#add-summary2">
-                     2 works by 2 authors on the subjects of Astronomy and Islamic astrology
+                  <summary change="#ai-catalogue">
+                     <p>الاحكام العلائية</p>
+                     <p>This MS., from the Schindler collection, comprises 126 ff. of 16'6 × 12 c. and <lb/>
+                                from 17 to 19 ll. It presents many lacunae and dislocations, and appears to contain <lb/>
+                                portions of at least two separate Persian treatises on Astronomy or Astrology, one <lb/>
+                                entitled as above Al-Ahkámul-'Alá'iyya, ascribed on f. 1 to Fakhru'd-Dín ar-Rází, <lb/>
+                                and the other entitled in the colophon on f. 79 ar-Risalatu l-Mu'iniyya.</p>
+                     <p>Concerning the former, composed for 'Alá'u'd-Din Khwárazmsháh (d. 596/ <lb/>
+                                1199) by Fakhru'd-Din ar-Rází (b. 543/1149, d. 606/1209), see Brockelmann's <lb/>
+                                Gesch. d. Arab. Litt., vol. 1, pp. 507-508. It begins, after the doxology:</p>
+                     <p>طاعت بعد از طاعت خدای تعالی و متابعت رسول علیم بهتر از خدمت پادشاه</p>
+                     <p>هیچ <lb/>
+                                ... اما بعد <lb/>
+                                نیست كه أطيعوا الله وأطيعوا الرسول وأولى الأمر الخ</p>
+                     <p>and is in fact dedicated to 'Alá'u'd-Din Abu'l-Muzaffar Takin Khwárazmshah il- <lb/>
+                                Arslán ibn Atsiz Burhánu Amiri'l-Mu'minín. Amongst the authorities on whose <lb/>
+                                work it is based mention is made of Ptolemy, Abu'l-Ma'shar al-Balkhí, 'Umar ibn <lb/>
+                                Farrukhán (?) at-Tabari, Aḥmad ibn 'Abdi'l-Jalil as-Sijzí, Ya'qúb ibn 'Alí an- <lb/>
+                                Nasrání, Muhammad ibn Ayyúb at-Tabarí, Gúshyár, etc. The title occurs on f. 6º, <lb/>
+                                1. 2, and the work is divided into two Discourses (Maqála), the first (f. 6'), in nine <lb/>
+                                sections (fast) on General Principles (Kulliyyat), the second (f. 22") on Details <lb/>
+                                (Jusiyyat) or special applications, apparently in seventy sections. It is not clear</p>
+                     <p>where the acephalous Risalata'l-Mu'iniyya begins: the colophon with which it ends <lb/>
+                                occurs on f. 79 and runs as follows:</p>
+                     <p>تم استنساخ هذه الرسالة الموسومة بالمعينيّة فى النصف من شهر ربيع الأول سنة اربع وسبعين</p>
+                     <p>وستمائة الكاتب مودود بن ... الدستجردی</p>
+                     <p>This date, the middle of Rabí 1, 672, if correct, is equivalent to Oct. 1, 1273. <lb/>
+                                Owing to the absence of catch-words and the numerous lacunae and dislocations <lb/>
+                                in the manuscript, it is very doubtful whether it would be possible to arrange the <lb/>
+                                pages in their proper order, or to make any serious use of the MS.</p>
                   </summary>
                   <msItem xml:id="O_3-item1" n="1">
                      <author key="person_90042555" ref="http://viaf.org/viaf/90042555/">
@@ -74,22 +105,25 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 126
+                                    <dimensions unit="cm">
+                              <height>16.6</height>
+                              <width>12</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>From 17 to 19 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote>Unknown script</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -97,12 +131,20 @@
                      <origDate notBefore="1273" notAfter="1274" calendar="#Hijri-qamari">672</origDate>
                      <origDate calendar="#Gregorian" when="1273">1273</origDate>
                   </origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <provenance change="#ai-catalogue">This MS., from the <persName key="person_76699624" role="fmo">Schindler</persName> collection</provenance>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -145,21 +187,25 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh85009022" target="http://id.loc.gov/authorities/sh85009022#concept">Astronomy, Medieval</term>
+                     <term key="subject_sh85009022"
+                           target="http://id.loc.gov/authorities/sh85009022#concept">Astronomy, Medieval</term>
                   </item>
                   <item>
-                     <term key="subject_sh2001000141" target="http://id.loc.gov/authorities/sh2001000141#concept">Islamic astrology</term>
+                     <term key="subject_sh2001000141"
+                           target="http://id.loc.gov/authorities/sh2001000141#concept">Islamic astrology</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025" xml:id="check-ai"><persName>Syed Gillani</persName></change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
-		<change when="2020-07-06" xml:id="ids-cleanup">
-			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+         <change when="2020-07-06" xml:id="ids-cleanup">
+            <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

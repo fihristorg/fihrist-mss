@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_723">
    <teiHeader>
       <fileDesc>
@@ -41,13 +41,27 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>J. 12</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>J. 12 (8).</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <summary change="#add-summary">
-                     1 copy of Ḥadīqat al-wuzarāʼ by Osmanzade Taip, Ahmet, 1660?-1724
+                  <summary change="#ai-catalogue">
+                     <p>حديقة الوزراء</p>
+                     <p>The Hadigatu'l-Wasard, containing biographies of the Grand Wazirs of the <lb/>
+                Ottoman Empire from the origin of the dynasty down to the reign of Sultán Aḥmad <lb/>
+                III, composed in or about 1120/1708-9 by 'Uthmán ('Osmán)-záda Aḥmad Efendi, <lb/>
+                poetically surnamed Ta'ib (d. 1136/1723-4). See Rieu's Turkish Catalogue, p. 73 <lb/>
+                and references there given. A printed edition appeared at Constantinople in 127/<lb/>
+                     </p>
+                     <p>1854-5.</p>
+                     <p>This MS., bought at Constantinople on April 23, 1908, comprises 160 ff. of <lb/>
+                20'4 x 12 c. and 15 ll., and is written in a good Turkish naskh, not dated.</p>
                   </summary>
                   <msItem xml:id="J_12-item1">
-                     <author key="person_90747345" ref="http://viaf.org/viaf/90747345/" change="#ids-cleanup">
+                     <author key="person_90747345"
+                             ref="http://viaf.org/viaf/90747345/"
+                             change="#ids-cleanup">
                         <persName xml:lang="ota-Latn-x-lc" type="standard">Osmanzade Taip, Ahmet, 1660?-1724</persName>
                         <persName xml:lang="fa">عثمان زاده احمد تائب افندى</persName>
                      </author>
@@ -61,32 +75,43 @@
                      <textLang mainLang="ota">Turkish</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 160
+                  <dimensions unit="cm">
+                              <height>20.4</height>
+                              <width>12</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>15 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="naskh">Written in a good Turkish naskh, not dated.</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin change="#fix-dates">undated</origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <provenance change="#ai-catalogue">This MS., bought at Constantinople on April 23, 1908.</provenance>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -110,24 +135,29 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh96009265" target="http://id.loc.gov/authorities/sh96009265#concept">Viziers</term>
+                     <term key="subject_sh96009265"
+                           target="http://id.loc.gov/authorities/sh96009265#concept">Viziers</term>
                   </item>
                   <item>
-                     <term key="subject_sh96009290" target="http://id.loc.gov/authorities/sh96009290#concept">Islamic countries--Officials and employees</term>
+                     <term key="subject_sh96009290"
+                           target="http://id.loc.gov/authorities/sh96009290#concept">Islamic countries--Officials and employees</term>
                   </item>
                   <item>
-                     <term key="subject_sh85138802" target="http://id.loc.gov/authorities/sh85138802#concept">Turkey--History--Ottoman Empire, 1288-1918</term>
+                     <term key="subject_sh85138802"
+                           target="http://id.loc.gov/authorities/sh85138802#concept">Turkey--History--Ottoman Empire, 1288-1918</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025" xml:id="check-ai"><persName>Syed Gillani</persName></change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
-		<change when="2020-07-06" xml:id="ids-cleanup">
-			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+         <change when="2020-07-06" xml:id="ids-cleanup">
+            <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

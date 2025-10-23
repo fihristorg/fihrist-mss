@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_743">
    <teiHeader>
       <fileDesc>
@@ -41,10 +41,15 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>J. 9</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>J. 9 (9)</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <summary change="#add-summary">
-                     1 copy of Rīḥānat al-awliyāʼ wa-zuhrat al-ḥayāt al-dunyā by Khafājī, Aḥmad ibn Muḥammad, 1571 or 2-1659
+                  <summary change="#ai-catalogue">
+                     <p>ريحانة الاولياء وزهرة الحياة الدنيا</p>
+                     <p>The title ordinarily given to this biographical work of Ahmad ibn Muhammad <lb/> ibn 'Umar al-Khafájí al-Misri (d. 1069/1659) differs slightly from the above, and is <lb/> Rayhánatu'l-Alibbá (not Awliyá) wa-Nushatu (not Zuhratu) 'l-Hayáti'd-Dunya. <lb/> See Brockelmann's Gesch. d. Arab. Litt., vol. II, pp. 285-286, and Rieu's Arabic <lb/> Supplement, pp. 705-706.</p>
+                     <p>This MS., bought of the late Hájjí 'Abdu'l-Majid Belshah in November, 1920, <lb/> comprises 227 ff. of 21'5 × 15 c. and 15 ll., and is written in a good, clear modern <lb/> mask with rubrications. The transcription was completed in Dhul-Qa'da, 1300/ <lb/> September, 1883.</p>
                   </summary>
                   <msItem xml:id="J_9-item1">
                      <author key="person_100625716" ref="http://viaf.org/viaf/100625716/">
@@ -64,22 +69,25 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 227
+                  <dimensions unit="cm">
+                              <height>21.5</height>
+                              <width>15</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>15 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="naskh">Good, clear modern mask with rubrications.</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -87,12 +95,20 @@
                      <origDate notBefore="1882" notAfter="1883" calendar="#Hijri-qamari">1300</origDate>
                      <origDate calendar="#Gregorian" when="1883">1883</origDate>
                   </origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <provenance change="#ai-catalogue">This MS., bought of the late <persName key="person_f7815" role="fmo">Hájjí 'Abdu'l-Majid Belshah</persName> in November, 1920.</provenance>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -116,18 +132,22 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh2010106643" target="http://id.loc.gov/authorities/sh2010106643#concept">Poets, Arab--Islamic Empire--Biography</term>
+                     <term key="subject_sh2010106643"
+                           target="http://id.loc.gov/authorities/sh2010106643#concept">Poets, Arab--Islamic Empire--Biography</term>
                   </item>
                   <item>
-                     <term key="subject_sh2009115238" target="http://id.loc.gov/authorities/sh2009115238#concept">Arabic poetry--History and criticism--Early works to 1800</term>
+                     <term key="subject_sh2009115238"
+                           target="http://id.loc.gov/authorities/sh2009115238#concept">Arabic poetry--History and criticism--Early works to 1800</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025" xml:id="check-ai"><persName>Syed Gillani</persName></change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

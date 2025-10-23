@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_2555">
    <teiHeader>
       <fileDesc>
@@ -41,9 +41,27 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>P. 1</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>P. 1 (7)</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <summary>Abridged Arabic translation of Galen's anatomy</summary>
+                  <summary change="#ai-catalogue">
+                     <p>كتاب التشريح الجالينوس ترجمة حنين بن اسحق.</p>
+                     <p>An Arabic translation (apparently much abridged) of Galen's Anatomy, by Abú <lb/>
+                                Zayd Hunayn ibn Ishaq at-Tarjuman ("the Translator "). It comprises five Dis- <lb/>
+                                courses (Maqála), the first (ff. 1-30) on the Bones; the second (ff. 31"-90") on the <lb/>
+                                Muscles; the third (ff. 90-105") on the Nerves; the fourth (ff. 105-127") on the <lb/>
+                                Veins; and the fifth (ff. 128-136) on the Arteries.</p>
+                     <p>This MS., which was presented to me by the late Sir Albert (then Dr) Houtum- <lb/>
+                                Schindler on Dec. 10, 1901, comprises 136 ff. of 16'9 x 9'9 c. and 11 ll., and is <lb/>
+                                written in a good tally. Copied by Abu'l-Husayn ibn Muhammad Ibrahim, and <lb/>
+                                completed on the 10th of Jumádà 1, 1070/Jan. 23, 1660.</p>
+                     <p>Concerning the full and complete Arabic translation of Galen's Anatomy, see <lb/>
+                                Dr Max Simon's Sieben Bücher Anatomie des Galen...zum ersten Male veröffent- <lb/>
+                                licht nach den Handschriften einer Arabischen Übersetzung des 9 Jahrh. N. Chr. ins <lb/>
+                                Deutsche übertragen und kommentiert (2 vols., Leipzig, 1906).</p>
+                  </summary>
                   <msItem xml:id="P_1-item1" class="#translation">
                      <author key="person_44299175" ref="http://viaf.org/viaf/44299175/">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">Galen</persName>
@@ -63,22 +81,27 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 136
+                                    <dimensions unit="cm">
+                              <height>16.9</height>
+                              <width>9.9</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>11 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="taliq">
+                                Written in a good taliq.
+                            </handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -86,12 +109,22 @@
                      <origDate notBefore="1659" notAfter="1660" calendar="#Hijri-qamari">1070</origDate>
                      <origDate calendar="#Gregorian" when="1660">1660</origDate>
                   </origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <provenance change="#ai-catalogue">
+                     This MS., which was presented to me by the late <persName key="person_76699624" role="fmo">Sir Albert (then Dr) Houtum-Schindler</persName> on Dec. 10, 1901.
+                        </provenance>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -134,18 +167,22 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh2008105843" target="http://id.loc.gov/authorities/sh2008105843#concept">Human anatomy--Early works to 1800</term>
+                     <term key="subject_sh2008105843"
+                           target="http://id.loc.gov/authorities/sh2008105843#concept">Human anatomy--Early works to 1800</term>
                   </item>
                   <item>
-                     <term key="subject_sh85083116" target="http://id.loc.gov/authorities/sh85083116#concept">Medicine, Arab</term>
+                     <term key="subject_sh85083116"
+                           target="http://id.loc.gov/authorities/sh85083116#concept">Medicine, Arab</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025" xml:id="check-ai"><persName>Syed Gillani</persName></change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-27">
             <persName>Andrew Morrison</persName> Normalized roles using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/normalize-roles.xsl">normalize-roles.xsl</ref>

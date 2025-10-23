@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3104">
    <teiHeader>
       <fileDesc>
@@ -41,10 +41,25 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>X. 3</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>X. 3 (12)</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <summary change="#add-summary">
-                     1 copy of Jawāmiʻ al-ḥikāyāt wa-lawāmiʻ al-riwāyāt, qism awwal by ʻAwfī, Muḥammad, fl. 1228
+                  <summary change="#ai-catalogue">
+                     <p>جوامع الحكايات ولوامع الروايات قسم أول.</p>
+                     <p>The First of the Four Parts of the celebrated collection of anecdotes compiled <lb/>
+                            in 625/1228 by Muhammad 'Awfi. For a full account of the author and his work <lb/>
+                            see Introduction to the Jawámi'u'l-Hikáyát by Dr Muhammad Nizamu'd-Din <lb/>
+                            (E. J. W. Gibb Memorial, New Series, vol. VIII). The present MS., which is <lb/>
+                            designated as X and numbered 28 in Dr Nizamu'd-Din's descriptive list of the <lb/>
+                            MSS. of the Jawámi, is characterized by him (op. cit., p. 122) as modern and <lb/>
+                            unreliable. It contains 967 anecdotes.</p>
+                     <p>Begins:</p>
+                     <p>شکر و سپاس بی قیاس که مقاطع اوهام انسان از مطالع آن نشان ندهد</p>
+                     <p>Ff. 396 of 28,6 x 19,5 c. and 19 ll. Nasta'liq, no date; probably written in
+                        <lb/> Turkey in the 18th century. Bought of J. J. Naaman, April 12,
+                        1901.</p>
                   </summary>
                   <msItem xml:id="X_3-item1">
                      <author key="person_59962391" ref="http://viaf.org/viaf/59962391/">
@@ -61,22 +76,25 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 396
+                                    <dimensions unit="cm">
+                              <height>28.6</height>
+                              <width>19.5</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>19 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="nastaliq">Nasta'liq</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -84,12 +102,20 @@
                      <origDate calendar="#Hijri-qamari" from="1100" to="1200">Undated, 12th century<!-- Please review date attributes, see https://git.io/fihrist-dates --></origDate>
                      <origDate calendar="#Gregorian" from="1688" to="1785">Undated, 18th century</origDate>
                   </origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <provenance change="#ai-catalogue">Bought of <persName role="fmo" key="person_f1654">J. J. Naaman</persName>, April 12, 1901.</provenance>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -113,21 +139,25 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh2009114915" target="http://id.loc.gov/authorities/sh2009114915#concept">Anecdotes--Arab countries</term>
+                     <term key="subject_sh2009114915"
+                           target="http://id.loc.gov/authorities/sh2009114915#concept">Anecdotes--Arab countries</term>
                   </item>
                   <item>
-                     <term key="subject_sh85110136" target="http://id.loc.gov/authorities/sh85110136#concept">Quotations, Arabic</term>
+                     <term key="subject_sh85110136"
+                           target="http://id.loc.gov/authorities/sh85110136#concept">Quotations, Arabic</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025" xml:id="check-ai">Values checked by Giorgia Maffioli Brigatti</change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
-		<change when="2020-07-06" xml:id="ids-cleanup">
-			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+         <change when="2020-07-06" xml:id="ids-cleanup">
+            <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

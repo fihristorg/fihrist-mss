@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_714">
    <teiHeader>
       <fileDesc>
@@ -20,7 +20,8 @@
                   <settlement>Cambridge</settlement>
                   <postCode>CB3 9DR</postCode>
                   <addrLine>
-                     <ref target="http://www.lib.cam.ac.uk/deptserv/neareastern/">Cambridge University Library</ref>
+                     <ref target="http://www.lib.cam.ac.uk/deptserv/neareastern/">Cambridge
+                        University Library</ref>
                   </addrLine>
                   <addrLine>
                      <email>near_eastern@lib.cam.ac.uk</email>
@@ -41,14 +42,37 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>I. 6</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>I. 6 (10)</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <summary change="#add-summary">
-                     1 copy of Taʼrīkh-i Ṭabaristān by Ibn Isfandiyār, Muḥammad ibn al-Ḥasan, fl. 1210-1216
+                  <summary change="#ai-catalogue">
+                     <p>تأريخ طبرستان</p>
+                     <p>A good modern copy of the History of Tabaristán compiled about 613/1216 by
+                        <lb/> Muhammad ibn al-Hasan ibn Isfandiyar, of which I published an Abridged
+                        Trans <lb/> lation in 1905 as vol. II of the "E. J. W. Gibb Memorial"
+                        Series. This translation <lb/> was based on the India Office MS. (No. 1134
+                        No. 568 in Ethé's Catalogue) and <lb/> the two British Museum MSS. Add. 7633
+                        and Or. 2778, and from it full information <lb/> concerning this important
+                        and interesting book can be derived.</p>
+                     <p>The present MS., which formed part of the Schindler collection, comprises
+                        <lb/> 173 ff. of 24'8 x 15'5 c. and 21 ll., is written in a fair ta'liq with
+                        rubrications, and <lb/> was completed in Jumádà 1, 1268/Feb.-March, 1852. It
+                        formerly belonged to <lb/> Prince Farhád Mirza Mu'tamadu d-Dawla, and bears
+                        on ff. 1 and 2" a number of <lb/> quatrains in the Mázandarání dialect
+                        apparently composed and certainly transcribed <lb/> by Ridá-qulí Khán
+                        "Hidayat," commonly known as "Lala-básht." The preliminary <lb/> note runs
+                        as follows:</p>
+                     <p>درین تاریخ طبرستان بعضی رباعیات بلغت طبری آورده که وزنی مخصوص دارد من بنده
+                        رضاقلی <lb/> متخلص بهدایت را بخاطر رسید که بچند رباعی بد آن سیاقت طبع آزمائی
+                        کنم و از آنجمله است <lb/> و هرکه آن لغت داند داند که نه من از آنان بدتر گفته
+                        ام بلکه بهتر و واضح تر سروده ام</p>
                   </summary>
                   <msItem xml:id="I_6-item1">
                      <author key="person_65921524" ref="http://viaf.org/viaf/65921524/">
-                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn Isfandiyār, Muḥammad ibn al-Ḥasan, fl. 1210-1216</persName>
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn Isfandiyār, Muḥammad
+                           ibn al-Ḥasan, fl. 1210-1216</persName>
                         <persName xml:lang="ar">ابن اسفنديار، محمد بن الحسن</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_191">Taʼrīkh-i Ṭabaristān</title>
@@ -61,42 +85,58 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 173 <dimensions unit="cm">
+                              <height>24.8</height>
+                              <width>15.5</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>21 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="taliq">Written in a fair ta'liq with rubrications</handNote>
                   </handDesc>
-                  <additions>
-                     <locus from="1b" to="2a">ff. 1b-2a</locus>
-                     <add>The manuscript contains a number of quatrains in the Māzandarānī dialect apparently composed and certainly transcribed by <persName key="person_6657148451585215970005" role="ann" change="#role-assignment #ids-cleanup">Hidāyat, Riz̤ā Qulī Khān, 1800 or 1801-1871 or 2 (<foreign xml:lang="fa">هدايت، رضا قلي خان</foreign>)</persName>.</add>
-                  </additions>
                </physDesc>
                <history>
                   <origin change="#fix-dates">
-                     <origDate notBefore="1851" notAfter="1852" calendar="#Hijri-qamari">1268</origDate>
+                     <origDate notBefore="1851" notAfter="1852" calendar="#Hijri-qamari"
+                        >1268</origDate>
                      <origDate calendar="#Gregorian" when="1852">1852</origDate>
                   </origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <provenance change="#ai-catalogue">
+                     <p>Formerly belonged to <persName key="person_298825362" role="fmo">Prince Farhád Mirza
+                           Mu'tamadu d-Dawla</persName>, and bears on ff. 1 and 2" a number of
+                        quatrains in the Mázandarání dialect apparently composed and certainly
+                        transcribed by Ridá-qulí Khán "Hidayat," commonly known as "Lala-básht."</p>
+                  </provenance>
+                  <acquisition>Bequest of <persName xml:lang="en" type="standard"
+                        key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo"
+                        change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref
+                              target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+                              Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental
+                                 MSS belonging to the late E.G. Browne</hi>. Cambridge,
+                           1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
-                        <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
+                        <p>Entry to read in the Library is permitted only on presentation of a valid
+                           reader's card for admissions procedures contact <ref
+                              target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge
+                              University Library Admissions</ref>). Contact
+                              <email>near_eastern@lib.cam.ac.uk</email> for further information on
+                           the availability of this manuscript</p>
                      </availability>
                   </adminInfo>
                </additional>
@@ -107,7 +147,8 @@
          <classDecl>
             <taxonomy xml:id="LCSH">
                <bibl>
-                  <ref target="http://id.loc.gov/authorities/about.html#lcsh">Library of Congress Subject Headings</ref>
+                  <ref target="http://id.loc.gov/authorities/about.html#lcsh">Library of Congress
+                     Subject Headings</ref>
                </bibl>
             </taxonomy>
          </classDecl>
@@ -117,30 +158,44 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh91005419" target="http://id.loc.gov/authorities/sh91005419#concept">Iran--History--640-1256</term>
+                     <term key="subject_sh91005419"
+                        target="http://id.loc.gov/authorities/sh91005419#concept"
+                        >Iran--History--640-1256</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
-		</change>
-		<change when="2020-07-06" xml:id="ids-cleanup">
-			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
-		</change>
+         <change when="2025" xml:id="check-ai"><persName>Syed Gillani</persName></change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue
+            using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist
+            data cleanup project). </change>
+         <change when="2020-07-06" xml:id="ids-cleanup">
+            <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup
+            project). </change>
          <change when="2018-06-08">
-            <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
+            <persName>Andrew Morrison</persName> Updated key attributes using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl"
+               >update-keys.xsl</ref>
          </change>
          <change when="2018-03-15" xml:id="add-summary">
-            <persName>Andrew Morrison</persName> Added summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl">add-summaries.xsl</ref>
+            <persName>Andrew Morrison</persName> Added summary using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl"
+               >add-summaries.xsl</ref>
          </change>
          <change when="2018-03-02" xml:id="fix-dates">
-            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements
+            using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl"
+               >fix-dates.xsl</ref>
          </change>
          <change when="2017-11-07">
-            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
+            <persName>James Cummings</persName> Up-converted the markup using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl"
+               >https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-08-09">
             <persName>Ignacio Sanchez</persName>

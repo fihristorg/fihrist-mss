@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_394">
    <teiHeader>
       <fileDesc>
@@ -41,10 +41,26 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>B. 5</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>B. 5 (8).</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="#multipleWorks">
-                  <summary>Manuscript with the general title of <title xml:lang="ar-Latn-x-lc" type="main">Rasāʼil al-Suyūṭī <foreign xml:lang="ar">رسائل السيوطي</foreign>
-                     </title>
+                  <summary change="#ai-catalogue">
+                     <p>رسائل السيوطي</p>
+                     <p>The following ten tracts by Jalálu'd-Din 'Abdu'r-Rahmán as-Suyuti (b. 849/ <lb/>1445, d. 911/1505), concerning whose life and very numerous works see Brockel- <lb/>mann, vol. II, pp. 143-158:</p>
+                     <p>(1) Arba' Hadith" ("Forty Traditions"), ff. 2-4 Dated Rajab, 967/</p>
+                     <p>April, 1560.</p>
+                     <p>(2) Raful-Khidr 'an gafi's-Sidr, f. 3. Brockelmann, loc. cit., p. 155 <lb/>No. 243. Dated the same as the last.</p>
+                     <p>(3) Questions put to the Imám ash-Sháfii, ff. 7-9. No colophon.</p>
+                     <p>(4) Qasida...fi'n-Nahw, a poem on grammar (ff. 10-12b), but there seems to <lb/>be a lacuna or dislocation after f. 10, and ff. 11-12 appear to contain the conclusion <lb/>of a tract entitled Al-Mushára'a ila' l-Muşára'a.</p>
+                     <p>(5) Buzág-kilál fi'l-khişáli'l-mujibat li'z-zalál, ff. 13-18. See Brockel- <lb/>mann, loc. cit., p. 147, No. 35. Dated 10 Shawwál, 964/8 August, 1557.</p>
+                     <p>(6) Wusúlu l-amání bi-uşúli't-tahání, ff. 19-22. See Brockelmann, loc. cit., p. 153, No. 191. Dated 19 Rajab, 967/15 April, 1560.</p>
+                     <p>(7) Kitábul-inófa fi rutbati'l-Khilafa, f. 22-23: n. d.</p>
+                     <p>(8) As-Zahrul-básim fl-má yarsku fihi'l-Hakim, f. 24a-25b.</p>
+                     <p>(9) Sihámu l-Isába fi'd-Da'awáti'l-mujába (or Answers to Prayer), ff. 26a-30a. <lb/>See Brockelmann, loc. cit., p. 147, No. 38. Copied by Abu'l-Lutf ibn Ibrahim, and <lb/>completed on 13 Ramadán, 964/10 July, 1557-1</p>
+                     <p>(10) Matla'u'l-Badrayn fi-man yu'tà Ajrayn, ff. 31-35. See Brockelmann, <lb/>loc. cit., p. 147, No. 37. Dated the same as the preceding.</p>
+                     <p>Ff. 35 of 18 x 13'5 c. and 17 ll.; clear nasta'liq with rubrications; bought with <lb/>others of the Belshah MSS. on Nov. 12, 1920.</p>
                   </summary>
                   <msItem xml:id="B_5-item1" n="1">
                      <locus from="2a" to="4b">ff. 2a-4b</locus>
@@ -196,23 +212,25 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 35
+                                    <dimensions unit="cm">
+                              <height>18</height>
+                              <width>13.5</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>17 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
-                  </handDesc>
+                     <handNote script="nastaliq">Clear nasta'liq with rubrications</handNote>                  </handDesc>
                </physDesc>
                <history>
                   <origin change="#fix-dates">
@@ -229,12 +247,20 @@
                         <origDate calendar="#Gregorian" when="1557">1557</origDate>
                      </ref>
                   </origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <provenance change="#ai-catalogue">Bought with others of the <persName key="person_f6771" role="fmo">Belshah</persName> MSS. on Nov. 12, 1920.</provenance>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -278,42 +304,50 @@
                <list>
                   <item>
                      <ref target="#a1 #a5">
-                        <term key="subject_sh2008105462" target="http://id.loc.gov/authorities/sh2008105462#concept">Hadith--Texts--Early works to 1800</term>
+                        <term key="subject_sh2008105462"
+                              target="http://id.loc.gov/authorities/sh2008105462#concept">Hadith--Texts--Early works to 1800</term>
                      </ref>
                   </item>
                   <item>
                      <ref target="#a2">
-                        <term key="subject_sh2008104962" target="http://id.loc.gov/authorities/sh2008104962#concept">Islamic law--Interpretation and construction--Early works to 1800</term>
+                        <term key="subject_sh2008104962"
+                              target="http://id.loc.gov/authorities/sh2008104962#concept">Islamic law--Interpretation and construction--Early works to 1800</term>
                      </ref>
                   </item>
                   <item>
                      <ref target="#a2">
-                        <term key="subject_sh2008111606" target="http://id.loc.gov/authorities/sh2008111606#concept">Shafiites--Early works to 1800</term>
+                        <term key="subject_sh2008111606"
+                              target="http://id.loc.gov/authorities/sh2008111606#concept">Shafiites--Early works to 1800</term>
                      </ref>
                   </item>
                   <item>
                      <ref target="#a6 #a10">
-                        <term key="subject_sh2008104961" target="http://id.loc.gov/authorities/sh2008104961#concept">Islam--Customs and practices--Early works to 1800</term>
+                        <term key="subject_sh2008104961"
+                              target="http://id.loc.gov/authorities/sh2008104961#concept">Islam--Customs and practices--Early works to 1800</term>
                      </ref>
                   </item>
                   <item>
                      <ref target="#a7">
-                        <term key="subject_sh2008100026" target="http://id.loc.gov/authorities/sh2008100026#concept">Caliphs--Biography</term>
+                        <term key="subject_sh2008100026"
+                              target="http://id.loc.gov/authorities/sh2008100026#concept">Caliphs--Biography</term>
                      </ref>
                   </item>
                   <item>
                      <ref target="#a8">
-                        <term key="subject_sh85149587" target="http://id.loc.gov/authorities/sh85149587#concept">Zakat</term>
+                        <term key="subject_sh85149587"
+                              target="http://id.loc.gov/authorities/sh85149587#concept">Zakat</term>
                      </ref>
                   </item>
                   <item>
                      <ref target="#a8">
-                        <term key="subject_sh85059231" target="http://id.loc.gov/authorities/sh85059231#concept">Hashimites</term>
+                        <term key="subject_sh85059231"
+                              target="http://id.loc.gov/authorities/sh85059231#concept">Hashimites</term>
                      </ref>
                   </item>
                   <item>
                      <ref target="#a9">
-                        <term key="subject_sh85068403" target="http://id.loc.gov/authorities/sh85068403#concept">Islam--Prayers and devotions</term>
+                        <term key="subject_sh85068403"
+                              target="http://id.loc.gov/authorities/sh85068403#concept">Islam--Prayers and devotions</term>
                      </ref>
                   </item>
                </list>
@@ -321,11 +355,13 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025-07-19" xml:id="check-ai"><persName>Sarim Gillani</persName></change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
-		<change when="2020-07-06" xml:id="ids-cleanup">
-			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+         <change when="2020-07-06" xml:id="ids-cleanup">
+            <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

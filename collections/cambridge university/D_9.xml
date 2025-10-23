@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_543">
    <teiHeader>
       <fileDesc>
@@ -41,10 +41,25 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>D. 9</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>D. 9 (9)</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="#abridgement">
-                  <summary change="#add-summary">
-                     1 copy of Kitāb al-kibrīt al-aḥmar fī bayān ʻulūm al-kashf al-akbar by Shaʻrānī, ʻAbd al-Wahhāb ibn Aḥmad, ca. 1493-1565 or 6
+                  <summary change="#ai-catalogue">
+                     <p>كتاب الكبريت الاحمر في بيان علوم الكشف الأكبر</p>
+                     <p>The Kitábu'l-Kibriti'l-Ahmar ("Book of the Red Sulphur ""-i.e. the Philo- <lb/>
+                                    sophers' Stone) <note>[The usual title is Kitábu'l-Kibriti'l-Ahmar fi bayáni 'Ulumi'sh-Shaykhi'l-Akbar.]</note> by Shaykh 'Abdu'l-Wahháb ibn Aḥmad ibn 'Ali al-Anşárí ash- <lb/>
+                                Sha'rání (d. 973/1565), an abridgement of the same author's Lawáqihu'l-Anwári <lb/>
+                                1-Qudsiyya, which in turn is an abridgement of Shaykh Mubyi'd-Din Ibnu'l-'Arabi's <lb/>
+                                al-Fatihátu'l-Makkiyya. See Brockelmann, vol. 1, pp. 335-338; Ahlwardt's Berlin <lb/>
+                                Arabic Catalogue, vol. II. pp. 104-105, No. 3047-</p>
+                     <p>This MS. was one of those acquired in the spring of 1920 at the third division <lb/>
+                                of the Belshah collection. It comprises 214 ff. of 20'6 x 14'6 c. and 21 ll.; coarse, <lb/>
+                                clear naskh with rubrications; dated Thursday, 3rd of Rabi' 11, to19/June 25, 1610; <lb/>
+                                copyist 'Umar ibn Ahmad ibn Muḥammad... known as Ibn Jibrá'il al-Búsírí. The <lb/>
+                                work itself, as appears from the concluding paragraph, was completed on Sunday <lb/>
+                                the 21st of Ramadán, 942/13th of March, 1536.</p>
                   </summary>
                   <msItem xml:id="D_9-item1">
                      <author key="person_17351669" ref="http://viaf.org/viaf/17351669/">
@@ -65,7 +80,10 @@
                         </bibl>
                         <bibl type="text-relations">Abridgement of the work by the same author entitled <title xml:lang="ar-Latn-x-lc">Lawāqiḥ al-anwār al-qudsīyah <foreign xml:lang="ar">لواقح الانوار القدسية</foreign>
                            </title>, which is, in turn, an abridgement of <title xml:lang="ar-Latn-x-lc">al-Futūḥāt al-makkīyah <foreign xml:lang="ar">الفتوحات المكية</foreign>
-                           </title> of <author key="person_95223177" ref="http://viaf.org/viaf/95223177/" role="ant" change="#role-assignment">
+                           </title> of <author key="person_95223177"
+                                   ref="http://viaf.org/viaf/95223177/"
+                                   role="ant"
+                                   change="#role-assignment">
                               <persName xml:lang="ar-Latn-x-lc">Ibn al-ʻArabī, 1165-1240</persName>
                               <persName xml:lang="ar">ابن العربي</persName>
                            </author>.</bibl>
@@ -73,22 +91,25 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 214
+                                    <dimensions unit="cm">
+                              <height>20.6</height>
+                              <width>14.6</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>21 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="naskh">Coarse, clear naskh with rubrications</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -96,12 +117,22 @@
                      <origDate notBefore="1535" notAfter="1536" calendar="#Hijri-qamari">942</origDate>
                      <origDate calendar="#Gregorian" when="1536">1536</origDate>
                   </origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <provenance change="#ai-catalogue">
+                     Acquired in the spring of 1920 at the third division of the <persName key="person_f7815" role="fmo">Belshah</persName> collection.
+                        </provenance>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -144,15 +175,18 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh2008112367" target="http://id.loc.gov/authorities/sh2008112367#concept">Sufism--Early works to 1800</term>
+                     <term key="subject_sh2008112367"
+                           target="http://id.loc.gov/authorities/sh2008112367#concept">Sufism--Early works to 1800</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025" xml:id="chek-ai"><persName>Syed Gillani</persName></change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

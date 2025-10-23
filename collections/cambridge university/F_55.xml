@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_626">
    <teiHeader>
       <fileDesc>
@@ -41,10 +41,30 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>F. 55</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>F. 55 (9) BBP. 5.</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="#abridgement">
-                  <summary change="#add-summary">
-                     1 copy of Tārīkh-i jadīd
+                  <summary change="#ai-catalogue">
+                     <p>تأریخ</p>
+                     <p>جدید</p>
+                     <p>This MS. is fully described on pp. 440-444 of my Catalogue and Description, <lb/>
+                            where references are given to other places where its authorship and contents are <lb/>
+                            discussed. I copied out the whole text (amounting to 283 large pages) and collated <lb/>
+                            it throughout with the British Museum MS. Or. 2942 (obtained from Mr Sidney <lb/>
+                            Churchill on Oct. 10, 1885), noting all variants. This work I completed on April <lb/>
+                            11, 1891, intending to publish it, but I only published the English translation, under <lb/>
+                            the title of The Tarikh-i-Jadid or New History of Mirad All Muhammad the <lb/>
+                            Báb...with an Introduction, Illustrations and Appendices (Cambridge University <lb/>
+                            Press, 1893). The discovery of Hajji Mirza Jáni of Káshán's Nuqtatu'l-Kaf, on <lb/>
+                            which the Ta'rikk-i-Jadid is based, in the Bibliothèque Nationale at Paris, rendered <lb/>
+                            the publication of the latter relatively unimportant, and the text of the former <lb/>
+                            ultimately appeared, with a full Introduction and Apparatus Criticus, in 1910 as <lb/>
+                            vol. xv of the "E. J. W. Gibb Memorial" Series. Full accounts of these two books <lb/>
+                            and their relation to one another will be found in the above-mentioned volumes. <lb/>
+                            My transcript, originally intended for the Press, is preserved amongst my MSS., <lb/>
+                            but I have not at present assigned a class-mark to it. In size it is a (12).</p>
                   </summary>
                   <msItem xml:id="F_55-item1">
                      <author key="person_f407" change="#ids-cleanup">
@@ -62,7 +82,10 @@
                            <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/103">p.77</ref>
                         </bibl>
                         <bibl type="text-relations">Recension of the <title xml:lang="ar-Latn-x-lc">Nuqṭat al-Kāf <foreign xml:lang="ar">نقطة الكاف</foreign>
-                           </title> of <author key="person_116853599" ref="http://viaf.org/viaf/116853599/" role="ant" change="#role-assignment">
+                           </title> of <author key="person_116853599"
+                                   ref="http://viaf.org/viaf/116853599/"
+                                   role="ant"
+                                   change="#role-assignment">
                               <persName xml:lang="fa-Latn-x-lc">Jānī, Mirza, d. 1852</persName>
                               <persName xml:lang="fa">حاجى ميرزا جانى</persName>
                            </author>.</bibl>
@@ -71,35 +94,42 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 12<dimensions unit="cm">
+                              <height/>
+                              <width/>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>Number of lines unknown.</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote scope="major" script="unknown"/>
-                  </handDesc>
+                  
                </physDesc>
                <history>
                   <origin>
                      <origDate calendar="#Hijri-qamari" notAfter="1305">undated<!-- Please review date text, see https://git.io/fihrist-dates --></origDate>
                      <origDate calendar="#Gregorian" notAfter="1888">Gregorian<!-- Please review date text, see https://git.io/fihrist-dates --></origDate>
                   </origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -142,24 +172,29 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh85010741" target="http://id.loc.gov/authorities/sh85010741#concept">Babism</term>
+                     <term key="subject_sh85010741"
+                           target="http://id.loc.gov/authorities/sh85010741#concept">Babism</term>
                   </item>
                   <item>
-                     <term key="subject_sh2009116580" target="http://id.loc.gov/authorities/sh2009116580#concept">Bahai Faith--History</term>
+                     <term key="subject_sh2009116580"
+                           target="http://id.loc.gov/authorities/sh2009116580#concept">Bahai Faith--History</term>
                   </item>
                   <item>
-                     <term key="subject_sh85067895" target="http://id.loc.gov/authorities/sh85067895#concept">Iran--History</term>
+                     <term key="subject_sh85067895"
+                           target="http://id.loc.gov/authorities/sh85067895#concept">Iran--History</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025" xml:id="check-ai"><persName>Syed Gillani</persName></change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
-		<change when="2020-07-06" xml:id="ids-cleanup">
-			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+         <change when="2020-07-06" xml:id="ids-cleanup">
+            <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

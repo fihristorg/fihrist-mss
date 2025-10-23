@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3092">
    <teiHeader>
       <fileDesc>
@@ -20,7 +20,8 @@
                   <settlement>Cambridge</settlement>
                   <postCode>CB3 9DR</postCode>
                   <addrLine>
-                     <ref target="http://www.lib.cam.ac.uk/deptserv/neareastern/">Cambridge University Library</ref>
+                     <ref target="http://www.lib.cam.ac.uk/deptserv/neareastern/">Cambridge
+                        University Library</ref>
                   </addrLine>
                   <addrLine>
                      <email>near_eastern@lib.cam.ac.uk</email>
@@ -41,20 +42,58 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>V. 87</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>V. 87 (9)</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="#multipleWorks">
-                  <summary change="#add-summary2">
-                     10 works by 9 authors on the subjects of Persian poetry, Ghazals, and Quatrains
+                  <summary change="#ai-catalogue">
+                     <p>A collection of Persian poems by various authors.</p>
+                     <p>Contents:</p>
+                     <p>1. (ff. 1-10) Ghazals and rubá'is from the Diwán-i Shams-i Tabriz by <lb/>
+                        Jalálu'd-Din Rúmi.</p>
+                     <p>2. (ff. 10-13) The well-known tarji'-band by Sayyid Ahmad Hátif of Isfahan,
+                        <lb/> beginning:</p>
+                     <p>وی نثار رهت هم این و هم آن <lb/> ای فدای تو هم دل و هم جان</p>
+                     <p>of which Professor Browne has given the text, with an English prose
+                        translation, <lb/> in Persian Literature in Modern Times, pp. 284-297.</p>
+                     <p>3. (ff. 14-21) A mathnawi by Mírzá Naşir, whom I have not been able to
+                        <lb/> identify, beginning:</p>
+                     <p>شبی با نو جوانی</p>
+                     <p>گفت پیری</p>
+                     <p>کهن دردی کشی صافی ضمیری</p>
+                     <p>4. (ff. 22-25) The Sarápá, a mathnawí describing the human body, by Mír
+                        <lb/> Sayyid 'Alí Mihri of Isfahan, who flourished in the reign of Sháh
+                        Husayn, the last <lb/> Şafawi monarch (1105-1135/1694-1722). See Rieu,
+                        B.M.P.C., p. 796; Ethé, <lb/> LO.P.C., No. 1640. Begins:</p>
+                     <p>جلوه ناز تو چون آب حیات <lb/> ای بت چابك شيرين حركات</p>
+                     <p>5. (ff. 26-28) Rubá'ís and couplets by Ziyá, i.e., probably, Ziyá'u'd-Din
+                        Káshí <lb/> (Ethé, I.O.P.C., No. 1743, 29).</p>
+                     <p>6. (ff. 28-30) Selections from Waḥshí of Báfq (see Ethé, I.O.P.C., No.
+                        1444) <lb/> and the above-mentioned Ziyá. These are followed by a ghazal of
+                        Jámí.</p>
+                     <p>7. (ff. 30-35) Qasidas and ghazals by Sa'di.</p>
+                     <p>8. (f. 36-85) The qasidas of Qa'áni, arranged in the order of their rhyme-
+                        <lb/> letters from ا to ه.</p>
+                     <p>9. (ff. 85-99) A large number of short extracts from the poems of
+                        Qá'ání.</p>
+                     <p>10. (ff. 99-108) Qasidas of Qá'ání rhyming in the letters ی.</p>
+                     <p>Ff. 109 of 21'2 x 13 c. and 14 ll. Cursive ta'liq with vignettes. No
+                        date.</p>
                   </summary>
                   <msItem xml:id="V_87-item1" n="1" class="#selection">
                      <locus from="1b" to="10a">ff. 1b-10a</locus>
                      <author key="person_98930150" ref="http://viaf.org/viaf/98930150/">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Jalāl al-Dīn Rūmī, Maulana, 1207-1273</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Jalāl al-Dīn Rūmī,
+                           Maulana, 1207-1273</persName>
                         <persName xml:lang="fa">جلال الدين رومى</persName>
                      </author>
-                     <title xml:lang="fa-Latn-x-lc" key="work_20665" change="#ids-cleanup">Dīvān-i shams-i tabrīz</title>
-                     <title xml:lang="fa" key="work_20665" change="#ids-cleanup">ديوان شمس تبريز</title>
-                     <title xml:lang="en" type="desc" key="work_20665" change="#ids-cleanup">Selection of ghazals and rubāʻīs from this dīwān</title>
+                     <title xml:lang="fa-Latn-x-lc" key="work_20665" change="#ids-cleanup">Dīvān-i
+                        shams-i tabrīz</title>
+                     <title xml:lang="fa" key="work_20665" change="#ids-cleanup">ديوان شمس
+                        تبريز</title>
+                     <title xml:lang="en" type="desc" key="work_20665" change="#ids-cleanup"
+                        >Selection of ghazals and rubāʻīs from this dīwān</title>
                      <incipit xml:lang="ar"/>
                      <explicit xml:lang="ar" defective="true"/>
                      <note>
@@ -65,8 +104,10 @@
                   <msItem xml:id="V_87-item2" n="2">
                      <locus from="10b" to="13b">ff. 10b-13b</locus>
                      <author key="person_9100689" ref="http://viaf.org/viaf/9100689/">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Hātif, Sayyid Aḥmad, d. 1783 or 4</persName>
-                        <persName xml:lang="fa">هاتف ، سيد احمد <addName xml:lang="fa" type="nisbah">اصفهانی</addName>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Hātif, Sayyid Aḥmad, d.
+                           1783 or 4</persName>
+                        <persName xml:lang="fa">هاتف ، سيد احمد <addName xml:lang="fa" type="nisbah"
+                              >اصفهانی</addName>
                         </persName>
                      </author>
                      <title xml:lang="en" type="desc" key="work_2694">Tarjī-band poem</title>
@@ -83,7 +124,8 @@
                         <persName xml:lang="fa-Latn-x-lc" type="supplied">Mīrzā Naṣīr</persName>
                         <persName xml:lang="fa">ميرزا نصير</persName>
                      </author>
-                     <title xml:lang="en" type="desc" key="work_20182" change="#ids-cleanup">Mas̲navī poem</title>
+                     <title xml:lang="en" type="desc" key="work_20182" change="#ids-cleanup"
+                        >Mas̲navī poem</title>
                      <incipit xml:lang="ar"/>
                      <explicit xml:lang="ar" defective="true"/>
                      <note>
@@ -94,13 +136,17 @@
                   <msItem xml:id="V_87-item4" n="4">
                      <locus from="22a" to="25b">ff. 22a-25b</locus>
                      <author key="person_f3709">
-                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Sayyid ʻAlī Mihrī</persName>
-                        <persName xml:lang="fa">سيد علی مهری <addName xml:lang="fa" type="nisbah">اصفهانی</addName>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Sayyid ʻAlī
+                           Mihrī</persName>
+                        <persName xml:lang="fa">سيد علی مهری <addName xml:lang="fa" type="nisbah"
+                              >اصفهانی</addName>
                         </persName>
                      </author>
-                     <title xml:lang="fa-Latn-x-lc" key="work_20338" change="#ids-cleanup">Sarāpā</title>
+                     <title xml:lang="fa-Latn-x-lc" key="work_20338" change="#ids-cleanup"
+                        >Sarāpā</title>
                      <title xml:lang="fa" key="work_20338" change="#ids-cleanup">سراپا</title>
-                     <title xml:lang="en" type="desc" key="work_20338" change="#ids-cleanup">Mas̲navī poem describig the human body</title>
+                     <title xml:lang="en" type="desc" key="work_20338" change="#ids-cleanup"
+                        >Mas̲navī poem describig the human body</title>
                      <incipit xml:lang="ar"/>
                      <explicit xml:lang="ar" defective="true"/>
                      <note>
@@ -111,7 +157,8 @@
                   <msItem xml:id="V_87-item5" n="5">
                      <locus from="26a" to="28a">ff. 26a-28a</locus>
                      <author key="person_f5620">
-                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Ẓiyā al-Dīn Kāshī</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Ẓiyā al-Dīn
+                           Kāshī</persName>
                         <persName xml:lang="fa">ظيا الدين كاشی</persName>
                      </author>
                      <title xml:lang="en" type="desc" key="work_2696">Rubāʻīs and couplets</title>
@@ -125,18 +172,21 @@
                   <msItem xml:id="V_87-item6" n="6" class="#selection">
                      <locus from="28b" to="30a">ff. 28b-30a</locus>
                      <author key="person_30738316" ref="http://viaf.org/viaf/30738316/">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Vaḥshī Bāfqī, d. 1583</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Vaḥshī Bāfqī, d.
+                           1583</persName>
                         <persName xml:lang="fa">وحشی بافقی</persName>
                      </author>
                      <author key="person_f5620">
-                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Ẓiyā al-Dīn Kāshī</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Ẓiyā al-Dīn
+                           Kāshī</persName>
                         <persName xml:lang="fa">ظيا الدين كاشی</persName>
                      </author>
                      <author key="person_90042997" ref="http://viaf.org/viaf/90042997/">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Jāmī, 1414-1492</persName>
                         <persName xml:lang="fa">جامی</persName>
                      </author>
-                     <title xml:lang="en" type="desc" key="work_2697">Selections from Vaḥshī and Ẓiyā, followed by a ghazal of Jāmī</title>
+                     <title xml:lang="en" type="desc" key="work_2697">Selections from Vaḥshī and
+                        Ẓiyā, followed by a ghazal of Jāmī</title>
                      <incipit xml:lang="ar"/>
                      <explicit xml:lang="ar" defective="true"/>
                      <note>
@@ -150,7 +200,8 @@
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Saʻdī</persName>
                         <persName xml:lang="fa">سعدی</persName>
                      </author>
-                     <title xml:lang="en" type="desc" key="work_21132" change="#ids-cleanup">Qaṣīdas and ghazals</title>
+                     <title xml:lang="en" type="desc" key="work_21132" change="#ids-cleanup">Qaṣīdas
+                        and ghazals</title>
                      <incipit xml:lang="ar"/>
                      <explicit xml:lang="ar" defective="true"/>
                      <note>
@@ -161,10 +212,12 @@
                   <msItem xml:id="V_87-item8" n="8">
                      <locus from="36b" to="85b">ff. 36b-85b</locus>
                      <author key="person_80552020" ref="http://viaf.org/viaf/80552020/">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Qāʼānī, Ḥabīb Allāh Shīrāzī, 1808-1854</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Qāʼānī, Ḥabīb Allāh
+                           Shīrāzī, 1808-1854</persName>
                         <persName xml:lang="fa">قاآنى، حبيب الله شيرازى</persName>
                      </author>
-                     <title xml:lang="en" type="desc" key="work_20273" change="#ids-cleanup">Qaṣīdas</title>
+                     <title xml:lang="en" type="desc" key="work_20273" change="#ids-cleanup"
+                        >Qaṣīdas</title>
                      <incipit xml:lang="ar"/>
                      <explicit xml:lang="ar" defective="true"/>
                      <note>
@@ -175,10 +228,12 @@
                   <msItem xml:id="V_87-item9" n="9">
                      <locus from="85b" to="99a">ff. 85b-99a</locus>
                      <author key="person_80552020" ref="http://viaf.org/viaf/80552020/">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Qāʼānī, Ḥabīb Allāh Shīrāzī, 1808-1854</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Qāʼānī, Ḥabīb Allāh
+                           Shīrāzī, 1808-1854</persName>
                         <persName xml:lang="fa">قاآنى، حبيب الله شيرازى</persName>
                      </author>
-                     <title xml:lang="en" type="desc" key="work_2698">Selections from Qāʼānī's poems</title>
+                     <title xml:lang="en" type="desc" key="work_2698">Selections from Qāʼānī's
+                        poems</title>
                      <incipit xml:lang="ar"/>
                      <explicit xml:lang="ar" defective="true"/>
                      <note>
@@ -189,10 +244,12 @@
                   <msItem xml:id="V_87-item10" n="10">
                      <locus from="99a" to="108b">ff. 99a-108b</locus>
                      <author key="person_80552020" ref="http://viaf.org/viaf/80552020/">
-                        <persName xml:lang="fa-Latn-x-lc" type="standard">Qāʼānī, Ḥabīb Allāh Shīrāzī, 1808-1854</persName>
+                        <persName xml:lang="fa-Latn-x-lc" type="standard">Qāʼānī, Ḥabīb Allāh
+                           Shīrāzī, 1808-1854</persName>
                         <persName xml:lang="fa">قاآنى، حبيب الله شيرازى</persName>
                      </author>
-                     <title xml:lang="en" type="desc" key="work_2699">Qaṣīdas rhyming in the letter yāʼ</title>
+                     <title xml:lang="en" type="desc" key="work_2699">Qaṣīdas rhyming in the letter
+                        yāʼ</title>
                      <incipit xml:lang="ar"/>
                      <explicit xml:lang="ar" defective="true"/>
                      <note>
@@ -201,35 +258,48 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 109 <dimensions unit="cm">
+                              <height>21.2</height>
+                              <width>13</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>14 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="taliq">Cursive ta'liq with vignettes.</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin change="#fix-dates">undated</origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <acquisition>Bequest of <persName xml:lang="en" type="standard"
+                        key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo"
+                        change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref
+                              target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+                              Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental
+                                 MSS belonging to the late E.G. Browne</hi>. Cambridge,
+                           1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
-                        <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
+                        <p>Entry to read in the Library is permitted only on presentation of a valid
+                           reader's card for admissions procedures contact <ref
+                              target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge
+                              University Library Admissions</ref>). Contact
+                              <email>near_eastern@lib.cam.ac.uk</email> for further information on
+                           the availability of this manuscript</p>
                      </availability>
                   </adminInfo>
                </additional>
@@ -240,7 +310,8 @@
          <classDecl>
             <taxonomy xml:id="LCSH">
                <bibl>
-                  <ref target="http://id.loc.gov/authorities/about.html#lcsh">Library of Congress Subject Headings</ref>
+                  <ref target="http://id.loc.gov/authorities/about.html#lcsh">Library of Congress
+                     Subject Headings</ref>
                </bibl>
             </taxonomy>
             <taxonomy xml:id="local_class">
@@ -271,41 +342,61 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh85100084" target="http://id.loc.gov/authorities/sh85100084#concept">Persian poetry</term>
+                     <term key="subject_sh85100084"
+                        target="http://id.loc.gov/authorities/sh85100084#concept">Persian
+                        poetry</term>
                   </item>
                   <item>
                      <ref target="#a1 #a7"/>
-                     <term key="subject_sh85054793" target="http://id.loc.gov/authorities/sh85054793#concept">Ghazals, Persian</term>
+                     <term key="subject_sh85054793"
+                        target="http://id.loc.gov/authorities/sh85054793#concept">Ghazals,
+                        Persian</term>
                   </item>
                   <item>
                      <ref target="#a1 #a5"/>
-                     <term key="subject_sh85109764" target="http://id.loc.gov/authorities/sh85109764#concept">Quatrains, Persian</term>
+                     <term key="subject_sh85109764"
+                        target="http://id.loc.gov/authorities/sh85109764#concept">Quatrains,
+                        Persian</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
-		</change>
-		<change when="2020-07-06" xml:id="ids-cleanup">
-			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
-		</change>
+         <change when="2025" xml:id="check-ai">Values checked by Giorgia Maffioli Brigatti</change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue
+            using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist
+            data cleanup project). </change>
+         <change when="2020-07-06" xml:id="ids-cleanup">
+            <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup
+            project). </change>
          <change when="2018-06-08">
-            <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
+            <persName>Andrew Morrison</persName> Updated key attributes using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl"
+               >update-keys.xsl</ref>
          </change>
          <change when="2018-03-28" xml:id="add-summary2">
-            <persName>Andrew Morrison</persName> Adjusted summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries2.xsl">add-summaries2.xsl</ref>
+            <persName>Andrew Morrison</persName> Adjusted summary using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries2.xsl"
+               >add-summaries2.xsl</ref>
          </change>
          <change when="2018-03-15" xml:id="add-summary">
-            <persName>Andrew Morrison</persName> Added summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl">add-summaries.xsl</ref>
+            <persName>Andrew Morrison</persName> Added summary using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl"
+               >add-summaries.xsl</ref>
          </change>
          <change when="2018-03-02" xml:id="fix-dates">
-            <persName>Andrew Morrison</persName> Removed origDate tags around something which is not a date using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+            <persName>Andrew Morrison</persName> Removed origDate tags around something which is not
+            a date using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl"
+               >fix-dates.xsl</ref>
          </change>
          <change when="2017-11-07">
-            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
+            <persName>James Cummings</persName> Up-converted the markup using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl"
+               >https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-09-01">
             <persName>Ignacio Sanchez</persName>

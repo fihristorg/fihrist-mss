@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3011">
    <teiHeader>
       <fileDesc>
@@ -41,10 +41,29 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>V. 15</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>V. 15 (9)</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <summary change="#add-summary">
-                     1 copy of Kullīyāt-i Saʻdī by Saʿdī
+                  <summary change="#ai-catalogue">
+                     <p>کلیات سعدی</p>
+                     <p>A neatly written MS. of the Kulliyyát, or Complete Works, of Sa'di, bought
+                        of Gejou for £4 on Nov. 1, 1904. It comprises 443 ff. of 22 x 14'6 c. and 17
+                        ll. in the body of the page and 12 in the margin, and is written in good and
+                        legible ta'liq with rubrications. It is undated, but the copyist gives his
+                        name as Shaykh Murshidu'd-Din Muḥammad, while a note on f. 1 states that in
+                        the year 1210/ 1795-6 it was in the possession of one of the inmates of the
+                        Mevleví [Mawlawi]- Khána of Galata, Constantinople, whose name has been cut
+                        off by the binder, but who describes himself as</p>خادم میدان غالب دده
+                        <p>There is inserted at the beginning the following table of
+                        contents:</p><p>رساله مجالس ٢، رساله سؤال صاحب دیوان ۱۷ رساله عقل و عشق ۱۸
+                        نصيحة الملوك ٢٠، رساله سلطان اباقا ۲۸ حكاية ملك انكياتو ۲۹ حكايت ملك شمس
+                        الدين تازیگوی ۳۰ گلستان ۳۱ بستان ۹۹ قصاید عربی ۱۹۵ قصاید فارسی ۱۹۹ كتاب
+                        المراثى ۲۲۷، كتاب الملمعات ٢٣١ كتاب الترجيعات ۲۳۶ كتاب طيّبات ۲۴۱ كتاب
+                        البدايع ۳۳۲ کتاب خواتیم ۳۷۴ غزلیات قدیم ۳۸۷ كتاب صاحبيه ٣٩٦ كتاب رباعيات ۴۱۷
+                        كتاب المفردات ۴۳۴، كتاب المطايبات ۴۲۷ كتاب الخبيثات ۴۳۵ مجلس ثانى فى الهزل
+                        ۴۳۸ مضحکات ۴۴۲</p>
                   </summary>
                   <msItem xml:id="V_15-item1">
                      <author key="person_100206721" ref="http://viaf.org/viaf/100206721/">
@@ -61,22 +80,25 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 443
+                                    <dimensions unit="cm">
+                              <height>22</height>
+                              <width>14.6</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>17 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="taliq">Written in good and legible ta'liq with rubrications.</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -84,12 +106,22 @@
                      <origDate calendar="#Hijri-qamari" notAfter="1210">undated<!-- Please review date text, see https://git.io/fihrist-dates --></origDate>
                      <origDate calendar="#Gregorian" notAfter="1795">Gregorian<!-- Please review date text, see https://git.io/fihrist-dates --></origDate>
                   </origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <provenance change="#ai-catalogue">
+                     Bought of <persName role="fmo" key="person_f1247">Gejou</persName> for £4 on Nov. 1, 1904.
+                        </provenance>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -113,18 +145,21 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh85100085" target="http://id.loc.gov/authorities/sh85100085#concept">Persian poetry--747-1500</term>
+                     <term key="subject_sh85100085"
+                           target="http://id.loc.gov/authorities/sh85100085#concept">Persian poetry--747-1500</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025" xml:id="check-ai">Values checked by Giorgia Maffioli Brigatti</change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
-		<change when="2020-07-06" xml:id="ids-cleanup">
-			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+         <change when="2020-07-06" xml:id="ids-cleanup">
+            <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

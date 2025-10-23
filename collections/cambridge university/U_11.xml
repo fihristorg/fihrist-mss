@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_2996">
    <teiHeader>
       <fileDesc>
@@ -41,10 +41,29 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>U. 11</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>U. 11 (13)</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <summary change="#add-summary">
-                     1 copy of al-Shuʻāʻ al-shāʼiʻ bi-al-lamʻān fī dhikr asmāʼ aʼimmat ʻUmān wa-mā lahum fī al-ʻadl min al-shaʼn
+                  <summary change="#ai-catalogue"><p>الشعاع الشائع باللمعان في ذكر اسماء ائمة عمان،
+                        وما لهم في العدل من الشان</p><p>A qasida, in praise of the Imams of 'Umán,
+                        together with a copious historical <lb/> commentary containing many
+                        citations in verse, by an author whose name is not <lb/> mentioned.</p>
+                     <p>Begins:</p>الحمد لله الذى جعل ائمّة العدل هم الضياء المنجاب به الظلام بعد
+                     الانبياء عليهم السلام ... اما <lb/> بعد لقد سألني بعض الاخوان فى الدين ان انظم
+                     قصيدة فى ائمّة عمان الصالحين ... وأن اشرحها <lb/> شرحا مختصرا مفيدا او شرحا
+                     بسيطا لا يطلب العارف له مزيدا<p>The opening verse of the qasida (f. 2") lacks
+                        the double rhyme:</p><p> عمان عن لسان الحال رُدّى</p><p>  جوابا منك لي ارجو
+                        الجوابا</p><p>On f. 9a the author enters on his proper subject with the
+                        verse</p><p><lb/> كفي فخراً عمان بالجلندا</p>اذا اصطحبت بمفخره اصطخابا
+                        <p>referring to Julandá ibn Mas'úd, "the first of the rightful Imams of
+                        'Umán" <lb/> (elected circa 134/751), and the list of his successors is
+                        carried down to the Imam <lb/> Sultán ibn Murshid al-Ya'rubí, elected
+                        1151/1738 (f. 131) See G. P. Badger, <lb/> History of the Imams and Seyyids
+                        of' Omán (Hakluyt Society, 1871).</p>
+                     <p>Ff. 138 of 38 × 22 c. and 18 ll. Large coarse nasta'liq with rubrications.
+                        No <lb/> colophon or date.</p>
                   </summary>
                   <msItem xml:id="U_11-item1">
                      <author key="person_f407" change="#ids-cleanup">
@@ -60,32 +79,42 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 138
+                  <dimensions unit="cm">
+                              <height>38</height>
+                              <width>22</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>18 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="nastaliq">Large coarse nasta'liq with rubrications</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin change="#fix-dates">undated</origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -109,24 +138,29 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh85006337" target="http://id.loc.gov/authorities/sh85006337#concept">Arabic poetry--1258-1800</term>
+                     <term key="subject_sh85006337"
+                           target="http://id.loc.gov/authorities/sh85006337#concept">Arabic poetry--1258-1800</term>
                   </item>
                   <item>
-                     <term key="subject_sh90002017" target="http://id.loc.gov/authorities/sh90002017#concept">Laudatory poetry, Arabic</term>
+                     <term key="subject_sh90002017"
+                           target="http://id.loc.gov/authorities/sh90002017#concept">Laudatory poetry, Arabic</term>
                   </item>
                   <item>
-                     <term key="subject_sh85094671" target="http://id.loc.gov/authorities/sh85094671#concept">Oman--History</term>
+                     <term key="subject_sh85094671"
+                           target="http://id.loc.gov/authorities/sh85094671#concept">Oman--History</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025" xml:id="check-ai">Values checked by Giorgia Maffioli Brigatti</change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
-		<change when="2020-07-06" xml:id="ids-cleanup">
-			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+         <change when="2020-07-06" xml:id="ids-cleanup">
+            <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

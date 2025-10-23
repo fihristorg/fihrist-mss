@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_410">
    <teiHeader>
       <fileDesc>
@@ -41,10 +41,25 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>C. 17</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>C. 17 (7).</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <summary change="#add-summary">
-                     1 copy of Risālah li-Muḥammad Bāqir ibn Muḥammad Taqī al-Majlisī by Majlisī, Muḥammad Bāqir ibn Muḥammad Taqī, 1627 or 8-ca. 1699
+                  <summary change="#ai-catalogue">
+                     <p>("Finis") thrice</p>
+                     <p>رسالة لمحمد باقر بن محمد تقى المجلسي</p>
+                     <p>An untitled Arabic tract by Mullá Muḥammad Báqir-i-Majlisí, the son of Mullá <lb/>Muhammad Taqi mentioned in the last article, than whom he was even more <lb/>famous as a theologian. Begins:</p>
+                     <p>الحمد الله الذى سهل تنا سلوك شرايع الدين وأوضح أعلامه وبين لنا مناهج اليقين فأكمل</p>
+                     <p>الخ <lb/>بذلك علينا انعامه</p>
+                     <p>The tract, which is divided into two chapters, opens with a general exhortation <lb/>to faith and good works "in this age wherein the paths have become doubtful to <lb/>men and the ways dark"</p>
+                     <p>في هذا الزمان الذى اشتبه على النّاس الطرق وأظلم عليهم المسالك ...</p>
+                     <p>The author fiercely denounces the Philosophers, Aristotelians and Platonists <lb/>alike, as followers of "an infidel Greek"; and the Súfis both for their pantheistic <lb/>doctrines and their monastic institutions.</p>
+                     <p>Chapter 1 (f. 7) deals with matters connected with the principles of doctrine:</p>
+                     <p>11 (f. 20') deals with practice:</p>
+                     <p>الباب الأول فيما يتعلق باصول العقايد</p>
+                     <p>الباب الثاني فيما يتعلق بكيفية العمل</p>
+                     <p>Ff. 35 of 16.8 x 9'4 c. and 15 ll.; excellent modern naskh. A note of ownership <lb/>on f. 1 is dated Shawwál, 1277/April-May, 1861. This MS. was bought at the <lb/>Belshah sale on November 12, 1920.</p>
                   </summary>
                   <msItem xml:id="C_17-item1">
                      <author key="person_90076153" ref="http://viaf.org/viaf/90076153/">
@@ -61,22 +76,25 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 35
+                                    <dimensions unit="cm">
+                              <height>16.8</height>
+                              <width>9.4</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>15 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="naskh">Excellent modern naskh.</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -84,12 +102,20 @@
                      <origDate calendar="#Hijri-qamari" notAfter="1277">undated<!-- Please review date text, see https://git.io/fihrist-dates --></origDate>
                      <origDate calendar="#Gregorian" notAfter="1861">Gregorian<!-- Please review date text, see https://git.io/fihrist-dates --></origDate>
                   </origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <provenance change="#ai-catalogue">This MS. was bought at the <persName key="person_f7815" role="fmo">Belshah</persName> sale on November 12, 1920.</provenance>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -113,18 +139,22 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh85121391" target="http://id.loc.gov/authorities/sh85121391#concept">Shīʻah--Doctrines</term>
+                     <term key="subject_sh85121391"
+                           target="http://id.loc.gov/authorities/sh85121391#concept">Shīʻah--Doctrines</term>
                   </item>
                   <item>
-                     <term key="subject_sh85112676" target="http://id.loc.gov/authorities/sh85112676#concept">Religious life--Shīʻah</term>
+                     <term key="subject_sh85112676"
+                           target="http://id.loc.gov/authorities/sh85112676#concept">Religious life--Shīʻah</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025" xml:id="check-ai"><persName>Syed Gillani</persName></change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

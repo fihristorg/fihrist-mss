@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1887">
    <teiHeader>
       <fileDesc>
@@ -41,10 +41,20 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>O. 8</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>O. 8 (9)</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <summary change="#add-summary">
-                     1 copy of Thamrah al-shajarah fī aḥkām al-nujūm by Bukhārī, ʻAlī Shāh ibn Muḥammad, 13th cent.
+                  <summary change="#ai-catalogue">
+                     <p>ثمرة الشجرة في احكام النجوم</p>
+                     <p>Thamaratu'sh-Shajara fi Ahkami'n-Nujúm, a Persian treatise on Judicial <lb/>Astrology by Ali-Shah ibn Muhammad Qasim al-Khwárazmi, known as al- <lb/>Bukhari, comprising five chapters called Shajara ("Tree"), each of which is <lb/>subdivided into numerous sections called Shu' ba, and subsections called Thamara <lb/>("Fruit"). The work was compiled for a Minister or Governor entitled Shamsu'd- <lb/>Din Muhammad Mubarakshah. Begins:</p>
+                     <p>حمد و ثنا آفریده گاری را که افلاکك دوائر نجوم و سواتر بیافرید و شکر و سپاس واجب الوجوديرا <lb/>كه عناصر ارکان در وجود آورد. و بعد چنین میگوید مؤلّف این مسوده علیشاه بن محمد <lb/>قاسم الخوارزمي المعروف بالبخارى حرسه الله تعالى نوائب الزمان كه چون ایادی و اکراه <lb/>خداوند خواجه معظم دستور ممالك العالم شمس الدولة والدين سيف الاسلام والمسلمين محمد <lb/>الصد (3) السعيد مبارك شاه اطال الله فى الدولة در حق این فقیر بسیار شد و مخدوم زادگانرا که <lb/>گوهران كان واختران آسمان اند اشارت شده بود تا بعد از وظائف تحصیلات دیگر چیزی ازین <lb/>علم شريف حاصل معلوم کند چون از حساب هندی و زیج جدید ایلخانی و زیخ عمده که <lb/>منتجب جمع کرده است این فقیر فارغ شد مجمل الاصول احكام كه بحكيم گوشیار رحمة الله عليه <lb/>منسوبست در تحت آوردند و چند كرت فرو خواندند الخ</p>
+                     <p>The contents of the book, which is here entitled Ashjár wa-Athmár ("Trees <lb/>and Fruits"), are briefly stated as follows on f. 3:</p>
+                     <p>... چون شرایط معلوم گشت بدانند که این فقیر بناء این کتاب بر پنج اشجار نهاد و هر شجره را <lb/>شعبات و اثمار شجره اول در صفات و منسوبات بروج و كواكب شجره دوم، در احکام قرانات <lb/>واتصالات دیگر، شجره سیوم در احکام عالم شجره چهارم در احکام موالید، شجره پنجم، در اعمال <lb/>تسییرات ، و اورا اشجار و اثمار الخ</p>
+                     <p>Shajara i begins on f. 3; Shajara ii on f. 37; Shajara iii on f. 60'; Shajara <lb/>onf. 76; Shajara son f. 133. The date of composition, 1176/1762-3, is given <lb/>in the following verse (f. 153") which concludes the book:</p>
+                     <p>این کتاب را که نوشت مفتی زار شش و هفتاد و صد و بعد هزار</p>
+                     <p>From the Belshah collection, November, 1920. Ff. 154 of 20'8 x 14'8 c. and <lb/>23 ll.; clear naskh with rubrications; no date except that given in the above verse.</p>
                   </summary>
                   <msItem xml:id="O_8-item1">
                      <author key="person_24409114" ref="http://viaf.org/viaf/24409114/">
@@ -62,22 +72,25 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 154
+                                    <dimensions unit="cm">
+                              <height>20.8</height>
+                              <width>14.8</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>23 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="naskh">Clear naskh with rubrications</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -85,12 +98,20 @@
                      <origDate notBefore="1762" notAfter="1763" calendar="#Hijri-qamari">1176</origDate>
                      <origDate calendar="#Gregorian" when="1762">1762-3</origDate>
                   </origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <provenance change="#ai-catalogue">From the <persName key="person_f7815" role="fmo">Belshah</persName> collection, November, 1920.</provenance>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -114,21 +135,25 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh90001470" target="http://id.loc.gov/authorities/sh90001470#concept">Judicial astrology</term>
+                     <term key="subject_sh90001470"
+                           target="http://id.loc.gov/authorities/sh90001470#concept">Judicial astrology</term>
                   </item>
                   <item>
-                     <term key="subject_sh2007100969" target="http://id.loc.gov/authorities/sh2007100969#concept">Astrology--Early works to 1800</term>
+                     <term key="subject_sh2007100969"
+                           target="http://id.loc.gov/authorities/sh2007100969#concept">Astrology--Early works to 1800</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025" xml:id="check-ai"><persName>Syed Gillani</persName></change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
-		<change when="2020-07-06" xml:id="ids-cleanup">
-			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+         <change when="2020-07-06" xml:id="ids-cleanup">
+            <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

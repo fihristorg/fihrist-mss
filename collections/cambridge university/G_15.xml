@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_656">
    <teiHeader>
       <fileDesc>
@@ -41,10 +41,39 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>G. 15</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>G. 15 (13)</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <summary change="#add-summary">
-                     1 copy of Zubdat al-tavārīkh by Muḥammad Muḥsin Mustawfī, 18th cent.
+                  <summary change="#ai-catalogue">
+                     <p>زبدة التواريخ</p>
+                     <p>Zubdatu't-Tawarikh, a general history in Persian from the time of Adam to the <lb/>
+date of composition (1154/1741-2) by Muhammad Muhsin-i-Mustawi, Amil-i <lb/>
+Diwán in Isfahan, where he was resident during the siege of that city by the <lb/>
+Afgháns in 1134-5/1722. See Rieu's Persian Supplement, pp. 24-25, No. 36, <lb/>
+where another MS. (probably an autograph) bearing the class-mark Or. 3498 is <lb/>
+fully described.</p>
+                     <p>Ff. 258 of 30 x 20'9 c. and 23 ll., written in good ta'liq, with an admixture of <lb/>
+raqam or siyáq, in double columns, without date or colophon.</p>
+                     <p>The history of the pre-Islámic Prophets, Patriarchs and Saints extends to <lb/>
+f. 41; that of the Prophet Muhammad and his ancestors to f. 70%; that of the Four <lb/>
+Orthodox Caliphs to f. 109b; the Imáms who succeeded 'Alí to f. 133"; the pre- <lb/>
+Islámic Kings of Persia to f. 142b; the post-Islámic dynasties of Persia; Táhirids, <lb/>
+f. 145; Şaffárids, f. 145; Sámánids, f. 146"; Ghaznawís, f. 147"; Ghúrís, f. 148; <lb/>
+Buwayhids, f. 149; Saljúqids, f. 150"; Khwarizmsháhs, f. 152"; Atábeks, f. 153" <lb/>
+Ismá'ílís, f. 155; Qará-Khitá'ís of Kirmán, f. 156b; the 'Abbásid Caliphs, f. 157; <lb/>
+Mongols, f 159; Suldúzís or Chúpánís, f. 163"; flkánís, f. 164: Muzaffarids, <lb/>
+f. 165"; the Kurt dynasty of Herát, f. 167"; the Sarbadárs, f. 168; Tímúr and his <lb/>
+successors, f. 169; the Qará-qoyúnlú and Aq-qoyúnlú Turkmán dynasties, f. 177 <lb/>
+the Safawis, f. 180. The history here becomes much more detailed, the principal <lb/>
+contents being as follows: Shah Ismá'íl I, f. 182; Tahmásp, f. 184"; Ismá'il II, <lb/>
+f. 192"; Muhammad Khudá-banda, f. 193; Sháh 'Abbás I "the Great," f. 194";</p>
+                     <p>Sháh Şafí, f. 200"; Sháh 'Abbás II, f. 202; Sháh Sulaymán, f. 202; Shah Sultán <lb/>
+Husayn, f. 203: he is put to death by the Afgháns, f. 209: Shah Tahmásp II, 1 <lb/>
+f. 210; the infant 'Abbás III, f. 216; account of the Afgháns from Mír Ways <lb/>
+onwards, f. 218; European and Christian rulers, f. 224; legend of Hárút and <lb/>
+Márút, Búdásf, etc., f. 233; wonders of the world, f. 253".</p>
                   </summary>
                   <msItem xml:id="G_15-item1">
                      <author key="person_78440607" ref="http://viaf.org/viaf/78440607/">
@@ -61,32 +90,41 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 258<dimensions unit="cm">
+                              <height>30</height>
+                              <width>20.9</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>23 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="taliq">ta'liq, with an admixture of raqam or siyáq, in double columns, without date or colophon</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin change="#fix-dates">undated</origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -110,18 +148,22 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh85148201" target="http://id.loc.gov/authorities/sh85148201#concept">World history</term>
+                     <term key="subject_sh85148201"
+                           target="http://id.loc.gov/authorities/sh85148201#concept">World history</term>
                   </item>
                   <item>
-                     <term key="subject_sh85068446" target="http://id.loc.gov/authorities/sh85068446#concept">Islamic Empire--History</term>
+                     <term key="subject_sh85068446"
+                           target="http://id.loc.gov/authorities/sh85068446#concept">Islamic Empire--History</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025" xml:id="check-ai"><persName>Syed Gillani</persName></change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

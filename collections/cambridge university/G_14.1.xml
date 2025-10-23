@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_651">
    <teiHeader>
       <fileDesc>
@@ -41,14 +41,43 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>G. 14.1</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>G. 141 (15)</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <summary change="#add-summary">
-                     1 copy of Khuld-i barīn by Vālah Iṣfahānī, Muḥammad Yūsuf, b. 1580?
+                  <summary change="#ai-catalogue">
+                     <p>Ff. 564 of 35'3 x 21'5 c. and 31 ll. Introduction (ff. 2"-5"):</p>
+                     <p>Rawda i. (a) The Great Prophets (ff. 5-115); (5) pre-Islamic Kings (ff. 115'-</p>
+                     <p>152). The history of Alexander the Great (ff. 132-135") is followed by accounts</p>
+                     <p>of the chief Greek philosophers, such as Pythagoras (f. 135), Socrates (f. 136),</p>
+                     <p>Diogenes and Plato (f. 137), Aristotle (f. 137), Hippocrates (f. 138), etc. Rawda i</p>
+                     <p>ends on f. 152" with a colophon giving the scribe's name and the date 8 Rabí® II,</p>
+                     <p>1271 (Dec. 29, 1854).</p>
+                     <p>Rawa . The Prophet Muhammad to his death in A.1. 11 (f. 153-275);</p>
+                     <p>the "Usurpers" Abú Bakr (f. 275-281), Umar (ff. 281-294"); 'Uthmán (ff.</p>
+                     <p>294-301"); table of the "Fourteen Immaculate ones" (i.e. Muhammad, Fátima,</p>
+                     <p>and the Twelve Imáms, ff. 301-302"), giving in each case the name, kunya, title,</p>
+                     <p>day, month and year of birth, reigning king, mother's name; inscription on signet-</p>
+                     <p>ring, number of wives and children, duration of life, date and cause of death, place</p>
+                     <p>of burial, etc.</p>
+                     <p>The account of the Twelve Imáms, which constitutes the second part of</p>
+                     <p>Rawda ii, occupies the remainder of the volume, vis. (1) 'Alí (ff. 303-412"); (2) al-</p>
+                     <p>Hasan (ff. 412-420); (3) al-Husayn (ff. 420-493"); (4) Ali Zaynu'l-Abidin (ff.</p>
+                     <p>493-498); (5) Muhammad al-Baqir (ff. 498-503"); (6) Ja'far as-Sadiq (ff. 503-</p>
+                     <p>509); (7) Músà Kazim (ff. 509-516); (8) Ali ar-Ridá (f. 516-529); (9) Mu--</p>
+                     <p>hammad at-Taqi (ff. 529-534"): (10) 'Ali an-Naqi ( 534-539); (11) Hasan</p>
+                     <p>al-Askari (ff. 539-544); (12) the Imám Mahdi (f. 544-563). The colophon</p>
+                     <p>at the bottom of this last page states that the transcription of this second Rawda</p>
+                     <p>was completed on the 27th of Muharram, 1271 (Oct. 20, 1854), by Aga Bab</p>
+                     <p>Sháhmírzádí ibn Mullá Muḥammad Mahdi for [Prince Bahman Mírzá] Bahá'u'd-</p>
+                     <p>Dawla.</p>
                   </summary>
                   <msItem xml:id="G_14.1-item1">
                      <note>Vol. 1</note>
-                     <author key="person_237544465" ref="http://viaf.org/viaf/237544465/" change="#ids-cleanup">
+                     <author key="person_237544465"
+                             ref="http://viaf.org/viaf/237544465/"
+                             change="#ids-cleanup">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Vālah Iṣfahānī, Muḥammad Yūsuf, b. 1580?</persName>
                         <persName xml:lang="fa">واله اصفهاني، محمد يوسف</persName>
                      </author>
@@ -62,38 +91,43 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 564
+                                    <dimensions unit="cm">
+                              <height>35.3</height>
+                              <width>21.5</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>31 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote scope="major" script="unknown">
-                        <persName xml:lang="fa-Latn-x-lc" key="person_f4605" role="scr" change="#role-assignment">Āqā Bābā Shāhmīrzādī ibn Mullā Muḥammad Mahdī <foreign xml:lang="fa">آقا بابا شاهميرزادي بن ملا محمد مهدي</foreign>
-                        </persName>
-                     </handNote>
-                  </handDesc>
-               </physDesc>
+                                </physDesc>
                <history>
                   <origin change="#fix-dates">
                      <origDate notBefore="1854" notAfter="1855" calendar="#Hijri-qamari">1271</origDate>
                      <origDate calendar="#Gregorian" when="1854">1854</origDate>
                   </origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -120,18 +154,21 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh96007363" target="http://id.loc.gov/authorities/sh96007363#concept">Iran--History--Ṣafavid dynasty, 1501-1736</term>
+                     <term key="subject_sh96007363"
+                           target="http://id.loc.gov/authorities/sh96007363#concept">Iran--History--Ṣafavid dynasty, 1501-1736</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025" xml:id="check-ai"><persName>Syed Gillani</persName></change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
-		<change when="2020-07-06" xml:id="ids-cleanup">
-			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+         <change when="2020-07-06" xml:id="ids-cleanup">
+            <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

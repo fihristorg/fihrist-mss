@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_423">
    <teiHeader>
       <fileDesc>
@@ -41,14 +41,25 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>C. 8</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>C. 8 (9).</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <summary change="#add-summary2">
-                     2 works by 2 authors on the subjects of Imams and Hadith
+                  <summary change="#ai-catalogue">
+                     <p>(۱) فهرست اسماء علماء الشيعة</p>
+                     <p>(۲) معالم العلماء</p>
+                     <p>(1) Fihristu asma'i Ulama'i'sh-Shi'a (ff. 1-35), an Index of the names of <lb/> Shi'a divines, arranged alphabetically, by Shaykh Muntajabu'd-Din Abu'l-Hasan <lb/> Ali ibn Ubaydi'lláh ibnu'l-Hasan ibnu'l-Husayn ibn Bábawayhi of Qum, who <lb/> wrote it as a supplement to the Fihrist of at-Túsí. See Ahlwardt's Berlin Arabic <lb/> Catalogue, vol. ix, p. 454, No. 10048, and the Kashful-Hujub of Sayyid I'jáz <lb/> Husayn (Calcutta, 1330/1912), p. 407, No. 2250.</p>
+                     <p>(2) Ma'alimul Ulama (f. 37-83), another similar work by Shaykh Rashidu'd <lb/> Din Muhammad ibn 'Ali ibn Shahr-áshúb as-Sarawi al-Mazandarání (d. 588/1192).</p>
+                     <p>See Ahlwardt, loc. cit., No. 10047; Brockelmann, 1, 405; Kashful-Hujub, p. 532,</p>
+                     <p>No. 2991.</p>
+                     <p>Ff. 83 of 21 x 15'5 c. and 15 ll., fair naskh with rubrications. The date (Rajab <lb/> 613/Oct-Nov. 1216) and scribe's name (Muḥammad ibn Muhammad ibn 'Ali <lb/> al-Hamdání al-Qazwini) contained in the first colophon (on f. 35b) evidently refer <lb/> to the original MS. from which this quite modern copy was made, and with which <lb/> it was subsequently collated. A note at the end (f. 83) written and sealed by one <lb/> Muhammad Sabih ibn 'Abdi'l-Wasi' al-Husayni, and dated Jumáda 1, 1118/Aug- <lb/> Sept., 1706, states that this MS. formerly belonged to the celebrated Shaykh <lb/> Bahá'u'd-Din al-'Ámili, one of the most noted theologians of the reign of Shah <lb/> 'Abbás the Great, and contains notes and glosses in his handwriting. Acquired at <lb/> the sale of the Belshah MSS. in the latter part of 1920.</p>
                   </summary>
                   <msItem xml:id="C_8-item1" n="1">
                      <locus from="1b" to="35b">ff. 1b-35b</locus>
-                     <author key="person_90043815" ref="http://viaf.org/viaf/90043815/" change="#ids-cleanup">
+                     <author key="person_90043815"
+                             ref="http://viaf.org/viaf/90043815/"
+                             change="#ids-cleanup">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn Bābūyah al-Qummī, ʻAlī ibn ʻUbayd Allāh, 1110 or 11-ca. 1189</persName>
                         <persName xml:lang="ar">ابن بابووه القمى، على بن عبيد الله بن الحسن بن الحسين <addName xml:lang="ar" type="kunyah">ابو الحسن</addName>
                         </persName>
@@ -79,22 +90,25 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 83
+                                    <dimensions unit="cm">
+                              <height>21</height>
+                              <width>15.5</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>15 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="naskh">fair naskh with rubrications</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -102,12 +116,26 @@
                      <origDate calendar="#Hijri-qamari" notAfter="1118">undated<!-- Please review date text, see https://git.io/fihrist-dates --></origDate>
                      <origDate calendar="#Gregorian" notAfter="1706">undated<!-- Please review date text, see https://git.io/fihrist-dates --></origDate>
                   </origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <provenance change="#ai-catalogue">
+                     This MS. formerly belonged to the celebrated
+                     <persName key="person_27052262" role="fmo">Shaykh Bahá'u'd-Din al-ʿĀmili</persName>,
+                     and was acquired from the
+                     <persName key="person_f7815" role="fmo">Belshah collection</persName>
+                     at the sale of the Belshah MSS. in the latter part of 1920.
+                  </provenance>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -131,21 +159,27 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh2008104277" target="http://id.loc.gov/authorities/sh2008104277#concept">Imams (Shiites)--Biography</term>
+                     <term key="subject_sh2008104277"
+                           target="http://id.loc.gov/authorities/sh2008104277#concept">Imams (Shiites)--Biography</term>
                   </item>
                   <item>
-                     <term key="subject_sh85058200" target="http://id.loc.gov/authorities/sh85058200#concept">Hadith (Shiites)--Authorities</term>
+                     <term key="subject_sh85058200"
+                           target="http://id.loc.gov/authorities/sh85058200#concept">Hadith (Shiites)--Authorities</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025-08-11" xml:id="check-ai">
+            <persName>Syed Gillani</persName>
+         </change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
-		<change when="2020-07-06" xml:id="ids-cleanup">
-			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+         <change when="2020-07-06" xml:id="ids-cleanup">
+            <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

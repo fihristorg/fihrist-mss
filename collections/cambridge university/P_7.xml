@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_2587">
    <teiHeader>
       <fileDesc>
@@ -41,13 +41,23 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>P. 7</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>P. 7 (10)</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <summary change="#add-summary">
-                     1 copy of Ḥall al-mūjaz by Aqsarāʼī, Muḥammad ibn Muḥammad, 14th cent.
+                  <summary change="#ai-catalogue">
+                     <p>حل الموجز</p>
+                     <p>Another Commentary on the above-mentioned Majas entitled Hall-Maja <lb/>by Jamálu'd-Din Muhammad ibn Muhammad al-Aq-sará'i (d. circa 800/1397). <lb/>beginning, after the short doxology:</p>
+                     <p>و بعد، فان الطب علم شريف لشرف موضوعه ووثاقة دلايله وشدة الحاجة اليه الخ</p>
+                     <p>The author says that he read with his father most of the well-known abridg- <lb/>ments of the Mújaz, besides many longer works generally ignored by contemporary <lb/>physicians, of which he especially mentions the Hawl, or "Continens," of ar-Rází, <lb/>the Kámilu's-Sana'at of al-Majúsí, the Qánúin of Avicenna, and the writings of <lb/>Najibu'd-Din of Samarqand.</p>
+                     <p>The MS, bought of Hajji 'Abdu'l-Majid Belshah in January, 1920, comprises <lb/>263 ff. of 23'6 x 14 c. and 20 ll., and is written in a clear, fairly modern naskh with <lb/>rubrications and some marginal notes in various hands. The Arabic text ends on <lb/>f. 260, and the remaining leaves contain notes in Persian. On f. 262 is an <lb/>inscription in the Khatt-i-sarwi, or "Cypress-writing," described in my Year <lb/>amongst the Persians, pp. 391-392 [426-428 in the reprint published by the <lb/>Cambridge University Press], which appears to read:</p>
+                     <p>این کتاب مال حسين عم</p>
                   </summary>
                   <msItem xml:id="P_7-item1">
-                     <author key="person_305410978" ref="http://viaf.org/viaf/305410978/" change="#ids-cleanup">
+                     <author key="person_305410978"
+                             ref="http://viaf.org/viaf/305410978/"
+                             change="#ids-cleanup">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">Aqsarāʼī, Muḥammad ibn Muḥammad, 14th cent.</persName>
                         <persName xml:lang="ar">اقسرائي، محمد بن محمد <addName xml:lang="ar" type="khitab">جمال الدين</addName>
                         </persName>
@@ -64,11 +74,17 @@
                            <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/195">p.169</ref>
                         </bibl>
                         <bibl type="text-relations">This work is a commentary on the <title xml:lang="ar-Latn-x-lc">Sharḥ al-mūjaz fī al-ṭibb <foreign xml:lang="ar">شرح الموجز في الطب</foreign>
-                           </title> of <author key="person_17316331" ref="http://viaf.org/viaf/17316331/" role="ant" change="#role-assignment">
+                           </title> of <author key="person_17316331"
+                                   ref="http://viaf.org/viaf/17316331/"
+                                   role="ant"
+                                   change="#role-assignment">
                               <persName xml:lang="ar-Latn-x-lc">Ibn al-Nafīs, ʻAlī ibn Abī al-Ḥazm, 1210 or 11-1288</persName>
                               <persName xml:lang="ar">ابن النفيس، على بن أبي الحزم</persName>
                            </author> which, in turn, is a selection from <title xml:lang="ar-Latn-x-lc">al-Qānūn fī al-ṭibb <foreign xml:lang="ar">القانون في الطب</foreign>
-                           </title> of <author key="person_89770781" ref="http://viaf.org/viaf/89770781/" role="ant" change="#role-assignment">
+                           </title> of <author key="person_89770781"
+                                   ref="http://viaf.org/viaf/89770781/"
+                                   role="ant"
+                                   change="#role-assignment">
                               <persName xml:lang="ar-Latn-x-lc">Avicenna, 980-1037</persName>
                               <persName xml:lang="ar">ابن سينا</persName>
                            </author>.</bibl>
@@ -76,32 +92,43 @@
                      <textLang mainLang="ar" otherLangs="fa">Arabic with some Persian notes</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 263
+                                    <dimensions unit="cm">
+                              <height>23.6</height>
+                              <width>14</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>20 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="naskh">Clear, fairly modern naskh with rubrications and some marginal notes in various hands.</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin change="#fix-dates">undated</origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <provenance change="#ai-catalogue">Purchased from <persName key="person_f7815" role="fmo">Hajji 'Abdu'l-Majid Belshah</persName> in January, 1920.</provenance>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -125,21 +152,25 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh85083116" target="http://id.loc.gov/authorities/sh85083116#concept">Medicine, Arab</term>
+                     <term key="subject_sh85083116"
+                           target="http://id.loc.gov/authorities/sh85083116#concept">Medicine, Arab</term>
                   </item>
                   <item>
-                     <term key="subject_sh2010105253" target="http://id.loc.gov/authorities/sh2010105253#concept">Pathology--Early works to 1800</term>
+                     <term key="subject_sh2010105253"
+                           target="http://id.loc.gov/authorities/sh2010105253#concept">Pathology--Early works to 1800</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025" xml:id="check-ai"><persName>Syed Gillani</persName></change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
-		<change when="2020-07-06" xml:id="ids-cleanup">
-			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+         <change when="2020-07-06" xml:id="ids-cleanup">
+            <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

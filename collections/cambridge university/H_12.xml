@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_687">
    <teiHeader>
       <fileDesc>
@@ -41,10 +41,29 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>H. 12</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>H. 12 (11)</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <summary change="#add-summary">
-                     1 copy of Silsilat al-nasab-i ṣafawīyah by Ḥusayn ibn Abdāl Zāhidī
+                  <summary change="#ai-catalogue">
+                     <p>سلسلة النسب صفويه</p>
+                     <p>A very rare and interesting monograph on the Safawi Kings and their ancestors, <lb/>
+entitled Silsilatu'n-Nasab-i-Safawiyya, compiled in the reign of Shah Sulaymán <lb/>
+(A.11. 1077-1105-A.D. 1667-1694) by Shaykh Husayn ibn Shaykh Abdál-i-Zahidi, <lb/>
+one of the Pir-zádas or descendants of Shaykh Şafiyyu'd-Dín's spiritual director <lb/>
+(Pir) Shaykh Záhid of Gílán. I have described this work in some detail in an <lb/>
+article entitled Note on an apparently unique Manuscript History of the Safawi <lb/>
+Dynasty of Persia published in the J.R.A.S. for July, 1921, pp. 395-418. There <lb/>
+appears, however, to be at least one other MS. at St Petersburg. <note>See an article by Khanikof and Brosset in the Mélanges Asiatiques (St Petersburg, 1852), 1, <lb/>
+pp. 580-583, entitled Sac d'Ardebil vers l'an 1203. I am indebted for this reference to my friend <lb/>
+M. V. Minorsky.</note>. The text is now <lb/>
+being printed from photographs of my MS. by Mírzá Husayn Kázimzáda, editor of <lb/>
+the Iránshahr at Berlin <note>[The text was published by the fránshahr Press, Berlin, in 1924.]</note>. The last date mentioned in the text is 1059/1649, when <lb/>
+Qandahár was taken by the Persians.</p>
+                     <p>Ff. 88 of 26'3 x 16'5 c. and 15 ll.; fair ta'lig with rubrications; no date or <lb/>
+colophon. Miniatures representing some of the incidents described occur on ff. 13", <lb/>
+19, 26, 35, and 80%.</p>
                   </summary>
                   <msItem xml:id="H_12-item1">
                      <author ref="http://viaf.org/viaf/7365077/" key="person_7365077">
@@ -61,35 +80,42 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 88
+                                    <dimensions unit="cm">
+                              <height>26.3</height>
+                              <width>16.5</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>15 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="taliq">fair ta'lig with rubrications</handNote>
                   </handDesc>
-                  <decoDesc>
-                     <decoNote type="illustration">Miniatures representing some of the incidents described occur on <locus>ff. 13a, 19a, 26b, 35b, 80a</locus>.</decoNote>
-                  </decoDesc>
                </physDesc>
                <history>
                   <origin change="#fix-dates">undated</origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -113,15 +139,18 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh96007363" target="http://id.loc.gov/authorities/sh96007363#concept">Iran--History--Ṣafavid dynasty, 1501-1736</term>
+                     <term key="subject_sh96007363"
+                           target="http://id.loc.gov/authorities/sh96007363#concept">Iran--History--Ṣafavid dynasty, 1501-1736</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025" xml:id="check-ai"><persName>Syed Gillani</persName></change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

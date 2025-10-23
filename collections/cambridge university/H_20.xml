@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_696">
    <teiHeader>
       <fileDesc>
@@ -41,10 +41,19 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>H. 20</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>H. 20 (9)</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <summary change="#add-summary">
-                     1 copy of Kitāb kalām al-mulūk
+                  <summary change="#ai-catalogue">
+                     <p>كتاب كلام الملوك</p>
+                     <p>Kalámu'l-Mulúk, a brief account of the Qájár dynasty down to the death of <lb/> Fath-'Ali Shah on the 19th of Jumáda 11, 1250/Oct. 23, 1834, of doubtful authorship. <lb/> copied for Mr Lyne' <note>See my Year amongst the Persians, p. 184.</note>, at that time in charge of the Indo-European telegraph-office</p>
+                     <p>at Qum, in Ramadan, 1290/October, 1873, by Ali Akbar, formerly custodian of the <lb/> Holy Shrine of Qum. This was one of three small MSS. from the library of the <lb/> late Mr Lyne bought for 135. from Messrs Luzac and Co. in February, 1907. <lb/> Begins, after the title and the Bismillah:</p>
+                     <p>كه</p>
+                     <p>لك الحمد يا ذا الجود والمجد والعلى تباركت تعطى من تشاء و تمنع تحسین و درود مر <lb/> نخستین صدور ورود عرصه شهود احمد محمود (1) تفصیل این اجمال آنکه ایل جلیل <lb/> قاجار از اروغ میمون آق قویونلوی ترکمانیه و آن قبیله نبیله از اولاد ترك بن يافث بن نوح. <lb/> بیافث اغلان مذکور و بکثرت اولاد و احفاد مشهور بود قبایل و عشایر (14) نتيجه يك نسل و فرع <lb/> يك اصل از او منشعب گشته پس از تسخیر ممالك شرق و شمال در ترکستان و چین و ثقلاب <lb/> صقلاب sic for و ختای و ختن جای گیر شدند و طائفه از آن ملقب به آق قویونلو و قرا قویونلو <lb/> اکثری از بلاد روم و شامات و دیار بكر بحيطه تملك و تصرف در آورده بعزیمت ایران مصمم در اندك <lb/> زمان ایران را مسخر و آنرا بسه قسمت کردند که متون تواریخ و بطون اخبار از آثار و کردار <lb/> سلاطین با (4) اقتدار از دو طائفه حاکی و حاویست جمعی در تبریز و ایروان و گنجه ساکن <lb/> و رایت سلطنت در ممالک آذربایجان و کرج و عراق و فارس ،افراختند آبای کرام و اجداد با <lb/> عدل و داد ما در استراباد و گرگان بعد از استیلای بر ترکمان و دشت قفچاق تمکن و بهره در مرو <lb/> شاهیجان توطن یافته بر اکثر بلاد خراسان حکمران و فرمان روا شدند شاهقلیخان پدر پنجم <lb/> ما كه سرخیل آن انجم بود پس از انقضای مدت حکمرانی از این (15) جهان فانی در <lb/> گذشت <lb/> زمام اختیار آن حدود بفرزند ارشد فتحعلی خان باز گذاشت</p>
+                     <p>From the expression "our noble forefathers and first and righteous ancestors" <lb/> in the above citation, it may be inferred that the author of this little book himself <lb/> belonged to the Qajár tribe.</p>
+                     <p>Ff. 38 of 20'8 x 15 c. and 9 ll., written in a very large naskh, with occasional <lb/> headings in blue to indicate the occurrence of verses in the text.</p>
                   </summary>
                   <msItem xml:id="H_20-item1">
                      <author key="person_f407" change="#ids-cleanup">
@@ -60,22 +69,25 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 38
+                  <dimensions unit="cm">
+                              <height>20.8</height>
+                              <width>15</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>9 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="naskh">Written in a very large naskh, with occasional headings in blue to indicate the occurrence of verses in the text.</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -83,12 +95,20 @@
                      <origDate notBefore="1873" notAfter="1874" calendar="#Hijri-qamari">1290</origDate>
                      <origDate calendar="#Gregorian" when="1873">1873</origDate>
                   </origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <provenance change="#ai-catalogue">This was one of three small MSS. from the library of the late Mr Lyne bought for 135. from Messrs <persName key="person_f2031" role="fmo">Luzac and Co.</persName> in February, 1907.</provenance>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -112,18 +132,21 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh85067900" target="http://id.loc.gov/authorities/sh85067900#concept">Iran--History--Qajar dynasty, 1794-1925</term>
+                     <term key="subject_sh85067900"
+                           target="http://id.loc.gov/authorities/sh85067900#concept">Iran--History--Qajar dynasty, 1794-1925</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025" xml:id="check-ai"><persName>Syed Gillani</persName></change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
-		<change when="2020-07-06" xml:id="ids-cleanup">
-			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+         <change when="2020-07-06" xml:id="ids-cleanup">
+            <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_2983">
    <teiHeader>
       <fileDesc>
@@ -20,7 +20,8 @@
                   <settlement>Cambridge</settlement>
                   <postCode>CB3 9DR</postCode>
                   <addrLine>
-                     <ref target="http://www.lib.cam.ac.uk/deptserv/neareastern/">Cambridge University Library</ref>
+                     <ref target="http://www.lib.cam.ac.uk/deptserv/neareastern/">Cambridge
+                        University Library</ref>
                   </addrLine>
                   <addrLine>
                      <email>near_eastern@lib.cam.ac.uk</email>
@@ -41,14 +42,32 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>Supp. 2</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>Sup. 2 (9)</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="#commentary">
-                  <summary change="#add-summary">
-                     1 copy of Qavāʻid-i ʻAlī'Shīrī by Muḥyī al-Dīn ibn Niẓām
+                  <summary change="#ai-catalogue">
+                     <p>قواعد علیشیری</p>
+                     <p>A commentary on some difficult verses in the First Part of the Sikandar-náma
+                        <lb/> of Nizámí, by Muhyi'd-Din ibn Nizám, a disciple of Sayyid Ashraf
+                        Jahangir <lb/> (as-Simnání). See Rieu's Persian Catalogue, p. 859, and
+                        Sprenger's Oudh <lb/> Catalogue, p. 522.</p>
+                     <p>Begins:</p>
+                     <p>سپاس بی قیاس مردایران دارای) کونین را که میزان اشعار نامدار در لسان دربار
+                        شعرا تعبیر فرمود</p>
+                     <p>The author, who studied Persian poetry under Shaykh Muhammad Lál and <lb/>
+                        Shaykh Muhaddith, composed the present work in 956/1549 and gave it the
+                        title <lb/> of Qawa'id-i-Al-Shiri in honour of his patron Naşiru'd-Din
+                        'Ali-Shir. Rieu <lb/> (loc. cit.) calls it Fawa'id-i- Al-Shiri, but this
+                        seems to be a mistake.</p>
+                     <p>Ff. 182 of 22 x 13 c. and 17 ll. Excellent nasta'liq with rubrications.
+                        Dated <lb/> 1086/1675.</p>
                   </summary>
                   <msItem xml:id="Supp_2-item1">
                      <author key="person_f2919">
-                        <persName xml:lang="ar-Latn-x-lc" type="supplied">Muḥyī al-Dīn ibn Niẓām</persName>
+                        <persName xml:lang="ar-Latn-x-lc" type="supplied">Muḥyī al-Dīn ibn
+                           Niẓām</persName>
                         <persName xml:lang="ar">محيي الدين بن نظام</persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_1551">Qavāʻid-i ʻAlī'Shīrī</title>
@@ -60,49 +79,69 @@
                      </note>
                      <listBibl>
                         <bibl>
-                           <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/322">p.296</ref>
+                           <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/322"
+                              >p.296</ref>
                         </bibl>
-                        <bibl type="text-relations">Commentary of some difficult verses in the first part of the <title xml:lang="fa-Latn-x-lc">Sikandarnāmah <foreign xml:lang="fa">سكندرنامه</foreign>
-                           </title> of <author key="person_2474895" ref="http://viaf.org/viaf/2474895/" role="ant" change="#role-assignment">
-                              <persName xml:lang="fa-Latn-x-lc">Niẓāmī Ganjavī, 1140 or 41-1202 or 3</persName>
+                        <bibl type="text-relations">Commentary of some difficult verses in the first
+                           part of the <title xml:lang="fa-Latn-x-lc">Sikandarnāmah <foreign
+                                 xml:lang="fa">سكندرنامه</foreign>
+                           </title> of <author key="person_2474895"
+                              ref="http://viaf.org/viaf/2474895/" role="ant"
+                              change="#role-assignment">
+                              <persName xml:lang="fa-Latn-x-lc">Niẓāmī Ganjavī, 1140 or 41-1202
+                                 or 3</persName>
                               <persName xml:lang="fa">نظامى گنجوى</persName>
                            </author>.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 182 <dimensions unit="cm">
+                              <height>22</height>
+                              <width>13</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>17 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="nastaliq">Excellent nasta'liq with rubrications.</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin change="#fix-dates">
-                     <origDate notBefore="1675" notAfter="1676" calendar="#Hijri-qamari">1086</origDate>
+                     <origDate notBefore="1675" notAfter="1676" calendar="#Hijri-qamari"
+                        >1086</origDate>
                      <origDate calendar="#Gregorian" when="1675">1675</origDate>
                   </origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <acquisition>Bequest of <persName xml:lang="en" type="standard"
+                        key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo"
+                        change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref
+                              target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+                              Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental
+                                 MSS belonging to the late E.G. Browne</hi>. Cambridge,
+                           1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
-                        <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
+                        <p>Entry to read in the Library is permitted only on presentation of a valid
+                           reader's card for admissions procedures contact <ref
+                              target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge
+                              University Library Admissions</ref>). Contact
+                              <email>near_eastern@lib.cam.ac.uk</email> for further information on
+                           the availability of this manuscript</p>
                      </availability>
                   </adminInfo>
                </additional>
@@ -113,7 +152,8 @@
          <classDecl>
             <taxonomy xml:id="LCSH">
                <bibl>
-                  <ref target="http://id.loc.gov/authorities/about.html#lcsh">Library of Congress Subject Headings</ref>
+                  <ref target="http://id.loc.gov/authorities/about.html#lcsh">Library of Congress
+                     Subject Headings</ref>
                </bibl>
             </taxonomy>
             <taxonomy xml:id="local_class">
@@ -142,30 +182,46 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh85100085" target="http://id.loc.gov/authorities/sh85100085#concept">Persian poetry--747-1500</term>
+                     <term key="subject_sh85100085"
+                        target="http://id.loc.gov/authorities/sh85100085#concept">Persian
+                        poetry--747-1500</term>
                   </item>
                   <item>
-                     <term key="subject_sh2006007951" target="http://id.loc.gov/authorities/sh2006007951#concept">Epic poetry, Persian</term>
+                     <term key="subject_sh2006007951"
+                        target="http://id.loc.gov/authorities/sh2006007951#concept">Epic poetry,
+                        Persian</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
-		</change>
+         <change when="2025" xml:id="check-ai">Values checked by Giorgia Maffioli Brigatti</change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue
+            using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist
+            data cleanup project). </change>
          <change when="2018-06-08">
-            <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
+            <persName>Andrew Morrison</persName> Updated key attributes using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl"
+               >update-keys.xsl</ref>
          </change>
          <change when="2018-03-15" xml:id="add-summary">
-            <persName>Andrew Morrison</persName> Added summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl">add-summaries.xsl</ref>
+            <persName>Andrew Morrison</persName> Added summary using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl"
+               >add-summaries.xsl</ref>
          </change>
          <change when="2018-03-02" xml:id="fix-dates">
-            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements
+            using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl"
+               >fix-dates.xsl</ref>
          </change>
          <change when="2017-11-07">
-            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
+            <persName>James Cummings</persName> Up-converted the markup using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl"
+               >https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-09-06">
             <persName>Ignacio Sanchez</persName>

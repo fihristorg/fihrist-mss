@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_389">
    <teiHeader>
       <fileDesc>
@@ -41,10 +41,49 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>B. 12</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>B. 12 (9).</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <summary change="#add-summary">
-                     1 copy of Kitāb majmūʻ manāshīr sayyidinā al-imām Muḥammad al-Mahdī by Sanūsī, Muḥammad al-Mahdī, 1844-1902
+                  <summary change="#ai-catalogue">
+                     <p>مجموع <lb/>كتاب مجموع</p>
+                     <p>محمد المهدى <lb/>مناشير سيدنا الامام</p>
+                     <p>A large collection of proclamations issued by Muhammad ibn Sayyid 'Abdi- 
+                                <lb/>'lláh, the Mahdi of the Súdán, given to me by Mr Vincent R. Woodland of the 
+                                <lb/>Súdán Civil Service, who described it in the accompanying note as a "MS. of the 
+                                <lb/>Mahdi's and Khalifa's Proclamations. Typical Súdán calligraphy. Captured by me 
+                                <lb/>in house of Dervish suspect near Dobha in 1907."
+                            </p>
+                     <p>The dates of these proclamations, all of which appear to emanate from the 
+                                <lb/>Mahdí, not from his Khalifa, vary between 1298/1881 and 1304/1886-7. They 
+                                <lb/>vary much in length, and while most are addressed to his followers generally, some 
+                                <lb/>are specifically addressed to such leading men as the Qadi'l-Islám Ahmad 'Ali, 
+                                <lb/>'Abdu'r-Rahmán an-Nujúmí, Hamdán Abú Anja, etc. One of these is addressed 
+                                <lb/>to the Wall or Ruler (f. 314a) and one to the theologians ('alamá) of Egypt (f. 308a).
+                            </p>
+                     <p>The following passage (ff. 143-144), in which the use of the term "Dervishes" 
+                                <lb/>(Daráwish) to denote the Mahdi's followers is forbidden, is of some interest, and 
+                                <lb/>may serve as a specimen of the style:
+                            </p>
+                     <p>التدبير</p>
+                     <p>.... ولا بد من اعلام جميع الاخوان صنع الأمرا والمقادم أن يتركوا تسمية الأنصار بالدراويش 
+                                <lb/>لأن هذه التسمية لهم وهم وخروج عن الصَّواب لأنّ الذين سموهم بها سموهم لتسميتهم (?) ابناء الآخرة 
+                                <lb/>ونسبتهم الى عدم العقل والادراك مع انّ من لم ينح نَحْوَهُم هم الذين لا عقل لهم اذ هو 
+                                <lb/>في الغانيات وذلك ذهاب عقل اذ المدبر للباطل ليس له عقل (1447) (f) ويحق أن يسموا بالدراويش 
+                                <lb/>ابناء الدنيا الذين يعلمون ظاهرا من الحيوة الدنيا وهم عن الآخرة هم غافلون فمن سمى الأنصار 
+                                <lb/>دراويش بعد هذا يجرى عليه حكم التغيير والقذف بل أشدّ لأنّه نسب اهل العقل و الأعمال التي
+                            </p>
+                     <p>أمر الله بها الى السفاهة ويقرب ذلك الى النفاق والكفر والسّلام في جمادى الآخرة سنة ١٣٠١</p>
+                     <p>Ff. 376 of 21.8 x 15 c. and 15 ll.; coarse, clear naskh with rubrications. The 
+                                <lb/>date at the end (1304/1886-7) probably refers to the concluding proclamation, not 
+                                <lb/>to the time of transcription.
+                            </p>
+                     <p>[Qur'an, xxx, 6].</p>
+                     <p>* April, 1884.</p>
+                     <p>Ff. 376 of 21.8 x 15 c. and 15 ll.; coarse, clear naskh with rubrications. The date at the end (1304/1886-7) probably refers to the concluding proclamation, not to the time of transcription.</p>
+                     <p>Physical description: The manuscript comprises 376 folios, measuring approximately 21.8 x 15 cm, written in coarse, clear naskh script with rubrications, arranged in 15 lines per page.</p>
+                     
                   </summary>
                   <msItem xml:id="B_12-item1">
                      <author key="person_41186851" ref="http://viaf.org/viaf/41186851/">
@@ -63,22 +102,26 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 376
+                                    <dimensions unit="cm">
+                              <height>21.8</height>
+                              <width>15</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>15 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="naskh">coarse, clear with rubrications</handNote>
+                     
                   </handDesc>
                </physDesc>
                <history>
@@ -89,12 +132,20 @@
                   <provenance change="#ai-catalogue">
                      Captured by <persName key="" role="fmo">Mr Vincent R. Woodland</persName> in the house of a Dervish suspect near Dobha (Sudan)in 1907.
                   </provenance>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -118,21 +169,27 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh85107158" target="http://id.loc.gov/authorities/sh85107158#concept">Proclamations</term>
+                     <term key="subject_sh85107158"
+                           target="http://id.loc.gov/authorities/sh85107158#concept">Proclamations</term>
                   </item>
                   <item>
-                     <term key="subject_sh85129607" target="http://id.loc.gov/authorities/sh85129607#concept">Sudan--History--1881-1899</term>
+                     <term key="subject_sh85129607"
+                           target="http://id.loc.gov/authorities/sh85129607#concept">Sudan--History--1881-1899</term>
                   </item>
                   <item>
-                     <term key="subject_sh85120071" target="http://id.loc.gov/authorities/sh85120071#concept">Senussites</term>
+                     <term key="subject_sh85120071"
+                           target="http://id.loc.gov/authorities/sh85120071#concept">Senussites</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025-07-19" xml:id="check-ai"><persName>Sarim Gillani</persName>
+         </change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

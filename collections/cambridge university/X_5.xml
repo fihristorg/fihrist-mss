@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3106">
    <teiHeader>
       <fileDesc>
@@ -41,10 +41,23 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>X. 5</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>X. 5 (14)</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="#multipleWorks">
-                  <summary change="#add-summary2">
-                     2 works by anonymous authors on the subjects of Persian prose literature, Anecdotes, and Persian poetry
+                  <summary change="#ai-catalogue">
+                     <p>الطايف الظرايف</p>
+                     <p>A collection of anecdotes in Persian. There appears to be no indication of
+                        <lb/>authorship, <lb/>Begins :</p>
+                     <p>
+                        <lb/> اول ثنای دوست فصیحان ادا کنند</p> آری طعام را به نمك آشنا کنند <p>حمد
+                        بیحد و شکر بی عدد حضرت فرد و صمد و خداوند احد</p>
+                     <p>The work ends on f. 188a and is followed by various poems, some by Yaghmá,
+                        <lb/>rubá'ís, etc.</p>
+                     <p>Ff. 215 of 32,3 x 18,7 c. and 15 ll. in the middle of the page and 26 in
+                        margins. <lb/>Dated (on f. 188) 1253/1837-8. Large and rather illegible
+                        ta'liq.</p>
                   </summary>
                   <msItem xml:id="X_5-item1" n="1">
                      <locus from="1a" to="188a">ff. 1a-188a</locus>
@@ -71,22 +84,25 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 215
+                                    <dimensions unit="cm">
+                              <height>32.3</height>
+                              <width>18.7</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>15 lines in the middle of the page and 26 in margins</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="taliq">Large and rather illegible ta'liq.</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -94,12 +110,19 @@
                      <origDate notBefore="1837" notAfter="1838" calendar="#Hijri-qamari">1253</origDate>
                      <origDate calendar="#Gregorian" when="1837">1837-8</origDate>
                   </origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -143,16 +166,19 @@
                <list>
                   <item>
                      <ref target="#a1">
-                        <term key="subject_sh85100087" target="http://id.loc.gov/authorities/sh85100087#concept">Persian prose literature</term> &gt;</ref>
+                        <term key="subject_sh85100087"
+                              target="http://id.loc.gov/authorities/sh85100087#concept">Persian prose literature</term> &gt;</ref>
                   </item>
                   <item>
                      <ref target="#a1">
-                        <term key="subject_sh2009114919" target="http://id.loc.gov/authorities/sh2009114919#concept">Anecdotes--Iran</term>
+                        <term key="subject_sh2009114919"
+                              target="http://id.loc.gov/authorities/sh2009114919#concept">Anecdotes--Iran</term>
                      </ref>
                   </item>
                   <item>
                      <ref target="#a2">
-                        <term key="subject_sh85100084" target="http://id.loc.gov/authorities/sh85100084#concept">Persian poetry</term>
+                        <term key="subject_sh85100084"
+                              target="http://id.loc.gov/authorities/sh85100084#concept">Persian poetry</term>
                      </ref>
                   </item>
                </list>
@@ -160,11 +186,13 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025" xml:id="check-ai">Values checked by Giorgia Maffioli Brigatti</change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
-		<change when="2020-07-06" xml:id="ids-cleanup">
-			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+         <change when="2020-07-06" xml:id="ids-cleanup">
+            <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_752">
    <teiHeader>
       <fileDesc>
@@ -41,10 +41,28 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>K. 9</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>K. 9 (9)</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <summary change="#add-summary">
-                     1 copy of Census of all the houses and buildings in Tehran
+                  <summary change="#ai-catalogue">
+                     <p>A list or census of all the houses and other buildings in Tihrán, compiled in <lb/>1269/1852-3 by command of Náşiru'd-Din Shah:</p>
+                     <p>عدد خانها و سایر بناهای دار الخلافه باهره طهران حقت بالامن والامان كه حسب الامر قدر <lb/>
+قدر وارث گاه جمشید و ثالث ماه و خورشید شاهنشاه جمتجاه ادام الله ايام دولته وزمان شوکته در <lb/>
+آخر سال سیچقان ئیل مطابق با هجری تشخیص یافته غیر از بیرون دروازها که در آخر <lb/>
+کتابچه جداگانه نوشته شده و علاحده میزان بسته گشته دخلی بشهر ندارد</p>
+                     <p>١٢٦٩</p>
+                     <p>This MS., from the Schindler library, constitutes a directory of the Persian <lb/>
+capital for the year indicated (A.D. 1853), the character, size and ownership of each <lb/>
+house, small and great, being specified. It is evidently the original MS., and would</p>
+                     <p>be of great value to anyone concerned with the topography, size and social life of <lb/>
+Tihrán at that period. Unfortunately for the non-Persian reader many of the <lb/>
+particulars given are written in the hand called raqam or siyáq commonly used in <lb/>
+Persia for keeping accounts.</p>
+                     <p>Ff. 188 of 21'5 × 15 c. and from 10 to 15 entries in four or five columns on each <lb/>
+page. The writing, a small, neat nim-shikasta, is good of its kind. There is no <lb/>
+colophon.</p>
                   </summary>
                   <msItem xml:id="K_9-item1">
                      <author key="person_f407" change="#ids-cleanup">
@@ -59,22 +77,25 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 188
+                                    <dimensions unit="cm">
+                              <height>21.5</height>
+                              <width>15</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>10 to 15 entries in four or five columns on each page.</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="shikastah">A small, neat nim-shikasta script, good of its kind.</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -82,12 +103,20 @@
                      <origDate notBefore="1852" notAfter="1853" calendar="#Hijri-qamari">1269</origDate>
                      <origDate calendar="#Gregorian" when="1852">1852-3</origDate>
                   </origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <provenance change="#ai-catalogue">From the Schindler library</provenance>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -111,21 +140,25 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh94001634" target="http://id.loc.gov/authorities/sh94001634#concept">Housing--Statistics</term>
+                     <term key="subject_sh94001634"
+                           target="http://id.loc.gov/authorities/sh94001634#concept">Housing--Statistics</term>
                   </item>
                   <item>
-                     <term key="subject_sh85067914" target="http://id.loc.gov/authorities/sh85067914#concept">Public buildings--Iran</term>
+                     <term key="subject_sh85067914"
+                           target="http://id.loc.gov/authorities/sh85067914#concept">Public buildings--Iran</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025" xml:id="check-ai"><persName>Syed Gillani</persName></change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
-		<change when="2020-07-06" xml:id="ids-cleanup">
-			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+         <change when="2020-07-06" xml:id="ids-cleanup">
+            <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

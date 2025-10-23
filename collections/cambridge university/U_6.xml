@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3001">
    <teiHeader>
       <fileDesc>
@@ -41,13 +41,33 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>U. 6</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>U. 6 (11)</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="#multipleWorks">
-                  <summary>Manuscript with multiple works bearing the general title <title xml:lang="ar-Latn-x-lc" type="main">Dīwān ʻUmar ibn al-Fāriḍ maʻ sharḥ al-Shaykh ʻAbd al-Ghanī al-Nābulusī <foreign xml:lang="ar">ديوان عمر بن الفارض مع شرح الشيخ عبد الغني النابلسي</foreign>
-                     </title>
+                  <summary change="#ai-catalogue">
+                     <p>دیوان عمر بن الفارض</p>
+                     <p>مع شرح الشيخ عبد الغني النابلسي</p>
+                     <p>The Diwán of the celebrated Egyptian mystical poet 'Umar ibnu'l-Fáriḍ
+                        <lb/>(b. 586/1181; d. 632/1235) with the extensive prose commentary of
+                        Shaykh 'Abdu'l- <lb/>Ghani an-Nábulusi (b. 1050/1641; d. 1143/1731).
+                        Concerning the latter, see <lb/>Brockelmann, II, pp. 345-348, where 85 of
+                        his works are enumerated; and for <lb/>Ibnu'l-Farid see the same, 1, pp.
+                        262-263, and R. A. Nicholson's Literary History <lb/>of the Arabs, pp.
+                        394-398. </p>
+                     <p>This MS. was given to me in Constantinople in April, 1910, by Dr Rizá Tevfiq
+                        <lb/>(Ridá Tawfiq). It comprises 520 ff. of 27 x 17 c. and 37 ll., is
+                        written throughout <lb/>in a small, neat, and legible, though ungraceful
+                        naskh, the text in red, and was <lb/>copied by 'Abdu'l-Qadir ibn Muhammad
+                        al-'Atifi, who completed his work on <lb/>Monday the 13th of Ramadán,
+                        1141/April 12, 1729, i.e. during the Commentator's <lb/>life-time. The work
+                        is divided into two parts, of which the first ends on f. 292a, <lb/>and the
+                        second begins on f. 293b. </p>
                   </summary>
                   <msItem xml:id="U_6-item1" n="1">
-                     <author ref="http://id.loc.gov/authorities/names/n83126412" key="person_118486738">
+                     <author ref="http://id.loc.gov/authorities/names/n83126412"
+                             key="person_118486738">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">Ibn al-Fāriḍ, ʻUmar ibn ʻAlī, 1181 or 2-1235</persName>
                         <persName xml:lang="ar">ابن الفارض، عمر بن علي</persName>
                      </author>
@@ -61,7 +81,8 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                   <msItem xml:id="U_6-item2" n="2" class="commentary">
-                     <author ref="http://id.loc.gov/authorities/names/n83198301/" key="person_96969918">
+                     <author ref="http://id.loc.gov/authorities/names/n83198301/"
+                             key="person_96969918">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">Nābulusī, ʻAbd al-Ghanī ibn Ismāʻīl, 1641-1731</persName>
                         <persName xml:lang="ar">عبد الغني بن اسماعيل <addName xml:lang="ar" type="nisbah">النابلسي</addName>
                         </persName>
@@ -76,25 +97,25 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 520
+                  <dimensions unit="cm">
+                              <height>27</height>
+                              <width>17</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>37 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown">
-                        <persName xml:lang="ar-Latn-x-lc" type="supplied" key="person_f4688" role="scr" change="#role-assignment">ʻAbd al-Qādir ibn Muḥammad al-ʻAṭīfī <foreign xml:lang="ar">عبد القادر بن محمد العطيفي</foreign>
-                        </persName>
-                     </handNote>
+                     <handNote script="naskh">Naskh, small, neat and legible, though ungraceful, the text in red.</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -102,12 +123,20 @@
                      <origDate notBefore="1728" notAfter="1729" calendar="#Hijri-qamari">1141</origDate>
                      <origDate calendar="#Gregorian" when="1729">1729</origDate>
                   </origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <provenance change="#ai-catalogue">This MS. was given to me in Constantinople in April, 1910, by <persName key="person_30349297" role="dnr" ref="https://viaf.org/en/viaf/30349297">Rıza Tevfik, 1869?-1949</persName> .</provenance>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -150,21 +179,25 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh85006336" target="http://id.loc.gov/authorities/sh85006336#concept">Arabic poetry--750-1258</term>
+                     <term key="subject_sh85006336"
+                           target="http://id.loc.gov/authorities/sh85006336#concept">Arabic poetry--750-1258</term>
                   </item>
                   <item>
-                     <term key="subject_sh85129653" target="http://id.loc.gov/authorities/sh85129653#concept">Sufi poetry, Arabic</term>
+                     <term key="subject_sh85129653"
+                           target="http://id.loc.gov/authorities/sh85129653#concept">Sufi poetry, Arabic</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025" xml:id="check-ai">Values checked by Giorgia Maffioli Brigatti</change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
-		<change when="2020-07-06" xml:id="ids-cleanup">
-			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+         <change when="2020-07-06" xml:id="ids-cleanup">
+            <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

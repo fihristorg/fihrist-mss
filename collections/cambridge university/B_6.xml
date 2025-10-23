@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_395">
    <teiHeader>
       <fileDesc>
@@ -41,10 +41,24 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>B. 6</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>B. 6 (9)</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <summary change="#add-summary">
-                     1 copy of al-Zahr al-manthūr ʻalá sharḥ al-ṣudūr fī aḥwāl al-mawtá wa-al-qubūr by Laqānī, ʻAbd al-Salām ibn Ibrāhīm, 1563 or 4-1667 or 8
+                  <summary change="#ai-catalogue">
+                     <p>الزهر المنثور على شرح الصدور في احوال الموتى والقبور</p>
+                     <p>Az-Zahru'l-Manthúr, a commentary by 'Abdu's-Salám ibn Ibráhim al-Laqání <lb/>
+                                on as-Suyuti's work on the state of the Dead in their tombs, entitled Sharhu's- <lb/>
+                                Sudúr fí Ahwáli'l-Mawtà wa'l-Qubúr. For the text and its author (d. 911/1505) <lb/>
+                                see Brockelmann, vol. II, p. 146, No. 30; and for the commentator, who died <lb/>
+                                1078/1668, ibid., p. 307.
+                            </p>
+                     <p>After the Bismilláh the commentary begins quite abruptly:</p>
+                     <p>جبر الخ <lb/>
+                                قوله ابو نعيم اسمه احمد بن عبد الله قوله مجاهد بن جبر
+                            </p>
+                     <p>This commentary might be a help to understanding the text, but is of little value or interest without it.</p>
                   </summary>
                   <msItem xml:id="B_6-item1">
                      <author key="person_88343635" ref="http://viaf.org/viaf/88343635/">
@@ -63,7 +77,10 @@
                            <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/33">p.7</ref>
                         </bibl>
                         <bibl type="text-relations">Commentary on the <title xml:lang="ar-Latn-x-lc">Sharḥ al-ṣudūr fī aḥwāl al-mawtá wa-al-qubūr <foreign xml:lang="ar">شرح الصدور في احوال الموتى والقبور</foreign>
-                           </title> of <author key="person_90051632" ref="http://viaf.org/viaf/90051632/" role="ant" change="#role-assignment">
+                           </title> of <author key="person_90051632"
+                                   ref="http://viaf.org/viaf/90051632/"
+                                   role="ant"
+                                   change="#role-assignment">
                               <persName xml:lang="ar-Latn-x-lc">Suyūṭī, 1445-1505</persName>
                               <persName xml:lang="ar">السيوطي</persName>
                            </author>.</bibl>
@@ -71,35 +88,45 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 178
+                                    <dimensions unit="cm">
+                              <height>21.3</height>
+                              <width>15.5</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>17 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
-                  </handDesc>
+                     <handNote script="naskh">good, clear naskh within red lines and with rubrications; many marginal notes</handNote>                  </handDesc>
                </physDesc>
                <history>
                   <origin change="#fix-dates">
                      <origDate notBefore="1714" notAfter="1715" calendar="#Hijri-qamari">1126</origDate>
                      <origDate calendar="#Gregorian" when="1714">1714</origDate>
                   </origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <provenance>Bought by E. G. Browne from <persName key="person_f7815" role="fmo">Majid Belshah</persName> in London.</provenance>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -123,18 +150,22 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh90001126" target="http://id.loc.gov/authorities/sh90001126#concept">Burial laws (Islamic law)</term>
+                     <term key="subject_sh90001126"
+                           target="http://id.loc.gov/authorities/sh90001126#concept">Burial laws (Islamic law)</term>
                   </item>
                   <item>
-                     <term key="subject_sh92006525" target="http://id.loc.gov/authorities/sh92006525#concept">Dead bodies (Islamic law)</term>
+                     <term key="subject_sh92006525"
+                           target="http://id.loc.gov/authorities/sh92006525#concept">Dead bodies (Islamic law)</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025-07-19" xml:id="check-ai"><persName>Sarim Gillani</persName></change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

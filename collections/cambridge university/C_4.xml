@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_419">
    <teiHeader>
       <fileDesc>
@@ -41,10 +41,23 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>C. 4</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>C. 4 (6)</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <summary change="#add-summary">
-                     1 copy of al-Ṣaḥīfah al-kāmilah by Zayn al-ʻĀbidīn ʻAlī ibn al-Ḥusayn, d. 710?
+                  <summary change="#ai-catalogue">
+                     <p>الصحيفة الكاملة.</p>
+                     <p>A collection of prayers and doxologies ascribed to the Fourth Imam of the <lb/>Shi'a, 'Ali ibnu'l-Husayn commonly called Zaynu'l-'Abidin. See Brockelmann, <lb/>vol. 1, p. 44; and Ahlwardt's Berlin Arabic Catalogue, vol. III, pp. 376-377 <lb/>Nos. 3769-70, where the book is fully described.</p>
+                     <p>This MS, belonged to my former colleague Shaykh Hasan of Tabriz, who gave <lb/>it to me when he left Cambridge in June, 1911. It contains 194 ff. of 13'5 x 7'5 C. <lb/>and 11 l., is written in an excellent modern Persian naskh, fully pointed, with</p>
+                     <p>rubrications, and was transcribed by Muḥammad Amin of Na'in, who completed it <lb/>on 11 Sha'bán, 1087/20 October, 1676. In the second colophon on f. 193 the <lb/>alternative title of Zubiru Ali Muhammad wa-Injilu Ahli l-Bayt is given. The <lb/>text is divided into two parts at f. 176. The first part ends, like the Berlin MS. <lb/>No. 3769, with the prayer for the dispersal of sorrows, at the end of which is <lb/>written:</p>
+                     <p>The succeeding portion is entitled (f. 176'):</p>
+                     <p>الصحيفة وكان من تسبيحه اعنى زين العابدين عليه السلام</p>
+                     <p>تمت الصحيفة الشريفة الكاملة بعون الله وتوفيقه</p>
+                     <p>ومنا الحق ببعض نسخ</p>
+                     <p>نقل من حط الشيخ الشهيد رحمه الله صح</p>
+                     <p>Opposite this in the margin, also written in red, are the words:</p>
+                     <p>العين في مشهد الحسين <lb/>نور العين في</p>
                   </summary>
                   <msItem xml:id="C_4-item1">
                      <author key="person_81971228" ref="http://viaf.org/viaf/81971228/">
@@ -63,25 +76,25 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 194
+                  <dimensions unit="cm">
+                              <height>13.5</height>
+                              <width>7.5</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>11 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown">
-                        <persName xml:lang="ar-Latn-x-lc" key="person_f2480" role="scr" change="#role-assignment">Muḥammad Amīn al-Nāʼīnī <foreign xml:lang="ar">محمد امين النائيني</foreign>
-                        </persName>
-                     </handNote>
+                     <handNote script="naskh">Excellent modern Persian naskh, fully pointed, with rubrications.</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -89,12 +102,20 @@
                      <origDate notBefore="1676" notAfter="1677" calendar="#Hijri-qamari">1087</origDate>
                      <origDate calendar="#Gregorian" when="1676">1676</origDate>
                   </origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <provenance change="#ai-catalogue">This MS belonged to my former colleague <persName key="" role="fmo">Shaykh Hasan of Tabriz</persName>, who gave it to me when he left Cambridge in June, 1911.</provenance>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -118,18 +139,21 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh85068403" target="http://id.loc.gov/authorities/sh85068403#concept">Islam--Prayers and devotions</term>
+                     <term key="subject_sh85068403"
+                           target="http://id.loc.gov/authorities/sh85068403#concept">Islam--Prayers and devotions</term>
                   </item>
                   <item>
-                     <term key="subject_sh85064480" target="http://id.loc.gov/authorities/sh85064480#concept">Imams (Shiites)</term>
+                     <term key="subject_sh85064480"
+                           target="http://id.loc.gov/authorities/sh85064480#concept">Imams (Shiites)</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

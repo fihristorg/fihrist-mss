@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_684">
    <teiHeader>
       <fileDesc>
@@ -41,13 +41,29 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>H. 1</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>H. 1 (11)</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <summary change="#add-summary">
-                     1 copy of Kitāb al-milal wa-al-niḥal by Shahrastānī, Muḥammad ibn ʻAbd al-Karīm, 1086?-1153
+                  <summary change="#ai-catalogue">
+                     <p>النحل للشهرستاني. <lb/>كتاب الملل</p>
+                     <p>و</p>
+                     <p>A fine old MS. of Shahristání's well-known "Book of Sects and Schools" <lb/>
+                                (Kitábu l-Milal wa'n-Nihal), compiled in 521/1127, excellently edited by the Rev. <lb/>
+                                William Cureton (London, 1846), and translated into German by Haarbrücker <lb/>
+                                (Halle, 1850-1). See Brockelmann, vol. 1, pp. 428-429</p>
+                     <p>This MS., bought from the late 'Abdu'l-Majid Belshah in Jan. 1920, comprises <lb/>
+                                431 ff. of 25'1 x 16'3 c. and 15 ll., and is written in a fine, large clear old naskh, <lb/>
+                                fully vocalized, but the first page has been supplied in a later hand. The colophon <lb/>
+                                is dated the 6th of Dhu'l-Hijja, 542 (27 April, 1148). The volume belonged at one <lb/>
+                                time (apparently in 1095/1684) to the endowments of a college at Amásiya in Asia <lb/>
+                                Minor.</p>
                   </summary>
                   <msItem xml:id="H_1-item1">
-                     <author key="person_12144648170717686400" ref="http://viaf.org/viaf/12144648170717686400/" change="#ids-cleanup">
+                     <author key="person_12144648170717686400"
+                             ref="http://viaf.org/viaf/12144648170717686400/"
+                             change="#ids-cleanup">
                         <persName xml:lang="ar-Latn-x-lc" type="standard">Shahrastānī, Muḥammad ibn ʻAbd al-Karīm, 1086?-1153</persName>
                         <persName xml:lang="ar">الشهرستاني، محمد ابن عبد الكريم</persName>
                      </author>
@@ -61,22 +77,25 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 431
+                                    <dimensions unit="cm">
+                              <height>25.1</height>
+                              <width>16.3</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>15 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="naskh">written in a fine, large clear old naskh, fully vocalized</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -84,12 +103,20 @@
                      <origDate notBefore="1147" notAfter="1148" calendar="#Hijri-qamari">542</origDate>
                      <origDate calendar="#Gregorian" when="1148">1148</origDate>
                   </origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <provenance change="#ai-catalogue">This MS., bought from the late <persName key="person_f7815" role="fmo">Abdu'l-Majid Belshah</persName>' in Jan. 1920.</provenance>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -113,21 +140,25 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh2008124225" target="http://id.loc.gov/authorities/sh2008124225#concept">Islamic sects--Early works to 1800</term>
+                     <term key="subject_sh2008124225"
+                           target="http://id.loc.gov/authorities/sh2008124225#concept">Islamic sects--Early works to 1800</term>
                   </item>
                   <item>
-                     <term key="subject_sh85068396" target="http://id.loc.gov/authorities/sh85068396#concept">Islam--Doctrines</term>
+                     <term key="subject_sh85068396"
+                           target="http://id.loc.gov/authorities/sh85068396#concept">Islam--Doctrines</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025" xml:id="check-ai"><persName>Syed Gillani</persName></change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
-		<change when="2020-07-06" xml:id="ids-cleanup">
-			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+         <change when="2020-07-06" xml:id="ids-cleanup">
+            <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

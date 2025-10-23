@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_538">
    <teiHeader>
       <fileDesc>
@@ -41,10 +41,28 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>D. 4</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>D. 4 (12)</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <summary change="#add-summary">
-                     1 copy of Jawāhir al-asrār fī sharḥ al-mathnawī by Sabzavārī, Ḥusayn ibn Ḥasan, d. 1436-7
+                  <summary change="#ai-catalogue">
+                     <p>جواهر الاسرار ، شرح المثنوى</p>
+                     <p>A well-known commentary on the Mathnawi of Jalálu'd-Dín Rúmí entitled 
+                                <lb/>Jawahirul-Asrar ("Gems of Mysteries ") by Husayn ibn Hasan of Khwarizm
+                                <lb/>(d. 849/1436-7). See Rieu's Persian Catalogue, p. 588; Ethé's Bodleian
+                                Persian <lb/>Catalogue, col. 519; etc. This MS., like Add. 14,051 of the British
+                                Museum, <lb/>contains the usual introductory matter and ten preliminary
+                                discourses, followed <lb/>by the commentary on Book 1 (f. 46%), Book II (f. 132),
+                                and Book III (f. 196'). <lb/>Whether the commentary on the three remaining
+                                books was ever written I do
+                            </p>
+                     <p>not know.</p>
+                     <p>This MS. fell to my share in the third partition of the Belshah MSS. in the 
+                                <lb/>spring of 1920. It comprises 306 ff. of 28.3 x 18'5 c. and 25 ll.; small,
+                                neat ta'li <lb/>with rubrications; transcription completed in Jumádà 11,
+                                1066/April, 1656.
+                            </p>
                   </summary>
                   <msItem xml:id="D_4-item1" class="#commentary">
                      <author key="person_f3590">
@@ -64,7 +82,10 @@
                            <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/53">p.27</ref>
                         </bibl>
                         <bibl type="text-relations">Commentary on the <title xml:lang="fa-Latn-xlc">Mas̲navī-i maʻnavī <foreign xml:lang="fa">مثنوي معنوي</foreign>
-                           </title> of <author key="person_98930150" ref="http://viaf.org/viaf/98930150/" role="ant" change="#role-assignment">
+                           </title> of <author key="person_98930150"
+                                   ref="http://viaf.org/viaf/98930150/"
+                                   role="ant"
+                                   change="#role-assignment">
                               <persName xml:lang="fa-Latn-x-lc">Jalāl al-Dīn Rūmī, Maulana, 1207-1273</persName>
                               <persName xml:lang="fa">&gt;مولانا جلال الدين رومى</persName>
                            </author>.</bibl>
@@ -72,22 +93,25 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 306
+                                    <dimensions unit="cm">
+                              <height>28.3</height>
+                              <width>18.5</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>25 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="taliq">small, neat ta'liq with rubrications</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -95,12 +119,18 @@
                      <origDate notBefore="1655" notAfter="1656" calendar="#Hijri-qamari">1066</origDate>
                      <origDate calendar="#Gregorian" when="1656">1656</origDate>
                   </origin>
-                  <acquisition>Bequest of <persName xml:lang="en" key="person_29651479" role="fmo" change="#role-assignment #ids-cleanup">E. G. Browne</persName>.</acquisition>
+                  <provenance change="#ai-catalogue">This MS. fell to my share in the third partition of the <persName key="person_f7815" role="fmo">Belshah</persName> MSS. in the spring of 1920.</provenance>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               key="person_29651479"
+                               role="fmo"
+                               change="#role-assignment #ids-cleanup">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -142,21 +172,25 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh2008112367" target="http://id.loc.gov/authorities/sh2008112367#concept">Sufism--Early works to 1800</term>
+                     <term key="subject_sh2008112367"
+                           target="http://id.loc.gov/authorities/sh2008112367#concept">Sufism--Early works to 1800</term>
                   </item>
                   <item>
-                     <term key="subject_sh85100085" target="http://id.loc.gov/authorities/sh85100085#concept">Persian poetry--747-1500</term>
+                     <term key="subject_sh85100085"
+                           target="http://id.loc.gov/authorities/sh85100085#concept">Persian poetry--747-1500</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025" xml:id="check-ai"><persName>Syed Gillani</persName></change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
-		<change when="2020-07-06" xml:id="ids-cleanup">
-			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+         <change when="2020-07-06" xml:id="ids-cleanup">
+            <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

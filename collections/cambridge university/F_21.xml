@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_590">
    <teiHeader>
       <fileDesc>
@@ -41,10 +41,46 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>F. 21</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>F. 21 (9)</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <summary change="#add-summary">
-                     Twenty-two letters from the Bāb addressed to different individuals by Bāb, ʻAlī Muḥammad Shīrāzī, 1819-1850
+                  <summary change="#ai-catalogue">
+                     <p>Thirty-two letters from the Báb, all in Arabic, to the following persons:</p>
+                     <p>(1) In answer to one of the believers (p. 1).</p>
+                     <p>(2) Unspecified (p. 3).</p>
+                     <p>(3) [In answer to a question of Sayyid Yabyà [of Dáráb], the "First Wahid" <lb/>(p. 9).</p>
+                     <p>(4) Explaining a statement of Sayyid Kazim of Rasht (p. 26).</p>
+                     <p>(5) To Sayyid Yahya "Wahid" (p. 35)</p>
+                     <p>(6) Explanation of the , in the verse (Qur'an, xxxvi, 1) (p. 44).</p>
+                     <p>(7) Continuation and conclusion of the above (p. 60).</p>
+                     <p>(8) Explanation of the (=1+10+100+ 1000) (p. 63).</p>
+                     <p>(9) Answer to Shaykh Naşiru'd-Din of Karbala, written in 1264/1848 (p. 65)</p>
+                     <p>(10) On the alb (p. 77).</p>
+                     <p>(11) Answer to the Mu'tamadu'd-Dawla [Minúchihr Khán] (p. 88).</p>
+                     <p>(12) Answer to the Governor of Shúshtar (p. 93).</p>
+                     <p>(13) Answer to a student on the queries in the Qur'an (p. 100).</p>
+                     <p>(14) On the Ascension (Mi'ráj) in the Land of Sád (Isfahán) (p. 104).</p>
+                     <p>(15) Explanation of a tradition of the Imám Ridá (p. 106).</p>
+                     <p>(16) Answer to Hajji Muhammad, written from Mákú (p. 108).</p>
+                     <p>(17) Answer to an enquirer in Isfahán (p. 111).</p>
+                     <p>(18) Answer to Sayyid Asadu'lláh of Qazwin (p. 115), dated Jumádà 1, 1263 <lb/>April-May, 1847, from "the Prison in the Mountain" (p. 116).</p>
+                     <p>(19) Answer to Mullá Rajab 'Alí [Janáb-i-Qahir] (p. 120).</p>
+                     <p>(20) Answer to Sayyid Ahmad Aqá-záda (p. 126).</p>
+                     <p>(21) Answer to Mírzá Muḥammad 'Alí (p. 127).</p>
+                     <p>(22) Answer to Mírzá 'Abdu'l-Wahháb Munshí (p. 131).</p>
+                     <p>(23) Answer to the father of Sayyid Husayn, written from Mákú (p. 133).</p>
+                     <p>(24) To Janáb-i-Táhira (Qurratu'l-'Ayn), from Máká (p. 135).</p>
+                     <p>(25) Answer to Mullá Aḥmad Abdál, from Mákú (p. 138).</p>
+                     <p>(26) To Sayyid Abul Hasan, commentary on the Morning Prayer (p. 143)</p>
+                     <p>(27) Commenting on the "Verse of Light" (t) (p. 155).</p>
+                     <p>(28) Answer to Asad (p. 171).</p>
+                     <p>(29) To Mirzá Najaf-quli (p. 189).</p>
+                     <p>(30) To two persons from "the Land of Paradise" (a)</p>
+                     <p>(p. 192).</p>
+                     <p>(31) To Mulla Ahmad (p. 196).</p>
+                     <p>(32) Letter to the 'Ulamá (p. 224).</p>
                   </summary>
                   <msItem xml:id="F_21-item1">
                      <author key="person_9878408" ref="http://viaf.org/viaf/9878408/">
@@ -60,22 +96,25 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Pp. 232; Ff. 21
+                                    <dimensions unit="cm">
+                                       <height>21.4</height><!--not mentioned in summary-->
+                                       <width>14.4</width><!--not mentioned in summary-->
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>19 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="naskh">Clear, legible naskh</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -83,12 +122,20 @@
                      <origDate notBefore="1911" notAfter="1912" calendar="#Hijri-qamari">1330</origDate>
                      <origDate calendar="#Gregorian" when="1912">1912</origDate>
                   </origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <provenance change="#ai-catalogue">Received from <persName key="person_f3069" role="dnr">Mírzá Mustafà</persName> on Nov. 4, 1912.</provenance>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -112,18 +159,22 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh2009116570" target="http://id.loc.gov/authorities/sh2009116570#concept">Babism--Controversial literature</term>
+                     <term key="subject_sh2009116570"
+                           target="http://id.loc.gov/authorities/sh2009116570#concept">Babism--Controversial literature</term>
                   </item>
                   <item>
-                     <term key="subject_sh92006245" target="http://id.loc.gov/authorities/sh92006245#concept">Arabic letters</term>
+                     <term key="subject_sh92006245"
+                           target="http://id.loc.gov/authorities/sh92006245#concept">Arabic letters</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025" xml:id="check-ai"><persName>Syed Gillani</persName></change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

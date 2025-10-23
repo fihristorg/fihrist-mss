@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_699">
    <teiHeader>
       <fileDesc>
@@ -41,10 +41,38 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>H. 23</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>H. 23 (11)</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="#multipleWorks">
-                  <summary change="#add-summary2">
-                     5 works by 3 authors on the subjects of Arab logic, Islamic law, Sikhs, Asaf Jahi dynasty, Fables, and Education of princes
+                  <summary change="#ai-catalogue">
+                     <p>This MS. contains:</p>
+                     <p>(1) An anonymous Arabic introduction to Logic (ff. 1-9), slightly defective at <lb/>
+                            the beginning, with many interlinear and marginal glosses. It begins:</p>
+                     <p>با (sic) الله انه مفيض الخير والجود الظ (sic) ايساغوجى اللفظ الدال بالوضع على تمام ما وضع له</p>
+                     <p>بالمطابقة</p>
+                     <p>(2) A number of legal questions and answers, written in Turkish (ff. 11-11). <lb/>
+                            (3) Risála-i Nának Shah (ff. 12"-35"), a Persian history of the Sikhs down to <lb/>
+                            1178/1764-5, by Budh Singh, generally known as Arúrá (5), an inhabitant of <lb/>
+                            Lahore in the service of Major James Mordaunt. It was composed circa 1200/ <lb/>
+                            1785-6; see Rieu's Persian Catalogue, p. 860, where its contents are briefly <lb/>
+                            described. The present copy, which is defective at the end, begins:</p>
+                     <p>کارپردازان ایجاد و تکوین که عبارت از قضا و قدر باشد</p>
+                     <p>(4) An account, written in Persia without title or author's name, of Nizamu'l- <lb/>
+                            Mulk Asafjah of the Asafi dynasty of Haydarábád and his sons, followed by <lb/>
+                            historical notices relating to the Deccan (ff. 36-44"). It resembles, but is not <lb/>
+                            identical with, Or. 1391 described in Rieu's Persian Catalogue, p. 323.</p>
+                     <p>Begins:</p>
+                     <p>آصفجاه غفران پناه جد مادری او سعد الله خان وزیر اعظم صاحبقران ثانی شاه جهان است</p>
+                     <p>Le</p>
+                     <p>(5) Part of the 'Iyár-i Dánish (ff. 47-156), the well-known version (in sixteen <lb/>
+                            chapters) of the Anwár-i Suhayli, that was made for Akbar by Abu'l-Fadl ibn <lb/>
+                            Mubárak in 996/1587-8. This copy is incomplete.</p>
+                     <p>Ff. 157 of 262 and 185 c. and 17 ll., written for the most part in Indian <lb/>
+                            nasta lig</p>
+                     <p>Ff. 1-45 are of smaller size and in different handwritings. The MS., which is <lb/>
+                            worm-eaten in places, formerly belonged to J. P. Edmond.</p>
                   </summary>
                   <msItem xml:id="H_23-item1" n="1">
                      <locus from="1a" to="9b">ff. 1a-9b</locus>
@@ -117,7 +145,10 @@
                            <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/145">p.119</ref>
                         </bibl>
                         <bibl type="text-relations">This work is a version of the <title xml:lang="fa-Latn-x-lc">Anwār-i Suhaylī <foreign xml:lang="fa">انوار سهيلي</foreign>
-                           </title> of <author key="person_90770167" ref="http://viaf.org/viaf/90770167/" role="ant" change="#role-assignment">
+                           </title> of <author key="person_90770167"
+                                   ref="http://viaf.org/viaf/90770167/"
+                                   role="ant"
+                                   change="#role-assignment">
                               <persName xml:lang="fa-Latn-x-lc">Kāshifī, Ḥusayn Vāʻiẓ, d. 1504 or 5</persName>
                               <persName xml:lang="fa">حسين واعظ كاشفی</persName>
                            </author>, which, in turn, is a Persian version of the <title xml:lang="ar-Latn-x-lc">Kalīlah wa-Dimnah <foreign xml:lang="ar">كليلة ودمنة</foreign>
@@ -126,32 +157,43 @@
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 262
+                                    <dimensions unit="cm">
+                              <height>unknown</height>
+                              <width>unknown</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>17 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="nastaliq">Indian nasta'liq</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin change="#fix-dates">undated</origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <provenance change="#ai-catalogue">Formerly belonged to J. P. Edmond.</provenance>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -195,32 +237,38 @@
                <list>
                   <item>
                      <ref target="#a1">
-                        <term key="subject_sh2009003710" target="http://id.loc.gov/authorities/sh2009003710#concept">Arab logic</term>
+                        <term key="subject_sh2009003710"
+                              target="http://id.loc.gov/authorities/sh2009003710#concept">Arab logic</term>
                      </ref>
                   </item>
                   <item>
                      <ref target="#a2">
-                        <term key="subject_sh85068454" target="http://id.loc.gov/authorities/sh85068454#concept">Islamic law</term>
+                        <term key="subject_sh85068454"
+                              target="http://id.loc.gov/authorities/sh85068454#concept">Islamic law</term>
                      </ref>
                   </item>
                   <item>
                      <ref target="#a3">
-                        <term key="subject_sh2008111662" target="http://id.loc.gov/authorities/sh2008111662#concept">Sikhs--History</term>
+                        <term key="subject_sh2008111662"
+                              target="http://id.loc.gov/authorities/sh2008111662#concept">Sikhs--History</term>
                      </ref>
                   </item>
                   <item>
                      <ref target="#a4">
-                        <term key="subject_sh96008179" target="http://id.loc.gov/authorities/sh96008179#concept">Asaf Jahi dynasty</term>
+                        <term key="subject_sh96008179"
+                              target="http://id.loc.gov/authorities/sh96008179#concept">Asaf Jahi dynasty</term>
                      </ref>
                   </item>
                   <item>
                      <ref target="#a5">
-                        <term key="subject_sh85046763" target="http://id.loc.gov/authorities/sh85046763#concept">Fables, Persian</term>
+                        <term key="subject_sh85046763"
+                              target="http://id.loc.gov/authorities/sh85046763#concept">Fables, Persian</term>
                      </ref>
                   </item>
                   <item>
                      <ref target="#a5">
-                        <term key="subject_sh2008102794" target="http://id.loc.gov/authorities/sh2008102794#concept">Education of princes--Early works to 1800</term>
+                        <term key="subject_sh2008102794"
+                              target="http://id.loc.gov/authorities/sh2008102794#concept">Education of princes--Early works to 1800</term>
                      </ref>
                   </item>
                </list>
@@ -228,11 +276,13 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025" xml:id="check-ai"><persName>Syed Gillani</persName></change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
-		<change when="2020-07-06" xml:id="ids-cleanup">
-			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+         <change when="2020-07-06" xml:id="ids-cleanup">
+            <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

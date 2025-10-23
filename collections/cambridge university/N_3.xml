@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1868">
    <teiHeader>
       <fileDesc>
@@ -41,13 +41,29 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>N. 3</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>N. 3 (10)</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="commentary">
-                  <summary change="#add-summary">
-                     1 copy of Shawāriq al-ilhām fī sharḥ tajrīr al-kalām by Lāhījī, ʻAbd al-Razzāq, 17th cent.
+                  <summary change="#ai-catalogue">
+                     <p>شوارق الالهام في شرح تجريد الكلام</p>
+                     <p>Shawáriqu l-Ilhám, a commentary by 'Abdu'r-Razzáq al-Láhijí, a well-known <lb/> Persian theologian and philosopher who flourished in the middle of the seventeenth <lb/> century of the Christian era, on the Tajrídu'l-Kalám (or 'Aqá id) of Naşiru'd- 
+                                <lb/> Din Túsi (d. 672/1273-4). This commentary, according to Rieu (Persian Catalogue, 
+                                <lb/> p. 32), was printed at Tihrán in 1280/1863-4. The contents of the highly esteemed 
+                                <lb/> Tajrid are given by Ahlwardt (Berlin Arabic Catalogue, vol. 11, p. 331, No. 1745). 
+                                <lb/> See also Brockelmann's Gesch. d. Arab. Litt., vol. 1, p. 509, and the Kashful-Hujub 
+                                <lb/> wal-Astár (Calcutta, A.H. 1330), No. 452 (pp. 97-98). Begins:</p>
+                     <p>ا افتح بيننا وبين قومنا بالحق وانت خير الفاتحين اما بعد .. فيقول العبد الراجي وبباب <lb/> رنا 
+                            <lb/> ربه الملتجى عبد الرزاق اللاهيجى بن على بن حسين اللاهيجي الخ</p>
+                     <p>This MS., one of those bought of Hájji 'Abdu'l-Majid Belshah in 1920, com- 
+                                <lb/> prises 195 ff. of 24'6 x 15 c. and 21 ll., and is written in a small, neat and fairly 
+                                <lb/> legible walk, without date or colophon.</p>
                   </summary>
                   <msItem xml:id="N_3-item1">
-                     <author key="person_16145304708378611094" ref="http://viaf.org/viaf/16145304708378611094/" change="#ids-cleanup">
+                     <author key="person_16145304708378611094"
+                             ref="http://viaf.org/viaf/16145304708378611094/"
+                             change="#ids-cleanup">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Lāhījī, ʻAbd al-Razzāq, 17th cent.</persName>
                         <persName xml:lang="fa">لاهجى، عبد الرزاق</persName>
                      </author>
@@ -63,39 +79,55 @@
                            <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/181">p.155</ref>
                         </bibl>
                         <bibl type="text-relations">This work is a commentary on the <title xml:lang="ar-Latn-x-lc">Tajrīd al-kalām <foreign xml:lang="ar">تجريد الكلام</foreign>
-                           </title> of <author key="person_12392936" ref="http://viaf.org/viaf/12392936/" role="ant" change="#role-assignment">
+                           </title> of <author key="person_12392936"
+                                   ref="http://viaf.org/viaf/12392936/"
+                                   role="ant"
+                                   change="#role-assignment">
                               <persName xml:lang="ar-Latn-x-lc">Ṭūsī, Naṣīr al-Dīn Muḥammad ibn Muḥammad, 1201-1274 (<foreign xml:lang="ar">طوسي، مصير الدين محمد بن محمد</foreign>)</persName>
                            </author>.</bibl>
                      </listBibl>
                      <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 195 
+                                    <dimensions unit="cm">
+                              <height>24.6</height>
+                              <width>15</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>21 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote>Small, neat and fairly legible script</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin change="#fix-dates">undated</origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <provenance change="#ai-catalogue">
+                     <p>This MS., one of those bought of <persName key="person_f7815" role="fmo">Hájji 'Abdu'l-Majid Belshah</persName> in 1920</p>
+                  </provenance>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -119,21 +151,25 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh2008109242" target="http://id.loc.gov/authorities/sh2008109242#concept">Islamic philosophy--Early works to 1800</term>
+                     <term key="subject_sh2008109242"
+                           target="http://id.loc.gov/authorities/sh2008109242#concept">Islamic philosophy--Early works to 1800</term>
                   </item>
                   <item>
-                     <term key="subject_sh87000152" target="http://id.loc.gov/authorities/sh87000152#concept">Islam--Doctrines--Early works to 1800</term>
+                     <term key="subject_sh87000152"
+                           target="http://id.loc.gov/authorities/sh87000152#concept">Islam--Doctrines--Early works to 1800</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025" xml:id="check-ai"><persName>Syed Gillani</persName></change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
-		<change when="2020-07-06" xml:id="ids-cleanup">
-			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+         <change when="2020-07-06" xml:id="ids-cleanup">
+            <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

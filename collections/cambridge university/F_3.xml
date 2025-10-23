@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_599">
    <teiHeader>
       <fileDesc>
@@ -41,10 +41,22 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>F. 3</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>F. 3 (9)</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="#multipleWorks">
-                  <summary change="#add-summary2">
-                     4 works by 2 authors on the subjects of Islam and Shīʻah
+                  <summary change="#ai-catalogue">
+                     <p>الفوائد للاحسائي وغيره</p>
+                     <p>شرح</p>
+                     <p>Three treatises by Shaykh Ahmad al-Aḥsá'í and one by Mullá Şadrá.</p>
+                     <p>(1) Shaykh Ahmad's commentary on his own Fawa'id (ff. 1-108), written at <lb/> the request of Mullá Mashhad ibn Hasan 'Ali. No colophon.</p>
+                     <p>(2) Commentary by the same on the Risálatu'l-'Ilm (ff. 113-137), transcribed <lb/> in 1238/1822-3-</p>
+                     <p>(3) Answer of the same to certain questions propounded by Sayyid Hasan. <lb/> al-Khurásání (ff. 138-163)</p>
+                     <p>(4) A treatise by Muḥammad ibn Ibráhím of Shíráz, commonly known as <lb/> Mulla Sadrá (166208), without title, date or colophon, beginning:</p>
+                     <p>سبحانك اللهم يا مبدع المبادى والعلل وغاية الثواني والاول الخ</p>
+                     <p>This MS. was also one of the Belshah MSS. bought on Nov. 12, 1920. It <lb/> comprises 208 ff. of 20'7 x 15 c. and 15-23 ll. in various ta'liq hands.</p>
+                     <p>There is a good edition of the Sharkal-Faud'id lithographed in Persia <lb/> (probably at Tabriz) and completed on the 17th of Dhu'l-Qa'da, 1272/July 21, <lb/> 1856. It is there stated that the book was composed in 1197/1783. The Fawa'id, <lb/> thirteen in number, end on p. 323, and are followed (pp. 323-333) by the reply of <lb/> Sayyid Kázim of Rasht to a question addressed to him by a certain Mirzá <lb/> Muḥammad Shafi'.</p>
                   </summary>
                   <msItem xml:id="F_3-item1" n="1" class="#commentary">
                      <locus from="1b" to="108a">ff. 1b-108a</locus>
@@ -96,7 +108,10 @@
                         <persName xml:lang="ar-Latn-x-lc" type="standard">Aḥsāʼī, Aḥmad ibn Zayn al-Dīn, 1753-1826</persName>
                         <persName xml:lang="ar">شيخ احمد الاحسائي</persName>
                      </author>
-                     <title xml:lang="en" type="desc" key="work_1456">Answers to questions propounded by <persName xml:lang="ar-Latn-x-lc" key="person_f3717" role="ant" change="#role-assignment">Sayyid Ḥasan al-Khurāsān</persName> ī</title>
+                     <title xml:lang="en" type="desc" key="work_1456">Answers to questions propounded by <persName xml:lang="ar-Latn-x-lc"
+                                  key="person_f3717"
+                                  role="ant"
+                                  change="#role-assignment">Sayyid Ḥasan al-Khurāsān</persName> ī</title>
                      <incipit xml:lang="ar"/>
                      <explicit xml:lang="ar" defective="true"/>
                      <note>
@@ -111,7 +126,10 @@
                         <persName xml:lang="ar">ملا صدرا، محمد بن ابراهيم <addName xml:lang="ar" type="nisbah">شيرازي</addName>
                         </persName>
                      </author>
-                     <title xml:lang="en" type="desc" key="work_20167" change="#ids-cleanup">Untitled treatise</title>
+                     <title xml:lang="en"
+                            type="desc"
+                            key="work_20167"
+                            change="#ids-cleanup">Untitled treatise</title>
                      <incipit xml:lang="ar"/>
                      <explicit xml:lang="ar" defective="true"/>
                      <note>
@@ -120,32 +138,43 @@
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 208
+                                    <dimensions unit="cm">
+                              <height>20.7</height>
+                              <width>15</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>15-23 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="taliq">Various ta'liq hands.</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin change="#fix-dates">undated</origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <provenance change="#ai-catalogue">This MS. was also one of the <persName key="person_f7815" role="fmo">Belshah</persName> MSS. bought on Nov. 12, 1920.</provenance>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -190,21 +219,25 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh85068396" target="http://id.loc.gov/authorities/sh85068396#concept">Islam--Doctrines</term>
+                     <term key="subject_sh85068396"
+                           target="http://id.loc.gov/authorities/sh85068396#concept">Islam--Doctrines</term>
                   </item>
                   <item>
-                     <term key="subject_sh85121390" target="http://id.loc.gov/authorities/sh85121390#concept">Shīʻah</term>
+                     <term key="subject_sh85121390"
+                           target="http://id.loc.gov/authorities/sh85121390#concept">Shīʻah</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025" xml:id="check-ai"><persName>Syed Gillani</persName></change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
-		<change when="2020-07-06" xml:id="ids-cleanup">
-			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+         <change when="2020-07-06" xml:id="ids-cleanup">
+            <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_618">
    <teiHeader>
       <fileDesc>
@@ -41,13 +41,28 @@
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
                   <idno>F. 49</idno>
+                  <altIdentifier change="#ai-catalogue">
+                     <idno>F. 49 (8)</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents class="#multipleWorks">
-                  <summary change="#add-summary2">
-                     2 works by 2 authors on the subjects of Babism, Islam, and English letters
+                  <summary change="#ai-catalogue">
+                     <p>کلمات بیانیه</p>
+                     <p>Kalimat-i-Bayaniyya, consisting of Arabic súras, each bearing a special title <lb/>
+(Siratu l-Baydn, Saratu'n-Nuqta, Süratul-Qistas, etc.), in imitation of the Qar'ds. <lb/>
+Groups of letters, such as sl, are prefixed to some of them. They appear to <lb/>
+consist entirely of pious rhapsodies and to contain no material of historical or <lb/>
+doctrinal importance.</p>
+                     <p>Ff. 682 of 19 x 12 c. and 14 ll., large, clear naskh, unpointed; dated at end <lb/>
+5 Dhu'l-Qa'da, 1312/30 April, 1895, with the corresponding Bábí dates: 1</p>
+                     <p>كور ۱۶ دوره حروف ۹</p>
+                     <p>بيانية ٤٧ كلمات ١٢</p>
+                     <p>One of Mr W. J. Ansell's letters is pasted in at the end of the volume.</p>
                   </summary>
                   <msItem xml:id="F_49-item1" n="1">
-                     <author key="person_266910202" ref="http://viaf.org/viaf/266910202/" change="#ids-cleanup">
+                     <author key="person_266910202"
+                             ref="http://viaf.org/viaf/266910202/"
+                             change="#ids-cleanup">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Ṣubḥ-i Azal, d. 1912</persName>
                         <persName xml:lang="ar">صبح ازل</persName>
                      </author>
@@ -74,22 +89,25 @@
                      <textLang mainLang="en">English</textLang>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+               <physDesc change="#ai-catalogue">
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 682
+                                    <dimensions unit="cm">
+                              <height>19</height>
+                              <width>12</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout>
+                           <p>14 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote script="naskh">Large, clear naskh, unpointed</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -97,12 +115,20 @@
                      <origDate notBefore="1894" notAfter="1895" calendar="#Hijri-qamari">1312</origDate>
                      <origDate calendar="#Gregorian" when="1895">1895</origDate>
                   </origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <provenance change="#ai-catalogue">One of Mr <persName key="person_f4320" role="aut">W. J. Ansell</persName>'s letters is pasted in at the end of the volume.</provenance>
+                  <acquisition>Bequest of <persName xml:lang="en"
+                               type="standard"
+                               key="person_29651479"
+                               ref="http://viaf.org/viaf/29651479/"
+                               role="fmo"
+                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
+            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
+            Browne</hi>. Cambridge, 1932</ref>.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
@@ -146,17 +172,20 @@
                <list>
                   <item>
                      <ref target="#a1">
-                        <term key="subject_sh85010741" target="http://id.loc.gov/authorities/sh85010741#concept">Babism</term>
+                        <term key="subject_sh85010741"
+                              target="http://id.loc.gov/authorities/sh85010741#concept">Babism</term>
                      </ref>
                   </item>
                   <item>
                      <ref target="#a1">
-                        <term key="subject_sh85068403" target="http://id.loc.gov/authorities/sh85068403#concept">Islam--Prayers and devotions</term>
+                        <term key="subject_sh85068403"
+                              target="http://id.loc.gov/authorities/sh85068403#concept">Islam--Prayers and devotions</term>
                      </ref>
                   </item>
                   <item>
                      <ref target="#a2">
-                        <term key="subject_sh85043776" target="http://id.loc.gov/authorities/sh85043776#concept">English letters</term>
+                        <term key="subject_sh85043776"
+                              target="http://id.loc.gov/authorities/sh85043776#concept">English letters</term>
                      </ref>
                   </item>
                </list>
@@ -164,11 +193,13 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+         <change when="2025" xml:id="check-ai"><persName>Syed Gillani</persName></change>
+         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
-		<change when="2020-07-06" xml:id="ids-cleanup">
-			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
+         <change when="2020-07-06" xml:id="ids-cleanup">
+            <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
