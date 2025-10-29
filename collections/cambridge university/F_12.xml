@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_587">
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_578">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>F. 1b</title>
+            <title>F. 12</title>
             <funder>JISC</funder>
             <principal>Gillian Evison</principal>
          </titleStmt>
@@ -28,11 +28,11 @@
                </address>
             </pubPlace>
             <idno>OCIMCO</idno>
-            <idno type="msID">F_1b</idno>
+            <idno type="msID">F_12</idno>
             <idno type="catalogue">Fihrist</idno>
          </publicationStmt>
          <sourceDesc>
-            <msDesc xml:id="F_1b" xml:lang="en">
+            <msDesc xml:id="F_12" xml:lang="en">
                <msIdentifier>
                   <country>United Kingdom</country>
                   <region type="county">Cambridgeshire</region>
@@ -40,83 +40,65 @@
                   <institution>Cambridge University</institution>
                   <repository>University Library</repository>
                   <collection>E. G. Browne Collection</collection>
-                  <idno>F. 1b</idno>
-                  <altIdentifier change="#ai-catalogue">
-                     <idno>F. 12 (9)</idno>
-                  </altIdentifier>
+                  <idno>F. 12</idno>
                </msIdentifier>
                <msContents>
-                  <summary change="#ai-catalogue">
-                     <p>شرح الزيارة الجامعة الكبيرة (الجمرة التالي.</p>
-                     <p>Part of the Commentary on the Ziydratu'l-Jami'atu'l-Kabira of Shaykh <lb/>
-Ahmad al-Absá'i, beginning, after the brief doxology:</p>
-                     <p>... اما بعد، فيقول العبد المسكين احمد بن زين الدين ان هذه جزء الثاني من شرح الزيارة</p>
-                     <p>الجامعة الكبيرة</p>
-                     <p>Ff. 162 of 20'3X14'2 c. and 19 ll.; uniform in style and script with the volume <lb/>
-last described, but ending abruptly without colophon or date. No note of <lb/>
-acquisition.</p>
+                  <summary change="#add-summary">
+                     1 copy of Bayān-i farsī by Bāb, ʻAlī Muḥammad Shīrāzī, 1819-1850
                   </summary>
-                  <msItem xml:id="F_1b-item1">
-                     <note>Vol. 2</note>
-                     <author key="person_40730685" ref="http://viaf.org/viaf/40730685/">
-                        <persName xml:lang="ar-Latn-x-lc" type="standard">Aḥsāʼī, Aḥmad ibn Zayn al-Dīn, 1753-1826</persName>
-                        <persName xml:lang="ar">شيخ احمد الاحسائي</persName>
+                  <msItem xml:id="F_12-item1">
+                     <author key="person_9878408" ref="http://viaf.org/viaf/9878408/">
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">Bāb, ʻAlī Muḥammad Shīrāzī, 1819-1850</persName>
+                        <persName xml:lang="ar">باب، ميرزا علي محمد</persName>
                      </author>
-                     <title xml:lang="fa-Latn-x-lc" key="work_484">Sharḥ al-ziyārah al-jāmiʻah al-kabīrah</title>
-                     <title xml:lang="fa" key="work_484">شرح الزيارة الجامعة الكبيرة</title>
+                     <title xml:lang="fa-Latn-x-lc" key="work_499">Bayān-i farsī</title>
+                     <title xml:lang="fa" key="work_499">بيان فرسى</title>
                      <incipit xml:lang="ar"/>
                      <explicit xml:lang="ar" defective="true"/>
                      <note>
                         <foreign xml:lang="ar"/>
                      </note>
-                     <textLang mainLang="ar">Arabic</textLang>
+                     <listBibl>
+                        <bibl>
+                           <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/85">p.59</ref>
+                        </bibl>
+                        <bibl>See sub classmark <idno>BBC. 3</idno> in Browne's "Catalogue and Description of 27 Bābī Manuscripts", in Journal of the Royal Asiatic Society of Great Britain and Ireland (Jul., 1892): 433-499.</bibl>
+                        <bibl type="text-relations"/>
+                     </listBibl>
+                     <textLang mainLang="fa">Persian</textLang>
                   </msItem>
                </msContents>
-               <physDesc change="#ai-catalogue">
-                  <objectDesc form="codex">
-                     <supportDesc material="paper">
-                        <support>Paper</support>
-                        <extent>Ff. 162
-                  <dimensions unit="cm">
-                              <height>20.3</height>
-                              <width>14.2</width>
-                           </dimensions>
+               <physDesc>
+                  <objectDesc form="other">
+                     <supportDesc material="chart">
+                        <extent>
+                           <dimensions type="leaf" unit="cm"/>
+                           <dimensions type="written" unit="cm"/>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout>
-                           <p>19 lines</p>
+                        <layout columns="0" ruledLines="00" n="mistara">
+                           <dimensions type="line-height" unit="mm"/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>Uniform in style and script with the volume last described.</handNote>
+                     <handNote scope="major" script="unknown"/>
                   </handDesc>
                </physDesc>
                <history>
                   <origin change="#fix-dates">undated</origin>
-                  <acquisition>Bequest of <persName xml:lang="en"
-                               type="standard"
-                               key="person_29651479"
-                               ref="http://viaf.org/viaf/29651479/"
-                               role="fmo"
-                               change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source> Summary, physical description and provenance copied from <ref target="https://cudl.lib.cam.ac.uk/view/PR-A-00233-00004/1">R. A.
-            Nicholson: <hi rend="italic">A descriptive catalogue of the Oriental MSS belonging to the late E.G.
-            Browne</hi>. Cambridge, 1932</ref>.</source>
+                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
                      </availability>
                   </adminInfo>
-                  <listBibl>
-                     <bibl type="related">Work in three volumes with class-marks: <idno>F. 1a</idno>
-                        <idno>F. 1b</idno> and <idno>F. 2</idno>.</bibl>
-                  </listBibl>
                </additional>
             </msDesc>
          </sourceDesc>
@@ -135,21 +117,15 @@ acquisition.</p>
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh85089070"
-                           target="http://id.loc.gov/authorities/sh85089070#concept">Muslim pilgrims and pilgrimages</term>
-                  </item>
-                  <item>
-                     <term key="subject_sh85121431"
-                           target="http://id.loc.gov/authorities/sh85121431#concept">Shiite shrines</term>
+                     <term key="subject_sh2009116570" target="http://id.loc.gov/authorities/sh2009116570#concept">Babism--Controversial literature</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2025-06-04" xml:id="ai-catalogue">Values generated from legacy catalogue using a combination of AI and manual editing.</change>
-         <change when="2020-07-06" xml:id="role-assignment">
-            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
+		<change when="2020-07-06" xml:id="role-assignment">
+			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
 		</change>
          <change when="2018-06-08">
             <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
@@ -163,7 +139,7 @@ acquisition.</p>
          <change when="2017-11-07">
             <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
-         <change when="2010-07-29">
+         <change when="2010-08-02">
             <persName>Ignacio Sanchez</persName>
          </change>
       </revisionDesc>
