@@ -1,4 +1,5 @@
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1547">
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1547">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,7 +18,8 @@
                   <settlement>Oxford</settlement>
                   <postCode>OX1 3BG</postCode>
                   <addrLine>
-                     <ref target="http://www.bodleian.ox.ac.uk/libraries/collections">Bodleian Library</ref>
+                     <ref target="http://www.bodleian.ox.ac.uk/libraries/collections">Bodleian
+                        Library</ref>
                   </addrLine>
                   <addrLine>
                      <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
@@ -38,22 +40,49 @@
                   <repository>Bodleian Library</repository>
                   <collection type="main">Oriental Manuscripts Pococke Collection</collection>
                   <idno>MS. Pococke 369</idno>
-               <idno type="ieArk">ark:29072/x0dj52w512dv</idno><idno type="crArk">ark:29072/x0df65v82934</idno></msIdentifier>
+                  <idno type="ieArk">ark:29072/x0dj52w512dv</idno>
+                  <idno type="crArk">ark:29072/x0df65v82934</idno>
+               </msIdentifier>
                <msContents>
-                  <summary change="#add-summary2">
-                     2 works by 2 authors on the subjects of Euclid's Elements, Geometry, and Astronomy
-                  </summary>
+                  <summary change="#add-summary2"> 2 works by 2 authors on the subjects of Euclid's
+                     Elements, Geometry, and Astronomy </summary>
                   <msItem xml:id="MS_Pococke_369-item1" n="1">
                      <locus from="2" to="73">ff. 2r-73r d.</locus>
-                     <author key="person_176184097" ref="http://viaf.org/viaf/176184097/" change="#ids-cleanup">
+                     <author key="person_176184097" ref="http://viaf.org/viaf/176184097/"
+                        change="#ids-cleanup">
                         <persName type="standard">Euclid</persName>
+                        <persName xml:lang="ar">إقليدس</persName>
                      </author>
-                     <title xml:lang="ar-Latn-x-lc" key="work_4707" change="#ids-cleanup">Taḥrīr al-uṣūl al-handasīyah</title>
+                     <editor key="person_12392936" ref="http://www.viaf.org/viaf/12392936/"
+                           ><persName xml:lang="ar-Latn-x-lc" key="person_12392936"
+                           ref="http://www.viaf.org/viaf/12392936/"> Ṭūsī, Naṣīr al-Dīn
+                           Muḥammad ibn Muḥammad <date calendar="#Gregorian" from="1201" to="1274"
+                              >1201-1274 </date>
+                        </persName>
+                        <persName xml:lang="ar"> النصير الطوسي، محمد بن محمد 597-672
+                        هـ</persName></editor>
+                     <title xml:lang="ar-Latn-x-lc" key="work_4707" change="#ids-cleanup">Taḥrīr
+                        al-uṣūl al-handasīyah</title>
+                     <title xml:lang="ar" key="work_4707">تحرير أصول الهندسية</title>
                      <note>
-                        <title>The Elements</title> in the version of <persName type="standard" xml:lang="ar-Latn-x-lc" key="person_12392936" ref="http://www.viaf.org/viaf/12392936/" role="edt" change="#role-assignment">Ṭūsī, Naṣīr al-Dīn Muḥammad ibn Muḥammad, <date calendar="#Gregorian" from="1201" to="1274">1201-1274</date>
-                        </persName>, including the 14th and 15th books attributed to <persName key="person_281628164" role="ant" change="#role-assignment #ids-cleanup">Hypsicles</persName>
+                        <title>The Elements</title> in the version of <persName type="standard"
+                           xml:lang="ar-Latn-x-lc" key="person_12392936"
+                           ref="http://www.viaf.org/viaf/12392936/" role="edt"
+                           change="#role-assignment">Ṭūsī, Naṣīr al-Dīn Muḥammad ibn
+                           Muḥammad, <date calendar="#Gregorian" from="1201" to="1274"
+                              >1201-1274</date>
+                        </persName>, including the 14th and 15th books attributed to <persName
+                           key="person_281628164" role="ant" change="#role-assignment #ids-cleanup"
+                           >Hypsicles</persName>
                      </note>
                      <note>d. f. 73v is on additional page of commentary on Bk. I, theorem 25</note>
+                     <incipit xml:lang="ar"> .بسم الله الرحمن الرحيم وبه نستعين الحمد الله الذي منه
+                        الابتدا وليه الانتها وعنده حقائق الانبا وبيده ملكوت الاشيا... فبعد فلما فرغت
+                        عن ترير المجسطي رايت ان احرر كتاب اصول الهندسة والحساب المنسوب الى اقليدس
+                        الصوري بانجاز غير مخل واستقصى في تثبيت مقاصده استقصا غير ممل </incipit>
+                     <explicit xml:lang="ar"> واقول على التقدير الثاني والثالث يلزم ايضا ان يقع
+                        والتي هي نقطة من طرفي خط ه ط نصف قطر دائرة ط ح خارجة من محطها وذلك محال
+                        .والله أعلم وبالله النوفيق</explicit>
                      <listBibl>
                         <bibl>GAL I 510</bibl>
                         <bibl>[UAM. 888 (1), revd. by Beeston]</bibl>
@@ -63,14 +92,43 @@
                   <msItem xml:id="MS_Pococke_369-item2" n="2">
                      <locus from="74" to="183">ff. 74v-183v</locus>
                      <author key="person_54152998" ref="http://viaf.org/viaf/54152998/">
-                        <persName type="standard">Ptolemy, <date calendar="#Gregorian" notBefore="0100" notAfter="0200">2nd cent.</date>
+                        <persName type="standard">Ptolemy, <date calendar="#Gregorian"
+                              notBefore="0100" notAfter="0200">2nd cent.</date>
                         </persName>
+                        <persName xml:lang="ar"> بطلميوس </persName>
                      </author>
-                     <title key="work_6620">Taḥrīr al-Majisṭī</title>
-                     <note>The <title>Almagest</title> in the version of <persName type="standard" xml:lang="ar-Latn-x-lc" key="person_12392936" ref="http://www.viaf.org/viaf/12392936/" role="edt" change="#role-assignment">Ṭūsī, Naṣīr al-Dīn Muḥammad ibn Muḥammad, <date calendar="#Gregorian" from="1201" to="1274">1201-1274</date>
+                     <editor key="person_12392936" ref="http://www.viaf.org/viaf/12392936/"
+                           ><persName xml:lang="ar-Latn-x-lc" key="person_12392936"
+                           ref="http://www.viaf.org/viaf/12392936/"> Ṭūsī, Naṣīr al-Dīn
+                           Muḥammad ibn Muḥammad <date calendar="#Gregorian" from="1201" to="1274"
+                              >1201-1274 </date>
+                        </persName>
+                     </editor>
+                     <title xml:lang="ar-Latn-x-lc" key="work_6620">Taḥrīr al-Majisṭī</title>
+                     <title xml:lang="ar" key="work_6620"> تحرير المجسطي</title>
+                     <note>The <title xml:lang="en" key="work_6620">Almagest</title> in the version
+                        of <persName type="standard" xml:lang="ar-Latn-x-lc" key="person_12392936"
+                           ref="http://www.viaf.org/viaf/12392936/" role="edt"
+                           change="#role-assignment">Ṭūsī, Naṣīr al-Dīn Muḥammad ibn
+                           Muḥammad, <date calendar="#Gregorian" from="1201" to="1274"
+                              >1201-1274</date>
                         </persName>
                      </note>
                      <note>SAUG § 114, p. 205 (197)</note>
+                     <incipit xml:lang="ar">بسم الله الرحمن الرحيم احمد الله مبدا كل مبدا وغاية كل
+                        غاية ومفيض كل خير ... وبعد فقد كنت برهة من الزمان عازماً على ان احرر لنفسي
+                        ولسائر طلبة العلم من الاخوان كتاب المجسطي المنسوب الى بطلموس القلوذي </incipit>
+                     <explicit xml:lang="ar"> واقول واذ وفقني الله تعالى ايضا لا تمام ما قصدته
+                        وانجاز ما وعدته فلا قطع الكلام حامدا له على الاية ومصليا على جميع انبيائه
+                        خصوصا على خاتم انبيائه والبررة في اله واحبابه وسلم ورضي الله تعالى على
+                        اصحابه اجمعين </explicit>
+                     <colophon xml:lang="ar"> نقلت هذه النسخة من تسخة بخط شمس الدين بن الوئد العربي
+                        وقوبلت عليها من اول الكتاب الى اثنا المقالة الحادثة عشر خلا الجداول الٮٯدمة [= متقدمة؟]
+                         وقع الفراغ من نسخها اخر شعبان سنة ٧٩٩ </colophon>
+                     <note xml:lang="en">On folio 183b, a collation note reads: <foreign
+                           xml:lang="ar"> بلغ مقابلة من اول الكتاب الى اخره خلا
+                        الجدول</foreign></note>
+
                      <listBibl>
                         <bibl>GAL I 511</bibl>
                         <bibl>[UAM. 888 (2), revd. by Beeston]</bibl>
@@ -94,35 +152,48 @@
                         <origDate calendar="#Gregorian" when="1379">1379?</origDate>
                      </ref>
                      <ref target="#a2">
-                        <origDate calendar="#Gregorian" when="1397">1397</origDate>
+                        <origDate calendar="#Gregorian" when="1397-05-29">29th May 1397</origDate>
+                        <origDate calendar="#Hijri-qamari" when="1397-05-29">30th Shábān 799</origDate>
                      </ref>
                   </origin>
-                  <provenance>The collections of <persName key="person_41849535" role="fmo">Edward Pococke, d. 1691</persName>.</provenance><acquisition>Purchased by the Bodleian Library in <date calendar="#Gregorian" when="1692">1692</date>.</acquisition>
+                  <provenance>The collections of <persName key="person_41849535" role="fmo">Edward
+                        Pococke, d. 1691</persName>.</provenance>
+                  <acquisition>Purchased by the Bodleian Library in <date calendar="#Gregorian"
+                        when="1692">1692</date>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>Manuscript description based on the Bodleian Library's public card index of Arabic manuscripts with additional enhancements by the OCIMCO project team.</source>
+                        <source>Manuscript description based on the Bodleian Library's public card
+                           index of Arabic manuscripts with additional enhancements by the OCIMCO
+                           project team.</source>
                      </recordHist>
                      <availability status="restricted">
-                        <p>Entry to read in the Library is permitted only on presentation of a valid reader's card (for admissions procedures contact <ref target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian Admissions</ref>).</p>
+                        <p>Entry to read in the Library is permitted only on presentation of a valid
+                           reader's card (for admissions procedures contact <ref
+                              target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian
+                              Admissions</ref>).</p>
                      </availability>
                   </adminInfo>
                   <surrogates>
                      <bibl type="digital-facsimile" subtype="full">
-                        <ref target="https://digital.bodleian.ox.ac.uk/objects/f3832796-9fef-40ff-8e1c-31804d2c5973/">
-                           <title>Digital Bodleian</title></ref> <note>(full digital facsimile)</note>
+                        <ref
+                           target="https://digital.bodleian.ox.ac.uk/objects/f3832796-9fef-40ff-8e1c-31804d2c5973/">
+                           <title>Digital Bodleian</title></ref>
+                        <note>(full digital facsimile)</note>
                      </bibl>
                      <bibl type="digital-facsimile" subtype="partial">
-                        <ref target="https://digital.bodleian.ox.ac.uk/objects/5c21787e-b587-4f0d-b81c-8fbd94d21663/">
+                        <ref
+                           target="https://digital.bodleian.ox.ac.uk/objects/5c21787e-b587-4f0d-b81c-8fbd94d21663/">
                            <title>Digital Bodleian</title>
-                        </ref> 
+                        </ref>
                         <note>(2 selected images only)</note>
                      </bibl>
                      <bibl type="digital-facsimile" subtype="partial">
-                        <ref target="https://digital.bodleian.ox.ac.uk/objects/c3043458-f604-43d4-b9e1-ba1b7a768ed5/">
+                        <ref
+                           target="https://digital.bodleian.ox.ac.uk/objects/c3043458-f604-43d4-b9e1-ba1b7a768ed5/">
                            <title>Digital Bodleian</title>
-                        </ref> 
+                        </ref>
                         <note>(single sample image)</note>
                      </bibl>
                   </surrogates>
@@ -134,7 +205,8 @@
          <classDecl>
             <taxonomy xml:id="LCSH">
                <bibl>
-                  <ref target="http://id.loc.gov/authorities/about.html#lcsh">Library of Congress Subject Headings</ref>
+                  <ref target="http://id.loc.gov/authorities/about.html#lcsh">Library of Congress
+                     Subject Headings</ref>
                </bibl>
             </taxonomy>
             <taxonomy xml:id="local_class">
@@ -195,17 +267,22 @@
                <list>
                   <item>
                      <ref target="#a1">
-                        <term key="subject_sh85045517" target="http://id.loc.gov/authorities/sh85045517#concept">Euclid's Elements</term>
+                        <term key="subject_sh85045517"
+                           target="http://id.loc.gov/authorities/sh85045517#concept">Euclid's
+                           Elements</term>
                      </ref>
                   </item>
                   <item>
                      <ref target="#a1">
-                        <term key="subject_sh85054133" target="http://id.loc.gov/authorities/sh85054133#concept">Geometry</term>
+                        <term key="subject_sh85054133"
+                           target="http://id.loc.gov/authorities/sh85054133#concept">Geometry</term>
                      </ref>
                   </item>
                   <item>
                      <ref target="#a2">
-                        <term key="subject_sh85009003" target="http://id.loc.gov/authorities/sh85009003#concept">Astronomy</term>
+                        <term key="subject_sh85009003"
+                           target="http://id.loc.gov/authorities/sh85009003#concept"
+                           >Astronomy</term>
                      </ref>
                   </item>
                </list>
@@ -213,23 +290,31 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
-		</change>
-		<change when="2020-07-06" xml:id="ids-cleanup">
-			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
-		</change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist
+            data cleanup project). </change>
+         <change when="2020-07-06" xml:id="ids-cleanup">
+            <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup
+            project). </change>
          <change when="2018-06-08">
-            <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
+            <persName>Andrew Morrison</persName> Updated key attributes using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl"
+               >update-keys.xsl</ref>
          </change>
          <change when="2018-03-28" xml:id="add-summary2">
-            <persName>Andrew Morrison</persName> Adjusted summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries2.xsl">add-summaries2.xsl</ref>
+            <persName>Andrew Morrison</persName> Adjusted summary using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries2.xsl"
+               >add-summaries2.xsl</ref>
          </change>
          <change when="2018-03-15" xml:id="add-summary">
-            <persName>Andrew Morrison</persName> Added summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl">add-summaries.xsl</ref>
+            <persName>Andrew Morrison</persName> Added summary using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl"
+               >add-summaries.xsl</ref>
          </change>
          <change when="2017-11-07">
-            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
+            <persName>James Cummings</persName> Up-converted the markup using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl"
+               >https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">created this file</change>
       </revisionDesc>
