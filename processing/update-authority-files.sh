@@ -10,10 +10,11 @@ LOGFILE="update-authority-files.log"
 TEMPFILE1=$(mktemp)
 TEMPFILE2=$(mktemp)
 TEMPFILE3=$(mktemp)
+TEMPFILE4=$(mktemp)
 
 AUTHORITYDIR="../authority"
 
-echo "Updating files in authority folder using on $(date +"%Y-%m-%d %H:%M:%S") with new works/persons/subjects added to TEI files in the collections folder." > $LOGFILE
+echo "Updating files in authority folder using on $(date +"%Y-%m-%d %H:%M:%S") with new works/persons/subjects/places added to TEI files in the collections folder." > $LOGFILE
 
 java -Xmx1G -cp "saxon/saxon9he.jar" net.sf.saxon.Query -q:update-works-authority-file.xquery -o:"$TEMPFILE1" 2>> $LOGFILE
 if [ $? -gt 0 ]; then
@@ -45,6 +46,18 @@ if [ $? -gt 0 ]; then
     exit 1;
 else
     cp "$TEMPFILE3" "$AUTHORITYDIR/subjects_additions.xml" 2>> $LOGFILE
+    if [ $? -gt 0 ]; then
+        echo "Cannot write to authority folder. Check permissions on $AUTHORITYDIR and re-run."
+        exit 1;
+    fi
+fi
+
+java -Xmx1G -cp "saxon/saxon9he.jar" net.sf.saxon.Query -q:update-places-authority-file.xquery -o:"$TEMPFILE4" 2>> $LOGFILE
+if [ $? -gt 0 ]; then
+    echo "XQuery failed while trying to update the places authority. Updating of authority files cancelled. Please raise an issue on GitHub, attaching $LOGFILE"
+    exit 1;
+else
+    cp "$TEMPFILE4" "$AUTHORITYDIR/places_additions.xml" 2>> $LOGFILE
     if [ $? -gt 0 ]; then
         echo "Cannot write to authority folder. Check permissions on $AUTHORITYDIR and re-run."
         exit 1;
