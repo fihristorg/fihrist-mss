@@ -1,4 +1,5 @@
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_11093">
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_11093">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -39,7 +40,9 @@
                   <repository>Bodleian Library</repository>
                   <collection type="main">Oriental Manuscripts Huntington Collection</collection>
                   <idno>MS. Huntington 233</idno>
-               <idno type="ieArk">ark:29072/x073666529x4</idno><idno type="crArk">ark:29072/x070795846m8</idno></msIdentifier>
+                  <idno type="ieArk">ark:29072/x073666529x4</idno>
+                  <idno type="crArk">ark:29072/x070795846m8</idno>
+               </msIdentifier>
                <msContents>
                   <summary change="#add-summary"> 1 copy of al-Tabṣirah fī ʻilm al-nujūm by ʻUmar
                      ibn Yūsuf, Sultan of Yemen, d. 1296 </summary>
@@ -54,7 +57,12 @@
                      <listBibl>
                         <bibl>GAL I 494</bibl>
                         <bibl>[UAM. 905, revd. by Beeston]</bibl>
-                        <bibl><ref target="https://tabsira.hypotheses.org/">Text, translation, and study available from project "The Sultan and the Stars".</ref></bibl>
+                        <bibl><ref target="https://tabsira.hypotheses.org/">Text, translation, and
+                              study available from project "The Sultan and the Stars".</ref></bibl>
+                        <bibl><ref target="https://doi.org/10.1163/25899201-bja10029">D’hulster, K.
+                              (2025). The Art of Picking the Best Seat: From Seating Positions at a
+                              Muslim Majlis to Hindu vāstu śāstra. International Journal of
+                              Divination and Prognostication, 6(2), 191-245.</ref></bibl>
                      </listBibl>
                      <textLang mainLang="ar">Arabic</textLang>
                   </msItem>
@@ -72,8 +80,10 @@
                         14th cent.?</origDate>
                   </origin>
                   <provenance>The collections of <persName key="person_34684157" role="fmo">Robert
-                        Huntington, d. <date calendar="#Gregorian" when="1701">1701</date></persName>.</provenance>
-                  <acquisition>Purchased by the Bodleian Library in <date calendar="#Gregorian" when="1693">1693</date>.</acquisition>
+                        Huntington, d. <date calendar="#Gregorian" when="1701"
+                        >1701</date></persName>.</provenance>
+                  <acquisition>Purchased by the Bodleian Library in <date calendar="#Gregorian"
+                        when="1693">1693</date>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
@@ -84,13 +94,15 @@
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid
-                           reader's card (for admissions procedures contact <ref target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian
+                           reader's card (for admissions procedures contact <ref
+                              target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian
                               Admissions</ref>).</p>
                      </availability>
                   </adminInfo>
                   <surrogates>
                      <bibl type="digital-facsimile" subtype="full">
-                        <ref target="https://digital.bodleian.ox.ac.uk/objects/30f0365b-326a-4552-a446-809f0adf5c5c/">
+                        <ref
+                           target="https://digital.bodleian.ox.ac.uk/objects/30f0365b-326a-4552-a446-809f0adf5c5c/">
                            <title>Digital Bodleian</title></ref>
                         <note>(full digital facsimile)</note>
                      </bibl>
@@ -114,7 +126,8 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh85008893" target="http://id.loc.gov/authorities/sh85008893#concept">Astrology</term>
+                     <term key="subject_sh85008893"
+                        target="http://id.loc.gov/authorities/sh85008893#concept">Astrology</term>
                   </item>
                </list>
             </keywords>
@@ -122,13 +135,19 @@
       </profileDesc>
       <revisionDesc>
          <change when="2018-06-08">
-            <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
+            <persName>Andrew Morrison</persName> Updated key attributes using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl"
+               >update-keys.xsl</ref>
          </change>
          <change when="2018-03-15" xml:id="add-summary">
-            <persName>Andrew Morrison</persName> Added summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl">add-summaries.xsl</ref>
+            <persName>Andrew Morrison</persName> Added summary using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl"
+               >add-summaries.xsl</ref>
          </change>
          <change when="2017-11-07">
-            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
+            <persName>James Cummings</persName> Up-converted the markup using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl"
+               >https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">created this file</change>
       </revisionDesc>
