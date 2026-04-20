@@ -1,4 +1,5 @@
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4864">
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4864">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -39,16 +40,26 @@
                   <repository>Bodleian Library</repository>
                   <collection type="main">Oriental Manuscripts</collection>
                   <idno>MS. Pers. d. 43</idno>
-               <idno type="ieArk">ark:29072/x0r781wf76r6</idno><idno type="crArk">ark:29072/x0r494vj93fb</idno></msIdentifier>
+                  <idno type="ieArk">ark:29072/x0r781wf76r6</idno>
+                  <idno type="crArk">ark:29072/x0r494vj93fb</idno>
+               </msIdentifier>
                <msContents>
-                  <summary change="#add-summary">A copy of Saʻdī's Gulistān made for the library of Zeb-un-Nissa, Princess, daughter of Aurangzeb, Emperor of Hindustan, 1638-1702 </summary>
+                  <summary change="#add-summary">A copy of Saʻdī's Gulistān made for the library of
+                     <persName key=""><persName xml:lang="per-Arab">زینت النساء</persName>
+                        <persName xml:lang="eng">Zīnat al-Nisā'</persName></persName></summary>
                   <msItem xml:id="MS_Pers_d_43-item1">
                      <author key="person_100206721" ref="http://viaf.org/viaf/100206721/">
                         <persName xml:lang="fa-Latn-x-lc" type="standard">Saʻdī</persName>
                         <persName xml:lang="fa">سعدى شيرازی</persName>
                      </author>
-                     <title xml:lang="fa-Latn-x-lc" key="work_20962" change="#ids-cleanup">Gulistān</title>
+                     <title xml:lang="fa-Latn-x-lc" key="work_20962" change="#ids-cleanup"
+                        >Gulistān</title>
                      <title xml:lang="fa" key="work_20962" change="#ids-cleanup">گلستان</title>
+                     <note>Sometimes erroneosly identified as having belonged to the elder sister of
+                           <persName key="" role="fmo"><persName xml:lang="per-Arab">زینت النساء</persName>
+                              <persName xml:lang="eng">Zīnat al-Nisā'</persName></persName>, <persName
+                                 key="person_31132651"><persName xml:lang="per-Arab">زیب النساء</persName>
+                                 <persName xml:lang="eng">Zēb al-Nisā'</persName></persName>.</note>
                      <listBibl>
                         <bibl>BP 2585</bibl>
                      </listBibl>
@@ -70,22 +81,32 @@
                   </objectDesc>
                   <handDesc>
                      <handNote scope="major" script="nasta_liq">
-                        <desc>Nastaʻlīq. Copied by <persName xml:lang="fa-Latn-x-lc" key="person_f4738" role="scr" change="#role-assignment">ʻAbd
+                        <desc>Nastaʻlīq. Copied by <persName xml:lang="fa-Latn-x-lc"
+                              key="person_f4738" role="scr" change="#role-assignment">ʻAbd
                               al-ʻAzīz</persName>
                         </desc>
                      </handNote>
                   </handDesc>
                   <sealDesc>
-                     <seal><p>Bears the seal of <persName key="person_31132651"><persName xml:lang="per-Arab">زیب‌النسا</persName>, i.e. <persName xml:lang="eng">Zeb-un-Nissa, Princess, daughter of Aurangzeb, Emperor of Hindustan, 1638-1702</persName></persName> twice on <locus from="1a">folio 1a</locus></p></seal>
+                     <seal>
+                        <p>Bears the seal of <persName key="" role="fmo"><persName xml:lang="per-Arab">زینت النساء</persName>
+                              <persName xml:lang="eng">Zīnat al-Nisā'</persName></persName> twice on
+                           <locus from="1a">folio 1a</locus>. Often erroneously identified as that of her elder sister, <persName
+                           key="person_31132651"><persName xml:lang="per-Arab">زیب النساء</persName>
+                           <persName xml:lang="eng">Zēb al-Nisā'</persName></persName>.</p>
+                     </seal>
                   </sealDesc>
                </physDesc>
                <history>
                   <origin change="#fix-dates">
                      <origDate notBefore="1640" notAfter="1641" calendar="#Hijri-qamari">Ṣafar
                         1050</origDate>
-                     <origDate calendar="#Gregorian" when="1640">May-June 1640</origDate>. Made for the personal library of <persName key="person_31132651"><persName xml:lang="per-Arab">زیب‌النسا</persName>, i.e. <persName xml:lang="eng">Zeb-un-Nissa, Princess, daughter of Aurangzeb, Emperor of Hindustan, 1638-1702</persName></persName>.
-                  </origin>
-                  <acquisition>Bequest of <persName key="person_f6769" role="fmo" change="#prov-markup">Miss Marion Winter</persName> in <date calendar="Gregorian" when="1919">1919</date>.</acquisition>
+                     <origDate calendar="#Gregorian" when="1640">May-June 1640</origDate>. Made for
+                     the personal library of <persName key="" role="fmo"><persName xml:lang="per-Arab">زینت النساء</persName>
+                        <persName xml:lang="eng">Zīnat al-Nisā'</persName></persName>, Princess, daughter of Aurangzeb, Emperor of Hindustan. </origin>
+                  <acquisition>Bequest of <persName key="person_f6769" role="fmo"
+                        change="#prov-markup">Miss Marion Winter</persName> in <date
+                        calendar="Gregorian" when="1919">1919</date>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
@@ -106,7 +127,8 @@
                            you have already consulted. Your application will then be considered by
                            our curatorial staff. Entry to read in the Library is permitted only on
                            presentation of a valid reader's card (for admissions procedures contact
-                              <ref target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian Admissions</ref>).</p>
+                              <ref target="http://www.bodleian.ox.ac.uk/services/admissions/"
+                              >Bodleian Admissions</ref>).</p>
                      </availability>
                   </adminInfo>
                </additional>
@@ -178,7 +200,8 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh85100076" target="http://id.loc.gov/authorities/sh85100076#concept">Persian
+                     <term key="subject_sh85100076"
+                        target="http://id.loc.gov/authorities/sh85100076#concept">Persian
                         literature--747-1500</term>
                   </item>
                </list>
@@ -196,17 +219,25 @@
             <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup
             project). </change>
          <change when="2018-06-08">
-            <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
+            <persName>Andrew Morrison</persName> Updated key attributes using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl"
+               >update-keys.xsl</ref>
          </change>
          <change when="2018-03-15" xml:id="add-summary">
-            <persName>Andrew Morrison</persName> Added summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl">add-summaries.xsl</ref>
+            <persName>Andrew Morrison</persName> Added summary using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl"
+               >add-summaries.xsl</ref>
          </change>
          <change when="2018-03-02" xml:id="fix-dates">
             <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements
-            using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+            using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl"
+               >fix-dates.xsl</ref>
          </change>
          <change when="2017-11-07">
-            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
+            <persName>James Cummings</persName> Up-converted the markup using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl"
+               >https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2012-01-27">
             <persName>Alasdair Watson</persName>
