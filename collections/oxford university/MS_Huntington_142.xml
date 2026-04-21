@@ -1,9 +1,11 @@
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_11042">
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_11042">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>OXFORD AND CAMBRIDGE ISLAMIC MANUSCRIPTS CATALOGUE ONLINE</title>
             <funder>JISC</funder>
+            <funder>Funded by Qatar National Library</funder>
             <principal>Gillian Evison</principal>
          </titleStmt>
          <publicationStmt>
@@ -39,19 +41,35 @@
                   <repository>Bodleian Library</repository>
                   <collection type="main">Oriental Manuscripts Huntington Collection</collection>
                   <idno>MS. Huntington 142</idno>
-               <idno type="ieArk">ark:29072/x0s1784k42vc</idno><idno type="crArk">ark:29072/x0rx913p59jn</idno></msIdentifier>
+                  <idno type="ieArk">ark:29072/x0s1784k42vc</idno>
+                  <idno type="crArk">ark:29072/x0rx913p59jn</idno>
+               </msIdentifier>
                <msContents>
                   <summary change="#add-summary"> 1 copy of al-Tabṣirah fī ʻilm al-hayʼah by
                      Kharaqī, ʻAbd al-Jabbār ibn ʻAbd al-Jabbār, 1084-1158 </summary>
                   <msItem xml:id="MS_Huntington_142-item1">
                      <author key="person_90056192" ref="http://viaf.org/viaf/90056192/">
                         <persName type="standard" xml:lang="ar-Latn-x-lc">Kharaqī, ʻAbd al-Jabbār
-                           ibn ʻAbd al-Jabbār, <date calendar="#Gregorian" from="1084" to="1158">1084-1158</date>
+                           ibn ʻAbd al-Jabbār, <date calendar="#Gregorian" from="1084" to="1158"
+                              >1084-1158</date>
                         </persName>
+                        <persName xml:lang="ar">الخرقي، عبد الجبار بن عبد الجبار، 477-553 هـ</persName>
                      </author>
                      <title xml:lang="ar-Latn-x-lc" key="work_3489">al-Tabṣirah fī ʻilm
                         al-hayʼah</title>
+                     <title xml:lang="ar" key="work_3489">التبصرة في علم الهيئة</title>
                      <note>with a few marginal notes in a diff. hand</note>
+                     <incipit xml:lang="ar">بسم الله الرحمن الرحيم رب يسّر الحمد لله حق حمده والصلوة
+                        على خير خلقه محمد سيّد اصفيايه وخاتم انبيايه وبعد فان العلماء والحكماء كانوا
+                        قبل زماننا هذا متوفرين على جمع العلوم وتاليفها وايضاحها وتلخيصها اذ كانت
+                        اوقاتهم صافيه عن الشواغل والشوايب </incipit>
+                     <explicit xml:lang="ar">والمنجمون يقسمون كل ساعة من الساعات ستين قسماً يسمى كل
+                        قسم منها دقيقة على ما جرت عادتهم في قسمة الدرج واجزائها بالاجزاء الستينية
+                        وحين انتهينا الى ها هنا فلنختم هذا الكتاب بهذا الباب والحمد لله رب العالمين
+                        وصلواته على محمد نبيه وآله الطاهرين وسلم تسليماً </explicit>
+                     <colophon xml:lang="ar">تمت التبصرة في الهيئة تاليف بهاء الدين أبي محمد الخرقي
+                        ووافق الفراغ في شهر جمادي الاول سنة ثمان وتسعين وستمائة هجرية ه وحسبنا الله
+                        ونعم الوكيل نعم المولى ونعم النصير</colophon>
                      <listBibl>
                         <bibl>GAL I 473</bibl>
                         <bibl>[UAM. 911 with corrig. Nicoll p. 600; revd. Beeston]</bibl>
@@ -68,11 +86,14 @@
                </physDesc>
                <history>
                   <origin>
+                     <origDate calendar="#Hijri-qamari" when="1299">Jumādā I 698</origDate>
                      <origDate calendar="#Gregorian" when="1299">1299</origDate>
                   </origin>
-                  <provenance>The collections of <persName key="person_34684157" role="fmo">Robert Huntington,
-                        d. <date calendar="#Gregorian" when="1701">1701</date></persName>.</provenance>
-                  <acquisition>Purchased by the Bodleian Library in <date calendar="#Gregorian" when="1693">1693</date>.</acquisition>
+                  <provenance>The collections of <persName key="person_34684157" role="fmo">Robert
+                        Huntington, d. <date calendar="#Gregorian" when="1701"
+                        >1701</date></persName>.</provenance>
+                  <acquisition>Purchased by the Bodleian Library in <date calendar="#Gregorian"
+                        when="1693">1693</date>.</acquisition>
                </history>
                <additional>
                   <adminInfo>
@@ -83,7 +104,8 @@
                      </recordHist>
                      <availability status="restricted">
                         <p>Entry to read in the Library is permitted only on presentation of a valid
-                           reader's card (for admissions procedures contact <ref target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian
+                           reader's card (for admissions procedures contact <ref
+                              target="http://www.bodleian.ox.ac.uk/services/admissions/">Bodleian
                               Admissions</ref>).</p>
                      </availability>
                   </adminInfo>
@@ -106,7 +128,8 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh85009003" target="http://id.loc.gov/authorities/sh85009003#concept">Astronomy</term>
+                     <term key="subject_sh85009003"
+                        target="http://id.loc.gov/authorities/sh85009003#concept">Astronomy</term>
                   </item>
                </list>
             </keywords>
@@ -114,13 +137,19 @@
       </profileDesc>
       <revisionDesc>
          <change when="2018-06-08">
-            <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
+            <persName>Andrew Morrison</persName> Updated key attributes using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl"
+               >update-keys.xsl</ref>
          </change>
          <change when="2018-03-15" xml:id="add-summary">
-            <persName>Andrew Morrison</persName> Added summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl">add-summaries.xsl</ref>
+            <persName>Andrew Morrison</persName> Added summary using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl"
+               >add-summaries.xsl</ref>
          </change>
          <change when="2017-11-07">
-            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
+            <persName>James Cummings</persName> Up-converted the markup using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl"
+               >https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2009-05-14">created this file</change>
       </revisionDesc>
