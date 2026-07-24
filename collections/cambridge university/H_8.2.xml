@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_705">
    <teiHeader>
       <fileDesc>
@@ -20,7 +20,8 @@
                   <settlement>Cambridge</settlement>
                   <postCode>CB3 9DR</postCode>
                   <addrLine>
-                     <ref target="http://www.lib.cam.ac.uk/deptserv/neareastern/">Cambridge University Library</ref>
+                     <ref target="http://www.lib.cam.ac.uk/deptserv/neareastern/">Cambridge
+                        University Library</ref>
                   </addrLine>
                   <addrLine>
                      <email>near_eastern@lib.cam.ac.uk</email>
@@ -43,17 +44,35 @@
                   <idno>H. 8.2</idno>
                </msIdentifier>
                <msContents>
-                  <summary change="#add-summary">
-                     1 copy of Maṭlaʻ al-saʻdayn by ʻAbd al-Razzāq Kamāl al-Dīn ibn Isḥāq al-Samarqandī, 1413-1482
+                  <summary>
+                     <p>مطلع السعدين</p>
+                     <p>The Maṭlaʻu's-Saʻdayn, a well-known and valuable history of the period (A.H.
+                        716-875 A.D. 1316-1470-1) intervening between the accession of Abú Saʻíd the
+                        Mongol (b. 704/1305; d. 736/1335-6) and the death of Abú Saʻíd the Tímúrid
+                        (the "Busech" of the Venetian travellers in Persia) and accession of
+                        Abu'l-Ghází Sultán Ḥusayn. It is in allusion to these two Abú Saʻíds that
+                        this history (though it deals chiefly with the reign and career of Tímúr,
+                        who was born in the same year as that in which the first Abú Saʻíd died) is
+                        entitled Maṭlaʻu's-Saʻdayn ("the Rising-place of the two Fortunate
+                        Planets"). Full particulars concerning the work and its author, Kamálu'd-Dín
+                        'Abdu'r-Razzáq of Samarqand, are given by Rieu on pp. 181-182 of his Persian
+                        Catalogue. Besides the authorities there cited, see my Persian Literature
+                        under Tartar Dominion, pp. 428-430. There is a good MS. in the library of
+                        Christ's College, Cambridge, marked Dd. 3. 5.</p>
+                     <p>Vol. II lacks a colophon, but a note of ownership is dated 1095/1684.
+                        Written throughout in a coarse but legible ta'liq with rubrications.</p>
                   </summary>
                   <msItem xml:id="H_8.2-item1">
                      <note>Vol. 2</note>
                      <author key="person_52112138" ref="http://viaf.org/viaf/52112138/">
-                        <persName xml:lang="ar-Latn-x-lc" type="standard">ʻAbd al-Razzāq Kamāl al-Dīn ibn Isḥāq al-Samarqandī, 1413-1482</persName>
-                        <persName xml:lang="ar">عبد الرزاق كمال الدين ابن اسحاق <addName xml:lang="fa" type="nisbah">السمرقندى</addName>
+                        <persName xml:lang="ar-Latn-x-lc" type="standard">ʻAbd al-Razzāq Kamāl
+                           al-Dīn ibn Isḥāq al-Samarqandī, 1413-1482</persName>
+                        <persName xml:lang="ar">عبد الرزاق كمال الدين ابن اسحاق <addName
+                              xml:lang="fa" type="nisbah">السمرقندى</addName>
                         </persName>
                      </author>
-                     <title xml:lang="ar-Latn-x-lc" key="work_4464" change="#ids-cleanup">Maṭlaʻ al-saʻdayn</title>
+                     <title xml:lang="ar-Latn-x-lc" key="work_4464" change="#ids-cleanup">Maṭlaʻ
+                        al-saʻdayn</title>
                      <title xml:lang="ar" key="work_4464" change="#ids-cleanup">مطلع السعدين</title>
                      <incipit xml:lang="ar"/>
                      <explicit xml:lang="ar" defective="true"/>
@@ -64,41 +83,59 @@
                   </msItem>
                </msContents>
                <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 181-441 <dimensions type="leaf" unit="cm">
+                              <height>36.8</height>
+                              <width>28.7</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout writtenLines="31">
+                           <p>31 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote scope="major" script="taliq">Written throughout in a coarse but
+                        legible ta'liq with rubrications.</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origDate calendar="#Hijri-qamari" notAfter="1095">undated<!-- Please review date text, see https://git.io/fihrist-dates --></origDate>
-                     <origDate calendar="#Gregorian" notAfter="1610">Gregorian<!-- Please review date text, see https://git.io/fihrist-dates --></origDate>
-                  </origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                     <origDate calendar="#Hijri-qamari" notAfter="1095"
+                        >undated<!-- Please review date text, see https://git.io/fihrist-dates --></origDate>
+                     <origDate calendar="#Gregorian" notAfter="1684"
+                        >undated<!-- Please review date text, see https://git.io/fihrist-dates --></origDate>
+                     (lacks a colophon; a note of ownership on the MS. is dated 1095/1684). </origin>
+
+                  <provenance when="1917">Part of the library of the late
+                     <persName key="person_76699624" role="fmo">Sir A. Houtum-Schindler</persName>,
+                     purchased by me in January, 1917.</provenance>
+                  <acquisition when="1936">Passed to <placeName>Cambridge</placeName> University
+                     Library in <date when="1936">1936</date> (the "Browne Bequest").</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive
+                           catalogue of the Oriental MSS belonging to the late E.G. Browne.
+                           Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
                      </recordHist>
                      <availability status="restricted">
-                        <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
+                        <p>Entry to read in the Library is permitted only on presentation of a valid
+                           reader's card for admissions procedures contact <ref
+                              target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge
+                              University Library Admissions</ref>). Contact
+                              <email>near_eastern@lib.cam.ac.uk</email> for further information on
+                           the availability of this manuscript</p>
                      </availability>
                   </adminInfo>
                   <listBibl>
-                     <bibl type="related">Work in two volumes bearing the class-marks: <idno>H. 8.1</idno> and <idno>H. 8.2</idno>.</bibl>
+                     <bibl type="related">Work in two volumes bearing the class-marks: <idno>H.
+                           8.1</idno> and <idno>H. 8.2</idno>.</bibl>
                   </listBibl>
                </additional>
             </msDesc>
@@ -108,7 +145,8 @@
          <classDecl>
             <taxonomy xml:id="LCSH">
                <bibl>
-                  <ref target="http://id.loc.gov/authorities/about.html#lcsh">Library of Congress Subject Headings</ref>
+                  <ref target="http://id.loc.gov/authorities/about.html#lcsh">Library of Congress
+                     Subject Headings</ref>
                </bibl>
             </taxonomy>
          </classDecl>
@@ -118,30 +156,56 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh85135483" target="http://id.loc.gov/authorities/sh85135483#concept">Timurids</term>
+                     <term key="subject_sh85135483"
+                        target="http://id.loc.gov/authorities/sh85135483#concept">Timurids</term>
                   </item>
                   <item>
-                     <term key="subject_sh91005420" target="http://id.loc.gov/authorities/sh91005420#concept">Iran--History--1256-1500</term>
+                     <term key="subject_sh91005420"
+                        target="http://id.loc.gov/authorities/sh91005420#concept"
+                        >Iran--History--1256-1500</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
-		</change>
-		<change when="2020-07-06" xml:id="ids-cleanup">
-			<persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup project).
-		</change>
+         <change when="2026-07-24" xml:id="ai-merge">
+            <persName>Claude (auto-merge)</persName> Merged manual/ai/multi_match/H_8.xml (one AI
+            file describing both volumes under a single combined physDesc, e.g. "Ff. 441" for both
+            volumes together) into this record. Vol. II's own extent (ff. 181-441) is inferred from
+            the source's statement "Vol. I ends on f. 180"; the shared physical traits (36.8 x 28.7
+            cm, 31 lines, coarse but legible ta'liq with rubrications) apply to the whole 441-ff.
+            manuscript and so were applied to both H. 8.1 and H. 8.2. Completed objectDesc/@form
+            (was "other") and supportDesc/@material (was "chart"); added
+            layoutDesc/@writtenLines="31". CORRECTION: the existing origin here had internally
+            inconsistent review-flagged bounds (Hijri notAfter="1095" paired with Gregorian
+            notAfter="1610" — 1095 AH does not correspond to 1610 CE). The AI source explains the
+            discrepancy: this volume has no colophon, only "a note of ownership dated 1095/1684" as
+            its terminus ante quem, which is what the Hijri 1095 bound was clearly meant to
+            represent. The Gregorian bound was corrected from 1610 (evidently copy-pasted from Vol.
+            1's date) to 1684 accordingly; the "undated"/review-comment wording was otherwise left
+            in place. Not yet reviewed by a cataloguer — please verify the corrected Gregorian date
+            against the printed catalogue. </change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist
+            data cleanup project). </change>
+         <change when="2020-07-06" xml:id="ids-cleanup">
+            <persName>Julian Cook</persName> Changed person and work ids (Fihrist data cleanup
+            project). </change>
          <change when="2018-06-08">
-            <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
+            <persName>Andrew Morrison</persName> Updated key attributes using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl"
+               >update-keys.xsl</ref>
          </change>
          <change when="2018-03-15" xml:id="add-summary">
-            <persName>Andrew Morrison</persName> Added summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl">add-summaries.xsl</ref>
+            <persName>Andrew Morrison</persName> Added summary using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl"
+               >add-summaries.xsl</ref>
          </change>
          <change when="2017-11-07">
-            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
+            <persName>James Cummings</persName> Up-converted the markup using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl"
+               >https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-08-05">
             <persName>Ignacio Sanchez</persName>
@@ -150,7 +214,7 @@
    </teiHeader>
    <text>
       <body>
-         <p><!--Body paragraph provided for validation and future transcription--></p>
+         <div/>
       </body>
    </text>
 </TEI>

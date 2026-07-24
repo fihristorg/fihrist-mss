@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/rng/manuscripts-catalogue.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_658">
    <teiHeader>
       <fileDesc>
@@ -20,7 +20,8 @@
                   <settlement>Cambridge</settlement>
                   <postCode>CB3 9DR</postCode>
                   <addrLine>
-                     <ref target="http://www.lib.cam.ac.uk/deptserv/neareastern/">Cambridge University Library</ref>
+                     <ref target="http://www.lib.cam.ac.uk/deptserv/neareastern/">Cambridge
+                        University Library</ref>
                   </addrLine>
                   <addrLine>
                      <email>near_eastern@lib.cam.ac.uk</email>
@@ -43,18 +44,44 @@
                   <idno>G. 16.2</idno>
                </msIdentifier>
                <msContents>
-                  <summary change="#add-summary">
-                     1 copy of Zīnat al-tavārikh by Mīrzā Muḥammad Riḍā Tabrīzī
+                  <summary>
+                     <p>زينة التواريخ</p>
+                     <p>The Zinatu't-Tawárikh ("Ornament of Histories") compiled about 1218/1803-4
+                        by Mírzá Muḥammad Ridá of Shaháwar for and by order of Fath-'Alí Sháh Qájár,
+                        in two volumes, not quite uniform in size. See Rieu's Persian Catalogue, pp.
+                        135-136, and Aumer's Munich Catalogue, p. 79.</p>
+                     <p>Vol. 2, written in a different hand (a small, neat ta'liq), comprises 453
+                        ff. of 33'7 x 22 c. and 27 ll., and is incomplete at the end. There is a
+                        colophon on f. 374 in which 1227/1812 is given as the date of transcription.
+                        This volume contains the second Piraya, down to 1222/1807-8, but not,
+                        apparently, the Conclusion (Anjáns), which should contain biographies of the
+                        notable poets and learned men of Fath-'Alí Sháh's reign.</p>
+                     <p>The second volume of this MS. (G. 16.2) contains the second Piraya, of which
+                        the first part (Wajh 1, Gúna 1, ff. 1-36) deals with the ancient Kings of
+                        Persia down to the Arab conquest, and the second (Wajh 1, Gúna 2, of Rieu's
+                        description, but not so entitled in this MS.) with the post-Muḥammadan
+                        dynasties from the beginning of the Caliphate to the death of Lutf-'Alí Khán
+                        and the fall of the Zand dynasty (ff. 36-374"), including at the end brief
+                        accounts of the Ottoman Sultáns (f. 348), the Timurid or Moghul and other
+                        Kings of India (f. 357), and the Uzbeks of Turkistán (ff. 362-374").</p>
+                     <p>Wajh 11, Gúna 2 (so entitled here, but Rieu indicates no such subdivision of
+                        the second Wajh, nor is it clear in this MS. what constitutes its first
+                        Gúna), begins on f. 375, and contains the history of the Qájár dynasty down
+                        to 1222/1807-8 (f. 422). The MS. is incomplete at the end, and breaks off
+                        abruptly at the end of the third line of the Conclusion (Khátima).</p>
                   </summary>
                   <msItem xml:id="G_16.2-item1">
                      <note>Vol. 2</note>
                      <author key="person_f3062">
-                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Mīrzā Muḥammad Riḍā Tabrīzī</persName>
-                        <persName xml:lang="fa">ميرزا محمد رضا <addName xml:lang="fa" type="nisbah">شهاورى تبريزي</addName>
+                        <persName xml:lang="fa-Latn-x-lc" type="supplied">Mīrzā Muḥammad Riḍā
+                           Tabrīzī</persName>
+                        <persName xml:lang="fa">ميرزا محمد رضا <addName xml:lang="fa" type="nisbah"
+                              >شهاورى تبريزي</addName>
                         </persName>
                      </author>
                      <title xml:lang="fa-Latn-x-lc" key="work_1642">Zīnat al-tavārikh</title>
-                     <title xml:lang="ar-Latn-x-lc" type="alt" key="work_1642">Zīnat al-tawārikh</title>
+                     <title xml:lang="ar-Latn-x-lc" type="alt" key="work_1642">Zīnat
+                        al-tawārikh</title>
                      <title xml:lang="fa" key="work_1642">زينة التوارخ</title>
                      <incipit xml:lang="ar"/>
                      <explicit xml:lang="ar" defective="true"/>
@@ -65,41 +92,56 @@
                   </msItem>
                </msContents>
                <physDesc>
-                  <objectDesc form="other">
-                     <supportDesc material="chart">
-                        <extent>
-                           <dimensions type="leaf" unit="cm"/>
-                           <dimensions type="written" unit="cm"/>
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>Paper</support>
+                        <extent>Ff. 453 <dimensions type="leaf" unit="cm">
+                              <height>33.7</height>
+                              <width>22</width>
+                           </dimensions>
                         </extent>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" ruledLines="00" n="mistara">
-                           <dimensions type="line-height" unit="mm"/>
+                        <layout writtenLines="27">
+                           <p>27 lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote scope="major" script="unknown"/>
+                     <handNote scope="major" script="taliq">A small, neat ta'liq.</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin change="#fix-dates">
-                     <origDate notBefore="1812" notAfter="1813" calendar="#Hijri-qamari">1227</origDate>
-                     <origDate calendar="#Gregorian" when="1812">1812</origDate>
-                  </origin>
-                  <acquisition>Bequest of <persName xml:lang="en" type="standard" key="person_29651479" ref="http://viaf.org/viaf/29651479/" role="fmo" change="#role-assignment">E. G. Browne</persName>.</acquisition>
+                     <origDate notBefore="1812" notAfter="1813" calendar="#Hijri-qamari"
+                        >1227</origDate>
+                     <origDate calendar="#Gregorian" when="1812">1812</origDate> (colophon on f.
+                     374). </origin>
+                  <provenance when="1917">Part of the library of the late
+                     <persName key="person_76699624" role="fmo">Sir A. Houtum-Schindler</persName>,
+                     purchased by me in January, 1917.</provenance>
+                  <acquisition when="1936">Passed to <placeName>Cambridge</placeName> University
+                     Library in <date when="1936">1936</date> (the "Browne Bequest").</acquisition>
                </history>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive catalogue of the Oriental MSS belonging to the late E.G. Browne. Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
+                        <source>"Manuscript description based on. R. A. Nicholson: A descriptive
+                           catalogue of the Oriental MSS belonging to the late E.G. Browne.
+                           Cambridge, 1932. ", abbreviated by the OCIMCO project team.</source>
                      </recordHist>
                      <availability status="restricted">
-                        <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library Admissions</ref>). Contact <email>near_eastern@lib.cam.ac.uk</email> for further information on the availability of this manuscript</p>
+                        <p>Entry to read in the Library is permitted only on presentation of a valid
+                           reader's card for admissions procedures contact <ref
+                              target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge
+                              University Library Admissions</ref>). Contact
+                              <email>near_eastern@lib.cam.ac.uk</email> for further information on
+                           the availability of this manuscript</p>
                      </availability>
                   </adminInfo>
                   <listBibl>
-                     <bibl type="related">Work in two volumes bearing the class-marks: <idno>G. 16.1</idno> and <idno>G. 16. 2</idno>
+                     <bibl type="related">Work in two volumes bearing the class-marks: <idno>G.
+                           16.1</idno> and <idno>G. 16. 2</idno>
                      </bibl>
                   </listBibl>
                </additional>
@@ -110,7 +152,8 @@
          <classDecl>
             <taxonomy xml:id="LCSH">
                <bibl>
-                  <ref target="http://id.loc.gov/authorities/about.html#lcsh">Library of Congress Subject Headings</ref>
+                  <ref target="http://id.loc.gov/authorities/about.html#lcsh">Library of Congress
+                     Subject Headings</ref>
                </bibl>
             </taxonomy>
          </classDecl>
@@ -120,36 +163,66 @@
             <keywords scheme="#LCSH">
                <list>
                   <item>
-                     <term key="subject_sh96007363" target="http://id.loc.gov/authorities/sh96007363#concept">Iran--History--Ṣafavid dynasty, 1501-1736</term>
+                     <term key="subject_sh96007363"
+                        target="http://id.loc.gov/authorities/sh96007363#concept"
+                        >Iran--History--Ṣafavid dynasty, 1501-1736</term>
                   </item>
                   <item>
-                     <term key="subject_sh85135483" target="http://id.loc.gov/authorities/sh85135483#concept">Timurids</term>
+                     <term key="subject_sh85135483"
+                        target="http://id.loc.gov/authorities/sh85135483#concept">Timurids</term>
                   </item>
                   <item>
-                     <term key="subject_sh85064905" target="http://id.loc.gov/authorities/sh85064905#concept">India--History</term>
+                     <term key="subject_sh85064905"
+                        target="http://id.loc.gov/authorities/sh85064905#concept"
+                        >India--History</term>
                   </item>
                   <item>
-                     <term key="subject_sh85068446" target="http://id.loc.gov/authorities/sh85068446#concept">Islamic Empire--History</term>
+                     <term key="subject_sh85068446"
+                        target="http://id.loc.gov/authorities/sh85068446#concept">Islamic
+                        Empire--History</term>
                   </item>
                </list>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
-		<change when="2020-07-06" xml:id="role-assignment">
-			<persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist data cleanup project).
-		</change>
+         <change when="2026-07-24" xml:id="ai-merge">
+            <persName>Claude (auto-merge)</persName> Merged manual/ai/multi_match/G_16.1-G_16.2.xml
+            (one AI file describing both volumes) into this record. That AI source interleaves both
+            volumes' descriptions and mislabels this volume's physical paragraph "Vol. 1"; content
+            was assigned to this volume (G. 16.2) by matching folio ranges and physical data (453
+            ff., 33.7 x 22 cm, 27 lines, incomplete at end) against what was already fixed here
+            (origin 1227/1812) — the shared work-overview paragraph and everything covering ff.
+            1-422 went to this file; the "first volume" paragraphs went to G. 16.1 instead.
+            Completed objectDesc/@form (was "other") and supportDesc/@material (was "chart") from
+            the AI source; added layoutDesc/@writtenLines="27" (figure was already available, just
+            not as an attribute); added handDesc/handNote (previously "scope=major script=unknown"
+            with no text) naming the script (ta'liq) and hand description. No scribe or patron is
+            named for this volume in either source, so no provenance element was added. Not yet
+            reviewed by a cataloguer. </change>
+         <change when="2020-07-06" xml:id="role-assignment">
+            <persName>Julian Cook</persName> Assigned role(s) to every person having an id (Fihrist
+            data cleanup project). </change>
          <change when="2018-06-08">
-            <persName>Andrew Morrison</persName> Updated key attributes using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl">update-keys.xsl</ref>
+            <persName>Andrew Morrison</persName> Updated key attributes using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/update-keys.xsl"
+               >update-keys.xsl</ref>
          </change>
          <change when="2018-03-15" xml:id="add-summary">
-            <persName>Andrew Morrison</persName> Added summary using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl">add-summaries.xsl</ref>
+            <persName>Andrew Morrison</persName> Added summary using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/add-summaries.xsl"
+               >add-summaries.xsl</ref>
          </change>
          <change when="2018-03-02" xml:id="fix-dates">
-            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl">fix-dates.xsl</ref>
+            <persName>Andrew Morrison</persName> Added or modified attributes in origDate elements
+            using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/conversion_scripts/fix-dates.xsl"
+               >fix-dates.xsl</ref>
          </change>
          <change when="2017-11-07">
-            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl">https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
+            <persName>James Cummings</persName> Up-converted the markup using <ref
+               target="https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl"
+               >https://github.com/bodleian/fihrist-mss/tree/master/processing/convertFihrist2Bodley.xsl</ref>
          </change>
          <change when="2010-08-05">
             <persName>Ignacio Sanchez</persName>
@@ -158,7 +231,7 @@
    </teiHeader>
    <text>
       <body>
-         <p><!--Body paragraph provided for validation and future transcription--></p>
+         <div/>
       </body>
    </text>
 </TEI>
